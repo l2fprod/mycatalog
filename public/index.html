@@ -68,12 +68,23 @@
         </thead>
         <tr ng-repeat="service in services | filter:searchText">
           <td class="service-icon"><img class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" /></td>
-          <td class="service-displayname">{{service.entity.extra.displayName || service.entity.label}}</td>
+          <td class="service-displayname">
+            <a href="https://console.ng.bluemix.net/catalog/services/{{service.entity.label}}">
+              {{service.entity.extra.displayName || service.entity.label}}
+            </a>
+          </td>
           <td class="service-description">{{service.entity.description}}</td>
           <td class="service-tags">
             <span ng-if="service.entity.tags.indexOf('ibm_created')>=0" class="label label-info">IBM</span>
+            <span ng-if="service.entity.tags.indexOf('ibm_third_party')>=0" class="label label-info">3rd</span>
+            
             <span ng-if="service.entity.tags.indexOf('ibm_beta')>=0" class="label label-warning">beta</span>
             <span ng-if="service.entity.tags.indexOf('ibm_experimental')>=0" class="label label-danger">experimental</span>
+            
+            <span ng-if="service.entity.tags.indexOf('watson')>=0" class="label label-primary">watson</span>
+            <span ng-if="service.entity.tags.indexOf('security')>=0" class="label label-primary">security</span>
+            <span ng-if="service.entity.tags.indexOf('big_data')>=0" class="label label-primary">big data</span>
+
           </td>
         </tr>
       </table>
