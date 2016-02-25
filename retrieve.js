@@ -3,10 +3,17 @@ var fs = require('fs');
 var async = require('async');
 var request = require('request');
 
-var client = new Client({
+var authenticatedClient = new Client({
   host: 'api.ng.bluemix.net',
   protocol: 'https:',
   token: process.argv[2]
+});
+
+
+var anonymousClient = new Client({
+  host: 'api.ng.bluemix.net',
+  protocol: 'https:',
+  token: "" //process.argv[2]
 });
 
 try {
@@ -25,63 +32,80 @@ try {
   console.log(err);
 }
 
-client.buildpacks.get(function (err, buildpacks) {
+async.parallel([
+  function (callback) {
+    authenticatedClient.buildpacks.get(function (err, buildpacks) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("Found", buildpacks.length, "buildpacks");
+        var stream = fs.createWriteStream("public/data/buildpacks.json");
+        stream.once('open', function (fd) {
+          stream.write(JSON.stringify(buildpacks, null, 2));
+        });
+      }
+      callback(err);
+    });
+  },
+  function (callback) {
+    // use anonymous client so that we don't surface not public services
+    anonymousClient.services.get(function (err, services) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("Found", services.length, "services");
+
+        // resolve the embedded JSON value
+        services.forEach(function (service) {
+          if (service.entity.extra) {
+            service.entity.extra = JSON.parse(service.entity.extra);
+          }
+        });
+
+        // sort on name
+        services.sort(function (s1, s2) {
+          var s1Name = s1.entity.label;
+          if (s1.entity.extra) {
+            s1Name = s1.entity.extra.displayName || s1.entity.label;
+          }
+          var s2Name = s2.entity.label;
+          if (s2.entity.extra) {
+            s2Name = s2.entity.extra.displayName || s2.entity.label;
+          }
+          return s1Name.localeCompare(s2Name);
+        });
+
+
+        var stream = fs.createWriteStream("public/data/services.json");
+        stream.once('open', function (fd) {
+          stream.write(JSON.stringify(services, null, 2));
+        });
+
+        getImages(services);
+      }
+      callback(err);
+    });
+  },
+    function (callback) {
+    // use anonymous client so that we don't surface not public services
+    anonymousClient.servicePlans.get(function (err, servicePlans) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("Found", servicePlans.length, "service plans");
+        var stream = fs.createWriteStream("public/data/plans.json");
+        stream.once('open', function (fd) {
+          stream.write(JSON.stringify(servicePlans, null, 2));
+        });
+      }
+      callback(err);
+    });
+    },
+  ], function (err, result) {
   if (err) {
     console.log(err);
   } else {
-    console.log("Found ", buildpacks.length, "buildpacks");
-    var stream = fs.createWriteStream("public/data/buildpacks.json");
-    stream.once('open', function (fd) {
-      stream.write(JSON.stringify(buildpacks, null, 2));
-    });
-  }
-});
-
-client.services.get(function (err, services) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Found ", services.length, "services");
-
-    // resolve the embedded JSON value
-    services.forEach(function (service) {
-      if (service.entity.extra) {
-        service.entity.extra = JSON.parse(service.entity.extra);
-      }
-    });
-
-    // sort on name
-    services.sort(function (s1, s2) {
-      var s1Name = s1.entity.label;
-      if (s1.entity.extra) {
-        s1Name = s1.entity.extra.displayName || s1.entity.label;
-      }
-      var s2Name = s2.entity.label;
-      if (s2.entity.extra) {
-        s2Name = s2.entity.extra.displayName || s2.entity.label;
-      }
-      return s1Name.localeCompare(s2Name);
-    });
-
-
-    var stream = fs.createWriteStream("public/data/services.json");
-    stream.once('open', function (fd) {
-      stream.write(JSON.stringify(services, null, 2));
-    });
-
-    getImages(services);
-  }
-});
-
-client.servicePlans.get(function (err, servicePlans) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Found ", servicePlans.length, "service plans");
-    var stream = fs.createWriteStream("public/data/plans.json");
-    stream.once('open', function (fd) {
-      stream.write(JSON.stringify(servicePlans, null, 2));
-    });
+    console.log("Retrieved all data");
   }
 });
 
