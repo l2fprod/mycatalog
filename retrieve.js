@@ -12,12 +12,9 @@ var client = new Client({
     //    password: 'password' // optional if token is provided
 });
 
-try {
-fs.mkdirSync('public/data');
-fs.mkdirSync('public/data/icons');
-} catch (err) {
-  console.log(err);
-}
+try { fs.mkdirSync('public'); } catch (err) { console.log(err); }
+try { fs.mkdirSync('public/data'); } catch (err) { console.log(err); }
+try { fs.mkdirSync('public/data/icons'); } catch (err) { console.log(err); }
 
 client.buildpacks.get(function (err, buildpacks) {
   if (err) {
