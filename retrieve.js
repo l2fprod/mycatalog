@@ -6,14 +6,18 @@ var request = require('request');
 var client = new Client({
   host: 'api.ng.bluemix.net',
   protocol: 'https:',
-  token: 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ZWNkNzhlYS03YzhmLTRkYjItODM4ZC0xMjgxMjhhYjJlZDEiLCJzdWIiOiI0Y2Y2Zjk4My04MzUzLTQzYzAtYTk0Ny04NmM0MzY5ZGM0ZjQiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLnJlYWQiLCJwYXNzd29yZC53cml0ZSIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiXSwiY2xpZW50X2lkIjoiY2YiLCJjaWQiOiJjZiIsImF6cCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjRjZjZmOTgzLTgzNTMtNDNjMC1hOTQ3LTg2YzQzNjlkYzRmNCIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6ImZyZWRlcmljLmxhdmlnbmVAZnIuaWJtLmNvbSIsImVtYWlsIjoiZnJlZGVyaWMubGF2aWduZUBmci5pYm0uY29tIiwicmV2X3NpZyI6ImE2NjQ2NDBmIiwiaWF0IjoxNDU2MzkyMTgyLCJleHAiOjE0NTY0MzUzODIsImlzcyI6Imh0dHBzOi8vdWFhLm5nLmJsdWVtaXgubmV0L29hdXRoL3Rva2VuIiwiemlkIjoidWFhIiwiYXVkIjpbImNsb3VkX2NvbnRyb2xsZXIiLCJwYXNzd29yZCIsImNmIiwib3BlbmlkIl19.cq8JdJHOpUKy6cWW_7pVwp1M-MflJ1WXBeg8kE8K4II'
+  token: process.argv[2]
     //  ,        // optional if email/password is provided
     //    email: 'my email'    // optional if token is provided
     //    password: 'password' // optional if token is provided
 });
 
+try {
 fs.mkdirSync('public/data');
 fs.mkdirSync('public/data/icons');
+} catch (err) {
+  console.log(err);
+}
 
 client.buildpacks.get(function (err, buildpacks) {
   if (err) {
