@@ -7,14 +7,23 @@ var client = new Client({
   host: 'api.ng.bluemix.net',
   protocol: 'https:',
   token: process.argv[2]
-    //  ,        // optional if email/password is provided
-    //    email: 'my email'    // optional if token is provided
-    //    password: 'password' // optional if token is provided
 });
 
-try { fs.mkdirSync('public'); } catch (err) { console.log(err); }
-try { fs.mkdirSync('public/data'); } catch (err) { console.log(err); }
-try { fs.mkdirSync('public/data/icons'); } catch (err) { console.log(err); }
+try {
+  fs.mkdirSync('public');
+} catch (err) {
+  console.log(err);
+}
+try {
+  fs.mkdirSync('public/data');
+} catch (err) {
+  console.log(err);
+}
+try {
+  fs.mkdirSync('public/data/icons');
+} catch (err) {
+  console.log(err);
+}
 
 client.buildpacks.get(function (err, buildpacks) {
   if (err) {
@@ -33,13 +42,28 @@ client.services.get(function (err, services) {
     console.log(err);
   } else {
     console.log("Found ", services.length, "services");
-    
-    services.forEach(function(service) {
+
+    // resolve the embedded JSON value
+    services.forEach(function (service) {
       if (service.entity.extra) {
         service.entity.extra = JSON.parse(service.entity.extra);
       }
     });
-    
+
+    // sort on name
+    services.sort(function (s1, s2) {
+      var s1Name = s1.entity.label;
+      if (s1.entity.extra) {
+        s1Name = s1.entity.extra.displayName || s1.entity.label;
+      }
+      var s2Name = s2.entity.label;
+      if (s2.entity.extra) {
+        s2Name = s2.entity.extra.displayName || s2.entity.label;
+      }
+      return s1Name.localeCompare(s2Name);
+    });
+
+
     var stream = fs.createWriteStream("public/data/services.json");
     stream.once('open', function (fd) {
       stream.write(JSON.stringify(services, null, 2));
