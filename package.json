@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "postinstall": "bower install --allow-root"
   },
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
     "angular-expressions": "^0.3.0",
     "async": "^1.5.2",
+    "bower": "^1.7.7",
+    "cfenv": "^1.0.3",
     "cloudfoundry-client": "git+https://git@github.com/l2fprod/node-cloudfoundry-client.git#develop",
     "docxtemplater": "^2.0.0",
     "docxtemplater-image-module": "^1.0.0",
+    "express": "^4.13.4",
     "officegen": "^0.2.9",
     "request": "^2.69.0"
   }
