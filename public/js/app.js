@@ -23,6 +23,14 @@ catalogApp.controller('MainController', function ($scope) {
   console.info("Initializing MainController");
   $scope.services = [];
 
+  $scope.tagFilter = function(tag) {
+    if (!tag.startsWith("ibm_")) {//= "ibm_beta" && tag != "ibm_created" && tag != "ibm_experimental") {
+      return tag;
+    } else {
+      console.log("ignored", tag);
+    }
+  };
+  
   $.ajax("/data/services.json").done(function (services) {
     $scope.$apply(function () {
       $scope.services = services;

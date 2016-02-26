@@ -28,11 +28,6 @@
         <a class="navbar-brand" href="#">IBM Bluemix Catalog</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <!--
-        <ul class="nav navbar-nav navbar-right">
-          <li></li>
-        </ul>
--->
       </div>
     </div>
   </nav>
@@ -66,7 +61,9 @@
           </tr>
         </thead>
         <tr ng-repeat="service in services | filter:searchText">
-          <td class="service-icon"><img class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" /></td>
+          <td class="service-icon">
+            <img ng-if="service.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" />
+          </td>
           <td class="service-displayname">
             <a href="https://console.ng.bluemix.net/catalog/services/{{service.entity.label}}">
               {{service.entity.extra.displayName || service.entity.label}}
@@ -74,21 +71,23 @@
           </td>
           <td class="service-description">{{service.entity.description}}</td>
           <td class="service-tags">
-            <span ng-if="service.entity.tags.indexOf('ibm_created')>=0" class="label label-info">IBM</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_third_party')>=0" class="label label-info">3rd</span>
-            
+            <span ng-if="service.entity.tags.indexOf('ibm_created')>=0" class="label label-primary">IBM</span>
+            <span ng-if="service.entity.tags.indexOf('ibm_third_party')>=0" class="label label-primary">Third party</span>
             <span ng-if="service.entity.tags.indexOf('ibm_beta')>=0" class="label label-warning">beta</span>
             <span ng-if="service.entity.tags.indexOf('ibm_experimental')>=0" class="label label-danger">experimental</span>
-            
-            <span ng-if="service.entity.tags.indexOf('watson')>=0" class="label label-primary">watson</span>
-            <span ng-if="service.entity.tags.indexOf('security')>=0" class="label label-primary">security</span>
-            <span ng-if="service.entity.tags.indexOf('big_data')>=0" class="label label-primary">big data</span>
 
+            <span ng-repeat="tag in service.entity.tags | filter: tagFilter">
+              <span class="label label-info">{{tag}}</span>
+            </span>
           </td>
         </tr>
       </table>
     </div>
   </div>
+
+  <footer>
+    made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>
+  </footer>
 
   <script src="vendor/jquery/dist/jquery.min.js"></script>
   <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
