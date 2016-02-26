@@ -2,6 +2,7 @@ var Client = require('cloudfoundry-client');
 var fs = require('fs');
 var async = require('async');
 var request = require('request');
+var vm = require('vm');
 
 var authenticatedClient = new Client({
   host: 'api.ng.bluemix.net',
@@ -16,7 +17,11 @@ var anonymousClient = new Client({
   token: "" //process.argv[2]
 });
 
-var categories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf8'));
+var script = vm.createScript(fs.readFileSync('./public/js/categories.js'));
+var sandbox = {};
+script.runInNewContext(sandbox);
+var categories = sandbox.categories;
+console.log("Using categories", categories);
 
 try {
   fs.mkdirSync('public/generated');

@@ -1,4 +1,4 @@
-[
+var categories = [
   "dev_ops",
   "big_data",
   "internet_of_things",
@@ -9,4 +9,4 @@
   "data_management",
   "network",
   "integration"
-]
+];

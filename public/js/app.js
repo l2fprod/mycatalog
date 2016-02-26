@@ -31,7 +31,7 @@ catalogApp.controller('MainController', function ($scope) {
     }
   };
   
-  $.ajax("/data/services.json").done(function (services) {
+  $.ajax("/generated/services.json").done(function (services) {
     $scope.$apply(function () {
       $scope.services = services;
     });
