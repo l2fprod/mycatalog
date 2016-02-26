@@ -2,10 +2,10 @@
 /*jslint node: true*/
 "use strict";
 
-var
-  express = require('express'),
-  app = express(),
-  cfenv = require('cfenv');
+var express = require('express');
+var cfenv = require('cfenv');
+var favicon = require('serve-favicon');
+var app = express();
 
 var appEnv = cfenv.getAppEnv();
 
