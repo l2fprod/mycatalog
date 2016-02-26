@@ -138,11 +138,10 @@ router.post('/api/docx', function (req, res) {
 
           p.addLineBreak();
           p.addText(service.entity.description);
-        });
-
-        var out = fs.createWriteStream('public/data/catalog.docx');
-        docx.generate(out);
     });
+
+    var out = fs.createWriteStream('public/data/catalog.docx');
+    docx.generate(out);
 });
 
 module.exports = router;
