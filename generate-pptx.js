@@ -18,7 +18,7 @@ services.forEach(function (service) {
     try {
         slide.addImage(path.resolve(__dirname, 'public/data/icons/' + service.metadata.guid + '.png'),
                        {x: 50, y: 30, cx: 70, cy:70});
-        slide.addImage(path.resolve(__dirname, 'public/data/icons/bluemix_logo.png'),
+        slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'),
                        {x: 1100, y: 30, cx: 70, cy:70});
     } catch (err) {}
 
