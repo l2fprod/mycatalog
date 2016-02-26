@@ -19,10 +19,9 @@ services.forEach(function (service) {
     sheet.data[0] = [];
     sheet.data[0][0] = "Service";
     sheet.data[0][1] = "Description";
-    sheet.data[0][2] = "Version";
-    sheet.data[0][3] = "Author";
-    sheet.data[0][4] = "Long Description";
-    sheet.data[0][5] = "URL";
+    sheet.data[0][2] = "Author";
+    sheet.data[0][3] = "Long Description";
+    sheet.data[0][4] = "URL";
     
     // Cell Content
     sheet.data[row] = [];
@@ -37,15 +36,13 @@ services.forEach(function (service) {
     if (extra && extra.displayName) {
         sheet.data[row][0] = extra.displayName;
         sheet.data[row][1] = service.entity.description;
-        sheet.data[row][2] = service.entity.version;
-        sheet.data[row][3] = extra.providerDisplayName;
-        sheet.data[row][4] = extra.longDescription;
-        sheet.data[row][5] = extra.documentationUrl;
+        sheet.data[row][2] = extra.providerDisplayName;
+        sheet.data[row][3] = extra.longDescription;
+        sheet.data[row][4] = extra.documentationUrl;
     } else {
         sheet.data[row][0] = service.entity.label;
         sheet.data[row][1] = service.entity.description;
-        sheet.data[row][2] = service.entity.version;
-        sheet.data[row][3] = service.entity.provider;
+        sheet.data[row][2] = service.entity.provider;
     }
 
     row++;
