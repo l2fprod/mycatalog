@@ -13,6 +13,7 @@ app.use("/api/export", require('./export2office.js'));
 
 // serve the files out of ./public as our main files
 app.use(express.static('./public'));
+app.use(favicon(__dirname + '/public/icons/favicon.ico'));
 
 // start server on the specified port and binding host
 app.listen(appEnv.port, "0.0.0.0", function () {
