@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 
-var services = JSON.parse(fs.readFileSync('public/data/services.json', 'utf8'));
+var services = JSON.parse(fs.readFileSync('public/generated/services.json', 'utf8'));
 var officegen = require('officegen');
 var pptx = officegen('pptx');
 
@@ -16,7 +16,7 @@ services.forEach(function (service) {
     slide = pptx.makeNewSlide();
 
     try {
-        slide.addImage(path.resolve(__dirname, 'public/data/icons/' + service.metadata.guid + '.png'),
+        slide.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png'),
                        {x: 50, y: 30, cx: 70, cy:70});
         slide.addImage(path.resolve(__dirname, 'public/data/icons/bluemix_logo.png'),
                        {x: 1100, y: 30, cx: 70, cy:70});
@@ -46,5 +46,5 @@ services.forEach(function (service) {
 
 });
 
-var out = fs.createWriteStream('public/data/catalog.pptx');
+var out = fs.createWriteStream('public/generated/catalog.pptx');
 pptx.generate(out);

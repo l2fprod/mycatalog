@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 
-var services = JSON.parse(fs.readFileSync('public/data/services.json', 'utf8'));
+var services = JSON.parse(fs.readFileSync('public/generated/services.json', 'utf8'));
 var officegen = require('officegen');
 var xlsx = officegen('xlsx');
 
@@ -48,5 +48,5 @@ services.forEach(function (service) {
     row++;
 });
 
-var out = fs.createWriteStream('public/data/catalog.xlsx');
+var out = fs.createWriteStream('public/generated/catalog.xlsx');
 xlsx.generate(out);

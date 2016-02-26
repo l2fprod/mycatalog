@@ -16,18 +16,15 @@ var anonymousClient = new Client({
   token: "" //process.argv[2]
 });
 
+var categories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf8'));
+
 try {
-  fs.mkdirSync('public');
+  fs.mkdirSync('public/generated');
 } catch (err) {
   console.log(err);
 }
 try {
-  fs.mkdirSync('public/data');
-} catch (err) {
-  console.log(err);
-}
-try {
-  fs.mkdirSync('public/data/icons');
+  fs.mkdirSync('public/generated/icons');
 } catch (err) {
   console.log(err);
 }
@@ -39,7 +36,7 @@ async.parallel([
         console.log(err);
       } else {
         console.log("Found", buildpacks.length, "buildpacks");
-        var stream = fs.createWriteStream("public/data/buildpacks.json");
+        var stream = fs.createWriteStream("public/generated/buildpacks.json");
         stream.once('open', function (fd) {
           stream.write(JSON.stringify(buildpacks, null, 2));
         });
@@ -60,8 +57,23 @@ async.parallel([
           if (service.entity.extra) {
             service.entity.extra = JSON.parse(service.entity.extra);
           }
+          
+          // sort tags (categories first)
+          service.entity.tags.sort(function(tag1, tag2) {
+            var isCategory1 = categories.indexOf(tag1) >= 0
+            var isCategory2 = categories.indexOf(tag2) >= 0
+            if (isCategory1 && !isCategory2) {
+              return -1;
+            }
+            
+            if (!isCategory1 && isCategory2) {
+              return 1;
+            }
+            
+            return tag1.localeCompare(tag2);
+          });
         });
-
+        
         // sort on name
         services.sort(function (s1, s2) {
           var s1Name = s1.entity.label;
@@ -76,7 +88,7 @@ async.parallel([
         });
 
 
-        var stream = fs.createWriteStream("public/data/services.json");
+        var stream = fs.createWriteStream("public/generated/services.json");
         stream.once('open', function (fd) {
           stream.write(JSON.stringify(services, null, 2));
         });
@@ -93,7 +105,7 @@ async.parallel([
         console.log(err);
       } else {
         console.log("Found", servicePlans.length, "service plans");
-        var stream = fs.createWriteStream("public/data/plans.json");
+        var stream = fs.createWriteStream("public/generated/plans.json");
         stream.once('open', function (fd) {
           stream.write(JSON.stringify(servicePlans, null, 2));
         });
@@ -136,7 +148,7 @@ function getImages(services) {
           if (err) {
             callback(err);
           } else {
-            fs.writeFile("public/data/icons/" + service.metadata.guid + ".png", body, function (err) {
+            fs.writeFile("public/generated/icons/" + service.metadata.guid + ".png", body, function (err) {
               if (err) {
                 callback(err);
               } else {

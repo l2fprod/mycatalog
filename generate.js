@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 
-var services = JSON.parse(fs.readFileSync('public/data/services.json', 'utf8'));
+var services = JSON.parse(fs.readFileSync('public/generated/services.json', 'utf8'));
 var officegen = require('officegen');
 var docx = officegen('docx');
 
@@ -28,7 +28,7 @@ services.forEach(function (service) {
 
   //p.addLineBreak();
   try {
-    p.addImage(path.resolve(__dirname, 'public/data/icons/' + service.metadata.guid + '.png'));
+    p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png'));
   } catch (err) {}
     
   var extra = service.entity.extra;
@@ -46,5 +46,5 @@ services.forEach(function (service) {
   p.addText(service.entity.description);
 });
 
-var out = fs.createWriteStream('public/data/catalog.docx');
+var out = fs.createWriteStream('public/generated/catalog.docx');
 docx.generate(out);
