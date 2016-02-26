@@ -24,10 +24,10 @@ catalogApp.controller('MainController', function ($scope) {
   $scope.services = [];
 
   $scope.tagFilter = function(tag) {
-    if (!tag.startsWith("ibm_")) {//= "ibm_beta" && tag != "ibm_created" && tag != "ibm_experimental") {
+    if (categories.indexOf(tag) >= 0) {
       return tag;
     } else {
-      console.log("ignored", tag);
+      return null;
     }
   };
   
