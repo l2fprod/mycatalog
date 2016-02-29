@@ -7,9 +7,6 @@ var services = JSON.parse(fs.readFileSync('public/generated/services.json', 'utf
 var officegen = require('officegen');
 
 
-// ---------------------------------------------------------------------
-// API Export to XLSX
-// ---------------------------------------------------------------------
 router.post('/:format', function(req, res) {  
   var servicesToExport;
   var userSelectedServices = req.body["services[]"];
@@ -40,6 +37,9 @@ router.post('/:format', function(req, res) {
 
 });
 
+// ---------------------------------------------------------------------
+// API Export to XLSX
+// ---------------------------------------------------------------------
 function exportToExcel(services, res) {
   var xlsx = officegen('xlsx');
 
@@ -217,22 +217,28 @@ function exportToWord(services, res) {
     var p = docx.createP();
 
     try {
-      p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png'));
+      p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png')
+                 , { cx: 70, cy: 70 });
     } catch (err) {}
 
     var extra = service.entity.extra;
-    if (extra && extra.displayName) {
-      p.addText(extra.displayName, {
-        bold: true
-      });
-    } else {
-      p.addText(service.entity.label, {
-        bold: true
-      });
-    }
+      
+    var svcName = (extra && extra.displayName) ? extra.displayName : service.entity.label;
+    var author  = (extra && extra.providerDisplayName) ? extra.providerDisplayName : service.entity.provider;
+    var doc     = (extra && extra.documentationUrl) ? extra.documentationUrl : "" ;
 
+    p.addText('     ' + svcName,    { bold: true, verticalAlign: true, font_size: 18 });
     p.addLineBreak();
-    p.addText(service.entity.description);
+    p.addText('________________________________________________________________________', {color: '808080'} );
+    p.addLineBreak();
+    p.addText(service.entity.description, { font_size: 16 });
+    p.addLineBreak();
+    p.addText('Author:  ' + author, { font_size: 14, color: '808080' });
+    p.addLineBreak();
+    p.addText('Documentation:  ',    { font_size: 14, color: '808080' });
+    p.addLineBreak();
+    p.addText(doc,    { font_size: 14, color: '808080' });
+    p.addLineBreak();
   });
 
   res.setHeader("Content-Type", "application/octet-stream");
