@@ -17,20 +17,31 @@ angular.module('ngLoadingSpinner', ['angularSpinners'])
     };
     }]);
 
-var catalogApp = angular.module('catalogApp', [ 'ngLoadingSpinner']);
+var catalogApp = angular.module('catalogApp', ['ngLoadingSpinner', 'checklist-model']);
 
 catalogApp.controller('MainController', function ($scope) {
   console.info("Initializing MainController");
   $scope.services = [];
+  $scope.selection = {
+    services: []
+  };
 
-  $scope.tagFilter = function(tag) {
+  $scope.tagFilter = function (tag) {
     if (categories.indexOf(tag) >= 0) {
       return tag;
     } else {
       return null;
     }
   };
-  
+
+  $scope.exportSelection = function (format) {
+    if ($scope.selection.services.length > 0) {
+      $.redirect("/api/export/" + format, { services: $scope.selection.services });
+    } else {
+      $.redirect("/api/export/" + format);
+    }
+  }
+
   $.ajax("/generated/services.json").done(function (services) {
     $scope.$apply(function () {
       $scope.services = services;

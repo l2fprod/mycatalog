@@ -10,7 +10,37 @@ var officegen = require('officegen');
 // ---------------------------------------------------------------------
 // API Export to XLSX
 // ---------------------------------------------------------------------
-router.get('/xlsx', function (req, res) {
+router.post('/:format', function(req, res) {  
+  var servicesToExport;
+  var userSelectedServices = req.body["services[]"];
+  
+  if (userSelectedServices) {
+    servicesToExport = services.filter(function(service) {
+      return userSelectedServices.indexOf(service.metadata.guid) >= 0;
+    });
+  } else {
+    servicesToExport = services;
+  }
+  
+  console.log("Exporting", servicesToExport.length, "services in", req.params.format);
+  
+  switch(req.params.format) {
+    case "xlsx":
+      exportToExcel(servicesToExport, res);
+      break;
+    case "docx":
+      exportToWord(servicesToExport, res);
+      break;
+    case "pptx":
+      exportToPowerpoint(servicesToExport, res);
+      break;
+    default:
+      res.status(500).send({error: "unknown format " + req.params.format })  
+  }
+
+});
+
+function exportToExcel(services, res) {
   var xlsx = officegen('xlsx');
 
   sheet = xlsx.makeNewSheet();
@@ -56,12 +86,12 @@ router.get('/xlsx', function (req, res) {
   res.setHeader("Content-Type", "application/octet-stream");
   res.setHeader("Content-Disposition", "inline; filename=catalog.xlsx");
   xlsx.generate(res);
-});
+}
 
 // ---------------------------------------------------------------------
 // API Export to PPTX
 // ---------------------------------------------------------------------
-router.get('/pptx', function (req, res) {
+function exportToPowerpoint(services, res) {
   var pptx = officegen('pptx');
 
   pptx.setWidescreen(true);
@@ -167,12 +197,12 @@ router.get('/pptx', function (req, res) {
   res.setHeader("Content-Type", "application/octet-stream");
   res.setHeader("Content-Disposition", "inline; filename=catalog.pptx");
   pptx.generate(res);
-});
+}
 
 // ---------------------------------------------------------------------
 // API Export to DOCX
 // ---------------------------------------------------------------------
-router.get('/docx', function (req, res) {
+function exportToWord(services, res) {
   var docx = officegen('docx');
 
   services.forEach(function (service) {
@@ -204,6 +234,6 @@ router.get('/docx', function (req, res) {
   res.setHeader("Content-Type", "application/octet-stream");
   res.setHeader("Content-Disposition", "inline; filename=catalog.docx");
   docx.generate(res);
-});
+}
 
 module.exports = router;

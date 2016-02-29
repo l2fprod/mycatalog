@@ -6,10 +6,14 @@ var express = require('express');
 var cfenv = require('cfenv');
 var favicon = require('serve-favicon');
 var app = express();
+var bodyParser = require('body-parser')
 
 var appEnv = cfenv.getAppEnv();
 
+app.use(bodyParser.urlencoded({ extended: false }))
+
 app.use("/api/export", require('./export2office.js'));
+
 
 // serve the files out of ./public as our main files
 app.use(express.static('./public'));
