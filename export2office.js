@@ -59,8 +59,10 @@ function exportToExcel(services, res) {
     sheet.data[0][1] = "Category";
     sheet.data[0][2] = "Description";
     sheet.data[0][3] = "Author";
-    sheet.data[0][4] = "Long Description";
-    sheet.data[0][5] = "URL";
+    sheet.data[0][4] = "Creation Date";
+    sheet.data[0][5] = "Last Modification";
+    sheet.data[0][6] = "Long Description";
+    sheet.data[0][7] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
@@ -71,14 +73,16 @@ function exportToExcel(services, res) {
       sheet.data[row][1] = service.entity.tags[0];
       sheet.data[row][2] = service.entity.description;
       sheet.data[row][3] = extra.providerDisplayName;
-      sheet.data[row][4] = extra.longDescription;
-      sheet.data[row][5] = extra.documentationUrl;
+      sheet.data[row][6] = extra.longDescription;
+      sheet.data[row][7] = extra.documentationUrl;
     } else {
       sheet.data[row][0] = service.entity.label;
       sheet.data[row][1] = service.entity.tags[0];
       sheet.data[row][2] = service.entity.description;
       sheet.data[row][3] = service.entity.provider;
     }
+    sheet.data[row][4] = service.metadata.created_at;
+    sheet.data[row][5] = service.metadata.updated_at;
 
     row++;
   });
