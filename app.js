@@ -7,9 +7,11 @@ var cfenv = require('cfenv');
 var favicon = require('serve-favicon');
 var app = express();
 var bodyParser = require('body-parser')
+var compress = require('compression');
 
 var appEnv = cfenv.getAppEnv();
 
+app.use(compress());
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use("/api/export", require('./export2office.js'));
