@@ -14,7 +14,7 @@ var authenticatedClient = new Client({
 var anonymousClient = new Client({
   host: 'api.ng.bluemix.net',
   protocol: 'https:',
-  token: "" //process.argv[2]
+  token: "" // no token, we get only what's public
 });
 
 var script = vm.createScript(fs.readFileSync('./public/js/categories.js'));
@@ -34,51 +34,96 @@ try {
   console.log(err);
 }
 
-async.parallel([
+async.waterfall([
   function (callback) {
     authenticatedClient.buildpacks.get(function (err, buildpacks) {
       if (err) {
-        console.log(err);
+        callback(err);
       } else {
         console.log("Found", buildpacks.length, "buildpacks");
         var stream = fs.createWriteStream("public/generated/buildpacks.json");
         stream.once('open', function (fd) {
           stream.write(JSON.stringify(buildpacks, null, 2));
         });
+        callback(null);
       }
-      callback(err);
     });
   },
   function (callback) {
     // use anonymous client so that we don't surface not public services
+    anonymousClient.servicePlans.get(function (err, servicePlans) {
+      if (err) {
+        callback(err);
+      } else {
+        servicePlans.forEach(function (plan) {
+          if (plan.entity.extra) {
+            plan.entity.extra = JSON.parse(plan.entity.extra);
+          }
+        });
+
+        console.log("Found", servicePlans.length, "service plans");
+        var stream = fs.createWriteStream("public/generated/plans.json");
+        stream.once('open', function (fd) {
+          stream.write(JSON.stringify(servicePlans, null, 2));
+        });
+        callback(null, servicePlans);
+      }
+    });
+  },
+  function (servicePlans, callback) {
+    // use anonymous client so that we don't surface not public services
     anonymousClient.services.get(function (err, services) {
       if (err) {
-        console.log(err);
+        callback(err);
       } else {
         console.log("Found", services.length, "services");
 
+        var guidToServices = [];
+
         // resolve the embedded JSON value
         services.forEach(function (service) {
+
+          // keep track of services to match their plans
+          guidToServices[service.metadata.guid] = service;
+
           if (service.entity.extra) {
             service.entity.extra = JSON.parse(service.entity.extra);
           }
-          
+
           // sort tags (categories first)
-          service.entity.tags.sort(function(tag1, tag2) {
+          service.entity.tags.sort(function (tag1, tag2) {
             var isCategory1 = categories.indexOf(tag1) >= 0
             var isCategory2 = categories.indexOf(tag2) >= 0
             if (isCategory1 && !isCategory2) {
               return -1;
             }
-            
+
             if (!isCategory1 && isCategory2) {
               return 1;
             }
-            
+
             return tag1.localeCompare(tag2);
           });
+
+          // not all ibm services have the ibm_created tag, fix this!
+          if (service.entity.provider != "core" &&
+              service.entity.tags.indexOf("ibm_created") < 0 &&
+              service.entity.tags.indexOf("ibm_third_party") < 0) {
+            var isIbmService;
+            service.entity.tags.forEach(function (tag) {
+              if (tag.indexOf("ibm_") == 0) {
+                isIbmService = true;
+              }
+            });
+            if (isIbmService) {
+              service.entity.tags.push("ibm_created");
+            }
+          }
+
+          // TODO: prepare the plans array
+          // service.plans = [];
         });
-        
+
         // sort on name
         services.sort(function (s1, s2) {
           var s1Name = s1.entity.label;
@@ -92,6 +137,14 @@ async.parallel([
           return s1Name.localeCompare(s2Name);
         });
 
+        // add plans
+        servicePlans.forEach(function (plan) {
+          //TODO: add plans guidToServices[plan.entity.service_guid].plans.push(plan);
+          // inject our custom "free" tag if the service has a free plan
+          if (plan.entity.free == true) {
+            guidToServices[plan.entity.service_guid].entity.tags.push("custom_has_free_plan");
+          }
+        });
 
         var stream = fs.createWriteStream("public/generated/services.json");
         stream.once('open', function (fd) {
@@ -99,25 +152,11 @@ async.parallel([
         });
 
         getImages(services);
+
+        callback(null);
       }
-      callback(err);
     });
   },
-    function (callback) {
-    // use anonymous client so that we don't surface not public services
-    anonymousClient.servicePlans.get(function (err, servicePlans) {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log("Found", servicePlans.length, "service plans");
-        var stream = fs.createWriteStream("public/generated/plans.json");
-        stream.once('open', function (fd) {
-          stream.write(JSON.stringify(servicePlans, null, 2));
-        });
-      }
-      callback(err);
-    });
-    },
   ], function (err, result) {
   if (err) {
     console.log(err);

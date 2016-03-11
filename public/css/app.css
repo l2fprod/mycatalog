@@ -3,10 +3,31 @@ body {
   padding-bottom: 40px;
 }
 
+table {
+  font-size: 14px;
+}
+
 .navbar {
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+}
+
+.search-title {
+  font-size: 14px;
+  vertical-align: top;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.search-body {
+  margin-bottom: 20px;
+}
+
+.tagFilter {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .service-small-icon {
@@ -46,14 +67,18 @@ footer {
   border-top: 1px solid rgba(0,0,0,.075);
 }
 
+.disclaimer {
+  font-size: 10px;
+}
 
 /** Loading... */
 .spinner {
   width: 48px;
   height: 48px;
   position: absolute;
-  bottom: 24px;
+  top: 2px;
   left: calc(50% - 24px);
+  z-index: 3000;
 }
 .double-bounce1,
 .double-bounce2 {
