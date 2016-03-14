@@ -4,24 +4,20 @@ var async = require('async');
 var request = require('request');
 var vm = require('vm');
 
-var authenticatedClient = new Client({
-  host: 'api.ng.bluemix.net',
-  protocol: 'https:',
-  token: process.argv[2]
-});
+//not used yet
+//var authenticatedClient = new Client({
+//  host: 'api.ng.bluemix.net',
+//  protocol: 'https:',
+//  token: process.argv[2]
+//});
 
-
-var anonymousClient = new Client({
-  host: 'api.ng.bluemix.net',
-  protocol: 'https:',
-  token: "" // no token, we get only what's public
-});
-
-var script = vm.createScript(fs.readFileSync('./public/js/categories.js'));
+var script = vm.createScript(fs.readFileSync('./public/js/bluemix-configuration.js'));
 var sandbox = {};
 script.runInNewContext(sandbox);
 var categories = sandbox.categories;
 console.log("Using categories", categories);
+var regions = sandbox.regions;
+console.log("Using regions", regions);
 
 try {
   fs.mkdirSync('public/generated');
@@ -34,133 +30,187 @@ try {
   console.log(err);
 }
 
-async.waterfall([
-  function (callback) {
-    authenticatedClient.buildpacks.get(function (err, buildpacks) {
-      if (err) {
-        callback(err);
-      } else {
-        console.log("Found", buildpacks.length, "buildpacks");
-        var stream = fs.createWriteStream("public/generated/buildpacks.json");
-        stream.once('open', function (fd) {
-          stream.write(JSON.stringify(buildpacks, null, 2));
-        });
-        callback(null);
+var tasks = [];
+
+// retrieve services from all regions
+regions.forEach(function (region) {
+  tasks.push(function (callback) {
+    getRegion(region.api, region.serviceFilename, callback);
+  });
+});
+
+function getRegion(api, outputFilename, callback) {
+  var anonymousClient = new Client({
+    host: api,
+    protocol: 'https:',
+    token: "" // no token, we get only what's public
+  });
+  console.log("Retrieving services for", api);
+  anonymousClient.services.get(function (err, services) {
+    if (err) {
+      callback(err);
+    } else {
+      console.log("Found", services.length, "services");
+      var stream = fs.createWriteStream(outputFilename);
+      stream.once('open', function (fd) {
+        stream.write(JSON.stringify(services, null, 2));
+      });
+      callback(null);
+    }
+  });
+};
+
+var services = [];
+
+// load the reference file and mark its services as present in the DC
+tasks.push(function (callback) {
+  services = JSON.parse(fs.readFileSync(regions[0].serviceFilename));
+  services.forEach(function (service) {
+    service.entity.tags.push("custom_datacenter_" + regions[0].id);
+  });
+  callback(null);
+});
+
+// add tags for the other regions
+regions.slice(1).forEach(function (otherRegion) {
+  tasks.push(function (callback) {
+    var otherServices = JSON.parse(fs.readFileSync(otherRegion.serviceFilename));
+
+    var uidToServices = [];
+    otherServices.forEach(function (service) {
+      uidToServices[service.entity.unique_id] = service;
+    });
+
+    // mark the services
+    services.forEach(function (service) {
+      if (uidToServices.hasOwnProperty(service.entity.unique_id)) {
+        service.entity.tags.push("custom_datacenter_" + otherRegion.id);
+        delete uidToServices[service.entity.unique_id];
       }
     });
-  },
-  function (callback) {
-    // use anonymous client so that we don't surface not public services
-    anonymousClient.servicePlans.get(function (err, servicePlans) {
-      if (err) {
-        callback(err);
-      } else {
-        servicePlans.forEach(function (plan) {
-          if (plan.entity.extra) {
-            plan.entity.extra = JSON.parse(plan.entity.extra);
-          }
-        });
 
-        console.log("Found", servicePlans.length, "service plans");
-        var stream = fs.createWriteStream("public/generated/plans.json");
-        stream.once('open', function (fd) {
-          stream.write(JSON.stringify(servicePlans, null, 2));
-        });
-        callback(null, servicePlans);
+    if (uidToServices.length > 0) {
+      console.log("Found", uidToServices.length, " only available in", otherRegion.id);
+    }
+
+    callback(null);
+  });
+});
+
+// we got all services now
+tasks.push(function (callback) {
+  // use anonymous client so that we don't surface not public services
+  console.log("Retrieving plans...");
+  var anonymousClient = new Client({
+    host: 'api.ng.bluemix.net',
+    protocol: 'https:',
+    token: "" // no token, we get only what's public
+  });
+  anonymousClient.servicePlans.get(function (err, servicePlans) {
+    if (err) {
+      callback(err);
+    } else {
+      servicePlans.forEach(function (plan) {
+        if (plan.entity.extra) {
+          plan.entity.extra = JSON.parse(plan.entity.extra);
+        }
+      });
+
+      console.log("Found", servicePlans.length, "service plans");
+      var stream = fs.createWriteStream("public/generated/plans.json");
+      stream.once('open', function (fd) {
+        stream.write(JSON.stringify(servicePlans, null, 2));
+      });
+      callback(null, servicePlans);
+    }
+  });
+});
+
+tasks.push(function (servicePlans, callback) {
+  // use anonymous client so that we don't surface not public services
+  var guidToServices = [];
+
+  // resolve the embedded JSON value
+  services.forEach(function (service) {
+
+    // keep track of services to match their plans
+    guidToServices[service.metadata.guid] = service;
+
+    if (service.entity.extra) {
+      service.entity.extra = JSON.parse(service.entity.extra);
+    }
+
+    // sort tags (categories first)
+    service.entity.tags.sort(function (tag1, tag2) {
+      var isCategory1 = categories.indexOf(tag1) >= 0
+      var isCategory2 = categories.indexOf(tag2) >= 0
+      if (isCategory1 && !isCategory2) {
+        return -1;
       }
-    });
-  },
-  function (servicePlans, callback) {
-    // use anonymous client so that we don't surface not public services
-    anonymousClient.services.get(function (err, services) {
-      if (err) {
-        callback(err);
-      } else {
-        console.log("Found", services.length, "services");
 
-        var guidToServices = [];
-
-        // resolve the embedded JSON value
-        services.forEach(function (service) {
-
-          // keep track of services to match their plans
-          guidToServices[service.metadata.guid] = service;
-
-          if (service.entity.extra) {
-            service.entity.extra = JSON.parse(service.entity.extra);
-          }
-
-          // sort tags (categories first)
-          service.entity.tags.sort(function (tag1, tag2) {
-            var isCategory1 = categories.indexOf(tag1) >= 0
-            var isCategory2 = categories.indexOf(tag2) >= 0
-            if (isCategory1 && !isCategory2) {
-              return -1;
-            }
-
-            if (!isCategory1 && isCategory2) {
-              return 1;
-            }
-
-            return tag1.localeCompare(tag2);
-          });
-
-          // not all ibm services have the ibm_created tag, fix this!
-          if (service.entity.provider != "core" &&
-              service.entity.tags.indexOf("ibm_created") < 0 &&
-              service.entity.tags.indexOf("ibm_third_party") < 0) {
-            var isIbmService;
-            service.entity.tags.forEach(function (tag) {
-              if (tag.indexOf("ibm_") == 0) {
-                isIbmService = true;
-              }
-            });
-            if (isIbmService) {
-              service.entity.tags.push("ibm_created");
-            }
-          }
-
-          // TODO: prepare the plans array
-          // service.plans = [];
-        });
-
-        // sort on name
-        services.sort(function (s1, s2) {
-          var s1Name = s1.entity.label;
-          if (s1.entity.extra) {
-            s1Name = s1.entity.extra.displayName || s1.entity.label;
-          }
-          var s2Name = s2.entity.label;
-          if (s2.entity.extra) {
-            s2Name = s2.entity.extra.displayName || s2.entity.label;
-          }
-          return s1Name.localeCompare(s2Name);
-        });
-
-        // add plans
-        servicePlans.forEach(function (plan) {
-          //TODO: add plans guidToServices[plan.entity.service_guid].plans.push(plan);
-          // inject our custom "free" tag if the service has a free plan
-          if (plan.entity.free == true) {
-            guidToServices[plan.entity.service_guid].entity.tags.push("custom_has_free_plan");
-          }
-        });
-
-        var stream = fs.createWriteStream("public/generated/services.json");
-        stream.once('open', function (fd) {
-          stream.write(JSON.stringify(services, null, 2));
-        });
-
-        getImages(services);
-
-        callback(null);
+      if (!isCategory1 && isCategory2) {
+        return 1;
       }
+
+      return tag1.localeCompare(tag2);
     });
-  },
-  ], function (err, result) {
+
+    // not all ibm services have the ibm_created tag, fix this!
+    if (service.entity.provider != "core" &&
+      service.entity.tags.indexOf("ibm_created") < 0 &&
+      service.entity.tags.indexOf("ibm_third_party") < 0) {
+      var isIbmService;
+      service.entity.tags.forEach(function (tag) {
+        if (tag.indexOf("ibm_") == 0) {
+          isIbmService = true;
+        }
+      });
+      if (isIbmService) {
+        service.entity.tags.push("ibm_created");
+      }
+    }
+
+    // TODO: prepare the plans array
+    // service.plans = [];
+  });
+
+  // sort on name
+  services.sort(function (s1, s2) {
+    var s1Name = s1.entity.label;
+    if (s1.entity.extra) {
+      s1Name = s1.entity.extra.displayName || s1.entity.label;
+    }
+    var s2Name = s2.entity.label;
+    if (s2.entity.extra) {
+      s2Name = s2.entity.extra.displayName || s2.entity.label;
+    }
+    return s1Name.localeCompare(s2Name);
+  });
+
+  // add plans
+  servicePlans.forEach(function (plan) {
+    //TODO: add plans guidToServices[plan.entity.service_guid].plans.push(plan);
+    // inject our custom "free" tag if the service has a free plan
+    if (plan.entity.free == true) {
+      guidToServices[plan.entity.service_guid].entity.tags.push("custom_has_free_plan");
+    }
+  });
+
+  var stream = fs.createWriteStream("public/generated/services.json");
+  stream.once('open', function (fd) {
+    stream.write(JSON.stringify(services, null, 2));
+  });
+
+  getImages(services);
+
+  callback(null);
+});
+
+async.waterfall(tasks, function (err, result) {
   if (err) {
     console.log(err);
   } else {
+    console.log("Got", services.length, "from all regions");
     console.log("Retrieved all data");
   }
 });
@@ -206,6 +256,7 @@ function getImages(services) {
   });
 
   async.parallel(tasks, function (err, result) {
+    console.log("Retrieved all icons");
     if (err) {
       console.log(err);
     }

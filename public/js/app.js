@@ -68,6 +68,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
     services: []
   };
   $scope.categories = categories;
+  $scope.regions = regions;
 
   $scope.filterConfiguration = {
     enabled: true,
