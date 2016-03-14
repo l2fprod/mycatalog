@@ -77,7 +77,17 @@
             <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
           </td>
         </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button class="btn btn-sm btn-success" ng-click="selectFiltered()">Add to selection</button>
+            <button class="btn btn-sm btn-danger" ng-click="deselectFiltered()">Remove from selection</button>
+          </td>
+        </tr>
       </table>
+    </div>
+
+    <div>
     </div>
 
     <div class="table-reponsive">
