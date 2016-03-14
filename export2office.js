@@ -287,7 +287,7 @@ function exportToPowerpoint(services, res) {
                 color: '0000ff'
             });
 
-            slide.addText(slide.getPageNumber(), {
+            slide.addText(slide.getPageNumber()+1, {
                 x: 1150,
                 y: 630,
                 cx: '100',

@@ -68,6 +68,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
     services: []
   };
   $scope.categories = categories;
+  $scope.regions = regions;
 
   $scope.filterConfiguration = {
     enabled: true,
@@ -92,6 +93,39 @@ catalogApp.controller('MainController', function ($scope, $http) {
       return null;
     }
   };
+
+  $scope.selectAll = function () {
+    $scope.selection.services = $scope.services.map(function (service) {
+      return service.metadata.guid;
+    });
+  }
+
+  $scope.deselectAll = function () {
+    $scope.selection.services = [];
+  }
+
+  $scope.selectFiltered = function () {
+    $scope.filteredServices.forEach(function (service) {
+      if ($scope.selection.services.indexOf(service.metadata.guid) < 0) {
+        $scope.selection.services.push(service.metadata.guid);
+      }
+    });
+  }
+
+  $scope.deselectFiltered = function () {
+    var filteredGuids = $scope.filteredServices.map(function (service) {
+      return service.metadata.guid;
+    });
+
+    // remove the guid currently visible
+    var newSelection =
+      $scope.selection.services.filter(function (guid) {
+        return filteredGuids.indexOf(guid) < 0;
+      });
+
+    $scope.selection.services = [];
+    $scope.selection.services = newSelection;
+  }
 
   $scope.exportSelection = function (format) {
     if ($scope.selection.services.length > 0) {
