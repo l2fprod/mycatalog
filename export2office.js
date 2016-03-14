@@ -9,7 +9,8 @@ var officegen = require('officegen');
 
 // Get the date of the office export
 var date = new Date();
-var genDate = moment(date).format('YYYYMMDD');
+var dateYMD = moment(date).format('YYYY-MM-DD');
+var dateMDY = moment(date).format('MMMM DD, YYYY');
 
 router.post('/:format', function (req, res) {
     var servicesToExport;
@@ -65,10 +66,14 @@ function exportToExcel(services, res) {
         sheet.data[0][1] = "Category";
         sheet.data[0][2] = "Description";
         sheet.data[0][3] = "Author";
-        sheet.data[0][4] = "Creation Date";
-        sheet.data[0][5] = "Last Modification";
-        sheet.data[0][6] = "Long Description";
-        sheet.data[0][7] = "URL";
+        sheet.data[0][4] = "Status";
+        sheet.data[0][5] = "Free Plan";
+        //sheet.data[0][5] = "Regions";
+        
+        sheet.data[0][6] = "Creation Date";
+        sheet.data[0][7] = "Last Modification";
+        sheet.data[0][8] = "Long Description";
+        sheet.data[0][9] = "URL";
 
         // Cell Content
         sheet.data[row] = [];
@@ -79,22 +84,25 @@ function exportToExcel(services, res) {
             sheet.data[row][1] = service.entity.tags[0];
             sheet.data[row][2] = service.entity.description;
             sheet.data[row][3] = extra.providerDisplayName;
-            sheet.data[row][6] = extra.longDescription;
-            sheet.data[row][7] = extra.documentationUrl;
+            sheet.data[row][8] = extra.longDescription;
+            sheet.data[row][9] = extra.documentationUrl;
         } else {
             sheet.data[row][0] = service.entity.label;
             sheet.data[row][1] = service.entity.tags[0];
             sheet.data[row][2] = service.entity.description;
             sheet.data[row][3] = service.entity.provider;
         }
-        sheet.data[row][4] = service.metadata.created_at;
-        sheet.data[row][5] = service.metadata.updated_at;
+        sheet.data[row][4] = ""; //TODO
+        sheet.data[row][5] = ""; //TODO
+        
+        sheet.data[row][6] = service.metadata.created_at;
+        sheet.data[row][7] = service.metadata.updated_at;
 
         row++;
     });
 
     res.setHeader("Content-Type", "application/octet-stream");
-    res.setHeader("Content-Disposition", "inline; filename=catalog-" + genDate + ".xlsx");
+    res.setHeader("Content-Disposition", "inline; filename=catalog-" + dateYMD + ".xlsx");
     xlsx.generate(res);
 }
 
@@ -107,23 +115,47 @@ function exportToPowerpoint(services, res) {
     pptx.setWidescreen(true);
 
     // Intro slide
-    /*
     slide = pptx.makeNewSlide();
-    slide.addText("Catalog exported on " + genDate, {
+    slide.back = '1E3648';
+    slide.addText("My Bluemix Catalog", {
         x: 150,
-        y: 30,
+        y: 100,
         cx: '100%',
-        font_size: 30,
-        bold: true
+        font_size: 40,
+        bold: true,
+        color: 'ffffff'
     });
-     slide.addText("This catalog uses the Cloudfoundry API to retrieve data from the Bluemix US catalog. It tries to be as accurate as possible. Use with care." + genDate, {
+    slide.addText("Exported on " + dateMDY, {
         x: 150,
-        y: 30,
+        y: 180,
         cx: '100%',
-        font_size: 30,
-        bold: true
+        font_size: 40,
+        bold: true,
+        color: 'ffffff'
     });
-    */
+    slide.addText("This catalog uses the Cloudfoundry API to retrieve data from the Bluemix US catalog.", {
+        x: 150,
+        y: 400,
+        cx: '800',
+        font_size: 30,
+        bold: false,
+        color: '808080'
+    });
+    slide.addText("It tries to be as accurate as possible. Use with care.", {
+        x: 150,
+        y: 500,
+        cx: '900',
+        font_size: 30,
+        bold: false,
+        color: '808080'
+    });
+    slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'), {
+        x: 1100,
+        y: 30,
+        cx: 90,
+        cy: 100
+    });
+
 
     services.forEach(function (service) {
         if (!service.entity.active) {
@@ -143,8 +175,8 @@ function exportToPowerpoint(services, res) {
             slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'), {
                 x: 1100,
                 y: 30,
-                cx: 70,
-                cy: 70
+                cx: 90,
+                cy: 100
             });
         } catch (err) {}
 
@@ -161,7 +193,7 @@ function exportToPowerpoint(services, res) {
             slide.addText(service.entity.description, {
                 x: 100,
                 y: 150,
-                cx: '1100',
+                cx: '1000',
                 font_size: 20,
                 color: '808080'
             });
@@ -169,22 +201,82 @@ function exportToPowerpoint(services, res) {
             slide.addText(extra.longDescription, {
                 x: 100,
                 y: 250,
-                cx: '1100',
-                font_size: 20
+                cx: '700',
+                font_size: 18
             });
 
+            slide.addShape("rect", {x: 830, y: 230, cx: 350 , cy: 300, fill: '47A9C0'});
             slide.addText("Author: ", {
-                x: 100,
-                y: 530,
+                x: 850,
+                y: 250,
                 cx: '100%',
-                font_size: 20,
-                bold: true
+                font_size: 18,
+                bold: false,
+                color: 'ffffff'
             });
             slide.addText(extra.providerDisplayName, {
-                x: 200,
-                y: 530,
+                x: 1000,
+                y: 250,
+                cx: '200',
+                font_size: 18,
+                color: 'ffffff'
+            });
+            slide.addText("Category: ", {
+                x: 850,
+                y: 300,
                 cx: '100%',
-                font_size: 20
+                font_size: 18,
+                bold: false,
+                color: 'ffffff'
+            });
+            slide.addText(service.entity.tags[0], {
+                x: 1000,
+                y: 300,
+                cx: '200',
+                font_size: 18,
+                color: 'ffffff'
+            });
+            slide.addText("State: ", {
+                x: 850,
+                y: 350,
+                cx: '100%',
+                font_size: 18,
+                color: 'ffffff'
+            });
+            slide.addText("TODO", {
+                x: 1000,
+                y: 350,
+                cx: '200',
+                font_size: 18,
+                color: 'ffffff'
+            });
+            slide.addText("Free Plan: ", {
+                x: 850,
+                y: 400,
+                cx: '100%',
+                font_size: 18,
+                color: 'ffffff'
+            });
+            slide.addText("Yes/No", {
+                x: 1000,
+                y: 400,
+                cx: '200',
+                font_size: 18,
+                color: 'ffffff'
+            });
+            slide.addText("Regions: ", {
+                x: 850,
+                y: 450,
+                cx: '100%',
+                font_size: 18,
+                color: 'ffffff'
+            });
+            slide.addText("Yes/No", {
+                x: 1000,
+                y: 450,
+                cx: '200',
+                font_size: 18,
+                color: 'ffffff'
             });
 
             slide.addText(extra.documentationUrl, {
@@ -224,7 +316,7 @@ function exportToPowerpoint(services, res) {
     });
 
     res.setHeader("Content-Type", "application/octet-stream");
-    res.setHeader("Content-Disposition", "inline; filename=catalog-" + genDate + ".pptx");
+    res.setHeader("Content-Disposition", "inline; filename=catalog-" + dateYMD + ".pptx");
     pptx.generate(res);
 }
 
@@ -286,7 +378,7 @@ function exportToWord(services, res) {
     });
 
     res.setHeader("Content-Type", "application/octet-stream");
-    res.setHeader("Content-Disposition", "inline; filename=catalog-" + genDate + ".docx");
+    res.setHeader("Content-Disposition", "inline; filename=catalog-" + dateYMD + ".docx");
     docx.generate(res);
 }
 
