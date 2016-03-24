@@ -15,7 +15,7 @@ var regions = [
   {
     id: "us",
     api: "api.ng.bluemix.net",
-    serviceFilename: "public/generated/services.json",
+    serviceFilename: "public/generated/services.us-south.json",
     tag: "custom_datacenter_us",
     label: "US"
   },
