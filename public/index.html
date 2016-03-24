@@ -113,7 +113,7 @@
             <img ng-if="service.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" />
           </td>
           <td class="service-displayname">
-            <a href="https://console.ng.bluemix.net/catalog/services/{{service.entity.label}}">
+            <a href="{{consoleUrl(service)}}">
               {{service.entity.extra.displayName || service.entity.label}}
             </a>
           </td>

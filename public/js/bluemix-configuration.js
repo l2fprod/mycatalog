@@ -15,6 +15,7 @@ var regions = [
   {
     id: "us",
     api: "api.ng.bluemix.net",
+    console: "console.ng.bluemix.net",
     serviceFilename: "public/generated/services.us-south.json",
     tag: "custom_datacenter_us",
     label: "US"
@@ -22,6 +23,7 @@ var regions = [
   {
     id: "eu-gb",
     api: "api.eu-gb.bluemix.net",
+    console: "console.eu-gb.bluemix.net",
     serviceFilename: "public/generated/services.eu-gb.json",
     tag: "custom_datacenter_eu-gb",
     label: "UK"
@@ -29,6 +31,7 @@ var regions = [
   {
     id: "au-syd",
     api: "api.au-syd.bluemix.net",
+    console: "console.au-syd.bluemix.net",
     serviceFilename: "public/generated/services.au-syd.json",
     tag: "custom_datacenter_au-syd",
     label: "AU"
