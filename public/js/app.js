@@ -137,6 +137,16 @@ catalogApp.controller('MainController', function ($scope, $http) {
     }
   }
 
+  $scope.consoleUrl = function(service) {
+    var link;
+    $scope.regions.forEach(function(region) {
+      if (!link && service.entity.tags.indexOf(region.tag) >= 0) {
+        link = "https://" + region.console + "/catalog/services/" + service.entity.label;
+      }
+    });
+    return link;
+  }
+  
   $http.get("/generated/services.json").success(function (services) {
     $scope.services = services;
   });
