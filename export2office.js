@@ -10,7 +10,7 @@ var script = vm.createScript(fs.readFileSync('./public/js/bluemix-configuration.
 var sandbox = {};
 script.runInNewContext(sandbox);
 var regions = sandbox.regions;
-//
+var categories = sandbox.categories;
 
 router.post('/:format', function (req, res) {
   var services = JSON.parse(fs.readFileSync('public/generated/services.json', 'utf8'));
@@ -94,7 +94,11 @@ function exportToExcel(services, dateMDY, res) {
     var extra = service.entity.extra;
     if (extra && extra.displayName) {
       sheet.data[row][0] = extra.displayName;
-      sheet.data[row][1] = service.entity.tags[0];
+      //sheet.data[row][1] = service.entity.tags[0];
+      for (var cat in categories) {
+        if (service.entity.tags[0] == categories[cat].id)
+          sheet.data[row][1] = categories[cat].label;
+      }
       sheet.data[row][2] = service.entity.description;
       sheet.data[row][3] = extra.providerDisplayName;
       sheet.data[row][9] = extra.longDescription;
@@ -257,14 +261,19 @@ function exportToPowerpoint(services, dateMDY, res) {
         bold: false,
         color: 'ffffff'
       });
-      slide.addText(service.entity.tags[0], {
-        x: 1000,
-        y: 300,
-        cx: '200',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
+      for (var category in categories) {
+        if (service.entity.tags[0] == categories[category].id) {
+          cat = categories[category].label;
+          slide.addText(cat, {
+            x: 1000,
+            y: 300,
+            cx: '300',
+            font_size: 18,
+            color: 'ffffff',
+            bold: false
+          });
+        }
+      }
       slide.addText("Status: ", {
         x: 850,
         y: 350,

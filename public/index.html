@@ -65,10 +65,15 @@
           <td>
             <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_created', true)">IBM</button>
             <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">beta</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)">experimental</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)">free plan</button>
-            <button ng-repeat="category in categories" type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration(category, true)">{{category}}</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">Beta</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)">Experimental</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)">Free plan</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="search-title"><span class="text-muted">CATEGORIES:</span></td>
+          <td>
+            <button ng-repeat="category in categories" type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
           </td>
         </tr>
         <tr>

@@ -1,4 +1,4 @@
-var categories = [
+/*var categories = [
   "dev_ops",
   "big_data",
   "internet_of_things",
@@ -9,6 +9,57 @@ var categories = [
   "data_management",
   "network",
   "integration"
+];*/
+
+var categories = [
+  {
+    id: "dev_ops",
+    label: "DevOps"
+  },
+  {
+    id: "big_data",
+    label: "Data and Analytics"
+  },
+  {
+    id: "business_analytics",
+    label: "Business Analytics"
+  },
+  {
+    id: "internet_of_things",
+    label: "IoT"
+  },
+  {
+    id: "web_and_app",
+    label: "Web and Application"
+  },
+  {
+    id: "mobile",
+    label: "Mobile"
+  },
+  {
+    id: "security",
+    label: "Security"
+  },
+  {
+    id: "storage",
+    label: "Storage"
+  },
+  {
+    id: "watson",
+    label: "Watson"
+  },
+  {
+    id: "data_management",
+    label: "Data"
+  },
+  {
+    id: "network",
+    label: "Network"
+  },
+  {
+    id: "integration",
+    label: "Integration"
+  }
 ];
 
 var regions = [

@@ -10,7 +10,8 @@ function ServiceUpdater() {
   var script = vm.createScript(fs.readFileSync('./public/js/bluemix-configuration.js'));
   var sandbox = {};
   script.runInNewContext(sandbox);
-  var categories = sandbox.categories;
+ 
+  var categories = sandbox.categories.map(function(category){ return category.id; });
   var regions = sandbox.regions;
 
   try {
@@ -120,6 +121,7 @@ function ServiceUpdater() {
         service.entity.tags.sort(function (tag1, tag2) {
           var isCategory1 = categories.indexOf(tag1) >= 0
           var isCategory2 = categories.indexOf(tag2) >= 0
+          
           if (isCategory1 && !isCategory2) {
             return -1;
           }
