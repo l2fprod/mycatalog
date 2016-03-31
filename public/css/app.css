@@ -3,6 +3,14 @@ body {
   padding-bottom: 40px;
 }
 
+@media (max-width: 990px) {
+  body {
+    padding-top: 120px;
+  }
+}
+
+
+
 table {
   font-size: 13px;
 }
@@ -22,6 +30,12 @@ table {
 }
 
 .search-body {
+}
+
+.search-input {
+  width: 723px;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .tagFilter {
