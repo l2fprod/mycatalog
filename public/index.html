@@ -138,11 +138,11 @@
           </td>
           <td class="service-tags">
             <span ng-if="service.entity.tags.indexOf('ibm_created')>=0" class="label label-primary">IBM</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_third_party')>=0" class="label label-primary">Third party</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_beta')>=0" class="label label-warning">beta</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_experimental')>=0" class="label label-danger">experimental</span>
+            <span ng-if="service.entity.tags.indexOf('ibm_third_party')>=0" class="label label-success">Third party</span>
+            <span ng-if="service.entity.tags.indexOf('ibm_beta')>=0" class="label label-warning">Beta</span>
+            <span ng-if="service.entity.tags.indexOf('ibm_experimental')>=0" class="label label-danger">Experimental</span>
 
-            <span ng-if="service.entity.tags.indexOf('custom_has_free_plan')>=0" class="label label-info">free plan</span>
+            <span ng-if="service.entity.tags.indexOf('custom_has_free_plan')>=0" class="label label-info">Free plan</span>
 
             <span ng-repeat="tag in service.entity.tags | filter: tagFilter">
               <span class="label label-info">{{tag}}</span>
