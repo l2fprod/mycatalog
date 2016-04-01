@@ -21,6 +21,10 @@ var categories = [
     label: "Data and Analytics"
   },
   {
+    id: "data_management",
+    label: "Data"
+  },
+  {
     id: "business_analytics",
     label: "Business Analytics"
   },
@@ -47,10 +51,6 @@ var categories = [
   {
     id: "watson",
     label: "Watson"
-  },
-  {
-    id: "data_management",
-    label: "Data"
   },
   {
     id: "network",
