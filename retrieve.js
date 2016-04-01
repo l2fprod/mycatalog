@@ -162,7 +162,7 @@ function ServiceUpdater() {
         if (s2.entity.extra) {
           s2Name = s2.entity.extra.displayName || s2.entity.label;
         }
-        return s1Name.localeCompare(s2Name, "en", { sensitivity: "base" });
+        return s1Name.toLocaleLowerCase().localeCompare(s2Name.toLocaleLowerCase());
       });
 
       // add plans
