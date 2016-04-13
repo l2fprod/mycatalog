@@ -69,7 +69,8 @@ catalogApp.controller('MainController', function ($scope, $http) {
   };
   $scope.categories = categories;
   $scope.regions = regions;
-
+  $scope.slaveService = {};
+  
   $scope.filterConfiguration = {
     enabled: true,
     includeTags: [],
@@ -137,14 +138,28 @@ catalogApp.controller('MainController', function ($scope, $http) {
     }
   }
 
-  $scope.consoleUrl = function(service) {
+  $scope.consoleUrl = function (service) {
     var link;
-    $scope.regions.forEach(function(region) {
+    $scope.regions.forEach(function (region) {
       if (!link && service.entity.tags.indexOf(region.tag) >= 0) {
         link = "https://" + region.console + "/catalog/services/" + service.entity.label;
       }
     });
     return link;
+  }
+
+  $scope.showServiceDetails = function(service) {
+    console.log("Showing service details", service.entity.label);
+    $scope.slaveService = service;
+    $("#serviceDetails").modal();
+  }
+
+  $scope.quote = function(text) {
+    if (text && text.indexOf(" ") >= 0) {
+      return '"' + text + '"';
+    } else {
+      return text;
+    }
   }
   
   $http.get("/generated/services.json").success(function (services) {
