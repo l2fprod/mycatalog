@@ -42,9 +42,9 @@
       Export
       <span ng-if="selection.services.length==0">catalog</span>
       <span ng-if="selection.services.length>0">selected services</span> to
-      <a href="#" ng-click="exportSelection('docx')">Word</a> |
-      <a href="#" ng-click="exportSelection('xlsx')">Excel</a> |
-      <a href="#" ng-click="exportSelection('pptx')">Powerpoint</a>
+      <a href="#" class="tracking" data-track-action="Export" data-track-label="Word" ng-click="exportSelection('docx')">Word</a> |
+      <a href="#" class="tracking" data-track-action="Export" data-track-label="Excel" ng-click="exportSelection('xlsx')">Excel</a> |
+      <a href="#" class="tracking" data-track-action="Export" data-track-label="Powerpoint" ng-click="exportSelection('pptx')">Powerpoint</a>
     </p>
   </div>
 
@@ -62,24 +62,24 @@
         <tr>
           <td class="search-title"><span class="text-muted">Filters:</span></td>
           <td>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_created', true)">IBM</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">Beta</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)">Experimental</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)">Free plan</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs">Syndicated</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="IBM" data-toggle="button" ng-click="toggleTagConfiguration('ibm_created', true)">IBM</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Third party" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Beta" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">Beta</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)">Experimental</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)">Free plan</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs">Syndicated</button>
           </td>
         </tr>
         <tr>
           <td class="search-title"><span class="text-muted">Categories:</span></td>
           <td>
-            <button ng-repeat="category in categories" type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
+            <button ng-repeat="category in categories" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{category.label}}" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
           </td>
         </tr>
         <tr>
           <td class="search-title"><span class="text-muted">Regions:</span></td>
           <td>
-            <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
+            <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{region.label}}" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
           </td>
         </tr>
         <tr>
@@ -112,13 +112,13 @@
         </thead>
         <tr ng-repeat="service in (filteredServices = (services | filter:searchText | filterPanel:filterConfiguration))">
           <td>
-            <input type="checkbox" checklist-model="selection.services" checklist-value="service.metadata.guid">
+            <input type="checkbox" checklist-model="selection.services" checklist-value="service.metadata.guid" class="tracking" data-track-action="Select" data-track-label="{{service.entity.label}}">
           </td>
           <td class="service-icon">
             <img ng-if="service.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" />
           </td>
           <td class="service-displayname">
-            <a href="{{consoleUrl(service)}}">{{service.entity.extra.displayName || service.entity.label}}</a> <a ng-click="showServiceDetails(service)" href=""><i class="fa fa-wrench"></i></a>
+            <a href="{{consoleUrl(service)}}">{{service.entity.extra.displayName || service.entity.label}}</a> <a ng-click="showServiceDetails(service)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-wrench"></i></a>
           </td>
           <td class="service-description">{{service.entity.description}}</td>
           <td class="service-region" ng-repeat="region in regions">

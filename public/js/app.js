@@ -70,7 +70,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
   $scope.categories = categories;
   $scope.regions = regions;
   $scope.slaveService = {};
-  
+
   $scope.filterConfiguration = {
     enabled: true,
     includeTags: [],
@@ -148,21 +148,40 @@ catalogApp.controller('MainController', function ($scope, $http) {
     return link;
   }
 
-  $scope.showServiceDetails = function(service) {
+  $scope.showServiceDetails = function (service) {
     console.log("Showing service details", service.entity.label);
     $scope.slaveService = service;
     $("#serviceDetails").modal();
   }
 
-  $scope.quote = function(text) {
+  $scope.quote = function (text) {
     if (text && text.indexOf(" ") >= 0) {
       return '"' + text + '"';
     } else {
       return text;
     }
   }
-  
+
   $http.get("/generated/services.json").success(function (services) {
     $scope.services = services;
+  });
+});
+
+// Allow to tag elements with "tracking" and metadata.
+// Events are sent to analytics.
+$(document).ready(function () {
+  function track(item) {
+    var e = item.getAttribute("data-track-category");
+    e || (e = "Outbound");
+    var i = item.getAttribute("data-track-action");
+    i || (i = "Click");
+    var n = item.getAttribute("data-track-label");
+    n || (n = "Link");
+    try {
+      ga("send", "event", e, i, n);
+    } catch (o) {}
+  }
+  $("body").on("click", ".tracking", function () {
+    track(this);
   });
 });
