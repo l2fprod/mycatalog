@@ -39,7 +39,8 @@
     <b>{{services.length}}</b> services in the catalog<span ng-if="filteredServices.length != services.length">, <b>{{filteredServices.length}}</b> services matching the search criteria</span><span ng-if="selection.services.length>0">, <b>{{selection.services.length}}</b> services selected</span>
 
     <p class="pull-right">
-      Export
+        <span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
+        Export
       <span ng-if="selection.services.length==0">catalog</span>
       <span ng-if="selection.services.length>0">selected services</span> to
       <a href="#" class="tracking" data-track-action="Export" data-track-label="Word" ng-click="exportSelection('docx')">Word</a> |
