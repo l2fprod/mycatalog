@@ -104,6 +104,7 @@
             <th rowspan="2"></th>
             <th rowspan="2"></th>
             <th rowspan="2">Service</th>
+            <th rowspan="2">CLI</th>
             <th rowspan="2">Description</th>
             <th colspan="{{regions.length}}">Regions</th>
             <th rowspan="2">Tags</th>
@@ -120,7 +121,10 @@
             <img ng-if="service.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" />
           </td>
           <td class="service-displayname">
-            <a href="{{consoleUrl(service)}}">{{service.entity.extra.displayName || service.entity.label}}</a> <a ng-click="showServiceDetails(service)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-wrench"></i></a>
+            <a href="{{consoleUrl(service)}}">{{service.entity.extra.displayName || service.entity.label}}</a>
+          </td>
+          <td>
+              <a ng-click="showServiceDetails(service)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-wrench"></i></a>
           </td>
           <td class="service-description">{{service.entity.description}}</td>
           <td class="service-region" ng-repeat="region in regions">
@@ -167,7 +171,7 @@
             <p class="text-muted">
               {{plan.entity.description}}
             </p>
-            <input class="form-control" type="text" value="cf create-service {{quote(slaveService.entity.label)}} {{quote(plan.entity.name)}} foo" />
+            <input class="form-control" type="text" value="cf create-service {{quote(slaveService.entity.label)}} {{quote(plan.entity.name)}} <service-name>" />
           </div>
         </div>
         <div class="modal-footer">
