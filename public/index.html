@@ -39,7 +39,7 @@
     <b>{{services.length}}</b> services in the catalog<span ng-if="filteredServices.length != services.length">, <b>{{filteredServices.length}}</b> services matching the search criteria</span><span ng-if="selection.services.length>0">, <b>{{selection.services.length}}</b> services selected</span>
 
     <p class="pull-right">
-        <span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
+        <span class="fa fa-arrow-right" aria-hidden="true"></span>
         Export
       <span ng-if="selection.services.length==0">catalog</span>
       <span ng-if="selection.services.length>0">selected services</span> to
@@ -67,9 +67,9 @@
             <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Third party" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
             <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', false); toggleTagConfiguration('ibm_beta', false)">Production Ready</button>
             <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Beta" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">Beta</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)">Experimental</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)">Free plan</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs">Syndicated</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
+            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;Syndicated</button>
           </td>
         </tr>
         <tr>
@@ -124,7 +124,7 @@
             <a href="{{consoleUrl(service)}}">{{service.entity.extra.displayName || service.entity.label}}</a>
           </td>
           <td>
-              <a ng-click="showServiceDetails(service)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-wrench"></i></a>
+              <a ng-click="showServiceDetails(service)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-code"></i></a>
           </td>
           <td class="service-description">{{service.entity.description}}</td>
           <td class="service-region" ng-repeat="region in regions">
