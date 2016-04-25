@@ -1,4 +1,6 @@
 applications:
-- name: mybluemixcatalog
-  host: mybluemixcatalog
+- name: mycatalog
+  host: mycatalog
   memory: 256M
+  services:
+    mycatalog-cloudant

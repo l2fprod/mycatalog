@@ -1,1 +1,1 @@
-node retrieve.js
+node -e "require('./retrieve.js')().run(null)"

@@ -12,10 +12,11 @@ var compress = require('compression');
 var appEnv = cfenv.getAppEnv();
 
 app.use(compress());
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
 
 app.use("/api/export", require('./export2office.js'));
-
 
 // serve the files out of ./public as our main files
 app.use(express.static('./public'));
@@ -26,6 +27,71 @@ app.listen(appEnv.port, "0.0.0.0", function () {
   // print a message when the server starts listening
   console.log("server starting on " + appEnv.url);
 });
+
+// load local VCAP configuration
+var vcapLocal = null
+try {
+  vcapLocal = require("./vcap-local.json");
+  console.log("Loaded local VCAP", vcapLocal);
+} catch (e) {
+  console.error(e);
+}
+var appEnvOpts = vcapLocal ? {
+  vcap: vcapLocal
+} : {}
+var appEnv = cfenv.getAppEnv(appEnvOpts);
+var snapshotDb;
+var snapshotDbCredentials = appEnv.getServiceCreds("mycatalog-cloudant");
+if (snapshotDbCredentials) {
+  require("./database.js")(snapshotDbCredentials.url, "snapshots", function (err, database) {
+    if (err) {
+      console.log(err);
+    } else {
+      snapshotDb = database;
+    }
+    initializeServiceUpdater();
+  });
+} else {
+  console.log("No database configured.");
+  initializeServiceUpdater();
+}
+
+function initializeServiceUpdater() {
+  // do a first run
+  var serviceUpdater = require('./retrieve.js')();
+  serviceUpdater.run(function (err, services) {
+    saveSnapshotCallback(err, services);
+    // and schedule future runs
+    var CronJob = require('cron').CronJob;
+    new CronJob({
+      cronTime: '0 0 1 * * *',
+      onTick: function () {
+        console.log(new Date(), "Updating services...");
+        serviceUpdater.run(saveSnapshotCallback);
+      },
+      start: true,
+      timeZone: 'America/Los_Angeles'
+    });
+  });
+}
+
+function saveSnapshotCallback(err, services) {
+  if (!err && snapshotDb) {
+    var snapshot = {
+      type: "snapshot",
+      createdAt: new Date(),
+      services: services
+    }
+    snapshotDb.insert(snapshot, function (err, body) {
+      if (err) {
+        console.log("Failed to persist services snapshot");
+      } else {
+        console.log("Saved services snapshot.");
+      }
+    });
+  }
+}
+
 //------------------------------------------------------------------------------
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.

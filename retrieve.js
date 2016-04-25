@@ -284,6 +284,3 @@ function ServiceUpdater() {
 module.exports = function () {
   return new ServiceUpdater();
 }
-
-
-new ServiceUpdater().run();
