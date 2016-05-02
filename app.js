@@ -48,30 +48,29 @@ if (snapshotDbCredentials) {
       console.log(err);
     } else {
       snapshotDb = database;
+      app.use("/api/updates", require("./updates.js")(snapshotDb));
     }
-    initializeServiceUpdater();
+    scheduleUpdater();
   });
 } else {
   console.log("No database configured.");
-  initializeServiceUpdater();
+  scheduleUpdater();
+  app.use("/api/updates", require("./updates.js")(undefined));
 }
 
-function initializeServiceUpdater() {
-  // do a first run
+function scheduleUpdater() {
+  // schedule future runs
+  console.log("Scheduling auto-update");
   var serviceUpdater = require('./retrieve.js')();
-  serviceUpdater.run(function (err, services) {
-    saveSnapshotCallback(err, services);
-    // and schedule future runs
-    var CronJob = require('cron').CronJob;
-    new CronJob({
-      cronTime: '0 0 1 * * *',
-      onTick: function () {
-        console.log(new Date(), "Updating services...");
-        serviceUpdater.run(saveSnapshotCallback);
-      },
-      start: true,
-      timeZone: 'America/Los_Angeles'
-    });
+  var CronJob = require('cron').CronJob;
+  new CronJob({
+    cronTime: '0 0 1 * * *',
+    onTick: function () {
+      console.log(new Date(), "Updating services...");
+      serviceUpdater.run(saveSnapshotCallback);
+    },
+    start: true,
+    timeZone: 'America/Los_Angeles'
   });
 }
 
