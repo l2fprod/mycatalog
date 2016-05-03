@@ -64,7 +64,8 @@ function scheduleUpdater() {
   var serviceUpdater = require('./retrieve.js')();
   var CronJob = require('cron').CronJob;
   new CronJob({
-    cronTime: '0 0 1 * * *',
+    // run twice, once at 8 in the US but also at 8 in Europe
+    cronTime: '0 0 8,23 * * *',
     onTick: function () {
       console.log(new Date(), "Updating services...");
       serviceUpdater.run(saveSnapshotCallback);
