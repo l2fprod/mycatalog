@@ -22,7 +22,9 @@ router.get('/all', function (req, res) {
     if (err) {
       res.status(500).send();
     } else {
-      processSnapshots(body.rows.map(function(row) { return row.doc; }), res);
+      processSnapshots(body.rows.map(function (row) {
+        return row.doc;
+      }), res);
     }
   });
 });
@@ -129,11 +131,11 @@ function getDifferences(newSnapshot, oldSnapshot) {
       var oldIsInRegion = oldService.entity.tags.indexOf(region.tag) >= 0;
 
       if (newIsInRegion && !oldIsInRegion) {
-        changes.updates.push(newService.entity.label + " was added in " + region.label);
+        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was added in " + region.label);
       }
 
       if (!newIsInRegion && oldIsInRegion) {
-        changes.updates.push(newService.entity.label + " was removed from " + region.label);
+        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was removed from " + region.label);
       }
     });
 
