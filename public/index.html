@@ -20,82 +20,79 @@
     </div>
   </spinner>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-dark bg-primary navbar-fixed-top navbar-no-margin">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">My Catalog</a>
+        <a class="navbar-brand bg-primary" href="#">My Catalog</a>
       </div>
       <div id="navbar" class="navbar-collapse">
         <form role="search">
           <div class="form-group  search-input">
-            <input type="text" class="form-control" placeholder="Search" ng-model="searchText" autofocus>
+            <input type="text" class="form-control" placeholder="Search Services" ng-model="searchText" autofocus>
           </div>
         </form>
       </div>
     </div>
+
+    <div class="container">
+      <b>{{services.length}}</b> services in the catalog<span ng-if="filteredServices.length != services.length">... <b>{{filteredServices.length}}</b> services matching the search criteria</span><span ng-if="selection.services.length>0">... <b>{{selection.services.length}}</b> services selected</span>
+
+      <p class="pull-right">
+          <span class="fa fa-arrow-right" aria-hidden="true"></span>
+          Export
+        <span ng-if="selection.services.length==0">catalog</span>
+        <span ng-if="selection.services.length>0">selection</span> to&nbsp;
+        <a href="#" class="tracking" data-track-action="Export" data-track-label="Powerpoint" ng-click="exportSelection('pptx')" style="color:white"><img border="0" src="icons/ppt_logo.png" width="30" height="30"></a>&nbsp;
+        <a href="#" class="tracking" data-track-action="Export" data-track-label="Excel" ng-click="exportSelection('xlsx')" style="color:white"><img border="0" src="icons/excel_logo.png" width="30" height="30"></a>&nbsp;
+        <a href="#" class="tracking" data-track-action="Export" data-track-label="Word" ng-click="exportSelection('docx')" style="color:white"><img border="0" src="icons/word_logo.png" width="30" height="30"></a>
+      </p>
+    </div>
   </nav>
 
-  <div class="container">
-    <b>{{services.length}}</b> services in the catalog<span ng-if="filteredServices.length != services.length">, <b>{{filteredServices.length}}</b> services matching the search criteria</span><span ng-if="selection.services.length>0">, <b>{{selection.services.length}}</b> services selected</span>
-
-    <p class="pull-right">
-        <span class="fa fa-arrow-right" aria-hidden="true"></span>
-        Export
-      <span ng-if="selection.services.length==0">catalog</span>
-      <span ng-if="selection.services.length>0">selected services</span> to
-      <a href="#" class="tracking" data-track-action="Export" data-track-label="Word" ng-click="exportSelection('docx')">Word</a> |
-      <a href="#" class="tracking" data-track-action="Export" data-track-label="Excel" ng-click="exportSelection('xlsx')">Excel</a> |
-      <a href="#" class="tracking" data-track-action="Export" data-track-label="Powerpoint" ng-click="exportSelection('pptx')">PowerPoint</a>
-    </p>
-  </div>
-
-  <div class="container">
-
-
-    <!--form role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
+  <nav class="navbar navbar-default">
+    <div class="container" style="padding:10">
+      <div class="search-body">
+        <table>
+          <tr>
+            <td class="search-title"><span class="text-muted">Filters:</span></td>
+            <td>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="IBM" data-toggle="button" ng-click="toggleTagConfiguration('ibm_created', true)">IBM</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Third party" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', false); toggleTagConfiguration('ibm_beta', false)">Production Ready</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Beta" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">Beta</button>
+                <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;Syndicated</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="search-title"><span class="text-muted">Categories:</span></td>
+            <td>
+              <button ng-repeat="category in categories" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{category.label}}" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="search-title"><span class="text-muted">Regions:</span></td>
+            <td>
+              <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{region.label}}" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button class="btn btn-sm btn-success" ng-click="selectFiltered()">Add to selection</button>
+              <button class="btn btn-sm btn-warning" ng-click="deselectFiltered()"><i class="fa fa-trash-o"></i>&nbsp;Remove from selection</button>
+            </td>
+          </tr>
+        </table>
       </div>
-    </form-->
-
-    <div class="search-body">
-      <table>
-        <tr>
-          <td class="search-title"><span class="text-muted">Filters:</span></td>
-          <td>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="IBM" data-toggle="button" ng-click="toggleTagConfiguration('ibm_created', true)">IBM</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Third party" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', false); toggleTagConfiguration('ibm_beta', false)">Production Ready</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Beta" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">Beta</button>
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
-            <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;Syndicated</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="search-title"><span class="text-muted">Categories:</span></td>
-          <td>
-            <button ng-repeat="category in categories" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{category.label}}" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="search-title"><span class="text-muted">Regions:</span></td>
-          <td>
-            <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{region.label}}" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <button class="btn btn-sm btn-success" ng-click="selectFiltered()">Add to selection</button>
-            <button class="btn btn-sm btn-danger" ng-click="deselectFiltered()">Remove from selection</button>
-          </td>
-        </tr>
-      </table>
     </div>
+  </nav>
 
     <div>
     </div>
+
+    <div class="container">
 
     <div class="table-reponsive">
       <table id="services" class="table table-striped table-hover table-condensed">
@@ -107,7 +104,7 @@
             <th rowspan="2">CLI</th>
             <th rowspan="2">Description</th>
             <th colspan="{{regions.length}}">Regions</th>
-            <th rowspan="2">Tags</th>
+            <th rowspan="2" align="middle">Tags</th>
           </tr>
           <tr>
             <th ng-repeat="region in regions">{{region.label}}</th>
@@ -149,8 +146,8 @@
 
   <footer>
     <span class="text-muted pull-left disclaimer">
-      This catalog uses the Cloudfoundry API to retrieve data from the Bluemix catalog.
-      It tries to be as accurate as possible. Use with care.
+      'My Catalog' uses the Cloudfoundry API to retrieve data from the official <a href="https://new-console.ng.bluemix.net/catalog">Bluemix catalog</a>.
+      It attempts to be as accurate as possible. Use with care.
     </span> made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>
   </footer>
 

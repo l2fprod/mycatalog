@@ -67,26 +67,32 @@ function exportToExcel(services, dateMDY, res) {
   sheet = xlsx.makeNewSheet();
   sheet.name = 'My Bluemix Catalog';
 
-  var row = 1;
+  var row = 3;
 
   services.forEach(function (service) {
     if (!service.entity.active) {
       return;
     }
 
-    // Header
+    // Disclaimer
     sheet.data[0] = [];
-    sheet.data[0][0] = "Service";
-    sheet.data[0][1] = "Category";
-    sheet.data[0][2] = "Description";
-    sheet.data[0][3] = "Author";
-    sheet.data[0][4] = "Status";
-    sheet.data[0][5] = "Free Plan";
-    sheet.data[0][6] = "Regions";
-    sheet.data[0][7] = "Creation Date";
-    sheet.data[0][8] = "Last Modification";
-    sheet.data[0][9] = "Long Description";
-    sheet.data[0][10] = "URL";
+    sheet.data[0][0] = "Disclaimer: The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
+    sheet.data[1] = [];
+    sheet.data[1][0] = ""; //space
+
+    // Header
+    sheet.data[2] = [];
+    sheet.data[2][0] = "Service";
+    sheet.data[2][1] = "Category";
+    sheet.data[2][2] = "Description";
+    sheet.data[2][3] = "Author";
+    sheet.data[2][4] = "Status";
+    sheet.data[2][5] = "Free Plan";
+    sheet.data[2][6] = "Regions";
+    sheet.data[2][7] = "Creation Date";
+    sheet.data[2][8] = "Last Modification";
+    sheet.data[2][9] = "Long Description";
+    sheet.data[2][10] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
@@ -147,14 +153,14 @@ function exportToPowerpoint(services, dateMDY, res) {
 
   // Intro slide --------------------
   slide = pptx.makeNewSlide();
-  slide.back = '1E3648';
+  //slide.back = '1E3648';
   slide.addText("My Bluemix Catalog", {
     x: 150,
     y: 100,
     cx: '100%',
     font_size: 40,
     bold: true,
-    color: 'ffffff'
+    color: '2a6d9e'
   });
   slide.addText("Exported on " + dateMDY, {
     x: 150,
@@ -162,21 +168,21 @@ function exportToPowerpoint(services, dateMDY, res) {
     cx: '100%',
     font_size: 40,
     bold: true,
-    color: 'ffffff'
+    color: '2a6d9e'
   });
-  slide.addText("The list of services in this document was extracted the Bluemix catalog using the public Cloud Foundry API. This content is accurate as possible. Yet, use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.", {
+  slide.addText("The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.", {
     x: 150,
     y: 500,
     cx: '900',
     font_size: 20,
     bold: false,
-    color: '808080'
+    color: 'ff0000'
   });
   slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'), {
-    x: 1100,
+    x: 1000,
     y: 30,
-    cx: 90,
-    cy: 100
+    cx: 110,
+    cy: 120
   });
   // Intro slide END
 
@@ -378,6 +384,12 @@ function exportToPowerpoint(services, dateMDY, res) {
 // ---------------------------------------------------------------------
 function exportToWord(services, dateMDY, res) {
   var docx = officegen('docx');
+
+  var introPage = docx.createP();
+  introPage.addText("Disclaimer: The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.",
+    { color: '#ff0000', font_size: 16
+    });
+  introPage.addLineBreak();
 
   services.forEach(function (service) {
     if (!service.entity.active) {

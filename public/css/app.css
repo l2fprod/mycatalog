@@ -1,21 +1,35 @@
 body {
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 
 @media (max-width: 990px) {
   body {
-    padding-top: 120px;
+    padding-top: 140px;
   }
 }
 
+@media (max-width: 770px) {
+  body {
+    padding-top: 150px;
+  }
+}
 
+@media (max-width: 500px) {
+  body {
+    padding-top: 170px;
+  }
+}
 
 table {
   font-size: 13px;
 }
 
 .navbar {
+}
+
+.navbar-no-margin {
+  margin-bottom: 0;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
@@ -33,7 +47,7 @@ table {
 }
 
 .search-input {
-  width: 723px;
+  width: 750px;
   margin: 0 auto;
   padding-top: 10px;
 }
@@ -80,7 +94,7 @@ footer {
 }
 
 .disclaimer {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /** Loading... */

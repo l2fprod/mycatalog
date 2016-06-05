@@ -44,7 +44,7 @@ function processSnapshots(snapshots, res) {
     title: "mycatalog updates",
     generator: "mycatalog",
     site_url: "http://mycatalog.mybluemix.net",
-    description: "'My Catalog' uses the Cloudfoundry API to retrieve data from the Bluemix catalog. It tries to be as accurate as possible. This feed shows additions, updates, removals from the catalog. Use with care. It is a work-in-progress :)"
+    description: "'My Catalog' uses the Cloudfoundry API to retrieve data from the Bluemix catalog. It attempts to be as accurate as possible. This feed shows additions, updates, removals from the catalog. Use with care. It is a work-in-progress :)"
   });
   changes.forEach(function (change) {
     change.added.forEach(function (service) {
