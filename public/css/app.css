@@ -35,6 +35,12 @@ table {
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
 }
 
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+    background-color: transparent;
+    color: white;
+}
+
 .search-title {
   font-size: 14px;
   vertical-align: top;
