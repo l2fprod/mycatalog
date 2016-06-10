@@ -53,10 +53,51 @@ table {
 }
 
 .search-input {
-  width: 750px;
+  width: 650px;
   margin: 0 auto;
   padding-top: 10px;
 }
+
+/* --- Icons in Search text field ----- */
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    padding-top: 18px;
+    color: darkgrey;
+    pointer-events: none;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+#searchclear {
+    position:absolute;
+    right:5px;
+    top:10px;
+    bottom:0;
+    height:14px;
+    margin:auto;
+    font-size:14px;
+    cursor:pointer;
+    color:#ccc;
+}
+/* ------- */
 
 .tagFilter {
   margin-right: 10px;
