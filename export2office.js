@@ -88,11 +88,12 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[2][3] = "Author";
     sheet.data[2][4] = "Status";
     sheet.data[2][5] = "Free Plan";
-    sheet.data[2][6] = "Regions";
-    sheet.data[2][7] = "Creation Date";
-    sheet.data[2][8] = "Last Modification";
-    sheet.data[2][9] = "Long Description";
-    sheet.data[2][10] = "URL";
+    sheet.data[2][6] = "Plans";
+    sheet.data[2][7] = "Regions";
+    sheet.data[2][8] = "Creation Date";
+    sheet.data[2][9] = "Last Modification";
+    sheet.data[2][10] = "Long Description";
+    sheet.data[2][11] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
@@ -107,8 +108,8 @@ function exportToExcel(services, dateMDY, res) {
       }
       sheet.data[row][2] = service.entity.description;
       sheet.data[row][3] = extra.providerDisplayName;
-      sheet.data[row][9] = extra.longDescription;
-      sheet.data[row][10] = extra.documentationUrl;
+      sheet.data[row][10] = extra.longDescription;
+      sheet.data[row][11] = extra.documentationUrl;
     } else {
       sheet.data[row][0] = service.entity.label;
       sheet.data[row][1] = service.entity.tags[0];
@@ -126,16 +127,23 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[row][4] = status;
     sheet.data[row][5] = (service.entity.tags.indexOf("custom_has_free_plan") >= 0) ? "Yes" : "No";
 
+    var planList = "";
+    var plans = service.plans;
+    for (var plan in plans) {
+      planList += plans[plan].entity.name + "\n";
+    }
+    sheet.data[row][6] = planList;
+
     var datacenter = "";
     for (var region in regions) {
       if (service.entity.tags.indexOf(regions[region].tag) >= 0) {
         datacenter += regions[region].label + " ";
       }
     }
-    sheet.data[row][6] = datacenter;
+    sheet.data[row][7] = datacenter;
 
-    sheet.data[row][7] = moment(service.metadata.created_at).format('YYYY-MM-DD');
-    sheet.data[row][8] = moment(service.metadata.updated_at).format('YYYY-MM-DD');
+    sheet.data[row][8] = moment(service.metadata.created_at).format('YYYY-MM-DD');
+    sheet.data[row][9] = moment(service.metadata.updated_at).format('YYYY-MM-DD');
 
     row++;
   });
