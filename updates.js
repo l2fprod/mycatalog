@@ -29,10 +29,13 @@ router.get('/all', function (req, res) {
   });
 });
 
+//router.get('/fake', function (req, res) {
+//  var snapshots = JSON.parse(fs.readFileSync('updates.json', 'utf8'));
+//  processSnapshots(snapshots, res);
+//});
+
 function processSnapshots(snapshots, res) {
   // snapshots are sorted from most recent to oldest
-  //var snapshots = JSON.parse(fs.readFileSync('updates.json', 'utf8'));
-
   var changes = [];
   var current = 0
   while (current < snapshots.length - 1) {
@@ -131,14 +134,21 @@ function getDifferences(newSnapshot, oldSnapshot) {
       var oldIsInRegion = oldService.entity.tags.indexOf(region.tag) >= 0;
 
       if (newIsInRegion && !oldIsInRegion) {
-        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was added in " + region.label);
+        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was made available in the " + region.label + " catalog");
       }
 
       if (!newIsInRegion && oldIsInRegion) {
-        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was removed from " + region.label);
+        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was removed from the " + region.label + " catalog");
       }
     });
 
+    // any deprecation notice
+    var newIsDeprecated = newService.entity.tags.indexOf("ibm_deprecated") >= 0;
+    var oldIsDeprecated = oldService.entity.tags.indexOf("ibm_deprecated") >= 0;
+
+    if (newIsDeprecated && !oldIsDeprecated) {
+      changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") has been deprecated");
+    }
 
     // any change in their lifecycle? experimental -> beta -> release
   });
