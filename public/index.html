@@ -39,7 +39,7 @@
     </div>
 
     <div class="container">
-      <b>{{services.length}}</b> services in the catalog<span ng-if="filteredServices.length != services.length">... <b>{{filteredServices.length}}</b> services matching the search criteria</span><span ng-if="selection.services.length>0">... <b>{{selection.services.length}}</b> services selected</span>
+      <b>{{services.length}}</b> services in the catalog<span ng-if="filteredServices.length != services.length">, <b>{{filteredServices.length}}</b> services matching the search criteria</span><span ng-if="selection.services.length>0">, <b>{{selection.services.length}}</b> services selected</span>
 
       <p class="pull-right">
          <span class="fa fa-arrow-right" aria-hidden="true"></span>
@@ -65,7 +65,7 @@
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', false); toggleTagConfiguration('ibm_beta', false)">Production Ready</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Beta" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)">Beta</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>      
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Deprecated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_deprecated', true)">Deprecated</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Deprecated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_deprecated', true)"><i class="fa fa-exclamation-triangle"></i>&nbsp;Deprecated</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;Syndicated</button>
             </td>
