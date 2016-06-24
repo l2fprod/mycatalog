@@ -69,7 +69,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
   };
   $scope.categories = categories;
   $scope.regions = regions;
-  $scope.slaveService = {};
+  $scope.selectedService = {};
 
   $scope.filterConfiguration = {
     enabled: true,
@@ -150,7 +150,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
 
   $scope.showServiceDetails = function (service) {
     console.log("Showing service details", service.entity.label);
-    $scope.slaveService = service;
+    $scope.selectedService = service;
     $("#serviceDetails").modal();
   }
 

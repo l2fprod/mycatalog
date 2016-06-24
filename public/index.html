@@ -164,17 +164,17 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel">
-            <img ng-if="slaveService.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{slaveService.entity.extra.smallImageUrl}}" />
-            {{slaveService.entity.extra.displayName || slaveService.entity.label}}
+            <img ng-if="selectedService.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{selectedService.entity.extra.smallImageUrl}}" />
+            {{selectedService.entity.extra.displayName || selectedService.entity.label}}
           </h4>
         </div>
         <div class="modal-body">
-          <div ng-repeat="plan in slaveService.plans">
+          <div ng-repeat="plan in selectedService.plans">
             <h5>{{plan.entity.name}} <span class="text-muted" ng-if="plan.entity.free==true">(free)</span></h5>
             <p class="text-muted">
               {{plan.entity.description}}
             </p>
-            <input class="form-control" type="text" value="cf create-service {{quote(slaveService.entity.label)}} {{quote(plan.entity.name)}} <service-name>" />
+            <input class="form-control" type="text" value="cf create-service {{quote(selectedService.entity.label)}} {{quote(plan.entity.name)}} <service-name>" />
           </div>
         </div>
         <div class="modal-footer">
