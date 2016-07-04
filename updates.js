@@ -36,10 +36,10 @@ router.get('/all', function (req, res) {
 
 function processSnapshots(snapshots, res) {
   // snapshots are sorted from most recent to oldest
-  var changes = [];
+  var allDifferences = [];
   var current = 0
   while (current < snapshots.length - 1) {
-    changes.push(getDifferences(snapshots[current], snapshots[current + 1]));
+    allDifferences.push(getDifferences(snapshots[current], snapshots[current + 1]));
     current = current + 1;
   }
 
@@ -49,33 +49,20 @@ function processSnapshots(snapshots, res) {
     site_url: "http://mycatalog.mybluemix.net",
     description: "'My Catalog' uses the Cloudfoundry API to retrieve data from the Bluemix catalog. It attempts to be as accurate as possible. This feed shows additions, updates, removals from the catalog. Use with care. It is a work-in-progress :)"
   });
-  changes.forEach(function (change) {
-    change.added.forEach(function (service) {
+
+  allDifferences.forEach(function (result) {
+    result.changes.forEach(function (change) {
+
+      var title = "[" + change.tag + "] " + change.service.entity.extra.displayName + " (" + change.service.entity.label + ")";
+      title = title + (change.title ? (" " + change.title) : "");
+
       feed.item({
-        title: "[added] " + service.entity.extra.displayName + " (" + service.entity.label + ")",
-        description: service.entity.description,
+        title: title,
+        description: change.description,
         url: "http://mycatalog.mybluemix.net/?date=" + encodeURIComponent(change.date) +
-          "&service=" + encodeURIComponent(service.entity.label) +
-          "&type=added",
-        date: change.date
-      })
-    });
-    change.removed.forEach(function (service) {
-      feed.item({
-        title: "[removed] " + service.entity.extra.displayName + " (" + service.entity.label + ")",
-        url: "http://mycatalog.mybluemix.net/?date=" + encodeURIComponent(change.date) +
-          "&service=" + encodeURIComponent(service.entity.label) +
-          "&type=removed",
-        date: change.date
-      })
-    });
-    change.updates.forEach(function (update) {
-      feed.item({
-        title: "[updated] " + update,
-        url: "http://mycatalog.mybluemix.net/?date=" + encodeURIComponent(change.date) +
-          "&service=" + encodeURIComponent(update) +
-          "&type=updated",
-        date: change.date
+          "&service=" + encodeURIComponent(change.service.entity.label) +
+          "&type=" + change.tag,
+        date: result.date
       })
     });
   });
@@ -89,11 +76,9 @@ function processSnapshots(snapshots, res) {
 function getDifferences(newSnapshot, oldSnapshot) {
   var newServices = newSnapshot.services;
   var oldServices = oldSnapshot.services;
-  var changes = {
+  var result = {
     date: newSnapshot.createdAt,
-    added: [],
-    removed: [],
-    updates: []
+    changes: []
   };
 
   var labelToNewService = []
@@ -109,18 +94,26 @@ function getDifferences(newSnapshot, oldSnapshot) {
   // any new services?
   Object.keys(labelToNewService).forEach(function (serviceLabel) {
     if (!labelToOldService.hasOwnProperty(serviceLabel)) {
-      changes.added.push(labelToNewService[serviceLabel]);
+      result.changes.push({
+        tag: "added",
+        service: labelToNewService[serviceLabel],
+        description: labelToNewService[serviceLabel].entity.description
+      });
     }
   });
 
   // any service removed?
   Object.keys(labelToOldService).forEach(function (serviceLabel) {
     if (!labelToNewService.hasOwnProperty(serviceLabel)) {
-      changes.removed.push(labelToOldService[serviceLabel]);
+      result.changes.push({
+        tag: "removed",
+        service: labelToOldService[serviceLabel],
+        description: labelToOldService[serviceLabel].entity.description
+      });
     }
   });
 
-
+  // any differences between old and new versions of a service
   Object.keys(labelToNewService).forEach(function (serviceLabel) {
     var newService = labelToNewService[serviceLabel];
     var oldService = labelToOldService[serviceLabel];
@@ -134,11 +127,19 @@ function getDifferences(newSnapshot, oldSnapshot) {
       var oldIsInRegion = oldService.entity.tags.indexOf(region.tag) >= 0;
 
       if (newIsInRegion && !oldIsInRegion) {
-        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was made available in the " + region.label + " catalog");
+        result.changes.push({
+          tag: "updated",
+          service: newService,
+          title: "was made available in the " + region.label + " catalog"
+        });
       }
 
       if (!newIsInRegion && oldIsInRegion) {
-        changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") was removed from the " + region.label + " catalog");
+        result.changes.push({
+          tag: "updated",
+          service: newService,
+          title: "was removed from the " + region.label + " catalog"
+        });
       }
     });
 
@@ -147,15 +148,71 @@ function getDifferences(newSnapshot, oldSnapshot) {
     var oldIsDeprecated = oldService.entity.tags.indexOf("ibm_deprecated") >= 0;
 
     if (newIsDeprecated && !oldIsDeprecated) {
-      changes.updates.push(newService.entity.extra.displayName + " (" + newService.entity.label + ") has been deprecated");
+      result.changes.push({
+        tag: "deprecated",
+        service: newService
+      });
     }
 
+    // look at plans
+    var newServicePlans = [];
+    newService.plans.forEach(function (plan) {
+      newServicePlans[plan.entity.name] = plan;
+    });
+
+    var oldServicePlans = [];
+    oldService.plans.forEach(function (plan) {
+      oldServicePlans[plan.entity.name] = plan;
+    });
+
+    // any new plans?
+    Object.keys(newServicePlans).forEach(function (planName) {
+      if (!oldServicePlans.hasOwnProperty(planName)) {
+        result.changes.push({
+          tag: "updated",
+          service: newService,
+          title: "has a new plan named " + planName,
+          description: newServicePlans[planName].entity.description
+        });
+      }
+    });
+
+    // any removed plans?
+    Object.keys(oldServicePlans).forEach(function (planName) {
+      if (!newServicePlans.hasOwnProperty(planName)) {
+        result.changes.push({
+          tag: "updated",
+          service: newService,
+          title: "has removed the plan named " + planName
+        });
+      }
+    });
+
     // any change in their lifecycle? experimental -> beta -> release
+    function serviceLifecycle(service) {
+      var status = "Production Ready";
+      if (service.entity.tags.indexOf('ibm_beta') >= 0) {
+        status = "Beta";
+      } else if (service.entity.tags.indexOf('ibm_experimental') >= 0) {
+        status = "Experimental";
+      }
+      return status;
+    }
+
+    var newServiceStatus = serviceLifecycle(newService);
+    var oldServiceStatus = serviceLifecycle(oldService);
+
+    if (newServiceStatus != oldServiceStatus) {
+      result.changes.push({
+        tag: "lifecycle",
+        service: newService,
+        title: "moved from " + oldServiceStatus + " to " + newServiceStatus
+      });
+    }
+
   });
 
-
-
-  return changes;
+  return result;
 }
 
 module.exports = function (Database) {
