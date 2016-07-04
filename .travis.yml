@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "4"
+before_deploy: npm install -g cf-blue-green
+deploy:
+  provider: script
+  script: npm install && ./retrieve.sh && cf-blue-green-travis
+  on:
+    branch: master
+    repo: l2fprod/mycatalog
