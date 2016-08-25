@@ -3,6 +3,7 @@ var path = require('path');
 var express = require('express');
 var router = express.Router();
 var moment = require('moment');
+var officegen = require('officegen');
 
 // Added to loop through the region
 var vm = require('vm');
@@ -14,7 +15,6 @@ var categories = sandbox.categories;
 
 router.post('/:format', function (req, res) {
   var services = JSON.parse(fs.readFileSync('public/generated/services.json', 'utf8'));
-  var officegen = require('officegen');
 
   var servicesToExport;
   var userSelectedServices = req.body["services[]"];
