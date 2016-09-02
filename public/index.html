@@ -121,6 +121,7 @@
           </td>
           <td class="service-icon">
             <img ng-if="service.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" />
+            <img ng-if="!service.entity.extra.smallImageUrl && service.entity.extra.imageUrl" class="service-small-icon" ng-src="{{service.entity.extra.imageUrl}}" />
           </td>
           <td class="service-displayname">
             <a href="{{consoleUrl(service)}}">{{service.entity.extra.displayName || service.entity.label}}</a>
@@ -165,6 +166,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel">
             <img ng-if="selectedService.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{selectedService.entity.extra.smallImageUrl}}" />
+            <img ng-if="!selectedService.entity.extra.smallImageUrl && selectedService.entity.extra.imageUrl" class="service-small-icon" ng-src="{{selectedService.entity.extra.imageUrl}}" />
             {{selectedService.entity.extra.displayName || selectedService.entity.label}}
           </h4>
         </div>
