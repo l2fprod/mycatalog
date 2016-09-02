@@ -205,11 +205,28 @@ function ServiceUpdater() {
             if (err) {
               callback(err);
             } else {
-              fs.writeFile("public/generated/icons/" + service.metadata.guid + ".png", body, function (err) {
+              var extension;
+              if (extra.imageUrl.indexOf(".svg") > 0) {
+                extension = "svg";
+              } else {
+                extension = "png";
+              }
+              fs.writeFile("public/generated/icons/" + service.metadata.guid + "." + extension, body, function (err) {
                 if (err) {
                   callback(err);
                 } else {
-                  callback(null);
+                  if (extension === "svg") {
+                    var svgToPng = require("svg-to-png");
+                    svgToPng.convert("public/generated/icons/" + service.metadata.guid + ".svg",
+                      "public/generated/icons/", {
+                        defaultWidth: "64px",
+                        defaultHeight: "64px"
+                      }).then(function () {
+                      callback(null);
+                    });
+                  } else {
+                    callback(null);
+                  }
                 }
               });
             }
