@@ -5,7 +5,7 @@ sudo: true
 before_deploy: npm install -g cf-blue-green
 deploy:
   provider: script
-  script: npm install && ./retrieve.sh && rm -rf node_modules && cf-blue-green-travis
+  script: npm install && ./retrieve.sh && rm -rf node_modules public/vendor && cf-blue-green-travis
   on:
     branch: master
     repo: l2fprod/mycatalog
