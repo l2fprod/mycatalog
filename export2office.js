@@ -65,7 +65,7 @@ function exportToExcel(services, dateMDY, res) {
   var xlsx = officegen('xlsx');
 
   sheet = xlsx.makeNewSheet();
-  sheet.name = 'My Bluemix Catalog';
+  sheet.name = 'My Catalog';
 
   var row = 3;
 
@@ -146,6 +146,50 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[row][9] = moment(service.metadata.updated_at).format('YYYY-MM-DD');
 
     row++;
+  });
+
+  //--------------------------------------------------------------------
+  // New Excel tab to add plans - To be continued
+  //--------------------------------------------------------------------
+  sheet2 = xlsx.makeNewSheet();
+  sheet2.name = 'Plans';
+
+  var rowp = 1;
+
+  services.forEach(function (service) {
+    if (!service.entity.active) {
+      return;
+    }
+
+    // Header
+    sheet2.data[0] = [];
+    sheet2.data[0][0] = "Service";
+    sheet2.data[0][1] = "Free Plan";
+    sheet2.data[0][2] = "Plans";
+    sheet2.data[0][3] = "Description";
+
+    // Cell Content
+    sheet2.data[rowp] = [];
+
+    var extra = service.entity.extra;
+    if (extra && extra.displayName) {
+      sheet2.data[rowp][0] = extra.displayName;
+    } else {
+      sheet2.data[rowp][0] = service.entity.label;
+    }
+
+    sheet2.data[rowp][1] = (service.entity.tags.indexOf("custom_has_free_plan") >= 0) ? "Yes" : "No";
+
+    var plans = service.plans;
+    var planIndex = 0;
+    plans.forEach(function (plan) {
+      var rr = rowp + planIndex;
+      if (planIndex != 0) sheet2.data[rr] = [];
+      sheet2.data[rr][2] = plan.entity.name;
+      sheet2.data[rr][3] = plan.entity.description;
+      planIndex++;
+    });
+    rowp = rowp + service.plans.length;
   });
 
   return xlsx;
