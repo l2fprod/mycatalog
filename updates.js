@@ -59,7 +59,7 @@ function processSnapshots(snapshots, res) {
       feed.item({
         title: title,
         description: change.description,
-        url: "http://mycatalog.mybluemix.net/?date=" + encodeURIComponent(change.date) +
+        url: "http://mycatalog.mybluemix.net/?date=" + encodeURIComponent(result.date) +
           "&service=" + encodeURIComponent(change.service.entity.label) +
           "&type=" + change.tag,
         date: result.date
