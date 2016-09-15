@@ -14,7 +14,7 @@ var regions = sandbox.regions;
 var categories = sandbox.categories;
 
 router.post('/:format', function (req, res) {
-  var services = JSON.parse(fs.readFileSync('public/generated/services.json', 'utf8'));
+  var services = JSON.parse(fs.readFileSync('public/generated/services-full.json', 'utf8'));
 
   var servicesToExport;
   var userSelectedServices = req.body["services[]"];
@@ -149,10 +149,10 @@ function exportToExcel(services, dateMDY, res) {
   });
 
   //--------------------------------------------------------------------
-  // New Excel tab to add plans - To be continued
+  // New Excel tab to add plans & pricing - To be continued
   //--------------------------------------------------------------------
   sheet2 = xlsx.makeNewSheet();
-  sheet2.name = 'Plans';
+  sheet2.name = 'Plans Experimental for US Only';
 
   var rowp = 1;
 
@@ -164,9 +164,10 @@ function exportToExcel(services, dateMDY, res) {
     // Header
     sheet2.data[0] = [];
     sheet2.data[0][0] = "Service";
-    sheet2.data[0][1] = "Free Plan";
-    sheet2.data[0][2] = "Plans";
-    sheet2.data[0][3] = "Description";
+    sheet2.data[0][1] = "Plan";
+    sheet2.data[0][2] = "Cost Unit";
+    sheet2.data[0][3] = "Amount";
+    sheet2.data[0][6] = "Description";
 
     // Cell Content
     sheet2.data[rowp] = [];
@@ -177,16 +178,57 @@ function exportToExcel(services, dateMDY, res) {
     } else {
       sheet2.data[rowp][0] = service.entity.label;
     }
-
-    sheet2.data[rowp][1] = (service.entity.tags.indexOf("custom_has_free_plan") >= 0) ? "Yes" : "No";
+    console.log("SVC=" + sheet2.data[rowp][0]);
 
     var plans = service.plans;
     var planIndex = 0;
     plans.forEach(function (plan) {
       var rr = rowp + planIndex;
+      // New row for each plan except the first row already created above
       if (planIndex != 0) sheet2.data[rr] = [];
-      sheet2.data[rr][2] = plan.entity.name;
-      sheet2.data[rr][3] = plan.entity.description;
+      var extrap = plan.entity.extra;
+      if (extrap && extrap.displayName) {
+        sheet2.data[rr][1] = extrap.displayName;
+      } else {
+        // Some plan don't have a display name!
+        sheet2.data[rr][1] = plan.entity.name;
+      }
+      console.log("Plan=" + sheet2.data[rr][1]);
+
+      if (plan.entity.extra)
+      {
+        // Iterate through the array of costs
+        var costs = plan.entity.extra.costs;
+        if (costs)
+        {
+          costs.forEach(function (cost) {
+            sheet2.data[rr][2] = cost.unit;
+            var currencies = cost.currencies;
+            if (currencies) {
+              currencies.forEach(function (currency) {
+                console.log(currency.country);
+
+                if (currency.country != "USA")
+                  return;
+
+                var amount = currency.amount.USD;
+
+                // Price is often given for 1 000 API Call in JSON
+                // So need to derive the price per API call
+                if (cost.unitQuantity)
+                  amount = amount / cost.unitQuantity;
+                sheet2.data[rr][3] = amount;
+
+                console.log(service.entity.label, amount);
+
+              });
+            } else {
+              if (cost.amount) sheet2.data[rr][3] = cost.amount.USD;
+            }
+          });
+        }
+      }
+      sheet2.data[rr][6] = plan.entity.description;
       planIndex++;
     });
     rowp = rowp + service.plans.length;
