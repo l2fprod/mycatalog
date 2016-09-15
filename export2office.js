@@ -152,7 +152,16 @@ function exportToExcel(services, dateMDY, res) {
   // New Excel tab to add plans & pricing - To be continued
   //--------------------------------------------------------------------
   sheet2 = xlsx.makeNewSheet();
-  sheet2.name = 'Plans Experimental for US Only';
+  sheet2.name = 'Plans - Experimental - US Only';
+
+  // Table Header
+  sheet2.data[0] = [];
+  sheet2.data[0][0] = "Service";
+  sheet2.data[0][1] = "Plan";
+  sheet2.data[0][2] = "Cost Unit";
+  sheet2.data[0][3] = "Amount USD";
+  sheet2.data[0][4] = "Tier";
+  sheet2.data[0][5] = "Description";
 
   var rowp = 1;
 
@@ -161,48 +170,36 @@ function exportToExcel(services, dateMDY, res) {
       return;
     }
 
-    // Header
-    sheet2.data[0] = [];
-    sheet2.data[0][0] = "Service";
-    sheet2.data[0][1] = "Plan";
-    sheet2.data[0][2] = "Cost Unit";
-    sheet2.data[0][3] = "Amount";
-    sheet2.data[0][6] = "Description";
-
-    // Cell Content
-    sheet2.data[rowp] = [];
-
     var extra = service.entity.extra;
-    if (extra && extra.displayName) {
-      sheet2.data[rowp][0] = extra.displayName;
-    } else {
-      sheet2.data[rowp][0] = service.entity.label;
-    }
-    console.log("SVC=" + sheet2.data[rowp][0]);
+    var svcName = (extra && extra.displayName) ? extra.displayName : service.entity.label;
 
     var plans = service.plans;
-    var planIndex = 0;
+    // Iterate through array of plans
     plans.forEach(function (plan) {
-      var rr = rowp + planIndex;
-      // New row for each plan except the first row already created above
-      if (planIndex != 0) sheet2.data[rr] = [];
       var extrap = plan.entity.extra;
-      if (extrap && extrap.displayName) {
-        sheet2.data[rr][1] = extrap.displayName;
-      } else {
-        // Some plan don't have a display name!
-        sheet2.data[rr][1] = plan.entity.name;
-      }
-      console.log("Plan=" + sheet2.data[rr][1]);
+      // Some plan don't have a display name!
+      var planName = (extrap && extrap.displayName) ? extrap.displayName: plan.entity.name;
 
-      if (plan.entity.extra)
-      {
-        // Iterate through the array of costs
+      // New row for Free plan (ex: AlchemyAPI) or
+      // Free service w/o any cost array (ex: Access Trail)
+      sheet2.data[rowp]    = [];
+      sheet2.data[rowp][0] = svcName;
+      sheet2.data[rowp][1] = planName;
+      sheet2.data[rowp][5] = plan.entity.description;
+      if (plan.entity.free == true)
+        sheet2.data[rowp][3] = 0;
+
+      // Handle svcs with multiple plans including cost and currencies
+      // Warning: some plans have one single plan with multiple tier (cost)
+      if (plan.entity.extra) {
         var costs = plan.entity.extra.costs;
-        if (costs)
-        {
+        if (costs) {
           costs.forEach(function (cost) {
-            sheet2.data[rr][2] = cost.unit;
+            // New raw per cost
+            sheet2.data[rowp] = [];
+            sheet2.data[rowp][0] = svcName;
+            sheet2.data[rowp][1] = planName;
+            sheet2.data[rowp][2] = cost.unit;
             var currencies = cost.currencies;
             if (currencies) {
               currencies.forEach(function (currency) {
@@ -213,25 +210,39 @@ function exportToExcel(services, dateMDY, res) {
 
                 var amount = currency.amount.USD;
 
+                if (cost.tierModel && cost.quantityTier != 1)
+                  sheet2.data[rowp][4] = " < " + cost.unitQuantity*cost.quantityTier;
+
                 // Price is often given for 1 000 API Call in JSON
                 // So need to derive the price per API call
                 if (cost.unitQuantity)
                   amount = amount / cost.unitQuantity;
-                sheet2.data[rr][3] = amount;
+                sheet2.data[rowp][3] = amount;
 
-                console.log(service.entity.label, amount);
+                console.log(service.entity.label, planName, amount);
 
               });
             } else {
-              if (cost.amount) sheet2.data[rr][3] = cost.amount.USD;
+              // Handle simple cost plan (ex: Statica service)
+              if (cost.amount)
+                sheet2.data[rowp][3] = cost.amount.USD;
             }
+
+            var description = "";
+            if (plan.entity.extra.bullets) {
+              plan.entity.extra.bullets.forEach(function(bullet, index) {
+                description = description + (index > 0 ? ", " : "") + bullet;
+              });
+            } else {
+              description = plan.entity.description;
+            }
+            sheet2.data[rowp][5] = description;
+
+            rowp++;
           });
         }
       }
-      sheet2.data[rr][6] = plan.entity.description;
-      planIndex++;
     });
-    rowp = rowp + service.plans.length;
   });
 
   return xlsx;
