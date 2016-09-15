@@ -85,6 +85,7 @@ function ServiceUpdater() {
 
     // add the plans to the services
     tasks.push(function (callback) {
+      console.log("Injecting plans in services...");
       var guidToServices = [];
       services.forEach(function (service) {
         // keep track of services to match their plans
@@ -111,6 +112,7 @@ function ServiceUpdater() {
 
     // we got all services now
     tasks.push(function (callback) {
+      console.log("Post-processing services...");
       services.forEach(function (service) {
         // sort tags (categories first)
         service.entity.tags.sort(function (tag1, tag2) {
@@ -142,17 +144,6 @@ function ServiceUpdater() {
             service.entity.tags.push("ibm_created");
           }
         }
-
-        // diet - remove things we don't need today, it makes the JSON smaller
-        if (service.entity.extra) {
-          delete service.entity.extra.media;
-          delete service.entity.extra.bullets;
-          delete service.entity.extra.i18n;
-        }
-        service.plans.forEach(function (plan) {
-          if (plan.entity.extra) delete plan.entity.extra.costs;
-        });
-
       });
 
       // sort on name
@@ -168,13 +159,44 @@ function ServiceUpdater() {
         return s1Name.toLocaleLowerCase().localeCompare(s2Name.toLocaleLowerCase());
       });
 
+      callback(null);
+    });
+
+    // write the service full file
+    tasks.push(function(callback) {
+      console.log("Writing full service file...");
+      var stream = fs.createWriteStream("public/generated/services-full.json");
+      stream.once('open', function (fd) {
+        stream.write(JSON.stringify(services, null, 2));
+        callback(null);
+      });
+    });
+
+    // write the light version for the webpage
+    tasks.push(function(callback) {
+      console.log("Writing light service file...");
+      services.forEach(function(service) {
+        // diet - remove things we don't need today, it makes the JSON smaller
+        if (service.entity.extra) {
+          delete service.entity.extra.media;
+          delete service.entity.extra.bullets;
+          delete service.entity.extra.i18n;
+        }
+        service.plans.forEach(function (plan) {
+          if (plan.entity.extra) delete plan.entity.extra.costs;
+        });
+      });
+
       var stream = fs.createWriteStream("public/generated/services.json");
       stream.once('open', function (fd) {
         stream.write(JSON.stringify(services, null, 2));
+        callback(null);
       });
+    });
 
+    // get the service icons
+    tasks.push(function(callback) {
       getImages(services);
-
       callback(null);
     });
 
