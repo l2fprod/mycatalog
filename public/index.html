@@ -129,7 +129,7 @@
           <td>
               <a ng-click="showServiceDetails(service)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-code"></i></a>
           </td>
-          <td class="service-description">{{service.entity.description}}</td>
+          <td class="service-description" title="{{service.entity.extra.longDescription}}">{{service.entity.description}}</td>
           <td class="service-region" ng-repeat="region in regions">
             <i ng-if="service.entity.tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
           </td>
