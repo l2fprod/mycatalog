@@ -202,7 +202,8 @@ function getDifferences(newSnapshot, oldSnapshot) {
     var newServiceStatus = serviceLifecycle(newService);
     var oldServiceStatus = serviceLifecycle(oldService);
 
-    if (newServiceStatus != oldServiceStatus) {
+    // only report lifecycle changes if the service is not deprecated
+    if (!newIsDeprecated && newServiceStatus != oldServiceStatus) {
       result.changes.push({
         tag: "lifecycle",
         service: newService,
