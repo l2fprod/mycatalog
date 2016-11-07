@@ -61,7 +61,7 @@ catalogApp.filter("filterPanel", function () {
   }
 });
 
-catalogApp.controller('MainController', function ($scope, $http) {
+catalogApp.controller('MainController', function ($scope, $http, $location) {
   console.info("Initializing MainController");
   $scope.services = [];
   $scope.selection = {
@@ -82,8 +82,12 @@ catalogApp.controller('MainController', function ($scope, $http) {
     var position = tagSet.indexOf(tag);
     if (position >= 0) {
       tagSet.splice(position, 1);
+      // remove empty categories from the url
+      $location.search('category', null);
     } else {
       tagSet.push(tag);
+      // Update url with query string
+      $location.search('category', tag);
     }
   }
 
