@@ -243,7 +243,11 @@ function ServiceUpdater() {
                       "public/generated/icons/", {
                         defaultWidth: "64px",
                         defaultHeight: "64px"
-                      }).then(function () {
+                    }).then(function () {
+                      callback(null);
+                    }, function(err) {
+                      console.log("Convert failed for",
+                        "public/generated/icons/" + service.metadata.guid + ".svg", "with", err);
                       callback(null);
                     });
                   } else {
