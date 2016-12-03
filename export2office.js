@@ -152,17 +152,20 @@ function exportToExcel(services, dateMDY, res) {
   // New Excel tab to add plans & pricing - To be continued
   //--------------------------------------------------------------------
   sheet2 = xlsx.makeNewSheet();
-  sheet2.name = 'Plans - Experimental - US Only';
+  sheet2.name = 'Plans - Beta - US Only';
 
   // Table Header
   sheet2.data[0] = [];
   sheet2.data[0][0] = "Service";
   sheet2.data[0][1] = "Plan";
-  sheet2.data[0][2] = "Cost Unit";
-  sheet2.data[0][3] = "Amount USD";
-  sheet2.data[0][4] = "Tier";
-  sheet2.data[0][5] = "Description";
+  sheet2.data[0][2] = "Subscription";
+  sheet2.data[0][3] = "Cost Unit";
+  sheet2.data[0][4] = "Amount USD";
+  sheet2.data[0][5] = "Tier";
+  sheet2.data[0][6] = "Description";
+  //sheet2.data[0][7] = "Reservable";
 
+  // First row after the header
   var rowp = 1;
 
   services.forEach(function (service) {
@@ -171,72 +174,111 @@ function exportToExcel(services, dateMDY, res) {
     }
 
     var extra = service.entity.extra;
-    var svcName = (extra && extra.displayName) ? extra.displayName : service.entity.label;
+    var serviceLabel = service.entity.label;
+    var svcName = (extra && extra.displayName) ? extra.displayName : serviceLabel;
 
     var plans = service.plans;
     // Iterate through array of plans
     plans.forEach(function (plan) {
-      var extrap = plan.entity.extra;
-      // Some plan don't have a display name!
-      var planName = (extrap && extrap.displayName) ? extrap.displayName: plan.entity.name;
+      var extrap = plan.entity.extra
+      var planDescription = plan.entity.description
+      // Some plans don't have a display name!
+      var planName = (extrap && extrap.displayName) ? extrap.displayName : plan.entity.name;
 
       // New row for Free plan (ex: AlchemyAPI) or
-      // Free service w/o any cost array (ex: Access Trail)
-      sheet2.data[rowp]    = [];
+      // Free service w/o any cost array (ex: Access Trail, Active Deploy)
+      //console.log(rowp, svcName, planName)
+      sheet2.data[rowp] = [];
       sheet2.data[rowp][0] = svcName;
       sheet2.data[rowp][1] = planName;
-      sheet2.data[rowp][5] = plan.entity.description;
+      sheet2.data[rowp][6] = planDescription;
+      // Set amount to zero if plan if free.
       if (plan.entity.free == true)
-        sheet2.data[rowp][3] = 0;
+        sheet2.data[rowp][4] = 0;
+      // If plan is free, no need to process the extra costs
+      if (planName.toLowerCase().indexOf('free') !== -1) {
+        // A free plan can always be consumed with a subscription
+        sheet2.data[rowp][2] = 'yes';
+        rowp++; return;
+      }
 
-      // Handle svcs with multiple plans including cost and currencies
+      // Most of the services have multiple plans including cost and currencies
       // Warning: some plans have one single plan with multiple tier (cost)
       if (plan.entity.extra) {
         var costs = plan.entity.extra.costs;
         if (costs) {
           costs.forEach(function (cost) {
-            // New raw per cost
+            // New row per cost
             sheet2.data[rowp] = [];
             sheet2.data[rowp][0] = svcName;
             sheet2.data[rowp][1] = planName;
-            sheet2.data[rowp][2] = cost.unit;
+            sheet2.data[rowp][3] = cost.unit;
             var currencies = cost.currencies;
             if (currencies) {
               currencies.forEach(function (currency) {
-                console.log(currency.country);
-
                 if (currency.country != "USA")
                   return;
 
                 var amount = currency.amount.USD;
 
                 if (cost.tierModel && cost.quantityTier != 1)
-                  sheet2.data[rowp][4] = " < " + cost.unitQuantity*cost.quantityTier;
+                  sheet2.data[rowp][5] = " < " + cost.unitQuantity * cost.quantityTier;
 
                 // Price is often given for 1 000 API Call in JSON
                 // So need to derive the price per API call
                 if (cost.unitQuantity)
                   amount = amount / cost.unitQuantity;
-                sheet2.data[rowp][3] = amount;
-
-                console.log(service.entity.label, planName, amount);
-
+                sheet2.data[rowp][4] = amount;
               });
             } else {
               // Handle simple cost plan (ex: Statica service)
               if (cost.amount)
-                sheet2.data[rowp][3] = cost.amount.USD;
+                sheet2.data[rowp][4] = cost.amount.USD;
             }
+            //console.log(rowp, svcName, planName, amount);
+            //console.log(rowp, svcName, planName);
 
+            // Plan Description
             var description = "";
             if (plan.entity.extra.bullets) {
-              plan.entity.extra.bullets.forEach(function(bullet, index) {
+              plan.entity.extra.bullets.forEach(function (bullet, index) {
                 description = description + (index > 0 ? ", " : "") + bullet;
               });
             } else {
-              description = plan.entity.description;
+              description = planDescription;
             }
-            sheet2.data[rowp][5] = description;
+            sheet2.data[rowp][6] = description;
+
+            // ---------------
+            // Determine whether or not the service is available through a Subscription or needs to be order/purchase through a sales rep
+            var withSubscription;
+            // By default, all services are available through subscription
+            if (extrap && extrap.subscription)
+              withSubscription = 'yes';
+            if (plan.entity.free == true)
+              withSubscription = 'yes';
+            // Some services are not using the tag reservable :-(
+            // The only way to find out whether the service is available within a subscription is to look at the plan description... dirty... but it works with those 3 keywords!!
+            // Exemple: dahsDB - Enterprise for Transactions 2.8.500
+            if ((planDescription.indexOf('order') !== -1) ||
+                (planDescription.indexOf('sales rep') !== -1))
+              withSubscription = 'no'
+            // Watson Premium services are not available by Subscription
+            if ((planDescription.indexOf('Premium') !== -1) &&
+                (planDescription.indexOf('watson') !== -1))
+              withSubscription = 'no'
+            if (!withSubscription)
+              withSubscription = 'yes'
+
+            var isReservable
+            if (extrap && extrap.reservable) {
+              isReservable = 'reservable'
+                // Reservable plan cannot be used with a subscription
+              withSubscription = 'no'
+            }
+            sheet2.data[rowp][2] = withSubscription;
+            //sheet2.data[rowp][7] = isReservable;
+            // ---------------
 
             rowp++;
           });
@@ -491,9 +533,10 @@ function exportToWord(services, dateMDY, res) {
   var docx = officegen('docx');
 
   var introPage = docx.createP();
-  introPage.addText("Disclaimer: The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.",
-    { color: '#ff0000', font_size: 16
-    });
+  introPage.addText("Disclaimer: The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.", {
+    color: '#ff0000',
+    font_size: 16
+  });
   introPage.addLineBreak();
 
   services.forEach(function (service) {
