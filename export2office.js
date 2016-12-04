@@ -53,7 +53,7 @@ router.post('/:format', function (req, res) {
 
   if (officeDocument) {
     res.setHeader("Content-Type", "application/octet-stream");
-    res.setHeader("Content-Disposition", "inline; filename=catalog-" + dateYMD + "." + req.params.format);
+    res.setHeader("Content-Disposition", "inline; filename=mycatalog-" + dateYMD + "." + req.params.format);
     officeDocument.generate(res);
   }
 });
@@ -152,7 +152,7 @@ function exportToExcel(services, dateMDY, res) {
   // New Excel tab to add plans & pricing - To be continued
   //--------------------------------------------------------------------
   sheet2 = xlsx.makeNewSheet();
-  sheet2.name = 'Plans - Beta - US Only';
+  sheet2.name = 'Plans - Beta - Subscription';
 
   // Table Header
   sheet2.data[0] = [];
