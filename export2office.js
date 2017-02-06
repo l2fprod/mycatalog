@@ -151,22 +151,66 @@ function exportToExcel(services, dateMDY, res) {
   //--------------------------------------------------------------------
   // New Excel tab to add plans & pricing - To be continued
   //--------------------------------------------------------------------
-  sheet2 = xlsx.makeNewSheet();
-  sheet2.name = 'Plans - Beta - Subscription';
+  var countryToCurrency = {};
 
+  // find all the possible currencies
+  services.forEach(function (service) {
+    service.plans.forEach(function (plan) {
+      if (plan.entity.extra && plan.entity.extra.costs) {
+        plan.entity.extra.costs.forEach(function (cost) {
+          if (cost.currencies) {
+            cost.currencies.forEach(function (currency) {
+              if (!countryToCurrency[currency.country]) {
+                countryToCurrency[currency.country] = Object.keys(currency.amount)[0];
+              }
+            });
+          } else {
+            //cost.amount
+          }
+        });
+      }
+    });
+  });
+
+  // add one tab per country
+  Object.keys(countryToCurrency).sort().forEach(function(country) {
+    var sheet2 = xlsx.makeNewSheet();
+    sheet2.name = `(BETA) Pricing - ${country} - ${countryToCurrency[country]}`;
+    fillPricingSheet(sheet2, services, country, countryToCurrency[country]);
+  });
+  return xlsx;
+}
+
+function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
+  var SERVICE_COLUMN_INDEX = 0;
+  var PLAN_COLUMN_INDEX = 1;
+  var SUBSCRIPTION_COLUMN_INDEX = 2;
+  var COST_UNIT_COLUMN_INDEX = 3;
+  var AMOUNT_COLUMN_INDEX = 4;
+  var TIER_COLUMN_INDEX = 5;
+  var DESCRIPTION_COLUMN_INDEX = 6;
+  var columnNameToColumnIndex = {
+    "Service": SERVICE_COLUMN_INDEX,
+    "Plan": PLAN_COLUMN_INDEX,
+    "Subscription": SUBSCRIPTION_COLUMN_INDEX,
+    "Cost Unit": COST_UNIT_COLUMN_INDEX,
+    "Amount": AMOUNT_COLUMN_INDEX,
+    "Tier": TIER_COLUMN_INDEX,
+    "Description": DESCRIPTION_COLUMN_INDEX
+  }
   // Table Header
   sheet2.data[0] = [];
-  sheet2.data[0][0] = "Service";
-  sheet2.data[0][1] = "Plan";
-  sheet2.data[0][2] = "Subscription";
-  sheet2.data[0][3] = "Cost Unit";
-  sheet2.data[0][4] = "Amount USD";
-  sheet2.data[0][5] = "Tier";
-  sheet2.data[0][6] = "Description";
-  //sheet2.data[0][7] = "Reservable";
+  sheet2.data[0][0] = "Disclaimer: The pricing information in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
+  sheet2.data[1] = [];
+  sheet2.data[1][0] = ""; //space
+
+  sheet2.data[2] = [];
+  Object.keys(columnNameToColumnIndex).forEach(function(key) {
+    sheet2.data[2][columnNameToColumnIndex[key]] = key;
+  });
 
   // First row after the header
-  var rowp = 1;
+  var rowp = 3;
 
   services.forEach(function (service) {
     if (!service.entity.active) {
@@ -189,16 +233,16 @@ function exportToExcel(services, dateMDY, res) {
       // Free service w/o any cost array (ex: Access Trail, Active Deploy)
       //console.log(rowp, svcName, planName)
       sheet2.data[rowp] = [];
-      sheet2.data[rowp][0] = svcName;
-      sheet2.data[rowp][1] = planName;
-      sheet2.data[rowp][6] = planDescription;
+      sheet2.data[rowp][SERVICE_COLUMN_INDEX] = svcName;
+      sheet2.data[rowp][PLAN_COLUMN_INDEX] = planName;
+      sheet2.data[rowp][DESCRIPTION_COLUMN_INDEX] = planDescription;
       // Set amount to zero if plan if free.
       if (plan.entity.free == true)
-        sheet2.data[rowp][4] = 0;
+        sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = 0;
       // If plan is free, no need to process the extra costs
       if (planName.toLowerCase().indexOf('free') !== -1) {
         // A free plan can always be consumed with a subscription
-        sheet2.data[rowp][2] = 'yes';
+        sheet2.data[rowp][SUBSCRIPTION_COLUMN_INDEX] = 'yes';
         rowp++; return;
       }
 
@@ -210,30 +254,32 @@ function exportToExcel(services, dateMDY, res) {
           costs.forEach(function (cost) {
             // New row per cost
             sheet2.data[rowp] = [];
-            sheet2.data[rowp][0] = svcName;
-            sheet2.data[rowp][1] = planName;
-            sheet2.data[rowp][3] = cost.unit;
+            sheet2.data[rowp][SERVICE_COLUMN_INDEX] = svcName;
+            sheet2.data[rowp][PLAN_COLUMN_INDEX] = planName;
+            sheet2.data[rowp][COST_UNIT_COLUMN_INDEX] = cost.unit;
             var currencies = cost.currencies;
             if (currencies) {
               currencies.forEach(function (currency) {
-                if (currency.country != "USA")
+                if (currency.country != currentCountry || !currency.amount[currentCurrency]) {
                   return;
+                }
 
-                var amount = currency.amount.USD;
+                var amount = currency.amount[currentCurrency];
 
                 if (cost.tierModel && cost.quantityTier != 1)
-                  sheet2.data[rowp][5] = " < " + cost.unitQuantity * cost.quantityTier;
+                  sheet2.data[rowp][TIER_COLUMN_INDEX] = " < " + cost.unitQuantity * cost.quantityTier;
 
                 // Price is often given for 1 000 API Call in JSON
                 // So need to derive the price per API call
                 if (cost.unitQuantity)
                   amount = amount / cost.unitQuantity;
-                sheet2.data[rowp][4] = amount;
+                sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = amount;
               });
             } else {
               // Handle simple cost plan (ex: Statica service)
-              if (cost.amount)
-                sheet2.data[rowp][4] = cost.amount.USD;
+              if (cost.amount) {
+                sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = cost.amount[currentCurrency];
+              }
             }
             //console.log(rowp, svcName, planName, amount);
             //console.log(rowp, svcName, planName);
@@ -247,7 +293,7 @@ function exportToExcel(services, dateMDY, res) {
             } else {
               description = planDescription;
             }
-            sheet2.data[rowp][6] = description;
+            sheet2.data[rowp][DESCRIPTION_COLUMN_INDEX] = description;
 
             // ---------------
             // Determine whether or not the service is available through a Subscription or needs to be order/purchase through a sales rep
@@ -276,8 +322,7 @@ function exportToExcel(services, dateMDY, res) {
                 // Reservable plan cannot be used with a subscription
               withSubscription = 'no'
             }
-            sheet2.data[rowp][2] = withSubscription;
-            //sheet2.data[rowp][7] = isReservable;
+            sheet2.data[rowp][SUBSCRIPTION_COLUMN_INDEX] = withSubscription;
             // ---------------
 
             rowp++;
@@ -286,8 +331,6 @@ function exportToExcel(services, dateMDY, res) {
       }
     });
   });
-
-  return xlsx;
 }
 
 // ---------------------------------------------------------------------
