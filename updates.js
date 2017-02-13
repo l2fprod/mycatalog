@@ -43,10 +43,17 @@ function processSnapshots(snapshots, res) {
     current = current + 1;
   }
 
+  var siteUrl;
+  if (process.env.VCAP_APPLICATION) {
+    siteUrl = JSON.parse(process.env.VCAP_APPLICATION)['application_uris'][0];
+  } else {
+    siteUrl = "http://mycatalog.mybluemix.net";
+  }
+
   var feed = new RSS({
     title: "mycatalog updates",
     generator: "mycatalog",
-    site_url: "http://mycatalog.mybluemix.net",
+    site_url: siteUrl,
     description: "'My Catalog' uses the Cloudfoundry API to retrieve data from the Bluemix catalog. It attempts to be as accurate as possible. This feed shows additions, updates, removals from the catalog. Use with care. It is a work-in-progress :)"
   });
 
@@ -59,7 +66,7 @@ function processSnapshots(snapshots, res) {
       feed.item({
         title: title,
         description: change.description,
-        url: "http://mycatalog.mybluemix.net/?date=" + encodeURIComponent(result.date) +
+        url: siteUrl + "/?date=" + encodeURIComponent(result.date) +
           "&service=" + encodeURIComponent(change.service.entity.label) +
           "&type=" + change.tag,
         date: result.date
