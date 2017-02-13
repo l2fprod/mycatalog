@@ -49,7 +49,7 @@ function ServiceUpdater() {
     tasks.push(function (callback) {
       services = JSON.parse(fs.readFileSync(regions[0].serviceFilename));
       services.forEach(function (service) {
-        service.entity.tags.push("custom_datacenter_" + regions[0].id);
+        service.entity.tags.push(regions[0].tag);
       });
       callback(null);
     });
@@ -68,14 +68,14 @@ function ServiceUpdater() {
         // mark the services
         services.forEach(function (service) {
           if (uidToServices[service.entity.label]) {
-            service.entity.tags.push("custom_datacenter_" + otherRegion.id);
+            service.entity.tags.push(otherRegion.tag);
             delete uidToServices[service.entity.label];
           }
         });
 
         Object.keys(uidToServices).forEach(function (key) {
           console.log(uidToServices[key].entity.label, "is only available in", otherRegion.id, ". Adding it to main region");
-          uidToServices[key].entity.tags.push("custom_datacenter_" + otherRegion.id);
+          uidToServices[key].entity.tags.push(otherRegion.tag);
           services.push(uidToServices[key]);
         });
 
@@ -317,8 +317,8 @@ function ServiceUpdater() {
         var stream = fs.createWriteStream(outputFilename);
         stream.once('open', function (fd) {
           stream.write(JSON.stringify(servicePlans, null, 2));
+          callback(null);
         });
-        callback(null);
       }
     });
   }
