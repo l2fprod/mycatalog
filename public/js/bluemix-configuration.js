@@ -89,5 +89,14 @@ var regions = [
     planFilename: "public/generated/plans.au-syd.json",
     tag: "custom_datacenter_au-syd",
     label: "AU"
+  },
+  {
+    id: "china",
+    api: "api.chinabluemix.net",
+    console: "console.chinabluemix.net",
+    serviceFilename: "public/generated/services.china.json",
+    planFilename: "public/generated/plans.china.json",
+    tag: "custom_datacenter_china",
+    label: "CN"
   }
 ];
