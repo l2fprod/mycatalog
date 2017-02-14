@@ -43,12 +43,7 @@ function processSnapshots(snapshots, res) {
     current = current + 1;
   }
 
-  var siteUrl;
-  if (process.env.VCAP_APPLICATION) {
-    siteUrl = JSON.parse(process.env.VCAP_APPLICATION)['application_uris'][0];
-  } else {
-    siteUrl = "http://mycatalog.mybluemix.net";
-  }
+  var siteUrl = process.env.SITE_URL || "https://mycatalog.mybluemix.net";
 
   var feed = new RSS({
     title: "mycatalog updates",
