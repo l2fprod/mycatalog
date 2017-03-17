@@ -82,6 +82,15 @@ var regions = [
     label: "UK"
   },
   {
+    id: "eu-de",
+    api: "api.eu-de.bluemix.net",
+    console: "console.eu-de.bluemix.net",
+    serviceFilename: "public/generated/services.eu-de.json",
+    planFilename: "public/generated/plans.eu-de.json",
+    tag: "custom_datacenter_eu-de",
+    label: "DE"
+  },
+  {
     id: "au-syd",
     api: "api.au-syd.bluemix.net",
     console: "console.au-syd.bluemix.net",
