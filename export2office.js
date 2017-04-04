@@ -92,8 +92,9 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[2][7] = "Regions";
     sheet.data[2][8] = "Creation Date";
     sheet.data[2][9] = "Last Modification";
-    sheet.data[2][10] = "Long Description";
-    sheet.data[2][11] = "URL";
+    sheet.data[2][10] = "Service Key Support";
+    sheet.data[2][11] = "Long Description";
+    sheet.data[2][12] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
@@ -108,8 +109,11 @@ function exportToExcel(services, dateMDY, res) {
       }
       sheet.data[row][2] = service.entity.description;
       sheet.data[row][3] = extra.providerDisplayName;
-      sheet.data[row][10] = extra.longDescription;
-      sheet.data[row][11] = extra.documentationUrl;
+      // k8s cares about is whether the service has serviceKeysSupported=true
+      // to allow service keys to be created and not just binding to cf apps.
+      sheet.data[row][10] = (extra.serviceKeysSupported == true) ? "Yes" : "No";
+      sheet.data[row][11] = extra.longDescription;
+      sheet.data[row][12] = extra.documentationUrl;
     } else {
       sheet.data[row][0] = service.entity.label;
       sheet.data[row][1] = service.entity.tags[0];
