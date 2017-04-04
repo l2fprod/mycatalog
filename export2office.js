@@ -64,37 +64,43 @@ router.post('/:format', function (req, res) {
 function exportToExcel(services, dateMDY, res) {
   var xlsx = officegen('xlsx');
 
+  // Disclaimer
+  sheet0 = xlsx.makeNewSheet();
+  sheet0.name = 'Disclaimer';
+  sheet0.data[0] = [];
+  sheet0.data[0][0] = "Disclaimer";
+  sheet0.data[1] = [];
+  sheet0.data[1][0] = "The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API.";
+  sheet0.data[2] = [];
+  sheet0.data[2][0] = "This content attempts to be as accurate as possible.";
+  sheet0.data[3] = [];
+  sheet0.data[3][0] = "Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
+  
   sheet = xlsx.makeNewSheet();
   sheet.name = 'My Catalog';
 
-  var row = 3;
+  var row = 1;
 
   services.forEach(function (service) {
     if (!service.entity.active) {
       return;
     }
 
-    // Disclaimer
-    sheet.data[0] = [];
-    sheet.data[0][0] = "Disclaimer: The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
-    sheet.data[1] = [];
-    sheet.data[1][0] = ""; //space
-
     // Header
-    sheet.data[2] = [];
-    sheet.data[2][0] = "Service";
-    sheet.data[2][1] = "Category";
-    sheet.data[2][2] = "Description";
-    sheet.data[2][3] = "Author";
-    sheet.data[2][4] = "Status";
-    sheet.data[2][5] = "Free Plan";
-    sheet.data[2][6] = "Plans";
-    sheet.data[2][7] = "Regions";
-    sheet.data[2][8] = "Creation Date";
-    sheet.data[2][9] = "Last Modification";
-    sheet.data[2][10] = "Service Key Support";
-    sheet.data[2][11] = "Long Description";
-    sheet.data[2][12] = "URL";
+    sheet.data[0] = [];
+    sheet.data[0][0] = "Service";
+    sheet.data[0][1] = "Category";
+    sheet.data[0][2] = "Description";
+    sheet.data[0][3] = "Author";
+    sheet.data[0][4] = "Status";
+    sheet.data[0][5] = "Free Plan";
+    sheet.data[0][6] = "Plans";
+    sheet.data[0][7] = "Regions";
+    sheet.data[0][8] = "Creation Date";
+    sheet.data[0][9] = "Last Modification";
+    sheet.data[0][10] = "Service Key Support";
+    sheet.data[0][11] = "Long Description";
+    sheet.data[0][12] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
@@ -204,13 +210,8 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
   }
   // Table Header
   sheet2.data[0] = [];
-  sheet2.data[0][0] = "Disclaimer: The pricing information in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
-  sheet2.data[1] = [];
-  sheet2.data[1][0] = ""; //space
-
-  sheet2.data[2] = [];
   Object.keys(columnNameToColumnIndex).forEach(function(key) {
-    sheet2.data[2][columnNameToColumnIndex[key]] = key;
+    sheet2.data[0][columnNameToColumnIndex[key]] = key;
   });
 
   // First row after the header
