@@ -168,8 +168,9 @@ function ServiceUpdater() {
       var stream = fs.createWriteStream("public/generated/services-full.json");
       stream.once('open', function (fd) {
         stream.write(JSON.stringify(services, null, 2));
-        callback(null);
+        stream.end();
       });
+      stream.once('finish', () => { callback(null); });
     });
 
     // write the light version for the webpage
@@ -190,8 +191,9 @@ function ServiceUpdater() {
       var stream = fs.createWriteStream("public/generated/services.json");
       stream.once('open', function (fd) {
         stream.write(JSON.stringify(services, null, 2));
-        callback(null);
+        stream.end();
       });
+      stream.once('finish', () => { callback(null); });
     });
 
     // get the service icons
@@ -291,8 +293,9 @@ function ServiceUpdater() {
         var stream = fs.createWriteStream(outputFilename);
         stream.once('open', function (fd) {
           stream.write(JSON.stringify(services, null, 2));
+          stream.end();
         });
-        callback(null);
+        stream.once('finish', () => { callback(null); });
       }
     });
   };
@@ -317,8 +320,9 @@ function ServiceUpdater() {
         var stream = fs.createWriteStream(outputFilename);
         stream.once('open', function (fd) {
           stream.write(JSON.stringify(servicePlans, null, 2));
-          callback(null);
+          stream.end();
         });
+        stream.once('finish', () => { callback(null); });
       }
     });
   }
