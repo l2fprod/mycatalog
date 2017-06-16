@@ -65,7 +65,8 @@ function scheduleUpdater() {
   var CronJob = require('cron').CronJob;
   new CronJob({
     // run twice, once at 8 in the US but also at 8 in Europe
-    cronTime: '0 0 8,23 * * *',
+    // cronTime: '0 0 8,23 * * *',
+	cronTime: '* * * * *',
     onTick: function () {
       console.log(new Date(), "Updating services...");
       serviceUpdater.run(saveSnapshotCallback);
