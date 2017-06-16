@@ -82,6 +82,12 @@
               <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{region.label}}" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
             </td>
           </tr>
+		  <tr>
+            <td class="search-title"><span class="text-muted">Tech Sellers:</span></td>
+            <td>
+              <button ng-repeat="techseller in techsellers" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{techseller.id}}" data-toggle="button" ng-click="toggleTagConfiguration(techseller.id, true)">{{techseller.id}}</button>
+            </td>
+          </tr>
           <tr>
             <td></td>
             <td>
