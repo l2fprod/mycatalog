@@ -71,7 +71,7 @@ function scheduleUpdater() {
       serviceUpdater.run(saveSnapshotCallback);
     },
     start: true,
-    timeZone: 'Europe/London'
+    timeZone: 'America/Los_Angeles'
   });
 }
 
