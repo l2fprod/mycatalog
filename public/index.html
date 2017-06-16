@@ -118,11 +118,11 @@
             <th rowspan="2">Description</th>
             <th colspan="{{regions.length}}">Regions</th>
             <th rowspan="2" align="middle">Tags</th>
+			<th colspan="{{techsellers.length}}">Tech Sellers</th>
           </tr>
           <tr>
             <th ng-repeat="region in regions">{{region.label}}</th>
-          </tr>
-		   <tr>
+			<!-- insert another th here?? -->
             <th ng-repeat="techseller in techsellers">{{techseller.id}}</th>
           </tr>
         </thead>
