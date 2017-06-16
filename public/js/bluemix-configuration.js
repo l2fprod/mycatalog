@@ -109,3 +109,24 @@ var regions = [
     label: "CN"
   }
 ];
+
+var techsellers = [
+{
+	id: "LL"
+},
+{
+	id: "GI"
+},
+{
+	id: "KB"
+},
+{
+	id: "CD"
+},
+{
+	id: "MJ"
+},
+{
+	id: "GM"
+}
+];
