@@ -87,7 +87,7 @@
 		  <tr>
             <td class="search-title"><span class="text-muted">Tech Sellers:</span></td>
             <td>
-              <button ng-repeat="techseller in techsellers" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{techseller.id}}" data-toggle="button" ng-click="toggleTagConfiguration(techseller.id, true)">{{techseller.id}}</button>
+              <button ng-repeat="techseller in techsellers" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{techseller.label}}" data-toggle="button" ng-click="toggleTagConfiguration(techseller.label, true)">{{techseller.label}}</button>
             </td>
           </tr>
           <tr>

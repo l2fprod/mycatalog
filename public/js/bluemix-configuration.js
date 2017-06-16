@@ -121,7 +121,7 @@ var techsellers = [
   },
   {
 	id: "KB",
-	label: "Chris Brantzewicz"
+	label: "Chris Brancewicz"
   },
   {
 	id: "CD",
