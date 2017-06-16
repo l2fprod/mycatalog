@@ -114,6 +114,9 @@
           <tr>
             <th ng-repeat="region in regions">{{region.label}}</th>
           </tr>
+		   <tr>
+            <th ng-repeat="techseller in techsellers">{{techseller.id}}</th>
+          </tr>
         </thead>
         <tr ng-repeat="service in (filteredServices = (services | filter:searchText | filterPanel:filterConfiguration))">
           <td>
