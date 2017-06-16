@@ -111,22 +111,28 @@ var regions = [
 ];
 
 var techsellers = [
-{
-	id: "LL"
-},
-{
-	id: "GI"
-},
-{
-	id: "KB"
-},
-{
-	id: "CD"
-},
-{
-	id: "MJ"
-},
-{
-	id: "GM"
-}
+  {
+	id: "LL",
+	label: "Leon Lopez"
+  },
+  {
+	id: "GI",
+	label: "Gianluca Interino"
+  },
+  {
+	id: "KB",
+	label: "Chris Brantzewicz"
+  },
+  {
+	id: "CD",
+	label: "Ciaran Darcy"
+  },
+   {
+	id: "MJ",
+	label: "Martina Junkers"
+  },
+  {
+	id: "GM",
+	label: "Giulio Montenero"
+  }
 ];
