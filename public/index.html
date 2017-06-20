@@ -8,10 +8,12 @@
   <!-- load angular early for ng-clock to work -->
   <script src="vendor/angular/angular.min.js"></script>
 
-  <title>My Catalog</title>
+  <title>Skills Assessment</title>
 </head>
 
 <body ng-controller="MainController" ng-cloak>
+
+<!-- spinner displayed when loading -->
 
   <spinner name="spinner" usSpinner>
     <div class="spinner">
@@ -23,7 +25,7 @@
   <nav class="navbar navbar-dark bg-primary navbar-fixed-top navbar-no-margin">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand bg-primary" href="#">My Catalog</a>
+        <a class="navbar-brand bg-primary" href="#">Skills Assesment</a>
       </div>
       <div id="navbar" class="navbar-collapse">
         <form role="search">
@@ -82,6 +84,12 @@
               <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{region.label}}" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
             </td>
           </tr>
+		  <tr>
+            <td class="search-title"><span class="text-muted">Tech Sellers:</span></td>
+            <td>
+              <button ng-repeat="techseller in techsellers" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{techseller.label}}" data-toggle="button" ng-click="toggleTagConfiguration(techseller.label, true)">{{techseller.label}}</button>
+            </td>
+          </tr>
           <tr>
             <td></td>
             <td>
@@ -110,9 +118,11 @@
             <th rowspan="2">Description</th>
             <th colspan="{{regions.length}}">Regions</th>
             <th rowspan="2" align="middle">Tags</th>
+			<th colspan="{{techsellers.length}}">Tech Sellers</th>
           </tr>
           <tr>
             <th ng-repeat="region in regions">{{region.label}}</th>
+            <th ng-repeat="techseller in techsellers">{{techseller.id}}</th>
           </tr>
         </thead>
         <tr ng-repeat="service in (filteredServices = (services | filter:searchText | filterPanel:filterConfiguration))">
@@ -153,9 +163,9 @@
 
   <footer>
     <span class="text-muted pull-left disclaimer">
-      'My Catalog' uses the Cloudfoundry API to retrieve data from the official <a href="https://new-console.ng.bluemix.net/catalog">Bluemix catalog</a>.
+      'Skills Assesment' uses the Cloudfoundry API to retrieve data from the official <a href="https://new-console.ng.bluemix.net/catalog">Bluemix catalog</a>.
       It attempts to be as accurate as possible. Use with care.
-    </span> made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>
+    </span> made by <a href="https://twitter.com/loewenx">Leon López Mármol</a> 
   </footer>
 
   <!-- Modal -->

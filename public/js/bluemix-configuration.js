@@ -109,3 +109,30 @@ var regions = [
     label: "CN"
   }
 ];
+
+var techsellers = [
+  {
+	id: "LL",
+	label: "Leon Lopez"
+  },
+  {
+	id: "GI",
+	label: "Gianluca Interino"
+  },
+  {
+	id: "KB",
+	label: "Chris Brancewicz"
+  },
+  {
+	id: "CD",
+	label: "Ciaran Darcy"
+  },
+   {
+	id: "MJ",
+	label: "Martina Junkers"
+  },
+  {
+	id: "GM",
+	label: "Giulio Montenero"
+  }
+];

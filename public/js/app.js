@@ -69,6 +69,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
   };
   $scope.categories = categories;
   $scope.regions = regions;
+  $scope.techsellers = techsellers;
   $scope.selectedService = {};
 
   $scope.filterConfiguration = {
