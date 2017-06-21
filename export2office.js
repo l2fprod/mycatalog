@@ -75,7 +75,7 @@ function exportToExcel(services, dateMDY, res) {
   sheet0.data[2][0] = "This content attempts to be as accurate as possible.";
   sheet0.data[3] = [];
   sheet0.data[3][0] = "Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
-  
+
   sheet = xlsx.makeNewSheet();
   sheet.name = 'My Catalog';
 
@@ -132,6 +132,8 @@ function exportToExcel(services, dateMDY, res) {
       status = "Beta";
     else if (service.entity.tags.indexOf('ibm_experimental') >= 0)
       status = "Experimental";
+    else if (service.entity.tags.indexOf('ibm_deprecated') >= 0)
+        status = "Deprecated";
     else
       status = "Production Ready";
     sheet.data[row][4] = status;
