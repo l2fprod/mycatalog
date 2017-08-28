@@ -67,6 +67,7 @@
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>      
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Deprecated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_deprecated', true)"><i class="fa fa-exclamation-triangle"></i>&nbsp;Deprecated</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Lite plan" data-toggle="button" ng-click="toggleTagConfiguration('lite', true)"><i class="fa fa-usd"></i>&nbsp;Lite plan</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;Syndicated</button>
             </td>
           </tr>
@@ -141,6 +142,7 @@
             <span ng-if="service.entity.tags.indexOf('ibm_deprecated')>=0" class="label label-danger">Deprecated</span>
 
             <span ng-if="service.entity.tags.indexOf('custom_has_free_plan')>=0" class="label label-info">Free plan</span>
+            <span ng-if="service.entity.tags.indexOf('lite')>=0" class="label label-info">Lite plan</span>
 
             <span ng-repeat="tag in service.entity.tags | filter: tagFilter">
               <span class="label label-info">{{tag}}</span>
