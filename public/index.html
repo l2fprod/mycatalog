@@ -64,7 +64,7 @@
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Third party" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', false); toggleTagConfiguration('ibm_beta', false)">Production Ready</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Beta" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)"><i class="fa fa-flag"></i>&nbsp;Beta</button>
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>      
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Deprecated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_deprecated', true)"><i class="fa fa-exclamation-triangle"></i>&nbsp;Deprecated</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Lite plan" data-toggle="button" ng-click="toggleTagConfiguration('lite', true)"><i class="fa fa-usd"></i>&nbsp;Lite plan</button>
@@ -74,7 +74,7 @@
           <tr>
             <td class="search-title"><span class="text-muted">Categories:</span></td>
             <td>
-              <button ng-repeat="category in categories" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{category.label}}" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
+              <button ng-repeat="category in categories | orderBy:'label'" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{category.label}}" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
             </td>
           </tr>
           <tr>
