@@ -84,7 +84,7 @@ function saveSnapshotCallback(err, services) {
     }
     snapshotDb.insert(snapshot, function (err, body) {
       if (err) {
-        console.log("Failed to persist services snapshot");
+        console.log("Failed to persist services snapshot", err);
       } else {
         console.log("Saved services snapshot.");
       }

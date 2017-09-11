@@ -174,6 +174,7 @@ function ServiceUpdater() {
     });
 
     // write the light version for the webpage
+    // and for the database. we need a small file to fit within the 1M limit of cloudant post
     tasks.push(function(callback) {
       console.log("Writing light service file...");
       services.forEach(function(service) {
@@ -186,6 +187,8 @@ function ServiceUpdater() {
         service.plans.forEach(function (plan) {
           if (plan.entity.extra) delete plan.entity.extra.costs;
         });
+
+        removeUndefined(service);
       });
 
       var stream = fs.createWriteStream("public/generated/services.json");
@@ -212,6 +215,32 @@ function ServiceUpdater() {
 
       if (serviceUpdaterCallback) {
         serviceUpdaterCallback(err, services);
+      }
+    });
+  }
+
+  // delete nulls or empty or attribute we don't need
+  function removeUndefined(anObject) {
+    Object.keys(anObject).forEach((key) => {
+      if (key === 'service_instances_url' ||
+          key === 'service_url' ||
+          key === 'service_plans_url' ||
+          key === 'service_broker_guid') {
+        delete anObject[key];
+      } else if (!anObject[key]) {
+        delete anObject[key];
+      } else if (Array.isArray(anObject[key])) {
+        if (anObject[key].length === 0) {
+          delete anObject[key];
+        } else {
+          anObject[key].forEach(item => removeUndefined(item));
+        }
+      } else if (typeof anObject[key] === 'object') {
+        if (Object.keys(anObject[key]).length === 0) {
+          delete anObject[key];
+        } else {
+          removeUndefined(anObject[key]);
+        }
       }
     });
   }

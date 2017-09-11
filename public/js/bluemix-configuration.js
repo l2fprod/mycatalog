@@ -59,6 +59,10 @@ var categories = [
   {
     id: "integration",
     label: "Integration"
+  },
+  {
+    id: "finance",
+    label: "Finance"
   }
 ];
 
