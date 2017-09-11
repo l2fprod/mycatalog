@@ -91,7 +91,7 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[0][0] = "Service";
     sheet.data[0][1] = "Category";
     sheet.data[0][2] = "Description";
-    sheet.data[0][3] = "Author";
+    sheet.data[0][3] = "Provider";
     sheet.data[0][4] = "Status";
     sheet.data[0][5] = "Free Plan";
     sheet.data[0][6] = "Plans";
@@ -440,7 +440,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         cy: 300,
         fill: '47A9C0'
       });
-      slide.addText("Author: ", {
+      slide.addText("Provider: ", {
         x: 850,
         y: 250,
         cx: '150',
@@ -606,8 +606,8 @@ function exportToWord(services, dateMDY, res) {
     var extra = service.entity.extra;
 
     var svcName = (extra && extra.displayName) ? extra.displayName : service.entity.label;
-    var author = (extra && extra.providerDisplayName) ? extra.providerDisplayName : service.entity.provider;
-    var doc = (extra && extra.documentationUrl) ? extra.documentationUrl : "";
+    var provider = (extra && extra.providerDisplayName) ? extra.providerDisplayName : service.entity.provider;
+    var url = (extra && extra.documentationUrl) ? extra.documentationUrl : "";
 
     p.addText('     ' + svcName, {
       bold: true,
@@ -615,31 +615,39 @@ function exportToWord(services, dateMDY, res) {
       font_size: 18
     });
     p.addLineBreak();
-    p.addText('________________________________________________________________________', {
-      color: '808080'
+    p.addLineBreak();
+    var description;
+    // To export into a specific language:
+    // if (extra.i18n && extra.i18n.fr && extra.i18n.fr.metadata) {
+    //   description = extra.i18n.fr.metadata.longDescription;
+    //   // If long description is not available, pick the short one
+    //   if (!description) description = extra.i18n.fr.description;
+    // }
+    if (!description) description = service.entity.description;
+    p.addText(description, {
+        font_size: 14,
+        color: '808080'
     });
     p.addLineBreak();
-    p.addText(service.entity.description, {
-      font_size: 16
-    });
-    p.addLineBreak();
-    p.addText('Author:  ' + author, {
+    p.addText('Provider:  ', {
       font_size: 14,
       color: '808080'
+    });
+    p.addText(provider, {
+      font_size: 14
     });
     p.addLineBreak();
     p.addText('Documentation:  ', {
       font_size: 14,
       color: '808080'
     });
-    p.addLineBreak();
-    p.addText(doc, {
+    p.addText (url, { link: url },{
       font_size: 14,
       color: '808080'
     });
     p.addLineBreak();
+    p.addLineBreak();
   });
-
   return docx;
 }
 
