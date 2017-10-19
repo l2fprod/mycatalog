@@ -60,8 +60,8 @@
           <tr>
             <td class="search-title"><span class="text-muted">Filters:</span></td>
             <td>
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Infrastructure" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_iaas', true)"><i class="fa fa-server"></i>&nbsp;Infrastructure</button>
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Service" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_service', true)"><i class="fa fa-cloud"></i>&nbsp;Service</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="IaaS" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_iaas', true)">IaaS</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="PaaS" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_service', true)">PaaS</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="IBM" data-toggle="button" ng-click="toggleTagConfiguration('ibm_created', true)">IBM</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Third party" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', false); toggleTagConfiguration('ibm_beta', false)">Production Ready</button>
@@ -179,7 +179,7 @@
             <p class="text-muted">
               {{plan.description}}
             </p>
-            <input class="form-control" type="text" value="bx cf create-service {{quote(selectedService.metadata.service.cf_service_name)}} {{quote(plan.name)}} <service-name>" />
+            <input ng-if="plan.name !== 'user-provided'" class="form-control" type="text" value="bx cf create-service {{quote(selectedService.metadata.service.cf_service_name)}} {{quote(plan.name)}} <service-name>" />
           </div>
         </div>
         <div class="modal-footer">

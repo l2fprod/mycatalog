@@ -185,6 +185,9 @@ function ServiceUpdater() {
         resource.description = resource.overview_ui['en'].description;
         resource.longDescription = resource.overview_ui['en'].long_description;
         resource.displayName = resource.overview_ui['en'].display_name || resource.metadata.service.extra.displayName;
+        if (resource.displayName.startsWith('IBM ')) {
+          resource.displayName = resource.displayName.substring(4);
+        }
         resource.imageUrl = resource.images.image || resource.images.feature_image;
 
         // inject custom tags
