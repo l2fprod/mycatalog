@@ -74,6 +74,7 @@ var regions = [
     serviceFilename: "public/generated/services.us-south.json",
     planFilename: "public/generated/plans.us-south.json",
     tag: "custom_datacenter_us",
+    v2tag: "us-south",
     label: "US"
   },
   {
@@ -83,6 +84,7 @@ var regions = [
     serviceFilename: "public/generated/services.eu-gb.json",
     planFilename: "public/generated/plans.eu-gb.json",
     tag: "custom_datacenter_eu-gb",
+    v2tag: "eu-gb",
     label: "UK"
   },
   {
@@ -92,6 +94,7 @@ var regions = [
     serviceFilename: "public/generated/services.eu-de.json",
     planFilename: "public/generated/plans.eu-de.json",
     tag: "custom_datacenter_eu-de",
+    v2tag: "eu-de",
     label: "DE"
   },
   {
@@ -101,6 +104,7 @@ var regions = [
     serviceFilename: "public/generated/services.au-syd.json",
     planFilename: "public/generated/plans.au-syd.json",
     tag: "custom_datacenter_au-syd",
+    v2tag: "au-syd",
     label: "AU"
   },
   {

@@ -29,7 +29,7 @@
         <form role="search">
           <div class="form-group search-input left-inner-addon">
             <i class="glyphicon glyphicon-search"></i>
-            <input id="searchinput" type="text" class="form-control" placeholder="Search Services" ng-model="searchText" autofocus>
+            <input id="searchinput" type="text" class="form-control" placeholder="Search Resources" ng-model="searchText" autofocus>
             <!-- To be fixed... Incorrect position of Search icon when resizing screen
                  and clear javascript not working with filter activated -->
             <!-- span id="searchclear" class="glyphicon glyphicon-remove"></span -->
@@ -39,13 +39,13 @@
     </div>
 
     <div class="container">
-      <b>{{services.length}}</b> services in the catalog<span ng-if="filteredServices.length != services.length">, <b>{{filteredServices.length}}</b> services matching the search criteria</span><span ng-if="selection.services.length>0">, <b>{{selection.services.length}}</b> services selected</span>
+      <b>{{resources.length}}</b> resources in the catalog<span ng-if="filteredResources.length != resources.length">, <b>{{filteredResources.length}}</b> resources matching the search criteria</span><span ng-if="selection.resources.length>0">, <b>{{selection.resources.length}}</b> resources selected</span>
 
       <p class="pull-right">
          <span class="fa fa-arrow-right" aria-hidden="true"></span>
           Export
-        <span ng-if="selection.services.length==0">catalog</span>
-        <span ng-if="selection.services.length>0">selection</span> to&nbsp;
+        <span ng-if="selection.resources.length==0">catalog</span>
+        <span ng-if="selection.resources.length>0">selection</span> to&nbsp;
         <a href="#" class="tracking" data-track-action="Export" data-track-label="Powerpoint" ng-click="exportSelection('pptx')" style="color:white"><img border="0" src="icons/ppt_logo.png" width="30" height="30"></a>&nbsp;
         <a href="#" class="tracking" data-track-action="Export" data-track-label="Excel" ng-click="exportSelection('xlsx')" style="color:white"><img border="0" src="icons/excel_logo.png" width="30" height="30"></a>&nbsp;
         <a href="#" class="tracking" data-track-action="Export" data-track-label="Word" ng-click="exportSelection('docx')" style="color:white"><img border="0" src="icons/word_logo.png" width="30" height="30"></a>
@@ -66,9 +66,11 @@
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Beta" data-toggle="button" ng-click="toggleTagConfiguration('ibm_beta', true)"><i class="fa fa-flag"></i>&nbsp;Beta</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Deprecated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_deprecated', true)"><i class="fa fa-exclamation-triangle"></i>&nbsp;Deprecated</button>
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('custom_has_free_plan', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('free', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Lite plan" data-toggle="button" ng-click="toggleTagConfiguration('lite', true)"><i class="fa fa-usd"></i>&nbsp;Lite plan</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;Syndicated</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Infrastructure" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_iaas', true)"><i class="fa fa-cloud"></i>&nbsp;Infrastructure</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Service" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_service', true)"><i class="fa fa-cloud"></i>&nbsp;Service</button>
             </td>
           </tr>
           <tr>
@@ -106,7 +108,7 @@
           <tr>
             <th rowspan="2"></th>
             <th rowspan="2"></th>
-            <th rowspan="2">Service</th>
+            <th rowspan="2">Name</th>
             <th rowspan="2">CLI</th>
             <th rowspan="2">Description</th>
             <th colspan="{{regions.length}}">Regions</th>
@@ -116,35 +118,35 @@
             <th ng-repeat="region in regions">{{region.label}}</th>
           </tr>
         </thead>
-        <tr ng-repeat="service in (filteredServices = (services | filter:searchText | filterPanel:filterConfiguration))">
+        <tr ng-repeat="resource in (filteredResources = (resources | filter:searchText | filterPanel:filterConfiguration))">
           <td>
-            <input type="checkbox" checklist-model="selection.services" checklist-value="service.metadata.guid" class="tracking" data-track-action="Select" data-track-label="{{service.entity.label}}">
+            <input type="checkbox" checklist-model="selection.resources" checklist-value="resource.id" class="tracking" data-track-action="Select" data-track-label="{{service.entity.label}}">
           </td>
           <td class="service-icon">
-            <img ng-if="service.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{service.entity.extra.smallImageUrl}}" />
-            <img ng-if="!service.entity.extra.smallImageUrl && service.entity.extra.imageUrl" class="service-small-icon" ng-src="{{service.entity.extra.imageUrl}}" />
+            <img class="service-small-icon" ng-src="{{resource.imageUrl}}" />
           </td>
           <td class="service-displayname">
-            <a href="{{consoleUrl(service)}}">{{service.entity.extra.displayName || service.entity.label}}</a>
+            <a href="{{consoleUrl(resource)}}">{{resource.displayName}}</a>
+            <!-- <span ng-if="resource.displayName !== resource.name">({{resource.name}})</span> -->
           </td>
           <td>
-              <a ng-click="showServiceDetails(service)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-code"></i></a>
+              <a ng-if="resource.kind==='service'" ng-click="showServiceDetails(resource)" class="tracking" data-track-label="Service Details" href=""><i class="fa fa-code"></i></a>
           </td>
-          <td class="service-description" title="{{service.entity.extra.longDescription}}">{{service.entity.description}}</td>
+          <td class="service-description" title="{{resource.longDescription}}">{{resource.description}}</td>
           <td class="service-region" ng-repeat="region in regions">
-            <i ng-if="service.entity.tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
+            <i ng-if="resource.geo_tags.indexOf(region.v2tag)>=0" class="text-muted fa fa-check"></i>
           </td>
           <td class="service-tags">
-            <span ng-if="service.entity.tags.indexOf('ibm_created')>=0" class="label label-primary">IBM</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_third_party')>=0" class="label label-success">Third Party</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_beta')>=0" class="label label-warning">Beta</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_experimental')>=0" class="label label-danger">Experimental</span>
-            <span ng-if="service.entity.tags.indexOf('ibm_deprecated')>=0" class="label label-danger">Deprecated</span>
+            <span ng-if="resource.tags.indexOf('ibm_created')>=0" class="label label-primary">IBM</span>
+            <span ng-if="resource.tags.indexOf('ibm_third_party')>=0" class="label label-success">Third Party</span>
+            <span ng-if="resource.tags.indexOf('ibm_beta')>=0" class="label label-warning">Beta</span>
+            <span ng-if="resource.tags.indexOf('ibm_experimental')>=0" class="label label-danger">Experimental</span>
+            <span ng-if="resource.tags.indexOf('ibm_deprecated')>=0" class="label label-danger">Deprecated</span>
 
-            <span ng-if="service.entity.tags.indexOf('custom_has_free_plan')>=0" class="label label-info">Free plan</span>
-            <span ng-if="service.entity.tags.indexOf('lite')>=0" class="label label-info">Lite plan</span>
+            <span ng-if="resource.pricing_tags.indexOf('free')>=0" class="label label-info">Free plan</span>
+            <span ng-if="resource.pricing_tags.indexOf('lite')>=0" class="label label-info">Lite plan</span>
 
-            <span ng-repeat="tag in service.entity.tags | filter: tagFilter">
+            <span ng-repeat="tag in resource.tags | filter: tagFilter">
               <span class="label label-info">{{tag}}</span>
             </span>
           </td>
@@ -155,7 +157,7 @@
 
   <footer>
     <span class="text-muted pull-left disclaimer">
-      'My Catalog' uses the Cloudfoundry API to retrieve data from the official <a href="https://new-console.ng.bluemix.net/catalog">Bluemix catalog</a>.
+      'My Catalog' uses the Catalog API to retrieve data from the official <a href="https://console.bluemix.net/catalog">IBM Cloud catalog</a>.
       It attempts to be as accurate as possible. Use with care.
     </span> made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>
   </footer>
@@ -167,18 +169,17 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel">
-            <img ng-if="selectedService.entity.extra.smallImageUrl" class="service-small-icon" ng-src="{{selectedService.entity.extra.smallImageUrl}}" />
-            <img ng-if="!selectedService.entity.extra.smallImageUrl && selectedService.entity.extra.imageUrl" class="service-small-icon" ng-src="{{selectedService.entity.extra.imageUrl}}" />
-            {{selectedService.entity.extra.displayName || selectedService.entity.label}}
+            <img class="service-small-icon" ng-src="{{selectedService.imageUrl}}" />
+            {{selectedService.displayName}}
           </h4>
         </div>
         <div class="modal-body">
           <div ng-repeat="plan in selectedService.plans">
-            <h5>{{plan.entity.name}} <span class="text-muted" ng-if="plan.entity.free==true">(free)</span></h5>
+            <h5>{{plan.displayName}} <span class="text-muted" ng-if="plan.entity.free==true">(free)</span></h5>
             <p class="text-muted">
-              {{plan.entity.description}}
+              {{plan.description}}
             </p>
-            <input class="form-control" type="text" value="cf create-service {{quote(selectedService.entity.label)}} {{quote(plan.entity.name)}} <service-name>" />
+            <input class="form-control" type="text" value="bx cf create-service {{quote(selectedService.metadata.service.cf_service_name)}} {{quote(plan.name)}} <service-name>" />
           </div>
         </div>
         <div class="modal-footer">

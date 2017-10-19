@@ -20,10 +20,10 @@ angular.module('ngLoadingSpinner', ['angularSpinners'])
 var catalogApp = angular.module('catalogApp', ['ngLoadingSpinner', 'checklist-model']);
 
 catalogApp.filter("filterPanel", function () {
-  return function (services, filterConfiguration) {
+  return function (resources, filterConfiguration) {
     if (filterConfiguration.enabled) {
       var results = [];
-      services.forEach(function (service) {
+      resources.forEach(function (resource) {
         var keepService = false;
 
         // if no tag checked, show everything
@@ -38,34 +38,34 @@ catalogApp.filter("filterPanel", function () {
         } else {
           keepService = true;
           filterConfiguration.includeTags.forEach(function (tag) {
-            if (service.entity.tags.indexOf(tag) < 0) {
+            if (resource.tags.indexOf(tag) < 0) {
               keepService = false;
             }
           });
         }
 
         filterConfiguration.excludeTags.forEach(function (tag) {
-          if (service.entity.tags.indexOf(tag) >= 0) {
+          if (resource.tags.indexOf(tag) >= 0) {
             keepService = false;
           }
         });
 
         if (keepService) {
-          results.push(service);
+          results.push(resource);
         }
       });
       return results;
     } else {
-      return services;
+      return resources;
     }
   }
 });
 
 catalogApp.controller('MainController', function ($scope, $http) {
   console.info("Initializing MainController");
-  $scope.services = [];
+  $scope.resources = [];
   $scope.selection = {
-    services: []
+    resources: []
   };
   $scope.categories = categories;
   $scope.regions = regions;
@@ -138,19 +138,17 @@ catalogApp.controller('MainController', function ($scope, $http) {
     }
   }
 
-  $scope.consoleUrl = function (service) {
-    var link;
-    $scope.regions.forEach(function (region) {
-      if (!link && service.entity.tags.indexOf(region.tag) >= 0) {
-        link = "https://" + region.console + "/catalog/services/" + service.entity.label;
-      }
-    });
-    return link;
+  $scope.consoleUrl = function (resource) {
+    if (resource.kind === 'service') {
+      return 'https://console.bluemix.net/catalog/services/' + resource.name;
+    } else {
+      return 'https://console.bluemix.net/catalog/infrastructure/' + resource.name;
+    }
   }
 
-  $scope.showServiceDetails = function (service) {
-    console.log("Showing service details", service.entity.label);
-    $scope.selectedService = service;
+  $scope.showServiceDetails = function (resource) {
+    console.log("Showing service details", resource.displayName);
+    $scope.selectedService = resource;
     $("#serviceDetails").modal();
   }
 
@@ -162,8 +160,8 @@ catalogApp.controller('MainController', function ($scope, $http) {
     }
   }
 
-  $http.get("/generated/services.json").success(function (services) {
-    $scope.services = services;
+  $http.get("/generated/resources.json").success(function (resources) {
+    $scope.resources = resources;
   });
 });
 
