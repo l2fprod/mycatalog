@@ -154,7 +154,7 @@ function ServiceUpdater() {
 
     // retrieve all resources
     tasks.push((callback) => {
-      getResources('https://resource-catalog.bluemix.net/api/v1-beta?complete=true', [],
+      getResources('https://resource-catalog.bluemix.net/api/v1-beta?complete=true&q=kind:iaas kind:service', [],
         (err, result) => {
           if (err) {
             console.log('[KO]', err);
