@@ -14,14 +14,15 @@ var regions = sandbox.regions;
 var categories = sandbox.categories;
 
 router.post('/:format', function (req, res) {
-  var services = JSON.parse(fs.readFileSync('public/generated/services-full.json', 'utf8'));
+  var resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'));
+  var services = resources.filter(service => service.kind === 'service');
 
   var servicesToExport;
-  var userSelectedServices = req.body["services[]"];
+  var userSelectedServices = req.body["resources[]"];
 
   if (userSelectedServices) {
     servicesToExport = services.filter(function (service) {
-      return userSelectedServices.indexOf(service.metadata.guid) >= 0;
+      return userSelectedServices.indexOf(service.id) >= 0;
     });
   } else {
     servicesToExport = services;
@@ -82,10 +83,6 @@ function exportToExcel(services, dateMDY, res) {
   var row = 1;
 
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
     // Header
     sheet.data[0] = [];
     sheet.data[0][0] = "Service";
@@ -105,57 +102,57 @@ function exportToExcel(services, dateMDY, res) {
     // Cell Content
     sheet.data[row] = [];
 
-    var extra = service.entity.extra;
-    if (extra && extra.displayName) {
-      sheet.data[row][0] = extra.displayName;
+    var extra = service.metadata.service.extra;
+    if (extra) {
+      sheet.data[row][0] = service.displayName;
       //sheet.data[row][1] = service.entity.tags[0];
       for (var cat in categories) {
-        if (service.entity.tags[0] == categories[cat].id)
+        if (service.tags[0] == categories[cat].id)
           sheet.data[row][1] = categories[cat].label;
       }
-      sheet.data[row][2] = service.entity.description;
-      sheet.data[row][3] = extra.providerDisplayName;
+      sheet.data[row][2] = service.description;
+      sheet.data[row][3] = service.provider.name;
       // k8s cares about is whether the service has serviceKeysSupported=true
       // to allow service keys to be created and not just binding to cf apps.
       sheet.data[row][10] = (extra.serviceKeysSupported == true) ? "Yes" : "No";
-      sheet.data[row][11] = extra.longDescription;
+      sheet.data[row][11] = service.longDescription;
       sheet.data[row][12] = extra.documentationUrl;
     } else {
       sheet.data[row][0] = service.entity.label;
-      sheet.data[row][1] = service.entity.tags[0];
-      sheet.data[row][2] = service.entity.description;
-      sheet.data[row][3] = service.entity.provider;
+      sheet.data[row][1] = service.tags[0];
+      sheet.data[row][2] = service.description;
+      sheet.data[row][3] = service.provider.name;
     }
 
     var status = "";
-    if (service.entity.tags.indexOf('ibm_beta') >= 0)
+    if (service.tags.indexOf('ibm_beta') >= 0)
       status = "Beta";
-    else if (service.entity.tags.indexOf('ibm_experimental') >= 0)
+    else if (service.tags.indexOf('ibm_experimental') >= 0)
       status = "Experimental";
-    else if (service.entity.tags.indexOf('ibm_deprecated') >= 0)
+    else if (service.tags.indexOf('ibm_deprecated') >= 0)
         status = "Deprecated";
     else
       status = "Production Ready";
     sheet.data[row][4] = status;
-    sheet.data[row][5] = (service.entity.tags.indexOf("custom_has_free_plan") >= 0) ? "Yes" : "No";
+    sheet.data[row][5] = (service.pricing_tags.indexOf("free") >= 0) ? "Yes" : "No";
 
     var planList = "";
     var plans = service.plans;
     for (var plan in plans) {
-      planList += plans[plan].entity.name + "\n";
+      planList += plans[plan].displayName + "\n";
     }
     sheet.data[row][6] = planList;
 
     var datacenter = "";
     for (var region in regions) {
-      if (service.entity.tags.indexOf(regions[region].tag) >= 0) {
+      if (service.tags.indexOf(regions[region].tag) >= 0) {
         datacenter += regions[region].label + " ";
       }
     }
     sheet.data[row][7] = datacenter;
 
-    sheet.data[row][8] = moment(service.metadata.created_at).format('YYYY-MM-DD');
-    sheet.data[row][9] = moment(service.metadata.updated_at).format('YYYY-MM-DD');
+    sheet.data[row][8] = moment(service.created).format('YYYY-MM-DD');
+    sheet.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
 
     row++;
   });
@@ -168,8 +165,8 @@ function exportToExcel(services, dateMDY, res) {
   // find all the possible currencies
   services.forEach(function (service) {
     service.plans.forEach(function (plan) {
-      if (plan.entity.extra && plan.entity.extra.costs) {
-        plan.entity.extra.costs.forEach(function (cost) {
+      if (plan.metadata.plan.extra && plan.metadata.plan.extra.costs) {
+        plan.metadata.plan.extra.costs.forEach(function (cost) {
           if (cost.currencies) {
             cost.currencies.forEach(function (currency) {
               if (!countryToCurrency[currency.country]) {
@@ -220,21 +217,15 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
   var rowp = 3;
 
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
-    var extra = service.entity.extra;
-    var serviceLabel = service.entity.label;
-    var svcName = (extra && extra.displayName) ? extra.displayName : serviceLabel;
+    var extra = service.metadata.service.extra;
+    var svcName = service.displayName;
 
     var plans = service.plans;
     // Iterate through array of plans
     plans.forEach(function (plan) {
-      var extrap = plan.entity.extra
-      var planDescription = plan.entity.description
-      // Some plans don't have a display name!
-      var planName = (extrap && extrap.displayName) ? extrap.displayName : plan.entity.name;
+      var extrap = plan.metadata.plan.extra;
+      var planDescription = plan.description;
+      var planName = plan.displayName;
 
       // New row for Free plan (ex: AlchemyAPI) or
       // Free service w/o any cost array (ex: Access Trail, Active Deploy)
@@ -243,11 +234,10 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
       sheet2.data[rowp][SERVICE_COLUMN_INDEX] = svcName;
       sheet2.data[rowp][PLAN_COLUMN_INDEX] = planName;
       sheet2.data[rowp][DESCRIPTION_COLUMN_INDEX] = planDescription;
+
       // Set amount to zero if plan if free.
-      if (plan.entity.free == true)
+      if (plan.pricing_tags.indexOf('free')>=0) {
         sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = 0;
-      // If plan is free, no need to process the extra costs
-      if (planName.toLowerCase().indexOf('free') !== -1) {
         // A free plan can always be consumed with a subscription
         sheet2.data[rowp][SUBSCRIPTION_COLUMN_INDEX] = 'yes';
         rowp++; return;
@@ -255,8 +245,8 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
 
       // Most of the services have multiple plans including cost and currencies
       // Warning: some plans have one single plan with multiple tier (cost)
-      if (plan.entity.extra) {
-        var costs = plan.entity.extra.costs;
+      if (plan.metadata.plan.extra) {
+        var costs = plan.metadata.plan.extra.costs;
         if (costs) {
           costs.forEach(function (cost) {
             // New row per cost
@@ -293,8 +283,8 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
 
             // Plan Description
             var description = "";
-            if (plan.entity.extra.bullets) {
-              plan.entity.extra.bullets.forEach(function (bullet, index) {
+            if (plan.metadata.plan.extra.bullets) {
+              plan.metadata.plan.extra.bullets.forEach(function (bullet, index) {
                 description = description + (index > 0 ? ", " : "") + bullet;
               });
             } else {
@@ -308,7 +298,7 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
             // By default, all services are available through subscription
             if (extrap && extrap.subscription)
               withSubscription = 'yes';
-            if (plan.entity.free == true)
+            if (plan.pricing_tags.indexOf('free')>=0)
               withSubscription = 'yes';
             // Some services are not using the tag reservable :-(
             // The only way to find out whether the service is available within a subscription is to look at the plan description... dirty... but it works with those 3 keywords!!
@@ -351,7 +341,7 @@ function exportToPowerpoint(services, dateMDY, res) {
   // Intro slide --------------------
   slide = pptx.makeNewSlide();
   //slide.back = '1E3648';
-  slide.addText("My Bluemix Catalog", {
+  slide.addText("My Catalog", {
     x: 150,
     y: 100,
     cx: '100%',
@@ -367,7 +357,7 @@ function exportToPowerpoint(services, dateMDY, res) {
     bold: true,
     color: '2a6d9e'
   });
-  slide.addText("The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.", {
+  slide.addText("The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official catalog www.bluemix.net/catalog.", {
     x: 150,
     y: 500,
     cx: '900',
@@ -385,15 +375,11 @@ function exportToPowerpoint(services, dateMDY, res) {
 
   // One slide per service
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
     // New slide
     slide = pptx.makeNewSlide();
 
     try {
-      slide.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png'), {
+      slide.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
         x: 50,
         y: 30,
         cx: 70,
@@ -407,9 +393,9 @@ function exportToPowerpoint(services, dateMDY, res) {
       });
     } catch (err) {}
 
-    var extra = service.entity.extra;
-    if (extra && extra.displayName) {
-      slide.addText(extra.displayName, {
+    var extra = service.metadata.service.extra;
+    if (extra) {
+      slide.addText(service.displayName, {
         x: 150,
         y: 30,
         cx: '100%',
@@ -417,7 +403,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         bold: true
       });
 
-      slide.addText(service.entity.description, {
+      slide.addText(service.description, {
         x: 100,
         y: 150,
         cx: '1000',
@@ -425,7 +411,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         color: '808080'
       });
 
-      slide.addText(extra.longDescription, {
+      slide.addText(service.longDescription, {
         x: 100,
         y: 250,
         cx: '700',
@@ -448,7 +434,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         bold: false,
         color: 'ffffff'
       });
-      slide.addText(extra.providerDisplayName, {
+      slide.addText(service.provider.name, {
         x: 1000,
         y: 250,
         cx: '220',
@@ -465,7 +451,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         color: 'ffffff'
       });
       for (var category in categories) {
-        if (service.entity.tags[0] == categories[category].id) {
+        if (service.tags[0] == categories[category].id) {
           cat = categories[category].label;
           slide.addText(cat, {
             x: 1000,
@@ -486,9 +472,9 @@ function exportToPowerpoint(services, dateMDY, res) {
       });
 
       var status = "";
-      if (service.entity.tags.indexOf('ibm_beta') >= 0)
+      if (service.tags.indexOf('ibm_beta') >= 0)
         status = "Beta";
-      else if (service.entity.tags.indexOf('ibm_experimental') >= 0)
+      else if (service.tags.indexOf('ibm_experimental') >= 0)
         status = "Experimental";
       else
         status = "Production Ready";
@@ -507,7 +493,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         font_size: 18,
         color: 'ffffff'
       });
-      var isFreePlan = (service.entity.tags.indexOf("custom_has_free_plan") >= 0) ? "Yes" : "No";
+      var isFreePlan = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
       slide.addText(isFreePlan, {
         x: 1000,
         y: 400,
@@ -525,7 +511,7 @@ function exportToPowerpoint(services, dateMDY, res) {
       });
       var datacenter = "";
       for (var region in regions) {
-        if (service.entity.tags.indexOf(regions[region].tag) >= 0) {
+        if (service.tags.indexOf(regions[region].tag) >= 0) {
           datacenter += regions[region].label + " ";
         }
       }
@@ -556,7 +542,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         color: '808080'
       });
     } else {
-      slide.addText(service.entity.label, {
+      slide.addText(service.displayName, {
         x: 150,
         y: 30,
         cx: '100%',
@@ -564,7 +550,7 @@ function exportToPowerpoint(services, dateMDY, res) {
         bold: true
       });
 
-      slide.addText(service.entity.description, {
+      slide.addText(service.description, {
         x: 100,
         y: 150,
         cx: '100%',
