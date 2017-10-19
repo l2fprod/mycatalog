@@ -175,7 +175,7 @@
         </div>
         <div class="modal-body">
           <div ng-repeat="plan in selectedService.plans">
-            <h5>{{plan.displayName}} <span class="text-muted" ng-if="plan.entity.free==true">(free)</span></h5>
+            <h5>{{plan.displayName || plan.name}} <span class="text-muted" ng-if="plan.pricing_tags.indexOf('free')>=0">(free)</span></h5>
             <p class="text-muted">
               {{plan.description}}
             </p>

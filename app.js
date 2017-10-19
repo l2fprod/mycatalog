@@ -75,18 +75,18 @@ function scheduleUpdater() {
   });
 }
 
-function saveSnapshotCallback(err, services) {
+function saveSnapshotCallback(err, resources) {
   if (!err && snapshotDb) {
     var snapshot = {
       type: "snapshot",
       createdAt: new Date(),
-      services: services
+      resources: resources
     }
     snapshotDb.insert(snapshot, function (err, body) {
       if (err) {
-        console.log("Failed to persist services snapshot", err);
+        console.log("Failed to persist resources snapshot", err);
       } else {
-        console.log("Saved services snapshot.");
+        console.log("Saved resources snapshot.");
       }
     });
   }
