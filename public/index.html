@@ -60,6 +60,8 @@
           <tr>
             <td class="search-title"><span class="text-muted">Filters:</span></td>
             <td>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Infrastructure" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_iaas', true)"><i class="fa fa-server"></i>&nbsp;Infrastructure</button>
+              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Service" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_service', true)"><i class="fa fa-cloud"></i>&nbsp;Service</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="IBM" data-toggle="button" ng-click="toggleTagConfiguration('ibm_created', true)">IBM</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Third party" data-toggle="button" ng-click="toggleTagConfiguration('ibm_third_party', true)">Third party</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('ibm_experimental', false); toggleTagConfiguration('ibm_beta', false)">Production Ready</button>
@@ -69,8 +71,6 @@
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('free', true)"><i class="fa fa-usd"></i>&nbsp;Free plan</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Lite plan" data-toggle="button" ng-click="toggleTagConfiguration('lite', true)"><i class="fa fa-usd"></i>&nbsp;Lite plan</button>
               <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('ibm_dedicated_public', true)" title="Bluemix public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;Syndicated</button>
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Infrastructure" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_iaas', true)"><i class="fa fa-cloud"></i>&nbsp;Infrastructure</button>
-              <button type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="Service" data-toggle="button" ng-click="toggleTagConfiguration('custom_kind_service', true)"><i class="fa fa-cloud"></i>&nbsp;Service</button>
             </td>
           </tr>
           <tr>
@@ -120,7 +120,7 @@
         </thead>
         <tr ng-repeat="resource in (filteredResources = (resources | filter:searchText | filterPanel:filterConfiguration))">
           <td>
-            <input type="checkbox" checklist-model="selection.resources" checklist-value="resource.id" class="tracking" data-track-action="Select" data-track-label="{{service.entity.label}}">
+            <input type="checkbox" checklist-model="selection.resources" checklist-value="resource.id" class="tracking" data-track-action="Select" data-track-label="{{service.displayName}}">
           </td>
           <td class="service-icon">
             <img class="service-small-icon" ng-src="{{resource.imageUrl}}" />
@@ -134,7 +134,7 @@
           </td>
           <td class="service-description" title="{{resource.longDescription}}">{{resource.description}}</td>
           <td class="service-region" ng-repeat="region in regions">
-            <i ng-if="resource.geo_tags.indexOf(region.v2tag)>=0" class="text-muted fa fa-check"></i>
+            <i ng-if="resource.geo_tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
           </td>
           <td class="service-tags">
             <span ng-if="resource.tags.indexOf('ibm_created')>=0" class="label label-primary">IBM</span>

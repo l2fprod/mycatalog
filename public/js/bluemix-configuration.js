@@ -73,8 +73,7 @@ var regions = [
     console: "console.ng.bluemix.net",
     serviceFilename: "public/generated/services.us-south.json",
     planFilename: "public/generated/plans.us-south.json",
-    tag: "custom_datacenter_us",
-    v2tag: "us-south",
+    tag: "us-south",
     label: "US"
   },
   {
@@ -83,8 +82,7 @@ var regions = [
     console: "console.eu-gb.bluemix.net",
     serviceFilename: "public/generated/services.eu-gb.json",
     planFilename: "public/generated/plans.eu-gb.json",
-    tag: "custom_datacenter_eu-gb",
-    v2tag: "eu-gb",
+    tag: "eu-gb",
     label: "UK"
   },
   {
@@ -93,8 +91,7 @@ var regions = [
     console: "console.eu-de.bluemix.net",
     serviceFilename: "public/generated/services.eu-de.json",
     planFilename: "public/generated/plans.eu-de.json",
-    tag: "custom_datacenter_eu-de",
-    v2tag: "eu-de",
+    tag: "eu-de",
     label: "DE"
   },
   {
@@ -103,17 +100,7 @@ var regions = [
     console: "console.au-syd.bluemix.net",
     serviceFilename: "public/generated/services.au-syd.json",
     planFilename: "public/generated/plans.au-syd.json",
-    tag: "custom_datacenter_au-syd",
-    v2tag: "au-syd",
+    tag: "au-syd",
     label: "AU"
-  },
-  {
-    id: "china",
-    api: "api.chinabluemix.net",
-    console: "console.chinabluemix.net",
-    serviceFilename: "public/generated/services.china.json",
-    planFilename: "public/generated/plans.china.json",
-    tag: "custom_datacenter_china",
-    label: "CN"
   }
 ];
