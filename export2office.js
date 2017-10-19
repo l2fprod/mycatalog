@@ -569,30 +569,26 @@ function exportToWord(services, dateMDY, res) {
   var docx = officegen('docx');
 
   var introPage = docx.createP();
-  introPage.addText("Disclaimer: The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.", {
+  introPage.addText("Disclaimer: The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official catalog www.bluemix.net/catalog.", {
     color: '#ff0000',
     font_size: 16
   });
   introPage.addLineBreak();
 
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
     var p = docx.createP();
 
     try {
-      p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png'), {
+      p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
         cx: 70,
         cy: 70
       });
     } catch (err) {}
 
-    var extra = service.entity.extra;
+    var extra = service.metadata.service.extra;
 
-    var svcName = (extra && extra.displayName) ? extra.displayName : service.entity.label;
-    var provider = (extra && extra.providerDisplayName) ? extra.providerDisplayName : service.entity.provider;
+    var svcName = service.displayName;
+    var provider = service.provider.name;
     var url = (extra && extra.documentationUrl) ? extra.documentationUrl : "";
 
     p.addText('     ' + svcName, {
@@ -609,7 +605,7 @@ function exportToWord(services, dateMDY, res) {
     //   // If long description is not available, pick the short one
     //   if (!description) description = extra.i18n.fr.description;
     // }
-    if (!description) description = service.entity.description;
+    if (!description) description = service.description;
     p.addText(description, {
         font_size: 14,
         color: '808080'
