@@ -128,8 +128,8 @@ function getDifferences(newSnapshot, oldSnapshot) {
 
     // any change in the datacenters?
     regions.forEach(function (region) {
-      var newIsInRegion = newService.geo_tags.indexOf(region.tag) >= 0;
-      var oldIsInRegion = oldService.geo_tags.indexOf(region.tag) >= 0;
+      var newIsInRegion = (newService.geo_tags || []).indexOf(region.tag) >= 0;
+      var oldIsInRegion = (oldService.geo_tags || []).indexOf(region.tag) >= 0;
 
       if (newIsInRegion && !oldIsInRegion) {
         result.changes.push({
