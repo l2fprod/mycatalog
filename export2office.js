@@ -7,7 +7,7 @@ var officegen = require('officegen');
 
 // Added to loop through the region
 var vm = require('vm');
-var script = vm.createScript(fs.readFileSync('./public/js/bluemix-configuration.js'));
+var script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
 var sandbox = {};
 script.runInNewContext(sandbox);
 var regions = sandbox.regions;
@@ -71,11 +71,11 @@ function exportToExcel(services, dateMDY, res) {
   sheet0.data[0] = [];
   sheet0.data[0][0] = "Disclaimer";
   sheet0.data[1] = [];
-  sheet0.data[1][0] = "The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API.";
+  sheet0.data[1][0] = "The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API.";
   sheet0.data[2] = [];
   sheet0.data[2][0] = "This content attempts to be as accurate as possible.";
   sheet0.data[3] = [];
-  sheet0.data[3][0] = "Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
+  sheet0.data[3][0] = "Use with care and refer to the official IBM Cloud catalog www.bluemix.net/catalog.";
 
   sheet = xlsx.makeNewSheet();
   sheet.name = 'My Catalog';
@@ -118,7 +118,7 @@ function exportToExcel(services, dateMDY, res) {
       sheet.data[row][11] = service.longDescription;
       sheet.data[row][12] = extra.documentationUrl;
     } else {
-      sheet.data[row][0] = service.entity.label;
+      sheet.data[row][0] = service.displayName;
       sheet.data[row][1] = service.tags[0];
       sheet.data[row][2] = service.description;
       sheet.data[row][3] = service.provider.name;
@@ -165,7 +165,7 @@ function exportToExcel(services, dateMDY, res) {
   // find all the possible currencies
   services.forEach(function (service) {
     service.plans.forEach(function (plan) {
-      if (plan.metadata.plan.extra && plan.metadata.plan.extra.costs) {
+      if (plan.metadata.plan && plan.metadata.plan.extra && plan.metadata.plan.extra.costs) {
         plan.metadata.plan.extra.costs.forEach(function (cost) {
           if (cost.currencies) {
             cost.currencies.forEach(function (currency) {
@@ -223,7 +223,6 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
     var plans = service.plans;
     // Iterate through array of plans
     plans.forEach(function (plan) {
-      var extrap = plan.metadata.plan.extra;
       var planDescription = plan.description;
       var planName = plan.displayName;
 
@@ -245,8 +244,9 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
 
       // Most of the services have multiple plans including cost and currencies
       // Warning: some plans have one single plan with multiple tier (cost)
-      if (plan.metadata.plan.extra) {
-        var costs = plan.metadata.plan.extra.costs;
+      if (plan.metadata.plan && plan.metadata.plan.extra) {
+        var extrap = plan.metadata.plan.extra;
+        var costs = extrap.costs;
         if (costs) {
           costs.forEach(function (cost) {
             // New row per cost

@@ -7,7 +7,7 @@ function ServiceUpdater() {
   const async = require('async');
   const vm = require('vm');
 
-  const script = vm.createScript(fs.readFileSync('./public/js/bluemix-configuration.js'));
+  const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
   const sandbox = {};
   script.runInNewContext(sandbox);
 
@@ -45,6 +45,39 @@ function ServiceUpdater() {
       } else {
         onResult(null, allResources);
       }
+    });
+  }
+
+  // find children of resource groups
+  function getChildren(resources, callback) {
+    const tasks = [];
+    resources.filter(resource => resource.group === true).forEach((resource) => {
+      tasks.push((callback) => {
+        console.log('Get children for', resource.name);
+        request({
+          url: `${apiUrl}/${resource.id}?complete=true&depth=*`,
+          json: true
+        }, (err, response, body) => {
+          if (err) {
+            console.log('[KO] Failed to get full details for', resource.name);
+          } else if (body.children) {
+            body.children
+              .filter(child => child.kind === 'iaas' || child.kind === 'service')
+              .forEach((child) => {
+                resources.push(child);
+              });
+          }
+          callback(null);
+        });
+      });
+    });
+
+    async.parallel(tasks, function (err, result) {
+      console.log("Retrieved all children");
+      if (err) {
+        console.log(err);
+      }
+      callback(null);
     });
   }
 
@@ -101,7 +134,7 @@ function ServiceUpdater() {
           encoding: null
         }, function (err, res, body) {
           if (err) {
-            callback(err);
+            callback(null);
           } else {
             var extension;
             if (imageUrl.indexOf(".svg") > 0) {
@@ -111,7 +144,7 @@ function ServiceUpdater() {
             }
             fs.writeFile("public/generated/icons/" + resource.id + "." + extension, body, function (err) {
               if (err) {
-                callback(err);
+                callback(null);
               } else {
                 if (extension === "svg") {
                   var svgToPng = require("svg-to-png");
@@ -137,7 +170,7 @@ function ServiceUpdater() {
     });
 
     async.parallel(tasks, function (err, result) {
-      console.log("Retrieved all icons");
+      console.log('Retrieved all icons');
       if (err) {
         console.log(err);
       }
@@ -172,6 +205,17 @@ function ServiceUpdater() {
         });
       });
 
+    // retrieve all children
+    tasks.push((callback) => {
+      getChildren(resources, callback);
+    });
+
+    // remove the "groups"
+    tasks.push((callback) => {
+      resources = resources.filter(resource => !resource.group);
+      callback(null);
+    });
+
     // retrieve the plans
     tasks.push((callback) => {
       getPlans(resources, callback);
@@ -198,6 +242,15 @@ function ServiceUpdater() {
         // inject custom tags
         resource.tags = resource.tags.concat(resource.pricing_tags).concat(resource.geo_tags);
         resource.tags.push(`custom_kind_${resource.kind}`);
+
+        const tagsAsString = resource.tags.join(',');
+        regions.forEach((region) => {
+          // some services have "us-south-dal10" in their geo_tags
+          // we add the main region "us-south" tag too
+          if (tagsAsString.indexOf(`${region.tag}-`)>=0 && resource.tags.indexOf(region.tag)<0) {
+            resource.tags.push(region.tag);
+          }
+        });
 
         // not all ibm services have the ibm_created tag, fix this!
         if (resource.provider.name === 'IBM' &&

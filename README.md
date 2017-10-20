@@ -1,6 +1,6 @@
-# A simple user interface to view all Bluemix services and export its content as Office documents
+# A simple user interface to view all IBM Cloud services and export its content as Office documents
 
-My Catalog uses Cloud Foundry API to show an aggregated view of all services from the IBM Bluemix catalog.
+My Catalog uses the IBM Cloud catalog API to show an aggregated view of all services from the catalog.
 
 ![](./public/icons/screenshot-mycatalog.png)
 
