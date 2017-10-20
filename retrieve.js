@@ -1,5 +1,6 @@
 
 function ServiceUpdater() {
+  const apiUrl = 'https://resource-catalog.bluemix.net/api/v1-beta';
 
   const request = require('request');
   const fs = require('fs');
@@ -53,7 +54,7 @@ function ServiceUpdater() {
       tasks.push((callback) => {
         console.log('Get plans for', resource.name);
         request({
-          url: `https://resource-catalog.bluemix.net/api/v1-beta/${resource.id}/plan?complete=true`,
+          url: `${apiUrl}/${resource.id}/plan?complete=true`,
           json: true
         }, (err, response, body) => {
           if (err) {
@@ -66,7 +67,11 @@ function ServiceUpdater() {
             resource.plans.forEach((plan) => {
               plan.description = plan.overview_ui['en'].description;
               plan.displayName = plan.overview_ui['en'].display_name;
-              plan.metadata.plan.extra = JSON.parse(plan.metadata.plan.extra);
+              if (plan.metadata.plan) {
+                plan.metadata.plan.extra = JSON.parse(plan.metadata.plan.extra);
+              } else {
+                console.log(`Plan ${plan.name} in ${resource.name} has no 'plan' metadata`);
+              }
             });
           }
           callback(null);
@@ -154,7 +159,7 @@ function ServiceUpdater() {
 
     // retrieve all resources
     tasks.push((callback) => {
-      getResources('https://resource-catalog.bluemix.net/api/v1-beta?complete=true&q=kind:iaas kind:service', [],
+      getResources(`${apiUrl}?complete=true&q=kind:iaas kind:service`, [],
         (err, result) => {
           if (err) {
             console.log('[KO]', err);
