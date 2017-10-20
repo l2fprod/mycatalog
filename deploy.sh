@@ -1,4 +1,13 @@
 #!/bin/bash
+
+# install CF CLI
+wget https://s3.amazonaws.com/go-cli/releases/v6.12.4/cf-cli_amd64.deb -qO temp.deb && sudo dpkg -i temp.deb
+rm temp.deb
+
+cf api $CF_API
+cf login --u $CF_USERNAME --p $CF_PASSWORD --o $CF_ORGANIZATION --s $CF_SPACE
+
+# blue green deploy
 if ! cf app $CF_APP; then
   if [ -z "$CF_APP_HOSTNAME" ]; then
     cf push $CF_APP -f $MANIFEST --no-start
