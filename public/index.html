@@ -120,7 +120,7 @@
         </thead>
         <tr ng-repeat="resource in (filteredResources = (resources | filter:searchText | filterPanel:filterConfiguration))">
           <td>
-            <input type="checkbox" checklist-model="selection.resources" checklist-value="resource.id" class="tracking" data-track-action="Select" data-track-label="{{service.displayName}}">
+            <input type="checkbox" checklist-model="selection.resources" checklist-value="resource.id" class="tracking" data-track-action="Select" data-track-label="{{resource.displayName}}">
           </td>
           <td class="service-icon">
             <img class="service-small-icon" ng-src="{{resource.imageUrl}}" />
