@@ -250,6 +250,13 @@ function ServiceUpdater() {
           if (tagsAsString.indexOf(`${region.tag}-`)>=0 && resource.tags.indexOf(region.tag)<0) {
             resource.tags.push(region.tag);
           }
+
+          // for services, find their region with the CF mapping
+          try {
+            if (resource.metadata.service.cf_guid[region.tag]) {
+              resource.tags.push(region.tag);
+            }
+          } catch (_) {}
         });
 
         // not all ibm services have the ibm_created tag, fix this!
