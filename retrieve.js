@@ -147,18 +147,16 @@ function ServiceUpdater() {
                 callback(null);
               } else {
                 if (extension === "svg") {
-                  var svgToPng = require("svg-to-png");
-                  svgToPng.convert("public/generated/icons/" + resource.id + ".svg",
-                    "public/generated/icons/", {
-                      defaultWidth: "64px",
-                      defaultHeight: "64px"
-                  }).then(function () {
-                    callback(null);
-                  }, function(err) {
-                    console.log("Convert failed for",
-                      "public/generated/icons/" + resource.id + ".svg", "with", err);
-                    callback(null);
-                  });
+                  var svg2png = require("svg2png");  
+                  var imageBuffer = fs.readFileSync("public/generated/icons/" + resource.id + ".svg");
+                  svg2png(imageBuffer, { width: 64, height: 64 })
+                    .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
+                      if (convertError) {
+                        console.log(convertError);
+                      }
+                      callback(null);
+                    }))
+                    .catch(e => console.log(e));
                 } else {
                   callback(null);
                 }
