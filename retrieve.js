@@ -52,8 +52,8 @@ function ServiceUpdater() {
   function getChildren(resources, callback) {
     const tasks = [];
     resources.filter(resource => resource.group === true).forEach((resource) => {
-      tasks.push((callback) => {
-        console.log('Get children for', resource.name);
+      tasks.push((taskCallback) => {
+        console.log('Get children for', resource.name, `${apiUrl}/${resource.id}?complete=true&depth=*`);
         request({
           url: `${apiUrl}/${resource.id}?complete=true&depth=*`,
           json: true
@@ -64,10 +64,11 @@ function ServiceUpdater() {
             body.children
               .filter(child => child.kind === 'iaas' || child.kind === 'service')
               .forEach((child) => {
+                console.log('Found', child.id);
                 resources.push(child);
               });
           }
-          callback(null);
+          taskCallback(null);
         });
       });
     });
@@ -85,7 +86,7 @@ function ServiceUpdater() {
     const tasks = [];
     resources.forEach((resource) => {
       tasks.push((callback) => {
-        console.log('Get plans for', resource.name);
+        console.log('Get plans for', resource.name, `${apiUrl}/${resource.id}/plan?complete=true`);
         request({
           url: `${apiUrl}/${resource.id}/plan?complete=true`,
           json: true
@@ -100,7 +101,7 @@ function ServiceUpdater() {
             resource.plans.forEach((plan) => {
               plan.description = plan.overview_ui['en'].description;
               plan.displayName = plan.overview_ui['en'].display_name;
-              if (plan.metadata.plan) {
+              if (plan.metadata.plan && plan.metadata.plan.extra) {
                 plan.metadata.plan.extra = JSON.parse(plan.metadata.plan.extra);
               } else {
                 console.log(`Plan ${plan.name} in ${resource.name} has no 'plan' metadata`);
@@ -208,9 +209,11 @@ function ServiceUpdater() {
       getChildren(resources, callback);
     });
 
-    // remove the "groups"
+    // keep "iaas" and "service"
     tasks.push((callback) => {
-      resources = resources.filter(resource => !resource.group);
+      resources = resources.filter(resource =>
+        (resource.kind === 'iaas' || resource.kind === 'service') &&
+        (!resource.group || resource.parent_url));
       callback(null);
     });
 
@@ -228,17 +231,21 @@ function ServiceUpdater() {
             resource.metadata.service.extra = JSON.parse(resource.metadata.service.extra);
           }
         } catch (err) {}
-
         resource.description = resource.overview_ui['en'].description;
         resource.longDescription = resource.overview_ui['en'].long_description;
-        resource.displayName = resource.overview_ui['en'].display_name || resource.metadata.service.extra.displayName;
+        try {
+          resource.displayName = resource.overview_ui['en'].display_name || resource.metadata.service.extra.displayName;
+        } catch (err) {
+          console.log('No display name found for', resource.id, resource.name);
+          resource.displayName = resource.name;
+        }
         if (resource.displayName.startsWith('IBM ')) {
           resource.displayName = resource.displayName.substring(4);
         }
         resource.imageUrl = resource.images.image || resource.images.feature_image;
 
         // inject custom tags
-        resource.tags = resource.tags.concat(resource.pricing_tags).concat(resource.geo_tags);
+        resource.tags = resource.tags.concat(resource.pricing_tags || []).concat(resource.geo_tags || []);
         resource.tags.push(`custom_kind_${resource.kind}`);
 
         const tagsAsString = resource.tags.join(',');
