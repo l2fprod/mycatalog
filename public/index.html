@@ -134,7 +134,7 @@
           </td>
           <td class="service-description" title="{{resource.longDescription}}">{{resource.description}}</td>
           <td class="service-region" ng-repeat="region in regions">
-            <i ng-if="resource.geo_tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
+            <i ng-if="resource.tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
           </td>
           <td class="service-tags">
             <span ng-if="resource.tags.indexOf('ibm_created')>=0" class="label label-primary">IBM</span>
