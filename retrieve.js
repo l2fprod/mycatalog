@@ -1,6 +1,6 @@
 
 function ServiceUpdater() {
-  const apiUrl = 'https://resource-catalog.bluemix.net/api/v1-beta';
+  const apiUrl = 'https://resource-catalog.bluemix.net/api/v1';
 
   const request = require('request');
   const fs = require('fs');
