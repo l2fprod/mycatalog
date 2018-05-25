@@ -41,7 +41,7 @@ var appEnvOpts = vcapLocal ? {
 } : {}
 var appEnv = cfenv.getAppEnv(appEnvOpts);
 var snapshotDb;
-var snapshotDbCredentials = appEnv.services.cloudantNoSQLDB[0].credentials;
+var snapshotDbCredentials = appEnv.services.cloudantNoSQLDB ? appEnv.services.cloudantNoSQLDB[0].credentials : undefined;
 if (snapshotDbCredentials) {
   require("./database.js")(snapshotDbCredentials.url, "snapshots", function (err, database) {
     if (err) {
