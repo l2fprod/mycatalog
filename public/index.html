@@ -123,7 +123,7 @@
             <input type="checkbox" checklist-model="selection.resources" checklist-value="resource.id" class="tracking" data-track-action="Select" data-track-label="{{resource.displayName}}">
           </td>
           <td class="service-icon">
-            <img class="service-small-icon" ng-src="{{resource.imageUrl}}" />
+            <img class="service-small-icon" ng-src="{{'generated/icons/' + resource.id + '.png'}}" />
           </td>
           <td class="service-displayname">
             <a href="{{consoleUrl(resource)}}">{{resource.displayName}}</a>
