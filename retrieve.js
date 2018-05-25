@@ -126,7 +126,7 @@ function ServiceUpdater() {
     var tasks = []
     resources.forEach(function (resource) {
       tasks.push(function (callback) {
-        const imageUrl = resource.imageUrl;
+        const imageUrl = decodeURIComponent(resource.imageUrl);
         if (!imageUrl) {
           console.log(resource.id, 'has no image!');
         }
@@ -157,7 +157,10 @@ function ServiceUpdater() {
                       }
                       callback(null);
                     }))
-                    .catch(e => console.log(e));
+                    .catch(e => {
+                      console.log('Error generating icon for', resource.imageUrl, e);
+                      callback(null);
+                    });
                 } else {
                   callback(null);
                 }
