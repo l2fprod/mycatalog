@@ -74,7 +74,16 @@ var regions = [
     serviceFilename: "public/generated/services.us-south.json",
     planFilename: "public/generated/plans.us-south.json",
     tag: "custom_datacenter_us",
-    label: "US"
+    label: "US South"
+  },
+  {
+    id: "us-east",
+    api: "api.us-east.bluemix.net",
+    console: "console.us-east.bluemix.net",
+    serviceFilename: "public/generated/services.us-east.json",
+    planFilename: "public/generated/plans.us-east.json",
+    tag: "custom_datacenter_us-east",
+    label: "US East"
   },
   {
     id: "eu-gb",
