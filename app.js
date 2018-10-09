@@ -3,6 +3,7 @@
 "use strict";
 
 var express = require('express');
+var cors = require('cors');
 var cfenv = require('cfenv');
 var favicon = require('serve-favicon');
 var app = express();
@@ -12,6 +13,7 @@ var compress = require('compression');
 var appEnv = cfenv.getAppEnv();
 
 app.use(compress());
+app.use(cors());
 app.use(bodyParser.urlencoded({
   extended: false
 }))
