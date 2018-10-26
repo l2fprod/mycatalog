@@ -1,0 +1,7 @@
+applications:
+- name: mycatalog-dev
+  routes:
+  - route: mycatalog-dev.mybluemix.net
+  memory: 512M
+  services:
+  - dev-mycatalog-cloudant
