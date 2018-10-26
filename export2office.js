@@ -18,7 +18,7 @@ router.post('/:format', function (req, res) {
   var services = resources.filter(service => service.kind === 'service');
 
   var servicesToExport;
-  var userSelectedServices = req.body["resources[]"];
+  var userSelectedServices = req.body["resources"];
 
   if (userSelectedServices) {
     servicesToExport = services.filter(function (service) {

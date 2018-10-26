@@ -15,7 +15,7 @@ var appEnv = cfenv.getAppEnv();
 app.use(compress());
 app.use(cors());
 app.use(bodyParser.urlencoded({
-  extended: false
+  extended: true
 }))
 
 app.use("/api/export", require('./export2office.js'));
