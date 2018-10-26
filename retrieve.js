@@ -277,6 +277,19 @@ function ServiceUpdater() {
           }
         }
 
+        // more tags
+        try {
+          if (resource.metadata.service.iam_compatible) {
+            resource.tags.push('iam_compatible');
+          }
+        } catch (_) {}
+
+        try {
+          if (resource.metadata.rc_compatible) {
+            resource.tags.push('rc_compatible');
+          }
+        } catch (_) {}
+
         // sort tags (categories first)
         resource.tags.sort(function (tag1, tag2) {
           var isCategory1 = categories.indexOf(tag1) >= 0
@@ -351,6 +364,7 @@ function ServiceUpdater() {
             'name',
             'description',
             'displayName',
+            'originalName',
           ]);
         });
 
