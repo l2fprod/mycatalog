@@ -365,11 +365,11 @@ function exportToPowerpoint(services, dateMDY, res) {
     bold: false,
     color: 'ff0000'
   });
-  slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'), {
+  slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
     x: 1000,
     y: 30,
-    cx: 110,
-    cy: 120
+    cx: 150,
+    cy: 100,
   });
   // Intro slide END
 
@@ -385,178 +385,151 @@ function exportToPowerpoint(services, dateMDY, res) {
         cx: 70,
         cy: 70
       });
-      slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'), {
-        x: 1100,
+      slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
+        x: 1000,
         y: 30,
-        cx: 90,
+        cx: 150,
         cy: 100
       });
     } catch (err) {}
 
-    var extra = service.metadata.service.extra;
-    if (extra) {
-      slide.addText(service.displayName, {
-        x: 150,
-        y: 30,
-        cx: '100%',
-        font_size: 30,
-        bold: true
-      });
+    slide.addText(service.displayName, {
+      x: 150,
+      y: 30,
+      cx: '900',
+      font_size: 30,
+      bold: true
+    });
 
-      slide.addText(service.description, {
-        x: 100,
-        y: 150,
-        cx: '1000',
-        font_size: 20,
-        color: '808080'
-      });
+    slide.addText(service.description, {
+      x: 100,
+      y: 150,
+      cx: '1000',
+      font_size: 20,
+      color: '808080'
+    });
 
-      slide.addText(service.longDescription, {
-        x: 100,
-        y: 250,
-        cx: '700',
-        font_size: 18
-      });
+    slide.addText(service.longDescription, {
+      x: 100,
+      y: 250,
+      cx: '700',
+      font_size: 18
+    });
 
-      // Metada rectangle panel on the right hand side
-      slide.addShape("rect", {
-        x: 830,
-        y: 230,
-        cx: 390,
-        cy: 300,
-        fill: '47A9C0'
-      });
-      slide.addText("Provider: ", {
-        x: 850,
-        y: 250,
-        cx: '150',
-        font_size: 18,
-        bold: false,
-        color: 'ffffff'
-      });
-      slide.addText(service.provider.name, {
-        x: 1000,
-        y: 250,
-        cx: '220',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      slide.addText("Category: ", {
-        x: 850,
-        y: 300,
-        cx: '150',
-        font_size: 18,
-        bold: false,
-        color: 'ffffff'
-      });
-      for (var category in categories) {
-        if (service.tags[0] == categories[category].id) {
-          cat = categories[category].label;
-          slide.addText(cat, {
-            x: 1000,
-            y: 300,
-            cx: '300',
-            font_size: 18,
-            color: 'ffffff',
-            bold: false
-          });
-        }
+    // Metada rectangle panel on the right hand side
+    slide.addShape("rect", {
+      x: 830,
+      y: 230,
+      cx: 390,
+      cy: 300,
+      fill: '47A9C0'
+    });
+    slide.addText("Provider: ", {
+      x: 850,
+      y: 250,
+      cx: '150',
+      font_size: 18,
+      bold: false,
+      color: 'ffffff'
+    });
+    slide.addText(service.provider.name, {
+      x: 1000,
+      y: 250,
+      cx: '220',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    slide.addText("Category: ", {
+      x: 850,
+      y: 300,
+      cx: '150',
+      font_size: 18,
+      bold: false,
+      color: 'ffffff'
+    });
+    for (var category in categories) {
+      if (service.tags[0] == categories[category].id) {
+        cat = categories[category].label;
+        slide.addText(cat, {
+          x: 1000,
+          y: 300,
+          cx: '300',
+          font_size: 18,
+          color: 'ffffff',
+          bold: false
+        });
       }
-      slide.addText("Status: ", {
-        x: 850,
-        y: 350,
-        cx: '150',
-        font_size: 18,
-        color: 'ffffff'
-      });
-
-      var status = "";
-      if (service.tags.indexOf('ibm_beta') >= 0)
-        status = "Beta";
-      else if (service.tags.indexOf('ibm_experimental') >= 0)
-        status = "Experimental";
-      else
-        status = "Production Ready";
-      slide.addText(status, {
-        x: 1000,
-        y: 350,
-        cx: '200',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      slide.addText("Free Plan: ", {
-        x: 850,
-        y: 400,
-        cx: '150',
-        font_size: 18,
-        color: 'ffffff'
-      });
-      var isFreePlan = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
-      slide.addText(isFreePlan, {
-        x: 1000,
-        y: 400,
-        cx: '200',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      slide.addText("Regions: ", {
-        x: 850,
-        y: 450,
-        cx: '150',
-        font_size: 18,
-        color: 'ffffff'
-      });
-      var datacenter = "";
-      for (var region in regions) {
-        if (service.tags.indexOf(regions[region].tag) >= 0) {
-          datacenter += regions[region].label + " ";
-        }
-      }
-      slide.addText(datacenter, {
-        x: 1000,
-        y: 450,
-        cx: '200',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      // Metada rectangle panel on the right hand side END
-
-      // Footer -------------------------------
-      slide.addText(extra.documentationUrl, {
-        x: 100,
-        y: 600,
-        cx: '100%',
-        cy: 40,
-        color: '0000ff'
-      });
-
-      slide.addText(slide.getPageNumber() + 1, {
-        x: 1150,
-        y: 630,
-        cx: '100',
-        cy: 20,
-        color: '808080'
-      });
-    } else {
-      slide.addText(service.displayName, {
-        x: 150,
-        y: 30,
-        cx: '100%',
-        font_size: 30,
-        bold: true
-      });
-
-      slide.addText(service.description, {
-        x: 100,
-        y: 150,
-        cx: '100%',
-        font_size: 20
-      });
     }
+    slide.addText("Status: ", {
+      x: 850,
+      y: 350,
+      cx: '150',
+      font_size: 18,
+      color: 'ffffff'
+    });
+
+    var status = "";
+    if (service.tags.indexOf('ibm_beta') >= 0)
+      status = "Beta";
+    else if (service.tags.indexOf('ibm_experimental') >= 0)
+      status = "Experimental";
+    else
+      status = "Production Ready";
+    slide.addText(status, {
+      x: 1000,
+      y: 350,
+      cx: '200',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    slide.addText("Free Plan: ", {
+      x: 850,
+      y: 400,
+      cx: '150',
+      font_size: 18,
+      color: 'ffffff'
+    });
+    var isFreePlan = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
+    slide.addText(isFreePlan, {
+      x: 1000,
+      y: 400,
+      cx: '200',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    slide.addText("Regions: ", {
+      x: 850,
+      y: 450,
+      cx: '150',
+      font_size: 18,
+      color: 'ffffff'
+    });
+    var datacenter = "";
+    for (var region in regions) {
+      if (service.tags.indexOf(regions[region].tag) >= 0) {
+        datacenter += regions[region].label + " ";
+      }
+    }
+    slide.addText(datacenter, {
+      x: 1000,
+      y: 450,
+      cx: '200',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    // Metada rectangle panel on the right hand side END
+
+    slide.addText(slide.getPageNumber() + 1, {
+      x: 1150,
+      y: 630,
+      cx: '100',
+      cy: 20,
+      color: '808080'
+    });
   });
 
   return pptx;
