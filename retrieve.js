@@ -106,6 +106,7 @@ function ServiceUpdater() {
               } else {
                 console.log(`Plan ${plan.name} in ${resource.name} has no 'plan' metadata`);
               }
+              plan.originalName = plan.metadata.original_name;
             });
           }
           callback(null);
