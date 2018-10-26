@@ -8,7 +8,7 @@ nvm install 6.9.1
 # Retrieve resources
 npm install
 ./retrieve.sh
-rm -rf node_modules public/vendor
+rm -rf node_modules
 
 # Push the app
 if ! cf app $CF_APP; then
