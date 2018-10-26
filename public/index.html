@@ -182,7 +182,12 @@
             <p class="text-muted">
               {{plan.description}}
             </p>
-            <input ng-if="plan.name !== 'user-provided'" class="form-control" type="text" value="ibmcloud cf create-service {{quote(selectedService.metadata.service.cf_service_name || selectedService.name)}} {{quote(plan.name)}} <service-name>" />
+            <p ng-if="plan.name !== 'user-provided'">
+              <input class="form-control" type="text" value="ibmcloud cf create-service {{quote(selectedService.metadata.service.cf_service_name || selectedService.name)}} {{quote(plan.originalName || plan.name)}} <service-name>" />
+            </p>
+            <p ng-if="selectedService.tags.indexOf('rc_compatible') > 0 && plan.name !== 'user-provided'">
+              <input class="form-control" type="text" value="ibmcloud resource service-instance-create <service-name> {{quote(selectedService.name)}} {{quote(plan.name)}} <region>" />
+            </p>
           </div>
         </div>
         <div class="modal-footer">
