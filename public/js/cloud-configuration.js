@@ -55,11 +55,18 @@ var categories = [
 
 var regions = [
   {
-    id: "us",
+    id: "us-south",
     api: "api.ng.bluemix.net",
     console: "console.ng.bluemix.net",
     tag: "us-south",
-    label: "US"
+    label: "US South"
+  },
+  {
+    id: "us-east",
+    api: "api.us-east.bluemix.net",
+    console: "console.us-east.bluemix.net",
+    tag: "us-east",
+    label: "US East"
   },
   {
     id: "eu-gb",
@@ -74,6 +81,13 @@ var regions = [
     console: "console.eu-de.bluemix.net",
     tag: "eu-de",
     label: "DE"
+  },
+  {
+    id: "jp-tok",
+    api: "api.jp-tok.bluemix.net",
+    console: "console.jp-tok.bluemix.net",
+    tag: "jp-tok",
+    label: "JP"
   },
   {
     id: "au-syd",
