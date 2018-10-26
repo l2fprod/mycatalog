@@ -90,6 +90,7 @@
             <td>
               <button class="btn btn-sm btn-success" ng-click="selectFiltered()">Add to selection</button>
               <button class="btn btn-sm btn-warning" ng-click="deselectFiltered()"><i class="fa fa-trash-o"></i>&nbsp;Remove from selection</button>
+              <button class="btn btn-sm btn-default tracking" ng-click="viewSelected=!viewSelected" data-toggle="button" data-track-action="ViewSelected" data-track-label="Toggle">Show only selected</button>
             </td>
           </tr>
         </table>
@@ -118,7 +119,7 @@
             <th ng-repeat="region in regions">{{region.label}}</th>
           </tr>
         </thead>
-        <tr ng-repeat="resource in (filteredResources = (resources | filter:searchText | filterPanel:filterConfiguration))">
+        <tr ng-if="!viewSelected || selection.resources.includes(resource.id)" ng-repeat="resource in (filteredResources = (resources | filter:searchText | filterPanel:filterConfiguration))">
           <td>
             <input type="checkbox" checklist-model="selection.resources" checklist-value="resource.id" class="tracking" data-track-action="Select" data-track-label="{{resource.displayName}}">
           </td>

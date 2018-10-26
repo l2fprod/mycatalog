@@ -70,6 +70,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
   $scope.categories = categories;
   $scope.regions = regions;
   $scope.selectedService = {};
+  $scope.viewSelected = false;
 
   $scope.filterConfiguration = {
     enabled: true,
