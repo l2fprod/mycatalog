@@ -82,7 +82,7 @@
             </td>
           </tr>
           <tr>
-            <td class="search-title"><span class="text-muted">Regions:</span></td>
+            <td class="search-title"><span class="text-muted">Locations:</span></td>
             <td>
               <button ng-repeat="region in regions" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{region.label}}" data-toggle="button" ng-click="toggleTagConfiguration(region.tag, true)">{{region.label}}</button>
             </td>
@@ -114,7 +114,7 @@
             <th rowspan="2">Name</th>
             <th rowspan="2">CLI</th>
             <th rowspan="2">Description</th>
-            <th colspan="{{regions.length}}">Regions</th>
+            <th colspan="{{regions.length}}">Locations</th>
             <th rowspan="2" align="middle">Tags</th>
           </tr>
           <tr>
@@ -140,17 +140,17 @@
             <i ng-if="resource.tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
           </td>
           <td class="service-tags">
-            <span ng-if="resource.tags.indexOf('ibm_created')>=0" class="label label-primary">IBM</span>
-            <span ng-if="resource.tags.indexOf('ibm_third_party')>=0" class="label label-success">Third Party</span>
-            <span ng-if="resource.tags.indexOf('ibm_beta')>=0" class="label label-warning">Beta</span>
-            <span ng-if="resource.tags.indexOf('ibm_experimental')>=0" class="label label-danger">Experimental</span>
-            <span ng-if="resource.tags.indexOf('ibm_deprecated')>=0" class="label label-danger">Deprecated</span>
+            <span ng-if="resource.tags.indexOf('ibm_created')>=0" class="service-tag label label-primary">IBM</span>
+            <span ng-if="resource.tags.indexOf('ibm_third_party')>=0" class="service-tag label label-success">Third Party</span>
+            <span ng-if="resource.tags.indexOf('ibm_beta')>=0" class="service-tag label label-warning">Beta</span>
+            <span ng-if="resource.tags.indexOf('ibm_experimental')>=0" class="service-tag label label-danger">Experimental</span>
+            <span ng-if="resource.tags.indexOf('ibm_deprecated')>=0" class="service-tag label label-danger">Deprecated</span>
 
-            <span ng-if="resource.pricing_tags.indexOf('free')>=0" class="label label-info">Free plan</span>
-            <span ng-if="resource.pricing_tags.indexOf('lite')>=0" class="label label-info">Lite plan</span>
+            <span ng-if="resource.pricing_tags.indexOf('free')>=0" class="service-tag label label-info">Free plan</span>
+            <span ng-if="resource.pricing_tags.indexOf('lite')>=0" class="service-tag label label-info">Lite plan</span>
 
             <span ng-repeat="tag in resource.tags | filter: tagFilter">
-              <span class="label label-info">{{tag}}</span>
+              <span class="service-tag label label-info">{{tag}}</span>
             </span>
           </td>
         </tr>

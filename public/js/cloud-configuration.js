@@ -59,41 +59,41 @@ var regions = [
     api: "api.ng.bluemix.net",
     console: "console.ng.bluemix.net",
     tag: "us-south",
-    label: "US South"
+    label: "Dallas"
   },
   {
     id: "us-east",
     api: "api.us-east.bluemix.net",
     console: "console.us-east.bluemix.net",
     tag: "us-east",
-    label: "US East"
+    label: "Washington DC"
   },
   {
     id: "eu-gb",
     api: "api.eu-gb.bluemix.net",
     console: "console.eu-gb.bluemix.net",
     tag: "eu-gb",
-    label: "UK"
+    label: "London"
   },
   {
     id: "eu-de",
     api: "api.eu-de.bluemix.net",
     console: "console.eu-de.bluemix.net",
     tag: "eu-de",
-    label: "DE"
+    label: "Frankfurt"
   },
   {
     id: "jp-tok",
     api: "api.jp-tok.bluemix.net",
     console: "console.jp-tok.bluemix.net",
     tag: "jp-tok",
-    label: "JP"
+    label: "Tokyo"
   },
   {
     id: "au-syd",
     api: "api.au-syd.bluemix.net",
     console: "console.au-syd.bluemix.net",
     tag: "au-syd",
-    label: "AU"
+    label: "Sydney"
   }
 ];
