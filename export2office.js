@@ -87,42 +87,27 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[0] = [];
     sheet.data[0][0] = "Service";
     sheet.data[0][1] = "Category";
-    sheet.data[0][2] = "Description";
-    sheet.data[0][3] = "Provider";
-    sheet.data[0][4] = "Status";
-    sheet.data[0][5] = "Free Plan";
-    sheet.data[0][6] = "Plans";
-    sheet.data[0][7] = "Regions";
-    sheet.data[0][8] = "Creation Date";
-    sheet.data[0][9] = "Last Modification";
-    sheet.data[0][10] = "Service Key Support";
-    sheet.data[0][11] = "Long Description";
-    sheet.data[0][12] = "URL";
+    sheet.data[0][2] = "Provider";
+    sheet.data[0][3] = "Status";
+    sheet.data[0][4] = "Free Plan";
+    sheet.data[0][5] = "Plans";
+    sheet.data[0][6] = "Regions";
+    sheet.data[0][7] = "Creation Date";
+    sheet.data[0][8] = "Last Modification";
+    sheet.data[0][9] = "Description";
+    sheet.data[0][10] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
-
-    var extra = service.metadata.service.extra;
-    if (extra) {
-      sheet.data[row][0] = service.displayName;
-      //sheet.data[row][1] = service.entity.tags[0];
-      for (var cat in categories) {
-        if (service.tags[0] == categories[cat].id)
-          sheet.data[row][1] = categories[cat].label;
+    sheet.data[row][0]  = service.displayName;
+    
+    for (var category in categories) {
+      if (service.tags[0] == categories[category].id) {
+        sheet.data[row][1] = categories[category].label;
       }
-      sheet.data[row][2] = service.description;
-      sheet.data[row][3] = service.provider.name;
-      // k8s cares about is whether the service has serviceKeysSupported=true
-      // to allow service keys to be created and not just binding to cf apps.
-      sheet.data[row][10] = (extra.serviceKeysSupported == true) ? "Yes" : "No";
-      sheet.data[row][11] = service.longDescription;
-      sheet.data[row][12] = extra.documentationUrl;
-    } else {
-      sheet.data[row][0] = service.displayName;
-      sheet.data[row][1] = service.tags[0];
-      sheet.data[row][2] = service.description;
-      sheet.data[row][3] = service.provider.name;
     }
+
+    sheet.data[row][2] = service.provider.name;
 
     var status = "";
     if (service.tags.indexOf('ibm_beta') >= 0)
@@ -133,15 +118,15 @@ function exportToExcel(services, dateMDY, res) {
         status = "Deprecated";
     else
       status = "Production Ready";
-    sheet.data[row][4] = status;
-    sheet.data[row][5] = (service.pricing_tags.indexOf("free") >= 0) ? "Yes" : "No";
+    sheet.data[row][3] = status;
+    sheet.data[row][4] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
 
     var planList = "";
     var plans = service.plans;
     for (var plan in plans) {
       planList += plans[plan].displayName + "\n";
     }
-    sheet.data[row][6] = planList;
+    sheet.data[row][5] = planList;
 
     var datacenter = "";
     for (var region in regions) {
@@ -149,10 +134,12 @@ function exportToExcel(services, dateMDY, res) {
         datacenter += regions[region].label + " ";
       }
     }
-    sheet.data[row][7] = datacenter;
+    sheet.data[row][6] = datacenter;
 
-    sheet.data[row][8] = moment(service.created).format('YYYY-MM-DD');
-    sheet.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
+    sheet.data[row][7] = moment(service.created).format('YYYY-MM-DD');
+    sheet.data[row][8] = moment(service.updated).format('YYYY-MM-DD');
+    sheet.data[row][9] = service.description;
+    sheet.data[row][10] = service.metadata.ui.urls.doc_url;
 
     row++;
   });
@@ -160,6 +147,7 @@ function exportToExcel(services, dateMDY, res) {
   //--------------------------------------------------------------------
   // New Excel tab to add plans & pricing - To be continued
   //--------------------------------------------------------------------
+  /**
   var countryToCurrency = {};
 
   // find all the possible currencies
@@ -187,9 +175,11 @@ function exportToExcel(services, dateMDY, res) {
     sheet2.name = `(BETA) Pricing - ${country} - ${countryToCurrency[country]}`;
     fillPricingSheet(sheet2, services, country, countryToCurrency[country]);
   });
+  */
   return xlsx;
 }
 
+/*
 function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
   var SERVICE_COLUMN_INDEX = 0;
   var PLAN_COLUMN_INDEX = 1;
@@ -329,6 +319,7 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
     });
   });
 }
+*/
 
 // ---------------------------------------------------------------------
 // API Export to PPTX
@@ -371,11 +362,9 @@ function exportToPowerpoint(services, dateMDY, res) {
     cx: 150,
     cy: 100,
   });
-  // Intro slide END
 
   // One slide per service
   services.forEach(function (service) {
-    // New slide
     slide = pptx.makeNewSlide();
 
     try {
@@ -558,13 +547,7 @@ function exportToWord(services, dateMDY, res) {
       });
     } catch (err) {}
 
-    var extra = service.metadata.service.extra;
-
-    var svcName = service.displayName;
-    var provider = service.provider.name;
-    var url = (extra && extra.documentationUrl) ? extra.documentationUrl : "";
-
-    p.addText('     ' + svcName, {
+    p.addText('     ' + service.displayName, {
       bold: true,
       verticalAlign: true,
       font_size: 18
@@ -588,7 +571,7 @@ function exportToWord(services, dateMDY, res) {
       font_size: 14,
       color: '808080'
     });
-    p.addText(provider, {
+    p.addText(service.provider.name, {
       font_size: 14
     });
     p.addLineBreak();
@@ -596,6 +579,7 @@ function exportToWord(services, dateMDY, res) {
       font_size: 14,
       color: '808080'
     });
+    var url = service.metadata.ui.urls.doc_url;
     p.addText (url, { link: url },{
       font_size: 14,
       color: '808080'
