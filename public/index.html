@@ -137,7 +137,7 @@
           </td>
           <td class="service-description" title="{{resource.longDescription}}">{{resource.description}}</td>
           <td class="service-region" ng-repeat="region in regions">
-            <i ng-if="resource.tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
+            <i ng-if="resource.geo_tags.indexOf('global')>=0 || resource.tags.indexOf(region.tag)>=0" class="text-muted fa fa-check"></i>
           </td>
           <td class="service-tags">
             <span ng-if="resource.tags.indexOf('ibm_created')>=0" class="service-tag label label-primary">IBM</span>
@@ -148,6 +148,8 @@
 
             <span ng-if="resource.pricing_tags.indexOf('free')>=0" class="service-tag label label-info">Free plan</span>
             <span ng-if="resource.pricing_tags.indexOf('lite')>=0" class="service-tag label label-info">Lite plan</span>
+
+            <span ng-if="resource.geo_tags.indexOf('global')>=0" class="service-tag label label-warning">Global</span>
 
             <span ng-repeat="tag in resource.tags | filter: tagFilter">
               <span class="service-tag label label-info">{{tag}}</span>
@@ -160,7 +162,7 @@
 
   <footer>
     <span class="text-muted pull-left disclaimer">
-      'My Catalog' uses the Catalog API to retrieve data from the official <a href="https://console.bluemix.net/catalog">IBM Cloud catalog</a>.
+      'My Catalog' uses the Catalog API to retrieve data from the official <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>.
       It attempts to be as accurate as possible. Use with care.
     </span> made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>
   </footer>
