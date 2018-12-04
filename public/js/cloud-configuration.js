@@ -57,42 +57,42 @@ var regions = [
   {
     id: "us-south",
     api: "api.ng.bluemix.net",
-    console: "console.ng.bluemix.net",
+    console: "cloud.ibm.com",
     tag: "us-south",
     label: "Dallas"
   },
   {
     id: "us-east",
     api: "api.us-east.bluemix.net",
-    console: "console.us-east.bluemix.net",
+    console: "cloud.ibm.com",
     tag: "us-east",
     label: "Washington DC"
   },
   {
     id: "eu-gb",
     api: "api.eu-gb.bluemix.net",
-    console: "console.eu-gb.bluemix.net",
+    console: "cloud.ibm.com",
     tag: "eu-gb",
     label: "London"
   },
   {
     id: "eu-de",
     api: "api.eu-de.bluemix.net",
-    console: "console.eu-de.bluemix.net",
+    console: "cloud.ibm.com",
     tag: "eu-de",
     label: "Frankfurt"
   },
   {
     id: "jp-tok",
     api: "api.jp-tok.bluemix.net",
-    console: "console.jp-tok.bluemix.net",
+    console: "cloud.ibm.com",
     tag: "jp-tok",
     label: "Tokyo"
   },
   {
     id: "au-syd",
     api: "api.au-syd.bluemix.net",
-    console: "console.au-syd.bluemix.net",
+    console: "cloud.ibm.com",
     tag: "au-syd",
     label: "Sydney"
   }

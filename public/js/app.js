@@ -141,9 +141,9 @@ catalogApp.controller('MainController', function ($scope, $http) {
 
   $scope.consoleUrl = function (resource) {
     if (resource.kind === 'service') {
-      return 'https://console.bluemix.net/catalog/services/' + resource.name;
+      return 'https://cloud.ibm.com/catalog/services/' + resource.name;
     } else {
-      return 'https://console.bluemix.net/catalog/infrastructure/' + resource.name;
+      return 'https://cloud.ibm.com/catalog/infrastructure/' + resource.name;
     }
   }
 
