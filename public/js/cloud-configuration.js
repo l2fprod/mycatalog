@@ -1,5 +1,9 @@
 var categories = [
   {
+    id: "compute",
+    label: "Compute",
+  },
+  {
     id: "dev_ops",
     label: "DevOps"
   },
@@ -37,11 +41,11 @@ var categories = [
   },
   {
     id: "watson",
-    label: "Watson"
+    label: "AI"
   },
   {
     id: "network",
-    label: "Network"
+    label: "Networking"
   },
   {
     id: "integration",
