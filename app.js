@@ -64,13 +64,17 @@ function scheduleUpdater() {
   // schedule future runs
   console.log("Scheduling auto-update");
   var serviceUpdater = require('./retrieve.js')();
+  var cheatsheet = require('./cheatsheet.js')();
   var CronJob = require('cron').CronJob;
   new CronJob({
     // run twice, once at 8 in the US but also at 8 in Europe
     cronTime: '0 0 8,23 * * *',
     onTick: function () {
       console.log(new Date(), "Updating services...");
-      serviceUpdater.run(saveSnapshotCallback);
+      serviceUpdater.run((err, resources) => {
+        saveSnapshotCallback(err, resources);
+        cheatsheet.generate();
+      });
     },
     start: true,
     timeZone: 'America/Los_Angeles'

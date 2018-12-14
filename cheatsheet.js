@@ -130,8 +130,6 @@ function CheatSheet() {
       }
     });
 
-    console.log(resources.length);
-
     sheet.registerFont('Plex Sans',
       'node_modules/@ibm/plex/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Regular.ttf');
     sheet.registerFont('Plex Sans Bold',
