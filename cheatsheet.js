@@ -243,7 +243,8 @@ function CheatSheet() {
       resourcesInCategory.forEach((resource) => {
 
         // icon for the resource
-        if (category.id !== 'vmware' && fs.existsSync('public/generated/icons/' + resource.id + '.png')) {
+        if (resource.name !== 'mcv' && // Mission Critical icon has a problem
+          fs.existsSync('public/generated/icons/' + resource.id + '.png')) {
           sheet.image('public/generated/icons/' + resource.id + '.png', currentX, currentY + 1.5,
             { width: fontSize, height: fontSize /*fit: [fontSize, fontSize]*/ });
         }
