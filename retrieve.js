@@ -1,6 +1,6 @@
 
 function ServiceUpdater() {
-  const apiUrl = 'https://resource-catalog.bluemix.net/api/v1';
+  const apiUrl = 'https://globalcatalog.cloud.ibm.com/api/v1';
 
   const request = require('request');
   const fs = require('fs');
