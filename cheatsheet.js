@@ -7,7 +7,7 @@ function CheatSheet() {
     {
       id: 'compute',
       label: 'Compute',
-      tags: ['compute', 'openwhisk' ],
+      tags: ['compute', 'openwhisk', 'containers' ],
       exclude: [],
     },
     {
@@ -43,7 +43,7 @@ function CheatSheet() {
     {
       id: 'analytics',
       label: 'Analytics',
-      tags: ['analytics', 'business_analytics', 'big_data' ],
+      tags: ['analytics', 'business_analytics', 'big_data', 'data_analytics' ],
       exclude: [],
     },
     {
