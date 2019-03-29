@@ -240,12 +240,11 @@ function CheatSheet() {
       console.log('Found', resourcesInCategory.length, 'resources in', category.label);
       resourcesInCategory.forEach((resource) => {
 
-        // icon for the resource
-        if (resource.name !== 'mcv' && // Mission Critical icon has a problem
-          fs.existsSync('public/generated/icons/' + resource.id + '.png')) {
-          sheet.image('public/generated/icons/' + resource.id + '.png', currentX, currentY + 1.5,
-            { width: fontSize, height: fontSize /*fit: [fontSize, fontSize]*/ });
-        }
+      // icon for the resource
+      if (fs.existsSync('public/generated/icons/' + resource.id + '.png')) {
+        sheet.image('public/generated/icons/' + resource.id + '.png', currentX, currentY + 1.5,
+          { width: fontSize, height: fontSize /*fit: [fontSize, fontSize]*/ });
+      }
 
         // resource label
         sheet

@@ -6,6 +6,7 @@ function ServiceUpdater() {
   const fs = require('fs');
   const async = require('async');
   const vm = require('vm');
+  const Jimp = require('jimp');
 
   const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
   const sandbox = {};
@@ -154,16 +155,31 @@ function ServiceUpdater() {
                   svg2png(imageBuffer, { width: 64, height: 64 })
                     .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
                       if (convertError) {
-                        console.log(convertError);
+                        console.log(`Could not read icon for ${resource.name}, using default`);
+                        fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
                       }
                       callback(null);
                     }))
                     .catch(e => {
-                      console.log('Error generating icon for', resource.imageUrl, e);
+                      console.log(`Could not read icon for ${resource.name}, using default`);
+                      fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
                       callback(null);
                     });
                 } else {
-                  callback(null);
+                  Jimp.read("public/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
+                    if (readErr) {
+                      console.log(`Could not read icon for ${resource.name}, using default`);
+                      fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
+                      callback(null);
+                    } else {
+                      imageBuffer.write("public/generated/icons/" + resource.id + ".png", (writeErr) => {
+                        if (writeErr) {
+                          console.log(writeErr);
+                        }
+                        callback(null);
+                      });
+                    }
+                  });
                 }
               }
             });
