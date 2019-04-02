@@ -40,7 +40,7 @@ function ServiceUpdater() {
       }
 
       console.log(`Found ${body.resources.length} additional resources`);
-      const allResources = resources.concat(body.resources);
+      const allResources = resources.concat(body.resources.filter(resource => resource.active));
       if (body.next) {
         getResources(body.next, allResources, onResult);
       } else {
@@ -98,7 +98,7 @@ function ServiceUpdater() {
             if (body.next) {
               console.log('Found a resource with a lot of plans!!!');
             }
-            resource.plans = body.resources;
+            resource.plans = body.resources.filter(plan => plan.active);
             resource.plans.forEach((plan) => {
               plan.description = plan.overview_ui['en'].description;
               plan.displayName = plan.overview_ui['en'].display_name;
