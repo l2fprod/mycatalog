@@ -7,6 +7,7 @@ function ServiceUpdater() {
   const async = require('async');
   const vm = require('vm');
   const Jimp = require('jimp');
+  const zlib = require('zlib');
 
   const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
   const sandbox = {};
@@ -152,6 +153,10 @@ function ServiceUpdater() {
                 if (extension === "svg") {
                   var svg2png = require("svg2png");  
                   var imageBuffer = fs.readFileSync("public/generated/icons/" + resource.id + ".svg");
+                  // some svg are compressed
+                  try {
+                    imageBuffer = zlib.gunzipSync(imageBuffer);
+                  } catch (e) { }
                   svg2png(imageBuffer, { width: 64, height: 64 })
                     .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
                       if (convertError) {
