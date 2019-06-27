@@ -172,13 +172,25 @@ function getDifferences(newSnapshot, oldSnapshot) {
 
     // any new plans?
     Object.keys(newServicePlans).forEach(function (planName) {
+      const newPlan = newServicePlans[planName];
       if (!oldServicePlans.hasOwnProperty(planName)) {
         result.changes.push({
           tag: "updated",
           service: newService,
           title: "has a new plan named " + planName,
-          description: newServicePlans[planName].description
+          description: newPlan.description
         });
+      } else {
+        // the plan was there, any change?
+        const oldPlan = oldServicePlans[planName];
+        if (oldPlan.description !== newPlan.description) {
+          result.changes.push({
+            tag: "updated",
+            service: newService,
+            title: "has changed the description of the plan named " + planName,
+            description: `*before*: ${oldPlan.description}, *after*: ${newPlan.description}`
+          });
+        }
       }
     });
 
