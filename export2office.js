@@ -15,7 +15,7 @@ var categories = sandbox.categories;
 
 router.post('/:format', function (req, res) {
   var resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'));
-  var services = resources.filter(service => service.kind === 'service');
+  var services = resources.filter(service => service.kind === 'service' || service.kind === 'iaas');
 
   var servicesToExport;
   var userSelectedServices = req.body["resources"];
