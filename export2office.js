@@ -400,7 +400,7 @@ function exportToPowerpoint(services, dateMDY, res) {
 
     slide.addText(service.longDescription, {
       x: 100,
-      y: 250,
+      y: 300,
       cx: '700',
       font_size: 18
     });
@@ -410,7 +410,7 @@ function exportToPowerpoint(services, dateMDY, res) {
       x: 830,
       y: 230,
       cx: 390,
-      cy: 300,
+      cy: 350,
       fill: '47A9C0'
     });
     slide.addText("Provider: ", {
@@ -512,6 +512,17 @@ function exportToPowerpoint(services, dateMDY, res) {
     });
     // Metada rectangle panel on the right hand side END
 
+    // No clean url to be displayed yet. 2019-06
+    // var url = service.metadata.ui.urls.doc_url;
+    // slide.addText(url, {
+    //   link: url,
+    //   x: 100,
+    //   y: 600,
+    //   cx: '1000',
+    //   font_size: 14,
+    //   color: '808080'
+    // });
+
     slide.addText(slide.getPageNumber() + 1, {
       x: 1150,
       y: 630,
@@ -579,7 +590,11 @@ function exportToWord(services, dateMDY, res) {
       font_size: 14,
       color: '808080'
     });
-    var url = service.metadata.ui.urls.doc_url;
+    var url;
+    if (service.name != 'securegateway')
+      url = service.metadata.ui.urls.doc_url;
+    else
+      url = service.metadata.ui.urls.apidocs_url;
     p.addText (url, { link: url },{
       font_size: 14,
       color: '808080'
