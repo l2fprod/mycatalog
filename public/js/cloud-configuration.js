@@ -87,6 +87,13 @@ var regions = [
     label: "Frankfurt"
   },
   {
+    id: "jp-osa",
+    api: "api.jp-osa.bluemix.net",
+    console: "cloud.ibm.com",
+    tag: "jp-osa",
+    label: "Osaka"
+  },
+  {
     id: "jp-tok",
     api: "api.jp-tok.bluemix.net",
     console: "cloud.ibm.com",
