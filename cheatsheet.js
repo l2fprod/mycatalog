@@ -96,7 +96,7 @@ function CheatSheet() {
     }
   ];
 
-  const styling = {
+  const styleLightMode = {
     category: {
       color: '#3f6faf',
       background: '#e4effa',
@@ -110,9 +110,42 @@ function CheatSheet() {
       background: '#1d4d6c',
       fontSize: 10,
     },
+    page: {
+      color: '#000',
+      background: '#fff',
+    },
+    logo: {
+      icon: 'public/icons/ibmcloud_logo.png',
+      link: 'https://ibm.biz/cloud-cheatsheet',
+    }
   };
 
-  self.generate = function () {
+  const styleDarkMode = {
+    category: {
+      color: '#e4effa',
+      background: '#6f757a',
+    },
+    resource: {
+      color: '#fff',
+      background: '#000',
+    },
+    footer: {
+      color: 'white',
+      background: '#1d4d6c',
+      fontSize: 10,
+    },
+    page: {
+      color: '#fff',
+      background: '#2c2c2d',
+    },
+    logo: {
+      icon: 'public/icons/ibmcloud_logo_dark.jpg',
+      link: 'https://ibm.biz/cloud-cheatsheet-dark',
+    }
+  };
+
+  self.generate = function (darkMode, outputFilename) {
+    const styling = darkMode ? styleDarkMode : styleLightMode;
     const resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'))
       .filter(resource =>
         resource.tags.indexOf('ibm_deprecated') < 0 &&
@@ -147,7 +180,7 @@ function CheatSheet() {
     console.log('Column width', columnWidth);
     console.log('Font size', fontSize);
 
-    sheet.pipe(fs.createWriteStream('public/generated/cheatsheet.pdf'));
+    sheet.pipe(fs.createWriteStream(outputFilename));
 
     sheet
       .font('Plex Sans')
@@ -158,7 +191,11 @@ function CheatSheet() {
       size: 'A4',
     });
 
-    sheet.image('public/icons/ibmcloud_logo.png', margin, margin,
+    sheet.rect(0, 0, sheet.page.width, sheet.page.height);
+    sheet.fill(styling.page.background);
+
+    sheet.fill(styling.page.color);
+    sheet.image(styling.logo.icon, margin, margin,
       { width: columnWidth - margin });
     const date = new Date();
     var dateMDY = moment(date).format('MMMM DD, YYYY');
@@ -170,7 +207,7 @@ function CheatSheet() {
       });
     sheet
       .fontSize(fontSize)
-      .text(`Last updated on ${dateMDY}\nhttps://ibm.biz/cloud-cheatsheet`, margin, margin + 160, {
+      .text(`Last updated on ${dateMDY}\n${styling.logo.link}`, margin, margin + 160, {
         width: columnWidth - margin,
         align: 'center',
       });

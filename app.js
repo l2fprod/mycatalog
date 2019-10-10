@@ -73,7 +73,8 @@ function scheduleUpdater() {
       console.log(new Date(), "Updating services...");
       serviceUpdater.run((err, resources) => {
         saveSnapshotCallback(err, resources);
-        cheatsheet.generate();
+        cheatsheet.generate(false, './public/generated/cheatsheet.pdf');
+        cheatsheet.generate(true, './public/generated/cheatsheet-dark.pdf');
       });
     },
     start: true,
