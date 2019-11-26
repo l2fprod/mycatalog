@@ -101,6 +101,13 @@ var regions = [
     label: "Tokyo"
   },
   {
+    id: "kr-seo",
+    api: "api.kr-seo.bluemix.net",
+    console: "cloud.ibm.com",
+    tag: "kr-seo",
+    label: "Seoul"
+  },
+  {
     id: "au-syd",
     api: "api.au-syd.bluemix.net",
     console: "cloud.ibm.com",
