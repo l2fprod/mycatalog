@@ -151,6 +151,7 @@ function ServiceUpdater() {
                 callback(null);
               } else {
                 if (extension === "svg") {
+                  resource.localSvgIcon = "public/generated/icons/" + resource.id + "." + extension;
                   var svg2png = require("svg2png");  
                   var imageBuffer = fs.readFileSync("public/generated/icons/" + resource.id + ".svg");
                   // some svg are compressed
@@ -159,6 +160,7 @@ function ServiceUpdater() {
                   } catch (e) { }
                   svg2png(imageBuffer, { width: 64, height: 64 })
                     .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
+                      resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
                       if (convertError) {
                         console.log(`Could not read icon for ${resource.name}, using default`);
                         fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
@@ -171,6 +173,7 @@ function ServiceUpdater() {
                       callback(null);
                     });
                 } else {
+                  resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
                   Jimp.read("public/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
                     if (readErr) {
                       console.log(`Could not read icon for ${resource.name}, using default`);
@@ -336,6 +339,9 @@ function ServiceUpdater() {
       callback(null);
     });
 
+    tasks.push((callback) => {
+      getImages(resources, callback);
+    });
 
     // save the full version
     tasks.push((callback) => {
@@ -364,7 +370,9 @@ function ServiceUpdater() {
           'description',
           'longDescription',
           'displayName',
-          'imageUrl'
+          'imageUrl',
+          'localSvgIcon',
+          'localPngIcon',
         ]);
 
         if (resource.metadata) {
@@ -396,10 +404,6 @@ function ServiceUpdater() {
         stream.end();
       });
       stream.once('finish', () => { callback(null); });
-    });
-
-    tasks.push((callback) => {
-      getImages(resources, callback);
     });
 
     async.waterfall(tasks, (err) => {
