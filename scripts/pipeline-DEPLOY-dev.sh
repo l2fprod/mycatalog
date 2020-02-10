@@ -3,7 +3,7 @@
 npm config delete prefix
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 . ~/.nvm/nvm.sh
-nvm install 8.9.4
+nvm install 12.15.0
 
 # Retrieve resources
 npm install
