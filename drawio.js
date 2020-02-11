@@ -37,6 +37,41 @@ const Base64 = {
 		}
 
 		return output;
+	},
+
+	// public method for decoding
+	decode : function (input) {
+		var output = "";
+		var chr1, chr2, chr3;
+		var enc1, enc2, enc3, enc4;
+		var i = 0;
+
+		input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+
+		while (i < input.length) {
+
+			enc1 = this._keyStr.indexOf(input.charAt(i++));
+			enc2 = this._keyStr.indexOf(input.charAt(i++));
+			enc3 = this._keyStr.indexOf(input.charAt(i++));
+			enc4 = this._keyStr.indexOf(input.charAt(i++));
+
+			chr1 = (enc1 << 2) | (enc2 >> 4);
+			chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+			chr3 = ((enc3 & 3) << 6) | enc4;
+
+			output = output + String.fromCharCode(chr1);
+
+			if (enc3 != 64) {
+				output = output + String.fromCharCode(chr2);
+			}
+			if (enc4 != 64) {
+				output = output + String.fromCharCode(chr3);
+			}
+
+		}
+
+		return output;
+
 	}
 }
 
@@ -75,16 +110,16 @@ function DrawIOLibrary() {
     <mxCell id="0"/>
     <mxCell id="1" parent="0"/>
     <mxCell id="2" value="${escapedTitle}"
-      style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=${imageData}" vertex="1" parent="1"><mxGeometry width="64" height="64" as="geometry"/>
+      style="shape=image;fontColor=#4277BB;align=center;spacingTop=3;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=${imageData}" vertex="1" parent="1"><mxGeometry width="60" height="60" as="geometry"/>
     </mxCell>
   </root>
 </mxGraphModel>`;
 
-        const xmlContent = compress(graphModel, false);
+        const xmlContent = self.compress(graphModel, false);
         resourceIcons.push({
           xml: xmlContent,
-          w: 64,
-          h: 64,
+          w: 60,
+          h: 60,
           aspect: 'fixed',
           title: entities.encode(resource.displayName),
         });
@@ -93,12 +128,39 @@ function DrawIOLibrary() {
     fs.writeFileSync(outputFilename, `<mxlibrary title="IBM Cloud Catalog">${JSON.stringify(resourceIcons, null, null)}</mxlibrary>`);
   };
 
-  function compress(data, deflate) {
+	self.compress = function(data, deflate) {
     const tmp = (deflate) ?
   		pako.deflate(encodeURIComponent(data), {to: 'string'}) :
 	  	pako.deflateRaw(encodeURIComponent(data), {to: 'string'});
     return Base64.encode(tmp);
-  };
+	};
+	
+	self.decompress = function(data, inflate) {
+		var tmp = Base64.decode(data);
+		
+		var inflated = (inflate) ? pako.inflate(tmp, {to: 'string'}) :
+			pako.inflateRaw(tmp, {to: 'string'})
+
+		return zapGremlins(decodeURIComponent(inflated));
+	}
+
+	function zapGremlins(text) {
+		var checked = [];
+		
+		for (var i = 0; i < text.length; i++)
+		{
+			var code = text.charCodeAt(i);
+			
+			// Removes all control chars except TAB, LF and CR
+			if ((code >= 32 || code == 9 || code == 10 || code == 13) &&
+				code != 0xFFFF && code != 0xFFFE)
+			{
+				checked.push(text.charAt(i));
+			}
+		}
+		
+		return checked.join('');
+	};
 }
 
 module.exports = function () {
