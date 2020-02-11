@@ -104,15 +104,17 @@ function DrawIOLibrary() {
 					`data:image/svg+xml,${imageContentBase64}` :
 					`data:image/png,${imageContentBase64}`;
 
-        const graphModel = `
-<mxGraphModel>
-  <root>
-    <mxCell id="0"/>
-    <mxCell id="1" parent="0"/>
-    <mxCell id="2" value="${escapedTitle}"
-      style="shape=image;fontColor=#4277BB;align=center;spacingTop=3;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=${imageData}" vertex="1" parent="1"><mxGeometry width="60" height="60" as="geometry"/>
-    </mxCell>
-  </root>
+				// icon only
+				const graphModel = `
+<mxGraphModel dx="720" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+	<root>
+		<mxCell id="0"/>
+		<mxCell id="1" parent="0"/>
+		<mxCell id="2" value=""
+			style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=${imageData};strokeColor=#4277BB;strokeWidth=2;" vertex="1" parent="1">
+			<mxGeometry x="290" y="110" width="60" height="60" as="geometry"/>
+		</mxCell>
+	</root>
 </mxGraphModel>`;
 
         const xmlContent = self.compress(graphModel, false);
