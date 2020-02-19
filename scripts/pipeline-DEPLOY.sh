@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# bzip2 required by nodejs npm install (phantomjs-prebuilt extract)
+sudo apt-get update
+sudo apt-get install -y bzip2
+
 # Prepare env
 npm config delete prefix
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
