@@ -12,7 +12,7 @@ rm -rf node_modules
 
 # Push the app
 if ! cf app $CF_APP; then
-  cf push $CF_APP -f dev-manifest.yml
+  cf push $CF_APP -f manifest.yml
 else
   OLD_CF_APP=${CF_APP}-OLD-$(date +"%s")
   rollback() {
@@ -27,6 +27,6 @@ else
   set -e
   trap rollback ERR
   cf rename $CF_APP $OLD_CF_APP
-  cf push $CF_APP -f dev-manifest.yml
+  cf push $CF_APP -f manifest.yml
   cf delete $OLD_CF_APP -f
 fi

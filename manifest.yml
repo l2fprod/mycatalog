@@ -1,6 +1,7 @@
 applications:
 - name: mycatalog
-  host: mycatalog
-  memory: 512M
+  routes:
+  - route: mycatalog.mybluemix.net
+  memory: 1G
   services:
   - mycatalog-cloudant
