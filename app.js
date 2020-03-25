@@ -18,6 +18,10 @@ app.use(bodyParser.urlencoded({
   extended: true
 }))
 
+app.get('/generated/drawio.xml', (req, res) => {
+  res.redirect('https://l2fprod.github.io/myarchitecture/drawio.xml');
+});
+
 app.use("/api/export", require('./export2office.js'));
 
 // serve the files out of ./public as our main files
@@ -65,7 +69,6 @@ function scheduleUpdater() {
   console.log("Scheduling auto-update");
   var serviceUpdater = require('./retrieve.js')();
   var cheatsheet = require('./cheatsheet.js')();
-  var drawio = require('./drawio.js')();
   var CronJob = require('cron').CronJob;
   new CronJob({
     // run twice, once at 8 in the US but also at 8 in Europe
@@ -76,7 +79,6 @@ function scheduleUpdater() {
         saveSnapshotCallback(err, resources);
         cheatsheet.generate(false, './public/generated/cheatsheet.pdf');
         cheatsheet.generate(true, './public/generated/cheatsheet-dark.pdf');
-        drawio.generate('./public/generated/drawio.xml');
       });
     },
     start: true,
