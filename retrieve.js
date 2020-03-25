@@ -127,11 +127,13 @@ function ServiceUpdater() {
 
   function getImages(resources, callback) {
     var tasks = []
+    console.log('Retrieving icons...');
     resources.forEach(function (resource) {
       tasks.push(function (callback) {
+        console.log(`[${resource.name}] getting icon`);
         const imageUrl = decodeURIComponent(resource.imageUrl);
         if (!imageUrl) {
-          console.log(resource.id, 'has no image!');
+          console.log(`[${resource.name}] ${resource.id} has no image!`);
         }
         request({
           url: imageUrl,
@@ -148,8 +150,10 @@ function ServiceUpdater() {
             }
             fs.writeFile("public/generated/icons/" + resource.id + "." + extension, body, function (err) {
               if (err) {
+                console.log(`[${resource.name}] could not write icon`);
                 callback(null);
               } else {
+                console.log(`[${resource.name}] wrote ${extension}`);
                 if (extension === "svg") {
                   resource.localSvgIcon = "public/generated/icons/" + resource.id + "." + extension;
                   var svg2png = require("svg2png");  
@@ -157,18 +161,21 @@ function ServiceUpdater() {
                   // some svg are compressed
                   try {
                     imageBuffer = zlib.gunzipSync(imageBuffer);
-                  } catch (e) { }
+                  } catch (e) {
+                    // console.log(`Could not unzip buffer for ${resource.name}`);
+                  }
                   svg2png(imageBuffer, { width: 64, height: 64 })
                     .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
+                      console.log(`[${resource.name}] wrote png`);
                       resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
                       if (convertError) {
-                        console.log(`Could not read icon for ${resource.name}, using default`);
+                        console.log(`[${resource.name}] could not read, using default`);
                         fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
                       }
                       callback(null);
                     }))
                     .catch(e => {
-                      console.log(`Could not read icon for ${resource.name}, using default`);
+                      console.log(`[${resource.name}] could not read icon, using default`);
                       fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
                       callback(null);
                     });
@@ -176,7 +183,7 @@ function ServiceUpdater() {
                   resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
                   Jimp.read("public/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
                     if (readErr) {
-                      console.log(`Could not read icon for ${resource.name}, using default`);
+                      console.log(`[${resource.name}] could not read icon, using default`);
                       fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
                       callback(null);
                     } else {
@@ -196,7 +203,7 @@ function ServiceUpdater() {
       });
     });
 
-    async.parallel(tasks, function (err, result) {
+    async.parallelLimit(tasks, 5, function (err, result) {
       console.log('Retrieved all icons');
       if (err) {
         console.log(err);
