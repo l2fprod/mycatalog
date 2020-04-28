@@ -9,6 +9,8 @@ var favicon = require('serve-favicon');
 var app = express();
 var bodyParser = require('body-parser')
 var compress = require('compression');
+var secure = require('express-force-https');
+app.use(secure);
 
 var appEnv = cfenv.getAppEnv();
 
