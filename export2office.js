@@ -87,15 +87,16 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[0] = [];
     sheet.data[0][0] = "Service";
     sheet.data[0][1] = "Category";
-    sheet.data[0][2] = "Provider";
-    sheet.data[0][3] = "Status";
-    sheet.data[0][4] = "Free Plan";
-    sheet.data[0][5] = "Plans";
-    sheet.data[0][6] = "Regions";
-    sheet.data[0][7] = "Creation Date";
-    sheet.data[0][8] = "Last Modification";
-    sheet.data[0][9] = "Description";
-    sheet.data[0][10] = "URL";
+    sheet.data[0][2] = "Id";
+    sheet.data[0][3] = "Provider";
+    sheet.data[0][4] = "Status";
+    sheet.data[0][5] = "Free Plan";
+    sheet.data[0][6] = "Plans";
+    sheet.data[0][7] = "Regions";
+    sheet.data[0][8] = "Creation Date";
+    sheet.data[0][9] = "Last Modification";
+    sheet.data[0][10] = "Description";
+    sheet.data[0][11] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
@@ -107,7 +108,8 @@ function exportToExcel(services, dateMDY, res) {
       }
     }
 
-    sheet.data[row][2] = service.provider.name;
+    sheet.data[row][2] = service.id;
+    sheet.data[row][3] = service.provider.name;
 
     var status = "";
     if (service.tags.indexOf('ibm_beta') >= 0)
@@ -118,15 +120,15 @@ function exportToExcel(services, dateMDY, res) {
         status = "Deprecated";
     else
       status = "Production Ready";
-    sheet.data[row][3] = status;
-    sheet.data[row][4] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
+    sheet.data[row][4] = status;
+    sheet.data[row][5] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
 
     var planList = "";
     var plans = service.plans;
     for (var plan in plans) {
       planList += plans[plan].displayName + "\n";
     }
-    sheet.data[row][5] = planList;
+    sheet.data[row][6] = planList;
 
     var datacenter = "";
     for (var region in regions) {
@@ -134,12 +136,12 @@ function exportToExcel(services, dateMDY, res) {
         datacenter += regions[region].label + " ";
       }
     }
-    sheet.data[row][6] = datacenter;
+    sheet.data[row][7] = datacenter;
 
-    sheet.data[row][7] = moment(service.created).format('YYYY-MM-DD');
-    sheet.data[row][8] = moment(service.updated).format('YYYY-MM-DD');
-    sheet.data[row][9] = service.description;
-    sheet.data[row][10] = service.metadata.ui.urls.doc_url;
+    sheet.data[row][8] = moment(service.created).format('YYYY-MM-DD');
+    sheet.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
+    sheet.data[row][10] = service.description;
+    sheet.data[row][11] = service.metadata.ui.urls.doc_url;
 
     row++;
   });
