@@ -7,25 +7,43 @@ function CheatSheet() {
     {
       id: 'compute',
       label: 'Compute',
-      tags: ['compute', 'openwhisk', 'containers' ],
+      tags: ['compute', 'compute_baremetal', 'openwhisk', 'vmware', 'virtualservers' ],
+      exclude: [],
+    },
+    {
+      id: 'containers',
+      label: 'Containers',
+      tags: [ 'containers' ],
+      exclude: [],
+    },
+    {
+      id: 'network',
+      label: 'Networking',
+      tags: ['network', 'network_classic','network_interconnectivity', 'network_edge' ],
       exclude: [],
     },
     {
       id: 'storage',
       label: 'Storage',
-      tags: ['storage'],
+      tags: ['storage', 'storage_classic', 'storage_datamovement' ],
       exclude: [ 'big_data' ],
     },
     {
-      id: 'network',
-      label: 'Networking',
-      tags: ['network', 'softlayer'],
+      id: 'ai',
+      label: 'AI / Machine Learning',
+      tags: ['ai', 'watson'],
       exclude: [],
     },
     {
-      id: 'ai',
-      label: 'AI',
-      tags: ['ai', 'watson'],
+      id: 'analytics',
+      label: 'Analytics',
+      tags: ['analytics', 'business_analytics', 'big_data', 'data_analytics' ],
+      exclude: [ 'data_management' ],
+    },
+    {
+      id: 'blockchain',
+      label: 'Blockchain',
+      tags: ['blockchain'],
       exclude: [],
     },
     {
@@ -41,9 +59,9 @@ function CheatSheet() {
       exclude: [ 'big_data' ],
     },
     {
-      id: 'analytics',
-      label: 'Analytics',
-      tags: ['analytics', 'business_analytics', 'big_data', 'data_analytics' ],
+      id: 'logging_monitoring',
+      label: 'Logging and Monitoring',
+      tags: [ 'logging_monitoring' ],
       exclude: [],
     },
     {
@@ -60,40 +78,16 @@ function CheatSheet() {
     },
     {
       id: 'security',
-      label: 'Security and Identity',
+      label: 'Security',
       tags: ['security'],
       exclude: [],
     },
     {
       id: 'mobile',
-      label: 'Web And Mobile',
-      tags: ['mobile'],
+      label: 'Mobile',
+      tags: ['mobile', 'web_and_app' ],
       exclude: [],
     },
-    {
-      id: 'app_services',
-      label: 'Web and Application',
-      tags: ['app_services', 'web_and_app'],
-      exclude: [],
-    },
-    {
-      id: 'finance',
-      label: 'Finance',
-      tags: ['finance'],
-      exclude: [],
-    },
-    {
-      id: 'blockchain',
-      label: 'Blockchain',
-      tags: ['blockchain'],
-      exclude: [],
-    },
-    {
-      id: 'vmware',
-      label: 'VMware',
-      tags: ['vmware'],
-      exclude: [],
-    }
   ];
 
   const styleLightMode = {
