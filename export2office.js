@@ -7,21 +7,22 @@ var officegen = require('officegen');
 
 // Added to loop through the region
 var vm = require('vm');
-var script = vm.createScript(fs.readFileSync('./public/js/bluemix-configuration.js'));
+var script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
 var sandbox = {};
 script.runInNewContext(sandbox);
 var regions = sandbox.regions;
 var categories = sandbox.categories;
 
 router.post('/:format', function (req, res) {
-  var services = JSON.parse(fs.readFileSync('public/generated/services-full.json', 'utf8'));
+  var resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'));
+  var services = resources.filter(service => service.kind === 'service' || service.kind === 'iaas');
 
   var servicesToExport;
-  var userSelectedServices = req.body["services[]"];
+  var userSelectedServices = req.body["resources"];
 
   if (userSelectedServices) {
     servicesToExport = services.filter(function (service) {
-      return userSelectedServices.indexOf(service.metadata.guid) >= 0;
+      return userSelectedServices.indexOf(service.id) >= 0;
     });
   } else {
     servicesToExport = services;
@@ -70,11 +71,11 @@ function exportToExcel(services, dateMDY, res) {
   sheet0.data[0] = [];
   sheet0.data[0][0] = "Disclaimer";
   sheet0.data[1] = [];
-  sheet0.data[1][0] = "The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API.";
+  sheet0.data[1][0] = "The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API.";
   sheet0.data[2] = [];
   sheet0.data[2][0] = "This content attempts to be as accurate as possible.";
   sheet0.data[3] = [];
-  sheet0.data[3][0] = "Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.";
+  sheet0.data[3][0] = "Use with care and refer to the official IBM Cloud catalog www.bluemix.net/catalog.";
 
   sheet = xlsx.makeNewSheet();
   sheet.name = 'My Catalog';
@@ -82,15 +83,11 @@ function exportToExcel(services, dateMDY, res) {
   var row = 1;
 
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
     // Header
     sheet.data[0] = [];
     sheet.data[0][0] = "Service";
     sheet.data[0][1] = "Category";
-    sheet.data[0][2] = "Description";
+    sheet.data[0][2] = "Id";
     sheet.data[0][3] = "Provider";
     sheet.data[0][4] = "Status";
     sheet.data[0][5] = "Free Plan";
@@ -98,64 +95,53 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[0][7] = "Regions";
     sheet.data[0][8] = "Creation Date";
     sheet.data[0][9] = "Last Modification";
-    sheet.data[0][10] = "Service Key Support";
-    sheet.data[0][11] = "Long Description";
-    sheet.data[0][12] = "URL";
+    sheet.data[0][10] = "Description";
+    sheet.data[0][11] = "URL";
 
     // Cell Content
     sheet.data[row] = [];
-
-    var extra = service.entity.extra;
-    if (extra && extra.displayName) {
-      sheet.data[row][0] = extra.displayName;
-      //sheet.data[row][1] = service.entity.tags[0];
-      for (var cat in categories) {
-        if (service.entity.tags[0] == categories[cat].id)
-          sheet.data[row][1] = categories[cat].label;
+    sheet.data[row][0]  = service.displayName;
+    
+    for (var category in categories) {
+      if (service.tags[0] == categories[category].id) {
+        sheet.data[row][1] = categories[category].label;
       }
-      sheet.data[row][2] = service.entity.description;
-      sheet.data[row][3] = extra.providerDisplayName;
-      // k8s cares about is whether the service has serviceKeysSupported=true
-      // to allow service keys to be created and not just binding to cf apps.
-      sheet.data[row][10] = (extra.serviceKeysSupported == true) ? "Yes" : "No";
-      sheet.data[row][11] = extra.longDescription;
-      sheet.data[row][12] = extra.documentationUrl;
-    } else {
-      sheet.data[row][0] = service.entity.label;
-      sheet.data[row][1] = service.entity.tags[0];
-      sheet.data[row][2] = service.entity.description;
-      sheet.data[row][3] = service.entity.provider;
     }
 
+    sheet.data[row][2] = service.id;
+    sheet.data[row][3] = service.provider.name;
+
     var status = "";
-    if (service.entity.tags.indexOf('ibm_beta') >= 0)
+    if (service.tags.indexOf('ibm_beta') >= 0)
       status = "Beta";
-    else if (service.entity.tags.indexOf('ibm_experimental') >= 0)
+    else if (service.tags.indexOf('ibm_experimental') >= 0)
       status = "Experimental";
-    else if (service.entity.tags.indexOf('ibm_deprecated') >= 0)
+    else if (service.tags.indexOf('ibm_deprecated') >= 0)
         status = "Deprecated";
     else
       status = "Production Ready";
     sheet.data[row][4] = status;
-    sheet.data[row][5] = (service.entity.tags.indexOf("custom_has_free_plan") >= 0) ? "Yes" : "No";
+    sheet.data[row][5] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
 
     var planList = "";
     var plans = service.plans;
     for (var plan in plans) {
-      planList += plans[plan].entity.name + "\n";
+      planList += plans[plan].displayName + "\n";
     }
     sheet.data[row][6] = planList;
 
     var datacenter = "";
     for (var region in regions) {
-      if (service.entity.tags.indexOf(regions[region].tag) >= 0) {
+      if (service.tags.indexOf(regions[region].tag) >= 0) {
         datacenter += regions[region].label + " ";
       }
     }
     sheet.data[row][7] = datacenter;
 
-    sheet.data[row][8] = moment(service.metadata.created_at).format('YYYY-MM-DD');
-    sheet.data[row][9] = moment(service.metadata.updated_at).format('YYYY-MM-DD');
+    sheet.data[row][8] = moment(service.created).format('YYYY-MM-DD');
+    sheet.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
+    sheet.data[row][10] = service.description;
+    sheet.data[row][11] = service.metadata.ui.urls.doc_url;
 
     row++;
   });
@@ -163,13 +149,14 @@ function exportToExcel(services, dateMDY, res) {
   //--------------------------------------------------------------------
   // New Excel tab to add plans & pricing - To be continued
   //--------------------------------------------------------------------
+  /**
   var countryToCurrency = {};
 
   // find all the possible currencies
   services.forEach(function (service) {
     service.plans.forEach(function (plan) {
-      if (plan.entity.extra && plan.entity.extra.costs) {
-        plan.entity.extra.costs.forEach(function (cost) {
+      if (plan.metadata.plan && plan.metadata.plan.extra && plan.metadata.plan.extra.costs) {
+        plan.metadata.plan.extra.costs.forEach(function (cost) {
           if (cost.currencies) {
             cost.currencies.forEach(function (currency) {
               if (!countryToCurrency[currency.country]) {
@@ -190,9 +177,11 @@ function exportToExcel(services, dateMDY, res) {
     sheet2.name = `(BETA) Pricing - ${country} - ${countryToCurrency[country]}`;
     fillPricingSheet(sheet2, services, country, countryToCurrency[country]);
   });
+  */
   return xlsx;
 }
 
+/*
 function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
   var SERVICE_COLUMN_INDEX = 0;
   var PLAN_COLUMN_INDEX = 1;
@@ -220,21 +209,14 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
   var rowp = 3;
 
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
-    var extra = service.entity.extra;
-    var serviceLabel = service.entity.label;
-    var svcName = (extra && extra.displayName) ? extra.displayName : serviceLabel;
+    var extra = service.metadata.service.extra;
+    var svcName = service.displayName;
 
     var plans = service.plans;
     // Iterate through array of plans
     plans.forEach(function (plan) {
-      var extrap = plan.entity.extra
-      var planDescription = plan.entity.description
-      // Some plans don't have a display name!
-      var planName = (extrap && extrap.displayName) ? extrap.displayName : plan.entity.name;
+      var planDescription = plan.description;
+      var planName = plan.displayName;
 
       // New row for Free plan (ex: AlchemyAPI) or
       // Free service w/o any cost array (ex: Access Trail, Active Deploy)
@@ -243,11 +225,10 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
       sheet2.data[rowp][SERVICE_COLUMN_INDEX] = svcName;
       sheet2.data[rowp][PLAN_COLUMN_INDEX] = planName;
       sheet2.data[rowp][DESCRIPTION_COLUMN_INDEX] = planDescription;
+
       // Set amount to zero if plan if free.
-      if (plan.entity.free == true)
+      if (plan.pricing_tags.indexOf('free')>=0) {
         sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = 0;
-      // If plan is free, no need to process the extra costs
-      if (planName.toLowerCase().indexOf('free') !== -1) {
         // A free plan can always be consumed with a subscription
         sheet2.data[rowp][SUBSCRIPTION_COLUMN_INDEX] = 'yes';
         rowp++; return;
@@ -255,8 +236,9 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
 
       // Most of the services have multiple plans including cost and currencies
       // Warning: some plans have one single plan with multiple tier (cost)
-      if (plan.entity.extra) {
-        var costs = plan.entity.extra.costs;
+      if (plan.metadata.plan && plan.metadata.plan.extra) {
+        var extrap = plan.metadata.plan.extra;
+        var costs = extrap.costs;
         if (costs) {
           costs.forEach(function (cost) {
             // New row per cost
@@ -293,8 +275,8 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
 
             // Plan Description
             var description = "";
-            if (plan.entity.extra.bullets) {
-              plan.entity.extra.bullets.forEach(function (bullet, index) {
+            if (plan.metadata.plan.extra.bullets) {
+              plan.metadata.plan.extra.bullets.forEach(function (bullet, index) {
                 description = description + (index > 0 ? ", " : "") + bullet;
               });
             } else {
@@ -308,7 +290,7 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
             // By default, all services are available through subscription
             if (extrap && extrap.subscription)
               withSubscription = 'yes';
-            if (plan.entity.free == true)
+            if (plan.pricing_tags.indexOf('free')>=0)
               withSubscription = 'yes';
             // Some services are not using the tag reservable :-(
             // The only way to find out whether the service is available within a subscription is to look at the plan description... dirty... but it works with those 3 keywords!!
@@ -339,6 +321,7 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
     });
   });
 }
+*/
 
 // ---------------------------------------------------------------------
 // API Export to PPTX
@@ -351,7 +334,7 @@ function exportToPowerpoint(services, dateMDY, res) {
   // Intro slide --------------------
   slide = pptx.makeNewSlide();
   //slide.back = '1E3648';
-  slide.addText("My Bluemix Catalog", {
+  slide.addText("My Catalog", {
     x: 150,
     y: 100,
     cx: '100%',
@@ -367,7 +350,7 @@ function exportToPowerpoint(services, dateMDY, res) {
     bold: true,
     color: '2a6d9e'
   });
-  slide.addText("The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.", {
+  slide.addText("The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official catalog www.bluemix.net/catalog.", {
     x: 150,
     y: 500,
     cx: '900',
@@ -375,202 +358,180 @@ function exportToPowerpoint(services, dateMDY, res) {
     bold: false,
     color: 'ff0000'
   });
-  slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'), {
+  slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
     x: 1000,
     y: 30,
-    cx: 110,
-    cy: 120
+    cx: 150,
+    cy: 100,
   });
-  // Intro slide END
 
   // One slide per service
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
-    // New slide
     slide = pptx.makeNewSlide();
 
     try {
-      slide.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png'), {
+      slide.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
         x: 50,
         y: 30,
         cx: 70,
         cy: 70
       });
-      slide.addImage(path.resolve(__dirname, 'public/icons/bluemix_logo.png'), {
-        x: 1100,
+      slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
+        x: 1000,
         y: 30,
-        cx: 90,
+        cx: 150,
         cy: 100
       });
     } catch (err) {}
 
-    var extra = service.entity.extra;
-    if (extra && extra.displayName) {
-      slide.addText(extra.displayName, {
-        x: 150,
-        y: 30,
-        cx: '100%',
-        font_size: 30,
-        bold: true
-      });
+    slide.addText(service.displayName, {
+      x: 150,
+      y: 30,
+      cx: '900',
+      font_size: 30,
+      bold: true
+    });
 
-      slide.addText(service.entity.description, {
-        x: 100,
-        y: 150,
-        cx: '1000',
-        font_size: 20,
-        color: '808080'
-      });
+    slide.addText(service.description, {
+      x: 100,
+      y: 150,
+      cx: '1000',
+      font_size: 20,
+      color: '808080'
+    });
 
-      slide.addText(extra.longDescription, {
-        x: 100,
-        y: 250,
-        cx: '700',
-        font_size: 18
-      });
+    slide.addText(service.longDescription, {
+      x: 100,
+      y: 300,
+      cx: '700',
+      font_size: 18
+    });
 
-      // Metada rectangle panel on the right hand side
-      slide.addShape("rect", {
-        x: 830,
-        y: 230,
-        cx: 390,
-        cy: 300,
-        fill: '47A9C0'
-      });
-      slide.addText("Provider: ", {
-        x: 850,
-        y: 250,
-        cx: '150',
-        font_size: 18,
-        bold: false,
-        color: 'ffffff'
-      });
-      slide.addText(extra.providerDisplayName, {
-        x: 1000,
-        y: 250,
-        cx: '220',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      slide.addText("Category: ", {
-        x: 850,
-        y: 300,
-        cx: '150',
-        font_size: 18,
-        bold: false,
-        color: 'ffffff'
-      });
-      for (var category in categories) {
-        if (service.entity.tags[0] == categories[category].id) {
-          cat = categories[category].label;
-          slide.addText(cat, {
-            x: 1000,
-            y: 300,
-            cx: '300',
-            font_size: 18,
-            color: 'ffffff',
-            bold: false
-          });
-        }
+    // Metada rectangle panel on the right hand side
+    slide.addShape("rect", {
+      x: 830,
+      y: 230,
+      cx: 390,
+      cy: 350,
+      fill: '47A9C0'
+    });
+    slide.addText("Provider: ", {
+      x: 850,
+      y: 250,
+      cx: '150',
+      font_size: 18,
+      bold: false,
+      color: 'ffffff'
+    });
+    slide.addText(service.provider.name, {
+      x: 1000,
+      y: 250,
+      cx: '220',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    slide.addText("Category: ", {
+      x: 850,
+      y: 300,
+      cx: '150',
+      font_size: 18,
+      bold: false,
+      color: 'ffffff'
+    });
+    for (var category in categories) {
+      if (service.tags[0] == categories[category].id) {
+        cat = categories[category].label;
+        slide.addText(cat, {
+          x: 1000,
+          y: 300,
+          cx: '300',
+          font_size: 18,
+          color: 'ffffff',
+          bold: false
+        });
       }
-      slide.addText("Status: ", {
-        x: 850,
-        y: 350,
-        cx: '150',
-        font_size: 18,
-        color: 'ffffff'
-      });
-
-      var status = "";
-      if (service.entity.tags.indexOf('ibm_beta') >= 0)
-        status = "Beta";
-      else if (service.entity.tags.indexOf('ibm_experimental') >= 0)
-        status = "Experimental";
-      else
-        status = "Production Ready";
-      slide.addText(status, {
-        x: 1000,
-        y: 350,
-        cx: '200',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      slide.addText("Free Plan: ", {
-        x: 850,
-        y: 400,
-        cx: '150',
-        font_size: 18,
-        color: 'ffffff'
-      });
-      var isFreePlan = (service.entity.tags.indexOf("custom_has_free_plan") >= 0) ? "Yes" : "No";
-      slide.addText(isFreePlan, {
-        x: 1000,
-        y: 400,
-        cx: '200',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      slide.addText("Regions: ", {
-        x: 850,
-        y: 450,
-        cx: '150',
-        font_size: 18,
-        color: 'ffffff'
-      });
-      var datacenter = "";
-      for (var region in regions) {
-        if (service.entity.tags.indexOf(regions[region].tag) >= 0) {
-          datacenter += regions[region].label + " ";
-        }
-      }
-      slide.addText(datacenter, {
-        x: 1000,
-        y: 450,
-        cx: '200',
-        font_size: 18,
-        color: 'ffffff',
-        bold: false
-      });
-      // Metada rectangle panel on the right hand side END
-
-      // Footer -------------------------------
-      slide.addText(extra.documentationUrl, {
-        x: 100,
-        y: 600,
-        cx: '100%',
-        cy: 40,
-        color: '0000ff'
-      });
-
-      slide.addText(slide.getPageNumber() + 1, {
-        x: 1150,
-        y: 630,
-        cx: '100',
-        cy: 20,
-        color: '808080'
-      });
-    } else {
-      slide.addText(service.entity.label, {
-        x: 150,
-        y: 30,
-        cx: '100%',
-        font_size: 30,
-        bold: true
-      });
-
-      slide.addText(service.entity.description, {
-        x: 100,
-        y: 150,
-        cx: '100%',
-        font_size: 20
-      });
     }
+    slide.addText("Status: ", {
+      x: 850,
+      y: 350,
+      cx: '150',
+      font_size: 18,
+      color: 'ffffff'
+    });
+
+    var status = "";
+    if (service.tags.indexOf('ibm_beta') >= 0)
+      status = "Beta";
+    else if (service.tags.indexOf('ibm_experimental') >= 0)
+      status = "Experimental";
+    else
+      status = "Production Ready";
+    slide.addText(status, {
+      x: 1000,
+      y: 350,
+      cx: '200',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    slide.addText("Free Plan: ", {
+      x: 850,
+      y: 400,
+      cx: '150',
+      font_size: 18,
+      color: 'ffffff'
+    });
+    var isFreePlan = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
+    slide.addText(isFreePlan, {
+      x: 1000,
+      y: 400,
+      cx: '200',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    slide.addText("Regions: ", {
+      x: 850,
+      y: 450,
+      cx: '150',
+      font_size: 18,
+      color: 'ffffff'
+    });
+    var datacenter = "";
+    for (var region in regions) {
+      if (service.tags.indexOf(regions[region].tag) >= 0) {
+        datacenter += regions[region].label + " ";
+      }
+    }
+    slide.addText(datacenter, {
+      x: 1000,
+      y: 450,
+      cx: '200',
+      font_size: 18,
+      color: 'ffffff',
+      bold: false
+    });
+    // Metada rectangle panel on the right hand side END
+
+    // No clean url to be displayed yet. 2019-06
+    // var url = service.metadata.ui.urls.doc_url;
+    // slide.addText(url, {
+    //   link: url,
+    //   x: 100,
+    //   y: 600,
+    //   cx: '1000',
+    //   font_size: 14,
+    //   color: '808080'
+    // });
+
+    slide.addText(slide.getPageNumber() + 1, {
+      x: 1150,
+      y: 630,
+      cx: '100',
+      cy: 20,
+      color: '808080'
+    });
   });
 
   return pptx;
@@ -583,33 +544,23 @@ function exportToWord(services, dateMDY, res) {
   var docx = officegen('docx');
 
   var introPage = docx.createP();
-  introPage.addText("Disclaimer: The list of services in this document was extracted from the Bluemix catalog using the public Cloud Foundry API. This content attempts to be as accurate as possible. Use with care and refer to the official Bluemix catalog www.bluemix.net/catalog.", {
+  introPage.addText("Disclaimer: The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official catalog www.bluemix.net/catalog.", {
     color: '#ff0000',
     font_size: 16
   });
   introPage.addLineBreak();
 
   services.forEach(function (service) {
-    if (!service.entity.active) {
-      return;
-    }
-
     var p = docx.createP();
 
     try {
-      p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.metadata.guid + '.png'), {
+      p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
         cx: 70,
         cy: 70
       });
     } catch (err) {}
 
-    var extra = service.entity.extra;
-
-    var svcName = (extra && extra.displayName) ? extra.displayName : service.entity.label;
-    var provider = (extra && extra.providerDisplayName) ? extra.providerDisplayName : service.entity.provider;
-    var url = (extra && extra.documentationUrl) ? extra.documentationUrl : "";
-
-    p.addText('     ' + svcName, {
+    p.addText('     ' + service.displayName, {
       bold: true,
       verticalAlign: true,
       font_size: 18
@@ -623,7 +574,7 @@ function exportToWord(services, dateMDY, res) {
     //   // If long description is not available, pick the short one
     //   if (!description) description = extra.i18n.fr.description;
     // }
-    if (!description) description = service.entity.description;
+    if (!description) description = service.description;
     p.addText(description, {
         font_size: 14,
         color: '808080'
@@ -633,7 +584,7 @@ function exportToWord(services, dateMDY, res) {
       font_size: 14,
       color: '808080'
     });
-    p.addText(provider, {
+    p.addText(service.provider.name, {
       font_size: 14
     });
     p.addLineBreak();
@@ -641,6 +592,11 @@ function exportToWord(services, dateMDY, res) {
       font_size: 14,
       color: '808080'
     });
+    var url;
+    if (service.name != 'securegateway')
+      url = service.metadata.ui.urls.doc_url;
+    else
+      url = service.metadata.ui.urls.apidocs_url;
     p.addText (url, { link: url },{
       font_size: 14,
       color: '808080'

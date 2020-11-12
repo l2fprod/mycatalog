@@ -20,56 +20,57 @@ angular.module('ngLoadingSpinner', ['angularSpinners'])
 var catalogApp = angular.module('catalogApp', ['ngLoadingSpinner', 'checklist-model']);
 
 catalogApp.filter("filterPanel", function () {
-  return function (services, filterConfiguration) {
+  return function (resources, filterConfiguration) {
     if (filterConfiguration.enabled) {
       var results = [];
-      services.forEach(function (service) {
-        var keepService = false;
+      resources.forEach(function (resource) {
+        var keepResource = false;
 
         // if no tag checked, show everything
         if (filterConfiguration.includeTags.length == 0 &&
           filterConfiguration.excludeTags.length == 0) {
-          keepService = true;
+          keepResource = true;
         }
 
         // if no include, assume all included and let the exclude tag remove some
         if (filterConfiguration.includeTags.length == 0) {
-          keepService = true;
+          keepResource = true;
         } else {
-          keepService = true;
+          keepResource = true;
           filterConfiguration.includeTags.forEach(function (tag) {
-            if (service.entity.tags.indexOf(tag) < 0) {
-              keepService = false;
+            if (resource.tags.indexOf(tag) < 0) {
+              keepResource = false;
             }
           });
         }
 
         filterConfiguration.excludeTags.forEach(function (tag) {
-          if (service.entity.tags.indexOf(tag) >= 0) {
-            keepService = false;
+          if (resource.tags.indexOf(tag) >= 0) {
+            keepResource = false;
           }
         });
 
-        if (keepService) {
-          results.push(service);
+        if (keepResource) {
+          results.push(resource);
         }
       });
       return results;
     } else {
-      return services;
+      return resources;
     }
   }
 });
 
 catalogApp.controller('MainController', function ($scope, $http) {
   console.info("Initializing MainController");
-  $scope.services = [];
+  $scope.resources = [];
   $scope.selection = {
-    services: []
+    resources: []
   };
   $scope.categories = categories;
   $scope.regions = regions;
   $scope.selectedService = {};
+  $scope.viewSelected = false;
 
   $scope.filterConfiguration = {
     enabled: true,
@@ -96,61 +97,59 @@ catalogApp.controller('MainController', function ($scope, $http) {
   };
 
   $scope.selectAll = function () {
-    $scope.selection.services = $scope.services.map(function (service) {
-      return service.metadata.guid;
+    $scope.selection.resources = $scope.resources.map(function (resource) {
+      return resource.id;
     });
   }
 
   $scope.deselectAll = function () {
-    $scope.selection.services = [];
+    $scope.selection.resources = [];
   }
 
   $scope.selectFiltered = function () {
-    $scope.filteredServices.forEach(function (service) {
-      if ($scope.selection.services.indexOf(service.metadata.guid) < 0) {
-        $scope.selection.services.push(service.metadata.guid);
+    $scope.filteredResources.forEach(function (resource) {
+      if ($scope.selection.resources.indexOf(resource.id) < 0) {
+        $scope.selection.resources.push(resource.id);
       }
     });
   }
 
   $scope.deselectFiltered = function () {
-    var filteredGuids = $scope.filteredServices.map(function (service) {
-      return service.metadata.guid;
+    var filteredGuids = $scope.filteredResources.map(function (resource) {
+      return resource.id;
     });
 
     // remove the guid currently visible
     var newSelection =
-      $scope.selection.services.filter(function (guid) {
+      $scope.selection.resources.filter(function (guid) {
         return filteredGuids.indexOf(guid) < 0;
       });
 
-    $scope.selection.services = [];
-    $scope.selection.services = newSelection;
+    $scope.selection.resources = [];
+    $scope.selection.resources = newSelection;
   }
 
   $scope.exportSelection = function (format) {
-    if ($scope.selection.services.length > 0) {
+    if ($scope.selection.resources.length > 0) {
       $.redirect("/api/export/" + format, {
-        services: $scope.selection.services
+        resources: $scope.selection.resources
       });
     } else {
       $.redirect("/api/export/" + format);
     }
   }
 
-  $scope.consoleUrl = function (service) {
-    var link;
-    $scope.regions.forEach(function (region) {
-      if (!link && service.entity.tags.indexOf(region.tag) >= 0) {
-        link = "https://" + region.console + "/catalog/services/" + service.entity.label;
-      }
-    });
-    return link;
+  $scope.consoleUrl = function (resource) {
+    if (resource.kind === 'service') {
+      return 'https://cloud.ibm.com/catalog/services/' + resource.name;
+    } else {
+      return 'https://cloud.ibm.com/catalog/infrastructure/' + resource.name;
+    }
   }
 
-  $scope.showServiceDetails = function (service) {
-    console.log("Showing service details", service.entity.label);
-    $scope.selectedService = service;
+  $scope.showServiceDetails = function (resource) {
+    console.log("Showing service details", resource.displayName);
+    $scope.selectedService = resource;
     $("#serviceDetails").modal();
   }
 
@@ -162,8 +161,8 @@ catalogApp.controller('MainController', function ($scope, $http) {
     }
   }
 
-  $http.get("/generated/services.json").success(function (services) {
-    $scope.services = services;
+  $http.get("/generated/resources.json").success(function (resources) {
+    $scope.resources = resources;
   });
 });
 

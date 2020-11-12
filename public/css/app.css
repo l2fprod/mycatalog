@@ -114,15 +114,22 @@ table {
   width: 30px;
 }
 
-.service-displayname {
-  white-space: nowrap;
+.service-description {
+  min-width: 200px;
+}
+
+.service-region {
+  text-align: center;
 }
 
 .service-tags {
-  white-space: nowrap;
+  min-width: 150px;
 }
 
-.service-description {
+.service-tag {
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 
 footer {

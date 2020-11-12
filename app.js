@@ -3,18 +3,26 @@
 "use strict";
 
 var express = require('express');
+var cors = require('cors');
 var cfenv = require('cfenv');
 var favicon = require('serve-favicon');
 var app = express();
 var bodyParser = require('body-parser')
 var compress = require('compression');
+var secure = require('express-force-https');
+app.use(secure);
 
 var appEnv = cfenv.getAppEnv();
 
 app.use(compress());
+app.use(cors());
 app.use(bodyParser.urlencoded({
-  extended: false
+  extended: true
 }))
+
+app.get('/generated/drawio.xml', (req, res) => {
+  res.redirect('https://l2fprod.github.io/myarchitecture/drawio.xml');
+});
 
 app.use("/api/export", require('./export2office.js'));
 
@@ -41,7 +49,7 @@ var appEnvOpts = vcapLocal ? {
 } : {}
 var appEnv = cfenv.getAppEnv(appEnvOpts);
 var snapshotDb;
-var snapshotDbCredentials = appEnv.getServiceCreds("mycatalog-cloudant");
+var snapshotDbCredentials = appEnv.services.cloudantNoSQLDB ? appEnv.services.cloudantNoSQLDB[0].credentials : undefined;
 if (snapshotDbCredentials) {
   require("./database.js")(snapshotDbCredentials.url, "snapshots", function (err, database) {
     if (err) {
@@ -62,31 +70,36 @@ function scheduleUpdater() {
   // schedule future runs
   console.log("Scheduling auto-update");
   var serviceUpdater = require('./retrieve.js')();
+  var cheatsheet = require('./cheatsheet.js')();
   var CronJob = require('cron').CronJob;
   new CronJob({
     // run twice, once at 8 in the US but also at 8 in Europe
     cronTime: '0 0 8,23 * * *',
     onTick: function () {
       console.log(new Date(), "Updating services...");
-      serviceUpdater.run(saveSnapshotCallback);
+      serviceUpdater.run((err, resources) => {
+        saveSnapshotCallback(err, resources);
+        cheatsheet.generate(false, './public/generated/cheatsheet.pdf');
+        cheatsheet.generate(true, './public/generated/cheatsheet-dark.pdf');
+      });
     },
     start: true,
     timeZone: 'America/Los_Angeles'
   });
 }
 
-function saveSnapshotCallback(err, services) {
+function saveSnapshotCallback(err, resources) {
   if (!err && snapshotDb) {
     var snapshot = {
       type: "snapshot",
       createdAt: new Date(),
-      services: services
+      resources: resources
     }
     snapshotDb.insert(snapshot, function (err, body) {
       if (err) {
-        console.log("Failed to persist services snapshot", err);
+        console.log("Failed to persist resources snapshot", err);
       } else {
-        console.log("Saved services snapshot.");
+        console.log("Saved resources snapshot.");
       }
     });
   }

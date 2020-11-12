@@ -1,121 +1,328 @@
+
 function ServiceUpdater() {
-  var self = this;
+  const apiUrl = 'https://globalcatalog.cloud.ibm.com/api/v1';
 
-  var Client = require('cloudfoundry-client');
-  var fs = require('fs');
-  var async = require('async');
-  var request = require('request');
-  var vm = require('vm');
+  const request = require('request');
+  const fs = require('fs');
+  const async = require('async');
+  const vm = require('vm');
+  const Jimp = require('jimp');
+  const zlib = require('zlib');
 
-  var script = vm.createScript(fs.readFileSync('./public/js/bluemix-configuration.js'));
-  var sandbox = {};
+  const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
+  const sandbox = {};
   script.runInNewContext(sandbox);
 
-  var categories = sandbox.categories.map(function (category) {
+  const categories = sandbox.categories.map(function (category) {
     return category.id;
   });
-  var regions = sandbox.regions;
+  const regions = sandbox.regions;
+
+  const self = this;
 
   try {
     fs.mkdirSync('public/generated');
   } catch (err) {
-    console.log(err);
   }
   try {
     fs.mkdirSync('public/generated/icons');
   } catch (err) {
-    console.log(err);
   }
 
-  self.run = function (serviceUpdaterCallback) {
-    var tasks = [];
-    var services = [];
+  function getResources(url, resources, onResult) {
+    console.log('Retrieving', url);
+    request({
+      url,
+      json: true
+    }, (err, response, body) => {
+      if (err) {
+        onResult(err);
+        return;
+      }
 
-    // retrieve services from all regions
-    regions.forEach(function (region) {
-      tasks.push(function (callback) {
-        getServices(region.api, region.serviceFilename, callback);
+      console.log(`Found ${body.resources.length} additional resources`);
+      const allResources = resources.concat(body.resources.filter(resource => resource.active));
+      if (body.next) {
+        getResources(body.next, allResources, onResult);
+      } else {
+        onResult(null, allResources);
+      }
+    });
+  }
+
+  // find children of resource groups
+  function getChildren(resources, callback) {
+    const tasks = [];
+    resources.filter(resource => resource.group === true).forEach((resource) => {
+      tasks.push((taskCallback) => {
+        console.log('Get children for', resource.name, `${apiUrl}/${resource.id}?complete=true&depth=*`);
+        request({
+          url: `${apiUrl}/${resource.id}?complete=true&depth=*`,
+          json: true
+        }, (err, response, body) => {
+          if (err) {
+            console.log('[KO] Failed to get full details for', resource.name);
+          } else if (body.children) {
+            body.children
+              .filter(child => child.kind === 'iaas' || child.kind === 'service')
+              .forEach((child) => {
+                console.log('Found', child.id);
+                resources.push(child);
+              });
+          }
+          taskCallback(null);
+        });
       });
     });
 
-    // retrieve plans from all regions
-    regions.forEach(function (region) {
-      tasks.push(function (callback) {
-        getPlans(region.api, region.planFilename, callback);
-      });
-    });
-
-    // load the reference file and mark its services as present in the DC
-    tasks.push(function (callback) {
-      services = JSON.parse(fs.readFileSync(regions[0].serviceFilename));
-      services.forEach(function (service) {
-        service.entity.tags.push(regions[0].tag);
-      });
+    async.parallel(tasks, function (err, result) {
+      console.log("Retrieved all children");
+      if (err) {
+        console.log(err);
+      }
       callback(null);
     });
+  }
 
-    // merge all regions and add tags
-    regions.slice(1).forEach(function (otherRegion) {
-      tasks.push(function (callback) {
-        console.log("Marking services in", otherRegion.label);
-        var otherServices = JSON.parse(fs.readFileSync(otherRegion.serviceFilename));
-
-        var uidToServices = {};
-        otherServices.forEach(function (service) {
-          uidToServices[service.entity.label] = service;
-        });
-
-        // mark the services
-        services.forEach(function (service) {
-          if (uidToServices[service.entity.label]) {
-            service.entity.tags.push(otherRegion.tag);
-            delete uidToServices[service.entity.label];
-          }
-        });
-
-        Object.keys(uidToServices).forEach(function (key) {
-          console.log(uidToServices[key].entity.label, "is only available in", otherRegion.id, ". Adding it to main region");
-          uidToServices[key].entity.tags.push(otherRegion.tag);
-          services.push(uidToServices[key]);
-        });
-
-        callback(null);
-      });
-    });
-
-    // add the plans to the services
-    tasks.push(function (callback) {
-      console.log("Injecting plans in services...");
-      var guidToServices = [];
-      services.forEach(function (service) {
-        // keep track of services to match their plans
-        guidToServices[service.metadata.guid] = service;
-        // prepare the plans array
-        service.plans = [];
-      });
-
-      regions.forEach(function (region) {
-        var plans = JSON.parse(fs.readFileSync(region.planFilename));
-        plans.forEach(function (plan) {
-          if (guidToServices.hasOwnProperty(plan.entity.service_guid)) {
-            guidToServices[plan.entity.service_guid].plans.push(plan);
-            // inject our custom "free" tag if the service has a free plan
-            if (plan.entity.free == true) {
-              guidToServices[plan.entity.service_guid].entity.tags.push("custom_has_free_plan");
+  function getPlans(resources, callback) {
+    const tasks = [];
+    resources.forEach((resource) => {
+      tasks.push((callback) => {
+        console.log('Get plans for', resource.name, `${apiUrl}/${resource.id}/plan?complete=true`);
+        request({
+          url: `${apiUrl}/${resource.id}/plan?complete=true`,
+          json: true
+        }, (err, response, body) => {
+          if (err) {
+            console.log('[KO] Failed to get plan for', resource.name);
+          } else {
+            if (body.next) {
+              console.log('Found a resource with a lot of plans!!!');
             }
+            resource.plans = body.resources.filter(plan => plan.active);
+            resource.plans.forEach((plan) => {
+              plan.description = plan.overview_ui['en'].description;
+              plan.displayName = plan.overview_ui['en'].display_name;
+              if (plan.metadata.plan && plan.metadata.plan.extra) {
+                plan.metadata.plan.extra = JSON.parse(plan.metadata.plan.extra);
+              } else {
+                console.log(`Plan ${plan.name} in ${resource.name} has no 'plan' metadata`);
+              }
+              plan.originalName = plan.metadata.original_name;
+            });
+          }
+          callback(null);
+        });
+      });
+    });
+
+    async.parallel(tasks, function (err, result) {
+      console.log("Retrieved all plans");
+      if (err) {
+        console.log(err);
+      }
+      callback(null);
+    });
+  }
+
+  function getImages(resources, callback) {
+    var tasks = []
+    console.log('Retrieving icons...');
+    resources.forEach(function (resource) {
+      tasks.push(function (callback) {
+        console.log(`[${resource.name}] getting icon`);
+        const imageUrl = decodeURIComponent(resource.imageUrl);
+        if (!imageUrl) {
+          console.log(`[${resource.name}] ${resource.id} has no image!`);
+        }
+        request({
+          url: imageUrl,
+          encoding: null
+        }, function (err, res, body) {
+          if (err) {
+            callback(null);
+          } else {
+            var extension;
+            if (imageUrl.indexOf(".svg") > 0) {
+              extension = "svg";
+            } else {
+              extension = "png";
+            }
+            fs.writeFile("public/generated/icons/" + resource.id + "." + extension, body, function (err) {
+              if (err) {
+                console.log(`[${resource.name}] could not write icon`);
+                callback(null);
+              } else {
+                console.log(`[${resource.name}] wrote ${extension}`);
+                if (extension === "svg") {
+                  resource.localSvgIcon = "public/generated/icons/" + resource.id + "." + extension;
+                  var svg2png = require("svg2png");  
+                  var imageBuffer = fs.readFileSync("public/generated/icons/" + resource.id + ".svg");
+                  // some svg are compressed
+                  try {
+                    imageBuffer = zlib.gunzipSync(imageBuffer);
+                  } catch (e) {
+                    // console.log(`Could not unzip buffer for ${resource.name}`);
+                  }
+                  svg2png(imageBuffer, { width: 64, height: 64 })
+                    .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
+                      console.log(`[${resource.name}] wrote png`);
+                      resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
+                      if (convertError) {
+                        console.log(`[${resource.name}] could not read, using default`);
+                        fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
+                      }
+                      callback(null);
+                    }))
+                    .catch(e => {
+                      console.log(`[${resource.name}] could not read icon, using default`);
+                      fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
+                      callback(null);
+                    });
+                } else {
+                  resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
+                  Jimp.read("public/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
+                    if (readErr) {
+                      console.log(`[${resource.name}] could not read icon, using default`);
+                      fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
+                      callback(null);
+                    } else {
+                      imageBuffer.write("public/generated/icons/" + resource.id + ".png", (writeErr) => {
+                        if (writeErr) {
+                          console.log(writeErr);
+                        }
+                        callback(null);
+                      });
+                    }
+                  });
+                }
+              }
+            });
+          }
+        });
+      });
+    });
+
+    async.parallelLimit(tasks, 5, function (err, result) {
+      console.log('Retrieved all icons');
+      if (err) {
+        console.log(err);
+      }
+      callback(null);
+    });
+  }
+
+  function removeAllBut(object, keysToKeep) {
+    Object.keys(object).forEach((key) => {
+      if (keysToKeep.indexOf(key) < 0) {
+        delete object[key];
+      }
+    });
+  }
+
+  self.run = function(serviceUpdaterCallback) {
+    const tasks = [];
+    let resources;
+
+    // retrieve all resources
+    tasks.push((callback) => {
+      getResources(`${apiUrl}?complete=true&q=kind:iaas kind:service`, [],
+        (err, result) => {
+          if (err) {
+            console.log('[KO]', err);
+            callback(err);
+          } else {
+            console.log('[OK]', result.length, 'resources');
+            resources = result;
+            callback(null);
           }
         });
       });
 
+    // retrieve all children
+    tasks.push((callback) => {
+      getChildren(resources, callback);
+    });
+
+    // keep "iaas" and "service"
+    tasks.push((callback) => {
+      resources = resources.filter(resource =>
+        (resource.kind === 'iaas' || resource.kind === 'service') &&
+        (!resource.group || resource.parent_url));
       callback(null);
     });
 
-    // we got all services now
-    tasks.push(function (callback) {
-      console.log("Post-processing services...");
-      services.forEach(function (service) {
+    // retrieve the plans
+    tasks.push((callback) => {
+      getPlans(resources, callback);
+    });
+
+    // sanitize the output
+    tasks.push((callback) => {
+      resources.forEach((resource) => {
+        // resolve the "extra" tag
+        try {
+          if (resource.metadata.service.extra) {
+            resource.metadata.service.extra = JSON.parse(resource.metadata.service.extra);
+          }
+        } catch (err) {}
+        resource.description = resource.overview_ui['en'].description;
+        resource.longDescription = resource.overview_ui['en'].long_description;
+        try {
+          resource.displayName = resource.overview_ui['en'].display_name || resource.metadata.service.extra.displayName;
+        } catch (err) {
+          console.log('No display name found for', resource.id, resource.name);
+          resource.displayName = resource.name;
+        }
+        if (resource.displayName.startsWith('IBM ')) {
+          resource.displayName = resource.displayName.substring(4);
+        }
+        resource.imageUrl = resource.images.image || resource.images.feature_image;
+
+        // inject custom tags
+        resource.tags = resource.tags.concat(resource.pricing_tags || []).concat(resource.geo_tags || []);
+        resource.tags.push(`custom_kind_${resource.kind}`);
+
+        const tagsAsString = resource.tags.join(',');
+        regions.forEach((region) => {
+          // some services have "us-south-dal10" in their geo_tags
+          // we add the main region "us-south" tag too
+          if (tagsAsString.indexOf(`${region.tag}-`)>=0 && resource.tags.indexOf(region.tag)<0) {
+            resource.tags.push(region.tag);
+          }
+
+          // for services, find their region with the CF mapping
+          try {
+            if (resource.metadata.service.cf_guid[region.tag]) {
+              resource.tags.push(region.tag);
+            }
+          } catch (_) {}
+        });
+
+        // not all ibm services have the ibm_created tag, fix this!
+        if (resource.provider.name === 'IBM' &&
+            resource.tags.indexOf("ibm_created") < 0 &&
+            resource.tags.indexOf("ibm_third_party") < 0) {
+          if (resource.tags.find(tag => tag.indexOf('ibm_')===0)) {
+            resource.tags.push('ibm_created');
+          }
+        }
+
+        // more tags
+        try {
+          if (resource.metadata.service.iam_compatible) {
+            resource.tags.push('iam_compatible');
+          }
+        } catch (_) {}
+
+        try {
+          if (resource.metadata.rc_compatible) {
+            resource.tags.push('rc_compatible');
+          }
+        } catch (_) {}
+
         // sort tags (categories first)
-        service.entity.tags.sort(function (tag1, tag2) {
+        resource.tags.sort(function (tag1, tag2) {
           var isCategory1 = categories.indexOf(tag1) >= 0
           var isCategory2 = categories.indexOf(tag2) >= 0
 
@@ -129,229 +336,91 @@ function ServiceUpdater() {
 
           return tag1.localeCompare(tag2);
         });
-
-        // not all ibm services have the ibm_created tag, fix this!
-        if (service.entity.provider != "core" &&
-          service.entity.tags.indexOf("ibm_created") < 0 &&
-          service.entity.tags.indexOf("ibm_third_party") < 0) {
-          var isIbmService;
-          service.entity.tags.forEach(function (tag) {
-            if (tag.indexOf("ibm_") == 0) {
-              isIbmService = true;
-            }
-          });
-          if (isIbmService) {
-            service.entity.tags.push("ibm_created");
-          }
-        }
       });
 
-      // sort on name
-      services.sort(function (s1, s2) {
-        var s1Name = s1.entity.label;
-        if (s1.entity.extra) {
-          s1Name = s1.entity.extra.displayName || s1.entity.label;
-        }
-        var s2Name = s2.entity.label;
-        if (s2.entity.extra) {
-          s2Name = s2.entity.extra.displayName || s2.entity.label;
-        }
-        return s1Name.toLocaleLowerCase().localeCompare(s2Name.toLocaleLowerCase());
+      // sort on display name
+      resources.sort((resource1, resource2) => {
+        return resource1.displayName.localeCompare(resource2.displayName);
       });
 
       callback(null);
     });
 
-    // write the service full file
-    tasks.push(function(callback) {
-      console.log("Writing full service file...");
-      var stream = fs.createWriteStream("public/generated/services-full.json");
+    tasks.push((callback) => {
+      getImages(resources, callback);
+    });
+
+    // save the full version
+    tasks.push((callback) => {
+      console.log('Writing full resource file...');
+      const stream = fs.createWriteStream("public/generated/resources-full.json");
       stream.once('open', function (fd) {
-        stream.write(JSON.stringify(services, null, 2));
+        stream.write(JSON.stringify(resources, null, 2));
         stream.end();
       });
       stream.once('finish', () => { callback(null); });
     });
 
-    // write the light version for the webpage
-    // and for the database. we need a small file to fit within the 1M limit of cloudant post
-    tasks.push(function(callback) {
-      console.log("Writing light service file...");
-      services.forEach(function(service) {
-        // diet - remove things we don't need today, it makes the JSON smaller
-        if (service.entity.extra) {
-          delete service.entity.extra.media;
-          delete service.entity.extra.bullets;
-          delete service.entity.extra.i18n;
+    // save a light version too for the web UI and the database (something smaller than 1MB!)
+    tasks.push((callback) => {
+      console.log('Writing light resource file...');
+      resources.forEach((resource) => {
+        removeAllBut(resource, [
+          'geo_tags',
+          'id',
+          'kind',
+          'metadata',
+          'name',
+          'tags',
+          'plans',
+          'pricing_tags',
+          'description',
+          'longDescription',
+          'displayName',
+          'imageUrl',
+          'localSvgIcon',
+          'localPngIcon',
+        ]);
+
+        if (resource.metadata) {
+          removeAllBut(resource.metadata, [
+            'service'
+          ]);
         }
-        service.plans.forEach(function (plan) {
-          if (plan.entity.extra) delete plan.entity.extra.costs;
+
+        if (resource.metadata && resource.metadata.service) {
+          removeAllBut(resource.metadata.service, [
+            'cf_service_name',
+          ]);
+        }
+
+        resource.plans.forEach((plan) => {
+          removeAllBut(plan, [
+            'id',
+            'name',
+            'description',
+            'displayName',
+            'originalName',
+          ]);
         });
 
-        removeUndefined(service);
       });
-
-      var stream = fs.createWriteStream("public/generated/services.json");
+      const stream = fs.createWriteStream("public/generated/resources.json");
       stream.once('open', function (fd) {
-        stream.write(JSON.stringify(services, null, 2));
+        stream.write(JSON.stringify(resources, null, 2));
         stream.end();
       });
       stream.once('finish', () => { callback(null); });
     });
 
-    // get the service icons
-    tasks.push(function(callback) {
-      getImages(services);
-      callback(null);
-    });
-
-    async.waterfall(tasks, function (err, result) {
+    async.waterfall(tasks, (err) => {
       if (err) {
-        console.log("Error", err);
+        console.log('[KO]', err);
       } else {
-        console.log("Got", services.length, "from all regions");
-        console.log("Retrieved all data");
+        console.log('[OK] Processing complete!');
       }
-
       if (serviceUpdaterCallback) {
-        serviceUpdaterCallback(err, services);
-      }
-    });
-  }
-
-  // delete nulls or empty or attribute we don't need
-  function removeUndefined(anObject) {
-    Object.keys(anObject).forEach((key) => {
-      if (key === 'service_instances_url' ||
-          key === 'service_url' ||
-          key === 'service_plans_url' ||
-          key === 'service_broker_guid') {
-        delete anObject[key];
-      } else if (!anObject[key]) {
-        delete anObject[key];
-      } else if (Array.isArray(anObject[key])) {
-        if (anObject[key].length === 0) {
-          delete anObject[key];
-        } else {
-          anObject[key].forEach(item => removeUndefined(item));
-        }
-      } else if (typeof anObject[key] === 'object') {
-        if (Object.keys(anObject[key]).length === 0) {
-          delete anObject[key];
-        } else {
-          removeUndefined(anObject[key]);
-        }
-      }
-    });
-  }
-
-  function getImages(services) {
-    var tasks = []
-    services.forEach(function (service) {
-      tasks.push(function (callback) {
-        var extra = service.entity.extra;
-        if (extra && extra.imageUrl) {
-          request({
-            url: extra.imageUrl,
-            encoding: null
-          }, function (err, res, body) {
-            if (err) {
-              callback(err);
-            } else {
-              var extension;
-              if (extra.imageUrl.indexOf(".svg") > 0) {
-                extension = "svg";
-              } else {
-                extension = "png";
-              }
-              fs.writeFile("public/generated/icons/" + service.metadata.guid + "." + extension, body, function (err) {
-                if (err) {
-                  callback(err);
-                } else {
-                  if (extension === "svg") {
-                    var svgToPng = require("svg-to-png");
-                    svgToPng.convert("public/generated/icons/" + service.metadata.guid + ".svg",
-                      "public/generated/icons/", {
-                        defaultWidth: "64px",
-                        defaultHeight: "64px"
-                    }).then(function () {
-                      callback(null);
-                    }, function(err) {
-                      console.log("Convert failed for",
-                        "public/generated/icons/" + service.metadata.guid + ".svg", "with", err);
-                      callback(null);
-                    });
-                  } else {
-                    callback(null);
-                  }
-                }
-              });
-            }
-          });
-        }
-      });
-    });
-
-    async.parallel(tasks, function (err, result) {
-      console.log("Retrieved all icons");
-      if (err) {
-        console.log(err);
-      }
-    });
-  }
-
-  function getServices(api, outputFilename, callback) {
-    console.log("Retrieving services for", api);
-    var anonymousClient = new Client({
-      host: api,
-      protocol: 'https:',
-      token: "" // no token, we get only what's public
-    });
-    anonymousClient.services.get(function (err, services) {
-      if (err) {
-        callback(err);
-      } else {
-        console.log("Found", services.length, "services");
-
-        services.forEach(function (service) {
-          // resolve the embedded JSON value
-          if (service.entity.extra) {
-            service.entity.extra = JSON.parse(service.entity.extra);
-          }
-        });
-        var stream = fs.createWriteStream(outputFilename);
-        stream.once('open', function (fd) {
-          stream.write(JSON.stringify(services, null, 2));
-          stream.end();
-        });
-        stream.once('finish', () => { callback(null); });
-      }
-    });
-  };
-
-  function getPlans(api, outputFilename, callback) {
-    console.log("Retrieving plans for", api);
-    var anonymousClient = new Client({
-      host: api,
-      protocol: 'https:',
-      token: "" // no token, we get only what's public
-    });
-    anonymousClient.servicePlans.get(function (err, servicePlans) {
-      if (err) {
-        callback(err);
-      } else {
-        console.log("Found", servicePlans.length, "service plans");
-        servicePlans.forEach(function (plan) {
-          if (plan.entity.extra) {
-            plan.entity.extra = JSON.parse(plan.entity.extra);
-          }
-        });
-        var stream = fs.createWriteStream(outputFilename);
-        stream.once('open', function (fd) {
-          stream.write(JSON.stringify(servicePlans, null, 2));
-          stream.end();
-        });
-        stream.once('finish', () => { callback(null); });
+        serviceUpdaterCallback(err, resources);
       }
     });
   }
