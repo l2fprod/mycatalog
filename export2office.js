@@ -71,11 +71,11 @@ function exportToExcel(services, dateMDY, res) {
   sheet0.data[0] = [];
   sheet0.data[0][0] = "Disclaimer";
   sheet0.data[1] = [];
-  sheet0.data[1][0] = "The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API.";
+  sheet0.data[1][0] = "The list of services in this document was extracted from the IBM Cloud Catalog using the public catalog API.";
   sheet0.data[2] = [];
   sheet0.data[2][0] = "This content attempts to be as accurate as possible.";
   sheet0.data[3] = [];
-  sheet0.data[3][0] = "Use with care and refer to the official IBM Cloud catalog www.bluemix.net/catalog.";
+  sheet0.data[3][0] = "Use with care and refer to the official IBM Cloud Catalog https://cloud.ibm.com/catalog#services.";
 
   sheet = xlsx.makeNewSheet();
   sheet.name = 'My Catalog';
@@ -350,7 +350,7 @@ function exportToPowerpoint(services, dateMDY, res) {
     bold: true,
     color: '2a6d9e'
   });
-  slide.addText("The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official catalog www.bluemix.net/catalog.", {
+  slide.addText("The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official IBM Cloud Catalog https://cloud.ibm.com/catalog#services.", {
     x: 150,
     y: 500,
     cx: '900',
@@ -379,8 +379,8 @@ function exportToPowerpoint(services, dateMDY, res) {
       slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
         x: 1000,
         y: 30,
-        cx: 150,
-        cy: 100
+        cx: 100,
+        cy: 70
       });
     } catch (err) {}
 
@@ -544,10 +544,12 @@ function exportToWord(services, dateMDY, res) {
   var docx = officegen('docx');
 
   var introPage = docx.createP();
-  introPage.addText("Disclaimer: The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official catalog www.bluemix.net/catalog.", {
-    color: '#ff0000',
-    font_size: 16
-  });
+  introPage.addText("Disclaimer: The list of services in this document was extracted from the IBM Cloud catalog using the public catalog API. This content attempts to be as accurate as possible. Use with care and refer to the official IBM Cloud Catalog https://cloud.ibm.com/catalog#services.", 
+    {
+      color: '#ff0000',
+      font_size: 12,
+      italic: true
+    });
   introPage.addLineBreak();
 
   services.forEach(function (service) {
@@ -555,15 +557,15 @@ function exportToWord(services, dateMDY, res) {
 
     try {
       p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
-        cx: 70,
-        cy: 70
+        cx: 50,
+        cy: 50
       });
     } catch (err) {}
 
     p.addText('     ' + service.displayName, {
       bold: true,
       verticalAlign: true,
-      font_size: 18
+      font_size: 14
     });
     p.addLineBreak();
     p.addLineBreak();
@@ -574,33 +576,35 @@ function exportToWord(services, dateMDY, res) {
     //   // If long description is not available, pick the short one
     //   if (!description) description = extra.i18n.fr.description;
     // }
-    if (!description) description = service.description;
+    if (!description) description = service.longDescription;
     p.addText(description, {
-        font_size: 14,
+        font_size: 12,
         color: '808080'
     });
-    p.addLineBreak();
-    p.addText('Provider:  ', {
-      font_size: 14,
-      color: '808080'
-    });
-    p.addText(service.provider.name, {
-      font_size: 14
-    });
+    // p.addLineBreak();
+    // p.addText('Provider:  ', {
+    //   font_size: 12,
+    //   color: '808080'
+    // });
+    // p.addText(service.provider.name, {
+    //   font_size: 12
+    // });
     p.addLineBreak();
     p.addText('Documentation:  ', {
-      font_size: 14,
+      font_size: 12,
       color: '808080'
     });
-    var url;
-    if (service.name != 'securegateway')
-      url = service.metadata.ui.urls.doc_url;
-    else
-      url = service.metadata.ui.urls.apidocs_url;
+    var url = service.metadata.ui.urls.doc_url;
+    // Some services do not have doc link :-(
+    if (url == undefined) url = 'https://cloud.ibm.com/docs';
+    // Skytap doc url mess up all the other services after Skytap in alphabetic order
+    if (service.displayName.includes('Skytap')) url = 'https://cloud.ibm.com/catalog';
+    // Some services are missing the first part of the url
+    if (! url.includes('http') ) url = 'https://cloud.ibm.com' + url;
     p.addText (url, { link: url },{
-      font_size: 14,
-      color: '808080'
-    });
+        font_size: 12,
+        color: '808080'
+      });
     p.addLineBreak();
     p.addLineBreak();
   });
