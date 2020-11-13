@@ -1,3 +1,4 @@
+const fs = require("fs");
 const vm = require('vm');
 const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
 const sandbox = {};

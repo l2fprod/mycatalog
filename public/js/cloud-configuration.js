@@ -95,65 +95,6 @@ function matchesCategory(resource, category) {
   }).length > 0;
 }
 
-var categories = [
-  {
-    id: "compute",
-    label: "Compute",
-  },
-  {
-    id: "dev_ops",
-    label: "DevOps"
-  },
-  {
-    id: "big_data",
-    label: "Data and Analytics"
-  },
-  {
-    id: "data_management",
-    label: "Data"
-  },
-  {
-    id: "business_analytics",
-    label: "Business Analytics"
-  },
-  {
-    id: "internet_of_things",
-    label: "IoT"
-  },
-  {
-    id: "web_and_app",
-    label: "Web and Application"
-  },
-  {
-    id: "mobile",
-    label: "Mobile"
-  },
-  {
-    id: "security",
-    label: "Security"
-  },
-  {
-    id: "storage",
-    label: "Storage"
-  },
-  {
-    id: "watson",
-    label: "AI"
-  },
-  {
-    id: "network",
-    label: "Networking"
-  },
-  {
-    id: "integration",
-    label: "Integration"
-  },
-  {
-    id: "finance",
-    label: "Finance"
-  }
-];
-
 var regions = [
   {
     id: "us-south",
@@ -168,6 +109,20 @@ var regions = [
     console: "cloud.ibm.com",
     tag: "us-east",
     label: "Washington DC"
+  },
+  {
+    id: "ca-tor",
+    api: "api.ca-tor.bluemix.net",
+    console: "cloud.ibm.com",
+    tag: "ca-tor",
+    label: "Toronto"
+  },
+  {
+    id: "br-sao",
+    api: "api.br-sao.bluemix.net",
+    console: "cloud.ibm.com",
+    tag: "br-sao",
+    label: "Sao Paolo"
   },
   {
     id: "eu-gb",
@@ -210,5 +165,12 @@ var regions = [
     console: "cloud.ibm.com",
     tag: "au-syd",
     label: "Sydney"
+  },
+  {
+    id: "in-che",
+    api: "api.au-syd.bluemix.net",
+    console: "cloud.ibm.com",
+    tag: "in-che",
+    label: "Chennai"
   }
 ];

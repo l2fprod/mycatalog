@@ -83,7 +83,6 @@ catalogApp.controller('MainController', function ($scope, $http) {
   $scope.selection = {
     resources: []
   };
-  $scope.categories = categories;
   $scope.catalogCategories = catalogCategories;
   $scope.regions = regions;
   $scope.selectedService = {};
@@ -116,14 +115,6 @@ catalogApp.controller('MainController', function ($scope, $http) {
       tagSet.push(tag);
     }
   }
-
-  $scope.tagFilter = function (tag) {
-    if (categories.indexOf(tag) >= 0) {
-      return tag;
-    } else {
-      return null;
-    }
-  };
 
   $scope.selectAll = function () {
     $scope.selection.resources = $scope.resources.map(function (resource) {

@@ -13,7 +13,7 @@ function ServiceUpdater() {
   const sandbox = {};
   script.runInNewContext(sandbox);
 
-  const categories = sandbox.categories.map(function (category) {
+  const categories = sandbox.catalogCategories.map(function (category) {
     return category.id;
   });
   const regions = sandbox.regions;
