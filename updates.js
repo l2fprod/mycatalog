@@ -9,7 +9,6 @@ var script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js
 var sandbox = {};
 script.runInNewContext(sandbox);
 var regions = sandbox.regions;
-var categories = sandbox.categories;
 
 var database;
 

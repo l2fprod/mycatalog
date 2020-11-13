@@ -28,15 +28,23 @@ catalogApp.filter("filterPanel", function () {
 
         // if no tag checked, show everything
         if (filterConfiguration.includeTags.length == 0 &&
-          filterConfiguration.excludeTags.length == 0) {
+          filterConfiguration.excludeTags.length == 0 &&
+          filterConfiguration.includeCategories.length == 0) {
           keepResource = true;
         }
 
-        // if no include, assume all included and let the exclude tag remove some
-        if (filterConfiguration.includeTags.length == 0) {
-          keepResource = true;
-        } else {
-          keepResource = true;
+        // if the resource matches any category, keep it
+        if (filterConfiguration.includeCategories.length > 0) {
+          filterConfiguration.includeCategories.forEach(function(category) {
+            if (matchesCategory(resource, category)) {
+              keepResource = true
+            }
+          });
+        }
+
+        // if the resource matches any includeFilters, keep it
+        if (filterConfiguration.includeTags.length > 0) {
+          keepResource = true
           filterConfiguration.includeTags.forEach(function (tag) {
             if (resource.tags.indexOf(tag) < 0) {
               keepResource = false;
@@ -44,6 +52,14 @@ catalogApp.filter("filterPanel", function () {
           });
         }
 
+        // if not "include" filters defined but we have exclude, keep the resource and let the exclude decide
+        if (filterConfiguration.includeCategories.length == 0 &&
+          filterConfiguration.includeTags.length == 0 &&
+          filterConfiguration.excludeTags.length > 0) {
+          keepResource = true
+        }
+
+        // and the exclude
         filterConfiguration.excludeTags.forEach(function (tag) {
           if (resource.tags.indexOf(tag) >= 0) {
             keepResource = false;
@@ -68,6 +84,7 @@ catalogApp.controller('MainController', function ($scope, $http) {
     resources: []
   };
   $scope.categories = categories;
+  $scope.catalogCategories = catalogCategories;
   $scope.regions = regions;
   $scope.selectedService = {};
   $scope.viewSelected = false;
@@ -75,8 +92,20 @@ catalogApp.controller('MainController', function ($scope, $http) {
   $scope.filterConfiguration = {
     enabled: true,
     includeTags: [],
-    excludeTags: []
+    excludeTags: [],
+    includeCategories: []
   };
+
+  $scope.toggleCategory = function (category) {
+    // add category.tags to include
+    var categorySet = $scope.filterConfiguration.includeCategories;
+    var position = categorySet.indexOf(category);
+    if (position >= 0) {
+      categorySet.splice(position, 1);
+    } else {
+      categorySet.push(category);
+    }
+  }
 
   $scope.toggleTagConfiguration = function (tag, status) {
     var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;

@@ -1,3 +1,100 @@
+var catalogCategories = [
+  {
+    id: 'compute',
+    label: 'Compute',
+    tags: ['compute', 'compute_baremetal', 'openwhisk', 'vmware', 'virtualservers' ],
+    exclude: [],
+  },
+  {
+    id: 'containers',
+    label: 'Containers',
+    tags: [ 'containers' ],
+    exclude: [],
+  },
+  {
+    id: 'network',
+    label: 'Networking',
+    tags: ['network', 'network_classic','network_interconnectivity', 'network_edge' ],
+    exclude: [],
+  },
+  {
+    id: 'storage',
+    label: 'Storage',
+    tags: ['storage', 'storage_classic', 'storage_datamovement' ],
+    exclude: [ 'big_data' ],
+  },
+  {
+    id: 'ai',
+    label: 'AI / Machine Learning',
+    tags: ['ai', 'watson'],
+    exclude: [],
+  },
+  {
+    id: 'analytics',
+    label: 'Analytics',
+    tags: ['analytics', 'business_analytics', 'big_data', 'data_analytics' ],
+    exclude: [ 'data_management' ],
+  },
+  {
+    id: 'blockchain',
+    label: 'Blockchain',
+    tags: ['blockchain'],
+    exclude: [],
+  },
+  {
+    id: 'databases',
+    label: 'Databases',
+    tags: ['databases', 'database', 'cldamqp', 'esql', 'data_management' ],
+    exclude: [],
+  },
+  {
+    id: 'devops',
+    label: 'Developer Tools',
+    tags: ['devops', 'dev_ops', 'containers' ],
+    exclude: [ 'big_data' ],
+  },
+  {
+    id: 'logging_monitoring',
+    label: 'Logging and Monitoring',
+    tags: [ 'logging_monitoring' ],
+    exclude: [],
+  },
+  {
+    id: 'integration',
+    label: 'Integration',
+    tags: ['integration'],
+    exclude: [],
+  },
+  {
+    id: 'iot',
+    label: 'Internet of Things',
+    tags: ['iot', 'internet_of_things'],
+    exclude: [],
+  },
+  {
+    id: 'security',
+    label: 'Security',
+    tags: ['security'],
+    exclude: [],
+  },
+  {
+    id: 'mobile',
+    label: 'Mobile',
+    tags: ['mobile', 'web_and_app' ],
+    exclude: [],
+  },
+];
+
+/**
+ * Checks if the given resource matches the given category
+ */
+function matchesCategory(resource, category) {
+  return resource.tags.filter(function(tag) {
+    return category.tags.indexOf(tag) >= 0  ||
+      category.tags.indexOf(resource.name) >= 0;
+  }).length > 0;
+}
+
 var categories = [
   {
     id: "compute",

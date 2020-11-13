@@ -1,94 +1,13 @@
+const vm = require('vm');
+const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
+const sandbox = {};
+script.runInNewContext(sandbox);
+
 function CheatSheet() {
   const self = this;
   const fs = require('fs');
   const PDFDocument = require('pdfkit');
   const moment = require('moment');
-  const catalogCategories = [
-    {
-      id: 'compute',
-      label: 'Compute',
-      tags: ['compute', 'compute_baremetal', 'openwhisk', 'vmware', 'virtualservers' ],
-      exclude: [],
-    },
-    {
-      id: 'containers',
-      label: 'Containers',
-      tags: [ 'containers' ],
-      exclude: [],
-    },
-    {
-      id: 'network',
-      label: 'Networking',
-      tags: ['network', 'network_classic','network_interconnectivity', 'network_edge' ],
-      exclude: [],
-    },
-    {
-      id: 'storage',
-      label: 'Storage',
-      tags: ['storage', 'storage_classic', 'storage_datamovement' ],
-      exclude: [ 'big_data' ],
-    },
-    {
-      id: 'ai',
-      label: 'AI / Machine Learning',
-      tags: ['ai', 'watson'],
-      exclude: [],
-    },
-    {
-      id: 'analytics',
-      label: 'Analytics',
-      tags: ['analytics', 'business_analytics', 'big_data', 'data_analytics' ],
-      exclude: [ 'data_management' ],
-    },
-    {
-      id: 'blockchain',
-      label: 'Blockchain',
-      tags: ['blockchain'],
-      exclude: [],
-    },
-    {
-      id: 'databases',
-      label: 'Databases',
-      tags: ['databases', 'database', 'cldamqp', 'esql', 'data_management' ],
-      exclude: [],
-    },
-    {
-      id: 'devops',
-      label: 'Developer Tools',
-      tags: ['devops', 'dev_ops', 'containers' ],
-      exclude: [ 'big_data' ],
-    },
-    {
-      id: 'logging_monitoring',
-      label: 'Logging and Monitoring',
-      tags: [ 'logging_monitoring' ],
-      exclude: [],
-    },
-    {
-      id: 'integration',
-      label: 'Integration',
-      tags: ['integration'],
-      exclude: [],
-    },
-    {
-      id: 'iot',
-      label: 'Internet of Things',
-      tags: ['iot', 'internet_of_things'],
-      exclude: [],
-    },
-    {
-      id: 'security',
-      label: 'Security',
-      tags: ['security'],
-      exclude: [],
-    },
-    {
-      id: 'mobile',
-      label: 'Mobile',
-      tags: ['mobile', 'web_and_app' ],
-      exclude: [],
-    },
-  ];
 
   const styleLightMode = {
     category: {
@@ -168,7 +87,7 @@ function CheatSheet() {
     const pageHeight = 600;
     const columnCount = 4;
     const columnWidth = (pageWidth - 2 * margin) / columnCount;
-    const lineHeight = ((pageHeight - 2 * margin) * columnCount - 2 * columnWidth) / (catalogCategories.length + resources.length);
+    const lineHeight = ((pageHeight - 2 * margin) * columnCount - 2 * columnWidth) / (sandbox.catalogCategories.length + resources.length);
     const fontSize = lineHeight - 2;
 
     console.log('Column width', columnWidth);
@@ -235,7 +154,7 @@ function CheatSheet() {
 
     let alreadySeen = [];
 
-    catalogCategories.forEach((category) => {
+    sandbox.catalogCategories.forEach((category) => {
       console.log('>>> Processing category', category.label);
       // add a category
 
