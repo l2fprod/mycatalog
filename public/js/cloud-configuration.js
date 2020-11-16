@@ -14,13 +14,13 @@ var catalogCategories = [
   {
     id: 'network',
     label: 'Networking',
-    tags: ['network', 'network_classic','network_interconnectivity', 'network_edge' ],
-    exclude: [],
+    tags: ['network', 'network_classic','network_interconnectivity', 'network_edge', 'network_vpc', 'vpc', 'is.composite' ],
+    exclude: [ 'storage_vpc' ],
   },
   {
     id: 'storage',
     label: 'Storage',
-    tags: ['storage', 'storage_classic', 'storage_datamovement' ],
+    tags: ['storage', 'storage_classic', 'storage_datamovement', 'storage_vpc' ],
     exclude: [ 'big_data' ],
   },
   {
@@ -32,7 +32,7 @@ var catalogCategories = [
   {
     id: 'analytics',
     label: 'Analytics',
-    tags: ['analytics', 'business_analytics', 'big_data', 'data_analytics' ],
+    tags: ['analytics', 'business_analytics', 'big_data', 'data_analytics', 'finance' ],
     exclude: [ 'data_management' ],
   },
   {
