@@ -11,7 +11,7 @@ var script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js
 var sandbox = {};
 script.runInNewContext(sandbox);
 var regions = sandbox.regions;
-var categories = sandbox.categories;
+var categories = sandbox.catalogCategories;
 
 router.post('/:format', function (req, res) {
   var resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'));
@@ -103,8 +103,9 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[row][0]  = service.displayName;
     
     for (var category in categories) {
-      if (service.tags[0] == categories[category].id) {
+      if (sandbox.matchesCategory(service, categories[category])) {
         sheet.data[row][1] = categories[category].label;
+        break;
       }
     }
 
@@ -440,7 +441,7 @@ function exportToPowerpoint(services, dateMDY, res) {
       color: 'ffffff'
     });
     for (var category in categories) {
-      if (service.tags[0] == categories[category].id) {
+      if (sandbox.matchesCategory(service, categories[category])) {
         cat = categories[category].label;
         slide.addText(cat, {
           x: 1000,
@@ -450,6 +451,7 @@ function exportToPowerpoint(services, dateMDY, res) {
           color: 'ffffff',
           bold: false
         });
+        break;
       }
     }
     slide.addText("Status: ", {

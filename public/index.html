@@ -83,7 +83,7 @@
           <tr>
             <td class="search-title"><span class="text-muted">Categories:</span></td>
             <td>
-              <button ng-repeat="category in categories | orderBy:'label'" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{category.label}}" data-toggle="button" ng-click="toggleTagConfiguration(category.id, true)">{{category.label}}</button>
+              <button ng-repeat="category in catalogCategories | orderBy:'label'" type="button" class="tagFilter btn btn-sm btn-default tracking" data-track-action="Filter" data-track-label="{{category.label}}" data-toggle="button" ng-click="toggleCategory(category)">{{category.label}}</button>
             </td>
           </tr>
           <tr>
@@ -155,10 +155,6 @@
             <span ng-if="resource.pricing_tags.indexOf('lite')>=0" class="service-tag label label-info">Lite plan</span>
 
             <span ng-if="resource.geo_tags.indexOf('global')>=0" class="service-tag label label-warning">Global</span>
-
-            <span ng-repeat="tag in resource.tags | filter: tagFilter">
-              <span class="service-tag label label-info">{{tag}}</span>
-            </span>
           </td>
         </tr>
       </table>
