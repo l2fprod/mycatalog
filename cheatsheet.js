@@ -58,15 +58,20 @@ function CheatSheet() {
     }
   };
 
+  const servicesToIgnore = [
+    "exp"
+  ]
+
   self.generate = function (darkMode, outputFilename) {
     const styling = darkMode ? styleDarkMode : styleLightMode;
     const resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'))
       .filter(resource =>
         resource.tags.indexOf('ibm_deprecated') < 0 &&
-        resource.tags.indexOf('ibm_experimental') < 0)
+        resource.tags.indexOf('ibm_experimental') < 0 &&
+        servicesToIgnore.indexOf(resource.name) < 0
       //  &&
       // resource.tags.indexOf('ibm_created')>=0)
-      .sort((resource1, resource2) => resource1.displayName.localeCompare(resource2.displayName));
+      ).sort((resource1, resource2) => resource1.displayName.localeCompare(resource2.displayName));
 
     sheet = new PDFDocument({
       autoFirstPage: false,
