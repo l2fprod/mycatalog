@@ -85,6 +85,29 @@ function getDifferences(newSnapshot, oldSnapshot) {
     return result;
   }
 
+  function captureStatusChange(newService, oldService, tag) {
+    var newHasTag = newService.tags.indexOf(tag) >= 0;
+    var oldHasTag = oldService.tags.indexOf(tag) >= 0;
+    // no change
+    if (newHasTag == oldHasTag) {
+      return;
+    }
+
+    if (newHasTag) {
+      result.changes.push({
+        tag: tag,
+        service: newService,
+        title: "was marked with " + tag
+      });
+    } else {
+      result.changes.push({
+        tag: tag,
+        service: newService,
+        title: "is no longer marked with " + tag
+      });
+    }
+  }
+
   var labelToNewService = []
   newServices.forEach(function (service) {
     labelToNewService[service.id] = service;
@@ -157,6 +180,9 @@ function getDifferences(newSnapshot, oldSnapshot) {
         service: newService
       });
     }
+
+    captureStatusChange(newService, oldService, "fs_ready");
+    captureStatusChange(newService, oldService, "hipaa");
 
     // look at plans
     var newServicePlans = [];
