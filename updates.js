@@ -95,13 +95,13 @@ function getDifferences(newSnapshot, oldSnapshot) {
 
     if (newHasTag) {
       result.changes.push({
-        tag: tag,
+        tag: "updated",
         service: newService,
         title: "was marked with " + tag
       });
     } else {
       result.changes.push({
-        tag: tag,
+        tag: "updated",
         service: newService,
         title: "is no longer marked with " + tag
       });
