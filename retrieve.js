@@ -156,7 +156,6 @@ function ServiceUpdater() {
                 console.log(`[${resource.name}] wrote ${extension}`);
                 if (extension === "svg") {
                   resource.localSvgIcon = "public/generated/icons/" + resource.id + "." + extension;
-                  var svg2png = require("svg2png");  
                   var imageBuffer = fs.readFileSync("public/generated/icons/" + resource.id + ".svg");
                   // some svg are compressed
                   try {
@@ -164,7 +163,11 @@ function ServiceUpdater() {
                   } catch (e) {
                     // console.log(`Could not unzip buffer for ${resource.name}`);
                   }
-                  svg2png(imageBuffer, { width: 64, height: 64 })
+                  var sharp = require('sharp');
+                  sharp(imageBuffer)
+                    .resize(64, 64)
+                    .png()
+                    .toBuffer()
                     .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
                       console.log(`[${resource.name}] wrote png`);
                       resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
