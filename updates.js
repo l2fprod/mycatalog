@@ -148,6 +148,17 @@ function getDifferences(newSnapshot, oldSnapshot) {
       return;
     }
 
+    // any name change?
+    var newName = newService.displayName;
+    var oldName = oldService.displayName;
+    if (newName != oldName) {
+      result.changes.push({
+        tag: "updated",
+        service: newService,
+        title: "is the new name of " + oldName
+      });
+    }
+
     // any change in the datacenters?
     regions.forEach(function (region) {
       var newIsInRegion = (newService.geo_tags || []).indexOf(region.tag) >= 0;
