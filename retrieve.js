@@ -387,6 +387,7 @@ function ServiceUpdater() {
 
         if (resource.metadata) {
           removeAllBut(resource.metadata, [
+            'ui',
             'service'
           ]);
         }
@@ -394,6 +395,12 @@ function ServiceUpdater() {
         if (resource.metadata && resource.metadata.service) {
           removeAllBut(resource.metadata.service, [
             'cf_service_name',
+          ]);
+        }
+
+        if (resource.metadata && resource.metadata.ui) {
+          removeAllBut(resource.metadata.ui, [
+            'hidden',
           ]);
         }
 
