@@ -68,10 +68,13 @@ function CheatSheet() {
       .filter(resource =>
         resource.tags.indexOf('ibm_deprecated') < 0 &&
         resource.tags.indexOf('ibm_experimental') < 0 &&
+        // if the service does not show in the catalog, do not put it in the cheatsheet
+        !(resource.metadata.ui && resource.metadata.ui.hidden == true) &&
         servicesToIgnore.indexOf(resource.name) < 0
       //  &&
       // resource.tags.indexOf('ibm_created')>=0)
       ).sort((resource1, resource2) => resource1.displayName.localeCompare(resource2.displayName));
+    console.log(`Found ${resources.length} services`);
 
     sheet = new PDFDocument({
       autoFirstPage: false,
@@ -93,7 +96,8 @@ function CheatSheet() {
     const pageHeight = 600;
     const columnCount = 4;
     const columnWidth = (pageWidth - 2 * margin) / columnCount;
-    const lineHeight = ((pageHeight - 2 * margin) * columnCount - 2 * columnWidth) / (sandbox.catalogCategories.length + resources.length);
+    const totalPageHeight = (columnCount - 1) * (pageHeight - 2 * margin) + pageHeight - columnWidth - 2 * margin;
+    const lineHeight = totalPageHeight / (3 * sandbox.catalogCategories.length + resources.length);
     const fontSize = lineHeight - 2;
 
     console.log('Column width', columnWidth);
@@ -155,8 +159,7 @@ function CheatSheet() {
     }
 
     // start after the logo
-    currentY = margin + 180; //columnWidth;
-
+    currentY = margin + columnWidth;
 
     let alreadySeen = [];
 
