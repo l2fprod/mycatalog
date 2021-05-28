@@ -15,6 +15,7 @@
           clearable
           :value="searchTerm"
           @change="setSearchTerm"
+          v-on:keyup="setSearchTerm($event.target.value)"
           placeholder="Search Resources"
         ></v-text-field>
       </v-responsive>
@@ -65,7 +66,13 @@ export default {
 
   methods: {
     setSearchTerm(text) {
-      this.$store.commit('SET_SEARCH_TERM', text);
+      if (this.searchTimer) {
+        clearTimeout(this.searchTimer);
+        this.searchTimer = null;
+      }
+      this.searchTimer = setTimeout(() => {
+        this.$store.commit('SET_SEARCH_TERM', text);
+      }, 300);
     }
   }
 };

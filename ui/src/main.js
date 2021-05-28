@@ -6,6 +6,11 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+store.commit('SET_CONFIG', {
+  catalogCategories: catalogCategories,
+  regions: regions
+});
+
 new Vue({
   vuetify,
   store,

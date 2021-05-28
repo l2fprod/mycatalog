@@ -16,11 +16,8 @@
     <template v-slot:item.name="{item}">
       {{ item.displayName }}
     </template>
-    <template v-slot:item.us-south="{item}">
-      <v-icon small v-if="(item.geo_tags != null && item.geo_tags.indexOf('global')>=0) || item.tags.indexOf('us-south')>=0">mdi-checkbox-marked-circle</v-icon>
-    </template>
-    <template v-slot:item.ca-tor="{item}">
-      <v-icon small v-if="(item.geo_tags != null && item.geo_tags.indexOf('global')>=0) || item.tags.indexOf('ca-tor')>=0">mdi-checkbox-marked-circle</v-icon>
+    <template v-for="region in this.$store.state.config.regions" v-slot:[`item.${region.id}`]="{ item }">
+      <v-icon v-bind:key="region.id" small v-if="(item.geo_tags != null && item.geo_tags.indexOf('global')>=0) || item.tags.indexOf(region.tag)>=0">mdi-checkbox-marked-circle</v-icon>
     </template>
     <template v-slot:item.tags="{item}">
       <v-chip v-if="item.tags.indexOf('ibm_created')>=0" label x-small color="primary">IBM</v-chip>
@@ -39,28 +36,38 @@
 import Vue from "vue";
 export default Vue.extend({
   data() {
-    return {
-      headers: [
+    const headers = [
+      {
+        text: "",
+        align: "center",
+        sortable: false,
+        value: "icon",
+        width: 32,
+      },
+      {
+        text: "Name",
+        align: "start",
+        sortable: true,
+        value: "name",
+        width: 200,
+      },
+    ];
+    this.$store.state.config.regions.forEach(region => {
+      headers.push(
         {
-          text: "",
+          text: region.label,
+          value: region.id,
           align: "center",
           sortable: false,
-          value: "icon",
-          width: 32,
-        },
-        {
-          text: "Name",
-          align: "start",
-          sortable: true,
-          value: "name",
-          width: 150,
-        },
-        { text: "Dallas", value: "us-south", align: "center", sortable: false, width: 50 },
-        { text: "Toronto", value: "ca-tor", align: "center", sortable: false, width: 50 },
-        { text: "Description", value: "description" },
-        { text: "Tags", value: "tags", sortable: false, width: 200 }
-      ],
-    };
+          width: 50
+        }
+      );
+    });
+    headers.push({ text: "Tags", value: "tags", sortable: false });
+    // { text: "Description", value: "description" },
+    return {
+      headers
+    }
   },
   computed: {
     resources() {
