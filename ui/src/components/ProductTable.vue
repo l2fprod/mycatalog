@@ -29,7 +29,7 @@
       <v-chip v-if="item.pricing_tags && item.pricing_tags.indexOf('lite')>=0" label x-small color="secondary">Lite plan</v-chip>
       <v-chip v-if="item.geo_tags && item.geo_tags.indexOf('global')>=0" label x-small color="orange" text-color="white">Global</v-chip>
     </template>
-   </v-data-table>
+  </v-data-table>
 </template>
 
 <script lang="ts">

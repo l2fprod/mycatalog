@@ -57,10 +57,11 @@
             :value="selectedPlan.name" v-if="selectedPlan && selectedPlan.name != 'user-provided'"/>
 
           <v-textarea
-            outlined
+            filled
             readonly
             rows="4"
             label="Description"
+            class="body-2"
             :value="selectedPlan.description" v-if="selectedPlan"/>
 
         </v-expansion-panel-content>

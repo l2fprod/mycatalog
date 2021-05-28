@@ -1,6 +1,7 @@
 module.exports = {
   transpileDependencies: [
-    'vuetify'
+    'vuetify',
+    'markdown-it-prism'
   ],
   devServer: {
     proxy: {
