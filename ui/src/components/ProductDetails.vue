@@ -40,7 +40,8 @@
             return-object
             item-text="displayName"
             placeholder="Select a plan"
-            :items="resource.plans">
+            :items="resource.plans"
+            v-if="selectedPlan && selectedPlan.name != 'user-provided'">
             <template slot="selection" slot-scope="data">
               {{ data.item.displayName }} ({{ data.item.name }})
             </template>
@@ -48,11 +49,12 @@
               {{ data.item.displayName }} ({{ data.item.name }})
             </template>
           </v-select>
+
           <v-text-field
             filled
             readonly
             label="Programmatic Name"
-            :value="selectedPlan.name" v-if="selectedPlan"/>
+            :value="selectedPlan.name" v-if="selectedPlan && selectedPlan.name != 'user-provided'"/>
 
           <v-textarea
             outlined
@@ -63,7 +65,7 @@
 
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-expansion-panel>
+      <v-expansion-panel v-if="selectedPlan && selectedPlan.name != 'user-provided'">
         <v-expansion-panel-header>
           CLI
         </v-expansion-panel-header>
@@ -78,7 +80,7 @@
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-expansion-panel>
+      <v-expansion-panel v-if="selectedPlan && selectedPlan.name != 'user-provided'">
         <v-expansion-panel-header>
           Terraform
         </v-expansion-panel-header>
@@ -98,6 +100,7 @@
 <script lang="ts">
 import Vue from "vue";
 import Markup from "./Markup.vue";
+import { mapState } from 'vuex'
 
 export default Vue.extend({
   data() {
@@ -112,8 +115,9 @@ export default Vue.extend({
     resource() {
       return this.$store.state.selectedResource;
     },
-    selectedPlan() {
-      return this.$store.state.selectedPlan;
+    selectedPlan: {
+      get() { return this.$store.state.selectedPlan; },
+      set(newPlan) { this.$store.commit('SET_SELECTED_PLAN', newPlan); }
     }
   },
   methods: {
