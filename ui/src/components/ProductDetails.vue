@@ -3,7 +3,7 @@
     <template v-slot:prepend>
       <v-list-item two-line>
         <v-list-item-avatar size="64" :tile="false">
-          <img :src="'https://mycatalog.mybluemix.net/generated/icons/' + resource.id + '.png'"/>
+          <img :src="'/generated/icons/' + resource.id + '.png'"/>
         </v-list-item-avatar>
 
         <v-list-item-content>

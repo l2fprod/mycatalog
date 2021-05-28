@@ -11,7 +11,7 @@
     @click:row="selectRow"
   >
     <template v-slot:item.icon="{item}">
-      <img :src="'https://mycatalog.mybluemix.net/generated/icons/' + item.id + '.png'" width="16"/>
+      <img :src="'/generated/icons/' + item.id + '.png'" width="16"/>
     </template>
     <template v-slot:item.name="{item}">
       {{ item.displayName }}

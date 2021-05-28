@@ -55,7 +55,7 @@ export default new Vuex.Store({
   },
   actions: {
     getResources({commit}) {
-      axios.get('https://mycatalog.mybluemix.net/generated/resources.json')
+      axios.get('/generated/resources.json')
         .then(response => {
           commit('SET_RESOURCES', response.data);
         });
