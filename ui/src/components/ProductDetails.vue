@@ -101,7 +101,6 @@
 <script lang="ts">
 import Vue from "vue";
 import Markup from "./Markup.vue";
-import { mapState } from 'vuex'
 
 export default Vue.extend({
   data() {

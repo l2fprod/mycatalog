@@ -10,16 +10,16 @@
     show-select
     @click:row="selectRow"
   >
-    <template v-slot:item.icon="{item}">
+    <template v-slot:[`item.icon`]="{item}">
       <img :src="'/generated/icons/' + item.id + '.png'" width="16"/>
     </template>
-    <template v-slot:item.name="{item}">
+    <template v-slot:[`item.name`]="{item}">
       {{ item.displayName }}
     </template>
     <template v-for="region in this.$store.state.config.regions" v-slot:[`item.${region.id}`]="{ item }">
       <v-icon v-bind:key="region.id" small v-if="(item.geo_tags != null && item.geo_tags.indexOf('global')>=0) || item.tags.indexOf(region.tag)>=0">mdi-checkbox-marked-circle</v-icon>
     </template>
-    <template v-slot:item.tags="{item}">
+    <template v-slot:[`item.tags`]="{item}">
       <v-chip v-if="item.tags.indexOf('ibm_created')>=0" label x-small color="primary">IBM</v-chip>
       <v-chip v-if="item.tags.indexOf('ibm_third_party')>=0" label x-small color="green" text-color="white">Third Party</v-chip>
       <v-chip v-if="item.tags.indexOf('ibm_beta')>=0" label x-small color="orange" text-color="white">Beta</v-chip>
