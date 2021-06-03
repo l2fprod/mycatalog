@@ -13,6 +13,10 @@ module.exports = {
         target: 'https://mycatalog.mybluemix.net/',
         // logLevel: 'debug'
       },
+      '^/icons': {
+        target: 'https://mycatalog.mybluemix.net/',
+        // logLevel: 'debug'
+      },
     }
   }
 }

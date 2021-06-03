@@ -1,8 +1,8 @@
 <template>
   <v-data-table
     :headers="headers"
-    :items="resources"
-    height="100%"
+    :items="filteredResources"
+    height="calc(100% - 48px)"
     style="width: 100%"
     disable-pagination
     fixed-header
@@ -10,10 +10,32 @@
     show-select
     @click:row="selectRow"
   >
+    <template v-slot:top>
+      <v-toolbar dense flat>
+        <template v-slot:extension>
+          <v-divider/>
+        </template>
+        <v-toolbar-title>
+          <b>{{resources.length}}</b> resources in the catalog
+          <span v-if="filteredResources.length != resources.length">, <b>{{filteredResources.length}}</b> resources matching the search criteria</span>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
+        Export catalog to
+        <v-btn icon>
+          <img src="icons/ppt_logo.png" height="30" width="30"/>
+        </v-btn>
+        <v-btn icon>
+          <img src="icons/excel_logo.png" height="30" width="30"/>
+        </v-btn>
+        <v-btn icon>
+          <img src="icons/word_logo.png" height="30" width="30"/>
+        </v-btn>
+      </v-toolbar>
+    </template>
     <template v-slot:[`item.icon`]="{item}">
       <img :src="'/generated/icons/' + item.id + '.png'" width="16"/>
     </template>
-    <template v-slot:[`item.name`]="{item}">
+    <template v-slot:[`item.displayName`]="{item}">
       {{ item.displayName }}
     </template>
     <template v-for="region in this.$store.state.config.regions" v-slot:[`item.${region.id}`]="{ item }">
@@ -50,7 +72,7 @@ export default Vue.extend({
         text: "Name",
         align: "start",
         sortable: true,
-        value: "name",
+        value: "displayName",
         width: 200,
       },
     ];
@@ -73,7 +95,10 @@ export default Vue.extend({
   },
   computed: {
     resources() {
-      return this.$store.state.filteredResources
+      return this.$store.state.resources;
+    },
+    filteredResources() {
+      return this.$store.state.filteredResources;
     }
   },
   methods: {
@@ -83,3 +108,18 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style scoped>
+/deep/ header.v-toolbar--extended {
+  height: 49px !important;
+}
+
+/deep/ div.v-toolbar__content {
+  height: 47px !important;
+}
+
+/deep/ div.v-toolbar__extension {
+  padding: 0;
+  height: 2px !important;
+}
+</style>

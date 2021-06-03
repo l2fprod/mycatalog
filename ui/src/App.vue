@@ -26,7 +26,7 @@
     </v-navigation-drawer>
     <product-details/>
     <v-main>
-      <v-container fluid style="height: calc(100vh - 56px - 20px); padding: 0">
+      <v-container fluid style="height: calc(100vh - 65px); padding: 0">
         <v-layout fill-height>
           <product-table/>
         </v-layout>
