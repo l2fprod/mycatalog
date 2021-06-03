@@ -1,15 +1,15 @@
 <template>
   <div>
-    <v-expansion-panels multiple accordion :tile="false" v-model="panels">
+    <v-expansion-panels multiple accordion :tile="true" v-model="panels">
       <v-expansion-panel>
         <v-expansion-panel-header>
           <v-row style="padding: 0px 12px" align="center">
             <span>Filters</span>
-            <span>&nbsp;&nbsp;<v-chip small>{{selectedFilters.length}}</v-chip></span>
+            <span>&nbsp;&nbsp;<v-chip v-if="selectedFilters.length > 0" close small @click:close="setSelectedFilters([])">{{selectedFilters.length}}</v-chip></span>
           </v-row>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          <v-chip-group multiple active-class="primary--text" v-model="selectedFilters"
+          <v-chip-group multiple active-class="warning--text" v-model="selectedFilters"
           @change="setSelectedFilters"
           column>
             <v-chip v-for="filter in filters" v-bind:key="filter.id"
@@ -26,11 +26,11 @@
         <v-expansion-panel-header>
           <v-row style="padding: 0px 12px" align="center">
             <span>Categories</span>
-            <span>&nbsp;&nbsp;<v-chip small>{{selectedCategories.length}}</v-chip></span>
+            <span>&nbsp;&nbsp;<v-chip v-if="selectedCategories.length > 0" close small @click:close="setSelectedCategories([])">{{selectedCategories.length}}</v-chip></span>
           </v-row>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          <v-chip-group multiple active-class="primary--text" v-model="selectedCategories"
+          <v-chip-group multiple active-class="success--text" v-model="selectedCategories"
           @change="setSelectedCategories"
           column>
             <v-chip v-for="category in orderBy(categories, 'label')" v-bind:key="category.id"
@@ -46,11 +46,11 @@
         <v-expansion-panel-header>
           <v-row style="padding: 0px 12px" align="center">
             <span>Regions</span>
-            <span>&nbsp;&nbsp;<v-chip small>{{selectedRegions.length}}</v-chip></span>
+            <span>&nbsp;&nbsp;<v-chip v-if="selectedRegions.length > 0" close small @click:close="setSelectedRegions([])">{{selectedRegions.length}}</v-chip></span>
           </v-row>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          <v-chip-group multiple active-class="primary--text" v-model="selectedRegions"
+          <v-chip-group multiple active-class="info--text" v-model="selectedRegions"
           @change="setSelectedRegions"
           column>
             <v-chip v-for="region in orderBy(regions, 'label')" v-bind:key="region.id"
@@ -93,12 +93,15 @@ export default Vue.extend({
   },
   methods: {
     setSelectedCategories(categories) {
+      this.selectedCategories = categories;
       this.$store.commit('SET_SELECTED_CATEGORIES', categories);
     },
     setSelectedRegions(regions) {
+      this.selectedRegions = regions;
       this.$store.commit('SET_SELECTED_REGIONS', regions);
     },
     setSelectedFilters(filters) {
+      this.selectedFilters = filters;
       this.$store.commit('SET_SELECTED_FILTERS', filters);
     }
   }

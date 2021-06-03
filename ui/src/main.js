@@ -7,12 +7,14 @@ import store from './store'
 Vue.config.productionTip = false
 
 store.commit('SET_CONFIG', {
+  // eslint-disable-next-line
   categories: catalogCategories,
+  // eslint-disable-next-line
   regions: regions,
   filters: [
     {
       "id": "custom_kind_iaas",
-      "label": "IaaS",
+      "label": "IaaS"
     },
     {
       "id": "custom_kind_service",

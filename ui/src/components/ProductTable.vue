@@ -20,14 +20,16 @@
       <v-icon v-bind:key="region.id" small v-if="(item.geo_tags != null && item.geo_tags.indexOf('global')>=0) || item.tags.indexOf(region.tag)>=0">mdi-checkbox-marked-circle</v-icon>
     </template>
     <template v-slot:[`item.tags`]="{item}">
-      <v-chip v-if="item.tags.indexOf('ibm_created')>=0" label x-small color="primary">IBM</v-chip>
-      <v-chip v-if="item.tags.indexOf('ibm_third_party')>=0" label x-small color="green" text-color="white">Third Party</v-chip>
-      <v-chip v-if="item.tags.indexOf('ibm_beta')>=0" label x-small color="orange" text-color="white">Beta</v-chip>
-      <v-chip v-if="item.tags.indexOf('ibm_experimental')>=0" label x-small color="red" text-color="white">Experimental</v-chip>
-      <v-chip v-if="item.tags.indexOf('ibm_deprecated')>=0" label x-small color="red" text-color="white">Deprecated</v-chip>
-      <v-chip v-if="item.pricing_tags && item.pricing_tags.indexOf('free')>=0" label x-small color="secondary">Free plan</v-chip>
-      <v-chip v-if="item.pricing_tags && item.pricing_tags.indexOf('lite')>=0" label x-small color="secondary">Lite plan</v-chip>
-      <v-chip v-if="item.geo_tags && item.geo_tags.indexOf('global')>=0" label x-small color="orange" text-color="white">Global</v-chip>
+      <v-chip-group column>
+        <v-chip v-if="item.tags.indexOf('ibm_created')>=0" label x-small color="primary">IBM</v-chip>
+        <v-chip v-if="item.tags.indexOf('ibm_third_party')>=0" label x-small color="green" text-color="white">Third Party</v-chip>
+        <v-chip v-if="item.tags.indexOf('ibm_beta')>=0" label x-small color="orange" text-color="white">Beta</v-chip>
+        <v-chip v-if="item.tags.indexOf('ibm_experimental')>=0" label x-small color="red" text-color="white">Experimental</v-chip>
+        <v-chip v-if="item.tags.indexOf('ibm_deprecated')>=0" label x-small color="red" text-color="white">Deprecated</v-chip>
+        <v-chip v-if="item.pricing_tags && item.pricing_tags.indexOf('free')>=0" label x-small color="secondary">Free plan</v-chip>
+        <v-chip v-if="item.pricing_tags && item.pricing_tags.indexOf('lite')>=0" label x-small color="secondary">Lite plan</v-chip>
+        <v-chip v-if="item.geo_tags && item.geo_tags.indexOf('global')>=0" label x-small color="orange" text-color="white">Global</v-chip>
+      </v-chip-group>
     </template>
   </v-data-table>
 </template>

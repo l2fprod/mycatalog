@@ -12,43 +12,84 @@ function matchesCategory(resource, category) {
 }
 
 function applyFilter(state) {
+  const start = new Date().getTime();
   const filteredResources = [];
   const searchTerm = state.searchTerm == null || state.searchTerm.trim().length == 0 ?
     null : state.searchTerm.trim().toLowerCase();
 
-  const includeTags = [];
+  let includeTags = [];
+  let excludeTags = [];
+
   //PENDING(fredL): services marked as global should also appear as soon as one region tag is selected
   state.selectedRegions.forEach(region => includeTags.push(region.tag));
+  state.selectedFilters.forEach(filter => {
+    if (filter.exclude) {
+      if (filter.tags) {
+        excludeTags = excludeTags.concat(filter.tags);
+      } else {
+        excludeTags.push(filter.id)
+      }
+    } else if (filter.tags) {
+      includeTags = includeTags.concat(filter.tags);
+    } else {
+      includeTags.push(filter.id)
+    }
+  });
+
+  console.log("Filtering with", "includeTags=", includeTags, "excludeTags=", excludeTags, "state=", state);
 
   state.resources.forEach((resource) => {
     let keepResource = false;
+    let inSelectedCategories = false;
+    let inIncludedTags = false;
+    let inExcludedTags = false;
 
     if (includeTags.length == 0 &&
+      excludeTags.length == 0 &&
       state.selectedCategories.length == 0) {
       keepResource = true;
     }
 
-    // if the resource matches any category, keep it
+    // in any of the categories?
     if (state.selectedCategories.length > 0) {
       state.selectedCategories.forEach((category) => {
         if (matchesCategory(resource, category)) {
-          keepResource = true
+          inSelectedCategories = true;
         }
       });
+    } else {
+      inSelectedCategories = true;
     }
 
-    // if the resource matches any includeFilters, keep it
+    // in all the included tags?
     if (includeTags.length > 0) {
-      keepResource = true
+      inIncludedTags = true;
       includeTags.forEach(function (tag) {
         if (resource.tags.indexOf(tag) < 0) {
-          keepResource = false;
+          inIncludedTags = false;
         }
       });
+    } else {
+      inIncludedTags = true;
+    }
+
+    // in any of the excluded tags?
+    if (excludeTags.length > 0) {
+      excludeTags.forEach(function (tag) {
+        if (resource.tags.indexOf(tag) >= 0) {
+          inExcludedTags = true;
+        }
+      });
+    } else {
+      inExcludedTags = false;
+    }
+
+    if (inSelectedCategories && inIncludedTags && !inExcludedTags) {
+      keepResource = true;
     }
 
     // and at last the searchTerm
-    if (searchTerm != null) {
+    if (keepResource && searchTerm != null) {
       keepResource = JSON.stringify(resource).toLowerCase().indexOf(searchTerm) > 0;
     }
 
@@ -57,63 +98,9 @@ function applyFilter(state) {
     }
   });
 
+  console.log(`Filtered in ${new Date().getTime() - start} milliseconds`);
   return filteredResources;
 }
-
-// if (filterConfiguration.enabled) {
-//   var results = [];
-//   resources.forEach(function (resource) {
-//     var keepResource = false;
-
-//     // if no tag checked, show everything
-//     if (filterConfiguration.includeTags.length == 0 &&
-//       filterConfiguration.excludeTags.length == 0 &&
-//       filterConfiguration.includeCategories.length == 0) {
-//       keepResource = true;
-//     }
-
-//     // if the resource matches any category, keep it
-//     if (filterConfiguration.includeCategories.length > 0) {
-//       filterConfiguration.includeCategories.forEach(function(category) {
-//         if (matchesCategory(resource, category)) {
-//           keepResource = true
-//         }
-//       });
-//     }
-
-//     // if the resource matches any includeFilters, keep it
-//     if (filterConfiguration.includeTags.length > 0) {
-//       keepResource = true
-//       filterConfiguration.includeTags.forEach(function (tag) {
-//         if (resource.tags.indexOf(tag) < 0) {
-//           keepResource = false;
-//         }
-//       });
-//     }
-
-//     // if not "include" filters defined but we have exclude, keep the resource and let the exclude decide
-//     if (filterConfiguration.includeCategories.length == 0 &&
-//       filterConfiguration.includeTags.length == 0 &&
-//       filterConfiguration.excludeTags.length > 0) {
-//       keepResource = true
-//     }
-
-//     // and the exclude
-//     filterConfiguration.excludeTags.forEach(function (tag) {
-//       if (resource.tags.indexOf(tag) >= 0) {
-//         keepResource = false;
-//       }
-//     });
-
-//     if (keepResource) {
-//       results.push(resource);
-//     }
-//   });
-//   return results;
-
-
-
-
 
 export default new Vuex.Store({
   state: {

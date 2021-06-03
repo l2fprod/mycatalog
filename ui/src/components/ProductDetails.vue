@@ -2,7 +2,7 @@
   <v-navigation-drawer app clipped right width="400" v-if="resource">
     <template v-slot:prepend>
       <v-list-item two-line>
-        <v-list-item-avatar size="64" :tile="false">
+        <v-list-item-avatar size="64" :tile="true">
           <img :src="'/generated/icons/' + resource.id + '.png'"/>
         </v-list-item-avatar>
 
@@ -21,7 +21,7 @@
 
     <v-divider></v-divider>
 
-    <v-expansion-panels multiple accordion :tile="false" v-model="panels">
+    <v-expansion-panels multiple accordion :tile="true" v-model="panels">
       <v-expansion-panel>
         <v-expansion-panel-header>
           About
@@ -30,7 +30,7 @@
           {{ resource.description }}
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-expansion-panel>
+      <v-expansion-panel v-if="isSimpleService">
         <v-expansion-panel-header>
           Plans
         </v-expansion-panel-header>
@@ -66,7 +66,7 @@
 
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-expansion-panel v-if="selectedPlan && selectedPlan.name != 'user-provided'">
+      <v-expansion-panel v-if="isSimpleService && selectedPlan && selectedPlan.name != 'user-provided'">
         <v-expansion-panel-header>
           CLI
         </v-expansion-panel-header>
@@ -81,7 +81,7 @@
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-expansion-panel v-if="selectedPlan && selectedPlan.name != 'user-provided'">
+      <v-expansion-panel v-if="isSimpleService && selectedPlan && selectedPlan.name != 'user-provided'">
         <v-expansion-panel-header>
           Terraform
         </v-expansion-panel-header>
@@ -118,6 +118,11 @@ export default Vue.extend({
     selectedPlan: {
       get() { return this.$store.state.selectedPlan; },
       set(newPlan) { this.$store.commit('SET_SELECTED_PLAN', newPlan); }
+    },
+    isSimpleService() {
+      return this.$store.state.selectedResource &&
+        // don't show CLI for VPC items
+        this.$store.state.selectedResource.tags.indexOf('is.composite') < 0;
     }
   },
   methods: {
