@@ -15,6 +15,7 @@
           clearable
           :value="searchTerm"
           @change="setSearchTerm"
+          @click:clear="setSearchTerm('')"
           v-on:keyup="setSearchTerm($event.target.value)"
           placeholder="Search Resources"
         ></v-text-field>
@@ -36,6 +37,7 @@
 </template>
 
 <script>
+import CriteriaPanel from './components/CriteriaPanel.vue';
 import FilterPanel from './components/FilterPanel.vue';
 import ProductDetails from './components/ProductDetails.vue';
 import ProductTable from './components/ProductTable.vue';
@@ -44,13 +46,14 @@ export default {
   name: 'App',
 
   components: {
+    CriteriaPanel,
     ProductTable,
     ProductDetails,
-    FilterPanel
+    FilterPanel,
   },
 
   data: () => ({
-    showFilterPanel: true,
+    showFilterPanel: false,
     ProductDetails  //
   }),
 

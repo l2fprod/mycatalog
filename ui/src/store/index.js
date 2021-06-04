@@ -145,6 +145,9 @@ export default new Vuex.Store({
     },
     SET_CONFIG(state, config) {
       state.config = config;
+      // put regions and categories in a good order from the start
+      state.config.regions.sort((r1, r2) => r1.label.localeCompare(r2.label));
+      state.config.categories.sort((c1, c2) => c1.label.localeCompare(c2.label));
     },
     SET_SELECTED_CATEGORIES(state, selectedCategories) {
       state.selectedCategories = selectedCategories;
