@@ -1,4 +1,6 @@
 module.exports = {
+  outputDir: '../public/next',
+  publicPath: '/next',
   transpileDependencies: [
     'vuetify',
     'markdown-it-prism'
@@ -14,6 +16,10 @@ module.exports = {
         // logLevel: 'debug'
       },
       '^/icons': {
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
+        // logLevel: 'debug'
+      },
+      '^/api': {
         target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
         // logLevel: 'debug'
       },

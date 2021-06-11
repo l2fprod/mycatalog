@@ -30,14 +30,14 @@
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <span class="text-body-2">Export catalog to</span>
-            <v-btn icon>
-              <img src="icons/ppt_logo.png" height="30" width="30" />
+            <v-btn icon @click="exportSelection('pptx')">
+              <img src="/icons/ppt_logo.png" height="30" width="30" />
             </v-btn>
-            <v-btn icon>
-              <img src="icons/excel_logo.png" height="30" width="30" />
+            <v-btn icon @click="exportSelection('xlsx')">
+              <img src="/icons/excel_logo.png" height="30" width="30" />
             </v-btn>
-            <v-btn icon>
-              <img src="icons/word_logo.png" height="30" width="30" />
+            <v-btn icon @click="exportSelection('docx')">
+              <img src="/icons/word_logo.png" height="30" width="30" />
             </v-btn>
           </v-toolbar>
         </v-row>
@@ -187,6 +187,12 @@ export default Vue.extend({
     selectRow(row) {
       this.$store.commit("SET_SELECTED_RESOURCE", row);
     },
+    exportSelection(format) {
+      this.$store.dispatch('export', {
+        format,
+        selectedResources: this.selectedResources
+      });
+    }
   },
 });
 </script>

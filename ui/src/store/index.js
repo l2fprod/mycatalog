@@ -1,4 +1,5 @@
 import axios from 'axios'
+import fileDownload from 'js-file-download';
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -174,6 +175,15 @@ export default new Vuex.Store({
         .then(response => {
           commit('SET_RESOURCES', response.data);
         });
+    },
+    export({commit}, { selectedResources, format }) {
+      const selectedIds = selectedResources.map(resource => resource.id);
+      axios.post(`/api/export/${format}`, {
+        resources: selectedIds.length > 0 ? selectedIds : null
+      },
+      {
+        responseType: 'blob'
+      }).then((response) => fileDownload(response.data, `mycatalog-${new Date().toJSON().slice(0,10)}.${format}`));
     },
   },
   modules: {
