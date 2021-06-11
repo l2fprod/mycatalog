@@ -8,6 +8,7 @@
         multiple
         chips
         deletable-chips
+        small-chips
         hint="Show only resources matching these filters"
         persistent-hint
         item-text="label"
@@ -44,6 +45,7 @@
         multiple
         chips
         deletable-chips
+        small-chips
         hint="Show only resources in these categories"
         persistent-hint
         item-text="label"
@@ -80,6 +82,7 @@
         multiple
         chips
         deletable-chips
+        small-chips
         hint="Show only resources available in these regions"
         persistent-hint
         item-text="label"

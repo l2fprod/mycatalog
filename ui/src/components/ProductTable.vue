@@ -1,8 +1,9 @@
 <template>
   <v-data-table
+    :loading="resources.length == 0"
     :headers="headers"
     :items="filteredResources"
-    height="calc(100% - 200px)"
+    height="100%"
     style="width: 100%"
     disable-pagination
     fixed-header
@@ -10,20 +11,25 @@
     show-select
     @click:row="selectRow"
     class="productTable"
+    v-model="selectedResources"
   >
     <template v-slot:top>
-      <v-container fluid style="height: 200px">
+      <v-container fluid>
         <v-row>
           <v-toolbar dense flat>
             <v-toolbar-title>
+              <div class="text-body-2">
               <b>{{ resources.length }}</b> resources in the catalog
               <span v-if="filteredResources.length != resources.length"
                 >, <b>{{ filteredResources.length }}</b> resources matching the
                 search criteria</span
               >
+              <span v-if="selectedResources.length > 0"
+                >, <b>{{ selectedResources.length }}</b> selected</span>
+              </div>
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            Export catalog to
+            <span class="text-body-2">Export catalog to</span>
             <v-btn icon>
               <img src="icons/ppt_logo.png" height="30" width="30" />
             </v-btn>
@@ -35,21 +41,24 @@
             </v-btn>
           </v-toolbar>
         </v-row>
-        <criteria-panel />
       </v-container>
     </template>
     <template v-slot:[`item.icon`]="{ item }">
-      <img :src="'/generated/icons/' + item.id + '.png'" width="16" />
+      <!-- <v-lazy>
+        <img :src="'/generated/icons/' + item.id + '.png'" width="16" />
+      </v-lazy> -->
+      <v-img :src="'/generated/icons/' + item.id + '.png'" width="16" />
     </template>
     <template v-slot:[`item.displayName`]="{ item }">
-      {{ item.displayName }}
+      <span v-if="item.metadata.ui.hidden">{{ item.displayName }}</span>
+      <a v-else :href="`https://cloud.ibm.com/catalog/services/${item.name}`">{{ item.displayName }}</a>
     </template>
     <template
       v-for="region in this.$store.state.config.regions"
       v-slot:[`item.${region.id}`]="{ item }"
     >
-      <v-icon
-        v-bind:key="region.id"
+      <v-icon v-bind:key="region.id"
+        
         small
         v-if="
           (item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
@@ -59,6 +68,7 @@
       >
     </template>
     <template v-slot:[`item.tags`]="{ item }">
+      <v-lazy>
       <v-chip-group column>
         <v-chip
           v-if="item.tags.indexOf('ibm_created') >= 0"
@@ -122,16 +132,15 @@
           >Global</v-chip
         >
       </v-chip-group>
+      </v-lazy>
     </template>
   </v-data-table>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import CriteriaPanel from "./CriteriaPanel.vue";
 export default Vue.extend({
   components: {
-    CriteriaPanel,
   },
   data() {
     const headers = [
@@ -163,6 +172,7 @@ export default Vue.extend({
     // { text: "Description", value: "description" },
     return {
       headers,
+      selectedResources: [],
     };
   },
   computed: {
@@ -186,18 +196,6 @@ export default Vue.extend({
   margin: 0px;
   margin-left: 48px;
   margin-right: 48px;
+  margin-bottom: 56px;
 }
-
-/* /deep/ header.v-toolbar--extended {
-  height: 49px !important;
-}
-
-/deep/ div.v-toolbar__content {
-  height: 47px !important;
-}
-
-/deep/ div.v-toolbar__extension {
-  padding: 0;
-  height: 2px !important;
-} */
 </style>

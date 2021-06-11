@@ -22,22 +22,26 @@
       </v-responsive>
       <v-spacer></v-spacer>
     </v-app-bar>
-    <v-navigation-drawer app clipped left width="400" v-model="showFilterPanel">
+    <v-navigation-drawer
+      app clipped left width="300"
+      v-model="showFilterPanel">
       <filter-panel/>
     </v-navigation-drawer>
     <product-details/>
     <v-main>
-      <v-container fluid style="height: calc(100vh - 65px); padding: 0">
+      <v-container fluid style="height: calc(100vh - 100px); padding: 0">
         <v-layout fill-height>
           <product-table/>
         </v-layout>
       </v-container>
     </v-main>
+    <v-footer fixed>
+      my catalog is cool
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-import CriteriaPanel from './components/CriteriaPanel.vue';
 import FilterPanel from './components/FilterPanel.vue';
 import ProductDetails from './components/ProductDetails.vue';
 import ProductTable from './components/ProductTable.vue';
@@ -46,14 +50,13 @@ export default {
   name: 'App',
 
   components: {
-    CriteriaPanel,
     ProductTable,
     ProductDetails,
     FilterPanel,
   },
 
   data: () => ({
-    showFilterPanel: false,
+    showFilterPanel: true,
     ProductDetails  //
   }),
 

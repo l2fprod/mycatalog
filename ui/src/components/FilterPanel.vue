@@ -15,6 +15,7 @@
             <v-chip v-for="filter in filters" v-bind:key="filter.id"
               small
               :value="filter"
+              filter
             >
               {{ filter.label }}
             </v-chip>
@@ -36,6 +37,7 @@
             <v-chip v-for="category in orderBy(categories, 'label')" v-bind:key="category.id"
               small
               :value="category"
+              filter
             >
               {{ category.label }}
             </v-chip>
@@ -56,6 +58,7 @@
             <v-chip v-for="region in orderBy(regions, 'label')" v-bind:key="region.id"
               small
               :value="region"
+              filter
             >
               {{ region.label }}
             </v-chip>

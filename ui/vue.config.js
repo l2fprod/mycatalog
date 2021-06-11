@@ -6,15 +6,15 @@ module.exports = {
   devServer: {
     proxy: {
       '^/generated': {
-        target: 'https://mycatalog.mybluemix.net/',
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
         // logLevel: 'debug'
       },
       '^/js': {
-        target: 'https://mycatalog.mybluemix.net/',
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
         // logLevel: 'debug'
       },
       '^/icons': {
-        target: 'https://mycatalog.mybluemix.net/',
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
         // logLevel: 'debug'
       },
     }

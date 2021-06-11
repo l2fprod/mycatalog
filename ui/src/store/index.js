@@ -125,6 +125,12 @@ export default new Vuex.Store({
   mutations: {
     SET_RESOURCES(state, resources) {
       state.resources = resources
+      state.resources.forEach((resource) => {
+        resource.tags = [...new Set(resource.tags)];
+        resource.tags.sort();
+        resource.geo_tags = [...new Set(resource.geo_tags)];
+        resource.geo_tags.sort();
+      });
       state.filteredResources = applyFilter(state);
       state.selectedResource = null;
     },

@@ -94,6 +94,16 @@
 }`'/>
         </v-expansion-panel-content>
       </v-expansion-panel>
+      <v-expansion-panel>
+        <v-expansion-panel-header>
+          Tags
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-chip-group column>
+            <v-chip v-for="tag in resource.tags" v-bind:key="tag" small outlined label>{{ tag }}</v-chip>
+          </v-chip-group>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
     </v-expansion-panels>
   </v-navigation-drawer>
 </template>
