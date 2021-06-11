@@ -24,5 +24,11 @@ module.exports = {
         // logLevel: 'debug'
       },
     }
+  },
+  pages: {
+    index: {
+      entry: 'src/main.js',
+      title: 'My Catalog'
+    }
   }
 }
