@@ -16,9 +16,10 @@ var appEnv = cfenv.getAppEnv();
 
 app.use(compress());
 app.use(cors());
+app.use(express.json());
 app.use(bodyParser.urlencoded({
   extended: true
-}))
+}));
 
 app.get('/generated/drawio.xml', (req, res) => {
   res.redirect('https://l2fprod.github.io/myarchitecture/drawio.xml');
