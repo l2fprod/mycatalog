@@ -35,8 +35,16 @@
         </v-layout>
       </v-container>
     </v-main>
-    <v-footer fixed>
-      my catalog is cool
+    <v-footer fixed app>
+      <span>
+        <b>My Catalog</b> uses the public <a href="https://cloud.ibm.com/apidocs/resource-catalog/global-catalog">Global Catalog API</a>
+        to retrieve data from the official <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>.
+        It attempts to be as accurate as possible. Use with care.
+      </span>
+      <v-spacer></v-spacer>
+      <span>
+        made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>
+      </span>
     </v-footer>
   </v-app>
 </template>
