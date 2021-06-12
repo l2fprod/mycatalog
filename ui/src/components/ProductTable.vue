@@ -52,7 +52,7 @@
     </template>
     <template v-slot:[`item.displayName`]="{ item }">
       <span v-if="item.metadata.ui.hidden">{{ item.displayName }}</span>
-      <a v-else :href="`https://cloud.ibm.com/catalog/services/${item.name}`">{{ item.displayName }}</a>
+      <a v-else @click.stop :href="`https://cloud.ibm.com/catalog/services/${item.name}`">{{ item.displayName }}</a>
     </template>
     <template
       v-for="region in this.$store.state.config.regions"
