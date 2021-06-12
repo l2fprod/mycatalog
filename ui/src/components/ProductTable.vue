@@ -7,6 +7,7 @@
     style="width: 100%"
     disable-pagination
     fixed-header
+    dense
     hide-default-footer
     show-select
     @click:row="selectRow"
