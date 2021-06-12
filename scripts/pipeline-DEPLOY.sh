@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # bzip2 required by nodejs npm install (phantomjs-prebuilt extract)
 sudo apt-get update
@@ -11,6 +12,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 nvm install 12.15.0
 
 # Build new UI
+npm install --global yarn
 (cd ui; yarn; yarn build)
 
 # Retrieve resources
