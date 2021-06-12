@@ -37,7 +37,15 @@ function applyFilter(state) {
     }
   });
 
-  console.log("Filtering with", "includeTags=", includeTags, "excludeTags=", excludeTags, "state=", state);
+  console.log("Filtering with", "search=", searchTerm, "includeTags=", includeTags, "excludeTags=", excludeTags, "state=", state);
+
+  // if no filter, filteredResources == resources
+  if (searchTerm == null &&
+      includeTags.length == 0 &&
+      excludeTags.length == 0 &&
+      state.selectedCategories.length == 0) {
+    return state.resources;
+  }
 
   state.resources.forEach((resource) => {
     let keepResource = false;
