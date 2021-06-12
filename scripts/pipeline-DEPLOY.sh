@@ -10,6 +10,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 . ~/.nvm/nvm.sh
 nvm install 12.15.0
 
+# Build new UI
+(cd ui; yarn; yarn build)
+
 # Retrieve resources
 npm install
 ./retrieve.sh
