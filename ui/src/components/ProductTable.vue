@@ -204,4 +204,8 @@ export default Vue.extend({
   margin-right: 48px;
   margin-bottom: 56px;
 }
+
+/deep/ tbody tr:nth-of-type(odd) {
+   background-color: rgba(0, 0, 0, .03);
+ }
 </style>
