@@ -77,7 +77,7 @@ export default Vue.extend({
   mixins: [Vue2Filters.mixin],
   data() {
     return {
-      panels: [ 0, 1, 2 ],
+      panels: [ 0, 1 ],
       selectedCategories: [],
       selectedRegions: [],
       selectedFilters: [],

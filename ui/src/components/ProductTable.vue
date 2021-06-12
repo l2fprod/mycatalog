@@ -169,7 +169,10 @@ export default Vue.extend({
         width: 50,
       });
     });
-    headers.push({ text: "Tags", value: "tags", sortable: false });
+    // headers.push({
+    //   text: "Tags", value: "tags", sortable: false,
+    //   width: 500
+    // });
     // { text: "Description", value: "description" },
     return {
       headers,
@@ -199,13 +202,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.productTable {
-  margin: 0px;
-  margin-left: 48px;
-  margin-right: 48px;
-  margin-bottom: 56px;
-}
-
 /deep/ tbody tr:nth-of-type(odd) {
    background-color: rgba(0, 0, 0, .03);
  }
