@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar app flat clipped-left clipped-right>
-      <v-app-bar-nav-icon @click.stop="showFilterPanel = !showFilterPanel"></v-app-bar-nav-icon>
+    <v-app-bar app flat clipped-left clipped-right class="blue accent-2 white--text">
+      <v-app-bar-nav-icon @click.stop="showFilterPanel = !showFilterPanel" class="white--text"></v-app-bar-nav-icon>
       <v-toolbar-title>My Catalog</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-responsive max-width="500">
@@ -15,12 +15,17 @@
           clearable
           :value="searchTerm"
           @change="setSearchTerm"
-          @click:clear="setSearchTerm('')"
+          @click:clear="setSearchTerm('', true)"
+          @keydown.esc="setSearchTerm('', true)"
           v-on:keyup="setSearchTerm($event.target.value)"
           placeholder="Search Resources"
+          prepend-inner-icon="mdi-magnify"
         ></v-text-field>
       </v-responsive>
       <v-spacer></v-spacer>
+      <v-btn icon href="https://github.com/l2fprod/mycatalog/" class="white--text">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-navigation-drawer
       app clipped left width="300"
@@ -35,7 +40,7 @@
         </v-layout>
       </v-container>
     </v-main>
-    <v-footer fixed app>
+    <v-footer fixed app class="text-body-2">
       <span>
         <b>My Catalog</b> uses the public <a href="https://cloud.ibm.com/apidocs/resource-catalog/global-catalog">Global Catalog API</a>
         to retrieve data from the official <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>.
@@ -79,14 +84,18 @@ export default {
   },
 
   methods: {
-    setSearchTerm(text) {
+    setSearchTerm(text, immediate = false) {
       if (this.searchTimer) {
         clearTimeout(this.searchTimer);
         this.searchTimer = null;
       }
-      this.searchTimer = setTimeout(() => {
+      if (immediate) {
         this.$store.commit('SET_SEARCH_TERM', text);
-      }, 300);
+      } else {
+        this.searchTimer = setTimeout(() => {
+          this.$store.commit('SET_SEARCH_TERM', text);
+        }, 300);
+      }
     }
   }
 };
