@@ -14,11 +14,13 @@ store.commit('SET_CONFIG', {
   filters: [
     {
       "id": "custom_kind_iaas",
-      "label": "IaaS"
+      "label": "IaaS",
+      "icon": "mdi-server"
     },
     {
       "id": "custom_kind_service",
-      "label": "PaaS"
+      "label": "PaaS",
+      "icon": "mdi-room-service"
     },
     {
       "id": "ibm_created",
@@ -36,37 +38,43 @@ store.commit('SET_CONFIG', {
       "tags": [
         "ibm_experimental",
         "ibm_beta"
-      ]
+      ],
+      "icon": "mdi-thumb-up"
     },
     {
       "id": "ibm_beta",
-      "label": "Beta"
+      "label": "Beta",
+      "icon": "mdi-beta"
     },
     //  data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>
     {
       "id": "ibm_experimental",
-      "label": "Experimental"
+      "label": "Experimental",
+      "icon": "mdi-flask"
     },
     //  data-track-label="Deprecated" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-exclamation-triangle"></i>&nbsp;</button>
     {
       "id": "ibm_deprecated",
-      "label": "Deprecated"
+      "label": "Deprecated",
+      "icon": "mdi-alert"
     },
     //  data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-usd"></i>&nbsp;</button>
     {
       "id": "free",
-      "label": "Free plan"
+      "label": "Free plan",
+      "icon": "mdi-currency-usd"
     },
     //  data-track-label="Lite plan" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-usd"></i>&nbsp;</button>
     {
       "id": "lite",
-      "label": "Lite plan"
+      "label": "Lite plan",
+      "icon": "mdi-currency-usd"
     },
     //  data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="IBM public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;</button>
-    {
-      "id": "ibm_dedicated_public",
-      "label": "Syndicated"
-    },
+    // {
+    //   "id": "ibm_dedicated_public",
+    //   "label": "Syndicated"
+    // },
     //  data-track-label="IAM" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="IAM Compatible"></button>
     {
       "id": "iam_compatible",
@@ -85,12 +93,14 @@ store.commit('SET_CONFIG', {
     //  data-track-label="HIPAA" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="HIPAA"></button>
     {
       "id": "hipaa",
-      "label": "HIPAA"
+      "label": "HIPAA",
+      "icon": "mdi-hospital-box"
     },
     //  data-track-label="FS Validated" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="Financial Services Validated"></button>
     {
       "id": "fs_ready",
-      "label": "FS Validated"
+      "label": "FS Validated",
+      "icon": "mdi-bank"
     },
   ],
 });

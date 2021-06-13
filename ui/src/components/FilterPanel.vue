@@ -17,6 +17,8 @@
               :value="filter"
               filter
             >
+              <v-icon v-if="filter.icon">{{ filter.icon }}</v-icon>
+              <span v-if="filter.icon">&nbsp;</span>
               {{ filter.label }}
             </v-chip>
           </v-chip-group>
