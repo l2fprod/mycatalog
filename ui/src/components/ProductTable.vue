@@ -40,6 +40,9 @@
             <v-btn icon @click="exportSelection('docx')">
               <img src="/icons/word_logo.png" height="30" width="30" />
             </v-btn>
+            <div>
+             Get <a href="/generated/cheatsheet.pdf">the Poster</a> (and <a href="/generated/cheatsheet-dark.pdf">in dark mode</a>)
+            </div>
           </v-toolbar>
         </v-row>
       </v-container>
