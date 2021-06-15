@@ -149,8 +149,17 @@ export default new Vuex.Store({
     },
     SET_SELECTED_RESOURCE(state, selectedResource) {
       state.selectedResource = selectedResource;
-      state.selectedPlan = selectedResource && selectedResource.plans && selectedResource.plans.length > 0 ?
-        selectedResource.plans[0] : null;
+      let plan = null;
+      if (selectedResource && selectedResource.plans && selectedResource.plans.length > 0) {
+        plan = selectedResource.plans.find(plan => plan.name === "lite")
+        if (!plan) {
+          plan = selectedResource.plans.find(plan => plan.name === "standard");
+        }
+        if (!plan) {
+          plan = selectedResource.plans[0];
+        }
+      }
+      state.selectedPlan = plan;
     },
     SET_SELECTED_PLAN(state, selectedPlan) {
       state.selectedPlan = selectedPlan
