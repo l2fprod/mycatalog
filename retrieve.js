@@ -248,9 +248,11 @@ function ServiceUpdater() {
     });
 
     // keep "iaas" and "service"
+    // and get rid of the services not visible in the catalog UI
     tasks.push((callback) => {
       resources = resources.filter(resource =>
         (resource.kind === 'iaas' || resource.kind === 'service') &&
+        !resource.metadata.ui.hidden &&
         (!resource.group || resource.parent_url));
       callback(null);
     });
