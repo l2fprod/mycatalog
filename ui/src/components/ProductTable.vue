@@ -68,27 +68,10 @@
       v-for="region in this.$store.state.config.regions"
       v-slot:[`item.${region.id}`]="{ item }"
     >
-      <v-icon
-        v-bind:key="region.id + '_availability'"
+      <v-icon v-for="icon in getRegionIcon(item, region)"
+        v-bind:key="icon.id"
         small
-        v-if="
-          !showStatusOverlay &&
-          ((item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
-            item.tags.indexOf(region.tag) >= 0)
-        "
-        >mdi-checkbox-marked-circle</v-icon
-      >
-      <v-icon
-        v-bind:key="region.id + '_status'"
-        small
-        :color="hasIncident(item.name, region.id) ? 'red' : 'green'"
-        v-else-if="
-          showStatusOverlay &&
-          ((item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
-            item.tags.indexOf(region.tag) >= 0)
-        "
-        >mdi-checkbox-marked-circle</v-icon
-      >
+        :color="icon.color">{{ icon.icon }}</v-icon>
     </template>
     <template v-slot:[`item.tags`]="{ item }">
       <v-lazy>
@@ -234,6 +217,30 @@ export default Vue.extend({
     hasIncident(resourceName, region) {
       return this.$store.getters.hasIncident(resourceName, region);
     },
+    getRegionIcon(resource, region) {
+      if (resource.tags.indexOf(region.tag) < 0 &&
+         (resource.geo_tags != null && resource.geo_tags.indexOf('global') < 0)) {
+        return [];
+      }
+
+      let icon = "mdi-checkbox-marked-circle";
+      let color = null;
+
+      if (this.showStatusOverlay) {
+        if (this.hasIncident(resource.name, region.id)) {
+          color = "red";
+          icon = "mdi-alert-circle";
+        } else {
+          color = "green";
+        }
+      }
+
+      return [{
+        id: region.id,
+        icon,
+        color,
+      }];
+    }
   },
 });
 </script>
