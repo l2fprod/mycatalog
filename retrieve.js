@@ -249,10 +249,24 @@ function ServiceUpdater() {
 
     // keep "iaas" and "service"
     // and get rid of the services not visible in the catalog UI
+    const ignoredResources = [
+      'compose-enterprise',
+      'compose-for-elasticsearch',
+      'compose-for-etcd',
+      'compose-for-mongodb',
+      'compose-for-mysql',
+      'compose-for-postgresql',
+      'compose-for-rabbitmq',
+      'compose-for-redis',
+      'compose-for-rethinkdb',
+      'compose-for-scylladb',
+      'icp'
+    ]
     tasks.push((callback) => {
       resources = resources.filter(resource =>
+        ignoredResources.indexOf(resource.name) < 0 &&
         (resource.kind === 'iaas' || resource.kind === 'service') &&
-        !resource.metadata.ui.hidden &&
+        (!resource.metadata.ui.hidden || resource.tags.indexOf('vmware_service') >= 0) &&
         (!resource.group || resource.parent_url));
       callback(null);
     });
