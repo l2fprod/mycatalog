@@ -122,7 +122,7 @@ export default new Vuex.Store({
     selectedRegions: [],
     selectedFilters: [],
     searchTerm: null,
-    showStatusOverlay: true,
+    showStatusOverlay: false,
 
     filteredResources: [],
 
