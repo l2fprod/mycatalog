@@ -17,7 +17,7 @@
     <template v-slot:top>
       <v-container fluid>
         <v-row>
-          <v-toolbar dense flat>
+          <v-toolbar dense flat color="blue lighten-5">
             <v-toolbar-title>
               <div class="text-body-2">
               <b>{{ resources.length }}</b> resources in the catalog
@@ -41,16 +41,13 @@
               <img src="/icons/word_logo.png" height="30" width="30" />
             </v-btn>
             <div class="text-body-2">
-             Get <a href="/generated/cheatsheet.pdf">the Poster</a> (and <a href="/generated/cheatsheet-dark.pdf">in dark mode</a>)
+             Get the poster in <a target="_new" href="/generated/cheatsheet.pdf">light</a> or <a target="_new" href="/generated/cheatsheet-dark.pdf">dark</a>
             </div>
           </v-toolbar>
         </v-row>
       </v-container>
     </template>
     <template v-slot:[`item.icon`]="{ item }">
-      <!-- <v-lazy>
-        <img :src="'/generated/icons/' + item.id + '.png'" width="16" />
-      </v-lazy> -->
       <v-img :src="'/generated/icons/' + item.id + '.png'" width="16" />
     </template>
     <template v-slot:[`item.displayName`]="{ item }">
