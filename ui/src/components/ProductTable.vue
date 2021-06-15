@@ -61,15 +61,17 @@
       v-for="region in this.$store.state.config.regions"
       v-slot:[`item.${region.id}`]="{ item }"
     >
-      <v-icon v-bind:key="region.id"
-        
+      <v-icon v-bind:key="region.id + '_availability'"
         small
-        v-if="
-          (item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
-          item.tags.indexOf(region.tag) >= 0
-        "
-        >mdi-checkbox-marked-circle</v-icon
-      >
+        v-if="!showStatusOverlay &&
+          ((item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
+          item.tags.indexOf(region.tag) >= 0)">mdi-checkbox-marked-circle</v-icon>
+      <v-icon v-bind:key="region.id + '_status'"
+        small
+        :color="hasIncident(item.name, region.id) ? 'red' : 'green'"
+        v-else-if="showStatusOverlay &&
+          ((item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
+          item.tags.indexOf(region.tag) >= 0)">mdi-checkbox-marked-circle</v-icon>
     </template>
     <template v-slot:[`item.tags`]="{ item }">
       <v-lazy>
@@ -189,6 +191,9 @@ export default Vue.extend({
     filteredResources() {
       return this.$store.state.filteredResources;
     },
+    showStatusOverlay() {
+      return this.$store.state.showStatusOverlay;
+    }
   },
   methods: {
     selectRow(row) {
@@ -199,6 +204,9 @@ export default Vue.extend({
         format,
         selectedResources: this.selectedResources
       });
+    },
+    hasIncident(resourceName, region) {
+      return this.$store.getters.hasIncident(resourceName, region);
     }
   },
 });

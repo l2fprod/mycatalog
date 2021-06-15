@@ -114,7 +114,7 @@ function applyFilter(state) {
 export default new Vuex.Store({
   state: {
     resources: [],
-    
+    resourceStatuses: {},
     selectedResources: [],
     selectedResource: null,
     selectedPlan: null,
@@ -122,7 +122,8 @@ export default new Vuex.Store({
     selectedRegions: [],
     selectedFilters: [],
     searchTerm: null,
-    
+    showStatusOverlay: true,
+
     filteredResources: [],
 
     config: {
@@ -158,6 +159,9 @@ export default new Vuex.Store({
       state.searchTerm = searchTerm;
       state.filteredResources = applyFilter(state);
     },
+    SET_SHOW_STATUS_OVERLAY(state, showStatusOverlay) {
+      state.showStatusOverlay = showStatusOverlay;
+    },
     SET_CONFIG(state, config) {
       state.config = config;
       // put regions and categories in a good order from the start
@@ -175,6 +179,43 @@ export default new Vuex.Store({
     SET_SELECTED_FILTERS(state, selectedFilters) {
       state.selectedFilters = selectedFilters;
       state.filteredResources = applyFilter(state);
+    },
+    SET_STATUSES(state, statusItems) {
+      state.resourceStatuses = {};
+      console.log(`Got ${statusItems.length} status updates`);
+
+      state.resources.forEach((resource) => {
+        state.resourceStatuses[resource.name] = {
+          hasIncident: false,
+          regionsWithIncidents: {}
+        };
+      });
+
+      statusItems.forEach((statusItem) => {
+        if (statusItem.type == 'incident' &&
+            statusItem.state != 'resolved') {
+          statusItem.resourceIDs.forEach(resourceId => {
+            // is.vpc comes as is-vpc in incident
+            if (resourceId == 'is-vpc') {
+              resourceId = 'is.vpc'
+            }
+            if (state.resourceStatuses[resourceId]) {
+              state.resourceStatuses[resourceId].hasIncident = true;
+              statusItem.regions.forEach((region) => {
+                state.resourceStatuses[resourceId].regionsWithIncidents[region] = true;
+              });
+            } else {
+              console.log(`Status not found for ${resourceId}`);
+            }
+          });
+        }
+      });
+    }
+  },
+  getters: {
+    hasIncident: (state) => (resourceName, region) => {
+      const status = state.resourceStatuses[resourceName];
+      return status && status.hasIncident && status.regionsWithIncidents[region];
     }
   },
   actions: {
@@ -182,6 +223,13 @@ export default new Vuex.Store({
       axios.get('/generated/resources.json')
         .then(response => {
           commit('SET_RESOURCES', response.data);
+          this.dispatch('getStatus');
+        });
+    },
+    getStatus({commit}) {
+      axios.get('/api/status')
+        .then(response => {
+          commit('SET_STATUSES', response.data.statusItems);
         });
     },
     export({commit}, { selectedResources, format }) {

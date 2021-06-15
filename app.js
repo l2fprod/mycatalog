@@ -10,6 +10,8 @@ var app = express();
 var bodyParser = require('body-parser')
 var compress = require('compression');
 var secure = require('express-force-https');
+var request = require('request');
+
 app.use(secure);
 
 var appEnv = cfenv.getAppEnv();
@@ -23,6 +25,18 @@ app.use(bodyParser.urlencoded({
 
 app.get('/generated/drawio.xml', (req, res) => {
   res.redirect('https://l2fprod.github.io/myarchitecture/drawio.xml');
+});
+
+app.get("/api/status", (req, res) => {
+  request('https://cloud.ibm.com/status/getEnhancedStatus', {
+    json: true
+  }, function(error, response, body) {
+    if (!error && response.statusCode == 200) {
+      res.send(body);
+    } else {
+      res.sendStatus(response.statusCode).send({ "statusItems": []});
+    }
+  });
 });
 
 app.use("/api/export", require('./export2office.js'));

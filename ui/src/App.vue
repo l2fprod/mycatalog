@@ -23,9 +23,22 @@
         ></v-text-field>
       </v-responsive>
       <v-spacer></v-spacer>
-      <v-btn icon href="https://github.com/l2fprod/mycatalog/" class="white--text">
-        <v-icon>mdi-github</v-icon>
-      </v-btn>
+      <v-tooltip bottom max-width="200">
+        <template v-slot:activator="{ on, attrs }">
+          <div v-bind="attrs" v-on="on">
+            <v-switch v-model="showStatusOverlay"  dense hide-details>
+              <template v-slot:label>
+                <span class="white--text">Resource status</span>
+              </template>
+            </v-switch>
+          </div>
+        </template>
+        <span>
+          Shows <v-icon small color="red">mdi-checkbox-marked-circle</v-icon>
+          if there is an incident in progress for the resource in the region,
+          <v-icon small color="green">mdi-checkbox-marked-circle</v-icon> otherwise
+        </span>
+      </v-tooltip>
     </v-app-bar>
     <v-navigation-drawer
       app clipped left width="300"
@@ -48,7 +61,8 @@
       </span>
       <v-spacer></v-spacer>
       <span>
-        made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>
+        made by <a href="https://twitter.com/lionelmace">lionel</a> and <a href="https://twitter.com/l2fprod">fred</a>,
+        source on <v-btn icon href="https://github.com/l2fprod/mycatalog/" x-small><v-icon>mdi-github</v-icon></v-btn>
       </span>
     </v-footer>
   </v-app>
@@ -80,6 +94,14 @@ export default {
   computed: {
     searchTerm() {
       return this.$store.state.searchTerm;
+    },
+    showStatusOverlay: {
+      get() {
+        return this.$store.state.showStatusOverlay;
+      },
+      set(value) {
+        this.$store.commit('SET_SHOW_STATUS_OVERLAY', value);
+      }
     }
   },
 
