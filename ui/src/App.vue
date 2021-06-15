@@ -23,22 +23,55 @@
         ></v-text-field>
       </v-responsive>
       <v-spacer></v-spacer>
-      <v-tooltip bottom max-width="200">
+      <v-menu left bottom tile offset-y offset-x title="Export to Office documents">
         <template v-slot:activator="{ on, attrs }">
-          <div v-bind="attrs" v-on="on">
-            <v-switch v-model="showStatusOverlay"  dense hide-details>
-              <template v-slot:label>
-                <span class="white--text">Resource status</span>
-              </template>
-            </v-switch>
-          </div>
+          <v-btn
+            icon
+            v-bind="attrs"
+            v-on="on"
+            class="white--text"
+            title="Export Selection"
+          >
+            <v-icon>mdi-export-variant</v-icon>
+          </v-btn>
         </template>
-        <span>
-          Shows <v-icon small color="red">mdi-checkbox-marked-circle</v-icon>
-          if there is an incident in progress for the resource in the region,
-          <v-icon small color="green">mdi-checkbox-marked-circle</v-icon> otherwise
-        </span>
-      </v-tooltip>
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>
+              <b>Export selection to</b>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="exportSelection('pptx')">
+            <v-list-item-title>
+              <div><img src="/icons/ppt_logo.png" height="16" width="16"/>
+              &nbsp; Powerpoint
+              </div>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="exportSelection('xlsx')">
+            <v-list-item-title>
+              <div><img src="/icons/excel_logo.png" height="16" width="16"/>
+              &nbsp; Excel
+              </div>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="exportSelection('docx')">
+            <v-list-item-title>
+              <div><img src="/icons/word_logo.png" height="16" width="16"/>
+              &nbsp; Word
+              </div>
+            </v-list-item-title>
+          </v-list-item>
+          <v-divider />
+          <v-list-item>
+            <v-list-item-title class="text-center">
+              <img src="/icons/poster.png" width="200"/>
+              <br/>
+              Get the poster in <a target="_new" href="/generated/cheatsheet.pdf">light</a> or <a target="_new" href="/generated/cheatsheet-dark.pdf">dark</a>
+            </v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
     <v-navigation-drawer
       app clipped left width="300"
@@ -94,14 +127,6 @@ export default {
   computed: {
     searchTerm() {
       return this.$store.state.searchTerm;
-    },
-    showStatusOverlay: {
-      get() {
-        return this.$store.state.showStatusOverlay;
-      },
-      set(value) {
-        this.$store.commit('SET_SHOW_STATUS_OVERLAY', value);
-      }
     }
   },
 
@@ -118,7 +143,12 @@ export default {
           this.$store.commit('SET_SEARCH_TERM', text);
         }, 300);
       }
-    }
+    },
+    exportSelection(format) {
+      this.$store.dispatch('exportSelection', {
+        format,
+      });
+    },
   }
 };
 </script>

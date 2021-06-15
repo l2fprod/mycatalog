@@ -18,31 +18,36 @@
       <v-container fluid>
         <v-row>
           <v-toolbar dense flat color="blue lighten-5">
-            <v-toolbar-title>
-              <div class="text-body-2">
+            <div class="text-body-2">
               <b>{{ resources.length }}</b> resources in the catalog
               <span v-if="filteredResources.length != resources.length"
                 >, <b>{{ filteredResources.length }}</b> resources matching the
                 search criteria</span
               >
               <span v-if="selectedResources.length > 0"
-                >, <b>{{ selectedResources.length }}</b> selected</span>
-              </div>
-            </v-toolbar-title>
-            <v-spacer></v-spacer>
-            <span class="text-body-2">Export catalog to</span>
-            <v-btn icon @click="exportSelection('pptx')">
-              <img src="/icons/ppt_logo.png" height="30" width="30" />
-            </v-btn>
-            <v-btn icon @click="exportSelection('xlsx')">
-              <img src="/icons/excel_logo.png" height="30" width="30" />
-            </v-btn>
-            <v-btn icon @click="exportSelection('docx')">
-              <img src="/icons/word_logo.png" height="30" width="30" />
-            </v-btn>
-            <div class="text-body-2">
-             Get the poster in <a target="_new" href="/generated/cheatsheet.pdf">light</a> or <a target="_new" href="/generated/cheatsheet-dark.pdf">dark</a>
+                >, <b>{{ selectedResources.length }}</b> selected</span
+              >
             </div>
+            <v-spacer />
+            <v-tooltip bottom max-width="200">
+              <template v-slot:activator="{ on, attrs }">
+                <div v-bind="attrs" v-on="on">
+                  <v-switch v-model="showStatusOverlay" dense hide-details>
+                    <template v-slot:label>
+                      <span class="text-body-2">Resource status</span>
+                    </template>
+                  </v-switch>
+                </div>
+              </template>
+              <span>
+                Shows
+                <v-icon small color="red">mdi-checkbox-marked-circle</v-icon>
+                if there is an incident in progress for the resource in the
+                region,
+                <v-icon small color="green">mdi-checkbox-marked-circle</v-icon>
+                otherwise
+              </span>
+            </v-tooltip>
           </v-toolbar>
         </v-row>
       </v-container>
@@ -52,89 +57,104 @@
     </template>
     <template v-slot:[`item.displayName`]="{ item }">
       <span v-if="item.metadata.ui.hidden">{{ item.displayName }}</span>
-      <a v-else @click.stop :href="`https://cloud.ibm.com/catalog/services/${item.name}`">{{ item.displayName }}</a>
+      <a
+        v-else
+        @click.stop
+        :href="`https://cloud.ibm.com/catalog/services/${item.name}`"
+        >{{ item.displayName }}</a
+      >
     </template>
     <template
       v-for="region in this.$store.state.config.regions"
       v-slot:[`item.${region.id}`]="{ item }"
     >
-      <v-icon v-bind:key="region.id + '_availability'"
+      <v-icon
+        v-bind:key="region.id + '_availability'"
         small
-        v-if="!showStatusOverlay &&
+        v-if="
+          !showStatusOverlay &&
           ((item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
-          item.tags.indexOf(region.tag) >= 0)">mdi-checkbox-marked-circle</v-icon>
-      <v-icon v-bind:key="region.id + '_status'"
+            item.tags.indexOf(region.tag) >= 0)
+        "
+        >mdi-checkbox-marked-circle</v-icon
+      >
+      <v-icon
+        v-bind:key="region.id + '_status'"
         small
         :color="hasIncident(item.name, region.id) ? 'red' : 'green'"
-        v-else-if="showStatusOverlay &&
+        v-else-if="
+          showStatusOverlay &&
           ((item.geo_tags != null && item.geo_tags.indexOf('global') >= 0) ||
-          item.tags.indexOf(region.tag) >= 0)">mdi-checkbox-marked-circle</v-icon>
+            item.tags.indexOf(region.tag) >= 0)
+        "
+        >mdi-checkbox-marked-circle</v-icon
+      >
     </template>
     <template v-slot:[`item.tags`]="{ item }">
       <v-lazy>
-      <v-chip-group column>
-        <v-chip
-          v-if="item.tags.indexOf('ibm_created') >= 0"
-          label
-          x-small
-          color="primary"
-          >IBM</v-chip
-        >
-        <v-chip
-          v-if="item.tags.indexOf('ibm_third_party') >= 0"
-          label
-          x-small
-          color="green"
-          text-color="white"
-          >Third Party</v-chip
-        >
-        <v-chip
-          v-if="item.tags.indexOf('ibm_beta') >= 0"
-          label
-          x-small
-          color="orange"
-          text-color="white"
-          >Beta</v-chip
-        >
-        <v-chip
-          v-if="item.tags.indexOf('ibm_experimental') >= 0"
-          label
-          x-small
-          color="red"
-          text-color="white"
-          >Experimental</v-chip
-        >
-        <v-chip
-          v-if="item.tags.indexOf('ibm_deprecated') >= 0"
-          label
-          x-small
-          color="red"
-          text-color="white"
-          >Deprecated</v-chip
-        >
-        <v-chip
-          v-if="item.pricing_tags && item.pricing_tags.indexOf('free') >= 0"
-          label
-          x-small
-          color="secondary"
-          >Free plan</v-chip
-        >
-        <v-chip
-          v-if="item.pricing_tags && item.pricing_tags.indexOf('lite') >= 0"
-          label
-          x-small
-          color="secondary"
-          >Lite plan</v-chip
-        >
-        <v-chip
-          v-if="item.geo_tags && item.geo_tags.indexOf('global') >= 0"
-          label
-          x-small
-          color="orange"
-          text-color="white"
-          >Global</v-chip
-        >
-      </v-chip-group>
+        <v-chip-group column>
+          <v-chip
+            v-if="item.tags.indexOf('ibm_created') >= 0"
+            label
+            x-small
+            color="primary"
+            >IBM</v-chip
+          >
+          <v-chip
+            v-if="item.tags.indexOf('ibm_third_party') >= 0"
+            label
+            x-small
+            color="green"
+            text-color="white"
+            >Third Party</v-chip
+          >
+          <v-chip
+            v-if="item.tags.indexOf('ibm_beta') >= 0"
+            label
+            x-small
+            color="orange"
+            text-color="white"
+            >Beta</v-chip
+          >
+          <v-chip
+            v-if="item.tags.indexOf('ibm_experimental') >= 0"
+            label
+            x-small
+            color="red"
+            text-color="white"
+            >Experimental</v-chip
+          >
+          <v-chip
+            v-if="item.tags.indexOf('ibm_deprecated') >= 0"
+            label
+            x-small
+            color="red"
+            text-color="white"
+            >Deprecated</v-chip
+          >
+          <v-chip
+            v-if="item.pricing_tags && item.pricing_tags.indexOf('free') >= 0"
+            label
+            x-small
+            color="secondary"
+            >Free plan</v-chip
+          >
+          <v-chip
+            v-if="item.pricing_tags && item.pricing_tags.indexOf('lite') >= 0"
+            label
+            x-small
+            color="secondary"
+            >Lite plan</v-chip
+          >
+          <v-chip
+            v-if="item.geo_tags && item.geo_tags.indexOf('global') >= 0"
+            label
+            x-small
+            color="orange"
+            text-color="white"
+            >Global</v-chip
+          >
+        </v-chip-group>
       </v-lazy>
     </template>
   </v-data-table>
@@ -143,8 +163,6 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  components: {
-  },
   data() {
     const headers = [
       {
@@ -178,7 +196,6 @@ export default Vue.extend({
     // { text: "Description", value: "description" },
     return {
       headers,
-      selectedResources: [],
     };
   },
   computed: {
@@ -188,29 +205,41 @@ export default Vue.extend({
     filteredResources() {
       return this.$store.state.filteredResources;
     },
-    showStatusOverlay() {
-      return this.$store.state.showStatusOverlay;
-    }
+    selectedResources: {
+      get() {
+        return this.$store.state.selectedResources;
+      },
+      set(values) {
+        this.$store.commit("SET_SELECTED_RESOURCES", values);
+      },
+    },
+    showStatusOverlay: {
+      get() {
+        return this.$store.state.showStatusOverlay;
+      },
+      set(value) {
+        this.$store.commit("SET_SHOW_STATUS_OVERLAY", value);
+      },
+    },
   },
   methods: {
     selectRow(row) {
       this.$store.commit("SET_SELECTED_RESOURCE", row);
     },
     exportSelection(format) {
-      this.$store.dispatch('export', {
+      this.$store.dispatch("exportSelection", {
         format,
-        selectedResources: this.selectedResources
       });
     },
     hasIncident(resourceName, region) {
       return this.$store.getters.hasIncident(resourceName, region);
-    }
+    },
   },
 });
 </script>
 
 <style scoped>
 /deep/ tbody tr:nth-of-type(odd) {
-   background-color: rgba(0, 0, 0, .03);
- }
+  background-color: rgba(0, 0, 0, 0.03);
+}
 </style>

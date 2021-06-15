@@ -232,15 +232,15 @@ export default new Vuex.Store({
           commit('SET_STATUSES', response.data.statusItems);
         });
     },
-    export({commit}, { selectedResources, format }) {
-      const selectedIds = selectedResources.map(resource => resource.id);
+    exportSelection({commit}, {format}) {
+      const selectedIds = this.state.selectedResources.map(resource => resource.id);
       axios.post(`/api/export/${format}`, {
         resources: selectedIds.length > 0 ? selectedIds : null
       },
       {
         responseType: 'blob'
       }).then((response) => fileDownload(response.data, `mycatalog-${new Date().toJSON().slice(0,10)}.${format}`));
-    },
+    }
   },
   modules: {
   }
