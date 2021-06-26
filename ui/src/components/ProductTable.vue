@@ -1,5 +1,6 @@
 <template>
   <v-data-table
+    mobile-breakpoint="0"
     :loading="resources.length == 0"
     :headers="headers"
     :items="filteredResources"
