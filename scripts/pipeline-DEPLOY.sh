@@ -7,9 +7,9 @@ sudo apt-get install -y bzip2
 
 # Prepare env
 npm config delete prefix
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 . ~/.nvm/nvm.sh
-nvm install 12.15.0
+nvm install 15.14.0
 
 # Build new UI
 npm install --global yarn
