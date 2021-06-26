@@ -243,7 +243,7 @@ export default new Vuex.Store({
     },
     exportSelection({commit}, {format}) {
       const selectedIds = this.state.selectedResources.map(resource => resource.id);
-      axios.post(`/api/export/${format}`, {
+      return axios.post(`/api/export/${format}`, {
         resources: selectedIds.length > 0 ? selectedIds : null
       },
       {

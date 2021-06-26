@@ -32,6 +32,8 @@
             v-on="on"
             icon
             @click="exportSelection('pptx')"
+            :loading="exporting.pptx"
+            color="red lighten-1"
             >
             <img src="/icons/ppt_logo.png" height="24" width="24"/>
           </v-btn>
@@ -45,6 +47,8 @@
             v-on="on"
             icon
             @click="exportSelection('xlsx')"
+            :loading="exporting.xlsx"
+            color="green darken-3"
             >
             <img src="/icons/excel_logo.png" height="24" width="24"/>
           </v-btn>
@@ -58,6 +62,8 @@
             v-on="on"
             icon
             @click="exportSelection('docx')"
+            :loading="exporting.docx"
+            color="light-blue lighten-3"
             >
             <img src="/icons/word_logo.png" height="24" width="24"/>
           </v-btn>
@@ -145,6 +151,11 @@ export default {
 
   data: () => ({
     showFilterPanel: true,
+    exporting: {
+      pptx: false,
+      xlsx: false,
+      docx: false,
+    },
     ProductDetails  //
   }),
 
@@ -173,8 +184,11 @@ export default {
       }
     },
     exportSelection(format) {
+      this.exporting[format] = true;
       this.$store.dispatch('exportSelection', {
         format,
+      }).finally(() => {
+        this.exporting[format] = false;
       });
     },
   }
