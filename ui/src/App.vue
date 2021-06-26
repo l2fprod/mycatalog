@@ -6,6 +6,7 @@
       <v-spacer></v-spacer>
       <v-responsive max-width="500">
         <v-text-field
+          spellcheck="false"
           hide-details
           rounded
           autofocus
@@ -23,55 +24,82 @@
         ></v-text-field>
       </v-responsive>
       <v-spacer></v-spacer>
-      <v-menu left bottom tile offset-y offset-x title="Export to Office documents">
+      Export to
+      <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
-            icon
             v-bind="attrs"
             v-on="on"
-            class="white--text"
-            title="Export Selection"
-          >
-            <v-icon>mdi-export-variant</v-icon>
+            icon
+            @click="exportSelection('pptx')"
+            >
+            <img src="/icons/ppt_logo.png" height="24" width="24"/>
           </v-btn>
         </template>
-        <v-list>
-          <v-list-item>
-            <v-list-item-title>
-              <b>Export selection to</b>
-            </v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="exportSelection('pptx')">
-            <v-list-item-title>
-              <div><img src="/icons/ppt_logo.png" height="16" width="16"/>
-              &nbsp; Powerpoint
-              </div>
-            </v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="exportSelection('xlsx')">
-            <v-list-item-title>
-              <div><img src="/icons/excel_logo.png" height="16" width="16"/>
-              &nbsp; Excel
-              </div>
-            </v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="exportSelection('docx')">
-            <v-list-item-title>
-              <div><img src="/icons/word_logo.png" height="16" width="16"/>
-              &nbsp; Word
-              </div>
-            </v-list-item-title>
-          </v-list-item>
-          <v-divider />
-          <v-list-item>
-            <v-list-item-title class="text-center">
-              <img src="/icons/poster.png" width="200"/>
-              <br/>
-              Get the poster in <a target="_new" href="/generated/cheatsheet.pdf">light</a> or <a target="_new" href="/generated/cheatsheet-dark.pdf">dark</a>
-            </v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
+        <span>Export selection to Powerpoint</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            v-bind="attrs"
+            v-on="on"
+            icon
+            @click="exportSelection('xlsx')"
+            >
+            <img src="/icons/excel_logo.png" height="24" width="24"/>
+          </v-btn>
+        </template>
+        <span>Export selection to Excel</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            v-bind="attrs"
+            v-on="on"
+            icon
+            @click="exportSelection('docx')"
+            >
+            <img src="/icons/word_logo.png" height="24" width="24"/>
+          </v-btn>
+        </template>
+        <span>Export selection to Word</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            v-bind="attrs"
+            v-on="on"
+            icon
+            href="/generated/cheatsheet.pdf"
+            target="_blank"
+            >
+            <v-icon color="white">mdi-format-list-text</v-icon>
+          </v-btn>
+        </template>
+        <span>
+          <img src="/icons/poster.png" width="200"/>
+          <br/>
+          Get the poster with a light background
+        </span>
+      </v-tooltip>
+
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            v-bind="attrs"
+            v-on="on"
+            icon
+            title="Get the poster with a dark background"
+            href="/generated/cheatsheet-dark.pdf"
+            target="_blank"
+            >
+            <v-icon>mdi-format-list-text</v-icon>
+          </v-btn>
+        </template>
+        <span>
+          Get the poster with a dark background
+        </span>
+      </v-tooltip>
     </v-app-bar>
     <v-navigation-drawer
       app clipped left width="300"
