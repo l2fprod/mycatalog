@@ -1,10 +1,11 @@
 module.exports = {
-  outputDir: '../public/next',
-  publicPath: '/next',
+  outputDir: '../public/ui',
+  publicPath: '/',
   transpileDependencies: [
     'vuetify',
     'markdown-it-prism'
   ],
+  productionSourceMap: false,
   devServer: {
     proxy: {
       '^/generated': {

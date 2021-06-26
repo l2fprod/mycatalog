@@ -41,6 +41,8 @@ app.get("/api/status", (req, res) => {
 
 app.use("/api/export", require('./export2office.js'));
 
+// serve the user interface
+app.use(express.static('./public/ui'));
 // serve the files out of ./public as our main files
 app.use(express.static('./public'));
 app.use(favicon(__dirname + '/public/icons/favicon.ico'));
