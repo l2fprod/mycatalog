@@ -73,7 +73,7 @@
             href="/generated/cheatsheet.pdf"
             target="_blank"
             >
-            <v-icon color="white">mdi-format-list-text</v-icon>
+            <v-icon color="black" class="white">mdi-format-list-text</v-icon>
           </v-btn>
         </template>
         <span>
@@ -93,7 +93,7 @@
             href="/generated/cheatsheet-dark.pdf"
             target="_blank"
             >
-            <v-icon>mdi-format-list-text</v-icon>
+            <v-icon color="white" class="black">mdi-format-list-text</v-icon>
           </v-btn>
         </template>
         <span>
