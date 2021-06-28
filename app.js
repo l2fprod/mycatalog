@@ -43,6 +43,9 @@ app.use("/api/export", require('./export2office.js'));
 
 // serve the user interface
 app.use(express.static('./public/ui'));
+// redirect the old new UI
+app.get('/next*', (req, res) => { res.redirect('/'); });
+
 // serve the files out of ./public as our main files
 app.use(express.static('./public'));
 app.use(favicon(__dirname + '/public/icons/favicon.ico'));
