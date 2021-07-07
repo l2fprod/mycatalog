@@ -107,6 +107,12 @@ store.commit('SET_CONFIG', {
       "id": "satellite_enabled",
       "label": "Satellite Enabled",
       "icon": "mdi-satellite-variant"
+    },
+    // service endpoint supported
+    {
+      "id": "service_endpoint_supported",
+      "label": "Service Endpoint Supported",
+      "icon": "mdi-lock-check"
     }
   ],
 });
