@@ -102,6 +102,12 @@ store.commit('SET_CONFIG', {
       "label": "FS Validated",
       "icon": "mdi-bank"
     },
+    // satellite
+    {
+      "id": "satellite_enabled",
+      "label": "Satellite Enabled",
+      "icon": "mdi-satellite-variant"
+    }
   ],
 });
 
