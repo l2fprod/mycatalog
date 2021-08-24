@@ -180,7 +180,7 @@ function CheatSheet() {
         return;
       }
 
-      nextLine(lineHeight);
+      nextLine(lineHeight / 1.5);
       sheet
         .lineCap('round')
         .lineWidth(lineHeight)
