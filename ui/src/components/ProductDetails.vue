@@ -91,6 +91,7 @@
   service = \"${resource.name}\"
   plan = \"${selectedPlan.name }\"
   location = \"us-south\"
+  resource_group_id = \"\"
 }`'/>
         </v-expansion-panel-content>
       </v-expansion-panel>
