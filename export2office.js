@@ -44,7 +44,7 @@ router.post('/:format', function (req, res) {
       officeDocument = exportToWord(servicesToExport, dateMDY, res);
       break;
     case "pptx":
-      officeDocument = exportToPowerpoint(servicesToExport, dateMDY, res);
+      officeDocument = exportToPowerpoint('fr', servicesToExport, dateMDY, res);
       break;
     default:
       res.status(500).send({
@@ -327,7 +327,7 @@ function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
 // ---------------------------------------------------------------------
 // API Export to PPTX
 // ---------------------------------------------------------------------
-function exportToPowerpoint(services, dateMDY, res) {
+function exportToPowerpoint(locale, services, dateMDY, res) {
   var pptx = officegen('pptx');
 
   pptx.setWidescreen(true);
@@ -374,8 +374,8 @@ function exportToPowerpoint(services, dateMDY, res) {
       slide.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
         x: 50,
         y: 30,
-        cx: 70,
-        cy: 70
+        cx: 64,
+        cy: 64
       });
       slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
         x: 1000,
@@ -385,7 +385,12 @@ function exportToPowerpoint(services, dateMDY, res) {
       });
     } catch (err) {}
 
-    slide.addText(service.displayName, {
+    try {
+      dname = service.overview_ui[locale].display_name  
+    } catch (error) {
+      dname = service.description
+    }
+    slide.addText(dname, {
       x: 150,
       y: 30,
       cx: '900',
@@ -393,7 +398,12 @@ function exportToPowerpoint(services, dateMDY, res) {
       bold: true
     });
 
-    slide.addText(service.description, {
+    try {
+      desc = service.overview_ui[locale].description  
+    } catch (error) {
+      desc = service.description
+    }
+    slide.addText(desc, {
       x: 100,
       y: 150,
       cx: '1000',
@@ -401,7 +411,12 @@ function exportToPowerpoint(services, dateMDY, res) {
       color: '808080'
     });
 
-    slide.addText(service.longDescription, {
+    try {
+      longDesc = service.overview_ui[locale].long_description
+    } catch (error) {
+      longDesc = service.longDescription
+    }
+    slide.addText(longDesc, {
       x: 100,
       y: 300,
       cx: '700',
