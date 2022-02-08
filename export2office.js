@@ -13,7 +13,7 @@ script.runInNewContext(sandbox);
 var regions = sandbox.regions;
 var categories = sandbox.catalogCategories;
 
-router.post('/:format', function (req, res) {
+router.post('/:format/:locale?', function (req, res) {
   var resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'));
   var services = resources.filter(service => service.kind === 'service' || service.kind === 'iaas');
 
@@ -28,7 +28,9 @@ router.post('/:format', function (req, res) {
     servicesToExport = services;
   }
 
-  console.log("Exporting", servicesToExport.length, "services in", req.params.format);
+  // default to english
+  const locale = req.params.locale || 'en';
+  console.log(`Exporting ${servicesToExport.length} services with format ${req.params.format} and locale ${locale}`);
 
   var officeDocument;
   // Get the date of the office export
@@ -44,7 +46,7 @@ router.post('/:format', function (req, res) {
       officeDocument = exportToWord(servicesToExport, dateMDY, res);
       break;
     case "pptx":
-      officeDocument = exportToPowerpoint('fr', servicesToExport, dateMDY, res);
+      officeDocument = exportToPowerpoint(locale, servicesToExport, dateMDY, res);
       break;
     default:
       res.status(500).send({
@@ -53,8 +55,9 @@ router.post('/:format', function (req, res) {
   }
 
   if (officeDocument) {
+    const filename = `mycatalog-${dateYMD}-${locale}.${req.params.format}`
     res.setHeader("Content-Type", "application/octet-stream");
-    res.setHeader("Content-Disposition", "inline; filename=mycatalog-" + dateYMD + "." + req.params.format);
+    res.setHeader("Content-Disposition", `inline; filename=${filename}`);
     officeDocument.generate(res);
   }
 });
