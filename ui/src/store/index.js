@@ -241,14 +241,14 @@ export default new Vuex.Store({
           commit('SET_STATUSES', response.data.statusItems);
         });
     },
-    exportSelection({commit}, {format}) {
+    exportSelection({commit}, {format, locale = 'en'}) {
       const selectedIds = this.state.selectedResources.map(resource => resource.id);
-      return axios.post(`/api/export/${format}`, {
+      return axios.post(`/api/export/${format}/${locale}`, {
         resources: selectedIds.length > 0 ? selectedIds : null
       },
       {
         responseType: 'blob'
-      }).then((response) => fileDownload(response.data, `mycatalog-${new Date().toJSON().slice(0,10)}.${format}`));
+      }).then((response) => fileDownload(response.data, `mycatalog-${new Date().toJSON().slice(0,10)}-${locale}.${format}`));
     }
   },
   modules: {

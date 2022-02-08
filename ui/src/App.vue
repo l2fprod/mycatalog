@@ -34,21 +34,38 @@
       </v-responsive>
       <v-spacer></v-spacer>
       Export to
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            v-bind="attrs"
-            v-on="on"
-            icon
-            @click="exportSelection('pptx')"
-            :loading="exporting.pptx"
-            color="red lighten-1"
-          >
-            <img src="/icons/ppt_logo.png" height="24" width="24" />
-          </v-btn>
+      <v-menu
+        open-on-click
+        bottom
+        offset-y
+        :disabled="exporting.pptx"
+      >
+        <template v-slot:activator="{ on: onMenu }">
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on: onTooltip }">
+              <v-btn
+                v-on="{ ...onMenu, ...onTooltip }"
+                icon
+                :loading="exporting.pptx"
+                color="red lighten-1"
+              >
+                <img src="/icons/ppt_logo.png" height="24" width="24" />
+              </v-btn>
+            </template>
+            <span>Export selection to Powerpoint</span>
+          </v-tooltip>
         </template>
-        <span>Export selection to Powerpoint</span>
-      </v-tooltip>
+        <v-list dense tile class="pa-2">
+          <v-list-item dense @click="exportSelection('pptx')">
+            <v-list-icon><img class="mr-2" src="/icons/ppt_logo.png" height="24" width="24" /></v-list-icon>
+            <v-list-item-content>in English</v-list-item-content>
+          </v-list-item>
+          <v-list-item dense @click="exportSelection('pptx', 'fr')">
+            <v-list-icon><img class="mr-2" src="/icons/ppt_logo.png" height="24" width="24" /></v-list-icon>
+            <v-list-item-content>en Français</v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-menu>
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -232,11 +249,12 @@ export default {
         }, 300);
       }
     },
-    exportSelection(format) {
+    exportSelection(format, locale) {
       this.exporting[format] = true;
       this.$store
         .dispatch("exportSelection", {
           format,
+          locale,
         })
         .finally(() => {
           this.exporting[format] = false;

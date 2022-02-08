@@ -210,11 +210,6 @@ export default Vue.extend({
     selectRow(row) {
       this.$store.commit("SET_SELECTED_RESOURCE", row);
     },
-    exportSelection(format) {
-      this.$store.dispatch("exportSelection", {
-        format,
-      });
-    },
     hasIncident(resourceName, region) {
       return this.$store.getters.hasIncident(resourceName, region);
     },
