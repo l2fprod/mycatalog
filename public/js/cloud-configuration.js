@@ -15,7 +15,7 @@ var catalogCategories = [
     id: 'network',
     label: 'Networking',
     tags: ['network', 'network_classic','network_interconnectivity', 'network_edge', 'network_vpc', 'vpc', 'is.composite' ],
-    exclude: [ 'storage_vpc' ],
+    exclude: [ 'storage_vpc', 'storage' ],
   },
   {
     id: 'storage',
