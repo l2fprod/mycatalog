@@ -2,7 +2,7 @@ var catalogCategories = [
   {
     id: 'compute',
     label: 'Compute',
-    tags: ['compute', 'compute_baremetal', 'openwhisk', 'vmware', 'virtualservers' ],
+    tags: ['compute', 'compute_baremetal', 'openwhisk', 'vmware', 'virtualservers', 'is.placement-group' ],
     exclude: [],
   },
   {
