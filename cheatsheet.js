@@ -86,9 +86,9 @@ function CheatSheet() {
     });
 
     sheet.registerFont('Plex Sans',
-      'node_modules/@ibm/plex/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff');
+      './fonts/IBMPlexSans-Regular.woff');
     sheet.registerFont('Plex Sans Bold',
-      'node_modules/@ibm/plex/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Bold.woff');
+      './fonts/IBMPlexSans-Bold.woff');
 
     const margin = 20;
 
