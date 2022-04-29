@@ -59,7 +59,9 @@ function CheatSheet() {
   };
 
   const servicesToIgnore = [
-    "exp"
+    "exp",
+    "3p-wanclds-draas-vpcplus",
+    "professional-services-for-government-referral",
   ]
 
   self.generate = function (darkMode, outputFilename) {
@@ -123,8 +125,8 @@ function CheatSheet() {
     const date = new Date();
     var dateMDY = moment(date).format('MMMM DD, YYYY');
     sheet
-      .fontSize(fontSize * 2)
-      .text('Start building immediately using 190+ unique services.', margin, margin + 120, {
+      .fontSize(fontSize)
+      .text('Start building immediately using\n190+ unique services.', margin, margin + 120, {
         width: columnWidth - margin,
         align: 'center',
       });
@@ -210,9 +212,10 @@ function CheatSheet() {
           .font('Plex Sans')
           .fillColor(styling.resource.color)
           .text(resource.displayName, currentX + fontSize + 2, currentY, {
-            width: columnWidth,
+            width: columnWidth - margin,
             ellipsis: true,
             lineBreak: false,
+            height: lineHeight,
           });
         nextLine(lineHeight);
       });
