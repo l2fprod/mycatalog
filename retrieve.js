@@ -223,9 +223,97 @@ function ServiceUpdater() {
     });
   }
 
+  function getGeography(geoId, callback) {
+    request({
+      url: `${apiUrl}/${geoId}?depth=*`,
+      json: true
+    }, (err, response, body) => {
+      callback(err, body);
+    });
+  }
+
+  function collectChildren(root, accept, result) {
+    if (!root.children) {
+      return result;
+    }
+
+    root.children.forEach(child => {
+      if (accept(child)) {
+        result.push(child);
+      }
+      collectChildren(child, accept, result);
+    });
+
+    return result;
+  }
+
   self.run = function(serviceUpdaterCallback) {
     const tasks = [];
     let resources;
+    let geographies = [];
+
+    // retrieve all geos
+    tasks.push((callback) => {
+      // https://globalcatalog.cloud.ibm.com/api/v1?q=kind:geography
+      getResources(`${apiUrl}?q=kind:geography`, [],
+        (err, result) => {
+          if (err) {
+            console.log('[KO]', err);
+            callback(err);
+          } else {
+            console.log('[OK]', result.length, 'geographies');
+            result.forEach((geo) => {
+              // don't reference the global region
+              if (geo.id == "global") {
+                return;
+              }
+              tasks.push((callback) => {
+                getGeography(geo.id, (err, geo) => {
+                  if (err) {
+                    console.log('[KO]', err);
+                    callback(err);
+                  } else {
+                    console.log('[OK] Got details for geo', geo.id);
+                    geographies.push({
+                      id: geo.id,
+                      tag: geo.id,
+                      label: geo.overview_ui.en.display_name,
+                      overview_ui: geo.overview_ui,
+                      regions: collectChildren(geo, (child) => child.kind == "region", []).map((region) => {
+                        return {
+                          id: region.id,
+                          label: region.overview_ui.en.display_name,
+                          tag: region.id,
+                          overview_ui: region.overview_ui,
+                        }
+                      }),
+                      datacenters: collectChildren(geo, (child) => child.kind == "dc", []).map((dc) => {
+                        return {
+                          id: dc.id,
+                          label: dc.overview_ui.en.display_name,
+                          tag: dc.id,
+                          overview_ui: dc.overview_ui
+                        }
+                      }),
+                    });
+                    callback(null);
+                  }
+                });
+              });
+              tasks.push((callback) => {
+                try {
+                  fs.writeFileSync("public/generated/geographies.json", JSON.stringify(geographies, null, 2));
+                  callback(null);
+                } catch (err) {
+                  callback(err);
+                }
+              });
+            })
+            callback(null);
+          }
+        }
+      );
+    });
 
     // retrieve all resources
     tasks.push((callback) => {
