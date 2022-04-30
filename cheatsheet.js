@@ -1,9 +1,3 @@
-const fs = require("fs");
-const vm = require('vm');
-const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
-const sandbox = {};
-script.runInNewContext(sandbox);
-
 function CheatSheet() {
   const self = this;
   const fs = require('fs');
@@ -66,6 +60,7 @@ function CheatSheet() {
 
   self.generate = function (darkMode, outputFilename) {
     const styling = darkMode ? styleDarkMode : styleLightMode;
+    const catalogCategories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf-8'));
     const resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'))
       .filter(resource =>
         resource.tags.indexOf('ibm_deprecated') < 0 &&
@@ -99,7 +94,7 @@ function CheatSheet() {
     const columnCount = 4;
     const columnWidth = (pageWidth - 2 * margin) / columnCount;
     const totalPageHeight = (columnCount - 1) * (pageHeight - 2 * margin) + pageHeight - columnWidth - 2 * margin;
-    const lineHeight = totalPageHeight / (3 * sandbox.catalogCategories.length + resources.length);
+    const lineHeight = totalPageHeight / (3 * catalogCategories.length + resources.length);
     const fontSize = lineHeight - 2;
 
     console.log('Column width', columnWidth);
@@ -165,7 +160,7 @@ function CheatSheet() {
 
     let alreadySeen = [];
 
-    sandbox.catalogCategories.forEach((category) => {
+    catalogCategories.forEach((category) => {
       console.log('>>> Processing category', category.label);
       // add a category
 
