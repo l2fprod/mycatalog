@@ -5,18 +5,13 @@ function ServiceUpdater() {
   const request = require('request');
   const fs = require('fs');
   const async = require('async');
-  const vm = require('vm');
   const Jimp = require('jimp');
   const zlib = require('zlib');
 
-  const script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
-  const sandbox = {};
-  script.runInNewContext(sandbox);
-
-  const categories = sandbox.catalogCategories.map(function (category) {
+  const catalogCategories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf-8'));
+  const categories = catalogCategories.map(function (category) {
     return category.id;
   });
-  const regions = sandbox.regions;
 
   const self = this;
 
@@ -394,22 +389,6 @@ function ServiceUpdater() {
         // inject custom tags
         resource.tags = resource.tags.concat(resource.pricing_tags || []).concat(resource.geo_tags || []);
         resource.tags.push(`custom_kind_${resource.kind}`);
-
-        const tagsAsString = resource.tags.join(',');
-        regions.forEach((region) => {
-          // some services have "us-south-dal10" in their geo_tags
-          // we add the main region "us-south" tag too
-          if (tagsAsString.indexOf(`${region.tag}-`)>=0 && resource.tags.indexOf(region.tag)<0) {
-            resource.tags.push(region.tag);
-          }
-
-          // for services, find their region with the CF mapping
-          try {
-            if (resource.metadata.service.cf_guid[region.tag]) {
-              resource.tags.push(region.tag);
-            }
-          } catch (_) {}
-        });
 
         // not all ibm services have the ibm_created tag, fix this!
         if (resource.provider.name === 'IBM' &&
