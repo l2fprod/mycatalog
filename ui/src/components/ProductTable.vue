@@ -113,7 +113,7 @@
                     <span>Select all locations</span>
                   </v-tooltip>
                   <v-spacer />
-                  <v-btn color="success" @click="locationPopup = !locationPopup"
+                  <v-btn color="primary" text @click="locationPopup = !locationPopup"
                     >Close</v-btn
                   >
                 </v-toolbar>
