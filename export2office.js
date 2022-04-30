@@ -5,13 +5,15 @@ var router = express.Router();
 var moment = require('moment');
 var officegen = require('officegen');
 
-// Added to loop through the region
-var vm = require('vm');
-var script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
-var sandbox = {};
-script.runInNewContext(sandbox);
-var regions = sandbox.regions;
-var categories = sandbox.catalogCategories;
+function matchesCategory(resource, category) {
+  return resource.tags.filter(function(tag) {
+    return category.tags.indexOf(tag) >= 0  ||
+      category.tags.indexOf(resource.name) >= 0;
+  }).length > 0;
+}
+
+const categories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf-8'));
+const geographies = JSON.parse(fs.readFileSync('public/generated/geographies.json', 'utf-8'));
 
 router.post('/:format', function (req, res) {
   var resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'));
@@ -103,7 +105,7 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[row][0]  = service.displayName;
     
     for (var category in categories) {
-      if (sandbox.matchesCategory(service, categories[category])) {
+      if (matchesCategory(service, categories[category])) {
         sheet.data[row][1] = categories[category].label;
         break;
       }
@@ -132,9 +134,11 @@ function exportToExcel(services, dateMDY, res) {
     sheet.data[row][6] = planList;
 
     var datacenter = "";
-    for (var region in regions) {
-      if (service.tags.indexOf(regions[region].tag) >= 0) {
-        datacenter += regions[region].label + " ";
+    for (const geo of geographies) {
+      for (const region of geo.regions) {
+        if (service.tags.indexOf(region.tag) >= 0) {
+          datacenter += region.label + " ";
+        }
       }
     }
     sheet.data[row][7] = datacenter;
@@ -441,7 +445,7 @@ function exportToPowerpoint(services, dateMDY, res) {
       color: 'ffffff'
     });
     for (var category in categories) {
-      if (sandbox.matchesCategory(service, categories[category])) {
+      if (matchesCategory(service, categories[category])) {
         cat = categories[category].label;
         slide.addText(cat, {
           x: 1000,
@@ -501,9 +505,11 @@ function exportToPowerpoint(services, dateMDY, res) {
       color: 'ffffff'
     });
     var datacenter = "";
-    for (var region in regions) {
-      if (service.tags.indexOf(regions[region].tag) >= 0) {
-        datacenter += regions[region].label + " ";
+    for (const geo of geographies) {
+      for (const region of geo.regions) {
+        if (service.tags.indexOf(region.tag) >= 0) {
+          datacenter += region.label + " ";
+        }
       }
     }
     slide.addText(datacenter, {
