@@ -50,10 +50,11 @@
               </span>
             </v-tooltip>
             <v-menu
-              open-on-hover
               bottom
               left
               offset-y
+              :close-on-content-click="false"
+              v-model="locationPopup"
             >
               <template v-slot:activator="{ on, attrs }">
                 <v-btn small v-bind="attrs" v-on="on" class="ml-4">
@@ -61,13 +62,7 @@
                 </v-btn>
               </template>
               <v-sheet>
-                <v-alert
-                  dense
-                  text
-                  type="info"
-                  class="pa-4 ma-0"
-                  tile
-                >
+                <v-alert dense text type="info" class="pa-4 ma-0" tile>
                   Select the columns to display in the table.
                 </v-alert>
                 <v-treeview
@@ -75,9 +70,53 @@
                   dense
                   :items="locationHierarchy"
                   v-model="selectedLocations"
-                  style="min-width: 300px; min-height: 200px; max-height: 500px" class="overflow-y-auto"
+                  style="min-width: 300px; min-height: 300px; max-height: 500px"
+                  class="overflow-y-auto"
                 >
                 </v-treeview>
+                <v-toolbar tile>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        icon
+                        class="mr-2"
+                        @click="selectedLocations = []"
+                        v-bind="attrs"
+                        v-on="on"
+                        ><v-icon>mdi-broom</v-icon></v-btn
+                      >
+                    </template>
+                    <span>Clear selection</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        icon
+                        @click="selectRegionLocations()"
+                        v-bind="attrs"
+                        v-on="on"
+                        ><v-icon>mdi-earth</v-icon></v-btn
+                      >
+                    </template>
+                    <span>Select regions</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        icon
+                        @click="selectAllLocations()"
+                        v-bind="attrs"
+                        v-on="on"
+                        ><v-icon>mdi-select-all</v-icon></v-btn
+                      >
+                    </template>
+                    <span>Select all locations</span>
+                  </v-tooltip>
+                  <v-spacer />
+                  <v-btn color="success" @click="locationPopup = !locationPopup"
+                    >Close</v-btn
+                  >
+                </v-toolbar>
               </v-sheet>
             </v-menu>
           </v-toolbar>
@@ -184,6 +223,7 @@ export default Vue.extend({
   data() {
     return {
       selectedLocations: [],
+      locationPopup: false,
     };
   },
   watch: {
@@ -253,21 +293,21 @@ export default Vue.extend({
           ...geo.regions.map((region) => {
             return {
               id: region.id,
-              name: `${region.label} (Region)`,
+              name: `${region.label} (Region ${region.tag})`,
             };
           }),
           ...geo.datacenters.map((dc) => {
             return {
               id: dc.id,
-              name: `${dc.label}`,
+              name: `${dc.label} (${dc.tag})`,
             };
-          })
+          }),
         ];
         children.sort((l1, l2) => l1.name.localeCompare(l2.name));
         return {
           id: geo.id,
           name: geo.label,
-          children
+          children,
         };
       });
     },
@@ -335,6 +375,18 @@ export default Vue.extend({
         },
       ];
     },
+    selectRegionLocations() {
+      const regionIds = [];
+      for (const geo of this.$store.state.config.geographies) {
+        for (const region of geo.regions) {
+          regionIds.push(region.id);
+        }
+      }
+      this.selectedLocations = regionIds;
+    },
+    selectAllLocations() {
+      this.selectedLocations = this.locations.map((location) => location.id);
+    }
   },
 });
 </script>

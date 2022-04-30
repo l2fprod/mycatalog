@@ -377,6 +377,7 @@ const store = new Vuex.Store({
           commit('SET_STATUSES', response.data.statusItems);
         });
     },
+    // eslint-disable-next-line
     exportSelection({commit}, {format}) {
       const selectedIds = this.state.selectedResources.map(resource => resource.id);
       return axios.post(`/api/export/${format}`, {
