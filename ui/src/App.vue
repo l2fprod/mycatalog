@@ -208,10 +208,6 @@ export default {
     ProductDetails, //
   }),
 
-  mounted() {
-    this.$store.dispatch("getResources");
-  },
-
   computed: {
     searchTerm() {
       return this.$store.state.searchTerm;

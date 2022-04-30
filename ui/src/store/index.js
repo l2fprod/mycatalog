@@ -23,6 +23,7 @@ function applyFilter(state) {
 
   //PENDING(fredL): services marked as global should also appear as soon as one region tag is selected
   state.selectedRegions.forEach(region => includeTags.push(region.tag));
+  state.selectedDatacenters.forEach(dc => includeTags.push(dc.tag));
   state.selectedFilters.forEach(filter => {
     if (filter.exclude) {
       if (filter.tags) {
@@ -111,7 +112,7 @@ function applyFilter(state) {
   return filteredResources;
 }
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   state: {
     resources: [],
     resourceStatuses: {},
@@ -120,6 +121,7 @@ export default new Vuex.Store({
     selectedPlan: null,
     selectedCategories: [],
     selectedRegions: [],
+    selectedDatacenters: [],
     selectedFilters: [],
     searchTerm: null,
     showStatusOverlay: false,
@@ -128,8 +130,10 @@ export default new Vuex.Store({
 
     config: {
       categories: [],
+      geographies: [],
       regions: [],
-      filters: []
+      datacenters: [],
+      filters: [],
     }
   },
   mutations: {
@@ -173,9 +177,6 @@ export default new Vuex.Store({
     },
     SET_CONFIG(state, config) {
       state.config = config;
-      // put regions and categories in a good order from the start
-      state.config.regions.sort((r1, r2) => r1.label.localeCompare(r2.label));
-      state.config.categories.sort((c1, c2) => c1.label.localeCompare(c2.label));
     },
     SET_SELECTED_CATEGORIES(state, selectedCategories) {
       state.selectedCategories = selectedCategories;
@@ -183,6 +184,10 @@ export default new Vuex.Store({
     },
     SET_SELECTED_REGIONS(state, selectedRegions) {
       state.selectedRegions = selectedRegions;
+      state.filteredResources = applyFilter(state);
+    },
+    SET_SELECTED_DATACENTERS(state, selectedDatacenters) {
+      state.selectedDatacenters = selectedDatacenters;
       state.filteredResources = applyFilter(state);
     },
     SET_SELECTED_FILTERS(state, selectedFilters) {
@@ -228,7 +233,138 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    getResources({commit}) {
+    async initialize({ commit }) {
+      console.log("Initializing store...");
+      const categories = (await axios.get('/js/categories.json')).data;
+      const geographies = (await axios.get('/generated/geographies.json')).data
+      const regions = [];
+      const datacenters = [];
+      for (const geo of geographies) {
+        for (const region of geo.regions) {
+          regions.push(region);
+        }
+        for (const dc of geo.datacenters) {
+          datacenters.push(dc);
+        }
+      }
+
+      categories.sort((c1, c2) => c1.label.localeCompare(c2.label));
+      regions.sort((r1, r2) => r1.label.localeCompare(r2.label));
+      datacenters.sort((r1, r2) => r1.label.localeCompare(r2.label));
+
+      commit('SET_CONFIG', {
+        categories,
+        geographies,
+        regions,
+        datacenters,
+        filters: [
+          {
+            "id": "custom_kind_iaas",
+            "label": "IaaS",
+            "icon": "mdi-server"
+          },
+          {
+            "id": "custom_kind_service",
+            "label": "PaaS",
+            "icon": "mdi-room-service"
+          },
+          {
+            "id": "ibm_created",
+            "label": "IBM"
+          },
+          {
+            "id": "ibm_third_party",
+            "label": "Third party"
+          },
+          //  data-track-label="Production Ready" data-toggle="button" ng-click="toggleTagConfiguration('', false); toggleTagConfiguration('', false)"></button>
+          {
+            "id": "ibm_production_ready",
+            "label": "Production Ready",
+            "exclude": true,
+            "tags": [
+              "ibm_experimental",
+              "ibm_beta"
+            ],
+            "icon": "mdi-thumb-up"
+          },
+          {
+            "id": "ibm_beta",
+            "label": "Beta",
+            "icon": "mdi-beta"
+          },
+          //  data-track-label="Experimental" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-flask"></i>&nbsp;Experimental</button>
+          {
+            "id": "ibm_experimental",
+            "label": "Experimental",
+            "icon": "mdi-flask"
+          },
+          //  data-track-label="Deprecated" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-exclamation-triangle"></i>&nbsp;</button>
+          {
+            "id": "ibm_deprecated",
+            "label": "Deprecated",
+            "icon": "mdi-alert"
+          },
+          //  data-track-label="Free plan" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-usd"></i>&nbsp;</button>
+          {
+            "id": "free",
+            "label": "Free plan",
+            "icon": "mdi-currency-usd"
+          },
+          //  data-track-label="Lite plan" data-toggle="button" ng-click="toggleTagConfiguration('', true)"><i class="fa fa-usd"></i>&nbsp;</button>
+          {
+            "id": "lite",
+            "label": "Lite plan",
+            "icon": "mdi-currency-usd"
+          },
+          //  data-track-label="Syndicated" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="IBM public services visible in the dedicated and local catalogs"><i class="fa fa-cloud"></i>&nbsp;</button>
+          // {
+          //   "id": "ibm_dedicated_public",
+          //   "label": "Syndicated"
+          // },
+          //  data-track-label="IAM" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="IAM Compatible"></button>
+          {
+            "id": "iam_compatible",
+            "label": "IAM Compatible"
+          },
+          //  data-track-label="RC" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="Resource Catalog Compatible"></button>
+          {
+            "id": "rc_compatible",
+            "label": "RC Compatible"
+          },
+          //  data-track-label="EU supported" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="EU supported"></button>
+          {
+            "id": "eu_access",
+            "label": "EU supported"
+          },
+          //  data-track-label="HIPAA" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="HIPAA"></button>
+          {
+            "id": "hipaa",
+            "label": "HIPAA",
+            "icon": "mdi-hospital-box"
+          },
+          //  data-track-label="FS Validated" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="Financial Services Validated"></button>
+          {
+            "id": "fs_ready",
+            "label": "FS Validated",
+            "icon": "mdi-bank"
+          },
+          // satellite
+          {
+            "id": "satellite_enabled",
+            "label": "Satellite Enabled",
+            "icon": "mdi-satellite-variant"
+          },
+          // service endpoint supported
+          {
+            "id": "service_endpoint_supported",
+            "label": "Service Endpoint Supported",
+            "icon": "mdi-lock-check"
+          }
+        ],
+      });
+      this.dispatch('getResources');
+    },
+    getResources({ commit }) {
       axios.get('/generated/resources.json')
         .then(response => {
           commit('SET_RESOURCES', response.data);
@@ -253,4 +389,9 @@ export default new Vuex.Store({
   },
   modules: {
   }
-})
+});
+
+// initialize the store
+store.dispatch('initialize');
+
+export default store;

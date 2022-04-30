@@ -17,7 +17,7 @@
               :value="filter"
               filter
             >
-              <v-icon v-if="filter.icon">{{ filter.icon }}</v-icon>
+              <v-icon x-small v-if="filter.icon">{{ filter.icon }}</v-icon>
               <span v-if="filter.icon">&nbsp;</span>
               {{ filter.label }}
             </v-chip>
@@ -67,6 +67,27 @@
           </v-chip-group>
         </v-expansion-panel-content>
       </v-expansion-panel>
+      <v-expansion-panel>
+        <v-expansion-panel-header>
+          <v-row style="padding: 0px 12px" align="center">
+            <span>Data centers</span>
+            <span>&nbsp;&nbsp;<v-chip v-if="selectedDatacenters.length > 0" close small @click:close="setSelectedDatacenters([])">{{selectedDatacenters.length}}</v-chip></span>
+          </v-row>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-chip-group multiple active-class="info--text" v-model="selectedDatacenters"
+          @change="setSelectedDatacenters"
+          column>
+            <v-chip v-for="dc in orderBy(datacenters, 'label')" v-bind:key="dc.id"
+              small
+              :value="dc"
+              filter
+            >
+              {{ dc.label }}
+            </v-chip>
+          </v-chip-group>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
     </v-expansion-panels>
   </div>
 </template>
@@ -82,18 +103,22 @@ export default Vue.extend({
       panels: [ 0, 1, 2 ],
       selectedCategories: [],
       selectedRegions: [],
+      selectedDatacenters: [],
       selectedFilters: [],
     }
   },
   computed: {
     regions() {
-      return this.$store.state.config.regions
+      return this.$store.state.config.regions;
+    },
+    datacenters() {
+      return this.$store.state.config.datacenters;
     },
     categories() {
-      return this.$store.state.config.categories
+      return this.$store.state.config.categories;
     },
     filters() {
-      return this.$store.state.config.filters
+      return this.$store.state.config.filters;
     }
   },
   methods: {
@@ -104,6 +129,10 @@ export default Vue.extend({
     setSelectedRegions(regions) {
       this.selectedRegions = regions;
       this.$store.commit('SET_SELECTED_REGIONS', regions);
+    },
+    setSelectedDatacenters(datacenters) {
+      this.selectedDatacenters = datacenters;
+      this.$store.commit('SET_SELECTED_DATACENTERS', datacenters);
     },
     setSelectedFilters(filters) {
       this.selectedFilters = filters;

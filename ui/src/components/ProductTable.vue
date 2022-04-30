@@ -44,11 +44,42 @@
                 Shows
                 <v-icon small color="red">mdi-checkbox-marked-circle</v-icon>
                 if there is an incident in progress for the resource in the
-                region,
+                location,
                 <v-icon small color="green">mdi-checkbox-marked-circle</v-icon>
                 otherwise
               </span>
             </v-tooltip>
+            <v-menu
+              open-on-hover
+              bottom
+              left
+              offset-y
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn small v-bind="attrs" v-on="on" class="ml-4">
+                  Select Locations
+                </v-btn>
+              </template>
+              <v-sheet>
+                <v-alert
+                  dense
+                  text
+                  type="info"
+                  class="pa-4 ma-0"
+                  tile
+                >
+                  Select the columns to display in the table.
+                </v-alert>
+                <v-treeview
+                  selectable
+                  dense
+                  :items="locationHierarchy"
+                  v-model="selectedLocations"
+                  style="min-width: 300px; min-height: 200px; max-height: 500px" class="overflow-y-auto"
+                >
+                </v-treeview>
+              </v-sheet>
+            </v-menu>
           </v-toolbar>
         </v-row>
       </v-container>
@@ -66,13 +97,16 @@
       >
     </template>
     <template
-      v-for="region in this.$store.state.config.regions"
-      v-slot:[`item.${region.id}`]="{ item }"
+      v-for="location in locations"
+      v-slot:[`item.${location.id}`]="{ item }"
     >
-      <v-icon v-for="icon in getRegionIcon(item, region)"
+      <v-icon
+        v-for="icon in getLocationIcon(item, location)"
         v-bind:key="icon.id"
         small
-        :color="icon.color">{{ icon.icon }}</v-icon>
+        :color="icon.color"
+        >{{ icon.icon }}</v-icon
+      >
     </template>
     <template v-slot:[`item.tags`]="{ item }">
       <v-lazy>
@@ -148,41 +182,95 @@
 import Vue from "vue";
 export default Vue.extend({
   data() {
-    const headers = [
-      {
-        text: "",
-        align: "center",
-        sortable: false,
-        value: "icon",
-        width: 32,
-      },
-      {
-        text: "Name",
-        align: "start",
-        sortable: true,
-        value: "displayName",
-        width: 200,
-      },
-    ];
-    this.$store.state.config.regions.forEach((region) => {
-      headers.push({
-        text: region.label,
-        value: region.id,
-        align: "center",
-        sortable: false,
-        width: 50,
-      });
-    });
-    // headers.push({
-    //   text: "Tags", value: "tags", sortable: false,
-    //   width: 500
-    // });
-    // { text: "Description", value: "description" },
     return {
-      headers,
+      selectedLocations: [],
     };
   },
+  watch: {
+    "$store.state.config.regions": {
+      immediate: true,
+      handler() {
+        if (this.selectedLocations.length == 0) {
+          this.selectedLocations = this.$store.state.config.regions.map(
+            (region) => region.id
+          );
+        }
+      },
+    },
+  },
   computed: {
+    headers() {
+      const headers = [
+        {
+          text: "",
+          align: "center",
+          sortable: false,
+          value: "icon",
+          width: 32,
+        },
+        {
+          text: "Name",
+          align: "start",
+          sortable: true,
+          value: "displayName",
+          class: "nameColumn",
+        },
+      ];
+      this.locations.forEach((location) => {
+        if (this.selectedLocations.indexOf(location.id) >= 0) {
+          headers.push({
+            text: location.label,
+            value: location.id,
+            align: "center",
+            sortable: false,
+            width: 50,
+          });
+        }
+      });
+
+      headers.push({
+        width: "100%",
+        sortable: false,
+      });
+      return headers;
+    },
+    locations() {
+      const locations = [];
+      for (const geo of this.$store.state.config.geographies) {
+        for (const region of geo.regions) {
+          locations.push(region);
+        }
+        for (const dc of geo.datacenters) {
+          locations.push(dc);
+        }
+      }
+      locations.sort((l1, l2) => l1.label.localeCompare(l2.label));
+      return locations;
+    },
+    locationHierarchy() {
+      return this.$store.state.config.geographies.map((geo) => {
+        const children = [
+          ...geo.regions.map((region) => {
+            return {
+              id: region.id,
+              name: `${region.label} (Region)`,
+            };
+          }),
+          ...geo.datacenters.map((dc) => {
+            return {
+              id: dc.id,
+              name: `${dc.label}`,
+            };
+          })
+        ];
+        children.sort((l1, l2) => l1.name.localeCompare(l2.name));
+        return {
+          id: geo.id,
+          name: geo.label,
+          children
+        };
+      });
+    },
     resources() {
       return this.$store.state.resources;
     },
@@ -215,12 +303,15 @@ export default Vue.extend({
         format,
       });
     },
-    hasIncident(resourceName, region) {
-      return this.$store.getters.hasIncident(resourceName, region);
+    hasIncident(resourceName, location) {
+      return this.$store.getters.hasIncident(resourceName, location);
     },
-    getRegionIcon(resource, region) {
-      if (resource.tags.indexOf(region.tag) < 0 &&
-         (resource.geo_tags != null && resource.geo_tags.indexOf('global') < 0)) {
+    getLocationIcon(resource, location) {
+      if (
+        resource.tags.indexOf(location.tag) < 0 &&
+        resource.geo_tags != null &&
+        resource.geo_tags.indexOf("global") < 0
+      ) {
         return [];
       }
 
@@ -228,7 +319,7 @@ export default Vue.extend({
       let color = null;
 
       if (this.showStatusOverlay) {
-        if (this.hasIncident(resource.name, region.id)) {
+        if (this.hasIncident(resource.name, location.id)) {
           color = "red";
           icon = "mdi-alert-circle";
         } else {
@@ -236,18 +327,66 @@ export default Vue.extend({
         }
       }
 
-      return [{
-        id: region.id,
-        icon,
-        color,
-      }];
-    }
+      return [
+        {
+          id: location.id,
+          icon,
+          color,
+        },
+      ];
+    },
   },
 });
 </script>
 
-<style scoped>
-/deep/ tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.03);
+<style>
+.nameColumn {
+  min-width: 400px !important;
+}
+
+tbody > tr:nth-of-type(odd) > td {
+  background-color: #f7f7f7;
+}
+
+tbody > tr:nth-of-type(even) > td {
+  background-color: white;
+}
+
+tbody > tr:hover > td {
+  background-color: #eaeaea;
+}
+
+/* checkbox column is sticky */
+table > thead > tr > th:nth-child(1),
+table > tbody > tr > td:nth-child(1) {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  left: 0;
+  z-index: 3 !important;
+}
+
+/* icon column is sticky */
+table > thead > tr > th:nth-child(2),
+table > tbody > tr > td:nth-child(2) {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  left: 64px;
+  z-index: 3 !important;
+}
+
+/* name column is sticky */
+table > thead > tr > th:nth-child(3),
+table > tbody > tr > td:nth-child(3) {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  left: 112px; /* 64px + 38px */
+  z-index: 3 !important;
+}
+
+/* headers stay on top */
+table > thead > tr > th:nth-child(1),
+table > thead > tr > th:nth-child(2),
+table > thead > tr > th:nth-child(3) {
+  z-index: 4 !important;
 }
 </style>
