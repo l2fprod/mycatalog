@@ -73,11 +73,11 @@
         <v-expansion-panel-content v-if="selectedPlan">
           <div>
             <span class="subtitle-2">Cloud Foundry</span>
-            <markup language="bash" v-bind:code='`ibmcloud cf create-service ${resource.name} \"${selectedPlan.originalName || selectedPlan.name }\" <service-name>`' />
+            <markup-view language="bash" v-bind:code='`ibmcloud cf create-service ${resource.name} \"${selectedPlan.originalName || selectedPlan.name }\" <service-name>`' />
           </div>
           <div>
             <span class="subtitle-2">Service Instance</span>
-            <markup language="bash" v-bind:code='`ibmcloud resource service-instance-create <service-name> ${resource.name} \"${selectedPlan.name }\" <region>`' />
+            <markup-view language="bash" v-bind:code='`ibmcloud resource service-instance-create <service-name> ${resource.name} \"${selectedPlan.name }\" <region>`' />
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -86,7 +86,7 @@
           Terraform
         </v-expansion-panel-header>
         <v-expansion-panel-content v-if="selectedPlan">
-          <markup language="hcl" v-bind:code='`resource \"ibm_resource_instance\" \"${resource.name}\" {
+          <markup-view language="hcl" v-bind:code='`resource \"ibm_resource_instance\" \"${resource.name}\" {
   name = \"\"
   service = \"${resource.name}\"
   plan = \"${selectedPlan.name }\"
@@ -111,7 +111,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Markup from "./Markup.vue";
+import MarkupView from "./MarkupView.vue";
 
 export default Vue.extend({
   data() {
@@ -120,7 +120,7 @@ export default Vue.extend({
     }
   },
   components: {
-    Markup
+    MarkupView
   },
   computed: {
     resource() {

@@ -24,7 +24,7 @@
   import AppCode from './Code'
 
   export default {
-    name: 'Markup',
+    name: 'MarkupView',
     components: { Prism, AppCode },
     props: {
       code: String,

@@ -9,7 +9,7 @@ sudo apt-get install -y bzip2
 npm config delete prefix
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 . ~/.nvm/nvm.sh
-nvm install 15.14.0
+nvm install 16.15.0
 
 # Build new UI
 npm install --global yarn
