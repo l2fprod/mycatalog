@@ -98,7 +98,19 @@
                         ><v-icon>mdi-earth</v-icon></v-btn
                       >
                     </template>
-                    <span>Select regions</span>
+                    <span>Select regions only</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        icon
+                        @click="selectDatacenterLocations()"
+                        v-bind="attrs"
+                        v-on="on"
+                        ><v-icon>mdi-office-building-outline</v-icon></v-btn
+                      >
+                    </template>
+                    <span>Select data centers only</span>
                   </v-tooltip>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
@@ -316,6 +328,15 @@ export default Vue.extend({
         }
       }
       this.selectedLocations = regionIds;
+    },
+    selectDatacenterLocations() {
+      const dcIds = [];
+      for (const geo of this.$store.state.config.geographies) {
+        for (const dc of geo.datacenters) {
+          dcIds.push(dc.id);
+        }
+      }
+      this.selectedLocations = dcIds;
     },
     selectAllLocations() {
       this.selectedLocations = this.locations.map((location) => location.id);
