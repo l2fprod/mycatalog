@@ -121,7 +121,7 @@ function CheatSheet() {
     var dateMDY = moment(date).format('MMMM DD, YYYY');
     sheet
       .fontSize(fontSize)
-      .text('Start building immediately using\n190+ unique services.', margin, margin + 120, {
+      .text('Start building immediately using\n170+ unique services.', margin, margin + 120, {
         width: columnWidth - margin,
         align: 'center',
       });
