@@ -5,35 +5,12 @@ var RSS = require('rss');
 
 // Added to loop through the region
 var vm = require('vm');
-var script = vm.createScript(fs.readFileSync('./public/js/cloud-configuration.js'));
+var script = vm.createScript(fs.readFileSync('../docs/js/cloud-configuration.js'));
 var sandbox = {};
 script.runInNewContext(sandbox);
 var regions = sandbox.regions;
 
-var database;
-
-router.get('/all', function (req, res) {
-  database.view("snapshots", "by_date", {
-    descending: true,
-    limit: 5,
-    include_docs: true
-  }, function (err, body) {
-    if (err) {
-      res.status(500).send();
-    } else {
-      processSnapshots(body.rows.map(function (row) {
-        return row.doc;
-      }), res);
-    }
-  });
-});
-
-router.get('/fake', function (req, res) {
- var snapshots = JSON.parse(fs.readFileSync('updates.json', 'utf8'));
- processSnapshots(snapshots, res);
-});
-
-function processSnapshots(snapshots, res) {
+function generateFeed(snapshots) {
   // snapshots are sorted from most recent to oldest
   var allDifferences = [];
   var current = 0
@@ -68,10 +45,9 @@ function processSnapshots(snapshots, res) {
     });
   });
 
-  res.header("Content-Type", "application/rss+xml");
-  res.send(feed.xml({
+  return feed.xml({
     indent: true
-  }));
+  });
 }
 
 function getDifferences(newSnapshot, oldSnapshot) {
@@ -269,7 +245,6 @@ function getDifferences(newSnapshot, oldSnapshot) {
   return result;
 }
 
-module.exports = function (Database) {
-  database = Database;
-  return router;
+module.exports = {
+  generateFeed
 }

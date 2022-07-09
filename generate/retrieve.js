@@ -8,7 +8,7 @@ function ServiceUpdater() {
   const Jimp = require('jimp');
   const zlib = require('zlib');
 
-  const catalogCategories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf-8'));
+  const catalogCategories = JSON.parse(fs.readFileSync('../docs/js/categories.json', 'utf-8'));
   const categories = catalogCategories.map(function (category) {
     return category.id;
   });
@@ -16,11 +16,11 @@ function ServiceUpdater() {
   const self = this;
 
   try {
-    fs.mkdirSync('public/generated');
+    fs.mkdirSync('../docs/generated');
   } catch (err) {
   }
   try {
-    fs.mkdirSync('public/generated/icons');
+    fs.mkdirSync('../docs/generated/icons');
   } catch (err) {
   }
 
@@ -143,15 +143,15 @@ function ServiceUpdater() {
             } else {
               extension = "png";
             }
-            fs.writeFile("public/generated/icons/" + resource.id + "." + extension, body, function (err) {
+            fs.writeFile("../docs/generated/icons/" + resource.id + "." + extension, body, function (err) {
               if (err) {
                 console.log(`[${resource.name}] could not write icon`);
                 callback(null);
               } else {
                 console.log(`[${resource.name}] wrote ${extension}`);
                 if (extension === "svg") {
-                  resource.localSvgIcon = "public/generated/icons/" + resource.id + "." + extension;
-                  var imageBuffer = fs.readFileSync("public/generated/icons/" + resource.id + ".svg");
+                  resource.localSvgIcon = "../docs/generated/icons/" + resource.id + "." + extension;
+                  var imageBuffer = fs.readFileSync("../docs/generated/icons/" + resource.id + ".svg");
                   // some svg are compressed
                   try {
                     imageBuffer = zlib.gunzipSync(imageBuffer);
@@ -163,29 +163,29 @@ function ServiceUpdater() {
                     .resize(64, 64)
                     .png()
                     .toBuffer()
-                    .then(buffer => fs.writeFile("public/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
+                    .then(buffer => fs.writeFile("../docs/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
                       console.log(`[${resource.name}] wrote png`);
-                      resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
+                      resource.localPngIcon = "../docs/generated/icons/" + resource.id + ".png";
                       if (convertError) {
                         console.log(`[${resource.name}] could not read, using default`);
-                        fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
+                        fs.copyFileSync("../docs/icons/default-service.png", "../docs/generated/icons/" + resource.id + ".png");
                       }
                       callback(null);
                     }))
                     .catch(e => {
                       console.log(`[${resource.name}] could not read icon, using default`);
-                      fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
+                      fs.copyFileSync("../docs/icons/default-service.png", "../docs/generated/icons/" + resource.id + ".png");
                       callback(null);
                     });
                 } else {
-                  resource.localPngIcon = "public/generated/icons/" + resource.id + ".png";
-                  Jimp.read("public/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
+                  resource.localPngIcon = "../docs/generated/icons/" + resource.id + ".png";
+                  Jimp.read("../docs/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
                     if (readErr) {
                       console.log(`[${resource.name}] could not read icon, using default`);
-                      fs.copyFileSync("public/icons/default-service.png", "public/generated/icons/" + resource.id + ".png");
+                      fs.copyFileSync("../docs/icons/default-service.png", "../docs/generated/icons/" + resource.id + ".png");
                       callback(null);
                     } else {
-                      imageBuffer.write("public/generated/icons/" + resource.id + ".png", (writeErr) => {
+                      imageBuffer.write("../docs/generated/icons/" + resource.id + ".png", (writeErr) => {
                         if (writeErr) {
                           console.log(writeErr);
                         }
@@ -242,7 +242,7 @@ function ServiceUpdater() {
     return result;
   }
 
-  self.run = function(serviceUpdaterCallback) {
+  self.run = function() {
     const tasks = [];
     let resources;
     let geographies = [];
@@ -297,7 +297,7 @@ function ServiceUpdater() {
               });
               tasks.push((callback) => {
                 try {
-                  fs.writeFileSync("public/generated/geographies.json", JSON.stringify(geographies, null, 2));
+                  fs.writeFileSync("../docs/generated/geographies.json", JSON.stringify(geographies, null, 2));
                   callback(null);
                 } catch (err) {
                   callback(err);
@@ -444,7 +444,7 @@ function ServiceUpdater() {
     // save the full version
     tasks.push((callback) => {
       console.log('Writing full resource file...');
-      const stream = fs.createWriteStream("public/generated/resources-full.json");
+      const stream = fs.createWriteStream("../docs/generated/resources-full.json");
       stream.once('open', function (fd) {
         stream.write(JSON.stringify(resources, null, 2));
         stream.end();
@@ -503,7 +503,7 @@ function ServiceUpdater() {
         });
 
       });
-      const stream = fs.createWriteStream("public/generated/resources.json");
+      const stream = fs.createWriteStream("../docs/generated/resources.json");
       stream.once('open', function (fd) {
         stream.write(JSON.stringify(resources, null, 2));
         stream.end();
@@ -511,15 +511,16 @@ function ServiceUpdater() {
       stream.once('finish', () => { callback(null); });
     });
 
-    async.waterfall(tasks, (err) => {
-      if (err) {
-        console.log('[KO]', err);
-      } else {
-        console.log('[OK] Processing complete!');
-      }
-      if (serviceUpdaterCallback) {
-        serviceUpdaterCallback(err, resources);
-      }
+    return new Promise(function(resolve, reject) {
+      async.waterfall(tasks, (err) => {
+        if (err) {
+          console.log('[KO]', err);
+          reject(err);
+        } else {
+          console.log('[OK] Processing complete!');
+          resolve(resources);
+        }
+      });
     });
   }
 }

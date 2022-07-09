@@ -1,7 +1,5 @@
 var fs = require('fs');
 var path = require('path');
-var express = require('express');
-var router = express.Router();
 var moment = require('moment');
 var officegen = require('officegen');
 
@@ -12,25 +10,15 @@ function matchesCategory(resource, category) {
   }).length > 0;
 }
 
-const categories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf-8'));
-const geographies = JSON.parse(fs.readFileSync('public/generated/geographies.json', 'utf-8'));
+const categories = JSON.parse(fs.readFileSync('../docs/js/categories.json', 'utf-8'));
+const geographies = JSON.parse(fs.readFileSync('../docs/generated/geographies.json', 'utf-8'));
 
-router.post('/:format', function (req, res) {
-  var resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'));
+async function generate(format, filename) {
+  var resources = JSON.parse(fs.readFileSync('../docs/generated/resources-full.json', 'utf8'));
   var services = resources.filter(service => service.kind === 'service' || service.kind === 'iaas');
+  var servicesToExport = services;
 
-  var servicesToExport;
-  var userSelectedServices = req.body["resources"];
-
-  if (userSelectedServices) {
-    servicesToExport = services.filter(function (service) {
-      return userSelectedServices.indexOf(service.id) >= 0;
-    });
-  } else {
-    servicesToExport = services;
-  }
-
-  console.log("Exporting", servicesToExport.length, "services in", req.params.format);
+  console.log("Exporting", servicesToExport.length, "services in", format);
 
   var officeDocument;
   // Get the date of the office export
@@ -38,33 +26,30 @@ router.post('/:format', function (req, res) {
   var dateYMD = moment(date).format('YYYY-MM-DD');
   var dateMDY = moment(date).format('MMMM DD, YYYY');
 
-  switch (req.params.format) {
+  switch (format) {
     case "xlsx":
-      officeDocument = exportToExcel(servicesToExport, dateMDY, res);
+      officeDocument = exportToExcel(servicesToExport, dateMDY);
       break;
     case "docx":
-      officeDocument = exportToWord(servicesToExport, dateMDY, res);
+      officeDocument = exportToWord(servicesToExport, dateMDY);
       break;
     case "pptx":
-      officeDocument = exportToPowerpoint(servicesToExport, dateMDY, res);
+      officeDocument = exportToPowerpoint(servicesToExport, dateMDY);
       break;
     default:
-      res.status(500).send({
-        error: "unknown format " + req.params.format
-      })
+      throw new Error({
+        error: "unknown format " + format
+      });
   }
 
-  if (officeDocument) {
-    res.setHeader("Content-Type", "application/octet-stream");
-    res.setHeader("Content-Disposition", "inline; filename=mycatalog-" + dateYMD + "." + req.params.format);
-    officeDocument.generate(res);
-  }
-});
+  const output = fs.createWriteStream(filename);
+  return officeDocument.generate(output);
+}
 
 // ---------------------------------------------------------------------
 // API Export to XLSX
 // ---------------------------------------------------------------------
-function exportToExcel(services, dateMDY, res) {
+function exportToExcel(services, dateMDY) {
   var xlsx = officegen('xlsx');
 
   // Disclaimer
@@ -151,187 +136,13 @@ function exportToExcel(services, dateMDY, res) {
     row++;
   });
 
-  //--------------------------------------------------------------------
-  // New Excel tab to add plans & pricing - To be continued
-  //--------------------------------------------------------------------
-  /**
-  var countryToCurrency = {};
-
-  // find all the possible currencies
-  services.forEach(function (service) {
-    service.plans.forEach(function (plan) {
-      if (plan.metadata.plan && plan.metadata.plan.extra && plan.metadata.plan.extra.costs) {
-        plan.metadata.plan.extra.costs.forEach(function (cost) {
-          if (cost.currencies) {
-            cost.currencies.forEach(function (currency) {
-              if (!countryToCurrency[currency.country]) {
-                countryToCurrency[currency.country] = Object.keys(currency.amount)[0];
-              }
-            });
-          } else {
-            //cost.amount
-          }
-        });
-      }
-    });
-  });
-
-  // add one tab per country
-  Object.keys(countryToCurrency).sort().forEach(function(country) {
-    var sheet2 = xlsx.makeNewSheet();
-    sheet2.name = `(BETA) Pricing - ${country} - ${countryToCurrency[country]}`;
-    fillPricingSheet(sheet2, services, country, countryToCurrency[country]);
-  });
-  */
   return xlsx;
 }
-
-/*
-function fillPricingSheet(sheet2, services, currentCountry, currentCurrency) {
-  var SERVICE_COLUMN_INDEX = 0;
-  var PLAN_COLUMN_INDEX = 1;
-  var SUBSCRIPTION_COLUMN_INDEX = 2;
-  var COST_UNIT_COLUMN_INDEX = 3;
-  var AMOUNT_COLUMN_INDEX = 4;
-  var TIER_COLUMN_INDEX = 5;
-  var DESCRIPTION_COLUMN_INDEX = 6;
-  var columnNameToColumnIndex = {
-    "Service": SERVICE_COLUMN_INDEX,
-    "Plan": PLAN_COLUMN_INDEX,
-    "Subscription": SUBSCRIPTION_COLUMN_INDEX,
-    "Cost Unit": COST_UNIT_COLUMN_INDEX,
-    "Amount": AMOUNT_COLUMN_INDEX,
-    "Tier": TIER_COLUMN_INDEX,
-    "Description": DESCRIPTION_COLUMN_INDEX
-  }
-  // Table Header
-  sheet2.data[0] = [];
-  Object.keys(columnNameToColumnIndex).forEach(function(key) {
-    sheet2.data[0][columnNameToColumnIndex[key]] = key;
-  });
-
-  // First row after the header
-  var rowp = 3;
-
-  services.forEach(function (service) {
-    var extra = service.metadata.service.extra;
-    var svcName = service.displayName;
-
-    var plans = service.plans;
-    // Iterate through array of plans
-    plans.forEach(function (plan) {
-      var planDescription = plan.description;
-      var planName = plan.displayName;
-
-      // New row for Free plan (ex: AlchemyAPI) or
-      // Free service w/o any cost array (ex: Access Trail, Active Deploy)
-      //console.log(rowp, svcName, planName)
-      sheet2.data[rowp] = [];
-      sheet2.data[rowp][SERVICE_COLUMN_INDEX] = svcName;
-      sheet2.data[rowp][PLAN_COLUMN_INDEX] = planName;
-      sheet2.data[rowp][DESCRIPTION_COLUMN_INDEX] = planDescription;
-
-      // Set amount to zero if plan if free.
-      if (plan.pricing_tags.indexOf('free')>=0) {
-        sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = 0;
-        // A free plan can always be consumed with a subscription
-        sheet2.data[rowp][SUBSCRIPTION_COLUMN_INDEX] = 'yes';
-        rowp++; return;
-      }
-
-      // Most of the services have multiple plans including cost and currencies
-      // Warning: some plans have one single plan with multiple tier (cost)
-      if (plan.metadata.plan && plan.metadata.plan.extra) {
-        var extrap = plan.metadata.plan.extra;
-        var costs = extrap.costs;
-        if (costs) {
-          costs.forEach(function (cost) {
-            // New row per cost
-            sheet2.data[rowp] = [];
-            sheet2.data[rowp][SERVICE_COLUMN_INDEX] = svcName;
-            sheet2.data[rowp][PLAN_COLUMN_INDEX] = planName;
-            sheet2.data[rowp][COST_UNIT_COLUMN_INDEX] = cost.unit;
-            var currencies = cost.currencies;
-            if (currencies) {
-              currencies.forEach(function (currency) {
-                if (currency.country != currentCountry || !currency.amount[currentCurrency]) {
-                  return;
-                }
-
-                var amount = currency.amount[currentCurrency];
-
-                if (cost.tierModel && cost.quantityTier != 1)
-                  sheet2.data[rowp][TIER_COLUMN_INDEX] = " < " + cost.unitQuantity * cost.quantityTier;
-
-                // Price is often given for 1 000 API Call in JSON
-                // So need to derive the price per API call
-                if (cost.unitQuantity)
-                  amount = amount / cost.unitQuantity;
-                sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = amount;
-              });
-            } else {
-              // Handle simple cost plan (ex: Statica service)
-              if (cost.amount) {
-                sheet2.data[rowp][AMOUNT_COLUMN_INDEX] = cost.amount[currentCurrency];
-              }
-            }
-            //console.log(rowp, svcName, planName, amount);
-            //console.log(rowp, svcName, planName);
-
-            // Plan Description
-            var description = "";
-            if (plan.metadata.plan.extra.bullets) {
-              plan.metadata.plan.extra.bullets.forEach(function (bullet, index) {
-                description = description + (index > 0 ? ", " : "") + bullet;
-              });
-            } else {
-              description = planDescription;
-            }
-            sheet2.data[rowp][DESCRIPTION_COLUMN_INDEX] = description;
-
-            // ---------------
-            // Determine whether or not the service is available through a Subscription or needs to be order/purchase through a sales rep
-            var withSubscription;
-            // By default, all services are available through subscription
-            if (extrap && extrap.subscription)
-              withSubscription = 'yes';
-            if (plan.pricing_tags.indexOf('free')>=0)
-              withSubscription = 'yes';
-            // Some services are not using the tag reservable :-(
-            // The only way to find out whether the service is available within a subscription is to look at the plan description... dirty... but it works with those 3 keywords!!
-            // Exemple: dahsDB - Enterprise for Transactions 2.8.500
-            if ((planDescription.indexOf('order') !== -1) ||
-                (planDescription.indexOf('sales rep') !== -1))
-              withSubscription = 'no'
-            // Watson Premium services are not available by Subscription
-            if ((planDescription.indexOf('Premium') !== -1) &&
-                (planDescription.indexOf('watson') !== -1))
-              withSubscription = 'no'
-            if (!withSubscription)
-              withSubscription = 'yes'
-
-            var isReservable
-            if (extrap && extrap.reservable) {
-              isReservable = 'reservable'
-                // Reservable plan cannot be used with a subscription
-              withSubscription = 'no'
-            }
-            sheet2.data[rowp][SUBSCRIPTION_COLUMN_INDEX] = withSubscription;
-            // ---------------
-
-            rowp++;
-          });
-        }
-      }
-    });
-  });
-}
-*/
 
 // ---------------------------------------------------------------------
 // API Export to PPTX
 // ---------------------------------------------------------------------
-function exportToPowerpoint(services, dateMDY, res) {
+function exportToPowerpoint(services, dateMDY) {
   var pptx = officegen('pptx');
 
   pptx.setWidescreen(true);
@@ -363,7 +174,7 @@ function exportToPowerpoint(services, dateMDY, res) {
     bold: false,
     color: 'ff0000'
   });
-  slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
+  slide.addImage(path.resolve(__dirname, '../docs/icons/ibmcloud_logo.png'), {
     x: 1000,
     y: 30,
     cx: 150,
@@ -375,13 +186,13 @@ function exportToPowerpoint(services, dateMDY, res) {
     slide = pptx.makeNewSlide();
 
     try {
-      slide.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
+      slide.addImage(path.resolve(__dirname, '../docs/generated/icons/' + service.id + '.png'), {
         x: 50,
         y: 30,
         cx: 70,
         cy: 70
       });
-      slide.addImage(path.resolve(__dirname, 'public/icons/ibmcloud_logo.png'), {
+      slide.addImage(path.resolve(__dirname, '../docs/icons/ibmcloud_logo.png'), {
         x: 1000,
         y: 30,
         cx: 100,
@@ -553,7 +364,7 @@ function exportToPowerpoint(services, dateMDY, res) {
 // ---------------------------------------------------------------------
 // API Export to DOCX
 // ---------------------------------------------------------------------
-function exportToWord(services, dateMDY, res) {
+function exportToWord(services, dateMDY) {
   var docx = officegen('docx');
 
   var introPage = docx.createP();
@@ -569,7 +380,7 @@ function exportToWord(services, dateMDY, res) {
     var p = docx.createP();
 
     try {
-      p.addImage(path.resolve(__dirname, 'public/generated/icons/' + service.id + '.png'), {
+      p.addImage(path.resolve(__dirname, '../docs/generated/icons/' + service.id + '.png'), {
         cx: 50,
         cy: 50
       });
@@ -624,4 +435,6 @@ function exportToWord(services, dateMDY, res) {
   return docx;
 }
 
-module.exports = router;
+module.exports = {
+  generate
+};

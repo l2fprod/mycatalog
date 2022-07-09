@@ -23,7 +23,7 @@ function CheatSheet() {
       background: '#fff',
     },
     logo: {
-      icon: 'public/icons/ibmcloud_logo.png',
+      icon: '../docs/icons/ibmcloud_logo.png',
       link: 'https://ibm.biz/cloud-cheatsheet',
     }
   };
@@ -47,7 +47,7 @@ function CheatSheet() {
       background: '#2c2c2d',
     },
     logo: {
-      icon: 'public/icons/ibmcloud_logo_dark.jpg',
+      icon: '../docs/icons/ibmcloud_logo_dark.jpg',
       link: 'https://ibm.biz/cloud-cheatsheet-dark',
     }
   };
@@ -60,8 +60,8 @@ function CheatSheet() {
 
   self.generate = function (darkMode, outputFilename) {
     const styling = darkMode ? styleDarkMode : styleLightMode;
-    const catalogCategories = JSON.parse(fs.readFileSync('public/js/categories.json', 'utf-8'));
-    const resources = JSON.parse(fs.readFileSync('public/generated/resources-full.json', 'utf8'))
+    const catalogCategories = JSON.parse(fs.readFileSync('../docs/js/categories.json', 'utf-8'));
+    const resources = JSON.parse(fs.readFileSync('../docs/generated/resources-full.json', 'utf8'))
       .filter(resource =>
         resource.tags.indexOf('ibm_deprecated') < 0 &&
         resource.tags.indexOf('ibm_experimental') < 0 &&
@@ -197,8 +197,8 @@ function CheatSheet() {
       resourcesInCategory.forEach((resource) => {
 
       // icon for the resource
-      if (fs.existsSync('public/generated/icons/' + resource.id + '.png')) {
-        sheet.image('public/generated/icons/' + resource.id + '.png', currentX, currentY + 1.5,
+      if (fs.existsSync('../docs/generated/icons/' + resource.id + '.png')) {
+        sheet.image('../docs/generated/icons/' + resource.id + '.png', currentX, currentY + 1.5,
           { width: fontSize, height: fontSize /*fit: [fontSize, fontSize]*/ });
       }
 
