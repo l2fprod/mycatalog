@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # bzip2 required by nodejs npm install (phantomjs-prebuilt extract)
 # apt-get update

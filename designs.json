@@ -1,9 +1,0 @@
-{
-  "_id": "_design/snapshots",
-  "views": {
-    "by_date": {
-      "map": "function (doc) {\n  if (doc.type == \"snapshot\") {\n    emit(doc.createdAt, 1);\n  }\n}"
-    }
-  },
-  "language": "javascript"
-}
