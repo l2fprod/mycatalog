@@ -24,6 +24,7 @@ async function main() {
     await db.addSnapshot(resources);
     
     // generate the latest feed
+    console.log('Generating feed...');
     const snapshots = await db.getRecentSnapshots();
     const feedGenerator = require('./feed.js');
     const feedAsString = feedGenerator.generateFeed(snapshots);

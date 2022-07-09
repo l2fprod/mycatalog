@@ -16,3 +16,16 @@ nvm install 16.15.0
 npm install --global yarn
 
 ./run.sh
+
+git add docs
+git status
+
+git config --global push.default simple
+git config --global user.email "autobuild@not-a-dom.ain"
+git config --global user.name "autobuild"
+
+# use "skip ci" to avoid triggering Travis again
+git commit -m '[skip ci] updates'
+
+# push the changes
+git push
