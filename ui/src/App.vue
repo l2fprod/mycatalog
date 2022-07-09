@@ -127,8 +127,7 @@
                 href="https://cloud.ibm.com/apidocs/resource-catalog/global-catalog"
                 >Global Catalog API</a
               >
-              to retrieve data from the official <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>
-              mixing it with the data from <a href="https://cloud.ibm.com/status">the status page</a>.
+              to retrieve data from the official <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>.
               It attempts to be as accurate as possible. Use with care.
             </p>
             <p class="mt-6">
