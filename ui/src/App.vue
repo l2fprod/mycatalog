@@ -33,21 +33,19 @@
         ></v-text-field>
       </v-responsive>
       <v-spacer></v-spacer>
-      Export to
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             v-bind="attrs"
             v-on="on"
             icon
-            @click="exportSelection('pptx')"
-            :loading="exporting.pptx"
+            href="/generated/mycatalog.pptx"
             color="red lighten-1"
           >
             <img src="/icons/ppt_logo.png" height="24" width="24" />
           </v-btn>
         </template>
-        <span>Export selection to Powerpoint</span>
+        <span>Download as Powerpoint</span>
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
@@ -55,14 +53,13 @@
             v-bind="attrs"
             v-on="on"
             icon
-            @click="exportSelection('xlsx')"
-            :loading="exporting.xlsx"
+            href="/generated/mycatalog.xlsx"
             color="green darken-3"
           >
             <img src="/icons/excel_logo.png" height="24" width="24" />
           </v-btn>
         </template>
-        <span>Export selection to Excel</span>
+        <span>Download as Excel</span>
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
@@ -70,14 +67,13 @@
             v-bind="attrs"
             v-on="on"
             icon
-            @click="exportSelection('docx')"
-            :loading="exporting.docx"
+            href="/generated/mycatalog.docx"
             color="light-blue lighten-3"
           >
             <img src="/icons/word_logo.png" height="24" width="24" />
           </v-btn>
         </template>
-        <span>Export selection to Word</span>
+        <span>Download as Word</span>
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
@@ -131,8 +127,7 @@
                 href="https://cloud.ibm.com/apidocs/resource-catalog/global-catalog"
                 >Global Catalog API</a
               >
-              to retrieve data from the official <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>
-              mixing it with the data from <a href="https://cloud.ibm.com/status">the status page</a>.
+              to retrieve data from the official <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>.
               It attempts to be as accurate as possible. Use with care.
             </p>
             <p class="mt-6">
@@ -200,11 +195,6 @@ export default {
   data: () => ({
     showFilterPanel: true,
     showAboutDialog: false,
-    exporting: {
-      pptx: false,
-      xlsx: false,
-      docx: false,
-    },
     ProductDetails, //
   }),
 
@@ -227,16 +217,6 @@ export default {
           this.$store.commit("SET_SEARCH_TERM", text);
         }, 300);
       }
-    },
-    exportSelection(format) {
-      this.exporting[format] = true;
-      this.$store
-        .dispatch("exportSelection", {
-          format,
-        })
-        .finally(() => {
-          this.exporting[format] = false;
-        });
     },
   },
 };

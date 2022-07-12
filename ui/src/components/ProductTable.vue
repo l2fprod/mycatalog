@@ -10,10 +10,8 @@
     fixed-header
     dense
     hide-default-footer
-    show-select
     @click:row="selectRow"
     class="productTable"
-    v-model="selectedResources"
   >
     <template v-slot:top>
       <v-container fluid>
@@ -25,30 +23,8 @@
                 >, <b>{{ filteredResources.length }}</b> resources matching the
                 search criteria</span
               >
-              <span v-if="selectedResources.length > 0"
-                >, <b>{{ selectedResources.length }}</b> selected</span
-              >
             </div>
             <v-spacer />
-            <v-tooltip bottom max-width="200">
-              <template v-slot:activator="{ on, attrs }">
-                <div v-bind="attrs" v-on="on">
-                  <v-switch v-model="showStatusOverlay" dense hide-details>
-                    <template v-slot:label>
-                      <span class="text-body-2">Resource status</span>
-                    </template>
-                  </v-switch>
-                </div>
-              </template>
-              <span>
-                Shows
-                <v-icon small color="red">mdi-checkbox-marked-circle</v-icon>
-                if there is an incident in progress for the resource in the
-                location,
-                <v-icon small color="green">mdi-checkbox-marked-circle</v-icon>
-                otherwise
-              </span>
-            </v-tooltip>
             <v-menu
               bottom
               left
@@ -262,22 +238,6 @@ export default Vue.extend({
     filteredResources() {
       return this.$store.state.filteredResources;
     },
-    selectedResources: {
-      get() {
-        return this.$store.state.selectedResources;
-      },
-      set(values) {
-        this.$store.commit("SET_SELECTED_RESOURCES", values);
-      },
-    },
-    showStatusOverlay: {
-      get() {
-        return this.$store.state.showStatusOverlay;
-      },
-      set(value) {
-        this.$store.commit("SET_SHOW_STATUS_OVERLAY", value);
-      },
-    },
   },
   methods: {
     selectRow(row) {
@@ -288,9 +248,6 @@ export default Vue.extend({
         format,
       });
     },
-    hasIncident(resourceName, location) {
-      return this.$store.getters.hasIncident(resourceName, location);
-    },
     getLocationIcon(resource, location) {
       if (
         resource.tags.indexOf(location.tag) < 0 &&
@@ -300,23 +257,11 @@ export default Vue.extend({
         return [];
       }
 
-      let icon = "mdi-checkbox-marked-circle";
-      let color = null;
-
-      if (this.showStatusOverlay) {
-        if (this.hasIncident(resource.name, location.id)) {
-          color = "red";
-          icon = "mdi-alert-circle";
-        } else {
-          color = "green";
-        }
-      }
-
       return [
         {
           id: location.id,
-          icon,
-          color,
+          icon: 'mdi-checkbox-marked-circle',
+          color: null,
         },
       ];
     },
@@ -362,37 +307,27 @@ tbody > tr:hover > td {
   background-color: #eaeaea;
 }
 
-/* checkbox column is sticky */
+/* icon column is sticky */
 table > thead > tr > th:nth-child(1),
 table > tbody > tr > td:nth-child(1) {
   position: sticky !important;
   position: -webkit-sticky !important;
-  left: 0;
-  z-index: 3 !important;
-}
-
-/* icon column is sticky */
-table > thead > tr > th:nth-child(2),
-table > tbody > tr > td:nth-child(2) {
-  position: sticky !important;
-  position: -webkit-sticky !important;
-  left: 64px;
+  left: 0px;
   z-index: 3 !important;
 }
 
 /* name column is sticky */
-table > thead > tr > th:nth-child(3),
-table > tbody > tr > td:nth-child(3) {
+table > thead > tr > th:nth-child(2),
+table > tbody > tr > td:nth-child(2) {
   position: sticky !important;
   position: -webkit-sticky !important;
-  left: 112px; /* 64px + 38px */
+  left: 48px;
   z-index: 3 !important;
 }
 
 /* headers stay on top */
 table > thead > tr > th:nth-child(1),
-table > thead > tr > th:nth-child(2),
-table > thead > tr > th:nth-child(3) {
+table > thead > tr > th:nth-child(2) {
   z-index: 4 !important;
 }
 </style>
