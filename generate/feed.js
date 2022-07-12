@@ -19,7 +19,7 @@ function generateFeed(snapshots) {
     current = current + 1;
   }
 
-  var siteUrl = process.env.SITE_URL || "https://mycatalog.mybluemix.net";
+  var siteUrl = process.env.SITE_URL || "https://mycatalog.weworkinthecloud.com";
 
   var feed = new RSS({
     title: "mycatalog updates",

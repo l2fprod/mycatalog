@@ -78,7 +78,7 @@ function CheatSheet() {
       size: 'A4', // 595.28 x 841.89,
       info: {
         Title: 'IBM Cloud Catalog',
-        Author: 'https://mycatalog.mybluemix.net',
+        Author: 'https://mycatalog.weworkinthecloud.com',
       }
     });
 

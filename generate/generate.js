@@ -28,7 +28,7 @@ async function main() {
     const snapshots = await db.getRecentSnapshots();
     const feedGenerator = require('./feed.js');
     const feedAsString = feedGenerator.generateFeed(snapshots);
-    fs.writeFileSync('../docs/feed.xml', feedAsString);
+    fs.writeFileSync('../docs/generated/feed.xml', feedAsString);
   }
 }
 

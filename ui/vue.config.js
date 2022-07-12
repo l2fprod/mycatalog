@@ -9,19 +9,19 @@ module.exports = {
   devServer: {
     proxy: {
       '^/generated': {
-        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.weworkinthecloud.com/',
         // logLevel: 'debug'
       },
       '^/js': {
-        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.weworkinthecloud.com/',
         // logLevel: 'debug'
       },
       '^/icons': {
-        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.weworkinthecloud.com/',
         // logLevel: 'debug'
       },
       '^/api': {
-        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.mybluemix.net/',
+        target: process.env.USE_LOCAL ? 'http://localhost:9080/' : 'https://mycatalog.weworkinthecloud.com/',
         // logLevel: 'debug'
       },
     }
