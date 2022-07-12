@@ -1,0 +1,5 @@
+applications:
+- name: mycatalog-redirect
+  host: mycatalog-redirect
+  buildpack: https://github.com/cloudfoundry/nginx-buildpack
+  memory: 64M
