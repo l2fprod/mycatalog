@@ -150,7 +150,7 @@ function ServiceUpdater() {
               } else {
                 console.log(`[${resource.name}] wrote ${extension}`);
                 if (extension === "svg") {
-                  resource.localSvgIcon = "../docs/generated/icons/" + resource.id + "." + extension;
+                  resource.localSvgIcon = "/generated/icons/" + resource.id + "." + extension;
                   var imageBuffer = fs.readFileSync("../docs/generated/icons/" + resource.id + ".svg");
                   // some svg are compressed
                   try {
@@ -165,7 +165,7 @@ function ServiceUpdater() {
                     .toBuffer()
                     .then(buffer => fs.writeFile("../docs/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
                       console.log(`[${resource.name}] wrote png`);
-                      resource.localPngIcon = "../docs/generated/icons/" + resource.id + ".png";
+                      resource.localPngIcon = "/generated/icons/" + resource.id + ".png";
                       if (convertError) {
                         console.log(`[${resource.name}] could not read, using default`);
                         fs.copyFileSync("../docs/icons/default-service.png", "../docs/generated/icons/" + resource.id + ".png");
@@ -178,7 +178,7 @@ function ServiceUpdater() {
                       callback(null);
                     });
                 } else {
-                  resource.localPngIcon = "../docs/generated/icons/" + resource.id + ".png";
+                  resource.localPngIcon = "/generated/icons/" + resource.id + ".png";
                   Jimp.read("../docs/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
                     if (readErr) {
                       console.log(`[${resource.name}] could not read icon, using default`);
