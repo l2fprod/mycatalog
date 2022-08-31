@@ -84,6 +84,7 @@ function exportToExcel(services, dateMDY) {
     sheet.data[0][9] = "Last Modification";
     sheet.data[0][10] = "Description";
     sheet.data[0][11] = "URL";
+    sheet.data[0][12] = "Tags"
 
     // Cell Content
     sheet.data[row] = [];
@@ -132,7 +133,7 @@ function exportToExcel(services, dateMDY) {
     sheet.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
     sheet.data[row][10] = service.description;
     sheet.data[row][11] = service.metadata.ui.urls.doc_url;
-
+    sheet.data[row][12] = service.tags.join(", ");
     row++;
   });
 
