@@ -204,13 +204,6 @@
     ],
     "plans": [
       {
-        "id": "api-connect-essentials-native",
-        "name": "essentials---native",
-        "description": "This plan is already included in your Cloud Foundry or OpenWhisk runtimes! No need to re-provision it! API Management for Bluemix is a subset of developer-friendly API Connect features that control and secure RESTful runtimes with an API Gateway, available natively in several Bluemix services (including Cloud Foundry, OpenWhisk, and App Connect).",
-        "displayName": "Native ",
-        "originalName": "Essentials - Native"
-      },
-      {
         "id": "551fbe51-9d8e-4584-b308-05ad79709087",
         "name": "provider-org",
         "description": "A provider organization includes a set of users that can manage APIs, products, catalogs, applications, and related settings. Provider organizations are frequently used to separate users by product team, department, company division, and so on. Before creating a provider organization, you must create at least one API Connect Reserved service instance.",
@@ -1500,6 +1493,7 @@
       "is.composite",
       "jp-osa",
       "jp-tok",
+      "network_vpc",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -10090,10 +10084,12 @@
     },
     "name": "satellite",
     "pricing_tags": [
+      "allow_internal_users",
       "paid"
     ],
     "tags": [
       "compute",
+      "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
       "beryllium",
