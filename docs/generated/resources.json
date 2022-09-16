@@ -1296,6 +1296,40 @@
     "localPngIcon": "/generated/icons/cc56b926-cfa1-4f50-ab9d-01986ff692be.png"
   },
   {
+    "id": "a1f65740-5287-11ea-a462-23854475dce1",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "citrix-virtual-app-desktop",
+    "tags": [
+      "compute",
+      "citrix",
+      "custom_kind_service",
+      "cvad",
+      "daas",
+      "desktop",
+      "iaas",
+      "ibm_created",
+      "ibm_experimental",
+      "ibm_iaas_g1",
+      "ibm_third_party",
+      "rc_compatible",
+      "support_ibm",
+      "vdi",
+      "virtual",
+      "virtual desktop infrastructure"
+    ],
+    "plans": [],
+    "description": "Create a Citrix DaaS environment on IBM Cloud.",
+    "longDescription": "Create a Citrix DaaS resource location on IBM Cloud and manage your applications and desktops in Citrix Cloud. This solution provisions infrastructure services on IBM Cloud and connects them to the Citrix Cloud. You maintain complete control over the infrastructure, applications, and desktops while gaining visibility of your on-premises and cloud-based resource locations.",
+    "displayName": "Citrix DaaS for IBM Cloud",
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/a1f65740-5287-11ea-a462-23854475dce1/artifacts/app-icon-light-Citrix.svg",
+    "localSvgIcon": "/generated/icons/a1f65740-5287-11ea-a462-23854475dce1.svg",
+    "localPngIcon": "/generated/icons/a1f65740-5287-11ea-a462-23854475dce1.png"
+  },
+  {
     "geo_tags": [
       "ams01",
       "ams03",
@@ -1426,38 +1460,6 @@
     "displayName": "Citrix NetScaler VPX",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/static/cache/1655-7d6290629ba71929/images/uploaded/icons/netscaler-vpx.png",
     "localPngIcon": "/generated/icons/0a42129b-9839-42b7-90c7-7f3adb435379.png"
-  },
-  {
-    "id": "a1f65740-5287-11ea-a462-23854475dce1",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "citrix-virtual-app-desktop",
-    "tags": [
-      "compute",
-      "citrix",
-      "custom_kind_service",
-      "cvad",
-      "daas",
-      "desktop",
-      "iaas",
-      "ibm_iaas_g1",
-      "ibm_third_party",
-      "rc_compatible",
-      "support_ibm",
-      "vdi",
-      "virtual",
-      "virtual desktop infrastructure"
-    ],
-    "plans": [],
-    "description": "Create a Citrix Virtual Apps and Desktops service resource location on IBM Cloud.",
-    "longDescription": "Create a Citrix Virtual Apps and Desktops service resource location on IBM Cloud and manage your applications and desktops in Citrix Cloud. This solution provisions compute, networking and storage services on IBM Cloud and connects them to the Citrix Cloud. You maintain complete control over the infrastructure, applications and desktops while gaining visibility to your on-premises and cloud-based resource locations.",
-    "displayName": "Citrix Virtual Apps and Desktops for IBM Cloud",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/a1f65740-5287-11ea-a462-23854475dce1/artifacts/cache/1a42cd882db7f4d3fae48f4bbc506e33-public/Citrix_Virtual_Apps_Icon%281%29.svg",
-    "localSvgIcon": "/generated/icons/a1f65740-5287-11ea-a462-23854475dce1.svg",
-    "localPngIcon": "/generated/icons/a1f65740-5287-11ea-a462-23854475dce1.png"
   },
   {
     "geo_tags": [
@@ -3992,7 +3994,7 @@
     "description": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility.",
     "longDescription": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility. Databases for DataStax makes DataStax even better by managing it for you. Features include high availability, automated backup orchestration, and de-coupled scaling of storage, RAM, and vCPUs. Databases for DataStax pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for DataStax",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/datastax.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/datastax.svg",
     "localSvgIcon": "/generated/icons/databases-for-cassandra.svg",
     "localPngIcon": "/generated/icons/databases-for-cassandra.png"
   },
@@ -4065,7 +4067,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4138,7 +4140,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4221,7 +4223,7 @@
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/etcd.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/etcd.svg",
     "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
@@ -4301,7 +4303,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4374,7 +4376,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4457,7 +4459,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -4540,7 +4542,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -9211,7 +9213,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -9581,7 +9583,8 @@
       "tor01",
       "us-east",
       "us-south",
-      "wdc06"
+      "wdc06",
+      "wdc07"
     ],
     "id": "abd259f0-9990-11e8-acc8-b9f54a8f1661",
     "kind": "service",
@@ -9629,7 +9632,8 @@
       "us-east",
       "us-south",
       "virtualservers",
-      "wdc06"
+      "wdc06",
+      "wdc07"
     ],
     "plans": [
       {
