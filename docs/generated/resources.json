@@ -638,6 +638,7 @@
   },
   {
     "geo_tags": [
+      "br-sao",
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
@@ -675,6 +676,7 @@
       "allow_internal_users",
       "bare metal",
       "bare metal server",
+      "br-sao",
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
@@ -2400,6 +2402,13 @@
       "us-south"
     ],
     "plans": [
+      {
+        "id": "1e4e33e4-cfa6-4f12-9016-be594a6d5f87",
+        "name": "cos-one-rate-plan",
+        "description": "The One-rate plan offers large enterprises and ISVs (with multiple divisions or end-users) a predictable TCO based on one flat rate, and allowances for free egress and access. These allowances depend on the amount of storage capacity aggregated across multiple instances within a pricing region.",
+        "displayName": "One Rate",
+        "originalName": "cos-one-rate-plan"
+      },
       {
         "id": "e7da9262-3988-465b-b66c-c9e3985227f7",
         "name": "cos-satellite-12tb-plan",
