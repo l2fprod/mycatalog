@@ -2405,7 +2405,7 @@
       {
         "id": "1e4e33e4-cfa6-4f12-9016-be594a6d5f87",
         "name": "cos-one-rate-plan",
-        "description": "The One-rate plan offers large enterprises and ISVs (with multiple divisions or end-users) a predictable TCO based on one flat rate, and allowances for free egress and access. These allowances depend on the amount of storage capacity aggregated across multiple instances within a pricing region.",
+        "description": "The One-rate plan offers large enterprises and ISVs (with multiple divisions or end-users) a predictable TCO based on one flat rate. The flat rate has built-in allowances for outbound bandwidth and operational requests. These allowances depend on the amount of storage capacity aggregated across multiple instances within a One Rate pricing region. There is no data retrieval charge.",
         "displayName": "One Rate",
         "originalName": "cos-one-rate-plan"
       },
@@ -2440,13 +2440,13 @@
       {
         "id": "2fdf0c08-2d32-4f46-84b5-32e0c92fffd8",
         "name": "lite",
-        "description": "The Lite service plan for Cloud Object Storage includes Regional and Cross Regional resiliency, flexible data classes, and built in security.",
+        "description": "Only one Lite plan instance is allowed per account. The Lite plan instance includes up to 25 GB of storage capacity; 2,000 Class A (PUT, COPY, POST, and LIST) requests; 20,000 Class B (GET and all others) requests; 10 GB of data retrieval; 5GB of egress (public outbound bandwidth) each month. These thresholds apply to the aggregate total across all storage class buckets.",
         "displayName": "Lite"
       },
       {
         "id": "744bfc56-d12c-4866-88d5-dac9139e0e5d",
         "name": "standard",
-        "description": "IBM Cloud Object Storage is HIPAA Ready for our Standard plan. If you intend to include Protected Health Information (as defined by HIPAA) on IBM Cloud services, you must first accept the IBM Business Associate Addendum (BAA) before creating/updating designated service plans. An IBM BAA must be in place for Cloud Services that will be processing content that contains protected health information of individuals governed by U.S. laws and regulations.",
+        "description": "The Standard plan is best suited for workloads that have large amount of storage and relatively small Outbound bandwidth. The plan offers flexible choices for storage class based on data access patterns (lower the cost, the less frequently data is accessed). The Standard plan bills for storage capacity, Outbound bandwidth, operational requests, and data retrieval, where applicable.",
         "displayName": "Standard"
       }
     ],
