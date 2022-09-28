@@ -9276,6 +9276,69 @@
   {
     "geo_tags": [
       "au-syd",
+      "br-sao",
+      "ca-tor",
+      "eu-de",
+      "eu-gb",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "kr-seo",
+      "us-east",
+      "us-south"
+    ],
+    "id": "d4000551-49ff-4868-9e05-f863e60fad3a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "minio",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "custom_kind_service",
+      "eu-de",
+      "eu-gb",
+      "ibm_third_party",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "kr-seo",
+      "minio",
+      "multi cloud",
+      "object storage",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "s3",
+      "storage_vpc",
+      "support_third_party",
+      "us-east",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "fb5ffa0d-62dd-416e-ba7b-e2579b9adc7a",
+        "name": "minio-enterprise",
+        "description": "Designed for customers w/strict SLA requirements (<1 hour), the Enterprise plan includes direct-to-engineer access, security/arch reviews & other key benefits.\n\n\nA minimum of 100 TB will be billed each month.",
+        "displayName": "Enterprise"
+      }
+    ],
+    "description": "MinIO offers high-performance, S3 compatible object storage. Native to Kubernetes, compatible with every public cloud.",
+    "longDescription": "MinIO is a high performance, Kubernetes native object storage suite. With an extensive list of enterprise features, it is scalable, secure and resilient while remaining remarkably simple to deploy and operate at scale. Software-defined, MinIO can run on any infrastructure and in any cloud - public, private or edge. MinIO is the world's fastest object storage and can run the broadest set of workloads in the industry. It is widely considered to be the leader in compatibility with Amazon's S3 API.",
+    "displayName": "MinIO",
+    "imageUrl": "https://minio-marketplace.s3.us-east-2.amazonaws.com/MINIO_Bird_logo.png",
+    "localPngIcon": "/generated/icons/d4000551-49ff-4868-9e05-f863e60fad3a.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
       "eu-de",
       "eu-gb",
       "us-east",
