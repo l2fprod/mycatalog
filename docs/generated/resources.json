@@ -213,7 +213,7 @@
       {
         "id": "ae35b90f-1039-476b-8130-50180b1bec51",
         "name": "reserved-instance-fixed",
-        "description": "A single-tenant, single-zone deployment of API Connect with multi-zone high availability options available. Leverage IBM Cloud services for common tasks like identity management, monitoring, auditing, and logging. Includes the management, gateway, analytics, and portal server components, as well as tools for registering and managing existing gateways located on-premises and on third-party clouds.\n\nThis plan is only available for customers who have purchased API Connect through the sales office and have received an activation code.\n\nContact your sales representative for more information.",
+        "description": "This plan is only available for customers who have already purchased API Connect Reserved from IBM or an authorized business partner.  Contact your sales representative for more information.  \n\n\nIBM Cloud subscription credits can not be applied to purchase API Connect Reserved.\n\n\nProvides a single-tenant deployment of API Connect with optional multi-zone region high availability option available. Leverage IBM Cloud services for common tasks like identity management, monitoring, auditing, and logging. Includes the management, gateway, analytics, and developer portal components, as well as tools for registering existing self-managed gateways located on-premises and on third-party clouds.",
         "displayName": "Reserved",
         "originalName": "reserved-instance-fixed"
       }
@@ -9861,6 +9861,51 @@
     "displayName": "Predictive Market Scenarios",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/C43B3EB0-F56B-4753-92E4-093815814C1E/artifacts/cache/6149a7865312e84a7f9a9aa87935d3b5-public/public/img/50/predictive_package.png",
     "localPngIcon": "/generated/icons/C43B3EB0-F56B-4753-92E4-093815814C1E.png"
+  },
+  {
+    "geo_tags": [
+      "us-south"
+    ],
+    "id": "4dc92300-73cd-11ec-8e70-df67665eaed2",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "privileged-access-gateway",
+    "pricing_tags": [
+      "allow_internal_users",
+      "free"
+    ],
+    "tags": [
+      "security",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "custom_kind_service",
+      "free",
+      "iam_compatible",
+      "ibm_created",
+      "ibm_experimental",
+      "rc_compatible",
+      "rc_compatible",
+      "support_ibm",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "c844cc9b-d32c-4dfb-858d-ea87ea76a854",
+        "name": "lite",
+        "description": "Lite plan",
+        "displayName": "Lite",
+        "originalName": "lite"
+      }
+    ],
+    "description": "Controls and monitors secure operator access to remotely administer servers and clusters.",
+    "longDescription": "Provides  a Bastion gateway server, acting as a single point of entry to a set of servers and clusters. In addition to this restricted gateway access, PAG records operator sessions, and these recordings can be used for investigations of system misuse.",
+    "displayName": "Privileged Access Gateway",
+    "imageUrl": "https://cloud.ibm.com/pag/media/SVG/light-theme/CloudPrivilegedAccessGateway.svg",
+    "localSvgIcon": "/generated/icons/4dc92300-73cd-11ec-8e70-df67665eaed2.svg",
+    "localPngIcon": "/generated/icons/4dc92300-73cd-11ec-8e70-df67665eaed2.png"
   },
   {
     "id": "91a901ac-fb7d-9b6e-eb25-14e75a20c4c2",
