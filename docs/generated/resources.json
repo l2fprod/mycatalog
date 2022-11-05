@@ -2791,6 +2791,66 @@
       "us-east",
       "us-south"
     ],
+    "id": "ComposeElasticsearch-P",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "compose-for-elasticsearch",
+    "pricing_tags": [
+      "paid_only",
+      "paygo"
+    ],
+    "tags": [
+      "au-syd",
+      "big_data",
+      "custom_kind_service",
+      "data_management",
+      "database",
+      "eu_access",
+      "eu-de",
+      "eu-gb",
+      "gc_migrate",
+      "ibm_created",
+      "ibm_dedicated_public",
+      "ibm_deprecated",
+      "paid_only",
+      "paygo",
+      "support_ibm",
+      "us-east",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "ComposeElasticsearchEnterprise",
+        "name": "enterprise",
+        "description": "The Enterprise plan allows the database service to be provisioned within an IBM Compose Enterprise cluster. This is a service which provides a private, dedicated and isolated cluster for customers. To use this plan, a Compose Enterprise cluster has to have been provisioned through the IBM Compose Enterprise service. The database service itself is billed at the shown rates.",
+        "displayName": "Enterprise",
+        "originalName": "Enterprise"
+      },
+      {
+        "id": "ComposeElasticsearchStandard",
+        "name": "standard",
+        "description": "One database instance on a Compose cluster. Starts with 2GB Storage / 204MB RAM and scales automatically with your data.",
+        "displayName": "Standard",
+        "originalName": "Standard"
+      }
+    ],
+    "description": "This offering is deprecated and all instances will be removed after March 1st, 2023. Consider using our next generation service, Databases for Elasticsearch.",
+    "longDescription": "*Before deploying, consider using our new offering, Databases for Elasticsearch.* Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Pricing is based on underlying disk usage. CPU & I/O resources scale with the underlying disk usage. IBM Compose for Elasticsearch makes Elasticsearch even better by managing it for you. Features include auto-scaling deployments, high availability, and automated no-stop backups.",
+    "displayName": "Compose for Elasticsearch",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ComposeElasticsearch-P/artifacts/cache/ab27d594e22c41f0fe3293a6fab5f050-public/compose-Elastic_64.png",
+    "localPngIcon": "/generated/icons/ComposeElasticsearch-P.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-east",
+      "us-south"
+    ],
     "id": "ComposeEtcd-P",
     "kind": "service",
     "metadata": {
@@ -4071,6 +4131,79 @@
     "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "che01",
+      "eu-de",
+      "eu-fr2",
+      "eu-gb",
+      "jp-osa",
+      "jp-tok",
+      "osl01",
+      "par01",
+      "seo01",
+      "us-east",
+      "us-south"
+    ],
+    "id": "databases-for-elasticsearch",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "databases-for-elasticsearch",
+    "pricing_tags": [
+      "paid_only",
+      "paygo"
+    ],
+    "tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "che01",
+      "custom_kind_service",
+      "data_management",
+      "database",
+      "disable_reclamation",
+      "eu_access",
+      "eu-de",
+      "eu-fr2",
+      "eu-gb",
+      "hipaa",
+      "ibm_created",
+      "jp-osa",
+      "jp-tok",
+      "osl01",
+      "paid_only",
+      "par01",
+      "paygo",
+      "rc_compatible",
+      "rc_compatible",
+      "seo01",
+      "service_endpoint_supported",
+      "support_ibm",
+      "us-east",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "databases-for-elasticsearch-standard",
+        "name": "standard",
+        "description": "One highly available Elasticsearch instance with three data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Elasticsearch instances have a minimum of 5GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
+        "displayName": "Standard",
+        "originalName": "standard"
+      }
+    ],
+    "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
+    "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
+    "displayName": "Databases for Elasticsearch",
+    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
+    "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
   {
     "geo_tags": [
