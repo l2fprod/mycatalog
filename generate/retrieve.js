@@ -345,17 +345,18 @@ function ServiceUpdater() {
       // 'compose-for-scylladb',
       'icp',
       'exp',
-      'mcv'
+      'mcv',
+      'cfaas',
+      'cp4d',
+      'satellite-iaas',
+      'globalcatalog-instance',
     ]
     tasks.push((callback) => {
       resources = resources.filter(resource =>
         ignoredResources.indexOf(resource.name) < 0 &&
         (resource.kind === 'iaas' || resource.kind === 'service') &&
-        (!resource.metadata.ui.hidden ||
-          resource.tags.indexOf('vmware_service') >= 0 ||
-          resource.tags.indexOf('vmware_managed_service') >= 0 ||
-          resource.tags.indexOf('virtual_data_center') >= 0) &&
-        (!resource.group || resource.parent_url));
+        (!resource.group || resource.parent_url)
+      );
       callback(null);
     });
 
