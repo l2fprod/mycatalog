@@ -387,6 +387,15 @@ function ServiceUpdater() {
         }
         resource.imageUrl = resource.images.image || resource.images.feature_image;
 
+        // add the region tag if missing
+        if (resource.geo_tags) {
+          for (const zoneTag of resource.geo_tags.filter(tag => tag.endsWith("-1"))) {
+            resource.geo_tags.push(zoneTag.substring(0, zoneTag.indexOf("-1")));
+          }
+        } else {
+          resource.geo_tags = [];
+        }
+
         // inject custom tags
         resource.tags = resource.tags.concat(resource.pricing_tags || []).concat(resource.geo_tags || []);
         resource.tags.push(`custom_kind_${resource.kind}`);
@@ -413,6 +422,10 @@ function ServiceUpdater() {
           }
         } catch (_) {}
 
+        // make tags unique
+        resource.geo_tags = [...new Set(resource.geo_tags)];
+        resource.tags = [...new Set(resource.tags)];
+        
         // sort tags (categories first)
         resource.tags.sort(function (tag1, tag2) {
           var isCategory1 = categories.indexOf(tag1) >= 0
