@@ -4712,7 +4712,7 @@
       {
         "id": "aaa6e83e-27df-4393-9a55-63feec09c685",
         "name": "lite",
-        "description": "IBM DataStage Lite Plan",
+        "description": "IBM DataStage Lite Plan\nLite plans are limited to 15 Capacity Unit-Hours per month. Lite plans are restricted so only one DataStage job can run at a time. Lite plan services are deleted after 30 days of inactivity.",
         "displayName": "Lite",
         "originalName": "lite"
       },
@@ -8125,7 +8125,8 @@
     "description": "VPN access is designed to allow users to remotely manage all servers and services associated with their account over our private network.",
     "longDescription": "VPN facilitates connectivity from your secure network to IBM IaaS platform’s private network. A VPN connection from your location to the private network allows for out-of-band management and server rescue through an encrypted VPN tunnel. Communicating using the private network is inherently more secure and gives users the flexibility to limit public access while still being able to access their servers. Any user on your account can be given VPN access, which is available as both SSL and PPTP. In addition IBM Bluemix also allows to establish a connection using IPSec.",
     "displayName": "IPSec VPN",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/static/cache/1620-efda9d8e9e02d115/images/uploaded/ipsec-vpn.png",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/12/artifacts/cache/f53251d066150e1b7b9577163f69c389-public/IPSecVPN-light-theme.svg",
+    "localSvgIcon": "/generated/icons/12.svg",
     "localPngIcon": "/generated/icons/12.png"
   },
   {
@@ -12917,13 +12918,65 @@
   },
   {
     "geo_tags": [
+      "us-south"
+    ],
+    "id": "vmware.directorsite",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {
+        "hidden": true
+      }
+    },
+    "name": "vmware.directorsite",
+    "pricing_tags": [
+      "allow_internal_users",
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "compute",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "compute_baremetal",
+      "custom_kind_service",
+      "free",
+      "iam_compatible",
+      "ibm_beta",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_ibm",
+      "us-south",
+      "vmware.composite"
+    ],
+    "plans": [
+      {
+        "id": "a99abb7d-822f-4104-8b77-01ddc6363dd0",
+        "name": "directorsite-paid",
+        "description": "Director Site Paid Plan",
+        "displayName": "Director Site",
+        "originalName": "directorsite-paid"
+      }
+    ],
+    "description": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
+    "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
+    "displayName": "VMware as a Service",
+    "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.directorsite.svg",
+    "localPngIcon": "/generated/icons/vmware.directorsite.png"
+  },
+  {
+    "geo_tags": [
       "eu-de",
       "eu-fr2",
       "global",
       "us-south"
     ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83",
-    "kind": "iaas",
+    "kind": "service",
     "metadata": {
       "service": {},
       "ui": {}
@@ -12936,11 +12989,12 @@
       "subscription"
     ],
     "tags": [
+      "compute",
       "allow_internal_users",
       "apidocs_enabled",
       "caveonix",
       "compute_baremetal",
-      "custom_kind_iaas",
+      "custom_kind_service",
       "eu-de",
       "eu-fr2",
       "financial services",
@@ -13035,7 +13089,7 @@
     "description": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VMware Solutions",
-    "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/vmware_solutions.svg",
+    "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.png"
   },
@@ -13075,6 +13129,53 @@
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/vcs.svg",
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcenterserver.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcenterserver.png"
+  },
+  {
+    "geo_tags": [
+      "us-south"
+    ],
+    "id": "vmware.vdc",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {
+        "hidden": true
+      }
+    },
+    "name": "vmware.vdc",
+    "pricing_tags": [
+      "allow_internal_users",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "compute",
+      "allow_internal_users",
+      "custom_kind_service",
+      "iam_compatible",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_ibm",
+      "us-south",
+      "vmware.composite"
+    ],
+    "plans": [
+      {
+        "id": "b53b08bb-a72f-41b1-975e-e668b820b440",
+        "name": "vdc-paid",
+        "description": "Virtual Data Center Paid Plan",
+        "displayName": "VDC Paid",
+        "originalName": "vdc-paid"
+      }
+    ],
+    "description": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
+    "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
+    "displayName": "VMware Virtual Data Center",
+    "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.vdc.svg",
+    "localPngIcon": "/generated/icons/vmware.vdc.png"
   },
   {
     "geo_tags": [
