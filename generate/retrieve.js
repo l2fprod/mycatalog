@@ -148,9 +148,8 @@ function ServiceUpdater() {
                 console.log(`[${resource.name}] could not write icon`);
                 callback(null);
               } else {
-                console.log(`[${resource.name}] wrote ${extension}`);
+                console.log(`[${resource.name}] wrote ${resource.id}.${extension}`);
                 if (extension === "svg") {
-                  resource.localSvgIcon = "/generated/icons/" + resource.id + "." + extension;
                   var imageBuffer = fs.readFileSync("../docs/generated/icons/" + resource.id + ".svg");
                   // some svg are compressed
                   try {
@@ -159,24 +158,32 @@ function ServiceUpdater() {
                     // console.log(`Could not unzip buffer for ${resource.name}`);
                   }
                   var sharp = require('sharp');
-                  sharp(imageBuffer)
-                    .resize(64, 64)
-                    .png()
-                    .toBuffer()
-                    .then(buffer => fs.writeFile("../docs/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
-                      console.log(`[${resource.name}] wrote png`);
-                      resource.localPngIcon = "/generated/icons/" + resource.id + ".png";
-                      if (convertError) {
-                        console.log(`[${resource.name}] could not read, using default`);
+                  if (imageBuffer.length > 0) {
+                    resource.localSvgIcon = "/generated/icons/" + resource.id + "." + extension;
+                    sharp(imageBuffer)
+                      .resize(64, 64)
+                      .png()
+                      .toBuffer()
+                      .then(buffer => fs.writeFile("../docs/generated/icons/" + resource.id + ".png", buffer, (convertError) => {
+                        console.log(`[${resource.name}] wrote png`);
+                        resource.localPngIcon = "/generated/icons/" + resource.id + ".png";
+                        if (convertError) {
+                          console.log(`[${resource.name}] could not read, using default`);
+                          fs.copyFileSync("../docs/icons/default-service.png", "../docs/generated/icons/" + resource.id + ".png");
+                        }
+                        callback(null);
+                      }))
+                      .catch(e => {
+                        console.log(`[${resource.name}] could not read icon, using default`);
                         fs.copyFileSync("../docs/icons/default-service.png", "../docs/generated/icons/" + resource.id + ".png");
-                      }
-                      callback(null);
-                    }))
-                    .catch(e => {
-                      console.log(`[${resource.name}] could not read icon, using default`);
+                        callback(null);
+                      });
+                    } else {
+                      console.log(`[${resource.name}] SVG file is empty, using default`);
+                      resource.localPngIcon = "/generated/icons/" + resource.id + ".png";
                       fs.copyFileSync("../docs/icons/default-service.png", "../docs/generated/icons/" + resource.id + ".png");
                       callback(null);
-                    });
+                    }
                 } else {
                   resource.localPngIcon = "/generated/icons/" + resource.id + ".png";
                   Jimp.read("../docs/generated/icons/" + resource.id + ".png", (readErr, imageBuffer) => {
