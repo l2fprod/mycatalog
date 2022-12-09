@@ -7416,6 +7416,8 @@
       "paid_only"
     ],
     "tags": [
+      "containers",
+      "security",
       "allow_internal_users",
       "beryllium",
       "custom_kind_service",
@@ -7430,6 +7432,7 @@
       "global",
       "iam_compatible",
       "ibm_created",
+      "ibm_release",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -7437,7 +7440,7 @@
       "syd01",
       "syd04",
       "syd05",
-      "virtualservers",
+      "vm",
       "wdc04",
       "wdc06",
       "wdc07"
@@ -7472,8 +7475,8 @@
         "originalName": "small"
       }
     ],
-    "description": "Create and run LinuxONE-based virtual servers with exclusive access to your data and complete authority over your sensitive workloads.",
-    "longDescription": "Create and run virtual servers on IBM LinuxONE, the industry’s most secure Linux-based platform. With an SSH key pair under your control, you have complete authority over your sensitive workloads.",
+    "description": "Create and run virtual servers on IBM LinuxONE, the industry’s most secure Linux-based platform. You can now also create Hyper Protect Virtual Servers for VPC in various regions. For details click “About” Tab.",
+    "longDescription": "Create and run virtual servers on IBM LinuxONE, the industry’s most secure Linux-based platform.\n\nNote: You can now also create Virtual servers for VPC, see https://cloud.ibm.com/vpc-ext/provision/vs. For more information about Virtual servers for VPC, see  https://cloud.ibm.com/docs/vpc?topic=vpc-about-se. Ensure that you select the s390x architecture and set “Run your workload with an OS and a profile protected by Secure Execution” to on.",
     "displayName": "Hyper Protect Virtual Server",
     "imageUrl": "https://hp-vs.prod-us.cloud.zaas.ibm.com/virtualservers-32.svg",
     "localSvgIcon": "/generated/icons/986f2197-9f9a-44f4-9463-f17ec64c6729.svg",
@@ -12939,7 +12942,8 @@
       "allow_internal_users",
       "free",
       "paid",
-      "paid_only"
+      "paid_only",
+      "subscription"
     ],
     "tags": [
       "compute",
@@ -12954,6 +12958,7 @@
       "paid",
       "paid_only",
       "rc_compatible",
+      "subscription",
       "support_ibm",
       "us-south",
       "vmware.composite"
