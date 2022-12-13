@@ -7658,7 +7658,7 @@
       }
     ],
     "description": "Image Service for VPC provides capabilities for customers to bring their own images or create images for rapid deployment",
-    "longDescription": "Image Service resource is used for all feature capabilities related to creating/deleting/importing/exporting Images. Images are resources used to create VSI instances. A VSI instance can also be used to create an Image",
+    "longDescription": "Custom images are used to create new virtual server instances with your own settings and configurations.  You can create a custom image on IBM Cloud in two ways: \n1. You can create a custom image on premises and import it to your IBM Cloud Virtual Private Cloud infrastructure from IBM Cloud Object Storage. \n2. You can create a custom image of a boot volume that is attached to a virtual server instance at import time. For more information, see [about creating an image](/docs/vpc?topic=vpc-image-from-volume-vpc).\nImages are private to the account that they're imported to. New virtual server instance deployments are limited to the region where the image is imported. For more information about importing custom images, see [importing custom images](/docs/vpc?topic=vpc-importing-custom-images-vpc). For more information about managing custom images, see [Managing custom images](/docs/vpc?topic=vpc-managing-custom-images).\n\nYou have many considerations when you create a custom image, such as operating systems, image requirements, and whether you want to share your custom image to a private catalog. For more information about planning for custom images, see [planning for custom images](/docs/vpc?topic=vpc-planning-custom-images).",
     "displayName": "Image Service for VPC",
     "imageUrl": "https://ibm.ent.box.com/s/b15enoelqbaq3ajkt1z8fi5eus5mmazq",
     "localPngIcon": "/generated/icons/is.image.png"
@@ -14057,6 +14057,7 @@
   },
   {
     "geo_tags": [
+      "dal10",
       "dal12",
       "eu-de-1",
       "eu-de-2",
@@ -14095,6 +14096,7 @@
       "apidocs_enabled",
       "as400",
       "custom_kind_service",
+      "dal10",
       "dal12",
       "eu-de",
       "eu-de-1",
