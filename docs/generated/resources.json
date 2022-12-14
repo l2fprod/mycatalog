@@ -761,6 +761,7 @@
       "jp-tok-1",
       "jp-tok-2",
       "jp-tok-3",
+      "linuxone",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -3472,7 +3473,9 @@
     "description": "Create your business solutions with IBM's Cloud and Cognitive Experts in an experience that seamlessly blends business strategy, design and technology.",
     "longDescription": "Engage with IBM Experts to build a more meaningful application for your users. Get the most out of your IBM Cloud account by working with either of our consulting practices: IBM Garage, or Watson Expert Services.",
     "displayName": "Consult with IBM Garage",
-    "imageUrl": "https://tile-service-broker.garage-catalog-service.us-south.containers.appdomain.cloud/consult-with-icg-wes.svg"
+    "imageUrl": "https://tile-service-broker.garage-catalog-service.us-south.containers.appdomain.cloud/consult-with-icg-wes.svg",
+    "localSvgIcon": "/generated/icons/2f756420-434f-11e8-ae40-6bdd72502abc.svg",
+    "localPngIcon": "/generated/icons/2f756420-434f-11e8-ae40-6bdd72502abc.png"
   },
   {
     "geo_tags": [
@@ -6201,6 +6204,45 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "60427a43-cf48-41e0-bd95-26bde9c12105",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "falconstor-software-storsafe-vtl-for-power",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "migration_tools",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "7cf1994d-15cd-4f47-b7f3-f89e8fdb8918",
+        "name": "falconstor-software-storsafe-vtl-on-premise-enterprise",
+        "description": "\nPricing is based on the amount of the repository capacity in terabytes with a monthly billing.   \nThe subscription commitment is for a full year with automatic renewal.   If the service is deleted, the remaining months of the annual commitment will be billed as a lump sum in the next billing cycle.",
+        "displayName": "Enterprise"
+      }
+    ],
+    "description": "StorSafe Virtual Tape Library (VTL) is a backup and cloud enablement tool.",
+    "longDescription": "StorSafe Virtual Tape Library (VTL) is an optimized backup and cloud enablement tool that offers high-speed backup/restore, global data deduplication, enterprise-wide replication, and migration to the cloud. With its integrated deduplication, the solution removes redundant copies of data, thereby reducing capacity requirements and minimizing replication time. StorSafe VTL enables hybrid backup to the cloud and on-premises clients to easily migrate IBM i, AIX, and Linux workloads to PowerVS.",
+    "displayName": "FalconStor StorSafe VTL for Power",
+    "imageUrl": "https://falconstor-download.s3.us-east.cloud-object-storage.appdomain.cloud/FalconStorLogo.png",
+    "localPngIcon": "/generated/icons/60427a43-cf48-41e0-bd95-26bde9c12105.png"
+  },
+  {
+    "geo_tags": [
       "ams01",
       "ams03",
       "au-syd",
@@ -7966,7 +8008,7 @@
     "description": "Using Cloudflare, Cloud Internet Services (CIS) provides Domain Name Service (DNS), Global Load Balancer (GLB), DDoS protection, Web Application Firewall (WAF), Transport Layer Security (TLS), Rate Limiting, Smart Routing, and Caching.",
     "longDescription": "Cloud Internet Services (CIS) provides reliability, performance, and security for Internet facing applications, websites, and services using Cloudflare's 165+ Global Points of Presence (PoPs). It includes Domain Name Service (DNS), Global Load Balancer (GLB), Distributed Denial of Service (DDoS) protection, Web Application Firewall (WAF), Transport Layer Security (TLS), Rate Limiting, Smart Routing, and Caching.",
     "displayName": "Internet Services",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/75874a60-cb12-11e7-948e-37ac098eb1b9/artifacts/cache/68c1bc45ee85c7c8f7a38cddf52f3d96-public/app-icon-light-CloudInternetServices.svg",
+    "imageUrl": "https://broker.cis.cloud.ibm.com/CIS_Icon_CloudPAL.svg",
     "localSvgIcon": "/generated/icons/75874a60-cb12-11e7-948e-37ac098eb1b9.svg",
     "localPngIcon": "/generated/icons/75874a60-cb12-11e7-948e-37ac098eb1b9.png"
   },
@@ -10444,8 +10486,9 @@
     "description": "Create a Qiskit Runtime instance to run quantum programs, on Quantum Systems.",
     "longDescription": "With this service, IBM Quantum gives you access to Qiskit Runtime, an execution environment that delivers significant performance improvements. \n \nQiskit Runtime (beta) is unavailable in the following countries: Afghanistan, Armenia , Azerbaijan, Belarus, Myanmar (Burma), Cambodia, People’s Republic of China (including Hong Kong), Cuba, Georgia, Iran, Iraq, Kazakhstan, North Korea, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam ,Yemen.",
     "displayName": "Qiskit Runtime",
-    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/artifacts/CloudQuantumServices.svg",
-    "localSvgIcon": "/generated/icons/b6049020-80f4-11eb-a0f7-e35ec9b4054f.svg"
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/artifacts/cache/3733c4f0be6e962b9512094817d66eeb-public/CloudQuantumServices.svg",
+    "localSvgIcon": "/generated/icons/b6049020-80f4-11eb-a0f7-e35ec9b4054f.svg",
+    "localPngIcon": "/generated/icons/b6049020-80f4-11eb-a0f7-e35ec9b4054f.png"
   },
   {
     "geo_tags": [
@@ -12781,6 +12824,7 @@
       "fs-ready",
       "fss",
       "hipaa",
+      "hpvs",
       "iam_compatible",
       "ibm_created",
       "ibm_release",
@@ -12794,6 +12838,7 @@
       "jp-tok-2",
       "jp-tok-3",
       "linux virtual server",
+      "linuxone",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -12825,6 +12870,7 @@
       "vm",
       "vpc",
       "vsi",
+      "wazi",
       "windows"
     ],
     "plans": [
