@@ -42,7 +42,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel='stylesheet' id='elementor-icons-css' href='https://neuralseek.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' media='all' />
 <link rel='stylesheet' id='elementor-pro-css' href='https://neuralseek.com/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.9.1' media='all' />
 <link rel='stylesheet' id='elementor-post-11-css' href='https://neuralseek.com/wp-content/uploads/elementor/css/post-11.css?ver=1671244380' media='all' />
-<link rel='stylesheet' id='elementor-post-41-css' href='https://neuralseek.com/wp-content/uploads/elementor/css/post-41.css?ver=1671244380' media='all' />
+<link rel='stylesheet' id='elementor-post-41-css' href='https://neuralseek.com/wp-content/uploads/elementor/css/post-41.css?ver=1671520708' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Inter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.1.1' media='all' />
 <link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://neuralseek.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
 <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://neuralseek.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
@@ -73,16 +73,28 @@ function customResponseHandler(event) {
     }
 }
 
+function nsToast() {
+	if($(".WACLauncherComplex__Text").length){
+		if($(".WACLauncherComplex__Text").text() == "Welcome to NeuralSeek"){
+			$(".WACLauncherComplex__Text").html("Hey! Ask me a question and see NeuralSeek in action <img class='handDown' src='https://neuralseek.com/wp-content/uploads/2022/12/down.svg'>");
+			console.log("set it");
+		}
+		else
+			setTimeout(function() { nsToast()}, 100);
+	}
+	else
+		setTimeout(function() { nsToast()},100);
+}
+
 window.watsonAssistantChatOptions = {
     integrationID: "c22884d5-ae86-4e1c-81a0-f6b7d7cc6561", 
     region: "us-south", 
     serviceInstanceID: "e9269e17-5fa9-491f-b57b-c2837d9cc744", 
     onLoad: function(instance) { 
 		instance.showLauncherGreetingMessage(1000);
-		
 		instance.on({ type: 'customResponse', handler: customResponseHandler });
 		instance.render(); 
-		setTimeout(function(){$(".WACLauncherComplex__Text").html("Hey! Ask me a question and see NeuralSeek in action <img class='handDown' src='https://neuralseek.com/wp-content/uploads/2022/12/down.svg'>")});
+		setTimeout(function() { nsToast()}, 100);
 	}
   };
   setTimeout(function(){
@@ -362,17 +374,7 @@ or the following one for loading the Bootstrap library from jsDelivr:
 			<style>/*! elementor - v3.9.1 - 14-12-2022 */
 .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));height:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#818a91;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#818a91}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
 							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-dffc8a7" target="_blank">
-						<span class="elementor-screen-only">Twitter</span>
-						<i class="fab fa-twitter"></i>					</a>
-				</span>
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-2ba8f29" target="_blank">
-						<span class="elementor-screen-only">Youtube</span>
-						<i class="fab fa-youtube"></i>					</a>
-				</span>
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-github elementor-repeater-item-f63ff6e" target="_blank">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-github elementor-repeater-item-f63ff6e" href="https://github.com/CerebralBlue/" target="_blank">
 						<span class="elementor-screen-only">Github</span>
 						<i class="fab fa-github"></i>					</a>
 				</span>
@@ -390,20 +392,9 @@ or the following one for loading the Bootstrap library from jsDelivr:
 				<div class="elementor-element elementor-element-f9ee214 elementor-widget elementor-widget-button" data-id="f9ee214" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+			<a href="/demo" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Schedule a Demo</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-8802cf4 elementor-widget elementor-widget-button" data-id="8802cf4" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">About</span>
 		</span>
 					</a>
 		</div>
@@ -412,20 +403,9 @@ or the following one for loading the Bootstrap library from jsDelivr:
 				<div class="elementor-element elementor-element-ef939d2 elementor-widget elementor-widget-button" data-id="ef939d2" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+			<a href="/documentation" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Documentation</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-3f41e63 elementor-widget elementor-widget-button" data-id="3f41e63" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Privacy Policy</span>
 		</span>
 					</a>
 		</div>
@@ -434,7 +414,7 @@ or the following one for loading the Bootstrap library from jsDelivr:
 				</div>
 				</div>
 						</div>
-		<link rel='stylesheet' id='elementor-post-728-css' href='https://neuralseek.com/wp-content/uploads/elementor/css/post-728.css?ver=1671244380' media='all' />
+		<link rel='stylesheet' id='elementor-post-728-css' href='https://neuralseek.com/wp-content/uploads/elementor/css/post-728.css?ver=1671519878' media='all' />
 <script src='https://neuralseek.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
 <script src='https://neuralseek.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1' id='smartmenus-js'></script>
 <script src='https://neuralseek.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.9.1' id='elementor-pro-webpack-runtime-js'></script>
@@ -448,7 +428,7 @@ or the following one for loading the Bootstrap library from jsDelivr:
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
 <script id='elementor-pro-frontend-js-before'>
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/neuralseek.com\/wp-admin\/admin-ajax.php","nonce":"69bc1f3c63","urls":{"assets":"https:\/\/neuralseek.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/neuralseek.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/neuralseek.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/neuralseek.com\/wp-admin\/admin-ajax.php","nonce":"d1b63a857a","urls":{"assets":"https:\/\/neuralseek.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/neuralseek.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/neuralseek.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
 <script src='https://neuralseek.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.9.1' id='elementor-pro-frontend-js'></script>
 <script src='https://neuralseek.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
@@ -458,15 +438,6 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 </script>
 <script src='https://neuralseek.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.9.1' id='elementor-frontend-js'></script>
 <script src='https://neuralseek.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.9.1' id='pro-elements-handlers-js'></script>
-<script src='https://neuralseek.com/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js'></script>
-<script id='wp-util-js-extra'>
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-</script>
-<script src='https://neuralseek.com/wp-includes/js/wp-util.min.js?ver=6.1.1' id='wp-util-js'></script>
-<script id='wpforms-elementor-js-extra'>
-var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
-</script>
-<script src='https://neuralseek.com/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.7.8' id='wpforms-elementor-js'></script>
 
 </body>
 </html>
