@@ -9925,11 +9925,15 @@
       "assistant",
       "bot",
       "chatbot",
+      "chatgpt",
       "custom_kind_service",
       "discovery",
       "free",
+      "gpt-3",
+      "gpt3",
       "ibm_third_party",
       "ml",
+      "openai",
       "paid",
       "paid_only",
       "q&a",
@@ -9943,6 +9947,12 @@
     ],
     "plans": [
       {
+        "id": "8541f8e5-fdde-4a04-8a83-e43ade080725",
+        "name": "neuralseek-lite",
+        "description": "For IBM presales demonstration of the product only. Not for use in customer environments or engagements. Not for use by IBM services. All customer usecases require a paid plan.",
+        "displayName": "Lite"
+      },
+      {
         "id": "25348c87-449d-4107-bf04-82ab9b3dd3b0",
         "name": "neuralseek-pay-per-answer",
         "description": "Pay per live answer provided back thru our API.  Curation and creation of Actions load files is provided at no additional cost.",
@@ -9952,8 +9962,9 @@
     "description": "AI-powered conversational Q&A for corporate chatbots. Drastically reduces the time and cost to build and maintain a chatbot.",
     "longDescription": "NeuralSeek turns Watson Discovery into an intelligent, conversational answer and curation service for Watson Assistant.\n\n\nHow does it work:\n\n- Make the Connection:\nConnect NeuralSeek to Watson Discovery and Watson Assistant via our no-code step-by-step guide\n- Unleash the bot:\nAllow your bot to dynamically interact with internal and external customers.  NeuralSeek will provide conversational answers, and apply variation when asked the same question again.  NeuralSeek understands context and can build off a string of questions.\n- Watch the Magic:\nNeuralSeek provides conversational answers to open-ended questions based on the knowledge you have loaded into Watson Discovery.\nNeuralSeek categorizes and curates content for your team to gain a more wholistic view of customer interactions.\n- Implement what NeuralSeek discovers:\nSelect the best content that Neuralseek has curated to automatically merge back into Watson Assistant",
     "displayName": "NeuralSeek",
-    "imageUrl": "http://neuralseek.com/wp-content/uploads/2022/08/ns-blue.svg",
-    "localSvgIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.svg"
+    "imageUrl": "https://neuralseek.com/wp-content/uploads/2022/12/ns-blue-64.svg",
+    "localSvgIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.svg",
+    "localPngIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.png"
   },
   {
     "geo_tags": [
