@@ -2539,7 +2539,6 @@
       "eu-de",
       "eu-fr2",
       "eu-gb",
-      "global",
       "in-che",
       "jp-osa",
       "jp-tok",
@@ -2577,7 +2576,6 @@
       "free",
       "freesia",
       "gc_migrate",
-      "global",
       "iam_compatible",
       "ibm_created",
       "ibm_dedicated_public",
@@ -4850,7 +4848,7 @@
       {
         "id": "dashDBNebula",
         "name": "enterprise",
-        "description": "The starting configuration provides one SQL database per service instance residing on dedicated compute slices, with 4 vCPUs (16 GB of memory), and 20 GB of storage for data and logs. Scale your database up to 56 vCPUs (240 GB of memory) and 4 TB of storage for data and logs. Enterprise offers a high availability option that includes one database running on three dedicated virtual servers. Each HA node is billed separately. The high availability virtual servers are provisioned across multiple availability zones in IBM Cloud regions that support it. Scale your compute and storage independently to achieve the perfect price/performance fit. Each plan includes up to 1 TB of backup storage, stored for 14 days.",
+        "description": "The starting configuration provides one SQL database per service instance residing on dedicated compute slices, with 4 vCPUs (16 GB of memory), and 20 GB of storage for data and logs. Scale your database up to 56 vCPUs (240 GB of memory) and 24 TB of storage for data and logs. Enterprise offers a high availability option that includes one database running on three dedicated virtual servers. Each HA node is billed separately. The high availability virtual servers are provisioned across multiple availability zones in IBM Cloud regions that support it. Scale your compute and storage independently to achieve the perfect price/performance fit. Each plan includes up to 1 TB of backup storage, stored for 14 days.",
         "displayName": "Enterprise",
         "originalName": "Enterprise"
       },
@@ -10105,7 +10103,7 @@
       {
         "id": "7e65442f-6ff9-4f76-b2b6-5e55264d32cd",
         "name": "enterprise",
-        "description": "This is a quota-based plan.",
+        "description": "This is a quota based subscription plan for Planning Analytics SaaS deployed on AWS. A base instance includes 10 Authorized Users, 48GB of Memory and 512GB of storage.",
         "displayName": "Enterprise",
         "originalName": "enterprise"
       }
@@ -10816,6 +10814,7 @@
       "ca-tor",
       "custom_kind_service",
       "distributed cloud",
+      "eu_access",
       "eu-de",
       "eu-gb",
       "freesia",
