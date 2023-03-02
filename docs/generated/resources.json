@@ -329,6 +329,7 @@
       "eu-gb",
       "free",
       "ibm_created",
+      "ibm_deprecated",
       "ibm_release",
       "lite",
       "paid",
@@ -9584,6 +9585,56 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "2273110c-1f86-4774-acf9-b89b47fff74a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "storagepipe-microsoft-365-backup-as-a-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "365",
+      "baas",
+      "backup",
+      "cloud",
+      "custom_kind_service",
+      "exchange",
+      "exchange online",
+      "global",
+      "ibm_third_party",
+      "microsoft",
+      "microsoft 365",
+      "onedrive",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "sharepoint",
+      "storage_classic",
+      "support_third_party",
+      "teams"
+    ],
+    "plans": [
+      {
+        "id": "5fb80a25-4912-4cea-a8d8-40a07bcb2428",
+        "name": "storagepipe-microsoft-365-backup-as-a-service-m365-backup-standard",
+        "description": "Microsoft 365 Backup plan to protect your tenant including Exchange Online, OneDrive for Business, SharePoint Online and Teams.",
+        "displayName": "M365 Backup - Standard"
+      }
+    ],
+    "description": "Backup for your critical Microsoft 365 data including Exchange Online, Teams, SharePoint Online, and OneDrive for Business",
+    "longDescription": "Microsoft 365 Backup as a Service\nPeople delete data. Mostly accidentally, sometimes intentionally. And there is the ever-present threat of ransomware and other malware.\n\nMicrosoft 365 (previously known as Office 365 or O365) provides redundancy that only ensures the availability of the present state of the data. \nIt does not backup the data to protect against data loss events or retain data for longer term policies or compliance.\n\nThat means that even in the cloud, data protection is necessary.\n\nMicrosoft 365 Backup as a Service by Storagepipe securely connects to your Microsoft 365 tenant and captures all of the changes to ensure rapid and automated protection.\n\n- Backup Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams\n- Minimizes risk of data loss and assures availability of data\n- Helps to meet retention, audit and compliance requirements for recovery\n- Reduces employee downtime by easily restoring lost data and applications\n- Automated backup for your cloud services\n- Point-in-time backup and accurate, granular restore",
+    "displayName": "Microsoft 365 Backup as a Service",
+    "imageUrl": "https://storagepipe.com/wp-content/uploads/2022/02/SP_Logo_RGB_Emblem_32x32_pixelsV2_transbkgnd-01.png",
+    "localPngIcon": "/generated/icons/2273110c-1f86-4774-acf9-b89b47fff74a.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -10109,11 +10160,10 @@
       }
     ],
     "description": "Streamline planning across your organization and forecast with greater accuracy",
-    "longDescription": "IBM Planning Analytics is a collaborative, enterprise-scalable budgeting, planning, analytics, profitability, modeling and reporting solution. These applications are supported by the TM1 in memory On Line Analytical Processing (OLAP) server that provides on-demand analytics of complex multidimensional data in real time.",
+    "longDescription": "IBM Planning Analytics  as a Service is a fully managed,  collaborative, enterprise-scalable budgeting, planning, analytics, profitability, modeling and reporting solution deployed on AWS. These applications are supported by the highly available Planning Analytics in memory engine that provides on-demand analytics of complex multidimensional data in real time.",
     "displayName": "Planning Analytics",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/41690130-a4e8-11ea-94c3-d72a57643c7d/artifacts/cache/1021e381a38f79a834a82fe37b5ad07c-public/PA_App_Icon_32_Light.svg",
-    "localSvgIcon": "/generated/icons/41690130-a4e8-11ea-94c3-d72a57643c7d.svg",
-    "localPngIcon": "/generated/icons/41690130-a4e8-11ea-94c3-d72a57643c7d.png"
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/41690130-a4e8-11ea-94c3-d72a57643c7d/artifacts/PA_App_Icon_32_Light.svg",
+    "localSvgIcon": "/generated/icons/41690130-a4e8-11ea-94c3-d72a57643c7d.svg"
   },
   {
     "geo_tags": [
