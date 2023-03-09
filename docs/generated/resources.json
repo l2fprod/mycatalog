@@ -3032,66 +3032,6 @@
       "us-east",
       "us-south"
     ],
-    "id": "ComposeMySQL-P",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "compose-for-mysql",
-    "pricing_tags": [
-      "paid_only",
-      "paygo"
-    ],
-    "tags": [
-      "au-syd",
-      "big_data",
-      "custom_kind_service",
-      "data_management",
-      "database",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "gc_migrate",
-      "ibm_beta",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "paid_only",
-      "paygo",
-      "support_ibm",
-      "us-east",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "ComposeMysqlEnterprise",
-        "name": "enterprise",
-        "description": "The Enterprise plan allows the database service to be provisioned within an IBM Compose Enterprise cluster. This is a service which provides a private, dedicated and isolated cluster for customers. To use this plan, a Compose Enterprise cluster has to have been provisioned through the IBM Compose Enterprise service. The database service itself is billed at the shown rates.",
-        "displayName": "Enterprise",
-        "originalName": "Enterprise"
-      },
-      {
-        "id": "ComposeMysqlStandard",
-        "name": "standard",
-        "description": "One database instance on a Compose cluster. Starts with 1GB Storage / 102MB RAM and scales automatically with your data.",
-        "displayName": "Standard",
-        "originalName": "Standard"
-      }
-    ],
-    "description": "This offering is deprecated and all instances will be removed after March 1st, 2023. Consider using our next generation service, Databases for MySQL.",
-    "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Pricing is based on underlying disk usage. CPU & I/O resources scale with the underlying disk usage. IBM Compose for MySQL makes MySQL even better by managing it for you. Features include auto-scaling deployments, high availability, and automated no-stop backups. Beta products are for evaluation purposes only and come with no warranties, express or implied. Support is limited to collecting feedback of the Beta product only. Learn more, https://www-03.ibm.com/software/sla/sladb.nsf/sla/bm",
-    "displayName": "Compose for MySQL",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ComposeMySQL-P/artifacts/cache/23f75293fe725ac3528c438ebe118fb1-public/compose-MySQL-64.png",
-    "localPngIcon": "/generated/icons/ComposeMySQL-P.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-east",
-      "us-south"
-    ],
     "id": "ComposePostgreSQL-P",
     "kind": "service",
     "metadata": {
@@ -3263,127 +3203,6 @@
     "displayName": "Compose for Redis",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ComposeRedis-P/artifacts/cache/87f5a01930695db8a5923110e1db88da-public/compose-Redis_64.png",
     "localPngIcon": "/generated/icons/ComposeRedis-P.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-east",
-      "us-south"
-    ],
-    "id": "ComposeRethinkDB-P",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "compose-for-rethinkdb",
-    "pricing_tags": [
-      "paid_only",
-      "paygo"
-    ],
-    "tags": [
-      "au-syd",
-      "big_data",
-      "custom_kind_service",
-      "data_management",
-      "database",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "gc_migrate",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "ibm_deprecated",
-      "paid_only",
-      "paygo",
-      "support_ibm",
-      "us-east",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "ComposeRethinkDBEnterprise",
-        "name": "enterprise",
-        "description": "The Enterprise plan allows the database service to be provisioned within an IBM Compose Enterprise cluster. This is a service which provides a private, dedicated and isolated cluster for customers. To use this plan, a Compose Enterprise cluster has to have been provisioned through the IBM Compose Enterprise service. The database service itself is billed at the shown rates.",
-        "displayName": "Enterprise",
-        "originalName": "Enterprise"
-      },
-      {
-        "id": "ComposeRethinkDBStandard",
-        "name": "standard",
-        "description": "One database instance on a Compose cluster. Starts with 1GB Storage / 102MB RAM and scales automatically with your data.",
-        "displayName": "Standard",
-        "originalName": "Standard"
-      }
-    ],
-    "description": "This offering is deprecated and all instances will be removed after March 1st, 2023. Consider using our next generation service, Databases for MongoDB.",
-    "longDescription": "RethinkDB is a JSON document based, distributed database. It uses the ReQL query language which is built around function chaining and is available in client libraries for JavaScript, Python and Ruby. With ReQL it is possible to utilize RethinkDB server side features such as distributed joins and subqueries across the cluster’s nodes. Pricing is based on underlying disk usage. CPU & I/O resources scale with the underlying disk usage. IBM Compose for RethinkDB makes RethinkDB even better by managing it for you. Features include auto-scaling deployments, high availability, and automated no-stop backups.",
-    "displayName": "Compose for RethinkDB",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ComposeRethinkDB-P/artifacts/cache/4c9ceb7423a2b273d41d61447f7e8ef9-public/compose-ReThinkDB-64px.png",
-    "localPngIcon": "/generated/icons/ComposeRethinkDB-P.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-east",
-      "us-south"
-    ],
-    "id": "ComposeScyllaDB-P",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "compose-for-scylladb",
-    "pricing_tags": [
-      "paid_only",
-      "paygo"
-    ],
-    "tags": [
-      "au-syd",
-      "big_data",
-      "custom_kind_service",
-      "data_management",
-      "database",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "gc_migrate",
-      "ibm_beta",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "ibm_deprecated",
-      "paid_only",
-      "paygo",
-      "support_ibm",
-      "us-east",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "ComposeScyllaDBEnterprise",
-        "name": "enterprise",
-        "description": "The Enterprise plan allows the database service to be provisioned within an IBM Compose Enterprise cluster. This is a service which provides a private, dedicated and isolated cluster for customers. To use this plan, a Compose Enterprise cluster has to have been provisioned through the IBM Compose Enterprise service. The database service itself is billed at the shown rates.",
-        "displayName": "Enterprise",
-        "originalName": "Enterprise"
-      },
-      {
-        "id": "ComposeScyllaDBStandard",
-        "name": "standard",
-        "description": "One database instance on a Compose cluster. Starts with 5GB Storage / 512MB RAM and scales automatically with your data.",
-        "displayName": "Standard",
-        "originalName": "Standard"
-      }
-    ],
-    "description": "This offering is deprecated and all instances will be removed after March 1st, 2023. Consider using our next generation service, Databases for DataStax.",
-    "longDescription": "ScyllaDB is a highly performant, in-place replacement for the Cassandra wide-column distributed database. ScyllaDB is written in C++, rather than Cassandra's Java, for better resource usage that can result in ten times better performance in benchmarks. Pricing is based on underlying disk usage. CPU & I/O resources scale with the underlying disk usage. IBM Compose for ScyllaDB makes ScyllaDB even better by managing it for you. Features include auto-scaling deployments, high availability, and automated no-stop backups.",
-    "displayName": "Compose for ScyllaDB",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ComposeScyllaDB-P/artifacts/cache/2551ecec0f231db3e3718c8af0a0b649-public/compose-ScyllaDB-64.png",
-    "localPngIcon": "/generated/icons/ComposeScyllaDB-P.png"
   },
   {
     "geo_tags": [
@@ -4113,7 +3932,7 @@
     "description": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility.",
     "longDescription": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility. Databases for DataStax makes DataStax even better by managing it for you. Features include high availability, automated backup orchestration, and de-coupled scaling of storage, RAM, and vCPUs. Databases for DataStax pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for DataStax",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/datastax.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/datastax.svg",
     "localSvgIcon": "/generated/icons/databases-for-cassandra.svg",
     "localPngIcon": "/generated/icons/databases-for-cassandra.png"
   },
@@ -4185,7 +4004,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4257,7 +4076,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4339,7 +4158,7 @@
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/etcd.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/etcd.svg",
     "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
@@ -4418,7 +4237,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4490,7 +4309,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4572,7 +4391,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -4654,7 +4473,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -9621,7 +9440,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -13158,6 +12977,13 @@
       "vmware.composite"
     ],
     "plans": [
+      {
+        "id": "eacaf3bf-1ced-4854-825b-21a6679f4f29",
+        "name": "directorsite",
+        "description": "Director Site Plan",
+        "displayName": "Director Site",
+        "originalName": "directorsite"
+      },
       {
         "id": "a99abb7d-822f-4104-8b77-01ddc6363dd0",
         "name": "directorsite-paid",
