@@ -8233,6 +8233,8 @@
     "name": "kms",
     "pricing_tags": [
       "free",
+      "paid",
+      "paid_only",
       "paygo"
     ],
     "tags": [
@@ -8255,6 +8257,8 @@
       "ibm_release",
       "jp-osa",
       "jp-tok",
+      "paid",
+      "paid_only",
       "paygo",
       "preprod",
       "rc_compatible",
@@ -10219,7 +10223,6 @@
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
-      "eu-es",
       "eu-fr2",
       "eu-fr2-1",
       "eu-fr2-2",
@@ -10277,7 +10280,6 @@
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
-      "eu-es",
       "eu-fr2",
       "eu-fr2-1",
       "eu-fr2-2",
@@ -11133,6 +11135,60 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/54e4b73f-6ffa-bdbe-a9f0-27d20a2ea731.svg",
     "localPngIcon": "/generated/icons/54e4b73f-6ffa-bdbe-a9f0-27d20a2ea731.png"
+  },
+  {
+    "geo_tags": [
+      "us-east"
+    ],
+    "id": "e831e900-82d6-11ec-95c5-c12c5a5d9687",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "sysdig-secure",
+    "pricing_tags": [
+      "allow_internal_users",
+      "free",
+      "lite",
+      "paid"
+    ],
+    "tags": [
+      "security",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "custom_kind_service",
+      "free",
+      "iam_compatible",
+      "ibm_created",
+      "lite",
+      "paid",
+      "rc_compatible",
+      "support_ibm",
+      "supports_syndication",
+      "us-east"
+    ],
+    "plans": [
+      {
+        "id": "0eae605c-7258-4bb7-8cb7-a4b96d5c94c3",
+        "name": "free-trial",
+        "description": "Free for 30 days.\nFree trial plans with the data are deleted after 30 days after expiration. Note the Workload Protection agent and the IBM Cloud Monitoring agent cannot be deployed on the same cluster. However, you can access Workload Protection functionality through IBM Cloud Monitoring by selecting the Graduated Tier - Sysdig Secure + Monitor plan. For more information refer to: https://cloud.ibm.com/docs/monitoring?topic=monitoring-service_plans",
+        "displayName": "Free Trial",
+        "originalName": "free-trial"
+      },
+      {
+        "id": "00497f9a-f093-436b-98d7-c81845399516",
+        "name": "graduated-tier",
+        "description": "Scan results, compliance results, policy events, activity audit and captures are accessible and retained for 90 days.\n\nCost is for each node hour. For example if you are running one agent for 24 hours a day and the month has 30 days, the estimated cost is approximately $55 USD.\n\nNote the Workload Protection agent and the IBM Cloud Monitoring agent cannot be deployed on the same cluster. However, you can access Workload Protection functionality through IBM Cloud Monitoring by selecting the Graduated Tier - Sysdig Secure + Monitor plan. For more information refer to: https://cloud.ibm.com/docs/monitoring?topic=monitoring-service_plans",
+        "displayName": "Graduated Tier",
+        "originalName": "graduated-tier"
+      }
+    ],
+    "description": "Detect and respond to vulnerabilities and threats, and manage configurations, permissions, and compliance.",
+    "longDescription": "Security and Compliance Center Workload Protection helps you accelerate your Kubernetes and cloud adoption by addressing security and regulatory compliance. Easily identify vulnerabilities, check compliance, block threats and respond faster at every stage of the container and Kubernetes lifecycle.",
+    "displayName": "Security and Compliance Center Workload Protection",
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/e831e900-82d6-11ec-95c5-c12c5a5d9687/artifacts/light-theme.svg",
+    "localSvgIcon": "/generated/icons/e831e900-82d6-11ec-95c5-c12c5a5d9687.svg"
   },
   {
     "geo_tags": [
