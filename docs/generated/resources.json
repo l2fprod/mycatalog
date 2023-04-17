@@ -6261,6 +6261,9 @@
       "eu-de-2",
       "eu-de-3",
       "eu-es",
+      "eu-es-1",
+      "eu-es-2",
+      "eu-es-3",
       "eu-fr2",
       "eu-fr2-1",
       "eu-fr2-2",
@@ -6321,6 +6324,9 @@
       "eu-de-2",
       "eu-de-3",
       "eu-es",
+      "eu-es-1",
+      "eu-es-2",
+      "eu-es-3",
       "eu-fr2",
       "eu-fr2-1",
       "eu-fr2-2",
@@ -7224,22 +7230,7 @@
       "us-east",
       "us-south"
     ],
-    "plans": [
-      {
-        "id": "1563f33f-874f-4d83-b6de-09384cdfb1ef",
-        "name": "mongodb-flexible",
-        "description": "A MongoDB service instance consisting of one primary node and two secondary nodes for high availability within the region",
-        "displayName": "MongoDB Flexible",
-        "originalName": "mongodb-flexible"
-      },
-      {
-        "id": "ecf07f9f-3d75-4fd8-8074-876ee07b07cf",
-        "name": "mongodb-free",
-        "description": "MongoDB consisting of three replicas for high availability within the region. Free plan instance will be deleted after 30 days.\n",
-        "displayName": "MongoDB Free",
-        "originalName": "mongodb-free"
-      }
-    ],
+    "plans": [],
     "description": "Deploy and manage a MongoDB cluster to protect your sensitive data in a Secure Service Container on IBM LinuxONE.",
     "longDescription": "IBM Cloud Hyper Protect DBaaS for MongoDB is a LinuxONE-powered cloud database solution for enterprise workloads with sensitive data. Hyper Protect DBaaS for MongoDB currently contains MongoDB Enterprise Advanced Edition 4.4",
     "displayName": "Hyper Protect DBaaS for MongoDB",
@@ -7292,22 +7283,7 @@
       "us-east",
       "us-south"
     ],
-    "plans": [
-      {
-        "id": "c8550ed3-894b-462d-98ee-68e80e3955d4",
-        "name": "postgresql-flexible",
-        "description": "A PostgreSQL service instance consisting of one primary node and two secondary nodes for high availability within the region",
-        "displayName": "PostgreSQL Flexible",
-        "originalName": "postgresql-flexible"
-      },
-      {
-        "id": "ab547763-605f-4d83-a52e-f646249c8f89",
-        "name": "postgresql-free",
-        "description": "PostgreSQL consisting of three replicas for high availability within the region.Free plan instance will be deleted after 30 days.",
-        "displayName": "PostgreSQL Free",
-        "originalName": "postgresql-free"
-      }
-    ],
+    "plans": [],
     "description": "Deploy and manage a PostgreSQL cluster to protect your sensitive data in a Secure Service Container on IBM LinuxONE.",
     "longDescription": "IBM Cloud Hyper Protect DBaaS for PostgreSQL is a LinuxONE-powered cloud database solution for enterprise workloads with sensitive data. Hyper Protect DBaaS for PostgreSQL currently contains PostgreSQL major version 10 and 13.",
     "displayName": "Hyper Protect DBaaS for PostgreSQL",
@@ -10223,6 +10199,10 @@
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
+      "eu-es",
+      "eu-es-1",
+      "eu-es-2",
+      "eu-es-3",
       "eu-fr2",
       "eu-fr2-1",
       "eu-fr2-2",
@@ -10280,6 +10260,10 @@
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
+      "eu-es",
+      "eu-es-1",
+      "eu-es-2",
+      "eu-es-3",
       "eu-fr2",
       "eu-fr2-1",
       "eu-fr2-2",
@@ -13476,7 +13460,7 @@
         "originalName": "vpn-vpc-external-beta"
       }
     ],
-    "description": "Securely extends on-premise networks into IBM Cloud VPC through site-to-site IPsec tunnels.",
+    "description": "Securely extend your on-premises network to IBM Cloud through site-to-site gateways.",
     "longDescription": "VPN for VPC provides a simple yet powerful solution for highly scalable and robust site-to-site VPN. This VPN service provides a mixture of industry standard security and encryption options as well as support for Pre-shared Key authentication. The service also provides the ability to quickly add and remove VPN connections with the option to use pre-defined configurations.",
     "displayName": "VPN for VPC",
     "imageUrl": "https://broker.vpnaas.cloud.ibm.com/VPN_icon.svg",
