@@ -313,6 +313,11 @@ const store = new Vuex.Store({
             "id": "service_endpoint_supported",
             "label": "Service Endpoint Supported",
             "icon": "mdi-lock-check"
+          },
+          {
+            "id": "cbr_enabled",
+            "label": "Context-based restrictions Supported",
+            "icon": "mdi mdi-axis-arrow-lock"
           }
         ],
       });
