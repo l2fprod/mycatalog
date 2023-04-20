@@ -64,6 +64,10 @@ function exportToExcel(services, dateMDY) {
   sheet0.data[3] = [];
   sheet0.data[3][0] = "Use with care and refer to the official IBM Cloud Catalog https://cloud.ibm.com/catalog#services.";
 
+  //
+  // MY CATALOG
+  //
+
   sheet = xlsx.makeNewSheet();
   sheet.name = 'My Catalog';
 
@@ -135,6 +139,47 @@ function exportToExcel(services, dateMDY) {
     sheet.data[row][11] = service.metadata.ui.urls.doc_url;
     sheet.data[row][12] = service.tags.join(", ");
     row++;
+  });
+
+    //
+  // MY PLANS
+  //
+
+  sheet = xlsx.makeNewSheet();
+  sheet.name = 'My Plans';
+
+  // get the list of regions
+  let allGeoTags = new Set();
+  services.forEach(service => {
+    service.plans.forEach(plan => {
+      if (plan.geo_tags) {
+        plan.geo_tags.forEach(tag => allGeoTags.add(tag));
+      } else {
+        console.log(`No geo_tags for ${service.name} ${plan.name}`);
+      }
+    });
+  });
+  allGeoTags = Array.from(allGeoTags);
+  allGeoTags.sort();
+
+  sheet.data[0] = [
+    "Service ID",
+    "Service Name",
+    "Plan ID",
+    "Plan Name"
+  ].concat(allGeoTags);
+
+  row = 1;
+  services.forEach(service => {
+    service.plans.forEach(plan => {
+      sheet.data[row] = [
+        service.id,
+        service.displayName,
+        plan.id,
+        plan.displayName
+      ].concat(allGeoTags.map(tag => plan.geo_tags ? (plan.geo_tags.indexOf(tag) >= 0 ? "X" : "") : ""));
+      row++;
+    });
   });
 
   return xlsx;
