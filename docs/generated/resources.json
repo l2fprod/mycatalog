@@ -8268,6 +8268,13 @@
     ],
     "plans": [
       {
+        "id": "c4b29bd4-abab-44ad-a244-5330af747027",
+        "name": "sat-pricing",
+        "description": "IBM Cloud Key Protect Satellite service hosted on user-owned resources. The service has a base price for installing Key Protect in the Satellite location plus a linear charge for the requested quota of keys in all of the instances in that location. If the quota is changed mid-month, you are charged based on the maximum quota set that month. Please refer to documentation for resource and usage requirements, terms, and conditions.",
+        "displayName": "satellite-pricing",
+        "originalName": "sat-lite"
+      },
+      {
         "id": "eedd3585-90c6-4c8f-be3d-062069e99fc3",
         "name": "tiered-pricing",
         "description": "Creating or importing a key initiates the first version of that key. As a result, a newly created or imported key has one version. Each time a key is rotated, a new key version is created. A key that has been rotated five times, then, has six versions (five versions created by rotations plus the initial version). Deleted keys and their versions are not counted.",
