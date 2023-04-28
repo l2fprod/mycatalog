@@ -853,20 +853,6 @@
         "originalName": "mx2d-metal-96x768"
       },
       {
-        "id": "6ef73ef4-bb8b-472f-b7bc-010e705b2877",
-        "name": "mz2d-metal-16x512",
-        "description": "Pricing plan for an mz2 bare metal server configured with 8 cores (16 vCPU), 512 GB memory, local FCP boot drives.",
-        "displayName": "mz2d-metal-16x512",
-        "originalName": "mz2d-metal-16x512"
-      },
-      {
-        "id": "ccfa5e33-ccb4-49aa-afc3-ac736a13207b",
-        "name": "mz2d-metal-2x64",
-        "description": "Pricing plan for an mz2 bare metal server configured with 1 cores (2 vCPU), 32 GB memory, local FCP boot drives for IBM Internal development.",
-        "displayName": "mz2d-metal-2x64",
-        "originalName": "mz2d-metal-2x64"
-      },
-      {
         "id": "139387fe-dc48-4d7d-a6b2-a2a2dcd709f2",
         "name": "vx2d-metal-96x1536",
         "description": "Pricing plan for an vx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 1536 GB memory, local SSD boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
@@ -7546,13 +7532,12 @@
       "paid"
     ],
     "tags": [
-      "compute",
-      "storage",
       "allow_internal_users",
       "au-syd",
       "br-sao",
       "ca-tor",
       "cbr_enabled",
+      "content",
       "custom_kind_service",
       "eu-de",
       "eu-fr2",
@@ -7566,7 +7551,9 @@
       "rc_compatible",
       "support_ibm",
       "us-east",
-      "us-south"
+      "us-south",
+      "virtualservers",
+      "vpc"
     ],
     "plans": [
       {
@@ -11202,8 +11189,9 @@
     "description": "Detect and respond to vulnerabilities and threats, and manage configurations, permissions, and compliance.",
     "longDescription": "Security and Compliance Center Workload Protection helps you accelerate your Kubernetes and cloud adoption by addressing security and regulatory compliance. Easily identify vulnerabilities, check compliance, block threats and respond faster at every stage of the container and Kubernetes lifecycle.",
     "displayName": "Security and Compliance Center Workload Protection",
-    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/e831e900-82d6-11ec-95c5-c12c5a5d9687/artifacts/light-theme.svg",
-    "localSvgIcon": "/generated/icons/e831e900-82d6-11ec-95c5-c12c5a5d9687.svg"
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/e831e900-82d6-11ec-95c5-c12c5a5d9687/artifacts/cache/153cb603b598bc09d413b0b00e16da87-public/light-theme.svg",
+    "localSvgIcon": "/generated/icons/e831e900-82d6-11ec-95c5-c12c5a5d9687.svg",
+    "localPngIcon": "/generated/icons/e831e900-82d6-11ec-95c5-c12c5a5d9687.png"
   },
   {
     "geo_tags": [
