@@ -862,8 +862,8 @@
         "originalName": "vx2d-metal-96x1536"
       }
     ],
-    "description": "Leverage x86 servers with physical single tenancy and high performance offering end user virtualization.",
-    "longDescription": "Bare metal servers for VPC are dedicated servers offering direct hardware performance and is integrated as a first-class compute offering within Virtual Private Cloud. Users can leverage existing VPC services across storage, networking, and security with bare metal for VPC and can incorporate its higher end hardware profiles with the additional benefit of end-user managed virtualization.",
+    "description": "Leverage servers with physical single tenancy and high performance offering end user virtualization.",
+    "longDescription": "Bare metal servers for VPC are dedicated servers offering direct hardware performance and is integrated as a first-class compute offering within Virtual Private Cloud. Users can leverage existing VPC services across storage, networking, and security with bare metal for VPC and can incorporate its higher end hardware profiles with the additional benefit of end-user managed virtualization.\n\n#### Pricing\n##### Hourly, pay-as-you-go\nPay-as-you-go bandwidth is per gigabyte. Your billing charges accrue from provision to cancellation, and are billed in arrears. This VPC product does not support suspended billing and will continue to bill regardless of the power state. Total pricing includes bare metal server instance profiles and software, internet data transfers, and optional VPC services. Each additional component is priced separately and included as part of your total IBM Cloud VPC charge. Service tiers are bound to your account, not to any specific VPC.",
     "displayName": "Bare Metal Servers for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.bare-metal-server/artifacts/CloudVPCBareMetal.svg",
     "localSvgIcon": "/generated/icons/is.bare-metal-server.svg",
@@ -7562,6 +7562,7 @@
       "br-sao",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -7592,6 +7593,7 @@
       "content",
       "custom_kind_service",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "iam_compatible",
@@ -9855,6 +9857,7 @@
       "free"
     ],
     "tags": [
+      "network",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -10005,6 +10008,7 @@
       "free"
     ],
     "tags": [
+      "compute",
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
@@ -10058,7 +10062,8 @@
       "allow_internal_users",
       "paid",
       "paid_only",
-      "subscription"
+      "subscription",
+      "subscription_only"
     ],
     "tags": [
       "analytics",
@@ -10071,13 +10076,14 @@
       "paid_only",
       "rc_compatible",
       "subscription",
+      "subscription_only",
       "support_ibm"
     ],
     "plans": [
       {
         "id": "7e65442f-6ff9-4f76-b2b6-5e55264d32cd",
         "name": "enterprise",
-        "description": "This is a quota based subscription plan for Planning Analytics SaaS deployed on AWS. A base instance includes 10 Authorized Users, 48GB of Memory and 512GB of storage.",
+        "description": "This is a quota based subscription plan for Planning Analytics SaaS deployed on AWS. A base instance includes 16GB of Memory and 512GB of storage.",
         "displayName": "Enterprise",
         "originalName": "enterprise"
       }
@@ -10470,7 +10476,7 @@
       }
     ],
     "description": "Portworx Backup and Data Protection for Kubernetes",
-    "longDescription": "Portworx PX-Backup\n\nPortworx PX-Backup delivers enterprise-grade point-and-click backup and recovery protection for all applications running on Kubernetes, even if they are stateless. Built exclusively for containerized applications, Portworx PX-Backup protects your applications - data, application configuration, and Kubernetes objects - with a single click at the Kubernetes Pod, Namespace, or Cluster level. \n\nPX-Backup enables: \n• Point and click recovery for any stateless or stateful Kubernetes application \n• Pod and Namespace granularity for application-centric protection \n• Application-aware protection for complex distributed applications \n• Role-Based Access Control for secure user access\n\nWith PX-Backup, you achieve application-aware automation for data integrity, Role-Based Access Control and audit log for policy compliance, and Pod and Namespace granularity. Portworx PX-Backup includes out-of-the-box integration with many popular services such as Kafka, Elasticsearch, Cassandra, MongoDB, PostgreSQL, MySQL, and many more.\n\nPX-Backup is compatible with any Kubernetes cluster, including managed and cloud deployments. PX-Backup integrates with major block storage providers:\nIBM\nPortworx PX-Store\nAmazon EBS\nGoogle Persistent Disk\nAzure Managed Disks\nCSI Enabled Storage\n\nRelease Notes:\nhttps://backup.docs.portworx.com/release-notes/",
+    "longDescription": "Portworx PX-Backup\n\nPortworx PX-Backup delivers enterprise-grade point-and-click backup and recovery protection for all applications running on Kubernetes, even if they are stateless. Built exclusively for containerized applications, Portworx PX-Backup protects your applications - data, application configuration, and Kubernetes objects - with a single click at the Kubernetes Pod, Namespace, or Cluster level. \n\nPX-Backup enables: \n• Point and click recovery for any stateless or stateful Kubernetes application \n• Pod and Namespace granularity for application-centric protection \n• Application-aware protection for complex distributed applications \n• Role-Based Access Control for secure user access\n\nWith PX-Backup, you achieve application-aware automation for data integrity, Role-Based Access Control and audit log for policy compliance, and Pod and Namespace granularity. Portworx PX-Backup includes out-of-the-box integration with many popular services such as Kafka, Elasticsearch, Cassandra, MongoDB, PostgreSQL, MySQL, and many more.\n\nPX-Backup is compatible with any Kubernetes cluster, including managed and cloud deployments. PX-Backup integrates with major block storage providers:\nPortworx PX-Store\nAmazon EBS\nGoogle Persistent Disk\nAzure Managed Disks\nCSI Enabled Storage\n\nRelease Notes:\nhttps://backup.docs.portworx.com/release-notes/",
     "displayName": "PX-Backup for Kubernetes",
     "imageUrl": "https://raw.githubusercontent.com/portworx/pxdocs-tooling/master/static/images/favicon-32x32.png",
     "localPngIcon": "/generated/icons/3eb2d5a0-24ff-11eb-9437-631d7272fff5.png"
@@ -11720,6 +11726,7 @@
       "br-sao",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -11747,6 +11754,7 @@
       "cbr_enabled",
       "custom_kind_service",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "free",
