@@ -130,6 +130,55 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "8c437b59-5f6a-460c-b11a-5b7cabf058cb",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "anycloud-365-backup",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "365 backup",
+      "backup",
+      "cloud to cloud",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "restore",
+      "storage_datamovement",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "ca0306f3-a12c-4e4c-8095-018d5922b847",
+        "name": "anycloud-365-backup-1-seat-with-unlimited-storage-cloned-lguqphbs",
+        "description": "License for 1 Microsoft 365 Education seat with unlimited IBM Cloud Object Storage. Choose between the included 1, 3, 5, 10 years retention",
+        "displayName": "1 seat with unlimited storage - Education"
+      },
+      {
+        "id": "1e1690f1-e42d-4cf4-8b69-7940e13514f5",
+        "name": "anycloud-365-backup-1-year-retention",
+        "description": "License for 1 Microsoft 365 seat with unlimited IBM Cloud Object Storage. Choose between the included 1, 3, 5, 10 years retention",
+        "displayName": "1 seat with unlimited storage"
+      }
+    ],
+    "description": "Anycloud Backup for 365 is a partner-ready SaaS offering of data protection and is created to safely backup data and restore.",
+    "longDescription": "AC Backup for 365 is a partner-ready SaaS offering of data protection delivered by Anycloud and is created with the intent to safely backup data and restore. The purpose of AC Backup for 365 is to provide a secure backup of data stored with Exchange, OneDrive, SharePoint, and Teams for end-users with features fitting their needs. We offer:\n- Instant 30 days free trial; give your clients an opportunity to test the solution with the free trial offering for 30 days – with no commitment. \n\n- Managed service or self-service; the AC Backup for 365 solution can be offered as a managed service or self-service solution in a simple and transparent pricing model based on a ‘’per user model’’.\n\n- Choose world-wide data locality; clients can choose data locality worldwide fitting their needs and have the possibility of storing data away from Microsoft environment, to have a multi-vendor protection setup.  \n\n\n\nWeb portal for management and restore\nAC Backup for 365 has a simple-to-use intuitive web interface consisting of two portals: management portal and restore portal.   The management portal is for administration of all organizational data and is where backups are scheduled. It is also in the management portal where retention periods are chosen – 1, 3, 5 or 10 years all with unlimited storage.  The restore portal is from where backups can be retrieved and restored. It is possible to restore entire folders or single files. \n\nAs a part of the service we offer access to our knowledge base, where all common questions and technical errors have been collected. In addition we offer access to a changelog that is divided into API, management portal and restore portal, where you can find all the latest updates.\n\n\n\nTechnical specifications\n- AC Backup for 365 has a 99,9% SLA uptime\n- Strong AES 256-bit encryption whenever data is in transit\n- Up to 10 years of retention and unlimited storage\n- Combines Veeam technology with IBM Cloud and IBM Cloud Object     Storage\n- Automated Microsoft 365 backup configured to meet customers’ RTO and RPO\n- Secure backup data at-rest, with no option to delete or change the backup data \n\n\n\nCompliance\nAC Backup for 365 is developed by Anycloud, and the service complies with the General Data Protection Regulation and industry standards. The technologies used are compliant as data is encrypted and once data is placed in the chosen datacenter it stays there. Data security is our priority, and our services are delivered in 20+ datacentres across the globe, which are minimum tier-3 datacentres. All datacenters are SOC 2 certified, and the EU datacentres are GDPR compliant. \n\nIn addition, we deliver a ‘’right to be forgotten’’ feature for your end-customers, which offers the possibility to delete specific users and data. Furthermore, we have an exit-strategy in place for end-customers in case of termination of the service removing data from AC 365 Backup to the end-customer directly or a new service provider. Anycloud does not restrict, withhold, or keep data after termination. ",
+    "displayName": "Anycloud Backup for 365",
+    "imageUrl": "https://cdn.anycloud.dk/images/logo/ac-logo-cloud.png",
+    "localPngIcon": "/generated/icons/8c437b59-5f6a-460c-b11a-5b7cabf058cb.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -10806,6 +10855,7 @@
       "br-sao",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -10836,6 +10886,7 @@
       "distributed cloud",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "freesia",
       "fs_ready",
