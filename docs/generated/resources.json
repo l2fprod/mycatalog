@@ -6117,6 +6117,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -6159,6 +6160,7 @@
       "custom_kind_service",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "financial services",
@@ -7292,6 +7294,34 @@
     "longDescription": "A seamlessly integrated hybrid cloud for virtual desktops and applications based on VMware Horizon® 7.",
     "displayName": "Horizon 7",
     "imageUrl": "/infrastructure/vmware-solutions/images/icons/horizon7.svg"
+  },
+  {
+    "id": "fa329acf-f9b6-fa9f-f37e-ad72d0b6a783",
+    "kind": "iaas",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "ibm-consulting-hybrid-cloud-iaas",
+    "tags": [
+      "integration",
+      "consulting_tab",
+      "custom_kind_iaas",
+      "fressia",
+      "ibm_created",
+      "ibm_release",
+      "lead",
+      "rc_compatible",
+      "support_ibm"
+    ],
+    "plans": [],
+    "description": "Customers need best of breed, multi-cloud, including hybrid cloud offerings. This infrastructure as a service offering provides compute, storage, network as a service for US Government Customers.",
+    "longDescription": "In particular, this offering is focused on US Federal Government Customers. IBM Consulting and VSO will provide Hybrid Cloud Infrastructure as a Service (HCIaaS) offering with a Cost-per-Unit model on the C2E vehicle.  Offering Specifications: 4 nodes in 2RU chassis, each node containing 16 cores (2x Intel Xeon-Silver 4309Y processor - 2.8 GHz / 8-core / 105W, Ice Lake), 512GB of RAM, 2x 8TB hard drives, and 1x 2 TB solid state drive.",
+    "displayName": "Hybrid Cloud Infrastructure as a Service",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/91a901ac-fb7d-9b6e-eb25-14e75a20c4c2/artifacts/cache/b68ba8a6bfa2c8e50c3efbab62ec12aa-public/ProfessionalServicesforGovernment.svg",
+    "geo_tags": [],
+    "localSvgIcon": "/generated/icons/fa329acf-f9b6-fa9f-f37e-ad72d0b6a783.svg",
+    "localPngIcon": "/generated/icons/fa329acf-f9b6-fa9f-f37e-ad72d0b6a783.png"
   },
   {
     "geo_tags": [
@@ -10602,7 +10632,7 @@
       {
         "id": "5304b575-3cff-4455-90dc-ae4367762093",
         "name": "paygo-standard",
-        "description": "Systems = Two 27 qubit Falcon processors. Time limits= program-specific up to 8 hours. Qiskit Runtime Second = quantum compute time and near time classical pre- and post-processing. No charge for job queue time.\nSimulators = 5 (QASM, statevector, mps, stabilizer, and extended stabilizer). Time limits = program-specific up to 3 hours.",
+        "description": "Systems = Two 27 qubit Falcon and one 127 qubit Eagle processors. Time limits= program-specific up to 8 hours. Qiskit Runtime Second = quantum compute time. No charge for job queue time.\nSimulators = 5 (QASM, statevector, mps, stabilizer, and extended stabilizer). Time limits = program-specific up to 3 hours.",
         "displayName": "Standard",
         "originalName": "paygo-standard"
       }
@@ -12192,6 +12222,13 @@
       "us-south-3"
     ],
     "plans": [
+      {
+        "id": "83a76a9b-a1dc-4f85-aeb5-aa88730e3610",
+        "name": "nextgen-subnet-free",
+        "description": "Subnet free plan for Nextgen",
+        "displayName": "Free",
+        "originalName": "nextgen-subnet-free"
+      },
       {
         "id": "05f0355d-a95a-4376-b26f-68247c605ef7",
         "name": "subnet-free",
