@@ -1665,6 +1665,71 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "c3d3e46c-935d-4485-921f-2acc4686c23b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "yayzy-limited-b2b-api",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "api",
+      "climate",
+      "custom_kind_service",
+      "environment",
+      "finance",
+      "financial",
+      "free",
+      "global",
+      "ibm_third_party",
+      "impact",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "bf34a182-2229-4530-a80c-ae956c068178",
+        "name": "yayzy-limited-b2b-api-free-test",
+        "description": "Up to 10 end users.",
+        "displayName": "Free Tier"
+      },
+      {
+        "id": "0dea8120-661d-40b9-8ea2-6da77f22af15",
+        "name": "yayzy-limited-b2b-api-tier-1",
+        "description": "Up to 100,000 end users.",
+        "displayName": "Tier 1"
+      },
+      {
+        "id": "f04bce44-e652-456a-936c-4ad6b334593f",
+        "name": "yayzy-limited-b2b-api-tier-2",
+        "description": "Up to 500,000 end users.",
+        "displayName": "Tier 2"
+      },
+      {
+        "id": "098531d8-61e9-41e2-972b-b94f9dad3cb5",
+        "name": "yayzy-limited-b2b-api-tier-3",
+        "description": "Up to 1,000,000 end users.",
+        "displayName": "Tier 3"
+      }
+    ],
+    "description": "This API allows banks to provide their customers with carbon metrics associated with their purchases, and buy offsets.",
+    "longDescription": "Yayzy’s Climate Impact APIs provide meaningful sustainability insights to individuals by firstly categorising payment transactions at a highly granular level, then applying a Carbon Intensity Factor using globally recognised emissions data. The solution also factors in individual lifestyle choices – for example, whether the person is vegan or drives an electric vehicle - and the recognised sustainability credentials of the retailers they buy from, such as B Corp or Carbon Neutral, to provide a highly granular carbon footprint for each transaction a customer makes.\n\nAggregating the data provides customers with a holistic view of their personal carbon footprint. Yayzy then offers EcoTips and sustainable alternatives, helping consumers to reduce their impact. Finally, for emissions that cannot be avoided, Yayzy’s solution offers customers other ways to become completely carbon neutral, such as contributing to permanent carbon removal and certified carbon offset projects.",
+    "displayName": "Climate Impact API",
+    "imageUrl": "https://s3.eu-west-2.amazonaws.com/a.yayzy.com/favicon.png",
+    "localPngIcon": "/generated/icons/c3d3e46c-935d-4485-921f-2acc4686c23b.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
