@@ -5690,30 +5690,6 @@
     "localPngIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.png"
   },
   {
-    "id": "24",
-    "kind": "iaas",
-    "metadata": {
-      "ui": {}
-    },
-    "name": "DOMAIN_REGISTRATION",
-    "tags": [
-      "devops",
-      "custom_kind_iaas",
-      "dev_ops",
-      "g1",
-      "ibm_created",
-      "ibm_iaas_g1",
-      "support_ibm"
-    ],
-    "plans": [],
-    "description": "IBM Cloud offers domain registration services complete with dedicated support staff, knowledgeable customer service, and reasonable prices, all delivered over a secure network.",
-    "longDescription": "IBM Cloud offers domain registration services complete with dedicated support staff, knowledgeable customer service, and reasonable prices, all delivered over a secure network. We provide you the option of registering for a selection of top-level domains, including: .COM, .NET, .ORG, .US, .INFO, and .BIZ with our comprehensive and easy-to-use interface. IBM Cloud Domain Name Registration provides customers a central location to view and manage their domains through our basic DNS management interface and also gives users the option to manage reverse and secondary DNS in the same location free of charge.",
-    "displayName": "Domain Name Registration",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/static/cache/1709-fbecad4a27e29f3e/images/uploaded/domain-name-service.png",
-    "geo_tags": [],
-    "localPngIcon": "/generated/icons/24.png"
-  },
-  {
     "geo_tags": [
       "global"
     ],
@@ -10527,6 +10503,13 @@
       "us-south"
     ],
     "plans": [
+      {
+        "id": "satellite.connector",
+        "name": "satellite-connector",
+        "description": "IBM Cloud Satellite Connector",
+        "displayName": "Satellite Connector",
+        "originalName": "satellite-connector"
+      },
       {
         "id": "satellite.host",
         "name": "satellite-host",
