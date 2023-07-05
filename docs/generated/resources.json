@@ -953,7 +953,6 @@
     },
     "name": "block-storage-group",
     "tags": [
-      "storage",
       "custom_kind_iaas",
       "eu_location",
       "eu-es",
@@ -961,7 +960,7 @@
       "mad02",
       "mad04",
       "mad05",
-      "storage_classic",
+      "storage_block",
       "support_ibm"
     ],
     "plans": [],
@@ -1032,7 +1031,6 @@
       "paid"
     ],
     "tags": [
-      "storage",
       "allow_internal_users",
       "au-syd",
       "au-syd-1",
@@ -1086,7 +1084,7 @@
       "jp-tok-3",
       "paid",
       "rc_compatible",
-      "storage_vpc",
+      "storage_block",
       "support_ibm",
       "us-east",
       "us-east-1",
@@ -1189,7 +1187,6 @@
       "paid"
     ],
     "tags": [
-      "storage",
       "allow_internal_users",
       "au-syd",
       "beryllium",
@@ -1210,7 +1207,7 @@
       "jp-tok",
       "paid",
       "rc_compatible",
-      "storage_vpc",
+      "storage_backup",
       "support_ibm",
       "us-east",
       "us-south",
@@ -1841,7 +1838,7 @@
       "sjc04",
       "sng01",
       "softlayer",
-      "storage_classic",
+      "storage_backup",
       "support_ibm",
       "syd01",
       "syd04",
@@ -1891,7 +1888,6 @@
       "free"
     ],
     "tags": [
-      "storage",
       "allow_internal_users",
       "au-syd",
       "br-sao",
@@ -1910,7 +1906,7 @@
       "jp-osa",
       "jp-tok",
       "rc_compatible",
-      "storage_vpc",
+      "storage_backup",
       "support_ibm",
       "us-east",
       "us-south"
@@ -2350,7 +2346,6 @@
       "paygo"
     ],
     "tags": [
-      "storage",
       "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
@@ -2377,6 +2372,7 @@
       "satcon_tok",
       "satcon_wdc",
       "satellite_enabled",
+      "storage_object",
       "support_ibm",
       "us-south"
     ],
@@ -2444,13 +2440,13 @@
     },
     "name": "cloud-object-storage-infrastructure",
     "tags": [
-      "storage",
       "apidocs_enabled",
       "custom_kind_iaas",
       "g1",
       "ibm_created",
       "ibm_iaas_g1",
       "softlayer",
+      "storage_object",
       "support_ibm"
     ],
     "plans": [],
@@ -3161,7 +3157,7 @@
         "id": "46058d02-30dd-490e-85ad-e39c5389e69e",
         "name": "build-svcs-powervs",
         "description": "IBM Cloud Expert Labs will provision and configure the solution design in IBM Cloud for development, test, production and/or disaster recovery environments.",
-        "displayName": "CXL Build Services---Power VS",
+        "displayName": "CXL Build Services---PowerVS",
         "originalName": "build-svcs-powervs"
       },
       {
@@ -3266,7 +3262,7 @@
         "id": "fe400813-eec2-4474-a632-30d81f783d7d",
         "name": "plan-svcs-powervs",
         "description": "IBM Cloud Expert Labs will advise on solution design and definition.",
-        "displayName": "CXL Advise Services---Power VS",
+        "displayName": "CXL Advise Services---PowerVS",
         "originalName": "plan-svcs-powervs"
       },
       {
@@ -4665,6 +4661,7 @@
       "au-syd",
       "eu-de",
       "eu-gb",
+      "us-east",
       "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
@@ -4712,6 +4709,7 @@
       "subscription",
       "subscription_only",
       "support_ibm",
+      "us-east",
       "us-south"
     ],
     "plans": [
@@ -6123,7 +6121,6 @@
     },
     "name": "file-storage",
     "tags": [
-      "storage",
       "ams01",
       "ams03",
       "au-syd",
@@ -6168,7 +6165,7 @@
       "sjc04",
       "sng01",
       "softlayer",
-      "storage_classic",
+      "storage_file",
       "support_ibm",
       "syd01",
       "syd04",
@@ -9200,7 +9197,7 @@
       "paid_only",
       "rc_compatible",
       "sharepoint",
-      "storage_classic",
+      "storage_backup",
       "support_third_party",
       "teams"
     ],
@@ -9263,12 +9260,11 @@
       "kr-seo",
       "minio",
       "multi cloud",
-      "object storage",
       "paid",
       "paid_only",
       "rc_compatible",
       "s3",
-      "storage_vpc",
+      "storage_object",
       "support_third_party",
       "us-east",
       "us-south"
@@ -9648,6 +9644,12 @@
         "name": "neuralseek-pay-per-answer",
         "description": "Pay per live answer provided back thru our API.  Curation and creation of Actions load files is provided at no additional cost.",
         "displayName": "Pay-per-answer"
+      },
+      {
+        "id": "d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c",
+        "name": "neuralseek-search",
+        "description": "The Search Plan is for use cases not requiring a Virtual Agent. NeuralSeek provides a search interface to supported knowledgebases, and will provide search responses plus generative AI summaries. Any generated AI summary incurs a per-call usage fee.  Cache responses are included at no additional cost. This plan's features are identical to the pay-per-answer plans EXCEPT: no export and no round-trip monitoring to a virtual agent is allowed, no sentiment scoring, and no automatic language detection (language code xx)",
+        "displayName": "Search"
       },
       {
         "id": "f3c89bb5-e2ae-48fb-a9bd-4bd610724aa6",
@@ -10122,7 +10124,6 @@
       "paid_only"
     ],
     "tags": [
-      "storage",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -10138,6 +10139,7 @@
       "paid",
       "paid_only",
       "rc_compatible",
+      "storage_backup",
       "support_third_party",
       "supports_syndication",
       "us-east",
@@ -11208,6 +11210,7 @@
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
+      "storage_backup",
       "support_ibm",
       "us-south",
       "vmware",
