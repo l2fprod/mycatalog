@@ -1922,97 +1922,6 @@
     "localPngIcon": "/generated/icons/is.backup-policy.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
-    "id": "25929010-dbe4-11ea-aa5a-0b16aa325bc2",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "education",
-    "pricing_tags": [
-      "allow_internal_users",
-      "free",
-      "lite",
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "compute",
-      "allow_internal_users",
-      "custom_kind_service",
-      "free",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "lite",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "87d51300-b89a-4d68-8ad5-2b50c8d71755",
-        "name": "computinglab-base-flex-hourly-plan",
-        "description": "Base Flex Hourly Plan offers the fixed hourly rate  to run a base VM image of software with IBM provided OS license including Microsoft Windows License.",
-        "displayName": "Applications Lab Base Flex Hourly Plan",
-        "originalName": "computinglab-base-flex-hourly-plan"
-      },
-      {
-        "id": "6ab0b637-8852-4a07-8278-bc96386e54f9",
-        "name": "computinglab-base-flex-plan",
-        "description": "Base Flex Plan offers each authorized user to run ONE base VM image of software with IBM provided OS license including Microsoft Windows License for up to 240 virtual server hours per month.",
-        "displayName": "Applications Lab Base Flex Plan",
-        "originalName": "computinglab-base-flex-plan"
-      },
-      {
-        "id": "eea9fab8-94bb-499b-a2b5-51076b87c36a",
-        "name": "computinglab-base-plan",
-        "description": "Base Plan provides Infrastructure to run standard VM images of Software",
-        "displayName": "Applications Lab Base Plan",
-        "originalName": "computinglab-base-plan"
-      },
-      {
-        "id": "64b2fdd8-0a31-4a59-992c-8b828623392d",
-        "name": "computinglab-premium-plan",
-        "description": "Premium Plan provides infrastructure to run VM images  that need higher processing capacity or GPUs",
-        "displayName": "Applications Lab Premium Plan",
-        "originalName": "computinglab-premium-plan"
-      },
-      {
-        "id": "84ec4b69-7b64-4eea-95c8-0dadd8691e8d",
-        "name": "computinglab-spss-plan",
-        "description": "SPSS Plan provides Infrastructure to run SPSS Software",
-        "displayName": "Applications Lab SPSS Plan",
-        "originalName": "computinglab-spss-plan"
-      },
-      {
-        "id": "8c2f2841-4cb7-44b6-88d7-2802d7e031b5",
-        "name": "lite",
-        "description": "Trial plan to run standard VM images  of software",
-        "displayName": "Applications Lab Lite Plan",
-        "originalName": "lite"
-      },
-      {
-        "id": "99524a51-7c82-4e62-8e2d-7a8d2e270e4f",
-        "name": "virtualcoursecredit-subscription-plan",
-        "description": "Provides access to hands on instructional labs for popular topics",
-        "displayName": "Virtual Course Credit Subscription Plan",
-        "originalName": "virtualcoursecredit-subscription-plan"
-      }
-    ],
-    "description": "Cloud-based infrastructure and  services for academic and research lab compute needs",
-    "longDescription": "Promotional Details:  Limited time only! Get 3 months at no cost to IBM Cloud for Education Applications Lab. Offer expires 30 September 2021. Chat with IBM Seller to get more detail. \n\nIBM Cloud for Education provides comprehensive cloud-based infrastructure and services to move the client’s academic and research lab compute environment to cloud. It empowers students’ learning and researchers’ work by transforming their university computing environment with modern cloud-based solutions that enable the university to align with enterprise digital transformation and journey to cloud initiatives.",
-    "displayName": "Cloud for Education",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/25929010-dbe4-11ea-aa5a-0b16aa325bc2/artifacts/cache/b1c18432491322aed6ab96b2530bfcd5-public/CloudForEducation.svg",
-    "localSvgIcon": "/generated/icons/25929010-dbe4-11ea-aa5a-0b16aa325bc2.svg",
-    "localPngIcon": "/generated/icons/25929010-dbe4-11ea-aa5a-0b16aa325bc2.png"
-  },
-  {
     "id": "hardware-security-module",
     "kind": "iaas",
     "metadata": {
@@ -4713,13 +4622,6 @@
         "description": "The base Instance provides one database with 960GB disk storage, 16 cores, and 186GB RAM. Scale storage up to 96TB, and scale compute up to 160 cores.",
         "displayName": "Flex",
         "originalName": "Flex"
-      },
-      {
-        "id": "flex-endurance-aws-paygo",
-        "name": "flex-endurance-for-aws",
-        "description": "The base Instance provides one database with 960GB disk storage and 14 virtual processor cores. Scale storage up to 144TB in increments of 960GB, and scale compute up to 112 virtual processor cores in increments of 14 virtual processor cores.",
-        "displayName": "Flex for Amazon Web Services",
-        "originalName": "Flex Endurance for AWS"
       },
       {
         "id": "smp-flex-paygo",
@@ -13569,7 +13471,7 @@
       {
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "name": "lite",
-        "description": "The lite plan instance of the IBM Watson Machine Learning service provides you with a 20 capacity unit-hours per month during which models can be trained, evaluated, deployed, and scored.",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates and foundation model classes, go to https://ibm.biz/ml-plans\n\n1 Resource Unit = 1000 tokens",
         "displayName": "Lite",
         "originalName": "lite"
       },
@@ -13583,14 +13485,14 @@
       {
         "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
         "name": "v2-professional",
-        "description": "The professional plan instance of the IBM Watson Machine Learning service is billed fixed amount per month and includes 2500 capacity unit-hours. Overage is charged flat rate per each capacity unit-hour. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates and foundation model classes, go to https://ibm.biz/ml-plans\n\n1 Resource Unit = 1000 tokens\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
         "displayName": "v2 Professional",
         "originalName": "v2-professional"
       },
       {
         "id": "a3d2f92f-06f9-48d0-b2e6-a7ba2b4e0577",
         "name": "v2-standard",
-        "description": "The standard plan instance of the IBM Watson Machine Learning service charges a flat rate per capacity unit-hour for models training, evaluataion, deployment, and scoring.",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates and foundation model classes, go to https://ibm.biz/ml-plans\n\n1 Resource Unit = 1000 tokens",
         "displayName": "v2 Standard",
         "originalName": "v2-standard"
       }
@@ -13825,6 +13727,59 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/39ba9d4c-b1c5-4cc3-a163-38b580121e01/artifacts/cache/adb451d886b66a00bb1d890511d5b02f-public/watson-studio-light.svg",
     "localSvgIcon": "/generated/icons/39ba9d4c-b1c5-4cc3-a163-38b580121e01.svg",
     "localPngIcon": "/generated/icons/39ba9d4c-b1c5-4cc3-a163-38b580121e01.png"
+  },
+  {
+    "geo_tags": [
+      "eu-de",
+      "us-east",
+      "us-south"
+    ],
+    "id": "43834340-4a6d-11ed-97d2-959039ad2a2e",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "lakehouse",
+    "pricing_tags": [
+      "allow_internal_users",
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "allow_internal_users",
+      "apidocs_enabled",
+      "custom_kind_service",
+      "data_management",
+      "database",
+      "eu-de",
+      "free",
+      "iam_compatible",
+      "ibm_beta",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_ibm",
+      "us-east",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "lakehouse-enterprise",
+        "name": "lakehouse-enterprise",
+        "description": "Watsonx.data is a data management solution for collecting, storing, querying, and analyzing all your enterprise data (structured, semi-structured, and unstructured) with a single unified data platform. It provides a flexible and reliable platform that is optimized to work on open data formats.",
+        "displayName": "Enterprise",
+        "originalName": "lakehouse-enterprise"
+      }
+    ],
+    "description": "An open, hybrid, and governed fit-for-purpose data store optimized to scale all data, analytics and AI workloads.",
+    "longDescription": "Watsonx.data is a data management solution for collecting, storing, querying, and analyzing all your enterprise data (structured, semi-structured, and unstructured) with a single unified data platform. It provides a flexible and reliable platform that is optimized to work on open data formats.",
+    "displayName": "watsonx.data",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e/artifacts/cache/7de0ba0ee0dac0b9ecac3d4a5639ac7e-public/Lakehouse.svg",
+    "localSvgIcon": "/generated/icons/43834340-4a6d-11ed-97d2-959039ad2a2e.svg",
+    "localPngIcon": "/generated/icons/43834340-4a6d-11ed-97d2-959039ad2a2e.png"
   },
   {
     "geo_tags": [
