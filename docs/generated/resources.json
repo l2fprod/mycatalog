@@ -9360,6 +9360,7 @@
     "geo_tags": [
       "ca-tor",
       "eu-de",
+      "us-east",
       "us-south"
     ],
     "id": "cc42cff0-b19b-11eb-9a66-c717766c1d30",
@@ -9386,6 +9387,7 @@
       "paid_only",
       "rc_compatible",
       "support_ibm",
+      "us-east",
       "us-south"
     ],
     "plans": [
@@ -9514,7 +9516,8 @@
       "us-south",
       "watson",
       "watson assistant",
-      "watson discovery"
+      "watson discovery",
+      "watsonx"
     ],
     "plans": [
       {
@@ -10674,29 +10677,65 @@
     "localPngIcon": "/generated/icons/IBM_SecureGateway.png"
   },
   {
-    "id": "54e4b73f-6ffa-bdbe-a9f0-27d20a2ea731",
+    "geo_tags": [
+      "ca-tor",
+      "eu-de",
+      "eu-fr2",
+      "global",
+      "us-south"
+    ],
+    "id": "compliance",
     "kind": "service",
     "metadata": {
       "service": {},
       "ui": {}
     },
-    "name": "securityAndComplianceCenter",
+    "name": "compliance",
+    "pricing_tags": [
+      "allow_internal_users",
+      "free",
+      "paid"
+    ],
     "tags": [
       "security",
+      "allow_internal_users",
       "apidocs_enabled",
+      "ca-tor",
       "custom_kind_service",
+      "eu-de",
+      "eu-fr2",
+      "free",
       "fs_ready",
+      "global",
+      "iam_compatible",
       "ibm_created",
-      "support_ibm"
+      "paid",
+      "rc_compatible",
+      "support_ibm",
+      "us-south"
     ],
-    "plans": [],
-    "description": "Govern cloud resource configuration and manage your compliance to internal and external standards.",
-    "longDescription": "The Security and Compliance Center is comprised of three components - Posture Management, Configuration Governance, and Security Insights - that work together to help you achieve a continuously secure and compliant development environment.",
+    "plans": [
+      {
+        "id": "fa6c54f7-12e1-4ba9-b86e-9648fb4aaa68",
+        "name": "security-compliance-center-standard-plan",
+        "description": "An evaluation is the check of one assessment against one resource in an account.",
+        "displayName": "Standard",
+        "originalName": "security-compliance-center-standard-plan"
+      },
+      {
+        "id": "ea54cffc-4eff-435a-80da-2a5725cbec72",
+        "name": "security-compliance-center-trial-plan",
+        "description": "When your trial expires, scan configurations, including attachments, are kept for 30 days unless you upgrade to the Standard plan.",
+        "displayName": "Trial",
+        "originalName": "security-compliance-center-trial-plan"
+      }
+    ],
+    "description": "Manage your security and compliance posture.",
+    "longDescription": "Security and Compliance Center is designed to help you create and maintain a secure and compliant development environment. With a wide variety of available controls, customization opportunities, and integrations, Security and Compliance Center can help you to meet your most stringent security and compliance goals.\n\nWorking with a multi-cloud solution? Try out Security and Compliance Center Workload Protection.",
     "displayName": "Security and Compliance Center",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/54e4b73f-6ffa-bdbe-a9f0-27d20a2ea731/artifacts/cache/a358da724662a82d2d13c9b6d6ea93f9-public/CloudSecurityComplianceCenter-light.svg",
-    "geo_tags": [],
-    "localSvgIcon": "/generated/icons/54e4b73f-6ffa-bdbe-a9f0-27d20a2ea731.svg",
-    "localPngIcon": "/generated/icons/54e4b73f-6ffa-bdbe-a9f0-27d20a2ea731.png"
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/compliance/artifacts/CloudSecurityComplianceCenter-light.svg",
+    "localSvgIcon": "/generated/icons/compliance.svg",
+    "localPngIcon": "/generated/icons/compliance.png"
   },
   {
     "geo_tags": [
