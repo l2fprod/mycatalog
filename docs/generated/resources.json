@@ -3054,24 +3054,31 @@
     ],
     "plans": [
       {
+        "id": "4cfd77be-9e24-4a42-b7ad-4613707b601a",
+        "name": "architecture-workshop",
+        "description": "Are you modernizing an existing application or building a new application for IBM Cloud?  Get in-depth, expert guidance on deployment of IBM Cloud in your environment.",
+        "displayName": "Architecture Consultancy",
+        "originalName": "Architecture Workshop"
+      },
+      {
         "id": "46058d02-30dd-490e-85ad-e39c5389e69e",
         "name": "build-svcs-powervs",
         "description": "IBM Technology Expert Labs will provision and configure the solution design in IBM Cloud for development, test, production and/or disaster recovery environments.",
-        "displayName": "Technology Expert Labs Build Services---PowerVS",
+        "displayName": "CXL Build Services---PowerVS",
         "originalName": "build-svcs-powervs"
       },
       {
         "id": "538ea693-4537-47c0-a9bf-ee1106fc3e63",
         "name": "build-svcs-vmware",
         "description": "IBM Technology Expert Labs will provision and configure the solution design in IBM Cloud for development, test, production and/or disaster recovery environments.",
-        "displayName": "Technology Expert Labs Build Services---VMware",
+        "displayName": "CXL Build Services---VMware",
         "originalName": "build-svcs-vmware"
       },
       {
         "id": "d8ff82c9-7dc0-4a48-9149-8587bebd956c",
         "name": "build-svcs-vpcroks",
         "description": "IBM Technology Expert Labs will provision and configure the solution design in IBM Cloud for development, test, production and/or disaster recovery environments.",
-        "displayName": "Technology Expert Labs Build Services---VPC ROKS Satellite",
+        "displayName": "CXL Build Services---VPC ROKS Satellite",
         "originalName": "build-svcs-vpcroks"
       },
       {
@@ -3113,14 +3120,14 @@
         "id": "c8b23216-adb3-43ba-9d79-10232cd7737a",
         "name": "migrate-svcs-vmware",
         "description": "IBM Technology Expert Labs will migrate or assist the client with migration tasks related to the IBM Cloud environment.",
-        "displayName": "Technology Expert Labs Migration Services---VMware",
+        "displayName": "CXL Migration Services---VMware",
         "originalName": "migrate-svcs-vmware"
       },
       {
         "id": "738c10f2-6625-4dfb-ad34-d16c3388f973",
         "name": "migrate-svcs-vpcroks",
         "description": "IBM Technology Expert Labs will migrate or assist the client with migration tasks related to the IBM Cloud environment.",
-        "displayName": "Technology Expert Labs Migration Services---VPC ROKS Satellite",
+        "displayName": "CXL Migration Services---VPC ROKS Satellite",
         "originalName": "migrate-svcs-vpcroks"
       },
       {
@@ -3141,42 +3148,42 @@
         "id": "e0367e89-c58f-4a81-9090-8a7d0c78cb70",
         "name": "operate-svcs-powervs",
         "description": "IBM Technology Expert Labs will define operations and governance models tailored for IBM Cloud, including DevSecOps.",
-        "displayName": "Technology Expert Labs Operate Services---PowerVS",
+        "displayName": "CXL Operate Services---PowerVS",
         "originalName": "operate-svcs-powervs"
       },
       {
         "id": "496d448b-7804-428a-82b6-dbe960456406",
         "name": "operate-svcs-vmware",
         "description": "IBM Technology Expert Labs will define operations and governance models tailored for IBM Cloud, including DevSecOps.",
-        "displayName": "Technology Expert Labs Operate Services---VMware",
+        "displayName": "CXL Operate Services---VMware",
         "originalName": "operate-svcs-vmware"
       },
       {
         "id": "0b780b03-fc05-4af3-ab84-358d3ba691fe",
         "name": "operate-svcs-vpcroks",
         "description": "IBM Technology Expert Labs will define operations and governance models tailored for IBM Cloud, including DevSecOps.",
-        "displayName": "Technology Expert Labs Operate Services---VPC ROKS Satellite",
+        "displayName": "CXL Operate Services---VPC ROKS Satellite",
         "originalName": "operate-svcs-vpcroks"
       },
       {
         "id": "fe400813-eec2-4474-a632-30d81f783d7d",
         "name": "plan-svcs-powervs",
         "description": "IBM Technology Expert Labs will advise on solution design and definition.",
-        "displayName": "Technology Expert Labs Architect Services---PowerVS",
+        "displayName": "CXL Architect Services---PowerVS",
         "originalName": "plan-svcs-powervs"
       },
       {
         "id": "cf18cd5a-8b72-4d3b-ab04-7f177201d5e1",
         "name": "plan-svcs-vmware",
         "description": "IBM Technology Expert Labs will advise on solution design and definition.",
-        "displayName": "Technology Expert Labs Architect Services---VMware",
+        "displayName": "CXL Architect Services---VMware",
         "originalName": "plan-svcs-vmware"
       },
       {
         "id": "cc906861-0599-4a90-83d1-99f6da9ed42a",
         "name": "plan-svcs-vpcroks",
         "description": "IBM Technology Expert Labs will advise on solution design and definition.",
-        "displayName": "Technology Expert Labs Architect Services---VPC ROKS Satellite",
+        "displayName": "CXL Architect Services---VPC ROKS Satellite",
         "originalName": "plan-svcs-vpcroks"
       }
     ],
@@ -3775,7 +3782,7 @@
     "description": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility.",
     "longDescription": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility. Databases for DataStax makes DataStax even better by managing it for you. Features include high availability, automated backup orchestration, and de-coupled scaling of storage, RAM, and vCPUs. Databases for DataStax pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for DataStax",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/datastax.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/datastax.svg",
     "localSvgIcon": "/generated/icons/databases-for-cassandra.svg",
     "localPngIcon": "/generated/icons/databases-for-cassandra.png"
   },
@@ -3846,7 +3853,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -3924,7 +3931,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4005,7 +4012,7 @@
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/etcd.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/etcd.svg",
     "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
@@ -4083,7 +4090,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4154,7 +4161,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4235,7 +4242,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -4316,7 +4323,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -8511,7 +8518,7 @@
     ],
     "description": "Deploy secure, highly available apps in a native Kubernetes experience. IBM Cloud Kubernetes Service creates a cluster of compute hosts and deploys highly available containers.",
     "longDescription": "IBM Cloud Kubernetes Service creates a cluster of compute hosts and deploys highly available containers. A Kubernetes cluster lets you securely manage the resources that you need to quickly deploy, update and scale applications.",
-    "displayName": "Kubernetes Server",
+    "displayName": "Kubernetes Service",
     "imageUrl": "https://cache.globalcatalog.test.cloud.ibm.com/api/v1/containers-kubernetes/artifacts/cache/7e87826329af635ee4540b8e40e957cf-public/containerservicelogo3aec89a836.svg",
     "localSvgIcon": "/generated/icons/containers-kubernetes.svg",
     "localPngIcon": "/generated/icons/containers-kubernetes.png"
@@ -9065,7 +9072,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2,  ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
