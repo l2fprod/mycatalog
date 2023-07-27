@@ -8792,6 +8792,7 @@
     ],
     "tags": [
       "ai",
+      "analytics",
       "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
@@ -8817,7 +8818,7 @@
     "description": "IBM Match 360 with Watson (Match 360) improves trust in AI pipelines by identifying duplicate records and providing reliable data about your customers, suppliers or partners.",
     "longDescription": "Use IBM Match 360 with Watson to quickly build data pipelines for analytics and other data science use cases using master data.  Start with your IBM MDM Advanced or Standard Edition entities, or with any data assets containing party information from the knowledge catalog and quickly map and model new attributes to your data model for a more complete view of your customers.  The AI-powered matching engine speeds configuration using the same statistical methods clients have relied on to produce accurate match results.  Results can be accessed via RESTful APIs, exported to flat files, or viewed online via the entity explorer.",
     "displayName": "Match 360 with Watson",
-    "imageUrl": "http://cloud.ibm.com/mdm-oc/static/mdm-icon.svg",
+    "imageUrl": "https://cloud.ibm.com/mdm-oc/static/mdm-icon.svg",
     "localSvgIcon": "/generated/icons/14bd30e0-8921-11e9-a2c5-13fceaf553c0.svg",
     "localPngIcon": "/generated/icons/14bd30e0-8921-11e9-a2c5-13fceaf553c0.png"
   },
@@ -9394,6 +9395,18 @@
         "displayName": "Pay-per-answer"
       },
       {
+        "id": "be698ed1-e36f-40bc-98f5-4ca39b9dc1c8",
+        "name": "neuralseek-pay-per-answer-cloned-lgtp8b97",
+        "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
+        "displayName": "Pay-per-answer Frankfurt"
+      },
+      {
+        "id": "87af520b-0218-42ee-a1eb-531dc760f79d",
+        "name": "neuralseek-pay-per-answer-cloned-lgtp98z2",
+        "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
+        "displayName": "Pay-per-answer Sydney"
+      },
+      {
         "id": "d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c",
         "name": "neuralseek-search",
         "description": "The Search Plan is for use cases not requiring a Virtual Agent. NeuralSeek provides a search interface to supported knowledgebases, and will provide search responses plus generative AI summaries. Any generated AI summary incurs a per-call usage fee.  Cache responses are included at no additional cost. This plan's features are identical to the pay-per-answer plans EXCEPT: no export and no round-trip monitoring to a virtual agent is allowed, no sentiment scoring, and no automatic language detection (language code xx)",
@@ -9580,9 +9593,9 @@
       }
     ],
     "description": "With deep technical expertise and a proven approach, we help clients adopt and consume IBM Cloud® platform technologies through the implementation of production-ready use cases.",
-    "longDescription": "Engage with IBM expert to build a more meaningful application for your users. Get the most out of your IBM Cloud account by working with either of our consulting practices: IBM Technology Expert Labs or Data and AI Expert Labs & Learning.",
+    "longDescription": "Engage with IBM expert to build a more meaningful application for your users. Get the most out of your IBM Cloud account by working with either of our consulting practices: IBM Cloud Expert Labs or Data and AI Expert Labs & Learning.",
     "displayName": "Partner with Technology Expert Labs",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/2f756420-434f-11e8-ae40-6bdd72502abc/artifacts/cache/563007529defe83917057a370db4df79-public/CloudExpertLabs.svg",
+    "imageUrl": "https://service-broker.consult-with-icg-wes.test.cloud.ibm.com/consult-with-icg-wes.svg",
     "localSvgIcon": "/generated/icons/2f756420-434f-11e8-ae40-6bdd72502abc.svg",
     "localPngIcon": "/generated/icons/2f756420-434f-11e8-ae40-6bdd72502abc.png"
   },
