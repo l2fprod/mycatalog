@@ -58,19 +58,24 @@ function CheatSheet() {
     "professional-services-for-government-referral",
   ]
 
-  self.generate = function (darkMode, outputFilename) {
+  self.generate = function (darkMode, outputFilename, showHeaders = true, serviceFilter = null) {
     const styling = darkMode ? styleDarkMode : styleLightMode;
     const catalogCategories = JSON.parse(fs.readFileSync('../docs/js/categories.json', 'utf-8'));
-    const resources = JSON.parse(fs.readFileSync('../docs/generated/resources-full.json', 'utf8'))
-      .filter(resource =>
+
+    console.log(`Creating ${outputFilename}`);
+
+    if (serviceFilter == null) {
+      serviceFilter = (resource) => 
         resource.tags.indexOf('ibm_deprecated') < 0 &&
         resource.tags.indexOf('ibm_experimental') < 0 &&
         // if the service does not show in the catalog, do not put it in the cheatsheet
         !(resource.metadata.ui && resource.metadata.ui.hidden == true) &&
-        servicesToIgnore.indexOf(resource.name) < 0
-      //  &&
-      // resource.tags.indexOf('ibm_created')>=0)
-      ).sort((resource1, resource2) => resource1.displayName.localeCompare(resource2.displayName));
+        servicesToIgnore.indexOf(resource.name) < 0;
+    }
+
+    const allResources = JSON.parse(fs.readFileSync('../docs/generated/resources-full.json', 'utf8'));
+    const resources = allResources.filter(serviceFilter)
+      .sort((resource1, resource2) => resource1.displayName.localeCompare(resource2.displayName));
     console.log(`Found ${resources.length} services`);
 
     sheet = new PDFDocument({
@@ -94,7 +99,7 @@ function CheatSheet() {
     const columnCount = 4;
     const columnWidth = (pageWidth - 2 * margin) / columnCount;
     const totalPageHeight = (columnCount - 1) * (pageHeight - 2 * margin) + pageHeight - columnWidth - 2 * margin;
-    const lineHeight = totalPageHeight / (3 * catalogCategories.length + resources.length);
+    const lineHeight = totalPageHeight / (3 * catalogCategories.length + Math.max(100, resources.length));
     const fontSize = lineHeight - 2;
 
     console.log('Column width', columnWidth);
@@ -115,34 +120,37 @@ function CheatSheet() {
     sheet.fill(styling.page.background);
 
     sheet.fill(styling.page.color);
-    sheet.image(styling.logo.icon, margin, margin,
-      { width: columnWidth - margin });
-    const date = new Date();
-    var dateMDY = moment(date).format('MMMM DD, YYYY');
-    sheet
-      .fontSize(fontSize)
-      .text('Start building immediately using\n170+ unique services.', margin, margin + 120, {
-        width: columnWidth - margin,
-        align: 'center',
-      });
-    sheet
-      .fontSize(fontSize)
-      .text(`Last updated on ${dateMDY}\n${styling.logo.link}`, margin, margin + 160, {
-        width: columnWidth - margin,
-        align: 'center',
-      });
 
-    sheet
-      .rect(0, pageHeight - 1.5 * margin, pageWidth, 1.5 * margin)
-      .fill(styling.footer.background);
-    sheet
-      .fontSize(styling.footer.fontSize)
-      .fillColor(styling.footer.color)
-      .font('Plex Sans Bold')
-      .text('Built for all your applications.  AI Ready.  Secure to the core.  This is the IBM Cloud.  Visit cloud.ibm.com today.', 0, pageHeight - (1.25 * margin), {
-        width: pageWidth,
-        align: 'center',
-      });
+    if (showHeaders) {
+      sheet.image(styling.logo.icon, margin, margin,
+        { width: columnWidth - margin });
+      const date = new Date();
+      var dateMDY = moment(date).format('MMMM DD, YYYY');
+      sheet
+        .fontSize(fontSize)
+        .text('Start building immediately using\n170+ unique services.', margin, margin + 120, {
+          width: columnWidth - margin,
+          align: 'center',
+        });
+      sheet
+        .fontSize(fontSize)
+        .text(`Last updated on ${dateMDY}\n${styling.logo.link}`, margin, margin + 160, {
+          width: columnWidth - margin,
+          align: 'center',
+        });
+
+      sheet
+        .rect(0, pageHeight - 1.5 * margin, pageWidth, 1.5 * margin)
+        .fill(styling.footer.background);
+      sheet
+        .fontSize(styling.footer.fontSize)
+        .fillColor(styling.footer.color)
+        .font('Plex Sans Bold')
+        .text('Built for all your applications.  AI Ready.  Secure to the core.  This is the IBM Cloud.  Visit cloud.ibm.com today.', 0, pageHeight - (1.25 * margin), {
+          width: pageWidth,
+          align: 'center',
+        });
+    }
 
     let currentX = margin;
     let currentY = margin;
@@ -156,7 +164,9 @@ function CheatSheet() {
     }
 
     // start after the logo
-    currentY = margin + columnWidth;
+    if (showHeaders) {
+      currentY = margin + columnWidth;
+    }
 
     let alreadySeen = [];
 
@@ -175,6 +185,10 @@ function CheatSheet() {
 
       if (resourcesInCategory.length == 0) {
         return;
+      }
+
+      for (const resource of resourcesInCategory) {
+        console.log(`${resource.displayName}`)
       }
 
       nextLine(lineHeight / 1.5);

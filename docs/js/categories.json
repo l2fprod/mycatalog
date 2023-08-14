@@ -5,12 +5,16 @@
     "tags": [
       "compute",
       "compute_baremetal",
+      "compute_classic",
       "openwhisk",
       "vmware",
       "virtualservers",
       "is.placement-group"
     ],
-    "exclude": []
+    "exclude": [
+      "migration",
+      "migration_tools"
+    ]
   },
   {
     "id": "containers",
@@ -43,8 +47,12 @@
     "tags": [
       "storage",
       "storage_classic",
+      "storage_block",
+      "storage_file",
       "storage_datamovement",
-      "storage_vpc"
+      "storage_vpc",
+      "storage_object",
+      "storage_backup"
     ],
     "exclude": [
       "big_data"
@@ -110,6 +118,15 @@
     "label": "Logging and Monitoring",
     "tags": [
       "logging_monitoring"
+    ],
+    "exclude": []
+  },
+  {
+    "id": "migration",
+    "label": "Migration",
+    "tags": [
+      "migration",
+      "migration_tools"
     ],
     "exclude": []
   },
