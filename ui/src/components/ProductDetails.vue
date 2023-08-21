@@ -72,10 +72,6 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content v-if="selectedPlan">
           <div>
-            <span class="subtitle-2">Cloud Foundry</span>
-            <markup-view language="bash" v-bind:code='`ibmcloud cf create-service ${resource.name} \"${selectedPlan.originalName || selectedPlan.name }\" <service-name>`' />
-          </div>
-          <div>
             <span class="subtitle-2">Service Instance</span>
             <markup-view language="bash" v-bind:code='`ibmcloud resource service-instance-create <service-name> ${resource.name} \"${selectedPlan.name }\" <region>`' />
           </div>
