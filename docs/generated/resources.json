@@ -28,6 +28,7 @@
       "hadoop",
       "hbase",
       "hdfs",
+      "hipaa",
       "hive",
       "iam_compatible",
       "ibm_created",
@@ -995,6 +996,7 @@
       "paid"
     ],
     "tags": [
+      "storage",
       "allow_internal_users",
       "au-syd",
       "au-syd-1",
@@ -1049,6 +1051,7 @@
       "paid",
       "rc_compatible",
       "storage_block",
+      "storage_vpc",
       "support_ibm",
       "us-east",
       "us-east-1",
@@ -1119,7 +1122,7 @@
       }
     ],
     "description": "Persistent storage for use as boot and data storage for  Virtual Servers in a VPC network.",
-    "longDescription": "IBM Cloud Block Storage for Virtual Private Cloud service provides secure, persistent public cloud block storage for use with IBM Cloud Virtual Servers for Virtual Private Cloud instances.  Block Storage for Virtual Private Cloud provides consistent performance with lowest possible latency to support your workloads.   Provision block storage volumes up to 2 TB in capacity with up to 20,000 IOPS.",
+    "longDescription": "Get local disk performance with SAN persistence and durability. Increase storage capacity available to your IBM Cloud Virtual Servers with a maximum of 48k IOPS. Deploy flash-backed block storage volumes from 20GB to 16TB–and customize it all with a variety of capabilities.\n\nChoose an IOPS tier profile for simple, predefined, per-GB pricing—ideal for workloads without well-defined performance requirements.\n\nOr, build a fine-tuned environment with allocated IOPS using a Custom IOPS profile—ideal for workloads without well-understood requirements that fall outside of the predefined IOPS tiers.",
     "displayName": "Block Storage for VPC",
     "imageUrl": "https://cache.globalcatalog.test.cloud.ibm.com/api/v1/is.volume/artifacts/cache/7f5cd69c10491fb5ed520353b0391e8d-public/New%20Block-Storage-icon.svg",
     "localSvgIcon": "/generated/icons/is.volume.svg",
@@ -1151,6 +1154,7 @@
       "paid"
     ],
     "tags": [
+      "storage",
       "allow_internal_users",
       "au-syd",
       "beryllium",
@@ -1171,7 +1175,8 @@
       "jp-tok",
       "paid",
       "rc_compatible",
-      "storage_backup",
+      "storage_block",
+      "storage_vpc",
       "support_ibm",
       "us-east",
       "us-south",
@@ -1187,7 +1192,7 @@
       }
     ],
     "description": "Regional Snapshot Service to securely back up block storage data to IBM Cloud Object Storage",
-    "longDescription": "The Block Storage Snapshots for VPC service provides a regional, incremental backups of your block storage volumes.",
+    "longDescription": "Create point-in-time copies of your block storage boot or data volumes with this regional service. The first snapshot is a full backup of the volume. Subsequent snapshots of the same volume are incremental; only the changes since the last snapshots are captured. \n\nUse a snapshot during instance provisioning to create a new, fully provisioned boot volume to start the instance. Also, create and attach a data volume from a snapshot within a running virtual server instance.",
     "displayName": "Block Storage Snapshots for VPC",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot.svg",
@@ -1802,6 +1807,7 @@
       "free"
     ],
     "tags": [
+      "storage",
       "allow_internal_users",
       "au-syd",
       "br-sao",
@@ -1821,6 +1827,7 @@
       "jp-tok",
       "rc_compatible",
       "storage_backup",
+      "storage_vpc",
       "support_ibm",
       "us-east",
       "us-south"
@@ -1835,7 +1842,7 @@
       }
     ],
     "description": "Provides the ability to schedule VPC block storage snapshot backups and manage retention through backup policies.",
-    "longDescription": "Provides the ability to schedule VPC block storage snapshot backups and manage retention through backup policies.",
+    "longDescription": "IBM Cloud Backup for VPC is an enterprise-level backup solution that automates creation and retention of your VPC block storage volumes. This service lets you set a scheduled backup of your block storage volumes and snapshots created from those volumes.\n\nWhen a backup is triggered, it creates a new snapshot of the volume contents. A snapshot is a point-in-time copy of your block storage volume. The entire contents of the volume are copied and retained. Subsequent snapshots will capture the incremental changes from the previous snapshots.\n\n#### Pricing\n\nYou will be charged for the storage capacity used for each of your backups. To estimate pricing while you create a backup policy, use the \"Add to estimate\" button on the Create tab. For more information, see the [Backup service documentation](/docs/vpc?topic=vpc-backup-service-about).",
     "displayName": "Cloud Backup for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.backup-policy/artifacts/cache/d45b2a92d0bbd495a556ba6a6b878e2d/Cloud-BackupServiceForVPC_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.backup-policy.svg",
@@ -2006,6 +2013,7 @@
       "br-sao",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -2036,6 +2044,7 @@
       "custom_kind_service",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "free",
@@ -2079,9 +2088,8 @@
     "description": "Offers visibility into the performance and health of your infrastructure and apps, with in-depth troubleshooting and alerting.",
     "longDescription": "IBM Cloud Monitoring is a managed enterprise grade monitoring service that provides operational visibility into the performance and health of applications, services and infrastructure. It offers administrators, DevOps teams and developers full stack telemetry with advanced features to monitor and troubleshoot, define alerts, and design custom dashboards.",
     "displayName": "Cloud Monitoring",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/090c2c10-8c38-11e8-bec2-493df9c49eb8/artifacts/cache/9c365c47bb897f95ba3975c8cd0417a7-public/CloudLogAnalysisMonitoring.svg",
-    "localSvgIcon": "/generated/icons/090c2c10-8c38-11e8-bec2-493df9c49eb8.svg",
-    "localPngIcon": "/generated/icons/090c2c10-8c38-11e8-bec2-493df9c49eb8.png"
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/090c2c10-8c38-11e8-bec2-493df9c49eb8/artifacts/CloudLogAnalysisMonitoring.svg",
+    "localSvgIcon": "/generated/icons/090c2c10-8c38-11e8-bec2-493df9c49eb8.svg"
   },
   {
     "geo_tags": [
@@ -3308,9 +3316,9 @@
         "displayName": "Custom Migration Request"
       }
     ],
-    "description": "Wanclouds' Custom Multi-Cloud Migrations as a Service offering for IBM",
-    "longDescription": "This offering gives you a fully-managed, automated, and accelerated way of taking your current environment, be it on-premises or cloud, and migrating it to your desired IBM cloud environment. \n\n\nWith this offering you can move from:\n- IBM Cloud\n- IBM Cloud Classic\n- On Premise (including VMware)\n- Amazon Webservices\n- Google Cloud Platform\n- Microsoft Azure\n\nto:\n- IBM Cloud\n- IBM Kubernetes Service (IKS)\n- IBM Cloud Satellite\n- VMware on IBM Cloud Classic\n- Red Hat OpenShift (ROKS)\n\nOur team of experts leverage our Migrations and Automation Suite, VPC+ for IBM to automate the entire process and eliminate the long, complicated and error-prone manual processes.\n\nSome common usecases this service covers but not limited to are;\n- Discover and Migrate Kubernetes cluster and VPC resources from other clouds and migrate to IBM VPC and IKS\n- Migrate your application across your Kubernetes clusters\n- Migrate your on-prem Red Hat OpenShift Clusters to IKS\n\n\n\nLearn more: https://www.wanclouds.net/ibm\n\nFor any help, please go to https://support.wanclouds.net or email us at support@wanclouds.net\nFor sales related queries, please contact usat sales@wanclouds.net",
-    "displayName": "Custom Migrations as a Service",
+    "description": "Wanclouds' Custom Multi-Cloud Migrations and Disaster Recovery as a Service offering for IBM",
+    "longDescription": "This is a fully-managed and accelerated way of taking your current environment, be it on-premises or cloud, and backing it or migrating it to your desired IBM cloud account and region. \n\n\nWith this offering you can backup, restore, and migrate:\n\n- IBM Cloud VSIs & Data\n- SAP on VMWare and HANA DB (On-Prem or IBM Cloud)\n- VMware VMs and Data (On-Prem or Cloud)\n- On Premise Linux, Window, Data, OpenShift, K8s, Data\n- Kubernetes and Red Hat Openshift\n- IKS and ROKS clusters\n- AWS VMs, Data, EKS, VPC Resources\n- Google Cloud VMs, GKE, Data, and Workloads\n- Microsoft Azure VMs, AKS, Data and workloads\n\nto:\n\n- IBM Cloud\n- IBM Cloud Classic\n\n\nDisaster Recovery Setup and Migration scenarios coverage;\n\n- VMware (on-premise) to Cloud\n- SAP workloads on VMware (on-premise) to Cloud\n- SAP HANA Database  to Cloud\n- VMware (on-premise) to VMware on Cloud\n- Red Hat Openshift to Red Hat Openshift on Cloud\n- Kubernetes deployments from on-prem or other public clouds\n- Linux Servers (RHEL, Ubuntu, CentOS, SUSE, Debian versions supported by cloud)\n- Windows Servers (versions supported by cloud)\n- Data and Storage \n\nOur team of experts leverage our VPC+ Automation Suite which is hosted on IBM Cloud to fast-track the entire process and eliminate the long, complicated and error-prone manual processes.\n\nThere are two categories of this offering:\n\n- Disaster Recovery as a Service\n- Migrations as a Service\n\nDisaster Recovery as a Service:\n\n- Minimum of 1 year subscription\n- Kick-off, Onboard the customer on VPC+\n- Discover source environment\n- Setup Cloud VPC Infrastructure for DR\n- Backup workloads to cloud object store\n- Configure DR scenario according to customer RPO, RTO goals\n- Provide cloud support for the DR setup\n- Customer to facilitate access and actively collaborate with   Wanclouds\n- All source OSs and software must be compatible with cloud\n\n\nMigrations as a Service (MaaS):\n\nThe following tasks are involved:\n- Kick-off\n- Project/Program Management \n- Discover the source environment\n- Workout migration timeline and schedule\n- Design and Setup the Cloud environment \n- Perform the migration in the least disruptive manner using VPC+\n- Verify that everything is working as expected\n- Customer to facilitate access to the source and cloud environments and actively collaborate with Wanclouds\n- Migration tasks are completed within 4-6 weeks\n- Post Migration cloud support \n-    Options of 1 month, 3 months, 1 year\n-    8x5 workdays - support portal \n- All source OSs and software must be compatible with cloud\n\n\nWhy choose Wanclouds ?\n\n- Fast, simple, and accelerated timelines\n- Comprehensive coverage for diverse resources and platforms\n- Efficient RTO and Flexible RPO\n- Setup Cold DR, Warm DR, or Hot DR\n- Comprehensive - Single Pane of Glass for VMware, SAP, Kubernetes, Data, and Cloud Infra.\n- Flexible DR - On-Prem to Cloud and across Clouds\n- Encryption - in transit and at rest\n- Non-Disruptive to running environments\n- Cost-effective\n- Fully managed - no need to learn clouds, multiple tools\n\n\n\nLearn more: https://www.wanclouds.net/ibm\n\nFor any help, please go to https://support.wanclouds.net or email us at support@wanclouds.net\nFor sales related queries, please contact usat sales@wanclouds.net",
+    "displayName": "Custom Migrations and Disaster Recovery as a Service",
     "imageUrl": "https://wanclouds.net/assets/images/vpcbrandinglogo.svg",
     "localSvgIcon": "/generated/icons/07d4aa9f-1f71-43bb-9916-8e9cff5bc426.svg",
     "localPngIcon": "/generated/icons/07d4aa9f-1f71-43bb-9916-8e9cff5bc426.png"
@@ -10539,6 +10547,7 @@
       "br-sao",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -10569,6 +10578,7 @@
       "distributed cloud",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "freesia",
       "fs_ready",
