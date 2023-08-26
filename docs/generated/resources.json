@@ -10051,6 +10051,67 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "7c03a06c-f1bb-46f8-84d8-9378432b2804",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "primaryio-protectio-managed-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "custom_kind_service",
+      "data protection",
+      "disaster recovery",
+      "dr",
+      "draas",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "storage_backup",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "a051f089-f3aa-403f-821a-45d9bd52c0dd",
+        "name": "primaryio-protectio-managed-service-protectio-draas-100",
+        "description": "ProtectIO DraaS-Managed including 5 virtual Machines.",
+        "displayName": "ProtectIO DRaaS Managed 100"
+      },
+      {
+        "id": "c03b8d50-3fac-4549-a62a-9fe1d4da459e",
+        "name": "primaryio-protectio-managed-service-protectio-draas-1000",
+        "description": "ProtectIO DraaS-Managed including 50 virtual Machines.",
+        "displayName": "ProtectIO DRaaS Managed 1000"
+      },
+      {
+        "id": "220e0e35-58f6-4de9-aca9-49e04a06f7f2",
+        "name": "primaryio-protectio-managed-service-protectio-draas-300",
+        "description": "ProtectIO DraaS-Managed including 15 virtual Machines",
+        "displayName": "ProtectIO DRaaS Managed 300"
+      },
+      {
+        "id": "6dcb0d7b-c09e-43c9-ac6a-1316f5c12629",
+        "name": "primaryio-protectio-managed-service-protectio-draas-enterprise",
+        "description": "ProtectIO DraaS-Managed including 100 virtual Machines",
+        "displayName": "ProtectIO DRaaS Managed Enterprise"
+      }
+    ],
+    "description": "PrimaryIO’s DRaaS platform replicates and protects a customer’s primary site whether on-prem or IBM cloud-based VMware workloads",
+    "longDescription": "ProtectIO is PrimaryIO’s on-demand disaster recovery as a service (“DRaaS”) platform. ProtectIO is delivered as a web-accessible, multi-tenant, IBM Cloud-native Software-as-a-Service and helps customers by providing a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership.\n\nContinuous Data Protection (CDP) is delivered via PrimaryIO’s proprietary VAIO Replication filter and Authenticated Block Stream Protocol that ships the changed I/O blocks to a DR Receiver process in the Target/DR environment and commits to IBM Cloud Object Storage.\n\nAt failover time, ProtectIO rehydrates from the Cloud Object Storage buckets into the respective VMDKs and instantiates the VMs that compose the application workload that is being protected. This delivers near zero RPO and an RTO correlated with the amount of data that needs to be rehydrated, which provides a compelling Total Cost of Ownership (TCO) solution for customers.\n\nProtectIO supports on-premises, IBM Cloud Classic and IBM Cloud VPC as the Primary Site and utilizes IBM Cloud Classic or VPC for the Target/DR Site, depending upon the customer and available VPC capacity. The UI/UX and associated Control Plane, which runs in an IBM Cloud VPC,  has been designed to be extremely intuitive and allow customers to operate without needing assistance from a Managed Service Provider.\n\nPre-requisites:\n\n\t1. Customer needs to have a IBM tenant account\n\t2. Customer needs to have COS instance\nNote: PrimaryIO team will help you setup IBM tenant account and COS instance",
+    "displayName": "ProtectIO DRaaS Managed Service",
+    "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
+    "localPngIcon": "/generated/icons/7c03a06c-f1bb-46f8-84d8-9378432b2804.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "au-syd-1",
       "au-syd-2",
