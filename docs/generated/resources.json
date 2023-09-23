@@ -5967,6 +5967,7 @@
       "paid"
     ],
     "tags": [
+      "storage",
       "allow_internal_users",
       "au-syd",
       "au-syd-1",
@@ -6013,7 +6014,7 @@
       "jp-tok-3",
       "paid",
       "rc_compatible",
-      "storage_file",
+      "storage_vpc",
       "support_ibm",
       "us-east",
       "us-east-1",
@@ -6061,7 +6062,7 @@
       }
     ],
     "description": "Create a shared storage that you can share across multiple Virtual Servers within your VPC.",
-    "longDescription": "The IBM Cloud File Storage for Virtual Private Cloud (VPC) service provides secure, persistent, cloud NFSv4.1 file storage.  This data storage allows you to create Zonal File Shares for IBM Cloud Virtual Servers on Virtual Private Cloud instances.  Get total control and help minimize costs with flash-backed architecture. Create file shares from 10 GB to 32 TB—and provision it all with a variety of flexible options.",
+    "longDescription": "The IBM Cloud® File Storage for VPC service provides secure, persistent, NSFv4.1 protocol-based file storage. IBM Cloud® File Storage for VPC is backed by All-Flash architecture. You can create file shares with capacity that ranges from 10 GB to 32 TB with flexible options. You can mount the file share on multiple IBM Cloud Virtual Servers for file sharing and collaboration. You have total control over your data as you manage access to the file shares with IAM profiles, security groups, and context-based restrictions. You can also bring your own root keys to add another layer of encryption. You can manage your cost by provisioning only what you need. You can increase the share capacity later when you need more storage, and you can adjust the IOPS to increase or decrease performance anytime.",
     "displayName": "File Storage for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.share/artifacts/VPC-file-shares-icon.svg",
     "localSvgIcon": "/generated/icons/is.share.svg",
@@ -11017,6 +11018,7 @@
       "ibm_created",
       "paid",
       "rc_compatible",
+      "service_endpoint_supported",
       "support_ibm",
       "us-south"
     ],
@@ -13222,6 +13224,7 @@
   {
     "geo_tags": [
       "eu-de",
+      "us-east",
       "us-south"
     ],
     "id": "vmware.vdc",
@@ -13253,6 +13256,7 @@
       "rc_compatible",
       "subscription",
       "support_ibm",
+      "us-east",
       "us-south",
       "vmware.composite"
     ],
