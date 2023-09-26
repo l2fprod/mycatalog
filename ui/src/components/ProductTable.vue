@@ -115,7 +115,7 @@
       <v-img :src="'/generated/icons/' + item.id + '.png'" width="16" />
     </template>
     <template v-slot:[`item.displayName`]="{ item }">
-      <span v-if="item.metadata.ui.hidden">{{ item.displayName }}</span>
+      <span v-if="item.metadata.ui && item.metadata.ui.hidden">{{ item.displayName }}</span>
       <a
         v-else
         @click.stop
