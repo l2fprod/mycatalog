@@ -4406,9 +4406,6 @@
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
-      "eu-es-1",
-      "eu-es-2",
-      "eu-es-3",
       "eu-fr2-1",
       "eu-fr2-2",
       "eu-fr2-3",
@@ -4427,11 +4424,14 @@
       "us-south-1",
       "us-south-2",
       "us-south-3",
+      "eu-es-1",
+      "eu-es-2",
+      "eu-es-3",
+      "eu-es",
       "au-syd",
       "br-sao",
       "ca-tor",
       "eu-de",
-      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -4448,9 +4448,9 @@
     "name": "is.dedicated-host",
     "pricing_tags": [
       "allow_internal_users",
-      "free",
       "paid",
-      "paid_only"
+      "paid_only",
+      "free"
     ],
     "tags": [
       "compute",
@@ -4601,6 +4601,13 @@
         "description": "Price plan for Memory Gen3 Dedicated Host",
         "displayName": "MX3D Dedciated Host Plan",
         "originalName": "mx3d-host"
+      },
+      {
+        "id": "cb55ded1-a7b0-4df0-8913-71a18bd9ff75",
+        "name": "mz2-host",
+        "description": "Pricing plan for Memory s390x profiles of Dedicated Host\n",
+        "displayName": "MZ2 Dedicated Host Plan",
+        "originalName": "mz2-host"
       },
       {
         "id": "86047df5-2e29-4967-a5f8-d0b5eeacb545",
