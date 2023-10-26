@@ -3497,6 +3497,7 @@
       "paygo",
       "rc_compatible",
       "service_endpoint_supported",
+      "support_ibm",
       "us-east",
       "us-south"
     ],
@@ -5515,6 +5516,7 @@
     "geo_tags": [
       "au-syd",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "us-south"
     ],
@@ -5540,6 +5542,7 @@
       "custom_kind_service",
       "dev_ops",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "event-notifications",
       "free",
@@ -10924,6 +10927,7 @@
       "gc_migrate",
       "ibm_created",
       "ibm_dedicated_public",
+      "ibm_deprecated",
       "paid_only",
       "paygo",
       "support_ibm",
@@ -14391,6 +14395,57 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/12fbfff4-12c7-ccd0-80e6-603e8607468a.svg",
     "localPngIcon": "/generated/icons/12fbfff4-12c7-ccd0-80e6-603e8607468a.png"
+  },
+  {
+    "geo_tags": [
+      "us-south"
+    ],
+    "id": "11530fa0-1776-11ee-93f6-1d4066e6a409",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "code-assistant",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "ai",
+      "allow_internal_users",
+      "custom_kind_service",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_ibm",
+      "us-south",
+      "wca"
+    ],
+    "plans": [
+      {
+        "id": "940e5fcb-f953-430d-a4ef-c3cdddb04e1e",
+        "name": "essentials-ansible",
+        "description": "The Essentials plan for watsonx Code Assistant for Red Hat Ansible offers everything you need for Ansible code generation.",
+        "displayName": "IBM watsonx Code Assistant for Red Hat Ansible Essentials",
+        "originalName": "essentials-ansible"
+      },
+      {
+        "id": "c86f43c1-f9f6-4eea-be35-99d2ba27c819",
+        "name": "essentials-z",
+        "description": "The Essentials plan for IBM watsonx Code Assistant for Z as a Service, coupled with watsonx Code Assistant for Z (on prem), offers everything you need to translate COBOL to Java.",
+        "displayName": "IBM watsonx Code Assistant for Z as a Service Essentials",
+        "originalName": "essentials-z"
+      }
+    ],
+    "description": "Leverage tailor-made foundation models for AI-generated code recommendations to accelerate developer productivity.",
+    "longDescription": "IBM watsonx Code Assistant is a cloud service that leverages generative AI to accelerate codegeneration and increase developer productivity. It uses generative AI that is purpose-built for targeted use cases like Application Modernization and IT Automation.\nOut-of-the-box, watsonx Code Assistant provides pre-trained models based on specific programming languages to ensure trust and efficiency for accurate code generation. IBM watsonx Code Assistant allows you to customize the underlying model(s) to ensure output is grounded in your organization's best practices, while providing visibility into the potential origin of generated code.",
+    "displayName": "watsonx Code Assistant",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/11530fa0-1776-11ee-93f6-1d4066e6a409/artifacts/cache/4ac77ae8c1d83855e240a6a77d14f7d1-public/watsonxCodeAssistant.svg",
+    "localSvgIcon": "/generated/icons/11530fa0-1776-11ee-93f6-1d4066e6a409.svg",
+    "localPngIcon": "/generated/icons/11530fa0-1776-11ee-93f6-1d4066e6a409.png"
   },
   {
     "geo_tags": [
