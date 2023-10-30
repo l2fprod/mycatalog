@@ -1173,7 +1173,7 @@
         "originalName": "snapshot-plan-free"
       }
     ],
-    "description": "Regional Snapshot Service to securely back up block storage data to IBM Cloud Object Storage",
+    "description": "Back up block storage volumes to IBM Cloud Object Storage with this regional snapshot service.",
     "longDescription": "Create point-in-time copies of your block storage boot or data volumes with this regional service. The first snapshot is a full backup of the volume. Subsequent snapshots of the same volume are incremental; only the changes since the last snapshots are captured. \n\nUse a snapshot during instance provisioning to create a new, fully provisioned boot volume to start the instance. Also, create and attach a data volume from a snapshot within a running virtual server instance.",
     "displayName": "Block Storage Snapshots for VPC",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
