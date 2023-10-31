@@ -2136,13 +2136,11 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "global",
       "satcon_fra",
       "satcon_lon",
       "satcon_tok",
-      "satcon_wdc",
-      "us-south"
+      "satcon_wdc"
     ],
     "id": "dff97f5c-bc5e-4455-b470-411c3edbe49c",
     "kind": "service",
@@ -2153,10 +2151,10 @@
     "name": "cloud-object-storage",
     "pricing_tags": [
       "allow_internal_users",
-      "free",
-      "lite",
       "paid",
       "paid_only",
+      "free",
+      "lite",
       "paygo"
     ],
     "tags": [
@@ -2164,7 +2162,6 @@
       "apidocs_enabled",
       "custom_kind_service",
       "eu_access",
-      "eu-gb",
       "financial services",
       "free",
       "fs cloud",
@@ -2187,8 +2184,7 @@
       "satcon_wdc",
       "satellite_enabled",
       "storage_object",
-      "support_ibm",
-      "us-south"
+      "support_ibm"
     ],
     "plans": [
       {
@@ -3524,6 +3520,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -3555,6 +3552,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -3593,6 +3591,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -3624,6 +3623,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -3669,6 +3669,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -3701,6 +3702,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -3754,7 +3756,8 @@
       "jp-tok",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-es"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -3779,6 +3782,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -3831,6 +3835,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -3862,6 +3867,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -3900,6 +3906,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -3932,6 +3939,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -3979,6 +3987,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -4011,6 +4020,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -5591,6 +5601,8 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
+      "us-east",
+      "us-south",
       "satcon_dal",
       "satcon_fra",
       "satcon_lon",
@@ -5600,8 +5612,7 @@
       "satcon_tok",
       "satcon_tor",
       "satcon_wdc",
-      "us-east",
-      "us-south"
+      "eu-es"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -5611,9 +5622,9 @@
     },
     "name": "messagehub",
     "pricing_tags": [
+      "paid",
       "free",
       "lite",
-      "paid",
       "paid_only",
       "paygo"
     ],
@@ -5629,6 +5640,7 @@
       "custom_kind_service",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "financial services",
@@ -8965,6 +8977,7 @@
       "ca-tor",
       "che01",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -8998,6 +9011,7 @@
       "disable_reclamation",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "hipaa",
@@ -14436,14 +14450,14 @@
       {
         "id": "940e5fcb-f953-430d-a4ef-c3cdddb04e1e",
         "name": "essentials-ansible",
-        "description": "The Essentials plan for watsonx Code Assistant for Red Hat Ansible offers everything you need for Ansible code generation.",
-        "displayName": "IBM watsonx Code Assistant for Red Hat Ansible Essentials",
+        "description": "The Essentials plan for watsonx Code Assistant for Red Hat Ansible Lightspeed offers everything you need for Ansible code generation.",
+        "displayName": "IBM watsonx Code Assistant for Red Hat Ansible Lightspeed Essentials",
         "originalName": "essentials-ansible"
       },
       {
         "id": "c86f43c1-f9f6-4eea-be35-99d2ba27c819",
         "name": "essentials-z",
-        "description": "The Essentials plan for IBM watsonx Code Assistant for Z as a Service, coupled with watsonx Code Assistant for Z (on prem), offers everything you need to translate COBOL to Java.",
+        "description": "The Essentials plan for IBM watsonx Code Assistant offers everything you need to translate COBOL to Java.",
         "displayName": "IBM watsonx Code Assistant for Z as a Service Essentials",
         "originalName": "essentials-z"
       }
