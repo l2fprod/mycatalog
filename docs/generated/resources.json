@@ -4142,22 +4142,16 @@
   },
   {
     "geo_tags": [
-      "ams03",
       "au-syd",
-      "br-sao",
-      "ca-tor",
       "eu-de",
       "eu-gb",
-      "fra02",
-      "jp-osa",
+      "us-south",
+      "br-sao",
+      "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "par01",
-      "sao01",
-      "tor01",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4167,18 +4161,17 @@
     },
     "name": "dashdb-for-transactions",
     "pricing_tags": [
-      "allow_internal_users",
-      "free",
-      "lite",
       "paid",
       "paid_only",
       "reservable",
+      "allow_internal_users",
       "subscription",
-      "subscription_only"
+      "subscription_only",
+      "free",
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
-      "ams03",
       "apidocs_enabled",
       "au-syd",
       "big_data",
@@ -4196,14 +4189,12 @@
       "eu-de",
       "eu-gb",
       "flex",
-      "fra02",
       "free",
       "freesia",
       "hipaa",
       "iam_compatible",
       "ibm_created",
       "ibm_dedicated_public",
-      "jp-osa",
       "jp-tok",
       "lead",
       "lite",
@@ -4212,17 +4203,14 @@
       "oracle",
       "paid",
       "paid_only",
-      "par01",
       "purescale",
       "rc_compatible",
       "reservable",
-      "sao01",
       "sql",
       "sqldb",
       "subscription",
       "subscription_only",
       "support_ibm",
-      "tor01",
       "transactions",
       "us-east",
       "us-south"
@@ -13172,6 +13160,13 @@
         "originalName": "mx3d-96x960"
       },
       {
+        "id": "ec3886d6-07b8-4591-a6ec-274d44a2543f",
+        "name": "mz2-instance-dedicated-host",
+        "description": "Pricing plan for zVSIs used by Dedicated Hosts for VPC Gen2",
+        "displayName": "s390x VSIs for Dedicated Host for VPC",
+        "originalName": "mz2-instance-dedicated-host"
+      },
+      {
         "id": "bdae8118-dffc-4056-9002-9e28f8a6e71d",
         "name": "research-nlp-a100",
         "description": "Custom GPU Cloud for Research",
@@ -14457,7 +14452,7 @@
       {
         "id": "c86f43c1-f9f6-4eea-be35-99d2ba27c819",
         "name": "essentials-z",
-        "description": "The Essentials plan for IBM watsonx Code Assistant offers everything you need to translate COBOL to Java.",
+        "description": "The Essentials plan for IBM watsonx Code Assistant for Z as a Service, coupled with watsonx Code Assistant for Z (on prem), offers everything you need to translate COBOL to Java.",
         "displayName": "IBM watsonx Code Assistant for Z as a Service Essentials",
         "originalName": "essentials-z"
       }
