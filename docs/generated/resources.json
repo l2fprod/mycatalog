@@ -2985,6 +2985,7 @@
       "br-sao",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -3013,6 +3014,7 @@
       "dev_ops",
       "eu_access",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "financial services",
@@ -4007,6 +4009,34 @@
       "us-south"
     ],
     "plans": [
+      {
+        "id": "bddb9c20-2400-4cb4-9c4b-3c94c3c61ce3",
+        "name": "anywhere-extra-small",
+        "description": "IBM DataStage-aaS Anywhere Extra Small Package",
+        "displayName": "DataStage-aaS Anywhere Extra Small Package",
+        "originalName": "anywhere-extra-small"
+      },
+      {
+        "id": "12aca327-e61a-43e4-8863-1232430ca668",
+        "name": "anywhere-large",
+        "description": "IBM DataStage-aaS Anywhere Large Package",
+        "displayName": "DataStage-aaS Anywhere Large Package",
+        "originalName": "anywhere-large"
+      },
+      {
+        "id": "4d86f101-a442-4deb-b4b5-f7d5f06fd2d6",
+        "name": "anywhere-medium",
+        "description": "IBM DataStage-aaS Anywhere Medium Package",
+        "displayName": "DataStage-aaS Anywhere Medium Package",
+        "originalName": "anywhere-medium"
+      },
+      {
+        "id": "f08c0c00-7632-41bd-8014-82aaf062280a",
+        "name": "anywhere-small",
+        "description": "IBM DataStage-aaS Anywhere Small Package",
+        "displayName": "DataStage-aaS Anywhere Small Package",
+        "originalName": "anywhere-small"
+      },
       {
         "id": "011b736f-c49d-4f28-b8b7-fbc24b5702a5",
         "name": "enterprise-large",
@@ -6186,6 +6216,56 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "d2fb0ba3-1679-4053-a593-9f2259d9e87b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "fnts-managed-services-for-powervs-cloud",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "compliance",
+      "custom_kind_service",
+      "free",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "power virtual server",
+      "rc_compatible",
+      "services",
+      "support_third_party",
+      "virtualservers"
+    ],
+    "plans": [
+      {
+        "id": "ef6be7b9-78ef-4890-b19c-d25e84a8de69",
+        "name": "fnts-managed-services-for-powervs-cloud-free-assessment",
+        "description": "FNTS cloud consultants will meet with you virtually to assess your current/future PowerVS environment. We tailor the discovery session and assessment based on the stage of your project.  We meet you where you are, whether you are in the evaluation stage, planning stage, execution stage, or post-migration stage. \nThe outcome of the assessment may be an architecture evaluation, migration best practices, or managed services proposal.",
+        "displayName": "Free Assessment"
+      },
+      {
+        "id": "a56429b5-eb96-44ee-ab41-afa942c06d30",
+        "name": "fnts-managed-services-for-powervs-cloud-managed-services",
+        "description": "OS Management and Administration of PowerVS instances on IBM i and AIX. Priced per each PowerVS instance under management.",
+        "displayName": "Managed Services"
+      }
+    ],
+    "description": "Managed services for PowerVS instances which includes monitoring, configuration, patching, and capacity management. ",
+    "longDescription": "FNTS will provide managed services for PowerVS instances (LPARs) running IBM i or AIX. Services include OS troubleshooting support, system monitoring, alerting, fix management, configuration and capacity management.  If your environment includes multiple data centers, FNTS can support several options for data replication to PowerVS based on your business continuity requirements, but it is outside the scope of this service.\n\n\nFNTS complies with PCI and Soc 2 Type II standards and will support you in your efforts to meet HIPAA and GDPR compliance requirements.\n\n\nThis service is designed for the management of new or existing PowerVS environments. Additional services are available from FNTS for migrating Power LPARs to PowerVS, and performing backup and DR replication services. Contact FNTS at https://www.fnts.com/contact-us for an initial consultation. \n\n\n",
+    "displayName": "FNTS Managed Services for PowerVS Cloud",
+    "imageUrl": "https://www.fnts.com/hubfs/Logos/fnts-vertical-200.png",
+    "localPngIcon": "/generated/icons/d2fb0ba3-1679-4053-a593-9f2259d9e87b.png"
+  },
+  {
+    "geo_tags": [
       "us-south"
     ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-fortigate",
@@ -7010,8 +7090,8 @@
         "originalName": "small"
       }
     ],
-    "description": "Create and run virtual servers on IBM LinuxONE, the industry’s most secure Linux-based platform. You can now also create Hyper Protect Virtual Servers for VPC in various regions. For details click “About” Tab.",
-    "longDescription": "Create and run virtual servers on IBM LinuxONE, the industry’s most secure Linux-based platform.\n\nNote: You can now also create Virtual servers for VPC, see https://cloud.ibm.com/vpc-ext/provision/vs. For more information about Virtual servers for VPC, see  https://cloud.ibm.com/docs/vpc?topic=vpc-about-se. Ensure that you select the s390x architecture and set “Run your workload with an OS and a profile protected by Secure Execution” to on.",
+    "description": "You are recommended to create the latest Hyper Protect Virtual Servers for VPC at https://cloud.ibm.com/vpc-ext/provision/vs?architecture=s390x&secureExecution=true. For more information, click the \"About\" tab.",
+    "longDescription": "Create and run virtual servers on IBM LinuxONE, the industry's most secure Linux-based platform.\nNote: \n1. It is recommended that you create Hyper Protect Virtual Servers for VPC, the latest confidential computing as-a-service solution, in various regions at https://cloud.ibm.com/vpc-ext/provision/vs?architecture=s390x&secureExecution=true. When you select your image, ensure that you select \"s390x architecture\" and toggle on \"Confidential computing - Run your workload with an OS and a profile protected by Secure Execution\". For more information, see https://cloud.ibm.com/docs/hp-virtual-servers?topic=hp-virtual-servers-why-migrate.\n2. This service will be deprecated from the IBM Cloud data center in Sydney soon. For more information, see https://cloud.ibm.com/docs/hp-virtual-servers?topic=hp-virtual-servers-whats-new#hp-virtual-servers-oct2623.",
     "displayName": "Hyper Protect Virtual Server for Classic",
     "imageUrl": "https://hp-vs.prod-us.cloud.zaas.ibm.com/virtualservers-32.svg",
     "localSvgIcon": "/generated/icons/986f2197-9f9a-44f4-9463-f17ec64c6729.svg",
@@ -11987,6 +12067,7 @@
       "br-sao",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "jp-osa",
@@ -12013,6 +12094,7 @@
       "custom_kind_service",
       "dev_ops",
       "eu-de",
+      "eu-es",
       "eu-fr2",
       "eu-gb",
       "financial services",
@@ -13512,7 +13594,6 @@
       "paid_only"
     ],
     "tags": [
-      "containers",
       "migration",
       "clusters",
       "cost",
@@ -13522,6 +13603,7 @@
       "global",
       "ibm_third_party",
       "kubernetes",
+      "migration_tools",
       "openshift",
       "optimization",
       "paid",
