@@ -3224,7 +3224,8 @@
     "name": "cyberstrong",
     "pricing_tags": [
       "paid",
-      "paid_only"
+      "paid_only",
+      "free"
     ],
     "tags": [
       "security",
@@ -3232,6 +3233,7 @@
       "control mapping",
       "crosswalking",
       "custom_kind_service",
+      "free",
       "global",
       "ibm_third_party",
       "modeling",
@@ -3246,10 +3248,46 @@
     ],
     "plans": [
       {
+        "id": "4dd62f11-fdf0-4b6c-afc2-734160f6db9a",
+        "name": "cyberstrong-1-scc-tprm-up-to-50-vendors",
+        "description": "Integrate IBM SCC with CyberStrong for third party risk management (TPRM) capabilities for up to 50 vendors",
+        "displayName": "SCC TPRM - Up to 50 Vendors"
+      },
+      {
+        "id": "d49ec891-f2e6-467c-b37d-e5251e487ab8",
+        "name": "cyberstrong-2-scc-tprm-up-to-100-vendors",
+        "description": "Integrate IBM SCC with CyberStrong for third party risk management (TPRM) capabilities for up to 100 vendors",
+        "displayName": "SCC TPRM - Up to 100 Vendors"
+      },
+      {
+        "id": "153903ce-dfac-4506-955e-3ee81c7493ca",
+        "name": "cyberstrong-3-scc-tprm-up-to-150-vendors",
+        "description": "Integrate IBM SCC with CyberStrong for third party risk management (TPRM) capabilities for up to 150 vendors",
+        "displayName": "SCC TPRM - Up to 150 Vendors"
+      },
+      {
+        "id": "fd21dd12-6586-4e20-a04b-9c28b30b5aac",
+        "name": "cyberstrong-4-scc-tprm-unlimited-vendors",
+        "description": "Integrate IBM SCC with CyberStrong for third party risk management (TPRM) capabilities for an unlimited amount of vendors",
+        "displayName": "SCC TPRM - Unlimited Vendors"
+      },
+      {
         "id": "3e6665f6-63a2-4319-a294-3e51ccfe2405",
         "name": "cyberstrong-enterprise-cloned-lbqyq5e8",
         "description": "Enterprise Pricing",
         "displayName": "Enterprise"
+      },
+      {
+        "id": "39f8c1df-e55f-431e-8602-beb2acd8ee41",
+        "name": "cyberstrong-internaldemo",
+        "description": "Plan for Internal IBM Account use to establish a demo environment for prospective customers",
+        "displayName": "InternalDemo"
+      },
+      {
+        "id": "4e6ae4f0-427a-4177-8251-154e7f4be4a1",
+        "name": "cyberstrong-trial",
+        "description": "Try CyberStrong at no cost for 30 days. When your trial expires you may upgrade to the Enterprise plan to continue using CyberStrong.",
+        "displayName": "Trial"
       }
     ],
     "description": "CyberSaint Cyber & IT Risk & Compliance Automation Solutions",
@@ -10928,6 +10966,13 @@
         "description": "Up to 5 gateways with 5 destinations each and 50GB of included allowance for data transmission.",
         "displayName": "Professional",
         "originalName": "professional"
+      },
+      {
+        "id": "4abc68d9-601e-454c-865b-207d1e6a252c",
+        "name": "securegatewayplan",
+        "description": "Pay only for outbound data transmissions per Gigabyte. The first Gigabyte each month is free.",
+        "displayName": "Standard",
+        "originalName": "securegatewayplan"
       }
     ],
     "description": "IBM Secure Gateway for IBM Cloud enables users to integrate cloud services with enterprise systems on premises.",
