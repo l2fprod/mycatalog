@@ -14082,8 +14082,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "2ad019f3-0fd6-4c25-966d-f3952481a870",
     "kind": "service",
@@ -14094,6 +14094,8 @@
     "name": "aiopenscale",
     "pricing_tags": [
       "allow_internal_users",
+      "free",
+      "lite",
       "paid",
       "paid_only"
     ],
@@ -14103,6 +14105,7 @@
       "calcium",
       "custom_kind_service",
       "eu-de",
+      "free",
       "freesia",
       "iam_compatible",
       "ibm_created",
@@ -14115,6 +14118,13 @@
       "watson"
     ],
     "plans": [
+      {
+        "id": "967ba182-c6e0-4adc-92ef-661a822cc1d7",
+        "name": "lite",
+        "description": "The watsonx.governance Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\nInternal Postgres db instance that supports the above capacity; Data cannot be migrated from this instance; If upgrading to Standard plan and continuity is required from Lite plan, please provision your own instance of paid Postgres db from IBM Cloud catalog",
+        "displayName": "Lite",
+        "originalName": "lite"
+      },
       {
         "id": "6786f153-64a7-4e47-940a-eff204d0d39b",
         "name": "standard-v2",
