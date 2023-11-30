@@ -1934,6 +1934,7 @@
       "au-syd",
       "br-sao",
       "ca-tor",
+      "cbr_enabled",
       "custom_kind_service",
       "eu_access",
       "eu-de",
@@ -3603,13 +3604,6 @@
         "description": "One highly available Elasticsearch Platinum instance with three data members. The Platinum plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Elasticsearch instances have a minimum of 5GB of Disk and 1GB of RAM per data member.  Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Platinum",
         "originalName": "platinum"
-      },
-      {
-        "id": "databases-for-elasticsearch-standard",
-        "name": "standard",
-        "description": "One highly available Elasticsearch instance with three data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Elasticsearch instances have a minimum of 5GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
-        "displayName": "Standard",
-        "originalName": "standard"
       }
     ],
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
@@ -5281,6 +5275,56 @@
     "imageUrl": "https://c3-stage.dizzion.com/assets/images/dizzion-logo.svg",
     "localSvgIcon": "/generated/icons/b86e2b60-2455-11eb-aa2e-d9b1d586d93f.svg",
     "localPngIcon": "/generated/icons/b86e2b60-2455-11eb-aa2e-d9b1d586d93f.png"
+  },
+  {
+    "geo_tags": [
+      "wdc06"
+    ],
+    "id": "79679329-2050-4779-a2e2-7210b88aed4e",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dizzion-digitalworkspaces-complete",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "custom_kind_service",
+      "daas",
+      "digital",
+      "digital workspaces",
+      "financial_services_validated",
+      "fs validated",
+      "hippa",
+      "ibm_third_party",
+      "nist 800",
+      "paid",
+      "paid_only",
+      "pci",
+      "rc_compatible",
+      "support_third_party",
+      "vdi",
+      "virtualservers",
+      "wdc06",
+      "workspace"
+    ],
+    "plans": [
+      {
+        "id": "9edddd4a-2e7a-4673-bb2a-9e68849b37dc",
+        "name": "dizzion-digitalworkspaces-complete-united-states-1-year-commit",
+        "description": "United States - 1 Year Commit",
+        "displayName": "United States - 1 Year Commit"
+      }
+    ],
+    "description": "Putting the service in Desktop as a Service, this offering is perfect for organizations who want a completely hands-off approach.",
+    "longDescription": "Putting the service in Desktop as a Service, this offering is perfect for organizations who want a completely hands-off approach. Not only do we manage your deployment, but we also host it for you on our infrastructure.\n\nInstill confidence in maintaining compliance within your digital workspace environment and free up resources with Complete+.  We take complete ownership of managing the digital workspace brokering technology, the full desktop lifecycle, as well as compliance, security, and maintenance, taking a true white glove approach.\n\nKey Benefits:\n- Deliver a consistent user experience\n- Address data security concerns\n- Streamline operations and reduce risk\n- Full-stack service from a single vendor\n- Achieve PCI, HIPAA, or SOC compliance attestation​\n- IBM Financial Services Validated \n\nFor sales support, reach out to Dizzion directly at:\n\nPhone: 888-225-2974 Opt. 1\nEmail: Channel@dizzion.com\n\nFor product support, reach out to Dizzion directly at:\n\nPhone: 888-225-2974 Opt. 2\nEmail: support@dizzion.com\nOnline: https://c3.dizzion.io",
+    "displayName": "Dizzion Digital Workspaces - Complete",
+    "imageUrl": "https://c3-dev.dizzion.com/assets/images/svg_images/product_icon.svg",
+    "localSvgIcon": "/generated/icons/79679329-2050-4779-a2e2-7210b88aed4e.svg",
+    "localPngIcon": "/generated/icons/79679329-2050-4779-a2e2-7210b88aed4e.png"
   },
   {
     "geo_tags": [
@@ -7057,10 +7101,6 @@
       "fra02",
       "fra04",
       "fra05",
-      "global",
-      "syd01",
-      "syd04",
-      "syd05",
       "wdc04",
       "wdc06",
       "wdc07"
@@ -7074,9 +7114,9 @@
     "name": "hpvs",
     "pricing_tags": [
       "allow_internal_users",
-      "free",
       "paid",
-      "paid_only"
+      "paid_only",
+      "free"
     ],
     "tags": [
       "containers",
@@ -7092,7 +7132,6 @@
       "fra05",
       "free",
       "freesia",
-      "global",
       "iam_compatible",
       "ibm_created",
       "ibm_release",
@@ -7100,9 +7139,6 @@
       "paid_only",
       "rc_compatible",
       "support_ibm",
-      "syd01",
-      "syd04",
-      "syd05",
       "vm",
       "wdc04",
       "wdc06",
@@ -11088,6 +11124,7 @@
       "au-syd",
       "br-sao",
       "ca-tor",
+      "cbr_enabled",
       "custom_kind_service",
       "eu-de",
       "eu-es",
@@ -14016,9 +14053,8 @@
     "pricing_tags": [
       "free",
       "lite",
-      "paid_only",
       "paygo",
-      "subscription"
+      "paid_only"
     ],
     "tags": [
       "apidocs_enabled",
@@ -14038,7 +14074,6 @@
       "paygo",
       "rc_compatible",
       "service_endpoint_supported",
-      "subscription",
       "support_ibm",
       "us-south",
       "watson"
@@ -14135,8 +14170,8 @@
         "originalName": "standard-v2"
       }
     ],
-    "description": "Monitor your AI models for bias, fairness, and trust with added transparency on how your AI models make decisions.",
-    "longDescription": "IBM Watson® OpenScale™ tracks and measures outcomes from AI throughout it's lifecycle, and adapts and governs AI in changing business situations",
+    "description": "Accelerate responsibility, transparency and explainability in your data and AI workflows",
+    "longDescription": "IBM watsonx.governance™ helps you direct, manage and monitor your organization’s AI activities",
     "displayName": "Watson OpenScale",
     "imageUrl": "https://aiopenscale-dev.us-south.containers.appdomain.cloud/aiopenscale-broker/public/feature.svg",
     "localSvgIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.svg",
@@ -14494,6 +14529,7 @@
   {
     "geo_tags": [
       "eu-de",
+      "eu-gb",
       "us-east",
       "us-south"
     ],
@@ -14516,6 +14552,7 @@
       "data_management",
       "database",
       "eu-de",
+      "eu-gb",
       "iam_compatible",
       "ibm_created",
       "paid",
