@@ -9224,6 +9224,7 @@
     "tags": [
       "integration",
       "custom_kind_service",
+      "eu_location",
       "eu-de",
       "eu-gb",
       "free",
@@ -9265,6 +9266,75 @@
     "displayName": "MQ",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4/artifacts/cache/e6497fd6520e2ec0edd91562eb3a0646-public/MQ_Light_Icon@4x.png",
     "localPngIcon": "/generated/icons/01037c41-adce-4bb5-8b45-0c06004916c4.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "eu-de",
+      "eu-es",
+      "eu-fr2",
+      "eu-gb",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
+      "us-south"
+    ],
+    "id": "is.snapshot-consistency-group",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {
+        "hidden": true
+      }
+    },
+    "name": "is.snapshot-consistency-group",
+    "pricing_tags": [
+      "free",
+      "allow_internal_users",
+      "lite"
+    ],
+    "tags": [
+      "storage",
+      "allow_internal_users",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "custom_kind_service",
+      "eu-de",
+      "eu-es",
+      "eu-fr2",
+      "eu-gb",
+      "free",
+      "iam_compatible",
+      "ibm_created",
+      "is.composite",
+      "jp-osa",
+      "jp-tok",
+      "lite",
+      "rc_compatible",
+      "storage_block",
+      "storage_vpc",
+      "support_ibm",
+      "us-east",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "402d83bf-8201-4504-b87f-c0fc81c6bfd6",
+        "name": "lite",
+        "description": "Free plan for snapshot consistency group",
+        "displayName": "Snapshot-consistency-group-free",
+        "originalName": "lite"
+      }
+    ],
+    "description": "Regional Multi Volume Snapshot Service to securely back up block storage data to IBM Cloud Object Storage",
+    "longDescription": "Enable customer to capture crash consistent multiple volume snapshots at a time, All these Block Storage Snapshots for VPC are treated individually and service provides a regional, incremental backups of your block storage volumes.",
+    "displayName": "Multi Volume Snapshots for VPC",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
+    "localSvgIcon": "/generated/icons/is.snapshot-consistency-group.svg",
+    "localPngIcon": "/generated/icons/is.snapshot-consistency-group.png"
   },
   {
     "geo_tags": [
@@ -14522,7 +14592,7 @@
       {
         "id": "6786f153-64a7-4e47-940a-eff204d0d39b",
         "name": "standard-v2",
-        "description": "The Watson OpenScale Standard v2 Plan will help accelerate your adoption of AI by building confidence in its outcomes and scaling it across your business. You'll have full access to OpenScale's capabilities, with pricing based on consumption.",
+        "description": "The Watson OpenScale Standard v2 Plan will help accelerate your adoption of AI by building confidence in its outcomes and scaling it across your business. You'll have full access to OpenScale's capabilities, with pricing based on consumption.\n\nAPI docs - https://cloud.ibm.com/apidocs/ai-openscale\nDocs - https://dataplatform.cloud.ibm.com/docs/content/wsj/model/getting-started.html?context=cpdaas",
         "displayName": "OpenScale Standard v2",
         "originalName": "standard-v2"
       }
