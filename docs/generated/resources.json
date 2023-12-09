@@ -1037,50 +1037,11 @@
       }
     ],
     "description": "Back up block storage volumes to IBM Cloud Object Storage with this regional snapshot service.",
-    "longDescription": "Create point-in-time copies of your block storage boot or data volumes with this regional service. The first snapshot is a full backup of the volume. Subsequent snapshots of the same volume are incremental; only the changes since the last snapshots are captured. \n\nUse a snapshot during instance provisioning to create a new, fully provisioned boot volume to start the instance. Also, create and attach a data volume from a snapshot within a running virtual server instance.",
+    "longDescription": "With this service, you can create point-in-time copies of your block storage boot and data volumes. The snapshots are stored in Cloud Object Storage.\n\nThe first snapshot is a full backup of the volume. The subsequent snapshots of the same volume are incremental; they capture only the changes that occurred since the last snapshot was taken. \n\nYou can take snapshots of individual volumes and you can create a consistency group to take snapshots of multiple volumes that are attached to the same VSI simultaneously.\n\nYou can use these snapshots later to create stand-alone data volumes, provision new virtual server instances, or add new data volumes to existing virtual server instance. You can use the snapshots to recover operations after a disastrous event or to expand your VPC to other regions.",
     "displayName": "Block Storage Snapshots for VPC",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot.svg",
     "localPngIcon": "/generated/icons/is.snapshot.png"
-  },
-  {
-    "geo_tags": [
-      "eu-gb"
-    ],
-    "id": "6a0a8840-f899-11e8-bba8-6b3b2c5536be",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "blockchain",
-    "tags": [
-      "blockchain",
-      "custom_kind_service",
-      "eu-gb",
-      "freesia",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "ibm_release",
-      "rc_compatible",
-      "support_ibm"
-    ],
-    "plans": [
-      {
-        "id": "blockchain-standard",
-        "name": "standard",
-        "description": "Quickly progress from development, to pilot, to production with a single plan that scales as you grow. Please note that you will be charged additionally for  infrastructure and storage. File storage will be provisioned unless you change your Kubernetes storage preferences. Learn how to preview the platform for free on the \"About\" page of the cloud catalog.",
-        "displayName": "Standard",
-        "originalName": "Standard"
-      }
-    ],
-    "description": "Welcome to the fast, flexible way to build, operate, and grow blockchain solutions.",
-    "longDescription": "Welcome to the fast, flexible way to build, operate, and grow blockchain solutions.",
-    "displayName": "Blockchain Platform",
-    "imageUrl": "https://cache.globalcatalog.test.cloud.ibm.com/api/v1/6a0a8840-f899-11e8-bba8-6b3b2c5536be/artifacts/cache/25aceb182a85ecfe4bce52cdc08ac918-public/IBP_2_0_Service_Tile_Icon.svg",
-    "localSvgIcon": "/generated/icons/6a0a8840-f899-11e8-bba8-6b3b2c5536be.svg",
-    "localPngIcon": "/generated/icons/6a0a8840-f899-11e8-bba8-6b3b2c5536be.png"
   },
   {
     "geo_tags": [
@@ -4760,26 +4721,6 @@
     "localPngIcon": "/generated/icons/dc11a440-6073-11e9-9f5a-2f7997ba23c0.png"
   },
   {
-    "geo_tags": [
-      "dal09",
-      "dal10",
-      "dal12",
-      "dal13",
-      "fra02",
-      "lon02",
-      "lon06",
-      "mel01",
-      "par01",
-      "sao01",
-      "seo01",
-      "sjc03",
-      "sng01",
-      "syd01",
-      "syd05",
-      "tok02",
-      "tor01",
-      "wdc04"
-    ],
     "id": "22",
     "kind": "iaas",
     "metadata": {
@@ -4793,40 +4734,23 @@
       "connection",
       "connectivity",
       "custom_kind_iaas",
-      "dal09",
-      "dal10",
-      "dal12",
-      "dal13",
       "direct",
       "direct link",
       "directlink",
-      "fra02",
       "g1",
       "ibm_created",
       "ibm_iaas_g1",
-      "lon02",
-      "lon06",
-      "mel01",
       "network_classic",
       "networking",
-      "par01",
-      "sao01",
-      "seo01",
-      "sjc03",
-      "sng01",
       "softlayer",
-      "support_ibm",
-      "syd01",
-      "syd05",
-      "tok02",
-      "tor01",
-      "wdc04"
+      "support_ibm"
     ],
     "plans": [],
     "description": "Establish unparalleled network performance to and from your IBM Cloud platform resources, with customized support for your secure, dedicated workloads that require predictable latency.",
     "longDescription": "IBM Cloud can arrange the acquisition of colocation space that fits your needs. As with all Direct Link products, you can add global routing that enables private network traffic to all IBM Cloud locations.",
     "displayName": "Direct Link Dedicated Hosting on Classic",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/22/artifacts/cache/f20ba6d25f58da48947719d069a557dc-public/DirectLink1.0DedicatedHosting.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/22.svg",
     "localPngIcon": "/generated/icons/22.png"
   },
