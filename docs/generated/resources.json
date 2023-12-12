@@ -9165,7 +9165,8 @@
       "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-fr2"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -9177,19 +9178,23 @@
     "pricing_tags": [
       "paygo",
       "free",
-      "lite"
+      "lite",
+      "paid"
     ],
     "tags": [
       "integration",
       "custom_kind_service",
+      "eu_access",
       "eu_location",
       "eu-de",
+      "eu-fr2",
       "eu-gb",
       "free",
       "iam_compatible",
       "ibm_created",
       "ibm_release",
       "lite",
+      "paid",
       "paygo",
       "rc_compatible",
       "support_ibm",
@@ -9217,6 +9222,20 @@
         "description": "A no-charge plan to enable you to get started with the IBM MQ service on cloud today, for free!",
         "displayName": "Lite",
         "originalName": "default"
+      },
+      {
+        "id": "d3f47848-d28e-4ffc-aa37-57f1defe50e6",
+        "name": "reserved-capacity",
+        "description": "Provisioning of your single-tenant environment may take up to 24 hours. This plan is purchased using Capacity Units which provide 5 VPC of capacity for deploying queue managers each. You will be charged for your dedicated environment as soon as it is provisioned.\n\nOnce provisioned, you deploy queue managers into your dedicated environment using the ‘Reserved Deployment’ plan. For more information on plans, please see ‘Service Plans’ in our documentation.",
+        "displayName": "Reserved Capacity",
+        "originalName": "reserved-capacity"
+      },
+      {
+        "id": "b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
+        "name": "reserved-deployment",
+        "description": "Deploy queue managers into a Reserved Capacity environment.",
+        "displayName": "Reserved Deployment",
+        "originalName": "reserved-deployment"
       }
     ],
     "description": "Enterprise-grade messaging hosted in the cloud",
