@@ -1045,6 +1045,55 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "e687e558-849d-40cc-8043-cd8071f659e9",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "tsp-bus4i-system-copy-migrate-23-for-power-i",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "any2any",
+      "backup & restore",
+      "cloud onboarding",
+      "cloud2cloud",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "migrate23",
+      "migration_tools",
+      "move to cloud",
+      "on prem2cloud",
+      "paid",
+      "paid_only",
+      "power i migration",
+      "rc_compatible",
+      "save23",
+      "support_third_party",
+      "tape less"
+    ],
+    "plans": [
+      {
+        "id": "872b1d55-f682-4433-8070-73a37b9676de",
+        "name": "tsp-bus4i-system-copy-migrate-23-for-power-i",
+        "description": "Software use is limited to 1 month after purchase and for migration of one source LPAR to target LPAR.",
+        "displayName": "One Time License Fee"
+      }
+    ],
+    "description": "BUS4i System Copy moves and migrates your IBM I to another. Backup and restore your data and applications in a single step",
+    "longDescription": "BUS4i System Copy simplifies the process of moving and migrating your IBM I to another IBM I System, whether it's in the cloud or on-premise. Here's how it works:\n\n1. Effortless Backup and Restore:\n   - No tapes or additional disk space/storage are needed.\n   - A simple IP connection is sufficient.\n   - The restoration process begins simultaneously with the backup.\n\n2. Email Notifications:\n   - Receive an email notification as soon as your restore is  completed.\n\n3. User-Friendly Experience:\n   - The entire procedure is designed for user convenience.\n   - Enjoy testing your new system hassle-free.\n\nExperience a smooth and efficient transition with BUS4i System Copy.",
+    "displayName": "BUS4i System Copy - Migrate 23 for Power i",
+    "imageUrl": "https://tsp-gis.de/wp-content/uploads/2022/09/tsp-Logo-Header.png",
+    "localPngIcon": "/generated/icons/e687e558-849d-40cc-8043-cd8071f659e9.png"
+  },
+  {
+    "geo_tags": [
       "us-south"
     ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-caveonix",
@@ -8014,24 +8063,26 @@
   },
   {
     "geo_tags": [
-      "ams03",
       "au-syd",
+      "eu-de",
+      "eu-fr2",
+      "eu-gb",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
+      "us-south",
       "br-sao",
       "ca-tor",
+      "eu-es",
+      "ams03",
       "che01",
       "dal10",
       "dal12",
       "dal13",
-      "eu-de",
-      "eu-es",
-      "eu-fr2",
-      "eu-gb",
       "fra02",
       "fra04",
       "fra05",
       "hkg02",
-      "jp-osa",
-      "jp-tok",
       "lon04",
       "lon05",
       "lon06",
@@ -8044,16 +8095,6 @@
       "osl01",
       "par01",
       "sao01",
-      "satcon_dal",
-      "satcon_fra",
-      "satcon_lon",
-      "satcon_mad",
-      "satcon_osa",
-      "satcon_sao",
-      "satcon_syd",
-      "satcon_tok",
-      "satcon_tor",
-      "satcon_wdc",
       "seo01",
       "sjc03",
       "sjc04",
@@ -8065,8 +8106,6 @@
       "tok04",
       "tok05",
       "tor01",
-      "us-east",
-      "us-south",
       "wdc04",
       "wdc06",
       "wdc07"
@@ -8079,10 +8118,10 @@
     },
     "name": "containers-kubernetes",
     "pricing_tags": [
-      "allow_internal_users",
-      "free",
       "paid",
-      "paid_only"
+      "paid_only",
+      "allow_internal_users",
+      "free"
     ],
     "tags": [
       "containers",
@@ -8133,17 +8172,6 @@
       "pci",
       "rc_compatible",
       "sao01",
-      "satcon_dal",
-      "satcon_fra",
-      "satcon_lon",
-      "satcon_mad",
-      "satcon_osa",
-      "satcon_sao",
-      "satcon_syd",
-      "satcon_tok",
-      "satcon_tor",
-      "satcon_wdc",
-      "satellite_enabled",
       "seo01",
       "service_endpoint_supported",
       "sjc03",
@@ -9181,6 +9209,7 @@
     ],
     "tags": [
       "integration",
+      "apidocs_enabled",
       "custom_kind_service",
       "eu_access",
       "eu_location",
