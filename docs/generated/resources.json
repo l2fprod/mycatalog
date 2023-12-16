@@ -4653,7 +4653,7 @@
         "originalName": "directlink-connect-standard-plan"
       }
     ],
-    "description": "Leverage a Service Provider to quickly establish and deliver connectivity to IBM Cloud locations",
+    "description": "Leverage a Service Provider to quickly establish and deliver connectivity to IBM Cloud locations.",
     "longDescription": "IBM Cloud Direct Link Connect offers private access to your IBM Cloud infrastructure and to any other clouds linked to your Network Service Provider, through your local IBM Cloud data center. This option is perfect for creating multi-cloud connectivity in a single environment. We connect customers to the IBM Cloud private network, using a shared bandwidth topology. As with all Direct Link products, you can add global routing that enables private network traffic to all IBM Cloud locations.",
     "displayName": "Direct Link Connect",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/86fb7610-0f92-11ea-a6a3-8b96ed1570d8/artifacts/cache/e0b1deb68a43d81682b1e6bb1b082e87-public/DirectLink2.0Connect.svg",
@@ -4760,7 +4760,7 @@
         "originalName": "Standard Plan - DL2"
       }
     ],
-    "description": "IBM Cloud Direct Link helps ensure the security of sensitive data to and from the IBM Cloud",
+    "description": "Ensure the security of sensitive data to and from the IBM Cloud.",
     "longDescription": "This is the 2.0 version of Direct Link. IBM Cloud Direct Link helps ensure the security of sensitive data to and from the IBM Cloud. Back up or store huge volumes of data from your data center on IBM Cloud with predictable bandwidth costs. With a dedicated network connection, your transfer rates are fast, consistent and reliable.\n\nSecure\nProtect your sensitive, business-critical data by controlling every hop of its network path and avoiding exposure to the public internet.\n\nSecure\nProtect your sensitive, business-critical data by controlling every hop of its network path and avoiding exposure to the public internet.\n\nReliable\nDesigned for customers that need more consistent, higher-throughput connectivity between a remote network and their IBM Cloud environments.",
     "displayName": "Direct Link Dedicated",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/dc11a440-6073-11e9-9f5a-2f7997ba23c0/artifacts/cache/ba0ccddb5785b5701255368db51f9e4a-public/DirectLink2.0Dedicated.svg",
@@ -8065,6 +8065,107 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "a8f89634-261c-4832-8257-b25e04787988",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "komprise-elastic-data-migration",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "storage",
+      "cloud file migration",
+      "cloud migration",
+      "cos migration",
+      "custom_kind_service",
+      "data migration",
+      "file migration",
+      "global",
+      "ibm_third_party",
+      "isilon migration",
+      "object migration",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "storage_datamovement",
+      "support_third_party",
+      "unstructured data migration"
+    ],
+    "plans": [
+      {
+        "id": "cafff7df-7b17-431e-913c-76c502b651af",
+        "name": "komprise-elastic-data-migration-elastic-data-migration",
+        "description": "Analyze and migrate unstructured data within a year up to 100 TB",
+        "displayName": "Elastic Data Migration"
+      }
+    ],
+    "description": "Analytics driven file and object data migration. 27x faster, cost-effective, scale-out SaaS. Know first, move smart, save more.",
+    "longDescription": "Whether migrating to the cloud, cloud NAS or to a NAS in your data center, with Komprise Elastic Data Migration you get the fastest, most predictable and cost-efficient data migration for file and object data. \n\n\nSmart, fast, proven file and object data migration. Komprise runs data migrations 27 times faster with an elastic architecture and reliably migrates petabytes of data. \n\nKomprise Elastic Data Migration includes Komprise Analysis and is included in the Komprise Intelligent Data Management suite or is available standalone. Don’t just lift and shift – learn more about analytics-first smart data migration from Komprise today.",
+    "displayName": "Komprise Elastic Data Migration",
+    "imageUrl": "https://www.komprise.com/wp-content/uploads/komprise_logo_stack.svg",
+    "localSvgIcon": "/generated/icons/a8f89634-261c-4832-8257-b25e04787988.svg",
+    "localPngIcon": "/generated/icons/a8f89634-261c-4832-8257-b25e04787988.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "f1fa7442-9ee0-4e27-94c2-0cb3776a0a0a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "komprise-intelligent-data-management-suite",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "storage",
+      "custom_kind_service",
+      "data management",
+      "data migration",
+      "data mobility",
+      "data tiering",
+      "file data",
+      "global",
+      "ibm_third_party",
+      "komprise",
+      "object data",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "storage cost savings",
+      "storage_datamovement",
+      "support_third_party",
+      "tier",
+      "tiering",
+      "unstructured data"
+    ],
+    "plans": [
+      {
+        "id": "5c45c1b8-10cb-4335-83b6-c6654866574f",
+        "name": "komprise-intelligent-data-management-suite-per-pb-full-suite-annual-subscription",
+        "description": "Komprise Intelligent Data Management per Petabyte Annual Subscription including Maintenance",
+        "displayName": "Intelligent Data Management"
+      }
+    ],
+    "description": "Analyze, migrate, tier, archive, manage file and object data at scale simply and reliably. Optimize costs, deliver data value. ",
+    "longDescription": "Komprise enables organizations to handle the two most pressing issues with unstructured data: managing its rampant growth across multi-vendor storage and unlocking data value. Komprise is a data management service that connects easily via open standards to any file storage to provide much-needed analytics and visibility across all storage silos.\n\nKey benefits for customers include optimizing the management of petabytes of unstructured data to accelerate cloud migrations while dramatically cutting costs. Komprise automatically migrates or tiers unstructured/file data to secondary storage according to the plans which users create so that data always lives in the right place at the right time according to its age, usage or other parameters such as security.\n\nThis adds up to significant storage savings (up to 70%) from migrating and archiving data. Komprise’s elastic grid architecture and patented TMT (transparent move technology) ensures that once data is moved from NAS and cloud file services, users can always access files from the original location, in their original form, without getting in the hot data path and enabling native access in the destination storage.",
+    "displayName": "Komprise Intelligent Data Management Suite",
+    "imageUrl": "https://www.komprise.com/wp-content/uploads/komprise_logo_stack.svg",
+    "localSvgIcon": "/generated/icons/f1fa7442-9ee0-4e27-94c2-0cb3776a0a0a.svg",
+    "localPngIcon": "/generated/icons/f1fa7442-9ee0-4e27-94c2-0cb3776a0a0a.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "eu-de",
       "eu-fr2",
@@ -9069,62 +9170,6 @@
     "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "2273110c-1f86-4774-acf9-b89b47fff74a",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "storagepipe-microsoft-365-backup-as-a-service",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "365",
-      "baas",
-      "backup",
-      "cloud",
-      "custom_kind_service",
-      "exchange",
-      "exchange online",
-      "global",
-      "ibm_third_party",
-      "microsoft",
-      "microsoft 365",
-      "onedrive",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "sharepoint",
-      "storage_backup",
-      "support_third_party",
-      "teams"
-    ],
-    "plans": [
-      {
-        "id": "5fb80a25-4912-4cea-a8d8-40a07bcb2428",
-        "name": "storagepipe-microsoft-365-backup-as-a-service-m365-backup-standard",
-        "description": "Microsoft 365 Backup plan to protect your tenant including Exchange Online, OneDrive for Business, SharePoint Online and Teams.",
-        "displayName": "M365 Backup - Standard"
-      },
-      {
-        "id": "4962637d-f9a2-4325-bd53-b38524c80abe",
-        "name": "storagepipe-microsoft-365-backup-as-a-service-m365-education",
-        "description": "Microsoft 365 Backup plan to protect your tenant including Exchange Online, OneDrive for Business, SharePoint Online and Teams. Education plan includes reduced costs for students.",
-        "displayName": "M365 Backup - Education"
-      }
-    ],
-    "description": "Storagepipe SOC II Compliant Backup for your critical Microsoft 365 data including Exchange, Teams, SharePoint and OneDrive",
-    "longDescription": "Microsoft 365 Backup as a Service with Storagepipe's full management, onboarding and white-glove support for recovery.\n\nPeople delete data. Mostly accidentally, sometimes intentionally. And there is the ever-present threat of ransomware and other malware.\n\nMicrosoft 365 (previously known as Office 365 or O365) provides redundancy that only ensures the availability of the present state of the data. \nIt does not backup the data to protect against data loss events or retain data for longer term policies or compliance.\n\nThat means that even in the cloud, data protection is necessary.\n\nMicrosoft 365 Backup as a Service by Storagepipe securely connects to your Microsoft 365 tenant and captures all of the changes to ensure rapid and automated protection.\n\n- Backup Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams\n- Minimizes risk of data loss and assures availability of data\n- Helps to meet retention, audit and compliance requirements for recovery\n- Reduces employee downtime by easily restoring lost data and applications\n- Automated backup for your cloud services\n- Point-in-time backup and accurate, granular restore",
-    "displayName": "Microsoft 365 Backup as a Service by Storagepipe",
-    "imageUrl": "https://storagepipe.com/wp-content/uploads/2022/02/SP_Logo_RGB_Emblem_32x32_pixelsV2_transbkgnd-01.png",
-    "localPngIcon": "/generated/icons/2273110c-1f86-4774-acf9-b89b47fff74a.png"
   },
   {
     "geo_tags": [
