@@ -540,30 +540,30 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
       "ca-tor-3",
+      "ca-tor",
       "eu-de",
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
-      "eu-es",
-      "eu-es-1",
-      "eu-es-2",
-      "eu-es-3",
-      "jp-tok",
       "jp-tok-1",
       "jp-tok-2",
       "jp-tok-3",
-      "us-east",
+      "jp-tok",
       "us-east-1",
       "us-east-2",
       "us-east-3",
-      "us-south",
+      "us-east",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "us-south",
+      "eu-es-1",
+      "eu-es-2",
+      "eu-es-3",
+      "eu-es"
     ],
     "id": "is.bare-metal-server",
     "kind": "service",
@@ -575,7 +575,8 @@
     "pricing_tags": [
       "allow_internal_users",
       "paid",
-      "paid_only"
+      "paid_only",
+      "free"
     ],
     "tags": [
       "compute",
@@ -597,6 +598,7 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
+      "free",
       "fs_ready",
       "iam_compatible",
       "ibm_created",
@@ -650,6 +652,34 @@
         "originalName": "bx2d-metal-96x384"
       },
       {
+        "id": "77e714e0-75cb-41e0-a1d3-d5e42899f49c",
+        "name": "bx3-metal-48x256",
+        "description": "Pricing plan for an bx2 bare metal server configured with dual processors offering 24 cores (48 vCPU), 256 GB memory, local NVMe boot drives, and up to an aggregate 200Gbps network uplink.",
+        "displayName": "bx3-metal-48x256",
+        "originalName": "bx3-metal-48x256"
+      },
+      {
+        "id": "a94a8072-5194-45ac-83fd-608d791d797e",
+        "name": "bx3-metal-64x256",
+        "description": "Pricing plan for a bx3 bare metal server configured with dual processors offering 32 cores (64 vCPU), 256 GB memory, local NVMe boot drives, and up to an aggregate 200Gbps network uplink.",
+        "displayName": "bx3-metal-64x256",
+        "originalName": "bx3-metal-64x256"
+      },
+      {
+        "id": "464b2156-029b-4dbc-92a4-474b6d5af419",
+        "name": "bx3d-metal-48x256",
+        "description": "Pricing plan for a bx3d bare metal server configured with dual processors offering 24 cores (48 vCPU), 256 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and up to an aggregate 200Gbps network uplink.",
+        "displayName": "bx3d-metal-48x256",
+        "originalName": "bx3d-metal-48x256"
+      },
+      {
+        "id": "ed6b99c9-d290-442e-a1a4-4f268b4135c9",
+        "name": "bx3d-metal-64x256",
+        "description": "Pricing plan for a bx3d bare metal server configured with dual processors offering 32 cores (64 vCPU), 256 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and up to an aggregate 200Gbps network uplink.",
+        "displayName": "bx3d-metal-64x256",
+        "originalName": "bx3d-metal-64x256"
+      },
+      {
         "id": "6aad4adf-4a93-4a7e-8ef5-a1809299e097",
         "name": "cx2-metal-96x192",
         "description": "Pricing plan for a cx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 192 GB memory, local NVMe boot drives, and an aggregate 100Gbps network uplink.",
@@ -683,6 +713,20 @@
         "description": "Pricing plan for an vx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 1536 GB memory, local SSD boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
         "displayName": "vx2d-metal-96x1536",
         "originalName": "vx2d-metal-96x1536"
+      },
+      {
+        "id": "e1446b30-e026-4324-867b-c3f3ccd8ae25",
+        "name": "vx3-metal-16x256",
+        "description": "Pricing plan for a vx3 bare metal server configured with dual processors offering 8 cores (16 vCPU), 256 GB memory, and up to an aggregate 200Gbps network uplink.",
+        "displayName": "vx3-metal-16x256",
+        "originalName": "vx3-metal-16x256"
+      },
+      {
+        "id": "63a3624a-2a7a-46b1-b550-6906e21e4db2",
+        "name": "vx3d-metal-16x256",
+        "description": "Pricing plan for a vx3d bare metal server configured with dual processors offering 8 cores (16 vCPU), 256 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and up to an aggregate 200Gbps network uplink.",
+        "displayName": "vx3d-metal-16x256",
+        "originalName": "vx3d-metal-16x256"
       }
     ],
     "description": "Leverage servers with physical single tenancy and high performance offering end user virtualization.",
