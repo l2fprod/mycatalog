@@ -470,7 +470,10 @@ function exportToWord(services, dateMDY) {
     // Skytap doc url mess up all the other services after Skytap in alphabetic order
     if (service.displayName.includes('Skytap')) url = 'https://cloud.ibm.com/catalog';
     // Some services are missing the first part of the url
-    if (! url.includes('http') ) url = 'https://cloud.ibm.com' + url;
+    if (! url.startsWith('http') ) url = 'https://cloud.ibm.com' + url;
+    // escape url characters
+    url = url.replace("&", "&amp;");
+
     p.addText (url, { link: url },{
         font_size: 12,
         color: '808080'
