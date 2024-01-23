@@ -385,6 +385,8 @@ function ServiceUpdater() {
 
     });
     fs.writeFileSync("../docs/generated/resources.json", JSON.stringify(resources, null, 2));
+
+    return resources;
   }
 }
 
