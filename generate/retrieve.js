@@ -43,7 +43,9 @@ function ServiceUpdater() {
   async function getChildren(resources) {
     for (const resource of resources.filter(resource => resource.group === true)) {
       console.log(`[${resource.name}] get children for ${apiUrl}/${resource.id}?complete=true&depth=*`);
-      const body = (await axios.get(`${apiUrl}/${resource.id}?complete=true&depth=*`)).data;
+      const body = (await axios.get(`${apiUrl}/${resource.id}?complete=true&depth=*`, {
+        timeout: 5000,
+      })).data;
       if (body.children) {
         body.children
           .filter(child => child.kind === 'iaas' || child.kind === 'service')
@@ -58,7 +60,9 @@ function ServiceUpdater() {
   async function getPlans(resources) {
     for (const resource of resources) {
       console.log(`[${resource.name}] get plans ${apiUrl}/${resource.id}/plan?complete=true`);
-      const body = (await axios.get(`${apiUrl}/${resource.id}/plan?complete=true`)).data;
+      const body = (await axios.get(`${apiUrl}/${resource.id}/plan?complete=true`, {
+        timeout: 5000,
+      })).data;
       if (body.next) {
         console.log(`[${resource.name}] found a resource with a lot of plans!!!`);
       }
@@ -87,6 +91,7 @@ function ServiceUpdater() {
 
       try {
         const body = (await axios.get(imageUrl, {
+          timeout: 5000,
           responseType: 'arraybuffer',
         })).data;
 
@@ -150,7 +155,9 @@ function ServiceUpdater() {
   }
 
   async function getGeography(geoId, callback) {
-    return (await axios.get(`${apiUrl}/${geoId}?depth=*`)).data;
+    return (await axios.get(`${apiUrl}/${geoId}?depth=*`, {
+      timeout: 5000,
+    })).data;
   }
 
   function collectChildren(root, accept, result) {
