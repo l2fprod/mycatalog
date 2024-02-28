@@ -5911,6 +5911,7 @@
     "longDescription": "Optimize performance and ensure availability and security for applications with the F5 BIG-IP suite.",
     "displayName": "F5 BIG-IP",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/F5_Networks_logo.svg",
+    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-bigip.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-bigip.png"
   },
   {
@@ -13023,8 +13024,8 @@
         "originalName": "Virtual-Network-Interface-Standard"
       }
     ],
-    "description": "Create a Virtual Network Interface that represents a virtual network card",
-    "longDescription": "Create a Virtual Network Interface that represents a virtual network card. A Virtual Network Interface can be used to assign network attributes and apply them to compute resources in your VPC",
+    "description": "Create a Virtual Network Interface that represents a virtual network card. A Virtual Network Interface can be used to assign network attributes and apply them to compute resources in your VPC",
+    "longDescription": "A virtual network interface is a logical abstraction of a virtual network interface in a subnet and can be attached to a target resource. Virtual network interfaces can exist independent of an instance, providing enhancements over instances with child network interfaces.  \n\nNetwork administrators can provision a virtual network interface to exist independent of a target, such as a virtual server instance or bare metal server. New or standby resources can also reuse virtual network interfaces, enabling required failover and high availability for large enterprise workloads on IBM Cloud. Administrators with database, proxy, or NAT appliances can use multiple private IPs assigned to a single virtual network interface, which enables them to run multiple services on a single instance for redundancy and failover.\n\nVirtual network interfaces provide a significant improvement in the capability and flexibility of network interfaces in IBM Cloud VPC.",
     "displayName": "Virtual Network Interface for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
     "localSvgIcon": "/generated/icons/is.virtual-network-interface.svg",
