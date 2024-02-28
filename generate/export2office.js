@@ -53,56 +53,56 @@ function exportToExcel(services, dateMDY) {
   var xlsx = officegen('xlsx');
 
   // Disclaimer
-  sheet0 = xlsx.makeNewSheet();
-  sheet0.name = 'Disclaimer';
-  sheet0.data[0] = [];
-  sheet0.data[0][0] = "Disclaimer";
-  sheet0.data[1] = [];
-  sheet0.data[1][0] = "The list of services in this document was extracted from the IBM Cloud Catalog using the public catalog API.";
-  sheet0.data[2] = [];
-  sheet0.data[2][0] = "This content attempts to be as accurate as possible.";
-  sheet0.data[3] = [];
-  sheet0.data[3][0] = "Use with care and refer to the official IBM Cloud Catalog https://cloud.ibm.com/catalog#services.";
+  sDisclaimer = xlsx.makeNewSheet();
+  sDisclaimer.name = 'Disclaimer';
+  sDisclaimer.data[0] = [];
+  sDisclaimer.data[0][0] = "Disclaimer";
+  sDisclaimer.data[1] = [];
+  sDisclaimer.data[1][0] = "The list of services in this document was extracted from the IBM Cloud Catalog using the Global Catalog API.";
+  sDisclaimer.data[2] = [];
+  sDisclaimer.data[2][0] = "This content attempts to be as accurate as possible.";
+  sDisclaimer.data[3] = [];
+  sDisclaimer.data[3][0] = "Use with care and refer to the official IBM Cloud Catalog https://cloud.ibm.com/catalog#services.";
 
   //
   // MY CATALOG
   //
 
-  sheet = xlsx.makeNewSheet();
-  sheet.name = 'My Catalog';
+  sCatalog = xlsx.makeNewSheet();
+  sCatalog.name = 'My Catalog';
 
   var row = 1;
 
   services.forEach(function (service) {
     // Header
-    sheet.data[0] = [];
-    sheet.data[0][0] = "Service";
-    sheet.data[0][1] = "Category";
-    sheet.data[0][2] = "Id";
-    sheet.data[0][3] = "Provider";
-    sheet.data[0][4] = "Status";
-    sheet.data[0][5] = "Free Plan";
-    sheet.data[0][6] = "Plans";
-    sheet.data[0][7] = "Regions";
-    sheet.data[0][8] = "Creation Date";
-    sheet.data[0][9] = "Last Modification";
-    sheet.data[0][10] = "Description";
-    sheet.data[0][11] = "URL";
-    sheet.data[0][12] = "Tags"
+    sCatalog.data[0] = [];
+    sCatalog.data[0][0] = "Service Name";
+    sCatalog.data[0][1] = "Category";
+    sCatalog.data[0][2] = "Service Id";
+    sCatalog.data[0][3] = "Provider";
+    sCatalog.data[0][4] = "Status";
+    sCatalog.data[0][5] = "Free Plan";
+    sCatalog.data[0][6] = "Plans";
+    sCatalog.data[0][7] = "Regions";
+    sCatalog.data[0][8] = "Creation Date";
+    sCatalog.data[0][9] = "Last Modification";
+    sCatalog.data[0][10] = "Description";
+    sCatalog.data[0][11] = "URL";
+    // sCatalog.data[0][12] = "Tags"
 
     // Cell Content
-    sheet.data[row] = [];
-    sheet.data[row][0]  = service.displayName;
+    sCatalog.data[row] = [];
+    sCatalog.data[row][0]  = service.displayName;
     
     for (var category in categories) {
       if (matchesCategory(service, categories[category])) {
-        sheet.data[row][1] = categories[category].label;
+        sCatalog.data[row][1] = categories[category].label;
         break;
       }
     }
 
-    sheet.data[row][2] = service.id;
-    sheet.data[row][3] = service.provider.name;
+    sCatalog.data[row][2] = service.id;
+    sCatalog.data[row][3] = service.provider.name;
 
     var status = "";
     if (service.tags.indexOf('ibm_beta') >= 0)
@@ -113,15 +113,15 @@ function exportToExcel(services, dateMDY) {
         status = "Deprecated";
     else
       status = "Production Ready";
-    sheet.data[row][4] = status;
-    sheet.data[row][5] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
+    sCatalog.data[row][4] = status;
+    sCatalog.data[row][5] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
 
     var planList = "";
     var plans = service.plans;
     for (var plan in plans) {
       planList += plans[plan].displayName + "\n";
     }
-    sheet.data[row][6] = planList;
+    sCatalog.data[row][6] = planList;
 
     var datacenter = "";
     for (const geo of geographies) {
@@ -131,13 +131,13 @@ function exportToExcel(services, dateMDY) {
         }
       }
     }
-    sheet.data[row][7] = datacenter;
+    sCatalog.data[row][7] = datacenter;
 
-    sheet.data[row][8] = moment(service.created).format('YYYY-MM-DD');
-    sheet.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
-    sheet.data[row][10] = service.description;
-    sheet.data[row][11] = service.metadata.ui.urls.doc_url;
-    sheet.data[row][12] = service.tags.join(", ");
+    sCatalog.data[row][8] = moment(service.created).format('YYYY-MM-DD');
+    sCatalog.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
+    sCatalog.data[row][10] = service.description;
+    sCatalog.data[row][11] = service.metadata.ui.urls.doc_url;
+    // sCatalog.data[row][12] = service.tags.join(", ");
     row++;
   });
 
@@ -145,8 +145,8 @@ function exportToExcel(services, dateMDY) {
   // MY PLANS
   //
 
-  sheet = xlsx.makeNewSheet();
-  sheet.name = 'My Plans';
+  sPlans = xlsx.makeNewSheet();
+  sPlans.name = 'My Plans';
 
   // get the list of regions
   let allGeoTags = new Set();
@@ -162,19 +162,19 @@ function exportToExcel(services, dateMDY) {
   allGeoTags = Array.from(allGeoTags);
   allGeoTags.sort();
 
-  sheet.data[0] = [
-    "Service ID",
+  sPlans.data[0] = [
     "Service Name",
-    "Plan ID",
-    "Plan Name"
+    "Service ID",
+    "Plan Name",
+    "Plan ID"
   ].concat(allGeoTags);
 
   row = 1;
   services.forEach(service => {
     service.plans.forEach(plan => {
-      sheet.data[row] = [
-        service.id,
+      sPlans.data[row] = [
         service.displayName,
+        service.id,
         plan.id,
         plan.displayName
       ].concat(allGeoTags.map(tag => plan.geo_tags ? (plan.geo_tags.indexOf(tag) >= 0 ? "X" : "") : ""));
@@ -269,7 +269,7 @@ function exportToPowerpoint(services, dateMDY) {
       font_size: 18
     });
 
-    // Metada rectangle panel on the right hand side
+    // Metadata rectangle panel on the right hand side
     slide.addShape("rect", {
       x: 830,
       y: 230,
@@ -377,7 +377,7 @@ function exportToPowerpoint(services, dateMDY) {
       color: 'ffffff',
       bold: false
     });
-    // Metada rectangle panel on the right hand side END
+    // Metadata rectangle panel on the right hand side END
 
     // Catalog URL
     var url;
