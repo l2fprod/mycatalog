@@ -77,31 +77,32 @@ function exportToExcel(services, dateMDY) {
     // Header
     sCatalog.data[0] = [];
     sCatalog.data[0][0] = "Service Name";
-    sCatalog.data[0][1] = "Category";
-    sCatalog.data[0][2] = "Service Id";
+    sCatalog.data[0][1] = "Service Id";
+    sCatalog.data[0][2] = "Category";
     sCatalog.data[0][3] = "Provider";
-    sCatalog.data[0][4] = "Status";
-    sCatalog.data[0][5] = "Free Plan";
-    sCatalog.data[0][6] = "Plans";
-    sCatalog.data[0][7] = "Regions";
-    sCatalog.data[0][8] = "Creation Date";
-    sCatalog.data[0][9] = "Last Modification";
-    sCatalog.data[0][10] = "Description";
-    sCatalog.data[0][11] = "URL";
-    // sCatalog.data[0][12] = "Tags"
+    sCatalog.data[0][4] = "FS Validated";
+    sCatalog.data[0][5] = "Status";
+    sCatalog.data[0][6] = "Free Plan";
+    sCatalog.data[0][7] = "Plans";
+    sCatalog.data[0][8] = "Regions";
+    sCatalog.data[0][9] = "Creation Date";
+    sCatalog.data[0][10] = "Last Modification";
+    sCatalog.data[0][11] = "Description";
+    sCatalog.data[0][12] = "URL";
+    // sCatalog.data[0][13] = "Tags"
 
     // Cell Content
     sCatalog.data[row] = [];
     sCatalog.data[row][0]  = service.displayName;
-    
+    sCatalog.data[row][1] = service.id;
+
     for (var category in categories) {
       if (matchesCategory(service, categories[category])) {
-        sCatalog.data[row][1] = categories[category].label;
+        sCatalog.data[row][2] = categories[category].label;
         break;
       }
     }
 
-    sCatalog.data[row][2] = service.id;
     sCatalog.data[row][3] = service.provider.name;
 
     var status = "";
@@ -113,31 +114,33 @@ function exportToExcel(services, dateMDY) {
         status = "Deprecated";
     else
       status = "Production Ready";
-    sCatalog.data[row][4] = status;
-    sCatalog.data[row][5] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
+
+    sCatalog.data[row][4] = (service.tags.indexOf("fs_ready") >= 0) ? "Yes" : "No";
+    sCatalog.data[row][5] = status;
+    sCatalog.data[row][6] = (service.tags.indexOf("free") >= 0) ? "Yes" : "No";
 
     var planList = "";
     var plans = service.plans;
     for (var plan in plans) {
       planList += plans[plan].displayName + "\n";
     }
-    sCatalog.data[row][6] = planList;
+    sCatalog.data[row][7] = planList;
 
     var datacenter = "";
     for (const geo of geographies) {
       for (const region of geo.regions) {
         if (service.tags.indexOf(region.tag) >= 0) {
-          datacenter += region.label + " ";
+          datacenter += region.label + "\n";
         }
       }
     }
-    sCatalog.data[row][7] = datacenter;
+    sCatalog.data[row][8] = datacenter;
 
-    sCatalog.data[row][8] = moment(service.created).format('YYYY-MM-DD');
-    sCatalog.data[row][9] = moment(service.updated).format('YYYY-MM-DD');
-    sCatalog.data[row][10] = service.description;
-    sCatalog.data[row][11] = service.metadata.ui.urls.doc_url;
-    // sCatalog.data[row][12] = service.tags.join(", ");
+    sCatalog.data[row][9] = moment(service.created).format('YYYY-MM-DD');
+    sCatalog.data[row][10] = moment(service.updated).format('YYYY-MM-DD');
+    sCatalog.data[row][11] = service.description;
+    sCatalog.data[row][12] = service.metadata.ui.urls.doc_url;
+    // sCatalog.data[row][13] = service.tags.join(", ");
     row++;
   });
 
@@ -175,8 +178,8 @@ function exportToExcel(services, dateMDY) {
       sPlans.data[row] = [
         service.displayName,
         service.id,
-        plan.id,
-        plan.displayName
+        plan.displayName,
+        plan.id
       ].concat(allGeoTags.map(tag => plan.geo_tags ? (plan.geo_tags.indexOf(tag) >= 0 ? "X" : "") : ""));
       row++;
     });
