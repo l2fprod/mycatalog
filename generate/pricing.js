@@ -78,7 +78,7 @@ async function retrieveAll() {
   return roots;
 }
 
-function dumpPrices(entries) {
+function dumpPrices(parent, entries) {
   let rows = [];
   for (const entry of entries) {
     const pricing = entry.__pricing;
@@ -86,8 +86,12 @@ function dumpPrices(entries) {
       console.log(entry.id);
 
       const pricingColumns = {
+        parent_id: parent ? parent.id : "",
+        parent_name: parent ? parent.name : "",
         id: entry.id,
+        name: entry.name,
         deployment_id: pricing.deployment_id,
+        deployment_location: pricing.deployment_location
       };
 
       for (const metric of entry.__pricing.metrics) {
@@ -123,7 +127,7 @@ function dumpPrices(entries) {
       }
     }
     if (entry.__children) {
-      rows = rows.concat(dumpPrices(entry.__children, rows));
+      rows = rows.concat(dumpPrices(parent ? parent : entry, entry.__children, rows));
     }
   }
   return rows;
@@ -148,8 +152,12 @@ function dumpPrices(entries) {
     const csvWriter = createCsvWriter({
       path: "../docs/generated/pricing.csv",
       header: [
+        { id: "parent_id", title: "Parent ID" },
+        { id: "parent_name", title: "Parent Name" },
         { id: "id", title: "ID" },
+        { id: "name", title: "Name" },
         { id: "deployment_id", title: "Deployment ID" },
+        { id: "deployment_location", title: "Deployment Location" },
         { id: "metric_id", title: "Metric ID" },
         { id: "metric_tier_model", title: "Tier Model" },
         { id: "metric_charge_unit", title: "Charge Unit" },
@@ -159,7 +167,7 @@ function dumpPrices(entries) {
         { id: "price_price", title: "Price" },
       ],
     });
-    await csvWriter.writeRecords(dumpPrices(entries));
+    await csvWriter.writeRecords(dumpPrices(null, entries));
   }
 })().catch((e) => {
   console.log(e);
