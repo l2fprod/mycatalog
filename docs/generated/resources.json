@@ -2296,6 +2296,13 @@
     ],
     "plans": [
       {
+        "id": "7cdc7671-e38b-49ec-97dc-22b375e53368",
+        "name": "instance-bx2-128x512",
+        "description": "Plan for the bx2-128x512 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Balanced bx2-128x512",
+        "originalName": "instance-bx2-128x512"
+      },
+      {
         "id": "9cb3e8af-3e72-4dc3-8a18-7dd46c9afaa5",
         "name": "instance-bx2-16x64",
         "description": "Plan for the bx2-16x64 Virtual Server for VPC reservation",
@@ -2331,11 +2338,24 @@
         "originalName": "instance-bx2-4x16"
       },
       {
+        "id": "c5d903ba-ba56-45d6-b972-4af1aaadaaf4",
+        "name": "instance-bx2-64x256",
+        "description": "Plan for the bx2-64x256 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Balanced bx2-64x256",
+        "originalName": "instance-bx2-64x256"
+      },
+      {
         "id": "89ba0e6b-0a3f-4cd2-ac31-dd7e6a9149f2",
         "name": "instance-bx2-8x32",
         "description": "Plan for the bx2-8x32 Virtual Server for VPC reservation",
         "displayName": "Virtual Server Balanced bx2-8x32",
         "originalName": "instance-bx2-8x32"
+      },
+      {
+        "id": "608a1ece-f26f-4717-8381-462d7b2f6e10",
+        "name": "instance-bx2-96x384",
+        "description": "Plan for the bx2-96x384 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Balanced bx2-96x384"
       },
       {
         "id": "e39f0ce7-5006-425f-b52a-6cf432d86307",
@@ -2408,6 +2428,13 @@
         "originalName": "instance-bx2a-96x384"
       },
       {
+        "id": "8232820c-0bbf-415d-822c-60deacda97ec",
+        "name": "instance-bx2d-128x512",
+        "description": "Plan for the bx2d-128x512 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Balanced bx2d-128x512",
+        "originalName": "instance-bx2d-128x512"
+      },
+      {
         "id": "b6a4e294-cb43-4d75-93e6-ed5dda8ecc6a",
         "name": "instance-bx2d-16x64",
         "description": "Plan for the bx2d-16x64 Virtual Server for VPC reservation",
@@ -2443,11 +2470,25 @@
         "originalName": "instance-bx2d-4x16"
       },
       {
+        "id": "3a59ebe9-0274-41df-b67d-747e645b9c9a",
+        "name": "instance-bx2d-64x256",
+        "description": "Plan for the bx2d-64x256 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Balanced bx2d-64x256",
+        "originalName": "instance-bx2d-64x256"
+      },
+      {
         "id": "53dcb010-8035-404d-8a3d-ef4cea44baa2",
         "name": "instance-bx2d-8x32",
         "description": "Plan for the bx2d-8x32 Virtual Server for VPC reservation",
         "displayName": "Virtual Server Balanced bx2d-8x32",
         "originalName": "instance-bx2d-8x32"
+      },
+      {
+        "id": "070da310-712a-459d-b213-ccd47e14380e",
+        "name": "instance-bx2d-96x384",
+        "description": "Plan for the bx2d-96x384 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Balanced bx2d-96x384",
+        "originalName": "instance-bx2d-96x384"
       },
       {
         "id": "9898e9a0-a2d9-4112-bf25-2665eef59bf7",
@@ -2527,6 +2568,13 @@
         "originalName": "instance-bx3d-96x480"
       },
       {
+        "id": "0943b212-39bb-4101-b549-cdfa6b61a859",
+        "name": "instance-cx2-128x256",
+        "description": "Plan for the cx2-128x256 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Compute cx2-128x256",
+        "originalName": "instance-cx2-128x256"
+      },
+      {
         "id": "0961bf6c-a81f-4407-801c-c79bd5683116",
         "name": "instance-cx2-16x32",
         "description": "Plan for the cx2-16x32 Virtual Server for VPC reservation",
@@ -2576,74 +2624,25 @@
         "originalName": "instance-cx2-8x16"
       },
       {
+        "id": "9926a647-47b5-4952-bb2e-dbe82ff5dad0",
+        "name": "instance-cx2-96x192",
+        "description": "Plan for the cx2-96x192 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Compute cx2-96x192",
+        "originalName": "instance-cx2-96x192"
+      },
+      {
+        "id": "073bbbeb-0979-41e2-bbc3-8fa3f0f99a5c",
+        "name": "instance-cx2d-128x256",
+        "description": "Plan for the cx2d-128x256 Virtual Server for VPC reservation",
+        "displayName": "Virtual Server Compute cx2d-128x256",
+        "originalName": "instance-cx2d-128x256"
+      },
+      {
         "id": "b8011e75-7ba3-47a5-85d4-45a92e4beb72",
         "name": "instance-cx2d-16x32",
         "description": "Plan for the cx2d-16x32 Virtual Server for VPC reservation",
         "displayName": "Virtual Server Compute cx2d-16x32",
         "originalName": "instance-cx2d-16x32"
-      },
-      {
-        "id": "e9ea288b-384d-43be-a565-c1635a588ed2",
-        "name": "instance-cx2d-2x4",
-        "description": "Plan for the cx2d-2x4 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx2d-2x4",
-        "originalName": "instance-cx2d-2x4"
-      },
-      {
-        "id": "24f29ee9-c129-486d-83c6-48dc933958be",
-        "name": "instance-cx2d-32x64",
-        "description": "Plan for the cx2d-32x64 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx2d-32x64",
-        "originalName": "instance-cx2d-32x64"
-      },
-      {
-        "id": "2dea3658-1c06-4ace-9947-2c34f7b74cc3",
-        "name": "instance-cx2d-48x96",
-        "description": "Plan for the cx2d-48x96 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx2d-48x96",
-        "originalName": "instance-cx2d-48x96"
-      },
-      {
-        "id": "574b4c3a-0189-4eb3-98e8-d2e175c40ddb",
-        "name": "instance-cx2d-4x8",
-        "description": "Plan for the cx2d-4x8 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx2d-4x8",
-        "originalName": "instance-cx2d-4x8"
-      },
-      {
-        "id": "37d5850b-08ff-488d-83f4-99978418ae2c",
-        "name": "instance-cx2d-64x128",
-        "description": "Plan for the cx2d-64x128 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx2d-64x128",
-        "originalName": "instance-cx2d-64x128"
-      },
-      {
-        "id": "e320cf22-f762-40df-87c9-9336c434f0eb",
-        "name": "instance-cx2d-8x16",
-        "description": "Plan for the cx2d-8x16 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx2d-8x16",
-        "originalName": "instance-cx2d-8x16"
-      },
-      {
-        "id": "70bb1cfd-246d-4128-a963-fd37e7d5039d",
-        "name": "instance-cx3d-128x320",
-        "description": "Plan for the cx3d-128x320 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx3d-128x320",
-        "originalName": "instance-cx3d-128x320"
-      },
-      {
-        "id": "ffcff183-4dac-4d19-b50b-a7d79df6af34",
-        "name": "instance-cx3d-16x40",
-        "description": "Plan for the cx3d-16x40 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx3d-16x40",
-        "originalName": "instance-cx3d-16x40"
-      },
-      {
-        "id": "484fcb07-740e-4fd0-8899-bbf342898bd1",
-        "name": "instance-cx3d-176x440",
-        "description": "Plan for the cx3d-176x440 Virtual Server for VPC reservation",
-        "displayName": "Virtual Server Compute cx3d-176x440",
-        "originalName": "instance-cx3d-176x440"
       }
     ],
     "description": "Save up to 60% by reserving capacity in advance on IBM Cloud Virtual Servers for VPC.",
@@ -3978,7 +3977,7 @@
     "description": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility.",
     "longDescription": "DataStax is a scale-out NoSQL database built on Apache Cassandra, designed for high-availability and workload flexibility. Databases for DataStax makes DataStax even better by managing it for you. Features include high availability, automated backup orchestration, and de-coupled scaling of storage, RAM, and vCPUs. Databases for DataStax pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for DataStax",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/datastax.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/datastax.svg",
     "localSvgIcon": "/generated/icons/databases-for-cassandra.svg",
     "localPngIcon": "/generated/icons/databases-for-cassandra.png"
   },
@@ -4049,7 +4048,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4127,7 +4126,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4208,7 +4207,7 @@
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/etcd.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/etcd.svg",
     "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
@@ -4293,7 +4292,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4364,7 +4363,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4445,7 +4444,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -4526,7 +4525,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -9532,7 +9531,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
