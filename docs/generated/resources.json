@@ -4125,6 +4125,13 @@
         "description": "One highly available Elasticsearch Platinum instance with three data members. The Platinum plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Elasticsearch instances have a minimum of 5GB of Disk and 1GB of RAM per data member.  Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Platinum",
         "originalName": "platinum"
+      },
+      {
+        "id": "databases-for-elasticsearch-standard",
+        "name": "standard",
+        "description": "One highly available Elasticsearch instance with three data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Elasticsearch instances have a minimum of 5GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
+        "displayName": "Standard",
+        "originalName": "standard"
       }
     ],
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
@@ -9212,6 +9219,7 @@
       "freesia",
       "iam_compatible",
       "ibm_created",
+      "ibm_deprecated",
       "in-che",
       "jp-osa",
       "jp-tok",
@@ -9219,6 +9227,7 @@
       "paid",
       "paid_only",
       "rc_compatible",
+      "support_ibm",
       "supports_syndication",
       "us-east",
       "us-south"
