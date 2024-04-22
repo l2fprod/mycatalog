@@ -9658,7 +9658,8 @@
     "description": "Enterprise-grade messaging hosted in the cloud",
     "longDescription": "IBM MQ provides proven, enterprise-grade messaging capabilities, such as point-to-point and publish/subscribe models, to facilitate the flow of information between applications. This service enables you to use IBM MQ as a managed offering. The IBM Cloud handles upgrades, patches, and many of the operational management tasks on your behalf, so you can focus on integrating MQ with your applications.\n\nThis service enables you to use IBM MQ as a managed offering. The IBM Cloud handles upgrades, patches, and many of the operational management tasks on your behalf, so you can focus on integrating MQ with your applications.",
     "displayName": "MQ",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4/artifacts/cache/e6497fd6520e2ec0edd91562eb3a0646-public/MQ_Light_Icon@4x.png",
+    "imageUrl": "https://us-preprod.mq.test.cloud.ibm.com/assets/images/ibm_mq.svg",
+    "localSvgIcon": "/generated/icons/01037c41-adce-4bb5-8b45-0c06004916c4.svg",
     "localPngIcon": "/generated/icons/01037c41-adce-4bb5-8b45-0c06004916c4.png"
   },
   {
@@ -10822,6 +10823,18 @@
     ],
     "plans": [
       {
+        "id": "1ad15dcc-cf6d-4223-94b3-4e5adb4f4a9d",
+        "name": "primaryio-protectio-bespoke-custom-project",
+        "description": "Variable number of “professional services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "displayName": "Bespoke - Custom Project"
+      },
+      {
+        "id": "4fe90a87-7bcb-4553-aeae-7a90fb46b276",
+        "name": "primaryio-protectio-custom-managed",
+        "description": "Variable number of “managed service units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "displayName": "Custom Managed"
+      },
+      {
         "id": "9db8bedd-8625-447b-a162-b15e9f2fd83f",
         "name": "primaryio-protectio-protectio-100-revised",
         "description": "ProtectIO 100 plan is used to protect maximum up to 100 virtual machines. Once number of protected virtual machines reaches maximum limit, customer will be automatically upgraded to next tier.",
@@ -10882,6 +10895,18 @@
       "support_third_party"
     ],
     "plans": [
+      {
+        "id": "d7139ad6-3a62-49f6-b581-62d2f6b0f9b2",
+        "name": "primaryio-protectio-managed-service-bespoke-custom-project",
+        "description": "Variable number of “professional services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "displayName": "Bespoke - Custom Project"
+      },
+      {
+        "id": "ae1494be-c2e6-4512-adbd-f9d4042c1efe",
+        "name": "primaryio-protectio-managed-service-custom-managed",
+        "description": "Variable number of “managed service units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "displayName": "Custom Managed"
+      },
       {
         "id": "56105b60-9019-4c1f-a381-42b59bf41732",
         "name": "primaryio-protectio-managed-service-protectio-draas-managed-100-revised",
