@@ -9851,9 +9851,10 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
       "eu-de",
+      "jp-tok",
       "us-east",
+      "ca-tor",
       "us-south"
     ],
     "id": "cc42cff0-b19b-11eb-9a66-c717766c1d30",
@@ -9877,6 +9878,7 @@
       "hipaa",
       "iam_compatible",
       "ibm_created",
+      "jp-tok",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -15396,7 +15398,9 @@
     "pricing_tags": [
       "allow_internal_users",
       "paid",
-      "paid_only"
+      "paid_only",
+      "free",
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
@@ -15406,9 +15410,11 @@
       "database",
       "eu-de",
       "eu-gb",
+      "free",
       "iam_compatible",
       "ibm_created",
       "jp-tok",
+      "lite",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -15423,6 +15429,13 @@
         "description": "Watsonx.data is a data management solution for collecting, storing, querying, and analyzing all your enterprise data (structured, semi-structured, and unstructured) with a single unified data platform. It provides a flexible and reliable platform that is optimized to work on open data formats.",
         "displayName": "Enterprise",
         "originalName": "lakehouse-enterprise"
+      },
+      {
+        "id": "lakehouse-lite",
+        "name": "lite",
+        "description": "The Lite plan offers starter configurations of an instance to get started and understand what's in watsonx.data.",
+        "displayName": "Lite",
+        "originalName": "lite"
       }
     ],
     "description": "An open, hybrid, and governed fit-for-purpose data store optimized to scale all data, analytics and AI workloads.",
