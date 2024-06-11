@@ -613,7 +613,11 @@
       "eu-gb-1",
       "eu-gb-2",
       "eu-gb-3",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "br-sao",
+      "eu-fr2",
+      "jp-osa"
     ],
     "id": "is.bare-metal-server",
     "kind": "service",
@@ -632,8 +636,10 @@
     "tags": [
       "compute",
       "allow_internal_users",
+      "au-syd",
       "bare metal",
       "bare metal server",
+      "br-sao",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -649,6 +655,7 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
+      "eu-fr2",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -658,6 +665,7 @@
       "iam_compatible",
       "ibm_created",
       "is.composite",
+      "jp-osa",
       "jp-tok",
       "jp-tok-1",
       "jp-tok-2",
@@ -722,6 +730,13 @@
         "originalName": "bx3-metal-64x256"
       },
       {
+        "id": "812b7c40-2807-4df0-bc6a-b3b89d0be2ec",
+        "name": "bx3d-metal-192x1024",
+        "description": "Pricing plan for bx3d-metal-192x1024",
+        "displayName": "bx3d-metal-192x1024",
+        "originalName": "bx3d-metal-192x1024"
+      },
+      {
         "id": "464b2156-029b-4dbc-92a4-474b6d5af419",
         "name": "bx3d-metal-48x256",
         "description": "Pricing plan for a bx3d bare metal server configured with dual processors offering 24 cores (48 vCPU), 256 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and up to an aggregate 200Gbps network uplink.",
@@ -750,6 +765,34 @@
         "originalName": "cx2d-metal-96x192"
       },
       {
+        "id": "bdc8136d-7e67-49c3-858e-c38519e00462",
+        "name": "cx3-metal-48x128",
+        "description": "Pricing plan for cx3-metal-48x128",
+        "displayName": "cx3-metal-48x128",
+        "originalName": "cx3-metal-48x128"
+      },
+      {
+        "id": "2b7c56c1-e82e-4ec1-89bc-92577eeb83e2",
+        "name": "cx3-metal-64x128",
+        "description": "Pricing plan for cx3-metal-64x128",
+        "displayName": "cx3-metal-64x128",
+        "originalName": "cx3-metal-64x128"
+      },
+      {
+        "id": "a9af6a30-77aa-47f1-897e-cfccb4cfe25f",
+        "name": "cx3d-metal-48x128",
+        "description": "Pricing plan for cx3d-metal-48x128",
+        "displayName": "cx3d-metal-48x128",
+        "originalName": "cx3d-metal-48x128"
+      },
+      {
+        "id": "cf77ff52-8995-499f-b217-32a105b35bac",
+        "name": "cx3d-metal-64x128",
+        "description": "Pricing plan for cx3d-metal-64x128",
+        "displayName": "cx3d-metal-64x128",
+        "originalName": "cx3d-metal-64x128"
+      },
+      {
         "id": "7dc7b1d9-0388-428d-a7ac-e4b6037e9b87",
         "name": "mx2-metal-96x768",
         "description": "Pricing plan for an mx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 768 GB memory, local NVMe boot drives, and an aggregate 100Gbps network uplink.",
@@ -764,6 +807,62 @@
         "originalName": "mx2d-metal-96x768"
       },
       {
+        "id": "5a3de409-5864-4f83-95bd-a417efaac70f",
+        "name": "mx3-metal-16x128",
+        "description": "Pricing plan for mx3-metal-16x128",
+        "displayName": "mx3-metal-16x128",
+        "originalName": "mx3-metal-16x128"
+      },
+      {
+        "id": "208fcc66-266d-487e-9247-6d8246b45dac",
+        "name": "mx3-metal-48x512",
+        "description": "Pricing plan for mx3-metal-48x512",
+        "displayName": "mx3-metal-48x512",
+        "originalName": "mx3-metal-48x512"
+      },
+      {
+        "id": "eaaada63-e1be-4bc9-a088-cd13d70bd2d5",
+        "name": "mx3-metal-64x512",
+        "description": "Pricing plan for mx3-metal-64x512",
+        "displayName": "mx3-metal-64x512",
+        "originalName": "mx3-metal-64x512"
+      },
+      {
+        "id": "63be34a6-9a34-4a96-af0a-cf55243c03d2",
+        "name": "mx3d-metal-128x1024",
+        "description": "Pricing plan for mx3d-metal-128x1024",
+        "displayName": "mx3d-metal-128x1024",
+        "originalName": "mx3d-metal-128x1024"
+      },
+      {
+        "id": "4fe30a98-690a-4b20-8f64-de791f35d038",
+        "name": "mx3d-metal-16x128",
+        "description": "Pricing plan for mx3d-metal-16x128",
+        "displayName": "mx3d-metal-16x128",
+        "originalName": "mx3d-metal-16x128"
+      },
+      {
+        "id": "97f33c28-245a-49c6-b861-41b9dabdd242",
+        "name": "mx3d-metal-48x512",
+        "description": "Pricing plan for mx3d-metal-48x512",
+        "displayName": "mx3d-metal-48x512",
+        "originalName": "mx3d-metal-48x512"
+      },
+      {
+        "id": "46fba1c7-621e-451e-9925-b5eb7218d42e",
+        "name": "mx3d-metal-64x512",
+        "description": "Pricing plan for mx3d-metal-64x512",
+        "displayName": "mx3d-metal-64x512",
+        "originalName": "mx3d-metal-64x512"
+      },
+      {
+        "id": "35e9a620-c9fa-430c-a729-6153b54028d3",
+        "name": "mx3d-metal-96x1024",
+        "description": "Pricing plan for mx3d-metal-96x1024",
+        "displayName": "mx3d-metal-96x1024",
+        "originalName": "mx3d-metal-96x1024"
+      },
+      {
         "id": "7c95530b-d168-4552-8da6-86523a1decb4",
         "name": "ux2d-metal-112x3072",
         "description": "Pricing plan for a ux2d bare metal server configured with dual processors offering 56 cores (112 vCPU), 3072 GB memory, local NVMe boot drives, and an aggregate 100Gbps network uplink.",
@@ -776,6 +875,20 @@
         "description": "Text",
         "displayName": "ux2d-metal-224x6144",
         "originalName": "ux2d-metal-224x6144"
+      },
+      {
+        "id": "a23fbb93-1a09-44ee-98c2-aafc42d285ff",
+        "name": "ux3-metal-16x512",
+        "description": "Pricing plan for ux3-metal-16x512",
+        "displayName": "ux3-metal-16x512",
+        "originalName": "ux3-metal-16x512"
+      },
+      {
+        "id": "043c2c06-b7df-4b04-9030-dc1026347361",
+        "name": "ux3d-metal-16x512",
+        "description": "Pricing plan for ux3d-metal-16x512",
+        "displayName": "ux3d-metal-16x512",
+        "originalName": "ux3d-metal-16x512"
       },
       {
         "id": "139387fe-dc48-4d7d-a6b2-a2a2dcd709f2",
@@ -4021,7 +4134,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4106,7 +4219,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4187,7 +4300,7 @@
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/etcd.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/etcd.svg",
     "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
@@ -4272,7 +4385,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4343,7 +4456,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4424,7 +4537,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -4505,7 +4618,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -9443,7 +9556,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -9930,6 +10043,7 @@
       "custom_kind_service",
       "discovery",
       "eu-de",
+      "governance",
       "gpt-3",
       "gpt3",
       "granite",
@@ -9950,7 +10064,9 @@
       "watson discovery",
       "watsonx",
       "watsonx discovery",
-      "watsonx orchestrate"
+      "watsonx orchestrate",
+      "watsonx.ai",
+      "watsonx.governance"
     ],
     "plans": [
       {
@@ -10009,7 +10125,7 @@
       }
     ],
     "description": "NeuralSeek is a no-code integration platform that helps businesses get to market fast with all Generative AI usecases.",
-    "longDescription": "NeuralSeek completely automates Retrieval Augmented Generation (RAG) usecases, conection dozens of different knowledge bases and LLM's together in seconds.\n\nNeuralSeek's mAIstro platform lets business users quickly build complex LLM-backed processes with greater scalability than hardcoding in python, and without knowing any code.\n\nIndustry Leading Retrieval Augmented Generation\n\nStrong Corporate Controls, human in the loop.\n\nAutomatic Virtual Agent Builder\n\nAutomatically create & monitor conversations into leading Virtual Agent platforms.\n\nProtection from Prompt Injection and harmful content\n\nAutomatically cleanse and protect against malicious user input\n\nFull RAG Governance - Executive-level and SME dashboards to monitor answer generation, system performance, content insights and configuration churn\n\nIntegrated versioning controls\n\nCategory and Intent-level control \n\nSet confidence thresholds, custom responses and fallbacks per category.\n\nAutomatically prompt-tune LLM’s at the intent level\n\nAutomatic Content Cleansing\n\nPreprocess complex embedded tables\n\nCross-language / automatic Translation\n\nAnswer questions in languages other than the documentation\n\nCorporate Logging - Log all actions for corporate audit & compliance.\n\nAnswer Provenance & Hallucination detection / removal\n\nTrace answers directly to source documents\n\nSemantic Analysis helps users understand the confidence of answers \nand eliminate hallucination\n\nPII Detection / Removal\n\nFlag, Mask, Hide, or Delete PII on user input.\n\nDynamic Personalization\n\nLeverage SSO or user data to tailor responses specifically to users.\n\nIntegrate structured & unstructured data across endless sources. \n\nCreate scalable LLM-backed processes in seconds.\n\nGenerate files and documents, create synthetic data\n\nConnect to REST endpoints,  automatically send Email\n\n60+ prebuilt functions to snap together in limitless ways\n",
+    "longDescription": "NeuralSeek completely automates Retrieval Augmented Generation (RAG) usecases, connecting dozens of different knowledge bases and 40+ LLM's together in seconds.\n\nNeuralSeek's mAIstro platform lets business users quickly build complex LLM-backed processes with greater scalability than hardcoding in python, and without knowing any code.\n\nIndustry Leading Retrieval Augmented Generation\n\nStrong Corporate Controls, human in the loop.\n\nAutomatic Virtual Agent Builder\n\nAutomatically create & monitor conversations into leading Virtual Agent platforms.\n\nProtection from Prompt Injection and harmful content\n\nAutomatically cleanse and protect against malicious user input\n\nFull RAG Governance - Executive-level and SME dashboards to monitor answer generation, system performance, content insights and configuration churn\n\nIntegrated versioning controls\n\nCategory and Intent-level control \n\nSet confidence thresholds, custom responses and fallbacks per category.\n\nAutomatically prompt-tune LLM’s at the intent level\n\nAutomatic Content Cleansing\n\nPreprocess complex embedded tables\n\nCross-language / automatic Translation\n\nAnswer questions in languages other than the documentation\n\nCorporate Logging - Log all actions for corporate audit & compliance.\n\nAnswer Provenance & Hallucination detection / removal\n\nTrace answers directly to source documents\n\nSemantic Analysis helps users understand the confidence of answers \nand eliminate hallucination\n\nPII Detection / Removal\n\nFlag, Mask, Hide, or Delete PII on user input.\n\nDynamic Personalization\n\nLeverage SSO or user data to tailor responses specifically to users.\n\nIntegrate structured & unstructured data across endless sources. \n\nCreate scalable LLM-backed processes in seconds.\n\nGenerate files and documents, create synthetic data\n\nConnect to REST endpoints,  automatically send Email\n\n60+ prebuilt functions to snap together in limitless ways\n",
     "displayName": "NeuralSeek",
     "imageUrl": "https://neuralseek.com/wp-content/uploads/2022/12/ns-blue-64.svg",
     "localSvgIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.svg",
