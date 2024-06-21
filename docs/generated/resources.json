@@ -2925,6 +2925,49 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "e7114cc0-ffd2-4199-bc1a-ea79a6f09e89",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "cloudsway-cdn-global",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "cdn",
+      "custom_kind_service",
+      "edge computing",
+      "global",
+      "ibm_third_party",
+      "network_interconnectivity",
+      "nginx",
+      "paid",
+      "paid_only",
+      "programmable",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "fa60ad30-3af4-4d2a-8087-256b5a52f63f",
+        "name": "cloudsway-cdn-global-global-pricing",
+        "description": "The resources provided by this package include overseas resources and mainland China resources.",
+        "displayName": "Global-Pricing"
+      }
+    ],
+    "description": "Cloudsway CDN is a new generation of content delivery platform, which can provide users with programmable CDN interactive services",
+    "longDescription": "1.Programmable Delivery: Nginx based programmable delivery for rapid debugging and release under complex requirements. New configuration interface designed for simplicity and ease of use, reliably supporting any complex business logic. Improved configuration version management can easily embedded in enterprise DevOps.\n2.Secure and Reliable: Enabling 4 layer and 7 layer DDoS defense mechanisms, while extending support for high-performance Web application firewalls. \nReject suspicious packets and forward secure packets back to the source site based on real-time analytics.\n3.Excellent Performance: Accurate intelligent scheduling system based on real-time detection and Wangsu's proprietary private high-speed return to source protocol comprehensively improve the performance of edge access and return to source connection.",
+    "displayName": "Cloudsway CDN",
+    "imageUrl": "https://bigbot2022.s3.us-west-1.amazonaws.com/cloudsway-logo.png",
+    "localPngIcon": "/generated/icons/e7114cc0-ffd2-4199-bc1a-ea79a6f09e89.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4937,7 +4980,6 @@
       "au-syd",
       "br-sao",
       "eu-de",
-      "eu-gb",
       "jp-tok",
       "us-east",
       "us-south"
@@ -4950,9 +4992,9 @@
     },
     "name": "dashdb",
     "pricing_tags": [
-      "allow_internal_users",
       "paid",
-      "paid_only"
+      "paid_only",
+      "allow_internal_users"
     ],
     "tags": [
       "storage",
@@ -4968,9 +5010,7 @@
       "dedicated",
       "dev_ops",
       "eu-de",
-      "eu-gb",
       "freesia",
-      "hipaa",
       "iam_compatible",
       "ibm_created",
       "ibm_dedicated_public",
@@ -4986,31 +5026,10 @@
     ],
     "plans": [
       {
-        "id": "flex-endurance-paygo",
-        "name": "flex",
-        "description": "The base Instance provides one database with 960GB disk storage, 16 cores, and 186GB RAM. Scale storage up to 96TB, and scale compute up to 160 cores.",
-        "displayName": "Flex",
-        "originalName": "Flex"
-      },
-      {
-        "id": "smp-flex-paygo",
-        "name": "flex-one",
-        "description": "The base Instance provides one database with 40GB disk storage and 6 virtual processor cores (VPCs). Scale storage up to 4TB, and scale compute up to 28 VPCs.",
-        "displayName": "Flex One",
-        "originalName": "Flex One"
-      },
-      {
-        "id": "e95845a4-854a-430b-83a5-a5bf5d45cc82",
-        "name": "flex-performance",
-        "description": "The base Instance provides one database with 2.4TB disk storage, 48 cores, and 1TB RAM.",
-        "displayName": "Flex Performance",
-        "originalName": "Flex Performance"
-      },
-      {
         "id": "flex-performance-aws-paygo",
-        "name": "flex-performance-for-aws",
-        "description": "The base Instance provides one database with 2.4TB disk storage and 48 virtual processor cores. Scale storage up to 144TB in increments of 2.4TB, and scale compute up to 600 virtual processor cores in increments of 24 virtual processor cores.",
-        "displayName": "Flex Performance for Amazon Web Services",
+        "name": "flex-performance-aws-paygo",
+        "description": "The base Instance provides one database with 2.4TB disk storage and 48 virtual processor cores. Scale storage up to 144TB in increments of 2.4TB, and scale compute up to 576 virtual processor cores in increments of 24 virtual processor cores.",
+        "displayName": "Db2 Warehouse",
         "originalName": "Flex Performance for AWS"
       }
     ],
