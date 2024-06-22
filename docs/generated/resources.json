@@ -4992,9 +4992,9 @@
     },
     "name": "dashdb",
     "pricing_tags": [
+      "allow_internal_users",
       "paid",
-      "paid_only",
-      "allow_internal_users"
+      "paid_only"
     ],
     "tags": [
       "storage",
@@ -5025,6 +5025,13 @@
       "us-south"
     ],
     "plans": [
+      {
+        "id": "e95845a4-854a-430b-83a5-a5bf5d45cc82",
+        "name": "flex-performance",
+        "description": "The base Instance provides one database with 2.4TB disk storage, 48 cores, and 1TB RAM.",
+        "displayName": "Flex Performance",
+        "originalName": "Flex Performance"
+      },
       {
         "id": "flex-performance-aws-paygo",
         "name": "flex-performance-aws-paygo",
