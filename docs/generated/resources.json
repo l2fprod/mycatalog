@@ -2104,6 +2104,58 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-es"
+    ],
+    "id": "cd515180-d78a-11ec-b396-db7d306c4f73",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "logs",
+    "pricing_tags": [
+      "paid"
+    ],
+    "tags": [
+      "logging_monitoring",
+      "activity tracker",
+      "apidocs_enabled",
+      "audit events",
+      "custom_kind_service",
+      "eu_access",
+      "eu-de",
+      "eu-es",
+      "iam_compatible",
+      "ibm_created",
+      "log analysis",
+      "log management",
+      "logdna",
+      "logging",
+      "mezmo",
+      "observabilty",
+      "paid",
+      "rc_compatible",
+      "support_ibm"
+    ],
+    "plans": [
+      {
+        "id": "3373c949-d1b1-4935-a60a-4e80b15440dd",
+        "name": "standard",
+        "description": "Log consumption tier allocation is configured using the TCO Optimizer. \n\nPriority insights log retention can be configured below and/or updated within the service settings after provision.",
+        "displayName": "Standard",
+        "originalName": "standard"
+      }
+    ],
+    "description": "Optimize log analysis and management for rapid issue resolution and proactively avoid downtime.",
+    "longDescription": "IBM Cloud Logs turns log data into actionable insights, reducing operational costs and boosting system reliability. Fully integrated with IBM Cloud, IBM Cloud Logs allows quick issue detection, performance optimization, and ensures strong security compliance without traditional log indexing overhead.",
+    "displayName": "Cloud Logs",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/cd515180-d78a-11ec-b396-db7d306c4f73/artifacts/cache/af8f2cbcea939db8e12024ba5a699e60-public/IBMCloudLogsIconLight.svg",
+    "localSvgIcon": "/generated/icons/cd515180-d78a-11ec-b396-db7d306c4f73.svg",
+    "localPngIcon": "/generated/icons/cd515180-d78a-11ec-b396-db7d306c4f73.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -3975,20 +4027,20 @@
       {
         "id": "4dd62f11-fdf0-4b6c-afc2-734160f6db9a",
         "name": "cyberstrong-1-scc-tprm-up-to-50-vendors",
-        "description": "Integrate IBM SCC with CyberStrong for third party risk management (TPRM) capabilities for up to 50 vendors",
-        "displayName": "SCC TPRM - Up to 50 Vendors"
+        "description": "Integrate IBM OpenPages with CyberStrong for Cyber Risk Quantification (CRQ) with Unlimited Usage.",
+        "displayName": "Cyber Risk Quantification for Open Pages"
       },
       {
         "id": "d49ec891-f2e6-467c-b37d-e5251e487ab8",
         "name": "cyberstrong-2-scc-tprm-up-to-100-vendors",
-        "description": "Integrate IBM SCC with CyberStrong for third party risk management (TPRM) capabilities for up to 100 vendors",
-        "displayName": "SCC TPRM - Up to 100 Vendors"
+        "description": "For companies above 2,500 employees, Integrate IBM WatsonX with CyberStrong Risk Hub.",
+        "displayName": "CyberStrong with WatsonX"
       },
       {
         "id": "153903ce-dfac-4506-955e-3ee81c7493ca",
         "name": "cyberstrong-3-scc-tprm-up-to-150-vendors",
-        "description": "Integrate IBM SCC with CyberStrong for third party risk management (TPRM) capabilities for up to 150 vendors",
-        "displayName": "SCC TPRM - Up to 150 Vendors"
+        "description": "For companies below 2,500 employees, Integrate IBM WatsonX with CyberStrong Risk Hub.",
+        "displayName": "CyberStrong with WatsonX - small business tier"
       },
       {
         "id": "fd21dd12-6586-4e20-a04b-9c28b30b5aac",
@@ -5773,6 +5825,12 @@
     ],
     "plans": [
       {
+        "id": "87c6afb3-9ba2-4a57-809a-fac013695af0",
+        "name": "dizzion-digitalworkspaces-complete-paygo-commit-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)\n",
+        "displayName": "Paygo Commit - 1 Year"
+      },
+      {
         "id": "9edddd4a-2e7a-4673-bb2a-9e68849b37dc",
         "name": "dizzion-digitalworkspaces-complete-united-states-1-year-commit",
         "description": "United States - 1 Year Commit",
@@ -7268,68 +7326,6 @@
     "displayName": "HDM VMware Workload Analyzer",
     "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
     "localPngIcon": "/generated/icons/3dacb5a3-de4a-4361-9f39-0b6657f89f37.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "ce0e839d-ac5f-4435-b6b4-a58032feb275",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "primaryio-hdm-workload-migrator",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "migration",
-      "custom_kind_service",
-      "global",
-      "ibm_third_party",
-      "migration_tools",
-      "nsx",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "v to t",
-      "vm",
-      "vmware"
-    ],
-    "plans": [
-      {
-        "id": "4b89116c-09d3-4834-8322-37e2f64eed6f",
-        "name": "primaryio-hdm-workload-migrator-platinum-1000",
-        "description": "Migration Base Package including 1000 VM Migrations",
-        "displayName": "Platinum-1000"
-      },
-      {
-        "id": "c98752d7-e800-4c09-aed9-16496d87bc7b",
-        "name": "primaryio-hdm-workload-migrator-platinum-25",
-        "description": "Migration Base Package including 25 VM Migrations ",
-        "displayName": "Platinum-25"
-      },
-      {
-        "id": "d724fbc1-470d-4ae8-9481-ed235902a518",
-        "name": "primaryio-hdm-workload-migrator-platinum-250",
-        "description": "Migration Base Package including 250 VM Migrations ",
-        "displayName": "Platinum-250"
-      },
-      {
-        "id": "e090624d-1077-45a3-a78a-848b4eb36580",
-        "name": "primaryio-hdm-workload-migrator-platinum-500",
-        "description": "Migration Base Package including 500 VM Migrations ",
-        "displayName": "Platinum-500"
-      }
-    ],
-    "description": "Per-VM priced, managed service of rapid, predictable, risk-reduced migration of VMware Virtual Workloads to the IBM Cloud",
-    "longDescription": "Organizations are embracing cloud computing.  The HDM Workload Migrator service is designed to assist organizations that have a requirement to migrate their current on-prem, or network resident VMware workloads to the IBM Cloud.  PrimaryIO has created a rapid, reliable migrator service, conducted by experts to shepherd customers moving from their current state to IBM Cloud.\n\nWith a goal of reducing time, cost and risk, PrimaryIO’s experienced professional services team has created its fully managed, fixed price, HDM Workload Migrator Service that has been optimized to move customer VM workloads to the IBM Cloud.  This moving of workloads from one environment to another is a detailed process requiring the determining of multiple variables including which workloads, from and to which specific environments, whether the necessary network connections and configurations are in place and when the migration will occur.  This service leverages technology which reduces the time and risk of the migration, minimizing any duration of scheduled unavailability of resources.  \n\nOne of the common use cases for the Workload Migrator is for those organizations finding themselves charting their one-time path from VMware’s NSX-V to NSX T, due to end-of-life (EoL) status.  This migration is a complex project comprised of a lengthy sequence of disparate activities and technologies.  Depending on particulars, this migration can take anywhere up to six to eight calendar months to complete, coupled with a lack of clarity and predictability with regard to resources, time, bill-of-materials and ultimately, cost.   Combining Workload Migrator service with our Fasttrack NSX-V to NSX T service (separate offering), a complete turnkey service is achievable for your NSX-V goal.  The Migrator Service involves discrete, well-defined, rapid engagements that drive visible, quick turn-around progress, focussing on critical path milestones and objectives.  Together, these two services offer a complete end-to-end service to bring an organization from an NSX-V environment to an NSX-T IBM Cloud resident environment – including the Workload Migrations.\n\nThis “Migrator” is differentiated from, yet works in close conjunction with, the “Fasttrack” NSX V to NSX-T service due its pre-configured Statement of Work and associated per VM fixed price.  In contrast, the Fasttrack NSX-V to NSX-T network infrastructure-oriented service supports customers with a tailored, customer-specific Statement of Work and associated options to include as a method of procurement.\n\nBenefits\nThe HDM VMware Workload Migrator utilizes project management and technical expertise derived from experience in performing migrations.  In addition, and importantly, migrations can utilize PimaryIO’s proprietary software that handles VM Workload migrations in an exceptional, differentiating manner.\nThe Migrator Service can begin workload execution with only partial data having been migrated to the new destination environment.  Between the human capital and intellectual capital, this service offers the following benefits:\n●\tScheduled downtime is greatly reduced\n●\tInitial testing can be done much sooner\n●\tIf problems are detected, retreating is faster, easier and more reliable\n●\tMigration duration is reduced and predictable\n●\tNetwork bandwidth requirements can be lessened\n●\tCost is optimized and predictable\n\nEngagement Overview\nPrimaryIO’s HDM Migrator Service is comprised of four phases:\nDiscover, Plan, Build and Migrate.\n \nDiscover\n\nThis Workshop-led initial phase engagement focuses on gathering critical information from the existing workload environment and its associated platform(s), along with size and complexity to ensure a fully prepared NSX-T and IBM Cloud target. Full customer participation and interaction will mitigate risk and result in a rapid and successful shifting of workloads.\nDiscover is comprised of:\n●\tCurrent state assessment\n●\tIBM Cloud analysis\n●\tNSX-T validation (if applicable)\n●\tAssessment of size and complexity of existing configuration(s)\n●\tCustomer/site-specific requirements\nDiscover deliverables include:\n●\tMigration Options\n●\tMigration Approach\n\nPlan\n\nPlan phase of engagement focuses on generating the project-specific roadmap.  Workshops include the Design Workshop with an outcome of detailed findings, migration options and planning.  The concluding Solution workshop presents the migration design, timeline any remaining prerequisites and a clear view of the Build and Migrate phases.\nPlan is comprised of:\n●\tIdentifying migration options\n●\tDeveloping the high-level design\n●\tDeveloping the high-level plan\n●\tDeveloping the timeline\n●\tIdentifying the (out-of-scope) prerequisites for the migration \nPlan deliverables include:\n●\tMigration High-level Design\n●\tMigration High-level Plan & Timeline\n●\tBuild & Migrate Scope and Tasks\n\nBuild\n\nBuild phase initiates with developing the detailed design and plan.  Primed by the output of the prior two phases, Build enables the progression through the stages of NSX-T validation and proof-of-concept-testing.  Aligned with these build stages, the Migration Schedule and Timeline are also developed to support the overall migration process along with suitable Roll Back plans where appropriate.\nFollowing successful testing and verification, the migration will continue in order to complete the final stage; the actual migration itself.\nMigration will continue based upon the chosen approach and the associated migration schedule and timeline. Each event will be tested and verified for success prior to sign off. \nBuild is comprised of:\n●\tDeveloping the detailed design\n●\tDeveloping the detailed plan\n●\tValidating the target NSX-T configuration\n●\tProof-of-Concept and associated testing\n●\tGenerating the migration schedule\nBuild deliverables include:\n●\tDetailed design\n●\tDetailed plan\n●\tDetailed Workload Migration Schedule\n\nMigrate\n\nMigrate is the phase for which the other phases have paved the way and mitigated all risks.  The migration is executed, tested, verified and ultimately signed of on.  The conclusion is that the VM Workloads are migrated to the destination NSX-T platform, allowing the older NSX-V platform to be retired.\nMigrate is comprised of:\n●\tMigration of the configuration\n●\tMigration of all VM workloads\n●\tConfiguration and workload testing\n●\tMigration verification\n●\tSign off\n",
-    "displayName": "HDM VMware Workload Migrator",
-    "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
-    "localPngIcon": "/generated/icons/ce0e839d-ac5f-4435-b6b4-a58032feb275.png"
   },
   {
     "geo_tags": [
