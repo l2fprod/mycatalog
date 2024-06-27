@@ -5790,6 +5790,81 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "9e09a2eb-b2e5-4d76-ab7c-1b2f8c080865",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dizzion-complete-horizon",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "custom_kind_service",
+      "daas",
+      "desktop as a service",
+      "digital workspaces",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "vdi",
+      "virtualservers",
+      "vmware",
+      "workspace"
+    ],
+    "plans": [
+      {
+        "id": "3febc912-a0b8-4f90-9f6c-58155a63376d",
+        "name": "dizzion-complete-horizon-paygo-commit-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Paygo Commit - 1 Year"
+      },
+      {
+        "id": "c965e081-dc86-4970-80bc-ccaf55c3d5df",
+        "name": "dizzion-complete-horizon-paygo-commit-edu-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM) Dizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
+        "displayName": "Paygo Commit EDU - 1 Year"
+      },
+      {
+        "id": "f80f9de7-6037-4ee3-9a9c-349ab189a4ca",
+        "name": "dizzion-complete-horizon-paygo-edu-monthly-",
+        "description": "Minimum 50 seats required (Per User or Per VM) \nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
+        "displayName": "Paygo EDU - Monthly "
+      },
+      {
+        "id": "cc7ceebb-fad4-43c6-a5fa-03bf1c8a17a4",
+        "name": "dizzion-complete-horizon-paygo-monthly",
+        "description": "Minimum 50 seats required (Per User or Per VM) ",
+        "displayName": "Paygo - Monthly"
+      },
+      {
+        "id": "a67617d3-0e23-4492-9d9a-f910b7fb083b",
+        "name": "dizzion-complete-horizon-prepaid-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Prepaid - 1 Year"
+      },
+      {
+        "id": "208e52a4-bca9-4fa5-8dac-76e986c7d51a",
+        "name": "dizzion-complete-horizon-prepaid-edu-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM) Dizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
+        "displayName": "Prepaid EDU - 1 Year"
+      }
+    ],
+    "description": "Leverage the power of Horizon virtual desktops and apps on IBM Cloud Bare Metal - fully managed and hosted by Dizzion.",
+    "longDescription": "Dizzion Complete - Horizon enables clients to deliver virtual desktop and app workloads to users in a fully turnkey solution. Powered by Omnissa (formerly VMware) Horizon deployed on their managed IBM Cloud Bare Metal, Dizzion’s team of experts integrates seamlessly with clients existing IT teams to ensure deployment success. Users securely access the apps, data, and resources they need to be productive from any device. With Dizzion Complete - Horizon on IBM Cloud Bare Metal, organizations have the platform and expertise to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\n- - - \n\nFor sales support, reach out to Dizzion directly at channel@dizzion.com.",
+    "displayName": "Dizzion Complete - Horizon",
+    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
+    "localPngIcon": "/generated/icons/9e09a2eb-b2e5-4d76-ab7c-1b2f8c080865.png"
+  },
+  {
+    "geo_tags": [
       "wdc06"
     ],
     "id": "79679329-2050-4779-a2e2-7210b88aed4e",
@@ -15917,6 +15992,9 @@
     "localPngIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.png"
   },
   {
+    "geo_tags": [
+      "us-south"
+    ],
     "id": "power-iaas.workspace",
     "kind": "service",
     "metadata": {
@@ -15924,29 +16002,46 @@
       "ui": {}
     },
     "name": "power-iaas.workspace",
+    "pricing_tags": [
+      "paid",
+      "allow_internal_users"
+    ],
     "tags": [
       "compute",
       "aix",
+      "allow_internal_users",
       "apidocs_enabled",
       "as400",
       "custom_kind_service",
       "fs_ready",
+      "hipaa",
+      "iam_compatible",
       "ibm i",
       "ibm_created",
       "linux",
+      "paid",
       "power",
       "power infrastructure",
       "power-iaas",
+      "rc_compatible",
       "sap hana",
       "support_ibm",
+      "us-south",
       "virtualservers"
     ],
-    "plans": [],
+    "plans": [
+      {
+        "id": "538fe17e-2ada-4eee-a426-62d91e02cd48",
+        "name": "power-virtual-server-private-workspace-group",
+        "description": "A Power Systems Virtual Server Private Cloud Workspace plan for the IBM Cloud.",
+        "displayName": "Power Virtual Server Private Cloud Workspace Group",
+        "originalName": "power-virtual-server-private-workspace-group"
+      }
+    ],
     "description": "Provision flexible, secure, and scalable compute capacity for Power Systems enterprise workloads",
     "longDescription": "Power Systems Virtual Server projects deliver flexible compute capacity for Power Systems workloads. Integrated with the IBM Cloud platform for on-demand provisioning, this offering provides a secure and scalable server virtualization environment built upon the advanced RAS features and leading performance of the Power Systems™ platform.",
     "displayName": "Workspace for Power Virtual Server",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/abd259f0-9990-11e8-acc8-b9f54a8f1661/artifacts/cache/66c89a2644c2ac54745d6ab9ecf4da8e-public/IBM_Power_CloudCatalog%202.svg",
-    "geo_tags": [],
     "localSvgIcon": "/generated/icons/power-iaas.workspace.svg",
     "localPngIcon": "/generated/icons/power-iaas.workspace.png"
   },
