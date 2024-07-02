@@ -67,10 +67,10 @@
     },
     "name": "3p-anontech-xaas-vizivault",
     "pricing_tags": [
-      "free",
-      "lite",
       "paid",
-      "paid_only"
+      "paid_only",
+      "free",
+      "lite"
     ],
     "tags": [
       "security",
@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "eu-de",
-      "eu-gb",
       "jp-tok",
+      "eu-de",
       "us-east",
-      "us-south"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -378,15 +378,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
-      "eu-de",
-      "eu-gb",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -396,9 +396,9 @@
     },
     "name": "appid",
     "pricing_tags": [
+      "paygo",
       "free",
-      "lite",
-      "paygo"
+      "lite"
     ],
     "tags": [
       "security",
@@ -458,7 +458,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -489,7 +488,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "free",
@@ -586,38 +584,37 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
       "ca-tor-3",
-      "ca-tor",
       "eu-de",
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
-      "jp-tok-1",
-      "jp-tok-2",
-      "jp-tok-3",
-      "jp-tok",
-      "us-east-1",
-      "us-east-2",
-      "us-east-3",
-      "us-east",
-      "us-south-1",
-      "us-south-2",
-      "us-south-3",
-      "us-south",
+      "eu-es",
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-es",
+      "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
       "eu-gb-3",
-      "eu-gb",
-      "au-syd",
-      "br-sao",
-      "eu-fr2",
-      "jp-osa"
+      "jp-osa",
+      "jp-tok",
+      "jp-tok-1",
+      "jp-tok-2",
+      "jp-tok-3",
+      "us-east",
+      "us-east-1",
+      "us-east-2",
+      "us-east-3",
+      "us-south",
+      "us-south-1",
+      "us-south-2",
+      "us-south-3"
     ],
     "id": "is.bare-metal-server",
     "kind": "service",
@@ -655,7 +652,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -1024,14 +1020,30 @@
       "au-syd-1",
       "au-syd-2",
       "au-syd-3",
+      "br-sao",
+      "br-sao-1",
+      "br-sao-2",
+      "br-sao-3",
+      "ca-tor",
+      "ca-tor-1",
+      "ca-tor-2",
+      "ca-tor-3",
       "eu-de",
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
+      "eu-es",
+      "eu-es-1",
+      "eu-es-2",
+      "eu-es-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
       "eu-gb-3",
+      "jp-osa",
+      "jp-osa-1",
+      "jp-osa-2",
+      "jp-osa-3",
       "jp-tok",
       "jp-tok-1",
       "jp-tok-2",
@@ -1043,27 +1055,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "br-sao-1",
-      "br-sao-2",
-      "br-sao-3",
-      "br-sao",
-      "ca-tor-1",
-      "ca-tor-2",
-      "ca-tor-3",
-      "ca-tor",
-      "eu-es-1",
-      "eu-es-2",
-      "eu-es-3",
-      "eu-es",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
-      "eu-fr2",
-      "jp-osa-1",
-      "jp-osa-2",
-      "jp-osa-3",
-      "jp-osa"
+      "us-south-3"
     ],
     "id": "is.volume",
     "kind": "service",
@@ -1100,10 +1092,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -1213,7 +1201,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -1242,7 +1229,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "freesia",
       "fs_ready",
@@ -1326,9 +1312,6 @@
     "localPngIcon": "/generated/icons/e687e558-849d-40cc-8043-cd8071f659e9.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-caveonix",
     "kind": "service",
     "metadata": {
@@ -1338,19 +1321,13 @@
       }
     },
     "name": "caveonix",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -1359,6 +1336,7 @@
     "longDescription": "Manage cyber and compliance risk with proactive monitoring and automated defense controls to protect against threats and meet industry or government regulations",
     "displayName": "Caveonix RiskForesight",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/Caveonix.png",
+    "geo_tags": [],
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-caveonix.png"
   },
   {
@@ -1500,7 +1478,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -1529,7 +1506,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "fs cloud",
@@ -1643,7 +1619,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "in-che",
       "jp-osa",
@@ -1660,10 +1635,10 @@
     "name": "logdnaat",
     "pricing_tags": [
       "allow_internal_users",
-      "free",
-      "lite",
       "paid",
-      "paid_only"
+      "paid_only",
+      "free",
+      "lite"
     ],
     "tags": [
       "logging_monitoring",
@@ -1677,7 +1652,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "iam_compatible",
@@ -1883,7 +1857,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -1911,7 +1884,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "fs_ready",
@@ -2302,11 +2274,11 @@
   },
   {
     "geo_tags": [
+      "global",
       "satcon_fra",
       "satcon_lon",
       "satcon_tok",
-      "satcon_wdc",
-      "global"
+      "satcon_wdc"
     ],
     "id": "dff97f5c-bc5e-4455-b470-411c3edbe49c",
     "kind": "service",
@@ -2318,10 +2290,10 @@
     "pricing_tags": [
       "allow_internal_users",
       "paid",
+      "paid_only",
       "free",
       "lite",
-      "paygo",
-      "paid_only"
+      "paygo"
     ],
     "tags": [
       "allow_internal_users",
@@ -2393,7 +2365,7 @@
         "id": "2fdf0c08-2d32-4f46-84b5-32e0c92fffd8",
         "name": "lite",
         "description": "Only one Lite plan instance is allowed per account. The Lite plan instance includes up to 25 GB of storage capacity; 2,000 Class A (PUT, COPY, POST, and LIST) requests; 20,000 Class B (GET and all others) requests; 10 GB of data retrieval; 5GB of egress (public outbound bandwidth) each month. These thresholds apply to the aggregate total across all storage class buckets.",
-        "displayName": "Lite"
+        "displayName": "Lite(deprecated)"
       },
       {
         "id": "744bfc56-d12c-4866-88d5-dac9139e0e5d",
@@ -2442,7 +2414,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -2472,7 +2443,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "iam_compatible",
       "ibm_created",
@@ -2850,9 +2820,6 @@
     "localPngIcon": "/generated/icons/is.reservation.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrust",
     "kind": "service",
     "metadata": {
@@ -2862,19 +2829,13 @@
       }
     },
     "name": "hytrust",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -2883,6 +2844,7 @@
     "longDescription": "Protect your workloads and simplify compliance using IBM Cloud Secure Virtualization.",
     "displayName": "Cloud Secure Virtualization",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/hytrust.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrust.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrust.png"
   },
@@ -2894,12 +2856,11 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-fr2",
-      "in-che"
+      "us-south"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -2924,7 +2885,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "freesia",
@@ -3025,7 +2985,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -3060,7 +3019,6 @@
       "engne",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financialsector",
       "fs_ready",
@@ -3563,16 +3521,15 @@
   {
     "geo_tags": [
       "au-syd",
-      "eu-de",
-      "eu-gb",
-      "global",
-      "jp-tok",
-      "us-south",
       "br-sao",
       "ca-tor",
+      "eu-de",
       "eu-es",
-      "eu-fr2",
-      "jp-osa"
+      "eu-gb",
+      "global",
+      "jp-osa",
+      "jp-tok",
+      "us-south"
     ],
     "id": "public.bluemix.container.registry",
     "kind": "service",
@@ -3599,7 +3556,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "free",
@@ -3674,12 +3630,6 @@
     "localPngIcon": "/generated/icons/4ad9c1b8-e58e-2a9d-ccb8-d4d5ae84abc0.png"
   },
   {
-    "geo_tags": [
-      "ams01",
-      "mad02",
-      "mad04",
-      "mad05"
-    ],
     "id": "b6c4a555-5ff6-4e1d-9ce7-0a9976629eab",
     "kind": "iaas",
     "metadata": {
@@ -3688,14 +3638,10 @@
     "name": "cdn-powered-by-akamai",
     "tags": [
       "network",
-      "ams01",
       "custom_kind_iaas",
       "g1",
       "ibm_created",
       "ibm_iaas_g1",
-      "mad02",
-      "mad04",
-      "mad05",
       "network_edge",
       "softlayer",
       "support_ibm"
@@ -3705,6 +3651,7 @@
     "longDescription": "Your users are expecting faster load times for your web applications.\n\nImprove your users’ experience and reduce bounced sessions by delivering content at record speed and caching content closer to your users on the Akamai network.\n \nAvoid network traffic jams, decrease latency, and optimize the performance of your overall cloud solution. \n\nWe’ve partnered with Akamai, a best-of-breed CDN provider, to create one of the world’s fastest and most reliable content delivery networks. \n\nTake advantage of superior web/mobile performance and video delivery solutions – all underpinned by exceptional customer service and 24/7 monitoring. \n\nYou can count on our partnership to support and maximize your business outcomes, each step of the way.",
     "displayName": "Content Delivery Network",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b6c4a555-5ff6-4e1d-9ce7-0a9976629eab/artifacts/cache/6e41ab9b6ff56a28a0a564b86d7356f4-public/cdn-icon.png",
+    "geo_tags": [],
     "localPngIcon": "/generated/icons/b6c4a555-5ff6-4e1d-9ce7-0a9976629eab.png"
   },
   {
@@ -3714,7 +3661,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -3743,7 +3689,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "free",
@@ -3799,7 +3744,6 @@
     },
     "name": "converlistics",
     "pricing_tags": [
-      "free",
       "paid",
       "paid_only"
     ],
@@ -3809,7 +3753,6 @@
       "bot",
       "chatbot",
       "custom_kind_service",
-      "free",
       "ibm_third_party",
       "observability",
       "paid",
@@ -3876,10 +3819,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "au-syd",
       "eu-de",
       "eu-gb",
-      "au-syd"
+      "us-south"
     ],
     "id": "5da26b90-7b83-44b5-b6d3-778b408b77db",
     "kind": "service",
@@ -4025,12 +3968,6 @@
       "support_third_party"
     ],
     "plans": [
-      {
-        "id": "4dd62f11-fdf0-4b6c-afc2-734160f6db9a",
-        "name": "cyberstrong-1-scc-tprm-up-to-50-vendors",
-        "description": "Integrate IBM OpenPages with CyberStrong for Cyber Risk Quantification (CRQ) with Unlimited Usage.",
-        "displayName": "Cyber Risk Quantification for Open Pages"
-      },
       {
         "id": "d49ec891-f2e6-467c-b37d-e5251e487ab8",
         "name": "cyberstrong-2-scc-tprm-up-to-100-vendors",
@@ -4213,7 +4150,6 @@
       "che01",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -4245,7 +4181,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "hipaa",
       "ibm_created",
@@ -4284,7 +4219,6 @@
       "che01",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -4316,7 +4250,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "hipaa",
       "ibm_created",
@@ -4369,14 +4302,13 @@
       "che01",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
       "par01",
+      "satcon_wdc",
       "us-east",
-      "us-south",
-      "satcon_wdc"
+      "us-south"
     ],
     "id": "databases-for-etcd",
     "kind": "service",
@@ -4402,7 +4334,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "hipaa",
       "ibm_created",
@@ -4444,19 +4375,18 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "che01",
-      "eu-de",
       "eu-es",
-      "eu-fr2",
-      "eu-gb",
       "jp-osa",
-      "jp-tok",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4482,7 +4412,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "hipaa",
       "ibm_created",
@@ -4535,7 +4464,6 @@
       "che01",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -4567,7 +4495,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "hipaa",
       "ibm_created",
@@ -4600,20 +4527,19 @@
   },
   {
     "geo_tags": [
-      "au-syd",
+      "che01",
       "br-sao",
       "ca-tor",
-      "che01",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
       "par01",
+      "satcon_wdc",
       "us-east",
       "us-south",
-      "satcon_wdc"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4639,7 +4565,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "hipaa",
       "ibm_created",
@@ -4687,14 +4612,13 @@
       "che01",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
       "par01",
+      "satcon_wdc",
       "us-east",
-      "us-south",
-      "satcon_wdc"
+      "us-south"
     ],
     "id": "databases-for-redis",
     "kind": "service",
@@ -4720,7 +4644,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "hipaa",
       "ibm_created",
@@ -4773,11 +4696,11 @@
     },
     "name": "datastage",
     "pricing_tags": [
+      "paid",
+      "paid_only",
       "allow_internal_users",
       "free",
-      "lite",
-      "paid",
-      "paid_only"
+      "lite"
     ],
     "tags": [
       "analytics",
@@ -4869,10 +4792,10 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "eu-gb",
       "us-south",
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -5030,11 +4953,11 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
-      "eu-de",
       "jp-tok",
       "us-east",
+      "eu-de",
+      "au-syd",
       "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
@@ -5102,50 +5025,46 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "au-syd-1",
       "au-syd-2",
       "au-syd-3",
-      "au-syd",
+      "br-sao",
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
-      "br-sao",
+      "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
       "ca-tor-3",
-      "ca-tor",
+      "eu-de",
       "eu-de-1",
       "eu-de-2",
       "eu-de-3",
-      "eu-de",
+      "eu-es",
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-es",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
-      "eu-fr2",
+      "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
       "eu-gb-3",
-      "eu-gb",
+      "jp-osa",
       "jp-osa-1",
       "jp-osa-2",
       "jp-osa-3",
-      "jp-osa",
+      "jp-tok",
       "jp-tok-1",
       "jp-tok-2",
       "jp-tok-3",
-      "jp-tok",
+      "us-east",
       "us-east-1",
       "us-east-2",
       "us-east-3",
-      "us-east",
+      "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "us-south"
+      "us-south-3"
     ],
     "id": "is.dedicated-host",
     "kind": "service",
@@ -5187,10 +5106,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -6283,7 +6198,6 @@
       "au-syd",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "us-south"
     ],
@@ -6311,7 +6225,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "event-notifications",
       "free",
@@ -6356,12 +6269,10 @@
       "ca-tor",
       "che01",
       "eu-de",
-      "eu-fr2",
+      "eu-es",
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "us-south",
       "satcon_dal",
       "satcon_fra",
       "satcon_lon",
@@ -6371,7 +6282,8 @@
       "satcon_tok",
       "satcon_tor",
       "satcon_wdc",
-      "eu-es"
+      "us-east",
+      "us-south"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -6400,7 +6312,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "free",
@@ -6473,9 +6384,6 @@
     "localPngIcon": "/generated/icons/6a7f4e38-f218-48ef-9dd2-df408747568e.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-bigip",
     "kind": "service",
     "metadata": {
@@ -6485,20 +6393,14 @@
       }
     },
     "name": "bigip",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "fs_ready",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -6507,6 +6409,7 @@
     "longDescription": "Optimize performance and ensure availability and security for applications with the F5 BIG-IP suite.",
     "displayName": "F5 BIG-IP",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/F5_Networks_logo.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-bigip.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-bigip.png"
   },
@@ -6698,10 +6601,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -6731,8 +6630,8 @@
     },
     "name": "is.share",
     "pricing_tags": [
-      "allow_internal_users",
-      "paid"
+      "paid",
+      "allow_internal_users"
     ],
     "tags": [
       "storage",
@@ -6759,10 +6658,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -6858,10 +6753,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -6921,10 +6812,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -6978,7 +6865,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -7006,7 +6892,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "fs cloud",
@@ -7091,9 +6976,6 @@
     "localPngIcon": "/generated/icons/d2fb0ba3-1679-4053-a593-9f2259d9e87b.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-fortigate",
     "kind": "service",
     "metadata": {
@@ -7103,20 +6985,14 @@
       }
     },
     "name": "fortigate",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "network_classic",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -7125,6 +7001,7 @@
     "longDescription": "Order and provision an HA-pair of FortiGate Security Appliance devices through IBM Cloud to protect your network.",
     "displayName": "FortiGate Security Appliance",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/FTNT_Logo_White-Red.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-fortigate.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-fortigate.png"
   },
@@ -7158,9 +7035,6 @@
     "localPngIcon": "/generated/icons/f5b26324-9b39-c701-0cc5-b0d5d2fe8534.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-fortigatevm",
     "kind": "service",
     "metadata": {
@@ -7170,19 +7044,13 @@
       }
     },
     "name": "fortigatevm",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -7191,6 +7059,7 @@
     "longDescription": "Optimize performance and ensure availability and security for applications with the Fortinet FortiGate-VM suite.",
     "displayName": "FortiGate Virtual Appliance",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/FTNT_Logo_White-Red.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-fortigatevm.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-fortigatevm.png"
   },
@@ -7300,9 +7169,6 @@
     "localPngIcon": "/generated/icons/16.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-hcx",
     "kind": "service",
     "metadata": {
@@ -7312,19 +7178,13 @@
       }
     },
     "name": "hcx",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -7333,6 +7193,7 @@
     "longDescription": "Extend the networks of your on-premises data centers into IBM Cloud, and migrate your VMs to or from IBM Cloud without any change.",
     "displayName": "HCX",
     "imageUrl": "/infrastructure/vmware-solutions/images/icons/HCX.svg",
+    "geo_tags": [],
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hcx.png"
   },
   {
@@ -7443,9 +7304,6 @@
     "localPngIcon": "/generated/icons/BE3AADC2-2C1A-4078-82F0-A33B1FD86EB0.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-horizon",
     "kind": "service",
     "metadata": {
@@ -7455,19 +7313,13 @@
       }
     },
     "name": "horizon",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_managed_service"
     ],
@@ -7476,6 +7328,7 @@
     "longDescription": "A seamlessly integrated hybrid cloud for virtual desktops and applications based on VMware Horizon® 7.",
     "displayName": "Horizon 7",
     "imageUrl": "/infrastructure/vmware-solutions/images/icons/horizon7.svg",
+    "geo_tags": [],
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-horizon.png"
   },
   {
@@ -7508,15 +7361,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
-      "eu-gb",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -7540,7 +7392,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "freesia",
@@ -7672,9 +7523,6 @@
     "localPngIcon": "/generated/icons/986f2197-9f9a-44f4-9463-f17ec64c6729.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustcc",
     "kind": "service",
     "metadata": {
@@ -7684,19 +7532,13 @@
       }
     },
     "name": "hytrustcc",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -7705,13 +7547,11 @@
     "longDescription": "Provide automated protection and compliance support, enabling better visibility and control over your cloud environment and administrators.",
     "displayName": "HyTrust CloudControl",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/hytrust.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustcc.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustcc.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustdc",
     "kind": "service",
     "metadata": {
@@ -7721,19 +7561,13 @@
       }
     },
     "name": "hytrustdc",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -7742,13 +7576,11 @@
     "longDescription": "Protect your data with powerful encryption and scalable key management to secure your workloads throughout their lifecycles.",
     "displayName": "HyTrust DataControl",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/hytrust.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustdc.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustdc.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustkc",
     "kind": "service",
     "metadata": {
@@ -7758,19 +7590,13 @@
       }
     },
     "name": "hytrustkc",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -7779,6 +7605,7 @@
     "longDescription": "Provide scalable and highly available key management for your data security needs.",
     "displayName": "HyTrust KeyControl",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/hytrust.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustkc.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustkc.png"
   },
@@ -7789,7 +7616,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -7820,7 +7646,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "iam_compatible",
       "ibm_created",
@@ -7924,12 +7749,6 @@
     "localPngIcon": "/generated/icons/EEB04BA5-25BB-4E52-AAE5-9C7BEF86543B.png"
   },
   {
-    "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "us-east",
-      "us-south"
-    ],
     "id": "iotf-service-id",
     "kind": "service",
     "metadata": {
@@ -7938,28 +7757,18 @@
     },
     "name": "iotf-service",
     "pricing_tags": [
-      "free",
-      "lite",
-      "paid_only",
       "paygo"
     ],
     "tags": [
       "custom_kind_service",
-      "eu-de",
-      "eu-gb",
-      "free",
       "gc_migrate",
       "ibm_created",
       "ibm_dedicated_public",
       "internet of things",
       "internet_of_things",
       "lite",
-      "paid_only",
       "paygo",
-      "rc_compatible",
-      "support_ibm",
-      "us-east",
-      "us-south"
+      "support_ibm"
     ],
     "plans": [
       {
@@ -7974,6 +7783,7 @@
     "longDescription": "This service is the hub for IBM Watson IoT and lets you communicate with and consume data from connected devices and gateways. Use the built-in web console dashboards to monitor your IoT data and analyze it in real time. Then, enhance and customize your IBM Watson IoT Platform experience by building and connecting your own apps by using messaging and REST APIs.",
     "displayName": "Internet of Things Platform",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/iotf-service-id/artifacts/cache/6260f9f0a0614fadec4c28aaa24bb0ab-public/Internet%20of%20Things.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/iotf-service-id.svg",
     "localPngIcon": "/generated/icons/iotf-service-id.png"
   },
@@ -7990,9 +7800,9 @@
     "name": "internet-svcs",
     "pricing_tags": [
       "allow_internal_users",
-      "free",
       "paid",
-      "paid_only"
+      "paid_only",
+      "free"
     ],
     "tags": [
       "allow_internal_users",
@@ -8285,19 +8095,18 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "eu-es",
+      "jp-osa",
+      "us-east",
       "satcon_fra",
       "satcon_wdc",
       "au-syd",
-      "br-sao",
-      "ca-tor",
       "eu-de",
-      "eu-es",
-      "eu-fr2",
       "eu-gb",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "us-south",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8322,7 +8131,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "fs cloud",
@@ -8371,9 +8179,6 @@
     "localPngIcon": "/generated/icons/ee41347f-b18e-4ca6-bf80-b5467c63f9a6.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter",
     "kind": "service",
     "metadata": {
@@ -8383,19 +8188,13 @@
       }
     },
     "name": "kmipadapter",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_service"
     ],
@@ -8404,13 +8203,14 @@
     "longDescription": "Cloud-based security service that provides life cycle management for encryption keys that are used in IBM Cloud services or customer-built applications.",
     "displayName": "KMIP for VMware",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/KMIP.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.png"
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
+      "eu-de",
       "jp-tok",
       "us-south"
     ],
@@ -8701,25 +8501,22 @@
   },
   {
     "geo_tags": [
+      "ams03",
       "au-syd",
-      "eu-de",
-      "eu-fr2",
-      "eu-gb",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "us-south",
       "br-sao",
       "ca-tor",
-      "eu-es",
-      "ams03",
       "che01",
       "dal10",
       "dal12",
       "dal13",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
       "fra02",
       "fra04",
       "fra05",
+      "jp-osa",
+      "jp-tok",
       "lon04",
       "lon05",
       "lon06",
@@ -8740,6 +8537,8 @@
       "tok04",
       "tok05",
       "tor01",
+      "us-east",
+      "us-south",
       "wdc04",
       "wdc06",
       "wdc07"
@@ -8775,7 +8574,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "fra02",
       "fra04",
@@ -9150,7 +8948,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -9165,9 +8962,9 @@
     },
     "name": "is.load-balancer",
     "pricing_tags": [
-      "allow_internal_users",
       "paid",
-      "paid_only"
+      "paid_only",
+      "allow_internal_users"
     ],
     "tags": [
       "allow_internal_users",
@@ -9178,7 +8975,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "financial services validated",
@@ -9245,7 +9041,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "in-che",
       "jp-osa",
@@ -9280,7 +9075,6 @@
       "eu_access",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "freesia",
@@ -9344,9 +9138,6 @@
     "localPngIcon": "/generated/icons/e13e1860-959c-11e8-871e-ad157af61ad7.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-managedveeam",
     "kind": "service",
     "metadata": {
@@ -9356,19 +9147,13 @@
       }
     },
     "name": "managedveeam",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_managed_service"
     ],
@@ -9377,13 +9162,11 @@
     "longDescription": "Deploy a fully-managed backup environment leveraging Veeam and IBM Resiliency Services.",
     "displayName": "Managed Backup Services",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/Veeam_logo_2017_green.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-managedveeam.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-managedveeam.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-managedzerto",
     "kind": "service",
     "metadata": {
@@ -9393,19 +9176,13 @@
       }
     },
     "name": "managedzerto",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_managed_service"
     ],
@@ -9414,6 +9191,7 @@
     "longDescription": "Deploy a fully-managed Disaster Recovery environment leveraging Zerto and IBM Resiliency Services.",
     "displayName": "Managed Disaster Recovery Services",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/zerto.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-managedzerto.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-managedzerto.png"
   },
@@ -9447,9 +9225,6 @@
     "localPngIcon": "/generated/icons/cfb3c3da-7b1f-0879-f414-f367da218488.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-imi",
     "kind": "service",
     "metadata": {
@@ -9459,19 +9234,13 @@
       }
     },
     "name": "imi",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
       "custom_kind_service",
-      "free",
       "gc_migrate",
-      "hipaa",
       "ibm cloud for vmware solutions",
       "ibm_created",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "vmware",
       "vmware_managed_service"
     ],
@@ -9480,12 +9249,12 @@
     "longDescription": "Enable IBM Integrated Managed VMware services to deliver dynamic remote management services for a broad range of cloud infrastructures.",
     "displayName": "Managed VMware Services",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/ManagedServicesIMI-v1.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-imi.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-imi.png"
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-south"
     ],
     "id": "14bd30e0-8921-11e9-a2c5-13fceaf553c0",
@@ -9506,7 +9275,6 @@
       "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
-      "eu-de",
       "free",
       "iam_compatible",
       "ibm_created",
@@ -9759,7 +9527,7 @@
     "description": "Enterprise-grade messaging hosted in the cloud",
     "longDescription": "IBM MQ provides proven, enterprise-grade messaging capabilities, such as point-to-point and publish/subscribe models, to facilitate the flow of information between applications. This service enables you to use IBM MQ as a managed offering. The IBM Cloud handles upgrades, patches, and many of the operational management tasks on your behalf, so you can focus on integrating MQ with your applications.\n\nThis service enables you to use IBM MQ as a managed offering. The IBM Cloud handles upgrades, patches, and many of the operational management tasks on your behalf, so you can focus on integrating MQ with your applications.",
     "displayName": "MQ",
-    "imageUrl": "https://us-preprod.mq.test.cloud.ibm.com/assets/images/ibm_mq.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4/artifacts/cache/5b8b446ea51e635ad4bec666935a31b8-public/MQ.svg",
     "localSvgIcon": "/generated/icons/01037c41-adce-4bb5-8b45-0c06004916c4.svg",
     "localPngIcon": "/generated/icons/01037c41-adce-4bb5-8b45-0c06004916c4.png"
   },
@@ -9770,7 +9538,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -9801,7 +9568,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "iam_compatible",
@@ -9947,10 +9713,10 @@
   },
   {
     "geo_tags": [
+      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-east",
-      "ca-tor",
       "us-south"
     ],
     "id": "cc42cff0-b19b-11eb-9a66-c717766c1d30",
@@ -10714,7 +10480,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -10745,7 +10510,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "iam_compatible",
@@ -11546,10 +11310,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -11607,10 +11367,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -12319,13 +12075,13 @@
   {
     "geo_tags": [
       "au-syd",
-      "us-south",
+      "br-sao",
       "eu-de",
       "eu-es",
       "jp-osa",
-      "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
     "kind": "service",
@@ -12463,7 +12219,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "us-south"
     ],
     "id": "compliance",
@@ -12487,7 +12242,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "free",
       "fs_ready",
       "iam_compatible",
@@ -12604,7 +12358,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -12632,7 +12385,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "iam_compatible",
@@ -12981,7 +12733,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -13009,7 +12760,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "iam_compatible",
@@ -13275,10 +13025,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -13336,10 +13082,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -13820,7 +13562,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -13850,7 +13591,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "free",
       "iam_compatible",
@@ -13887,7 +13627,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -13914,7 +13653,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "freesia",
@@ -13958,7 +13696,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -13988,7 +13725,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "fs_ready",
       "iam_compatible",
@@ -14216,50 +13952,46 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
       "eu-de",
-      "eu-es",
-      "eu-fr2",
-      "eu-gb",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "us-south",
-      "ca-tor-1",
-      "ca-tor-2",
-      "ca-tor-3",
       "au-syd-1",
+      "au-syd",
       "au-syd-2",
       "au-syd-3",
-      "eu-de-1",
-      "eu-de-2",
-      "eu-de-3",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
-      "eu-gb-1",
-      "eu-gb-2",
-      "eu-gb-3",
-      "jp-osa-1",
-      "jp-osa-2",
-      "jp-osa-3",
-      "jp-tok-1",
-      "jp-tok-2",
-      "jp-tok-3",
-      "us-east-1",
-      "us-east-2",
-      "us-east-3",
-      "us-south-1",
-      "us-south-2",
-      "us-south-3",
+      "br-sao",
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-tor",
+      "ca-tor-1",
+      "ca-tor-2",
+      "ca-tor-3",
+      "eu-de-1",
+      "eu-de-2",
+      "eu-de-3",
+      "eu-es",
       "eu-es-1",
       "eu-es-2",
-      "eu-es-3"
+      "eu-es-3",
+      "eu-gb",
+      "eu-gb-1",
+      "eu-gb-2",
+      "eu-gb-3",
+      "jp-osa",
+      "jp-osa-1",
+      "jp-osa-2",
+      "jp-osa-3",
+      "jp-tok",
+      "jp-tok-1",
+      "jp-tok-2",
+      "jp-tok-3",
+      "us-east",
+      "us-east-1",
+      "us-east-2",
+      "us-east-3",
+      "us-south",
+      "us-south-1",
+      "us-south-2",
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -14305,10 +14037,6 @@
       "eu-es-1",
       "eu-es-2",
       "eu-es-3",
-      "eu-fr2",
-      "eu-fr2-1",
-      "eu-fr2-2",
-      "eu-fr2-3",
       "eu-gb",
       "eu-gb-1",
       "eu-gb-2",
@@ -15218,7 +14946,6 @@
       "ca-tor",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "jp-osa",
       "jp-tok",
@@ -15233,9 +14960,9 @@
     },
     "name": "is.vpn",
     "pricing_tags": [
-      "allow_internal_users",
       "paid",
-      "paid_only"
+      "paid_only",
+      "allow_internal_users"
     ],
     "tags": [
       "network",
@@ -15247,7 +14974,6 @@
       "custom_kind_service",
       "eu-de",
       "eu-es",
-      "eu-fr2",
       "eu-gb",
       "financial services",
       "fs cloud",
@@ -15552,10 +15278,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "jp-tok"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -15565,10 +15291,10 @@
     },
     "name": "data-science-experience",
     "pricing_tags": [
-      "free",
-      "lite",
       "paid_only",
       "paygo",
+      "free",
+      "lite",
       "subscription",
       "subscription_only"
     ],
@@ -15707,11 +15433,11 @@
     "name": "conversation",
     "pricing_tags": [
       "allow_internal_users",
-      "free",
-      "lite",
       "paid",
       "paygo",
-      "subscription"
+      "subscription",
+      "free",
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
@@ -15924,8 +15650,8 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "2ad019f3-0fd6-4c25-966d-f3952481a870",
     "kind": "service",
@@ -15935,11 +15661,11 @@
     },
     "name": "aiopenscale",
     "pricing_tags": [
+      "paid",
+      "paid_only",
       "allow_internal_users",
       "free",
-      "lite",
-      "paid",
-      "paid_only"
+      "lite"
     ],
     "tags": [
       "ai",
