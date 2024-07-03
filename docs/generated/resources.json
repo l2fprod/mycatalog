@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -378,15 +378,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4786,6 +4786,7 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "eu-de",
       "br-sao",
@@ -4794,8 +4795,7 @@
       "mil01",
       "mon01",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8089,10 +8089,6 @@
   },
   {
     "geo_tags": [
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-de",
       "eu-gb",
       "us-south",
       "jp-tok",
@@ -8100,7 +8096,11 @@
       "ca-tor",
       "eu-es",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
+      "eu-de"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15333,6 +15333,7 @@
       "subscription",
       "free",
       "lite",
+      "paygo",
       "allow_internal_users"
     ],
     "tags": [
@@ -15356,6 +15357,7 @@
       "jp-tok",
       "lite",
       "paid",
+      "paygo",
       "rc_compatible",
       "subscription",
       "support_ibm",
