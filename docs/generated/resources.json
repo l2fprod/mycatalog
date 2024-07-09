@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -378,7 +378,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -386,7 +385,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1546,71 +1546,6 @@
     "imageUrl": "https://broker-staging.vpnaasdev.cloud.ibm.com/C2S_icon.svg",
     "localSvgIcon": "/generated/icons/is.vpn-server.svg",
     "localPngIcon": "/generated/icons/is.vpn-server.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "c3d3e46c-935d-4485-921f-2acc4686c23b",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "yayzy-limited-b2b-api",
-    "pricing_tags": [
-      "free",
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "api",
-      "climate",
-      "custom_kind_service",
-      "environment",
-      "finance",
-      "financial",
-      "free",
-      "global",
-      "ibm_third_party",
-      "impact",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "bf34a182-2229-4530-a80c-ae956c068178",
-        "name": "yayzy-limited-b2b-api-free-test",
-        "description": "Up to 10 end users.",
-        "displayName": "Free Tier"
-      },
-      {
-        "id": "0dea8120-661d-40b9-8ea2-6da77f22af15",
-        "name": "yayzy-limited-b2b-api-tier-1",
-        "description": "Up to 100,000 end users.",
-        "displayName": "Tier 1"
-      },
-      {
-        "id": "f04bce44-e652-456a-936c-4ad6b334593f",
-        "name": "yayzy-limited-b2b-api-tier-2",
-        "description": "Up to 500,000 end users.",
-        "displayName": "Tier 2"
-      },
-      {
-        "id": "098531d8-61e9-41e2-972b-b94f9dad3cb5",
-        "name": "yayzy-limited-b2b-api-tier-3",
-        "description": "Up to 1,000,000 end users.",
-        "displayName": "Tier 3"
-      }
-    ],
-    "description": "This API allows banks to provide their customers with carbon metrics associated with their purchases, and buy offsets.",
-    "longDescription": "Yayzy’s Climate Impact APIs provide meaningful sustainability insights to individuals by firstly categorising payment transactions at a highly granular level, then applying a Carbon Intensity Factor using globally recognised emissions data. The solution also factors in individual lifestyle choices – for example, whether the person is vegan or drives an electric vehicle - and the recognised sustainability credentials of the retailers they buy from, such as B Corp or Carbon Neutral, to provide a highly granular carbon footprint for each transaction a customer makes.\n\nAggregating the data provides customers with a holistic view of their personal carbon footprint. Yayzy then offers EcoTips and sustainable alternatives, helping consumers to reduce their impact. Finally, for emissions that cannot be avoided, Yayzy’s solution offers customers other ways to become completely carbon neutral, such as contributing to permanent carbon removal and certified carbon offset projects.",
-    "displayName": "Climate Impact API",
-    "imageUrl": "https://s3.eu-west-2.amazonaws.com/a.yayzy.com/favicon.png",
-    "localPngIcon": "/generated/icons/c3d3e46c-935d-4485-921f-2acc4686c23b.png"
   },
   {
     "geo_tags": [
@@ -4369,10 +4304,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4380,7 +4311,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4786,7 +4721,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "eu-de",
       "br-sao",
@@ -4795,7 +4729,8 @@
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4947,12 +4882,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6080,45 +6015,6 @@
     "imageUrl": "https://broker.dns-svcs.cloud.ibm.com/dns_svcs_icon.svg",
     "localSvgIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.svg",
     "localPngIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "18973dd7-184b-4e71-8485-84af8e81dbe0",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "dubber-pty-ltd-unified-recording",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "global",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "817eae0d-6524-4afc-b9de-a0ef005b203d",
-        "name": "dubber-pty-ltd-unified-recording-premier",
-        "description": "AI-enriched secure and compliant recording with insights and advanced Enterprise-grade controls",
-        "displayName": "Premier"
-      }
-    ],
-    "description": "AI-enriched communications (call, meeting, chat, sms) recording",
-    "longDescription": "AI-enriched communications that delivers rich enterprise-wide insights and intelligence based on conversation data and business intelligence. Unify recordings and data from multiple services and end-points.\nElevate customer experience, ensure compliance and business outcomes by creating deeply integrated solutions with CRM, contact centre and big data sets.",
-    "displayName": "Dubber Unified Recording",
-    "imageUrl": "https://res.cloudinary.com/dubber/image/upload/v1665975172/Dubber_Icon_-_Reversed_-_32_x_32px_2x_twl8fw.png",
-    "localPngIcon": "/generated/icons/18973dd7-184b-4e71-8485-84af8e81dbe0.png"
   },
   {
     "id": "d1e3f0d2-0f49-ddfd-0eb9-2897b9d3a45d",
@@ -13395,7 +13291,7 @@
       {
         "id": "b53b08bb-a72f-41b1-975e-e668b820b440",
         "name": "vdc-paid",
-        "description": "Virtual Data Center Paid Plan",
+        "description": "Virtual Data Center Paid Plan\nUsed by Single Tenant Virtual Data Centers",
         "displayName": "VDC Paid",
         "originalName": "vdc-paid"
       }
@@ -13875,6 +13771,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -13913,8 +13810,7 @@
       "us-south-1",
       "us-south-2",
       "us-south-3",
-      "eu-de",
-      "au-syd-1"
+      "eu-de"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15175,10 +15071,10 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "eu-de",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -15367,6 +15263,13 @@
     ],
     "plans": [
       {
+        "id": "4ae68471-07c3-4f02-a49d-d19cb4a29ac9",
+        "name": "enterprise",
+        "description": "Scale and secure your assistant with enterprise-grade support and data governance",
+        "displayName": "Enterprise",
+        "originalName": "premium-userbased"
+      },
+      {
         "id": "bfb69661-13fa-4213-b414-6ef29745abcd",
         "name": "enterprisedataisolation",
         "description": "To purchase Enterprise with data isolation, or add data isolation to an existing Enterprise plan, contact us at: http://ibm.biz/contact-wa-enterprise",
@@ -15393,13 +15296,6 @@
         "description": "When your 30 day trial is over you can upgrade to Plus to continue using these features or export your content and create a lite instance to work off of.",
         "displayName": "Trial",
         "originalName": "plus-trial"
-      },
-      {
-        "id": "4ae68471-07c3-4f02-a49d-d19cb4a29ac9",
-        "name": "premium-userbased",
-        "description": "Scale and secure your assistant with enterprise-grade support and data governance",
-        "displayName": "Enterprise",
-        "originalName": "premium-userbased"
       }
     ],
     "description": "IBM watsonx Assistant lets you build conversational interfaces into any application, device, or channel.",
