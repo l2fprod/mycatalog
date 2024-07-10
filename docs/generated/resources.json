@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4304,6 +4304,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4311,11 +4315,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4721,16 +4721,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4882,12 +4882,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "au-syd"
+      "au-syd",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7251,14 +7251,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8099,10 +8099,10 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -13771,6 +13771,8 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -13808,9 +13810,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "eu-de",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15071,10 +15071,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "jp-tok"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -15544,6 +15544,7 @@
       "power-iaas",
       "rc_compatible",
       "sap hana",
+      "sap_certified",
       "support_ibm",
       "us-south",
       "virtualservers"
