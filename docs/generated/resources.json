@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4298,10 +4298,15 @@
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
     "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/etcd.svg",
+    "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4309,11 +4314,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4449,6 +4450,7 @@
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
     "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mysql.svg",
+    "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
@@ -4606,6 +4608,7 @@
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
     "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/redis.svg",
+    "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
   {
@@ -4717,6 +4720,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -4724,8 +4729,6 @@
       "mon01",
       "us-east",
       "eu-gb",
-      "au-syd",
-      "eu-de",
       "us-south"
     ],
     "id": "dashdb-for-transactions",
@@ -4878,13 +4881,13 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
+      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "au-syd"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7257,14 +7260,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -7991,6 +7994,10 @@
   },
   {
     "geo_tags": [
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
+      "eu-de",
       "eu-gb",
       "us-south",
       "jp-tok",
@@ -7998,11 +8005,7 @@
       "ca-tor",
       "eu-es",
       "jp-osa",
-      "us-east",
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8105,10 +8108,10 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -9273,6 +9276,7 @@
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
     "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
   {
@@ -11933,7 +11937,7 @@
       {
         "id": "869c191a-3c2a-4faf-98be-18d48f95ba1f",
         "name": "trial",
-        "description": "You can have one Trial instance provisioned in your account at any time. After your trial expires, functionality is removed but your instance remains available to upgrade for an additional 30 days.",
+        "description": "You can have one Trial instance provisioned in your account at any time. After your trial expires, functionality is removed.",
         "displayName": "Trial",
         "originalName": "trial"
       }
@@ -13776,6 +13780,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -13814,8 +13819,7 @@
       "us-south-1",
       "us-south-2",
       "us-south-3",
-      "eu-de",
-      "au-syd-1"
+      "eu-de"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -13831,6 +13835,8 @@
     ],
     "tags": [
       "compute",
+      "accelerators",
+      "ai server",
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
@@ -13871,6 +13877,7 @@
       "fs_ready",
       "fs-ready",
       "fss",
+      "gpu",
       "hipaa",
       "hpcs",
       "hpvs",
@@ -13882,6 +13889,7 @@
       "iam_compatible",
       "ibm_created",
       "ibm_release",
+      "inferencing",
       "is.composite",
       "jp-osa",
       "jp-osa-1",
@@ -13893,6 +13901,7 @@
       "jp-tok-3",
       "linux virtual server",
       "linuxone",
+      "nvidia",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -13905,6 +13914,7 @@
       "secure multi party collaboration",
       "secure-execution",
       "support_ibm",
+      "training",
       "unbuntu",
       "us-east",
       "us-east-1",
@@ -15076,10 +15086,10 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "eu-de",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
