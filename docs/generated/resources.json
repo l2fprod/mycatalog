@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4721,16 +4721,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "us-south"
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4882,13 +4882,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8002,6 +8002,8 @@
   },
   {
     "geo_tags": [
+      "satcon_fra",
+      "satcon_wdc",
       "au-syd",
       "eu-de",
       "eu-gb",
@@ -8011,9 +8013,7 @@
       "ca-tor",
       "eu-es",
       "jp-osa",
-      "us-east",
-      "satcon_fra",
-      "satcon_wdc"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13243,7 +13243,6 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Cloud Director Site",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/vmware.directorsite.svg",
     "localPngIcon": "/generated/icons/vmware.directorsite.png"
   },
   {
@@ -13321,7 +13320,6 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Virtual Data Center",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/vmware.vdc.svg",
     "localPngIcon": "/generated/icons/vmware.vdc.png"
   },
   {
@@ -14569,7 +14567,6 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VMware Solutions",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.png"
   },
   {
