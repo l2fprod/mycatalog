@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -378,7 +378,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -386,7 +385,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4304,10 +4304,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4315,7 +4311,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4721,16 +4721,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "eu-de"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4882,13 +4882,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "au-syd",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7268,14 +7268,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -13243,6 +13243,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Cloud Director Site",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.directorsite.svg",
     "localPngIcon": "/generated/icons/vmware.directorsite.png"
   },
   {
@@ -13320,6 +13321,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Virtual Data Center",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.vdc.svg",
     "localPngIcon": "/generated/icons/vmware.vdc.png"
   },
   {
@@ -14567,6 +14569,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VMware Solutions",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.png"
   },
   {
@@ -15095,10 +15098,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "jp-tok"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
