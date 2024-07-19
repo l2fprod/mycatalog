@@ -180,14 +180,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -378,15 +378,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4460,7 +4460,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4472,7 +4471,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4729,9 +4729,9 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -4890,13 +4890,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7276,14 +7276,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8010,18 +8010,18 @@
   },
   {
     "geo_tags": [
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "jp-tok",
       "br-sao",
       "ca-tor",
       "eu-es",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9359,10 +9359,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12477,7 +12477,7 @@
       }
     ],
     "description": "Skytap is a cloud service designed specifically to natively run AIX, Linux and IBM i on POWER and x86, Windows and Linux traditional enterprise applications.",
-    "longDescription": "Skytap is a cloud service purpose-built to natively run traditional systems in the cloud. It is the only cloud service to support AIX, IBM i, and Linux on IBM POWER together with x86 workloads, enabling businesses to accelerate their journey to the cloud and increase innovation. \n\n# Features\n\n**Migrate AIX, IBM i, and Linux Application Unchanged**\n* Rehost applications in Skytap on IBM Cloud without rearchitecting or rewriting\n* Migrate POWER components alongside x86/Windows components\n* Choose from multiple migration paths\n\n**Enable Agile Development**\n* Provision resource in seconds with self-service access to production-ready environments\n* Eliminate configuration drift with cloneable environments that are identical down to MAC and IP addresses\n* Streamline end-to-end testing with blended environments running on multiple architectures\n* Automate Skytap functionality with RESTful APIs\n\n\n**Prioritize HA/DR**\n* Highly available infrastructure that can be combined with 3rd party HA/DR solutions and redundant application architecture design\n* Support for IBM PowerHA, HelpSystems RobotHA, Syncsort Mimix, IBM i BRMS combined with IBM Cloud Storage Solutions for IBM i, and more\n\n**Maintain Visibility and Control**\n* Create and manage application environment templates that can be self-provisioned, cloned, and shared\n* Set role-based access permissions and granular quota management\n* Supports popular IBM i operator functions like Active boot Modes and Dedicated Service Tools (DST)\n* Manage IBM i using green screen, Access Client Solutions, or Navigator for i\n\n**Maximize Your Investment Dollars**\n* Choose the right size for your workload and avoid unnecessary over provisioning\n* Resize as needed\n* Manage your spending for dynamic and always on workloads with controls to prevent unplanned overages\n\n\nGetting Support\n\nUse our support form (https://cloud.skytap.com/support) to submit issues; provide as much detail as possible. Support tickets are handled based upon your support level and issue severity. Before you submit an issue, please review our documentation at https://help.skytap.com/skytap-support.html.",
+    "longDescription": "Skytap is a cloud service purpose-built to natively run traditional systems in the cloud. It is the only cloud service to support AIX, IBM i, and Linux on IBM POWER together with x86 workloads, enabling businesses to accelerate their journey to the cloud and increase innovation. \n\n\n**Getting Support**\nUse our support form (https://cloud.skytap.com/support) to submit issues; provide as much detail as possible. Support tickets are handled based upon your support level and issue severity. Before you submit an issue, please review our documentation at https://help.skytap.com/skytap-support.html.",
     "displayName": "Skytap On IBM Cloud",
     "imageUrl": "https://cloud.skytap.com/static/images/branding/default/skytap_logomark.svg",
     "localSvgIcon": "/generated/icons/fdf77820-deed-11e9-911d-5f09017358ff.svg",
@@ -14968,10 +14968,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "jp-tok",
       "eu-gb",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
