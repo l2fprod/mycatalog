@@ -224,14 +224,14 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb"
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -422,15 +422,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1174,34 +1174,6 @@
       "vpc"
     ],
     "plans": [
-      {
-        "id": "64841f3b-3a6f-4893-831a-54a6abaf1dd7",
-        "name": "gen1-volume-10iops-tier",
-        "description": "Storage provisioned with 10 IOPS per GB for \nMost Demanding workloads such as analytics, big data, NoSQL databases, machine learning, and video processing.",
-        "displayName": "10 IOPS per GB Gen1",
-        "originalName": "10iops-tier"
-      },
-      {
-        "id": "d6a91ea7-c777-4819-bcf9-4336517d03d8",
-        "name": "gen1-volume-5iops-tier",
-        "description": "Storage provisioned with  5 IOPS per GB is charged per GB provisioned on an hourly basis based until the storage is deleted.",
-        "displayName": "5 IOPS/GB Tier Gen1",
-        "originalName": "5iops-tier"
-      },
-      {
-        "id": "e2893d43-8cfb-482f-a6ec-990312fc95b8",
-        "name": "gen1-volume-custom-",
-        "description": "Custom IOPS allows users to specify the IOPS they want to assign to their storage.  They are charged based on both provisioned IOPS and GB on an hour basis until the storage is deleted.",
-        "displayName": "Custom IOPS Gen1",
-        "originalName": "Custom "
-      },
-      {
-        "id": "e65b2a9c-039c-4ed5-8c30-6fb7bb285b92",
-        "name": "gen1-volume-general-purpose",
-        "description": "General purpose tier delivering 3 IOPS/GB and charged per GB of storage provisioned by the hour until the storage is deleted.",
-        "displayName": "General Purpose Tier Gen1",
-        "originalName": "general-purpose"
-      },
       {
         "id": "404d1a85-d8eb-45b6-a03c-3a6d247b340b",
         "name": "gen2-volume-10iops-tier",
@@ -2055,6 +2027,7 @@
   },
   {
     "geo_tags": [
+      "ca-tor",
       "eu-de",
       "eu-es"
     ],
@@ -2073,6 +2046,7 @@
       "activity tracker",
       "apidocs_enabled",
       "audit events",
+      "ca-tor",
       "custom_kind_service",
       "eu_access",
       "eu-de",
@@ -4028,6 +4002,7 @@
     "longDescription": "Data Engine is IBM Cloud's central service for data lakes. It provides stream ingestion, data preparation, ETL, and data query from Object Storage and Kafka. It also manages tables and views in a catalog that is compatible with Hive metastore and other big data engines and services can connect to it. Data Engine supports full standard ANSI SQL to submit work as serverless jobs. There is no infrastructure to manage. The service is highly available, offers a Multi-AZ deployment, and autoscales based on your workload.",
     "displayName": "Data Engine (previously SQL Query)",
     "imageUrl": "https://broker.sql-query.cloud.ibm.com/dataengine.light-theme.svg",
+    "localSvgIcon": "/generated/icons/a0814030-c9dd-11e7-9a5e-19d80fed5e00.svg",
     "localPngIcon": "/generated/icons/a0814030-c9dd-11e7-9a5e-19d80fed5e00.png"
   },
   {
@@ -4385,6 +4360,10 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "financial services",
+      "fs cloud",
+      "fs_ready",
+      "fss",
       "hipaa",
       "ibm_created",
       "jp-osa",
@@ -4499,6 +4478,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4510,8 +4490,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4538,6 +4517,10 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "financial services",
+      "fs cloud",
+      "fs_ready",
+      "fss",
       "hipaa",
       "ibm_created",
       "jp-osa",
@@ -4771,9 +4754,9 @@
       "mon01",
       "us-east",
       "eu-gb",
-      "us-south",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4925,13 +4908,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7310,14 +7293,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -7424,6 +7407,7 @@
       "freesia",
       "iam_compatible",
       "ibm_created",
+      "ibm_deprecated",
       "ibm_release",
       "paid",
       "paid_only",
@@ -9393,10 +9377,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12353,7 +12337,6 @@
       "free"
     ],
     "tags": [
-      "apidocs_enabled",
       "custom_kind_service",
       "finance",
       "free",
@@ -12392,7 +12375,6 @@
       "free"
     ],
     "tags": [
-      "apidocs_enabled",
       "custom_kind_service",
       "finance",
       "free",
@@ -13834,7 +13816,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -13873,7 +13854,8 @@
       "us-south-1",
       "us-south-2",
       "us-south-3",
-      "eu-de"
+      "eu-de",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
