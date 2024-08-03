@@ -422,15 +422,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4745,10 +4745,10 @@
       "mil01",
       "mon01",
       "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
-      "eu-de",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4900,13 +4900,13 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7285,14 +7285,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8134,10 +8134,10 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -11631,7 +11631,6 @@
     "tags": [
       "containers",
       "ams03",
-      "apidocs_enabled",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -14976,10 +14975,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -15416,6 +15415,55 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/11530fa0-1776-11ee-93f6-1d4066e6a409/artifacts/cache/4ac77ae8c1d83855e240a6a77d14f7d1-public/watsonxCodeAssistant.svg",
     "localSvgIcon": "/generated/icons/11530fa0-1776-11ee-93f6-1d4066e6a409.svg",
     "localPngIcon": "/generated/icons/11530fa0-1776-11ee-93f6-1d4066e6a409.png"
+  },
+  {
+    "geo_tags": [
+      "us-south"
+    ],
+    "id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "watsonx-orchestrate",
+    "pricing_tags": [
+      "paid",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "allow_internal_users",
+      "custom_kind_service",
+      "iam_compatible",
+      "ibm_created",
+      "paid",
+      "rc_compatible",
+      "support_ibm",
+      "us-south",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "9d82a617-8927-4629-be35-b15fd061cc7b",
+        "name": "essentials",
+        "description": "Essentials Plan for customers to get started quickly building AI Assistants on IBM watsonx Orchestrate.",
+        "displayName": "Essentials Plan",
+        "originalName": "essentials"
+      },
+      {
+        "id": "505cc38b-4f01-4daf-872c-cc7b0d57986e",
+        "name": "standard",
+        "description": "Standard Plan for customers to streamline enterprise processes with expanded automation capabilities. Includes all capabilities from the Essentials Plan.",
+        "displayName": "Standard Plan",
+        "originalName": "standard"
+      }
+    ],
+    "description": "Lighten your workload with IBM watsonx Orchestrate, powered by LLMs. Streamline workflows and automate tasks with a catalog of skills. No specialized training needed.",
+    "longDescription": "IBM watsonx Orchestrate, powered by LLMs, includes pre-built skills that use natural language processing to draw from a catalog of basic and advanced skills to execute your requests, in context and in the right order, without the need for any specialized training or developer experience.",
+    "displayName": "watsonx Orchestrate",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838/artifacts/cache/104066958c7a68895674c0c6b2e8ea89-public/watsonxOrchestrate.svg",
+    "localSvgIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.svg",
+    "localPngIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.png"
   },
   {
     "geo_tags": [
