@@ -224,14 +224,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2030,6 +2030,7 @@
       "ca-tor",
       "eu-de",
       "eu-es",
+      "us-east",
       "us-south"
     ],
     "id": "cd515180-d78a-11ec-b396-db7d306c4f73",
@@ -2063,6 +2064,7 @@
       "paid",
       "rc_compatible",
       "support_ibm",
+      "us-east",
       "us-south"
     ],
     "plans": [
@@ -2121,6 +2123,7 @@
       "eu-es",
       "eu-gb",
       "free",
+      "fs_ready",
       "iam_compatible",
       "ibm_created",
       "ibm_release",
@@ -4741,10 +4744,10 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "eu-gb",
       "us-south",
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -4902,13 +4905,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8022,10 +8025,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8033,7 +8032,11 @@
       "jp-osa",
       "us-east",
       "satcon_fra",
-      "satcon_wdc"
+      "satcon_wdc",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12218,6 +12221,7 @@
       "eu-es",
       "eu-gb",
       "free",
+      "fs_ready",
       "iam_compatible",
       "ibm_created",
       "jp-osa",
@@ -13811,7 +13815,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -13850,7 +13853,8 @@
       "us-south-1",
       "us-south-2",
       "us-south-3",
-      "eu-de"
+      "eu-de",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15272,11 +15276,12 @@
     "name": "conversation",
     "pricing_tags": [
       "paid",
+      "paygo",
+      "allow_internal_users",
+      "paid_only",
       "subscription",
       "free",
-      "lite",
-      "paygo",
-      "allow_internal_users"
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
@@ -15299,6 +15304,7 @@
       "jp-tok",
       "lite",
       "paid",
+      "paid_only",
       "paygo",
       "rc_compatible",
       "subscription",
