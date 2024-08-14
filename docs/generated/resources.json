@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -605,8 +605,7 @@
       "rc_compatible",
       "support_ibm",
       "us-east",
-      "us-south",
-      "virtualservers"
+      "us-south"
     ],
     "plans": [
       {
@@ -4804,16 +4803,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4965,13 +4964,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "us-south",
       "eu-gb",
       "au-syd",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "eu-de"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -5270,7 +5269,7 @@
       }
     ],
     "description": "Provision single-tenant hosts that offer dedicated resources and maximum control over instance placement.",
-    "longDescription": "Dedicated Hosts for VPC are single-tenant hosts that are available exclusively for your use.  Dedicated hosts provide the flexibility for you to use your own software licenses, and provide maximum isolation and control over instance placement to help address corporate compliance and regulatory requirements. \n\n\nDedicated host groups are built into the solution and can help you define one or more dedicated hosts for a specific business purpose.",
+    "longDescription": "Dedicated Hosts for VPC are single-tenant hosts that are available exclusively for your use.  Dedicated hosts provide the flexibility for you to use your own software licenses, and provide maximum isolation and control over instance placement to help address corporate compliance and regulatory requirements.\n\n\nDedicated host groups are built into the solution and can help you define one or more dedicated hosts for a specific business purpose.",
     "displayName": "Dedicated Host for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.dedicated-host/artifacts/IBM_Cloud_DedicatedHost.svg",
     "localSvgIcon": "/generated/icons/is.dedicated-host.svg",
@@ -7350,14 +7349,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8085,6 +8084,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-south",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8092,11 +8095,7 @@
       "jp-osa",
       "us-east",
       "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "satcon_wdc"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13875,8 +13874,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -13914,7 +13911,9 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "eu-de",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15043,10 +15042,10 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
