@@ -480,15 +480,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4082,13 +4082,19 @@
     "name": "data-product-hub",
     "pricing_tags": [
       "paid",
-      "paid_only"
+      "paid_only",
+      "free",
+      "allow_internal_users",
+      "lite"
     ],
     "tags": [
       "analytics",
+      "allow_internal_users",
       "custom_kind_service",
+      "free",
       "iam_compatible",
       "ibm_created",
+      "lite",
       "paid",
       "paid_only",
       "rc_compatible",
@@ -4102,6 +4108,13 @@
         "description": "The Essentials plan is suited for organizations looking to start their journey in sharing business-ready AI and data products.",
         "displayName": "Essentials",
         "originalName": "Essentials"
+      },
+      {
+        "id": "2f13f45a-a01d-4e7a-8f6b-eb915aee0fa6",
+        "name": "lite",
+        "description": "The Lite plan provides you with a free trial of IBM Data Product Hub to begin your journey in sharing business-ready AI and data products.",
+        "displayName": "Lite",
+        "originalName": "lite"
       }
     ],
     "description": "Curate and share trusted data products across your organization.",
@@ -4386,6 +4399,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4393,11 +4410,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4803,8 +4816,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "au-syd",
       "eu-de",
       "br-sao",
@@ -4812,7 +4823,9 @@
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8198,10 +8211,10 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -12103,11 +12116,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
