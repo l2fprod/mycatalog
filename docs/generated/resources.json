@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4403,10 +4403,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4414,7 +4410,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4821,15 +4821,15 @@
   {
     "geo_tags": [
       "us-south",
-      "au-syd",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4981,13 +4981,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7366,14 +7366,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8101,18 +8101,18 @@
   },
   {
     "geo_tags": [
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "jp-tok",
       "br-sao",
       "ca-tor",
       "eu-es",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8215,10 +8215,10 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -13891,8 +13891,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -13930,7 +13928,9 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "eu-de",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -14434,6 +14434,91 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "kr-seo",
+      "us-east",
+      "us-south"
+    ],
+    "id": "09f5a6ea-185e-4625-8281-9e8629360a4f",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "custom_kind_service",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "hdm",
+      "ibm_third_party",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "kr-seo",
+      "network_edge",
+      "nsx",
+      "nsx-t",
+      "nsx-v",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "us-east",
+      "us-south",
+      "vcenter",
+      "vmware"
+    ],
+    "plans": [
+      {
+        "id": "7ff99adc-b236-448f-b4f1-1cac4195c382",
+        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-nsx-v-to-nsx-t",
+        "description": "Variable number of “migration services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services. ",
+        "displayName": "VMware Shared to VCFaaS Migration"
+      },
+      {
+        "id": "6314d33a-99ec-4143-a103-dd5d3a28b453",
+        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-nsx-v-to-nsx-t-cloned-lteie81x",
+        "description": "Variable number of “migration services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.  \n",
+        "displayName": " NSX-V to NSX-T FastTrack"
+      },
+      {
+        "id": "f989f6d0-b72d-4d3a-8c07-79d25fec82aa",
+        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-vcd-cloned-lteimn9l",
+        "description": "Variable number of “managed service units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "displayName": " Managed Services"
+      },
+      {
+        "id": "d9c375f0-70cc-4358-a973-92284e5aa55a",
+        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-vmwaas-cloned-lteins2f",
+        "description": "Variable number of “professional services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services. ",
+        "displayName": " Bespoke - Custom Project"
+      }
+    ],
+    "description": "Workload migrations and professional services performed as predictable, rapid, transparent projects or ongoing management.",
+    "longDescription": "This selection of services targets VMware customers seeking to modernize and embrace various IBM cloud options as either a production or disaster recovery target site.\n\nWhile PrimaryIO offers SaaS products in support of the Cloud Journey targeting data resiliency, this collection is comprised of advisory services and optionally the man-power to accomplish these modernizing, mobility-enhancing, cloud-embracing projects.\n\nThe services are designed to create an easy to consume, yet bespoke, tailored project.  Each project is fully detailed with project plan, associated cost and transparency to the project status with focus on rapid achievement of critical path objectives.\n\nAll projects, irrespective of category and customization, require a current state assessment coupled with a solid understanding of the customer goal and associated target environment.  Once well-comprehended, an accurate statement of work and associated price quote is generated in support of the project.  At such time, the project can be procured through the listed catalog option.",
+    "displayName": "VMware Cloud Migration Services",
+    "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
+    "localPngIcon": "/generated/icons/09f5a6ea-185e-4625-8281-9e8629360a4f.png"
+  },
+  {
+    "geo_tags": [
       "eu-de",
       "global",
       "us-south"
@@ -14581,95 +14666,10 @@
     ],
     "description": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
-    "displayName": "VMware Cloud Foundation",
+    "displayName": "VMware Solutions",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "eu-de",
-      "eu-es",
-      "eu-gb",
-      "in-che",
-      "jp-osa",
-      "jp-tok",
-      "kr-seo",
-      "us-east",
-      "us-south"
-    ],
-    "id": "09f5a6ea-185e-4625-8281-9e8629360a4f",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "custom_kind_service",
-      "eu-de",
-      "eu-es",
-      "eu-gb",
-      "hdm",
-      "ibm_third_party",
-      "in-che",
-      "jp-osa",
-      "jp-tok",
-      "kr-seo",
-      "network_edge",
-      "nsx",
-      "nsx-t",
-      "nsx-v",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "us-east",
-      "us-south",
-      "vcenter",
-      "vmware"
-    ],
-    "plans": [
-      {
-        "id": "7ff99adc-b236-448f-b4f1-1cac4195c382",
-        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-nsx-v-to-nsx-t",
-        "description": "Variable number of “migration services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services. ",
-        "displayName": "VMware Shared to VCFaaS Migration"
-      },
-      {
-        "id": "6314d33a-99ec-4143-a103-dd5d3a28b453",
-        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-nsx-v-to-nsx-t-cloned-lteie81x",
-        "description": "Variable number of “migration services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.  \n",
-        "displayName": " NSX-V to NSX-T FastTrack"
-      },
-      {
-        "id": "f989f6d0-b72d-4d3a-8c07-79d25fec82aa",
-        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-vcd-cloned-lteimn9l",
-        "description": "Variable number of “managed service units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
-        "displayName": " Managed Services"
-      },
-      {
-        "id": "d9c375f0-70cc-4358-a973-92284e5aa55a",
-        "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t-vmwaas-cloned-lteins2f",
-        "description": "Variable number of “professional services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services. ",
-        "displayName": " Bespoke - Custom Project"
-      }
-    ],
-    "description": "Workload migrations and professional services performed as predictable, rapid, transparent projects or ongoing management.",
-    "longDescription": "This selection of services targets VMware customers seeking to modernize and embrace various IBM cloud options as either a production or disaster recovery target site.\n\nWhile PrimaryIO offers SaaS products in support of the Cloud Journey targeting data resiliency, this collection is comprised of advisory services and optionally the man-power to accomplish these modernizing, mobility-enhancing, cloud-embracing projects.\n\nThe services are designed to create an easy to consume, yet bespoke, tailored project.  Each project is fully detailed with project plan, associated cost and transparency to the project status with focus on rapid achievement of critical path objectives.\n\nAll projects, irrespective of category and customization, require a current state assessment coupled with a solid understanding of the customer goal and associated target environment.  Once well-comprehended, an accurate statement of work and associated price quote is generated in support of the project.  At such time, the project can be procured through the listed catalog option.",
-    "displayName": "VMware Cloud Migration Services",
-    "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
-    "localPngIcon": "/generated/icons/09f5a6ea-185e-4625-8281-9e8629360a4f.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-vcenterserver",
