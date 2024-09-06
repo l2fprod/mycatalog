@@ -480,15 +480,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4565,6 +4565,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4575,9 +4577,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd",
-      "che01"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4834,16 +4834,16 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -4995,13 +4995,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7380,14 +7380,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8115,18 +8115,18 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "eu-es",
       "jp-osa",
       "us-east",
       "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "jp-tok"
+      "satcon_wdc"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8229,10 +8229,10 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -10693,14 +10693,14 @@
         "id": "070f7209-46b9-4615-9925-e80b43aec6c5",
         "name": "px-dr-enterprise",
         "description": "Portworx Enterprise with Disaster Recovery (DR)",
-        "displayName": "Portworx Enterprise with Disaster Recovery (DR)",
+        "displayName": "px-dr-enterprise",
         "originalName": "px-dr-enterprise"
       },
       {
         "id": "c7ccbb5e-495d-41ec-aedd-506d9fcbed44",
         "name": "px-enterprise",
         "description": "Cloud native storage solution for production workloads",
-        "displayName": "Enterprise",
+        "displayName": "px-enterprise",
         "originalName": "px-enterprise"
       }
     ],
@@ -10709,6 +10709,86 @@
     "displayName": "Portworx Enterprise",
     "imageUrl": "https://raw.githubusercontent.com/portworx/pxdocs-tooling/master/static/images/favicon-32x32.png",
     "localPngIcon": "/generated/icons/d666f360-66d1-11e9-85ef-a19427301a8c.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "7b2cdb0e-ad91-4fd7-97c0-5398874ec27b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "bus4i-system-copy-migrate-23-services-for-power-i",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "consulting_tab",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "migration_tools",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "b0b96770-31f2-4d62-bc88-46fff70127ba",
+        "name": "bus4i-migrate-23-services",
+        "description": "Migrate23 Services",
+        "displayName": "bus4i-migrate-23-services"
+      }
+    ],
+    "description": "Ease your Power i migration with BUS4i \"System Copy - Migrate 23\" Services. Focus on your core tasks while we handle the rest.",
+    "longDescription": "BUS4i \"SystemCopy - Migrate 23\" Professional Services: \nBook the corresponding professional service for our Migrate 23 offering here in the catalog.\n\nHassle-Free IBM i System Migrations \n\nOverview:\nFor businesses seeking expert assistance with migrating their IBM i systems, BUS4i \"SystemCopy - Migrate 23\" Professional Services offers a comprehensive, hands-on solution. Whether you're moving to a new IBM i server or transitioning to the PowerVS cloud, our professional services team takes care of the entire migration process from start to finish. \n\nWhy Choose Our Professional Services?\n- Expert-Led Migration: Let our team of seasoned professionals handle the complexities of your IBM i system migration. With years of experience, we ensure a seamless and efficient transition.\n- Turnkey Solution: We manage the entire migration process for you, from initial planning and data capture to final system setup, ensuring your new environment is an exact replica of your original system.\n- Tailored to Your Needs: Every business is unique, and so are its migration needs. We customize our approach to fit your specific requirements, ensuring a smooth and hassle-free migration experience.\n\nKey Benefits:\n\n- Reduced Downtime: Our experts work efficiently to minimize downtime, ensuring that your business operations experience as little disruption as possible during the migration.\n- Minimized Risk: By entrusting your migration to our experienced team, you reduce the risk of errors and issues, guaranteeing a successful transition.\n- Resource Savings: Avoid the challenges and time-consuming tasks associated with system migrations. Our professional services team takes care of everything, allowing your team to focus on core business activities.\n- Ongoing Support: Beyond the migration, we provide ongoing support to ensure that your new system operates smoothly, with minimal issues post-migration.\n\nHow It Works:\n\nOur BUS4i \"SystemCopy - Migrate 23\" Professional Services team employs the same advanced technology behind our software, coupled with expert oversight and tailored support. We begin with a comprehensive assessment of your existing IBM i system, followed by a meticulous migration plan designed to meet your specific business needs. The process involves capturing your system’s data and configurations, which are then securely transferred and restored onto your new environment. Our team ensures that every detail is handled with precision, from the initial setup to post-migration testing and support.\n\nBenefits for Your Business:\n- Stress-Free Migration: With our professionals handling the migration, you can rest easy knowing that your IBM i system is in expert hands.\n- Cost-Effective: By avoiding potential pitfalls and reducing downtime, our services help you save on costs associated with prolonged migrations or system issues.\n\n\nConsidering a Migration?\nIf you’re planning to migrate your IBM i system and prefer expert assistance, BUS4i \"SystemCopy - Migrate 23\" Professional Services is the ideal solution. Let our experienced team manage the migration process for you, ensuring a smooth, efficient, and worry-free transition. Focus on running your business while we take care of the technical complexities.\n",
+    "displayName": "Power i Migrate 23 Services",
+    "imageUrl": "https://tsp-gis.de/wp-content/uploads/2022/09/tsp-Logo-Header.png",
+    "localPngIcon": "/generated/icons/7b2cdb0e-ad91-4fd7-97c0-5398874ec27b.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "9828699d-dda7-4022-839b-c8e1e8b7d9d8",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "bus4i-system-copy-migrate-while-active-for-power-i",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "consulting_tab",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "migration_tools",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "cb5308d3-3a01-4067-a38a-e4c6785155fa",
+        "name": "bus4i-live-migration-services",
+        "description": "BUS4i Migrate While Active Services",
+        "displayName": "bus4i-live-migration-services"
+      }
+    ],
+    "description": "Ease your live Power i migration with BUS4i \"Migrate While Active\" Services. Focus on your core tasks while we handle the rest.",
+    "longDescription": "BUS4i \"Migrate While Active\" Professional Services can ensure a smooth and efficient migration of your Power i system to a PowerVM in PowerVS or any other Power i system anywhere in the world without disruption to your daily operations.\n\nImagine this: you need to move your entire business infrastructure from your current Power i system to a PowerVM environment in PowerVS. This process can be daunting, especially if you're concerned about downtime and its impact on your business.  Here's where BUS4i \"Migrate While Active\" Professional Services comes in. We specialize in performing these migrations seamlessly,  with zero downtime during your regular office hours. This means:\n\n- No interruption to your workday: Your employees can continue using your critical business applications throughout the migration process. There won't be any unexpected system shutdowns or periods of inaccessibility.\n- Minimal impact on productivity: By eliminating downtime, we ensure your team can maintain their productivity levels throughout the entire migration. No need to worry about lost work hours due to system outages.\n- Reduced risk and stress: Our experienced team will handle the entire migration process, minimizing the risk of errors and ensuring a smooth transition. You can focus on your core business activities with complete peace of mind.\n\nSo, how exactly do we achieve this? BUS4i \"Migrate While Active\" Professional Services utilizes a proven methodology that combines advanced tools and expertise to migrate your Power i system to PowerVM in a non-disruptive manner. Here's a simplified breakdown of the process:\n\n1. Planning and Assessment: We'll work closely with you to understand your specific requirements and develop a customized migration plan. This plan will account for your system configuration, applications, and workload to ensure a seamless transition.\n2. Data and Application Migration: Using specialized tools and techniques, we'll migrate your data and applications from your Power i system to the new PowerVM environment. This process is designed to minimize disruption and ensure data integrity.\n3. Testing and Validation: Once the migration is complete, we'll perform rigorous testing of the synchronicity in the new environment. This ensures a smooth transition for your end-users.\n4. Cutover and Go-Live: With everything in place and thoroughly tested, we'll perform a final cutover to switch your operations to the new PowerVM environment. This process will be conducted during a pre-defined maintenance window to minimize any potential impact.\n\nThroughout the entire migration process, our team of experts will be available to answer your questions and address any concerns you may have. We understand the importance of clear communication, and we'll keep you informed every step of the way.\n\nBy choosing BUS4i \"Migrate While Active\" Professional Services, you can ensure a stress-free and efficient migration of your Power i system to PowerVM in PowerVS, without any disruption to your business operations.  Focus on what you do best, while we handle the technical complexities of the migration.",
+    "displayName": "Power i Migrate While Active Services",
+    "imageUrl": "https://tsp-gis.de/wp-content/uploads/2022/09/tsp-Logo-Header.png",
+    "localPngIcon": "/generated/icons/9828699d-dda7-4022-839b-c8e1e8b7d9d8.png"
   },
   {
     "geo_tags": [
@@ -11524,7 +11604,7 @@
       {
         "id": "5304b575-3cff-4455-90dc-ae4367762093",
         "name": "paygo-standard",
-        "description": "**Quantum processing units**\n127 qubit Eagle processors. Time limits = program-specific up to 8 hours. Qiskit Runtime Second = time counted to process a job. No charge for job queue time.\n\n**Simulators**\n*(Note: Simulators are deprecated and will be removed soon)*\nFive simulators (QASM, statevector, mps, stabilizer, and extended stabilizer). Time limits = program-specific up to 3 hours. \n\n**Performance management strategies**\nTwo strategies:\n  • IBM 3 resilience levels.\n  • Q-CTRL AI-driven automated error reduction. **No additional cost. Only available in us-east region**.",
+        "description": "**Quantum processing units**\nHeron and Eagle processors. Time limits = program-specific up to 8 hours. Qiskit Runtime Second = time counted to process a job. No charge for job queue time.\n\n**Simulators**\n*(Note: Simulators are deprecated and will be removed soon)*\nFive simulators (QASM, statevector, mps, stabilizer, and extended stabilizer). Time limits = program-specific up to 3 hours. \n\n**Performance management strategies**\nTwo strategies:\n  • IBM 3 resilience levels.\n  • Q-CTRL AI-driven automated error reduction. **No additional cost. Only available in us-east region**.",
         "displayName": "Standard",
         "originalName": "paygo-standard"
       }
@@ -15075,10 +15155,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "jp-tok",
       "eu-gb",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
