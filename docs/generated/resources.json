@@ -4409,10 +4409,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4420,7 +4416,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4565,7 +4565,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4577,7 +4576,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4834,7 +4834,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -4842,6 +4841,7 @@
       "mon01",
       "us-east",
       "eu-gb",
+      "us-south",
       "au-syd",
       "eu-de"
     ],
@@ -8115,9 +8115,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "eu-es",
@@ -8126,7 +8123,10 @@
       "satcon_fra",
       "satcon_wdc",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15461,15 +15461,13 @@
     "pricing_tags": [
       "paid",
       "paid_only",
-      "allow_internal_users",
-      "free"
+      "allow_internal_users"
     ],
     "tags": [
       "ai",
       "allow_internal_users",
       "ansible",
       "custom_kind_service",
-      "free",
       "ibm_created",
       "lightspeed",
       "paid",
@@ -15493,13 +15491,6 @@
         "description": "The Essentials plan for IBM watsonx Code Assistant for Z as a Service, coupled with watsonx code Assistant for Z (on prem), offers everything you need to explain code and translate COBOL to Java.",
         "displayName": "IBM watsonx Code Assistant for Z as a Service Essentials",
         "originalName": "essentials-z"
-      },
-      {
-        "id": "6c6cb8a0-930d-4108-a55c-0f7e248281a7",
-        "name": "lite-ansible",
-        "description": "The Lite plan for watsonx Code Assistant for Red Hat Ansible Lightspeed offers limited access to everything you need for Ansible code generation.",
-        "displayName": "IBM watsonx Code Assistant for Red Hat Ansible Lightspeed Lite",
-        "originalName": "lite-ansible"
       },
       {
         "id": "ed9c2370-d508-44fb-9369-9be9154fe1f0",
