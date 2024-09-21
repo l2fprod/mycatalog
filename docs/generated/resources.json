@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,7 +480,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -488,7 +487,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4479,10 +4479,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4490,7 +4486,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4904,16 +4904,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
+      "eu-gb",
       "au-syd",
       "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7450,14 +7450,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8185,18 +8185,18 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "eu-es",
-      "jp-osa",
-      "us-east",
       "satcon_fra",
       "satcon_wdc",
       "au-syd",
       "eu-de",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "br-sao",
+      "ca-tor",
+      "eu-es",
+      "jp-osa",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12284,7 +12284,7 @@
       {
         "id": "c696fd3a-fffa-4e7e-affd-ab798af04f8d",
         "name": "compass-shared-consumption-pricing",
-        "description": "Priced per gigabyte hour per copy",
+        "description": "Priced per gigabyte hour",
         "displayName": "Shared Consumption Pricing"
       }
     ],
@@ -15376,8 +15376,8 @@
   {
     "geo_tags": [
       "eu-de",
-      "jp-tok",
       "eu-gb",
+      "jp-tok",
       "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
@@ -15391,12 +15391,9 @@
       "paid_only",
       "paygo",
       "free",
-      "lite",
-      "subscription",
-      "subscription_only"
+      "lite"
     ],
     "tags": [
-      "apidocs_enabled",
       "calcium",
       "cpdaas",
       "custom_kind_service",
@@ -15416,20 +15413,11 @@
       "paygo",
       "rc_compatible",
       "studio",
-      "subscription",
-      "subscription_only",
       "support_ibm",
       "us-south",
       "watson"
     ],
     "plans": [
-      {
-        "id": "31262d28-ff5f-4f4c-b62d-c65e5335ca85",
-        "name": "enterprise-v1",
-        "description": "The Enterprise plan (v1) for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI.",
-        "displayName": "Enterprise v1",
-        "originalName": "enterprise-v1"
-      },
       {
         "id": "f4029623-1646-4ef9-8797-5e200a4d49aa",
         "name": "enterprise-v2",
@@ -15450,13 +15438,6 @@
         "description": "The Professional plan for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
         "displayName": "Professional",
         "originalName": "professional-v1"
-      },
-      {
-        "id": "d684fe21-fdda-4bb8-9a78-1b1608a075fe",
-        "name": "sqo-enterprise-v2",
-        "description": "The Enterprise plan for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
-        "displayName": "SQO Enterprise v2",
-        "originalName": "sqo-enterprise-v2"
       },
       {
         "id": "40073cbd-2d60-4a65-a32d-3b1d11794cc6",
