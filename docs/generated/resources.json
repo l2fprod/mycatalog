@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,6 +480,7 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -487,8 +488,7 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4905,16 +4905,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
-      "us-south"
+      "au-syd",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5066,13 +5066,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "au-syd",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7525,17 +7525,6 @@
     "localPngIcon": "/generated/icons/d589492e-6ac0-4a11-9c28-a157851c8f68.png"
   },
   {
-    "geo_tags": [
-      "dal10",
-      "dal12",
-      "dal13",
-      "fra02",
-      "fra04",
-      "fra05",
-      "wdc04",
-      "wdc06",
-      "wdc07"
-    ],
     "id": "986f2197-9f9a-44f4-9463-f17ec64c6729",
     "kind": "service",
     "metadata": {
@@ -7555,15 +7544,8 @@
       "allow_internal_users",
       "beryllium",
       "custom_kind_service",
-      "dal10",
-      "dal12",
-      "dal13",
-      "fra02",
-      "fra04",
-      "fra05",
       "free",
       "freesia",
-      "iam_compatible",
       "ibm_created",
       "ibm_deprecated",
       "ibm_release",
@@ -7571,10 +7553,7 @@
       "paid_only",
       "rc_compatible",
       "support_ibm",
-      "vm",
-      "wdc04",
-      "wdc06",
-      "wdc07"
+      "vm"
     ],
     "plans": [
       {
@@ -7610,6 +7589,7 @@
     "longDescription": "Create and run virtual servers on IBM LinuxONE, the industry's most secure Linux-based platform.\nNote: \n1. It is recommended that you create Hyper Protect Virtual Servers for VPC, the latest confidential computing as-a-service solution, in various regions at https://cloud.ibm.com/vpc-ext/provision/vs?architecture=s390x&secureExecution=true. When you select your image, ensure that you select \"s390x architecture\" and toggle on \"Confidential computing - Run your workload with an OS and a profile protected by Secure Execution\". For more information, see https://cloud.ibm.com/docs/hp-virtual-servers?topic=hp-virtual-servers-why-migrate.\n2. This service is deprecated from the IBM Cloud data center in Sydney. For more information, see https://cloud.ibm.com/docs/hp-virtual-servers?topic=hp-virtual-servers-whats-new#hp-virtual-servers-oct2623.",
     "displayName": "Hyper Protect Virtual Server for Classic",
     "imageUrl": "https://hp-vs.prod-us.cloud.zaas.ibm.com/virtualservers-32.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/986f2197-9f9a-44f4-9463-f17ec64c6729.svg",
     "localPngIcon": "/generated/icons/986f2197-9f9a-44f4-9463-f17ec64c6729.png"
   },
@@ -8186,18 +8166,18 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "br-sao",
-      "ca-tor",
-      "eu-es",
-      "jp-osa",
-      "us-east",
       "satcon_fra",
       "satcon_wdc",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-tok",
+      "br-sao",
+      "ca-tor",
+      "eu-es",
+      "jp-osa",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9875,7 +9855,6 @@
       "free"
     ],
     "tags": [
-      "network",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -11573,8 +11552,7 @@
     "description": "Public Gateway for VPC",
     "longDescription": "Public Gateway for VPC",
     "displayName": "Public Gateway",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/db43176269864a7bc6e76647fc30f473-public/VPC_icon_image.svg",
-    "localSvgIcon": "/generated/icons/is.public-gateway.svg",
+    "imageUrl": "https://ibm.box.com/s/b15enoelqbaq3ajkt1z8fi5eus5mmazq",
     "localPngIcon": "/generated/icons/is.public-gateway.png"
   },
   {
@@ -13735,9 +13713,9 @@
         "originalName": "Virtual-Network-Interface-Standard"
       }
     ],
-    "description": "Create a Virtual Network Interface that represents a virtual network card. A Virtual Network Interface can be used to assign network attributes and apply them to compute resources in your VPC",
-    "longDescription": "A virtual network interface is a logical abstraction of a virtual network interface card in a subnet and can be attached to a target resource. Virtual network interfaces can exist independent of an instance, providing enhancements over instances with child network interfaces.  \n\nNetwork administrators can provision a virtual network interface to exist independent of a target, such as a virtual server instance or bare metal server. New or standby resources can also reuse virtual network interfaces, enabling required failover and high availability for large enterprise workloads on IBM Cloud. Administrators with database, proxy, or NAT appliances can use multiple private IPs assigned to a single virtual network interface, which enables them to run multiple services on a single instance for redundancy and failover.\n\nVirtual network interfaces provide a significant improvement in the capability and flexibility of network interfaces in IBM Cloud VPC.",
-    "displayName": "Virtual Network Interface for VPC",
+    "description": "Virtual Network Interface for VPC",
+    "longDescription": "Virtual Network Interfaces provide a way to configure network IPs with security groups and they provide a consistent network binding handle for various resources.",
+    "displayName": "Virtual Network Interface",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
     "localSvgIcon": "/generated/icons/is.virtual-network-interface.svg",
     "localPngIcon": "/generated/icons/is.virtual-network-interface.png"
@@ -14070,6 +14048,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "eu-de",
       "au-syd",
       "au-syd-2",
@@ -14108,8 +14087,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15238,10 +15216,10 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "eu-de",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
