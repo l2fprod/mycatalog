@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,15 +480,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4480,10 +4480,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4491,7 +4487,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4636,6 +4636,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4646,9 +4648,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd",
-      "che01"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4906,7 +4906,6 @@
   {
     "geo_tags": [
       "us-south",
-      "eu-gb",
       "au-syd",
       "eu-de",
       "br-sao",
@@ -4914,7 +4913,8 @@
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east"
+      "us-east",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5066,13 +5066,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -15216,10 +15216,10 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
