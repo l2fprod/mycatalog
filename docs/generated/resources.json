@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,6 +480,7 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -487,8 +488,7 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1111,8 +1111,9 @@
     "description": "Persistent iSCSI based storage with high-powered performance and capacity up to 12TB.",
     "longDescription": "Get local disk performance with SAN persistence and durability. Increase storage capacity available to your IBM Cloud Virtual Servers and Bare Metal Servers with a maximum of 48k IOPs. Deploy flash-backed block storage volumes from 20GB to 12TB–and customize it all with a variety of capabilities. \n\nChoose Endurance tiers for simple, predefined, per-GB pricing—ideal for workloads without well defined performance requirements. \nOr, build a fine-tuned environment with allocated IOPS with Performance options—ideal for well-understood workload requirements that fall outside of the available Endurance tiers.",
     "displayName": "Block Storage for Classic",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/static/cache/1974-3d74c45e1684594b/images/uploaded/icons/block-storage.png",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/block-storage-group/artifacts/cache/358d55aa06053ff3412f76ae003a5a4e-public/BlockStorageForClassic.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/block-storage-group.svg",
     "localPngIcon": "/generated/icons/block-storage-group.png"
   },
   {
@@ -1924,7 +1925,7 @@
     "description": "A fast and flexible backup solution that is managed by IBM Cloud and provides capacity options to scale perfectly with your needs.",
     "longDescription": "An automated agent-based multi-tenant backup system, that provides users with a method to back up data between servers in one or more data centers on the IBM Cloud. IBM Cloud Backup is an enterprise-level backup storage and disaster recovery solution that is available for local access across globally dispersed data centers. With IBM Cloud Backup, you can add cloud-based backup to any physical, virtual, or hybrid server environment, leverage system image and granular recovery options and restore capabilities for dissimilar hardware, and schedule backups and retention schemes to follow custom timetables or employ the daily, or weekly preconfigured schedules as needed. Backups can target full systems, specific directories, or even individual files, and will incorporate block-level change processing, data deduplication, and intelligent on-the-fly compression, and employ point and click downed-system restoration, from central management and administration via a very intuitive web-based utility from anywhere in the world. With end-to-end encryption that is enforced for IBM Cloud Backup, your data is always secure – from source to vault, and can scale as needed, to satisfy all of your backup workload requirements.",
     "displayName": "Cloud Backup for Classic",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/6cde723c-9e49-74ac-4266-3f7a9bb74216/artifacts/cache/30e8df1bd214a3656184c6069fa796ca-public/evault_icon_32-01.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/6cde723c-9e49-74ac-4266-3f7a9bb74216/artifacts/cache/6600d808ba661bf9c61ae557818a8c3a-public/CloudBackupForClassic.svg",
     "localSvgIcon": "/generated/icons/6cde723c-9e49-74ac-4266-3f7a9bb74216.svg",
     "localPngIcon": "/generated/icons/6cde723c-9e49-74ac-4266-3f7a9bb74216.png"
   },
@@ -4636,7 +4637,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4648,7 +4648,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4905,7 +4906,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "eu-de",
       "br-sao",
@@ -4914,7 +4914,8 @@
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6666,7 +6667,8 @@
     "description": "Fast and flexible NFS-based file storage with capacity options from 20GB to 12TB.",
     "longDescription": "Add fast and flexible NFS-based file storage to your IBM Cloud portfolio. Get total control and help minimize costs with flash-backed architecture. Create file shares from 20GB to 12TB—and provision it all with a variety of flexible and power-based options. \n\nChoose Endurance tiers for simple, predefined, per-GB pricing—ideal for workloads without well defined performance requirements. \nOr, build a fine-tuned environment with allocated IOPS with Performance options—ideal for well-understood workload requirements that fall outside of the available Endurance tiers.",
     "displayName": "File Storage for Classic",
-    "imageUrl": "https://cache.globalcatalog.test.cloud.ibm.com/static/cache/2507-1e6bd5a702d763f0/images/uploaded/file-storage.png",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/6/artifacts/cache/550f80e7cb4649083be96f474a00be6e-public/FileStorageForClassic.svg",
+    "localSvgIcon": "/generated/icons/6.svg",
     "localPngIcon": "/generated/icons/6.png"
   },
   {
@@ -15216,10 +15218,10 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de",
-      "jp-tok"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
