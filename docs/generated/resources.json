@@ -480,6 +480,7 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -487,8 +488,7 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4637,7 +4637,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4649,7 +4648,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4906,16 +4906,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "eu-de"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7453,14 +7453,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8168,6 +8168,8 @@
   },
   {
     "geo_tags": [
+      "satcon_fra",
+      "satcon_wdc",
       "au-syd",
       "eu-de",
       "eu-gb",
@@ -8177,9 +8179,7 @@
       "ca-tor",
       "eu-es",
       "jp-osa",
-      "us-east",
-      "satcon_fra",
-      "satcon_wdc"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8282,10 +8282,10 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -8308,6 +8308,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
+      "data lineage",
       "eu-de",
       "eu-gb",
       "free",
@@ -8316,6 +8317,7 @@
       "hipaa",
       "iam_compatible",
       "ibm_created",
+      "ikc",
       "iodine",
       "jp-tok",
       "lite",
@@ -9517,10 +9519,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -15377,6 +15379,7 @@
       "lite"
     ],
     "tags": [
+      "apidocs_enabled",
       "calcium",
       "cpdaas",
       "custom_kind_service",
