@@ -480,15 +480,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4637,6 +4637,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4648,8 +4649,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4907,6 +4907,7 @@
   {
     "geo_tags": [
       "us-south",
+      "eu-gb",
       "au-syd",
       "eu-de",
       "br-sao",
@@ -4914,8 +4915,7 @@
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5067,13 +5067,13 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8168,6 +8168,8 @@
   },
   {
     "geo_tags": [
+      "satcon_fra",
+      "satcon_wdc",
       "au-syd",
       "eu-de",
       "eu-gb",
@@ -8177,9 +8179,7 @@
       "ca-tor",
       "eu-es",
       "jp-osa",
-      "us-east",
-      "satcon_fra",
-      "satcon_wdc"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11339,79 +11339,6 @@
     "geo_tags": [
       "global"
     ],
-    "id": "da5be6a6-6497-4bb6-8829-55a7bebc4998",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "primaryio-protectio",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "data protection",
-      "disaster recovery",
-      "dr",
-      "draas",
-      "global",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "storage_backup",
-      "support_third_party"
-    ],
-    "plans": [
-      {
-        "id": "1ad15dcc-cf6d-4223-94b3-4e5adb4f4a9d",
-        "name": "primaryio-protectio-bespoke-custom-project",
-        "description": "Variable number of “professional services units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
-        "displayName": "Bespoke - Custom Project"
-      },
-      {
-        "id": "4fe90a87-7bcb-4553-aeae-7a90fb46b276",
-        "name": "primaryio-protectio-custom-managed",
-        "description": "Variable number of “managed service units” (of 100 USD ea.) determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
-        "displayName": "Custom Managed"
-      },
-      {
-        "id": "9db8bedd-8625-447b-a162-b15e9f2fd83f",
-        "name": "primaryio-protectio-protectio-100-revised",
-        "description": "ProtectIO 100 plan is used to protect maximum up to 100 virtual machines. Once number of protected virtual machines reaches maximum limit, customer will be automatically upgraded to next tier.",
-        "displayName": "ProtectIO 100"
-      },
-      {
-        "id": "0525199d-a0bd-4906-9296-a4e15c0769a5",
-        "name": "primaryio-protectio-protectio-1000-revised",
-        "description": "ProtectIO 1000 plan is used to protect maximum up to 1000 virtual machines. Once number of protected virtual machines reaches maximum limit, customer will be automatically upgraded to next tier.",
-        "displayName": "ProtectIO 1000"
-      },
-      {
-        "id": "6772da43-3130-4581-afe0-aaca75391efe",
-        "name": "primaryio-protectio-protectio-300-revised",
-        "description": "ProtectIO 300 plan is used to protect maximum up to 300 virtual machines. Once number of protected virtual machines reaches maximum limit, customer will be automatically upgraded to next tier.",
-        "displayName": "ProtectIO 300"
-      },
-      {
-        "id": "47aa57b1-4885-4d30-b911-8e9727babd85",
-        "name": "primaryio-protectio-protectio-enterprise-revised",
-        "description": "ProtectIO Enterprise plan is used to protect any number of virtual machines above 1001. This plan has no limitations on number of protected virtual machines.",
-        "displayName": "ProtectIO Enterprise"
-      }
-    ],
-    "description": "ProtectIO is PrimaryIO’s on-demand Disaster Recovery as a service platform.",
-    "longDescription": "ProtectIO is PrimaryIO’s on-demand disaster recovery as a service (“DRaaS”) platform.  ProtectIO is delivered as a web-accessible, multi-tenant, IBM Cloud-native Software-as-a-Service and helps customers by providing a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership.\n\nContinuous Data Protection (CDP) is delivered via PrimaryIO’s proprietary VAIO Replication filter and Authenticated Block Stream Protocol that ships the changed I/O blocks to a DR Receiver process in the Target/DR environment and commits to IBM Cloud Object Storage. \n\nAt failover time, ProtectIO rehydrates from the Cloud Object Storage buckets into the respective VMDKs and instantiates the VMs that compose the application workload that is being protected. This delivers near zero RPO and an RTO correlated with the amount of data that needs to be rehydrated, which provides a compelling Total Cost of Ownership (TCO) solution for customers.\n\nProtectIO supports on-premises, IBM Cloud Classic and IBM Cloud VPC as the Primary Site and utilizes IBM Cloud Classic or VPC for the Target/DR Site, depending upon the customer and available VPC capacity. The UI/UX and associated Control Plane, which runs in an IBM Cloud VPC,  has been designed to be extremely intuitive and allow customers to operate without needing assistance from a Managed Service Provider.\n\n\nPre-requisites:\n1. Customer needs to have a IBM tenant account\n2. Customer needs to have COS instance \n\nNote: PrimaryIO team will help you setup IBM tenant account and COS instance",
-    "displayName": "ProtectIO DRaaS DIY",
-    "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
-    "localPngIcon": "/generated/icons/da5be6a6-6497-4bb6-8829-55a7bebc4998.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
     "id": "7c03a06c-f1bb-46f8-84d8-9378432b2804",
     "kind": "service",
     "metadata": {
@@ -14138,6 +14065,8 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
+      "eu-de",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14175,9 +14104,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1",
-      "eu-de"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
