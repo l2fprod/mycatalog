@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,7 +480,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -488,7 +487,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4637,7 +4637,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4649,7 +4648,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4906,16 +4906,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5067,13 +5067,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7453,14 +7453,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8168,18 +8168,18 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "eu-es",
       "jp-osa",
       "us-east",
       "satcon_fra",
-      "satcon_wdc"
+      "satcon_wdc",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12290,11 +12290,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -15233,10 +15233,10 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -15277,7 +15277,7 @@
       {
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "name": "lite",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates and foundation model classes, go to https://ibm.biz/ml-plans\n\n1 Resource Unit = 1000 tokens",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
         "displayName": "Lite",
         "originalName": "lite"
       },
@@ -15291,14 +15291,14 @@
       {
         "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
         "name": "v2-professional",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates and foundation model classes, go to https://ibm.biz/ml-plans\n\n1 Resource Unit = 1000 tokens\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
         "displayName": "Standard",
         "originalName": "v2-professional"
       },
       {
         "id": "a3d2f92f-06f9-48d0-b2e6-a7ba2b4e0577",
         "name": "v2-standard",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates and foundation model classes, go to https://ibm.biz/ml-plans\n\n1 Resource Unit = 1000 tokens",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
         "displayName": "Essentials",
         "originalName": "v2-standard"
       }
