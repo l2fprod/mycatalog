@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,15 +480,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4485,6 +4485,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4492,11 +4496,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4641,6 +4641,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4652,8 +4653,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4910,6 +4910,7 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "us-south",
       "br-sao",
       "ca-tor",
@@ -4917,7 +4918,6 @@
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
       "au-syd",
       "eu-de"
     ],
@@ -5071,13 +5071,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "us-south",
-      "eu-gb",
-      "au-syd"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7457,14 +7457,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -12294,11 +12294,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -12457,7 +12457,6 @@
     "pricing_tags": [
       "allow_internal_users",
       "free",
-      "lite",
       "paid"
     ],
     "tags": [
@@ -12478,9 +12477,10 @@
       "ibm_created",
       "jp-osa",
       "jp-tok",
-      "lite",
       "paid",
       "rc_compatible",
+      "scc-wp",
+      "security_compliance_posture_wp",
       "support_ibm",
       "supports_syndication",
       "us-east",
@@ -12490,14 +12490,14 @@
       {
         "id": "0eae605c-7258-4bb7-8cb7-a4b96d5c94c3",
         "name": "free-trial",
-        "description": "Free for 30 days.\n\nFree trial plans with the data are deleted after 30 days after expiration.\n\nNote the Workload Protection agent and the IBM Cloud Monitoring agent cannot be deployed on the same cluster. However, you can access Workload Protection functionality through IBM Cloud Monitoring by selecting the Graduated Tier - Sysdig Secure + Monitor plan. For more information refer to: https://cloud.ibm.com/docs/monitoring?topic=monitoring-service_plans",
+        "description": "Free for 30 days. Free trial plans with the data are deleted after 30 days after expiration.",
         "displayName": "Free Trial",
         "originalName": "free-trial"
       },
       {
         "id": "00497f9a-f093-436b-98d7-c81845399516",
         "name": "graduated-tier",
-        "description": "Image scan results, compliance results, policy events, activity audit and forensic captures are accessible and retained for 90 days.\n\nCost is for each node hour. For example if you are running one agent for 24 hours a day and the month has 30 days, the estimated cost is approximately $45 USD.\n\n*CSPM capabilities are currently free for a promotional period\n\nNote the Workload Protection agent and the IBM Cloud Monitoring agent cannot be deployed on the same cluster. However, you can access Workload Protection functionality through IBM Cloud Monitoring by selecting the Graduated Tier - Sysdig Secure + Monitor plan. For more information refer to: https://cloud.ibm.com/docs/monitoring?topic=monitoring-service_plans",
+        "description": "*Pricing is based on hourly consumption for Nodes and Virtual Machines",
         "displayName": "Graduated Tier",
         "originalName": "graduated-tier"
       }
@@ -13525,6 +13525,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "ca-tor",
       "eu-de",
       "eu-gb",
@@ -13551,6 +13552,7 @@
     "tags": [
       "compute",
       "allow_internal_users",
+      "au-syd",
       "ca-tor",
       "custom_kind_service",
       "eu-de",
@@ -15241,10 +15243,10 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
