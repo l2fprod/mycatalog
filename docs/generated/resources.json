@@ -282,14 +282,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,15 +480,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4712,7 +4712,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4724,7 +4723,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4981,16 +4981,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5142,13 +5142,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8241,18 +8241,18 @@
   },
   {
     "geo_tags": [
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-es",
-      "eu-gb",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
+      "eu-es",
+      "eu-gb",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8355,10 +8355,10 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -14145,6 +14145,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14183,8 +14184,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15313,10 +15313,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -15683,13 +15683,15 @@
     "pricing_tags": [
       "paid",
       "paid_only",
-      "allow_internal_users"
+      "allow_internal_users",
+      "free"
     ],
     "tags": [
       "ai",
       "allow_internal_users",
       "ansible",
       "custom_kind_service",
+      "free",
       "ibm_created",
       "lightspeed",
       "paid",
@@ -15708,6 +15710,13 @@
         "originalName": "essentials-ansible-v2"
       },
       {
+        "id": "ae9be2fc-ae03-4cac-a7a2-95bb716be1cb",
+        "name": "essentials-wca",
+        "description": "For developers ready to accelerate developer productivity in a trusted, transparent environment.",
+        "displayName": "IBM watsonx Code Assistant Essentials",
+        "originalName": "essentials-wca"
+      },
+      {
         "id": "c86f43c1-f9f6-4eea-be35-99d2ba27c819",
         "name": "essentials-z",
         "description": "The Essentials plan for IBM watsonx Code Assistant for Z as a Service, coupled with watsonx code Assistant for Z (on prem), offers everything you need to explain code and translate COBOL to Java.",
@@ -15720,6 +15729,13 @@
         "description": "The Standard plan for watsonx Code Assistant for Red Hat Ansible Lightspeed offers everything you need for Ansible code generation and tuning.",
         "displayName": "IBM watsonx Code Assistant for Red Hat Ansible Lightspeed Standard",
         "originalName": "standard-ansible-v2"
+      },
+      {
+        "id": "09e17443-2684-4eac-805d-ef0fe3e70148",
+        "name": "trial-wca",
+        "description": "Free for developers to use generative AI to write code.",
+        "displayName": "IBM watsonx Code Assistant Trial",
+        "originalName": "trial-wca"
       }
     ],
     "description": "Leverage tailor-made foundation models for AI-generated code recommendations to accelerate developer productivity.",
