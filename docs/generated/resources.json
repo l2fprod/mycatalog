@@ -171,13 +171,11 @@
     "pricing_tags": [
       "paid",
       "paid_only",
-      "free",
       "lite"
     ],
     "tags": [
       "security",
       "custom_kind_service",
-      "free",
       "hipaa",
       "ibm_third_party",
       "lite",
@@ -282,14 +280,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -480,15 +478,15 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -3085,6 +3083,69 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-tor",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
+      "us-south"
+    ],
+    "id": "is.cluster-network",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "is.cluster-network",
+    "pricing_tags": [
+      "free",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "network",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "custom_kind_service",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "free",
+      "iam_compatible",
+      "ibm_created",
+      "is.composite",
+      "jp-osa",
+      "jp-tok",
+      "network_vpc",
+      "rc_compatible",
+      "support_ibm",
+      "us-east",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "5144adc3-651f-4ef3-828a-ef0fc37a714c",
+        "name": "cluster-network-standard",
+        "description": "Cluster Network - Standard",
+        "displayName": "Cluster Network - Standard",
+        "originalName": "Cluster-Network-Standard"
+      }
+    ],
+    "description": "Cluster Network for VPC",
+    "longDescription": "A cluster network is a collection of interconnected systems working together and acting as a single entity. This combined grouping of systems allows for a high level of processing power for very complicated computations, primarily AI model training. IBM Cluster Networks use the NVIDIA H100 instance profile, which supports up to 15 VNI and vNICs with full network capabilities, 1.5 TB of memory, and 152 vCPUs running with the 8474C processor.",
+    "displayName": "Cluster Network",
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "localSvgIcon": "/generated/icons/is.cluster-network.svg",
+    "localPngIcon": "/generated/icons/is.cluster-network.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "br-sao",
       "eu-de",
       "eu-es",
       "jp-osa",
@@ -4981,16 +5042,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7526,14 +7587,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8241,6 +8302,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
       "eu-es",
       "eu-gb",
       "us-south",
@@ -8248,11 +8313,7 @@
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "eu-de",
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14145,7 +14206,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14184,7 +14244,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
