@@ -937,13 +937,6 @@
         "originalName": "mx3d-metal-16x128"
       },
       {
-        "id": "ded23616-e993-40e3-9935-68cfe3ad85ee",
-        "name": "mx3d-metal-192x2048",
-        "description": "Pricing plan for mx3d-metal-192x2048",
-        "displayName": "mx3d-metal-192x2048",
-        "originalName": "mx3d-metal-192x2048"
-      },
-      {
         "id": "97f33c28-245a-49c6-b861-41b9dabdd242",
         "name": "mx3d-metal-48x512",
         "description": "Pricing plan for mx3d-metal-48x512",
@@ -5044,16 +5037,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "au-syd",
+      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5205,13 +5198,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7593,14 +7586,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8308,18 +8301,18 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-es",
       "eu-gb",
       "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "eu-de",
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15380,85 +15373,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "eu-gb",
-      "us-south"
-    ],
-    "id": "51c53b72-918f-4869-b834-2d99eb28422a",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "pm-20",
-    "pricing_tags": [
-      "free",
-      "lite",
-      "paygo",
-      "paid_only"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "custom_kind_service",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "ibm_release",
-      "jp-tok",
-      "lite",
-      "ml",
-      "paid_only",
-      "paygo",
-      "rc_compatible",
-      "service_endpoint_supported",
-      "support_ibm",
-      "us-south",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
-        "name": "lite",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
-        "displayName": "Lite",
-        "originalName": "lite"
-      },
-      {
-        "id": "b52ce7cf-a5c3-4da8-b368-a4ed3c61918c",
-        "name": "professional",
-        "description": "The professional plan instance of the IBM Watson Machine Learning service is billed fixed amount per month, includes 2,000,000 predictions and 1,000 capacity unit-hours, with a minimum of 1 minute per training job. Overage is charged flat rate per each thousand of predictions and per each capacity unit-hour. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
-        "displayName": "Professional",
-        "originalName": "professional"
-      },
-      {
-        "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
-        "name": "v2-professional",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
-        "displayName": "Standard",
-        "originalName": "v2-professional"
-      },
-      {
-        "id": "a3d2f92f-06f9-48d0-b2e6-a7ba2b4e0577",
-        "name": "v2-standard",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
-        "displayName": "Essentials",
-        "originalName": "v2-standard"
-      }
-    ],
-    "description": "Deploy, manage and integrate machine learning models into your applications and services in as little as one click.",
-    "longDescription": "IBM Watson Machine Learning is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Watson Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.",
-    "displayName": "Watson Machine Learning",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/51c53b72-918f-4869-b834-2d99eb28422a/artifacts/cache/fd361695f313365fc98cdff9b2cbcfb2-public/MachineLearning--light.svg",
-    "localSvgIcon": "/generated/icons/51c53b72-918f-4869-b834-2d99eb28422a.svg",
-    "localPngIcon": "/generated/icons/51c53b72-918f-4869-b834-2d99eb28422a.png"
-  },
-  {
-    "geo_tags": [
       "us-south"
     ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
@@ -15515,88 +15429,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/5d307850-0404-11eb-8c8b-c7d7505f656d/artifacts/cache/0082f4ddf582a68f1bab3bca336b6a15-public/data-virtualization.svg",
     "localSvgIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.svg",
     "localPngIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.png"
-  },
-  {
-    "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
-      "us-south"
-    ],
-    "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "data-science-experience",
-    "pricing_tags": [
-      "paid_only",
-      "paygo",
-      "free",
-      "lite"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "calcium",
-      "cpdaas",
-      "custom_kind_service",
-      "data science experience",
-      "disable_reclamation",
-      "dsx",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "freesia",
-      "gc_migrate",
-      "hipaa",
-      "ibm_created",
-      "jp-tok",
-      "lite",
-      "paid_only",
-      "paygo",
-      "rc_compatible",
-      "studio",
-      "support_ibm",
-      "us-south",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "f4029623-1646-4ef9-8797-5e200a4d49aa",
-        "name": "enterprise-v2",
-        "description": "The Enterprise plan for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
-        "displayName": "Enterprise v2",
-        "originalName": "enterprise-v2"
-      },
-      {
-        "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
-        "name": "free-v1",
-        "description": "The Lite plan for Watson Studio offers everything you need to become a better data scientist or domain expert in a collaborative environment.",
-        "displayName": "Lite",
-        "originalName": "free-v1"
-      },
-      {
-        "id": "a386ed81-6789-4ced-a099-da1581353281",
-        "name": "professional-v1",
-        "description": "The Professional plan for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
-        "displayName": "Professional",
-        "originalName": "professional-v1"
-      },
-      {
-        "id": "40073cbd-2d60-4a65-a32d-3b1d11794cc6",
-        "name": "standard-v1",
-        "description": "The Standard plan for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI.",
-        "displayName": "Standard v1",
-        "originalName": "standard-v1"
-      }
-    ],
-    "description": "Develop sophisticated machine learning models using Notebooks and code-free tools to infuse AI throughout your business.",
-    "longDescription": "Watson Studio democratizes data science and AI to drive innovation in your business. With a suite of tools for all skill levels, everyone can collaborate to prepare, analyze, and model data. You can write Python or R code in notebooks, visually code on a graphical canvas, or automatically build models.",
-    "displayName": "Watson Studio",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/39ba9d4c-b1c5-4cc3-a163-38b580121e01/artifacts/cache/adb451d886b66a00bb1d890511d5b02f-public/watson-studio-light.svg",
-    "localSvgIcon": "/generated/icons/39ba9d4c-b1c5-4cc3-a163-38b580121e01.svg",
-    "localPngIcon": "/generated/icons/39ba9d4c-b1c5-4cc3-a163-38b580121e01.png"
   },
   {
     "id": "12fbfff4-12c7-ccd0-80e6-603e8607468a",
@@ -15860,6 +15692,173 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838/artifacts/cache/104066958c7a68895674c0c6b2e8ea89-public/watsonxOrchestrate.svg",
     "localSvgIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.svg",
     "localPngIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.png"
+  },
+  {
+    "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "jp-tok"
+    ],
+    "id": "51c53b72-918f-4869-b834-2d99eb28422a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "pm-20",
+    "pricing_tags": [
+      "free",
+      "lite",
+      "paygo",
+      "paid_only"
+    ],
+    "tags": [
+      "apidocs_enabled",
+      "au-syd",
+      "custom_kind_service",
+      "eu-de",
+      "eu-gb",
+      "free",
+      "hipaa",
+      "iam_compatible",
+      "ibm_created",
+      "ibm_dedicated_public",
+      "ibm_release",
+      "jp-tok",
+      "lite",
+      "ml",
+      "paid_only",
+      "paygo",
+      "rc_compatible",
+      "service_endpoint_supported",
+      "support_ibm",
+      "us-south",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
+        "name": "lite",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
+        "displayName": "Lite",
+        "originalName": "lite"
+      },
+      {
+        "id": "b52ce7cf-a5c3-4da8-b368-a4ed3c61918c",
+        "name": "professional",
+        "description": "The professional plan instance of the IBM Watson Machine Learning service is billed fixed amount per month, includes 2,000,000 predictions and 1,000 capacity unit-hours, with a minimum of 1 minute per training job. Overage is charged flat rate per each thousand of predictions and per each capacity unit-hour. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
+        "displayName": "Professional",
+        "originalName": "professional"
+      },
+      {
+        "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
+        "name": "v2-professional",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
+        "displayName": "Standard",
+        "originalName": "v2-professional"
+      },
+      {
+        "id": "a3d2f92f-06f9-48d0-b2e6-a7ba2b4e0577",
+        "name": "v2-standard",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
+        "displayName": "Essentials",
+        "originalName": "v2-standard"
+      }
+    ],
+    "description": "Formerly known as Watson Machine Learning. Quickly build, run and manage generative AI and machine learning applications with built-in performance and scalability.",
+    "longDescription": "IBM watsonx.ai Runtime provides the resources that power the AI lifecycle for IBM watsonx.ai and Cloud Pak for Data as a Service. IBM watsonx.ai Runtime powers IBM watsonx.ai Studio(link). With resources for all AI solution tasks, you can build, test, and deploy machine learning models and on watsonx.ai, build, tune, and deploy generative AI solutions.",
+    "displayName": "watsonx.ai Runtime",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/51c53b72-918f-4869-b834-2d99eb28422a/artifacts/cache/6ef7f1514926a2ce49e05300c80c304b-public/watsonxai-light.svg",
+    "localSvgIcon": "/generated/icons/51c53b72-918f-4869-b834-2d99eb28422a.svg",
+    "localPngIcon": "/generated/icons/51c53b72-918f-4869-b834-2d99eb28422a.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
+      "us-south"
+    ],
+    "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "data-science-experience",
+    "pricing_tags": [
+      "paid_only",
+      "paygo",
+      "free",
+      "lite"
+    ],
+    "tags": [
+      "apidocs_enabled",
+      "au-syd",
+      "calcium",
+      "cpdaas",
+      "custom_kind_service",
+      "data science experience",
+      "disable_reclamation",
+      "dsx",
+      "eu-de",
+      "eu-gb",
+      "free",
+      "freesia",
+      "gc_migrate",
+      "hipaa",
+      "ibm_created",
+      "jp-tok",
+      "lite",
+      "paid_only",
+      "paygo",
+      "rc_compatible",
+      "studio",
+      "support_ibm",
+      "us-south",
+      "watson",
+      "watsonx",
+      "wx"
+    ],
+    "plans": [
+      {
+        "id": "f4029623-1646-4ef9-8797-5e200a4d49aa",
+        "name": "enterprise-v2",
+        "description": "The Enterprise plan for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI. For HIPAA support, you must enable it in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
+        "displayName": "Enterprise v2",
+        "originalName": "enterprise-v2"
+      },
+      {
+        "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
+        "name": "free-v1",
+        "description": "The Lite plan offers most watsonx.ai Studio data science and AI features with usage restrictions.",
+        "displayName": "Lite",
+        "originalName": "free-v1"
+      },
+      {
+        "id": "a386ed81-6789-4ced-a099-da1581353281",
+        "name": "professional-v1",
+        "description": "The Professional plan for watsonx.ai Studio enables your team to build enterprise scale data science and AI solutions.",
+        "displayName": "Professional",
+        "originalName": "professional-v1"
+      },
+      {
+        "id": "40073cbd-2d60-4a65-a32d-3b1d11794cc6",
+        "name": "standard-v1",
+        "description": "The Standard plan for Watson Studio enables your team to solve problems and gain a competitive advantage with enterprise-scale data science and AI.",
+        "displayName": "Standard v1",
+        "originalName": "standard-v1"
+      }
+    ],
+    "description": "(Formerly known as Watson Studio) Develop powerful AI solutions with an integrated collaborative studio and industry-standard APIs and SDKs.",
+    "longDescription": "IBM watsonx.ai Studio provides the set of integrated tools for IBM watsonx.ai and Cloud Pak for Data as a Service. IBM watsonx.ai Studio is powered by IBM watsonx.ai Runtime(link). With a suite of tools for all skill levels, everyone can collaborate to develop machine learning solutions and on watsonx.ai, develop generative AI solutions. You can write code, visually code on a graphical canvas, or automatically build AI solutions.",
+    "displayName": "watsonx.ai Studio",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/39ba9d4c-b1c5-4cc3-a163-38b580121e01/artifacts/cache/6ef7f1514926a2ce49e05300c80c304b-public/watsonxai-light-theme.svg",
+    "localSvgIcon": "/generated/icons/39ba9d4c-b1c5-4cc3-a163-38b580121e01.svg",
+    "localPngIcon": "/generated/icons/39ba9d4c-b1c5-4cc3-a163-38b580121e01.png"
   },
   {
     "geo_tags": [
