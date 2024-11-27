@@ -535,7 +535,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-de",
       "us-south",
       "eu-gb",
@@ -543,7 +542,8 @@
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -994,6 +994,13 @@
         "originalName": "mx3d-metal-16x128"
       },
       {
+        "id": "ded23616-e993-40e3-9935-68cfe3ad85ee",
+        "name": "mx3d-metal-192x2048",
+        "description": "Pricing plan for mx3d-metal-192x2048",
+        "displayName": "mx3d-metal-192x2048",
+        "originalName": "mx3d-metal-192x2048"
+      },
+      {
         "id": "97f33c28-245a-49c6-b861-41b9dabdd242",
         "name": "mx3d-metal-48x512",
         "description": "Pricing plan for mx3d-metal-48x512",
@@ -1043,6 +1050,13 @@
         "originalName": "ux3d-metal-16x512"
       },
       {
+        "id": "0c869eb8-fb07-47a3-9fb5-21e9db3a5a03",
+        "name": "ux3d-metal-96x2048",
+        "description": "Pricing plan for ux3d-metal-96x2048",
+        "displayName": "ux3d-metal-96x2048",
+        "originalName": "ux3d-metal-96x2048"
+      },
+      {
         "id": "139387fe-dc48-4d7d-a6b2-a2a2dcd709f2",
         "name": "vx2d-metal-96x1536",
         "description": "Pricing plan for an vx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 1536 GB memory, local SSD boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
@@ -1055,6 +1069,13 @@
         "description": "Pricing plan for a vx3 bare metal server configured with dual processors offering 8 cores (16 vCPU), 256 GB memory, and up to an aggregate 200Gbps network uplink.",
         "displayName": "vx3-metal-16x256",
         "originalName": "vx3-metal-16x256"
+      },
+      {
+        "id": "6a11eab7-8c47-4f88-a120-f2aedf8e2575",
+        "name": "vx3d-metal-128x2048",
+        "description": "Pricing plan for vx3d-metal-128x2048",
+        "displayName": "vx3d-metal-128x2048",
+        "originalName": "vx3d-metal-128x2048"
       },
       {
         "id": "63a3624a-2a7a-46b1-b550-6906e21e4db2",
@@ -5153,13 +5174,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "eu-de"
@@ -5314,13 +5335,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7702,14 +7723,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8417,6 +8438,9 @@
   },
   {
     "geo_tags": [
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
       "eu-es",
       "eu-gb",
       "us-south",
@@ -8425,10 +8449,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd"
+      "eu-de"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9288,7 +9309,9 @@
     "pricing_tags": [
       "paid",
       "paid_only",
-      "allow_internal_users"
+      "allow_internal_users",
+      "free",
+      "subscription"
     ],
     "tags": [
       "allow_internal_users",
@@ -9302,6 +9325,7 @@
       "eu-gb",
       "financial services",
       "financial services validated",
+      "free",
       "fs cloud",
       "fs_ready",
       "fss",
@@ -9316,6 +9340,7 @@
       "paid",
       "paid_only",
       "rc_compatible",
+      "subscription",
       "support_ibm",
       "us-east",
       "us-south",
@@ -9349,6 +9374,13 @@
         "description": "Network Load Balancer for VPC",
         "displayName": "Network Load Balancer for VPC",
         "originalName": "network-load-balancer-gen2"
+      },
+      {
+        "id": "abccaf42-8f98-407c-a568-462b700676a4",
+        "name": "ppnlb-network-load-balancer-sdn",
+        "description": "Private Path Network Load Balancer is a SDN based, Layer 4 Load Balancer that is focused on ISVs who want to host their services on VPC and provide secure access to their customers via VPE.",
+        "displayName": "Private Path Network Load Balancer",
+        "originalName": "ppnlb-network-load-balancer-sdn"
       }
     ],
     "description": "Elastic Load Balancer as a service with core load balancing features and flexible usage-based pricing.",
@@ -9811,10 +9843,10 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12540,11 +12572,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -15840,11 +15872,11 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
