@@ -277,13 +277,8 @@ const store = new Vuex.Store({
           // },
           //  data-track-label="IAM" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="IAM Compatible"></button>
           {
-            "id": "iam_compatible",
-            "label": "IAM Compatible"
-          },
-          //  data-track-label="RC" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="Resource Catalog Compatible"></button>
-          {
             "id": "rc_compatible",
-            "label": "RC Compatible"
+            "label": "IAM Compatible"
           },
           //  data-track-label="EU supported" data-toggle="button" ng-click="toggleTagConfiguration('', true)" title="EU supported"></button>
           {
