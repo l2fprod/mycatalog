@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -3274,8 +3274,8 @@
     ],
     "description": "Simple, secure, automated backup and restore to protect IBM PowerVS data powered by IBM Storage Protect.",
     "longDescription": "Powered by Cobalt Iron Compass®\nA single, unified, SaaS-based offering to backup and restore IBM PowerVS workloads.\n\nWith IBM Storage Protect, Compass protects a variety of PowerVS platforms, applications, and data classes including:\n1.\tAIX\n2.\tLinux\n3.\tOracle on AIX\n4.\tDB2 on AIX\n5.\tSAP HANA on Linux\n\nCompass delivers a variety of differentiated features and functionality: \n1.\tSimple, automated, instant-on\n2.\tCloud backup service\n3.\tResilient and compliant\n4.\tUsage-based pricing\n5.\tNative application integrations \n\nThe Compass offering provides a variety of integrated security and operational features including:\n\n1.\tAlerting, notifications, and ticketing features and integration\n2.\tAutomated auditing and validation of backup server landscape\n3.\tBackup server automation – hands-free automation of all backup server tasks\n4.\tCentralized policy management\n5.\tComplete governance\n6.\tCustomer data is encrypted in all phases from in-transit, to-storage, and at-rest\n7.\tMultitenancy and unlimited sub-organizations\n8.\tRole-based access control management\n",
-    "displayName": "Cobalt Iron - Secure Automated Backup ",
-    "imageUrl": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/Cobalt%20Iron%20-%20Logos/Compass%20Bug_Blue_32pxl%20x%2032pxl.png",
+    "displayName": "Cobalt Iron - Secure Automated Backup with Compass",
+    "imageUrl": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/CobaltIronLogo-Vertical-SpecialUseOnly_WhtBackground.png",
     "localPngIcon": "/generated/icons/afb603e9-8738-4542-abf4-baf5231a4dbe.png"
   },
   {
@@ -4581,7 +4581,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4664,7 +4664,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4743,7 +4743,7 @@
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/etcd.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/etcd.svg",
     "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
@@ -4830,7 +4830,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4899,13 +4899,12 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4917,7 +4916,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4982,7 +4982,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -5061,7 +5061,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5175,15 +5175,15 @@
   {
     "geo_tags": [
       "eu-gb",
+      "us-south",
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7723,14 +7723,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8438,6 +8438,7 @@
   },
   {
     "geo_tags": [
+      "eu-es",
       "eu-gb",
       "us-south",
       "br-sao",
@@ -8448,8 +8449,7 @@
       "eu-de",
       "satcon_fra",
       "satcon_wdc",
-      "au-syd",
-      "eu-es"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9732,7 +9732,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -9843,10 +9843,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -15793,11 +15793,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -15874,11 +15874,11 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -16024,6 +16024,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south"
     ],
@@ -16046,6 +16047,7 @@
       "analytics",
       "allow_internal_users",
       "apidocs_enabled",
+      "au-syd",
       "calcium",
       "custom_kind_service",
       "eu-de",
