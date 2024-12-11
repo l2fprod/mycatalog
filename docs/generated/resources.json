@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -535,6 +535,7 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -542,8 +543,7 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1075,6 +1075,13 @@
         "description": "Pricing plan for a vx3 bare metal server configured with dual processors offering 8 cores (16 vCPU), 256 GB memory, and up to an aggregate 200Gbps network uplink.",
         "displayName": "vx3-metal-16x256",
         "originalName": "vx3-metal-16x256"
+      },
+      {
+        "id": "6a11eab7-8c47-4f88-a120-f2aedf8e2575",
+        "name": "vx3d-metal-128x2048",
+        "description": "Pricing plan for vx3d-metal-128x2048",
+        "displayName": "vx3d-metal-128x2048",
+        "originalName": "vx3d-metal-128x2048"
       },
       {
         "id": "63a3624a-2a7a-46b1-b550-6906e21e4db2",
@@ -4750,6 +4757,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4757,11 +4768,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5177,16 +5184,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5338,13 +5345,13 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7726,14 +7733,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8441,6 +8448,8 @@
   },
   {
     "geo_tags": [
+      "satcon_fra",
+      "satcon_wdc",
       "au-syd",
       "eu-es",
       "eu-gb",
@@ -8450,9 +8459,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "satcon_fra",
-      "satcon_wdc"
+      "eu-de"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9848,10 +9855,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12579,11 +12586,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
