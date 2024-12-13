@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -535,7 +535,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -543,7 +542,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1774,17 +1774,6 @@
     "localPngIcon": "/generated/icons/is.vpn-server.png"
   },
   {
-    "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "eu-de",
-      "eu-es",
-      "eu-gb",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
     "id": "dcc46a60-e13b-11e8-a015-757410dab16b",
     "kind": "service",
     "metadata": {
@@ -1803,38 +1792,21 @@
       "logging_monitoring",
       "allow_internal_users",
       "apidocs_enabled",
-      "br-sao",
-      "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
-      "eu_access",
-      "eu-de",
-      "eu-es",
-      "eu-gb",
       "free",
       "iam_compatible",
       "ibm_created",
       "ibm_deprecated",
       "ibm_release",
-      "jp-osa",
-      "jp-tok",
       "lite",
       "paid",
       "paid_only",
       "rc_compatible",
       "support_ibm",
-      "supports_syndication",
-      "us-east",
-      "us-south"
+      "supports_syndication"
     ],
     "plans": [
-      {
-        "id": "254d26dc-3ef5-4006-912c-954186a0d033",
-        "name": "--hipaa-30-day",
-        "description": "HIPAA Compliant Activity Tracker events with 30 day Log Search.  You can send alerts in real time, archive logs and watch live streaming tail.",
-        "displayName": "HIPAA 30 Day Log Search",
-        "originalName": "\t hipaa-30-day"
-      },
       {
         "id": "b7f77c86-adde-4e32-8a1b-daba35b1d4fa",
         "name": "14-day",
@@ -1868,6 +1840,7 @@
     "longDescription": "IBM Cloud Activity Tracker is your source for activity events recorded within IBM Cloud.  Activity events are records of the API calls to services on the IBM Cloud and produces the evidence to comply with corporate policies and market industry-specific regulations.  Cloud activity events help accelerate detection of security events and application performance issues. \n\nApplication environments seeking to maintain Financial Services Validation status on IBM Cloud should consult documentation (https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started) to configure activity events to route directly to IBM Cloud Object Storage.\n\nIBM Cloud Activity Tracker offers ready to run event search offerings to simplify configuration and expedite your time to greater insights.  You can choose to retain your events for 7, 14, or 30 days.  A 30 day HIPAA compliant offering is also available.",
     "displayName": "Cloud Activity Tracker",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/090c2c10-8c38-11e8-bec2-493df9c49eb8/artifacts/cache/f3e0e4614b10477813a67733439fd639-public/CloudLogAnalysisAuditing.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/dcc46a60-e13b-11e8-a015-757410dab16b.svg",
     "localPngIcon": "/generated/icons/dcc46a60-e13b-11e8-a015-757410dab16b.png"
   },
@@ -5180,16 +5153,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-east",
-      "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5333,7 +5306,7 @@
       }
     ],
     "description": "A fully managed, high performance transactional database for mission critical workloads.",
-    "longDescription": "A fully-managed cloud SQL database. Powered by a turbo-charged Db2 engine.",
+    "longDescription": "Built to run the world’s mission-critical workloads, IBM® Db2® database engine supports low-latency transactions and real-time analytics workloads to empower enterprises while modernizing data workloads to meet organizational AI and hybrid cloud needs.",
     "displayName": "Db2",
     "imageUrl": "https://cloud-object-storage-xy-cos-standard-jzw.s3.us-east.cloud-object-storage.appdomain.cloud/Db2.svg",
     "localSvgIcon": "/generated/icons/dashdb-for-transactions.svg",
@@ -5341,13 +5314,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7305,14 +7278,12 @@
     },
     "name": "fnts-managed-services-for-powervs-cloud",
     "pricing_tags": [
-      "free",
       "paid",
       "paid_only"
     ],
     "tags": [
       "compliance",
       "custom_kind_service",
-      "free",
       "global",
       "ibm_third_party",
       "paid",
@@ -7324,12 +7295,6 @@
       "virtualservers"
     ],
     "plans": [
-      {
-        "id": "ef6be7b9-78ef-4890-b19c-d25e84a8de69",
-        "name": "fnts-managed-services-for-powervs-cloud-free-assessment",
-        "description": "FNTS cloud consultants will meet with you virtually to assess your current/future PowerVS environment. We tailor the discovery session and assessment based on the stage of your project.  We meet you where you are, whether you are in the evaluation stage, planning stage, execution stage, or post-migration stage. \nThe outcome of the assessment may be an architecture evaluation, migration best practices, or managed services proposal.",
-        "displayName": "Free Assessment"
-      },
       {
         "id": "a56429b5-eb96-44ee-ab41-afa942c06d30",
         "name": "fnts-managed-services-for-powervs-cloud-managed-services",
@@ -7728,14 +7693,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8443,6 +8408,10 @@
   },
   {
     "geo_tags": [
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
+      "eu-es",
       "eu-gb",
       "us-south",
       "br-sao",
@@ -8450,11 +8419,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
-      "eu-es"
+      "eu-de"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9398,16 +9363,6 @@
     "localPngIcon": "/generated/icons/is.load-balancer.png"
   },
   {
-    "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "eu-de",
-      "eu-es",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
     "id": "e13e1860-959c-11e8-871e-ad157af61ad7",
     "kind": "service",
     "metadata": {
@@ -9427,28 +9382,19 @@
       "allow_internal_users",
       "apidocs_enabled",
       "beryllium",
-      "br-sao",
-      "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
-      "eu_access",
-      "eu-de",
-      "eu-es",
       "free",
       "freesia",
       "iam_compatible",
       "ibm_created",
       "ibm_deprecated",
-      "jp-osa",
-      "jp-tok",
       "lite",
       "paid",
       "paid_only",
       "rc_compatible",
       "support_ibm",
-      "supports_syndication",
-      "us-east",
-      "us-south"
+      "supports_syndication"
     ],
     "plans": [
       {
@@ -9473,13 +9419,6 @@
         "originalName": "7-day"
       },
       {
-        "id": "a9b3eb07-5096-448b-ba34-53711d74742b",
-        "name": "hipaa-30-day",
-        "description": "HIPAA Compliant logs with 30 day Log Search. You can send alerts in real time, archive logs and watch live streaming tail.",
-        "displayName": "HIPAA 30 Day Log Search",
-        "originalName": "hipaa-30-day"
-      },
-      {
         "id": "abcf7f02-de22-4c7f-98a1-e8a592093d83",
         "name": "lite",
         "description": "Live Streaming Tail support with ability to build and save views in the UI. Logs are not retained for search. No Data Volume Limit.\nYou may upgrade your plan at any time after the initial set up.",
@@ -9491,6 +9430,7 @@
     "longDescription": "Install IBM Log Analysis and start seeing your logs in under two minutes. Whether you wish to send logs via Kubernetes, Code libraries, OS agents, or syslog we have hundreds of custom integrations and are adding more each month.\n\nOur integrations are meant to be hassle free, and our backend services will automatically detect, parse, and index all log types.",
     "displayName": "Log Analysis",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/090c2c10-8c38-11e8-bec2-493df9c49eb8/artifacts/cache/189738563ec654b387bdc6d9da511401-public/CloudLogAnalysisLogging.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/e13e1860-959c-11e8-871e-ad157af61ad7.svg",
     "localPngIcon": "/generated/icons/e13e1860-959c-11e8-871e-ad157af61ad7.png"
   },
@@ -11996,8 +11936,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14371,6 +14311,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14409,8 +14350,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15809,11 +15749,11 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
