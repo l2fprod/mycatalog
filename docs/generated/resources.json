@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -535,6 +535,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south",
       "eu-gb",
@@ -542,8 +543,7 @@
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5153,16 +5153,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-south",
-      "eu-gb",
-      "au-syd",
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5173,10 +5173,12 @@
     "name": "dashdb-for-transactions",
     "pricing_tags": [
       "paid",
+      "subscription",
+      "service_subscription",
+      "mcsp",
       "paid_only",
       "reservable",
       "allow_internal_users",
-      "subscription",
       "subscription_only",
       "free",
       "lite"
@@ -5209,6 +5211,7 @@
       "jp-tok",
       "lead",
       "lite",
+      "mcsp",
       "mil01",
       "mon01",
       "oracle",
@@ -5217,6 +5220,7 @@
       "purescale",
       "rc_compatible",
       "reservable",
+      "service_subscription",
       "sql",
       "sqldb",
       "subscription",
@@ -5227,6 +5231,13 @@
       "us-south"
     ],
     "plans": [
+      {
+        "id": "PerformanceSubscription",
+        "name": "db2-subscription",
+        "description": "Base configuration starts with 4 vCPUs, 16 GB of RAM, 400 IOPS and 50GB of storage.\n\nThe starting configuration provides one SQL database per service instance residing on dedicated VPC machines. Scale your database up to 128 vCPUs (1024 GB of memory) and 40 TB of storage for data and logs. Gen 3 offers a high availability option that includes one database running on two dedicated virtual servers. The high availability instances are provisioned across multiple availability zones. Scale your compute, storage and IOPS independently to achieve the perfect price/performance fit.\n\nA pre-paid monthly subscription plan for customers who have made a purchase through an IBM Sales representative. Usage above the contract entitlement will incur overage charges.",
+        "displayName": "Performance Subscription (Gen 3)",
+        "originalName": "db2-subscription"
+      },
       {
         "id": "dashDBTransactional1TB-tx",
         "name": "docpreciseperf12-128-1400",
@@ -5298,6 +5309,13 @@
         "originalName": "Lite"
       },
       {
+        "id": "Performance",
+        "name": "performance",
+        "description": "Base configuration starts with 4 vCPUs, 16 GB of RAM, 400 IOPS and 50GB of storage.\n\nThe starting configuration provides one SQL database per service instance residing on dedicated VPC machines. Scale your database up to 128 vCPUs (1024 GB of memory) and 40 TB of storage for data and logs. Gen 3 offers a high availability option that includes one database running on two dedicated virtual servers. The high availability instances are provisioned across multiple availability zones. Scale your compute, storage and IOPS independently to achieve the perfect price/performance fit.\n\nThe service is billed hourly based on the number of resource units. Monthly resource units are shown for machine types during selection.  Storage requires 0.0125 RU per 20 GB/month and 0.0375 RU per 100 IOPS/month.  Backups require 0.3125 RU per TB/month.",
+        "displayName": "Performance (Gen 3)",
+        "originalName": "performance"
+      },
+      {
         "id": "dashDBStandard",
         "name": "standard",
         "description": "The starting configuration provides one SQL database per service instance residing on shared compute slices, with 2 sharable vCPUs (8 GB of memory), and 20 GB of storage for data and logs. All database deployed across multi-tenant compute infrastructure. Scale your database up to 16 vCPUs (64 GB of memory) and 4 TB of storage for data and logs. Standard offers a high availability option that includes one database running on three shared virtual servers. Each HA node is billed separately. The high availability virtual servers are provisioned across multiple availability zones in IBM Cloud regions that support it. Scale your compute and storage independently to achieve the perfect price/performance fit. Each plan includes up to 100 GB of backup storage, stored for 14 days.",
@@ -5314,13 +5332,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6486,6 +6504,57 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/d1e3f0d2-0f49-ddfd-0eb9-2897b9d3a45d.svg",
     "localPngIcon": "/generated/icons/d1e3f0d2-0f49-ddfd-0eb9-2897b9d3a45d.png"
+  },
+  {
+    "geo_tags": [
+      "us-east"
+    ],
+    "id": "871a9870-7508-11ef-ac5c-3324c550b37a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "enterprise-app-java",
+    "pricing_tags": [
+      "paid",
+      "subscription",
+      "allow_internal_users",
+      "subscription_only",
+      "service_subscription",
+      "mcsp"
+    ],
+    "tags": [
+      "compute",
+      "allow_internal_users",
+      "custom_kind_service",
+      "iam_compatible",
+      "ibm_created",
+      "mcsp",
+      "paid",
+      "rc_compatible",
+      "runtime",
+      "service_subscription",
+      "subscription",
+      "subscription_only",
+      "support_ibm",
+      "us-east"
+    ],
+    "plans": [
+      {
+        "id": "4404d29d-ea27-46d1-8357-7b4010ca8977",
+        "name": "standard",
+        "description": "A fully managed, single-tenant service designed to simplify your migration journey to the cloud. With access to automation tools, including watsonx code assistant generative AI, this service accelerates cloud migration, reduces complexity, and enables your development teams to innovate in a modern environment.",
+        "displayName": "Standard",
+        "originalName": "standard"
+      }
+    ],
+    "description": "IBM Enterprise Application Service for Java is an end-to-end solution to building and running secure Jakarta EE/MicroProfile applications running efficiently in Liberty deployed on public clouds.",
+    "longDescription": "IBM® Enterprise Application Service for Java™ helps you quickly build and promote your Java application to IBM Cloud®. You provide the application code and Enterprise Application Service provides an efficient application build, deployment, and monitoring experience that follows best practices, security and compliance, with a serverless experience.",
+    "displayName": "Enterprise Application Service",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/871a9870-7508-11ef-ac5c-3324c550b37a/artifacts/cache/ab843d9c9c1def0e8ffb61b176198c44-public/EnterpriseApplicationServiceForJava.svg",
+    "localSvgIcon": "/generated/icons/871a9870-7508-11ef-ac5c-3324c550b37a.svg",
+    "localPngIcon": "/generated/icons/871a9870-7508-11ef-ac5c-3324c550b37a.png"
   },
   {
     "geo_tags": [
@@ -7693,14 +7762,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8408,6 +8477,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "satcon_fra",
       "satcon_wdc",
       "au-syd",
@@ -8418,8 +8488,7 @@
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "eu-de"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8522,11 +8591,11 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "au-syd",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb",
-      "au-syd"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -9784,10 +9853,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12528,11 +12597,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -13014,12 +13083,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -15749,11 +15818,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "au-syd",
       "jp-tok",
       "eu-gb",
-      "us-south",
-      "eu-de",
-      "au-syd"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
