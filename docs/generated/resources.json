@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -451,8 +451,11 @@
   {
     "geo_tags": [
       "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
+      "jp-osa",
+      "jp-tok",
       "us-east",
       "us-south"
     ],
@@ -475,6 +478,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
+      "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
       "dark launch",
@@ -488,6 +492,8 @@
       "fs_ready",
       "iam_compatible",
       "ibm_created",
+      "jp-osa",
+      "jp-tok",
       "lite",
       "paid",
       "paid_only",
@@ -535,6 +541,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south",
       "eu-gb",
@@ -542,8 +549,7 @@
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5153,16 +5159,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5332,13 +5338,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "au-syd",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6603,9 +6609,12 @@
   {
     "geo_tags": [
       "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-es",
       "eu-gb",
+      "jp-osa",
+      "jp-tok",
       "us-south"
     ],
     "id": "ecdb4690-c2d8-11eb-bff1-4f7b9d2dfe41",
@@ -6626,6 +6635,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
+      "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
       "dev_ops",
@@ -6638,6 +6648,8 @@
       "fs_ready",
       "iam_compatible",
       "ibm_created",
+      "jp-osa",
+      "jp-tok",
       "lite",
       "paid",
       "paid_only",
@@ -7334,6 +7346,48 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.flow-log-collector/artifacts/cache/678ab8a8780c8494c7d7cec5d9aa9252-public/VPC_Flowlogs.svg",
     "localSvgIcon": "/generated/icons/is.flow-log-collector.svg",
     "localPngIcon": "/generated/icons/is.flow-log-collector.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "05605040-8854-4665-bd05-0b10a96daf05",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "fnts-cloud-migration-services",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "consulting_tab",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "migration_tools",
+      "paid",
+      "paid_only",
+      "powervs",
+      "rc_compatible",
+      "support_third_party",
+      "svc"
+    ],
+    "plans": [
+      {
+        "id": "b8d07cf9-9899-4553-9efd-b74d79e69afd",
+        "name": "migration-services",
+        "description": "Cloud migration services priced in service units. The number of service units required for your migration project will be determined in joint discovery and planning sessions with FNTS.",
+        "displayName": "migration-services"
+      }
+    ],
+    "description": "Migrate IBM i, AIX, Linux or Windows VMs from on premises, private or hybrid cloud to IBM Cloud.",
+    "longDescription": "Migrate IBM i, AIX, Linux and Windows workloads to IBM Cloud. Contact FNTS at https://www.fnts.com/contact-us to schedule an initial planning meeting to discuss the scope of the project. FNTS will work with you to build a migration plan and estimate the service credits required to deliver the project and ongoing services.",
+    "displayName": "FNTS Cloud Migration Services",
+    "imageUrl": "https://www.fnts.com/hubfs/Logos/fnts-vertical-200.png",
+    "localPngIcon": "/generated/icons/05605040-8854-4665-bd05-0b10a96daf05.png"
   },
   {
     "geo_tags": [
@@ -8478,17 +8532,17 @@
   {
     "geo_tags": [
       "au-syd",
+      "eu-gb",
       "eu-de",
+      "us-south",
       "satcon_fra",
       "satcon_wdc",
       "eu-es",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15882,11 +15936,11 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de",
-      "au-syd"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
