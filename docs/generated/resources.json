@@ -4773,6 +4773,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4780,11 +4784,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4929,6 +4929,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4940,8 +4941,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5200,7 +5200,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "us-south",
       "au-syd",
       "eu-de",
@@ -5209,7 +5208,8 @@
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east"
+      "us-east",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5379,13 +5379,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7857,14 +7857,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8572,18 +8572,18 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-de",
+      "us-south",
       "satcon_fra",
       "satcon_wdc",
-      "au-syd",
       "eu-es",
-      "jp-tok",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "us-south"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8634,6 +8634,13 @@
     ],
     "plans": [
       {
+        "id": "4e853ad3-5820-49c7-8d07-a179fb15b9ee",
+        "name": "cross-region-resiliency",
+        "description": "Designed for users who require enhanced disaster recovery from cross-region availability. In the event a region is unavailable, requests will automatically route to the replicated data in the cross-region, ensuring key functionality persists. Base cost is charged once per region where you manage at least one key under this plan (regardless of the number of instances created in that region).",
+        "displayName": "Cross-region Resiliency",
+        "originalName": "cross-region-resiliency"
+      },
+      {
         "id": "c4b29bd4-abab-44ad-a244-5330af747027",
         "name": "sat-pricing",
         "description": "IBM Cloud Key Protect Satellite service hosted on user-owned resources. The service has a base price for installing Key Protect in the Satellite location plus a linear charge for the requested quota of keys in all of the instances in that location. If the quota is changed mid-month, you are charged based on the maximum quota set that month. Please refer to documentation for resource and usage requirements, terms, and conditions.",
@@ -8643,8 +8650,8 @@
       {
         "id": "eedd3585-90c6-4c8f-be3d-062069e99fc3",
         "name": "tiered-pricing",
-        "description": "Creating or importing a key initiates the first version of that key. As a result, a newly created or imported key has one version. Each time a key is rotated, a new key version is created. A key that has been rotated five times, then, has six versions (five versions created by rotations plus the initial version). Deleted keys and their versions are not counted.",
-        "displayName": "Graduated Tier Pricing",
+        "description": "Key versions are created whenever a key is created or imported, and whenever an existing key is rotated. A key that has been rotated five times, for example, has six versions (five versions created by rotations plus the initial version).\n\nThis plan does not offer cross-regional resiliency.",
+        "displayName": "Standard",
         "originalName": "tiered-pricing"
       }
     ],
@@ -12164,8 +12171,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -12756,11 +12763,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -15977,11 +15984,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "jp-tok",
       "eu-gb",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",

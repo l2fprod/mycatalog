@@ -4,6 +4,22 @@
         <description><![CDATA['My Catalog' uses the IBM Cloud catalog API to retrieve data from the catalog. It attempts to be as accurate as possible. This feed shows additions, updates, removals from the catalog. Use with care. It is a work-in-progress :)]]></description>
         <link>https://mycatalog.weworkinthecloud.com</link>
         <generator>mycatalog</generator>
-        <lastBuildDate>Tue, 31 Dec 2024 13:06:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Jan 2025 01:06:11 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[[updated] Key Protect (kms) has a new plan named cross-region-resiliency]]></title>
+            <description><![CDATA[Designed for users who require enhanced disaster recovery from cross-region availability. In the event a region is unavailable, requests will automatically route to the replicated data in the cross-region, ensuring key functionality persists. Base cost is charged once per region where you manage at least one key under this plan (regardless of the number of instances created in that region).]]></description>
+            <link>https://mycatalog.weworkinthecloud.com/?date=2025-01-01T01%3A06%3A09.686Z&amp;service=kms&amp;type=updated</link>
+            <guid isPermaLink="true">https://mycatalog.weworkinthecloud.com/?date=2025-01-01T01%3A06%3A09.686Z&amp;service=kms&amp;type=updated</guid>
+            <pubDate>Wed, 01 Jan 2025 01:06:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[[updated] Key Protect (kms) has changed the description of the plan named tiered-pricing]]></title>
+            <description><![CDATA[*before*: Creating or importing a key initiates the first version of that key. As a result, a newly created or imported key has one version. Each time a key is rotated, a new key version is created. A key that has been rotated five times, then, has six versions (five versions created by rotations plus the initial version). Deleted keys and their versions are not counted., *after*: Key versions are created whenever a key is created or imported, and whenever an existing key is rotated. A key that has been rotated five times, for example, has six versions (five versions created by rotations plus the initial version).
+
+This plan does not offer cross-regional resiliency.]]></description>
+            <link>https://mycatalog.weworkinthecloud.com/?date=2025-01-01T01%3A06%3A09.686Z&amp;service=kms&amp;type=updated</link>
+            <guid isPermaLink="true">https://mycatalog.weworkinthecloud.com/?date=2025-01-01T01%3A06%3A09.686Z&amp;service=kms&amp;type=updated</guid>
+            <pubDate>Wed, 01 Jan 2025 01:06:09 GMT</pubDate>
+        </item>
     </channel>
 </rss>
