@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1098,7 +1098,7 @@
       }
     ],
     "description": "Leverage x86 servers with physical single tenancy and high performance offering end user virtualization.",
-    "longDescription": "Bare metal servers for VPC are dedicated servers offering direct hardware performance and is integrated as a first-class compute offering within Virtual Private Cloud. Users can leverage existing VPC services across storage, networking, and security with bare metal for VPC and can incorporate its higher end hardware profiles with the additional benefit of end-user managed virtualization. Test.\n\n#### Pricing\n\n##### Hourly, pay-as-you-go\nPay-as-you-go bandwidth is per gigabyte. Your billing charges accrue from provision to cancellation, and are billed in arrears. This VPC product does not support suspended billing and will continue to bill regardless of the power state. Total pricing includes bare metal server instance profiles and software, internet data transfers, and optional VPC services. Each additional component is priced separately and included as part of your total IBM Cloud VPC charge. Service tiers are bound to your account, not to any specific VPC.",
+    "longDescription": "Bare metal servers for VPC are dedicated servers offering direct hardware performance and is integrated as a first-class compute offering within Virtual Private Cloud. Users can leverage existing VPC services across storage, networking, and security with bare metal for VPC and can incorporate its higher end hardware profiles with the additional benefit of end-user managed virtualization.\n\n#### Pricing\n\n##### Hourly, pay-as-you-go\nPay-as-you-go bandwidth is per gigabyte. Your billing charges accrue from provision to cancellation, and are billed in arrears. This VPC product does not support suspended billing and will continue to bill regardless of the power state. Total pricing includes bare metal server instance profiles and software, internet data transfers, and optional VPC services. Each additional component is priced separately and included as part of your total IBM Cloud VPC charge. Service tiers are bound to your account, not to any specific VPC.",
     "displayName": "Bare Metal Servers for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.bare-metal-server/artifacts/CloudVPCBareMetal.svg",
     "localSvgIcon": "/generated/icons/is.bare-metal-server.svg",
@@ -4929,7 +4929,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4941,7 +4940,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -7589,56 +7589,6 @@
     "localPngIcon": "/generated/icons/a93eeacc-7012-c8bc-c851-e928949a226c.png"
   },
   {
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
-    "id": "functions",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "functions",
-    "pricing_tags": [
-      "paygo"
-    ],
-    "tags": [
-      "api docs enabled",
-      "au-syd",
-      "custom_kind_service",
-      "eu access support",
-      "eu-de",
-      "eu-gb",
-      "faas",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "ibm_release",
-      "jp-tok",
-      "knative",
-      "openwhisk",
-      "paygo",
-      "rc_compatible",
-      "serverless",
-      "support_ibm",
-      "us-east",
-      "us-south"
-    ],
-    "plans": [],
-    "description": "IBM Cloud Functions is a Function-as-a-Service (FaaS) platform which executes functions in response to incoming events.",
-    "longDescription": "IBM Cloud Functions is a Function-as-a-Service (FaaS) platform which executes functions in response to incoming events.",
-    "displayName": "Functions",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/functions/artifacts/cache/6bf59f2b01e93b639e723ac1f4beed87-public/CloudFunctions.svg",
-    "localSvgIcon": "/generated/icons/functions.svg",
-    "localPngIcon": "/generated/icons/functions.png"
-  },
-  {
     "id": "16",
     "kind": "iaas",
     "metadata": {
@@ -8572,18 +8522,18 @@
   },
   {
     "geo_tags": [
-      "satcon_fra",
-      "satcon_wdc",
-      "eu-es",
-      "eu-gb",
-      "jp-tok",
       "eu-de",
       "us-south",
       "au-syd",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "satcon_fra",
+      "satcon_wdc",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15984,11 +15934,11 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de",
-      "au-syd"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
