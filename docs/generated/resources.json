@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5200,16 +5200,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "eu-gb",
       "au-syd",
       "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5379,12 +5379,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "au-syd"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -5664,6 +5664,13 @@
         "description": "Pricing plan for VX2D profiles of Dedicated Host for VPC",
         "displayName": "VX2D Dedicated Host Plan",
         "originalName": "vx2d-host"
+      },
+      {
+        "id": "d53d2294-c062-478f-b4d0-60575ed2e27b",
+        "name": "vx3d-host",
+        "description": "Price plan for Very High Memory Gen3 Dedicated Host",
+        "displayName": "VX3D Dedicated Host Plan",
+        "originalName": "vx3d-host"
       }
     ],
     "description": "Provision single-tenant hosts that offer dedicated resources and maximum control over instance placement.",
@@ -7790,14 +7797,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8505,18 +8512,18 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "jp-tok",
+      "eu-de",
+      "us-south",
       "satcon_fra",
       "satcon_wdc",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "jp-tok",
       "au-syd",
-      "eu-es",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8626,11 +8633,11 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "au-syd",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb",
-      "au-syd"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -9952,10 +9959,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14479,7 +14486,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14518,7 +14524,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15917,11 +15924,11 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -15998,11 +16005,11 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
