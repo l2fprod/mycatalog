@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4929,6 +4929,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4940,8 +4941,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5200,16 +5200,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east"
+      "us-east",
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5379,12 +5379,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8512,18 +8512,18 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "jp-tok",
       "eu-de",
       "us-south",
       "satcon_fra",
       "satcon_wdc",
+      "au-syd",
+      "eu-gb",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "au-syd",
-      "eu-gb"
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9959,10 +9959,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -10288,19 +10288,6 @@
     "localPngIcon": "/generated/icons/cc42cff0-b19b-11eb-9a66-c717766c1d30.png"
   },
   {
-    "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "eu-de",
-      "eu-es",
-      "eu-fr2",
-      "eu-gb",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
     "id": "is.network-acl",
     "kind": "service",
     "metadata": {
@@ -10310,43 +10297,20 @@
       }
     },
     "name": "is.network-acl",
-    "pricing_tags": [
-      "free"
-    ],
     "tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
-      "eu-de",
-      "eu-es",
-      "eu-fr2",
-      "eu-gb",
-      "free",
-      "iam_compatible",
       "ibm_created",
       "is.composite",
-      "jp-osa",
-      "jp-tok",
       "rc_compatible",
-      "support_ibm",
-      "us-east",
-      "us-south"
+      "support_ibm"
     ],
-    "plans": [
-      {
-        "id": "5d6f1323-d9c1-4dac-bd5b-67c50cbe8653",
-        "name": "nextgen-network-acl-free",
-        "description": "Network ACL for VPC Standard plan for Gen2",
-        "displayName": "Standard Gen2",
-        "originalName": "nextgen-network-acl.free"
-      }
-    ],
+    "plans": [],
     "description": "Network ACL for VPC",
     "longDescription": "Use network access control lists (ACLs) as filters to allow or deny specified incoming or outgoing traffic in an IBM Cloud Virtual Private Cloud (VPC).",
     "displayName": "Network ACL",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.network-acl/artifacts/cache/71cf0af1d655590e9d94363e8f21954b-public/Access%20control%20lists.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/is.network-acl.svg",
     "localPngIcon": "/generated/icons/is.network-acl.png"
   },
@@ -13264,7 +13228,6 @@
     "longDescription": "The Speech to Text service converts the human voice into the written word. The service uses deep-learning AI to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.",
     "displayName": "Speech to Text",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bc35fb8c-bc5b-431b-859e-3861771d5843/artifacts/cache/802e04e9458d37e8714b7cbaed07457f-public/WatsonSpeechToText.svg",
-    "localSvgIcon": "/generated/icons/bc35fb8c-bc5b-431b-859e-3861771d5843.svg",
     "localPngIcon": "/generated/icons/bc35fb8c-bc5b-431b-859e-3861771d5843.png"
   },
   {
@@ -16005,11 +15968,11 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
