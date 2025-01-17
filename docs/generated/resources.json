@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,7 +541,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -549,7 +548,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5200,15 +5200,15 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "eu-de",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-east",
+      "us-south",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -5220,12 +5220,10 @@
     "name": "dashdb-for-transactions",
     "pricing_tags": [
       "paid",
-      "subscription",
-      "service_subscription",
-      "mcsp",
       "paid_only",
       "reservable",
       "allow_internal_users",
+      "subscription",
       "subscription_only",
       "free",
       "lite"
@@ -5245,7 +5243,6 @@
       "db2 on cloud",
       "db2oncloud",
       "dbaas",
-      "eu_access",
       "eu-de",
       "eu-gb",
       "flex",
@@ -5258,7 +5255,6 @@
       "jp-tok",
       "lead",
       "lite",
-      "mcsp",
       "mil01",
       "mon01",
       "oracle",
@@ -5267,7 +5263,6 @@
       "purescale",
       "rc_compatible",
       "reservable",
-      "service_subscription",
       "sql",
       "sqldb",
       "subscription",
@@ -5278,13 +5273,6 @@
       "us-south"
     ],
     "plans": [
-      {
-        "id": "PerformanceSubscription",
-        "name": "db2-subscription",
-        "description": "Base configuration starts with 4 vCPUs, 16 GB of RAM, 400 IOPS and 50GB of storage.\n\nThe starting configuration provides one SQL database per service instance residing on dedicated VPC machines. Scale your database up to 128 vCPUs (1024 GB of memory) and 40 TB of storage for data and logs. Gen 3 offers a high availability option that includes one database running on two dedicated virtual servers. The high availability instances are provisioned across multiple availability zones. Scale your compute, storage and IOPS independently to achieve the perfect price/performance fit.\n\nA pre-paid monthly subscription plan for customers who have made a purchase through an IBM Sales representative. Usage above the contract entitlement will incur overage charges.",
-        "displayName": "Performance Subscription (Gen 3)",
-        "originalName": "db2-subscription"
-      },
       {
         "id": "dashDBTransactional1TB-tx",
         "name": "docpreciseperf12-128-1400",
@@ -5379,12 +5367,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7797,14 +7785,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8512,18 +8500,18 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "satcon_fra",
       "satcon_wdc",
-      "eu-gb",
-      "jp-tok",
       "au-syd",
-      "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "jp-tok",
+      "eu-de",
+      "us-south",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10288,6 +10276,18 @@
     "localPngIcon": "/generated/icons/cc42cff0-b19b-11eb-9a66-c717766c1d30.png"
   },
   {
+    "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
+      "us-south"
+    ],
     "id": "is.network-acl",
     "kind": "service",
     "metadata": {
@@ -10297,20 +10297,42 @@
       }
     },
     "name": "is.network-acl",
+    "pricing_tags": [
+      "free"
+    ],
     "tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "free",
+      "iam_compatible",
       "ibm_created",
       "is.composite",
+      "jp-osa",
+      "jp-tok",
       "rc_compatible",
-      "support_ibm"
+      "support_ibm",
+      "us-east",
+      "us-south"
     ],
-    "plans": [],
+    "plans": [
+      {
+        "id": "5d6f1323-d9c1-4dac-bd5b-67c50cbe8653",
+        "name": "nextgen-network-acl-free",
+        "description": "Network ACL for VPC Standard plan for Gen2",
+        "displayName": "Standard Gen2",
+        "originalName": "nextgen-network-acl.free"
+      }
+    ],
     "description": "Network ACL for VPC",
     "longDescription": "Use network access control lists (ACLs) as filters to allow or deny specified incoming or outgoing traffic in an IBM Cloud Virtual Private Cloud (VPC).",
     "displayName": "Network ACL",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.network-acl/artifacts/cache/71cf0af1d655590e9d94363e8f21954b-public/Access%20control%20lists.svg",
-    "geo_tags": [],
     "localSvgIcon": "/generated/icons/is.network-acl.svg",
     "localPngIcon": "/generated/icons/is.network-acl.png"
   },
@@ -13623,12 +13645,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -14450,6 +14472,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14488,8 +14511,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15888,11 +15910,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
