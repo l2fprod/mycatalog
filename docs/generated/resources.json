@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5163,16 +5163,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
-      "eu-de",
-      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
-      "mon01"
+      "mon01",
+      "eu-gb",
+      "eu-de",
+      "us-east",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5330,12 +5330,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "au-syd"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7748,14 +7748,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8117,45 +8117,6 @@
     "localPngIcon": "/generated/icons/EEB04BA5-25BB-4E52-AAE5-9C7BEF86543B.png"
   },
   {
-    "id": "iotf-service-id",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "iotf-service",
-    "pricing_tags": [
-      "paygo"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "gc_migrate",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "internet of things",
-      "internet_of_things",
-      "lite",
-      "paygo",
-      "support_ibm"
-    ],
-    "plans": [
-      {
-        "id": "iotf-service-standard-id",
-        "name": "iotf-service-standard",
-        "description": "Here are the charges for data exchanged (tiered by usage in MB), data analyzed and data analyzed at the edge",
-        "displayName": "Standard",
-        "originalName": "iotf-service-standard"
-      }
-    ],
-    "description": "This service is the hub of all things IBM IoT, it is where you can set up and manage your connected devices so that your apps can access their live and historical data.",
-    "longDescription": "This service is the hub for IBM Watson IoT and lets you communicate with and consume data from connected devices and gateways. Use the built-in web console dashboards to monitor your IoT data and analyze it in real time. Then, enhance and customize your IBM Watson IoT Platform experience by building and connecting your own apps by using messaging and REST APIs.",
-    "displayName": "Internet of Things Platform",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/iotf-service-id/artifacts/cache/6260f9f0a0614fadec4c28aaa24bb0ab-public/Internet%20of%20Things.svg",
-    "geo_tags": [],
-    "localSvgIcon": "/generated/icons/iotf-service-id.svg",
-    "localPngIcon": "/generated/icons/iotf-service-id.png"
-  },
-  {
     "geo_tags": [
       "global"
     ],
@@ -8463,16 +8424,16 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-es",
+      "eu-gb",
       "satcon_fra",
       "satcon_wdc",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "jp-tok",
-      "au-syd",
-      "eu-gb",
       "eu-de",
       "us-south"
     ],
@@ -8584,11 +8545,11 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -15873,11 +15834,11 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -15954,11 +15915,11 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
