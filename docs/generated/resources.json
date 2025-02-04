@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4735,10 +4735,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4746,7 +4742,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5162,13 +5162,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
       "us-south",
+      "eu-de",
       "au-syd",
       "us-east",
       "eu-gb"
@@ -5329,12 +5329,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "eu-de",
-      "au-syd"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8423,18 +8423,18 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "satcon_fra",
       "satcon_wdc",
-      "eu-gb",
-      "jp-tok",
-      "au-syd",
       "eu-es",
+      "eu-gb",
+      "eu-de",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8544,11 +8544,11 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -12019,8 +12019,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14394,7 +14394,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14433,7 +14432,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15832,11 +15832,11 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "eu-de",
       "au-syd",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16055,6 +16055,13 @@
       },
       {
         "id": "lakehouse-lite",
+        "name": "lite",
+        "description": "The Lite plan offers starter configurations of an instance to get started and understand what's in watsonx.data.",
+        "displayName": "Lite",
+        "originalName": "lite"
+      },
+      {
+        "id": "lakehouse-lite-mcsp",
         "name": "lite",
         "description": "The Lite plan offers starter configurations of an instance to get started and understand what's in watsonx.data.",
         "displayName": "Lite",
