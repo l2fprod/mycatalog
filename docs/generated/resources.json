@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4891,6 +4891,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4902,8 +4903,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5162,16 +5162,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
-      "mon01"
+      "mon01",
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7747,14 +7747,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8423,18 +8423,18 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "satcon_fra",
       "satcon_wdc",
       "eu-es",
+      "eu-gb",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8544,11 +8544,11 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "au-syd",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb",
-      "au-syd"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -10104,7 +10104,6 @@
     "longDescription": "Use advanced NLP to analyze text and extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, and semantic roles. Apply custom annotation models developed using Watson Knowledge Studio to identify industry/domain specific entities and relations in unstructured text with Watson NLU.",
     "displayName": "Natural Language Understanding",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/c8389906f6ad6fd7c3d598cff21abb0f-public/WatsonNaturalLanguageUnderstanding.svg",
-    "localSvgIcon": "/generated/icons/bb6393bc-7d81-446b-9728-61b704f6eca5.svg",
     "localPngIcon": "/generated/icons/bb6393bc-7d81-446b-9728-61b704f6eca5.png"
   },
   {
@@ -10447,7 +10446,6 @@
       "allow_internal_users"
     ],
     "tags": [
-      "security",
       "allow_internal_users",
       "consulting_tab",
       "custom_kind_service",
@@ -10671,7 +10669,7 @@
         "id": "5b3e4fe9-cd93-4775-9177-0564ccd62625",
         "name": "telc-assess-hpc",
         "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services (2 days)---High Performance Compute",
+        "displayName": "Architect Services (2 days)---Power VS",
         "originalName": "telc-assess-hpc"
       },
       {
@@ -10720,7 +10718,7 @@
         "id": "55997a8e-b062-4204-92e2-536d0c83d06f",
         "name": "telc-build-hpc",
         "description": "5 day increments of engineering expertise to deploy and configure your IBM Cloud solution and migrate workload to become operational in IBM Cloud.",
-        "displayName": "Build Services---High Performance Compute",
+        "displayName": "Build Services---Power VS",
         "originalName": "telc-build-hpc"
       },
       {
@@ -13097,12 +13095,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -14394,6 +14392,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14432,8 +14431,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -15880,7 +15878,7 @@
       {
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "name": "lite",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points",
         "displayName": "Lite",
         "originalName": "lite"
       },
@@ -15894,14 +15892,14 @@
       {
         "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
         "name": "v2-professional",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
         "displayName": "Standard",
         "originalName": "v2-professional"
       },
       {
         "id": "a3d2f92f-06f9-48d0-b2e6-a7ba2b4e0577",
         "name": "v2-standard",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points",
         "displayName": "Essentials",
         "originalName": "v2-standard"
       }
@@ -15915,12 +15913,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
