@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,7 +541,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -549,7 +548,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4347,6 +4347,7 @@
   {
     "geo_tags": [
       "au-syd",
+      "ca-tor",
       "us-south"
     ],
     "id": "840bcb30-f8c3-11ed-afcd-01dba1a5ada3",
@@ -4367,6 +4368,7 @@
       "analytics",
       "allow_internal_users",
       "au-syd",
+      "ca-tor",
       "custom_kind_service",
       "free",
       "iam_compatible",
@@ -4891,6 +4893,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4902,8 +4905,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5164,16 +5166,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "au-syd",
       "us-east",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "eu-gb",
-      "us-south",
-      "eu-de"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5331,12 +5333,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8426,17 +8428,17 @@
   {
     "geo_tags": [
       "jp-tok",
+      "eu-es",
+      "satcon_fra",
+      "satcon_wdc",
       "au-syd",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "eu-gb",
       "eu-de",
-      "us-south",
-      "satcon_fra",
-      "satcon_wdc"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8548,6 +8550,7 @@
     "geo_tags": [
       "eu-gb",
       "au-syd",
+      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south"
@@ -8573,6 +8576,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
+      "ca-tor",
       "custom_kind_service",
       "data lineage",
       "eu-de",
