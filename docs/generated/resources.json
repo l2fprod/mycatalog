@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5166,16 +5166,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
+      "au-syd",
+      "us-east",
       "us-south",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5333,12 +5333,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "eu-de",
+      "au-syd",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8427,18 +8427,18 @@
   },
   {
     "geo_tags": [
-      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-es",
       "eu-gb",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "jp-tok",
-      "eu-de",
-      "us-south",
       "satcon_fra",
-      "satcon_wdc",
-      "eu-es"
+      "satcon_wdc"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8548,12 +8548,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -9875,10 +9875,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -11351,6 +11351,74 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/abd259f0-9990-11e8-acc8-b9f54a8f1661/artifacts/cache/66c89a2644c2ac54745d6ab9ecf4da8e-public/IBM_Power_CloudCatalog%202.svg",
     "localSvgIcon": "/generated/icons/power-iaas.workspace.svg",
     "localPngIcon": "/generated/icons/power-iaas.workspace.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "global",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "us-east"
+    ],
+    "id": "208072a0-7978-11ef-b369-0733120a414f",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "power-dr-automation",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "compute",
+      "storage",
+      "allow_internal_users",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "custom_kind_service",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "global",
+      "iam_compatible",
+      "ibm_created",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "lite",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "storage_datamovement",
+      "storage_object",
+      "support_ibm",
+      "us-east"
+    ],
+    "plans": [
+      {
+        "id": "b8beacc4-1ab4-4b2b-be74-33ca36636ce3",
+        "name": "power-virtual-server-dr-automation",
+        "description": "PowerVS DR Automation Pricing Plan",
+        "displayName": "PowerVS DR Automation Pricing Plan",
+        "originalName": "power-virtual-server-dr-automation"
+      }
+    ],
+    "description": "IBM Power Virtual Server DR Automation® simplifies disaster recovery by automating the recovery of virtual machines, leveraging IBM Cloud infrastructure to offer a flexible, scalable, and efficient DR process. Use DR Automation to ensure the continuity of operations with minimal manual intervention.",
+    "longDescription": "Provides simplified DR for PowerVS VMs.",
+    "displayName": "Power Virtual Server DR Automation",
+    "imageUrl": "https://s3.us-south.cloud-object-storage.appdomain.cloud/drautomationmedia/PowerVirtualServerDisasterRecoveryAutomation.svg",
+    "localSvgIcon": "/generated/icons/208072a0-7978-11ef-b369-0733120a414f.svg",
+    "localPngIcon": "/generated/icons/208072a0-7978-11ef-b369-0733120a414f.png"
   },
   {
     "geo_tags": [
