@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4737,6 +4737,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4744,11 +4748,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4893,7 +4893,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4905,7 +4904,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5166,7 +5166,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-east",
       "br-sao",
@@ -5175,7 +5174,8 @@
       "mil01",
       "mon01",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6833,14 +6833,20 @@
       "paid_only"
     ],
     "tags": [
+      "backup",
       "custom_kind_service",
       "global",
       "ibm_third_party",
       "migration_tools",
+      "nas",
+      "nfs",
       "paid",
       "paid_only",
       "rc_compatible",
-      "support_third_party"
+      "smb",
+      "support_third_party",
+      "tape",
+      "veeam"
     ],
     "plans": [
       {
@@ -8428,17 +8434,17 @@
   {
     "geo_tags": [
       "eu-es",
-      "eu-gb",
-      "jp-tok",
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "jp-tok",
+      "au-syd",
+      "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "satcon_fra",
+      "satcon_wdc"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12816,11 +12822,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -14052,6 +14058,7 @@
       "au-syd",
       "ca-tor",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "jp-tok",
       "us-east",
@@ -14068,8 +14075,8 @@
     "name": "vmware.vdc",
     "pricing_tags": [
       "allow_internal_users",
-      "free",
       "paid",
+      "free",
       "paid_only",
       "subscription"
     ],
@@ -14080,6 +14087,7 @@
       "ca-tor",
       "custom_kind_service",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "free",
       "iam_compatible",
@@ -14096,6 +14104,13 @@
     ],
     "plans": [
       {
+        "id": "68236301-1063-4753-a305-60a9e0c245fe",
+        "name": "on-demand-multi-zone-vcd",
+        "description": "On-demand Multi-Zone plan for VCD",
+        "displayName": "On-demand Multi-Zone",
+        "originalName": "on-demand-multi-zone-vcd"
+      },
+      {
         "id": "099f74c4-7625-4b65-b1b8-883e95447ca7",
         "name": "on-demand-vcd",
         "description": "On Demand for vcd.",
@@ -14108,6 +14123,13 @@
         "description": "On Demand for vcd.",
         "displayName": "On-demand",
         "originalName": "on-demand-vcd-paid"
+      },
+      {
+        "id": "9696a7a7-7e56-451f-9df8-a99b8ab9b5c8",
+        "name": "reserved-multi-zone-vcd",
+        "description": "Reserved Multi-Zone plan for VCD",
+        "displayName": "Reserved Multi-Zone",
+        "originalName": "reserved-multi-zone-vcd"
       },
       {
         "id": "62556ffa-5c26-44c0-82b9-d4f6f3df0104",
@@ -14599,6 +14621,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -14637,8 +14660,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
