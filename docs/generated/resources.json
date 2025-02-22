@@ -541,7 +541,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -549,7 +548,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4893,7 +4893,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4905,7 +4904,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5166,16 +5166,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-south",
-      "eu-gb"
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5333,12 +5333,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8433,18 +8433,18 @@
   },
   {
     "geo_tags": [
-      "eu-es",
+      "jp-tok",
+      "satcon_fra",
+      "satcon_wdc",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-de",
-      "us-south",
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
+      "eu-es",
       "eu-gb",
-      "jp-tok"
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8516,7 +8516,7 @@
         "originalName": "tiered-pricing"
       }
     ],
-    "description": "Create or manage cryptographic keys in the cloud or in Satellite to protect data at rest.",
+    "description": "Create or manage cryptographic keys in the cloud to protect data at rest.",
     "longDescription": "Key Protect is a cloud-based security service that provides life cycle management for encryption keys that are used in IBM Cloud services or customer-built applications. Key Protect provides roots of trust (RoT), backed by a hardware security module (HSM).",
     "displayName": "Key Protect",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ee41347f-b18e-4ca6-bf80-b5467c63f9a6/artifacts/cache/75f9925f443bdd3bff9e58d40d52ffaf-public/KeyProtect_Icon_light-theme.svg",
@@ -13778,12 +13778,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -16063,12 +16063,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
