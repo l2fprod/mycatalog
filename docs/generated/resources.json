@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4737,10 +4737,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4748,7 +4744,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5166,16 +5166,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
+      "eu-de",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
-      "mon01",
-      "eu-gb"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5333,12 +5333,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "au-syd"
+      "au-syd",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7757,14 +7757,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8433,18 +8433,18 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-es",
-      "eu-gb",
+      "satcon_fra",
+      "satcon_wdc",
+      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "jp-tok",
-      "satcon_fra",
-      "satcon_wdc",
-      "eu-de",
-      "us-south"
+      "au-syd",
+      "eu-es",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13131,11 +13131,10 @@
         "originalName": "paygo-standard"
       }
     ],
-    "description": "Create a Qiskit Runtime instance to run quantum programs, on Quantum Systems.",
+    "description": "Run and manage workloads on IBM quantum computers with Qiskit Runtime service on IBM Quantum Platform.",
     "longDescription": "With this service, IBM Quantum gives you access to Qiskit Runtime, an execution environment that delivers significant performance improvements. \n \nQiskit Runtime (beta) is unavailable in the following countries: Afghanistan, Armenia , Azerbaijan, Belarus, Myanmar (Burma), Cambodia, People’s Republic of China (including Hong Kong), Cuba, Georgia, Iran, Iraq, Kazakhstan, North Korea, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam ,Yemen.",
     "displayName": "Qiskit Runtime",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/artifacts/cache/3733c4f0be6e962b9512094817d66eeb-public/CloudQuantumServices.svg",
-    "localSvgIcon": "/generated/icons/b6049020-80f4-11eb-a0f7-e35ec9b4054f.svg",
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/artifacts/CloudQuantumServices.svg",
     "localPngIcon": "/generated/icons/b6049020-80f4-11eb-a0f7-e35ec9b4054f.png"
   },
   {
@@ -16913,12 +16912,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
