@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,7 +541,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -549,7 +548,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -748,9 +748,6 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
-      "br-sao-1",
-      "br-sao-2",
-      "br-sao-3",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -802,9 +799,6 @@
       "bare metal",
       "bare metal server",
       "br-sao",
-      "br-sao-1",
-      "br-sao-2",
-      "br-sao-3",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -1006,13 +1000,6 @@
         "originalName": "mx3d-metal-16x128"
       },
       {
-        "id": "ded23616-e993-40e3-9935-68cfe3ad85ee",
-        "name": "mx3d-metal-192x2048",
-        "description": "Pricing plan for mx3d-metal-192x2048",
-        "displayName": "mx3d-metal-192x2048",
-        "originalName": "mx3d-metal-192x2048"
-      },
-      {
         "id": "97f33c28-245a-49c6-b861-41b9dabdd242",
         "name": "mx3d-metal-48x512",
         "description": "Pricing plan for mx3d-metal-48x512",
@@ -1062,13 +1049,6 @@
         "originalName": "ux3d-metal-16x512"
       },
       {
-        "id": "0c869eb8-fb07-47a3-9fb5-21e9db3a5a03",
-        "name": "ux3d-metal-96x2048",
-        "description": "Pricing plan for ux3d-metal-96x2048",
-        "displayName": "ux3d-metal-96x2048",
-        "originalName": "ux3d-metal-96x2048"
-      },
-      {
         "id": "139387fe-dc48-4d7d-a6b2-a2a2dcd709f2",
         "name": "vx2d-metal-96x1536",
         "description": "Pricing plan for an vx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 1536 GB memory, local SSD boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
@@ -1081,13 +1061,6 @@
         "description": "Pricing plan for a vx3 bare metal server configured with dual processors offering 8 cores (16 vCPU), 256 GB memory, and up to an aggregate 200Gbps network uplink.",
         "displayName": "vx3-metal-16x256",
         "originalName": "vx3-metal-16x256"
-      },
-      {
-        "id": "6a11eab7-8c47-4f88-a120-f2aedf8e2575",
-        "name": "vx3d-metal-128x2048",
-        "description": "Pricing plan for vx3d-metal-128x2048",
-        "displayName": "vx3d-metal-128x2048",
-        "originalName": "vx3d-metal-128x2048"
       },
       {
         "id": "63a3624a-2a7a-46b1-b550-6906e21e4db2",
@@ -4569,7 +4542,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4652,7 +4625,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4731,12 +4704,16 @@
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
     "longDescription": "etcd is a key value store developers can use to coordinate and manage server clusters or provide lightning fast metadata storage. Databases for etcd makes etcd even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for etcd pricing is based on underlying disk (IOPS), RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for etcd",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/etcd.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/etcd.svg",
     "localSvgIcon": "/generated/icons/databases-for-etcd.svg",
     "localPngIcon": "/generated/icons/databases-for-etcd.png"
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4744,11 +4721,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4818,7 +4791,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4887,7 +4860,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4970,7 +4943,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -5049,7 +5022,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5166,16 +5139,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
-      "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
-      "mon01"
+      "mon01",
+      "eu-gb",
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5333,12 +5306,12 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "eu-de",
       "au-syd",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7757,14 +7730,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8433,18 +8406,18 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-es",
+      "eu-gb",
       "satcon_fra",
       "satcon_wdc",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "jp-tok",
-      "au-syd",
-      "eu-es",
-      "eu-gb"
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9774,7 +9747,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -12192,7 +12165,7 @@
         "id": "be685eb4-a4d7-4f99-a631-b304a8465da8",
         "name": "power-virtual-server-private-shared-processor-pool-group",
         "description": "A Power Systems Virtual Server Private Cloud Shared Processor Pool group for the specified IBM Cloud satellite location.",
-        "displayName": "Power Virtual Server Shared Processor Pool Group",
+        "displayName": "Power Virtual Server Private Cloud Shared Processor Pool Group",
         "originalName": "power-virtual-server-private-shared-processor-pool-group"
       },
       {
@@ -16912,12 +16885,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "jp-tok",
       "eu-gb",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -17162,6 +17135,7 @@
   {
     "geo_tags": [
       "au-syd",
+      "ca-tor",
       "eu-de",
       "us-south"
     ],
@@ -17185,6 +17159,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
+      "ca-tor",
       "calcium",
       "custom_kind_service",
       "eu-de",
