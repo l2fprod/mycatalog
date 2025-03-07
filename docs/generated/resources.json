@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,6 +541,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -548,8 +549,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4063,43 +4063,6 @@
   },
   {
     "geo_tags": [
-      "us-south"
-    ],
-    "id": "76fad670-9d74-4138-8a14-709f5e6ac65b",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "ibm-cloud-brokerage-cam",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "public",
-      "support_ibm",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "016b4c8e-b1ef-4abb-9036-18c35d9d72a1",
-        "name": "experimental",
-        "description": "Cost Asset Management Service available on Bluemix as trial version for 90 days.",
-        "originalName": "Experimental"
-      }
-    ],
-    "description": "Hybrid Cloud Cost and Asset management service broker",
-    "longDescription": "Cost and Asset Management service provides visibility, governance and control over hybrid cloud usage. Gain key insights into costs and assets through defined policies on budgets, asset usage and costs. Use the provided resources to get started with the service.",
-    "displayName": "Cost and Asset Management",
-    "imageUrl": "http://camserviceprod.mybluemix.net/public/media/catalogIcon.png",
-    "localPngIcon": "/generated/icons/76fad670-9d74-4138-8a14-709f5e6ac65b.png"
-  },
-  {
-    "geo_tags": [
       "au-syd",
       "eu-de",
       "eu-gb",
@@ -4888,6 +4851,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4899,8 +4863,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5161,16 +5124,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
-      "mon01"
+      "mon01",
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5328,12 +5291,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7657,45 +7620,6 @@
     "localPngIcon": "/generated/icons/3dacb5a3-de4a-4361-9f39-0b6657f89f37.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
-    "id": "BE3AADC2-2C1A-4078-82F0-A33B1FD86EB0",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "fss-historical-instrument-analytics-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "custom_kind_service",
-      "finance",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "support_third_party",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "9B2C9FA6-16E3-4CD2-A77A-C84E584772AD",
-        "name": "fss-historical-instrument-analytics-service-free-plan",
-        "description": "Historical Instrument Analytics Experimental Plan",
-        "displayName": "Experimental",
-        "originalName": "fss-historical-instrument-analytics-service-free-plan"
-      }
-    ],
-    "description": "Leverage sophisticated IBM Algorithmics financial models to price and evaluate financial securities for historical dates.",
-    "longDescription": "Thirty years of financial engineering expertise at your fingertips. IBM Algorithmics pricing models are trusted by the world's largest financial institutions to meet their risk, performance, and regulatory needs.\n\nThe Historical Instrument Analytics service supports the historical computation of the theoretical or market calibrated valuation, and all relevant associated analytics, for investment securities such as equities, fixed income, and derivatives. Leverage this service for building back-testing, performance attribution calculations, and end of month/quarter historical reporting.",
-    "displayName": "Historical Instrument Analytics",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/BE3AADC2-2C1A-4078-82F0-A33B1FD86EB0/artifacts/cache/4faa8ff25343fbd30d7c95cbaab7b53f-public/public/img/50/historical_price_and_analytics.png",
-    "localPngIcon": "/generated/icons/BE3AADC2-2C1A-4078-82F0-A33B1FD86EB0.png"
-  },
-  {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-horizon",
     "kind": "service",
     "metadata": {
@@ -8084,45 +8008,6 @@
   },
   {
     "geo_tags": [
-      "us-south"
-    ],
-    "id": "EEB04BA5-25BB-4E52-AAE5-9C7BEF86543B",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "fss-instrument-analytics-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "custom_kind_service",
-      "finance",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "support_third_party",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "0E16FE11-0CD8-4D02-A058-29437CE037CF",
-        "name": "fss-instrument-analytics-service-free-plan",
-        "description": "Instrument Analytics Experimental Plan",
-        "displayName": "Experimental",
-        "originalName": "fss-instrument-analytics-service-free-plan"
-      }
-    ],
-    "description": "Leverage sophisticated IBM Algorithmics financial models to price and compute analytics on financial securities.",
-    "longDescription": "Thirty years of financial engineering expertise at your fingertips. IBM Algorithmics pricing models are trusted by the world's largest financial institutions to meet their risk, performance, and regulatory needs.\n\nThe Instrument Analytics service supports the current computation of the theoretical or market calibrated valuation, and all relevant associated analytics, for investment securities such as equities, fixed income, and derivatives.",
-    "displayName": "Instrument Analytics",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/EEB04BA5-25BB-4E52-AAE5-9C7BEF86543B/artifacts/cache/3f3cf92862dad9d7273e2ef328e2c57a-public/public/img/50/price_and_analytics.png",
-    "localPngIcon": "/generated/icons/EEB04BA5-25BB-4E52-AAE5-9C7BEF86543B.png"
-  },
-  {
-    "geo_tags": [
       "global"
     ],
     "id": "75874a60-cb12-11e7-948e-37ac098eb1b9",
@@ -8227,45 +8112,6 @@
     "imageUrl": "https://broker.cis.cloud.ibm.com/CIS_Icon_CloudPAL.svg",
     "localSvgIcon": "/generated/icons/75874a60-cb12-11e7-948e-37ac098eb1b9.svg",
     "localPngIcon": "/generated/icons/75874a60-cb12-11e7-948e-37ac098eb1b9.png"
-  },
-  {
-    "geo_tags": [
-      "us-south"
-    ],
-    "id": "3b960983-4483-488a-9851-6f7cccdb3534",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "fss-portfolio-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "custom_kind_service",
-      "finance",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "support_third_party",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "a51a56f9-1eb3-47f2-a7a8-14123db1d61b",
-        "name": "fss-portfolio-service-free-plan",
-        "description": "Investment Portfolio Free Plan",
-        "displayName": "Free",
-        "originalName": "fss-portfolio-service-free-plan"
-      }
-    ],
-    "description": "Maintain a record of your investment portfolios through time.",
-    "longDescription": "The Investment Portfolio service lets you store, update, and query your investment portfolios and associated holdings using flexible object definitions so you can store more information without worrying about format. With outstanding performance, flexible storage, filtering, and data retrieval, you can make informed and timely investment decisions quickly.",
-    "displayName": "Investment Portfolio",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/3b960983-4483-488a-9851-6f7cccdb3534/artifacts/cache/8c1a7272ea498e982064ae8cb1bd59d4-public/service50.png",
-    "localPngIcon": "/generated/icons/3b960983-4483-488a-9851-6f7cccdb3534.png"
   },
   {
     "geo_tags": [
@@ -8429,17 +8275,17 @@
   },
   {
     "geo_tags": [
-      "satcon_fra",
-      "satcon_wdc",
-      "eu-es",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "eu-es",
+      "eu-gb",
       "jp-tok",
       "eu-de",
       "us-south",
+      "satcon_fra",
+      "satcon_wdc",
       "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -11022,45 +10868,6 @@
   },
   {
     "geo_tags": [
-      "us-south"
-    ],
-    "id": "2a001640-21f1-466e-b6f0-d227c353a823",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "fss-financial-optimization-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "custom_kind_service",
-      "finance",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "support_third_party",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "6cd077f3-f29c-4e82-a07c-591c388598ea",
-        "name": "fss-financial-optimization-service-free-plan",
-        "description": "Portfolio Optimization Service Experimental Plan",
-        "displayName": "Experimental",
-        "originalName": "fss-financial-optimization-service-free-plan"
-      }
-    ],
-    "description": "Construct or rebalance investment portfolios based on investor goals, mandates, and preferences.",
-    "longDescription": "The Portfolio Optimization Service is built upon a flexible mathematical model. This model allows for the construction or rebalancing of an investment portfolio based on a wide range of objectives and investor preferences. For example, the investor might want to avoid sin stocks, focus on socially responsible investments, or limit contribution to asset classes, while minimizing the overall volatility with respect to a benchmark.",
-    "displayName": "Portfolio Optimization",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/2a001640-21f1-466e-b6f0-d227c353a823/artifacts/cache/98ee56a72ef0ba97725c6418bfe15b5c-public/public/img/50/pos-50x50.png",
-    "localPngIcon": "/generated/icons/2a001640-21f1-466e-b6f0-d227c353a823.png"
-  },
-  {
-    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12653,45 +12460,6 @@
   },
   {
     "geo_tags": [
-      "us-south"
-    ],
-    "id": "C43B3EB0-F56B-4753-92E4-093815814C1E",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "fss-predictive-scenario-analytics-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "custom_kind_service",
-      "finance",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "support_third_party",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "4FEF1740-10DD-450C-8490-3A0E55742DD2",
-        "name": "fss-predictive-scenario-analytics-service-free-plan",
-        "description": "Predictive Market Scenarios Experimental Plan",
-        "displayName": "Experimental",
-        "originalName": "fss-predictive-scenario-analytics-service-free-plan"
-      }
-    ],
-    "description": "Create conditional scenarios to model how, given a change to a subset of factors the broader set of market factors are expected to change.",
-    "longDescription": "Thirty years of financial engineering expertise at your fingertips. IBM Algorithmics pricing models are trusted by some of the world's largest financial institutions to meet their risk, performance, and regulatory needs.\n\n    Generate what-if financial market scenarios for use in the valuation of financial securities. Predictive market scenarios allows users to understand how a broader set of market factors might change if a small subset of factors undergo the user defined change. An example is what-if oil moved up 5%, how would the equity markets, rates, credit change.\n\n    The scenario can then be applied to an investment portfolio to understand how it might react.",
-    "displayName": "Predictive Market Scenarios",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/C43B3EB0-F56B-4753-92E4-093815814C1E/artifacts/cache/6149a7865312e84a7f9a9aa87935d3b5-public/public/img/50/predictive_package.png",
-    "localPngIcon": "/generated/icons/C43B3EB0-F56B-4753-92E4-093815814C1E.png"
-  },
-  {
-    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -13216,46 +12984,6 @@
     "displayName": "Raxak Protect",
     "imageUrl": "https://demo.cloudraxak.net/static/CR32.svg",
     "localPngIcon": "/generated/icons/cf5f8ac0-98f7-11e9-a40c-5b3c4bf3cc6d.png"
-  },
-  {
-    "geo_tags": [
-      "us-south"
-    ],
-    "id": "467ab6d8-48dd-485a-adf9-30d5107537a1",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "real-time-payments-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "finance",
-      "free",
-      "gc_migrate",
-      "ibm_created",
-      "ibm_experimental",
-      "support_ibm",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "2f3ad6ab-1046-428c-9672-b7f302f71498",
-        "name": "real-time-payments-service-free-plan",
-        "description": "Real-Time Payments Experimental Plan",
-        "displayName": "Experimental",
-        "originalName": "real-time-payments-service-free-plan"
-      }
-    ],
-    "description": "Manage participants, tokens and recipients, and initiate and receive real time payments.",
-    "longDescription": "Manage participants, tokens and recipients, and initiate and receive real time payments.",
-    "displayName": "Real-Time Payments",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/467ab6d8-48dd-485a-adf9-30d5107537a1/artifacts/cache/02c999146b7e55b0ba6b66ede8f80c94-public/img/icon.svg",
-    "localSvgIcon": "/generated/icons/467ab6d8-48dd-485a-adf9-30d5107537a1.svg",
-    "localPngIcon": "/generated/icons/467ab6d8-48dd-485a-adf9-30d5107537a1.png"
   },
   {
     "geo_tags": [
@@ -13878,11 +13606,10 @@
         "originalName": "graduated-tier"
       }
     ],
-    "description": "Detect and respond to vulnerabilities and threats, and manage configurations, permissions, and compliance.",
-    "longDescription": "Security and Compliance Center Workload Protection helps you accelerate your Kubernetes and cloud adoption by addressing security and regulatory compliance. Easily identify vulnerabilities, check compliance, block runtime threats and respond to incidents faster at every stage of the Cloud, container and Kubernetes lifecycle.",
+    "description": "Cloud-Native Application Protection Platform solution to manage your security and compliance posture, allowing you to monitor misconfigurations and detect and respond to vulnerabilities and threats in real-time.",
+    "longDescription": "Security and Compliance Center Workload Protection helps you accelerate your Kubernetes and cloud adoption by addressing security and regulatory compliance. Easily identify vulnerabilities, check compliance, block threats and respond faster at every stage of the container and Kubernetes lifecycle.",
     "displayName": "Security and Compliance Center Workload Protection",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/e831e900-82d6-11ec-95c5-c12c5a5d9687/artifacts/cache/153cb603b598bc09d413b0b00e16da87-public/light-theme.svg",
-    "localSvgIcon": "/generated/icons/e831e900-82d6-11ec-95c5-c12c5a5d9687.svg",
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/e831e900-82d6-11ec-95c5-c12c5a5d9687/artifacts/light-theme.svg",
     "localPngIcon": "/generated/icons/e831e900-82d6-11ec-95c5-c12c5a5d9687.png"
   },
   {
@@ -13946,82 +13673,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.security-group/artifacts/cache/53ab0dc04aa021cbd407d128f8da5540-public/Security_groups.svg",
     "localSvgIcon": "/generated/icons/is.security-group.svg",
     "localPngIcon": "/generated/icons/is.security-group.png"
-  },
-  {
-    "geo_tags": [
-      "us-south"
-    ],
-    "id": "ABB08BA3-D14D-4BD9-A5E6-EF67C52D35C0",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "fss-historical-scenario-analytics-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "finance",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "support_third_party",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "7422E930-BE35-4B8C-A631-CBB9BF8FEFE2",
-        "name": "fss-historical-scenario-analytics-service-free-plan",
-        "description": "Simulated Historical Instrument Analytics Experimental Plan",
-        "displayName": "Experimental",
-        "originalName": "fss-historical-scenario-analytics-service-free-plan"
-      }
-    ],
-    "description": "Leverage sophisticated IBM Algorithmics financial models to price and compute analytics on financial securities for a historical date, under a scenario.",
-    "longDescription": "Thirty years of financial engineering expertise at your fingertips. IBM Algorithmics pricing models are trusted by the world's largest financial institutions to meet their risk, performance, and regulatory needs.\n\nThe Simulated Historical Instrument Analytics service supports the historical computation of the theoretical or market calibrated valuation, and all relevant associated analytics, for investment securities such as equities, fixed income, and derivatives over an alternate set of market conditions.",
-    "displayName": "Simulated Historical Instrument Analytics",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ABB08BA3-D14D-4BD9-A5E6-EF67C52D35C0/artifacts/cache/ea7bfd360999c3c5fb7525dfe600aa76-public/public/img/50/historical_price_and_analytics_under_stress.png",
-    "localPngIcon": "/generated/icons/ABB08BA3-D14D-4BD9-A5E6-EF67C52D35C0.png"
-  },
-  {
-    "geo_tags": [
-      "us-south"
-    ],
-    "id": "A888FFEA-E976-4F83-B7EC-288233BF62E6",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "fss-scenario-analytics-service",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "finance",
-      "free",
-      "ibm_created",
-      "ibm_experimental",
-      "support_third_party",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "7BB8D8D4-C287-41DA-93DC-8E6ACBFA757F",
-        "name": "fss-scenario-analytics-service-free-plan",
-        "description": "Simulated Instrument Analytics Experimental Plan",
-        "displayName": "Experimental",
-        "originalName": "fss-scenario-analytics-service-free-plan"
-      }
-    ],
-    "description": "Leverage sophisticated IBM Algorithmics financial models to price and compute analytics on financial securities under a given scenario.",
-    "longDescription": "Thirty years of financial engineering expertise at your fingertips. IBM Algorithmics pricing models are trusted by the world's largest financial institutions to meet their risk, performance, and regulatory needs.\n\nThe Simulated Instrument Analytics service supports the current computation of the theoretical or market calibrated valuation, and all relevant associated analytics, for investment securities such as equities, fixed income, and derivatives over an alternate set of market conditions.",
-    "displayName": "Simulated Instrument Analytics",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/A888FFEA-E976-4F83-B7EC-288233BF62E6/artifacts/cache/ff5d65c3446b6fa80b35aa4f6ea3089e-public/public/img/50/price_and_analytics_under_stress.png",
-    "localPngIcon": "/generated/icons/A888FFEA-E976-4F83-B7EC-288233BF62E6.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-vcstrial_dr",
@@ -16913,12 +16564,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-gb",
       "us-south",
       "eu-de",
       "au-syd",
-      "ca-tor",
-      "jp-tok"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16996,12 +16647,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
