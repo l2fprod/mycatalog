@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -618,6 +618,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -646,6 +647,7 @@
       "apidocs_enabled",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -5134,16 +5136,17 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-gb",
+      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
-      "mon01",
-      "us-south",
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "eu-gb"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5178,6 +5181,7 @@
       "db2oncloud",
       "dbaas",
       "eu-de",
+      "eu-es",
       "eu-gb",
       "flex",
       "free",
@@ -5301,12 +5305,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "eu-de"
+      "eu-de",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7127,6 +7131,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -7183,6 +7188,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -7689,14 +7695,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8287,18 +8293,16 @@
   },
   {
     "geo_tags": [
-      "satcon_fra",
-      "satcon_wdc",
-      "au-syd",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "jp-tok",
-      "eu-de",
-      "us-south",
       "eu-es",
-      "eu-gb"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8309,7 +8313,6 @@
     "name": "kms",
     "pricing_tags": [
       "paid",
-      "paid_only",
       "paygo"
     ],
     "tags": [
@@ -8336,12 +8339,8 @@
       "jp-osa",
       "jp-tok",
       "paid",
-      "paid_only",
       "paygo",
       "rc_compatible",
-      "satcon_fra",
-      "satcon_wdc",
-      "satellite_enabled",
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
@@ -8354,13 +8353,6 @@
         "description": "Designed for users who require enhanced disaster recovery from cross-region availability. In the event a region is unavailable, requests will automatically route to the replicated data in the cross-region, ensuring key functionality persists. Base cost is charged once per region where you manage at least one key under this plan (regardless of the number of instances created in that region).",
         "displayName": "Cross-region Resiliency",
         "originalName": "cross-region-resiliency"
-      },
-      {
-        "id": "c4b29bd4-abab-44ad-a244-5330af747027",
-        "name": "sat-pricing",
-        "description": "IBM Cloud Key Protect Satellite service hosted on user-owned resources. The service has a base price for installing Key Protect in the Satellite location plus a linear charge for the requested quota of keys in all of the instances in that location. If the quota is changed mid-month, you are charged based on the maximum quota set that month. Please refer to documentation for resource and usage requirements, terms, and conditions.",
-        "displayName": "satellite-pricing",
-        "originalName": "sat-lite"
       },
       {
         "id": "eedd3585-90c6-4c8f-be3d-062069e99fc3",
@@ -8408,12 +8400,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -9502,6 +9494,7 @@
     "displayName": "Managed VMware Services",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/ManagedServicesIMI-v1.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-imi.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-imi.png"
   },
   {
@@ -9528,6 +9521,7 @@
       "custom_kind_service",
       "free",
       "iam_compatible",
+      "ibm_beta",
       "ibm_created",
       "lite",
       "rc_compatible",
@@ -10769,6 +10763,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -10797,6 +10792,7 @@
       "apidocs_enabled",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -12485,6 +12481,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -12511,6 +12508,7 @@
       "allow_internal_users",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -12653,6 +12651,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -12708,6 +12707,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -13639,6 +13639,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -13664,6 +13665,7 @@
       "network",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -13912,6 +13914,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -13937,6 +13940,7 @@
       "compute",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -14186,6 +14190,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -14241,6 +14246,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -14756,6 +14762,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -14784,6 +14791,7 @@
       "apidocs_enabled",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "custom_kind_service",
       "eu-de",
@@ -14821,6 +14829,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -14845,6 +14854,7 @@
       "au-syd",
       "beryllium",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -14890,6 +14900,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -14917,6 +14928,7 @@
       "apidocs_enabled",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -15152,6 +15164,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -15213,6 +15226,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -16587,12 +16601,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
