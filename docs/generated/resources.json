@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,7 +541,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -549,7 +548,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4083,6 +4083,60 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "742c2c0f-1c40-480d-ab7b-76e56a89f51b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "convertio",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "compute",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "native",
+      "paid",
+      "paid_only",
+      "primaryio",
+      "rc_compatible",
+      "support_third_party",
+      "vsi"
+    ],
+    "plans": [
+      {
+        "id": "db0dd5d7-d04c-46db-af54-189a2725c547",
+        "name": "bespoke-custom-migration-and-conversion",
+        "description": "Quantity of “professional services units” determined from initial no-cost project scoping conducted by PrimaryIO professional",
+        "displayName": "Bespoke - Custom Migration and Conversion"
+      },
+      {
+        "id": "e86888c1-5dfe-447b-8c04-fef9ae5766ef",
+        "name": "vmware-cloud-classic-to-vpc-native-vsi",
+        "description": "Quantity of “migration services units” determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "displayName": "VMware Cloud Classic to VPC-native VSIs"
+      },
+      {
+        "id": "45d0cf29-6116-4174-8bcb-fd12ae246b83",
+        "name": "vmware-on-premises-to-cloud-vpc-native-vsi",
+        "description": "Quantity of “managed service units” determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "displayName": "VMware On-Premises to Cloud VPC-native VSIs"
+      }
+    ],
+    "description": "Workload migration and conversion to Cloud VPC VSIs performed at scale using the conversion/migration ConvertIO engine",
+    "longDescription": "This selection of the ConvertIO product platform, wrapped in services, targets VMware customers seeking to modernize and embrace IBM cloud-native VSI workloads running in IBM Cloud VPC.\nWhile PrimaryIO offers SaaS products in support of the Cloud Journey targeting data resiliency, this catalog offering encompasses the scoping, sizing, migration and conversion of VMware estates into IBM Cloud VPC domiciled VSI workloads.  This option is targeting enterprises looking to reduce their VMware VCF estate and become more cloud-native. \nThe services are designed to create an easy to consume, yet bespoke, tailored project.  Each project is fully detailed with project plan, associated cost and transparency to the project status with focus on rapid achievement of critical path objectives.\nAll projects, irrespective of category and customization, require a current state assessment coupled with a solid understanding of the customer goal and associated target environment.  Once well-comprehended, an accurate statement of work and associated price quote is generated in support of the project.  At such time, the project can be procured through this catalog entry.\n",
+    "displayName": "ConvertIO VMware Workload Migration and Conversion",
+    "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
+    "localPngIcon": "/generated/icons/742c2c0f-1c40-480d-ab7b-76e56a89f51b.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "eu-de",
       "eu-gb",
@@ -5116,15 +5170,15 @@
     "geo_tags": [
       "eu-gb",
       "eu-es",
+      "us-south",
       "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "us-south"
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8275,8 +8329,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "au-syd",
       "eu-es",
       "eu-gb",
@@ -8284,6 +8336,8 @@
       "ca-tor",
       "jp-osa",
       "us-east",
+      "eu-de",
+      "us-south",
       "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -9806,6 +9860,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -9834,6 +9889,7 @@
       "allow_internal_users",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -13808,12 +13864,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16579,12 +16635,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-gb",
       "us-south",
       "eu-de",
       "au-syd",
-      "ca-tor",
-      "jp-tok"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
