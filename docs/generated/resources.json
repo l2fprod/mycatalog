@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1218,6 +1218,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -1272,6 +1273,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -1364,6 +1366,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -1390,6 +1393,7 @@
       "au-syd",
       "beryllium",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -1995,6 +1999,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -2020,6 +2025,7 @@
       "allow_internal_users",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -4640,7 +4646,6 @@
       "jp-osa",
       "jp-tok",
       "par01",
-      "satcon_wdc",
       "us-east",
       "us-south"
     ],
@@ -4677,8 +4682,6 @@
       "par01",
       "paygo",
       "rc_compatible",
-      "satcon_wdc",
-      "satellite_enabled",
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
@@ -4691,13 +4694,6 @@
         "description": "One highly available etcd instance with three data members. The Standard plan is priced based on disk (IOPS), RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for etcd instances have a minimum of 200 IOPS (20GB storage) and 1GB of RAM per data member. All storage is 10 IOPS per gigabyte of disk and users can provision more IOPS for an instance by scaling disk allocation. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "databases-for-etcd-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available etcd instance with two data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Databases for etcd instances have a minimum of 200 IOPS (20GB storage), 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
@@ -4874,7 +4870,6 @@
       "jp-osa",
       "jp-tok",
       "par01",
-      "satcon_wdc",
       "us-east",
       "us-south",
       "au-syd"
@@ -4916,8 +4911,6 @@
       "par01",
       "paygo",
       "rc_compatible",
-      "satcon_wdc",
-      "satellite_enabled",
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
@@ -4930,13 +4923,6 @@
         "description": "One highly available PostgreSQL instance with two data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for PostgreSQL instances have a minimum of 5GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "databases-for-postgresql-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available PostgreSQL instance with two data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Databases for PostgreSQL instances have a minimum of 5GB of Disk, 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
@@ -4958,7 +4944,6 @@
       "jp-osa",
       "jp-tok",
       "par01",
-      "satcon_wdc",
       "us-east",
       "us-south"
     ],
@@ -4995,8 +4980,6 @@
       "par01",
       "paygo",
       "rc_compatible",
-      "satcon_wdc",
-      "satellite_enabled",
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
@@ -5009,13 +4992,6 @@
         "description": "One highly available Redis instance with two data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Redis instances have a minimum of 1GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "databases-for-redis-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available Redis instance with two data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Databases for Redis instances have a minimum of 1GB of Disk, 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "Redis is a blazingly fast, in-memory data structure store.",
@@ -5138,17 +5114,17 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-es",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "eu-es",
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "us-east"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6976,6 +6952,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -7031,6 +7008,7 @@
       "br-sao-1",
       "br-sao-2",
       "br-sao-3",
+      "ca-mon",
       "ca-tor",
       "ca-tor-1",
       "ca-tor-2",
@@ -7254,6 +7232,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -7279,6 +7258,7 @@
       "allow_internal_users",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -8295,16 +8275,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-de",
       "us-south",
-      "jp-tok",
+      "au-syd",
       "eu-es",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9561,7 +9541,6 @@
       "jp-osa",
       "jp-tok",
       "par01",
-      "satcon_wdc",
       "us-east",
       "us-south"
     ],
@@ -9599,8 +9578,6 @@
       "par01",
       "paygo",
       "rc_compatible",
-      "satcon_wdc",
-      "satellite_enabled",
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
@@ -9613,13 +9590,6 @@
         "description": "One highly available RabbitMQ instance with three data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Messages for RabbitMQ instances have a minimum of 1GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "messages-for-rabbitmq-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available RabbitMQ instance with three data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Messages for RabbitMQ instances have a minimum of 1GB of Disk, 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
@@ -16609,12 +16579,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
