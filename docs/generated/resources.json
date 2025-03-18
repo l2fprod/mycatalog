@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4325,58 +4325,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south"
-    ],
-    "id": "a0814030-c9dd-11e7-9a5e-19d80fed5e00",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "sql-query",
-    "pricing_tags": [
-      "lite",
-      "paid"
-    ],
-    "tags": [
-      "apidocs_enabled",
-      "custom_kind_service",
-      "data_management",
-      "eu-de",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "lite",
-      "paid",
-      "rc_compatible",
-      "support_ibm",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "ead0f7f5-0c96-40c0-9aae-63c4846d8188",
-        "name": "lite",
-        "description": "The Lite plan provides access to the main functionality of IBM Cloud Data Engine for development and evaluation. Constraints align around concurrency, data volume scanned per day, priority of queries, catalog and streaming features.",
-        "displayName": "Lite",
-        "originalName": "lite"
-      },
-      {
-        "id": "72e394a3-9a56-432f-bc9d-8bc891f6adea",
-        "name": "standard",
-        "description": "The Standard plan provides access to the full functionality of IBM Cloud Data Engine and can scale as needed for all use cases. Terabyte-Month: Terabyte of Data scanned with your queries per month. There is no charge for failed queries. Capacity Unit-Hour: Within each hour, 1 Capacity Unit corresponds to up to 1 MB per second ingress of a streaming job. You will be charged for the maximum number of Capacity Units consumed within an hour.",
-        "displayName": "Standard",
-        "originalName": "standard"
-      }
-    ],
-    "description": "Read, analyze, store and stream data in Cloud Object Storage with ANSI SQL. Manage table metadata in a Hive metastore compatible catalog.",
-    "longDescription": "Data Engine is IBM Cloud's central service for data lakes. It provides stream ingestion, data preparation, ETL, and data query from Object Storage and Kafka. It also manages tables and views in a catalog that is compatible with Hive metastore and other big data engines and services can connect to it. Data Engine supports full standard ANSI SQL to submit work as serverless jobs. There is no infrastructure to manage. The service is highly available, offers a Multi-AZ deployment, and autoscales based on your workload.",
-    "displayName": "Data Engine (previously SQL Query)",
-    "imageUrl": "https://broker.sql-query.cloud.ibm.com/dataengine.light-theme.svg",
-    "localPngIcon": "/generated/icons/a0814030-c9dd-11e7-9a5e-19d80fed5e00.png"
-  },
-  {
-    "geo_tags": [
       "au-syd",
       "ca-tor",
       "us-south"
@@ -5168,16 +5116,16 @@
   {
     "geo_tags": [
       "eu-gb",
+      "eu-es",
       "us-south",
+      "eu-de",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
-      "mon01",
-      "eu-es",
-      "eu-de"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5336,12 +5284,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "eu-de",
-      "au-syd",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8328,14 +8276,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "jp-tok",
-      "au-syd",
       "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "jp-tok",
+      "au-syd",
       "eu-de",
       "us-south"
     ],
@@ -13452,11 +13400,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -14336,12 +14284,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
