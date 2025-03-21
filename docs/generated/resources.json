@@ -337,14 +337,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -541,15 +541,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5115,17 +5115,17 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "au-syd",
       "us-east",
+      "eu-es",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mil01",
       "mon01",
-      "eu-gb",
-      "us-south",
-      "eu-de",
-      "eu-es"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7678,14 +7678,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8279,12 +8279,12 @@
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-es",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "eu-es",
       "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -8383,12 +8383,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -12870,8 +12870,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14111,6 +14111,64 @@
     "displayName": "SSL Certificates",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/static/cache/1591-9879db69d34a0bd1/images/uploaded/ssl-cert.png",
     "localPngIcon": "/generated/icons/19.png"
+  },
+  {
+    "geo_tags": [
+      "satcon_dal",
+      "satcon_fra"
+    ],
+    "id": "2bea02b0-c0a4-11ee-83aa-3171b0bf2976",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "software-defined-storage",
+    "pricing_tags": [
+      "paid",
+      "subscription",
+      "paid_only",
+      "allow_internal_users",
+      "service_subscription"
+    ],
+    "tags": [
+      "storage",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "custom_kind_service",
+      "iam_compatible",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "satcon_dal",
+      "satcon_fra",
+      "satellite_enabled",
+      "service_subscription",
+      "subscription",
+      "support_ibm"
+    ],
+    "plans": [
+      {
+        "id": "8fae9985-978c-47fc-8073-38ca2ed46ead",
+        "name": "capacity",
+        "description": "S3 Object Storage\nFlash & HDD disks\n&lt;20ms latency\nPerfect for Archive, Backup and Deep Data Lakes",
+        "displayName": "Capacity",
+        "originalName": "capacity"
+      },
+      {
+        "id": "94f887fd-e984-4298-8efa-6ae7d3adc9d6",
+        "name": "performance",
+        "description": "Block and S3 Object Storage\nAll NVME Disks\n4k IOPS/TiB at &lt; 2ms latency\nVMware Ready",
+        "displayName": "Performance",
+        "originalName": "performance"
+      }
+    ],
+    "description": "Experience cloud-like enterprise storage on-premises with the convenience of a pay-as-you-go model.",
+    "longDescription": "Experience cloud-like enterprise storage on-premises with the convenience of a pay-as-you-go model.",
+    "displayName": "Storage Ceph as a Service",
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/2bea02b0-c0a4-11ee-83aa-3171b0bf2976/artifacts/cache/d324ad3f95a38ffe02cecfb8745e38ef/SDSaaS%20-%20light.svg",
+    "localPngIcon": "/generated/icons/2bea02b0-c0a4-11ee-83aa-3171b0bf2976.png"
   },
   {
     "geo_tags": [
@@ -16603,12 +16661,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-gb",
       "us-south",
       "eu-de",
       "au-syd",
-      "ca-tor",
-      "jp-tok"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
