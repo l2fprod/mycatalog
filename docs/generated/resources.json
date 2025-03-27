@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4696,13 +4696,6 @@
         "description": "One highly available etcd instance with three data members. The Standard plan is priced based on disk (IOPS), RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for etcd instances have a minimum of 200 IOPS (20GB storage) and 1GB of RAM per data member. All storage is 10 IOPS per gigabyte of disk and users can provision more IOPS for an instance by scaling disk allocation. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "databases-for-etcd-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available etcd instance with two data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Databases for etcd instances have a minimum of 200 IOPS (20GB storage), 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system",
@@ -4932,13 +4925,6 @@
         "description": "One highly available PostgreSQL instance with two data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for PostgreSQL instances have a minimum of 5GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "databases-for-postgresql-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available PostgreSQL instance with two data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Databases for PostgreSQL instances have a minimum of 5GB of Disk, 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
@@ -5008,13 +4994,6 @@
         "description": "One highly available Redis instance with two data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Redis instances have a minimum of 1GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "databases-for-redis-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available Redis instance with two data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Databases for Redis instances have a minimum of 1GB of Disk, 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "Redis is a blazingly fast, in-memory data structure store.",
@@ -8298,16 +8277,16 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
+      "us-south",
       "au-syd",
-      "eu-gb",
       "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east",
-      "jp-tok",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9613,13 +9592,6 @@
         "description": "One highly available RabbitMQ instance with three data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Messages for RabbitMQ instances have a minimum of 1GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
-      },
-      {
-        "id": "messages-for-rabbitmq-standard-satellite",
-        "name": "standard-satellite",
-        "description": "One highly available RabbitMQ instance with three data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Messages for RabbitMQ instances have a minimum of 1GB of Disk, 1GB of RAM, and 6 cores per data member.",
-        "displayName": "Standard for Satellite",
-        "originalName": "standard-satellite"
       }
     ],
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
@@ -9736,10 +9708,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -10133,6 +10105,7 @@
     "geo_tags": [
       "au-syd",
       "eu-de",
+      "global",
       "us-south"
     ],
     "id": "d97bd0c3-a8e5-4f3d-b925-16380e039a9a",
@@ -10158,6 +10131,7 @@
       "custom_kind_service",
       "discovery",
       "eu-de",
+      "global",
       "governance",
       "gpt-3",
       "gpt3",
@@ -10184,6 +10158,12 @@
       "watsonx.governance"
     ],
     "plans": [
+      {
+        "id": "0497c5d9-29f9-4507-963c-9681dffc880a",
+        "name": "bring-your-own-llm-aws",
+        "description": "This plan features a control plane on IBM cloud, but the workload will deploy as SaaS into AWS.",
+        "displayName": "bring-your-own-llm-aws"
+      },
       {
         "id": "e418fec2-0fb5-42f0-9f88-0acfab234e23",
         "name": "neuralseek-bring-your-own-llm",
@@ -13861,12 +13841,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -15245,6 +15225,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15284,8 +15265,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
