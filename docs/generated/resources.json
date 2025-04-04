@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -544,15 +544,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -3229,6 +3229,7 @@
       "br-sao",
       "eu-de",
       "eu-es",
+      "eu-gb",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -3257,6 +3258,8 @@
       "db2 on aix",
       "eu-de",
       "eu-es",
+      "eu-gb",
+      "iam_compatible",
       "ibm_third_party",
       "jp-osa",
       "jp-tok",
@@ -3278,6 +3281,12 @@
         "name": "compass-shared-consumption-pricing",
         "description": "Priced per gigabyte hour",
         "displayName": "compass-shared-consumption-pricing"
+      },
+      {
+        "id": "a391f481-61ed-479e-b3e1-1608f390a17b",
+        "name": "single-copy-pricing",
+        "description": "Priced per gigabyte hour for a single copy",
+        "displayName": "single-copy-pricing"
       }
     ],
     "description": "Simple, secure, automated backup and restore to protect IBM PowerVS data powered by IBM Storage Protect.",
@@ -3363,63 +3372,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/2ad2fdd0-bba5-11ea-8966-5d6402fed1c7/artifacts/cache/c1fa8b22c69432c38c1ca1437e05617f-public/App_Icon_Bright.svg",
     "localSvgIcon": "/generated/icons/2ad2fdd0-bba5-11ea-8966-5d6402fed1c7.svg",
     "localPngIcon": "/generated/icons/2ad2fdd0-bba5-11ea-8966-5d6402fed1c7.png"
-  },
-  {
-    "geo_tags": [
-      "eu-gb",
-      "us-south"
-    ],
-    "id": "81cda9f0-b9c3-11e7-acad-0d931c5f18f1",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {
-        "hidden": true
-      }
-    },
-    "name": "dynamic-dashboard-embedded",
-    "pricing_tags": [
-      "free",
-      "lite",
-      "paid_only"
-    ],
-    "tags": [
-      "business_analytics",
-      "custom_kind_service",
-      "eu-gb",
-      "free",
-      "gc_migrate",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "lite",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "79c6abdb-4efe-4d26-8435-872b9482069c",
-        "name": "lite",
-        "description": "A session is a 60 minute period where end-users can perform unlimited interactions with an embedded dashboard.",
-        "displayName": "Lite",
-        "originalName": "lite"
-      },
-      {
-        "id": "91844b39-7c8e-46bf-adb6-0525c32bfa57",
-        "name": "paygo",
-        "description": "A session is a 60 minute period where end-users can perform unlimited interactions with an embedded dashboard.",
-        "displayName": "Pay as you go",
-        "originalName": "paygo"
-      }
-    ],
-    "description": "Build and deliver visually stunning dashboards that accelerate your journey to a data driven business.",
-    "longDescription": "The IBM Cognos Dashboard Embedded lets you, the developer, painlessly add end-to-end data visualization capabilities to your application so your users can easily drag and drop to quickly find valuable insight and create visualizations on their own.",
-    "displayName": "Cognos Dashboard Embedded",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/81cda9f0-b9c3-11e7-acad-0d931c5f18f1/artifacts/cache/0d531aa735802ed01499e2ed944f15c2-public/CognosDashboard--light.svg",
-    "localSvgIcon": "/generated/icons/81cda9f0-b9c3-11e7-acad-0d931c5f18f1.svg",
-    "localPngIcon": "/generated/icons/81cda9f0-b9c3-11e7-acad-0d931c5f18f1.png"
   },
   {
     "geo_tags": [
@@ -5125,11 +5077,11 @@
   {
     "geo_tags": [
       "eu-gb",
-      "eu-es",
       "us-south",
       "eu-de",
       "au-syd",
       "us-east",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -8285,8 +8237,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8294,7 +8244,9 @@
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8392,12 +8344,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -12887,8 +12839,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
