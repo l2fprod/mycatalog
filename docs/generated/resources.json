@@ -429,14 +429,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -635,15 +635,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4758,6 +4758,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4765,11 +4769,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5172,12 +5172,12 @@
       "jp-tok",
       "mil01",
       "mon01",
-      "eu-gb",
       "eu-es",
-      "us-south",
       "au-syd",
       "us-east",
-      "eu-de"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5336,12 +5336,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7730,14 +7730,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8328,6 +8328,7 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "eu-es",
       "jp-tok",
@@ -8336,8 +8337,7 @@
       "jp-osa",
       "us-east",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12932,8 +12932,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16687,7 +16687,9 @@
     "name": "watsonx-orchestrate",
     "pricing_tags": [
       "paid",
-      "allow_internal_users"
+      "allow_internal_users",
+      "free",
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
@@ -16695,8 +16697,10 @@
       "custom_kind_service",
       "eu-de",
       "eu-gb",
+      "free",
       "iam_compatible",
       "ibm_created",
+      "lite",
       "paid",
       "rc_compatible",
       "support_ibm",
@@ -16710,6 +16714,13 @@
         "description": "Essentials Plan for customers to get started quickly building AI Assistants on IBM watsonx Orchestrate.",
         "displayName": "Essentials Plan",
         "originalName": "essentials"
+      },
+      {
+        "id": "69d79047-fb71-4331-b14a-3e2a398c6240",
+        "name": "lite",
+        "description": "30-day free access to the Standard plan",
+        "displayName": "Trial",
+        "originalName": "lite"
       },
       {
         "id": "505cc38b-4f01-4daf-872c-cc7b0d57986e",
@@ -16811,12 +16822,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
