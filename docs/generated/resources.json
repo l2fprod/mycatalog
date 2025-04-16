@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4824,7 +4824,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4835,7 +4834,8 @@
       "jp-tok",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5077,16 +5077,16 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-gb",
       "eu-es",
       "us-south",
-      "au-syd",
-      "us-east",
-      "eu-de",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8329,6 +8329,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8336,9 +8338,7 @@
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "eu-es"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9578,10 +9578,10 @@
         "originalName": "lite-dev"
       }
     ],
-    "description": "IBM Match 360 with Watson (Match 360) improves trust in AI pipelines by identifying duplicate records and providing reliable data about your customers, suppliers or partners.",
+    "description": "Improve trust in AI pipelines by identifying duplicate records and providing reliable data about your customers, suppliers, or partners.",
     "longDescription": "Use IBM Match 360 with Watson to quickly build data pipelines for analytics and other data science use cases using master data.  Start with your IBM MDM Advanced or Standard Edition entities, or with any data assets containing party information from the knowledge catalog and quickly map and model new attributes to your data model for a more complete view of your customers.  The AI-powered matching engine speeds configuration using the same statistical methods clients have relied on to produce accurate match results.  Results can be accessed via RESTful APIs, exported to flat files, or viewed online via the entity explorer.",
     "displayName": "Match 360 with Watson",
-    "imageUrl": "https://cloud.ibm.com/mdm-oc/static/mdm-icon.svg",
+    "imageUrl": "https://test.cloud.ibm.com/mdm-oc/static/mdm-icon.svg",
     "localSvgIcon": "/generated/icons/14bd30e0-8921-11e9-a2c5-13fceaf553c0.svg",
     "localPngIcon": "/generated/icons/14bd30e0-8921-11e9-a2c5-13fceaf553c0.png"
   },
@@ -12933,8 +12933,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16716,9 +16716,11 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "ca-tor",
       "eu-de",
       "eu-gb",
+      "jp-tok",
       "us-south"
     ],
     "id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
@@ -16731,13 +16733,14 @@
     "pricing_tags": [
       "paid",
       "allow_internal_users",
-      "free",
-      "lite",
       "paid_only",
-      "paygo"
+      "paygo",
+      "free",
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
+      "au-syd",
       "ca-tor",
       "custom_kind_service",
       "eu-de",
@@ -16745,6 +16748,7 @@
       "free",
       "iam_compatible",
       "ibm_created",
+      "jp-tok",
       "lite",
       "paid",
       "paid_only",
