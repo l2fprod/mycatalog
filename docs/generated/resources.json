@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -544,15 +544,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4754,6 +4754,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4764,8 +4765,7 @@
       "jp-tok",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5007,16 +5007,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
+      "eu-es",
       "us-south",
+      "eu-de",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7661,14 +7661,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8259,16 +8259,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "au-syd",
+      "eu-es",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-de",
-      "us-south",
-      "eu-gb",
-      "au-syd",
-      "eu-es",
-      "jp-tok"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12862,8 +12862,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14360,12 +14360,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -14645,7 +14645,9 @@
     "kind": "service",
     "metadata": {
       "service": {},
-      "ui": {}
+      "ui": {
+        "hidden": true
+      }
     },
     "name": "vmware.usage-meter",
     "pricing_tags": [
@@ -16545,13 +16547,6 @@
         "description": "Learn more about user based billing here https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-admin-managing-plan#admin-managing-plan-user-based\nPlus plan instances can't be downgraded to lower-tier plans.",
         "displayName": "Plus",
         "originalName": "plus"
-      },
-      {
-        "id": "a7c3614c-c75f-4c45-85e4-0626492539d3",
-        "name": "plus-trial",
-        "description": "When your 30 day trial is over you can upgrade to Plus to continue using these features or export your content and create a lite instance to work off of.",
-        "displayName": "Trial",
-        "originalName": "plus-trial"
       }
     ],
     "description": "IBM watsonx Assistant lets you build conversational interfaces into any application, device, or channel.",
