@@ -1799,75 +1799,6 @@
     "localPngIcon": "/generated/icons/is.vpn-server.png"
   },
   {
-    "id": "dcc46a60-e13b-11e8-a015-757410dab16b",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "logdnaat",
-    "pricing_tags": [
-      "allow_internal_users",
-      "paid",
-      "paid_only",
-      "free",
-      "lite"
-    ],
-    "tags": [
-      "logging_monitoring",
-      "allow_internal_users",
-      "apidocs_enabled",
-      "custom_kind_service",
-      "free",
-      "ibm_created",
-      "ibm_deprecated",
-      "ibm_release",
-      "lite",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "supports_syndication"
-    ],
-    "plans": [
-      {
-        "id": "b7f77c86-adde-4e32-8a1b-daba35b1d4fa",
-        "name": "14-day",
-        "description": "Events are stored and searchable for 14 days.  Alert events in real time.  Archive.  Live streaming tail.",
-        "displayName": "14 Day Event Search",
-        "originalName": "14-day"
-      },
-      {
-        "id": "e914263e-8b62-475e-8206-938e3a31ad26",
-        "name": "30-day",
-        "description": "Events are stored and searchable for 30 days.  Alert events in real time.  Archive.  Live streaming tail.",
-        "displayName": "30 Day Event Search",
-        "originalName": "30-day"
-      },
-      {
-        "id": "9aae7491-5cb6-43eb-9b7a-3e0456c781f0",
-        "name": "7-day",
-        "description": "Events are stored and searchable for 7 days.  Alert events in real time.  Archive.  Live streaming tail.",
-        "displayName": "7 Day Event Search",
-        "originalName": "7-day"
-      },
-      {
-        "id": "6efc5a58-4289-4632-867f-5a25e817bfe9",
-        "name": "lite",
-        "description": "Live Streaming Tail support with ability to build and save views in the UI. Events are not retained for search. No Data Volume Limit. \nYou may upgrade your plan at any time after the initial set up.",
-        "displayName": "Lite",
-        "originalName": "lite"
-      }
-    ],
-    "description": "Record your IBM Cloud activities, search, and receive alerts on activity events through our hosted event search offering. Financial Services validated users should refer to docs for more information.",
-    "longDescription": "IBM Cloud Activity Tracker is your source for activity events recorded within IBM Cloud.  Activity events are records of the API calls to services on the IBM Cloud and produces the evidence to comply with corporate policies and market industry-specific regulations.  Cloud activity events help accelerate detection of security events and application performance issues. \n\nApplication environments seeking to maintain Financial Services Validation status on IBM Cloud should consult documentation (https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started) to configure activity events to route directly to IBM Cloud Object Storage.\n\nIBM Cloud Activity Tracker offers ready to run event search offerings to simplify configuration and expedite your time to greater insights.  You can choose to retain your events for 7, 14, or 30 days.  A 30 day HIPAA compliant offering is also available.",
-    "displayName": "Cloud Activity Tracker",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/090c2c10-8c38-11e8-bec2-493df9c49eb8/artifacts/cache/f3e0e4614b10477813a67733439fd639-public/CloudLogAnalysisAuditing.svg",
-    "geo_tags": [],
-    "localSvgIcon": "/generated/icons/dcc46a60-e13b-11e8-a015-757410dab16b.svg",
-    "localPngIcon": "/generated/icons/dcc46a60-e13b-11e8-a015-757410dab16b.png"
-  },
-  {
     "geo_tags": [
       "ams01",
       "ams03",
@@ -4509,7 +4440,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4592,7 +4523,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4679,7 +4610,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4748,7 +4679,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4831,7 +4762,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -4910,7 +4841,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5027,16 +4958,16 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-es",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5194,12 +5125,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7681,14 +7612,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8322,6 +8253,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8329,9 +8262,7 @@
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "eu-es"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9276,76 +9207,6 @@
     "localPngIcon": "/generated/icons/is.load-balancer.png"
   },
   {
-    "id": "e13e1860-959c-11e8-871e-ad157af61ad7",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "logdna",
-    "pricing_tags": [
-      "allow_internal_users",
-      "paid",
-      "paid_only",
-      "free",
-      "lite"
-    ],
-    "tags": [
-      "logging_monitoring",
-      "allow_internal_users",
-      "apidocs_enabled",
-      "beryllium",
-      "custom_kind_service",
-      "free",
-      "freesia",
-      "ibm_created",
-      "ibm_deprecated",
-      "lite",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "supports_syndication"
-    ],
-    "plans": [
-      {
-        "id": "0b3a45e0-def0-4935-8c74-26976f281751",
-        "name": "14-day",
-        "description": "Logs are stored and searchable for 14 days.  Alert events in real time.  Archive.  Live streaming tail.",
-        "displayName": "14 Day Log Search",
-        "originalName": "14-day"
-      },
-      {
-        "id": "deda35aa-662b-4b06-9f6e-05e0b55cc577",
-        "name": "30-day",
-        "description": "Logs are stored and searchable for 30 days.  Alert events in real time.  Archive.  Live streaming tail.",
-        "displayName": "30 Day Log Search",
-        "originalName": "30-day"
-      },
-      {
-        "id": "209cbd52-f3e2-47cb-94ce-6b84fafcf22b",
-        "name": "7-day",
-        "description": "Logs are stored and searchable for 7 days.  Alert events in real time.  Archive.  Live streaming tail.",
-        "displayName": "7 Day Log Search",
-        "originalName": "7-day"
-      },
-      {
-        "id": "abcf7f02-de22-4c7f-98a1-e8a592093d83",
-        "name": "lite",
-        "description": "Live Streaming Tail support with ability to build and save views in the UI. Logs are not retained for search. No Data Volume Limit.\nYou may upgrade your plan at any time after the initial set up.",
-        "displayName": "Lite",
-        "originalName": "lite"
-      }
-    ],
-    "description": "Log collection and search for IBM Cloud. Define alerts and design custom views to monitor application and system logs.",
-    "longDescription": "Install IBM Log Analysis and start seeing your logs in under two minutes. Whether you wish to send logs via Kubernetes, Code libraries, OS agents, or syslog we have hundreds of custom integrations and are adding more each month.\n\nOur integrations are meant to be hassle free, and our backend services will automatically detect, parse, and index all log types.",
-    "displayName": "Log Analysis",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/090c2c10-8c38-11e8-bec2-493df9c49eb8/artifacts/cache/189738563ec654b387bdc6d9da511401-public/CloudLogAnalysisLogging.svg",
-    "geo_tags": [],
-    "localSvgIcon": "/generated/icons/e13e1860-959c-11e8-871e-ad157af61ad7.svg",
-    "localPngIcon": "/generated/icons/e13e1860-959c-11e8-871e-ad157af61ad7.png"
-  },
-  {
     "geo_tags": [
       "dal09",
       "dal10",
@@ -9655,7 +9516,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-de.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -16796,12 +16657,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-gb",
-      "us-south",
       "eu-de",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-gb",
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16879,12 +16740,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
