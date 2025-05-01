@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,7 +546,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -554,7 +553,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4960,14 +4960,14 @@
   },
   {
     "geo_tags": [
-      "eu-es",
+      "eu-gb",
+      "us-south",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "us-south",
-      "eu-de",
+      "eu-es",
       "au-syd",
       "us-east"
     ],
@@ -5127,12 +5127,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6656,7 +6656,7 @@
     ],
     "description": "Decrease your on-premise backup storage capacity by up to 90%, while improving your existing backup solution performance.",
     "longDescription": "FalconStor StorSafe is a software solution that optimizes backup and restore, to improve performance and significantly reduce backup storage costs, all without requiring changes to the existing backup solution currently being used. With its integrated deduplication, the solution removes redundant copies of data, thereby reducing capacity requirements, decreasing storage costs, and minimizing replication and restore times. StorSafe VTL can be used with all leading backup solutions, and enables both hybrid and native-cloud backup, as well as both workload and tape migration to the cloud, including IBM PowerVS.\nThis solution is applicable to hybrid cloud deployments where you can have a backup of data on your on-premises deployment in the cloud. You can also use this solution for your on-premises workload migration to the cloud.\n \nFor a free assessment, contact a solution expert at ibmsales@falconstor.com.\n",
-    "displayName": "FalconStor StorSafe VTL for Power On-Premises",
+    "displayName": "FalconStor StorSafe for Power On-Premises",
     "imageUrl": "https://falconstor-download.s3.us-east.cloud-object-storage.appdomain.cloud/FalconStorLogo.png",
     "localPngIcon": "/generated/icons/60427a43-cf48-41e0-bd95-26bde9c12105.png"
   },
@@ -7384,7 +7384,7 @@
     "description": "Fresche KTLO offers OS and application management with onboarding, 24x7 support, proactive monitoring, and modern tools",
     "longDescription": "\"Fresche IBMi KTLO (Keep The Lights On) provides 24x7 comprehensive managed services for OS/400 and selected applications - delivered by onshore US citizens for your IBM i LPARs running in PowerVS.\n \nOur engineering team and disciplined approach provides robust system administration, including management and maintenance of OS/400, capacity planning, performance and backup monitoring, and disaster recovery support.\n \nOur application teams provide on-going support and management for selected applications, including profile management, application message responses, batch job management, application patching and upgrades, report creation,\n \nFresche includes our full Security Suite as part of this solution – including auditing, alerting, remediation tools, and encryption capabilities. Remediation work is offered as an additional service.\n \nFresche KTLO enables your team to focus on innovation while we handle the operations.\"",
     "displayName": "Fresche KTLO Application Management",
-    "imageUrl": "https://go.freschesolutions.com/hubfs/Fresche%20logo/fresche-logo-white-transparent-148x50.png",
+    "imageUrl": "https://go.freschesolutions.com/hubfs/Fresche%20logo/fresche-solutions_logo.png",
     "localPngIcon": "/generated/icons/900fb23f-fe9d-4cf8-9bb2-a82d87dede0e.png"
   },
   {
@@ -7431,7 +7431,7 @@
     "description": "Fresche provides operating system management for your IBMi, including on-boarding, monitoring, robust management, 24x7 support.",
     "longDescription": "\"Fresche IBMi Managed Services provides 24x7 managed services delivered by onshore US citizens for your IBM i LPARs running in PowerVS.\n \nOur engineering team and disciplined approach provides robust system administration, including management and maintenance of OS/400, capacity planning, performance monitoring, backup and recovery, and disaster recovery (if contracted).\n \nFresche includes our Security Audit tool at no additional charge as part of this solution.\n \nOur services enable your team to focus on innovation while we handle the technical operations.\"",
     "displayName": "Fresche LPAR Operations Management",
-    "imageUrl": "https://go.freschesolutions.com/hubfs/Fresche%20logo/fresche-logo-white-transparent-148x50.png",
+    "imageUrl": "https://go.freschesolutions.com/hubfs/Fresche%20logo/fresche-solutions_logo.png",
     "localPngIcon": "/generated/icons/c3c7f095-67da-42e6-b982-46d0e6e79f84.png"
   },
   {
@@ -8255,6 +8255,8 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -8262,9 +8264,7 @@
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd",
-      "eu-es",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8362,12 +8362,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -14323,12 +14323,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -15218,7 +15218,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15258,7 +15257,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -16680,12 +16680,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
