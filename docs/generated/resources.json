@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,6 +546,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -553,8 +554,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4531,10 +4531,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4542,7 +4538,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4687,7 +4687,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4699,7 +4698,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4960,16 +4960,16 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "mon01",
       "eu-gb",
+      "eu-es",
+      "us-south",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es",
-      "us-south"
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5127,12 +5127,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7945,49 +7945,6 @@
   },
   {
     "geo_tags": [
-      "us-east"
-    ],
-    "id": "instructlab",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "instructlab",
-    "pricing_tags": [
-      "paid",
-      "allow_internal_users"
-    ],
-    "tags": [
-      "ai",
-      "allow_internal_users",
-      "apidocs_enabled",
-      "custom_kind_service",
-      "iam_compatible",
-      "ibm_created",
-      "paid",
-      "rc_compatible",
-      "support_ibm",
-      "us-east"
-    ],
-    "plans": [
-      {
-        "id": "27439a12-6876-466b-96a3-f7bb6a4a532a",
-        "name": "instructlab-pricing-plan",
-        "description": "-",
-        "displayName": "Standard",
-        "originalName": "instructlab-pricing-plan"
-      }
-    ],
-    "description": "Simplify, scale, and secure the alignment of LLMs— addressing the challenges enterprises face in ownership, accuracy, and efficiency.",
-    "longDescription": "Red Hat AI InstructLab deployed as a service on IBM Cloud is designed to simplify, scale, and secure the training and deployment of AI models. By simplifying InstructLab model creation, organizations can build highly accurate and efficient models while retaining ownership of their data.",
-    "displayName": "InstructLab",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/instructlab/artifacts/cache/10dfe3466a866659b8f79170a1414455-public/logo-red-hat-ai-instructlab-on-ibm-cloud.svg",
-    "localSvgIcon": "/generated/icons/instructlab.svg",
-    "localPngIcon": "/generated/icons/instructlab.png"
-  },
-  {
-    "geo_tags": [
       "global"
     ],
     "id": "75874a60-cb12-11e7-948e-37ac098eb1b9",
@@ -8255,16 +8212,16 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "br-sao",
-      "ca-tor",
-      "jp-osa",
-      "us-east",
       "eu-de",
       "us-south",
       "eu-gb",
       "au-syd",
-      "eu-es"
+      "eu-es",
+      "jp-tok",
+      "br-sao",
+      "ca-tor",
+      "jp-osa",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9650,10 +9607,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12966,6 +12923,49 @@
   },
   {
     "geo_tags": [
+      "us-east"
+    ],
+    "id": "instructlab",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "instructlab",
+    "pricing_tags": [
+      "paid",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "ai",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "custom_kind_service",
+      "iam_compatible",
+      "ibm_created",
+      "paid",
+      "rc_compatible",
+      "support_ibm",
+      "us-east"
+    ],
+    "plans": [
+      {
+        "id": "27439a12-6876-466b-96a3-f7bb6a4a532a",
+        "name": "instructlab-pricing-plan",
+        "description": "-",
+        "displayName": "Standard",
+        "originalName": "instructlab-pricing-plan"
+      }
+    ],
+    "description": "Simplify, scale, and secure the alignment of LLMs— addressing the challenges enterprises face in ownership, accuracy, and efficiency.",
+    "longDescription": "Red Hat AI InstructLab deployed as a service on IBM Cloud is designed to simplify, scale, and secure the training and deployment of AI models. By simplifying InstructLab model creation, organizations can build highly accurate and efficient models while retaining ownership of their data.",
+    "displayName": "Red Hat AI InstructLab",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/instructlab/artifacts/cache/10dfe3466a866659b8f79170a1414455-public/logo-red-hat-ai-instructlab-on-ibm-cloud.svg",
+    "localSvgIcon": "/generated/icons/instructlab.svg",
+    "localPngIcon": "/generated/icons/instructlab.png"
+  },
+  {
+    "geo_tags": [
       "ams03",
       "au-syd",
       "che01",
@@ -13379,11 +13379,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -14278,12 +14278,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -16635,12 +16635,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
