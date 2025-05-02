@@ -546,6 +546,7 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -553,8 +554,7 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4531,6 +4531,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4538,11 +4542,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4965,11 +4965,11 @@
       "jp-tok",
       "mon01",
       "eu-gb",
-      "us-south",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es"
+      "eu-es",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5127,12 +5127,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7614,14 +7614,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8255,8 +8255,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8264,7 +8262,9 @@
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13379,11 +13379,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -13714,51 +13714,6 @@
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcstrial.png"
   },
   {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "fdf77820-deed-11e9-911d-5f09017358ff",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "skytap",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "compute",
-      "beryllium",
-      "custom_kind_service",
-      "global",
-      "ibm_release",
-      "ibm_third_party",
-      "iris",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "supports_syndication"
-    ],
-    "plans": [
-      {
-        "id": "2c64e548-36e2-4c0e-8791-24cb68a12585",
-        "name": "skytap-pay-as-you-go",
-        "description": "Standard pay-as-you-go plan. Ideal for workloads that change usage levels dramatically over time.",
-        "displayName": "Pay As You Go",
-        "originalName": "skytap-pay-as-you-go"
-      }
-    ],
-    "description": "Skytap is a cloud service designed specifically to natively run AIX, Linux and IBM i on POWER and x86, Windows and Linux traditional enterprise applications.",
-    "longDescription": "Skytap is a cloud service purpose-built to natively run traditional systems in the cloud. It is the only cloud service to support AIX, IBM i, and Linux on IBM POWER together with x86 workloads, enabling businesses to accelerate their journey to the cloud and increase innovation. \n\n\n**Getting Support**\nUse our support form (https://cloud.skytap.com/support) to submit issues; provide as much detail as possible. Support tickets are handled based upon your support level and issue severity. Before you submit an issue, please review our documentation at https://help.skytap.com/skytap-support.html.",
-    "displayName": "Skytap On IBM Cloud",
-    "imageUrl": "https://cloud.skytap.com/static/images/branding/default/skytap_logomark.svg",
-    "localSvgIcon": "/generated/icons/fdf77820-deed-11e9-911d-5f09017358ff.svg",
-    "localPngIcon": "/generated/icons/fdf77820-deed-11e9-911d-5f09017358ff.png"
-  },
-  {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-spplus",
     "kind": "service",
     "metadata": {
@@ -13790,12 +13745,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16680,12 +16635,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "eu-gb",
       "us-south",
       "eu-de",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
