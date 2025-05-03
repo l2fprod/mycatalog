@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4960,16 +4960,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-es",
       "us-south",
       "eu-de",
       "au-syd",
       "us-east",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7614,14 +7614,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8212,16 +8212,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "au-syd",
       "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "eu-de",
+      "us-south",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8316,147 +8316,6 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "eu-de",
-      "jp-tok",
-      "us-south",
-      "eu-gb"
-    ],
-    "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "datacatalog",
-    "pricing_tags": [
-      "paid_only",
-      "paygo",
-      "paid",
-      "allow_internal_users",
-      "lite",
-      "free",
-      "subscription",
-      "subscription_only"
-    ],
-    "tags": [
-      "allow_internal_users",
-      "apidocs_enabled",
-      "au-syd",
-      "ca-tor",
-      "catalog",
-      "custom_kind_service",
-      "data catalog",
-      "data governance",
-      "data intelligence",
-      "data lineage",
-      "data product",
-      "data product hub",
-      "data product subscription",
-      "data quality",
-      "data share",
-      "data sharing",
-      "data_intelligence",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "freesia",
-      "gc_migrate",
-      "governance",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ikc",
-      "intelligence",
-      "iodine",
-      "jp-tok",
-      "kc",
-      "knowledge catalog",
-      "lineage",
-      "lite",
-      "manta",
-      "paid",
-      "paid_only",
-      "paygo",
-      "product hub",
-      "quality",
-      "rc_compatible",
-      "structured data",
-      "subscription",
-      "subscription_only",
-      "support_ibm",
-      "us-south",
-      "watson",
-      "watsonx"
-    ],
-    "plans": [
-      {
-        "id": "9884cb54-6af0-4111-bee8-ddef9dd9b63d",
-        "name": "enterprise",
-        "description": "The Enterprise plan for Watson Knowledge Catalog enables organizations to build a solid data governance framework so that users can understand their data better, and sensitive data elements can be automatically detected and protected. Additional advanced capabilities will be available to help you analyze data quality, manage updates through workflows, and automate insights.",
-        "displayName": "Enterprise",
-        "originalName": "enterprise"
-      },
-      {
-        "id": "c6de4059-f576-480f-8492-88e2f2729818",
-        "name": "enterprise-bundle",
-        "description": "The Enterprise Bundle for IBM Knowledge Catalog is a volume discounted plan that enables organizations to build a data governance framework so that users can understand their data better.",
-        "displayName": "Enterprise Bundle",
-        "originalName": "enterprise-bundle"
-      },
-      {
-        "id": "414df6f4-9de9-4705-9a40-25f51d5b3d35",
-        "name": "lite",
-        "description": "The Lite plan provides you with a free trial of IBM Knowledge Catalog to begin your journey to becoming a data-centric organization.",
-        "displayName": "Lite",
-        "originalName": "Lite"
-      },
-      {
-        "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
-        "name": "professional",
-        "description": "The Professional plan for Watson Knowledge Catalog enables organizations to build a solid data governance framework so that users can have better understanding of their data, and sensitive data elements can be automatically detected and protected.",
-        "displayName": "Professional",
-        "originalName": "Professional"
-      },
-      {
-        "id": "82a5d250-0623-401e-97d2-50c8c9748482",
-        "name": "sqo",
-        "description": "The SQO Professional plan for Watson Knowledge Catalog includes everything in the Lite plan, plus unlimited catalogs, unlimited assets, control of data access by defining policies and monitoring enforcement.",
-        "displayName": "SQO Professional",
-        "originalName": "sqo"
-      },
-      {
-        "id": "7966c4ea-6d03-4bd4-acda-ce8131893a8c",
-        "name": "sqo-standard",
-        "description": "The SQO Standard plan for Watson Knowledge Catalog includes everything in the Lite plan, plus control of data access by defining policies and monitoring enforcement.",
-        "displayName": "SQO Standard",
-        "originalName": "sqo-Standard"
-      },
-      {
-        "id": "6be465bb-bbc5-485e-b92b-e70991e83fc7",
-        "name": "standard",
-        "description": "The Standard plan for Watson Knowledge Catalog offers everything you need to build a knowledge catalog so that users can easily inventory, find and prepare assets for their self-service analytics needs.",
-        "displayName": "Standard-NotUsed",
-        "originalName": "Standard"
-      },
-      {
-        "id": "ce4811be-0fe0-4305-bdc3-83fe9e1ed996",
-        "name": "standard-v2",
-        "description": "The Standard plan for IBM Knowledge Catalog is a pay-as-you-go service that offers everything you need to build a data catalog so that users can easily inventory, find and prepare assets for their self-service analytics needs.",
-        "displayName": "Standard",
-        "originalName": "standard-v2"
-      }
-    ],
-    "description": "Discover, profile, catalog and share trusted data in your organization.",
-    "longDescription": "To configure access policies for IBM Knowledge Catalog, select the IBM Cloud Pak for Data service.",
-    "displayName": "Knowledge Catalog",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed/artifacts/cache/bf08d8c86eabba3b2240634fdc5fcb9d-public/WatsonKnowledgeCcatalog--dark.svg",
-    "localSvgIcon": "/generated/icons/ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed.svg",
-    "localPngIcon": "/generated/icons/ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed.png"
   },
   {
     "geo_tags": [
@@ -9607,10 +9466,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14278,12 +14137,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -15173,6 +15032,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15212,8 +15072,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -16635,12 +16494,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16883,6 +16742,175 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e/artifacts/cache/3dc0598a6d6869690575c74d4cc1e77f-public/watsonxdata.svg",
     "localSvgIcon": "/generated/icons/43834340-4a6d-11ed-97d2-959039ad2a2e.svg",
     "localPngIcon": "/generated/icons/43834340-4a6d-11ed-97d2-959039ad2a2e.png"
+  },
+  {
+    "geo_tags": [
+      "eu-gb",
+      "au-syd",
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
+    ],
+    "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "datacatalog",
+    "pricing_tags": [
+      "paid_only",
+      "paygo",
+      "paid",
+      "allow_internal_users",
+      "lite",
+      "free",
+      "subscription",
+      "subscription_only"
+    ],
+    "tags": [
+      "analytics",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "au-syd",
+      "ca-tor",
+      "catalog",
+      "custom_kind_service",
+      "data catalog",
+      "data governance",
+      "data intelligence",
+      "data lineage",
+      "data product",
+      "data product hub",
+      "data product subscription",
+      "data quality",
+      "data share",
+      "data sharing",
+      "data_intelligence",
+      "eu-de",
+      "eu-gb",
+      "free",
+      "freesia",
+      "gc_migrate",
+      "governance",
+      "iam_compatible",
+      "ibm_created",
+      "ikc",
+      "intelligence",
+      "iodine",
+      "jp-tok",
+      "kc",
+      "knowledge catalog",
+      "lineage",
+      "lite",
+      "manta",
+      "paid",
+      "paid_only",
+      "paygo",
+      "product hub",
+      "quality",
+      "rc_compatible",
+      "structured data",
+      "subscription",
+      "subscription_only",
+      "support_ibm",
+      "us-south",
+      "watson",
+      "watsonx"
+    ],
+    "plans": [
+      {
+        "id": "9884cb54-6af0-4111-bee8-ddef9dd9b63d",
+        "name": "enterprise",
+        "description": "The Enterprise plan for Watson Knowledge Catalog enables organizations to build a solid data governance framework so that users can understand their data better, and sensitive data elements can be automatically detected and protected. Additional advanced capabilities will be available to help you analyze data quality, manage updates through workflows, and automate insights.",
+        "displayName": "Enterprise",
+        "originalName": "enterprise"
+      },
+      {
+        "id": "c6de4059-f576-480f-8492-88e2f2729818",
+        "name": "enterprise-bundle",
+        "description": "The Enterprise Bundle for IBM Knowledge Catalog is a volume discounted plan that enables organizations to build a data governance framework so that users can understand their data better.",
+        "displayName": "Enterprise Bundle",
+        "originalName": "enterprise-bundle"
+      },
+      {
+        "id": "c2e391c2-d029-474f-9cf7-3d102cc90fac",
+        "name": "essentials",
+        "description": "The Essentials plan includes core capabilities to automatically discover, profile, enrich, analyze data lineage and quality, and share data products as you begin to establish a data-centric organization.",
+        "displayName": "Essentials",
+        "originalName": "essentials"
+      },
+      {
+        "id": "414df6f4-9de9-4705-9a40-25f51d5b3d35",
+        "name": "lite",
+        "description": "The Lite plan provides you with a free trial of IBM Knowledge Catalog to begin your journey to becoming a data-centric organization.",
+        "displayName": "Lite",
+        "originalName": "Lite"
+      },
+      {
+        "id": "3a68f599-b1d6-48f1-a343-76682b945a9c",
+        "name": "premium",
+        "description": "The Premium plan provides a comprehensive set of tools for advanced data discovery, cataloging, governance, quality, lineage and data product hub, augmented by Gen AI. Access to IBM Knowledge Accelerators is also included.",
+        "displayName": "Premium",
+        "originalName": "premium"
+      },
+      {
+        "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
+        "name": "professional",
+        "description": "The Professional plan for Watson Knowledge Catalog enables organizations to build a solid data governance framework so that users can have better understanding of their data, and sensitive data elements can be automatically detected and protected.",
+        "displayName": "Professional",
+        "originalName": "Professional"
+      },
+      {
+        "id": "82a5d250-0623-401e-97d2-50c8c9748482",
+        "name": "sqo",
+        "description": "The SQO Professional plan for Watson Knowledge Catalog includes everything in the Lite plan, plus unlimited catalogs, unlimited assets, control of data access by defining policies and monitoring enforcement.",
+        "displayName": "SQO Professional",
+        "originalName": "sqo"
+      },
+      {
+        "id": "7966c4ea-6d03-4bd4-acda-ce8131893a8c",
+        "name": "sqo-standard",
+        "description": "The SQO Standard plan for Watson Knowledge Catalog includes everything in the Lite plan, plus control of data access by defining policies and monitoring enforcement.",
+        "displayName": "SQO Standard",
+        "originalName": "sqo-Standard"
+      },
+      {
+        "id": "6be465bb-bbc5-485e-b92b-e70991e83fc7",
+        "name": "standard",
+        "description": "The Standard plan for Watson Knowledge Catalog offers everything you need to build a knowledge catalog so that users can easily inventory, find and prepare assets for their self-service analytics needs.",
+        "displayName": "Standard-NotUsed",
+        "originalName": "Standard"
+      },
+      {
+        "id": "ce4811be-0fe0-4305-bdc3-83fe9e1ed996",
+        "name": "standard-v2",
+        "description": "The Standard plan for IBM Knowledge Catalog is a pay-as-you-go service that offers everything you need to build a data catalog so that users can easily inventory, find and prepare assets for their self-service analytics needs.",
+        "displayName": "Standard",
+        "originalName": "standard-v2"
+      },
+      {
+        "id": "47df9fae-4bc5-41d7-bbb1-aeb54b810bd3",
+        "name": "standard-v3",
+        "description": "The Standard plan includes advanced capabilities in data governance, quality, lineage and data product hub. Access to IBM Knowledge Accelerators is also included.",
+        "displayName": "Standard",
+        "originalName": "standard-v3"
+      },
+      {
+        "id": "cd787bd0-ddc4-4b09-ae8d-35e58db5bfe6",
+        "name": "trial",
+        "description": "This plan provides you with a free 30-day trial of watsonx.data intelligence to explore the full set of integrated and AI-powered capabilities to deliver trusted data to support your business and AI initiatives.\n\n\n**Trial plan services, including all data and assets, are deleted after 30 days.**",
+        "displayName": "Trial",
+        "originalName": "trial"
+      }
+    ],
+    "description": "Create an intelligent data foundation to accelerate data insights.",
+    "longDescription": "IBM watsonx.data intelligence revolutionizes the way organizations curate, manage, and utilize data by leveraging the power of AI to simplify data delivery across hybrid ecosystems. It empowers organizations to discover, trust, and access meaningful data by unifying governance, lineage, quality, and sharing, providing consumers with reliable data products.",
+    "displayName": "watsonx.data intelligence",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed/artifacts/cache/b0192006cacb633f7593747db7e937b6-public/watsonxDataIntelligence--light.svg",
+    "localSvgIcon": "/generated/icons/ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed.svg",
+    "localPngIcon": "/generated/icons/ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed.png"
   },
   {
     "geo_tags": [
