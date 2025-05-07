@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4946,16 +4946,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-es",
-      "us-south",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-de"
+      "eu-gb",
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8198,16 +8198,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "au-syd",
+      "eu-es",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-de",
-      "us-south",
-      "eu-gb",
-      "au-syd",
-      "eu-es",
-      "jp-tok"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9969,6 +9969,57 @@
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
     "localSvgIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.svg",
     "localPngIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "266c5178-8d88-40a9-966f-ea9f775bab05",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "neuralseekservices",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "anthropic",
+      "consulting_tab",
+      "custom_kind_service",
+      "elastic",
+      "global",
+      "granite",
+      "ibm_third_party",
+      "llm",
+      "neuralseek",
+      "openai",
+      "orchestrate",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson",
+      "watsonx",
+      "watsonx.ai"
+    ],
+    "plans": [
+      {
+        "id": "a79c10d3-8ffe-43e6-97ac-0b73cf84cfc3",
+        "name": "hours",
+        "description": "Hours of professional services",
+        "displayName": "hours"
+      }
+    ],
+    "description": "NeuralSeek onboarding, training, and implementation services",
+    "longDescription": "At NeuralSeek, we understand that implementing AI-powered solutions requires expert guidance and support to achieve optimal results. Our comprehensive professional services team partners with you throughout your journey, providing end-to-end support for implementation, seamless integration with your existing systems, thorough team training, and ongoing technical assistance. Whether you're just getting started with NeuralSeek or looking to optimize your current deployment, our experienced consultants ensure you maximize the value of your investment while maintaining the highest standards of accuracy and performance. We're committed to helping your organization harness the full potential of AI-driven customer support solutions.\n\n\nOnce you provision an instance of our professional services, you will then be able to pre-purchase blocks of hours which are valid to be consumed for 1 year after purchase.",
+    "displayName": "NeuralSeek Professional Services",
+    "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
+    "localSvgIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.svg",
+    "localPngIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.png"
   },
   {
     "geo_tags": [
@@ -13224,11 +13275,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -13590,12 +13641,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -14120,6 +14171,59 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.subnet/artifacts/cache/e475aba926c1296b5e36d44177e0681a-public/Subnets.svg",
     "localSvgIcon": "/generated/icons/is.subnet.svg",
     "localPngIcon": "/generated/icons/is.subnet.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "4f2d2c90-caec-4916-b44b-8363479ab12a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "techdservices",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "cloudpak",
+      "cognos",
+      "consulting_tab",
+      "custom_kind_service",
+      "datastage",
+      "discovery",
+      "elastic",
+      "global",
+      "ibm_third_party",
+      "implementation",
+      "information server",
+      "managed services",
+      "onboarding",
+      "orchestrate",
+      "paid",
+      "paid_only",
+      "qualitystage",
+      "rc_compatible",
+      "support_third_party",
+      "training",
+      "watson",
+      "watsonx"
+    ],
+    "plans": [
+      {
+        "id": "f097a3d5-edf7-4b7b-b16a-748c8da2fa96",
+        "name": "hours",
+        "description": "Hours",
+        "displayName": "hours"
+      }
+    ],
+    "description": "TechD consulting, onboarding, implementation, training, and managed services for IBM Data & AI products",
+    "longDescription": "TechD stands at the forefront of data and artificial intelligence solutions, serving as IBM's premier strategic partner for over 14 years. With a proven track record of excellence and innovation, we have established ourselves as the trusted leader in implementing and optimizing IBM's comprehensive suite of technologies. Our deep expertise spans the entire IBM ecosystem, including Watson's AI capabilities, Cognos analytics, Information Server's data integration platform, Master Data Management (MDM) solutions, and the latest CloudPak offerings. By combining our technical prowess with a thorough understanding of business challenges, TechD helps organizations transform their data into actionable insights, enabling them to make smarter decisions and drive digital transformation in an increasingly complex technological landscape.\n\n\nOnce you provision an instance of our professional services, you will then be able to pre-purchase blocks of hours which are valid to be consumed for 1 year after purchase.",
+    "displayName": "TechD Professional Services",
+    "imageUrl": "https://01a52fc7fd79cbb4cb4f0ed69b404bcd.cdn.bubble.io/f1745867538498x475981234814582000/technology_dynamics_inc_logo.png",
+    "localPngIcon": "/generated/icons/4f2d2c90-caec-4916-b44b-8363479ab12a.png"
   },
   {
     "geo_tags": [
@@ -16424,9 +16528,7 @@
       "paid",
       "allow_internal_users",
       "paid_only",
-      "paygo",
-      "free",
-      "lite"
+      "paygo"
     ],
     "tags": [
       "allow_internal_users",
@@ -16435,11 +16537,9 @@
       "custom_kind_service",
       "eu-de",
       "eu-gb",
-      "free",
       "iam_compatible",
       "ibm_created",
       "jp-tok",
-      "lite",
       "paid",
       "paid_only",
       "paygo",
@@ -16455,13 +16555,6 @@
         "description": "Essentials Plan for customers to get started quickly building AI Assistants on IBM watsonx Orchestrate.",
         "displayName": "Essentials Plan",
         "originalName": "essentials"
-      },
-      {
-        "id": "69d79047-fb71-4331-b14a-3e2a398c6240",
-        "name": "lite",
-        "description": "30-day free access to the Standard plan",
-        "displayName": "Trial",
-        "originalName": "lite"
       },
       {
         "id": "505cc38b-4f01-4daf-872c-cc7b0d57986e",
@@ -16480,12 +16573,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16584,6 +16677,7 @@
       "lite"
     ],
     "tags": [
+      "apidocs_enabled",
       "au-syd",
       "ca-tor",
       "cpdaas",
@@ -16731,12 +16825,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
