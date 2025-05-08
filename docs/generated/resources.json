@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4673,7 +4673,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4685,7 +4684,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4946,15 +4946,15 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "eu-es",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "us-south",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -5113,12 +5113,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7600,14 +7600,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8198,7 +8198,6 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8207,7 +8206,8 @@
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd"
+      "au-syd",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12678,8 +12678,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14372,6 +14372,50 @@
     "imageUrl": "https://cloud.ibm.com/devops/graphics/toolchain_light.svg",
     "localSvgIcon": "/generated/icons/e512e5f0-64fb-11e8-9c23-830c05b8b729.svg",
     "localPngIcon": "/generated/icons/e512e5f0-64fb-11e8-9c23-830c05b8b729.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "a0b5c5b4-cf45-4d10-ba8c-512126cf6e2c",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "trademo-technologies-inc-finscreener",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "custom_kind_service",
+      "enterprise_app",
+      "finscreen",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "supply chain risk management",
+      "support_third_party",
+      "trade risk mitigation",
+      "trade transaction validation"
+    ],
+    "plans": [
+      {
+        "id": "0409c2e3-c79e-4827-b232-8e28a45183db",
+        "name": "standard-plan",
+        "description": "Per-Transaction Plan allows users to pay based on the number of credit finance transactions processed. Transactional Limit is of hundred thousand records per day. ",
+        "displayName": "standard-plan"
+      }
+    ],
+    "description": "Trademo TradeScreen is an AI-based real-time trade transaction validation tool powered by  Knowledge graph of over 10 billion+data",
+    "longDescription": "Trademo Tradecreen is an advanced AI-powered solution designed for comprehensive trade transaction validation and compliance. Built on Trademo's AI-driven Knowledge Graph (TrademoKG), this platform integrates billions of data points related to global trade activities, including trade transactions, supply chain dynamics, risk assessments, entity relationships, and ownership structures.\n\nKey Features:\n(A).AI-Powered Knowledge Graph: Leverage an extensive and continuously updated graph that connects trade, supply chain, risk, and compliance data, allowing businesses to gain unparalleled insights into their global trade activities.\n\n(B).Real-Time Transaction Screening: Perform 500+ real-time compliance checks on trade transactions to ensure that your operations adhere to regulatory standards and avoid potential risks.\nGlobal Trade Visibility: Gain complete visibility into supply chains, ownership structures, and risk factors, enabling proactive management of international trade compliance.\n\n(C).Advanced Risk Mitigation: Minimize potential trade risks by identifying and addressing potential compliance violations, embargoes, or sanctions in real-time.\n\n(D).Seamless Integration: Easily integrate Finscreen with existing ERP and supply chain systems to enhance workflow automation, improve operational efficiency, and ensure continuous compliance.\n\n\nBenefits:\n\nEnhanced Security and Compliance: With Tradescreen, organizations can ensure that all their trade transactions meet international compliance requirements, such as embargoes, sanctions, and dual-use goods checks.\n\nImproved Operational Efficiency: Automate compliance checks and streamline processes, reducing manual intervention and minimizing human error.\n\nScalability and Flexibility: The solution is designed to scale with your business, capable of handling large datasets and complex trade operations across multiple regions and industries.\n\nIntelligent Risk Detection: By leveraging AI and machine learning, Finscreen continually improves its detection capabilities, adapting to new and evolving risks in the trade and supply chain landscape.",
+    "displayName": "TradeScreen",
+    "imageUrl": "https://res.cloudinary.com/drzta9shk/image/upload/v1734085407/blog/Union_aowyfc.svg",
+    "localSvgIcon": "/generated/icons/a0b5c5b4-cf45-4d10-ba8c-512126cf6e2c.svg",
+    "localPngIcon": "/generated/icons/a0b5c5b4-cf45-4d10-ba8c-512126cf6e2c.png"
   },
   {
     "geo_tags": [
@@ -16836,12 +16880,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
