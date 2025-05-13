@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,7 +546,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -554,7 +553,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4517,10 +4517,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4528,7 +4524,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4946,16 +4946,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es",
-      "au-syd",
-      "us-east",
-      "us-south",
-      "eu-de"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8197,16 +8197,16 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-es",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "eu-es",
-      "jp-tok"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12378,6 +12378,84 @@
     "geo_tags": [
       "global"
     ],
+    "id": "0f32e980-4197-4ad7-a484-e98f7c7424bf",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "profi-powervs-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "migration",
+      "security",
+      "aerospaceanddefense",
+      "agriculture",
+      "analysis",
+      "automotive",
+      "banking",
+      "chemicalsandpetroleum",
+      "constructionandengineering",
+      "consulting",
+      "consulting_tab",
+      "consumerproducts",
+      "custom_kind_service",
+      "electronics",
+      "enablement",
+      "feasability",
+      "federalgovernment",
+      "financialsector",
+      "freightandlogistics",
+      "global",
+      "government",
+      "ibm_third_party",
+      "industrials",
+      "insurance",
+      "itconsulting",
+      "machinery",
+      "managed",
+      "managedservice",
+      "manufacturing",
+      "migration_tools",
+      "oilandgas",
+      "paid",
+      "paid_only",
+      "performance",
+      "powervs",
+      "profi",
+      "publicsafetyandpolicing",
+      "publicsectorandngos",
+      "publictransport",
+      "rc_compatible",
+      "retail",
+      "service",
+      "support",
+      "support_third_party",
+      "technology",
+      "transportation",
+      "workshop"
+    ],
+    "plans": [
+      {
+        "id": "b193bc10-c8f3-4794-bc71-de3ced098c15",
+        "name": "pricing-profi-powervs-service",
+        "description": "This service offering is provided by the IBM Cloud specialists at PROFI Engineering Systems AG in Germany. \nThe offering includes the complete pre-consulting and migration of a local IBM Power LPAR (IBM i, AIX or Linux) from on-prem to PowerVS in the IBM Cloud followed by all futher needed acivities.\n\nThe service offering includes the following activities: \n1. Feasibility study for migrating the on-premise environment to the IBM Cloud \n2. Support with the definition of the required services and, if necessary, with the configuration for pricing. \n3. Professional Services for setting up the landing zone (IBM Cloud Account, networking, VPN connection, VPC environment) \n4. Professional Services for setting up the PowerVS environment (PowerVS LPAR) \n5. Support for migration and commissioning \n6. Support in setting up backup solutions. \n\nThe minimum order is set at one PowerVS Service Unit. One workday means 8 hours. \n\nNeed someting else? Just ask us: PowerVS@profi-ag.de \n\nPlease contact us before ordering: PowerVS@profi-ag.de ",
+        "displayName": "pricing-profi-powervs-service"
+      }
+    ],
+    "description": "PROFI Services for building your environment around PowerVS in IBM Cloud ",
+    "longDescription": "PROFI Engineering Systems AG offers the PowerVS services to enable a smooth transition from on-prem LPARs to the IBM Cloud, empowering your business to leverage the reliability and scalability of IBM PowerVS.\n\nAll services offered are designed to make your transition to the IBM Cloud risk-free and as smooth as possible.\n\nBenefits:\n•\tMigration Support: \nUse the service to easily migrate your environment to the IBM Cloud\n•\tEnhanced Scalability and Reliability:\nLeverage the benefits of IBM PowerVS to achieve enhanced scalability and reliability for your workloads.\n•\tFuture-Proof Infrastructure:\nFocus on your business instead of on your IT infrastructure by unsing IBM PowerVS.\n•\tCost-Efficiency:\nOptimize costs by the advantages of moving your workloads to IBM PowerVS.\n\nAll services offered can of course also be called up individually.\nDo you need certain services that are not included in this description? Then write to us at PowerVS@profi-ag.de and we will find a solution together.\n\nPlease contact us before ordering: PowerVS@profi-ag.de\n",
+    "displayName": "PROFI PowerVS Service",
+    "imageUrl": "https://www.profi-ag.de/wp-content/uploads/2024/12/profiag_logo_32x32.png",
+    "localPngIcon": "/generated/icons/0f32e980-4197-4ad7-a484-e98f7c7424bf.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "7c03a06c-f1bb-46f8-84d8-9378432b2804",
     "kind": "service",
     "metadata": {
@@ -12677,8 +12755,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16629,12 +16707,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16712,12 +16790,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
