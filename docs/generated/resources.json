@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4673,6 +4673,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4684,8 +4685,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4946,16 +4946,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "us-south",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "eu-gb",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-es",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8197,8 +8197,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
       "eu-es",
       "jp-tok",
       "br-sao",
@@ -8206,7 +8204,9 @@
       "jp-osa",
       "us-east",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9451,10 +9451,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -10022,6 +10022,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "global"
     ],
     "id": "466091c0-9b8d-11eb-8f8c-91e95378d441",
@@ -10041,6 +10042,7 @@
       "analytics",
       "allow_internal_users",
       "apidocs_enabled",
+      "au-syd",
       "business_analytics",
       "custom_kind_service",
       "data_analytics",
@@ -16792,12 +16794,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -16961,12 +16963,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
