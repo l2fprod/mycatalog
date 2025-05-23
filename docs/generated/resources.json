@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1257,10 +1257,14 @@
     },
     "name": "is.volume",
     "pricing_tags": [
-      "paid"
+      "paid",
+      "allow_internal_users",
+      "free",
+      "paid_only"
     ],
     "tags": [
       "storage",
+      "allow_internal_users",
       "au-syd",
       "au-syd-1",
       "au-syd-2",
@@ -1290,6 +1294,7 @@
       "eu-gb-2",
       "eu-gb-3",
       "financial services",
+      "free",
       "freesia",
       "fs cloud",
       "fs_ready",
@@ -1308,6 +1313,7 @@
       "jp-tok-2",
       "jp-tok-3",
       "paid",
+      "paid_only",
       "rc_compatible",
       "storage_block",
       "storage_vpc",
@@ -1338,6 +1344,13 @@
         "originalName": "5iopstier-NGVSI-beta-free-plan"
       },
       {
+        "id": "689497e9-a462-467b-b1f5-443b2db57885",
+        "name": "gen2-volume-acadia",
+        "description": "Acadia plan",
+        "displayName": "Block Storage -SDS",
+        "originalName": "gen2-volume-acadia"
+      },
+      {
         "id": "5ed65b4c-9a72-440a-977c-596479aa1343",
         "name": "gen2-volume-custom",
         "description": "This is the free plan for customers to get their boot volume for free when using NextGen VSI during their beta period.",
@@ -1350,6 +1363,13 @@
         "description": "This is the free plan for customers to get their boot volume for free when using NextGen VSI during their beta period.",
         "displayName": "General Purpose Tier Gen2",
         "originalName": "general-purpose-boot-VSI-beta-free-plan"
+      },
+      {
+        "id": "5889230f-eb96-481d-a460-eb840a9b0386",
+        "name": "gen2-volume-sdp",
+        "description": "With the sdp profile (latest generation), you can provision block storage volumes in VPC with capacity starting from 1 GB and up to 32,000 GB. This profile allows you to customize capacity, IOPS and throughput independently of each other based on your application needs, enabling you to scale volume performance independently of volume size. \n\nSdp volumes deliver a baseline IOPS performance of 3,000 IOPS and a baseline throughput performance of 125 MB/s, both of which (IOPS and throughput) are included with the price of storage. You can provision additional IOPS (up to 64,000) and throughput (up to 1,024 MB/s) at an additional price.\n\nPricing for the sdp profile is based on a combination of capacity plus IOPS and throughput performance. Price for capacity and performance is calculated using a linear model, the price will scale linearly depending on the volume size, IOPS and throughput you select.",
+        "displayName": "Block Storage for VPC - sdp",
+        "originalName": "gen2-volume-sdp"
       }
     ],
     "description": "Persistent storage for use as boot and data storage for  Virtual Servers in a VPC network.",
@@ -4673,6 +4693,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4684,8 +4705,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4946,16 +4966,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "us-south",
-      "au-syd",
-      "us-east",
       "eu-gb",
-      "eu-es",
-      "eu-de"
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7599,14 +7619,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8197,7 +8217,6 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8206,7 +8225,8 @@
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd"
+      "au-syd",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13354,11 +13374,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -15247,6 +15267,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15286,8 +15307,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -16711,12 +16731,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "ca-tor",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16963,12 +16983,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
