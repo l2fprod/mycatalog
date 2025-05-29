@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4968,14 +4968,14 @@
     "geo_tags": [
       "us-south",
       "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-gb",
       "eu-es",
-      "eu-gb"
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5133,12 +5133,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7619,14 +7619,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -17222,6 +17222,52 @@
     "imageUrl": "https://aiopenscale.cloud.ibm.com/aiopenscale-broker/public/feature_xgov_light.svg",
     "localSvgIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.svg",
     "localPngIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "e9407be2-139f-4f05-959d-494c6601239a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "cognerium-wealthgrowth-ai",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "banks",
+      "creditunions",
+      "custom_kind_service",
+      "enterprise_app",
+      "financialadvisors",
+      "financialinstitutions",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "quantumai",
+      "rc_compatible",
+      "support_third_party",
+      "wealthmanagement"
+    ],
+    "plans": [
+      {
+        "id": "8cbc79c9-ef0c-452b-9c6c-69140fa8d1c4",
+        "name": "usage-based-wg",
+        "description": "usage based plan",
+        "displayName": "usage-based-wg"
+      }
+    ],
+    "description": "An AI-powered platform tailored for advisors and financial institutions to drive asset growth and enhance performance.",
+    "longDescription": "WealthGrowth.ai: Transforming Wealth Management with AI\n\nWealthGrowth.ai is an Agentic AI workflow designed to enhance financial advisory services by leveraging 64 AI models, multiple AI agents, over 250 APIs, and six digital applications. By automating up to 95% of advisors' tasks, it helps boost asset growth and expand client outreach.\n\nKey Benefits:\n\n1. Growing with Current Clients\nIncreases product utilization by 3 to 4 times.\nExpands wallet share by up to 40%.\n   \n2. Transitioning Bank Clients & Acquiring New Prospects\nEnables advisors to manage 6 to 10 times more clients.\nBoosts assets under management (AUM) by up to 6 times.\n\n3. Enabling a Centralized/Remote/Digital Advisor Strategy\nExpands reach to new channels, regions, and products.\nReduces advisor workload while maximizing efficiency.\n\nPowered by Cognerium, WealthGrowth.ai is shaping the future of wealth management by integrating AI-driven strategies to optimize client engagement and financial growth.",
+    "displayName": "WealthGrowth.AI",
+    "imageUrl": "https://cognerium.com/assets/Company-icon/cognerium.png",
+    "localPngIcon": "/generated/icons/e9407be2-139f-4f05-959d-494c6601239a.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-zerto",
