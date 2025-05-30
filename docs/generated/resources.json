@@ -546,7 +546,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -554,7 +553,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -2230,7 +2230,7 @@
       {
         "id": "3373c949-d1b1-4935-a60a-4e80b15440dd",
         "name": "standard",
-        "description": "Log consumption tier allocation is configured using the TCO Optimizer. \n\nPriority insights log retention can be configured below and/or updated within the service settings after provision.",
+        "description": "Log consumption tier allocation is configured using the TCO Optimizer. \n\nPriority insights log retention can be configured below and/or updated within the service settings after provision.\n",
         "displayName": "Standard",
         "originalName": "standard"
       }
@@ -4966,16 +4966,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "au-syd",
-      "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5133,12 +5133,12 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7593,14 +7593,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8191,6 +8191,7 @@
   },
   {
     "geo_tags": [
+      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8199,8 +8200,7 @@
       "eu-de",
       "us-south",
       "eu-gb",
-      "au-syd",
-      "eu-es"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14300,12 +14300,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -15241,6 +15241,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15280,8 +15281,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
