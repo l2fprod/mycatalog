@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,7 +546,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -554,7 +553,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4448,7 +4448,7 @@
     "description": "EDB is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle.",
     "longDescription": "EDB (formerly known as EnterpriseDB) is a PostgreSQL-based database engine optimized for performance, developer productivity, and compatibility with Oracle. Databases for EDB is a fully managed offering with 24x7 operations and support, Features include high availability, automated backup orchestration, and de-coupled scaling  of storage, RAM, and vCPUs. Databases for EDB pricing is based on underlying disk, RAM, and vCPU allocation, as well as backup storage usage. is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for EDB",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/edb.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/edb.svg",
     "localSvgIcon": "/generated/icons/databases-for-enterprisedb.svg",
     "localPngIcon": "/generated/icons/databases-for-enterprisedb.png"
   },
@@ -4531,7 +4531,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -4618,7 +4618,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -4687,7 +4687,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -4770,7 +4770,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -4849,7 +4849,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -4966,16 +4966,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-de",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es",
       "au-syd",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6480,15 +6480,6 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "satcon_dal",
-      "satcon_fra",
-      "satcon_lon",
-      "satcon_osa",
-      "satcon_sao",
-      "satcon_syd",
-      "satcon_tok",
-      "satcon_tor",
-      "satcon_wdc",
       "us-east",
       "us-south"
     ],
@@ -6539,16 +6530,6 @@
       "paid_only",
       "paygo",
       "rc_compatible",
-      "satcon_dal",
-      "satcon_fra",
-      "satcon_lon",
-      "satcon_osa",
-      "satcon_sao",
-      "satcon_syd",
-      "satcon_tok",
-      "satcon_tor",
-      "satcon_wdc",
-      "satellite_enabled",
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
@@ -6568,13 +6549,6 @@
         "description": "The Lite plan offers access to a single partition in a multi-tenant Event Streams cluster. Stream landing is not supported on the Lite plan.",
         "displayName": "Lite",
         "originalName": "standard"
-      },
-      {
-        "id": "ibm.eventstreams.for.satellite",
-        "name": "satellite",
-        "description": "Important:  The Event Streams Satellite plan does not yet provide the same compliance certifications provided by the Enterprise or Standard plans.\nFor more information on this plan, including compliances, see 'choosing your plan' in our documentation.",
-        "displayName": "Satellite",
-        "originalName": "satellite"
       },
       {
         "id": "ibm.eventstreams.standard",
@@ -7619,14 +7593,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8217,8 +8191,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
@@ -8226,7 +8198,9 @@
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9360,7 +9334,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -16731,12 +16705,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
