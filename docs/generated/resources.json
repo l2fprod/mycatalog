@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4693,6 +4693,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4704,8 +4705,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4966,16 +4966,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "us-south",
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-gb",
+      "eu-es",
+      "eu-de",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5133,12 +5133,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7414,6 +7414,136 @@
     "localPngIcon": "/generated/icons/c3c7f095-67da-42e6-b982-46d0e6e79f84.png"
   },
   {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "afa31435-8561-4383-b069-ec9a47719e20",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "fresche-presto",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "5250 datastream",
+      "custom_kind_service",
+      "enterprise_app",
+      "global",
+      "green screen modernization",
+      "ibm i web ui",
+      "ibm_third_party",
+      "mobile-responsive applications",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "rpg modernization",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "e58a938a-7a4d-4960-93a1-94dc0f9a690a",
+        "name": "101-250-users",
+        "description": "Pricing is per LPAR. 101-250 users\n\nPresto instantly transforms IBM i green screens into modern web and mobile interfaces without changing source code.",
+        "displayName": "101-250-users"
+      },
+      {
+        "id": "51d0b2cd-3985-4f8c-9962-81d166cbea30",
+        "name": "26-50-users",
+        "description": "Pricing is per LPAR. 26-50 users\n\nPresto instantly transforms IBM i green screens into modern web and mobile interfaces without changing source code.",
+        "displayName": "26-50-users"
+      },
+      {
+        "id": "64bf0359-5e88-472f-9bce-44569daf2c7b",
+        "name": "51-100-users",
+        "description": "Pricing is per LPAR. 51-100 users\n\nPresto instantly transforms IBM i green screens into modern web and mobile interfaces without changing source code.",
+        "displayName": "51-100-users"
+      },
+      {
+        "id": "63f44329-27cf-47a9-898a-f736e8886a0a",
+        "name": "unlimited-users",
+        "description": "Pricing is per LPAR. Unlimited users\n\nPresto instantly transforms IBM i green screens into modern web and mobile interfaces without changing source code.",
+        "displayName": "unlimited-users"
+      },
+      {
+        "id": "b4da8a6c-e7a0-45b9-b2b1-c1ef652851f5",
+        "name": "up-to-25-users",
+        "description": "Pricing is per LPAR. Up to 25 users\n\nPresto instantly transforms IBM i green screens into modern web and mobile interfaces without changing source code.",
+        "displayName": "up-to-25-users"
+      }
+    ],
+    "description": "Presto instantly transforms IBM i green screens into modern web and mobile interfaces without changing source code.",
+    "longDescription": "Presto is a comprehensive IBM i green screen modernization solution that transforms traditional 5250 interfaces into modern, responsive web and mobile applications without modifying your underlying RPG or COBOL source code.",
+    "displayName": "Fresche Presto",
+    "imageUrl": "https://go.freschesolutions.com/hubfs/Fresche%20logo/fresche-solutions_logo.png",
+    "localPngIcon": "/generated/icons/afa31435-8561-4383-b069-ec9a47719e20.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "9db75c87-84ce-491b-8526-dcd2188f3866",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "x-analysis-suite",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ca2e",
+      "cobol",
+      "custom_kind_service",
+      "dev_ops",
+      "global",
+      "ibm_third_party",
+      "impact analysis",
+      "modernization",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "rpg",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "1d6e4475-094e-42aa-8eba-96374842b508",
+        "name": "x-2e-analysis---processor-group-p05-or-p10",
+        "description": "AI Enabled Application Discovery and Understanding tool for managing and modernizing CA2E(Synon) applications that run on IBM i.",
+        "displayName": "x-2e-analysis---processor-group-p05-or-p10"
+      },
+      {
+        "id": "7e80389a-f89a-403b-a791-c56448e4b1bc",
+        "name": "x-2e-analysis---processor-group-p20-or-p30",
+        "description": "AI Enabled Application Discovery and Understanding tool for managing and modernizing CA2E(Synon) applications that run on IBM i.",
+        "displayName": "x-2e-analysis---processor-group-p20-or-p30"
+      },
+      {
+        "id": "547a13b9-559b-4ed5-850b-f75e2277d125",
+        "name": "x-analysis---processor-group-p05-or-p10",
+        "description": "AI Enabled Application Discovery and Understanding tool for managing and modernizing RPG & Cobol applications that run on IBM i.",
+        "displayName": "x-analysis---processor-group-p05-or-p10"
+      },
+      {
+        "id": "844e046a-c17b-47dd-90c2-04e9e246faf9",
+        "name": "x-analysis---processor-group-p20-or-p30",
+        "description": "AI Enabled Application Discovery and Understanding tool for managing and modernizing RPG & Cobol applications that run on IBM i.",
+        "displayName": "x-analysis---processor-group-p20-or-p30"
+      }
+    ],
+    "description": "AI Enabled Application Discovery and Understanding tool for managing and modernizing applications that run on IBM i.",
+    "longDescription": "X-Analysis is an AI Enabled Application Discovery and Understanding tool that is used to understand and manage applications that run on IBM i.  X-Analyis extracts metadata from application objects and the source code used to create those objects in order to provide a detailed, comprehensive view of how an application interacts with the objects/components that are part of the application.  The tool automates the generation of documentation, performs impact analysis, extracts business rules, maps applications, visualizes data models, and assesses code quality. These features collectively empower development teams to gain a profound understanding of existing applications, thereby accelerating informed decision-making during modernization initiatives. ",
+    "displayName": "Fresche X-Analysis Suite",
+    "imageUrl": "https://go.freschesolutions.com/hubfs/Fresche%20logo/fresche-solutions_logo.png",
+    "localPngIcon": "/generated/icons/9db75c87-84ce-491b-8526-dcd2188f3866.png"
+  },
+  {
     "id": "16",
     "kind": "iaas",
     "metadata": {
@@ -7593,14 +7723,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8191,16 +8321,16 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "au-syd",
       "eu-es",
       "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "au-syd"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13714,12 +13844,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -14300,12 +14430,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
