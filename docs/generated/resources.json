@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1102,6 +1102,7 @@
     "longDescription": "Bare metal servers for VPC are dedicated servers offering direct hardware performance and is integrated as a first-class compute offering within Virtual Private Cloud. Users can leverage existing VPC services across storage, networking, and security with bare metal for VPC and can incorporate its higher end hardware profiles with the additional benefit of end-user managed virtualization.\n\n#### Pricing\n\n##### Hourly, pay-as-you-go\nPay-as-you-go bandwidth is per gigabyte. Your billing charges accrue from provision to cancellation, and are billed in arrears. This VPC product does not support suspended billing and will continue to bill regardless of the power state. Total pricing includes bare metal server instance profiles and software, internet data transfers, and optional VPC services. Each additional component is priced separately and included as part of your total IBM Cloud VPC charge. Service tiers are bound to your account, not to any specific VPC.",
     "displayName": "Bare Metal Servers for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.bare-metal-server/artifacts/CloudVPCBareMetal.svg",
+    "localSvgIcon": "/generated/icons/is.bare-metal-server.svg",
     "localPngIcon": "/generated/icons/is.bare-metal-server.png"
   },
   {
@@ -2005,6 +2006,7 @@
     "longDescription": "IBM Cloud Backup for VPC is an enterprise-level backup solution that automates creation and retention of your VPC block storage volumes. This service lets you set a scheduled backup of your block storage volumes and snapshots created from those volumes.\n\nWhen a backup is triggered, it creates a new snapshot of the volume contents. A snapshot is a point-in-time copy of your block storage volume. The entire contents of the volume are copied and retained. Subsequent snapshots will capture the incremental changes from the previous snapshots.\n\n#### Pricing\n\nYou will be charged for the storage capacity used for each of your backups. To estimate pricing while you create a backup policy, use the \"Add to estimate\" button on the Create tab. For more information, see the [Backup service documentation](/docs/vpc?topic=vpc-backup-service-about).",
     "displayName": "Cloud Backup for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.backup-policy/artifacts/cache/d45b2a92d0bbd495a556ba6a6b878e2d/Cloud-BackupServiceForVPC_icon_light-theme.svg",
+    "localSvgIcon": "/generated/icons/is.backup-policy.svg",
     "localPngIcon": "/generated/icons/is.backup-policy.png"
   },
   {
@@ -2931,6 +2933,7 @@
     "longDescription": "IBM’s next-generation public cloud infrastructure, IBM Cloud VPC (virtual private cloud), offers customers up to a 60% discount through IBM Cloud Reservations pricing – now available on IBM Cloud Virtual Servers for VPC. Customers can create 1-year and 3-year capacity reservations at significantly lower prices when compared to current, on-demand prices inside IBM Cloud VPC. The freedom to choose between multiple payment options when building high-performance clouds is here.",
     "displayName": "Cloud Reservations for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.reservation/artifacts/App_Icon_ibm-triraga-reserved_light-theme.svg",
+    "localSvgIcon": "/generated/icons/is.reservation.svg",
     "localPngIcon": "/generated/icons/is.reservation.png"
   },
   {
@@ -3155,6 +3158,7 @@
     "longDescription": "A cluster network is a collection of interconnected systems working together and acting as a single entity. This combined grouping of systems allows for a high level of processing power for very complicated computations, primarily AI model training. IBM Cluster Networks use the NVIDIA H100 instance profile, which supports up to 15 VNI and vNICs with full network capabilities, 1.5 TB of memory, and 152 vCPUs running with the 8474C processor.",
     "displayName": "Cluster Network",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "localSvgIcon": "/generated/icons/is.cluster-network.svg",
     "localPngIcon": "/generated/icons/is.cluster-network.png"
   },
   {
@@ -4958,16 +4962,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "eu-de",
-      "au-syd",
-      "us-east",
       "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb"
+      "eu-gb",
+      "eu-es",
+      "au-syd",
+      "us-east",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5125,12 +5129,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -5425,6 +5429,7 @@
     "longDescription": "Dedicated Hosts for VPC are single-tenant hosts that are available exclusively for your use.  Dedicated hosts provide the flexibility for you to use your own software licenses, and provide maximum isolation and control over instance placement to help address corporate compliance and regulatory requirements.\n\n\nDedicated host groups are built into the solution and can help you define one or more dedicated hosts for a specific business purpose.",
     "displayName": "Dedicated Host for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.dedicated-host/artifacts/IBM_Cloud_DedicatedHost.svg",
+    "localSvgIcon": "/generated/icons/is.dedicated-host.svg",
     "localPngIcon": "/generated/icons/is.dedicated-host.png"
   },
   {
@@ -6914,6 +6919,7 @@
     "longDescription": "The IBM Cloud® File Storage for VPC service provides secure, persistent, NSFv4.1 protocol-based file storage. IBM Cloud® File Storage for VPC is backed by All-Flash architecture. You can create file shares with capacity that ranges from 10 GB to 32 TB with flexible options. You can mount the file share on multiple IBM Cloud Virtual Servers for file sharing and collaboration. You have total control over your data as you manage access to the file shares with IAM profiles, security groups, and context-based restrictions. You can also bring your own root keys to add another layer of encryption. You can manage your cost by provisioning only what you need. You can increase the share capacity later when you need more storage, and you can adjust the IOPS to increase or decrease performance anytime.",
     "displayName": "File Storage for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.share/artifacts/VPC-file-shares-icon.svg",
+    "localSvgIcon": "/generated/icons/is.share.svg",
     "localPngIcon": "/generated/icons/is.share.png"
   },
   {
@@ -8311,16 +8317,16 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "jp-tok",
       "br-sao",
       "ca-tor",
-      "jp-osa",
       "us-east",
+      "jp-osa",
+      "eu-es",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "eu-es",
-      "jp-tok"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12462,6 +12468,7 @@
     "longDescription": "Private Path service for VPC allows a provider’s service to connect on the IBM Cloud private  network, providing secure communication between VPCs and supported IBM Cloud and third-party services. The provider first deploys their service on IBM Cloud and creates a Private Path network load  balancer (NLB) to enable their service for private connectivity. Next, the provider creates a Private Path service to expose and control access to their service. After the Private Path service is verified and published, other accounts can then connect to the provider’s service through endpoint gateways.\n\nFor consumers to connect to a provider’s service, the provider must relay information to their consumers, such as the cloud resource name (CRN) that maps to the Private Path service and a port, if required. Consumers then privately connect to the service by creating a VPE gateway with the information provided. Next, the consumer's connection request is sent to the service provider for review (the default policy). If there is an account policy for the consumer, that policy takes precedence over the default policy (to review, permit, or deny access).  \n\nThe consumer can now access the service privately from their VPC, and the provider can host and manage consumer’ connections from within their own VPCs.",
     "displayName": "Private Path Service for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.private-path-service-gateway/artifacts/cache/35f2370a5cbaf5f399f99d1d33b603ba/PrivatePathsService.svg",
+    "localSvgIcon": "/generated/icons/is.private-path-service-gateway.svg",
     "localPngIcon": "/generated/icons/is.private-path-service-gateway.png"
   },
   {
@@ -13602,6 +13609,7 @@
     "longDescription": "This service functionality is now available in Security and Compliance Center Workload Protection along with expanded capabilities for security risk and compliance management. For more information, see the <a href=\"https://cloud.ibm.com/docs/workload-protection\">documentation</a>.",
     "displayName": "Security and Compliance Center",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/compliance/artifacts/CloudSecurityComplianceCenter-light.svg",
+    "localSvgIcon": "/generated/icons/compliance.svg",
     "localPngIcon": "/generated/icons/compliance.png"
   },
   {
@@ -15023,6 +15031,7 @@
     "longDescription": "Virtual Network Interfaces provide a way to configure network IPs with security groups and they provide a consistent network binding handle for various resources.",
     "displayName": "Virtual Network Interface",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "localSvgIcon": "/generated/icons/is.virtual-network-interface.svg",
     "localPngIcon": "/generated/icons/is.virtual-network-interface.png"
   },
   {
@@ -15357,7 +15366,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15397,7 +15405,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17073,12 +17082,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
