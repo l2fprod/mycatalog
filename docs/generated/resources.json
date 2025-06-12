@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4937,8 +4937,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -4946,7 +4944,9 @@
       "eu-es",
       "us-south",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7694,14 +7694,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8292,16 +8292,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "br-sao",
-      "ca-tor",
-      "us-east",
-      "au-syd",
-      "jp-osa",
       "jp-tok",
+      "au-syd",
       "eu-de",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "br-sao",
+      "ca-tor",
+      "jp-osa",
+      "us-east",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9545,10 +9545,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12903,7 +12903,7 @@
       }
     ],
     "description": "Run and manage workloads on IBM quantum computers with Qiskit Runtime service on IBM Quantum Platform.",
-    "longDescription": "With this service, IBM Quantum gives you access to Qiskit Runtime, an execution environment that delivers significant performance improvements. \n \nQiskit Runtime (beta) is unavailable in the following countries: Afghanistan, Armenia , Azerbaijan, Belarus, Myanmar (Burma), Cambodia, People’s Republic of China (including Hong Kong), Cuba, Georgia, Iran, Iraq, Kazakhstan, North Korea, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam ,Yemen.",
+    "longDescription": "With this service, IBM Quantum gives you access to Qiskit Runtime, an execution environment that delivers significant performance improvements. \n \nQiskit Runtime (beta) is unavailable in the following countries: Afghanistan, Armenia , Azerbaijan, Belarus, Myanmar (Burma), Cambodia, People’s Republic of China (including Hong Kong), Cuba, Georgia, Iran, Iraq, Kazakhstan, North Korea, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam ,Yemen.\n",
     "displayName": "Qiskit Runtime",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/artifacts/cache/3733c4f0be6e962b9512094817d66eeb-public/CloudQuantumServices.svg",
     "localSvgIcon": "/generated/icons/b6049020-80f4-11eb-a0f7-e35ec9b4054f.svg",
@@ -15341,6 +15341,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15380,8 +15381,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -16805,12 +16805,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -16888,12 +16888,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -17057,12 +17057,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -17149,7 +17149,7 @@
       {
         "id": "c2e391c2-d029-474f-9cf7-3d102cc90fac",
         "name": "essentials",
-        "description": "The Essentials plan includes core capabilities to automatically discover, profile, enrich, analyze data lineage and quality, and share data products as you begin to establish a data-centric organization.",
+        "description": "The Essentials plan includes core capabilities to automatically discover, profile, enrich, analyze data lineage and quality, and share data products as you begin to establish a data-centric organization.\n\nThis plan is restricted to the above capabilities and quantities.\n\nCapacity Unit Hours are used in metadata import, metadata enrichment and data preparation.",
         "displayName": "Essentials",
         "originalName": "essentials"
       },
@@ -17163,7 +17163,7 @@
       {
         "id": "3a68f599-b1d6-48f1-a343-76682b945a9c",
         "name": "premium",
-        "description": "The Premium plan provides a comprehensive set of tools for advanced data discovery, cataloging, governance, quality, lineage and data product hub, augmented by Gen AI. Access to IBM Knowledge Accelerators is also included.",
+        "description": "The Premium plan provides a comprehensive set of tools for advanced data discovery, cataloging, governance, quality, lineage and data product hub, augmented by Gen AI. Access to IBM Knowledge Accelerators is also included. To enable unstructured data governance capabilities (where available), you must separately acquire the following services: watsonx.ai Studio, watsonx.ai Runtime, watsonx.data integration and watsonx.data.\n\nThis plan offers the flexibility to use the Resource Units for any of the included capabilities.",
         "displayName": "Premium",
         "originalName": "premium"
       },
@@ -17205,14 +17205,14 @@
       {
         "id": "47df9fae-4bc5-41d7-bbb1-aeb54b810bd3",
         "name": "standard-v3",
-        "description": "The Standard plan includes advanced capabilities in data governance, quality, lineage and data product hub. Access to IBM Knowledge Accelerators is also included.",
+        "description": "The Standard plan includes advanced capabilities in data governance, quality, lineage and data product hub. Access to IBM Knowledge Accelerators is also included.\n\nThis plan offers the flexibility to use the Resource Units for any of the included capabilities.",
         "displayName": "Standard",
         "originalName": "standard-v3"
       },
       {
         "id": "cd787bd0-ddc4-4b09-ae8d-35e58db5bfe6",
         "name": "trial",
-        "description": "This plan provides you with a free 30-day trial of watsonx.data intelligence to explore the full set of integrated and AI-powered capabilities to deliver trusted data to support your business and AI initiatives.\n\n\n**Trial plan services, including all data and assets, are deleted after 30 days.**",
+        "description": "The Trial plan provides you with a free 30-day trial of watsonx.data intelligence to explore the full set of integrated and AI-powered capabilities to deliver trusted data to support your business and AI initiatives.\n\nThis plan is restricted to the above capabilities and quantities.\n\nCapacity Unit Hours are used in metadata import, metadata enrichment and data preparation.\n\nTo enable unstructured data governance capabilities (where available), you must separately acquire the following services: watsonx.ai Studio, watsonx.ai Runtime, watsonx.data integration and watsonx.data.\n\n\n\n\n**Trial plan services, including all data and assets, are deleted after 30 days.**",
         "displayName": "Trial",
         "originalName": "trial"
       }
