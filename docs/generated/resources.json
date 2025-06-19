@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4508,10 +4508,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4519,7 +4515,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4664,6 +4664,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4675,8 +4676,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4937,16 +4937,16 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
+      "eu-es",
+      "us-south",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-gb",
-      "eu-es"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5104,12 +5104,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7925,6 +7925,50 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "managed-powervs",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "compute",
+      "allow_internal_users",
+      "custom_kind_service",
+      "global",
+      "iam_compatible",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_ibm"
+    ],
+    "plans": [
+      {
+        "id": "fef9cb82-5375-45d6-b8a9-c6399a303ac1",
+        "name": "v2-managed",
+        "description": "v2",
+        "displayName": "IBM i Managed (v2)",
+        "originalName": "v2-managed"
+      }
+    ],
+    "description": "Deploy a managed IBM i server instance on PowerVS",
+    "longDescription": "IBM i Managed on Power Virtual Server (PowerVS) is a cloud offering where IBM hosts and manages IBM i LPARs (Virtual Servers) on IBM Cloud. This offering extends the existing IaaS based PowerVS on IBM Cloud offering, to one where IBM Cloud will monitor and manage IBM i LPARs and associated infrastructure (network, memory, storage), apply fixes and updates to the IBM i operating system, and manage the applicable security and private controls.",
+    "displayName": "i Managed on Power Virtual Server",
+    "imageUrl": "https://pages.github.ibm.com/cloud-docs/ibmi-managed-powervs/assets/power.svg",
+    "localSvgIcon": "/generated/icons/c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5.svg",
+    "localPngIcon": "/generated/icons/c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -8299,9 +8343,9 @@
       "us-east",
       "eu-es",
       "jp-tok",
-      "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9545,10 +9589,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -13813,12 +13857,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16804,12 +16848,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
