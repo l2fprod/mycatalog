@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,7 +546,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -554,7 +553,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4664,7 +4664,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4676,7 +4675,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4937,16 +4937,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
-      "us-east",
-      "eu-es",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-es",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5104,12 +5104,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7694,14 +7694,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8336,16 +8336,16 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-gb",
-      "jp-tok",
+      "eu-es",
       "au-syd",
       "eu-de",
-      "us-south",
-      "eu-es"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9366,6 +9366,7 @@
     },
     "name": "mdm-oc",
     "pricing_tags": [
+      "paid",
       "allow_internal_users",
       "free",
       "lite"
@@ -9381,12 +9382,20 @@
       "iam_compatible",
       "ibm_created",
       "lite",
+      "paid",
       "rc_compatible",
       "support_ibm",
       "us-south",
       "watson"
     ],
     "plans": [
+      {
+        "id": "8f581ac9-1bf5-4648-9457-5a828d0822d6",
+        "name": "essential-edition",
+        "description": "This plan provides you with all the core capabilities of IBM Match 360, a multi-domain operational and analytical master data management (MDM) service that delivers at scale an integrated and consolidated view of critical enterprise data across data silos, leveraging intelligent and tunable data matching and entity resolution as well as management of other related entities across the enterprise.  In addition, advanced capabilities around governance, including support for AI assisted profiling and mapping of data source to data model, data quality assessment of inputs and resultant resolved entities, as well as ability to enforce enterprise data quality and data privacy policies for master data is included.\n*** Requires subscription of IBM Knowledge Catalog as a pre-requisite",
+        "displayName": "Essential",
+        "originalName": "Essential-Edition"
+      },
       {
         "id": "a7475187-21a5-41d1-a1f2-051d28ad5e4e",
         "name": "lite",
@@ -9589,10 +9598,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12895,8 +12904,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -13492,11 +13501,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -16689,6 +16698,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south"
     ],
@@ -16709,6 +16719,7 @@
       "ai",
       "allow_internal_users",
       "ansible",
+      "au-syd",
       "custom_kind_service",
       "eu-de",
       "free",
