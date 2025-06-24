@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1172,10 +1172,10 @@
         "displayName": "Professional"
       }
     ],
-    "description": "Deliver high-quality, highly-accurate, highly-available IVR and chat experiences with Bespoken testing, training, and monitoring",
-    "longDescription": "Test faster and significantly reduce errors while incorporating multiple languages, dialects and accents into your testing practices with Bespoken’s Automated Testing for IVR and Chatbots. Ensure that your system is working all the time, your users are understood without frustration, and your system can scale to meet the heaviest usage volumes. In the process, increase customer satisfaction, call deflections, and first-call resolution, all of which lead to significantly higher ROI on your contact center investment.\n\nBespoken works with customers such as Mercedes-Benz, BNP Paribas, Moen, Disney, Roku and many more to deliver exceptional conversational experiences. We have been working with voice and chat since 2017, and have helped customers across every type of natural language application unlock high-performance AI.\n\nOur software supports a myriad of Conversational AI platforms, including IBM Watson Assistant, Genesys Cloud, Amazon Connect, Google Dialogflow, and many more. We work across a range of channels, from IVR to SMS to WebChat to physical devices.\n\nGet started with our free trial to rapidly improve the quality of your conversational experiences.\n",
+    "description": "Bespoken is a leader in fully automated testing for IVR systems, conversational AI, and chatbots.",
+    "longDescription": "Bespoken is the AI-powered solution built to reduce the time, cost, and tedium of testing, monitoring, and scaling your contact center. \nOur platform automates testing, monitoring, and load simulation to ensure your voice and chatbot experiences are working exactly as they should — every time.\n\nBespoken helps your contact center deliver flawless customer interactions, reduce costs, and scale with confidence.  Our suite of tools ensures better customer experiences and better business outcomes.\n\nThe Bespoken platform reduces the time, cost, and tedium of testing, monitoring, and scaling the modern contact center through five products:  Exploratory Testing, Functional Testing, Continuous Monitoring, Model/LLM Testing, and Load Testing.\n\nExploratory Testing, Functional Testing, and Continuous Monitoring are included in all Bespoken subscriptions (Self-Serve Professional, Guided Professional, and Enterprise).  Model/LLM Testing is available with Guided Professional and higher, and Load Testing is a separate product priced on the load test parameters. \n\n",
     "displayName": "Bespoken Automated Testing For IVR and Chat",
-    "imageUrl": "https://bespoken.io/wp-content/uploads/2019/07/favicon-bespoken-1.png",
+    "imageUrl": "https://dashboard.bespoken.ai/bespoken-icon.png",
     "localPngIcon": "/generated/icons/ee700ab3-6951-4c68-b541-a177f78eed53.png"
   },
   {
@@ -4664,7 +4664,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4676,7 +4675,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4937,11 +4937,11 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "au-syd",
       "us-east",
       "eu-gb",
       "eu-es",
-      "us-south",
       "eu-de",
       "br-sao",
       "ca-tor",
@@ -5104,12 +5104,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6291,6 +6291,7 @@
     "tags": [
       "compute",
       "allow_internal_users",
+      "cbr_enabled",
       "custom_kind_service",
       "iam_compatible",
       "ibm_created",
@@ -6315,8 +6316,7 @@
     "description": "IBM Enterprise Application Service for Java is an end-to-end solution to building and running secure Jakarta EE/MicroProfile applications running efficiently in Liberty deployed on public clouds.",
     "longDescription": "IBM® Enterprise Application Service for Java™ helps you quickly build and promote your Java application to IBM Cloud®. You provide the application code and Enterprise Application Service provides an efficient application build, deployment, and monitoring experience that follows best practices, security and compliance, with a serverless experience.",
     "displayName": "Enterprise Application Service",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/871a9870-7508-11ef-ac5c-3324c550b37a/artifacts/cache/ab843d9c9c1def0e8ffb61b176198c44-public/EnterpriseApplicationServiceForJava.svg",
-    "localSvgIcon": "/generated/icons/871a9870-7508-11ef-ac5c-3324c550b37a.svg",
+    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/871a9870-7508-11ef-ac5c-3324c550b37a/artifacts/cache/ab843d9c9c1def0e8ffb61b176198c44/EnterpriseApplicationServiceForJava.svg?account=a0a6441248d94e999e18635c098ba158",
     "localPngIcon": "/generated/icons/871a9870-7508-11ef-ac5c-3324c550b37a.png"
   },
   {
@@ -7456,6 +7456,56 @@
     "geo_tags": [
       "global"
     ],
+    "id": "3e683ee5-b3a8-4f07-b98b-bf35bdeb7082",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "fresche-security-suite-v2",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "compliance",
+      "custom_kind_service",
+      "exit point security",
+      "global",
+      "ibm i siem integration",
+      "ibm_third_party",
+      "intrusion detection",
+      "paid",
+      "paid_only",
+      "ransomware protection",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "ce2f2fbb-6c95-46b8-adc5-41a2914f6ea1",
+        "name": "security-suite---software",
+        "description": "Full suite of IBM i auditing, security, detection, MFA and encryption software to protect sensitive data from security breaches, ease and speed up compliance reporting, securely configure IBM i technical controls, and monitor for unauthorized system and data access.",
+        "displayName": "security-suite---software"
+      },
+      {
+        "id": "b61e5b1c-b54f-4ce4-9d7a-ed7aea48c596",
+        "name": "security-suite---software-and-services",
+        "description": "Proactive monitoring and remediation services of predefined IBM i security events. Includes full suite of IBM i auditing, security, detection, MFA and encryption software.",
+        "displayName": "security-suite---software-and-services"
+      }
+    ],
+    "description": "Security, auditing, compliance, data encryption, and intrusion detection software solutions for IBM i systems.",
+    "longDescription": "The IBM i Security Suite by Fresche Solutions offers a comprehensive approach to safeguarding your critical business data. This suite addresses key areas of vulnerability, including unauthorized remote access through third-party applications, ODBC connections, file shares, and web servers. It also protects against Integrated File System (IFS) exposures and allows continuous monitoring to ensure system integrity is retained and ransomware attacks are minimized. This solution also monitors real-time system access and escalates critical security events to a Security Information and Event Management (SIEM) system or email server. The suite not only enhances security but also simplifies compliance with industry standards such as PCI and HIPAA through built-in content. ",
+    "displayName": "Fresche Security Suite",
+    "imageUrl": "https://go.freschesolutions.com/hubfs/Fresche%20logo/fresche-solutions_logo.png",
+    "localPngIcon": "/generated/icons/3e683ee5-b3a8-4f07-b98b-bf35bdeb7082.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "9db75c87-84ce-491b-8526-dcd2188f3866",
     "kind": "service",
     "metadata": {
@@ -8336,16 +8386,16 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "eu-es",
       "au-syd",
       "eu-de",
-      "us-south",
-      "eu-gb",
-      "eu-es",
-      "jp-tok"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12904,8 +12954,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -13501,11 +13551,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -16603,7 +16653,6 @@
     "displayName": "watsonx",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/12fbfff4-12c7-ccd0-80e6-603e8607468a/artifacts/cache/5069ed6f1454d880c2695d54c1115576-public/watsonx--light-theme.svg",
     "geo_tags": [],
-    "localSvgIcon": "/generated/icons/12fbfff4-12c7-ccd0-80e6-603e8607468a.svg",
     "localPngIcon": "/generated/icons/12fbfff4-12c7-ccd0-80e6-603e8607468a.png"
   },
   {
@@ -16861,12 +16910,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
