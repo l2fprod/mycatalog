@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -2431,7 +2431,7 @@
       {
         "id": "1e4e33e4-cfa6-4f12-9016-be594a6d5f87",
         "name": "cos-one-rate-plan",
-        "description": "The One-rate plan offers large enterprises and ISVs (with multiple divisions or end-users) a predictable TCO based on one flat rate. The flat rate has built-in allowances for outbound bandwidth and operational requests. These allowances depend on the amount of storage capacity aggregated across multiple instances within a One Rate pricing region. There is no data retrieval charge.",
+        "description": "---",
         "displayName": "One Rate",
         "originalName": "cos-one-rate-plan"
       },
@@ -2444,7 +2444,7 @@
       {
         "id": "744bfc56-d12c-4866-88d5-dac9139e0e5d",
         "name": "standard",
-        "description": "The Standard plan is best suited for workloads that have large amount of storage and relatively small Outbound bandwidth. The plan offers flexible choices for storage class based on data access patterns (lower the cost, the less frequently data is accessed). The Standard plan bills for storage capacity, Outbound bandwidth, operational requests, and data retrieval, where applicable.",
+        "description": "---",
         "displayName": "Standard"
       }
     ],
@@ -4937,16 +4937,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "au-syd",
       "us-east",
+      "eu-gb",
+      "eu-es",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-es",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6307,13 +6307,13 @@
     "plans": [
       {
         "id": "4404d29d-ea27-46d1-8357-7b4010ca8977",
-        "name": "standard",
-        "description": ".",
+        "name": "Standard",
+        "description": "    \n    ",
         "displayName": "Standard",
         "originalName": "standard"
       }
     ],
-    "description": "IBM Enterprise Application Service for Java is a platform for building, deploying, and running Java applications in the cloud.",
+    "description": "IBM Enterprise Application Service for Java is an application platform for building, deploying, and running enterprise Java applications in the cloud.",
     "longDescription": "IBM Enterprise Application Service for Java (EASeJ) is a fully managed application platform that simplifies how enterprises build, deploy, and run Java applications in the cloud. EASeJ optimizes the entire Java application lifecycle, enabling users to deliver faster, and focus on innovation and value creation.",
     "displayName": "Enterprise Application Service",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/871a9870-7508-11ef-ac5c-3324c550b37a/artifacts/cache/ab843d9c9c1def0e8ffb61b176198c44/EnterpriseApplicationServiceForJava.svg?account=a0a6441248d94e999e18635c098ba158",
@@ -8390,12 +8390,12 @@
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-gb",
-      "au-syd",
+      "eu-es",
+      "jp-tok",
       "eu-de",
       "us-south",
-      "eu-es",
-      "jp-tok"
+      "au-syd",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12954,8 +12954,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -13551,11 +13551,11 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -13916,12 +13916,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17163,12 +17163,69 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
       "ca-tor",
+      "us-south"
+    ],
+    "id": "4d4fd270-fe8f-11ef-82ad-af5f37d5a455",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "watsonx-data-integration",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "allow_internal_users",
+      "free"
+    ],
+    "tags": [
+      "analytics",
+      "integration",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "ca-tor",
+      "custom_kind_service",
+      "free",
+      "iam_compatible",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_ibm",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "49814b94-a7c5-4b6c-9cc6-5a0c02a42a2e",
+        "name": "essentials",
+        "description": "The watson.data integration Essentials plan enables organizations to go deep in integration verticals with capabilities across data observability, realtime streaming, bulk/batch, ETL/ELT, unstructured data integration, and data replication accessible from a single pane of glass interface.\n\nWe recommend getting started with a minimum quantity of 200 Resource Units per month to get value out of watsonx.data integration capabilities.",
+        "displayName": "Essentials",
+        "originalName": "essentials"
+      },
+      {
+        "id": "e07028bb-99ea-42fd-a59c-ed15d110623b",
+        "name": "trial",
+        "description": "Trial plan services, including all data and assets, are deleted after 30 days. Trial limitations are described in Documentation under the section \"Feature differences between watsonx.data integration plans\".",
+        "displayName": "Trial",
+        "originalName": "trial"
+      }
+    ],
+    "description": "Scale the delivery of reliable data with a unified user experience for diverse data integration styles, including stream, replication and bulk/batch patterns.",
+    "longDescription": "watsonx.data integration is a data integration tool that offers a unified experience for data teams to seamlessly handle real-time streaming, replication and bulk/batch integration patterns, without having to switch context or preselect the integration style. Modernize your data flows with a SaaS-based architecture that promotes reusability of data flows, enhances security and cost effectiveness, leveraging deployment flexibility across hybrid cloud environments. Boost data reliability with continuous monitoring of data quality issues with data observability.",
+    "displayName": "watsonx.data integration",
+    "imageUrl": "https://ca-tor.dai.cloud.ibm.com/data_integration/v3/broker/media/images/watsonxDataIntegration.svg",
+    "localSvgIcon": "/generated/icons/4d4fd270-fe8f-11ef-82ad-af5f37d5a455.svg",
+    "localPngIcon": "/generated/icons/4d4fd270-fe8f-11ef-82ad-af5f37d5a455.png"
+  },
+  {
+    "geo_tags": [
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
