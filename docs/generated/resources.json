@@ -546,7 +546,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -554,7 +553,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4508,6 +4508,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4515,11 +4519,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4664,8 +4664,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4676,7 +4674,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -4937,16 +4937,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "us-east",
-      "eu-gb",
-      "eu-es",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-gb",
+      "us-south",
+      "eu-de",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8390,11 +8390,11 @@
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
       "jp-tok",
+      "au-syd",
       "eu-de",
       "us-south",
-      "au-syd",
+      "eu-es",
       "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -14198,6 +14198,49 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "8aa72a57-b069-47e6-bf3f-8d1ced0051ed",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "standard-live-payment-hsm-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "payment hsm",
+      "pci p2pe",
+      "pci pin",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "2dcf9957-e591-44e8-bc20-90af000a4ca5",
+        "name": "std-live-pay-hsm-price-plan",
+        "description": "See documentation for more details.",
+        "displayName": "std-live-pay-hsm-price-plan"
+      }
+    ],
+    "description": "A fully managed service using a group of 3 x HSMs deployed in two separate datacenters with 99.999% availability & low latency ",
+    "longDescription": "Utimaco’s Payment HSM as a Service provides access to a fully managed PCI-certified Payment HSM service through IBM Cloud, with the highest availability in the industry at 99.999%, and the lowest latency.\n\nThe Payment HSM as a Service is a true alternative to operating your own Payment HSMs and removes the investments tied to hardware, secure facilities, and management resources while reducing the burden of PCI compliance, audit, and support.\n\nBesides reducing total cost of ownership, it provides flexible deployment and scalability and enables most robust security for organizations’ digital infrastructure.\n\nThis Catalog tile covers subscription to the Live service. For connection to the service, instances of the PHI load balancer should be deployed within your IBM infrastructure, using the PHI Deployable Architecture tile.\n\nFor full details please follow the Docs link and sign up to the Service Portal.",
+    "displayName": "Standard Live Payment HSM Service",
+    "imageUrl": "https://utimaco.com/themes/custom/utimaco/assets/img/utimaco-logo.svg",
+    "localSvgIcon": "/generated/icons/8aa72a57-b069-47e6-bf3f-8d1ced0051ed.svg",
+    "localPngIcon": "/generated/icons/8aa72a57-b069-47e6-bf3f-8d1ced0051ed.png"
+  },
+  {
+    "geo_tags": [
       "satcon_dal",
       "satcon_fra"
     ],
@@ -14752,6 +14795,7 @@
   {
     "geo_tags": [
       "au-syd",
+      "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -14781,6 +14825,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
+      "br-sao",
       "ca-tor",
       "compute_baremetal",
       "custom_kind_service",
@@ -17163,8 +17208,7 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
-      "us-south"
+      "ca-tor"
     ],
     "id": "4d4fd270-fe8f-11ef-82ad-af5f37d5a455",
     "kind": "service",
@@ -17192,8 +17236,7 @@
       "paid",
       "paid_only",
       "rc_compatible",
-      "support_ibm",
-      "us-south"
+      "support_ibm"
     ],
     "plans": [
       {
@@ -17220,12 +17263,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
