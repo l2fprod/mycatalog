@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1145,7 +1145,7 @@
         "id": "c10c137b-dbfc-4bda-9e0e-aeff88ff7943",
         "name": "automated-testing-and-monitoring-for-voice-and-chat-enterpirse",
         "description": "Test faster and significantly increase the quality of your customer’s experience with Bespoken’s Automated Testing and Monitoring for IVR and Chatbots.\n\nEliminate errors and usability issues across many languages, accents, and sound conditions. Incorporate your test scripts into your build and deployment processes to ensure the highest-quality Voice Experiences possible.\n",
-        "displayName": "automated-testing-and-monitoring-for-voice-and-chat-enterpirse"
+        "displayName": "Enterprise"
       },
       {
         "id": "635536c5-cfdb-4089-b1b9-b26116fe400d",
@@ -1157,7 +1157,7 @@
         "id": "86a17ef6-c87d-4d3f-9e79-dc8978081b59",
         "name": "automated-testing-and-monitoring-for-voice-and-chat-guided",
         "description": "Test faster and significantly increase the quality of your customer’s experience with Bespoken’s Automated Testing and Monitoring for IVR and Chatbots. \n\nEliminate errors and usability issues across many languages, accents, and sound conditions. Incorporate your test scripts into your build and deployment processes to ensure the highest-quality Voice Experiences possible.",
-        "displayName": "automated-testing-and-monitoring-for-voice-and-chat-guided"
+        "displayName": "Guided"
       },
       {
         "id": "310ab8d4-c7f6-4428-ad4c-0269ab048b60",
@@ -1169,7 +1169,7 @@
         "id": "066dad01-9c34-4439-89ac-547d3fcde661",
         "name": "automated-testing-and-monitoring-for-voice-and-chat-professional-contact-centers",
         "description": "Test faster and significantly increase the quality of your customer’s experience with Bespoken’s Automated Testing and Monitoring for IVR and Chatbots.  \n\nEliminate errors and usability issues across many languages, accents, and sound conditions. Incorporate your test scripts into your build and deployment processes to ensure the highest-quality Voice Experiences possible.",
-        "displayName": "automated-testing-and-monitoring-for-voice-and-chat-professional-contact-centers"
+        "displayName": "Professional"
       }
     ],
     "description": "Bespoken is a leader in fully automated testing for IVR systems, conversational AI, and chatbots.",
@@ -1402,7 +1402,8 @@
     "name": "is.snapshot",
     "pricing_tags": [
       "allow_internal_users",
-      "paid"
+      "paid",
+      "paid_only"
     ],
     "tags": [
       "storage",
@@ -1425,6 +1426,7 @@
       "jp-osa",
       "jp-tok",
       "paid",
+      "paid_only",
       "rc_compatible",
       "storage_block",
       "storage_vpc",
@@ -1440,6 +1442,13 @@
         "description": "Regional Snapshots for Block Storage for VPC",
         "displayName": "snapshot-plan",
         "originalName": "snapshot-plan-free"
+      },
+      {
+        "id": "0b4a0ec5-0f6f-4e8c-91b5-94364faf4b5e",
+        "name": "snapshot-plan-sds",
+        "description": "Snapshot plan for SDS profiles.",
+        "displayName": "SDS snapshots",
+        "originalName": "snapshot-plan-sds"
       }
     ],
     "description": "Back up block storage volumes to IBM Cloud Object Storage with this regional snapshot service.",
@@ -2432,7 +2441,7 @@
         "id": "1e4e33e4-cfa6-4f12-9016-be594a6d5f87",
         "name": "cos-one-rate-plan",
         "description": "---",
-        "displayName": "One Rate",
+        "displayName": "One-Rate",
         "originalName": "cos-one-rate-plan"
       },
       {
@@ -4508,10 +4517,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4519,7 +4524,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -4937,16 +4946,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
+      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "us-south",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5104,12 +5113,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6791,7 +6800,8 @@
     "name": "is.share",
     "pricing_tags": [
       "paid",
-      "allow_internal_users"
+      "allow_internal_users",
+      "paid_only"
     ],
     "tags": [
       "storage",
@@ -6841,6 +6851,7 @@
       "jp-tok-2",
       "jp-tok-3",
       "paid",
+      "paid_only",
       "rc_compatible",
       "storage_file",
       "storage_vpc",
@@ -6888,6 +6899,13 @@
         "description": "This is the free plan",
         "displayName": "general-purpose",
         "originalName": "general-purpose-free-plan"
+      },
+      {
+        "id": "a67825ae-6ebf-4e85-8119-d975b5c7b82d",
+        "name": "rfs",
+        "description": "Regional File Storage for VPC",
+        "displayName": "rfs",
+        "originalName": "rfs"
       }
     ],
     "description": "Create a shared storage that you can share across multiple Virtual Servers within your VPC.",
@@ -7744,14 +7762,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8387,15 +8405,16 @@
   {
     "geo_tags": [
       "jp-tok",
-      "eu-de",
-      "us-south",
+      "ca-mon",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-es",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -8413,6 +8432,7 @@
       "apidocs_enabled",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -12954,8 +12974,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -13551,11 +13571,11 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
+      "us-south"
     ],
     "id": "IBM_SecureGateway",
     "kind": "service",
@@ -13916,12 +13936,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -14545,12 +14565,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17263,12 +17283,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
