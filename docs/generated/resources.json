@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -546,15 +546,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4316,45 +4316,18 @@
       "ui": {}
     },
     "name": "data-virtualization",
-    "pricing_tags": [
-      "allow_internal_users",
-      "paid",
-      "paid_only",
-      "free",
-      "lite"
-    ],
     "tags": [
       "databases",
-      "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
       "data virtualization",
       "data_management",
       "database",
-      "free",
       "ibm_created",
-      "lite",
-      "paid",
-      "paid_only",
       "rc_compatible",
       "support_ibm"
     ],
-    "plans": [
-      {
-        "id": "data-virtualization-enterprise",
-        "name": "data-virtualization-enterprise",
-        "description": "The service is metered and consumed once provisioned even when no workload is submitted.",
-        "displayName": "Enterprise",
-        "originalName": "data-virtualization-enterprise"
-      },
-      {
-        "id": "data-virtualization-lite",
-        "name": "lite",
-        "description": "One Data Virtualization instance with 1 head and 1 worker node. Head and worker nodes have 4 vCPU and 16 GB RAM per node. Lite instances automatically expire and are deleted after 30 days. Data Virtualization is available on IBM Cloud Pak for Data as a Service.",
-        "displayName": "Lite",
-        "originalName": "lite"
-      }
-    ],
+    "plans": [],
     "description": "Enterprise and Lite-tier provisioning is temporarily unavailable. For any concerns please contact wgyure@us.ibm.com",
     "longDescription": "For decades, companies have tried to break down silos by copying data from different operational systems into central data stores for analysis, such as data marts, data warehouses and data lakes. These methods can be costly and are prone to error. Most struggle to manage an average of 33 unique data sources, which are diverse in structure and often trapped within inaccessible data silos. With Data Virtualization, you can query data across many systems without having to copy and replicate it, saving time and reducing costs. Data Virtualization queries data from its source, simplifying your analytics by providing the latest and most accurate data.",
     "displayName": "Data Virtualization",
@@ -4946,8 +4919,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "eu-de",
       "au-syd",
       "us-east",
@@ -4955,6 +4926,8 @@
       "ca-tor",
       "jp-tok",
       "mon01",
+      "us-south",
+      "eu-gb",
       "eu-es"
     ],
     "id": "dashdb-for-transactions",
@@ -8404,17 +8377,17 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-es",
-      "jp-tok"
+      "jp-tok",
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12974,8 +12947,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15510,6 +15483,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15549,8 +15523,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17288,12 +17261,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
