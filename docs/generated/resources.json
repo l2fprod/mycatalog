@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1538,6 +1538,100 @@
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/Caveonix.png",
     "geo_tags": [],
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-caveonix.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "3e256427-c6fd-4ba6-aae9-d809eb39ea15",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "celerity-copy-assure-for-powervs",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "aix",
+      "consulting_tab",
+      "custom_kind_service",
+      "cyber vault",
+      "global",
+      "ibm_third_party",
+      "ibmi",
+      "linux",
+      "paid",
+      "paid_only",
+      "power",
+      "ransomware",
+      "rc_compatible",
+      "recovery",
+      "storage_backup",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "07389df4-a76c-457f-858e-a8d7e45391de",
+        "name": "copyassure-units",
+        "description": "Celerity CopyAssure is sold via units.",
+        "displayName": "copyassure-units"
+      }
+    ],
+    "description": "Continuous recovery and clean room testing with snapshots, clones & exports—aligned with IBM Cyber Vault.",
+    "longDescription": "# CopyAssure – Clean, Fast, and Secure Cyber Recovery for IBM PowerVS\n\n**CopyAssure** is Celerity’s advanced cyber recovery and data resilience solution for **IBM Power Virtual Server (PowerVS)** environments, supporting **IBM i, AIX, and Linux**.  \nBuilt for mission-critical workloads, CopyAssure delivers automated, verified recovery using continuously tested backup copies. Based on IBM’s **Cyber Vault blueprint**, it combines frequent data copies, immutable storage, cleanroom validation, and end-to-end orchestration—helping organisations recover with confidence from even the most disruptive cyberattacks and more.\n\nCopyAssure can also be leveraged to spin up clean, digital twin system copies for testing, development, or even **AI training**—without risking the integrity of the core environment.\n\n---\n\n### Key Features\n\n---\n\n### Scheduled Snapshots, Cloning & Exports with Continuous Testing\n\nCopyAssure orchestrates scheduled snapshots, volume clones, and optional image export to IBM Cloud Object Storage (COS) to provide layered, resilient recovery points with immutability. These are continuously tested to demonstrate recoverability within defined RPO and RTO thresholds.\n\nTo extend assurance further, the service includes automated system validation through a proprietary virtual operator. This technology emulates real user interactions—such as 5250 terminal sessions for IBM i, and interactive workloads for AIX and Linux—to verify that systems are fully operational post-recovery.\n\n---\n\n### Proactive Air-Gapped Copies\n\nCopyAssure leverages PowerVS volume clone technology to create logically air-gapped snapshots. This approach provides an additional layer of defence against ransomware and insider threats by ensuring backup copies are inaccessible from compromised systems.\n\n---\n\n### Immutable Data Protection\n\nCopyAssure supports image export to IBM Cloud Object Storage (COS) using write-once, read-many (WORM) storage, providing immutable backup copies protected against tampering, deletion, or ransomware encryption. This capability supports long-term data integrity and aligns with regulatory and audit-readiness requirements.\n\n---\n\n### Continuous Recoverability Validation\n\nAligned with IBM’s Cyber Vault methodology, CopyAssure provisions secure cleanroom environments to validate cloned backups prior to restoration. This process proves that a system is fully recoverable through controlled boot procedures, OS-level checks, and bespoke validation of user activity and application services.\n\n**The validation framework includes multiple stages:**\n\n- **T1 – System Validation**: Confirms successful boot and core OS integrity  \n- **T2 – Application Validation**: Verifies application availability and service responsiveness  \n- **T3 – Data Validation**: Confirms access to critical data and consistency within key datasets\n\nThis multi-layered approach ensures only clean, operational recovery points are promoted for restoration.\n\n---\n\n### Fully Automated Workflow\n\nCopyAssure delivers end-to-end automation across backup validation and recovery orchestration. By removing manual steps, the service improves consistency, reduces human error, and accelerates recovery across complex environments—enabling repeatable, policy-driven execution at scale.\n\n---\n\n### NIST-Aligned Architecture\n\nCopyAssure is aligned with the NIST Cybersecurity Framework, supporting the core functions of Identify, Protect, Detect, Respond, and Recover. This alignment helps organisations strengthen their cyber resilience strategy, meet regulatory expectations, and streamline audit readiness.\n\n---\n\n### Operational Continuity\n\nCopyAssure enables secure, verified recovery without interrupting production systems. All validation and testing occur in isolated cleanroom environments, ensuring non-disruptive assurance for high-availability workloads and regulated operations. This supports continuous business operations, even during threat response or audit preparation.\n\n---\n\n### Cost Efficiency\n\nCopyAssure helps reduce both direct and hidden costs associated with cyber recovery—including unplanned downtime, manual recovery labour, extended investigation cycles, and potential ransomware-related losses. Automated processes and cleanroom validation reduce operational burden while accelerating time-to-recovery.\n\n---\n\n### Peace of Mind\n\nWith immutable storage, automated cleanroom validation, and proven recovery workflows, CopyAssure gives organisations confidence that every restore point is secure, tested, and reliable. This assurance supports both operational resilience and regulatory compliance.\n",
+    "displayName": "Celerity CopyAssure for PowerVS",
+    "imageUrl": "https://celerity-uk.com/hubfs/CE%20Monogram%20ON%20WHITE-1.png",
+    "localPngIcon": "/generated/icons/3e256427-c6fd-4ba6-aae9-d809eb39ea15.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "82114d8b-41e0-4f31-a8c8-b36e4f80b077",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "celerity-professional-services-for-powervs",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "aix",
+      "backup",
+      "consulting_tab",
+      "custom_kind_service",
+      "global",
+      "ibm i",
+      "ibm_third_party",
+      "linux",
+      "migrate",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "virtualservers"
+    ],
+    "plans": [
+      {
+        "id": "5a773f4f-94a3-442c-aa04-cce0fa8880e5",
+        "name": "ps-units",
+        "description": "Celerity Professional Service is sold via units.",
+        "displayName": "ps-units"
+      }
+    ],
+    "description": "Expert services for IBM i, AIX & Linux on PowerVS including Migrations, Cyber Resilience, Backups & DR + Performance Optimisation ",
+    "longDescription": "# Expert Power Systems Services for PowerVS and Hybrid Cloud\n\n### Ensure Resilience, Security, and Performance\n\nExpert services for IBM i, AIX, and Linux on Power to ensure critical workloads in PowerVS and hybrid cloud remain resilient, secure, and performant.\n\n---\n\n### Migration to PowerVS\n\n- Full end-to-end workload migrations for IBM i, AIX, and Linux on Power—with minimal downtime.\n- Industry-leading replication tools ensure data integrity and seamless cutover without disrupting operations.\n- Support for deploying cloud-native applications and AI to IBM i and AIX VMs in PowerVS.\n- Modernise data management by moving away from traditional tape and multiple VTL instances.\n\n---\n\n### Disaster Recovery (DR) in the Cloud\n\n- Proven DR strategies for IBM i, AIX, and Linux on Power, tailored to environments of any size.\n- DR designs that dynamically scale to match production capacity.\n- Testing and validation to ensure DR readiness and reliability.\n\n---\n\n### System Design and Sizing in PowerVS\n\n- Expert resource planning for compute, storage, and network requirements.\n- Design includes secure routing, workload optimization, and hybrid or multi-cloud integration.\n\n---\n\n### Data Resilience in the Cloud\n\n- Cloud-based VTL solutions and native storage backups.\n- Use of software replication and snapshot technology for layered protection.\n- Cross-cloud and hybrid replication options for added resilience.\n\n---\n\n### Ongoing Support and Monitoring\n\n- Proactive monitoring and support for IBM i, AIX, and Linux workloads in PowerVS.\n- Ensure continuous system health, performance, and compliance.\n\n---\n\n### Security for IBM Power Workloads in PowerVS\n\n- TLS and certificate management across platforms.\n- IBM i exit point controls and hardened remote access.\n- OS-level lockdowns and configuration reviews for AIX and Linux.\n- Continuous compliance assessments.\n\n---\n\n### SIEM Integration\n\n- Centralised log and event forwarding to your SIEM platform.\n- Support for IBM i logs, AIX syslogs, and Linux event streams.\n- Integration with cloud or on-prem SIEM, configured and tuned by our SOC experts.\n\n---\n\n### Scoping Our Professional Services\n\n- Engagements begin with a structured discovery phase to define scope and objectives.\n- All services are delivered remotely via secure connections.\n- Regular communication and reporting ensure project visibility and success.\n",
+    "displayName": "Celerity Professional Services for PowerVS",
+    "imageUrl": "https://celerity-uk.com/hubfs/CE%20Monogram%20ON%20WHITE-1.png",
+    "localPngIcon": "/generated/icons/82114d8b-41e0-4f31-a8c8-b36e4f80b077.png"
   },
   {
     "geo_tags": [
@@ -4919,16 +5013,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-es",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-es",
+      "us-south",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7735,14 +7829,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8382,8 +8476,8 @@
       "jp-osa",
       "us-east",
       "eu-es",
-      "jp-tok",
       "au-syd",
+      "jp-tok",
       "ca-mon",
       "eu-de",
       "us-south",
@@ -15483,6 +15577,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15522,8 +15617,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17261,12 +17355,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
