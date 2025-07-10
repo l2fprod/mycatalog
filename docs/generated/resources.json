@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4403,6 +4403,10 @@
     "localPngIcon": "/generated/icons/696b9880-9e9b-11ea-9054-e15e287f1e7f.png"
   },
   {
+    "geo_tags": [
+      "eu-gb",
+      "us-south"
+    ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "kind": "service",
     "metadata": {
@@ -4410,6 +4414,10 @@
       "ui": {}
     },
     "name": "data-virtualization",
+    "pricing_tags": [
+      "free",
+      "lite"
+    ],
     "tags": [
       "databases",
       "apidocs_enabled",
@@ -4417,16 +4425,28 @@
       "data virtualization",
       "data_management",
       "database",
+      "eu-gb",
+      "free",
+      "iam_compatible",
       "ibm_created",
+      "lite",
       "rc_compatible",
-      "support_ibm"
+      "support_ibm",
+      "us-south"
     ],
-    "plans": [],
+    "plans": [
+      {
+        "id": "data-virtualization-lite-preprod",
+        "name": "lite",
+        "description": "One Data Virtualization instance with 1 head and 1 worker node. Head and worker nodes have 4 vCPU and 16 GB RAM per node. Lite instances automatically expire and are deleted after 30 days. Data Virtualization is available on IBM Cloud Pak for Data as a Service.",
+        "displayName": "Lite (preprod)",
+        "originalName": "lite"
+      }
+    ],
     "description": "Enterprise and Lite-tier provisioning is temporarily unavailable. For any concerns please contact wgyure@us.ibm.com",
     "longDescription": "For decades, companies have tried to break down silos by copying data from different operational systems into central data stores for analysis, such as data marts, data warehouses and data lakes. These methods can be costly and are prone to error. Most struggle to manage an average of 33 unique data sources, which are diverse in structure and often trapped within inaccessible data silos. With Data Virtualization, you can query data across many systems without having to copy and replicate it, saving time and reducing costs. Data Virtualization queries data from its source, simplifying your analytics by providing the latest and most accurate data.",
     "displayName": "Data Virtualization",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/5d307850-0404-11eb-8c8b-c7d7505f656d/artifacts/cache/0082f4ddf582a68f1bab3bca336b6a15-public/data-virtualization.svg",
-    "geo_tags": [],
     "localSvgIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.svg",
     "localPngIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.png"
   },
@@ -5013,16 +5033,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
+      "eu-gb",
       "us-south",
-      "eu-de",
       "au-syd",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5180,12 +5200,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6681,7 +6701,7 @@
       }
     ],
     "description": "Decrease your on-premise backup storage capacity by up to 90%, while improving your existing backup solution performance.",
-    "longDescription": "FalconStor StorSafe is a software solution that optimizes backup and restore, to improve performance and significantly reduce backup storage costs, all without requiring changes to the existing backup solution currently being used. With its integrated deduplication, the solution removes redundant copies of data, thereby reducing capacity requirements, decreasing storage costs, and minimizing replication and restore times. StorSafe VTL can be used with all leading backup solutions, and enables both hybrid and native-cloud backup, as well as both workload and tape migration to the cloud, including IBM PowerVS.\nThis solution is applicable to hybrid cloud deployments where you can have a backup of data on your on-premises deployment in the cloud. You can also use this solution for your on-premises workload migration to the cloud.\n \nFor a free assessment, contact a solution expert at ibmsales@falconstor.com.\n",
+    "longDescription": "FalconStor StorSafe is a software solution that optimizes backup and restore, to improve performance and significantly reduce backup storage costs, all without requiring changes to the existing backup solution currently being used. With its integrated deduplication, the solution removes redundant copies of data, thereby reducing capacity requirements, decreasing storage costs, and minimizing replication and restore times. StorSafe can be used with all leading backup solutions, and enables both hybrid and native-cloud backup, as well as both workload and tape migration to the cloud, including IBM PowerVS.\nThis solution is applicable to hybrid cloud deployments where you can have a backup of data on your on-premises deployment in the cloud. You can also use this solution for your on-premises workload migration to the cloud.\n \nFor a free assessment, contact a solution expert at ibmsales@falconstor.com.\n",
     "displayName": "FalconStor StorSafe for Power On-Premises",
     "imageUrl": "https://falconstor-download.s3.us-east.cloud-object-storage.appdomain.cloud/FalconStorLogo.png",
     "localPngIcon": "/generated/icons/60427a43-cf48-41e0-bd95-26bde9c12105.png"
@@ -8471,17 +8491,17 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "eu-es",
-      "jp-tok",
-      "au-syd",
-      "ca-mon",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "eu-gb",
+      "jp-tok",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9735,10 +9755,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14003,12 +14023,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -15577,7 +15597,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15617,7 +15636,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17048,12 +17068,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "jp-tok",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
