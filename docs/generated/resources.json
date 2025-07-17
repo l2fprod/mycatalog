@@ -548,15 +548,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4232,6 +4232,75 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "sao01",
+      "sao04",
+      "sao05",
+      "sjc03",
+      "sjc04"
+    ],
+    "id": "7e82fdcb-10bb-48bf-9ce1-44a3ca20c005",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "keyno-cvvkey",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "br-sao",
+      "custom_kind_service",
+      "fraud prevention",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "payments",
+      "rc_compatible",
+      "sao01",
+      "sao04",
+      "sao05",
+      "sjc03",
+      "sjc04",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "d27a68bd-fda5-4681-8408-9bcdf3dcb88f",
+        "name": "LAC-dCVV2",
+        "description": "dCVV2 LAC",
+        "displayName": "LAC-dCVV2"
+      },
+      {
+        "id": "986e7264-b251-4c00-b95e-aee9f94062a6",
+        "name": "lac-dcvv2-3ds",
+        "description": "dCVV2+3DS",
+        "displayName": "LAC-dCVV2-3DS"
+      },
+      {
+        "id": "df93551d-e8be-4a7c-a630-52bab4b2fe7d",
+        "name": "lac-dcvv2-vtc",
+        "description": "dCVV2 + VTC",
+        "displayName": "LAC-dCVV2-VTC"
+      },
+      {
+        "id": "13888020-ae62-42ba-9f79-04022b91cb6d",
+        "name": "lac-dcvv2-vtc-3ds",
+        "description": "dCVV2+VTC+3DS",
+        "displayName": "LAC-dCVV2-VTC-3DS"
+      }
+    ],
+    "description": "Card Security Vault",
+    "longDescription": "Debit and Credit Cards Fraud Prevention Solutions",
+    "displayName": "CVVkey",
+    "imageUrl": "https://cdn.prod.website-files.com/5ece793beb97a05e7f2bb781/6864142ad0f8b8860ac03a80_CVVkeyAppLogo.png",
+    "localPngIcon": "/generated/icons/7e82fdcb-10bb-48bf-9ce1-44a3ca20c005.png"
+  },
+  {
+    "geo_tags": [
       "global"
     ],
     "id": "1ab48530-6638-4fce-a386-0bd598576a0a",
@@ -4406,8 +4475,8 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "kind": "service",
@@ -5035,16 +5104,16 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "us-east",
+      "eu-gb",
+      "eu-es",
       "us-south",
       "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "au-syd",
-      "us-east",
-      "eu-gb",
-      "eu-es"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5202,12 +5271,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7854,14 +7923,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8124,6 +8193,7 @@
     "longDescription": "IBM i Managed on Power Virtual Server (PowerVS) is a cloud offering where IBM hosts and manages IBM i LPARs (Virtual Servers) on IBM Cloud. This offering extends the existing IaaS based PowerVS on IBM Cloud offering, to one where IBM Cloud will monitor and manage IBM i LPARs and associated infrastructure (network, memory, storage), apply fixes and updates to the IBM i operating system, and manage the applicable security and private controls.",
     "displayName": "i Managed on Power Virtual Server",
     "imageUrl": "https://pages.github.ibm.com/cloud-docs/ibmi-managed-powervs/assets/power.svg",
+    "localSvgIcon": "/generated/icons/c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5.svg",
     "localPngIcon": "/generated/icons/c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5.png"
   },
   {
@@ -8495,17 +8565,17 @@
   },
   {
     "geo_tags": [
+      "eu-es",
       "jp-tok",
       "au-syd",
       "ca-mon",
-      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9759,10 +9829,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14717,12 +14787,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -15662,7 +15732,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15702,7 +15771,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17117,6 +17187,13 @@
         "originalName": "premium-agentic-mau"
       },
       {
+        "id": "91fe4679-8af7-4abd-bb82-cf2caf8ab7d0",
+        "name": "premium-agentic-messages",
+        "description": "Premium Agentic Plan with Messages for Data Isolation",
+        "displayName": "Premium Agentic with Messages",
+        "originalName": "premium-agentic-messages"
+      },
+      {
         "id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
         "name": "standard-agentic-mau",
         "description": "Standard Agentic Plan with MAU",
@@ -17133,12 +17210,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-gb",
-      "us-south",
       "eu-de",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-gb",
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
