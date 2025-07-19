@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -548,6 +548,7 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -555,8 +556,7 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4475,8 +4475,8 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "kind": "service",
@@ -4831,6 +4831,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4842,8 +4843,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5104,16 +5104,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "eu-de",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "us-east",
+      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5271,12 +5271,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7924,14 +7924,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8566,17 +8566,17 @@
   },
   {
     "geo_tags": [
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "jp-tok",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "jp-tok",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "eu-es",
-      "ca-mon"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13811,68 +13811,6 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
-      "eu-de",
-      "eu-es",
-      "us-south"
-    ],
-    "id": "compliance",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "compliance",
-    "pricing_tags": [
-      "allow_internal_users",
-      "paid",
-      "free"
-    ],
-    "tags": [
-      "security",
-      "allow_internal_users",
-      "apidocs_enabled",
-      "ca-tor",
-      "cbr_enabled",
-      "custom_kind_service",
-      "eu-de",
-      "eu-es",
-      "free",
-      "fs_ready",
-      "iam_compatible",
-      "ibm_created",
-      "paid",
-      "rc_compatible",
-      "scc-wp",
-      "security_compliance_posture_wp",
-      "service_endpoint_supported",
-      "support_ibm",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "fa6c54f7-12e1-4ba9-b86e-9648fb4aaa68",
-        "name": "security-compliance-center-standard-plan",
-        "description": "An evaluation is the check of one assessment against one resource in an account.",
-        "displayName": "Standard",
-        "originalName": "security-compliance-center-standard-plan"
-      },
-      {
-        "id": "ea54cffc-4eff-435a-80da-2a5725cbec72",
-        "name": "security-compliance-center-trial-plan",
-        "description": "When your trial expires, scan configurations, including attachments, are kept for 30 days unless you upgrade to the Standard plan.",
-        "displayName": "Trial",
-        "originalName": "security-compliance-center-trial-plan"
-      }
-    ],
-    "description": "Service functionality is now available in Security and Compliance Center Workload Protection. Get started by creating instances at https://cloud.ibm.com/workload-protection/catalog/security-and-compliance-center-workload-protection.",
-    "longDescription": "This service functionality is now available in Security and Compliance Center Workload Protection along with expanded capabilities for security risk and compliance management. For more information, see the <a href=\"https://cloud.ibm.com/docs/workload-protection\">documentation</a>.",
-    "displayName": "Security and Compliance Center",
-    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/compliance/artifacts/CloudSecurityComplianceCenter-light.svg",
-    "localPngIcon": "/generated/icons/compliance.png"
-  },
-  {
-    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -17683,7 +17621,6 @@
       "au-syd",
       "ca-tor",
       "eu-de",
-      "jp-tok",
       "us-south"
     ],
     "id": "2ad019f3-0fd6-4c25-966d-f3952481a870",
@@ -17714,7 +17651,6 @@
       "freesia",
       "iam_compatible",
       "ibm_created",
-      "jp-tok",
       "lite",
       "paid",
       "paid_only",
