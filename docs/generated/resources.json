@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -548,15 +548,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4475,7 +4475,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb"
     ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
@@ -4502,8 +4501,9 @@
       "ibm_created",
       "lite",
       "rc_compatible",
+      "service_endpoint_supported",
       "support_ibm",
-      "us-south"
+      "vpc_private_endpoint"
     ],
     "plans": [
       {
@@ -4511,6 +4511,13 @@
         "name": "lite",
         "description": "One Data Virtualization instance with 1 head and 1 worker node. Head and worker nodes have 4 vCPU and 16 GB RAM per node. Lite instances automatically expire and are deleted after 30 days. Data Virtualization is available on IBM Cloud Pak for Data as a Service.",
         "displayName": "Lite (preprod)",
+        "originalName": "lite"
+      },
+      {
+        "id": "2baffedc-2687-cfde-d063-3cebee671908",
+        "name": "lite-preprod",
+        "description": "One Data Virtualization instance with 1 head and 1 worker node. Head and worker nodes have 4 vCPU and 16 GB RAM per node. Lite instances automatically expire and are deleted after 30 days. Data Virtualization is available on IBM Cloud Pak for Data as a Service.",
+        "displayName": "Lite (Pre-prod)",
         "originalName": "lite"
       }
     ],
@@ -4831,6 +4838,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4842,8 +4850,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5104,16 +5111,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-de",
+      "eu-gb",
       "au-syd",
       "us-east",
-      "eu-gb",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-es",
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7924,14 +7931,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8566,16 +8573,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "jp-tok",
-      "au-syd",
-      "ca-mon",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "jp-tok",
+      "ca-mon",
+      "eu-es",
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -13136,8 +13143,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14036,12 +14043,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -15671,7 +15678,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -15711,7 +15717,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17142,12 +17149,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
