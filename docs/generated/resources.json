@@ -4682,10 +4682,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4693,7 +4689,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5115,12 +5115,12 @@
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
       "us-south",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5278,12 +5278,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8573,17 +8573,17 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "jp-tok",
+      "au-syd",
+      "ca-mon",
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east",
-      "eu-es",
-      "jp-tok",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "au-syd",
-      "ca-mon"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9837,10 +9837,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14043,12 +14043,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -14677,6 +14677,51 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.subnet/artifacts/cache/e475aba926c1296b5e36d44177e0681a-public/Subnets.svg",
     "localSvgIcon": "/generated/icons/is.subnet.svg",
     "localPngIcon": "/generated/icons/is.subnet.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "c3ef52e7-c978-4fd1-9982-e39084119336",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "l4s-corp-tapestryx",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "blockchain",
+      "bloclchain",
+      "custom_kind_service",
+      "dlt",
+      "financial services",
+      "global",
+      "ibm_third_party",
+      "ledger",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "supply chain",
+      "support_third_party",
+      "trade finance"
+    ],
+    "plans": [
+      {
+        "id": "2fa05740-fdda-4bb3-91c2-03a56facd2a4",
+        "name": "monthly",
+        "description": "TapestryX is billed monthly per node at the rate of $2,000.",
+        "displayName": "Monthly"
+      }
+    ],
+    "description": "TapestryX is next-generation Networked Accounting Ledger Technology (NALT) that can be deployed to support B2B networks.",
+    "longDescription": "TapestryX is a real-time, high-capacity, secure and scalable, decentralized B2B transaction synchronization and double-entry accounting protocol.\n\n▪ Each Node (representing an institutional participant) controls its segment of the entire, interlinked platform ledger\n▪ Event-driven and self-synchronizing(1)\n▪ Each Node posts asset transfer details as well as (future-dated) obligations into immutable ledgers\n▪ Transaction Accounting Periods - allowing period archiving and active memory optimization\n▪ Simple, deterministic scripts (asset & life-cycle agnostic)\n▪ Interoperable with legacy infrastructure (via Airlock feature)\n▪ Confidential and Secure\n▪ Configurable for proper GAAP or IFRS Financial Reporting\n▪ Decentralized initiation of transaction, validation and processing – no single point of failure\n▪ High Performance (~ 100K TPS) and Resilient to Cyber attacks\n\nConsistency and Completeness of all Decentralized Ledgers without reliance on consensus, mining or 3rd Party validation.",
+    "displayName": "TapestryX",
+    "imageUrl": "https://l4scorp.com/wp-content/uploads/2021/03/tapestryx-logo.png",
+    "localPngIcon": "/generated/icons/c3ef52e7-c978-4fd1-9982-e39084119336.png"
   },
   {
     "geo_tags": [
