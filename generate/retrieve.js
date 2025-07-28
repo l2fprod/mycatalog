@@ -273,7 +273,11 @@ function ServiceUpdater() {
       if (resource.displayName.startsWith('IBM ')) {
         resource.displayName = resource.displayName.substring(4);
       }
-      resource.imageUrl = resource.images.image || resource.images.feature_image;
+      if (!resource.images) {
+        console.log('No images for', resource.id, resource.name)
+      } else {
+        resource.imageUrl = resource.images.image || resource.images.feature_image;
+      }
 
       // add the region tag if missing
       if (resource.geo_tags) {
