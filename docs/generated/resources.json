@@ -548,15 +548,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -2277,6 +2277,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -2303,6 +2304,7 @@
       "au-syd",
       "audit events",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -2329,7 +2331,8 @@
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
-      "us-south"
+      "us-south",
+      "vpc_private_endpoint"
     ],
     "plans": [
       {
@@ -2351,6 +2354,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -2379,6 +2383,7 @@
       "apidocs_enabled",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "custom_kind_service",
@@ -5213,16 +5218,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "us-east",
+      "eu-es",
       "us-south",
       "eu-de",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5380,12 +5385,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8033,14 +8038,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8507,7 +8512,7 @@
       }
     ],
     "description": "Using Cloudflare, Cloud Internet Services (CIS) provides Domain Name Service (DNS), Global Load Balancer (GLB), DDoS protection, Web Application Firewall (WAF), Transport Layer Security (TLS), Rate Limiting, Smart Routing, and Caching.",
-    "longDescription": "Cloud Internet Services (CIS) is an FS Validated service (see terms: https://www.ibm.com/support/customer/csol/terms/?id=i126-8065). It provides reliability, performance, and security for Internet facing applications, websites, and services using Cloudflare's 300+ Global Points of Presence (PoPs). It includes Domain Name Service (DNS), Global Load Balancer (GLB), Distributed Denial of Service (DDoS) protection, Web Application Firewall (WAF), Transport Layer Security (TLS), and Caching.\n\n### Pricing API reference\n**Service ID:** internet-svcs\n\nFor more information about pricing, use the Global Catalog API. [Learn more](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-getting-pricing-api). The **_included_quantities_** for each metric provide the free included quantities for that metric and should be taken into consideration when determining the price estimate.\n\n### Plan IDs\n| Plan name | ID |\n| - | - |\n| Standard Next| `58d7216c-af92-4e7d-baec-ce13a4dd61c0` |\n| Enterprise Essential |  `6c8777ee-c73f-4860-8451-cc48e0af6f12` |\n| Enterprise Advanced | `224b9979-fd81-42a4-99a1-5172948a8c6b` |\n| Enterprise Premier | `87a3e981-1b6d-4819-96ae-6bf253249f38` |\n| Enterprise Usage | `f0fe7fbb-a516-412d-bdbb-e8cecb1b85a1` |",
+    "longDescription": "Cloud Internet Services (CIS) is an FS Validated service (see terms: https://www.ibm.com/support/customer/csol/terms/?id=i126-8065). It provides reliability, performance, and security for Internet facing applications, websites, and services using Cloudflare's 300+ Global Points of Presence (PoPs). It includes Domain Name Service (DNS), Global Load Balancer (GLB), Distributed Denial of Service (DDoS) protection, Web Application Firewall (WAF), Transport Layer Security (TLS), and Caching.\n\n### Pricing API reference\n**Service ID:** internet-svcs\n\nFor more information about pricing, use the Global Catalog API. [Learn more](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-getting-pricing-api). The **_included_quantities_** for each metric provide the free included quantities for that metric and should be taken into consideration when determining the price estimate.\n\n### Plan IDs\n| Plan name | ID |\n| - | - |\n| Standard Next| `58d7216c-af92-4e7d-baec-ce13a4dd61c0` |\n| Enterprise Essential |  `6c8777ee-c73f-4860-8451-cc48e0af6f12` |\n| Enterprise Advanced | `224b9979-fd81-42a4-99a1-5172948a8c6b` |\n| Enterprise Premier | `87a3e981-1b6d-4819-96ae-6bf253249f38` |\n| Enterprise Usage | `f0fe7fbb-a516-412d-bdbb-e8cecb1b85a1` |\n",
     "displayName": "Internet Services",
     "imageUrl": "https://broker.cis.cloud.ibm.com/CIS_Icon_CloudPAL.svg",
     "localSvgIcon": "/generated/icons/75874a60-cb12-11e7-948e-37ac098eb1b9.svg",
@@ -8675,17 +8680,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "jp-tok",
-      "ca-mon",
-      "eu-de",
-      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "jp-tok",
+      "ca-mon",
       "au-syd",
-      "eu-gb"
+      "eu-de",
+      "us-south",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9939,10 +9944,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -13571,8 +13576,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14473,12 +14478,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16155,7 +16160,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16195,7 +16199,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17635,12 +17640,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -17718,12 +17723,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
