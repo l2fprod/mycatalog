@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -548,7 +548,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -556,7 +555,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5228,16 +5228,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-es",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8048,14 +8048,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8696,17 +8696,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
+      "jp-tok",
+      "au-syd",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "jp-tok",
-      "au-syd",
-      "ca-mon"
+      "eu-es",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -17638,13 +17638,6 @@
         "originalName": "premium-agentic-mau"
       },
       {
-        "id": "91fe4679-8af7-4abd-bb82-cf2caf8ab7d0",
-        "name": "premium-agentic-messages",
-        "description": "Premium Agentic Plan with Messages for Data Isolation",
-        "displayName": "Premium Agentic with Messages",
-        "originalName": "premium-agentic-messages"
-      },
-      {
         "id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
         "name": "standard-agentic-mau",
         "description": "Premium Agentic Plan with MAU for Data Isolation\nTo purchase Premium plan with data isolation [contact us](https://www.ibm.com/account/reg/us-en/subscribe?formid=MAIL-data)",
@@ -17663,9 +17656,9 @@
     "geo_tags": [
       "au-syd",
       "ca-tor",
-      "jp-tok",
       "eu-gb",
       "us-south",
+      "jp-tok",
       "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
@@ -17709,7 +17702,7 @@
       {
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "name": "lite",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n",
         "displayName": "Lite",
         "originalName": "lite"
       },
@@ -17723,14 +17716,14 @@
       {
         "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
         "name": "v2-professional",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa\n",
         "displayName": "Standard",
         "originalName": "v2-professional"
       },
       {
         "id": "a3d2f92f-06f9-48d0-b2e6-a7ba2b4e0577",
         "name": "v2-standard",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n",
         "displayName": "Essentials",
         "originalName": "v2-standard"
       }
