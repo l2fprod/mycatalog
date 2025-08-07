@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -548,7 +548,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -556,7 +555,8 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5228,15 +5228,15 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
       "us-south",
+      "au-syd",
+      "us-east",
+      "eu-gb",
+      "eu-es",
       "eu-de"
     ],
     "id": "dashdb-for-transactions",
@@ -6054,431 +6054,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/21/artifacts/cache/e4a5d9241a41381fdef1e50269ef92a0-public/DirectLink1.0Exchange.svg",
     "localSvgIcon": "/generated/icons/21.svg",
     "localPngIcon": "/generated/icons/21.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "9f3db814-3aec-47c5-94b0-6a71d49bd27f",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "dizzion-complete",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "daas",
-      "desktop as a service",
-      "digital workspaces",
-      "global",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "vdi",
-      "virtualservers",
-      "workspace"
-    ],
-    "plans": [
-      {
-        "id": "904be55c-0a47-446c-8ccc-4911dd4f911b",
-        "name": "dizzion-complete-commit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Paygo Commit - 1 Year"
-      },
-      {
-        "id": "c7f4764d-bf87-42ae-9024-777688943ea5",
-        "name": "dizzion-complete-commit-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Paygo Commit - 3 Year"
-      },
-      {
-        "id": "74b5d049-1560-476d-ab8b-bce20f801982",
-        "name": "dizzion-complete-commit-edu-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo Commit EDU - 1 Year"
-      },
-      {
-        "id": "223fc7d5-efb5-4cef-94fc-3c00475f5cc7",
-        "name": "dizzion-complete-credit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid Credits - 1 Year"
-      },
-      {
-        "id": "53b82140-4a74-40a5-9894-adfe259bc827",
-        "name": "dizzion-complete-credit-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid Credits - 3 Year"
-      },
-      {
-        "id": "9cde0c12-ec1b-4c3d-88e6-4712e6560b27",
-        "name": "dizzion-complete-paygo-commit-edu-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo Commit EDU - 3 Year"
-      },
-      {
-        "id": "598963fb-fe4b-43e3-97dc-fd49f6a8242d",
-        "name": "dizzion-complete-prepaid-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid - 1 Year"
-      },
-      {
-        "id": "b9f63d32-c5cd-4de4-89a7-ebff4aa8f5ab",
-        "name": "dizzion-complete-prepaid-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid - 3 Year"
-      },
-      {
-        "id": "4bd8572a-df15-4432-8b46-ce66041db395",
-        "name": "dizzion-complete-prepaid-edu-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Prepaid EDU - 1 Year"
-      },
-      {
-        "id": "723fc548-1054-4076-b161-deeed7a73e28",
-        "name": "dizzion-complete-prepaid-edu-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Prepaid EDU - 3 Year"
-      }
-    ],
-    "description": "Leverage the power of virtual desktops and apps on IBM Cloud VPC in a fully turnkey approach - managed and hosted by Dizzion.",
-    "longDescription": "Dizzion Complete enables clients to deliver virtual desktop and app workloads to users in a fully turnkey solution. Powered by Dizzion’s cloud-native Frame Desktop as a Service (DaaS) platform deployed on their managed IBM Cloud VPC, Dizzion’s team of experts integrates seamlessly with clients existing IT teams to ensure deployment success. Users securely access the apps, data, and resources they need to be productive from the comfort of their favorite web browser – no clients or plug-ins required. With Dizzion Complete on IBM Cloud VPC, organizations have the platform and expertise to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy. \n \n\n\n- - - \n\n\nFor sales support, reach out to Dizzion directly at channel@dizzion.com.",
-    "displayName": "Dizzion Complete",
-    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
-    "localPngIcon": "/generated/icons/9f3db814-3aec-47c5-94b0-6a71d49bd27f.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "9e09a2eb-b2e5-4d76-ab7c-1b2f8c080865",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "dizzion-complete-horizon",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "daas",
-      "desktop as a service",
-      "digital workspaces",
-      "global",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "vdi",
-      "virtualservers",
-      "vmware",
-      "workspace"
-    ],
-    "plans": [
-      {
-        "id": "3febc912-a0b8-4f90-9f6c-58155a63376d",
-        "name": "dizzion-complete-horizon-paygo-commit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Paygo Commit - 1 Year"
-      },
-      {
-        "id": "c965e081-dc86-4970-80bc-ccaf55c3d5df",
-        "name": "dizzion-complete-horizon-paygo-commit-edu-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM) Dizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo Commit EDU - 1 Year"
-      },
-      {
-        "id": "f80f9de7-6037-4ee3-9a9c-349ab189a4ca",
-        "name": "dizzion-complete-horizon-paygo-edu-monthly-",
-        "description": "Minimum 50 seats required (Per User or Per VM) \nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo EDU - Monthly "
-      },
-      {
-        "id": "cc7ceebb-fad4-43c6-a5fa-03bf1c8a17a4",
-        "name": "dizzion-complete-horizon-paygo-monthly",
-        "description": "Minimum 50 seats required (Per User or Per VM) ",
-        "displayName": "Paygo - Monthly"
-      },
-      {
-        "id": "a67617d3-0e23-4492-9d9a-f910b7fb083b",
-        "name": "dizzion-complete-horizon-prepaid-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid - 1 Year"
-      },
-      {
-        "id": "208e52a4-bca9-4fa5-8dac-76e986c7d51a",
-        "name": "dizzion-complete-horizon-prepaid-edu-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM) Dizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Prepaid EDU - 1 Year"
-      }
-    ],
-    "description": "Leverage the power of Horizon virtual desktops and apps on IBM Cloud Bare Metal - fully managed and hosted by Dizzion.",
-    "longDescription": "Dizzion Complete - Horizon enables clients to deliver virtual desktop and app workloads to users in a fully turnkey solution. Powered by Omnissa (formerly VMware) Horizon deployed on their managed IBM Cloud Bare Metal, Dizzion’s team of experts integrates seamlessly with clients existing IT teams to ensure deployment success. Users securely access the apps, data, and resources they need to be productive from any device. With Dizzion Complete - Horizon on IBM Cloud Bare Metal, organizations have the platform and expertise to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\n- - - \n\nFor sales support, reach out to Dizzion directly at channel@dizzion.com.",
-    "displayName": "Dizzion Complete - Horizon",
-    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
-    "localPngIcon": "/generated/icons/9e09a2eb-b2e5-4d76-ab7c-1b2f8c080865.png"
-  },
-  {
-    "geo_tags": [
-      "wdc06"
-    ],
-    "id": "79679329-2050-4779-a2e2-7210b88aed4e",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "dizzion-digitalworkspaces-complete",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "daas",
-      "digital",
-      "digital workspaces",
-      "financial_services_validated",
-      "fs validated",
-      "fs_ready",
-      "hippa",
-      "ibm_third_party",
-      "nist 800",
-      "paid",
-      "paid_only",
-      "pci",
-      "rc_compatible",
-      "support_third_party",
-      "vdi",
-      "virtualservers",
-      "wdc06",
-      "workspace"
-    ],
-    "plans": [
-      {
-        "id": "87c6afb3-9ba2-4a57-809a-fac013695af0",
-        "name": "dizzion-digitalworkspaces-complete-paygo-commit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n",
-        "displayName": "Paygo Commit - 1 Year"
-      },
-      {
-        "id": "9edddd4a-2e7a-4673-bb2a-9e68849b37dc",
-        "name": "dizzion-digitalworkspaces-complete-united-states-1-year-commit",
-        "description": "United States - 1 Year Commit",
-        "displayName": "United States - 1 Year Commit"
-      }
-    ],
-    "description": "Managed DaaS on IBM Cloud for Financial Services.",
-    "longDescription": "Dizzion on IBM Cloud for Financial Services offers a fully managed desktop option on the IBM Cloud where you can build agile, long-term remote environments that optimize end-user performance and provide industryleading security and compliance.\n\nCompliance as a Service.\n- Leverage Dizzion’s compliant desktops, engineered to uphold stringent GDPR, HIPAA, NIST 800-53, PCI DSS, and SOC standard. Our compliance packages ensure your operations meet global compliance with confidence.\n\nSecure Developer & Contractor Access.\n- Our platform ensures that external teams can securely and efficiently access business-critical apps and data, with stringent controls to protect intellectual property.\n\nEnable BYO Device.\n- Keep sensitive data off endpoint devices entirely by restricting access only from a digital workspace makes enabling a BYOD program a real possibility.\n\nServices include:\n- Compliance Audit Support\n- Policy and Compliance Scanning\n- Data Privacy Protocols\n- Vulnerability Detection and Response\n- Antivirus Management\n\n- - - \n\nFor sales support, reach out to Dizzion directly at:  \nPhone: 888-225-2974 Opt. 1 \nEmail: Channel@dizzion.com ",
-    "displayName": "Dizzion Complete FS - Horizon",
-    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
-    "localPngIcon": "/generated/icons/79679329-2050-4779-a2e2-7210b88aed4e.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "6fc0c2df-7fbc-470f-aac5-a93af7ef4a92",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "dizzion-flex",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "daas",
-      "desktop as a service",
-      "digital_workspaces",
-      "global",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "vdi",
-      "virtualservers",
-      "workspace"
-    ],
-    "plans": [
-      {
-        "id": "4d510257-f9e8-4074-a856-16cf9cf84f0f",
-        "name": "dizzion-flex-commit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Paygo Commit - 1 Year"
-      },
-      {
-        "id": "44e1078c-2d56-4fdb-bdbc-10f4404a8ff4",
-        "name": "dizzion-flex-commit-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Paygo Commit - 3 Year"
-      },
-      {
-        "id": "01260cc0-8093-400e-9884-905f1c6d9e3e",
-        "name": "dizzion-flex-credit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid Credits - 1 Year"
-      },
-      {
-        "id": "2da04699-ba50-4cdc-8cd4-a239cb3c5c19",
-        "name": "dizzion-flex-credit-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid Credits - 3 Year"
-      },
-      {
-        "id": "67420bc4-c6bd-48af-852f-7de369a9c6cb",
-        "name": "dizzion-flex-paygo-commit-edu-1-year-",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo Commit EDU - 1 Year "
-      },
-      {
-        "id": "7f3b21e3-2727-4c84-954c-d9153b17eed0",
-        "name": "dizzion-flex-paygo-commit-edu-3-year-",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo Commit EDU - 3 Year "
-      },
-      {
-        "id": "0c9ef593-c4ab-43e3-82f9-b3540c01bcfe",
-        "name": "dizzion-flex-prepaid-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid - 1 Year"
-      },
-      {
-        "id": "e855679f-3f33-4614-aad3-58ff65c7a522",
-        "name": "dizzion-flex-prepaid-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid - 3 Year"
-      },
-      {
-        "id": "ac0ed928-5789-43aa-b737-bc6e788937b0",
-        "name": "dizzion-flex-prepaid-edu-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located. ",
-        "displayName": "Prepaid EDU - 1 Year"
-      },
-      {
-        "id": "dc061547-bbcf-4d1f-9273-cb3537b17d41",
-        "name": "dizzion-flex-prepaid-edu-3-year-",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Prepaid EDU - 3 Year "
-      }
-    ],
-    "description": "Simply and intuitively deploy and manage virtual desktops and apps on IBM Cloud VPC.",
-    "longDescription": "Dizzion Flex enables clients to simply and intuitively deploy and manage their virtual desktop and app workloads on IBM Cloud VPC, leveraging Dizzion’s cloud-native Frame Desktop as a Service (DaaS) platform. Users securely access the apps, data, and resources they need to be productive from the comfort of their favorite web browser – no clients or plug-ins required. Admins can deploy thousands of digital workspaces across the globe in minutes and enjoy powerful enterprise features all managed from a single pane-of-glass web console. With Dizzion Flex on IBM Cloud VPC, organizations are well-prepared to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\n \n- - - \n\n\nFor sales support, reach out to Dizzion directly at channel@dizzion.com.",
-    "displayName": "Dizzion Flex",
-    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
-    "localPngIcon": "/generated/icons/6fc0c2df-7fbc-470f-aac5-a93af7ef4a92.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "72ca6b61-2aa8-4b8f-ba21-69854bd2095b",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "dizzion-managed",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "daas",
-      "desktop as a service",
-      "digital workspaces",
-      "global",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "vdi",
-      "virtualservers",
-      "workspace"
-    ],
-    "plans": [
-      {
-        "id": "f2da4e1f-d73b-43d6-9f42-3e17837a1ad3",
-        "name": "dizzion-managed-commit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Paygo Commit - 1 Year"
-      },
-      {
-        "id": "b9995578-9fed-44e0-9b22-3a8d7c34f5df",
-        "name": "dizzion-managed-commit-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Paygo Commit - 3 Year"
-      },
-      {
-        "id": "fca6ee27-cb68-4aeb-b6f6-7ec56a34d148",
-        "name": "dizzion-managed-credit-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid Credits - 1 Year"
-      },
-      {
-        "id": "727f2a7d-3156-4ed4-a867-11191fde406e",
-        "name": "dizzion-managed-credit-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid Credits - 3 Year"
-      },
-      {
-        "id": "361e5950-8183-4282-b357-8ac0bc89138b",
-        "name": "dizzion-managed-paygo-commit-edu-1-year-",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo Commit EDU - 1 Year "
-      },
-      {
-        "id": "19c94d56-1ac1-408c-8783-98e07b9e6e72",
-        "name": "dizzion-managed-paygo-commit-edu-3-year-",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Paygo Commit EDU - 3 Year "
-      },
-      {
-        "id": "c7bf3d9c-2e78-498b-8d76-7606c49de6dc",
-        "name": "dizzion-managed-prepaid-1-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid - 1 Year"
-      },
-      {
-        "id": "5e1b145b-4cf9-4b74-9bdb-b77b4ed2cda1",
-        "name": "dizzion-managed-prepaid-3-year",
-        "description": "Minimum 50 seats required (Per User or Per VM)",
-        "displayName": "Prepaid - 3 Year"
-      },
-      {
-        "id": "974af349-eaba-45fb-ab52-8fe84e640247",
-        "name": "dizzion-managed-prepaid-edu-1-year-",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Prepaid EDU - 1 Year "
-      },
-      {
-        "id": "9f1c32b2-a836-4c9d-b093-4bae7b2628cc",
-        "name": "dizzion-managed-prepaid-edu-3-year-",
-        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
-        "displayName": "Prepaid EDU - 3 Year "
-      }
-    ],
-    "description": "Leverage the power of virtual desktops and apps on IBM Cloud VPC without needing to reallocate or reskill your IT resources.",
-    "longDescription": "Dizzion Managed enables clients to deliver virtual desktop and app workloads on their IBM Cloud VPC without needing to worry about reallocating or reskilling IT resources. Leveraging Dizzion’s cloud-native Frame Desktop as a Service (DaaS) platform, Dizzion’s team of experts integrates seamlessly with clients’ existing IT teams to ensure deployment success. Users securely access the apps, data, and resources they need to be productive from the comfort of their favorite web browser – no clients or plug-ins required. With Dizzion Managed on IBM Cloud VPC, organizations have the platform and expertise to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\n\n- - - \n\nFor sales support, reach out to Dizzion directly at channel@dizzion.com.",
-    "displayName": "Dizzion Managed",
-    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
-    "localPngIcon": "/generated/icons/72ca6b61-2aa8-4b8f-ba21-69854bd2095b.png"
   },
   {
     "geo_tags": [
@@ -8048,14 +7623,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8120,75 +7695,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/d589492e-6ac0-4a11-9c28-a157851c8f68/artifacts/cache/467d92adc35936acf91c005e7d77c645-public/CryptoCloudTileIcon.svg",
     "localSvgIcon": "/generated/icons/d589492e-6ac0-4a11-9c28-a157851c8f68.svg",
     "localPngIcon": "/generated/icons/d589492e-6ac0-4a11-9c28-a157851c8f68.png"
-  },
-  {
-    "id": "986f2197-9f9a-44f4-9463-f17ec64c6729",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "hpvs",
-    "pricing_tags": [
-      "allow_internal_users",
-      "paid",
-      "paid_only",
-      "free"
-    ],
-    "tags": [
-      "containers",
-      "security",
-      "allow_internal_users",
-      "beryllium",
-      "custom_kind_service",
-      "free",
-      "freesia",
-      "ibm_created",
-      "ibm_deprecated",
-      "ibm_release",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "vm"
-    ],
-    "plans": [
-      {
-        "id": "dd43716a-8403-4e9a-a99e-5028a75fa98b",
-        "name": "entry",
-        "description": "Entry plan using 1 vCPU, 4 GB of memory and 100 GB of storage.",
-        "displayName": "Entry",
-        "originalName": "entry"
-      },
-      {
-        "id": "bb0005a1-ec13-4ee4-86f4-0c3b15a357d5",
-        "name": "lite-s",
-        "description": "Free plan using 1 vCPU, 2 GB of memory and 50 GB of storage. Free plan instances will be deleted after 30 days.",
-        "displayName": "Free",
-        "originalName": "lite-s"
-      },
-      {
-        "id": "1123ef5e-4b44-40fb-b4a4-aa433bbd7005",
-        "name": "medium",
-        "description": "Medium plan using 4 vCPUs, 16 GB of memory and 100 GB of storage.",
-        "displayName": "Medium",
-        "originalName": "medium"
-      },
-      {
-        "id": "e6467533-dc08-4de7-b797-a00a8b0353b5",
-        "name": "small",
-        "description": "Small plan using 2 vCPUs, 8 GB of memory and 100 GB of storage",
-        "displayName": "Small",
-        "originalName": "small"
-      }
-    ],
-    "description": "You are recommended to create the latest Hyper Protect Virtual Servers for VPC at https://cloud.ibm.com/vpc-ext/provision/vs?architecture=s390x&secureExecution=true. For more information, click the \"About\" tab.",
-    "longDescription": "Create and run virtual servers on IBM LinuxONE, the industry's most secure Linux-based platform.\nNote: \n1. It is recommended that you create Hyper Protect Virtual Servers for VPC, the latest confidential computing as-a-service solution, in various regions at https://cloud.ibm.com/vpc-ext/provision/vs?architecture=s390x&secureExecution=true. When you select your image, ensure that you select \"s390x architecture\" and toggle on \"Confidential computing - Run your workload with an OS and a profile protected by Secure Execution\". For more information, see https://cloud.ibm.com/docs/hp-virtual-servers?topic=hp-virtual-servers-why-migrate.\n2. This service is deprecated from the IBM Cloud data center in Sydney. For more information, see https://cloud.ibm.com/docs/hp-virtual-servers?topic=hp-virtual-servers-whats-new#hp-virtual-servers-oct2623.",
-    "displayName": "Hyper Protect Virtual Server for Classic",
-    "imageUrl": "https://hp-vs.prod-us.cloud.zaas.ibm.com/virtualservers-32.svg",
-    "geo_tags": [],
-    "localSvgIcon": "/generated/icons/986f2197-9f9a-44f4-9463-f17ec64c6729.svg",
-    "localPngIcon": "/generated/icons/986f2197-9f9a-44f4-9463-f17ec64c6729.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustcc",
@@ -8696,16 +8202,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "eu-es",
       "jp-tok",
-      "au-syd",
       "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -13592,8 +13098,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -17961,12 +17467,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "ca-tor"
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
