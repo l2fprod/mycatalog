@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4955,7 +4955,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4967,7 +4966,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5232,9 +5232,9 @@
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-gb",
       "us-south",
       "eu-de",
-      "eu-gb",
       "eu-es",
       "au-syd",
       "us-east"
@@ -5395,12 +5395,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8202,17 +8202,17 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "eu-es",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "jp-tok",
+      "au-syd",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13701,84 +13701,6 @@
   {
     "geo_tags": [
       "au-syd",
-      "us-east",
-      "us-south",
-      "eu-de",
-      "eu-gb"
-    ],
-    "id": "IBM_SecureGateway",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "securegateway",
-    "pricing_tags": [
-      "paid_only",
-      "paygo",
-      "free"
-    ],
-    "tags": [
-      "integration",
-      "api",
-      "au-syd",
-      "bluemix_extensions",
-      "custom_kind_service",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "gc_migrate",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "ibm_deprecated",
-      "paid_only",
-      "paygo",
-      "rc_compatible",
-      "support_ibm",
-      "us-east",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "4cf79415-7982-4eb7-be3e-804f0718989e",
-        "name": "enterprise",
-        "description": "Up to 25 gateways with 25 destinations each and 500GB of included allowance for data transmission.",
-        "displayName": "Enterprise",
-        "originalName": "enterprise"
-      },
-      {
-        "id": "157851e7-b444-46a0-85be-782fd17a69d0",
-        "name": "essentials",
-        "description": "1 gateway with 1 destination and 500MB of included allowance for data transmission.",
-        "displayName": "Essentials",
-        "originalName": "essentials"
-      },
-      {
-        "id": "f0e5af9e-f122-4e3d-80e0-adacb1cf6689",
-        "name": "professional",
-        "description": "Up to 5 gateways with 5 destinations each and 50GB of included allowance for data transmission.",
-        "displayName": "Professional",
-        "originalName": "professional"
-      },
-      {
-        "id": "4abc68d9-601e-454c-865b-207d1e6a252c",
-        "name": "securegatewayplan",
-        "description": "Pay only for outbound data transmissions per Gigabyte. The first Gigabyte each month is free.",
-        "displayName": "Standard",
-        "originalName": "securegatewayplan"
-      }
-    ],
-    "description": "IBM Secure Gateway for IBM Cloud enables users to integrate cloud services with enterprise systems on premises.",
-    "longDescription": "The Secure Gateway Service provides a quick, easy, and secure solution for connecting resources in a protected environment to cloud resources.  By deploying the light-weight and natively installed Secure Gateway Client, you can establish a secure, persistent connection between your environment and the cloud through an outbound call. Once the client is connected, you can safely connect your applications and resources by specifying their host and port to create corresponding destinations on the cloud. Rather than bridging your environments at the network level like a traditional VPN that begins with full access and must be limited from the top down, Secure Gateway provides granular access only to the resources that you have defined.",
-    "displayName": "Secure Gateway",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/IBM_SecureGateway/artifacts/cache/267bb1a6f5baef8df57b08a443339c9b-public/Integration.svg",
-    "localSvgIcon": "/generated/icons/IBM_SecureGateway.svg",
-    "localPngIcon": "/generated/icons/IBM_SecureGateway.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -14000,7 +13922,6 @@
     "displayName": "Spectrum Protect Plus",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/SPPlus.svg",
     "geo_tags": [],
-    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-spplus.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-spplus.png"
   },
   {
@@ -17243,12 +17164,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -17467,12 +17388,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
