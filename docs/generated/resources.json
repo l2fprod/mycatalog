@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4955,6 +4955,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -4966,8 +4967,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5228,14 +5228,14 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
       "us-south",
-      "eu-de",
-      "eu-es",
       "au-syd",
       "us-east"
     ],
@@ -5395,12 +5395,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7623,14 +7623,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8207,12 +8207,12 @@
       "jp-osa",
       "us-east",
       "eu-es",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "jp-tok",
       "au-syd",
-      "ca-mon"
+      "ca-mon",
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9466,10 +9466,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -13922,6 +13922,7 @@
     "displayName": "Spectrum Protect Plus",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/SPPlus.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-spplus.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-spplus.png"
   },
   {
@@ -14847,7 +14848,7 @@
       }
     ],
     "description": "Trademo TradeScreen is an AI-based real-time trade transaction validation tool powered by  Knowledge graph of over 10 billion+data",
-    "longDescription": "Trademo TradeScreen is an advanced AI-powered platform that revolutionizes how key stakeholders in global trade, i.e., Trade Finance, Insurance, Logistics, Ports, and Customs authorities, manage trade transaction processing, operations, compliance, and risk. \n\nBy leveraging Trademo's proprietary fine-tuned vision models and global supply chain knowledge graph (TrademoKG) powered by open-source intelligence from thousands of authoritative data sources and billions of data points, TradeScreen provides real-time trade digitization, compliance automation, and risk management capabilities.\n\nKey Features\n\nDocument Digitization & Classification\n\nOur system uses advanced machine learning algorithms to automatically classify trade documents into specific categories, completely eliminating the need for manual sorting. Whether it's a Bill of Lading (BoL), Letter of Credit (LC), Commercial Invoice, Packing List, Certificate of Origin, or any other trade document, our intelligent classification engine instantly recognizes and organizes them into the correct buckets. This not only speeds up processing times but also enhances accuracy and reduces operational overhead.\n\nDocument Extraction\n\nPowered by an advanced vision model combined with Optical Character Recognition (OCR), our system precisely extracts all the key attributes from your trade documents regardless of inconsistent formats and data structures. From shipment details and payment terms to product specifications and consignee information, the platform automates data extraction at scale, removing hours of manual effort and reducing the risk of human error. The result is faster workflows, more accurate data, and a significant boost in operational efficiency.\n\nMaritime\n\nValidate master bill of lading data and get details on transhipment ports, vessel location, and previous port calls of the vessel with the right information from shipping lines. Identify and mitigate risk by screening vessels and shipping entities flagged for maritime sanctions violations.\n\nCompliance & Risk Checks\n\nTBML (Trade-Based Money Laundering) Checks\n\nLeverage real-time trade transactional data to identify risk from supply chain networks, such as limited trade partners, new product trade, multiple addresses, and more. Identify patterns in trade data that could indicate fraudulent activity, such as huge shipments, frequent changes in trading partners, unusual payment patterns, or inconsistent documentation.\n\nGoods Screening\n\nEnsure compliant financing by thoroughly screening for dual-use, hazardous, restricted/prohibited goods across different trade lanes. Trademo empowers trade finance institutions by offering real-time insights into country-specific trade restrictions, OGA/PGA regulations, and controls to mitigate risks, accelerate due diligence, and facilitate secure, compliant cross-border transactions.\n\nSanctions & AML Screening\n\nConduct enhanced due diligence on parties with links to sanctioned countries, entities, individuals, politically exposed persons, and forced labor entities.\n\nUCP 600 Checks\n\nEnsure trade documents meet the standards outlined under UCP 600 rules for seamless processing.\n\nEntity Resolution\n\nTrademo’s Entity Resolution helps trade finance institutions uncover hidden risks by mapping ownership structures, identifying linked entities, and automatically screening them against global sanctions and watchlists. This end-to-end visibility strengthens due diligence, enhances compliance, and ensures safer financing decisions.\n\nDocument Verification as per ICC Rules (UCP, ISBP, URC)\n\nTrademo’s Document Check automates verification against UCP, URDG, URC, and ISBP rules as applicable, helping trade finance institutions quickly validate trade documents for compliance and accuracy. By reducing manual errors and speeding up document review, it ensures smoother letter of credit processing, lowers operational risk, and accelerates transaction approval.\n\nBenefits:\n\nCost Efficiency Through Automation\n\nBy reducing manual tasks by up to 75%, TradeScreen lowers the cost of transaction processing and fraud detection. This reduction leads to decreased overhead for organizations as they streamline their operations.\n\nFraud Prevention\n\nTradeScreen uses AI models to identify suspicious patterns before transactions are processed, enabling early intervention. This helps mitigate losses and prevent financial fraud, which is projected to cost the industry billions by 2027.\n\nImproved Accuracy & Fewer False Positives\n\nBy reducing false positives by up to 40%, TradeScreen ensures compliance teams spend less time investigating non-issues and more time focusing on actual risks, making institutions more efficient and productive.\n\nEnhanced Regulatory Compliance\n\nWith integrated tools for sanctions screening, goods checks, and supply chain transparency, TradeScreen helps financial institutions comply with AML, CTF, and sanctions laws, reducing the risk of regulatory penalties.\n\nIncreased Visibility Across Ecosystems\n\nTradeScreen merges data from multiple sources to provide a transparent view of the entire trade and financial ecosystem. This visibility helps institutions better understand their clients, suppliers, and third-party risks.\n\nSeamless Integration With Existing Infrastructure\n\nTradeScreen is an open, scalable platform that easily integrates with existing banking infrastructure, enabling institutions to leverage its capabilities without extensive system overhauls.'\n\nEnhanced Decision-Making\n\nThe platform delivers actionable insights and transparency into the participants in each transaction, empowering financial institutions to make informed decisions about trade transactions and client relationships.\n\n\nCapabilities\n\nGlobal Trade Risk Mitigation\n\nDetects and prevents risks in trade transactions using a comprehensive database of international regulations and risk checks.\n\n500+ Real-Time Compliance Checks\n\nPerform 500+ real-time checks to ensure trade transactions comply with global regulations, reducing risks and non-compliance.\n\nAI-Driven Knowledge Graph\n\nUnlock insights with an AI-powered graph integrating billions of data points on trade, supply chains, risks, and ownership.\n\nEnd-to-End Transaction Validation\n\nValidate every aspect of trade transactions, ensuring full transparency and compliance from start to finish.\n\nContinuous Risk Updates\n\nStay compliant with evolving regulations, as TradeScreen continuously updates its risk assessment framework in real time.\n\nUser Management Capabilities\n\nEnable role-based access controls to tailor access and permissions across your teams, ensuring data security and governance compliance across workflows.\n\n\nWorkflow Capabilities\n\nSupport for maker-checker workflows, allowing teams to create, review, and approve trade transactions collaboratively. These workflows increase accountability and auditability across departments.\n\nConfiguration & Integration\n\nFlexible Configuration\n\nCustomize workflows, compliance checks, and validation logic based on your internal policies and risk appetite.\n\n\nAvailable via API\n\nAll core TradeScreen features are available through well-documented APIs, enabling seamless integration into existing banking, logistics, or compliance systems.\n\n\nWorkflow Capabilities\n\nThe platform supports maker-checker workflows, allowing multiple teams to collaborate, review, and approve documents efficiently. This enhances accountability and strengthens the overall due diligence process.\n\nPricing Plan:\n\nPricing Model: Platform Subscription (Base) + Optionals \nBase Platform Subscription Fee Annually: 60000 USD \nOptionals (at an extra cost in USD): \n\n1.Documents Digitisation 2. Financial Crime Checks 3. Sanctions & AML Checks 4. Goods Screening Checks 5. UCP Checks 6. Maritime Checks\n\n",
+    "longDescription": "Trademo TradeScreen is an advanced AI-powered platform that revolutionizes how key stakeholders in global trade, i.e., Trade Finance, Insurance, Logistics, Ports, and Customs authorities, manage trade transaction processing, operations, compliance, and risk. \n\nBy leveraging Trademo's proprietary fine-tuned vision models and global supply chain knowledge graph (TrademoKG) powered by open-source intelligence from thousands of authoritative data sources and billions of data points, TradeScreen provides real-time trade digitization, compliance automation, and risk management capabilities.\n\nKey Features\n\nDocument Digitization & Classification\n\nOur system uses advanced machine learning algorithms to automatically classify trade documents into specific categories, completely eliminating the need for manual sorting. Whether it's a Bill of Lading (BoL), Letter of Credit (LC), Commercial Invoice, Packing List, Certificate of Origin, or any other trade document, our intelligent classification engine instantly recognizes and organizes them into the correct buckets. This not only speeds up processing times but also enhances accuracy and reduces operational overhead.\n\nDocument Extraction\n\nPowered by an advanced vision model combined with Optical Character Recognition (OCR), our system precisely extracts all the key attributes from your trade documents regardless of inconsistent formats and data structures. From shipment details and payment terms to product specifications and consignee information, the platform automates data extraction at scale, removing hours of manual effort and reducing the risk of human error. The result is faster workflows, more accurate data, and a significant boost in operational efficiency.\n\nMaritime\n\nValidate master bill of lading data and get details on transhipment ports, vessel location, and previous port calls of the vessel with the right information from shipping lines. Identify and mitigate risk by screening vessels and shipping entities flagged for maritime sanctions violations.\n\nCompliance & Risk Checks\n\nTBML (Trade-Based Money Laundering) Checks\n\nLeverage real-time trade transactional data to identify risk from supply chain networks, such as limited trade partners, new product trade, multiple addresses, and more. Identify patterns in trade data that could indicate fraudulent activity, such as huge shipments, frequent changes in trading partners, unusual payment patterns, or inconsistent documentation.\n\nGoods Screening\n\nEnsure compliant financing by thoroughly screening for dual-use, hazardous, restricted/prohibited goods across different trade lanes. Trademo empowers trade finance institutions by offering real-time insights into country-specific trade restrictions, OGA/PGA regulations, and controls to mitigate risks, accelerate due diligence, and facilitate secure, compliant cross-border transactions.\n\nSanctions & AML Screening\n\nConduct enhanced due diligence on parties with links to sanctioned countries, entities, individuals, politically exposed persons, and forced labor entities.\n\nUCP 600 Checks\n\nEnsure trade documents meet the standards outlined under UCP 600 rules for seamless processing.\n\nEntity Resolution\n\nTrademo’s Entity Resolution helps trade finance institutions uncover hidden risks by mapping ownership structures, identifying linked entities, and automatically screening them against global sanctions and watchlists. This end-to-end visibility strengthens due diligence, enhances compliance, and ensures safer financing decisions.\n\nDocument Verification as per ICC Rules (UCP, ISBP, URC)\n\nTrademo’s Document Check automates verification against UCP, URDG, URC, and ISBP rules as applicable, helping trade finance institutions quickly validate trade documents for compliance and accuracy. By reducing manual errors and speeding up document review, it ensures smoother letter of credit processing, lowers operational risk, and accelerates transaction approval.\n\nBenefits:\n\nCost Efficiency Through Automation\n\nBy reducing manual tasks by up to 75%, TradeScreen lowers the cost of transaction processing and fraud detection. This reduction leads to decreased overhead for organizations as they streamline their operations.\n\nFraud Prevention\n\nTradeScreen uses AI models to identify suspicious patterns before transactions are processed, enabling early intervention. This helps mitigate losses and prevent financial fraud, which is projected to cost the industry billions by 2027.\n\nImproved Accuracy & Fewer False Positives\n\nBy reducing false positives by up to 40%, TradeScreen ensures compliance teams spend less time investigating non-issues and more time focusing on actual risks, making institutions more efficient and productive.\n\nEnhanced Regulatory Compliance\n\nWith integrated tools for sanctions screening, goods checks, and supply chain transparency, TradeScreen helps financial institutions comply with AML, CTF, and sanctions laws, reducing the risk of regulatory penalties.\n\nIncreased Visibility Across Ecosystems\n\nTradeScreen merges data from multiple sources to provide a transparent view of the entire trade and financial ecosystem. This visibility helps institutions better understand their clients, suppliers, and third-party risks.\n\nSeamless Integration With Existing Infrastructure\n\nTradeScreen is an open, scalable platform that easily integrates with existing banking infrastructure, enabling institutions to leverage its capabilities without extensive system overhauls.'\n\nEnhanced Decision-Making\n\nThe platform delivers actionable insights and transparency into the participants in each transaction, empowering financial institutions to make informed decisions about trade transactions and client relationships.\n\n\nCapabilities\n\nGlobal Trade Risk Mitigation\n\nDetects and prevents risks in trade transactions using a comprehensive database of international regulations and risk checks.\n\n500+ Real-Time Compliance Checks\n\nPerform 500+ real-time checks to ensure trade transactions comply with global regulations, reducing risks and non-compliance.\n\nAI-Driven Knowledge Graph\n\nUnlock insights with an AI-powered graph integrating billions of data points on trade, supply chains, risks, and ownership.\n\nEnd-to-End Transaction Validation\n\nValidate every aspect of trade transactions, ensuring full transparency and compliance from start to finish.\n\nContinuous Risk Updates\n\nStay compliant with evolving regulations, as TradeScreen continuously updates its risk assessment framework in real time.\n\nUser Management Capabilities\n\nEnable role-based access controls to tailor access and permissions across your teams, ensuring data security and governance compliance across workflows.\n\n\nWorkflow Capabilities\n\nSupport for maker-checker workflows, allowing teams to create, review, and approve trade transactions collaboratively. These workflows increase accountability and auditability across departments.\n\nConfiguration & Integration\n\nFlexible Configuration\n\nCustomize workflows, compliance checks, and validation logic based on your internal policies and risk appetite.\n\n\nAvailable via API\n\nAll core TradeScreen features are available through well-documented APIs, enabling seamless integration into existing banking, logistics, or compliance systems.\n\n\nWorkflow Capabilities\n\nThe platform supports maker-checker workflows, allowing multiple teams to collaborate, review, and approve documents efficiently. This enhances accountability and strengthens the overall due diligence process.\n\nPricing Plan:\n\nPricing Model: Platform Subscription (Base) + Optionals \n\n1. Base Platform Subscription Fee Annually: 20000 USD \n2. Optionals (at an extra cost in USD): per transaction checks \n\nDocument Extraction & Classification Module\nTBML Checks Module\nGoods Screening Checks Module\nSanctions & AML Checks Module\nDocumentary Checks Module\nMaritime Checks Module\n\nKindly get in touch with this email ID to understand more about the plan: akshit.gupta@trademo.com\n\n",
     "displayName": "TradeScreen",
     "imageUrl": "https://res.cloudinary.com/drzta9shk/image/upload/v1734085407/blog/Union_aowyfc.svg",
     "localSvgIcon": "/generated/icons/a0b5c5b4-cf45-4d10-ba8c-512126cf6e2c.svg",
@@ -16447,7 +16448,6 @@
     "displayName": "VMware vSphere",
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/VMware-v2.svg",
     "geo_tags": [],
-    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vsphere.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vsphere.png"
   },
   {
