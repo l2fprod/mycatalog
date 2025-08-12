@@ -338,14 +338,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -548,15 +548,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4948,7 +4948,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -4960,7 +4959,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5221,16 +5221,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
       "eu-es",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5388,12 +5388,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6047,6 +6047,104 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/21/artifacts/cache/e4a5d9241a41381fdef1e50269ef92a0-public/DirectLink1.0Exchange.svg",
     "localSvgIcon": "/generated/icons/21.svg",
     "localPngIcon": "/generated/icons/21.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "6fc0c2df-7fbc-470f-aac5-a93af7ef4a92",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dizzion-flex",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "custom_kind_service",
+      "daas",
+      "desktop as a service",
+      "digital_workspaces",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "vdi",
+      "virtualservers",
+      "workspace"
+    ],
+    "plans": [
+      {
+        "id": "4d510257-f9e8-4074-a856-16cf9cf84f0f",
+        "name": "dizzion-flex-commit-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Paygo Commit - 1 Year"
+      },
+      {
+        "id": "44e1078c-2d56-4fdb-bdbc-10f4404a8ff4",
+        "name": "dizzion-flex-commit-3-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Paygo Commit - 3 Year"
+      },
+      {
+        "id": "01260cc0-8093-400e-9884-905f1c6d9e3e",
+        "name": "dizzion-flex-credit-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Prepaid Credits - 1 Year"
+      },
+      {
+        "id": "2da04699-ba50-4cdc-8cd4-a239cb3c5c19",
+        "name": "dizzion-flex-credit-3-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Prepaid Credits - 3 Year"
+      },
+      {
+        "id": "67420bc4-c6bd-48af-852f-7de369a9c6cb",
+        "name": "dizzion-flex-paygo-commit-edu-1-year-",
+        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
+        "displayName": "Paygo Commit EDU - 1 Year "
+      },
+      {
+        "id": "7f3b21e3-2727-4c84-954c-d9153b17eed0",
+        "name": "dizzion-flex-paygo-commit-edu-3-year-",
+        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
+        "displayName": "Paygo Commit EDU - 3 Year "
+      },
+      {
+        "id": "0c9ef593-c4ab-43e3-82f9-b3540c01bcfe",
+        "name": "dizzion-flex-prepaid-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Prepaid - 1 Year"
+      },
+      {
+        "id": "e855679f-3f33-4614-aad3-58ff65c7a522",
+        "name": "dizzion-flex-prepaid-3-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)",
+        "displayName": "Prepaid - 3 Year"
+      },
+      {
+        "id": "ac0ed928-5789-43aa-b737-bc6e788937b0",
+        "name": "dizzion-flex-prepaid-edu-1-year",
+        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located. ",
+        "displayName": "Prepaid EDU - 1 Year"
+      },
+      {
+        "id": "dc061547-bbcf-4d1f-9273-cb3537b17d41",
+        "name": "dizzion-flex-prepaid-edu-3-year-",
+        "description": "Minimum 50 seats required (Per User or Per VM)\n\nDizzion Education plans are only valid for qualified, accredited, educational institutions, including: public or private K-12, elementary, primary, secondary, vocational school, correspondence school, junior college, college, university, scientific or technical school, or military school that is either institutionally accredited by an accrediting agency within the country, state, or province it which it is located.",
+        "displayName": "Prepaid EDU - 3 Year "
+      }
+    ],
+    "description": "Simply and intuitively deploy and manage virtual desktops and apps on IBM Cloud VPC.",
+    "longDescription": "Dizzion Flex enables clients to simply and intuitively deploy and manage their virtual desktop and app workloads on IBM Cloud VPC, leveraging Dizzion’s cloud-native Frame Desktop as a Service (DaaS) platform. Users securely access the apps, data, and resources they need to be productive from the comfort of their favorite web browser – no clients or plug-ins required. Admins can deploy thousands of digital workspaces across the globe in minutes and enjoy powerful enterprise features all managed from a single pane-of-glass web console. With Dizzion Flex on IBM Cloud VPC, organizations are well-prepared to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\n \n- - - \n\n\nFor sales support, reach out to Dizzion directly at channel@dizzion.com.",
+    "displayName": "Dizzion Flex",
+    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
+    "localPngIcon": "/generated/icons/6fc0c2df-7fbc-470f-aac5-a93af7ef4a92.png"
   },
   {
     "geo_tags": [
@@ -7616,14 +7714,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8195,17 +8293,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "ca-mon",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "au-syd",
+      "jp-tok",
+      "eu-de",
+      "us-south",
       "eu-gb",
-      "eu-es"
+      "eu-es",
+      "au-syd",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14655,12 +14753,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -16118,7 +16216,6 @@
     "longDescription": "In your own private space in the IBM Cloud, IBM Cloud VPC combines the security of a private cloud with the scalability of a public cloud. Use Virtual Private Cloud to isolate and provision network segments on the IBM Cloud, where you can deploy and manage compute resources, storage and networking cloud resources.\n\nWith Virtual Server for VPC, you can quickly provision instances with high network performance. When you provision an instance, you select a profile that matches the amount of memory and compute power that you need for the application that you plan to run on the instance. Instances are available on the x86 and s390x architectures. After you provision an instance, you control and manage those infrastructure resources.",
     "displayName": "Virtual Server for VPC",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.instance/artifacts/cache/1ffcc6820ed3116b37b357c876ff38df-public/Cloud-VSI_Icon_app-icon-light-.svg",
-    "localSvgIcon": "/generated/icons/is.instance.svg",
     "localPngIcon": "/generated/icons/is.instance.png"
   },
   {
@@ -17064,6 +17161,13 @@
         "description": "Standard Agentic with Monthly Active Users",
         "displayName": "Standard Agentic with Monthly Active Users",
         "originalName": "standard-agentic-mau"
+      },
+      {
+        "id": "3e674645-220c-4bc1-881d-dabeb86250d0",
+        "name": "standard-agentic-messages",
+        "description": "Standard Agentic Plan with Messages",
+        "displayName": "Standard Agentic with Messages",
+        "originalName": "standard-agentic-messages"
       }
     ],
     "description": "Lighten your workload with IBM watsonx Orchestrate, powered by LLMs. Streamline workflows and automate tasks with a catalog of skills. No specialized training needed.",
@@ -17075,12 +17179,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south",
-      "jp-tok"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -17382,12 +17486,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
