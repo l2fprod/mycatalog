@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,15 +610,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4854,10 +4854,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4865,7 +4861,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5010,6 +5010,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5021,8 +5022,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5283,16 +5283,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
       "eu-es",
+      "us-south",
       "eu-de",
-      "au-syd",
-      "us-east"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5450,12 +5450,12 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8355,17 +8355,17 @@
   },
   {
     "geo_tags": [
+      "ca-mon",
       "eu-de",
       "us-south",
       "eu-gb",
+      "jp-tok",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "ca-mon",
-      "jp-tok",
-      "au-syd"
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13251,8 +13251,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -17067,6 +17067,68 @@
   },
   {
     "geo_tags": [
+      "us-south"
+    ],
+    "id": "94a4aea0-9510-11ee-b512-5b3decec36b3",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "watsonx-intelligence",
+    "pricing_tags": [
+      "allow_internal_users",
+      "paid",
+      "lite",
+      "free"
+    ],
+    "tags": [
+      "ai",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "custom_kind_service",
+      "data_analytics",
+      "free",
+      "iam_compatible",
+      "ibm_created",
+      "lite",
+      "paid",
+      "rc_compatible",
+      "support_ibm",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "6265612e-f664-44b4-b59a-1f5294db0b37",
+        "name": "enterprise",
+        "description": "Premium plan",
+        "displayName": "Premium",
+        "originalName": "Enterprise"
+      },
+      {
+        "id": "50c06abd-6ec6-40ec-8d0d-09f344413c3d",
+        "name": "premium",
+        "description": "Add-on for Cognos Analytics",
+        "displayName": "Add-on for Cognos Analytics",
+        "originalName": "Premium"
+      },
+      {
+        "id": "c51d59ff-d6f3-4c0f-8caf-dfb9dc2c567f",
+        "name": "trial",
+        "description": "30-day free access to Premium features",
+        "displayName": "Trial",
+        "originalName": "Lite"
+      }
+    ],
+    "description": "Get AI-generated personalized insights and data-aware recommendations from your business data, in natural language.",
+    "longDescription": "IBM watsonx BI is a generative AI-powered business intelligence tool that is designed to help you uncover hidden insights from your data. Use natural language to analyze complex data, generate insights and data-aware recommendations that are easy to understand and actionable.\n \nAfter provisioning, the IBM account owner is required to complete the initial setup steps",
+    "displayName": "watsonx BI",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/94a4aea0-9510-11ee-b512-5b3decec36b3/artifacts/cache/a2f91c4e2b8bc5bbdba5c76318d5d75e-public/watsonx%20BI%20Icon%20-%20Light%20mode.svg",
+    "localSvgIcon": "/generated/icons/94a4aea0-9510-11ee-b512-5b3decec36b3.svg",
+    "localPngIcon": "/generated/icons/94a4aea0-9510-11ee-b512-5b3decec36b3.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "eu-de",
       "us-south"
@@ -17242,12 +17304,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south",
-      "jp-tok",
-      "eu-de"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
