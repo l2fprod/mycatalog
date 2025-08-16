@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5283,16 +5283,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "us-south",
+      "eu-gb",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "us-east",
-      "eu-es",
-      "eu-de"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5450,12 +5450,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8355,17 +8355,17 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-osa",
-      "us-east",
+      "jp-tok",
       "eu-gb",
       "eu-es",
-      "jp-tok",
       "au-syd",
       "ca-mon",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "ca-tor",
+      "jp-osa",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14815,12 +14815,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17235,8 +17235,7 @@
       "paid_only",
       "allow_internal_users",
       "free",
-      "lite",
-      "subscription"
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
@@ -17253,7 +17252,6 @@
       "paid",
       "paid_only",
       "rc_compatible",
-      "subscription",
       "support_ibm",
       "us-south",
       "watson"
@@ -17274,25 +17272,11 @@
         "originalName": "lite"
       },
       {
-        "id": "26d01670-980d-4a62-afef-f091a20aaae3",
-        "name": "premium-agentic-mau",
-        "description": "Premium Agentic Plan with MAU for Data Isolation\nTo purchase Premium plan with data isolation [contact us](https://www.ibm.com/account/reg/us-en/subscribe?formid=MAIL-data)",
-        "displayName": "Premium Agentic with Monthly Active Users",
-        "originalName": "premium-agentic-mau"
-      },
-      {
         "id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
         "name": "standard-agentic-mau",
         "description": "Standard Agentic with Monthly Active Users",
         "displayName": "Standard Agentic with Monthly Active Users",
         "originalName": "standard-agentic-mau"
-      },
-      {
-        "id": "3e674645-220c-4bc1-881d-dabeb86250d0",
-        "name": "standard-agentic-messages",
-        "description": "Standard Agentic Plan with Messages",
-        "displayName": "Standard Agentic with Messages",
-        "originalName": "standard-agentic-messages"
       }
     ],
     "description": "Lighten your workload with IBM watsonx Orchestrate, powered by LLMs. Streamline workflows and automate tasks with a catalog of skills. No specialized training needed.",
