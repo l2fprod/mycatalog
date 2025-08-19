@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,15 +610,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4723,7 +4723,7 @@
   },
   {
     "geo_tags": [
-      "eu-gb"
+      "us-south"
     ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "kind": "service",
@@ -4743,15 +4743,13 @@
       "data virtualization",
       "data_management",
       "database",
-      "eu-gb",
       "free",
       "iam_compatible",
       "ibm_created",
       "lite",
       "rc_compatible",
-      "service_endpoint_supported",
       "support_ibm",
-      "vpc_private_endpoint"
+      "us-south"
     ],
     "plans": [
       {
@@ -4759,13 +4757,6 @@
         "name": "lite",
         "description": "One Data Virtualization instance with 1 head and 1 worker node. Head and worker nodes have 4 vCPU and 16 GB RAM per node. Lite instances automatically expire and are deleted after 30 days. Data Virtualization is available on IBM Cloud Pak for Data as a Service.",
         "displayName": "Lite (preprod)",
-        "originalName": "lite"
-      },
-      {
-        "id": "2baffedc-2687-cfde-d063-3cebee671908",
-        "name": "lite-preprod",
-        "description": "One Data Virtualization instance with 1 head and 1 worker node. Head and worker nodes have 4 vCPU and 16 GB RAM per node. Lite instances automatically expire and are deleted after 30 days. Data Virtualization is available on IBM Cloud Pak for Data as a Service.",
-        "displayName": "Lite (Pre-prod)",
         "originalName": "lite"
       }
     ],
@@ -5017,8 +5008,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5029,7 +5018,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5290,14 +5281,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "us-south",
-      "au-syd",
-      "us-east",
       "eu-gb",
       "eu-es"
     ],
@@ -8362,17 +8353,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "au-syd",
       "eu-de",
       "us-south",
-      "eu-gb",
+      "eu-es",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "ca-mon"
+      "jp-tok",
+      "ca-mon",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14822,12 +14813,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17295,12 +17286,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -17602,12 +17593,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
