@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,15 +610,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5008,6 +5008,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5019,8 +5020,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5282,14 +5282,14 @@
   {
     "geo_tags": [
       "us-south",
+      "eu-de",
+      "eu-es",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "eu-de",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -5448,12 +5448,12 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6262,6 +6262,105 @@
     "imageUrl": "https://broker.dns-svcs.cloud.ibm.com/dns_svcs_icon.svg",
     "localSvgIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.svg",
     "localPngIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "28621573-e17f-42ab-8ac1-cbefc3d1616f",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dynamiq-ai-agent-legal",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "agent",
+      "agentic",
+      "custom_kind_service",
+      "developer",
+      "dynamiq",
+      "genai",
+      "global",
+      "grok",
+      "ibm_third_party",
+      "legal",
+      "llm",
+      "orchestrate",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "research",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "f5e86158-fe8b-4187-9b07-05d7e26bf5bd",
+        "name": "per-use-plan",
+        "description": "Flat fee per API call to the Agent",
+        "displayName": "per-use-plan"
+      }
+    ],
+    "description": "A comprehensive legal research agent supporting legal professionals, law students, and individuals requiring legal information",
+    "longDescription": "The Dynamiq Legal Agent is a comprehensive legal research assistant that supports legal professionals, law students, and individuals requiring legal information through a structured three-phase approach:\n1.\tClient intake and case analysis\n2.\tIterative legal research using EXA search capabilities\n3.\tProfessional legal document structuring and synthesis\nThe agent operates as a multi-functional tool combining paralegal intake procedures, systematic legal research methodology, and professional document drafting, powered by xAI Grok 4 for advanced reasoning and EXA for precise legal information retrieval.\n\nIt is an API-only service designed for IBM watsonx Orchestrate.\nImportant Disclaimer: This agent is not providing legal advice; this is research synthesis only. \n",
+    "displayName": "Dynamiq AI Legal Agent",
+    "imageUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65973c215fc65052a9d1fc60/tvzLN6Ye61wlWYgGI62Lw.png",
+    "localPngIcon": "/generated/icons/28621573-e17f-42ab-8ac1-cbefc3d1616f.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "81ed7192-3d50-421c-be0c-7f44a2e40ee9",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dynamiq-ai-agent-001",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "agent",
+      "agentic",
+      "custom_kind_service",
+      "developer",
+      "dynamiq",
+      "genai",
+      "global",
+      "ibm_third_party",
+      "llm",
+      "medical",
+      "orchestrate",
+      "orchestrator",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "research",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "826dfff2-dd8f-4ca5-aa65-be741857787d",
+        "name": "per-use-plan",
+        "description": "Flat fee per API call to the Agent",
+        "displayName": "per-use-plan"
+      }
+    ],
+    "description": "This is Medical Researcher AI Agent that supports clinicians, patients, and caregivers. ",
+    "longDescription": "This agent is a medical researcher and assistant  that supports clinicians, patients, and caregivers by providing recommendations and guidance across a wide range of medical conditions. \nIt can recommend clinical treatment for a patient (decisions belong to the doctor), help with interpretation of diagnostic results, and answer general questions such as guidelines, common practices or research findings.\nIt is an API-only service designed for IBM watsonx Orchestrate.\nDISCLAIMER: The agent does not replace professional medical judgment or legal requirements.",
+    "displayName": "Dynamiq AI Medical Researcher Agent",
+    "imageUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65973c215fc65052a9d1fc60/tvzLN6Ye61wlWYgGI62Lw.png",
+    "localPngIcon": "/generated/icons/81ed7192-3d50-421c-be0c-7f44a2e40ee9.png"
   },
   {
     "id": "d1e3f0d2-0f49-ddfd-0eb9-2897b9d3a45d",
@@ -7774,14 +7873,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8353,17 +8452,17 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
+      "jp-tok",
+      "au-syd",
+      "ca-mon",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "ca-mon",
+      "eu-es",
       "eu-de",
       "us-south",
-      "eu-es",
-      "jp-tok",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9387,7 +9486,7 @@
       {
         "id": "8f581ac9-1bf5-4648-9457-5a828d0822d6",
         "name": "essential-edition",
-        "description": "This plan provides you with all the core capabilities of IBM Match 360, a multi-domain operational and analytical master data management (MDM) service that delivers at scale an integrated and consolidated view of critical enterprise data across data silos, leveraging intelligent and tunable data matching and entity resolution as well as management of other related entities across the enterprise.  In addition, advanced capabilities around governance, including support for AI assisted profiling and mapping of data source to data model, data quality assessment of inputs and resultant resolved entities, as well as ability to enforce enterprise data quality and data privacy policies for master data is included.\n*** Requires subscription of IBM Knowledge Catalog as a pre-requisite",
+        "description": "This plan provides you with the core capabilities of IBM Match 360, a multi-domain operational and analytical master data management (MDM) service that delivers at scale an integrated and consolidated view of critical enterprise data across data silos, leveraging intelligent and tunable data matching and entity resolution as well as management of other related entities across the enterprise.\n\n*** Advanced governance and quality capabilities, including support for Al assisted profiling and mapping, data quality assessment of inputs and resolved entities, as well as enforcing enterprise data quality and privacy policies for master data is provided by an additional subscription of IBM watsonx.data intelligence Standard plan.",
         "displayName": "Essential",
         "originalName": "Essential-Edition"
       },
@@ -17557,7 +17656,7 @@
       {
         "id": "e07028bb-99ea-42fd-a59c-ed15d110623b",
         "name": "trial",
-        "description": "Trial plan services, including all data and assets, are deleted after 30 days. Trial limitations are described in Documentation under the section \"Feature differences between watsonx.data integration plans\".",
+        "description": "Trial access ends after 30 days, at which point you cannot run jobs. However, all data and assets are securely retained and can be re-accessed after upgrading to a paid plan. Trial limitations are described in Documentation under the section \"Feature differences between watsonx.data integration plans\".",
         "displayName": "Trial",
         "originalName": "trial"
       }
@@ -17571,12 +17670,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
