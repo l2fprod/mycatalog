@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,7 +610,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -618,7 +617,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5281,16 +5281,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "eu-es",
       "us-south",
       "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-gb",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7873,14 +7873,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8452,17 +8452,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "ca-mon",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
+      "eu-de",
+      "us-south",
       "au-syd",
-      "eu-gb"
+      "ca-mon",
+      "eu-gb",
+      "eu-es",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9692,10 +9692,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12094,6 +12094,7 @@
       "allow_internal_users"
     ],
     "tags": [
+      "network",
       "allow_internal_users",
       "che01",
       "custom_kind_service",
@@ -12111,7 +12112,6 @@
       "mad02",
       "mad04",
       "mon01",
-      "network_interconnectivity",
       "osa21",
       "power-iaas",
       "rc_compatible",
@@ -14155,12 +14155,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17363,12 +17363,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
