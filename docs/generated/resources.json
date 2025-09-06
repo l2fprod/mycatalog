@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,6 +610,7 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
@@ -617,8 +618,7 @@
       "us-east",
       "au-syd",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1531,6 +1531,53 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot.svg",
     "localPngIcon": "/generated/icons/is.snapshot.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "759e4c05-269b-4d67-b3b3-cae600271238",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "brighthive",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "agentic ai",
+      "custom_kind_service",
+      "data",
+      "data agent",
+      "data analytics",
+      "data engineering",
+      "data management",
+      "data visualization",
+      "data_analytics",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "6ce12cf1-c3f0-4607-bb90-f6375a530769",
+        "name": "enterprise-",
+        "description": "Transform data work at scale with an end-to-end agentic data platform for the entire data management lifecycle - ingesting, governing, transforming, analyzing, and visualizing data - for all your rich , private data assets across your company. ",
+        "displayName": "Enterprise "
+      }
+    ],
+    "description": "BrightAgent is your agentic data companion that makes the end to end complex data analysis work easy for everyone!",
+    "longDescription": "BrightAgent is your agentic data companion that makes the end to end complex data analysis work easy for everyone! Powered by a team of specialized data agents that are engineered to focus on the end to end data workflow - ingestion, governance, retervial, engineering, analytics and visualization - BrightAgent orchestrates every step of the data workflow for you. A conversational natural langugage user interface empowers you to work with BrightAgent without needing any technical data skills. Every team member, regarless of technical skill level, can easily unlock rich insights from all their data assets, wherever the data lives. From 600+ connectors for data ingestion, plus ability to upload structured and unstructured dat, BrightAgent guides you through data quality checks, governance tasks, schema creation, metadata management, and full data transformations to ensure clean data pipelines are established to power all your agentic insight and analytics needs. The data workflow journey is broken and BrightAgent, your super data agent, is able to fix it end to end, transforming everyone's work to be data informed work.",
+    "displayName": "BrightAgent",
+    "imageUrl": "https://osb.app.brighthive.net/logo.png",
+    "localPngIcon": "/generated/icons/759e4c05-269b-4d67-b3b3-cae600271238.png"
   },
   {
     "geo_tags": [
@@ -5281,16 +5328,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
+      "us-south",
+      "eu-gb",
+      "eu-es",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es",
-      "us-south"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5427,7 +5474,7 @@
       {
         "id": "Performance",
         "name": "performance",
-        "description": "Base configuration starts with 4 vCPUs, 16 GB of RAM, 400 IOPS and 50GB of storage.\n\nThe starting configuration provides one SQL database per service instance residing on dedicated VPC machines. Scale your database up to 128 vCPUs (1024 GB of memory) and 40 TB of storage for data and logs. Gen 3 offers a high availability option that includes one database running on two dedicated virtual servers. The high availability instances are provisioned across multiple availability zones. Scale your compute, storage and IOPS independently to achieve the perfect price/performance fit.\n\nThe service is billed hourly based on the number of resource units. Monthly resource units are shown for machine types during selection.  Storage requires 0.0125 RU per 20 GB/month and 0.0375 RU per 100 IOPS/month.  Backups require 0.3125 RU per TB/month.",
+        "description": "Base configuration starts with 4 vCPUs, 16 GB of RAM, 400 IOPS and 50GB of storage.\n\nThe starting configuration provides one SQL database per service instance residing on dedicated VPC machines. Scale your database up to 128 vCPUs (1024 GB of memory) and 40 TB of storage for data and logs. Gen 3 offers a high availability option that includes one database running on two dedicated virtual servers. The high availability instances are provisioned across multiple availability zones. Scale your compute, storage and IOPS independently to achieve the perfect price/performance fit.\n\nThe service is billed hourly based on the number of resource units. Monthly resource units are shown for machine types during selection. Storage requires 2 RU per 20 GB/month and 5.7 RU per 100 IOPS/month. Backups require 52.5 RU per TB/month.",
         "displayName": "Performance (Gen 3)",
         "originalName": "performance"
       },
@@ -5448,12 +5495,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7816,6 +7863,47 @@
     "localPngIcon": "/generated/icons/3dacb5a3-de4a-4361-9f39-0b6657f89f37.png"
   },
   {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "e8294950-6243-4f19-ad52-537270c5ceb5",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "heimr-cps01",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "compute",
+      "consulting_tab",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "professional services",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "c216a334-3a36-438c-99f5-4a3fa106eb91",
+        "name": "professional-services",
+        "description": "Professional Services Consumption Unit",
+        "displayName": "professional-services"
+      }
+    ],
+    "description": "We can manage and migrate your IBM Cloud environment",
+    "longDescription": "Heimr can manage and support your IBM Cloud environment.\nOur team is ready to build with our partners taylor made solution.",
+    "displayName": "heimr.co - Cloud Professional Services",
+    "imageUrl": "https://heimr.co/wp-content/uploads/2025/01/heimr.logo_.white_.v2_square.png",
+    "localPngIcon": "/generated/icons/e8294950-6243-4f19-ad52-537270c5ceb5.png"
+  },
+  {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-horizon",
     "kind": "service",
     "metadata": {
@@ -7873,14 +7961,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8452,17 +8540,17 @@
   },
   {
     "geo_tags": [
+      "ca-mon",
+      "eu-es",
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "jp-tok",
-      "au-syd",
-      "ca-mon"
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14890,12 +14978,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17446,12 +17534,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -17670,12 +17758,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
