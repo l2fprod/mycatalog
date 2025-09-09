@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,15 +610,15 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1037,13 +1037,6 @@
         "description": "Pricing plan for cx3d-metal-64x128",
         "displayName": "cx3d-metal-64x128",
         "originalName": "cx3d-metal-64x128"
-      },
-      {
-        "id": "61b99453-8f4c-4acf-9dbd-6ecc3c25f7da",
-        "name": "gx3d-metal-224x2048x8mi300x",
-        "description": "Pricing plan for gx3d-metal-224x2048x8mi300x",
-        "displayName": "gx3d-metal-224x2048x8mi300x",
-        "originalName": "gx3d-metal-224x2048x8mi300x"
       },
       {
         "id": "7dc7b1d9-0388-428d-a7ac-e4b6037e9b87",
@@ -4244,6 +4237,62 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "26f2dc01-48da-4d5c-babe-ce4a2278c3c4",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "corizance-aml-screening",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "aml",
+      "custom_kind_service",
+      "fraud",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "pep",
+      "rc_compatible",
+      "risk",
+      "sanctions",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "73db11f4-923e-4740-be08-2fa4a1f76fdf",
+        "name": "Starter",
+        "description": "CORIZANCE AML Screening – Sanctions & PEP Risk Intelligence\n\nAI-Powered, Locally Deployed AML Compliance Solution for Regulated Enterprises\nCORIZANCE AML Screening is a next-generation, AI-driven platform purpose-built for detecting Sanctions and Politically Exposed Person (PEP) exposures. Designed for compliance-intensive industries, CORIZANCE provides high-performance, low-friction screening capabilities—backed by enterprise-grade security and a unique dedicated deployment model that meets local regulatory and data sovereignty requirements.\n\nUnlike conventional SaaS tools hosted in multi-tenant global environments, CORIZANCE delivers isolated, country-specific cloud environments for every client—ensuring uncompromised data privacy, control, and legal compliance.\n\nKey Features & Differentiators\n✅ Dedicated Local Environments: Each customer instance is provisioned in a local cloud region (BYOVPC or fully managed), ensuring data residency, compliance with jurisdictional laws (e.g., GDPR, India DPDP, UK DPA), and organizational isolation.\n\n🔐 Enterprise-Grade Security: Includes full support for SSO, Multi-Factor Authentication, private network integration, and customer-owned encryption keys (optional).\n\n🤖 Advanced AI Matching Engine: Smart fuzzy logic and machine learning reduce false positives, increase match confidence, and save compliance teams hours per day.\n\n🌍 Real-Time Screening: Automatically updated with the latest global Sanctions and PEP lists from the UN, US (OFAC), UK (HMT), EU, Australia, New Zealand, and India.\n\n🛠️ Custom List Support: Private or industry-specific watchlists can be integrated for tailored compliance (available upon request).\n\n📊 Flexible Access: RESTful API and user-friendly web dashboard for seamless integration and operations.\n\n📥 Bulk Uploads & Onboarding: Ideal for periodic KYC reviews, remediation projects, and customer onboarding.\n\n🔌 Open Integration Ecosystem: Easily connect with enterprise risk, GRC, and case management platforms.\n\n🤝 Trusted by Industry Leaders: Adopted across banks, fintechs, and regulatory bodies globally.\n\nStarter - for entry-level small businesses and/or pilots and early-stage deployments\nUpto 500 Screenings: $300;\nPer Extra Screening: $0.50;\nOne-Time Setup Fee: $2000;\n\nThe plan include: full feature set, regional cloud deployment, 99.9% uptime SLA, and standard support.\n🎯 On-demand/Optional add-ons: 24/7 priority support, custom compliance reporting, advanced audit logs, training and onboarding packages.\n\n🧭 Why CORIZANCE?\nIn a world of growing regulatory scrutiny, data localization laws, and reputational risk, CORIZANCE stands apart by combining world-class AI with a compliance-first architecture. By delivering a dedicated, country-specific AML solution, you don’t just meet regulations—you get ahead of them.\n\nWhether you’re a regional bank, a global fintech, or a government-regulated utility, CORIZANCE gives you the agility of SaaS with the control of on-prem—without compromise.",
+        "displayName": "Starter"
+      },
+      {
+        "id": "d4d83b50-5d81-4bd3-9158-3d7526a98b63",
+        "name": "enterprise",
+        "description": "CORIZANCE AML Screening – Sanctions & PEP Risk Intelligence AI-Powered, Locally Deployed AML Compliance Solution for Regulated Enterprises CORIZANCE AML Screening is a next-generation, AI-driven platform purpose-built for detecting Sanctions and Politically Exposed Person (PEP) exposures. Designed for compliance-intensive industries, CORIZANCE provides high-performance, low-friction screening capabilities—backed by enterprise-grade security and a unique dedicated deployment model that meets local regulatory and data sovereignty requirements. Unlike conventional SaaS tools hosted in multi-tenant global environments, CORIZANCE delivers isolated, country-specific cloud environments for every client—ensuring uncompromised data privacy, control, and legal compliance. Key Features & Differentiators ✅ Dedicated Local Environments: Each customer instance is provisioned in a local cloud region (BYOVPC or fully managed), ensuring data residency, compliance with jurisdictional laws (e.g., GDPR, India DPDP, UK DPA), and organizational isolation. 🔐 Enterprise-Grade Security: Includes full support for SSO, Multi-Factor Authentication, private network integration, and customer-owned encryption keys (optional). 🤖 Advanced AI Matching Engine: Smart fuzzy logic and machine learning reduce false positives, increase match confidence, and save compliance teams hours per day. 🌍 Real-Time Screening: Automatically updated with the latest global Sanctions and PEP lists from the UN, US (OFAC), UK (HMT), EU, Australia, New Zealand, and India. 🛠️ Custom List Support: Private or industry-specific watchlists can be integrated for tailored compliance (available upon request). 📊 Flexible Access: RESTful API and user-friendly web dashboard for seamless integration and operations. 📥 Bulk Uploads & Onboarding: Ideal for periodic KYC reviews, remediation projects, and customer onboarding. 🔌 Open Integration Ecosystem: Easily connect with enterprise risk, GRC, and case management platforms. 🤝 Trusted by Industry Leaders: Adopted across banks, fintechs, and regulatory bodies globally. Starter - for large scale businesses Upto 25000 Screenings: $4999; Per Extra Screening: $0.20; One-Time Setup Fee: $9999; The plan include: full feature set, regional cloud deployment, 99.9% uptime SLA, and standard support. 🎯 On-demand/Optional add-ons: 24/7 priority support, custom compliance reporting, advanced audit logs, training and onboarding packages. 🧭 Why CORIZANCE? In a world of growing regulatory scrutiny, data localization laws, and reputational risk, CORIZANCE stands apart by combining world-class AI with a compliance-first architecture. By delivering a dedicated, country-specific AML solution, you don’t just meet regulations—you get ahead of them. Whether you’re a regional bank, a global fintech, or a government-regulated utility, CORIZANCE gives you the agility of SaaS with the control of on-prem—without compromise.",
+        "displayName": "Enterprise"
+      },
+      {
+        "id": "51a91ef0-c553-415d-ae14-0128b104309b",
+        "name": "growth",
+        "description": "CORIZANCE AML Screening – Sanctions & PEP Risk Intelligence AI-Powered, Locally Deployed AML Compliance Solution for Regulated Enterprises CORIZANCE AML Screening is a next-generation, AI-driven platform purpose-built for detecting Sanctions and Politically Exposed Person (PEP) exposures. Designed for compliance-intensive industries, CORIZANCE provides high-performance, low-friction screening capabilities—backed by enterprise-grade security and a unique dedicated deployment model that meets local regulatory and data sovereignty requirements. Unlike conventional SaaS tools hosted in multi-tenant global environments, CORIZANCE delivers isolated, country-specific cloud environments for every client—ensuring uncompromised data privacy, control, and legal compliance. Key Features & Differentiators ✅ Dedicated Local Environments: Each customer instance is provisioned in a local cloud region (BYOVPC or fully managed), ensuring data residency, compliance with jurisdictional laws (e.g., GDPR, India DPDP, UK DPA), and organizational isolation. 🔐 Enterprise-Grade Security: Includes full support for SSO, Multi-Factor Authentication, private network integration, and customer-owned encryption keys (optional). 🤖 Advanced AI Matching Engine: Smart fuzzy logic and machine learning reduce false positives, increase match confidence, and save compliance teams hours per day. 🌍 Real-Time Screening: Automatically updated with the latest global Sanctions and PEP lists from the UN, US (OFAC), UK (HMT), EU, Australia, New Zealand, and India. 🛠️ Custom List Support: Private or industry-specific watchlists can be integrated for tailored compliance (available upon request). 📊 Flexible Access: RESTful API and user-friendly web dashboard for seamless integration and operations. 📥 Bulk Uploads & Onboarding: Ideal for periodic KYC reviews, remediation projects, and customer onboarding. 🔌 Open Integration Ecosystem: Easily connect with enterprise risk, GRC, and case management platforms. 🤝 Trusted by Industry Leaders: Adopted across banks, fintechs, and regulatory bodies globally. Growth - for small to medium size businesses; Upto 5000 Screenings: $1999; Per Extra Screening: $0.35; One-Time Setup Fee: $4999; The plan include: full feature set, regional cloud deployment, 99.9% uptime SLA, and standard support. 🎯 On-demand/Optional add-ons: 24/7 priority support, custom compliance reporting, advanced audit logs, training and onboarding packages. 🧭 Why CORIZANCE? In a world of growing regulatory scrutiny, data localization laws, and reputational risk, CORIZANCE stands apart by combining world-class AI with a compliance-first architecture. By delivering a dedicated, country-specific AML solution, you don’t just meet regulations—you get ahead of them. Whether you’re a regional bank, a global fintech, or a government-regulated utility, CORIZANCE gives you the agility of SaaS with the control of on-prem—without compromise.",
+        "displayName": "Growth"
+      }
+    ],
+    "description": "Automated AML screening against global sanctions and PEP lists to help detect financial crime and ensure compliance",
+    "longDescription": "Corizance AML Screening is a cloud-based compliance solution that enables organizations to automatically screen individuals and entities against global sanctions lists, politically exposed persons (PEP), and watchlists. Designed to support anti-money laundering (AML) obligations, this service helps financial institutions, fintechs, and regulated businesses detect potential risks and prevent financial crime.\n\nThe platform supports bulk data uploads, API-based integration, and real-time search, offering flexibility for both batch and interactive workflows. With robust matching algorithms, fuzzy logic, and regular updates of sanctions data from official sources (OFAC, UN, EU, UK, Australia, SEBI), Corizance AML Screening ensures high accuracy and comprehensive coverage.\n\nKey features include:\n\n1.Sanctions and PEP screening using structured and unstructured data\n\n2.Support for CSV, Excel, form-based, and JSON input\n\n3.Real-time and bulk screening capabilities\n\n4.High-performance matching with fuzzy logic\n\nWhether you’re onboarding new customers, conducting periodic reviews, or ensuring continuous compliance, Corizance AML Screening provides a scalable and efficient solution to meet your regulatory requirements.\n\n",
+    "displayName": "CORIZANCE AML Screening",
+    "imageUrl": "https://i.imgur.com/mFJRC36.png",
+    "localPngIcon": "/generated/icons/26f2dc01-48da-4d5c-babe-ce4a2278c3c4.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "eu-de",
       "eu-gb",
@@ -4899,10 +4948,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4910,7 +4955,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5055,7 +5104,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5067,7 +5115,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5328,16 +5377,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-es",
       "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-gb",
+      "eu-es",
       "au-syd",
       "us-east",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5495,12 +5544,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7961,14 +8010,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8169,6 +8218,7 @@
     "geo_tags": [
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
@@ -8196,6 +8246,7 @@
       "allow_internal_users",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "content",
@@ -8540,16 +8591,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "jp-tok",
       "au-syd",
-      "ca-mon",
+      "eu-de",
+      "us-south",
       "eu-es",
+      "jp-tok",
+      "ca-mon",
       "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -9332,6 +9383,13 @@
       "vpc"
     ],
     "plans": [
+      {
+        "id": "5597d2a9-06e1-419e-ab48-9b90c5e5ee3c",
+        "name": "distributed-network-load-balancer-gen2-sdn",
+        "description": "Network Load Balancer for VPC (SDN).  Pricing will cover Distributed Network Load Balancer and Service Distributed Network Load Balancer.",
+        "displayName": "Network Load Balancer for VPC (SDN)",
+        "originalName": "distributed-network-load-balancer-gen2-sdn"
+      },
       {
         "id": "6092eed9-b0a4-4933-86dd-5532b22274dc",
         "name": "gen1-load-balancer",
@@ -13115,6 +13173,87 @@
     "geo_tags": [
       "global"
     ],
+    "id": "26b3d118-9e22-498a-bf3e-f113bf60ce7b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "profi-vcfcomplete-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "migration",
+      "aerospaceanddefense",
+      "agriculture",
+      "analysis",
+      "automotive",
+      "banking",
+      "chemicalandpetroleum",
+      "constructionandengineering",
+      "consulting",
+      "consulting_tab",
+      "consumerproducts",
+      "custom_kind_service",
+      "electronics",
+      "enablement",
+      "feasability",
+      "federalgovernment",
+      "financialsector",
+      "freightandlogistics",
+      "global",
+      "government",
+      "ibm_third_party",
+      "industrials",
+      "insurance",
+      "itconsulting",
+      "machinery",
+      "managed",
+      "managedservice",
+      "manufactoring",
+      "migration_tools",
+      "oilandgas",
+      "paid",
+      "paid_only",
+      "performance",
+      "profi",
+      "publicsafetyandpolicing",
+      "publicsectorandngos",
+      "publictransport",
+      "rc_compatible",
+      "retail",
+      "service",
+      "support",
+      "support_third_party",
+      "technology",
+      "transportation",
+      "vcf",
+      "vcfasaservicemultitenant",
+      "vcfasaservicesingletenant",
+      "vcfonclassic",
+      "vcfonvpc",
+      "workshop"
+    ],
+    "plans": [
+      {
+        "id": "b73c9501-db82-4911-b55e-c2ecd4925627",
+        "name": "pricing-profi-vcfcomplete-service",
+        "description": "This service offering is provided by the IBM Cloud specialists at PROFI Engineering Systems AG in Germany. \nThe offering includes the complete consulting, designing and the migration or extension of your local \nVMware by Broadcom workloads to the IBM Cloud followed by all futher needed acivities.\nBeside that same apply for building a new site or new cloud-only infrastructure in the IBM Cloud.\n\nThe service offering includes the following activities: \n1. Feasibility study for migrating or extending the on-premise environment to the IBM Cloud\n2. Support with the definition of the required services and, if necessary, with the configuration for pricing\n3. Professional Services for setting up the landing zone (IBM Cloud Account, networking, VPN connection, VPC environment, etc.) \n4. Professional Services for setting up the choosen VCF offering \n5. Support for migration, extension and commissioning \n6. Support in setting up backup solutions. \nThe minimum order is set at one VCFcomplete Service Unit. \nOne workday means 8 hours. \nNeed someting else? Just ask us: vcfservice@profi-ag@profi-ag.de Please contact us before ordering: vcfservice@profi-ag.de",
+        "displayName": "pricing-profi-vcfcomplete-service"
+      }
+    ],
+    "description": "PROFI Services for building your environment around VCF (VMware by Broadcom) in the IBM Cloud",
+    "longDescription": "PROFI Engineering Systems AG offers the VCFcomplete services to enable a smooth transition or extension of your onprem \nVMware by Broadcom infrastructure to the IBM Cloud, empowering your business to leverage the reliability and scalability \nof the different VCF offerings in the IBM Cloud.\n\nAll services offered are designed to make your transition or extension to the IBM Cloud risk-free and as smooth as possible.\n\nBenefits:\n•\tDesign and Architecture Support: \nUse the service to get a personally designed and architected environment in the IBM Cloud\n•\tMigration and Extension Support: \nUse the service to easily migrate or extend your environment to the IBM Cloud\n•\tEnhanced Scalability and Reliability:\nLeverage the benefits of the different VCF offerings in the IBM Cloud to achieve enhanced scalability and reliability for \n your workloads.\n•\tFuture-Proof Infrastructure:\nFocus on your business instead of focusing on your IT infrastructure by using IBM VCF offerings.\n•\tCost-Efficiency:\nOptimize costs by the advantages of moving your workloads to the IBM VCF offerings by reducing permanent overhead and \n disaster reservations.\n\nAll services offered can of course also be called up individually.\nDo you need certain services that are not included in this description? Then write to us at vcfservice@profi-ag.de and \nwe will find a solution together.\n\nPlease contact us before ordering: vcfservice@profi-ag.de",
+    "displayName": "PROFI VCFcomplete Service",
+    "imageUrl": "https://www.profi-ag.de/wp-content/uploads/2024/12/profiag_logo_32x32.png",
+    "localPngIcon": "/generated/icons/26b3d118-9e22-498a-bf3e-f113bf60ce7b.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "7c03a06c-f1bb-46f8-84d8-9378432b2804",
     "kind": "service",
     "metadata": {
@@ -14243,12 +14382,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-east",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17451,12 +17590,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -17758,12 +17897,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "ca-tor"
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
