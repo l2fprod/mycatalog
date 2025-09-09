@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,15 +610,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5377,16 +5377,16 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "au-syd",
+      "us-east",
       "us-south",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es",
-      "au-syd",
-      "us-east",
-      "eu-de"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5544,12 +5544,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8591,17 +8591,17 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-osa",
-      "us-east",
-      "au-syd",
       "eu-de",
       "us-south",
       "eu-es",
       "jp-tok",
+      "au-syd",
       "ca-mon",
-      "eu-gb"
+      "eu-gb",
+      "br-sao",
+      "ca-tor",
+      "jp-osa",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -17456,6 +17456,7 @@
       "custom_kind_service",
       "eu-de",
       "free",
+      "iam_compatible",
       "ibm_created",
       "lightspeed",
       "paid",
@@ -17500,6 +17501,12 @@
         "description": "For enterprise companies planning to modernize their enterprise Java applications and accelerate the software development lifecycle.",
         "displayName": "IBM watsonx Code Assistant Standard",
         "originalName": "standard-wca"
+      },
+      {
+        "id": "7d7184a7-dba0-4b88-9b2f-13f633edad48",
+        "name": "standard-z",
+        "description": "The Standard plan for IBM watsonx Code Assistant for Z as a Service provides everything you need to understand your application, explain & generate Code",
+        "displayName": "IBM watsonx code Assistant for Z as a Service Standard"
       },
       {
         "id": "09e17443-2684-4eac-805d-ef0fe3e70148",
@@ -17590,12 +17597,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
