@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,15 +610,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4950,6 +4950,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4957,11 +4961,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5379,12 +5379,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es",
       "us-south",
       "eu-de",
       "au-syd",
@@ -5546,13 +5546,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8014,14 +8014,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8595,17 +8595,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "ca-mon",
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "eu-es",
-      "au-syd"
+      "jp-tok",
+      "au-syd",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -18121,14 +18121,14 @@
       {
         "id": "4c32cc6a-48b9-462a-941f-3d2c05ab09ee",
         "name": "essentials",
-        "description": "The watsonx.governance Essentials plan enables organizations to monitor AI Models for quality, health, and trust metrics; explanations and what-if analysis, and automatically document model metadata with custom use cases.",
+        "description": "The watsonx.governance Essentials plan enables organizations to monitor AI Models for quality, health, and trust metrics; explanations and what-if analysis, and automatically document model metadata with custom use cases.\n\nA paid instance of a supported database (Databases for PostgreSQL, Db2 or Db2 warehouse) must be used.",
         "displayName": "Essentials",
         "originalName": "Essentials"
       },
       {
         "id": "967ba182-c6e0-4adc-92ef-661a822cc1d7",
         "name": "lite",
-        "description": "The watsonx.governance Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\nInternal Postgres db instance that supports the above capacity; Data cannot be migrated from this instance; If upgrading to Essentials plan and continuity is required from Lite plan, please provision your own paid instances of supported databases from IBM Cloud Catalog",
+        "description": "The watsonx.governance Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\n- The Lite plan includes a free internal PostgreSQL database instance with a maximum size of 100 MB.\n\n- The instance is hosted and not directly accessible.\n- Data in this database cannot be migrated and is lost if the instance is reconfigured.\n- The internal database is not GDPR compliant.\n- For workloads that process personally identifiable information (PII), or when upgrading from the Lite plan to the Essentials plan with continuity requirements, a paid instance of a supported database from the IBM Cloud catalog must be used.",
         "displayName": "Lite",
         "originalName": "lite"
       },
