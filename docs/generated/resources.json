@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,15 +610,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -2753,6 +2753,7 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -2785,6 +2786,7 @@
       "eu-gb",
       "iam_compatible",
       "ibm_created",
+      "in-che",
       "is.composite",
       "jp-osa",
       "jp-tok",
@@ -5377,16 +5379,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "us-south",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb"
+      "eu-gb",
+      "eu-es",
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5548,6 +5550,7 @@
       "jp-tok",
       "us-east",
       "au-syd",
+      "eu-gb",
       "eu-de",
       "us-south"
     ],
@@ -5577,6 +5580,7 @@
       "dedicated",
       "dev_ops",
       "eu-de",
+      "eu-gb",
       "freesia",
       "iam_compatible",
       "ibm_created",
@@ -8010,14 +8014,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8591,17 +8595,17 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
-      "eu-es",
       "jp-tok",
-      "au-syd",
       "ca-mon",
       "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10816,13 +10820,6 @@
         "originalName": "tels-build-saphana"
       },
       {
-        "id": "69e6b868-27ef-4137-900b-93d8a3ceb5e6",
-        "name": "tels-build-storagepro",
-        "description": "IBM will help implement a backup and restore solution for IBM Power Virtual Server (PowerVS) using IBM Storage Protect for Cloud. IBM will assist with a rapid deployment of the IBM Storage Protect environment including associated storage, as well as the connectivity of IBM Storage Protect agents on PowerVS to the IBM Storage Protect server for one IBM Storage Protect server environment and up to four IBM Storage Protect clients.",
-        "displayName": "Build IBM Storage Protect Solution for IBM Power Virtual Server",
-        "originalName": "tels-build-storagepro"
-      },
-      {
         "id": "82883374-ade2-48de-ae40-ac6023b9ca92",
         "name": "tels-migrate-powervs",
         "description": "This Service is to help Client deploy IBM Power technologies based on a jointly developed plan and targeted use cases.",
@@ -12295,6 +12292,8 @@
     "description": "Provision flexible, secure, and scalable compute capacity for Power Systems enterprise workloads ",
     "longDescription": "Power Systems Virtual Server projects deliver flexible compute capacity for Power Systems workloads. Integrated with the IBM Cloud platform for on-demand provisioning, this offering provides a secure and scalable server virtualization environment built upon the advanced RAS features and leading performance of the Power Systems™ platform.",
     "displayName": "Power Virtual Server Route",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/abd259f0-9990-11e8-acc8-b9f54a8f1661/artifacts/cache/66c89a2644c2ac54745d6ab9ecf4da8e-public/IBM_Power_CloudCatalog%202.svg",
+    "localSvgIcon": "/generated/icons/power-iaas.route.svg",
     "localPngIcon": "/generated/icons/power-iaas.route.png"
   },
   {
@@ -13553,8 +13552,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14806,14 +14805,14 @@
       {
         "id": "8fae9985-978c-47fc-8073-38ca2ed46ead",
         "name": "capacity",
-        "description": "S3 Object Storage\nFlash & HDD disks\n&lt;20ms latency\nPerfect for Archive, Backup and Deep Data Lakes\n",
+        "description": "S3 Object Storage\nFlash & HDD disks\n&lt;20ms latency\nPerfect for Archive, Backup and Deep Data Lakes\n\n",
         "displayName": "Capacity",
         "originalName": "capacity"
       },
       {
         "id": "94f887fd-e984-4298-8efa-6ae7d3adc9d6",
         "name": "performance",
-        "description": "Block and S3 Object Storage\nAll NVME Disks\n4k IOPS/TiB at &lt; 2ms latency\nVMware Ready\n",
+        "description": "Block and S3 Object Storage\nAll NVME Disks\n4k IOPS/TiB at &lt; 2ms latency\nVMware Ready\n\n",
         "displayName": "Performance",
         "originalName": "performance"
       }
@@ -17597,12 +17596,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -17904,12 +17903,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
