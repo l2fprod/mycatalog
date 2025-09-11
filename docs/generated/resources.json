@@ -400,14 +400,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -610,6 +610,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south",
       "eu-gb",
@@ -617,8 +618,7 @@
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4950,10 +4950,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -4961,7 +4957,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5379,16 +5379,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-es",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-gb",
       "us-south",
       "eu-de",
-      "au-syd",
-      "us-east"
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5546,13 +5546,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8014,14 +8014,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8595,16 +8595,16 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "au-syd",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-de",
       "us-south",
-      "eu-gb",
       "eu-es",
-      "jp-tok",
-      "au-syd",
       "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -9842,10 +9842,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -13591,20 +13591,20 @@
       {
         "id": "850b21a7-71de-4e53-9441-1abdd202f35d",
         "name": "open",
-        "description": "10 minutes free time per month on select IBM QPUs. After that limit is met, workloads will be blocked and no additional charges will occur.",
+        "description": "Provides ten minutes free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no additional charges will occur.",
         "displayName": "Open",
         "originalName": "open"
       },
       {
         "id": "5304b575-3cff-4455-90dc-ae4367762093",
         "name": "paygo-standard",
-        "description": "Heron and Eagle processors. Time limits = program-specific up to 8 hours. Qiskit Runtime Second = time counted to process a job. No charge for job queue time.",
+        "description": "Pay for the IBM quantum computer access you use. Billed per second of usage.",
         "displayName": "Pay-as-you-go",
         "originalName": "paygo-standard"
       }
     ],
-    "description": "Run and manage workloads on IBM quantum computers with Qiskit Runtime service on IBM Quantum Platform.",
-    "longDescription": "With this service, IBM Quantum gives you access to Qiskit Runtime, an execution environment that delivers significant performance improvements. \n \nQiskit Runtime (beta) is unavailable in the following countries: Afghanistan, Armenia , Azerbaijan, Belarus, Myanmar (Burma), Cambodia, People’s Republic of China (including Hong Kong), Cuba, Georgia, Iran, Iraq, Kazakhstan, North Korea, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam ,Yemen.\n",
+    "description": "Run and manage workloads on IBM quantum computers with the Qiskit Runtime service on IBM Quantum Platform.",
+    "longDescription": "The Qiskit Runtime service provides access to the world’s largest and most performant fleet of quantum computers. Get access to the service plus a full suite of research and development tools on IBM Quantum Platform.",
     "displayName": "Qiskit Runtime",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/artifacts/cache/3733c4f0be6e962b9512094817d66eeb-public/CloudQuantumServices.svg",
     "localSvgIcon": "/generated/icons/b6049020-80f4-11eb-a0f7-e35ec9b4054f.svg",
@@ -15116,12 +15116,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17679,12 +17679,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
