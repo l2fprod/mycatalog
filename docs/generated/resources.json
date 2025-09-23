@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4959,7 +4959,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5046,7 +5046,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -5115,13 +5115,12 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5133,7 +5132,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5198,7 +5198,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -5277,7 +5277,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5394,16 +5394,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-de",
+      "eu-gb",
+      "eu-es",
       "au-syd",
       "us-east",
+      "us-south",
+      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-gb",
-      "eu-es"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5561,13 +5561,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7866,74 +7866,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "eu-de",
-      "eu-gb",
-      "in-che",
-      "jp-osa",
-      "jp-tok",
-      "kr-seo",
-      "us-east",
-      "us-south"
-    ],
-    "id": "3dacb5a3-de4a-4361-9f39-0b6657f89f37",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "primaryio-hdm-workload-analyzer",
-    "pricing_tags": [
-      "free"
-    ],
-    "tags": [
-      "migration",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "consumption",
-      "custom_kind_service",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "ibm_third_party",
-      "in-che",
-      "jp-osa",
-      "jp-tok",
-      "kr-seo",
-      "lorenzo",
-      "metrics",
-      "migration_tools",
-      "moving",
-      "performance",
-      "rc_compatible",
-      "relocating",
-      "relocation",
-      "sizing",
-      "support_third_party",
-      "us-east",
-      "us-south",
-      "virtual machine sizing",
-      "workload analysis"
-    ],
-    "plans": [
-      {
-        "id": "f4c326d0-92ab-4333-97e6-c6c4b8a76ccf",
-        "name": "primaryio-hdm-workload-analyzer-hdm-workload-analyzer-free",
-        "description": "HDM Workload Analyzer - Unlimited VMware Virtual Machine I/O Analysis",
-        "displayName": "Free"
-      }
-    ],
-    "description": "Workload Analyzer transparently monitors your current VMware virtual platform I/O, to plan your migration to the IBM Cloud.",
-    "longDescription": "The PrimaryIO HDM Workload Analyzer helps to identify, analyze and recommend workloads best suitable for cloud or on-prem. PrimaryIO HDM Workload Analyzer has built-in smarts to analyze workload data/IO access patterns and provides insights to right size on-prem resources and efficiently leverage cloud. PrimaryIO HDM Workload Analyzer also works in a non-intrusive way to continuously monitor all data IO access across on-prem and cloud environments",
-    "displayName": "HDM VMware Workload Analyzer",
-    "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
-    "localPngIcon": "/generated/icons/3dacb5a3-de4a-4361-9f39-0b6657f89f37.png"
-  },
-  {
-    "geo_tags": [
       "global"
     ],
     "id": "e8294950-6243-4f19-ad52-537270c5ceb5",
@@ -8031,14 +7963,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8612,17 +8544,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
+      "jp-tok",
       "au-syd",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "jp-tok",
-      "ca-mon"
+      "eu-es",
+      "ca-mon",
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9748,7 +9680,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, and GDPR. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-es.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -15020,6 +14952,68 @@
     "geo_tags": [
       "global"
     ],
+    "id": "2eda796a-38fb-4a5a-81f1-2a9f3c7f2d00",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "symplistic-contentiq",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai document assistant",
+      "conversational ai",
+      "conversational ai for documents",
+      "custom_kind_service",
+      "document automation",
+      "document intelligence",
+      "enterprise knowledge base",
+      "generative ai for documents",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rag",
+      "rc_compatible",
+      "retrieval-augmented generation",
+      "smart knowledge asisstant",
+      "support_third_party",
+      "vector database",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "6340c04e-34c8-4c48-b959-2fe78b526956",
+        "name": "essentials",
+        "description": "Up to 200,000 Messages Included Each Month. Small volume package designed for starter messaging needs.\nFlat Monthly Pricing providing predictable costs with no overage surprises.",
+        "displayName": "Essentials"
+      },
+      {
+        "id": "85a1b540-6bc0-4b63-b999-80b320963cba",
+        "name": "premium",
+        "description": "Premium Plan",
+        "displayName": "Premium"
+      },
+      {
+        "id": "ba919728-477a-40ec-8c96-11d633daec36",
+        "name": "standard",
+        "description": "Standard Plan",
+        "displayName": "Standard"
+      }
+    ],
+    "description": "Turn websites, document repositories, helpdesks and workspaces into an intelligent conversational AI Agent using advanced, AI powered RAG in minutes.",
+    "longDescription": "ContentIQ transforms your existing content, web pages, documents, helpdesks, and internal knowledge bases, into a powerful AI assistant that delivers accurate, conversational answers in real time. Powered by Retrieval-Augmented Generation (RAG), ContentIQ connects to platforms like SharePoint, Google Drive, Box, Notion, etc, to ingest, process, and intelligently search your information so your team or customers can simply ask a question and get instant, source-cited results.\n\nSetup takes just minutes with no heavy development required. Built for enterprise needs, ContentIQ includes full access control, real-time sync, usage analytics, and seamless integration into your workflows. It helps reduce search time, automate internal support, and unlock the full value of your knowledge, all through secure, explainable AI.",
+    "displayName": "symplistic.ContentIQ",
+    "imageUrl": "https://symplistic.ai/assets/imgs/blue-favicon-final.png",
+    "localPngIcon": "/generated/icons/2eda796a-38fb-4a5a-81f1-2a9f3c7f2d00.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "c3ef52e7-c978-4fd1-9982-e39084119336",
     "kind": "service",
     "metadata": {
@@ -16063,7 +16057,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16103,7 +16096,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17596,12 +17590,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south",
-      "jp-tok"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
