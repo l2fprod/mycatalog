@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+echo ">>> Keeping old snapshot to generated feed..."
+cp docs/generated/resources-full.json previous-resources-full.json
+
 echo ">>> Cleaning docs directory..."
 # clean the previous build
 rm -rf \

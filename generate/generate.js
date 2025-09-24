@@ -17,19 +17,20 @@ async function main() {
   cheatsheet.generate(false, '../docs/generated/cheatsheet.pdf');
   cheatsheet.generate(true, '../docs/generated/cheatsheet-dark.pdf');
   
-  // store in the database
-  if (process.env.CLOUDANT_URL) {
-    const Database = require("./database.js");
-    const db = await Database(process.env.CLOUDANT_URL, "snapshots");
-    await db.addSnapshot(resources);
-    
-    // generate the latest feed
-    console.log('Generating feed...');
-    const snapshots = await db.getRecentSnapshots();
-    const feedGenerator = require('./feed.js');
-    const feedAsString = feedGenerator.generateFeed(snapshots);
-    fs.writeFileSync('../docs/generated/feed.xml', feedAsString);
-  }
+  // generate the feed by comparing the previous snapshot with the current
+  console.log('Generating feed...');
+  const feedGenerator = require('./feed.js');
+  const feedAsString = feedGenerator.generateFeed([
+    {
+      resources: JSON.parse(fs.readFileSync("../previous-resources-full.json")),
+      createdAt: new Date()
+    },
+    {
+      resources: JSON.parse(fs.readFileSync("../docs/generated/resources-full.json")),
+      createdAt: new Date()
+    }
+  ]);
+  fs.writeFileSync('../docs/generated/feed.xml', feedAsString);
 }
 
 (async () => {
