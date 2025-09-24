@@ -1,0 +1,32 @@
+name: update-site
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # 7am US Central (12:00 UTC)
+    - cron: '0 0 * * *'   # 7pm US Central (00:00 UTC)
+  workflow_dispatch:      # allows manual triggering
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # we'll set up our own credentials
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Run
+        run: bash ./publish.sh
