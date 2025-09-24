@@ -21,14 +21,16 @@ async function main() {
   console.log('Generating feed...');
   const feedGenerator = require('./feed.js');
   const feedAsString = feedGenerator.generateFeed([
+    // most recent
+    {
+      resources: JSON.parse(fs.readFileSync("../docs/generated/resources-full.json")),
+      createdAt: new Date()
+    },
+    // previous
     {
       resources: JSON.parse(fs.readFileSync("../previous-resources-full.json")),
       createdAt: new Date()
     },
-    {
-      resources: JSON.parse(fs.readFileSync("../docs/generated/resources-full.json")),
-      createdAt: new Date()
-    }
   ]);
   fs.writeFileSync('../docs/generated/feed.xml', feedAsString);
 }
