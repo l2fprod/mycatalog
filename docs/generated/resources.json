@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -611,6 +611,7 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -618,8 +619,7 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5121,7 +5121,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5133,7 +5132,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5394,16 +5394,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "us-south",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-gb",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7963,14 +7963,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8544,17 +8544,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "jp-tok",
-      "au-syd",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "jp-tok",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14378,12 +14378,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16123,7 +16123,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16163,7 +16162,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -16425,6 +16425,62 @@
         "originalName": "bx3dc-96x480"
       },
       {
+        "id": "69be454a-69e4-4fe2-a302-11f28533410d",
+        "name": "bxf-16x64",
+        "description": "Pricing plan for bxf-16x64 VSIs",
+        "displayName": "Flex Balanced bxf-16x64",
+        "originalName": "bxf-16x64"
+      },
+      {
+        "id": "03cc624d-5b9c-4834-8e64-d4c37a82a7af",
+        "name": "bxf-24x96",
+        "description": "Pricing plan for bxf-24x96 VSIs",
+        "displayName": "Flex Balanced bxf-24x96",
+        "originalName": "bxf-24x96"
+      },
+      {
+        "id": "4d370244-45c7-4e65-a070-6e29b042f7a3",
+        "name": "bxf-2x8",
+        "description": "Pricing plan for bxf-2x8 VSIs",
+        "displayName": "Flex Balanced bxf-2x8",
+        "originalName": "bxf-2x8"
+      },
+      {
+        "id": "3d82cd0f-cb5d-4e2d-95ae-a15502c6181e",
+        "name": "bxf-32x128",
+        "description": "Pricing plan for bxf-32x128 VSIs",
+        "displayName": "Flex Balanced bxf-32x128",
+        "originalName": "bxf-32x128"
+      },
+      {
+        "id": "419874e9-d2df-4a25-92d5-15a90bc495a0",
+        "name": "bxf-48x192",
+        "description": "Pricing plan for bxf-48x192 VSIs",
+        "displayName": "Flex Balanced bxf-48x192",
+        "originalName": "bxf-48x192"
+      },
+      {
+        "id": "63914630-34db-4ca1-97da-996834114f6d",
+        "name": "bxf-4x16",
+        "description": "Pricing plan for bxf-4x16 VSIs",
+        "displayName": "Flex Balanced bxf-4x16",
+        "originalName": "bxf-4x16"
+      },
+      {
+        "id": "e5197e83-5ddb-4c81-9dd2-18353e1878bc",
+        "name": "bxf-64x256",
+        "description": "Pricing plan for bxf-64x256 VSIs",
+        "displayName": "Flex Balanced bxf-64x256",
+        "originalName": "bxf-64x256"
+      },
+      {
+        "id": "e508f604-99b6-4f89-adf6-148436dccd8c",
+        "name": "bxf-8x32",
+        "description": "Pricing plan for bxf-8x32 VSIs",
+        "displayName": "Flex Balanced bxf-8x32",
+        "originalName": "bxf-8x32"
+      },
+      {
         "id": "b6b51d4d-2e17-439b-8326-13be67ae1288",
         "name": "cx2-2x4-gen3",
         "description": "Pricing plan for cx2-2x4-gen3 VSIs",
@@ -16577,62 +16633,6 @@
         "description": "Pricing plan for cx3dc-96x240 VSIs",
         "displayName": "Gen3 Compute cx3dc-96x240",
         "originalName": "cx3dc-96x240"
-      },
-      {
-        "id": "21eea4aa-4d72-4b94-9095-02e7d35dbd32",
-        "name": "gen2-amd-instance",
-        "description": "Pricing plan for AMD VSIs",
-        "displayName": "AMD Gen2",
-        "originalName": "gen2-amd-instance"
-      },
-      {
-        "id": "a736a57f-0584-474f-8411-55dc7d9dc811",
-        "name": "gen2-instance",
-        "description": "Pricing plan for Advanced VSIs.",
-        "displayName": "Standard Gen2",
-        "originalName": "advanced-vsi"
-      },
-      {
-        "id": "f934872d-678f-4d71-be76-b5ae9453cfdc",
-        "name": "gen2-instance-dedicated-host",
-        "description": "Pricing plan for Advanced VSIs used by Dedicated Hosts for VPC",
-        "displayName": "Standard Gen2 for Dedicated Host for VPC",
-        "originalName": "gen2-instance-dedicated-host"
-      },
-      {
-        "id": "69a9646a-8f46-42bf-9834-1a92558bb618",
-        "name": "gen2-instance-power",
-        "description": "Pricing plan for Advanced VSIs on POWER",
-        "displayName": "POWER Gen2",
-        "originalName": "gen2-instance-power"
-      },
-      {
-        "id": "6f2fca60-9281-4ac2-9d60-2e2be366cf61",
-        "name": "gen2-instance-reservation",
-        "description": "Pricing plan for Standard Gen2 VSIs on a Reservation",
-        "displayName": "Standard Gen2 for Reservations",
-        "originalName": "gen2-instance-reservation"
-      },
-      {
-        "id": "13b8bb8e-5521-4f90-b8b5-79b9e08ef61a",
-        "name": "gen2-zos-instance",
-        "description": "Pricing plan for zOS VSIs in VPC Gen2",
-        "displayName": "zOS VSI Instance",
-        "originalName": "gen2-zos-instance"
-      },
-      {
-        "id": "99a822dd-e158-401f-b0a4-819136336db7",
-        "name": "gen2-zvsi-hyperprotect-instance",
-        "description": "Hyper Protect Instance Pricing Plan",
-        "displayName": "Hyper Protect Instance for VPC",
-        "originalName": "gen2-zvsi-hyperprotect-instance"
-      },
-      {
-        "id": "cb49c0c2-c0f5-4470-bc64-a8b972cf37ea",
-        "name": "gen2-zvsi-instance",
-        "description": "Pricing plan for zVSIs in VPC Gen2",
-        "displayName": "LinuxONE VSI",
-        "originalName": "gen2-zvsi-instance"
       }
     ],
     "description": "Our latest generations of virtual machines with faster provisioning, higher performance, and enhanced isolation.",
@@ -17655,12 +17655,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -17962,12 +17962,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
