@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5028,6 +5028,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5035,11 +5039,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5457,14 +5457,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "eu-es",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
+      "us-south",
       "eu-de",
       "eu-gb"
     ],
@@ -5624,13 +5624,13 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-gb"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8026,14 +8026,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8607,16 +8607,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "jp-tok",
-      "au-syd",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
+      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "eu-es",
+      "jp-tok",
       "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -10324,13 +10324,13 @@
         "id": "a4679ed6-0e45-4841-8711-a19425499064",
         "name": "neuralseek-bring-your-own-llm-cloned-lgtp7ff0",
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm-cloned-lgtp7ff0"
+        "displayName": "neuralseek-bring-your-own-llm"
       },
       {
         "id": "4fc8839c-e721-411e-a6b8-778e53beafe9",
         "name": "neuralseek-bring-your-own-llm-cloned-lgtzzjl5",
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm-cloned-lgtzzjl5"
+        "displayName": "neuralseek-bring-your-own-llm"
       },
       {
         "id": "b2b7d7e4-89aa-4ed4-8794-8ceee7f3df58",
@@ -10348,13 +10348,13 @@
         "id": "be698ed1-e36f-40bc-98f5-4ca39b9dc1c8",
         "name": "neuralseek-pay-per-answer-cloned-lgtp8b97",
         "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer-cloned-lgtp8b97"
+        "displayName": "neuralseek-pay-per-answer"
       },
       {
         "id": "87af520b-0218-42ee-a1eb-531dc760f79d",
         "name": "neuralseek-pay-per-answer-cloned-lgtp98z2",
         "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer-cloned-lgtp98z2"
+        "displayName": "neuralseek-pay-per-answer"
       },
       {
         "id": "d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c",
@@ -10369,7 +10369,7 @@
         "displayName": "neuralseek-small-business"
       }
     ],
-    "description": "NeuralSeek is a no-code, multi-agent LLM orchestration platform that gets  Generative AI usecases running faster.",
+    "description": "NeuralSeek is a no-code, agentic LLM orchestration platform that gets  Generative AI usecases running faster.",
     "longDescription": "NeuralSeek completely automates Retrieval Augmented Generation (RAG) usecases, connecting dozens of different knowledge bases and 40+ LLM's together in seconds.\n\nNeuralSeek's mAIstro platform lets business users quickly build complex LLM-backed processes with greater scalability than hardcoding in python, and without knowing any code.\n\nIndustry Leading Retrieval Augmented Generation\n\nStrong Corporate Controls, human in the loop.\n\nAutomatic Virtual Agent Builder\n\nAutomatically create & monitor conversations into leading Virtual Agent platforms.\n\nProtection from Prompt Injection and harmful content\n\nAutomatically cleanse and protect against malicious user input\n\nFull RAG Governance - Executive-level and SME dashboards to monitor answer generation, system performance, content insights and configuration churn\n\nIntegrated versioning controls\n\nCategory and Intent-level control \n\nSet confidence thresholds, custom responses and fallbacks per category.\n\nAutomatically prompt-tune LLM’s at the intent level\n\nAutomatic Content Cleansing\n\nPreprocess complex embedded tables\n\nCross-language / automatic Translation\n\nAnswer questions in languages other than the documentation\n\nCorporate Logging - Log all actions for corporate audit & compliance.\n\nAnswer Provenance & Hallucination detection / removal\n\nTrace answers directly to source documents\n\nSemantic Analysis helps users understand the confidence of answers \nand eliminate hallucination\n\nPII Detection / Removal\n\nFlag, Mask, Hide, or Delete PII on user input.\n\nDynamic Personalization\n\nLeverage SSO or user data to tailor responses specifically to users.\n\nIntegrate structured & unstructured data across endless sources. \n\nCreate scalable LLM-backed processes in seconds.\n\nGenerate files and documents, create synthetic data\n\nConnect to REST endpoints,  automatically send Email\n\n60+ prebuilt functions to snap together in limitless ways\n",
     "displayName": "NeuralSeek",
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
@@ -16186,6 +16186,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16225,8 +16226,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17718,12 +17718,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
