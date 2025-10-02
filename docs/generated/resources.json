@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -611,15 +611,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -3612,6 +3612,73 @@
     "geo_tags": [
       "global"
     ],
+    "id": "402ae2fc-4740-4a8f-aac8-38e67c939f95",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "lyzr-company-research-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai research agent",
+      "b2b research",
+      "business insights",
+      "business research",
+      "company insights",
+      "company overview",
+      "company research",
+      "company research analysis",
+      "competitive analysis",
+      "corporate profiling",
+      "custom_kind_service",
+      "global",
+      "ibm cloud agent",
+      "ibm_third_party",
+      "investment research",
+      "market intelligence",
+      "market research",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "sales intelligence",
+      "strategic intelligence",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "f649a556-4284-45ce-88e7-f9df069f3c69",
+        "name": "enterprise-license-",
+        "description": "The Enterprise plan is crafted for organizations requiring a robust and scalable AI agent platform. It includes 125000 credits available for a period of 12 months, making it ideal for large teams and complex projects. Enterprises enjoy access to all premium and custom AI models, a generous knowledge base, and traceability and observability logs. The plan offers  24/7 technical support, a 48-hour SLA for custom integrations, agent entitlement policy, organizational intelligence. This solution is perfect for businesses looking for reliability, performance, and advanced AI functionality backed by dedicated enterprise support.",
+        "displayName": "Enterprise License "
+      },
+      {
+        "id": "c12e5b4b-5d0d-4353-be7a-f9d1fa7b26dc",
+        "name": "entreprise-license---on-prem",
+        "description": "The On-premise plan offers a customizable AI agent solution, ideal for organizations that require private, flexible, and scalable deployments within their own infrastructure. With 300,000 credits available for a period of 12 months. This plan enables enterprises to fully leverage premium and custom AI models tailored to their needs. Customers benefit from forever data traceability and observability, 24/7 technical support, access to build services for custom agents, enhanced security, agent entitlement policy, organizational intelligence, and fast SLA for integrations. The On-premise plan is designed for maximum control, data privacy, and reliability, supporting advanced and bespoke AI initiatives with dedicated support.",
+        "displayName": "Enterprise License - On Prem"
+      },
+      {
+        "id": "e8012687-db50-47f7-879d-e0bd6c98d834",
+        "name": "user-license",
+        "description": "The User License plan is designed for professionals and small teams seeking access to advanced AI agent capabilities. Priced at $125 per month, for 125 credits.\nknowledge base storage, standard LLM models, and 1 month of traceability and observability logs. Safe and responsible AI features are included. This plan enables users to create reliable, private, and efficient AI agents that can scale with their workflow and business needs, all at an affordable, predictable cost. ",
+        "displayName": "User License"
+      }
+    ],
+    "description": "Performs in-depth company analysis. Ideal for investors, analysts, business researchers seeking a systematic &  complete overview.",
+    "longDescription": "The multi-stage company research agent is a specialized AI-driven solution that delivers deep, structured insights into any company. Designed to support professionals in investment, strategy, consulting, and business development, the agent follows a systematic research process to ensure no critical area is overlooked.\n\nIt analyzes a company across multiple dimensions—including business operations, financial health, competitive positioning, market presence, leadership, innovation, and risks—providing a complete picture of the organization's strengths, challenges, and strategic direction.\n\nThe agent’s methodology ensures that the research output is consistent, comprehensive, and aligned with industry standards—making it ideal for due diligence, enterprise evaluations, and executive decision-making.",
+    "displayName": "Company Research Agent",
+    "imageUrl": "https://i0.wp.com/www.lyzr.ai/wp-content/uploads/2024/06/cropped-Lyzr-Logo-1-e1719496186487.png",
+    "localPngIcon": "/generated/icons/402ae2fc-4740-4a8f-aac8-38e67c939f95.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "3e1a2c30-11dd-11ec-b621-67e0f6600d56",
     "kind": "service",
     "metadata": {
@@ -5178,8 +5245,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5190,7 +5255,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5455,12 +5522,12 @@
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es",
       "us-south",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5618,13 +5685,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8601,17 +8668,17 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "jp-tok",
+      "au-syd",
       "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9663,6 +9730,60 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "843bbb5c-2aa0-44b4-8589-7eed8907e5b2",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "mavenagi-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai agent",
+      "ai contact center",
+      "ai virtual agent",
+      "automation",
+      "custom_kind_service",
+      "customer experience",
+      "customer service",
+      "customer service automation",
+      "customer support",
+      "cx",
+      "enterprise",
+      "enterprise ai solution",
+      "generative ai",
+      "global",
+      "help desk ai",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "platform",
+      "rc_compatible",
+      "support",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "6d6cbb7f-f5e8-401a-990e-97875623b370",
+        "name": "enterprise-custom-pricing---minimum",
+        "description": "Starting prices listed here - contact us for custom pricing based on your expected scope, complexity, and volume of resolutions.",
+        "displayName": "Enterprise Custom Pricing - Minimum"
+      }
+    ],
+    "description": "Maven AGI is an enterprise Generative AI platform designed to revolutionize customer support. ",
+    "longDescription": "Maven AGI is an enterprise Generative AI platform designed to revolutionize customer support. It leverages AI agents to autonomously handle a high percentage of customer inquiries (up to 93%), significantly reducing support costs and improving resolution times. Beyond self-service, Maven AGI also provides tools for human agents, such as AI-powered co-pilots, and offers data-driven insights to proactively address customer issues.",
+    "displayName": "Maven AGI Agent Platform ",
+    "imageUrl": "https://www.mavenagi-static.com/mavenlogo/icon.png",
+    "localPngIcon": "/generated/icons/843bbb5c-2aa0-44b4-8589-7eed8907e5b2.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -9740,6 +9861,60 @@
     "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "99a72b99-ebf7-4136-abbb-25c3e9d6d1b9",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "millionways-millionways-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai hiring tool",
+      "behavioral insights",
+      "candidate evaluation",
+      "candidate screening",
+      "cultural fit",
+      "custom_kind_service",
+      "global",
+      "hiring recommendations",
+      "hr assistant",
+      "ibm_third_party",
+      "interview insights",
+      "paid",
+      "paid_only",
+      "personality analysis",
+      "psychological profiling",
+      "rc_compatible",
+      "recruitment ai",
+      "soft skills analysis",
+      "support_third_party",
+      "talent assessment",
+      "team dynamics",
+      "watson",
+      "workplace compatibility"
+    ],
+    "plans": [
+      {
+        "id": "f3df2432-c29d-46a3-9fa7-9c0a633ca754",
+        "name": "standard",
+        "description": "This plan provides access to the millionways HR Agent on a pay-per-use basis, billed per processed word. There are no upfront fees, and you can scale usage up or down as needed. Users are responsible for ensuring that only job-relevant candidate data is submitted, and all data must comply with privacy regulations (e.g. GDPR/CCPA). Overages are automatically billed at the same rate.",
+        "displayName": "Standard"
+      }
+    ],
+    "description": "AI HR assistant that analyzes candidate documents to deliver personality insights, interview questions, and hiring recommendations",
+    "longDescription": "# millionways HR Personality Agent\n\nmillionways HR Personality Agent is an AI-powered hiring assistant that transforms candidate documents (interviews, resumes, cover letters) into actionable hiring intelligence. Built on the world’s first **Large Psychological Model (LPM)**, it goes beyond skills and experience to analyze communication style, decision-making patterns, and behavioral traits — enabling data-driven, bias-aware hiring decisions.\n\n## Key Features\n- **Candidate Personality Profiling:** Generates a deep psychological profile from any text input  \n- **Actionable Hiring Recommendations:** Suggests interview strategies, tailored questions, and candidate follow-ups  \n- **Cultural Fit & Team Dynamics:** Evaluates compatibility with your team’s working style  \n- **Behavioral Risk Insights:** Flags potential areas for misalignment or friction before a hire is made  \n- **Easy Integration:** Fully compatible with IBM Agent Services and available via a simple REST API  \n\n## Business Value\n- Reduce bad hires and save millions in replacement costs  \n- Enhance interview quality and team performance with psychology-backed recommendations  \n- Accelerate hiring decisions by automating personality insights at scale  \n\n## Ideal For\nRecruiters, HR leaders, and hiring managers looking to improve quality-of-hire, reduce bias, and optimize team fit.",
+    "displayName": "millionways Agent",
+    "imageUrl": "https://millionways.me/logos/app-icon.png",
+    "localPngIcon": "/generated/icons/99a72b99-ebf7-4136-abbb-25c3e9d6d1b9.png"
   },
   {
     "geo_tags": [
@@ -10179,6 +10354,47 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/cc42cff0-b19b-11eb-9a66-c717766c1d30/artifacts/cache/792d0b3d167b427a1bf285edf9cf1e29-public/NetezzaPerformanceServer.svg",
     "localSvgIcon": "/generated/icons/cc42cff0-b19b-11eb-9a66-c717766c1d30.svg",
     "localPngIcon": "/generated/icons/cc42cff0-b19b-11eb-9a66-c717766c1d30.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "07a2a968-214e-4f16-9014-1557edbabcd3",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "netomi-ai-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "agentic app",
+      "ai agent",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "654ade04-5044-4698-8041-f3843b2b1905",
+        "name": "netomi-ai-agent-plan",
+        "description": "Netomi AI Agent Plan",
+        "displayName": "Netomi AI Agent Plan"
+      }
+    ],
+    "description": "Netomi AI Agent",
+    "longDescription": "Netomi is the world’s leading enterprise agentic AI platform for customer experience, trusted in production by Fortune 500 companies across travel, hospitality, retail, insurance, banking, telecom, and media. Its field-proven platform delivers autonomous, goal-driven interactions that go beyond reactive support, anticipating customer needs, acting preemptively, and driving measurable outcomes across every channel and touchpoint. Unlike siloed AI tools, Netomi is architected as a composable and sanctioned agentic system, deeply integrated with enterprise workflows, and pre-built with embedded AI governance, compliance, and security at its core. Through its Agentic Factory and the Agent Development Lifecycle (ADLC), enterprises can rapidly design, govern, and scale specialized AI agents with consistency and resilience at Fortune 500 scale. With the fastest deployment times and consistently proven ROI, Netomi turns customer experience into a strategic advantage for the world’s largest organizations.  For more information, visit www.netomi.com",
+    "displayName": "Netomi AI Agent",
+    "imageUrl": "https://clustering-files.s3.us-east-1.amazonaws.com/logos/124-org-netomi.png",
+    "localPngIcon": "/generated/icons/07a2a968-214e-4f16-9014-1557edbabcd3.png"
   },
   {
     "geo_tags": [
@@ -14433,12 +14649,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -15175,6 +15391,56 @@
     "displayName": "TapestryX",
     "imageUrl": "https://l4scorp.com/wp-content/uploads/2021/03/tapestryx-logo.png",
     "localPngIcon": "/generated/icons/c3ef52e7-c978-4fd1-9982-e39084119336.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "873c31f1-3f04-4e77-b94b-d14f915aae27",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "tavily-tavily-web-access",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "api",
+      "crawl",
+      "custom_kind_service",
+      "developer",
+      "extract",
+      "global",
+      "ibm_third_party",
+      "map",
+      "mcp",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "scraping",
+      "search",
+      "support_third_party",
+      "watson",
+      "web",
+      "web access",
+      "web infrastructure"
+    ],
+    "plans": [
+      {
+        "id": "a2de2d06-6dc8-4ecd-ba95-ec501e654a39",
+        "name": "pay-as-you-go",
+        "description": "The Pay-As-You-Go Plan gives you the flexibility to use Tavily on your own terms. You’ll only be charged for what you use, with no long-term commitments—cancel anytime. And if you ever need help, our dedicated email support team is here for you.",
+        "displayName": "Pay-As-You-Go"
+      }
+    ],
+    "description": "Tavily is a search engine for AI agents, tailored for RAG, delivering realtime, reliable info from trusted sources.",
+    "longDescription": "The Web Infrastructure for AI Agents A purpose-built web API for real-time search, scraping, crawling, and structured data retrieval. AI-native enterprises trust Tavily for data enrichment, research, RAG pipelines, and autonomous AI systems-ensuring fresh, accurate, and scalable intelligence.\n\n\nWhy Tavily?\n\nBuilt for AI Agents : Unlike traditional web APIs, Tavily delivers structured, customizable data retrieval with full control over search depth, domain targeting, and content extraction via a single API call.\n\nEnterprise-Grade Security : SOC 2 certified with zero data retention and an AI security layer to prevent prompt injection and data leakage.\n\nScalable & Reliable : Custom API throughput, guaranteed uptime, and enterprise SLAs support high-volume AI workloads.\n\nSeamless AI Integration : Deploy with one line of code. Tavily natively supports LangChain, LlamaIndex, and leading AI frameworks with developer-friendly APIs and via the Model Context Protocol (MCP) .\n\nEnterprise-Ready : Designed for scalability, security, and high availability, ensuring fast, reliable data access.\n\nTrusted by 800,000+ developers and AI leaders, Tavily is the go-to solution for real-time, structured web access.\n",
+    "displayName": "Tavily API",
+    "imageUrl": "https://tavily-logo.s3.us-east-1.amazonaws.com/tavily-32.PNG",
+    "localPngIcon": "/generated/icons/873c31f1-3f04-4e77-b94b-d14f915aae27.png"
   },
   {
     "geo_tags": [
@@ -17710,12 +17976,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18017,12 +18283,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
