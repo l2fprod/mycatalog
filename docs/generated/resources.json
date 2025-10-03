@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -611,6 +611,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-de",
       "us-south",
       "eu-gb",
@@ -618,8 +619,7 @@
       "ca-tor",
       "jp-osa",
       "jp-tok",
-      "us-east",
-      "au-syd"
+      "us-east"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -784,6 +784,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
+      "backup",
       "br-sao",
       "ca-tor",
       "custom_kind_service",
@@ -796,6 +797,7 @@
       "jp-tok",
       "paid",
       "rc_compatible",
+      "recovery",
       "support_ibm",
       "us-east",
       "us-south"
@@ -1073,20 +1075,6 @@
         "originalName": "cx2d-metal-96x192"
       },
       {
-        "id": "bdc8136d-7e67-49c3-858e-c38519e00462",
-        "name": "cx3-metal-48x128",
-        "description": "Pricing plan for cx3-metal-48x128",
-        "displayName": "cx3-metal-48x128",
-        "originalName": "cx3-metal-48x128"
-      },
-      {
-        "id": "2b7c56c1-e82e-4ec1-89bc-92577eeb83e2",
-        "name": "cx3-metal-64x128",
-        "description": "Pricing plan for cx3-metal-64x128",
-        "displayName": "cx3-metal-64x128",
-        "originalName": "cx3-metal-64x128"
-      },
-      {
         "id": "a9af6a30-77aa-47f1-897e-cfccb4cfe25f",
         "name": "cx3d-metal-48x128",
         "description": "Pricing plan for cx3d-metal-48x128",
@@ -1113,13 +1101,6 @@
         "description": "Pricing plan for an mx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 768 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
         "displayName": "mx2d-metal-96x768",
         "originalName": "mx2d-metal-96x768"
-      },
-      {
-        "id": "5a3de409-5864-4f83-95bd-a417efaac70f",
-        "name": "mx3-metal-16x128",
-        "description": "Pricing plan for mx3-metal-16x128",
-        "displayName": "mx3-metal-16x128",
-        "originalName": "mx3-metal-16x128"
       },
       {
         "id": "208fcc66-266d-487e-9247-6d8246b45dac",
@@ -5605,15 +5586,15 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
       "eu-es",
-      "us-south",
-      "au-syd",
-      "us-east",
       "eu-gb",
+      "us-south",
       "eu-de"
     ],
     "id": "dashdb-for-transactions",
@@ -5772,13 +5753,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6433,6 +6414,54 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/21/artifacts/cache/e4a5d9241a41381fdef1e50269ef92a0-public/DirectLink1.0Exchange.svg",
     "localSvgIcon": "/generated/icons/21.svg",
     "localPngIcon": "/generated/icons/21.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "bffea61e-32b1-4b25-b8e7-ee5055290862",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dizzion-cloud-pc",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "citrix",
+      "cloud pc",
+      "custom_kind_service",
+      "daas",
+      "desktop as a service",
+      "digital workspaces",
+      "global",
+      "ibm_third_party",
+      "omnissa",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "vdi",
+      "virtual desktop",
+      "virtualservers",
+      "workspot"
+    ],
+    "plans": [
+      {
+        "id": "0f07995e-3077-44d1-b981-c7bb6fbe82b9",
+        "name": "monthly---no-term",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
+        "displayName": "Monthly - No Term"
+      }
+    ],
+    "description": "Deliver modern, secure, and scalable cloud desktops with Dizzion Cloud PC, a fully managed solution on IBM VPC infrastructure.",
+    "longDescription": "With Dizzion Cloud PC on IBM Cloud VPC, organizations can streamline their virtual desktop delivery by combining the power of the Dizzion cloud-native platform with the global scale and security of IBM Cloud. This fully managed Desktop as a Service (DaaS) solution enables persistent, personal Windows 11 desktop experiences, built for hybrid work and maximum productivity. We offer two complementary tiers - Core and Complete - to fit every operational model.\n\n\nThe Core Tier is ideal for organizations that already have in-house IT operations, identity services, and endpoint management tools in place. If your team can handle monitoring, patching, and support with existing staff and systems, Core lets you spin up Cloud PCs in minutes - without overhauling your workflows. Companies with 25 or more users can choose from five performance-tuned configurations, plug into your existing AD or run as standalone, and deploy directly over the internet or via private networking.\n\n\nThe Complete Tier builds on the flexibility of Core with enterprise-grade management, security, and unlimited scalability for 50+ desktops, and requires Private Network Access per region. With Dizzion-managed services - Overwatch real-time observability & analytics, automated OS and Application patching, and self-service software deployment for up to two administrators - you get a truly hands-off Cloud PC experience. Tailored for organizations requiring centralized identity, granular performance controls, and seamless global expansion, the Complete Tier also offers a rich add-on catalog - from vulnerability monitoring to advanced firewalling - delivering a turnkey solution that scales with your business. The only elements you manage are end-user support and application deployment.\n\n\nWhether you are migrating from on-premises VDI or looking to modernize legacy PC deployments, Dizzion Cloud PC provides a seamless path forward with predictable pricing, great user experience, fast provisioning, simplified management, and deployment.\n\n\nFor sales support, reach out to Dizzion directly at sales@dizzion.com.",
+    "displayName": "Dizzion Cloud PC",
+    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
+    "localPngIcon": "/generated/icons/bffea61e-32b1-4b25-b8e7-ee5055290862.png"
   },
   {
     "geo_tags": [
@@ -8174,14 +8203,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8755,17 +8784,17 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-gb",
+      "eu-es",
       "au-syd",
       "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
-      "us-east",
-      "eu-es",
-      "jp-tok"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11239,6 +11268,50 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/339a87f0-e633-11ee-acb6-4d13e7035de5.svg",
     "localPngIcon": "/generated/icons/339a87f0-e633-11ee-acb6-4d13e7035de5.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "patient-facing-ai-agent-for-healthcare-companies",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai healthcare assistant",
+      "custom_kind_service",
+      "global",
+      "healthcare ai agent",
+      "healthcare ai agent solution",
+      "healthcare assessment",
+      "hospital ai agent",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "632dca34-e12c-43d6-81f7-22e8d30d9f42",
+        "name": "starterplan",
+        "description": "This AI Agent is offered as a template that can be customized to fit your specific business needs. \nPackage Inclusions (Patient AI Agent):\nAutomates Patient Inquiries and Support \nSupports knowledge retrieval for L1 questions (patient inquiry) and automate business workflow  \nIntegration with one Patient Management System (e.g., NextGen, Epic)\nAdvanced training to ensure high accuracy\nLanguage: English\nMulti-channel support (like webchat, mobile, sms, email, voice)\nQuality assurance and testing\nOngoing support and maintenance\nAdditional Benefits:\nDedicated customer success manager\nContract Terms: Annual commitment (12-month minimum), billed monthly\n\n",
+        "displayName": "Essential Plan - Starter Pack"
+      }
+    ],
+    "description": "IBM Watsonx powered Patient AI Agent handles patient inquiries, appointments, and assessments across voice, web, and social media.",
+    "longDescription": "This IBM Watsonx Orchestrate Powered Patient AI Agent (Sofie) helps both prospective and existing patients with healthcare needs such as assessments, appointment scheduling, and managing interactions across the entire patient journey. Hospitals and healthcare clinics can use it to deliver better patient experiences while reducing operational workload. The solution is HIPAA compliant and built to extend into electronic health record (EHR) systems such as NextGen and others, depending on the customer’s environment.\n\nThe AI Agent works seamlessly across channels—including voice, web, and leading social platforms like WhatsApp, Instagram, and Facebook—making patient engagement easy, intuitive, and always accessible.\n\n\n",
+    "displayName": "Patient Facing AI Agent for Healthcare Companies",
+    "imageUrl": "https://www.streebo.com/PDF/streebo-icon.png",
+    "localPngIcon": "/generated/icons/639b4eb1-8479-4897-a4ae-927a432bcf95.png"
   },
   {
     "geo_tags": [
@@ -13907,8 +13980,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -14736,12 +14809,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -15584,12 +15657,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -18146,12 +18219,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
