@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -611,7 +611,6 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -619,7 +618,8 @@
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5586,16 +5586,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-gb",
       "eu-es",
-      "eu-gb"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5753,13 +5753,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8784,17 +8784,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "ca-mon",
-      "eu-de",
-      "us-south",
+      "jp-tok",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "jp-tok",
-      "au-syd",
-      "eu-gb"
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14809,12 +14809,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16202,7 +16202,8 @@
     "description": "IBM Verify",
     "longDescription": "IBM Verify provides Single Sign-On (SSO), multi-factor authentication (MFA), identity governance, and identity lifecycle controls for internal (workforce) and external (consumer) user types.",
     "displayName": "Verify",
-    "imageUrl": "https://idaas.ice.ibmcloud.com:443/osb/ibmcloud/v1/resources/icons/small",
+    "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -16604,6 +16605,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16643,8 +16645,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -18136,12 +18137,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18443,12 +18444,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -18535,7 +18536,7 @@
       {
         "id": "c2e391c2-d029-474f-9cf7-3d102cc90fac",
         "name": "essentials",
-        "description": "The Essentials plan includes core capabilities to automatically discover, profile, enrich, analyze data lineage and quality, and share data products as you begin to establish a data-centric organization.\n\nThis plan is restricted to the above capabilities and quantities.\n\nCapacity Unit Hours are used in metadata import, metadata enrichment and data preparation.",
+        "description": "The Essentials plan includes core capabilities to automatically discover, profile, enrich, analyze data lineage and quality, and share data products as you begin to establish a data-centric organization. Limited access to IBM Knowledge Accelerators is included (Sample Terms and Cross Industry only).\n\nThis plan is restricted to the above capabilities and quantities.\n\nDetails on feature differences are available in documentation under the section \"Feature differences between watsonx.data intelligence plans\".\n\nTo enable unstructured data governance capabilities (where available), the Client must separately acquire the following cloud services: IBM watsonx.ai Studio as a Service, IBM watsonx.ai Runtime as a Service, IBM watsonx.data integration as a Service and IBM watsonx.data as a Service.\n\nTo enable advanced profiling and key relationship analysis capabilities, the Client must separately acquire one of the following cloud services: IBM DataStage as a Service or IBM watsonx.data integration as a Service.",
         "displayName": "Essentials",
         "originalName": "essentials"
       },
@@ -18549,7 +18550,7 @@
       {
         "id": "3a68f599-b1d6-48f1-a343-76682b945a9c",
         "name": "premium",
-        "description": "The Premium plan provides a comprehensive set of tools for advanced data discovery, cataloging, governance, quality, lineage and data product hub, augmented by Gen AI. Access to IBM Knowledge Accelerators is also included. To enable unstructured data governance capabilities (where available), you must separately acquire the following services: watsonx.ai Studio, watsonx.ai Runtime, watsonx.data integration and watsonx.data.\n\nThis plan offers the flexibility to use the Resource Units for any of the included capabilities.",
+        "description": "The Premium plan provides a comprehensive set of tools for advanced data discovery, cataloging, governance, quality, lineage and data product hub, augmented by Gen AI. Access to IBM Knowledge Accelerators is also included. \n\nThis plan offers the flexibility to use the Resource Units for any of the included capabilities.\n\nDetails on feature differences are available in documentation under the section \"Feature differences between watsonx.data intelligence plans\".\n\nTo enable unstructured data governance capabilities (where available), the Client must separately acquire the following cloud services: IBM watsonx.ai Studio as a Service, IBM watsonx.ai Runtime as a Service, IBM watsonx.data integration as a Service and IBM watsonx.data as a Service.\n\nTo enable data quality definitions and rules, advanced profiling and key relationship analysis capabilities, the Client must separately acquire one of the following cloud services: IBM DataStage as a Service or IBM watsonx.data integration as a Service.",
         "displayName": "Premium",
         "originalName": "premium"
       },
@@ -18589,9 +18590,16 @@
         "originalName": "standard-v2"
       },
       {
+        "id": "47df9fae-4bc5-41d7-bbb1-aeb54b810bd3",
+        "name": "standard-v3",
+        "description": "The Standard plan includes core capabilities with enhanced entitlement limits in data governance, quality, lineage and data product hub. Full access to IBM Knowledge Accelerators is also included.\n\nThis plan is restricted to the above capabilities and quantities.\n\nDetails on feature differences are available in documentation under the section \"Feature differences between watsonx.data intelligence plans\".\n\nTo enable unstructured data governance capabilities (where available), the Client must separately acquire the following cloud services: IBM watsonx.ai Studio as a Service, IBM watsonx.ai Runtime as a Service, IBM watsonx.data integration as a Service and IBM watsonx.data as a Service.\n\nTo enable data quality definitions and rules, advanced profiling and key relationship analysis capabilities, the Client must separately acquire one of the following cloud services: IBM DataStage as a Service or IBM watsonx.data integration as a Service.",
+        "displayName": "Standard",
+        "originalName": "standard-v3"
+      },
+      {
         "id": "cd787bd0-ddc4-4b09-ae8d-35e58db5bfe6",
         "name": "trial",
-        "description": "The Trial plan provides you with a free 30-day trial of watsonx.data intelligence to explore the full set of integrated and AI-powered capabilities to deliver trusted data to support your business and AI initiatives.\n\nThis plan is restricted to the above capabilities and quantities.\n\nCapacity Unit Hours are used in metadata import, metadata enrichment and data preparation.\n\nTo enable unstructured data governance capabilities (where available), you must separately acquire the following services: watsonx.ai Studio, watsonx.ai Runtime, watsonx.data integration and watsonx.data.\n\n\n\n\n**Trial plan services, including all data and assets, are deleted after 30 days.**",
+        "description": "The Trial plan provides you with a free 30-day trial of watsonx.data intelligence to explore the full set of integrated and AI-powered capabilities to deliver trusted data to support your business and AI initiatives. Limited access to IBM Knowledge Accelerators is included (Sample Terms only).\n\nThis plan is restricted to the above capabilities and quantities.\n\nDetails on feature differences are available in documentation under the section \"Feature differences between watsonx.data intelligence plans\".\n\nTo enable unstructured data governance capabilities (where available), the Client must separately acquire the following cloud services: IBM watsonx.ai Studio as a Service, IBM watsonx.ai Runtime as a Service, IBM watsonx.data integration as a Service and IBM watsonx.data as a Service.\n\nTo enable data quality definitions and rules, advanced profiling and key relationship analysis capabilities, the Client must separately acquire one of the following cloud services: IBM DataStage as a Service or IBM watsonx.data integration as a Service.\n\n\n**Trial plan services, including all data and assets, are deleted after 30 days.**",
         "displayName": "Trial",
         "originalName": "trial"
       }
