@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -468,49 +468,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/api-connect/artifacts/cache/ed4dffca24123649ca0628c8a67be8a3-public/apic-icon-light-small.svg",
     "localSvgIcon": "/generated/icons/api-connect.svg",
     "localPngIcon": "/generated/icons/api-connect.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "09edee6c-6ec8-4bc9-823a-3d8d193b7bd9",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "api-bridge",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "api",
-      "custom_kind_service",
-      "enterprise_app",
-      "global",
-      "ibm i",
-      "ibm power",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "rest",
-      "support_third_party"
-    ],
-    "plans": [
-      {
-        "id": "e0d7c481-62fb-49bb-a22a-bddafbafbc03",
-        "name": "api-bridge-enterprise-edition",
-        "description": "The charges will be billed on a prorated monthly basis.\nFor the month in which the service instance is provisioned, the calculation will be based on the remaining number of days in that month, including the date of creation.\nFor subsequent months, the full monthly fee will apply. Subscriptions will be automatically renewed on a monthly basis.",
-        "displayName": "Monthly Usage Plan"
-      }
-    ],
-    "description": "Leverage IBM i programs and data assets to achieve integration with external applications and web services.",
-    "longDescription": "The API-Bridge is a tool that enables the utilization of IBM i data in cloud systems and web applications. By implementing the construction of RESTful APIs, it becomes possible to integrate the data and logic of IBM i with existing internal and external web applications, as well as communication tools that evolve over time.\n\nThe details are provided at the following URL.\n\nhttps://mono-x.com/api-bridge/en/",
-    "displayName": "API-Bridge for i ",
-    "imageUrl": "https://mono-x.com/wp-content/uploads/2024/04/API-Bridge-icon.png",
-    "localPngIcon": "/generated/icons/09edee6c-6ec8-4bc9-823a-3d8d193b7bd9.png"
   },
   {
     "geo_tags": [
@@ -5586,16 +5543,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-gb",
       "us-south",
       "eu-de",
-      "eu-gb"
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5753,13 +5710,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8203,14 +8160,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8784,17 +8741,17 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "jp-tok",
       "au-syd",
+      "ca-mon",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "ca-mon",
       "eu-de",
-      "us-south",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10096,53 +10053,10 @@
   },
   {
     "geo_tags": [
-      "global"
-    ],
-    "id": "9d9545b4-b866-4c1b-9fc0-39273aef5bb0",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "mono-x-one",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "custom_kind_service",
-      "enterprise_app",
-      "global",
-      "ibm i",
-      "ibm power",
-      "ibm_third_party",
-      "no code",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "rest",
-      "support_third_party"
-    ],
-    "plans": [
-      {
-        "id": "9fd3c2e0-03e8-48e4-ac19-b2842cd70a0a",
-        "name": "monthly-usage-plan",
-        "description": "The charges will be billed on a prorated monthly basis. For the month in which the service instance is provisioned, the calculation will be based on the remaining number of days in that month, including the date of creation. For subsequent months, the full monthly fee will apply. Subscriptions will be automatically renewed on a monthly basis.",
-        "displayName": "monthly-usage-plan"
-      }
-    ],
-    "description": "A no-code application supporting various databases, including IBM i",
-    "longDescription": "A no-code application supporting various databases, including IBM i\n+ Easy screen setup with mouse operations\n+ Development made easy without coding\n+ Direct connection to IBM i databases\n+ Instantly publish to your business partners\n+ Operates on IBM i, both on-premises and in the cloud\n+ No need for APIs or web skills\n+ Can call IBM i RPG and CL",
-    "displayName": "MONO-X One for PowerVS",
-    "imageUrl": "https://product.mono-x.com/hubfs/MONO-X-One_icon.png",
-    "localPngIcon": "/generated/icons/9d9545b4-b866-4c1b-9fc0-39273aef5bb0.png"
-  },
-  {
-    "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -13875,47 +13789,6 @@
   },
   {
     "geo_tags": [
-      "global"
-    ],
-    "id": "aa11a8b2-381e-4c1c-a232-2148f65c005f",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "mono-x-inc-pvs-one-managed-service",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "consulting_tab",
-      "custom_kind_service",
-      "global",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "virtualservers"
-    ],
-    "plans": [
-      {
-        "id": "bcba02cb-c071-4dc5-b44f-10481ab12649",
-        "name": "monthly-plan",
-        "description": "Managed Service for Power Virtual Server, including setup, operational support, configuration changes, and troubleshooting.\nOS support is dedicated to IBM i environments.\n\nAn order is required for each VM (instance).\nIf you need Managed Service support for multiple VMs, please submit multiple orders.\n",
-        "displayName": "monthly-plan"
-      }
-    ],
-    "description": "Managed Service for Power Virtual Server, including setup, operational support, configuration changes, and troubleshooting.",
-    "longDescription": "PVS One Managed Service provides comprehensive support for the setup and operation of PowerVS, including new instance setup, configuration changes, and ongoing operational support. Key offerings include operational management of PowerVS Workspaces, support for IBM i instance management, and Q&A with troubleshooting. The service is available in Japan, with support for Japanese-language instances and translation assistance for communication with IBM Cloud support.\n\nThe detail of PVS One is provided at the following URL:\nhttps://mono-x.com/pvsone/",
-    "displayName": "PVS One Managed Service",
-    "imageUrl": "https://mono-x.com/pvsone/assets/ico/safari-pinned-tab.svg",
-    "localSvgIcon": "/generated/icons/aa11a8b2-381e-4c1c-a232-2148f65c005f.svg",
-    "localPngIcon": "/generated/icons/aa11a8b2-381e-4c1c-a232-2148f65c005f.png"
-  },
-  {
-    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -15657,12 +15530,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -16605,7 +16478,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16645,7 +16517,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -18137,12 +18010,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "jp-tok",
       "eu-de",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-gb",
+      "us-south",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18444,12 +18317,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
