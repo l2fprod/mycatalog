@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5114,6 +5114,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5121,11 +5125,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5545,14 +5545,14 @@
     "geo_tags": [
       "eu-es",
       "us-south",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
       "eu-de",
-      "au-syd",
-      "us-east"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5710,13 +5710,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8741,17 +8741,17 @@
   },
   {
     "geo_tags": [
+      "ca-mon",
+      "eu-gb",
       "jp-tok",
-      "au-syd",
+      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-es",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10607,8 +10607,8 @@
         "displayName": "neuralseek-small-business"
       }
     ],
-    "description": "NeuralSeek is a no-code, agentic LLM orchestration platform that gets  Generative AI usecases running faster.",
-    "longDescription": "NeuralSeek completely automates Retrieval Augmented Generation (RAG) usecases, connecting dozens of different knowledge bases and 40+ LLM's together in seconds.\n\nNeuralSeek's mAIstro platform lets business users quickly build complex LLM-backed processes with greater scalability than hardcoding in python, and without knowing any code.\n\nIndustry Leading Retrieval Augmented Generation\n\nStrong Corporate Controls, human in the loop.\n\nAutomatic Virtual Agent Builder\n\nAutomatically create & monitor conversations into leading Virtual Agent platforms.\n\nProtection from Prompt Injection and harmful content\n\nAutomatically cleanse and protect against malicious user input\n\nFull RAG Governance - Executive-level and SME dashboards to monitor answer generation, system performance, content insights and configuration churn\n\nIntegrated versioning controls\n\nCategory and Intent-level control \n\nSet confidence thresholds, custom responses and fallbacks per category.\n\nAutomatically prompt-tune LLM’s at the intent level\n\nAutomatic Content Cleansing\n\nPreprocess complex embedded tables\n\nCross-language / automatic Translation\n\nAnswer questions in languages other than the documentation\n\nCorporate Logging - Log all actions for corporate audit & compliance.\n\nAnswer Provenance & Hallucination detection / removal\n\nTrace answers directly to source documents\n\nSemantic Analysis helps users understand the confidence of answers \nand eliminate hallucination\n\nPII Detection / Removal\n\nFlag, Mask, Hide, or Delete PII on user input.\n\nDynamic Personalization\n\nLeverage SSO or user data to tailor responses specifically to users.\n\nIntegrate structured & unstructured data across endless sources. \n\nCreate scalable LLM-backed processes in seconds.\n\nGenerate files and documents, create synthetic data\n\nConnect to REST endpoints,  automatically send Email\n\n60+ prebuilt functions to snap together in limitless ways\n",
+    "description": "The world's best no-code Agentic platform. From RAG to multi-agent generative AI systems with native Governance.",
+    "longDescription": "The world's best no-code Agentic platform. From RAG to multi-agent generative AI systems with native Governance.\n\nNeuralSeek completely automates Retrieval Augmented Generation (RAG) usecases, backed by business-friendly no-code agents.\n\nNeuralSeek's mAIstro platform lets business users quickly build complex LLM-backed processes with greater scalability than hardcoding in python, and without knowing any code.\n\nIndustry Leading Retrieval Augmented Generation\n\nStrong Corporate Controls, human in the loop.\n\nAutomatic Virtual Agent Builder\n\nAutomatically create & monitor conversations into leading Virtual Agent platforms.\n\nProtection from Prompt Injection and harmful content\n\nAutomatically cleanse and protect against malicious user input\n\nFull RAG Governance - Executive-level and SME dashboards to monitor answer generation, system performance, content insights and configuration churn\n\nIntegrated versioning controls\n\nCategory and Intent-level control \n\nSet confidence thresholds, custom responses and fallbacks per category.\n\nAutomatically prompt-tune LLM’s at the intent level\n\nAutomatic Content Cleansing\n\nPreprocess complex embedded tables\n\nCross-language / automatic Translation\n\nAnswer questions in languages other than the documentation\n\nCorporate Logging - Log all actions for corporate audit & compliance.\n\nAnswer Provenance & Hallucination detection / removal\n\nTrace answers directly to source documents\n\nSemantic Analysis helps users understand the confidence of answers \nand eliminate hallucination\n\nPII Detection / Removal\n\nFlag, Mask, Hide, or Delete PII on user input.\n\nDynamic Personalization\n\nLeverage SSO or user data to tailor responses specifically to users.\n\nIntegrate structured & unstructured data across endless sources. \n\nCreate scalable LLM-backed processes in seconds.\n\nGenerate files and documents, create synthetic data\n\nConnect to REST endpoints,  automatically send Email\n\n60+ prebuilt functions to snap together in limitless ways\n",
     "displayName": "NeuralSeek",
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
     "localSvgIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.svg",
@@ -18026,12 +18026,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18333,12 +18333,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
