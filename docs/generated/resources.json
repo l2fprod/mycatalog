@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5274,6 +5274,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5285,8 +5286,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5547,7 +5547,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-east",
       "br-sao",
@@ -5556,7 +5555,8 @@
       "mon01",
       "eu-gb",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5714,13 +5714,13 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8757,17 +8757,17 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "jp-tok",
+      "au-syd",
+      "ca-mon",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "jp-tok",
-      "ca-mon",
       "eu-de",
-      "us-south",
-      "eu-gb",
-      "au-syd"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11809,6 +11809,12 @@
         "description": "PowerVS DR Automation Pricing Plan",
         "displayName": "PowerVS DR Automation Pricing Plan",
         "originalName": "power-virtual-server-dr-automation"
+      },
+      {
+        "id": "280749a9-457a-4d8e-b16f-364c18dcf5a2",
+        "name": "powervs-private-cloud---dr-automation",
+        "description": "Power Virtual Server Private Cloud - Disaster Recovery Automation pricing plan",
+        "displayName": "PowerVS Private Cloud - DR Automation"
       }
     ],
     "description": "IBM Power Virtual Server DR Automation® simplifies disaster recovery by automating the recovery of virtual machines, leveraging IBM Cloud infrastructure to offer a flexible, scalable, and efficient DR process. Use DR Automation to ensure the continuity of operations with minimal manual intervention.",
@@ -13869,8 +13875,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16494,6 +16500,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16533,8 +16540,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -18026,12 +18032,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "jp-tok",
       "eu-gb",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
