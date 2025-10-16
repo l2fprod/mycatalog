@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5274,7 +5274,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5286,7 +5285,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5547,16 +5547,16 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es"
+      "eu-gb",
+      "eu-es",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6412,10 +6412,22 @@
     ],
     "plans": [
       {
+        "id": "33658776-a7cc-4f55-bcdb-93f1da730bf1",
+        "name": "monthly---1-year-term",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
+        "displayName": "Monthly - 1 Year Term"
+      },
+      {
         "id": "0f07995e-3077-44d1-b981-c7bb6fbe82b9",
         "name": "monthly---no-term",
         "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
         "displayName": "Monthly - No Term"
+      },
+      {
+        "id": "a0102df7-6479-4094-96fd-4939c6c70e4a",
+        "name": "prepaid---1-year-term",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete. ",
+        "displayName": "Prepaid - 1 Year Term"
       }
     ],
     "description": "Deliver modern, secure, and scalable cloud desktops with Dizzion Cloud PC, a fully managed solution on IBM VPC infrastructure.",
@@ -8164,14 +8176,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8745,17 +8757,17 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-mon",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
       "eu-es",
       "jp-tok",
-      "eu-gb"
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16482,7 +16494,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16522,7 +16533,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17948,10 +17960,7 @@
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "satcon_wdc",
-      "us-east",
-      "us-south",
-      "wdc07"
+      "us-south"
     ],
     "id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
     "kind": "service",
@@ -17981,15 +17990,9 @@
       "lite",
       "paid_only",
       "rc_compatible",
-      "satcon_wdc",
-      "satellite_enabled",
-      "service_endpoint_supported",
       "support_ibm",
-      "us-east",
       "us-south",
-      "vpc_private_endpoint",
-      "watson",
-      "wdc07"
+      "watson"
     ],
     "plans": [
       {
@@ -18005,13 +18008,6 @@
         "description": "30-day free access to the Standard plan",
         "displayName": "Trial",
         "originalName": "lite"
-      },
-      {
-        "id": "91fe4679-8af7-4abd-bb82-cf2caf8ab7d0",
-        "name": "premium-agentic-messages",
-        "description": "Premium Agentic Plan with Messages for Data Isolation",
-        "displayName": "Premium Agentic with Data Isolation (Messages)",
-        "originalName": "premium-agentic-messages"
       },
       {
         "id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
@@ -18030,12 +18026,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
+      "jp-tok",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
