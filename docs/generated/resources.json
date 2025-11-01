@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5116,10 +5116,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5127,7 +5123,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5545,8 +5545,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
+      "eu-es",
       "us-south",
       "au-syd",
       "us-east",
@@ -5554,7 +5554,7 @@
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5713,13 +5713,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8181,14 +8181,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8764,17 +8764,17 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "au-syd",
-      "ca-mon",
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "jp-tok"
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10638,7 +10638,6 @@
     "longDescription": "The world's best no-code Agentic platform. From RAG to multi-agent generative AI systems with native Governance.\n\nNeuralSeek completely automates Retrieval Augmented Generation (RAG) usecases, backed by business-friendly no-code agents.\n\nNeuralSeek's mAIstro platform lets business users quickly build complex LLM-backed processes with greater scalability than hardcoding in python, and without knowing any code.\n\nIndustry Leading Retrieval Augmented Generation\n\nStrong Corporate Controls, human in the loop.\n\nAutomatic Virtual Agent Builder\n\nAutomatically create & monitor conversations into leading Virtual Agent platforms.\n\nProtection from Prompt Injection and harmful content\n\nAutomatically cleanse and protect against malicious user input\n\nFull RAG Governance - Executive-level and SME dashboards to monitor answer generation, system performance, content insights and configuration churn\n\nIntegrated versioning controls\n\nCategory and Intent-level control \n\nSet confidence thresholds, custom responses and fallbacks per category.\n\nAutomatically prompt-tune LLM’s at the intent level\n\nAutomatic Content Cleansing\n\nPreprocess complex embedded tables\n\nCross-language / automatic Translation\n\nAnswer questions in languages other than the documentation\n\nCorporate Logging - Log all actions for corporate audit & compliance.\n\nAnswer Provenance & Hallucination detection / removal\n\nTrace answers directly to source documents\n\nSemantic Analysis helps users understand the confidence of answers \nand eliminate hallucination\n\nPII Detection / Removal\n\nFlag, Mask, Hide, or Delete PII on user input.\n\nDynamic Personalization\n\nLeverage SSO or user data to tailor responses specifically to users.\n\nIntegrate structured & unstructured data across endless sources. \n\nCreate scalable LLM-backed processes in seconds.\n\nGenerate files and documents, create synthetic data\n\nConnect to REST endpoints,  automatically send Email\n\n60+ prebuilt functions to snap together in limitless ways\n",
     "displayName": "NeuralSeek",
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
-    "localSvgIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.svg",
     "localPngIcon": "/generated/icons/d97bd0c3-a8e5-4f3d-b925-16380e039a9a.png"
   },
   {
@@ -10689,7 +10688,6 @@
     "longDescription": "At NeuralSeek, we understand that implementing AI-powered solutions requires expert guidance and support to achieve optimal results. Our comprehensive professional services team partners with you throughout your journey, providing end-to-end support for implementation, seamless integration with your existing systems, thorough team training, and ongoing technical assistance. Whether you're just getting started with NeuralSeek or looking to optimize your current deployment, our experienced consultants ensure you maximize the value of your investment while maintaining the highest standards of accuracy and performance. We're committed to helping your organization harness the full potential of AI-driven customer support solutions.\n\n\nOnce you provision an instance of our professional services, you will then be able to pre-purchase blocks of hours which are valid to be consumed for 1 year after purchase.",
     "displayName": "NeuralSeek Professional Services",
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
-    "localSvgIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.svg",
     "localPngIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.png"
   },
   {
@@ -15902,7 +15900,6 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Cloud Director Site",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/vmware.directorsite.svg",
     "localPngIcon": "/generated/icons/vmware.directorsite.png"
   },
   {
@@ -15946,7 +15943,6 @@
     "longDescription": "VMware Usage Meter",
     "displayName": "VCF as a Service - Usage Meter",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/vmware.usage-meter.svg",
     "localPngIcon": "/generated/icons/vmware.usage-meter.png"
   },
   {
@@ -16049,7 +16045,6 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Virtual Data Center",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/vmware.vdc.svg",
     "localPngIcon": "/generated/icons/vmware.vdc.png"
   },
   {
@@ -16533,7 +16528,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16574,7 +16568,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17316,7 +17311,6 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VMware Solutions",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83.png"
   },
   {
@@ -18076,12 +18070,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "eu-de",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-gb",
+      "us-south",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18383,12 +18377,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
