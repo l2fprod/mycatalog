@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5272,6 +5272,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5283,8 +5284,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5548,13 +5548,13 @@
       "eu-de",
       "au-syd",
       "us-east",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "us-south",
-      "eu-gb"
+      "eu-gb",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8181,14 +8181,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8764,17 +8764,17 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "jp-tok",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "jp-tok",
-      "au-syd",
-      "eu-de",
-      "us-south",
-      "ca-mon",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13913,8 +13913,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15127,6 +15127,7 @@
     "longDescription": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
     "displayName": "STAR Virtual Learning Platform (VLP)",
     "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg",
+    "localSvgIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.svg",
     "localPngIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.png"
   },
   {
@@ -15595,12 +15596,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -18079,9 +18080,9 @@
     "geo_tags": [
       "au-syd",
       "ca-tor",
-      "jp-tok",
       "eu-gb",
       "us-south",
+      "jp-tok",
       "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
@@ -18095,7 +18096,7 @@
       "free",
       "lite",
       "paygo",
-      "paid_only"
+      "paid"
     ],
     "tags": [
       "apidocs_enabled",
@@ -18105,15 +18106,15 @@
       "eu-de",
       "eu-gb",
       "free",
+      "gc_migrate",
       "hipaa",
       "iam_compatible",
       "ibm_created",
       "ibm_dedicated_public",
-      "ibm_release",
       "jp-tok",
       "lite",
       "ml",
-      "paid_only",
+      "paid",
       "paygo",
       "rc_compatible",
       "service_endpoint_supported",
@@ -18139,7 +18140,7 @@
       {
         "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
         "name": "v2-professional",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n\nHIPAA support must be enabled in your IBM Cloud account settings. For instructions, go to https://dataplatform.cloud.ibm.com/docs/content/getting-started/security.html#hipaa\n",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n\n",
         "displayName": "Standard",
         "originalName": "v2-professional"
       },
@@ -18151,21 +18152,21 @@
         "originalName": "v2-standard"
       }
     ],
-    "description": "(Formerly known as Watson Machine Learning) Quickly build, run and manage generative AI and machine learning applications with built-in performance and scalability.",
+    "description": "Formerly known as Watson Machine Learning. Quickly build, run and manage generative AI and machine learning applications with built-in performance and scalability.",
     "longDescription": "IBM watsonx.ai Runtime provides the resources that power the AI lifecycle for IBM watsonx.ai and Cloud Pak for Data as a Service. IBM watsonx.ai Runtime powers IBM watsonx.ai Studio. With resources for all AI solution tasks, you can build, test, and deploy machine learning models and on watsonx.ai, build, tune, and deploy generative AI solutions.",
     "displayName": "watsonx.ai Runtime",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/51c53b72-918f-4869-b834-2d99eb28422a/artifacts/cache/6ef7f1514926a2ce49e05300c80c304b-public/watsonxai-light.svg",
+    "imageUrl": "https://cache.globalcatalog.test.cloud.ibm.com/api/v1/51c53b72-918f-4869-b834-2d99eb28422a/artifacts/cache/6ef7f1514926a2ce49e05300c80c304b-public/watsonxai-light.svg",
     "localSvgIcon": "/generated/icons/51c53b72-918f-4869-b834-2d99eb28422a.svg",
     "localPngIcon": "/generated/icons/51c53b72-918f-4869-b834-2d99eb28422a.png"
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -18384,12 +18385,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
