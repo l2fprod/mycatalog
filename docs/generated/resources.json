@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -568,7 +568,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -576,7 +575,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5114,7 +5114,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5201,7 +5201,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -5270,7 +5270,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -5353,7 +5353,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -5432,7 +5432,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5549,16 +5549,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
       "au-syd",
       "us-east",
+      "eu-gb",
+      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-de",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5717,13 +5717,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7024,6 +7024,62 @@
     "geo_tags": [
       "global"
     ],
+    "id": "9c0ddef0-c561-43b0-a7cb-e2714916a6ec",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "falconstor-software-habanero-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "archive",
+      "ceph",
+      "custom_kind_service",
+      "filenet",
+      "global",
+      "ibm_third_party",
+      "nas",
+      "nfs",
+      "object storage",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "smb",
+      "splunk",
+      "storage_backup",
+      "support_third_party",
+      "tape",
+      "vault",
+      "veeam"
+    ],
+    "plans": [
+      {
+        "id": "0cf75e24-9e56-436f-8041-67669d67abcf",
+        "name": "annual-subscription",
+        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nCheck with your IBM account manager for using IBM Power11 Virtual Server (PowerVS) hybrid cloud credits with Habanero Data Protection-as-a-Service to support backup, copy, disaster recovery, and archive use cases. IBM Power11 server packages ordered with PVS1 feature code include Habanero components: PowerVS instance, object storage, data protection software and service. \nCloud credit packages for Habanero are: Small package,  250 TB @ $2,500/month, Medium package: 300 TB @ $3,000/month, Large package: 600 TB @ $6,000/month",
+        "displayName": "annual-subscription"
+      },
+      {
+        "id": "09cbd7f3-459e-45e8-9675-d7056f521088",
+        "name": "month-to-month-subscription",
+        "description": "Pricing is based on source data in terabytes Subscription commitment is month-to-month with automatic monthly renewal.  If the service is cancelled, the remaining days of the applicable calendar month will be billed.\nStarting price is $3,570 per month, which includes up to 250 TB active tier.\n",
+        "displayName": "month-to-month-subscription"
+      }
+    ],
+    "description": "Provides fully managed  services that consolidate and orchestrate data protection operations across multiple backup applications.",
+    "longDescription": "FalconStor’s Habanero Data Protection Services are fully managed hybrid or cloud services that consolidate and orchestrate data protection operations across multiple backup applications and environments, delivered with IBM Cloud and IBM Cloud Object Storage (COS). Powered by StorSafe and integrated with IBM Power Virtual Server, Habanero optimizes and modernizes enterprise data protection while meeting compliance, security, and ransomware recovery requirements.\nFalconStor Habanero provides COS for long-term backup and archive of data. This turnkey solution managed by FalconStor makes adoption of object storage for all your backup and archive needs easy and cost effective.",
+    "displayName": "FalconStor Habanero",
+    "imageUrl": "https://falconstor-download.s3.us-east.cloud-object-storage.appdomain.cloud/FalconStorLogo.png",
+    "localPngIcon": "/generated/icons/9c0ddef0-c561-43b0-a7cb-e2714916a6ec.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "60427a43-cf48-41e0-bd95-26bde9c12105",
     "kind": "service",
     "metadata": {
@@ -8187,14 +8243,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8774,13 +8830,13 @@
       "ca-tor",
       "jp-osa",
       "us-east",
-      "eu-es",
-      "jp-tok",
-      "eu-gb",
       "au-syd",
       "ca-mon",
       "eu-de",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "eu-es",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9962,7 +10018,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -14750,12 +14806,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18084,12 +18140,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18391,12 +18447,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
