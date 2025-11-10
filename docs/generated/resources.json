@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -640,6 +640,62 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea/artifacts/cache/4b127d0f1300f4d842d71800ab31de75-public/CloudAppID.svg",
     "localSvgIcon": "/generated/icons/AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea.svg",
     "localPngIcon": "/generated/icons/AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "b4148be8-b094-4d38-92ba-aa104170af17",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "aspr-ai-inc-aspr-ai-sales-assistant-resident-knowledge",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "accelerate win rates",
+      "ai sales",
+      "ai sales enablement",
+      "coaching",
+      "crm",
+      "custom_kind_service",
+      "customer retention",
+      "deal insights",
+      "global",
+      "ibm_third_party",
+      "nps",
+      "paid",
+      "paid_only",
+      "playbooks",
+      "podcast training",
+      "quota",
+      "rc_compatible",
+      "reduce churns",
+      "revenue acceleration",
+      "sales assistant",
+      "sales crm",
+      "sales productivity",
+      "sales transformation",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "c96055b0-f596-4f19-924f-eec1e2af9887",
+        "name": "per-user-per-month",
+        "description": "Per User Per Month",
+        "displayName": "Per User Per Month"
+      }
+    ],
+    "description": "Accelerate wins and reduce churn by 10+% in less than 60 days using AI Sales Assistants that make every rep your best.",
+    "longDescription": "ASPR AI is a unified Sales Assistant powered by five specialized AI agents that transform sales productivity and accelerate deal outcomes. By grounding insights in CRM data, emails, transcripts, and playbooks, ASPR AI eliminates hallucinations, automates manual work, and democratizes resident knowledge across teams.\n\nSales teams use ASPR AI to:\n\n\n\n-Save 25+ hours per week per rep.\n-Cut sales tool costs by 50% or more.\n-Accelerate wins and reduce churn by 10% in under 60 days.",
+    "displayName": "ASPR AI Sales Assistant",
+    "imageUrl": "https://www.aspr.ai/favicon-white.ico",
+    "localPngIcon": "/generated/icons/b4148be8-b094-4d38-92ba-aa104170af17.png"
   },
   {
     "geo_tags": [
@@ -5179,7 +5235,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5266,7 +5322,7 @@
     "description": "MongoDB is a JSON document store with a rich query and aggregation framework.",
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mongodb.svg",
+    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/mongodb.svg",
     "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
@@ -5335,12 +5391,13 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5352,8 +5409,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5418,7 +5474,7 @@
     "description": "PostgreSQL is a powerful, open source object-relational database that is highly customizable.",
     "longDescription": "PostgreSQL is a powerful, open source object-relational database that is highly customizable. It’s a feature-rich enterprise database with JSON support, giving you the best of both the SQL and NoSQL worlds. Databases for PostgreSQL makes PostgreSQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for PostgreSQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for PostgreSQL",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/postgresql.svg",
+    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/postgresql.svg",
     "localSvgIcon": "/generated/icons/databases-for-postgresql.svg",
     "localPngIcon": "/generated/icons/databases-for-postgresql.png"
   },
@@ -5497,7 +5553,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5614,16 +5670,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
+      "us-south",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-de",
       "eu-gb",
-      "eu-es",
-      "au-syd",
-      "us-east",
-      "us-south"
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8894,14 +8950,14 @@
       "au-syd",
       "eu-de",
       "us-south",
-      "eu-es",
-      "ca-mon",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-osa",
       "us-east",
-      "jp-tok"
+      "eu-es",
+      "jp-tok",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10131,7 +10187,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -10253,10 +10309,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -18253,12 +18309,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "jp-tok",
       "eu-de",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-gb",
+      "us-south",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18335,12 +18391,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -18559,12 +18615,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
