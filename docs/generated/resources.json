@@ -401,14 +401,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5379,7 +5379,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5391,7 +5390,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5652,16 +5652,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
       "eu-gb",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5820,13 +5820,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7163,13 +7163,13 @@
       {
         "id": "0cf75e24-9e56-436f-8041-67669d67abcf",
         "name": "annual-subscription",
-        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nCheck with your IBM account manager for using IBM Power11 Virtual Server (PowerVS) hybrid cloud credits with Habanero Data Protection-as-a-Service to support backup, copy, disaster recovery, and archive use cases. IBM Power11 server packages ordered with PVS1 feature code include Habanero components: PowerVS instance, object storage, data protection software and service. \nCloud credit packages for Habanero are: Small package,  250 TB @ $2,500/month, Medium package: 300 TB @ $3,000/month, Large package: 600 TB @ $6,000/month",
+        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.\nCheck with your IBM account manager for using IBM Power11 Virtual Server (PowerVS) hybrid cloud credits with Habanero Data Protection-as-a-Service to support backup, copy, disaster recovery, and archive use cases. IBM Power11 server packages ordered with PVS1 feature code include Habanero components: PowerVS instance, object storage, data protection software and service. \nCloud credit packages for Habanero are: Small package,  250 TB @ $2,500/month, Medium package: 300 TB @ $3,000/month, Large package: 600 TB @ $6,000/month",
         "displayName": "annual-subscription"
       },
       {
         "id": "09cbd7f3-459e-45e8-9675-d7056f521088",
         "name": "month-to-month-subscription",
-        "description": "Pricing is based on source data in terabytes Subscription commitment is month-to-month with automatic monthly renewal.  If the service is cancelled, the remaining days of the applicable calendar month will be billed.\nStarting price is $3,570 per month, which includes up to 250 TB active tier.\n",
+        "description": "Pricing is based on source data in terabytes Subscription commitment is month-to-month with automatic monthly renewal.  If the service is cancelled, the remaining days of the applicable calendar month will be billed.\nStarting price is $3,570 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.",
         "displayName": "month-to-month-subscription"
       }
     ],
@@ -8346,14 +8346,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8929,16 +8929,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
-      "br-sao",
-      "jp-osa",
-      "eu-es",
-      "us-east",
-      "jp-tok",
       "ca-mon",
+      "eu-gb",
+      "jp-osa",
+      "us-east",
       "eu-de",
       "us-south",
+      "au-syd",
+      "br-sao",
+      "eu-es",
+      "jp-tok",
       "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -14538,6 +14538,46 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "scalestack-scalestack-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "0d1d258c-d526-4f14-8d5a-2fcbf9f328b4",
+        "name": "scalestack",
+        "description": "Build and run multi-agentic workflows with no code.",
+        "displayName": "Platform - Commit 1 Year"
+      }
+    ],
+    "description": "Scalestack's AI agents act as invisible GTM analysts that understand your ICP, coordinate across systems, and evolve with your GTM",
+    "longDescription": "This AI-powered agent automatically searches, pulls, and verifies data from multiple providers and web sources. It cross-references information in real time to deliver comprehensive, validated answers—autonomously. No manual research, no data silos, no inconsistent quality. Just clean insights across every source, so your teams can focus on decisions, not data gathering.\nPerfect for enterprise teams looking to scale research capabilities, automate data enrichment, and ensure information accuracy without adding headcount.",
+    "displayName": "Scalestack Agent",
+    "imageUrl": "https://cdn.prod.website-files.com/6536bce971aa266289e1fd11/68fbf7f9009888ac3e6e2a20_SS%20icon%202025.png",
+    "localPngIcon": "/generated/icons/22f2e83c-78c5-4f8d-b568-ea57cbc4af91.png"
+  },
+  {
+    "geo_tags": [
       "ca-mon",
       "ca-tor",
       "eu-de",
@@ -14957,12 +14997,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16746,7 +16786,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16787,7 +16826,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17847,6 +17887,56 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "198f5174-8d2d-4141-98e2-695c9ff06a5a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "wasabi-air",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "custom_kind_service",
+      "global",
+      "hot cloud storage",
+      "ibm_third_party",
+      "intelligent media storage",
+      "machine learning",
+      "mediaandentertainment",
+      "ml",
+      "object storage",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "technology",
+      "wasabi",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "468ee776-0e6f-40a1-86d6-8d0abe9712d0",
+        "name": "paygo",
+        "description": "Pay As You Go Plan for Wasabi Air + Wasabi Cloud Storage",
+        "displayName": "Pay As You Go"
+      }
+    ],
+    "description": "AI-Powered Intelligent Media Storage - \n\nQuickly and affordably find and access every moment in every media file you own.\n",
+    "longDescription": "Wasabi AiR Intelligent Media Storage\n\nWasabi AiR is AI-powered intelligent media storage that adds structure to unstructured data, automatically tagging visual, audio, and textural elements as they are ingested. Wasabi AiR combines features such as metadata auto-tagging, Optical Character Recognition, speech to text, people recognition, and multilingual transcription, with cloud storage. Seamlessly integrate Wasabi AiR into your media workflow to enhance content discoverability, streamline operations, and maximize media value.\n",
+    "displayName": "Wasabi AiR",
+    "imageUrl": "https://s3.us-east-2.wasabisys.com/ibm-cc-assets/Wasabi-AiR-Square-Grn_32px.svg",
+    "localSvgIcon": "/generated/icons/198f5174-8d2d-4141-98e2-695c9ff06a5a.svg",
+    "localPngIcon": "/generated/icons/198f5174-8d2d-4141-98e2-695c9ff06a5a.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "eu-de",
       "eu-gb",
@@ -18373,12 +18463,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
