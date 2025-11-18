@@ -401,14 +401,112 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "5d57679c-dc77-4784-9b25-e2c3f94553fb",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "anycloudbackup365andentra",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "cloud to cloud",
+      "custom_kind_service",
+      "entra id",
+      "global",
+      "ibm_third_party",
+      "identity protection",
+      "microsoft 365 backup",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "storage_backup",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "a611763d-2848-4c32-9f12-56c78202553c",
+        "name": "1-active-microsoft-seat-and-entra-id",
+        "description": "This bundle protects Microsoft 365 data and Entra ID identity infrastructure in one secure solution. Built on IBM Cloud, it delivers long-term retention, Insider Threat Protection, GDPR compliance, and a unified management portal with security dashboard for resilient collaboration and identity protection.",
+        "displayName": "1 active Microsoft seat and Entra ID"
+      },
+      {
+        "id": "85dd40d1-b9a3-4867-8818-d6ec983a3a41",
+        "name": "1-active-microsoft-seat-and-entra-id---edu-",
+        "description": "This bundle protects Microsoft 365 data and Entra ID identity infrastructure in one secure solution. Built on IBM Cloud, it delivers long-term retention, Insider Threat Protection, GDPR compliance, and a unified management portal with security dashboard for resilient collaboration and identity protection.",
+        "displayName": "1 active Microsoft seat and Entra ID - Edu."
+      }
+    ],
+    "description": "Secure SaaS bundle for Microsoft 365 and Entra ID with fast restore, identity dashboards, and GDPR compliance",
+    "longDescription": "ABOUT\nAnycloud Backup for 365 + Entra ID bundle combines protection of Microsoft 365 data with security for Microsoft Entra ID identities. The solution unites Anycloud Backup for 365 and Anycloud Backup for Entra ID into one offering, delivering complete cloud-to-cloud backup of both business-critical content and identity objects. Data and identities are stored securely in IBM Cloud datacenters worldwide, with compliance, resilience, and fast restore at the core.\n\n\nUSER-FRIENDLY PORTALS\nThe bundle is operated through intuitive web portals:\n\n• Management Portal for scheduling backups, defining retention policies, and managing both data and identity backups\n• Self-Service Restore Portal for end-users to recover emails and OneDrive data\n• Restore Portals for administrators to restore Microsoft 365 content and Entra ID identity objects such as users, groups, roles, and conditional access policies\n\n\nKEY BENEFITS\n\n• One combined service covering both Microsoft 365 content and Entra ID identity infrastructure\n• Cloud-to-cloud backup with segregation from Microsoft ensuring independence and resilience\n• Fast restore of files, folders, mailboxes, and identity objects to minimize downtime\n• Geographical redundancy across IBM Cloud Tier-3+ datacenters with global data locality options\n• Insider Threat Protection with 30-day undelete safeguard\n• Fully scalable solution with predictable cost model\n\n\nCOMPLIANCE AND SECURITY\nThe bundle is designed to meet strict compliance and security requirements. Data is encrypted with AES-256 in transit and at rest, with fixed storage locality once selected. Both services fully support GDPR, including right-to-be-forgotten, and provide complete audit trails. IBM Cloud datacenters are ISO 27001, ISO 27017, ISO 27018, and SOC certified.\n\n\nTECHNICAL SPECIFICATIONS\n• 99.9% SLA uptime\n• AES-256 encryption in transit and at rest\n• Retention from 1 year up to 25 years with unlimited storage under fair usage\n• GDPR compliance including right-to-be-forgotten and support for industry regulatory standards\n• Automated backup jobs configured to meet customer RTO and RPO targets\n• Hosted in 16+ IBM Cloud datacenters worldwide\n• Unified bundle license covering both data and identity protection\n\n\nBETTER TOGETHER\nMicrosoft 365 is only fully protected when both data and identity are secured. By combining Anycloud Backup for 365 and Anycloud Backup for Entra ID, organizations close the gap between content loss and identity compromise. The bundle ensures that emails, files, and Teams data can be restored alongside critical identity objects such as users, groups, and access policies. This integrated protection reduces downtime, ensures compliance, and provides a future-proof safeguard for the entire Microsoft 365 environment.\n\n\n\n\n\n\n\n",
+    "displayName": "Anycloud Backup for 365 and Entra ID",
+    "imageUrl": "https://cdn.anycloud.dk/Logo/AC365ACBE_logo_favicon.png",
+    "localPngIcon": "/generated/icons/5d57679c-dc77-4784-9b25-e2c3f94553fb.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "4ae1ee85-9be2-4922-ada0-c374b25db874",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "anycloudbackupentra",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "cloud to cloud",
+      "custom_kind_service",
+      "entra id",
+      "global",
+      "ibm_third_party",
+      "identity protection",
+      "microsoft 365 backup",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "storage_backup",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "66af873b-b01d-4d2c-a32f-c795e62d1182",
+        "name": "1-active-entra-id-member",
+        "description": "Anycloud Backup for Entra ID secures Microsoft Entra ID identity infrastructure with automated cloud-to-cloud backups, rapid recovery, and GDPR compliance. Hosted on IBM Cloud, it includes full audit logging and a security dashboard for visibility, compliance, and control.",
+        "displayName": "1 active Entra ID member"
+      },
+      {
+        "id": "7f24f448-96bc-4921-b655-008a8565bd00",
+        "name": "1-active-entra-id-member---edu-",
+        "description": "Anycloud Backup for Entra ID secures Microsoft Entra ID identity infrastructure with automated cloud-to-cloud backups, rapid recovery, and GDPR compliance. Hosted on IBM Cloud, it includes full audit logging and a security dashboard for visibility, compliance, and control.",
+        "displayName": "1 active Entra ID member - Edu."
+      }
+    ],
+    "description": "Secure SaaS backup for Microsoft Entra ID with fast recovery, compliance dashboards, and identity protection",
+    "longDescription": "ABOUT\nAnycloud Backup for Entra ID is a SaaS solution designed to secure Microsoft Entra ID (formerly Azure Active Directory). The service protects identity objects such as users, groups, roles, applications, and conditional access policies against misconfiguration, deletion, and cyberthreats. Backup data is stored securely in IBM Cloud datacenters worldwide, ensuring compliance, resilience, and fast restore.\n\n\nUSER-FRIENDLY PORTAL\nThe solution is managed through an intuitive web portal that enables administrators to:\n• Configure and monitor backup jobs with customizable retention policies\n• Restore Entra ID objects such as users, groups, applications, and roles\n• Access dashboards with identity security scores and personalized recommendations\n• Review a full audit trail of sign-ins, role changes, and policy modifications\n\n\nKEY BENEFITS\n• Purpose-built SaaS backup for Microsoft Entra ID identities and configurations\n• Protection against cyberattacks, insider threats, and accidental deletion\n• Security dashboards providing visibility and governance insights\n• GDPR compliance including right-to-be-forgotten support\n• Fast, object-level restore of identities, groups, and policies\n• Hosted in IBM Cloud Tier-3+ datacenters with global data locality options\n• Fully scalable solution with predictable cost model\n\n\nCOMPLIANCE AND SECURITY\nThe service ensures data confidentiality and compliance with industry standards. Backup data is encrypted with AES-256 in transit and at rest, with immutable storage preventing unauthorized deletion or tampering. Customers can select their preferred IBM Cloud region for data locality. The service supports GDPR and other regulatory frameworks, with audit-ready reporting and “right-to-be-forgotten” functionality.\n\n\nTECHNICAL SPECIFICATIONS\n• 99.9% SLA uptime\n• AES-256 encryption in transit and at rest\n• Flexible retention from 1 day to unlimited\n• Immutable backup storage with segregation of duties\n• Automated incremental backups with minimal API throttling\n• Identity dashboards with live security scoring and recommendations\n• Hosted in 16+ IBM Cloud datacenters worldwide\n\n\nBETTER TOGETHER\nWhile Anycloud Backup for Entra ID provides complete protection of the identity layer, it becomes even more powerful when combined with Anycloud Backup for 365. Together, the services deliver unified protection of both Microsoft 365 content and Entra ID identities, ensuring end-to-end security, compliance, and resilience across the entire Microsoft cloud environment.\n",
+    "displayName": "Anycloud Backup for Entra ID",
+    "imageUrl": "https://cdn.anycloud.dk/Logo/ACBE_logo_favicon.png",
+    "localPngIcon": "/generated/icons/4ae1ee85-9be2-4922-ada0-c374b25db874.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5652,16 +5750,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "au-syd",
       "us-east",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
-      "eu-es",
-      "us-south"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5820,13 +5918,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8929,17 +9027,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "ca-tor",
+      "eu-es",
       "ca-mon",
       "eu-de",
       "us-south",
-      "eu-es",
       "au-syd",
       "eu-gb",
+      "us-east",
+      "jp-tok",
+      "ca-tor",
       "br-sao",
-      "jp-osa",
-      "us-east"
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10291,10 +10389,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -10908,6 +11006,7 @@
   {
     "geo_tags": [
       "au-syd",
+      "eu-de",
       "global",
       "us-south"
     ],
@@ -10932,6 +11031,7 @@
       "business_analytics",
       "custom_kind_service",
       "data_analytics",
+      "eu-de",
       "global",
       "iam_compatible",
       "ibm_created",
@@ -14126,8 +14226,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15849,12 +15949,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -16786,6 +16886,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16826,8 +16927,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -17924,7 +18024,7 @@
       {
         "id": "468ee776-0e6f-40a1-86d6-8d0abe9712d0",
         "name": "paygo",
-        "description": "Pay As You Go Plan for Wasabi Air + Wasabi Cloud Storage",
+        "description": "Pay As You Go Plan for Wasabi AiR + Wasabi Cloud Storage\n\nTo get started subscribe today or request a demo : sales@wasabi.com",
         "displayName": "Pay As You Go"
       }
     ],
@@ -18455,7 +18555,7 @@
       }
     ],
     "description": "Formerly known as Watson Machine Learning. Quickly build, run and manage generative AI and machine learning applications with built-in performance and scalability.",
-    "longDescription": "IBM watsonx.ai Runtime provides the resources that power the AI lifecycle for IBM watsonx.ai and Cloud Pak for Data as a Service. IBM watsonx.ai Runtime powers IBM watsonx.ai Studio. With resources for all AI solution tasks, you can build, test, and deploy machine learning models and on watsonx.ai, build, tune, and deploy generative AI solutions.",
+    "longDescription": "IBM watsonx.ai Runtime service provides resources to power AI lifecycles and makes building and deploying AI solutions simple and scalable. It includes APIs, tools, models, and flexible runtimes ready for use in any cloud or hybrid environment.   For a full description of features and capabilities, visit the watsonx.ai product page https://www.ibm.com/products/watsonx-ai",
     "displayName": "watsonx.ai Runtime",
     "imageUrl": "https://cache.globalcatalog.test.cloud.ibm.com/api/v1/51c53b72-918f-4869-b834-2d99eb28422a/artifacts/cache/6ef7f1514926a2ce49e05300c80c304b-public/watsonxai-light.svg",
     "localSvgIcon": "/generated/icons/51c53b72-918f-4869-b834-2d99eb28422a.svg",
@@ -18686,12 +18786,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
