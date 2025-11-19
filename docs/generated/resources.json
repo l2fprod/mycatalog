@@ -499,14 +499,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5477,6 +5477,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5488,8 +5489,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5754,10 +5754,10 @@
       "ca-tor",
       "jp-tok",
       "mon01",
-      "us-south",
-      "eu-de",
       "eu-gb",
       "eu-es",
+      "us-south",
+      "eu-de",
       "au-syd",
       "us-east"
     ],
@@ -8444,14 +8444,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9027,17 +9027,17 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
-      "eu-es",
-      "ca-tor",
+      "jp-tok",
       "ca-mon",
+      "eu-de",
+      "us-south",
       "au-syd",
+      "us-east",
+      "ca-tor",
       "eu-gb",
       "br-sao",
-      "us-east",
-      "jp-tok",
-      "eu-de",
-      "us-south"
+      "jp-osa",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16886,6 +16886,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -16926,8 +16927,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -18024,7 +18024,7 @@
       {
         "id": "468ee776-0e6f-40a1-86d6-8d0abe9712d0",
         "name": "paygo",
-        "description": "Pay As You Go Plan for Wasabi AiR + Wasabi Cloud Storage\n\nTo get started subscribe today or request a demo : sales@wasabi.com",
+        "description": "Pay As You Go Plan : Wasabi AiR ($12.99 / AiR hour) + Wasabi Cloud Storage ($8.99 / TB / mo) with Premium Support\n\nTo get started subscribe today or request a demo : sales@wasabi.com",
         "displayName": "Pay As You Go"
       }
     ],
@@ -18034,6 +18034,51 @@
     "imageUrl": "https://s3.us-east-2.wasabisys.com/ibm-cc-assets/Wasabi-AiR-Square-Grn_32px.svg",
     "localSvgIcon": "/generated/icons/198f5174-8d2d-4141-98e2-695c9ff06a5a.svg",
     "localPngIcon": "/generated/icons/198f5174-8d2d-4141-98e2-695c9ff06a5a.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "wasabi-cloud-storage",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "storage",
+      "cloud",
+      "cloud storage",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "object storage",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "s3",
+      "s3 compatible",
+      "storage_object",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "2976d2b9-07c1-4418-bec3-f15deec2a41a",
+        "name": "pay-as-you-go",
+        "description": "Pay As You Go Plan : Wasabi Cloud Storage ($6.99 / TB / mo) plus Premium Support\n\nTo get started subscribe today or request a demo : sales@wasabi.com",
+        "displayName": "Pay As You Go"
+      }
+    ],
+    "description": "Infinitely affordable and predictably priced hot cloud storage. No complex tiers. No fees for egress or API calls.",
+    "longDescription": "Wasabi Hot Cloud Storage is a universal, one-size-fits-all cloud object storage service that simplifies storage by enabling a highly available environment across a range of business use cases. Wasabi Hot Cloud Storage is easy to understand, simple to order, and incredibly cost-effective to scale. With Wasabi, there are no confusing storage tiers to decipher and no complicated fee structures to decode. And Wasabi storage is free from data access and API call fees, unlike traditional providers, which can substantially drive-up costs.\n",
+    "displayName": "Wasabi Hot Cloud Storage",
+    "imageUrl": "https://s3.us-east-2.wasabisys.com/ibm-cc-media-asset/wsb.png",
+    "localPngIcon": "/generated/icons/fb5df263-273c-4ec3-bfe3-ac2ebe114e19.png"
   },
   {
     "geo_tags": [
@@ -18481,12 +18526,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18563,12 +18608,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -18786,12 +18831,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
