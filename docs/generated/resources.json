@@ -499,14 +499,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -666,6 +666,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -673,8 +674,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4579,13 +4579,13 @@
       {
         "id": "e86888c1-5dfe-447b-8c04-fef9ae5766ef",
         "name": "vmware-to-cloud-vps-native-vsis",
-        "description": "Quantity of “migration services units” determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
+        "description": "Quantity of “migration service units” determined from initial no-cost project scoping conducted by PrimaryIO professional services.",
         "displayName": "IBM Cloud Classic to VPC-native VSIs"
       }
     ],
-    "description": "Workload migration and conversion to Cloud VPC VSIs performed at scale using the conversion/migration ConvertIO engine",
+    "description": "Workload migration and conversion to Cloud VPC performed at scale using the conversion/migration ConvertIO engine",
     "longDescription": "This selection of the ConvertIO product platform, wrapped in services, targets VMware customers seeking to modernize and embrace IBM cloud-native VSI workloads running in IBM Cloud VPC.\nWhile PrimaryIO offers SaaS products in support of the Cloud Journey targeting data resiliency, this catalog offering encompasses the scoping, sizing, migration and conversion of VMware estates into IBM Cloud VPC domiciled VSI workloads.  This option is targeting enterprises looking to reduce their VMware VCF estate and become more cloud-native. \nThe services are designed to create an easy to consume, yet bespoke, tailored project.  Each project is fully detailed with project plan, associated cost and transparency to the project status with focus on rapid achievement of critical path objectives.\nAll projects, irrespective of category and customization, require a current state assessment coupled with a solid understanding of the customer goal and associated target environment.  Once well-comprehended, an accurate statement of work and associated price quote is generated in support of the project.  At such time, the project can be procured through this catalog entry.\n",
-    "displayName": "ConvertIO VMware Workload Migration and Conversion",
+    "displayName": "ConvertIO Workload Migration and Conversion",
     "imageUrl": "https://hdm.primaryio.com/assets/PrimaryIO-logo-96x96.png",
     "localPngIcon": "/generated/icons/742c2c0f-1c40-480d-ab7b-76e56a89f51b.png"
   },
@@ -5321,10 +5321,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5332,7 +5328,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5751,6 +5751,7 @@
   {
     "geo_tags": [
       "eu-de",
+      "us-south",
       "au-syd",
       "us-east",
       "br-sao",
@@ -5758,8 +5759,7 @@
       "jp-tok",
       "mon01",
       "eu-gb",
-      "eu-es",
-      "us-south"
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5918,13 +5918,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9027,17 +9027,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
+      "ca-tor",
+      "au-syd",
+      "eu-es",
+      "us-east",
+      "ca-mon",
       "eu-de",
       "us-south",
       "eu-gb",
-      "eu-es",
-      "us-east",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
       "br-sao",
-      "jp-osa"
+      "jp-osa",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14226,8 +14226,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15949,12 +15949,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
