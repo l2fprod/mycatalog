@@ -499,14 +499,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2258,7 +2258,7 @@
         "displayName": "Usage-based"
       }
     ],
-    "description": "Hire agents, power people ",
+    "description": "Hire agents, power people. Competency AI advisor that maps your workforce, then assigns agents to roles, tasks and people.",
     "longDescription": "Claira is your talent expert, helping you hire AI, hire humans and build a collaborative workforce. Using competencies, Claira creates profiles for agents and people and matches them to roles, projects or tasks - streamlining operations, cutting costs and driving productivity.  ",
     "displayName": "Claira",
     "imageUrl": "https://app.claira.ai/claira-32.png",
@@ -5249,6 +5249,9 @@
     "localPngIcon": "/generated/icons/696b9880-9e9b-11ea-9054-e15e287f1e7f.png"
   },
   {
+    "geo_tags": [
+      "us-south"
+    ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "kind": "service",
     "metadata": {
@@ -5267,9 +5270,11 @@
       "data virtualization",
       "data_management",
       "database",
+      "iam_compatible",
       "ibm_created",
       "rc_compatible",
-      "support_ibm"
+      "support_ibm",
+      "us-south"
     ],
     "plans": [
       {
@@ -5284,7 +5289,6 @@
     "longDescription": "For decades, companies have tried to break down silos by copying data from different operational systems into central data stores for analysis, such as data marts, data warehouses and data lakes. These methods can be costly and are prone to error. Most struggle to manage an average of 33 unique data sources, which are diverse in structure and often trapped within inaccessible data silos. With Data Virtualization, you can query data across many systems without having to copy and replicate it, saving time and reducing costs. Data Virtualization queries data from its source, simplifying your analytics by providing the latest and most accurate data.",
     "displayName": "Data Virtualization",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/5d307850-0404-11eb-8c8b-c7d7505f656d/artifacts/cache/0082f4ddf582a68f1bab3bca336b6a15-public/data-virtualization.svg",
-    "geo_tags": [],
     "localSvgIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.svg",
     "localPngIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.png"
   },
@@ -5373,6 +5377,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5380,11 +5388,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5802,15 +5806,15 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
+      "eu-es",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "eu-de",
-      "eu-gb",
       "us-south"
     ],
     "id": "dashdb-for-transactions",
@@ -5970,13 +5974,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8496,14 +8500,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9079,17 +9083,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
+      "au-syd",
+      "br-sao",
       "us-east",
       "jp-tok",
-      "eu-gb",
-      "br-sao",
-      "jp-osa",
       "ca-tor",
       "ca-mon",
+      "eu-gb",
+      "jp-osa",
+      "eu-es",
       "eu-de",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9381,6 +9385,7 @@
       "fra02",
       "fra04",
       "fra05",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "lon04",
@@ -9450,6 +9455,7 @@
       "iam_compatible",
       "ibm_created",
       "ibm_release",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "kubernetes",
@@ -10441,10 +10447,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -16099,12 +16105,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17036,7 +17042,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17077,7 +17082,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
