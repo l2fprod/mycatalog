@@ -499,14 +499,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5256,8 +5256,12 @@
       "ui": {}
     },
     "name": "data-virtualization",
+    "pricing_tags": [
+      "allow_internal_users"
+    ],
     "tags": [
       "databases",
+      "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
       "data virtualization",
@@ -5267,7 +5271,15 @@
       "rc_compatible",
       "support_ibm"
     ],
-    "plans": [],
+    "plans": [
+      {
+        "id": "data-virtualization-enterprise-preprod",
+        "name": "data-virtualization-enterprise-preprod",
+        "description": "The service is metered and consumed once provisioned even when no workload is submitted.",
+        "displayName": "Enterprise (preprod)",
+        "originalName": "data-virtualization-enterprise-preprod"
+      }
+    ],
     "description": "Enterprise and Lite-tier provisioning is temporarily unavailable. For any concerns please contact wgyure@us.ibm.com",
     "longDescription": "For decades, companies have tried to break down silos by copying data from different operational systems into central data stores for analysis, such as data marts, data warehouses and data lakes. These methods can be costly and are prone to error. Most struggle to manage an average of 33 unique data sources, which are diverse in structure and often trapped within inaccessible data silos. With Data Virtualization, you can query data across many systems without having to copy and replicate it, saving time and reducing costs. Data Virtualization queries data from its source, simplifying your analytics by providing the latest and most accurate data.",
     "displayName": "Data Virtualization",
@@ -5361,10 +5373,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5372,7 +5380,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5517,7 +5529,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5529,7 +5540,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5790,16 +5802,16 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-gb",
       "eu-es",
-      "us-south",
       "eu-de",
-      "au-syd",
-      "us-east"
+      "eu-gb",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9067,14 +9079,14 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
       "eu-es",
       "us-east",
       "jp-tok",
-      "ca-tor",
-      "ca-mon",
       "eu-gb",
       "br-sao",
+      "jp-osa",
+      "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd"
@@ -11804,6 +11816,50 @@
     "displayName": "Portworx Enterprise",
     "imageUrl": "https://raw.githubusercontent.com/portworx/pxdocs-tooling/master/static/images/favicon-32x32.png",
     "localPngIcon": "/generated/icons/d666f360-66d1-11e9-85ef-a19427301a8c.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "ab2830c0-7b51-11ef-b369-0733120a414f",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "power-enterprise-pools-connector",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "integration",
+      "allow_internal_users",
+      "custom_kind_service",
+      "global",
+      "iam_compatible",
+      "ibm_created",
+      "ibm_release",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_ibm"
+    ],
+    "plans": [
+      {
+        "id": "8f7b36ef-715d-445f-970c-d8d506a629c1",
+        "name": "power-enterprise-pools-metered-capacity",
+        "description": "Power Enterprise Pools Metered Capacity Integration",
+        "displayName": "Standard"
+      }
+    ],
+    "description": "Integrate on-premises consumption in Power Enterprise Pools with PowerVS and other IBM Cloud services on a single monthly invoice.",
+    "longDescription": "Enable IT teams to deploy AIX, IBM i, and Linux applications more affordably and flexibly across a hybrid Power environment by integrating charges for pay-per-use compute resources on systems both on-premises and in the public cloud. Connect a Power Enterprise Pools 2.0 to a Power Virtual Server Enterprise Savings Plan (ESP) to have any charges for consumption of Metered Capacity in an on-premises Power Enterprise Pool invoiced alongside Power Virtual Server and other IBM Cloud services in a single, consolidated invoice from IBM Cloud.  Have on-premises Metered Capacity consumption count toward any committed spend of a PowerVS Cloud ESP.",
+    "displayName": "Power Enterprise Pools Metered Capacity Integration",
+    "imageUrl": "https://s3.us.cloud-object-storage.appdomain.cloud/icons-ess-cloud-dev/light-theme/PowerEnterprisePoolsMeteredCapacityIntegration.svg",
+    "localSvgIcon": "/generated/icons/ab2830c0-7b51-11ef-b369-0733120a414f.svg",
+    "localPngIcon": "/generated/icons/ab2830c0-7b51-11ef-b369-0733120a414f.png"
   },
   {
     "geo_tags": [
@@ -16043,12 +16099,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -16980,6 +17036,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17020,8 +17077,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
