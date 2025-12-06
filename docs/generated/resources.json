@@ -499,14 +499,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -666,7 +666,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -674,7 +673,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5474,6 +5474,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5485,8 +5486,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5748,14 +5748,14 @@
   {
     "geo_tags": [
       "us-south",
+      "eu-de",
       "au-syd",
       "us-east",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "eu-de",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -6221,6 +6221,62 @@
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.dedicated-host/artifacts/IBM_Cloud_DedicatedHost.svg",
     "localSvgIcon": "/generated/icons/is.dedicated-host.svg",
     "localPngIcon": "/generated/icons/is.dedicated-host.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "41bf1cfd-02ff-4779-adb8-a8822b4624c0",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "stardigilabs",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "cloud labs",
+      "custom_kind_service",
+      "digilabs",
+      "education",
+      "free",
+      "global",
+      "hands-on labs",
+      "ibm_third_party",
+      "learning",
+      "online learning",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "training",
+      "virtual labs",
+      "virtual learning",
+      "virtualservers"
+    ],
+    "plans": [
+      {
+        "id": "a706683d-d409-4433-883a-84f3ec0646a5",
+        "name": "digilabs-demo-",
+        "description": "Our virtual labs provide a real-time environment where students can gain practical insights into\nadvanced cloud technologies, Hands-on with real-world scenarios and develop essential skills that\nalign with industry demands.",
+        "displayName": "Digilabs Free Plan"
+      },
+      {
+        "id": "7f71513b-e507-4b1e-bfea-2d442840bc36",
+        "name": "digilabs-virtual-lab-platform-for-students-",
+        "description": "Digilabs standard configuration  (2Core /4GB) \nDiglabs Learning Management System (LMS) that enables the creation, delivery, and\nmanagement of educational courses or training programs. It helps organizations and\ninstitutions streamline learning, track progress, and improve learner engagement.",
+        "displayName": "Digilabs Standard Labs"
+      }
+    ],
+    "description": "Virtual Lab and LMS Platform",
+    "longDescription": "Digilabs is at the forefront of digital transformation, offering cutting-edge labs and training programs designed to equip the next generation of technology leaders with the skills they need to excel. Our labs, hosted on IBM’s industry-leading cloud platform, provide a hands-on learning experience that bridges the gap between theoretical knowledge and practical application.\n\n-------------------------------------------------------------------\n\nKey Benefits:\n\nEnhanced Learning Experience: Students gain practical insights and develop essential skills through hands-on experience in a real-world setting.\n\nImproved Learning Outcomes: Practical application of concepts leads to deeper understanding and better retention.\n\nAccessibility and Flexibility: Students can access labs anytime, anywhere, promoting flexible and self-paced learning.\n\nIndustry-Relevant Skills: Labs align with industry demands, equipping students with skills needed for success in the workforce.\n\nStreamlined Workflow: Seamless LMS integration simplifies access and management for both students and educators.\n\nCost-Effective Solution: Virtual labs eliminate the need for expensive physical infrastructure and maintenance.\n\nMultidisciplinary Specializations: Offers a range of specializations, including Cloud Architecture, Data Analytics, Information Security, DevOps, Blockchain, and Cyber Security.\n\n-------------------------------------------------------------------\n\nOur Offerings:\n\nExtensive Cloud Labs: Gain hands-on experience with over 150 labs available on a robust cloud platform\n\nSecure Online Assessments: Complete assessments online with automated proctoring for secure testing.\n\nSchedule Management: Easily track and manage your classes and lab schedules through an integrated system.\n\nComprehensive Reporting: Access detailed reports on attendance,student performance, and class activities.\n\nTimely Notifications: Receive timely notifications about classes, labs, tests, and other important update\n\nLive Online Classes: Attend live online classes from anywhere, guided by expert instructors.\n \nProject Guidance: Engage in project discussions and receive monitoring from faculty to ensure progress.\n\nInteractive Forums & Dashboard:Participate in discussions on forums and monitor your progress via a personalized dashboard.\n\nReal-Time Chat: Use the chatbox for real-time interaction between faculty and students, as well as group discussions.",
+    "displayName": "Digilabs",
+    "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/02/1024.png",
+    "localPngIcon": "/generated/icons/41bf1cfd-02ff-4779-adb8-a8822b4624c0.png"
   },
   {
     "geo_tags": [
@@ -8441,14 +8497,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9024,17 +9080,17 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
       "eu-es",
       "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "br-sao",
       "jp-tok",
       "ca-tor",
       "ca-mon",
-      "au-syd"
+      "jp-osa",
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10388,10 +10444,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -16983,7 +17039,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17024,7 +17079,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -18625,12 +18681,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18930,12 +18986,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
