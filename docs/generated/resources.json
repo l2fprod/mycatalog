@@ -499,14 +499,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5474,7 +5474,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5486,7 +5485,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5747,16 +5747,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
+      "eu-gb",
+      "eu-es",
+      "us-south",
       "au-syd",
       "us-east",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-gb"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8497,14 +8497,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9080,17 +9080,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-east",
-      "jp-tok",
-      "ca-tor",
-      "ca-mon",
-      "jp-osa",
       "eu-de",
       "us-south",
       "au-syd",
       "eu-gb",
-      "br-sao"
+      "jp-osa",
+      "eu-es",
+      "us-east",
+      "jp-tok",
+      "ca-mon",
+      "br-sao",
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9813,6 +9813,55 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "92d3d08e-97d4-49ef-89c6-c449b352d19e",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "lantrasoft-maximo-mas-services",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "migration",
+      "asset management",
+      "consulting_tab",
+      "custom_kind_service",
+      "enterprise_app",
+      "global",
+      "iam_compatible",
+      "ibm cloud satellite",
+      "ibm_third_party",
+      "mas",
+      "maximo",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "roks",
+      "support_third_party",
+      "sustainability",
+      "upgrade"
+    ],
+    "plans": [
+      {
+        "id": "77f5e73d-46c4-4175-91fa-ecaa41dcb956",
+        "name": "maximo-mas-services-price-plan",
+        "description": "MAS v8+ Design Services, Upgrade Services, Implementation Services, Managed Services are defined based on Level of Effort based on Customer's Environment size during initial FREE ASSESSMENT period. The pricing is measured by number of \"Services\" Units.\n\nPlease contact us at massupport@lantrasoft.com for further details and engagement.\n",
+        "displayName": "maximo-mas-services-price-plan"
+      }
+    ],
+    "description": "Lantrasoft Professional Svcs to implement, upgrade, or migrate new or existing Maximo Application to Containerized MAS platform.",
+    "longDescription": "1. This selection of services aims to assist Maximo customers seeking to upgrade to a MAS v8+ option.\n2. Lantrasoft performs the assessment and provides recommendations to support your desired option through advisory services and optionally the implementation efforts to accomplish these modernizing on-prem to hybrid-cloud-enabled projects.\n3. The services are designed to suit your specific upgrade or migration requirements and objectives. Builds out a unique project plan, scope, costs and timeline.\n4. All projects, irrespective of the category and customization, require a current state assessment or discovery coupled with a solid understanding of the customer goals and associated target environment.\n5. Once well-comprehended, an accurate statement of work (SOW) and associated price quote is generated in support of the project.",
+    "displayName": "Lantrasoft Maximo MAS Services",
+    "imageUrl": "https://www.lantrasoft.com/images/logo-lantrasoft-tile.png",
+    "localPngIcon": "/generated/icons/92d3d08e-97d4-49ef-89c6-c449b352d19e.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -10444,10 +10493,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -16102,12 +16151,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -18986,12 +19035,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
