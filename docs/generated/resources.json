@@ -498,14 +498,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1771,7 +1771,7 @@
         "displayName": "Flexible"
       }
     ],
-    "description": "Bright Data Web Agent is an AI-powered research assistant that enables real-time web access in scale - without getting blocked.",
+    "description": "Bright Data Web Agent is an AI-powered assistant that enables real-time web access in scale - without getting blocked.",
     "longDescription": "Bright Data Web Agent is an AI-driven assistant that lets your applications (or LLM-based agents) unlock the public web. Sitting on top of Bright Data’s global network and unblocking stack. You can simply send a query, and Bright Data Agent streams back, Markdown-perfect for real-time market monitoring, competitive intelligence, or grounding AI responses-while abstracting away proxy management, concurrency, retries and compliance.\n",
     "displayName": "Bright Data Web Agent",
     "imageUrl": "https://d1ewbp317vsrbd.cloudfront.net/04ac5621-d4b9-4f56-a2a3-bcf05d80bfc6.png",
@@ -2547,6 +2547,7 @@
     "longDescription": "IBM Cloud Backup for VPC is an enterprise-level backup solution that automates creation and retention of your VPC block storage volumes. This service lets you set a scheduled backup of your block storage volumes and snapshots created from those volumes.\n\nWhen a backup is triggered, it creates a new snapshot of the volume contents. A snapshot is a point-in-time copy of your block storage volume. The entire contents of the volume are copied and retained. Subsequent snapshots will capture the incremental changes from the previous snapshots.\n\n#### Pricing\n\nYou will be charged for the storage capacity used for each of your backups. To estimate pricing while you create a backup policy, use the \"Add to estimate\" button on the Create tab. For more information, see the [Backup service documentation](/docs/vpc?topic=vpc-backup-service-about).",
     "displayName": "Cloud Backup for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.backup-policy/artifacts/cache/d45b2a92d0bbd495a556ba6a6b878e2d/Cloud-BackupServiceForVPC_icon_light-theme.svg",
+    "localSvgIcon": "/generated/icons/is.backup-policy.svg",
     "localPngIcon": "/generated/icons/is.backup-policy.png"
   },
   {
@@ -3705,6 +3706,7 @@
     "longDescription": "A cluster network is a collection of interconnected systems working together and acting as a single entity. This combined grouping of systems allows for a high level of processing power for very complicated computations, primarily AI model training. IBM Cluster Networks use the NVIDIA H100 instance profile, which supports up to 15 VNI and vNICs with full network capabilities, 1.5 TB of memory, and 152 vCPUs running with the 8474C processor.",
     "displayName": "Cluster Network",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "localSvgIcon": "/generated/icons/is.cluster-network.svg",
     "localPngIcon": "/generated/icons/is.cluster-network.png"
   },
   {
@@ -5309,7 +5311,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5465,13 +5467,12 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5483,7 +5484,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5627,7 +5629,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5744,16 +5746,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "us-south",
-      "eu-de",
-      "eu-gb",
       "eu-es",
-      "au-syd",
-      "us-east"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5912,13 +5914,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9077,17 +9079,17 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "us-east",
+      "jp-osa",
+      "jp-tok",
       "ca-tor",
+      "au-syd",
+      "eu-es",
+      "us-east",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd",
       "eu-gb",
-      "jp-osa",
-      "eu-es",
-      "jp-tok",
-      "ca-mon"
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10368,7 +10370,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -10490,10 +10492,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14177,6 +14179,7 @@
     "longDescription": "Public Address Range allows reserving a contiguous set of IBM-provided Public IPs that can be used in VPC custom routes to route public internet traffic to a Firewall/VNF in VPC.",
     "displayName": "Public Address Range",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "localSvgIcon": "/generated/icons/is.public-address-range.svg",
     "localPngIcon": "/generated/icons/is.public-address-range.png"
   },
   {
@@ -14370,8 +14373,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15241,12 +15244,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17084,7 +17087,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17125,7 +17127,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -19031,12 +19034,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
