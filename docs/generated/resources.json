@@ -97,7 +97,6 @@
     "longDescription": "AiSolved democratizes AI optimization for all businesses, leveraging IBM CPLEX for advanced modeling. It enables strategic partnerships, enhancing capabilities without upfront costs. With real-time updates and seamless integration, AiSolved supports revenue growth through strategic AI applications, making informed decision-making accessible. This initiative aims for a future where optimal strategies powered by AI are available to every enterprise.\n\nAiSolved & IBM Cplex\n\nAiSolved is where cutting-edge optimization meets the transformative power of AI. In today's landscape where resources are finite and choices vast, optimization is about making the best possible decisions within constraints. Our groundbreaking platform taps into IBM Cplex's potential, bridging challenges to data-driven, AI-enhanced solutions. Venture into a revolution with AiSolved, transforming abstract visions into tangible, optimized realities.\n\nPioneering AI-Infused Platform Integration\n\nSophisticated Meets Agile: Our platform merges mathematical modeling with AI-driven agility, shering in the next-gen of efficient problem solving. Seamless Power: By empowering Cplex experts with AI capabilities, we ensure a swifter, more redictive model conceptualization, development, and deployment. Dynamic Decision-making: Harnessing both structured and unstructured data, AI's predictive analytics yields results that are dynamic and forward-thinking.\n\nCollaborative Expertise with Cplex & AI Brilliance\n\nExpert Assembly: Our team consists of select Cplex experts with a knack for AI, ensuring a blend of revolutionary and practical solutions. Beyond Model Building: We elevate the experience of Cplex experts by providing a rich AI toolkit, bridging the gap between vision and reality. Unity in Diversity: Promoting collaboration, our experts pool their unique strengths, ensuring solutions are holistic, precise, and AI-optimized.\n",
     "displayName": "AiSolved - Seekers Of Knowledge Meet AI Solutions",
     "imageUrl": "https://blueskycreations.com.au/wp-content/uploads/2023/05/AISolved_icon.svg",
-    "localSvgIcon": "/generated/icons/7586ae5b-6f22-4e98-bd3d-a7b47e6844e7.svg",
     "localPngIcon": "/generated/icons/7586ae5b-6f22-4e98-bd3d-a7b47e6844e7.png"
   },
   {
@@ -499,14 +498,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2548,7 +2547,6 @@
     "longDescription": "IBM Cloud Backup for VPC is an enterprise-level backup solution that automates creation and retention of your VPC block storage volumes. This service lets you set a scheduled backup of your block storage volumes and snapshots created from those volumes.\n\nWhen a backup is triggered, it creates a new snapshot of the volume contents. A snapshot is a point-in-time copy of your block storage volume. The entire contents of the volume are copied and retained. Subsequent snapshots will capture the incremental changes from the previous snapshots.\n\n#### Pricing\n\nYou will be charged for the storage capacity used for each of your backups. To estimate pricing while you create a backup policy, use the \"Add to estimate\" button on the Create tab. For more information, see the [Backup service documentation](/docs/vpc?topic=vpc-backup-service-about).",
     "displayName": "Cloud Backup for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.backup-policy/artifacts/cache/d45b2a92d0bbd495a556ba6a6b878e2d/Cloud-BackupServiceForVPC_icon_light-theme.svg",
-    "localSvgIcon": "/generated/icons/is.backup-policy.svg",
     "localPngIcon": "/generated/icons/is.backup-policy.png"
   },
   {
@@ -3707,7 +3705,6 @@
     "longDescription": "A cluster network is a collection of interconnected systems working together and acting as a single entity. This combined grouping of systems allows for a high level of processing power for very complicated computations, primarily AI model training. IBM Cluster Networks use the NVIDIA H100 instance profile, which supports up to 15 VNI and vNICs with full network capabilities, 1.5 TB of memory, and 152 vCPUs running with the 8474C processor.",
     "displayName": "Cluster Network",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
-    "localSvgIcon": "/generated/icons/is.cluster-network.svg",
     "localPngIcon": "/generated/icons/is.cluster-network.png"
   },
   {
@@ -5751,12 +5748,12 @@
       "ca-tor",
       "jp-tok",
       "mon01",
-      "au-syd",
-      "us-east",
+      "us-south",
+      "eu-de",
       "eu-gb",
       "eu-es",
-      "us-south",
-      "eu-de"
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8497,14 +8494,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9080,17 +9077,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "ca-mon",
+      "br-sao",
+      "us-east",
+      "ca-tor",
       "eu-de",
       "us-south",
       "au-syd",
-      "br-sao",
-      "ca-tor",
       "eu-gb",
       "jp-osa",
       "eu-es",
-      "us-east"
+      "jp-tok",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10493,10 +10490,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14180,7 +14177,6 @@
     "longDescription": "Public Address Range allows reserving a contiguous set of IBM-provided Public IPs that can be used in VPC custom routes to route public internet traffic to a Firewall/VNF in VPC.",
     "displayName": "Public Address Range",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
-    "localSvgIcon": "/generated/icons/is.public-address-range.svg",
     "localPngIcon": "/generated/icons/is.public-address-range.png"
   },
   {
@@ -15245,12 +15241,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17088,6 +17084,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17128,8 +17125,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -18730,12 +18726,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
