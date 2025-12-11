@@ -498,14 +498,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5312,7 +5312,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5468,7 +5468,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -5630,7 +5630,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5747,16 +5747,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
+      "eu-es",
       "us-south",
+      "eu-de",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5915,13 +5915,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7314,7 +7314,7 @@
       {
         "id": "0cf75e24-9e56-436f-8041-67669d67abcf",
         "name": "annual-subscription",
-        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.\nIBM Power11 server packages ordered with PVS1 feature code include Habanero components: PowerVS instance, object storage, data protection software and service.\nCloud credit packages for Habanero are: Small package, 250 TB @ $2,500/month, Medium package: 300 TB @ $3,000/month, Large package: 600 TB @ $6,000/month",
+        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.\nIBM Power11 server packages support Habanero components: PowerVS instance, object storage, data protection software and service for backup, disaster recovery and tape migration delivered as SaaS.\nCloud packages for Habanero are: Small package, 250 TB @ $2,500/month, Medium package: 300 TB @ $3,000/month, Large package: 600 TB @ $6,000/month",
         "displayName": "annual-subscription"
       },
       {
@@ -8949,16 +8949,16 @@
   {
     "geo_tags": [
       "br-sao",
-      "jp-osa",
       "us-east",
-      "ca-tor",
       "ca-mon",
-      "eu-de",
-      "us-south",
+      "eu-gb",
+      "jp-osa",
       "eu-es",
       "jp-tok",
-      "au-syd",
-      "eu-gb"
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10239,7 +10239,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -10361,10 +10361,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14270,8 +14270,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -18674,12 +18674,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "ca-tor"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
