@@ -5639,6 +5639,7 @@
       "au-syd",
       "ca-tor",
       "eu-de",
+      "eu-gb",
       "us-south"
     ],
     "id": "dd0532c0-f87c-11ea-be25-c9dc051df74f",
@@ -5664,6 +5665,7 @@
       "ca-tor",
       "custom_kind_service",
       "eu-de",
+      "eu-gb",
       "free",
       "iam_compatible",
       "ibm_created",
@@ -5747,16 +5749,16 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-de",
-      "au-syd",
-      "us-east",
       "eu-gb",
       "eu-es",
-      "us-south"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8497,14 +8499,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8948,17 +8950,17 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
       "ca-tor",
       "ca-mon",
       "eu-gb",
-      "br-sao",
+      "jp-osa",
       "eu-es",
       "us-east",
       "eu-de",
       "us-south",
-      "au-syd",
-      "jp-osa",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9874,6 +9876,12 @@
     ],
     "plans": [
       {
+        "id": "e3ef7a14-189a-4d04-9109-1ec63eeda3d1",
+        "name": "per-tb-per-month",
+        "description": "Pay a flat fee per TB with the Data Transfer Service. Standard migration services are priced at $40/TB per month with a minimum of 50TB per project and include full project lifecycle management",
+        "displayName": "Per TB per Month"
+      },
+      {
         "id": "9c6b1842-6a6f-4690-86c8-b680f396d427",
         "name": "seagate-lyve-subscription-per-tb-per-tb-per-month",
         "description": "Pay a flat fee per TB with the Data Transfer Service.  Standard migration services are priced at $40/TB per month with a minimum of 50TB per project and include full project lifecycle management",
@@ -10361,10 +10369,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -15141,12 +15149,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
