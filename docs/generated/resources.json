@@ -498,14 +498,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -665,6 +665,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -672,8 +673,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5474,6 +5474,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5485,8 +5486,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5749,16 +5749,16 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
+      "eu-es",
+      "us-south",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-gb",
-      "eu-es",
-      "us-south",
-      "eu-de"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5917,13 +5917,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8499,14 +8499,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8950,17 +8950,17 @@
   },
   {
     "geo_tags": [
-      "br-sao",
       "eu-es",
+      "us-east",
+      "eu-gb",
       "jp-tok",
       "ca-tor",
-      "eu-gb",
-      "jp-osa",
-      "us-east",
       "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13514,6 +13514,52 @@
   },
   {
     "geo_tags": [
+      "sao05"
+    ],
+    "id": "f0a70330-918a-4614-a689-9da20a396dc5",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {
+        "hidden": true
+      }
+    },
+    "name": "power-iaas.vpmem-volume",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "compute",
+      "allow_internal_users",
+      "custom_kind_service",
+      "iam_compatible",
+      "ibm_created",
+      "paid",
+      "paid_only",
+      "power-iaas",
+      "rc_compatible",
+      "sao05",
+      "support_ibm"
+    ],
+    "plans": [
+      {
+        "id": "33d5162d-b451-4cbe-8ec7-93aa1b497811",
+        "name": "power-virtual-server-vpmem-volume-group",
+        "description": "A Power Systems Virtual Server group plan for VPMEM Volumes on IBM Public Cloud regions.",
+        "displayName": "Power Virtual Server VPMEM Volume Group"
+      }
+    ],
+    "description": "Provision flexible, secure, and scalable compute capacity for Power Systems enterprise workloads",
+    "longDescription": "Power Systems Virtual Server projects deliver flexible compute capacity \nfor Power Systems workloads. Integrated with the IBM Cloud platform for \non-demand provisioning, this offering provides a secure and scalable \nserver virtualization environment built upon the advanced RAS features \nand leading performance of the Power Systems™ platform.\n\n\n",
+    "displayName": "Power Virtual Server Virtual Persistent Memory Volumes",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/abd259f0-9990-11e8-acc8-b9f54a8f1661/artifacts/cache/66c89a2644c2ac54745d6ab9ecf4da8e-public/IBM_Power_CloudCatalog%202.svg",
+    "localSvgIcon": "/generated/icons/f0a70330-918a-4614-a689-9da20a396dc5.svg",
+    "localPngIcon": "/generated/icons/f0a70330-918a-4614-a689-9da20a396dc5.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -15149,12 +15195,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18682,12 +18728,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -18743,7 +18789,7 @@
       {
         "id": "d18d88b9-be7a-46ec-be1e-aff14904f1e9",
         "name": "v2-professional",
-        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n\n",
+        "description": "CUH billing is based on CUH rate multiplied by the hours of consumption. Resource Units billing is based on the rate of the foundation model class multiplied by the number of tokens or data points used. For details on CUH rates, go to https://ibm.biz/wx-plans-ml\nFor details on foundation model classes, go to https://ibm.biz/wx-plans-gen-ai\n\n1 Resource Unit = 1000 tokens/data points\n\nLooking for a HIPAA-Ready plan?\nThe watsonx.ai Runtime HIPAA-Ready plan is available on IBM Cloud in the Dallas (us-south) region.To purchase, contact sales using this form: https://www.ibm.com/account/reg/signup?formid=MAIL-data\n",
         "displayName": "Standard",
         "originalName": "v2-professional"
       },
@@ -18987,12 +19033,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
