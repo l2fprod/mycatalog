@@ -498,14 +498,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -665,7 +665,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -673,7 +672,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5749,16 +5749,72 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "global"
+    ],
+    "id": "25815247-b879-469d-9c31-0e9abd1b1df3",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "datavault-ai-inc-datavault-ai",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "datarights",
+      "datascore",
+      "datavalue",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "a299479f-29bd-42c8-94a6-c9a7a35ec357",
+        "name": "10-data-valuations",
+        "description": "Up to 10 Datascore, Datavalue, and DataRights agent transactions may be processed each month. Each data file must not exceed 1 GB per transaction.",
+        "displayName": "10 Datavault AI Transactions"
+      },
+      {
+        "id": "4fa653f5-0e52-4d53-9139-2987a0a73f69",
+        "name": "25-data-valuations",
+        "description": "Up to 25 Datascore, Datavalue, and DataRights agent transactions may be processed each month. Each data file must not exceed 1 GB per transaction.",
+        "displayName": "25 Datavault AI Transactions"
+      },
+      {
+        "id": "5fd6179a-e2cb-4293-ad08-5bc816e22122",
+        "name": "pay-as-you-go",
+        "description": "Pay-as-you-go.   Process a single Datascore, Datavalue, and DataRights agent transaction. Data file must not exceed 1 GB per transaction.",
+        "displayName": "1 Datavault AI Transaction"
+      }
+    ],
+    "description": "Make faster, more confident decisions with your data using the Datavalue agent to assess data compliance and data valuation.",
+    "longDescription": "The Datavalue® agent provides a standardized benchmark to assess data readiness for analytics, compliance, and monetization. This empowers organizations to make faster, more confident decisions around commercially viable derivative data. \n",
+    "displayName": "Datavalue®",
+    "imageUrl": "https://datavault.one/img/datavault.svg",
+    "localSvgIcon": "/generated/icons/25815247-b879-469d-9c31-0e9abd1b1df3.svg",
+    "localPngIcon": "/generated/icons/25815247-b879-469d-9c31-0e9abd1b1df3.png"
+  },
+  {
+    "geo_tags": [
       "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "au-syd",
+      "us-east",
+      "eu-gb",
       "eu-es",
-      "eu-gb"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5917,13 +5973,13 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8950,14 +9006,14 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
-      "eu-es",
-      "ca-mon",
-      "au-syd",
       "br-sao",
+      "jp-osa",
       "us-east",
       "jp-tok",
       "ca-tor",
+      "au-syd",
+      "eu-es",
+      "ca-mon",
       "eu-de",
       "us-south",
       "eu-gb"
