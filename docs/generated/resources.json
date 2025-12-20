@@ -5474,6 +5474,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5485,8 +5486,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5973,13 +5973,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9006,17 +9006,17 @@
   },
   {
     "geo_tags": [
+      "jp-osa",
+      "us-east",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "br-sao",
-      "jp-osa",
+      "eu-es",
       "jp-tok",
-      "ca-mon",
+      "ca-tor",
       "au-syd",
       "eu-gb",
-      "eu-es",
-      "us-east",
-      "ca-tor"
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9788,6 +9788,64 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "dbfc2f07-a95f-44a7-85b3-b49e198a1e25",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "uptok-live-expert-handoff",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "free",
+      "global",
+      "ibm_third_party",
+      "lead generation",
+      "paid",
+      "paid_only",
+      "quote / cpq",
+      "rc_compatible",
+      "support_third_party",
+      "video meeting",
+      "video meetings",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "6818f23d-c9a9-4444-9b2b-0588c05ef46a",
+        "name": "free",
+        "description": "Designed for teams who want to try live expert handoffs in real workflows. Includes 10 total handoffs, unlimited agent usage for testing, and basic access to Uptok’s live handoff agent. Ideal for demos, pilots, and validating ROI before scaling.",
+        "displayName": "Free Sandbox"
+      },
+      {
+        "id": "79a789d7-38ec-426a-9f4b-03406ab0e6a4",
+        "name": "starter",
+        "description": "Designed for individuals or small teams beginning to use live expert handoffs. Includes 20 live session starts per month and one user seat. Additional sessions are billed per use. Ideal for pilot workflows, early testing, and low-volume deployments.",
+        "displayName": "Starter"
+      },
+      {
+        "id": "2f226b2e-f56c-4bda-a9ee-0227e7ebbeac",
+        "name": "team",
+        "description": "Designed for growing teams using live expert handoffs in multiple workflows. Includes 100 live session starts per month and up to three user seats. Additional sessions are billed per use at a discounted rate. Ideal for CPQ, insurance, and sales teams scaling human escalation reliably.",
+        "displayName": "Team"
+      }
+    ],
+    "description": "Trigger video or audio consultations with your experts over live video/audio, based on your hand-off rules and team availability.",
+    "longDescription": "The Live Expert Hand-off Agent brings real-time human support into automated workflows by triggering live video or audio consultations whenever your defined hand-off criteria are met. This agent connects IBM Orchestrate flows to your sales or service experts, ensuring customers receive human guidance at moments where expert involvement improves clarity, trust, or conversion. When a workflow reaches a handoff-ready step, the agent launches a live Uptok session with an available expert and transfers the relevant context to streamline the interaction.\n\nIdeal for high-consideration sales, Configure-Price-Quote (CPQ) support, insurance quoting, onboarding, and complex service inquiries, this agent helps your team step in only when human expertise drives measurable impact––while keeping your workflow automation simple and predictable\n",
+    "displayName": "Live Expert Hand-off Agent",
+    "imageUrl": "https://cdn.prod.website-files.com/5f2f3af148c0a7623879c463/68b7dd26972b2872c6a16ea5_relume-215895.png",
+    "localPngIcon": "/generated/icons/dbfc2f07-a95f-44a7-85b3-b49e198a1e25.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -9936,12 +9994,6 @@
         "name": "per-tb-per-month",
         "description": "Pay a flat fee per TB with the Data Transfer Service. Standard migration services are priced at $40/TB per month with a minimum of 50TB per project and include full project lifecycle management",
         "displayName": "Per TB per Month"
-      },
-      {
-        "id": "9c6b1842-6a6f-4690-86c8-b680f396d427",
-        "name": "seagate-lyve-subscription-per-tb-per-tb-per-month",
-        "description": "Pay a flat fee per TB with the Data Transfer Service.  Standard migration services are priced at $40/TB per month with a minimum of 50TB per project and include full project lifecycle management",
-        "displayName": "Per TB per Month (Do Not Use)"
       }
     ],
     "description": "Lyve Mobile Data Transfer Service allows you to quickly, easily and securely move your edge or on-prem data into IBM Cloud.",
@@ -15331,6 +15383,54 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "009d14f2-01cd-44af-a942-81bdd5cae439",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "fiducia-ai-inc-speedshotx-saas",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "ai_agent  brand_activation  fan_engagement  fanengagement  immersive_ai  sponsorship_ai  venue_ai  visual_intelligence  keywords",
+      "brand_activation",
+      "custom_kind_service",
+      "fan_engagement",
+      "fanengagement",
+      "global",
+      "ibm_third_party",
+      "immersive_ai",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "sponsorship_ai",
+      "support_third_party",
+      "venue_ai",
+      "visual_intelligence",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "21128737-57e3-4d5e-a7b4-e3adb6bb0522",
+        "name": "speedshotx-saas-steady-plan",
+        "description": "The SpeedShotX Steady Plan gives you everything — all features, all access, one simple monthly subscription. Designed for brands, teams, agencies, venues, and creators redefining how fans connect in the new engagement economy. -- Note: The Steady Plan includes full access to the SpeedShotX platform. All creative assets — including 3D models, videos, images, and collaboration content — are provided by the customer. SpeedShotX enables seamless integration, activation, and analytics, but does not include content or data creation services. Join the Engagement Economy The SpeedShotX Steady Plan delivers everything you need to power next-generation fan experiences — steady, smart, and built for what’s next.",
+        "displayName": "SpeedShotX SAAS Steady Plan"
+      }
+    ],
+    "description": "Browser-based AI Visual Activation for sports, brands & venues—engaging fans via voice & text in any language.",
+    "longDescription": "SpeedShotX, developed by Fiducia AI, is an AI Visual Engagement platform that personalizes Sports, Media, and Entertainment experiences while strengthening brand engagement. Through web or mobile, fans can capture live or broadcasted moments that are analyzed in real time by IBM watsonx.ai to reveal player stats, match insights, and sponsor activations. The results are presented through a conversational interface that supports both speech and text in any language, making every fan interaction immersive and inclusive. By merging computer vision, generative AI, and contextual understanding, SpeedShotX connects fans, athletes, and brands through intelligent real-time engagement.",
+    "displayName": "SpeedShotX-SAAS",
+    "imageUrl": "https://static.wixstatic.com/media/7dbaba_633ba43d945341f4ba5758ed0dbb96be~mv2.png/v1/fill/w_75,h_77,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Fiducia_Logo.png",
+    "localPngIcon": "/generated/icons/009d14f2-01cd-44af-a942-81bdd5cae439.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -16163,12 +16263,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17148,6 +17248,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17188,8 +17289,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -18286,7 +18386,7 @@
       {
         "id": "468ee776-0e6f-40a1-86d6-8d0abe9712d0",
         "name": "paygo",
-        "description": "Pay As You Go Plan : Wasabi AiR ($12.99 / AiR hour) + Wasabi Cloud Storage ($8.99 / TB / mo) with Premium Support",
+        "description": "Pay As You Go Plan : Wasabi AiR ($12.99 / AiR hour) + Wasabi Cloud Storage ($8.99 / TB / mo) with Wasabi Premium Support",
         "displayName": "Pay As You Go"
       }
     ],
@@ -18332,7 +18432,7 @@
       {
         "id": "2976d2b9-07c1-4418-bec3-f15deec2a41a",
         "name": "pay-as-you-go",
-        "description": "Pay As You Go Plan : Wasabi Cloud Storage ($6.99 / TB / mo) plus Premium Support",
+        "description": "Pay As You Go Plan : Wasabi Cloud Storage ($6.99 / TB / mo) plus Wasabi Premium Support",
         "displayName": "Pay As You Go"
       }
     ],
