@@ -498,14 +498,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5322,10 +5322,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5333,7 +5329,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5404,7 +5404,6 @@
     "longDescription": "MongoDB is a JSON document store with a rich query and aggregation framework. Databases for MongoDB makes MongoDB even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MongoDB pricing is based on underlying disk and RAM allocation, as well as backup storage usage. MongoDB Standard and Enterprise is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MongoDB",
     "imageUrl": "https://broker.us-south.databases.cloud.ibm.com/images/mongodb.svg",
-    "localSvgIcon": "/generated/icons/databases-for-mongodb.svg",
     "localPngIcon": "/generated/icons/databases-for-mongodb.png"
   },
   {
@@ -5478,7 +5477,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5490,7 +5488,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5809,16 +5808,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "eu-gb",
-      "eu-es",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01"
+      "mon01",
+      "eu-es",
+      "us-south",
+      "eu-de",
+      "eu-gb",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5977,13 +5976,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9010,16 +9009,16 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "jp-tok",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
       "eu-es",
+      "jp-tok",
       "eu-de",
       "us-south",
+      "au-syd",
       "eu-gb",
       "br-sao",
+      "us-east",
+      "ca-tor",
+      "ca-mon",
       "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -14536,8 +14535,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15407,12 +15406,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18995,12 +18994,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
       "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south",
-      "jp-tok"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -19077,12 +19076,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -19300,12 +19299,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
