@@ -539,14 +539,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5524,8 +5524,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5536,7 +5534,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5858,16 +5858,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-gb",
-      "us-south"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6026,13 +6026,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8608,14 +8608,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9062,14 +9062,14 @@
       "us-east",
       "jp-tok",
       "ca-tor",
+      "ca-mon",
+      "eu-de",
+      "us-south",
       "au-syd",
-      "eu-gb",
       "br-sao",
       "jp-osa",
       "eu-es",
-      "ca-mon",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10588,10 +10588,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14588,8 +14588,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15426,6 +15426,48 @@
     "imageUrl": "https://cloud.ibm.com/infrastructure/vmware-solutions/images/icons/vcs_trial.png",
     "geo_tags": [],
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcstrial.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "16abd658-df06-461a-8f71-cfe234936edf",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "total-communicator-inc-spark-ai-news-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "news",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "be5ded9f-2e0e-4cb1-a68a-83f498112460",
+        "name": "monthly-subscription",
+        "description": "Starter Plan - 5,000 AI-processed articles/month",
+        "displayName": "Starter Plan"
+      }
+    ],
+    "description": "AI-powered intelligent news platform.\n",
+    "longDescription": "Spark Compass AI News Agent Orchestra is an AI-powered platform that automates news aggregation, analysis, and reporting. It collects data from multiple sources, processes thousands of articles per month using advanced natural language models, and delivers concise, insightful summaries with sentiment and trend analysis.",
+    "displayName": "Spark Compass AI News Agent Orchestra",
+    "imageUrl": "https://status-service-newsagent.sparkcompasstestcluster-7528cef30239dce16bc69c6a2bfcf93e-0000.us-south.containers.appdomain.cloud/sparknews.svg",
+    "localSvgIcon": "/generated/icons/16abd658-df06-461a-8f71-cfe234936edf.svg",
+    "localPngIcon": "/generated/icons/16abd658-df06-461a-8f71-cfe234936edf.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-spplus",
@@ -16420,12 +16462,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19047,12 +19089,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
