@@ -539,14 +539,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5371,6 +5371,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5378,11 +5382,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5530,7 +5530,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5542,7 +5541,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5868,12 +5868,12 @@
       "ca-tor",
       "jp-tok",
       "mon01",
+      "au-syd",
+      "us-east",
+      "eu-gb",
       "eu-es",
       "us-south",
-      "eu-gb",
-      "eu-de",
-      "au-syd",
-      "us-east"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8674,14 +8674,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9125,17 +9125,17 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
       "jp-osa",
+      "eu-es",
       "jp-tok",
+      "us-east",
       "ca-tor",
       "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
-      "br-sao",
-      "eu-es"
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10654,10 +10654,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14714,6 +14714,73 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "5af656f4-f0e1-4fa5-b5de-7393570af9ba",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "quant-inc-quant-ai",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "agent orchestration",
+      "agentic ai",
+      "agentic worker",
+      "ai_agent",
+      "airline industry",
+      "banking industry",
+      "call center",
+      "contact center",
+      "conversational ai",
+      "custom_kind_service",
+      "customer service",
+      "digital agent",
+      "digital employee",
+      "global",
+      "healthcare industry",
+      "hospitality industry",
+      "ibm_third_party",
+      "insurance industry",
+      "investment banking",
+      "life insurance",
+      "paid",
+      "paid_only",
+      "public sector",
+      "rc_compatible",
+      "retail banking",
+      "retail industry",
+      "support_third_party",
+      "transportation industry",
+      "utilities industry",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "a34fe198-3e2c-4db5-8471-31f3f63e4e7c",
+        "name": "production-deployment",
+        "description": "Production deployment of Quant digital (agentic) agents. Pricing is based on number of sessions/interactions, not minutes, or API-based. A session is defined as a complete conversation with the Quant digital agent, until the request is resolved, or transferred.",
+        "displayName": "Production Deployment"
+      },
+      {
+        "id": "30cf3c7b-05ab-4cf4-8211-d5f10dda9df3",
+        "name": "proof-of-concept",
+        "description": "Minimum viable production Pilot, or POC deployment which includes 1-3 use cases and API integrations.",
+        "displayName": "Proof-of-Concept"
+      }
+    ],
+    "description": "Quant agentic workers are primarily used as Digital Contact Center Agents and have the ability to contain 70+% of inbound calls.",
+    "longDescription": "Our core offering a a quantitative digital expert that seamlessly integrates into your organization, providing unparalleled  support across various functions. Whether it's Customer Service, IT Management, or Decision-making, Quant's solutions empoower your teams to delivery exceptional outcomes, consistently. Quant's agentic agents are capable of handlling, or taking action on ~70% of contact center requests for various industries. Unlike traditional, or Generative AI solutions, Quant is an Agentic AI solution with reasoning, 100+ languages, omin-channel and action-oriented.\nQuant offerings include:\n1) Intelligent Digital Employee\nA versatile AI-powered agentic agent that handles customer interactions with a deep understanding of industry-specific nuances, providing efficient and personalize service. Integrates with all leading CCaaS provider technologies.\n2) Contact Center as a Service\nA comprehensive, cloud-based contact center solution that leverages AI to manage customer interactions seamlessly across multiple channels, improving both response times and customer satisfaction.\n3) Decision AI Expert\nA powerful AI tool designed to assist in complex decision-making processes by analyzing vast amouunts of data and providing actionable insights, helping organizations to make informed, strategic decisions.",
+    "displayName": "Quant AI",
+    "imageUrl": "https://static.quant.ai/quant-logos/google_profile_metal_on_black.png",
+    "localPngIcon": "/generated/icons/5af656f4-f0e1-4fa5-b5de-7393570af9ba.png"
+  },
+  {
+    "geo_tags": [
       "us-south"
     ],
     "id": "cf5f8ac0-98f7-11e9-a40c-5b3c4bf3cc6d",
@@ -15567,12 +15634,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16528,12 +16595,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19460,12 +19527,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
