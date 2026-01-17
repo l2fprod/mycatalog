@@ -539,14 +539,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5371,10 +5371,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5382,7 +5378,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5530,6 +5530,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5540,9 +5542,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd",
-      "che01"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5865,14 +5865,14 @@
   {
     "geo_tags": [
       "us-south",
+      "eu-de",
+      "eu-es",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "eu-de",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -6032,13 +6032,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8676,14 +8676,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9127,17 +9127,17 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
-      "eu-es",
-      "us-east",
       "eu-de",
       "us-south",
+      "eu-gb",
+      "eu-es",
+      "jp-tok",
       "au-syd",
       "br-sao",
-      "jp-tok",
+      "jp-osa",
+      "us-east",
       "ca-tor",
-      "ca-mon",
-      "eu-gb"
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11270,6 +11270,49 @@
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
     "localSvgIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.svg",
     "localPngIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "2d0c11be-3248-470c-8fc8-45cbeab01f1b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "biw-nomination-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "nomination",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "recognition",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "23c52922-6837-464a-b0f4-3f278c3fe8eb",
+        "name": "program-flat-fee",
+        "description": "This flat fee covers a single nomination program with more than 100 submissions. Pricing is fixed regardless of submission volume. Additional programs require separate fees.",
+        "displayName": "Program Flat Fee"
+      }
+    ],
+    "description": "Analyzes nominations for quality and impact. Automates review process to reduce bias, save time, and spotlight standout stories.",
+    "longDescription": "Nomination Agent is an AI-powered tool that transforms how organizations manage employee recognition through nomination-based programs. Whether it’s for a President’s Award, Innovator of the Year, or any high-impact honor, Nomination Agent helps surface the most meaningful submissions by analyzing nominations for quality, alignment to company values, and overall impact. Using advanced language models and ideal criteria benchmarks, it delivers automated recommendations that reduce manual review time, minimize bias, and improve decision-making. The result is a faster, fairer, and more inspiring recognition process that saves time, lowers costs, and ensures every standout story gets the attention it deserves.",
+    "displayName": "Nomination Agent",
+    "imageUrl": "https://www.biworldwide.com/wp-content/uploads/2025/11/BIW_corp_lockup_rgb_2025-1.svg",
+    "localSvgIcon": "/generated/icons/2d0c11be-3248-470c-8fc8-45cbeab01f1b.svg",
+    "localPngIcon": "/generated/icons/2d0c11be-3248-470c-8fc8-45cbeab01f1b.png"
   },
   {
     "geo_tags": [
@@ -15636,12 +15679,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -19224,12 +19267,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -19306,12 +19349,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
