@@ -5368,10 +5368,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5379,7 +5375,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5524,6 +5524,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5535,8 +5536,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5855,7 +5855,8 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "eu-gb",
+      "eu-es",
       "eu-de",
       "au-syd",
       "us-east",
@@ -5863,8 +5864,7 @@
       "ca-tor",
       "jp-tok",
       "mon01",
-      "eu-es",
-      "eu-gb"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7435,7 +7435,7 @@
       }
     ],
     "description": "Provides fully managed  services that consolidate and orchestrate data protection operations across multiple backup applications.",
-    "longDescription": "FalconStor’s Habanero Data Protection Services are fully managed hybrid or cloud services that consolidate and orchestrate data protection operations across multiple backup applications and environments, delivered with IBM Cloud and IBM Cloud Object Storage (COS). Powered by StorSafe and integrated with IBM Power Virtual Server, Habanero optimizes and modernizes enterprise data protection while meeting compliance, security, and ransomware recovery requirements.\nFalconStor Habanero provides COS for long-term backup and archive of data. This turnkey solution managed by FalconStor makes adoption of object storage for all your backup and archive needs easy and cost effective.\n\n",
+    "longDescription": "FalconStor Habanero™  - secure offsite data protection for IBM Power is a fully managed, software-as-a-service offering designed to simplify secure offsite data protection for on-premises IBM Power environments. It enables IBM i, AIX, and Linux on Power organizations to maintain compliant, resilient offsite copies of critical data without deploying or managing cloud infrastructure.\nHabanero integrates directly with existing IBM Power backup applications and processes, providing predictable pricing, globally available service delivery, and secure offsite retention for recovery, compliance, and cyber resilience—without changing how customers operate their production environments.\n\n",
     "displayName": "FalconStor Habanero",
     "imageUrl": "https://falconstor-download.s3.us-east.cloud-object-storage.appdomain.cloud/FalconStorLogo.png",
     "localPngIcon": "/generated/icons/9c0ddef0-c561-43b0-a7cb-e2714916a6ec.png"
@@ -9118,16 +9118,16 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-gb",
-      "br-sao",
-      "us-east",
       "ca-tor",
       "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
+      "eu-gb",
+      "br-sao",
       "jp-osa",
+      "us-east",
+      "jp-tok",
       "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
