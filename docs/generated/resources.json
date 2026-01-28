@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5419,12 +5419,16 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5432,11 +5436,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5575,12 +5575,13 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5592,8 +5593,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5737,7 +5737,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5912,16 +5912,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "us-south",
+      "eu-de",
       "eu-gb",
-      "eu-es",
-      "us-south"
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8718,14 +8718,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -8877,50 +8877,6 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustkc.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-hytrustkc.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "managed-powervs",
-    "pricing_tags": [
-      "paid",
-      "paid_only",
-      "allow_internal_users"
-    ],
-    "tags": [
-      "compute",
-      "allow_internal_users",
-      "custom_kind_service",
-      "global",
-      "iam_compatible",
-      "ibm_created",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm"
-    ],
-    "plans": [
-      {
-        "id": "fef9cb82-5375-45d6-b8a9-c6399a303ac1",
-        "name": "v2-managed",
-        "description": "v2",
-        "displayName": "IBM i Managed (v2)",
-        "originalName": "v2-managed"
-      }
-    ],
-    "description": "Deploy a managed IBM i server instance on PowerVS",
-    "longDescription": "IBM i Managed on Power Virtual Server (PowerVS) is a cloud offering where IBM hosts and manages IBM i LPARs (Virtual Servers) on IBM Cloud. This offering extends the existing IaaS based PowerVS on IBM Cloud offering, to one where IBM Cloud will monitor and manage IBM i LPARs and associated infrastructure (network, memory, storage), apply fixes and updates to the IBM i operating system, and manage the applicable security and private controls.",
-    "displayName": "i Managed on Power Virtual Server",
-    "imageUrl": "https://pages.github.ibm.com/cloud-docs/ibmi-managed-powervs/assets/power.svg",
-    "localSvgIcon": "/generated/icons/c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5.svg",
-    "localPngIcon": "/generated/icons/c1d5aa90-2cab-11ef-bc36-b3feacb6d8d5.png"
   },
   {
     "geo_tags": [
@@ -9169,17 +9125,17 @@
   },
   {
     "geo_tags": [
-      "eu-es",
+      "us-east",
       "ca-tor",
       "ca-mon",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
-      "jp-osa",
-      "us-east",
-      "jp-tok",
       "eu-de",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "jp-tok",
+      "eu-gb",
+      "jp-osa",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10572,7 +10528,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -17664,6 +17620,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17704,8 +17661,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -19306,12 +19262,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
