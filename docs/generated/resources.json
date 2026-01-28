@@ -5425,10 +5425,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5436,7 +5432,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5581,8 +5581,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5593,7 +5591,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5907,21 +5907,20 @@
     "longDescription": "The Datavalue® agent provides a standardized benchmark to assess data readiness for analytics, compliance, and monetization. This empowers organizations to make faster, more confident decisions around commercially viable derivative data. \n",
     "displayName": "Datavalue®",
     "imageUrl": "https://datavault.one/img/datavault.svg",
-    "localSvgIcon": "/generated/icons/25815247-b879-469d-9c31-0e9abd1b1df3.svg",
     "localPngIcon": "/generated/icons/25815247-b879-469d-9c31-0e9abd1b1df3.png"
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "mon01",
+      "eu-es",
       "us-south",
       "eu-de",
       "eu-gb",
-      "eu-es"
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6080,13 +6079,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9125,17 +9124,17 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "ca-tor",
       "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
-      "br-sao",
-      "jp-tok",
       "eu-gb",
+      "br-sao",
       "jp-osa",
-      "eu-es"
+      "eu-es",
+      "us-east",
+      "jp-tok",
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16635,12 +16634,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17620,7 +17619,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17661,7 +17659,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -19262,12 +19261,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
