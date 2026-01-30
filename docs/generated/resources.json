@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5425,10 +5425,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5436,7 +5432,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5912,16 +5912,16 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "mon01",
       "eu-gb",
       "eu-es",
       "us-south",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6080,13 +6080,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9125,17 +9125,17 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "jp-tok",
       "ca-mon",
-      "ca-tor",
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb",
       "br-sao",
       "jp-osa",
-      "eu-es"
+      "eu-es",
+      "us-east",
+      "ca-tor",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13879,7 +13879,7 @@
       }
     ],
     "description": "Provision flexible, secure, and scalable compute capacity for Power Systems enterprise workloads",
-    "longDescription": "Power Systems Virtual Server projects deliver flexible compute capacity \nfor Power Systems workloads. Integrated with the IBM Cloud platform for \non-demand provisioning, this offering provides a secure and scalable \nserver virtualization environment built upon the advanced RAS features \nand leading performance of the Power Systems™ platform.\n\n\n",
+    "longDescription": "Power Systems Virtual Server projects deliver flexible compute capacity \nfor Power Systems workloads. Integrated with the IBM Cloud platform for \non-demand provisioning, this offering provides a secure and scalable \nserver virtualization environment built upon the advanced RAS features \nand leading performance of the Power Systems™ platform.\n",
     "displayName": "Power Virtual Server Virtual Persistent Memory Volumes",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/abd259f0-9990-11e8-acc8-b9f54a8f1661/artifacts/cache/66c89a2644c2ac54745d6ab9ecf4da8e-public/IBM_Power_CloudCatalog%202.svg",
     "localSvgIcon": "/generated/icons/f0a70330-918a-4614-a689-9da20a396dc5.svg",
@@ -14899,6 +14899,77 @@
     "displayName": "Raxak Protect",
     "imageUrl": "https://demo.cloudraxak.net/static/CR32.svg",
     "localPngIcon": "/generated/icons/cf5f8ac0-98f7-11e9-a40c-5b3c4bf3cc6d.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "9fe9ec96-198e-47d4-a3cf-877cd37cb67d",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "nativemsg-rcs",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai",
+      "ai_agent",
+      "business messaging",
+      "communication channel",
+      "conversational commerce  ai customer engagement  rcs campaign automation  no-code experience builder  rich media messaging  customer conversion optimization",
+      "crm integration",
+      "custom_kind_service",
+      "customer engagement",
+      "global",
+      "ibm_third_party",
+      "in-app messaging",
+      "interactive messaging experiences",
+      "marketing campaigns",
+      "messaging api",
+      "messaging platform",
+      "mms",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "rcs ai agent",
+      "rcs campaign automation",
+      "rcs for business",
+      "rich media messaging",
+      "sms",
+      "support_third_party",
+      "text messaging",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "3e8e43f5-5d98-4347-b2de-76b8ac838353",
+        "name": "professional",
+        "description": "Messages are billed on a per-credit basis, and the credit cost varies by message type and by country.\n\nMessage Types are listed in this order:\nRCS Basic (SMS), RCS Single (MMS), RCS 24 Hour Conversation\n\nUnited States\nBasic: 2 credits, Single: 6 credits\n\nCanada\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nMexico\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nAustria\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nFrance\nBasic: 10 credits, Single: 12 credits, Conversational: 23 credits\n\nGermany\nBasic: 12 credits, Single: 14 credits, Conversational: 18 credits\n\nItaly\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nPoland\nBasic: 5 credit, Single: 7 credits, Conversational: 9 credits\n\nSpain\nBasic: 6 credits, Single: 12 credits, Conversational: 14 credits\n\nSweden\nBasic: 6 credit, Single: 10 credits, Conversational: 17 credits\n\nUnited Kingdom\nBasic: 9 credit, Single: 14 credits, Conversational: 27 credits\n\nBrazil\nBasic: 2 credit, Single: 4 credits, Conversational: 8 credits\n\nIndia\nBasic: 1 credit, Single: 2 credits, Conversational: 3 credits\n\nSingapore\nBasic: 7 credits, Single: 13 credits, Conversational: 16 credits\n\nNigeria\nBasic: 1 credits, Single: 2 credits, Conversational: 3 credits",
+        "displayName": "Professional"
+      },
+      {
+        "id": "0977b28e-ff78-46cd-95af-154ea8a476fd",
+        "name": "starter",
+        "description": "Messages are billed on a per-credit basis, and the credit cost varies by message type and by country.\n\nMessage Types are listed in this order:\nRCS Basic (SMS), RCS Single (MMS), RCS 24 Hour Conversation\n\nUnited States\nBasic: 2 credits, Single: 6 credits\n\nCanada\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nMexico\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nAustria\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nFrance\nBasic: 10 credits, Single: 12 credits, Conversational: 23 credits\n\nGermany\nBasic: 12 credits, Single: 14 credits, Conversational: 18 credits\n\nItaly\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nPoland\nBasic: 5 credit, Single: 7 credits, Conversational: 9 credits\n\nSpain\nBasic: 6 credits, Single: 12 credits, Conversational: 14 credits\n\nSweden\nBasic: 6 credit, Single: 10 credits, Conversational: 17 credits\n\nUnited Kingdom\nBasic: 9 credit, Single: 14 credits, Conversational: 27 credits\n\nBrazil\nBasic: 2 credit, Single: 4 credits, Conversational: 8 credits\n\nIndia\nBasic: 1 credit, Single: 2 credits, Conversational: 3 credits\n\nSingapore\nBasic: 7 credits, Single: 13 credits, Conversational: 16 credits\n\nNigeria\nBasic: 1 credits, Single: 2 credits, Conversational: 3 credits",
+        "displayName": "Starter"
+      },
+      {
+        "id": "eed4caec-41b0-4189-9343-ac8f0b89c330",
+        "name": "tbd-plan",
+        "description": "Messages are billed on a per-credit basis, and the credit cost varies by message type and by country.\n\nMessage Types are listed in this order:\nRCS Basic (SMS), RCS Single (MMS), RCS 24 Hour Conversation\n\nUnited States\nBasic: 2 credits, Single: 6 credits\n\nCanada\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nMexico\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nAustria\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nFrance\nBasic: 10 credits, Single: 12 credits, Conversational: 23 credits\n\nGermany\nBasic: 12 credits, Single: 14 credits, Conversational: 18 credits\n\nItaly\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nPoland\nBasic: 5 credit, Single: 7 credits, Conversational: 9 credits\n\nSpain\nBasic: 6 credits, Single: 12 credits, Conversational: 14 credits\n\nSweden\nBasic: 6 credit, Single: 10 credits, Conversational: 17 credits\n\nUnited Kingdom\nBasic: 9 credit, Single: 14 credits, Conversational: 27 credits\n\nBrazil\nBasic: 2 credit, Single: 4 credits, Conversational: 8 credits\n\nIndia\nBasic: 1 credit, Single: 2 credits, Conversational: 3 credits\n\nSingapore\nBasic: 7 credits, Single: 13 credits, Conversational: 16 credits\n\nNigeria\nBasic: 1 credits, Single: 2 credits, Conversational: 3 credits",
+        "displayName": "Enterprise"
+      }
+    ],
+    "description": "All-in-one RCS, MMS, and SMS messaging agent for creating rich, interactive campaigns that capture attention and drive engagement.",
+    "longDescription": "The RCS for Business Messaging Suite helps businesses turn ordinary text messaging into rich, interactive experiences that keep customers engaged and connected. With branded visuals, buttons, videos, and guided responses, you can deliver conversations that feel more like an app—directly inside your customer’s messaging inbox. After a simple integration with your existing tech stack, this channel gives you a powerful, fully trackable way to reach customers with smarter campaigns and measurable outcomes.\n\nUse the RCS for Business Messaging Suite to:\n\n- Launch marketing campaigns with video, carousels, and high-quality images\n- Enable one-tap purchasing and seamless retail checkout\n- Offer easy scheduling and appointment management\n- Reduce call center costs with 24/7 conversational AI handling customer inquiries\n- Send surveys and collect real-time customer feedback\n- Use built-in analytics to understand user behavior, measure journeys, and make data-driven decisions\n\nThis is the next generation of trackable, interactive business messaging—designed to boost engagement, improve conversions, and deliver better customer experiences.\n\n\n\nPER COUNTRY MESSAGE PRICING\n\nMessages are billed on a per-credit basis, and the credit cost varies by message type and by country.\n\nMessage Types are listed in this order:\nRCS Basic (SMS), RCS Single (MMS), RCS 24 Hour Conversation\n\nUnited States\nBasic: 2 credits, Single: 6 credits\n\nCanada\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nMexico\nBasic: 2 credits, Single: 4 credits, Conversational: 6 credits\n\nAustria\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nFrance\nBasic: 10 credits, Single: 12 credits, Conversational: 23 credits\n\nGermany\nBasic: 12 credits, Single: 14 credits, Conversational: 18 credits\n\nItaly\nBasic: 6 credits, Single: 8 credits, Conversational: 12 credits\n\nPoland\nBasic: 5 credit, Single: 7 credits, Conversational: 9 credits\n\nSpain\nBasic: 6 credits, Single: 12 credits, Conversational: 14 credits\n\nSweden\nBasic: 6 credit, Single: 10 credits, Conversational: 17 credits\n\nUnited Kingdom\nBasic: 9 credit, Single: 14 credits, Conversational: 27 credits\n\nBrazil\nBasic: 2 credit, Single: 4 credits, Conversational: 8 credits\n\nIndia\nBasic: 1 credit, Single: 2 credits, Conversational: 3 credits\n\nSingapore\nBasic: 7 credits, Single: 13 credits, Conversational: 16 credits\n\nNigeria\nBasic: 1 credits, Single: 2 credits, Conversational: 3 credits\n",
+    "displayName": "RCS for Business Messaging Suite",
+    "imageUrl": "https://storage.googleapis.com/marketing-prod-assets/IBM/logo-sq.svg",
+    "localSvgIcon": "/generated/icons/9fe9ec96-198e-47d4-a3cf-877cd37cb67d.svg",
+    "localPngIcon": "/generated/icons/9fe9ec96-198e-47d4-a3cf-877cd37cb67d.png"
   },
   {
     "geo_tags": [
@@ -16635,12 +16706,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19262,12 +19333,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -19512,7 +19583,9 @@
   },
   {
     "geo_tags": [
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "us-south"
     ],
     "id": "4d4fd270-fe8f-11ef-82ad-af5f37d5a455",
     "kind": "service",
@@ -19534,13 +19607,15 @@
       "apidocs_enabled",
       "ca-tor",
       "custom_kind_service",
+      "eu-de",
       "free",
       "iam_compatible",
       "ibm_created",
       "paid",
       "paid_only",
       "rc_compatible",
-      "support_ibm"
+      "support_ibm",
+      "us-south"
     ],
     "plans": [
       {
