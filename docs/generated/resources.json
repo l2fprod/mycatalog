@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5425,6 +5425,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5432,11 +5436,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5581,6 +5581,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5591,9 +5593,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd",
-      "che01"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5912,6 +5912,8 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "us-south",
       "eu-de",
       "eu-gb",
       "au-syd",
@@ -5919,9 +5921,7 @@
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "mon01",
-      "eu-es",
-      "us-south"
+      "mon01"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6080,13 +6080,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8509,6 +8509,54 @@
     "geo_tags": [
       "global"
     ],
+    "id": "311992c0-dcf5-4734-804e-989cd4c47376",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "iterate-ai-generate-enterprise",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "agentic ai",
+      "custom_kind_service",
+      "enterprise ai",
+      "finance ai",
+      "global",
+      "healthcare ai",
+      "ibm_third_party",
+      "legal ai",
+      "local llms",
+      "mcp",
+      "paid",
+      "paid_only",
+      "rag",
+      "rc_compatible",
+      "secure ai",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "a08e6f90-e19a-4baa-9966-73ef24222b3d",
+        "name": "base",
+        "description": "This pricing plan uses a custom metric “HEALTHCARE_UNIT” defined specifically for your deployment. Number of monthly Healthcare Units will be decided based on the discussion with client. Please reach out to sales@iterate.ai to discuss the requirement.",
+        "displayName": "Generate Enterprise Monthly Pricing"
+      }
+    ],
+    "description": "Secure, private agentic platform with advanced document and database search capabilities for analyzing large-scale data.",
+    "longDescription": "Generate is Iterate's private, secure AI assistant designed for organizations that require enterprise-grade security and privacy. Unlike public AI platforms, Generate operates entirely within your organization's infrastructure, ensuring complete data sovereignty while delivering powerful AI-driven document intelligence and data analysis capabilities.\n\nFeatures:\n\nAgent Builder: Create sophisticated AI agents capable of performing multiple tasks and connecting to a variety of tools through inbuilt data connectors and MCP (Model Context Protocol) servers. These agents can automate complex workflows significantly enhancing operational efficiency.\n\nDocument Search: Vectorize and query 1000+ documents in multiple formats including PDF, XLSX, CSV, DOCX, and PPT files. The platform stores documents in a high-scale vector database for fast retrieval and serves contextual information to AI models running in your private cloud environment. This ensures context-aware answers are generated from your specific document repository while maintaining complete security isolation.\n\n\n\n\nDatabase Search: Connect directly to existing databases and enable users to interact with their data through natural language queries, which are intelligently converted into SQL commands. The system extracts meaningful insights and presents them in table, charts, dashboards and many other formats, making complex data analysis accessible to non-technical users.\n\nService Pilot: Streamline email communications by connecting your email systems for automated summaries and AI-generated reply suggestions. Upload relevant documents to support reply generation, ensuring responses are contextually appropriate and professionally crafted. This feature enhances productivity while maintaining consistency in communications across your organization.\n\nSecurity and Privacy Guarantees: Generate operates with a strict no-data-retention policy, ensuring that your information is never used beyond the immediate processing requirement, maintaining complete confidentiality of your proprietary information.",
+    "displayName": "Generate by Iterate.ai",
+    "imageUrl": "https://generate-enterprise-product-assets.s3.us-east-1.amazonaws.com/logo512.png",
+    "localPngIcon": "/generated/icons/311992c0-dcf5-4734-804e-989cd4c47376.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "15ab318d-61a8-4a9b-94c5-25c5b395e657",
     "kind": "service",
     "metadata": {
@@ -8718,14 +8766,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9125,17 +9173,17 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
-      "ca-mon",
+      "eu-de",
+      "us-south",
       "au-syd",
       "eu-gb",
+      "br-sao",
       "jp-osa",
       "eu-es",
       "us-east",
       "jp-tok",
-      "eu-de",
-      "us-south",
-      "br-sao"
+      "ca-tor",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11604,7 +11652,7 @@
         "id": "b412d398-0524-44c2-aa9b-74c93cb20e8c",
         "name": "telc-architect-vmware",
         "description": "5 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services---VMware",
+        "displayName": "Architect Services---VMware Transformation-Offshore Delivery",
         "originalName": "telc-architect-vmware"
       },
       {
@@ -11653,7 +11701,7 @@
         "id": "276b1eb9-1c2a-471f-99e8-e4f24ea99be7",
         "name": "telc-assess-vmware",
         "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services (2 days)---VMware",
+        "displayName": "Architect Services (2 days)---VMware Transformation-Offshore Delivery",
         "originalName": "telc-assess-vmware"
       },
       {
@@ -11702,7 +11750,7 @@
         "id": "8f625547-067e-423b-a5f1-a4f20c273a48",
         "name": "telc-build-vmware",
         "description": "5 day increments of engineering expertise to deploy and configure your IBM Cloud solution and migrate workload to become operational in IBM Cloud.",
-        "displayName": "Build Services---VMware",
+        "displayName": "Build Services---VMware Transformation-Offshore Delivery",
         "originalName": "telc-build-vmware"
       },
       {
@@ -16093,6 +16141,7 @@
     "tags": [
       "security",
       "custom_kind_service",
+      "dedicated",
       "global",
       "ibm_third_party",
       "paid",
@@ -16706,12 +16755,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
