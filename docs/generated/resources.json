@@ -5581,6 +5581,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5591,9 +5593,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd",
-      "che01"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5912,15 +5912,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
-      "eu-de",
       "au-syd",
-      "us-east",
+      "fra02",
       "eu-es",
+      "us-east",
+      "jp-tok",
+      "us-south",
+      "eu-de",
       "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "ca-tor"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5954,10 +5955,12 @@
       "db2 on cloud",
       "db2oncloud",
       "dbaas",
+      "eu_access",
       "eu-de",
       "eu-es",
       "eu-gb",
       "flex",
+      "fra02",
       "free",
       "freesia",
       "iam_compatible",
@@ -6002,6 +6005,13 @@
         "description": "Choose this option only if you have special requirements. IBM staff will contact you after placing this order. IBM staff will then set up the order according to your needs, such as Oracle compatibility. One SQL database per service instance on redundant dedicated virtual servers with 8GB RAM and 2 vCPUs. Provides up to 500GB of storage for data and logs. This plan is suitable for Online Transaction Processing (OLTP) workloads where co-located high availability of the database service is required. For further information, contact your IBM Cloud Data Services sales rep or send email to sales@bluemix.net.",
         "displayName": "Db2 on Cloud High Availability 2.8.500 (Manual Order)",
         "originalName": "DoCPrecisePerfHA2.8.500"
+      },
+      {
+        "id": "dashDBNebula",
+        "name": "enterprise",
+        "description": "The starting configuration provides one SQL database per service instance residing on dedicated compute slices, with 4 vCPUs (16 GB of memory), and 20 GB of storage for data and logs. Scale your database up to 56 vCPUs (240 GB of memory) and 24 TB of storage for data and logs. Enterprise offers a high availability option that includes one database running on three dedicated virtual servers. Each HA node is billed separately. The high availability virtual servers are provisioned across multiple availability zones in IBM Cloud regions that support it. Scale your compute and storage independently to achieve the perfect price/performance fit. Each plan includes up to 1 TB of backup storage, stored for 14 days.\n\n\nThis plan is being deprecated and will no longer be available. For more information visit - https://cloud.ibm.com/status/announcement?query=Deprecation+Announcement+-+IBM+Db2+SaaS+Standard+%26+Enterprise+Plans",
+        "displayName": "Enterprise",
+        "originalName": "Enterprise"
       },
       {
         "id": "dashDBTxSmall",
@@ -6051,6 +6061,13 @@
         "description": "Base configuration starts with 4 vCPUs, 16 GB of RAM, 400 IOPS and 50GB of storage.\n\nThe starting configuration provides one SQL database per service instance residing on dedicated VPC machines. Scale your database up to 128 vCPUs (1024 GB of memory) and 40 TB of storage for data and logs. Gen 3 offers a high availability option that includes one database running on two dedicated virtual servers. The high availability instances are provisioned across multiple availability zones. Scale your compute, storage and IOPS independently to achieve the perfect price/performance fit.\n\nThe service is billed hourly based on the number of resource units. Monthly resource units are shown for machine types during selection. Storage requires 2 RU per 20 GB/month and 5.7 RU per 100 IOPS/month. Backups require 52.5 RU per TB/month.",
         "displayName": "Performance (Gen 3)",
         "originalName": "performance"
+      },
+      {
+        "id": "dashDBStandard",
+        "name": "standard",
+        "description": "The starting configuration provides one SQL database per service instance residing on shared compute slices, with 2 sharable vCPUs (8 GB of memory), and 20 GB of storage for data and logs. All database deployed across multi-tenant compute infrastructure. Scale your database up to 16 vCPUs (64 GB of memory) and 4 TB of storage for data and logs. Standard offers a high availability option that includes one database running on three shared virtual servers. Each HA node is billed separately. The high availability virtual servers are provisioned across multiple availability zones in IBM Cloud regions that support it. Scale your compute and storage independently to achieve the perfect price/performance fit. Each plan includes up to 100 GB of backup storage, stored for 14 days.\n\n\nThis plan is being deprecated and will no longer be available. For more information visit - https://cloud.ibm.com/status/announcement?query=Deprecation+Announcement+-+IBM+Db2+SaaS+Standard+%26+Enterprise+Plans",
+        "displayName": "Standard",
+        "originalName": "Standard"
       }
     ],
     "description": "A fully managed, high performance transactional database for mission critical workloads.",
@@ -8530,7 +8547,7 @@
       }
     ],
     "description": "Secure, private agentic platform with advanced document and database search capabilities for analyzing large-scale data.",
-    "longDescription": "Generate is Iterate's private, secure AI assistant designed for organizations that require enterprise-grade security and privacy. Unlike public AI platforms, Generate operates entirely within your organization's infrastructure, ensuring complete data sovereignty while delivering powerful AI-driven document intelligence and data analysis capabilities.\n\nFeatures:\n\nAgent Builder: Create sophisticated AI agents capable of performing multiple tasks and connecting to a variety of tools through inbuilt data connectors and MCP (Model Context Protocol) servers. These agents can automate complex workflows significantly enhancing operational efficiency.\n\nDocument Search: Vectorize and query 1000+ documents in multiple formats including PDF, XLSX, CSV, DOCX, and PPT files. The platform stores documents in a high-scale vector database for fast retrieval and serves contextual information to AI models running in your private cloud environment. This ensures context-aware answers are generated from your specific document repository while maintaining complete security isolation.\n\n\n\n\nDatabase Search: Connect directly to existing databases and enable users to interact with their data through natural language queries, which are intelligently converted into SQL commands. The system extracts meaningful insights and presents them in table, charts, dashboards and many other formats, making complex data analysis accessible to non-technical users.\n\nService Pilot: Streamline email communications by connecting your email systems for automated summaries and AI-generated reply suggestions. Upload relevant documents to support reply generation, ensuring responses are contextually appropriate and professionally crafted. This feature enhances productivity while maintaining consistency in communications across your organization.\n\nSecurity and Privacy Guarantees: Generate operates with a strict no-data-retention policy, ensuring that your information is never used beyond the immediate processing requirement, maintaining complete confidentiality of your proprietary information.",
+    "longDescription": "Generate is a private, secure agentic AI platform built for multiple industries. \nThe Healthcare Edition helps hospitals uncover and recover leaked revenue from unpaid and underpaid claims by unifying claims, remits, denials, contracts, and payer policies into a single, action-driven workflow. It highlights recovery opportunities, filing deadlines, root-cause patterns, and ROI impact so teams can collect more while working less.\n\nHospitals lose revenue every day through underpayments, avoidable denials, missed appeal windows, and documentation gaps. Because billing teams rarely have the capacity to pursue every claim Generate addresses this by turning fragmented data (EHR exports, clearinghouse files, payer remits, contracts, medical policies, SOPs, spreadsheets, emails) into a prioritized recovery pipeline that teams can act on immediately.\n\nGenerate can help uncover 4–12% of net patient revenue in underpaid claims by making recovery work systematic and scalable. With data connectors, your team can “connect and forget” the sources you already use. Then Agentic Cards surface what matters most:\n\n1. Claims with recovery potential (underpaid, denied, pending)\n\n2. Estimated dollars at risk and expected recoverable value\n\n3. Deadlines (timely filing, appeals, reconsiderations)\n\n4. Next-best actions with supporting evidence\n\n5. Recurring error patterns that improve first-pass claim accuracy\n\nGenerate runs privately within IBM Cloud to support healthcare-grade security and privacy requirements.\n\nBeyond healthcare, Generate is a versatile horizontal platform that enables agentic workflows and analytics across both structured and unstructured data, supporting use cases in finance, legal, public sector, and more.\n\nCustomer Quotes\n“The data and dashboards have been invaluable… We now understand our true financial picture, can hold vendors accountable, respond to audits, and recover underpaid claims.” — Robin Cetti, Director of Decision Support & Revenue Integrity, Hutchinson Regional Health System\n\n“A playground of answers to all the questions healthcare leaders are asking.” — Dr. F.X. Campion, MIT Research & Engineering\n\n\n",
     "displayName": "Generate by Iterate.ai",
     "imageUrl": "https://generate-enterprise-product-assets.s3.us-east-1.amazonaws.com/logo512.png",
     "localPngIcon": "/generated/icons/311992c0-dcf5-4734-804e-989cd4c47376.png"
@@ -9155,17 +9172,17 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "jp-osa",
-      "us-east",
       "jp-tok",
+      "ca-tor",
+      "au-syd",
+      "br-sao",
+      "us-east",
       "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "eu-es",
-      "ca-tor"
+      "eu-gb",
+      "jp-osa",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10681,10 +10698,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14672,8 +14689,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16685,12 +16702,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19248,9 +19265,7 @@
       "allow_internal_users",
       "paid_only",
       "free",
-      "lite",
-      "paid",
-      "subscription"
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
@@ -19265,10 +19280,8 @@
       "ibm_created",
       "jp-tok",
       "lite",
-      "paid",
       "paid_only",
       "rc_compatible",
-      "subscription",
       "support_ibm",
       "us-south",
       "watson"
@@ -19289,13 +19302,6 @@
         "originalName": "lite"
       },
       {
-        "id": "26d01670-980d-4a62-afef-f091a20aaae3",
-        "name": "premium-agentic-mau",
-        "description": "Premium Agentic Plan with MAU for Data Isolation\nTo purchase Premium plan with data isolation [contact us](https://www.ibm.com/account/reg/us-en/subscribe?formid=MAIL-data)",
-        "displayName": "Premium Agentic with Data Isolation (Monthly Active Users)",
-        "originalName": "premium-agentic-mau"
-      },
-      {
         "id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
         "name": "standard-agentic-mau",
         "description": "Standard Agentic with Monthly Active Users",
@@ -19312,12 +19318,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -19394,12 +19400,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
