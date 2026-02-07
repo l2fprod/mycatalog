@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5912,15 +5912,15 @@
   },
   {
     "geo_tags": [
-      "fra02",
-      "us-east",
       "eu-gb",
-      "eu-de",
-      "au-syd",
+      "fra02",
       "eu-es",
       "br-sao",
       "ca-tor",
+      "us-east",
       "jp-tok",
+      "eu-de",
+      "au-syd",
       "us-south"
     ],
     "id": "dashdb-for-transactions",
@@ -6079,13 +6079,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8765,14 +8765,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9172,17 +9172,17 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "us-east",
-      "ca-tor",
-      "eu-de",
-      "us-south",
       "au-syd",
+      "us-east",
       "jp-osa",
       "eu-es",
       "jp-tok",
+      "ca-tor",
       "ca-mon",
-      "eu-gb"
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14689,8 +14689,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -19252,6 +19252,7 @@
       "eu-de",
       "eu-gb",
       "jp-tok",
+      "us-east",
       "us-south"
     ],
     "id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
@@ -19265,7 +19266,9 @@
       "allow_internal_users",
       "paid_only",
       "free",
-      "lite"
+      "lite",
+      "paid",
+      "subscription"
     ],
     "tags": [
       "allow_internal_users",
@@ -19280,9 +19283,12 @@
       "ibm_created",
       "jp-tok",
       "lite",
+      "paid",
       "paid_only",
       "rc_compatible",
+      "subscription",
       "support_ibm",
+      "us-east",
       "us-south",
       "watson"
     ],
@@ -19302,6 +19308,13 @@
         "originalName": "lite"
       },
       {
+        "id": "26d01670-980d-4a62-afef-f091a20aaae3",
+        "name": "premium-agentic-mau",
+        "description": "Premium Agentic Plan with MAU for Data Isolation\nTo purchase Premium plan with data isolation [contact us](https://www.ibm.com/account/reg/us-en/subscribe?formid=MAIL-data)",
+        "displayName": "Premium Agentic with Data Isolation (Monthly Active Users)",
+        "originalName": "premium-agentic-mau"
+      },
+      {
         "id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
         "name": "standard-agentic-mau",
         "description": "Standard Agentic with Monthly Active Users",
@@ -19318,12 +19331,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south",
-      "jp-tok",
-      "eu-de"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
