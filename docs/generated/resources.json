@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb"
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -673,6 +673,7 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -714,6 +715,7 @@
       "fs_ready",
       "iam_compatible",
       "ibm_created",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "lite",
@@ -763,7 +765,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -771,7 +772,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -2812,6 +2814,7 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -2848,6 +2851,7 @@
       "fss",
       "iam_compatible",
       "ibm_created",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "log analysis",
@@ -5425,6 +5429,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5432,11 +5440,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5581,6 +5585,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-tor",
@@ -5592,8 +5597,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5912,16 +5916,16 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "us-south",
-      "eu-gb",
+      "eu-de",
       "au-syd",
       "fra02",
-      "eu-es",
       "br-sao",
       "ca-tor",
+      "jp-tok",
+      "eu-gb",
+      "eu-es",
       "us-east",
-      "eu-de"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6079,13 +6083,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7242,6 +7246,7 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -7280,6 +7285,7 @@
       "fs_ready",
       "iam_compatible",
       "ibm_created",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "lite",
@@ -8765,14 +8771,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9172,17 +9178,17 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "ca-tor",
+      "au-syd",
+      "br-sao",
+      "jp-osa",
+      "eu-es",
       "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd",
-      "us-east",
-      "br-sao",
-      "jp-osa",
       "eu-gb",
-      "eu-es"
+      "us-east",
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16118,6 +16124,51 @@
     "geo_tags": [
       "global"
     ],
+    "id": "4d895c2d-93cf-4c48-8197-f3760d0d6400",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "standard-test-payment-hsm-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "custom_kind_service",
+      "german dk/gbic",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "payment hsm",
+      "pci p2p2",
+      "pci p2pe",
+      "pci pin",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "df2cdfe2-4037-43a4-9bcb-78d19ac9cd5b",
+        "name": "std-test-pay-hsm-price-plan",
+        "description": "See documentation for more details.",
+        "displayName": "std-test-pay-hsm-price-plan"
+      }
+    ],
+    "description": "A fully managed service using test keys for a group of 2 x HSMs with the same settings & firmware as the Standard Live service. ",
+    "longDescription": "Utimaco’s Standard Test Payment HSM Service provides access to a fully managed PCI-certified Payment HSM service through IBM Cloud, with  high availability and the low latency.\n\nThe Payment HSM as a Service is a true alternative to operating your own Payment HSMs and removes the investments tied to hardware, secure facilities, and management resources while reducing the burden of PCI compliance, audit, and support.\n\nBesides reducing total cost of ownership, it provides flexible deployment and scalability and enables most robust security for organizations’ digital infrastructure.\n\nThis Catalog tile covers subscription to the Test service. For connection to the service, instances of the PHI load balancer should be deployed within your IBM infrastructure, using the PHI Deployable Architecture tile.\n\nFor full details please follow the Docs link and sign up to the Service Portal.",
+    "displayName": "Standard Test Payment HSM Service",
+    "imageUrl": "https://utimaco.com/themes/custom/utimaco/assets/img/utimaco-logo.svg",
+    "localSvgIcon": "/generated/icons/4d895c2d-93cf-4c48-8197-f3760d0d6400.svg",
+    "localPngIcon": "/generated/icons/4d895c2d-93cf-4c48-8197-f3760d0d6400.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
     "kind": "service",
     "metadata": {
@@ -19331,12 +19382,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
       "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
