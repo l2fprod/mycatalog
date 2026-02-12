@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2893,6 +2893,7 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -2930,16 +2931,19 @@
       "iam_compatible",
       "ibm_created",
       "ibm_release",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "lite",
       "paid",
       "rc_compatible",
       "service endpoint supported",
+      "service_endpoint_supported",
       "support_ibm",
       "supports_syndication",
       "us-east",
-      "us-south"
+      "us-south",
+      "vpc_private_endpoint"
     ],
     "plans": [
       {
@@ -3806,85 +3810,6 @@
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
     "localSvgIcon": "/generated/icons/is.cluster-network.svg",
     "localPngIcon": "/generated/icons/is.cluster-network.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "eu-de",
-      "eu-es",
-      "eu-gb",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
-    "id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "compass",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "aix",
-      "au-syd",
-      "backup",
-      "backup and recovery",
-      "br-sao",
-      "custom_kind_service",
-      "cyber resiliency",
-      "data protection",
-      "db2 on aix",
-      "eu-de",
-      "eu-es",
-      "eu-gb",
-      "iam_compatible",
-      "ibm i",
-      "ibm_third_party",
-      "jp-osa",
-      "jp-tok",
-      "linux",
-      "oracle on aix",
-      "paid",
-      "paid_only",
-      "powervs",
-      "rc_compatible",
-      "sap hana on linux",
-      "storage_backup",
-      "support_third_party",
-      "us-east",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "c696fd3a-fffa-4e7e-affd-ab798af04f8d",
-        "name": "compass-shared-consumption-pricing",
-        "description": "Priced per gigabyte hour",
-        "displayName": "compass-shared-consumption-pricing"
-      },
-      {
-        "id": "a5d52a15-dc06-47c7-bd89-86256e6c368f",
-        "name": "compass-special-customer-pricing",
-        "description": "Shared consumption pricing with up to 5TB stored data FREE for the first 30 days. Thereafter, priced per GB hour.",
-        "displayName": "compass-special-customer-pricing"
-      },
-      {
-        "id": "a391f481-61ed-479e-b3e1-1608f390a17b",
-        "name": "single-copy-pricing",
-        "description": "Priced per gigabyte hour for a single copy",
-        "displayName": "single-copy-pricing"
-      }
-    ],
-    "description": "Simple, secure, automated backup and restore to protect IBM PowerVS data powered by IBM Storage Protect.",
-    "longDescription": "Powered by Cobalt Iron Compass®\nA single, unified, SaaS-based offering to backup and restore IBM PowerVS workloads and more!\n\nWith IBM Storage Protect, Compass protects a variety of PowerVS platforms, applications, and data classes including:\n1.\tAIX\n2.\tLinux\n3.\tOracle on AIX\n4.\tDb2 on AIX\n5.\tSAP HANA on Linux\n6.  IBM i (coming soon)\n\nCompass delivers a variety of differentiated features and functionality: \n1.\tSimple, automated, instant-on\n2.\tCloud backup service\n3.\tResilient and compliant\n4.\tUsage-based pricing\n5.\tNative application integrations \n\nThe Compass offering provides a variety of integrated security and operational features including:\n\n1.\tAlerting, notifications, and ticketing features and integration\n2.\tAutomated auditing and validation of backup server landscape\n3.\tBackup server automation – hands-free automation of all backup server tasks\n4.\tCentralized policy management\n5.\tComplete governance\n6.\tCustomer data is encrypted in all phases from in-transit, to-storage, and at-rest\n7.\tMultitenancy and unlimited sub-organizations\n8.\tRole-based access control management\n",
-    "displayName": "Cobalt Iron - Secure Automated Backup with Compass",
-    "imageUrl": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/CobaltIronLogo-Vertical-SpecialUseOnly_WhtBackground.png",
-    "localPngIcon": "/generated/icons/afb603e9-8738-4542-abf4-baf5231a4dbe.png"
   },
   {
     "geo_tags": [
@@ -5303,9 +5228,6 @@
     "localPngIcon": "/generated/icons/696b9880-9e9b-11ea-9054-e15e287f1e7f.png"
   },
   {
-    "geo_tags": [
-      "us-south"
-    ],
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "kind": "service",
     "metadata": {
@@ -5313,36 +5235,23 @@
       "ui": {}
     },
     "name": "data-virtualization",
-    "pricing_tags": [
-      "allow_internal_users"
-    ],
     "tags": [
       "databases",
-      "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
       "data virtualization",
       "data_management",
       "database",
-      "iam_compatible",
       "ibm_created",
       "rc_compatible",
-      "support_ibm",
-      "us-south"
+      "support_ibm"
     ],
-    "plans": [
-      {
-        "id": "data-virtualization-enterprise-preprod",
-        "name": "data-virtualization-enterprise-preprod",
-        "description": "The service is metered and consumed once provisioned even when no workload is submitted.",
-        "displayName": "Enterprise (preprod)",
-        "originalName": "data-virtualization-enterprise-preprod"
-      }
-    ],
+    "plans": [],
     "description": "Lite-tier provisioning is no longer available due to the sunsetting of Data Virtualization as a Service (DVaaS). Enterprise-tier provisioning remains available and now requires approval from a product manager",
     "longDescription": "For decades, companies have tried to break down silos by copying data from different operational systems into central data stores for analysis, such as data marts, data warehouses and data lakes. These methods can be costly and are prone to error. Most struggle to manage an average of 33 unique data sources, which are diverse in structure and often trapped within inaccessible data silos. With Data Virtualization, you can query data across many systems without having to copy and replicate it, saving time and reducing costs. Data Virtualization queries data from its source, simplifying your analytics by providing the latest and most accurate data.",
     "displayName": "Data Virtualization",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/5d307850-0404-11eb-8c8b-c7d7505f656d/artifacts/cache/0082f4ddf582a68f1bab3bca336b6a15-public/data-virtualization.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.svg",
     "localPngIcon": "/generated/icons/5d307850-0404-11eb-8c8b-c7d7505f656d.png"
   },
@@ -5922,11 +5831,11 @@
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "us-south",
       "eu-gb",
       "eu-de",
       "au-syd",
       "us-east",
+      "us-south",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -9180,18 +9089,18 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "jp-osa",
-      "eu-es",
+      "au-syd",
       "jp-tok",
       "ca-mon",
       "eu-de",
       "us-south",
+      "eu-gb",
       "us-east",
       "br-sao",
-      "ca-tor",
-      "au-syd",
-      "eu-gb"
+      "in-che",
+      "jp-osa",
+      "eu-es",
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14663,8 +14572,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15442,6 +15351,85 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/ebc0cdb0-af2a-11ea-98c7-29e5db822649/artifacts/cache/45181e2a1573067f81b8084cabd5b61e-public/secrets-manager-icon.svg",
     "localSvgIcon": "/generated/icons/ebc0cdb0-af2a-11ea-98c7-29e5db822649.svg",
     "localPngIcon": "/generated/icons/ebc0cdb0-af2a-11ea-98c7-29e5db822649.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
+      "us-south"
+    ],
+    "id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "compass",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "aix",
+      "au-syd",
+      "backup",
+      "backup and recovery",
+      "br-sao",
+      "custom_kind_service",
+      "cyber resiliency",
+      "data protection",
+      "db2 on aix",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "iam_compatible",
+      "ibm i",
+      "ibm_third_party",
+      "jp-osa",
+      "jp-tok",
+      "linux",
+      "oracle on aix",
+      "paid",
+      "paid_only",
+      "powervs",
+      "rc_compatible",
+      "sap hana on linux",
+      "storage_backup",
+      "support_third_party",
+      "us-east",
+      "us-south"
+    ],
+    "plans": [
+      {
+        "id": "c696fd3a-fffa-4e7e-affd-ab798af04f8d",
+        "name": "compass-shared-consumption-pricing",
+        "description": "Priced per gigabyte hour",
+        "displayName": "compass-shared-consumption-pricing"
+      },
+      {
+        "id": "a5d52a15-dc06-47c7-bd89-86256e6c368f",
+        "name": "compass-special-customer-pricing",
+        "description": "Shared consumption pricing with up to 5TB stored data FREE for the first 30 days. Thereafter, priced per GB hour.",
+        "displayName": "compass-special-customer-pricing"
+      },
+      {
+        "id": "a391f481-61ed-479e-b3e1-1608f390a17b",
+        "name": "single-copy-pricing",
+        "description": "Priced per gigabyte hour for a single copy",
+        "displayName": "single-copy-pricing"
+      }
+    ],
+    "description": "Simple, secure, automated backup and restore to protect IBM PowerVS data powered by IBM Storage Protect.",
+    "longDescription": "Powered by Cobalt Iron Compass®\nA single, unified, SaaS-based offering to backup and restore IBM PowerVS workloads and more!\n\nWith IBM Storage Protect, Compass protects a variety of PowerVS platforms, applications, and data classes including:\n1.\tAIX\n2.\tLinux\n3.\tOracle on AIX\n4.\tDb2 on AIX\n5.\tSAP HANA on Linux\n6.  IBM i (coming soon)\n\nCompass delivers a variety of differentiated features and functionality: \n1.\tSimple, automated, instant-on\n2.\tCloud backup service\n3.\tResilient and compliant\n4.\tUsage-based pricing\n5.\tNative application integrations \n\nThe Compass offering provides a variety of integrated security and operational features including:\n\n1.\tAlerting, notifications, and ticketing features and integration\n2.\tAutomated auditing and validation of backup server landscape\n3.\tBackup server automation – hands-free automation of all backup server tasks\n4.\tCentralized policy management\n5.\tComplete governance\n6.\tCustomer data is encrypted in all phases from in-transit, to-storage, and at-rest\n7.\tMultitenancy and unlimited sub-organizations\n8.\tRole-based access control management\n",
+    "displayName": "Secure Automated Backup with Compass for Power VS",
+    "imageUrl": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/CobaltIronLogo-Vertical-SpecialUseOnly_WhtBackground.png",
+    "localPngIcon": "/generated/icons/afb603e9-8738-4542-abf4-baf5231a4dbe.png"
   },
   {
     "geo_tags": [
@@ -18012,6 +18000,160 @@
         "originalName": "bx3dc-96x480"
       },
       {
+        "id": "0ca375ac-7b9b-471f-909b-7d6ba3cdea91",
+        "name": "bx4-128x512",
+        "description": "Pricing plan for bx4-128x512 VSIs",
+        "displayName": "Gen4 Balanced bx4-128x512",
+        "originalName": "bx4-128x512"
+      },
+      {
+        "id": "7832a446-dab4-4fa6-bdd0-2fe7a19a08e0",
+        "name": "bx4-16x64",
+        "description": "Pricing plan for bx4-16x64 VSIs",
+        "displayName": "Gen4 Balanced bx4-16x64",
+        "originalName": "bx4-16x64"
+      },
+      {
+        "id": "1c3f412c-c98e-4eef-82ed-2c8bff55a169",
+        "name": "bx4-176x704",
+        "description": "Pricing plan for bx4-176x704 VSIs",
+        "displayName": "Gen4 Balanced bx4-176x704",
+        "originalName": "bx4-176x704"
+      },
+      {
+        "id": "d913d2bf-5b1b-4ce0-ab15-a70327b9f2d5",
+        "name": "bx4-24x96",
+        "description": "Pricing plan for bx4-24x96 VSIs",
+        "displayName": "Gen4 Balanced bx4-24x96",
+        "originalName": "bx4-24x96"
+      },
+      {
+        "id": "51c2d4b0-63ce-4a28-8bcb-be06147e6924",
+        "name": "bx4-2x8",
+        "description": "Pricing plan for bx4-2x8 VSIs",
+        "displayName": "Gen4 Balanced bx4-2x8",
+        "originalName": "bx4-2x8"
+      },
+      {
+        "id": "c08688e7-db7a-450e-a738-7e9aff65b426",
+        "name": "bx4-32x128",
+        "description": "Pricing plan for bx4-32x128 VSIs",
+        "displayName": "Gen4 Balanced bx4-32x128",
+        "originalName": "bx4-32x128"
+      },
+      {
+        "id": "230d967b-2573-4eff-b036-c3a95b9d13cc",
+        "name": "bx4-48x192",
+        "description": "Pricing plan for bx4-48x192 VSIs",
+        "displayName": "Gen4 Balanced bx4-48x192",
+        "originalName": "bx4-48x192"
+      },
+      {
+        "id": "b2cfd5f2-7227-4f96-a540-1d12e3b60bdf",
+        "name": "bx4-4x16",
+        "description": "Pricing plan for bx4-4x16 VSIs",
+        "displayName": "Gen4 Balanced bx4-4x16",
+        "originalName": "bx4-4x16"
+      },
+      {
+        "id": "af067159-6da8-483e-978f-bdf012a690ea",
+        "name": "bx4-64x256",
+        "description": "Pricing plan for bx4-64x256 VSIs",
+        "displayName": "Gen4 Balanced bx4-64x256",
+        "originalName": "bx4-64x256"
+      },
+      {
+        "id": "00cdfd69-32b9-44bc-b6d3-e40c204a9192",
+        "name": "bx4-8x32",
+        "description": "Pricing plan for bx4-8x32 VSIs",
+        "displayName": "Gen4 Balanced bx4-8x32",
+        "originalName": "bx4-8x32"
+      },
+      {
+        "id": "bc452d9a-d5ac-4397-b9e4-b4128418c919",
+        "name": "bx4-96x384",
+        "description": "Pricing plan for bx4-96x384 VSIs",
+        "displayName": "Gen4 Balanced bx4-96x384",
+        "originalName": "bx4-96x384"
+      },
+      {
+        "id": "248e5e45-0c4a-4db4-a5f9-60151ec2412e",
+        "name": "bx4d-128x512",
+        "description": "Pricing plan for bx4d-128x512, 1560GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-128x512, 1560GB SSD",
+        "originalName": "bx4d-128x512"
+      },
+      {
+        "id": "d3f65e29-ebdd-42c8-b9b2-2fa376fb37d9",
+        "name": "bx4d-16x64",
+        "description": "Pricing plan for bx4d-16x64, 520GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-16x64, 520GB SSD",
+        "originalName": "bx4d-16x64"
+      },
+      {
+        "id": "ee5a6b0a-24ce-432c-9062-a69b19ddbe5c",
+        "name": "bx4d-176x704",
+        "description": "Pricing plan for bx4d-176x704, 1560GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-176x704, 1560GB SSD",
+        "originalName": "bx4d-176x704"
+      },
+      {
+        "id": "7c3c7e82-d570-4ea9-aca5-6f2fc0f5a979",
+        "name": "bx4d-24x96",
+        "description": "Pricing plan for bx4d-24x96, 780GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-24x96, 780GB SSD",
+        "originalName": "bx4d-24x96"
+      },
+      {
+        "id": "65559a47-75de-409e-9dba-d4164ff096fb",
+        "name": "bx4d-2x8",
+        "description": "Pricing plan for bx4d-2x8, 65GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-2x8, 65GB SSD",
+        "originalName": "bx4d-2x8"
+      },
+      {
+        "id": "5a66bab5-72cf-4b35-b8fc-ee4fd043400a",
+        "name": "bx4d-32x128",
+        "description": "Pricing plan for bx4d-32x128, 1040GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-32x128, 1040GB SSD",
+        "originalName": "bx4d-32x128"
+      },
+      {
+        "id": "7f41da31-ae65-483e-85bb-08dcea2d7e81",
+        "name": "bx4d-48x192",
+        "description": "Pricing plan for bx4d-48x192, 1560GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-48x192, 1560GB SSD",
+        "originalName": "bx4d-48x192"
+      },
+      {
+        "id": "296b2511-5670-485e-a2f8-fda14604b809",
+        "name": "bx4d-4x16",
+        "description": "Pricing plan for bx4d-4x16, 130GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-4x16, 130GB SSD",
+        "originalName": "bx4d-4x16"
+      },
+      {
+        "id": "fd80b3da-edcb-42b9-9727-5987eede1dfb",
+        "name": "bx4d-64x256",
+        "description": "Pricing plan for bx4d-64x256, 1560GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-64x256, 1560GB SSD",
+        "originalName": "bx4d-64x256"
+      },
+      {
+        "id": "5ea33e79-3a23-4fa2-832c-6cd1e1635430",
+        "name": "bx4d-8x32",
+        "description": "Pricing plan for bx4d-8x32, 260GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-8x32, 260GB SSD",
+        "originalName": "bx4d-8x32"
+      },
+      {
+        "id": "c12c188e-ff01-494a-9721-02ac88df6de9",
+        "name": "bx4d-96x384",
+        "description": "Pricing plan for bx4d-96x384, 1560GB SSD VSIs",
+        "displayName": "Gen4 Balanced bx4d-96x384, 1560GB SSD",
+        "originalName": "bx4d-96x384"
+      },
+      {
         "id": "69be454a-69e4-4fe2-a302-11f28533410d",
         "name": "bxf-16x64",
         "description": "Pricing plan for bxf-16x64 VSIs",
@@ -18066,160 +18208,6 @@
         "description": "Pricing plan for bxf-8x32 VSIs",
         "displayName": "Flex Balanced bxf-8x32",
         "originalName": "bxf-8x32"
-      },
-      {
-        "id": "b6b51d4d-2e17-439b-8326-13be67ae1288",
-        "name": "cx2-2x4-gen3",
-        "description": "Pricing plan for cx2-2x4-gen3 VSIs",
-        "displayName": "Gen3 Compute cx2-2x4-gen3",
-        "originalName": "cx2-2x4-gen3"
-      },
-      {
-        "id": "bc16079c-96bd-4044-921e-cca51bcbc95a",
-        "name": "cx3d-128x320",
-        "description": "Pricing plan for cx3d-128x320 VSIs",
-        "displayName": "Gen3 Compute cx3d-128x320",
-        "originalName": "cx3d-128x320"
-      },
-      {
-        "id": "0638c843-9882-42d8-8935-acb4f0faf2e9",
-        "name": "cx3d-16x40",
-        "description": "Pricing plan for cx3d-16x40 VSIs",
-        "displayName": "Gen3 Compute cx3d-16x40",
-        "originalName": "cx3d-16x40"
-      },
-      {
-        "id": "f91e207f-94e5-422a-924a-4b21308c3557",
-        "name": "cx3d-176x440",
-        "description": "Pricing plan for cx3d-176x440 VSIs",
-        "displayName": "Gen3 Compute cx3d-176x440",
-        "originalName": "cx3d-176x440"
-      },
-      {
-        "id": "9da0e9fd-fc64-4e51-93f7-f0eb5ee71aa7",
-        "name": "cx3d-24x60",
-        "description": "Pricing plan for cx3d-24x60 VSIs",
-        "displayName": "Gen3 Compute cx3d-24x60",
-        "originalName": "cx3d-24x60"
-      },
-      {
-        "id": "24a15c33-b90a-45e2-b5b8-a1daa8c5a9c6",
-        "name": "cx3d-2x5",
-        "description": "Pricing plan for cx3d-2x5 VSIs",
-        "displayName": "Gen3 Compute cx3d-2x5",
-        "originalName": "cx3d-2x5"
-      },
-      {
-        "id": "6a445f62-f4d7-4daf-b02b-fc0d5f46abb2",
-        "name": "cx3d-32x80",
-        "description": "Pricing plan for cx3d-32x80 VSIs",
-        "displayName": "Gen3 Compute cx3d-32x80",
-        "originalName": "cx3d-32x80"
-      },
-      {
-        "id": "c33a5afe-33d1-4f47-83f7-df88334554c7",
-        "name": "cx3d-48x120",
-        "description": "Pricing plan for cx3d-48x120 VSIs",
-        "displayName": "Gen3 Compute cx3d-48x120",
-        "originalName": "cx3d-48x120"
-      },
-      {
-        "id": "a8ae2fe1-6f40-46fb-a6bd-65be1642cce4",
-        "name": "cx3d-4x10",
-        "description": "Pricing plan for cx3d-4x10 VSIs",
-        "displayName": "Gen3 Compute cx3d-4x10",
-        "originalName": "cx3d-4x10"
-      },
-      {
-        "id": "8d23087a-09dd-4b19-85fe-79176a0a3d4e",
-        "name": "cx3d-64x160",
-        "description": "Pricing plan for cx3d-64x160 VSIs",
-        "displayName": "Gen3 Compute cx3d-64x160",
-        "originalName": "cx3d-64x160"
-      },
-      {
-        "id": "ff8e7335-35de-4c80-8eca-d1a68e37fda8",
-        "name": "cx3d-8x20",
-        "description": "Pricing plan for cx3d-8x20 VSIs",
-        "displayName": "Gen3 Compute cx3d-8x20",
-        "originalName": "cx3d-8x20"
-      },
-      {
-        "id": "7332ed0f-11f6-4ccf-8478-a7ce92c40db9",
-        "name": "cx3d-96x240",
-        "description": "Pricing plan for cx3d-96x240 VSIs",
-        "displayName": "Gen3 Compute cx3d-96x240",
-        "originalName": "cx3d-96x240"
-      },
-      {
-        "id": "82a54a5e-5525-4294-b160-25c98168dffd",
-        "name": "cx3dc-128x320",
-        "description": "Pricing plan for cx3dc-128x320 VSIs",
-        "displayName": "Gen3 Compute cx3dc-128x320",
-        "originalName": "cx3dc-128x320"
-      },
-      {
-        "id": "aaf21379-f41f-4ef8-8a39-6cfa8182349a",
-        "name": "cx3dc-16x40",
-        "description": "Pricing plan for cx3dc-16x40 VSIs",
-        "displayName": "Gen3 Compute cx3dc-16x40",
-        "originalName": "cx3dc-16x40"
-      },
-      {
-        "id": "ad44ba0d-1c0a-4a45-901c-774108625820",
-        "name": "cx3dc-24x60",
-        "description": "Pricing plan for cx3dc-24x60 VSIs",
-        "displayName": "Gen3 Compute cx3dc-24x60",
-        "originalName": "cx3dc-24x60"
-      },
-      {
-        "id": "bd23beee-daec-43a8-b879-884471a18e3c",
-        "name": "cx3dc-2x5",
-        "description": "Pricing plan for cx3dc-2x5 VSIs",
-        "displayName": "Gen3 Compute cx3dc-2x5",
-        "originalName": "cx3dc-2x5"
-      },
-      {
-        "id": "fe159b80-3fd7-488b-9d74-da39458a3767",
-        "name": "cx3dc-32x80",
-        "description": "Pricing plan for cx3dc-32x80 VSIs",
-        "displayName": "Gen3 Compute cx3dc-32x80",
-        "originalName": "cx3dc-32x80"
-      },
-      {
-        "id": "a8868aae-0aeb-468c-b044-d0a3b82d576c",
-        "name": "cx3dc-48x120",
-        "description": "Pricing plan for cx3dc-48x120 VSIs",
-        "displayName": "Gen3 Compute cx3dc-48x120",
-        "originalName": "cx3dc-48x120"
-      },
-      {
-        "id": "7fa18a5f-5fcf-49f1-84e6-6be23b4fa5c9",
-        "name": "cx3dc-4x10",
-        "description": "Pricing plan for cx3dc-4x10 VSIs",
-        "displayName": "Gen3 Compute cx3dc-4x10",
-        "originalName": "cx3dc-4x10"
-      },
-      {
-        "id": "cf28b8cd-503f-435d-a7da-8862e32e85d4",
-        "name": "cx3dc-64x160",
-        "description": "Pricing plan for cx3dc-64x160 VSIs",
-        "displayName": "Gen3 Compute cx3dc-64x160",
-        "originalName": "cx3dc-64x160"
-      },
-      {
-        "id": "fbeaf243-82f0-495a-aacc-0850a7a8a605",
-        "name": "cx3dc-8x20",
-        "description": "Pricing plan for cx3dc-8x20 VSIs",
-        "displayName": "Gen3 Compute cx3dc-8x20",
-        "originalName": "cx3dc-8x20"
-      },
-      {
-        "id": "019319e9-d2fd-4a59-a7a0-46e8dae35409",
-        "name": "cx3dc-96x240",
-        "description": "Pricing plan for cx3dc-96x240 VSIs",
-        "displayName": "Gen3 Compute cx3dc-96x240",
-        "originalName": "cx3dc-96x240"
       }
     ],
     "description": "Our latest generations of virtual machines with faster provisioning, higher performance, and enhanced isolation.",
@@ -19352,12 +19340,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -19434,12 +19422,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -19661,12 +19649,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
