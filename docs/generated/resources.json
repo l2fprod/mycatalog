@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5827,16 +5827,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "us-south",
       "eu-gb",
+      "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es",
-      "eu-de"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5994,13 +5994,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6928,6 +6928,47 @@
     "imageUrl": "https://broker.dns-svcs.cloud.ibm.com/dns_svcs_icon.svg",
     "localSvgIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.svg",
     "localPngIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "e447e6c5-f9de-495a-b628-2692ce973e4c",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "draup-sales-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "cfbb6cb4-9fb7-4c26-9e45-d1d8e19add4e",
+        "name": "standard-",
+        "description": "Pricing for the Draup MCP Agent includes unified API access to all core Draup datasets: Accounts, Buyers, Hiring data, Priorities, Firmographics, GSI/Outsourcing, Locations and Technographics—along with schema-standardised responses, built-in rate management, and seamless LLM-ready tool calls. ",
+        "displayName": "Standard "
+      }
+    ],
+    "description": "AI-powered sales intelligence platform that finds high-value prospects,reveals buyer priorities,and personalizes outreach to Scale",
+    "longDescription": "Draup for Sales is a Global Sales Intelligence platform that transforms how enterprise sales and account teams identify opportunities, plan pursuits, and win complex deals. \n\nBuilt on rich, proprietary market and labor data ecosystems, Draup delivers contextual, comprehensive, and real-time intelligence across every stage of the enterprise sales lifecycle. \n\nUnlike traditional databases that just list contacts, Draup maps industries, accounts, and buyers into a single explainable interface, showing who to target, why now, and what to say. \n\nCore Modules \n\n·       Industry Intelligence: Explore emerging use cases, market drivers, and investment trends across 33 industries. Identify fast-moving opportunities with live signals from 70K+ data sources. \n\n·       Account Intelligence: Access 360° company profiles with financials, tech stacks, outsourcing vendors, talent demand, business priorities and geo-level workforce trends. \n\n·       Buyer Intelligence: Discover true decision-making committees, track leadership moves, and tailor outreach using intent and influence data. \n\n·       Braindesk: AI-curated repository for on-demand reports and presentations on market, location, and talent trends  \n\n·       Projects: Dedicated workspace to build and manage account plans, bookmark key orgs, and collaborate across pursuits with saved searches, lists, and live signal tracking. \n\n \n\nWhy It Matters \n\n·       For Account Executives: Build sharper, faster pursuit plans aligned to each buyer’s priorities. \n\n·       For ABM & Marketing Teams: Target the right industries and accounts at the right moment. \n\n·       For Partner Sales & Alliances: Identify where partnerships can accelerate growth and attach motions. \n\n·       For Sales Leadership: De-risk forecasts with verified real-time signals that show deal readiness and timing.  \n\nCore Use Cases: \n\n·       Account Prioritization & Whitespace Discovery \nIdentify and rank high-potential accounts using verified intent, fit, and timing signals to focus on where revenue is most likely to convert. \n\n·       Buyer Committee Mapping & Persona Targeting \nUncover true decision-making committees, map influencers and stakeholders, and tailor outreach with persona-level insights and context. \n\n·       Account Planning & Management \nBuild dynamic, data-backed account plans that track business intentions, tech stacks, partnerships, and executive movements - all in one view. \n\n·       Partner & Channel Sales Enablement \nAlign sales motions with partner strengths, uncover co-sell opportunities, and accelerate joint wins through verified ecosystem and workload data. \n\n·       Signal-Driven Prospecting (Fit, Intent, and Timing) \nConvert millions of live market signals into prioritized prospect lists, targeting the right accounts at the right moment with the right message.  \n\nKey Outcomes: \n↑ Win rate & ACV ↓ Sales cycle & research time ↑ Meeting→Opportunity conversion ↓ Forecast slips & cost-to-sell ",
+    "displayName": "Draup for Sales",
+    "imageUrl": "https://cdn.prod.website-files.com/682f4a95a7b1269a067f38df/683065604692de3e7ea8e45e_Size%3DSmall%2C%20Color%3DRegular.svg",
+    "localSvgIcon": "/generated/icons/e447e6c5-f9de-495a-b628-2692ce973e4c.svg",
+    "localPngIcon": "/generated/icons/e447e6c5-f9de-495a-b628-2692ce973e4c.png"
   },
   {
     "geo_tags": [
@@ -9089,18 +9130,18 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
+      "jp-osa",
+      "jp-tok",
+      "ca-tor",
+      "ca-mon",
+      "eu-gb",
       "us-east",
       "in-che",
-      "jp-tok",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
-      "jp-osa",
       "eu-es",
-      "ca-tor",
-      "ca-mon"
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15704,12 +15745,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -19340,12 +19381,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
