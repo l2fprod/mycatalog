@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5496,7 +5496,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-tor",
       "eu-de",
@@ -5508,7 +5507,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5827,15 +5827,15 @@
   },
   {
     "geo_tags": [
-      "fra02",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "us-south",
       "eu-de",
       "au-syd",
       "us-east",
-      "us-south",
+      "fra02",
+      "eu-es",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -5994,13 +5994,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8522,14 +8522,12 @@
     },
     "name": "avid-solutions-intl-govpulse",
     "pricing_tags": [
-      "free",
       "paid",
       "paid_only"
     ],
     "tags": [
       "ai_agent",
       "custom_kind_service",
-      "free",
       "global",
       "ibm_third_party",
       "paid",
@@ -8539,12 +8537,6 @@
       "watson"
     ],
     "plans": [
-      {
-        "id": "ab87d74a-9ca0-47ca-86c3-a09734812345",
-        "name": "administrator",
-        "description": "Not used",
-        "displayName": "Administrator"
-      },
       {
         "id": "046fe6d4-1eae-463b-8336-180309050000",
         "name": "founding-member",
@@ -9130,18 +9122,18 @@
   },
   {
     "geo_tags": [
-      "in-che",
       "jp-osa",
-      "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "us-south",
+      "eu-es",
       "au-syd",
       "eu-gb",
       "us-east",
       "br-sao",
-      "eu-es",
-      "jp-tok"
+      "jp-tok",
+      "ca-tor",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9198,7 +9190,7 @@
       {
         "id": "eedd3585-90c6-4c8f-be3d-062069e99fc3",
         "name": "tiered-pricing",
-        "description": "Key versions are created whenever a key is created or imported, and whenever an existing key is rotated. A key that has been rotated five times, for example, has six versions (five versions created by rotations plus the initial version).\n\nThis plan does not offer cross-regional resiliency.\n",
+        "description": "Key versions are created whenever a key is created or imported, and whenever an existing key is rotated. A key that has been rotated five times, for example, has six versions (five versions created by rotations plus the initial version).\n\nThis plan does not offer cross-regional resiliency.\n\n",
         "displayName": "Standard",
         "originalName": "tiered-pricing"
       }
@@ -11270,7 +11262,6 @@
     "longDescription": "At NeuralSeek, we understand that implementing AI-powered solutions requires expert guidance and support to achieve optimal results. Our comprehensive professional services team partners with you throughout your journey, providing end-to-end support for implementation, seamless integration with your existing systems, thorough team training, and ongoing technical assistance. Whether you're just getting started with NeuralSeek or looking to optimize your current deployment, our experienced consultants ensure you maximize the value of your investment while maintaining the highest standards of accuracy and performance. We're committed to helping your organization harness the full potential of AI-driven customer support solutions.\n\n\nOnce you provision an instance of our professional services, you will then be able to pre-purchase blocks of hours which are valid to be consumed for 1 year after purchase.",
     "displayName": "NeuralSeek Professional Services",
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
-    "localSvgIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.svg",
     "localPngIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.png"
   },
   {
@@ -14737,8 +14728,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -15873,12 +15864,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16221,7 +16212,6 @@
     "tags": [
       "security",
       "custom_kind_service",
-      "dedicated",
       "global",
       "ibm_third_party",
       "paid",
@@ -18749,7 +18739,6 @@
     "longDescription": "This is a fully-managed cloud-based service designed to help IBM Cloud users manage their cloud costs.\n\nWanclouds COaaS provides IBM users with the tools and insights needed to optimize their cloud costs and services. With Wanclouds COaaS, users can track their cloud costs, identify potential cost savings opportunities, and develop customized strategies to reduce their overall cloud spending. The service also helps users identify areas of potential waste and inefficiency, and provides guidance on how to best manage their cloud costs. Additionally, Wanclouds COaaS can provide users with detailed reports and analytics to help them understand their cloud costs and make more informed decisions.\n\nResource Coverage:\n- Idle Resources\n- Volumes\n- Floating IPs\n- Public Gateways\n- Dedicated Hosts\n- Virtual Server Instances\n- Images\n- Snapshots\n\nBenefits\n- Tracking cloud costs\n- Identification of potential cost savings\n- Strategies to reduce their overall cloud spending, this Service can provide users with detailed reports and analytics to help them understand their cloud costs.\n- Identify areas of potential waste and inefficiency, and provide guidance on how to best manage their cloud costs.\n\nLearn more: https://www.wanclouds.net/coaas\n\nFor any help, please go to https://support.wanclouds.net or email us at support@wanclouds.net\nFor sales related queries, please contact usat sales@wanclouds.net",
     "displayName": "VPC COaaS (VPC Cost Optimization as a Service)",
     "imageUrl": "https://www.wanclouds.net/images/tiles/vpc+icon.svg",
-    "localSvgIcon": "/generated/icons/b6670b68-84ca-4a04-b8e8-c567dfeeddde.svg",
     "localPngIcon": "/generated/icons/b6670b68-84ca-4a04-b8e8-c567dfeeddde.png"
   },
   {
@@ -19509,12 +19498,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -19818,12 +19807,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
