@@ -596,14 +596,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5520,8 +5520,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5533,7 +5531,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5861,14 +5861,14 @@
   },
   {
     "geo_tags": [
-      "fra02",
       "us-south",
-      "eu-gb",
-      "eu-de",
+      "fra02",
       "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-gb",
+      "eu-de",
       "au-syd",
       "us-east"
     ],
@@ -6028,13 +6028,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8765,14 +8765,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9174,18 +9174,18 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
       "eu-es",
-      "ca-tor",
-      "eu-gb",
-      "jp-tok",
-      "ca-mon",
-      "eu-de",
-      "us-south",
       "au-syd",
       "us-east",
+      "eu-gb",
       "br-sao",
-      "in-che"
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "ca-tor",
+      "ca-mon",
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10704,10 +10704,10 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -15587,6 +15587,80 @@
       "us-east",
       "us-south"
     ],
+    "id": "912cee12-b558-41e1-8321-470d48eebca2",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "compass-vpc",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "aix",
+      "au-syd",
+      "backup",
+      "backup and recovery",
+      "br-sao",
+      "custom_kind_service",
+      "cyber resiliency",
+      "data protection",
+      "db2 on aix",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "ibm i",
+      "ibm_third_party",
+      "jp-osa",
+      "jp-tok",
+      "linux",
+      "oracle on aix",
+      "paid",
+      "paid_only",
+      "powervs",
+      "rc_compatible",
+      "sap hana on linux",
+      "storage_backup",
+      "support_third_party",
+      "us-east",
+      "us-south",
+      "windows",
+      "zseries"
+    ],
+    "plans": [
+      {
+        "id": "50188216-ffd8-4afa-a837-c22b30b79b67",
+        "name": "compass-consumption-pricing",
+        "description": "Consumption will be billed monthly at 0.12 USD per gigabyte for single‑copy and 0.16 USD per gigabyte for dual‑copy stored protected data.",
+        "displayName": "Compass Consumption Pricing"
+      },
+      {
+        "id": "cdca7d18-2857-4746-8bde-b29e0c7382d0",
+        "name": "compass-free-trial-pricing",
+        "description": "Take advantage of up to 5 TB of no‑cost storage during your first 30‑days. After the promotional period, consumption will be billed monthly at 0.12 USD per gigabyte for single‑copy and 0.16 USD per gigabyte for dual‑copy stored protected data.",
+        "displayName": "Compass Free Trial Pricing"
+      }
+    ],
+    "description": "Simple, secure, automated backup and restore to protect IBM Cloud data powered by IBM Storage Protect.",
+    "longDescription": "Powered by Cobalt Iron Compass®\nA single, unified, SaaS-based offering to backup and restore IBM Cloud workloads and more!\n\nWith IBM Storage Protect, Compass protects a variety of IBM Cloud platforms, applications, and data classes including:\n1.\tAIX\n2.\tLinux\n3.\tOracle on AIX\n4.\tDb2 on AIX\n5.\tSAP HANA on Linux\n6.\tWindows\n7.\tZSeries\n8.\tIBM i (coming soon)\n\nCompass delivers a variety of differentiated features and functionality: \n1.\tSimple, automated, instant-on\n2.\tCloud backup service\n3.\tResilient and compliant\n4.\tUsage-based pricing\n5.\tNative application integrations \n\nThe Compass offering provides a variety of integrated security and operational features including:\n\n1.\tAlerting, notifications, and ticketing features and integration\n2.\tAutomated auditing and validation of backup server landscape\n3.\tBackup server automation – hands-free automation of all backup server tasks\n4.\tCentralized policy management\n5.\tComplete governance\n6.\tCustomer data is encrypted in all phases from in-transit, to-storage, and at-rest\n7.\tMultitenancy and unlimited sub-organizations\n8.\tRole-based access control management",
+    "displayName": "Secure Automated Backup with Compass",
+    "imageUrl": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/CobaltIronLogo-Vertical-SpecialUseOnly_WhtBackground.png",
+    "localPngIcon": "/generated/icons/912cee12-b558-41e1-8321-470d48eebca2.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "br-sao",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
+      "us-south"
+    ],
     "id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
     "kind": "service",
     "metadata": {
@@ -16943,12 +17017,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17934,6 +18008,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -17975,8 +18050,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -19582,12 +19656,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
