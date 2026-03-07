@@ -588,21 +588,21 @@
       }
     ],
     "description": "Cloud-to-cloud backup for Microsoft Entra ID enabling recovery of users, groups, roles, and identity policies with security score.",
-    "longDescription": "OVERVIEW\nAnycloud backup for Entra ID is a partner-ready SaaS backup service designed to protect identity configurations within Microsoft Entra ID. The solution enables backup and recovery of users, groups, roles, applications, and identity policies. \nIdentity systems play a central role in access management and security operations. Changes to identity configurations, whether caused by administrative errors, misconfigurations, or security incidents, can disrupt access to business systems and cloud services. Anycloud Backup for Entra ID create independent backups of identity configurations and eables organizations to restore critical identity objects when needed. This helps IT teams recover from unintended changes and maintain operational continuity. The service also provides visibility into identity security by presenting insights related to Microsoft Entra ID security score metrics. The solution is designed to be delivered by IT partners and managed service providers as part of a managed identity protection service for organizations using Microsoft Entra ID.\n\nMANAGEMENT AND OPERATIONS\nThe service is managed through a web-based portal that provides centralized administration of backup and recovery operations. Administrators and partners can monitor identity configuration changes, review security insights, and perform recovery operations through a unified interface. Operational capabilities include: \n• Backup of Entra ID indetity objects and configuration elements\n• Monitoring of identity security score insights\n• Recovery of users, groups, roles, applications, and policies\n• Administrative visibility into identity configuration changes\n• Multi-tenant management for partners and managed service providers\nBackup and monitoring operations run automatically and generate activity logs that provide operational transparency. \n\nKEY CAPABILITIES\nAnycloud Backup for Entra ID provides capabilities designed to support identity resilience and recovery.\n• Backup and recovery of Microsoft Entra ID identity configurations\n• Protection of users, groups, roles, applications, and access policies\n• Identity security score insights providing visibility into identity posture\n",
+    "longDescription": "OVERVIEW\nAnycloud backup for Entra ID is a partner-ready SaaS backup service designed to protect identity configurations within Microsoft Entra ID. The solution enables backup and recovery of users, groups, roles, applications, and identity policies. \nIdentity systems play a central role in access management and security operations. Changes to identity configurations, whether caused by administrative errors, misconfigurations, or security incidents, can disrupt access to business systems and cloud services. Anycloud Backup for Entra ID create independent backups of identity configurations and eables organizations to restore critical identity objects when needed. This helps IT teams recover from unintended changes and maintain operational continuity. The service also provides visibility into identity security by presenting insights related to Microsoft Entra ID security score metrics. The solution is designed to be delivered by IT partners and managed service providers as part of a managed identity protection service for organizations using Microsoft Entra ID.\n\nMANAGEMENT AND OPERATIONS\nThe service is managed through a web-based portal that provides centralized administration of backup and recovery operations. Administrators and partners can monitor identity configuration changes, review security insights, and perform recovery operations through a unified interface. Operational capabilities include: \n• Backup of Entra ID indetity objects and configuration elements\n• Monitoring of identity security score insights\n• Administrative visibility into identity configuration changes\n• Multi-tenant management for partners and managed service providers\nBackup and monitoring operations run automatically and generate activity logs that provide operational transparency. \n\nKEY CAPABILITIES\nAnycloud Backup for Entra ID provides capabilities designed to support identity resilience and recovery.\n• Backup and recovery of Microsoft Entra ID identity configurations\n• Protection of users, groups, roles, applications, and access policies\n• Identity security score insights providing visibility into identity posture\n• Centralized identity recovery workflows\n• Role-based access control for administrative operations\n• Multi-tenant management for partner and MSP environments\nThese capabilities allow partners to provide identity protection services for organizations relying on Microsoft Entra ID. \n\nSECURITY AND DATA PROTECTION\nThe platform stores backup data using encryption for both data in transit and data at rest. Activity logs record backup and recovery operations, providing operational visibility and traceability of identity configuration changes. The service is delivered using cloud infrastructure designed to support global deployments. \n\nTECHNICAL CHARACTERISTICS\n• Backup of Microsoft Entra ID users, groups, roles, applications, and policies\n• Security score insight visibility\n• Automated monitoring and backup operations \n• Multi-tenant platform designed for partner environments\n\nEXTENTED PROTECTION FOR MICROSOFT ENVIRONMENTS\nAnycloud Backup for 365 and Anycloud Backup for Entra ID address different layers of the Microsoft cloud environment. Anycloud Backup for 365 protects collaboration and productivity data such as email, files, and team content across Exchange Online, OneDrive, SharePoint, and Microsoft Teams. Anycloud Backup for Entra ID protects the identity configuration layer including users, groups, roles, applications, and identity policies. \nWhen deployed together, the services provide backup coverage across both the data layer and identity layer, enabling organizations and partners to manage recovery for Microsoft environments through a unified protection approach.",
     "displayName": "Anycloud Backup for Entra ID",
     "imageUrl": "https://cdn.anycloud.dk/Logo/ACBE_logo_favicon.png",
     "localPngIcon": "/generated/icons/4ae1ee85-9be2-4922-ada0-c374b25db874.png"
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5353,10 +5353,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5366,7 +5362,11 @@
       "par01",
       "us-east",
       "us-south",
-      "in-che"
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5521,6 +5521,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5534,8 +5535,7 @@
       "us-east",
       "us-south",
       "in-che",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5864,16 +5864,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "us-east",
-      "fra02",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "us-south",
-      "eu-de"
+      "eu-gb",
+      "eu-de",
+      "fra02",
+      "au-syd",
+      "us-east",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6031,13 +6031,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8770,14 +8770,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9179,18 +9179,18 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
-      "eu-es",
-      "eu-de",
-      "us-south",
-      "au-syd",
       "eu-gb",
       "br-sao",
-      "jp-tok",
+      "in-che",
+      "jp-osa",
       "ca-tor",
       "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-es",
+      "jp-tok",
       "us-east",
-      "in-che"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -17023,12 +17023,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19744,12 +19744,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -19971,12 +19971,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
