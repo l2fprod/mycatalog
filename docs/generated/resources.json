@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5521,8 +5521,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5535,7 +5533,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5864,16 +5864,16 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "eu-de",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "us-south",
-      "eu-gb",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6031,13 +6031,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8770,14 +8770,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9179,18 +9179,18 @@
   },
   {
     "geo_tags": [
-      "br-sao",
       "ca-tor",
-      "us-east",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd",
       "eu-gb",
-      "in-che",
+      "br-sao",
       "jp-osa",
+      "us-east",
+      "au-syd",
+      "in-che",
       "eu-es",
-      "jp-tok",
-      "ca-mon"
+      "jp-tok"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10709,10 +10709,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14170,6 +14170,49 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "074a7393-edc6-4ae2-aa3a-1a23d23898b5",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "utimaco-premium-live-payment-hsm-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "payment hsm",
+      "pci p2pe",
+      "pci pin",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "01ef619e-1b8e-4509-b3cc-cfcd3e561b46",
+        "name": "premium-live-pay-hsm-price-plan",
+        "description": "See documentation for more details",
+        "displayName": "premium-live-pay-hsm-price-plan"
+      }
+    ],
+    "description": "A fully managed service using a group of dedicated HSMs deployed in two data centers with 99.999% availability & low latency ",
+    "longDescription": "Utimaco’s Payment HSM as a Service provides access to a fully managed PCI-certified Payment HSM service through IBM Cloud, with the highest availability in the industry at 99.999%, and the lowest latency. The Payment HSM as a Service is a true alternative to operating your own Payment HSMs and removes the investments tied to hardware, secure facilities, and management resources while reducing the burden of PCI compliance, audit, and support. Besides reducing total cost of ownership, it provides flexible deployment and scalability and enables very robust security for an organizations’ digital infrastructure. This Catalog tile covers subscription to the Premium Live service. In this service the customer has access to their own dedicated HSMs in geographically separate DCs. For connection to this service, instances of the PHI load balancer should be deployed within your IBM infrastructure, using the PHI Deployable Architecture tile. For full details please follow the Docs link and sign up to the Service Portal.\n",
+    "displayName": "Premium Live Payment HSM Service",
+    "imageUrl": "https://utimaco.com/themes/custom/utimaco/assets/img/utimaco-logo.svg",
+    "localSvgIcon": "/generated/icons/074a7393-edc6-4ae2-aa3a-1a23d23898b5.svg",
+    "localPngIcon": "/generated/icons/074a7393-edc6-4ae2-aa3a-1a23d23898b5.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -17023,12 +17066,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19483,9 +19526,9 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "11530fa0-1776-11ee-93f6-1d4066e6a409",
     "kind": "service",
@@ -19971,12 +20014,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "ca-tor"
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
