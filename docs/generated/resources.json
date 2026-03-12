@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5354,6 +5354,11 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5362,12 +5367,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5865,16 +5865,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "us-south",
       "eu-gb",
-      "eu-de",
-      "fra02",
       "au-syd",
-      "us-east"
+      "us-east",
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6032,13 +6032,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8771,14 +8771,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9180,18 +9180,18 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "jp-tok",
-      "ca-tor",
-      "ca-mon",
       "au-syd",
       "eu-gb",
-      "br-sao",
-      "in-che",
       "jp-osa",
+      "ca-tor",
+      "ca-mon",
       "us-east",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "in-che",
+      "eu-es"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10710,10 +10710,10 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-de",
       "eu-gb",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14205,7 +14205,7 @@
         "displayName": "premium-live-pay-hsm-price-plan"
       }
     ],
-    "description": "A fully managed service using a group of dedicated HSMs deployed in two data centers with 99.999% availability & low latency ",
+    "description": "A fully managed service using a group of dedicated HSMs deployed in two data centers with 99.999% availability & low latency",
     "longDescription": "Utimaco’s Payment HSM as a Service provides access to a fully managed PCI-certified Payment HSM service through IBM Cloud, with the highest availability in the industry at 99.999%, and the lowest latency. The Payment HSM as a Service is a true alternative to operating your own Payment HSMs and removes the investments tied to hardware, secure facilities, and management resources while reducing the burden of PCI compliance, audit, and support. Besides reducing total cost of ownership, it provides flexible deployment and scalability and enables very robust security for an organizations’ digital infrastructure. This Catalog tile covers subscription to the Premium Live service. In this service the customer has access to their own dedicated HSMs in geographically separate DCs. For connection to this service, instances of the PHI load balancer should be deployed within your IBM infrastructure, using the PHI Deployable Architecture tile. For full details please follow the Docs link and sign up to the Service Portal.\n",
     "displayName": "Premium Live Payment HSM Service",
     "imageUrl": "https://utimaco.com/themes/custom/utimaco/assets/img/utimaco-logo.svg",
@@ -16059,12 +16059,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18060,6 +18060,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -18101,8 +18102,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -20017,12 +20017,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
