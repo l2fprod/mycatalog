@@ -538,8 +538,8 @@
         "displayName": "1 active Microsoft seat and Entra ID - Edu."
       }
     ],
-    "description": "Secure SaaS bundle for Microsoft 365 and Entra ID with fast restore, identity dashboards, and GDPR compliance",
-    "longDescription": "ABOUT\nAnycloud Backup for 365 + Entra ID bundle combines protection of Microsoft 365 data with security for Microsoft Entra ID identities. The solution unites Anycloud Backup for 365 and Anycloud Backup for Entra ID into one offering, delivering complete cloud-to-cloud backup of both business-critical content and identity objects. Data and identities are stored securely in IBM Cloud datacenters worldwide, with compliance, resilience, and fast restore at the core.\n\n\nUSER-FRIENDLY PORTALS\nThe bundle is operated through intuitive web portals:\n\n• Management Portal for scheduling backups, defining retention policies, and managing both data and identity backups\n• Self-Service Restore Portal for end-users to recover emails and OneDrive data\n• Restore Portals for administrators to restore Microsoft 365 content and Entra ID identity objects such as users, groups, roles, and conditional access policies\n\n\nKEY BENEFITS\n\n• One combined service covering both Microsoft 365 content and Entra ID identity infrastructure\n• Cloud-to-cloud backup with segregation from Microsoft ensuring independence and resilience\n• Fast restore of files, folders, mailboxes, and identity objects to minimize downtime\n• Geographical redundancy across IBM Cloud Tier-3+ datacenters with global data locality options\n• Insider Threat Protection with 30-day undelete safeguard\n• Fully scalable solution with predictable cost model\n\n\nCOMPLIANCE AND SECURITY\nThe bundle is designed to meet strict compliance and security requirements. Data is encrypted with AES-256 in transit and at rest, with fixed storage locality once selected. Both services fully support GDPR, including right-to-be-forgotten, and provide complete audit trails. IBM Cloud datacenters are ISO 27001, ISO 27017, ISO 27018, and SOC certified.\n\n\nTECHNICAL SPECIFICATIONS\n• 99.9% SLA uptime\n• AES-256 encryption in transit and at rest\n• Retention from 1 year up to 25 years with unlimited storage under fair usage\n• GDPR compliance including right-to-be-forgotten and support for industry regulatory standards\n• Automated backup jobs configured to meet customer RTO and RPO targets\n• Hosted in 16+ IBM Cloud datacenters worldwide\n• Unified bundle license covering both data and identity protection\n\n\nBETTER TOGETHER\nMicrosoft 365 is only fully protected when both data and identity are secured. By combining Anycloud Backup for 365 and Anycloud Backup for Entra ID, organizations close the gap between content loss and identity compromise. The bundle ensures that emails, files, and Teams data can be restored alongside critical identity objects such as users, groups, and access policies. This integrated protection reduces downtime, ensures compliance, and provides a future-proof safeguard for the entire Microsoft 365 environment.\n\n\n\n\n\n\n\n",
+    "description": "Backup bundle for Microsoft 365 and Entra ID protecting data and identity with cloud-to-cloud backup and recovery.",
+    "longDescription": "OVERVIEW: \nAnycloud Backup for Microsoft 365 and Entra ID is a partner-ready SaaS bundle designed to protect both organizational data and identity configurations within Microsoft cloud environments. The solution combines cloud-to-cloud backup for Microsoft 365 workloads with identity configuration backup for Microsoft Entra ID. Together, the services enable backup and recovery of collaboration data and identity objects across a unified platform. Microsoft 365 data such as emails, files, sites, and team content is backed up from Exchange Online, OneDrive for Business, SharePoint Online, and Microsoft Teams. Identity configurations within Microsoft Entra ID - including users, groups, roles, applications, and policies - can also be backup and restored. \nBy maintaining independent backups of both data and identity configurations, organizations and partners gain additional recovery options in scenarios such as accidental deletion, configuration errors, security incidents, or administrative changes. The bundle is designed to be delivered by IT partners, managed service providers, and distributors as a scalable protection service for organizations usinf Microsoft 365 and Microsoft Entra ID. Backup data is stored in IBM Cloud data centers located across multiple global regions, allowing customers to select the storage location during deployment. \n\nMANAGEMENT & OPERATIONS\nThe platform is managed through a web-based portal that provides centralized administration of backup, monitoring, and recovery operations. Partners and administrators can manage Microsoft 365 and Entra ID protection through a unified interface designed for multi-tenant environments.\nOperational capabilities include: \n• Backup and recovery for Microsoft 365 workloads\n• Backup of Microsoft Entra ID identity configurations\n• Centralized monitoring of backup activities\n• Identity security score insights\n• Restore workflows for both data and identity objects\n• Multi-tenant management for partners and service providers\nBackup and monitoring operations run automatically and generate activity logs for operational transparency.\n\nKEY CAPABILITIES\nThe bundle provides combined protection for collaboration data and identity infrastructure within Microsoft environments. Capabilities include:\n• Cloud-to-cloud backup for Microsoft 365 data\n• Visibility into identity security posture through security insights\n• Item-level restore for Microsoft 365 workloads\n• Multi-tenant management platform for partner environments\nThese capabilities allow partners to deliver a combined data and identity protection service to their customers.\n\nSECURITY & DATA RPOTECTION:\nBackup data is encrypted using AES-256 encryption both during transit and while stored. Customers select the storage region during deployment, and backup data remains stored in the chosen location. The platform records backup and recovery operations through activity logs that provide operational visibility. The service is delivered using IBM Cloud infrastructure designed to support global deployments. \n\nTECHNICAL CHARACTERISTICS:\n• SaaS-based backup for Microsoft 365 and Entra ID\n• Cloud-to-cloud backup architecture\n• Protection for Exchange, OneDrive, SharePoint, Teams, and Entra ID configurations\n• Identity security score insight visibility\n• AES-256 encryption for data in transit and at rest\n• Automaed backup scheduling and monitoring\n\n\n",
     "displayName": "Anycloud Backup for 365 and Entra ID",
     "imageUrl": "https://cdn.anycloud.dk/Logo/AC365ACBE_logo_favicon.png",
     "localPngIcon": "/generated/icons/5d57679c-dc77-4784-9b25-e2c3f94553fb.png"
@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5354,6 +5354,11 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5362,12 +5367,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5522,6 +5522,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5535,8 +5536,7 @@
       "us-east",
       "us-south",
       "in-che",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5865,16 +5865,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
+      "us-south",
+      "au-syd",
+      "us-east",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02",
-      "us-south",
       "eu-de",
-      "au-syd",
-      "us-east"
+      "fra02",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6032,13 +6032,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8771,14 +8771,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9180,18 +9180,18 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "jp-osa",
+      "in-che",
       "eu-es",
+      "ca-tor",
       "ca-mon",
       "us-east",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
-      "in-che",
+      "jp-osa",
       "jp-tok",
-      "ca-tor"
+      "eu-de",
+      "us-south",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16059,12 +16059,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18060,6 +18060,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -18101,8 +18102,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -19790,12 +19790,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
