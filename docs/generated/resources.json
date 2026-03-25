@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5522,7 +5522,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5536,7 +5535,8 @@
       "us-east",
       "us-south",
       "in-che",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5865,16 +5865,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
       "au-syd",
       "us-east",
-      "eu-de",
-      "fra02"
+      "fra02",
+      "eu-es",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6032,13 +6032,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7110,6 +7110,49 @@
     "displayName": "Dynamiq AI Medical Researcher Agent",
     "imageUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65973c215fc65052a9d1fc60/tvzLN6Ye61wlWYgGI62Lw.png",
     "localPngIcon": "/generated/icons/81ed7192-3d50-421c-be0c-7f44a2e40ee9.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "8adfd748-6214-48a7-a3e6-87b75c5c57e5",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "elastio",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "custom_kind_service",
+      "cyber resilience",
+      "data integrity",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "ransomware",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "9068d3df-0baf-452b-a9d3-702fd815b759",
+        "name": "elastio",
+        "description": "Elastio protects cloud object storage by performing expert data integrity scans that detect ransomware encryption, insider-driven data compromise, and data corruption - threats that otherwise evade traditional security tools until it's too late. \nPricing is based on the amount of front-end data protected by Elastio’s scans. Elastio uses a tiered pricing model that starts at $0.05 per GB of the high watermark of data protected by Elastio's scans.",
+        "displayName": "Elastio"
+      }
+    ],
+    "description": "Elastio adds advanced ransomware protection to IBM Cloud Object Storage by proactively validating data is clean and uncompromised.",
+    "longDescription": "As ransomware increasingly bypasses endpoint and network defenses, customers now expect storage itself to become an active layer of cyber defense - a model analysts define as cyberstorage. In this approach, stored data is no longer passive infrastructure, but a control point where attacks are detected, scoped, and recovery decisions are made. \n\nElastio enhances IBM Cloud Object Storage (COS) by adding a data integrity layer that detects ransomware, malware, and corruption directly within stored cloud object data. Using advanced machine learning built on over a decade of ransomware research, Elastio identifies known and zero-day encryption techniques, including stealthy, fileless attacks that evade traditional security tools.\n\nBy scanning data outside of production systems, Elastio provides early visibility into ransomware impact and enables recovery assurance from pre-validated data. This transforms IBM Cloud Object Storage from durable storage into cyberstorage: strengthening cyber resilience, supporting compliance requirements, and giving customers confidence that the data they store in IBM COS is trustworthy.",
+    "displayName": "Elastio - Advanced Ransomware Protection",
+    "imageUrl": "https://elastio.com/api/media/file/Elastio%20Logo%20-%20Color%403x%20(2).svg",
+    "localSvgIcon": "/generated/icons/8adfd748-6214-48a7-a3e6-87b75c5c57e5.svg",
+    "localPngIcon": "/generated/icons/8adfd748-6214-48a7-a3e6-87b75c5c57e5.png"
   },
   {
     "id": "d1e3f0d2-0f49-ddfd-0eb9-2897b9d3a45d",
@@ -9130,18 +9173,18 @@
   },
   {
     "geo_tags": [
+      "br-sao",
       "in-che",
       "jp-osa",
-      "eu-es",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao",
+      "au-syd",
+      "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "ca-mon",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11881,6 +11924,7 @@
       "eu-gb",
       "global",
       "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "kr-seo",
@@ -11917,6 +11961,7 @@
       "ibm_release",
       "ibm_third_party",
       "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "kr-seo",
@@ -15989,12 +16034,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -16999,12 +17044,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -17990,6 +18035,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -18031,8 +18077,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -19638,12 +19683,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-gb",
       "us-south",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -19720,12 +19765,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
