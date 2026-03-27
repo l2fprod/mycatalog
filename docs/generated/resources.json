@@ -1294,6 +1294,20 @@
         "originalName": "cx2d-metal-96x192"
       },
       {
+        "id": "bdc8136d-7e67-49c3-858e-c38519e00462",
+        "name": "cx3-metal-48x128",
+        "description": "Pricing plan for cx3-metal-48x128",
+        "displayName": "cx3-metal-48x128",
+        "originalName": "cx3-metal-48x128"
+      },
+      {
+        "id": "2b7c56c1-e82e-4ec1-89bc-92577eeb83e2",
+        "name": "cx3-metal-64x128",
+        "description": "Pricing plan for cx3-metal-64x128",
+        "displayName": "cx3-metal-64x128",
+        "originalName": "cx3-metal-64x128"
+      },
+      {
         "id": "a9af6a30-77aa-47f1-897e-cfccb4cfe25f",
         "name": "cx3d-metal-48x128",
         "description": "Pricing plan for cx3d-metal-48x128",
@@ -1320,6 +1334,13 @@
         "description": "Pricing plan for an mx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 768 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
         "displayName": "mx2d-metal-96x768",
         "originalName": "mx2d-metal-96x768"
+      },
+      {
+        "id": "5a3de409-5864-4f83-95bd-a417efaac70f",
+        "name": "mx3-metal-16x128",
+        "description": "Pricing plan for mx3-metal-16x128",
+        "displayName": "mx3-metal-16x128",
+        "originalName": "mx3-metal-16x128"
       },
       {
         "id": "208fcc66-266d-487e-9247-6d8246b45dac",
@@ -5522,6 +5543,8 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5534,9 +5557,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5865,16 +5886,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
       "fra02",
+      "eu-de",
+      "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-es"
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6032,13 +6053,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7307,7 +7328,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7319,7 +7339,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -8763,14 +8784,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9173,17 +9194,17 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "jp-osa",
       "eu-es",
       "eu-de",
       "us-south",
       "au-syd",
-      "in-che",
-      "jp-osa",
+      "eu-gb",
       "jp-tok",
       "us-east",
       "ca-tor",
       "ca-mon",
-      "eu-gb",
       "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -14104,6 +14125,102 @@
     "geo_tags": [
       "global"
     ],
+    "id": "5b5ab101-8604-42ca-ad2e-537906446433",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "managed-services-by-ricoh",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "compute",
+      "consulting",
+      "consulting_tab",
+      "custom_kind_service",
+      "disaster recovery",
+      "global",
+      "ibm_third_party",
+      "iseries",
+      "lpar management",
+      "monitor service",
+      "paid",
+      "paid_only",
+      "power system",
+      "power vs management",
+      "ptf’s management",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "f9f00de8-9f52-463a-ab69-df8b629d2640",
+        "name": "iseries-backup-services",
+        "description": "Backups managed Services. Does not include •\tBackups managed Services. Does not include Storage costs in IBM cloud, to be billed as actual.\n•\tAfter each backup is completed, it will be replicated to a VTL unit at secondary location\n•\tServices for restore of data up to four times per year\n•\tDaily Saves Mon-Sat - 2 Weeks retention, Weekly saves Sun - 5 Weeks retention, Monthly Saves (last Sunday of month) - 13 months retention and Yearly Saves (last Monthly backup) - permanent retention.",
+        "displayName": "iseries-backup-services"
+      },
+      {
+        "id": "f5cc56bf-d671-4caa-9f48-3a77081a3ae1",
+        "name": "iseries-ha-large-bundle-per-lpar",
+        "description": "Large: LPAR with 10,000 CPW, 64GB Memory, 5TB Disk \nMRR-ISERIES-INFRA-LPAR \nMRR-ISERIES-MONITOR SERVICE \nMRR-ISERIES-MANAGED-SVS-STD\nMRR-ISERIES-HA-MGMT\nMRR-ISERIES-HA-SOFTWARE",
+        "displayName": "iseries-ha-large-bundle-per-lpar"
+      },
+      {
+        "id": "2c6bfa30-3e2b-4351-a7d6-7f26c0460a4e",
+        "name": "iseries-ha-medium-bundle-per-lpar",
+        "description": "Medium: LPAR with 6,000 CPW, 32GB Memory, 3TB Disk \nMRR-ISERIES-INFRA-LPAR \nMRR-ISERIES-MONITOR SERVICE    \nMRR-ISERIES-MANAGED-SVS-STD   \nMRR-ISERIES-HA-MGMT MRR-ISERIES-HA-SOFTWARE",
+        "displayName": "iseries-ha-medium-bundle-per-lpar"
+      },
+      {
+        "id": "3f5c2937-c134-44be-80ad-686c1cce4f6b",
+        "name": "iseries-ha-small-bundle-per-lpar",
+        "description": "Small: LPAR with 3,000 CPW, 16GB Memory, 1TB Disk \nMRR-ISERIES-INFRA-LPAR \nMRR-ISERIES-MONITOR SERVICE \nMRR-ISERIES-MANAGED-SVS-STD\nMRR-ISERIES-HA-MGMT MRR-ISERIES-HA-SOFTWARE",
+        "displayName": "iseries-ha-small-bundle-per-lpar"
+      },
+      {
+        "id": "6d7219ce-0bba-4711-ae9e-4b15e421c658",
+        "name": "iseries-managed-services-gold",
+        "description": "Monitoring Tool included for LPAR. Per LPAR use of automated monitoring service. Includes: • Real-time monitoring of message queues, problem log, disk and CPU usage, • Backup readiness and completion status. • E-mail alerting of selected issues Standard Plus additional services as follows: Creation of profiles (system application) - Ricoh will create user profiles based upon existing templates and communicate these profiles to the new users. - These requests must be based upon authorization lists provided by the customer. Creation of line/controller/ device - Ricoh will create new iSeries communication object configuration as needed by the customer. OUTQ creation and maintenance - Ricoh will create new print queues as required by the customer. TCPIP monitoring and maintenance - TCP/IP status of communication devices and configurations will be monitored, and Ricoh will determine and take appropriate action. - Purchase of monitoring application or availability of customer-provided application required. Monitor WRKSYSACT screen & terminate runaway jobs - Ricoh will monitor the WRKSYSACT screen for customers who have this utility, which is part of the IBM performance tools license program. - Ricoh will terminate ‘runaway’ jobs that are using excessive CPU or DASD to ensure system integrity. Monitor system service tools - Per-shift check of system service tools to check for hardware and licensed code errors. - Hardware errors will be escalated to IBM or any other service provider designated by the customer Maintain basic and core system security - Logs will be checked to ensure that system security is not breached. - Ricoh will also, upon customer request, advise as to changes in system values that can help maintain system security. Month-end scheduling and performance - Ricoh will monitor scheduled month-end processing to ensure system integrity and performance is maintained. Issues will be communicated to the customer per its escalation procedures. Ad-hoc requests for batch, SAV/RST, or other jobs - Ricoh will process batch jobs, save requests, and restore requests submitted by authorized customer personnel through the Ricoh NOC. - Save requests may require tapes to be returned from off-site storage at additional expense. - Ricoh will manage tape retrieval only if we are responsible for tape management. - 8/month Tape library maintenance - Management of online tape library system provided by customer or acquired through Ricoh, whether external (i.e., Recall or Iron Mountain), or online (i.e., BRMS, Robot/SAVE).",
+        "displayName": "iseries-managed-services-gold"
+      },
+      {
+        "id": "04377c22-befd-4b1f-9482-bf28dc31280e",
+        "name": "iseries-managed-services-platinum",
+        "description": "Monitoring Tool included for LPAR. Per LPAR use of automated monitoring service.  Includes:\n•\tReal-time monitoring of message queues, problem log, disk and CPU usage,\n•\tBackup readiness and completion status.\n•\tE-mail alerting of selected issues                                                                                                                                                                                                                                                                                                                     Gold Plus additional services as follows:                                                                                                                                                                                                                                                                                       System turning based on performance\n-\tRicoh will manage storage pools and job priorities to aid system performance.\nSystem configuration and recommendation based on customer growth\n-\tRicoh will recommend system upgrades, where necessary, in the event that system capacity is insufficient for established workload.\nPTF analysis, ordering and installation\n-\tRicoh will contact the customer to advise that a new cumulative PTF package should be installed.\n-\tThe package will be ordered and installed by Ricoh at a time agreed to by Ricoh and the customer.\n-\tRicoh will also recommend single PTFs based upon IBM advice to correct specific issues.\nCreation of CL programs\n-\tRicoh will write CL programs to assist the customer with operational issues and efficiencies.\n-\t4/month\nCustomer application maintenance\n-\tSAV/RST, stop/start, error repair, adds/deletes.\n-\tRicoh will troubleshoot errors and recommend fixes for CL- and RPG-based applications.\n-\tRicoh will assist with basic maintenance to customer applications.",
+        "displayName": "iseries-managed-services-platinum"
+      },
+      {
+        "id": "cd64a2f0-7bd6-40ac-94b6-389e69feeb34",
+        "name": "iseries-managed-services-std",
+        "description": "Monitoring Tool included for LPAR. Per LPAR use of automated monitoring service. Includes: • Real-time monitoring of message queues, problem log, disk and CPU usage, • Backup readiness and completion status. • E-mail alerting of selected issues Standard services as follows: Monitoring of QSYSOPR message queue - Regular monitoring of message queue to discover and escalate errors. - Purchase of monitoring application or availability of customer-provided application required. Monitoring status of line / controller / device - Monitoring and restart / retry of remote configuration devices as defined by customer. - Purchase of monitoring application or availability of customer-provided application required. Monitoring of CPU and DASD usage - Regular monitoring to ensure that prescribed usage levels are not exceeded. - Action to be taken as agreed to with customer. - Purchase of monitoring application or availability of customer-provided application required. Monitoring of job queues - Regular monitoring of job queues to ensure that queued job totals do not exceed prescribed levels. Monitor / restart writers - Print queues and write jobs monitored and error messages addressed as defined by customer. Reset profiles / passwords - Locked profiles can be reset by the Ricoh NOC. - The customer must provide a list of personnel authorized to approve such requests. - Existing passwords cannot be discovered; rather new passwords will be given and set to EXPIRED. Call escalation (customer defined) - Escalation procedures are jointly created by Ricoh and the customer. - Procedures are followed by the Ricoh NOC on a 24x7x365 basis.",
+        "displayName": "iseries-managed-services-std"
+      },
+      {
+        "id": "7a64bbb0-e509-4f44-af17-253b8ae782db",
+        "name": "managed-firewall-services",
+        "description": "Monitoring, Troubleshooting and remediation services for Network Security Appliance.\nMaintenance of the Security Rule Base per Customer Request.\nApplication of vendor provided patches and firmware updates as required or requested.\nRemote configuration for managed routers/switches, VLAN, Traffic priority config (QoS), Port assignments, DMZ creation and support for VPN.\nIncludes one troubleshooting/configuration incident per device per month.",
+        "displayName": "managed-firewall-services"
+      },
+      {
+        "id": "e3cb9969-9786-42e7-a468-80f0830fdca6",
+        "name": "server-management-windows-or-linuxos",
+        "description": "24x7 Staffed NOC for Real Time Monitoring & Management Resolution as described in IT Essentials Service Description Patch Management Trend Micro Antivirus Software (licensing & management)",
+        "displayName": "server-management-windows-or-linuxos"
+      }
+    ],
+    "description": "IBM ISeries Management",
+    "longDescription": "For nearly two decades, our IBM experts have helped companies with cost-effective solutions and support for their IBM i Power Systems. As a certified IBM delivery partner, we deliver industry-leading levels of security, redundancy, bandwidth, and expertise to meet business continuity and corporate operations requirements.\n\nYou can be confident in the security and continuity of your IBM systems with 24/7/365 Network Operations Center (NOC) support from trained technicians and redundant, scalable, dispersed, and secured SSAE16 Type II data centers.\n\nRicoh iSeries includes;\n- Automated Monitoring Service\n- Managed Services (Standard, Gold, and Platinum service levels)\n- HA Management per LPAR\n- Server Management",
+    "displayName": "Power VS and Wintel Managed Services by Netrix",
+    "imageUrl": "https://go.netrixglobal.com/netrixlogo-32px",
+    "localPngIcon": "/generated/icons/5b5ab101-8604-42ca-ad2e-537906446433.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "b260dfd6-9b79-4377-be6d-146a5cb59be8",
     "kind": "service",
     "metadata": {
@@ -14763,6 +14880,7 @@
       "eu-es",
       "eu-gb",
       "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -14791,6 +14909,7 @@
       "fs_ready",
       "ibm_third_party",
       "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "paid",
@@ -17044,12 +17163,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
