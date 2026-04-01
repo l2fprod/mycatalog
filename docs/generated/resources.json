@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1294,20 +1294,6 @@
         "originalName": "cx2d-metal-96x192"
       },
       {
-        "id": "bdc8136d-7e67-49c3-858e-c38519e00462",
-        "name": "cx3-metal-48x128",
-        "description": "Pricing plan for cx3-metal-48x128",
-        "displayName": "cx3-metal-48x128",
-        "originalName": "cx3-metal-48x128"
-      },
-      {
-        "id": "2b7c56c1-e82e-4ec1-89bc-92577eeb83e2",
-        "name": "cx3-metal-64x128",
-        "description": "Pricing plan for cx3-metal-64x128",
-        "displayName": "cx3-metal-64x128",
-        "originalName": "cx3-metal-64x128"
-      },
-      {
         "id": "a9af6a30-77aa-47f1-897e-cfccb4cfe25f",
         "name": "cx3d-metal-48x128",
         "description": "Pricing plan for cx3d-metal-48x128",
@@ -1334,13 +1320,6 @@
         "description": "Pricing plan for an mx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 768 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
         "displayName": "mx2d-metal-96x768",
         "originalName": "mx2d-metal-96x768"
-      },
-      {
-        "id": "5a3de409-5864-4f83-95bd-a417efaac70f",
-        "name": "mx3-metal-16x128",
-        "description": "Pricing plan for mx3-metal-16x128",
-        "displayName": "mx3-metal-16x128",
-        "originalName": "mx3-metal-16x128"
       },
       {
         "id": "208fcc66-266d-487e-9247-6d8246b45dac",
@@ -5216,49 +5195,6 @@
     "localPngIcon": "/generated/icons/1ab48530-6638-4fce-a386-0bd598576a0a.png"
   },
   {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "696b9880-9e9b-11ea-9054-e15e287f1e7f",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "data-replication",
-    "pricing_tags": [
-      "free",
-      "lite"
-    ],
-    "tags": [
-      "integration",
-      "custom_kind_service",
-      "free",
-      "global",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "lite",
-      "rc_compatible",
-      "support_ibm"
-    ],
-    "plans": [
-      {
-        "id": "7c096690-d9d8-488d-b842-05faee263cb4",
-        "name": "data-replication-lite-plan",
-        "description": "The Lite plan for Data Replication offers a trial experience that allows users to preview real time replication from Amazon RDS for PostgreSQL or Db2 on Cloud on the IBM Cloud into Db2 Warehouse on the IBM, Amazon and Azure Clouds.\n",
-        "displayName": "Lite",
-        "originalName": "data-replication-lite-plan"
-      }
-    ],
-    "description": "Provides efficient change data capture and near real-time data delivery with transactional integrity.",
-    "longDescription": "Data Replication provides efficient change data capture and near real-time data delivery with transactional integrity to support big data integration and consolidation, warehousing and analytics initiatives at scale. It provides you the flexibility to replicate data between a variety of sources and targets.",
-    "displayName": "Data Replication",
-    "imageUrl": "https://api.dataplatform.dev.cloud.ibm.com/replication/broker/public/replication-logo-featured.svg",
-    "localSvgIcon": "/generated/icons/696b9880-9e9b-11ea-9054-e15e287f1e7f.svg",
-    "localPngIcon": "/generated/icons/696b9880-9e9b-11ea-9054-e15e287f1e7f.png"
-  },
-  {
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "kind": "service",
     "metadata": {
@@ -5539,6 +5475,7 @@
   },
   {
     "geo_tags": [
+      "in-che",
       "au-syd",
       "che01",
       "br-sao",
@@ -5552,8 +5489,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "in-che"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5882,13 +5818,13 @@
   },
   {
     "geo_tags": [
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
       "au-syd",
       "us-east",
-      "eu-es",
-      "eu-de",
       "fra02",
       "us-south",
       "eu-gb"
@@ -6049,13 +5985,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7324,6 +7260,7 @@
   },
   {
     "geo_tags": [
+      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7335,8 +7272,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-che"
+      "us-south"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -8780,14 +8716,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9190,18 +9126,18 @@
   },
   {
     "geo_tags": [
-      "ca-mon",
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "eu-de",
       "us-south",
-      "au-syd",
       "eu-gb",
       "in-che",
-      "ca-tor",
-      "br-sao",
       "jp-osa",
       "eu-es",
-      "jp-tok",
-      "us-east"
+      "ca-tor",
+      "ca-mon",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16149,12 +16085,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -19759,14 +19695,14 @@
       {
         "id": "7b51595d-7db9-4bbe-b2fc-bed3f95d8727",
         "name": "essentials-agentic-mau",
-        "description": "Essentials Agentic Plan with MAU",
+        "description": "Essentials Agentic Plan with MAU\nLimit of 1 Workspace",
         "displayName": "Essentials Agentic with Monthly Active Users",
         "originalName": "essentials-agentic-mau"
       },
       {
         "id": "69d79047-fb71-4331-b14a-3e2a398c6240",
         "name": "lite",
-        "description": "30-day free access to the Standard plan",
+        "description": "30-day free access to the Standard plan\nLimit of 1 Workspace",
         "displayName": "Trial",
         "originalName": "lite"
       },
@@ -19794,12 +19730,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
