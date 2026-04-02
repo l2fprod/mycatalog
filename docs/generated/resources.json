@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2305,6 +2305,73 @@
     "geo_tags": [
       "global"
     ],
+    "id": "d9adb8d4-1baa-4748-8ba8-32364d3912e8",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "nexar-workzone-permits",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "ai_agent",
+      "compliance",
+      "construction zone",
+      "custom_kind_service",
+      "enforcement",
+      "free",
+      "global",
+      "ibm_third_party",
+      "local government",
+      "mapping",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson",
+      "work zone"
+    ],
+    "plans": [
+      {
+        "id": "6c56a785-9a8d-470b-bf1c-a024d73c3464",
+        "name": "citystream-core",
+        "description": "For cities with 50,000–100,000 residents. CityStream Core is Nexar's AI-powered work zone compliance platform for small and mid-size cities. It continuously monitors active work zones using nationwide dashcam imagery, cross-references them against municipal permit records, and surfaces non-compliant sites for enforcement — complete with photo evidence and NOV issuance workflows.",
+        "displayName": "CityStream Core"
+      },
+      {
+        "id": "7e6a36ee-fa2b-4635-a33e-94420e470abc",
+        "name": "citystream-enterprise",
+        "description": "For cities with 500,000+ residents. CityStream Enterprise serves major metropolitan areas where work zone volume, political visibility, and infrastructure complexity demand hands-on partnership. It includes everything in CityStream Pro, plus dedicated support and Nexar's targeted data enrichment capabilities.",
+        "displayName": "CityStream Enterprise"
+      },
+      {
+        "id": "37425280-997c-431b-a2fd-c4ff7c56fa2f",
+        "name": "citystream-pilot",
+        "description": "A short-term evaluation program designed for agencies that want to validate AI-powered work zone compliance before committing to an annual subscription. The Pilot provides some limited platform functionality for 30 days, enabling teams to assess detection accuracy, permit matching, and enforcement workflows in their jurisdiction.",
+        "displayName": "CityStream Pilot"
+      },
+      {
+        "id": "f9bd8cc9-6fcb-411d-9222-30e28f91f29e",
+        "name": "citystream-pro",
+        "description": "For cities with 100,000–500,000 residents. CityStream Pro is built for mid-size and growing cities managing higher volumes of concurrent work zones. It includes everything in CityStream Core — AI detection, permit matching, compliance dashboards, WZDx feeds, and guided onboarding — with enhanced support scaled for larger jurisdictions.",
+        "displayName": "CityStream Pro"
+      }
+    ],
+    "description": "Automated AI Work zone compliance monitoring tool",
+    "longDescription": "Nexar's Work Zone Compliance Solution eliminates the need for cities to send inspectors into the field to verify whether construction activity is properly permitted. By leveraging a nationwide network of dashcam-equipped vehicles that continuously capture street-level imagery, the platform uses AI vision models to automatically detect construction equipment and cross-reference those detections against official permit databases in real time. Cities can monitor every active work zone across their jurisdiction simultaneously, flag unpermitted activity as it appears, and issue enforcement actions directly from a single console.\n\nFor municipal agencies managing thousands of permits with limited staff, this means dramatically faster violation detection, higher compliance rates, and increased revenue recovery from civil penalties — all without adding headcount. The platform integrates with IBM watsonx Orchestrate to let operators query compliance data conversationally, generate maps of active violations, and drill into specific locations with full photographic evidence and permit context. It turns work zone enforcement from a reactive, labor-intensive process into a continuous, automated intelligence layer over the city's streets.",
+    "displayName": "CityStream Compliance Agent",
+    "imageUrl": "https://cloud-object-storage-cos-static-web-hosting-t7k.s3-web.us-east.cloud-object-storage.appdomain.cloud/purple-nexar-vector_nolettering.svg",
+    "localSvgIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.svg",
+    "localPngIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "9d16054c-f1f5-4551-800f-22cc7dbdafa6",
     "kind": "service",
     "metadata": {
@@ -2447,7 +2514,6 @@
     "longDescription": "IBM Cloud Client VPN for VPC provides an open-source compatible client-to-site VPN solution that allows users to connect to IBM Cloud resources through secure, encrypted connections.  When your users are working remotely, traveling or at a location without a site-to-site VPN connection, they can use an OpenVPN client to connect to VPN servers on your IBM Cloud VPC.",
     "displayName": "Client VPN for VPC",
     "imageUrl": "https://broker-staging.vpnaasdev.cloud.ibm.com/C2S_icon.svg",
-    "localSvgIcon": "/generated/icons/is.vpn-server.svg",
     "localPngIcon": "/generated/icons/is.vpn-server.png"
   },
   {
@@ -5301,12 +5367,16 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5316,11 +5386,7 @@
       "par01",
       "us-east",
       "us-south",
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "in-che"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5469,7 +5535,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -5643,7 +5709,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5818,16 +5884,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "fra02",
       "eu-es",
       "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "eu-gb"
+      "au-syd",
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5985,13 +6051,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7260,7 +7326,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7272,7 +7337,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -8716,14 +8782,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9127,17 +9193,17 @@
   {
     "geo_tags": [
       "br-sao",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "eu-de",
-      "us-south",
       "in-che",
       "eu-es",
+      "jp-tok",
+      "us-east",
       "ca-tor",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "jp-osa",
       "ca-mon",
-      "au-syd",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -9181,8 +9247,7 @@
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
-      "us-south",
-      "vpc_private_endpoint"
+      "us-south"
     ],
     "plans": [
       {
@@ -10144,50 +10209,6 @@
     "localPngIcon": "/generated/icons/is.load-balancer.png"
   },
   {
-    "geo_tags": [
-      "global"
-    ],
-    "id": "9349854b-eb46-427f-8ef6-687d601c9eda",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "seagate-lyve-subscription-per-tb",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "migration",
-      "custom_kind_service",
-      "data services",
-      "data transfer",
-      "global",
-      "ibm cos",
-      "ibm_third_party",
-      "migration_tools",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party"
-    ],
-    "plans": [
-      {
-        "id": "e3ef7a14-189a-4d04-9109-1ec63eeda3d1",
-        "name": "per-tb-per-month",
-        "description": "Pay a flat fee per TB with the Data Transfer Service. Standard migration services are priced at $40/TB per month with a minimum of 50TB per project and include full project lifecycle management",
-        "displayName": "Per TB per Month"
-      }
-    ],
-    "description": "Lyve Mobile Data Transfer Service allows you to quickly, easily and securely move your edge or on-prem data into IBM Cloud.",
-    "longDescription": "Seagate Lyve Mobile is an edge to cloud, mass storage transfer platform providing efficient and secure end to end, data migration and logistics services accelerating the transfer of edge or on-prem data to IBM Cloud. Built for data intensive mobility, Lyve Mobile enables enterprises to aggregate, store and move data easily, bypassing network bottlenecks and allowing mass data transfers quickly and securely using a comprehensive suite of software, hardware and services provided by Seagate.\n\nAccelerate your Edge and/or On-Prem Data Transfer to IBM Cloud quickly, securely and easily with Seagate Lyve Mobile.\n\nOur field ready, just in time, scalable Data Transfer Service utilizes Seagate's mass capacity storage arrays, alongside Seagate's Cloud-Import Software and expert IBM Cloud Import Services, making Lyve Mobile a complete, simple, low-cost, secure solution for fast, data transfer and data mobility projects, at scale, without the worries of network latency.\n\nOur end-to-end process is fully a fully managed service that delivers white glove service to ensure a successful transfer of data from the edge or on-prem to IBM Cloud, all from the most trusted data company in the world, Seagate.\n\n\nPRICING:\nStandard migration services are priced at $40/TB per month with a minimum of 50TB per device and includes full project lifecycle management, 24-hour rapid device fulfilment of Lyve Mobile arrays, secured product provisioning, personal configuration assistance, and end to end logistics; all with world-class, 24/7 support to help you migrate your data quickly, securely, easily and affordably.\n\n\nTo better understand the ordering process, please review this informational slide deck before proceeding.\n\nFOR IBM POWER USERS: please click on this link to understand the process for transferring data from IBM Power Systems to IBM Cloud.\n\n\nPLEASE NOTE: You must have an IBM account prior to ordering this service.  If you do not, please reach out to your IBM Account Manager.\n\n\nOnce a customer purechases through the IBM Catalogue, they will be contacted by the Seagate Lyve Mobile team to finalize their configuration and schedule the start date for their data transfer service.  Then, their account will be reviewed and created, which will be linked to their IBM account for consolidated billing for invoicing.\n",
-    "displayName": "Lyve Data Transfer Services",
-    "imageUrl": "https://www.seagate.com/content/dam/seagate/migrated-assets/ww/redesign/assets/seagate-logo.svg",
-    "localSvgIcon": "/generated/icons/9349854b-eb46-427f-8ef6-687d601c9eda.svg",
-    "localPngIcon": "/generated/icons/9349854b-eb46-427f-8ef6-687d601c9eda.png"
-  },
-  {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-managedveeam",
     "kind": "service",
     "metadata": {
@@ -10541,7 +10562,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.br-sao.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -19726,12 +19747,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20034,12 +20055,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
