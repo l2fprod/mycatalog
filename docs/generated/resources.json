@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1294,6 +1294,20 @@
         "originalName": "cx2d-metal-96x192"
       },
       {
+        "id": "bdc8136d-7e67-49c3-858e-c38519e00462",
+        "name": "cx3-metal-48x128",
+        "description": "Pricing plan for cx3-metal-48x128",
+        "displayName": "cx3-metal-48x128",
+        "originalName": "cx3-metal-48x128"
+      },
+      {
+        "id": "2b7c56c1-e82e-4ec1-89bc-92577eeb83e2",
+        "name": "cx3-metal-64x128",
+        "description": "Pricing plan for cx3-metal-64x128",
+        "displayName": "cx3-metal-64x128",
+        "originalName": "cx3-metal-64x128"
+      },
+      {
         "id": "a9af6a30-77aa-47f1-897e-cfccb4cfe25f",
         "name": "cx3d-metal-48x128",
         "description": "Pricing plan for cx3d-metal-48x128",
@@ -1320,6 +1334,13 @@
         "description": "Pricing plan for an mx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 768 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
         "displayName": "mx2d-metal-96x768",
         "originalName": "mx2d-metal-96x768"
+      },
+      {
+        "id": "5a3de409-5864-4f83-95bd-a417efaac70f",
+        "name": "mx3-metal-16x128",
+        "description": "Pricing plan for mx3-metal-16x128",
+        "displayName": "mx3-metal-16x128",
+        "originalName": "mx3-metal-16x128"
       },
       {
         "id": "208fcc66-266d-487e-9247-6d8246b45dac",
@@ -5374,10 +5395,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5387,7 +5404,11 @@
       "par01",
       "us-east",
       "us-south",
-      "in-che"
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5542,6 +5563,9 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "au-syd",
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5553,10 +5577,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd",
-      "che01"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5885,16 +5906,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
-      "eu-de",
-      "au-syd",
-      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02"
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6052,13 +6073,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7327,6 +7348,7 @@
   },
   {
     "geo_tags": [
+      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7338,8 +7360,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-che"
+      "us-south"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -8783,14 +8804,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9193,18 +9214,18 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "br-sao",
-      "in-che",
       "jp-osa",
       "eu-es",
+      "au-syd",
+      "eu-gb",
+      "br-sao",
+      "in-che",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14892,8 +14913,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16107,12 +16128,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -19748,12 +19769,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
-      "us-south",
-      "jp-tok",
-      "eu-de"
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20056,12 +20077,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
