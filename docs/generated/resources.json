@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5591,8 +5591,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5605,7 +5603,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5934,16 +5934,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "fra02",
-      "eu-es",
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6101,13 +6101,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7376,6 +7376,7 @@
   },
   {
     "geo_tags": [
+      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7387,8 +7388,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-che"
+      "us-south"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -9316,18 +9316,18 @@
   },
   {
     "geo_tags": [
+      "ca-mon",
+      "eu-es",
       "jp-osa",
-      "eu-gb",
       "jp-tok",
       "us-east",
-      "ca-tor",
       "eu-de",
       "us-south",
       "au-syd",
       "br-sao",
       "in-che",
-      "ca-mon",
-      "eu-es"
+      "eu-gb",
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
