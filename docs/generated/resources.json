@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5939,17 +5939,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "fra02",
       "eu-es",
-      "fr02",
       "us-south",
       "eu-gb",
+      "au-syd",
+      "us-east",
+      "fra02",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "au-syd",
-      "us-east"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -5988,7 +5987,6 @@
       "eu-es",
       "eu-gb",
       "flex",
-      "fr02",
       "fra02",
       "free",
       "freesia",
@@ -6108,13 +6106,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7224,7 +7222,7 @@
       }
     ],
     "description": "Elastio adds advanced ransomware protection to IBM Cloud Object Storage by proactively validating data is clean and uncompromised.",
-    "longDescription": "As ransomware increasingly bypasses endpoint and network defenses, customers now expect storage itself to become an active layer of cyber defense - a model analysts define as cyberstorage. In this approach, stored data is no longer passive infrastructure, but a control point where attacks are detected, scoped, and recovery decisions are made. \n\nElastio enhances IBM Cloud Object Storage (COS) by adding a data integrity layer that detects ransomware, malware, and corruption directly within stored cloud object data. Using advanced machine learning built on over a decade of ransomware research, Elastio identifies known and zero-day encryption techniques, including stealthy, fileless attacks that evade traditional security tools.\n\nBy scanning data outside of production systems, Elastio provides early visibility into ransomware impact and enables recovery assurance from pre-validated data. This transforms IBM Cloud Object Storage from durable storage into cyberstorage: strengthening cyber resilience, supporting compliance requirements, and giving customers confidence that the data they store in IBM COS is trustworthy.\n\n",
+    "longDescription": "Before getting started, ensure you have an IBM Cloud Object storage instance. You can create one here: https://cloud.ibm.com/objectstorage\n\nAs ransomware increasingly bypasses endpoint and network defenses, customers now expect storage itself to become an active layer of cyber defense - a model analysts define as cyberstorage. In this approach, stored data is no longer passive infrastructure, but a control point where attacks are detected, scoped, and recovery decisions are made. \n\nElastio enhances IBM Cloud Object Storage (COS) by adding a data integrity layer that detects ransomware, malware, and corruption directly within stored cloud object data. Using advanced machine learning built on over a decade of ransomware research, Elastio identifies known and zero-day encryption techniques, including stealthy, fileless attacks that evade traditional security tools.\n\nBy scanning data outside of production systems, Elastio provides early visibility into ransomware impact and enables recovery assurance from pre-validated data. This transforms IBM Cloud Object Storage from durable storage into cyberstorage: strengthening cyber resilience, supporting compliance requirements, and giving customers confidence that the data they store in IBM COS is trustworthy.\n\nAny questions? Reach out to ibm@elastio.com",
     "displayName": "Elastio - Advanced Ransomware Protection",
     "imageUrl": "https://elastio.com/api/media/file/Elastio%20Logo%20-%20Color%403x%20(2).svg",
     "localSvgIcon": "/generated/icons/8adfd748-6214-48a7-a3e6-87b75c5c57e5.svg",
@@ -9324,17 +9322,17 @@
   {
     "geo_tags": [
       "jp-osa",
+      "eu-gb",
       "ca-tor",
       "eu-de",
       "us-south",
-      "au-syd",
-      "in-che",
-      "eu-gb",
       "jp-tok",
       "us-east",
       "ca-mon",
+      "au-syd",
       "eu-es",
-      "br-sao"
+      "br-sao",
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10761,10 +10759,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -19926,12 +19924,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
