@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1327,6 +1327,13 @@
         "originalName": "cx3d-metal-64x128"
       },
       {
+        "id": "61b99453-8f4c-4acf-9dbd-6ecc3c25f7da",
+        "name": "gx3d-metal-224x2048x8mi300x",
+        "description": "Pricing plan for gx3d-metal-224x2048x8mi300x",
+        "displayName": "gx3d-metal-224x2048x8mi300x",
+        "originalName": "gx3d-metal-224x2048x8mi300x"
+      },
+      {
         "id": "7dc7b1d9-0388-428d-a7ac-e4b6037e9b87",
         "name": "mx2-metal-96x768",
         "description": "Pricing plan for an mx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 768 GB memory, local NVMe boot drives, and an aggregate 100Gbps network uplink.",
@@ -1485,7 +1492,6 @@
     "longDescription": "Bare metal servers for VPC are dedicated servers offering direct hardware performance and is integrated as a first-class compute offering within Virtual Private Cloud. Users can leverage existing VPC services across storage, networking, and security with bare metal for VPC and can incorporate its higher end hardware profiles with the additional benefit of end-user managed virtualization.\n\n#### Pricing\n\n##### Hourly, pay-as-you-go\nPay-as-you-go bandwidth is per gigabyte. Your billing charges accrue from provision to cancellation, and are billed in arrears. This VPC product does not support suspended billing and will continue to bill regardless of the power state. Total pricing includes bare metal server instance profiles and software, internet data transfers, and optional VPC services. Each additional component is priced separately and included as part of your total IBM Cloud VPC charge. Service tiers are bound to your account, not to any specific VPC.",
     "displayName": "Bare Metal Servers for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.bare-metal-server/artifacts/CloudVPCBareMetal.svg",
-    "localSvgIcon": "/generated/icons/is.bare-metal-server.svg",
     "localPngIcon": "/generated/icons/is.bare-metal-server.png"
   },
   {
@@ -5428,10 +5434,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5441,7 +5443,11 @@
       "par01",
       "us-east",
       "us-south",
-      "in-che"
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5596,6 +5602,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5609,8 +5616,7 @@
       "us-east",
       "us-south",
       "in-che",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5939,16 +5945,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "fra02",
-      "eu-es",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6106,13 +6112,13 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7381,6 +7387,7 @@
   },
   {
     "geo_tags": [
+      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7392,8 +7399,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-che"
+      "us-south"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -7554,7 +7560,7 @@
       {
         "id": "0cf75e24-9e56-436f-8041-67669d67abcf",
         "name": "annual-subscription",
-        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing and is discounted 30% off list price.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.\nIBM Power11 server packages support Habanero as an all inclusive off site backup-DR-Archive solution which includes an On-Prem Appliance, Cloud infrastructure -  PVS server & IBM COS, Software licensing and SaaS that creates an environment continually monitored by FalconStor Super Admin.\nCustomers can use their earned P11 server package to cover their Habanero monthly charge to be used within 12 months.",
+        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing and is discounted 30% off list price.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.\nIBM Power11 server packages support Habanero as an all inclusive off site backup-DR-Archive solution which includes an On-Prem Appliance, Cloud infrastructure -  PVS server & IBM COS, Software licensing and SaaS that creates an environment continually monitored by FalconStor Super Admin.\nCustomers can use their earned P11 server package to cover their Habanero monthly charge to be used within 12 months.\nZero Trust Clean Room is a complete, secure, air gapped environment in PowerVS for  Full System Recovery Testing and Validation based on FalconStor’s patent pending Zero Trust Secure Enclave technology. Pricing is $xxx/month/Clean Room.",
         "displayName": "annual-subscription"
       }
     ],
@@ -8911,14 +8917,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9321,18 +9327,18 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "ca-tor",
-      "eu-de",
-      "us-south",
-      "au-syd",
-      "br-sao",
-      "jp-osa",
       "jp-tok",
       "us-east",
       "ca-mon",
+      "au-syd",
+      "br-sao",
+      "in-che",
+      "ca-tor",
+      "eu-de",
+      "us-south",
       "eu-es",
-      "in-che"
+      "eu-gb",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10759,10 +10765,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -15048,8 +15054,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16263,12 +16269,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -19924,12 +19930,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "ca-tor",
       "eu-gb",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20232,12 +20238,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
