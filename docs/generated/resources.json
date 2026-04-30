@@ -1492,6 +1492,7 @@
     "longDescription": "Bare metal servers for VPC are dedicated servers offering direct hardware performance and is integrated as a first-class compute offering within Virtual Private Cloud. Users can leverage existing VPC services across storage, networking, and security with bare metal for VPC and can incorporate its higher end hardware profiles with the additional benefit of end-user managed virtualization.\n\n#### Pricing\n\n##### Hourly, pay-as-you-go\nPay-as-you-go bandwidth is per gigabyte. Your billing charges accrue from provision to cancellation, and are billed in arrears. This VPC product does not support suspended billing and will continue to bill regardless of the power state. Total pricing includes bare metal server instance profiles and software, internet data transfers, and optional VPC services. Each additional component is priced separately and included as part of your total IBM Cloud VPC charge. Service tiers are bound to your account, not to any specific VPC.",
     "displayName": "Bare Metal Servers for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.bare-metal-server/artifacts/CloudVPCBareMetal.svg",
+    "localSvgIcon": "/generated/icons/is.bare-metal-server.svg",
     "localPngIcon": "/generated/icons/is.bare-metal-server.png"
   },
   {
@@ -5434,6 +5435,11 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5442,12 +5448,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5948,12 +5949,12 @@
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02",
-      "eu-es",
-      "us-south",
       "eu-de",
       "au-syd",
       "us-east",
+      "fra02",
+      "eu-es",
+      "us-south",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -6112,13 +6113,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8692,14 +8693,24 @@
   },
   {
     "geo_tags": [
+      "ams03",
       "au-syd",
+      "br-sao",
       "ca-mon",
       "ca-tor",
+      "che01",
+      "che02",
+      "che03",
       "eu-de",
       "eu-es",
       "eu-gb",
       "global",
+      "jp-osa",
       "jp-tok",
+      "mil01",
+      "mum05",
+      "par01",
+      "sng01",
       "us-east",
       "us-south"
     ],
@@ -8713,16 +8724,22 @@
     "pricing_tags": [
       "paid",
       "paid_only",
-      "allow_internal_users"
+      "allow_internal_users",
+      "subscription_only"
     ],
     "tags": [
       "compute",
       "storage",
       "allow_internal_users",
+      "ams03",
       "apidocs_enabled",
       "au-syd",
+      "br-sao",
       "ca-mon",
       "ca-tor",
+      "che01",
+      "che02",
+      "che03",
       "custom_kind_service",
       "eu-de",
       "eu-es",
@@ -8730,17 +8747,24 @@
       "global",
       "iam_compatible",
       "ibm_created",
+      "jp-osa",
       "jp-tok",
       "lite",
+      "mil01",
+      "mum05",
       "paid",
       "paid_only",
+      "par01",
       "rc_compatible",
       "service_endpoint_supported",
+      "sng01",
       "storage_datamovement",
       "storage_object",
+      "subscription_only",
       "support_ibm",
       "us-east",
-      "us-south"
+      "us-south",
+      "vpc_private_endpoint"
     ],
     "plans": [
       {
@@ -8749,6 +8773,12 @@
         "description": "PowerVS DR Automation Pricing Plan",
         "displayName": "PowerVS DR Automation Pricing Plan",
         "originalName": "power-virtual-server-dr-automation"
+      },
+      {
+        "id": "6903b758-58c6-4217-8124-18181a5d7a8f",
+        "name": "powerha-aix-powervs",
+        "description": "PowerHA enablement for PowerVS",
+        "displayName": "PowerHA AIX for PowerVS"
       },
       {
         "id": "280749a9-457a-4d8e-b16f-364c18dcf5a2",
@@ -8917,14 +8947,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9327,18 +9357,18 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "us-east",
-      "ca-mon",
-      "au-syd",
-      "br-sao",
-      "in-che",
-      "ca-tor",
       "eu-de",
       "us-south",
+      "au-syd",
       "eu-es",
       "eu-gb",
-      "jp-osa"
+      "br-sao",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
+      "ca-tor",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16269,12 +16299,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -20238,12 +20268,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
