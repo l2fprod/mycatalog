@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -764,6 +764,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -771,8 +772,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1325,13 +1325,6 @@
         "description": "Pricing plan for cx3d-metal-64x128",
         "displayName": "cx3d-metal-64x128",
         "originalName": "cx3d-metal-64x128"
-      },
-      {
-        "id": "61b99453-8f4c-4acf-9dbd-6ecc3c25f7da",
-        "name": "gx3d-metal-224x2048x8mi300x",
-        "description": "Pricing plan for gx3d-metal-224x2048x8mi300x",
-        "displayName": "gx3d-metal-224x2048x8mi300x",
-        "originalName": "gx3d-metal-224x2048x8mi300x"
       },
       {
         "id": "7dc7b1d9-0388-428d-a7ac-e4b6037e9b87",
@@ -5435,11 +5428,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5448,7 +5436,12 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5603,7 +5596,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5617,7 +5609,8 @@
       "us-east",
       "us-south",
       "in-che",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5946,16 +5939,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es",
       "us-south",
-      "eu-gb"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7561,7 +7554,7 @@
       {
         "id": "0cf75e24-9e56-436f-8041-67669d67abcf",
         "name": "annual-subscription",
-        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing and is discounted 30% off list price.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.\nIBM Power11 server packages support Habanero as an all inclusive off site backup-DR-Archive solution which includes an On-Prem Appliance, Cloud infrastructure -  PVS server & IBM COS, Software licensing and SaaS that creates an environment continually monitored by FalconStor Super Admin.\nCustomers can use their earned P11 server package to cover their Habanero monthly charge to be used within 12 months.\nZero Trust Clean Room is a complete, secure, air gapped environment in PowerVS for  Full System Recovery Testing and Validation based on FalconStor’s patent pending Zero Trust Secure Enclave technology. Pricing is $xxx/month/Clean Room.",
+        "description": "Pricing is based on source data in terabytes. Subscription commitment is for a full year with automatic renewal with monthly billing and is discounted 30% off list price.  If the service is cancelled, the remaining months of the annual subscription term will be billed.\nStarting price is $2,500 per month, which includes up to 250 TB active tier.\nThere are no data retrieval fees from active tier. Archive unused or infrequently requested data to save cost on storage of long-term data. Restoring data from archive tier may take up to 12 hours.\nIBM Power11 server packages support Habanero as an all inclusive off site backup-DR-Archive solution which includes an On-Prem Appliance, Cloud infrastructure -  PVS server & IBM COS, Software licensing and SaaS that creates an environment continually monitored by FalconStor Super Admin.\nCustomers can use their earned P11 server package to cover their Habanero monthly charge to be used within 12 months.",
         "displayName": "annual-subscription"
       }
     ],
@@ -8947,14 +8940,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9357,18 +9350,18 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "us-east",
+      "ca-tor",
+      "br-sao",
+      "jp-osa",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
       "eu-es",
       "eu-gb",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "ca-tor",
-      "ca-mon"
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15084,8 +15077,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
