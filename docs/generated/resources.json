@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -766,7 +766,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -774,7 +773,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5472,6 +5472,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5481,11 +5485,7 @@
       "par01",
       "us-east",
       "us-south",
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "in-che"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5640,8 +5640,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5654,7 +5652,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5983,16 +5983,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02"
+      "eu-es",
+      "us-south",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "fra02",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6148,13 +6148,13 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9739,19 +9739,19 @@
   },
   {
     "geo_tags": [
+      "in-mum",
+      "jp-tok",
+      "us-east",
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "ca-mon",
+      "au-syd",
       "eu-es",
       "eu-gb",
       "br-sao",
       "in-che",
-      "jp-osa",
-      "in-mum",
-      "jp-tok",
-      "us-east",
-      "eu-de",
-      "us-south",
-      "au-syd",
-      "ca-tor",
-      "ca-mon"
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -19732,6 +19732,81 @@
     "geo_tags": [
       "global"
     ],
+    "id": "52e7e0a3-820b-447a-ad01-af292665a20e",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "wanclouds-inc-ai-assistant",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "ai ops",
+      "custom_kind_service",
+      "free",
+      "global",
+      "ibm ai assistant",
+      "ibm managed services",
+      "ibm mcp",
+      "ibm_third_party",
+      "infrastructure bot",
+      "manage",
+      "managed service assistant",
+      "monitor",
+      "optimization assessment",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "root cause analysis",
+      "security assessment",
+      "security audit",
+      "support",
+      "support assistant",
+      "support_third_party",
+      "troubleshooting",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "40f91221-bf12-4458-bbba-f47a348957f0",
+        "name": "enterprise-custom",
+        "description": "Wanclouds AI credits are allocated based on the size of your environment and will be pre-provisioned.\nIncludes all features available in the Premium package.\n\nOptional Services\nWanclouds Migration as a Service (AI + Human Support)\nPricing is based on the number of resources and the volume of data being migrated, starting at $250 per resource. For detailed pricing, visit www.wanclouds.net\n.\nSupports migration of Windows, Linux, Kubernetes, and VMware workloads to cloud-native VMs and VPC environments.\n\nAI-Powered Managed Services & Infrastructure Support\nPricing is calculated per managed resource, such as a VM, Kubernetes node, or storage instance with a 500 GB volume.\n\nSubscription units are available in increments of $500. A unit may include AI credits, backup and restore resources, cloud migration resources, VMs, or associated data volumes.\n\nPricing, subscription duration, and resource requirements are calculated and provisioned upfront.\n\n",
+        "displayName": "Enterprise Custom"
+      },
+      {
+        "id": "2d45ddbc-0c65-484e-a733-fd6cbbf74055",
+        "name": "free-trile",
+        "description": "Up to 5 devices\n1M Credits\nData retention: 1 week",
+        "displayName": "Free"
+      },
+      {
+        "id": "8a1b0b0b-ac85-4abd-aa4e-3d1b29939ddd",
+        "name": "premium",
+        "description": "Up to 50 devices\n20M Credits\nData retention: 1 month",
+        "displayName": "Premium"
+      },
+      {
+        "id": "f3e9f157-5e81-4419-a6e1-af294c06d3b6",
+        "name": "wanclouds-minimal-test",
+        "description": "Up to 15 devices\n10M Credits\nData retention: 2 weeks",
+        "displayName": "Starter"
+      }
+    ],
+    "description": "Chat with Your Infrastructure!\nMeet WANDA(Wanclouds Digital Assistant) : Your 24/7 AI Engineer for Hybrid Cloud Operations",
+    "longDescription": "Wanclouds AI (WANDA) allows you to create one or multiple AI Assistants for Cloud and IT Infrastructure management. It covers multi-vendor infrastructure resources and workloads including servers (Linux, Windows),firewalls, network routers, switches, VMware, Kubernetes and more. The Solution covers devices deployed in the cloud (IBM Cloud, other cloud) as well as On-Premise and Edge or Remote Sites.You can add your cloud, on-premises, and edge devices into a single platform, creating a unified interface for your entire infrastructure.\n\n\n\n\n\n\n\nThink of it as your AI Expert Assistant(s) to help you watch your infrastructure 24x7, integrated with your existing monitoring, logging tools, devices, and fully aware of your policies and guidelines. It continuously monitors the health, logs, and metrics of your cloud and IT infrastructure. Proactively track configuration changes, software updates, and system behavior to ensure your environments run smoothly and cost-effectively.\n\n\n\n\n\n\n\nBy combining monitoring, logs, troubleshooting, and intelligent querying, it helps IT teams dramatically reduce the time to diagnose and resolve issues, all while learning and adapting to your unique environment through its contextual memory capabilities. Moreover, you can run security and optimization assessments on-demand as well as query any aspect of your infrastructure.\n\n\n\n\n\n\n\nKey Features\n\n\n\n\n-  Add cloud Environments (such as IBM Cloud VPC, Classic), On-Premise resources, as well as other cloud workloads.\n\n- Add VMware resources or individual servers, routers, firewalls, and switches.\n\n-  Configuration & Change Tracking – Watches for configuration drifts, software updates, and system changes that may impact stability.\n\n\n-  Troubleshooting & Root-Cause Analysis – Performs root-cause analysis and provides guided remediation steps to resolve issues faster.\n\n\n\n\n\n- Proactive Monitoring – Continuously collects health, logs, and performance data from servers, GPUs, network devices, and applications.\n\n- Perform Security risk assessments and compliance audits against known industry and government standards such as PCI, HIPAA, SOC2, NIST etc\n\n\n\n\n-  Intelligent Querying – Answer natural language queries such as “What caused the last outage?” or “How is my cluster performing today?”.\n\n\n\n\n -  Adaptive Learning – Learns your infrastructure over time with a memory component, improving accuracy and insights.\n\n\n\n\n -  24x7 Availability – Acts as a round-the-clock virtual engineer without the overhead of traditional staffing.\n\n\n\n\n\n- Review existing policy and compliance documents and create what’s missing or required\n\n\n\n\n- Identify optimization opportunities to reduce costs and eliminate wastage\n\n\n\n\n- Create Executive summaries against your infrastructure state as required\n\n\n\n\n- Track software deployed in your infrastructure and discover EOL and assess risk levels \n\n\n\n\n- Backup and Migrate your VSIs and data volumes to IBM COS, making them ready for restoration in IBM Cloud VPC.\n\n\n\n\n- Backup and Migrate your VMware / VCF VMs and Data to IBM COS and ready to restore as VPC native VSIs and volumes.\n\n\n\n\n\n\n\nBenefits\n\n\n\n\n  -  Faster Root-Cause Analysis – Reduce troubleshooting times from hours to minutes.\n\n\n\n\nIncrease uptime and reliability by tracking security compliance gaps and risks across your IT and cloud infrastructure. \n\nKeep costs in control by assessing wastage and oversized infrastructure resources\n\n\n\n\n -  Increased Reliability – Identify and resolve issues before they escalate.\n\n\n\n\n -  Cost-Effective Operations – Reduce operational costs by up to 50%. A fraction of the cost of adding human NOC/SRE staff.\n\n\n\n\n -  Improved IT Productivity – 3X and more productivity gains. Free up engineering teams to focus on innovation, not firefighting.\n\n\n\n\n -  Scalable & Adaptable – Grows with your environment and continuously learns from it.\n\n\n\n\n- Addresses skill gaps with its expert troubleshooting, management, and assessments ranging from Windows, Linux to Nvidia GPUs as well as Firewalls and multi-vendor network devices.\n\n\n\n\n\n\n\n   \n\n\n\n\nWanclouds AI (WANDA) is your always-on AI engineer from Wanclouds, helping you stay ahead of outages, errors, security risks, and costly downtime..\n\n\n\n\n\n\n\nIf you need a private instance of Wanclouds AI dedicated to your cloud and IT infrastructure resources, please contact Wanclouds at www.wanclouds.net or sales@wanclouds.net\n\n\n\n\n\n\n",
+    "displayName": "Wanclouds AI Assistant (WANDA) for Hybrid Infrastructure Management",
+    "imageUrl": "https://wanclouds.ai/images/logoblue.svg",
+    "localSvgIcon": "/generated/icons/52e7e0a3-820b-447a-ad01-af292665a20e.svg",
+    "localPngIcon": "/generated/icons/52e7e0a3-820b-447a-ad01-af292665a20e.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "198f5174-8d2d-4141-98e2-695c9ff06a5a",
     "kind": "service",
     "metadata": {
@@ -20271,12 +20346,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20353,12 +20428,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
