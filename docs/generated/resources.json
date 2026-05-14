@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -766,6 +766,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -773,8 +774,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4031,6 +4031,46 @@
     "geo_tags": [
       "global"
     ],
+    "id": "cf8d25d4-5368-4132-b272-0acc0201217a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "ganga-consultancy-services-cognos-assistant-cp",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "data_analytics",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "613507cd-bd53-42ba-a24d-87b6600f8fd6",
+        "name": "standard-monthly",
+        "description": "Standard Monthly:\nPer user per month",
+        "displayName": "Standard Monthly"
+      }
+    ],
+    "description": "The Cognos Assistant is an intelligent, conversational analytics agent designed to transform how organization interact with Cognos",
+    "longDescription": "The Cognos Assistant is an intelligent, conversational analytics agent designed to transform how organizations interact with IBM Cognos Analytics and uncover actionable insights with natural language. It brings together data, reporting, and workflow automation in a unified, intuitive experience — enabling business users, analysts, and decision makers to work faster and smarter without deep technical skills.\n\nBuilt on IBM watsonx Orchestrate, Cognos Assistant acts as a bridge between users, APIs, and your Cognos environment, providing an enterprise-ready conversational interface that transforms reporting and analytics tasks into simple chat interactions.\n\nWhat Cognos Assistant Enables\nContent Retrieval & Insights\nRetrieve metadata and details for reports, data modules, and other Cognos objects.\nPresent structured information about content to help understand dependencies, owners, and paths.\nList users, groups, and roles available in the Cognos system.\n\nThis enables users to quickly discover what exists in their Cognos environment and understand content relationships without deep technical navigation.\n\nContent Management & Actions\n\nCognos Assistant also helps in performing content management actions such as:\n\nDelete unused or obsolete content (reports, folders, dashboards).\nMove or organize content objects.\nManage users and user groups — including deletion of users no longer needed in the system.\n\nThese features streamline administration and help keep your Cognos environment clean, consistent, and compliant.\n\nReport Scheduling & Status Insights\n\nCognos Assistant facilitates report scheduling and monitoring tasks by:\n\nCalling underlying APIs to create, update, or disable schedules for existing reports.\nRetrieving the latest execution status, run history, and timing of scheduled reports.\nProviding visibility into whether scheduled reports are active or require attention.\n\nThese features help streamline report operations and reduce manual effort in managing scheduled reporting across the Cognos environment.\n\nKey Benefits\nFast Administrative Operations\n\nQuickly perform common Cognos administrative tasks without navigating the Cognos Administration interface or writing scripts.\n\nReduced Technical Barriers\n\nEnable non-technical users to trigger complex Cognos REST API actions through guided interactions and simple prompts.\n\nReliable & Controlled Workflows\n\nEnsure tasks run in the correct sequence with built-in orchestration, clear status updates, and error handling.\n\nDesigned For Every User\nCognos Administrators who want to automate routine maintenance.\nSupport Teams needing consistent execution of bulk user or content actions.\nData Teams seeking simplified control over report schedules and metadata insights.\nBusiness Analysts who require quick visibility into content and status without deep API knowledge.\nGet Started with Cognos Partners\n\nUnlock the full potential of Cognos Assistant by partnering with Cognos Partners – experts in IBM Cognos Analytics and watsonx Orchestrate implementations.\n\nOur team works closely with your organization to:\n\nAssess your Cognos environment and identify high-value automation and reporting use cases\nIntegrate Cognos Assistant securely with your Cognos Analytics platform using REST APIs and enterprise authentication\nDefine governance, roles, and permissions to ensure safe and compliant operations\nDesign and configure orchestrated workflows tailored to your administrative, reporting, and operational needs\nProvide ongoing optimization and support as your analytics landscape evolves\n\nWith Cognos Partners, you gain more than an assistant — you gain a strategic partner who helps modernize and streamline your Cognos ecosystem.",
+    "displayName": "Cognos Assistant",
+    "imageUrl": "https://cognospartners.com/wp-content/uploads/2025/05/Cognos-dark_icon.png",
+    "localPngIcon": "/generated/icons/cf8d25d4-5368-4132-b272-0acc0201217a.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "402ae2fc-4740-4a8f-aac8-38e67c939f95",
     "kind": "service",
     "metadata": {
@@ -5432,10 +5472,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5445,7 +5481,11 @@
       "par01",
       "us-east",
       "us-south",
-      "in-che"
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5600,6 +5640,8 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5612,9 +5654,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5943,16 +5983,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
       "eu-es",
       "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "fra02",
-      "eu-gb"
+      "au-syd",
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6108,13 +6148,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6997,11 +7037,69 @@
         "displayName": "Prepaid - 1 Year Term"
       }
     ],
-    "description": "Deliver modern, secure, and scalable cloud desktops with Dizzion Cloud PC, a fully managed solution on IBM VPC infrastructure.",
-    "longDescription": "With Dizzion Cloud PC on IBM Cloud VPC, organizations can streamline their virtual desktop delivery by combining the power of the Dizzion cloud-native platform with the global scale and security of IBM Cloud. This fully managed Desktop as a Service (DaaS) solution enables persistent, personal Windows 11 desktop experiences, built for hybrid work and maximum productivity. We offer two complementary tiers - Core and Complete - to fit every operational model.\n\n\nThe Core Tier is ideal for organizations that already have in-house IT operations, identity services, and endpoint management tools in place. If your team can handle monitoring, patching, and support with existing staff and systems, Core lets you spin up Cloud PCs in minutes - without overhauling your workflows. Companies with 25 or more users can choose from five performance-tuned configurations, plug into your existing AD or run as standalone, and deploy directly over the internet or via private networking.\n\n\nThe Complete Tier builds on the flexibility of Core with enterprise-grade management, security, and unlimited scalability for 50+ desktops, and requires Private Network Access per region. With Dizzion-managed services - Overwatch real-time observability & analytics, automated OS and Application patching, and self-service software deployment for up to two administrators - you get a truly hands-off Cloud PC experience. Tailored for organizations requiring centralized identity, granular performance controls, and seamless global expansion, the Complete Tier also offers a rich add-on catalog - from vulnerability monitoring to advanced firewalling - delivering a turnkey solution that scales with your business. The only elements you manage are end-user support and application deployment.\n\n\nWhether you are migrating from on-premises VDI or looking to modernize legacy PC deployments, Dizzion Cloud PC provides a seamless path forward with predictable pricing, great user experience, fast provisioning, simplified management, and deployment.\n\n\nFor sales support, reach out to Dizzion directly at sales@dizzion.com.",
+    "description": "Deliver modern, secure, and scalable cloud desktops with Dizzion Cloud PC, a fully managed solution on IBM Cloud infrastructure.",
+    "longDescription": "With Dizzion Cloud PC on IBM Cloud, organizations can streamline their virtual desktop delivery by combining the power of the Dizzion cloud platform with the global scale and security of IBM Cloud. This fully managed Desktop as a Service (DaaS) solution enables persistent, personal Windows 11 desktop experiences, built for hybrid work and maximum productivity. We offer two complementary tiers - Core and Complete - to fit every operational model.\n\n\nThe Core Tier is ideal for organizations that already have in-house IT operations, identity services, and endpoint management tools in place. If your team can handle monitoring, patching, and support with existing staff and systems, Core lets you spin up Cloud PCs in minutes - without overhauling your workflows. Companies with 25 or more users can choose from five performance-tuned configurations, plug into your existing AD or run as standalone, and deploy directly over the internet or via private networking.\n\n\nThe Complete Tier builds on the flexibility of Core with enterprise-grade management, security, and unlimited scalability for 50+ desktops, and requires Private Network Access per region. With Dizzion-managed services - Overwatch real-time observability & analytics, automated OS and Application patching, and self-service software deployment for up to two administrators - you get a truly hands-off Cloud PC experience. Tailored for organizations requiring centralized identity, granular performance controls, and seamless global expansion, the Complete Tier also offers a rich add-on catalog - from vulnerability monitoring to advanced firewalling - delivering a turnkey solution that scales with your business. The only elements you manage are end-user support and application deployment.\n\n\nWhether you are migrating from on-premises VDI or looking to modernize legacy PC deployments, Dizzion Cloud PC provides a seamless path forward with predictable pricing, great user experience, fast provisioning, simplified management, and deployment.\n\n\nFor sales support, reach out to Dizzion directly at sales@dizzion.com.",
     "displayName": "Dizzion Cloud PC",
     "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
     "localPngIcon": "/generated/icons/bffea61e-32b1-4b25-b8e7-ee5055290862.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "7b9d920b-ce6e-4fe4-9a97-5d281c6ba092",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dizzion-daas-new",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "integration",
+      "citrix",
+      "custom_kind_service",
+      "daas",
+      "desktop as a service",
+      "digital workspaces",
+      "global",
+      "ibm_third_party",
+      "omnissa",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "vdi",
+      "workspot"
+    ],
+    "plans": [
+      {
+        "id": "f5cdfd8d-26c1-4e89-b815-5fd3eb0aac30",
+        "name": "monthly---1-year-term",
+        "description": "Minimum of 50 VMs or Users \n",
+        "displayName": "Monthly - 1 Year Term"
+      },
+      {
+        "id": "a81db5ae-0b52-4541-8025-28ec74a7aa98",
+        "name": "monthly---no-term",
+        "description": "Minimum of 50 VMs or Users",
+        "displayName": "Monthly - No Term"
+      },
+      {
+        "id": "e57c4ee6-8bb2-44bf-a5e8-043705ba9db9",
+        "name": "prepaid---1-year-term",
+        "description": "Minimum of 50 VMs or Users",
+        "displayName": "Prepaid - 1 Year Term"
+      }
+    ],
+    "description": "Simply and intuitively deploy and manage virtual desktops and apps on IBM Cloud.",
+    "longDescription": "Dizzion DaaS enables clients to simply and intuitively deploy and manage their virtual desktop and app workloads on IBM Cloud, leveraging Dizzion's cloud platform. Users securely access the apps, data, and resources they need to be productive from the comfort of their favorite web browser - no clients or plug-ins required. Admins can deploy thousands of digital workspaces across the globe in minutes and enjoy powerful enterprise features all managed from a single pane-of-glass web console. With Dizzion DaaS on IBM Cloud, organizations are well-prepared to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\nFor sales support, reach out to Dizzion directly at sales@dizzion.com.",
+    "displayName": "Dizzion Desktop as a Service (DaaS)",
+    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
+    "localPngIcon": "/generated/icons/7b9d920b-ce6e-4fe4-9a97-5d281c6ba092.png"
   },
   {
     "geo_tags": [
@@ -7100,6 +7198,64 @@
     "displayName": "Dizzion Flex",
     "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
     "localPngIcon": "/generated/icons/6fc0c2df-7fbc-470f-aac5-a93af7ef4a92.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "546c52e4-2eb9-48ac-8768-2b001aec54f4",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dizzion-halo",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "content filtering",
+      "custom_kind_service",
+      "data protection",
+      "global",
+      "halo",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "saas app protection",
+      "seb",
+      "secure every browser",
+      "support_third_party",
+      "web app protection"
+    ],
+    "plans": [
+      {
+        "id": "8799539f-2c81-4c62-a21c-23a8adafdf14",
+        "name": "monthly---1-year-term",
+        "description": "Monthly - 1 Year Term",
+        "displayName": "Monthly - 1 Year Term"
+      },
+      {
+        "id": "9fc1f2b3-1260-4666-8f4f-846a86d2fb8f",
+        "name": "monthly---no-term",
+        "description": "Monthly - No Term",
+        "displayName": "Monthly - No Term"
+      },
+      {
+        "id": "e09e9cc3-6b6b-41d0-b310-0ae1d9f9256a",
+        "name": "prepaid---1-year-term",
+        "description": "Prepaid - 1 Year Term",
+        "displayName": "Prepaid - 1 Year Term"
+      }
+    ],
+    "description": "Your Browser Is the New Security Perimeter. Secure It.",
+    "longDescription": "Dizzion Halo is a Secure Every Browser (SEB) solution that protects data\nand web/SaaS applications on any device. No new hardware. No new browser. Just\nprotection where work really happens. Keep working on the browser you love. Add\nthe security you need and the control IT demands.\n\nThe browser is the front door to nearly every business app and your biggest unprotected attack\nsurface. Legacy security tools weren’t built for Cloud First, SaaS, hybrid\nwork, BYOD, AI, and a remote workforce. Old keys don't work on new locks.\nDizzion Halo secures what others can’t.\n\n\nFor pricing, visit https://dizzion.com/pricing\n\nFor sales support, reach out to Dizzion directly at sales@dizzion.com.",
+    "displayName": "Dizzion Halo",
+    "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
+    "localPngIcon": "/generated/icons/546c52e4-2eb9-48ac-8768-2b001aec54f4.png"
   },
   {
     "geo_tags": [
@@ -9583,19 +9739,19 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-es",
+      "eu-gb",
       "br-sao",
       "in-che",
       "jp-osa",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "in-mum",
       "jp-tok",
       "us-east",
-      "ca-tor"
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "ca-tor",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12588,6 +12744,77 @@
     "geo_tags": [
       "global"
     ],
+    "id": "7483fc78-179a-47c9-8254-b0fa784055a4",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "uptoip-patentbutler-similarity-search",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "development",
+      "free",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "patent",
+      "rc_compatible",
+      "research",
+      "search",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "edd4ea07-e5d9-4f28-b7cd-b6980ca9fac7",
+        "name": "addon-per-request",
+        "description": "Perform one search incl. asking the results",
+        "displayName": "Per Request "
+      },
+      {
+        "id": "c0a8304c-60ae-450b-8d54-09d6b3493716",
+        "name": "large",
+        "description": "perform 500 similarity searches per month. For each search you might ask the results about specitic aspects.",
+        "displayName": "Large"
+      },
+      {
+        "id": "92cc0dc9-60c6-4e12-89cf-7f02483e73e7",
+        "name": "medium",
+        "description": "perform 250 similarity searches per month. For each search you might ask the results about specitic aspects.",
+        "displayName": "Medium"
+      },
+      {
+        "id": "b501230e-ab96-464c-845c-b4af3deaad97",
+        "name": "small",
+        "description": "perform 100 similarity searches per month. For each search you might ask the results about specitic aspects.",
+        "displayName": "Small"
+      },
+      {
+        "id": "2512b7b9-e3bf-4b09-8a14-4c89ea73be7f",
+        "name": "trial",
+        "description": "This trial plan includes 3 days of free limited testing.",
+        "displayName": "Trial"
+      }
+    ],
+    "description": "Integrated IP management and AI-powered patent intelligence to streamline portfolios, accelerate insights, and drive innovation.",
+    "longDescription": "1. Similarity Search (Content-Based Patent Discovery)\nInstantly uncover the most relevant patents from global databases using natural language, documents, or technical files. Our AI understands context—not just keywords—delivering precise, high-quality matches in seconds. Eliminate missed prior art, reduce risk, and gain a decisive edge in innovation and IP strategy.\n\n2. Chat with Results (Interactive Patent Intelligence)\nTurn search results into actionable insights through AI-powered conversation. Ask questions, compare inventions, extract key features, and validate ideas—directly within your results. This transforms static data into dynamic intelligence, enabling faster decisions, deeper understanding, and significantly increased productivity.",
+    "displayName": "patentbutler similarity search ",
+    "imageUrl": "https://assets.inoovum.io/_Resources/Persistent/986bf973edeb5b87ad53c5b9970bd666fae31836/45b860c6aa624d98325948ac35336e1e71a2ac92/patentbutler_ai-CLIPPY-ICON-u2i-32x32.svg",
+    "localSvgIcon": "/generated/icons/7483fc78-179a-47c9-8254-b0fa784055a4.svg",
+    "localPngIcon": "/generated/icons/7483fc78-179a-47c9-8254-b0fa784055a4.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
     "kind": "service",
     "metadata": {
@@ -14262,6 +14489,87 @@
     "displayName": "Quant AI",
     "imageUrl": "https://static.quant.ai/quant-logos/google_profile_metal_on_black.png",
     "localPngIcon": "/generated/icons/5af656f4-f0e1-4fa5-b5de-7393570af9ba.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "74f3f24b-d48a-4d3a-933a-e72e0f0bcc16",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "epochcorexwatsonx",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "ai_agent",
+      "crystals_dilithium",
+      "crystals_kyber",
+      "custom_kind_service",
+      "fips_203",
+      "fips_204",
+      "fips_205",
+      "free",
+      "global",
+      "harvest_now_decrypt_later",
+      "hndl_defense",
+      "ibm_third_party",
+      "ml_dsa",
+      "ml_kem",
+      "nist_compliance",
+      "paid",
+      "paid_only",
+      "post_quantum_cryptography",
+      "pqc_migration",
+      "quantum_canary",
+      "rc_compatible",
+      "slh_dsa",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "04e27e76-fb83-4af8-9979-b78e45802e78",
+        "name": "enterprise",
+        "description": "Enterprise-grade Harvest Now Decrypt Later defense platform. $1,299/month includes 500 quantum jobs, white-glove onboarding, custom SSO/SAML, real-time FIPS 203/204/205 compliance reporting, dedicated Customer Success Manager, and 24/7 support. GPU-accelerated simulation handles 90%+ of workloads at zero compute cost; IBM Heron quantum hardware available for 28+ qubit circuits. Additional jobs billed at $8 per quantum job. 99.95% uptime SLA.\n",
+        "displayName": "Enterprise"
+      },
+      {
+        "id": "a870721a-2c0d-4b87-85b8-e706fa06fddb",
+        "name": "free-trial",
+        "description": "14-day trial with 10 quantum jobs for a $1.00 activation fee. Access all 6 HNDL defense tools including crypto discovery, risk assessment, compliance audit, ML-KEM key exchange, ML-DSA digital signatures, and Quantum Canary monitoring. GPU-simulated backend only. Pay-As-You-Go account required. Additional jobs billed at $15 per quantum job — upgrade to Standard ($149/mo) for 50 jobs at lower overage.\n",
+        "displayName": "Trial"
+      },
+      {
+        "id": "20d9125d-5315-4e74-8272-86f2dbbea07c",
+        "name": "lite",
+        "description": "Free tier with limited quantum circuit executions and basic AI consensus features. Includes access to simulator backends and community support.",
+        "displayName": "Trial Deprecated"
+      },
+      {
+        "id": "70fb8360-6c71-43b9-b5bb-d500f1cdd546",
+        "name": "professional",
+        "description": "Advanced HNDL defense platform with 200 quantum jobs/month, guided onboarding, API/webhook integrations, and quarterly FIPS 203/204/205 compliance reports. GPU-accelerated simulation handles 90%+ of workloads at zero compute cost; IBM Heron quantum hardware available for 28+ qubit circuits. 8-hour email support SLA. Overage: $10/job. 99.5% uptime SLA. Annual option: $4,990/year (2 months free).",
+        "displayName": "Professional"
+      },
+      {
+        "id": "7e67220b-a32e-44b3-8ad9-e73aaa3986d7",
+        "name": "standard",
+        "description": "Production-ready HNDL defense platform for teams. $299/month includes 50 quantum jobs with all 6 HNDL tools, API access, monthly FIPS 203/204/205 compliance reports, and email support with 24-hour SLA. GPU-accelerated simulation handles 90%+ of workloads at zero compute cost. Additional jobs billed at $12 per quantum job. 99% uptime SLA. ",
+        "displayName": "Standard"
+      }
+    ],
+    "description": "HNDL defense on real quantum hardware. 6 tools: crypto discovery, risk scoring, NIST PQC audit, ML-KEM, ML-DSA & canary monitoring",
+    "longDescription": "## What is Quantum Swarm?\n\n**Quantum Swarm** is the *enterprise's first-line defense* against the most dangerous cryptographic threat active today: **Harvest Now, Decrypt Later (HNDL).** Nation-state adversaries are *already* intercepting and stockpiling your encrypted traffic, banking on quantum computers breaking **RSA** and **ECC** within the next **3–9 years.** Quantum Swarm gives your CISO team a **6-step, 6-tool workflow** to discover what is exposed, score the risk, audit compliance, migrate to quantum-safe standards, and monitor for quantum breakthroughs — *all through a single watsonx Orchestrate agent running on real quantum hardware.*\n\n> Every assessment executes across **913 physical qubits** on six **IBM Quantum Heron** processors. **90% of workloads** are GPU-accelerated at *zero extra cost.* These are not simulations — these are **production quantum circuits executing today.**\n\n---\n\n## The Threat Is Active — Not Theoretical\n\n*Every file, communication, and transaction your organization encrypted in the last decade is already a target.* The attack requires no quantum computer today — only storage. The decryption happens later, when the hardware arrives.\n\nThe U.S. government has already responded:\n\n- 🟡 **NIST FIPS 203** (ML-KEM) — *quantum-safe key exchange, finalized 2024*\n- 🟡 **NIST FIPS 204** (ML-DSA) — *quantum-safe digital signatures, finalized 2024*\n- 🟡 **NIST FIPS 205** (SLH-DSA) — *hash-based signatures, finalized 2024*\n\nFederal agencies must complete migration by **2030.** Regulated industries face the same timeline. **Every month of delay is measurable exposure.**\n\n---\n\n## Six Purpose-Built Tools — One Agent, Zero Gaps\n\n**① Crypto Discovery** *(free at all tiers)* — `hndl_crypto_discovery` scans enterprise endpoints for quantum-vulnerable TLS certificates, SSH keys, code signing certs, and cipher suites. Returns a full HNDL exposure inventory. *Run this first — before any other step.*\n\n**② HNDL Risk Assessment** — `hndl_risk_score` models exactly when your current encryption becomes breakable across three quantum threat scenarios: *2029 conservative, 2031 moderate, 2035 optimistic.* Every encrypted asset receives a **composite risk score** based on algorithm strength, data sensitivity, and retention period.\n\n**③ PQC Compliance Audit** — `pqc_compliance_audit` scans your cryptographic infrastructure against all three **NIST post-quantum standards** and returns a **compliance scorecard** with remediation priorities — mapped to FIPS 203, 204, and 205.\n\n**④ ML-KEM Key Exchange Migration** — `ml_kem_key_exchange` replaces vulnerable RSA and Diffie-Hellman with **CRYSTALS-Kyber** — the NIST-standardized quantum-safe key encapsulation mechanism. Supports *ML-KEM-768* and *ML-KEM-1024* security levels.\n\n**⑤ ML-DSA Digital Signature Migration** — `ml_dsa_sign` replaces RSA and ECDSA with **CRYSTALS-Dilithium** — the NIST-standardized quantum-safe signature scheme. Supports *ML-DSA-65* and *ML-DSA-87* security levels.\n\n**⑥ Quantum Canary Monitor** *(the early warning layer no classical tool can provide)* — Five **ECDSA challenge wallets** at escalating security tiers (64-bit through 256-bit) act as live quantum tripwires. When a quantum computer reaches the power to break each tier, the canary triggers — *giving your team advance warning measured in years, not days.*\n\n---\n\n## What You Get\n\n*One watsonx Orchestrate agent. Six purpose-built tools. Complete HNDL coverage from exposure discovery through post-quantum migration.*\n\n**Every operation is cryptographically signed, audit-logged, and backed by IBM Quantum Network-verified hardware.** Use `hndl_crypto_discovery` for a free exposure inventory, `hndl_risk_score` for quantified risk, or run the full 6-step workflow for enterprise-wide post-quantum readiness. Your auditors receive *quantified risk evidence and a compliance scorecard* — not a framework document.\n\n*Transparent pricing. No per-qubit surcharges. Full access to all six tools at your tier's job volume.*\n",
+    "displayName": "Quantum Swarm",
+    "imageUrl": "https://epochcore-brand.pages.dev/logo-transparent.svg",
+    "localSvgIcon": "/generated/icons/74f3f24b-d48a-4d3a-933a-e72e0f0bcc16.svg",
+    "localPngIcon": "/generated/icons/74f3f24b-d48a-4d3a-933a-e72e0f0bcc16.png"
   },
   {
     "geo_tags": [
@@ -20271,12 +20579,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
