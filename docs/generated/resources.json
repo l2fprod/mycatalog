@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5640,6 +5640,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5653,8 +5654,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "in-che",
-      "au-syd"
+      "in-che"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5983,16 +5983,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
+      "eu-es",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-de"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6148,13 +6148,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7654,7 +7654,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7666,7 +7665,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -9213,14 +9213,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9739,19 +9739,19 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "in-che",
+      "ca-tor",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "jp-osa",
       "in-mum",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "au-syd",
-      "in-che",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "eu-es"
+      "ca-mon",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11179,10 +11179,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -15113,6 +15113,59 @@
     "geo_tags": [
       "global"
     ],
+    "id": "2c629b28-7a8f-4067-9ce7-9eccb7d82c75",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "sauce-labs-rdc-agent",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "andriod",
+      "custom_kind_service",
+      "device testing",
+      "free",
+      "global",
+      "ibm_third_party",
+      "ios",
+      "live testing",
+      "manual testing",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "6cff60e8-3313-4795-9939-8118f71a6c3f",
+        "name": "do-not-use-1",
+        "description": "Place holder for a free plan",
+        "displayName": "DO NOT USE 1"
+      },
+      {
+        "id": "413f53dd-e842-431d-bc2a-f7e4cf0538e7",
+        "name": "subscription",
+        "description": "Monthly billing is based on the peak concurrency reached at any point during the billing period, at a rate of $200 per concurrent device available to your Sauce Labs accout.\n\nNote: An active Real Device subscription and API License Key is required to use the Sauce Labs Real Device Cloud",
+        "displayName": "Subscription"
+      }
+    ],
+    "description": "Sauce Labs Real Device Cloud Agent transforms your private device cloud on Sauce Labs into a conversational AI interface ",
+    "longDescription": "Sauce Labs Real Device Cloud brings real device testing directly into your watsonx Orchestrate workflow — no testing pipelines, no specialized consoles, no engineers required.\n\nPowered by the Sauce Labs Real Device Cloud, this agent allows technical and non-technical teams to trigger live device testing and receive instant quality reports through a simple, conversational interface. Whether you're validating a production release or verifying a critical user journey, Sauce Labs Real Device Cloud delivers the confidence to release — without the complexity of traditional testing infrastructure.\n\nBy embedding quality directly into orchestration workflows, Sauce Labs makes testing accessible to every team — turning what was once a specialized, technical process into an automated step anyone can trigger and understand.\n\nNote: An active Real Device subscription and API License Key is required to use the Sauce Real Device Cloud.",
+    "displayName": "Sauce Labs Real Device Cloud",
+    "imageUrl": "https://avatars.githubusercontent.com/u/21206035",
+    "localPngIcon": "/generated/icons/2c629b28-7a8f-4067-9ce7-9eccb7d82c75.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
     "kind": "service",
     "metadata": {
@@ -17095,7 +17148,7 @@
       {
         "id": "2fa05740-fdda-4bb3-91c2-03a56facd2a4",
         "name": "monthly",
-        "description": "TapestryX is billed monthly per node at the rate of $2,000.",
+        "description": "TapestryX is billed monthly per node at the rate of $3,000.",
         "displayName": "Monthly"
       }
     ],
@@ -20428,12 +20481,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -20654,12 +20707,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
