@@ -5472,6 +5472,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5481,11 +5485,7 @@
       "par01",
       "us-east",
       "us-south",
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "in-che"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5640,8 +5640,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5654,7 +5652,9 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "in-che"
+      "in-che",
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5983,15 +5983,15 @@
   },
   {
     "geo_tags": [
+      "eu-es",
       "us-south",
+      "au-syd",
+      "us-east",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "eu-es",
-      "au-syd",
-      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -6148,13 +6148,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7654,6 +7654,7 @@
   },
   {
     "geo_tags": [
+      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7665,8 +7666,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-che"
+      "us-south"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -9213,14 +9213,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9739,19 +9739,19 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "in-che",
+      "in-mum",
       "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao",
       "jp-osa",
-      "in-mum",
       "jp-tok",
       "us-east",
-      "ca-mon",
-      "au-syd"
+      "au-syd",
+      "eu-es",
+      "eu-gb",
+      "br-sao",
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11179,10 +11179,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14913,6 +14913,48 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/openshift/artifacts/cache/bf27a361e68466aaada29974521faee1-public/openshift_icon_32_2.svg",
     "localSvgIcon": "/generated/icons/openshift.svg",
     "localPngIcon": "/generated/icons/openshift.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "5b9a4e88-bc58-4768-9237-8a5e75096b13",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "netsmartz-llc-resume-scoring-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "global",
+      "hr",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "resume-scoring",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "5786c1c5-7d4d-49d3-aa1b-0a28ddaec5cd",
+        "name": "scoring-plan",
+        "description": "Plan per volume consumption",
+        "displayName": "Scoring Plan"
+      }
+    ],
+    "description": "A smart, unbiased resume evaluation assistant that helps recruiters and hiring teams score and summarize candidate resume",
+    "longDescription": "Overview\n\nThe HR Resume Scoring Agent is an AI-powered assistant designed to support recruiters, hiring managers, and HR teams in evaluating candidate resumes against a specific job description. The agent analyzes resumes using a transparent, job-related scoring rubric and produces structured, human-readable summaries that help HR teams make consistent and informed shortlisting decisions.\n\nThe agent operates as a decision-support tool rather than a decision-maker. It is designed to work across industries, roles, and seniority levels, making it suitable for both technical and non-technical hiring scenarios. By standardizing resume evaluation, the agent helps reduce subjectivity and improve consistency across hiring processes.\n\n\n\nPurpose and Value\n\nThe primary purpose of the HR Resume Scoring Agent is to streamline resume screening while improving fairness, transparency, and auditability. Resume reviews are often time-consuming and inconsistent across reviewers; this agent addresses those challenges by applying a consistent, clearly defined evaluation framework.\n\nThe agent provides clear visibility into why a candidate scores a certain way by grounding each assessment in job-related evidence from the resume. This improves trust in the screening process and enables HR teams to justify shortlisting decisions during internal reviews or audits.\n\n\n\nCore Capabilities\n\nThe HR Resume Scoring Agent evaluates resumes strictly against a job description provided by the user. It parses the job description to identify must-have and nice-to-have requirements and analyzes resumes to extract relevant experience, skills, education, certifications, achievements, and domain exposure.\n\nThe agent supports both single-candidate and multi-candidate evaluations. When multiple resumes are provided, it generates individual scorecards for each candidate and produces a comparison view that highlights relative strengths, gaps, and overall ranking. This enables recruiters to compare candidates efficiently and consistently.\n\n\n\nScoring and Evaluation Approach\n\nThe agent uses a transparent scoring rubric that assesses candidates across multiple job-related dimensions, such as skills match, relevance of experience, measurable achievements, education or certifications, and clarity of resume content. Default weights are applied unless the user specifies a custom rubric.\n\nIn addition to numeric scores, the agent identifies risk indicators such as missing mandatory requirements, unclear timelines, unexplained gaps, or vague impact statements. These risk indicators are reported separately to ensure clarity and to avoid conflating concerns with overall scoring.\n\n\n\nExplainability and Auditability\n\nA key strength of the HR Resume Scoring Agent is explainability. Every non-trivial evaluation point is supported by short evidence snippets from the resume or explicitly marked as unclear when information is missing. This ensures that outputs are easy to review, validate, and defend.\n\nThe agent produces structured summaries that include overall scores, strengths, gaps, must-have alignment, interview focus areas, and suggested follow-up questions. This structured output makes the agent’s assessments suitable for internal HR documentation \n\nResponsible and Bias-Aware Screening\n\nThe HR Resume Scoring Agent is designed to support responsible and inclusive hiring practices. It does not use protected or sensitive personal characteristics such as age, gender, race, religion, caste, disability, marital status, nationality, or political views in scoring or reasoning.\n\nIf such information appears in a resume, it is ignored entirely and not referenced in the output. All evaluations are based strictly on job-related criteria, helping reduce bias and ensure fair treatment of candidates across different backgrounds.\n\n\n\nPrivacy and Data Handling\n\nThe agent operates only on text explicitly provided by the user in the conversation. It does not access external systems, databases, or proprietary company information. Personal identifiers such as contact details, if present in resumes, are not repeated in the output.\n\nThis approach ensures privacy, transparency, and suitability for use in enterprise and regulated HR environments.\n\n\n\nPractical Output and Usage\n\nThe output produced by the HR Resume Scoring Agent is designed to be immediately usable by HR professionals. Summaries are clearly structured, concise, and focused on decision-relevant information. Interviewers and recruiters can use the output to guide shortlisting, prepare targeted interview questions, and align hiring discussions across teams.\n\nBy combining structured scoring, explainability, and bias-aware evaluation, the HR Resume Scoring Agent helps organizations improve efficiency, consistency, and confidence in resume screening.\n\n\n",
+    "displayName": "RESUME SCORING AGENT",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBrb-vACALNssvX8y7EWwjajJeEG2L94NIg&s",
+    "localPngIcon": "/generated/icons/5b9a4e88-bc58-4768-9237-8a5e75096b13.png"
   },
   {
     "geo_tags": [
@@ -20399,12 +20441,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20481,12 +20523,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -20707,12 +20749,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
