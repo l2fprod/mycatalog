@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5474,11 +5474,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5487,7 +5482,12 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5642,7 +5642,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5656,7 +5655,8 @@
       "us-east",
       "us-south",
       "in-che",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5985,16 +5985,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "eu-es",
       "us-south",
       "eu-gb",
       "eu-de",
       "fra02",
+      "eu-es",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6150,13 +6150,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7656,7 +7656,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7668,7 +7667,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che"
     ],
     "id": "6a7f4e38-f218-48ef-9dd2-df408747568e",
     "kind": "service",
@@ -9741,19 +9741,19 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "in-che",
+      "jp-osa",
       "in-mum",
+      "jp-tok",
+      "us-east",
       "ca-tor",
+      "ca-mon",
+      "br-sao",
       "eu-es",
       "eu-de",
       "us-south",
-      "jp-tok",
-      "us-east",
-      "ca-mon",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
-      "in-che",
-      "jp-osa"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11181,10 +11181,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14584,87 +14584,6 @@
   },
   {
     "geo_tags": [
-      "us-south"
-    ],
-    "id": "cf5f8ac0-98f7-11e9-a40c-5b3c4bf3cc6d",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "raxak-protect",
-    "pricing_tags": [
-      "free",
-      "lite",
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "security",
-      "custom_kind_service",
-      "free",
-      "ibm_release",
-      "ibm_third_party",
-      "lite",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "supports_syndication",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "114d1283-4cdf-47f5-8212-21503cc46cac",
-        "name": "lite",
-        "description": "Trial plan for initial demonstration purposes only.",
-        "displayName": "Lite",
-        "originalName": "lite"
-      },
-      {
-        "id": "d79d777e-dd44-42a6-bedf-0a1ec6ce70cd",
-        "name": "unlimited",
-        "description": "This plan allows you to have any number of resources simultaneously enrolled in the Raxak Protect managed security configuration service. You can downgrade the plan to any other paid plan without losing access to the enrolled resources as long as the number of enrolled resources does not conflict with the new plan capacity.",
-        "displayName": "Unlimited Plan",
-        "originalName": "unlimited"
-      },
-      {
-        "id": "4f4c966a-e027-4ddd-bd39-89b2a2e5bbca",
-        "name": "upto10",
-        "description": "This plan allows you to have up to 10 resources simultaneously enrolled in the Raxak Protect managed security configuration service. You can change the plan to any other paid plan without losing access to the enrolled resources as long as the number of enrolled resources does not conflict with the plan capacity.",
-        "displayName": "Up to 10 Servers",
-        "originalName": "upto10"
-      },
-      {
-        "id": "035454ca-3d01-4c77-b158-a08fd2419c67",
-        "name": "upto100",
-        "description": "This plan allows you to have up to 100 resources simultaneously enrolled in the Raxak Protect managed security configuration service. You can change the plan to any other paid plan without losing access to the enrolled resources as long as the number of enrolled resources does not conflict with the new plan capacity.",
-        "displayName": "Up to 100 Servers",
-        "originalName": "upto100"
-      },
-      {
-        "id": "8ce6c37a-6ac6-465e-bb05-6a0f11248f24",
-        "name": "upto50",
-        "description": "This plan allows you to have up to 50 resources simultaneously enrolled in the Raxak Protect managed security configuration service. You can change the plan to any other paid plan without losing access to the enrolled resources as long as the number of enrolled resources does not conflict with the new plan capacity.",
-        "displayName": "Up to 50 Servers",
-        "originalName": "upto50"
-      },
-      {
-        "id": "395678ff-fa48-4267-b8dc-d4918aae2679",
-        "name": "upto500",
-        "description": "This plan allows you to have up to 500 resources simultaneously enrolled in the Raxak Protect managed security configuration service. You can change the plan to any other paid plan without losing access to the enrolled resources as long as the number of enrolled resources does not conflict with the new plan capacity.",
-        "displayName": "Up to 500 Servers",
-        "originalName": "upto500"
-      }
-    ],
-    "description": "Automated Comprehensive Security Configuration Management for Servers",
-    "longDescription": "Raxak Protect automates security compliance across private and public clouds. Using the SaaS tool or managed service, developers can deploy cloud apps quickly, cost-effectively, and without error. Raxak Protect allows you to apply security profiles to your servers (VMs or bare-metal) based on recommendations from DISA, NIST, and other regulatory agencies including PCI, HIPAA, FFIEC, and FISMA.",
-    "displayName": "Raxak Protect",
-    "imageUrl": "https://demo.cloudraxak.net/static/CR32.svg",
-    "localPngIcon": "/generated/icons/cf5f8ac0-98f7-11e9-a40c-5b3c4bf3cc6d.png"
-  },
-  {
-    "geo_tags": [
       "global"
     ],
     "id": "9fe9ec96-198e-47d4-a3cf-877cd37cb67d",
@@ -15174,7 +15093,6 @@
     },
     "name": "sauce-labs-rdc-agent",
     "pricing_tags": [
-      "free",
       "paid",
       "paid_only"
     ],
@@ -15183,7 +15101,6 @@
       "andriod",
       "custom_kind_service",
       "device testing",
-      "free",
       "global",
       "ibm_third_party",
       "ios",
@@ -15196,12 +15113,6 @@
       "watson"
     ],
     "plans": [
-      {
-        "id": "6cff60e8-3313-4795-9939-8118f71a6c3f",
-        "name": "do-not-use-1",
-        "description": "Place holder for a free plan",
-        "displayName": "DO NOT USE 1"
-      },
       {
         "id": "413f53dd-e842-431d-bc2a-f7e4cf0538e7",
         "name": "subscription",
@@ -17890,7 +17801,6 @@
     "longDescription": "IBM Verify provides Single Sign-On (SSO), multi-factor authentication (MFA), identity governance, and identity lifecycle controls for internal (workforce) and external (consumer) user types.",
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
-    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -18588,6 +18498,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -18629,8 +18540,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
