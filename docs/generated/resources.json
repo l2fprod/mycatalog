@@ -5642,6 +5642,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5655,8 +5656,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "in-che",
-      "au-syd"
+      "in-che"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5988,11 +5988,11 @@
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "fra02",
       "eu-es",
       "us-south"
     ],
@@ -6150,13 +6150,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7196,7 +7196,7 @@
       }
     ],
     "description": "Simply and intuitively deploy and manage virtual desktops and apps on IBM Cloud VPC.",
-    "longDescription": "Dizzion Flex enables clients to simply and intuitively deploy and manage their virtual desktop and app workloads on IBM Cloud VPC, leveraging Dizzion’s cloud-native Frame Desktop as a Service (DaaS) platform. Users securely access the apps, data, and resources they need to be productive from the comfort of their favorite web browser – no clients or plug-ins required. Admins can deploy thousands of digital workspaces across the globe in minutes and enjoy powerful enterprise features all managed from a single pane-of-glass web console. With Dizzion Flex on IBM Cloud VPC, organizations are well-prepared to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\n \n- - - \n\n\nFor sales support, reach out to Dizzion directly at channel@dizzion.com.",
+    "longDescription": "Dizzion Flex enables clients to simply and intuitively deploy and manage their virtual desktop and app workloads on IBM Cloud VPC, leveraging Dizzion’s cloud-native Frame Desktop as a Service (DaaS) platform. Users securely access the apps, data, and resources they need to be productive from the comfort of their favorite web browser – no clients or plug-ins required. Admins can deploy thousands of digital workspaces across the globe in minutes and enjoy powerful enterprise features all managed from a single pane-of-glass web console. With Dizzion Flex on IBM Cloud VPC, organizations are well-prepared to address the challenges (and reap the benefits) of the modern workplace and workforce by significantly improving the agility, security, and capabilities of their end-user computing strategy.\n\n \n- - - \n\n\nFor sales support, reach out to Dizzion directly at ibm@dizzion.com.",
     "displayName": "Dizzion Flex",
     "imageUrl": "https://c3s.dizzion.com/dizzion_product_icon.png",
     "localPngIcon": "/generated/icons/6fc0c2df-7fbc-470f-aac5-a93af7ef4a92.png"
@@ -9215,14 +9215,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9741,19 +9741,19 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "jp-osa",
-      "in-mum",
-      "jp-tok",
-      "us-east",
-      "ca-tor",
-      "eu-es",
+      "ca-mon",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "in-che",
-      "ca-mon",
-      "eu-de",
-      "us-south"
+      "jp-osa",
+      "in-mum",
+      "eu-es",
+      "au-syd",
+      "jp-tok",
+      "us-east",
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14673,12 +14673,27 @@
       "allow_internal_users",
       "apidocs_enabled",
       "custom_kind_service",
+      "genai",
+      "generative",
+      "gpt",
+      "granite",
       "iam_compatible",
       "ibm_created",
+      "inference",
+      "inferencing",
+      "llama",
+      "llm",
+      "managed",
+      "mistral",
+      "models",
+      "openai",
+      "openshift ai",
       "paid",
       "rc_compatible",
       "support_ibm",
-      "us-east"
+      "us-east",
+      "vllm",
+      "watson"
     ],
     "plans": [
       {
@@ -14689,10 +14704,10 @@
         "originalName": "instructlab-pricing-plan"
       }
     ],
-    "description": "Simplify, scale, and secure the alignment of LLMs - addressing the challenges in ownership, accuracy, and efficiency.",
-    "longDescription": "Red Hat AI InstructLab deployed as a service on IBM Cloud is designed to simplify, scale, and secure the training and deployment of AI models. By simplifying InstructLab model creation, organizations can build highly accurate and efficient models while retaining ownership of their data.",
-    "displayName": "Red Hat AI InstructLab",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/instructlab/artifacts/cache/0b184cd7c07b50616b928f190101dbf6-public/RedHatAIInstructLabOnIBMCloud-light.svg",
+    "description": "Use production‑ready AI models with no operational overhead and built‑in enterprise security, compliance, and cost control",
+    "longDescription": "Red Hat AI Inference on IBM Cloud provides production‑ready AI models with no operational overhead and built‑in enterprise security, compliance, and cost control. The model alignment capability (InstructLab) enables organizations to fine-tune highly accurate and efficient models while retaining ownership of their data.",
+    "displayName": "Red Hat AI Inference",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/instructlab/artifacts/cache/bff745685cc004e5a1fdb590871c7e15-public/RedHatAIInferenceOnIBMCloud.svg",
     "localSvgIcon": "/generated/icons/instructlab.svg",
     "localPngIcon": "/generated/icons/instructlab.png"
   },
@@ -16198,12 +16213,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17228,12 +17243,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20363,12 +20378,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20445,12 +20460,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
