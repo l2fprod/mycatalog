@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5468,7 +5468,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5636,13 +5636,12 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5656,7 +5655,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "in-che"
+      "in-che",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5810,7 +5810,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -5985,16 +5985,16 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6150,13 +6150,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9215,14 +9215,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9741,19 +9741,19 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "in-mum",
+      "ca-tor",
+      "eu-es",
+      "au-syd",
+      "in-che",
+      "jp-osa",
+      "jp-tok",
+      "us-east",
       "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "eu-es",
-      "au-syd",
-      "jp-tok",
-      "us-east",
-      "ca-tor"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11113,7 +11113,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -16213,12 +16213,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17771,6 +17771,60 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-veeam.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-veeam.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "0f7a69f2-f6bf-48f5-aea0-fb9383720e6e",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "dataworks-research-srl-veridion-agent",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "company data",
+      "company enrichment",
+      "company intelligence",
+      "company profiles",
+      "custom_kind_service",
+      "entity resolution",
+      "firmographics",
+      "free",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "1ddfc3fb-d2df-4b75-9c94-52cae115ec3b",
+        "name": "free-trial",
+        "description": "Free plan with 20 company credits. \n\nEach credit covers one company: the first time you ask a question about a company, one credit is consumed. \n\nAfter that, you can ask unlimited follow-up questions about the same company without using additional credits. \n\nThe agent answers using enriched firmographic and profile data powered by Veridion company data.\n\nDesigned for evaluation and demos.\n",
+        "displayName": "Free trial"
+      },
+      {
+        "id": "86ea17bc-3e96-4a14-a042-4f8a2a657b50",
+        "name": "standard",
+        "description": "Monthly instance plan for $1,500, includes 2,000 company credits per month. \n\nEach credit unlocks one company, the first time you ask a question about that company. \n\nAfter that, you can ask unlimited follow-up questions about the same company without using additional credits. \n\nThe agent answers using enriched firmographic and profile data powered by Veridion company data.",
+        "displayName": "Standard"
+      }
+    ],
+    "description": "Ask questions about any company, get structured answers powered by Veridion company data.\n",
+    "longDescription": "Veridion Company Data enables natural language Q&A over company profiles in watsonx Orchestrate.\n\n\n\n\nAsk questions about any company, and the agent retrieves structured company data from Veridion to produce a clear, actionable answer.\n\n\n\n\nBehind the scenes, the agent uses an IBM tool integration to call Veridion’s Match & Enrich API directly.\n\n\n\n\nIt resolves the correct company entity from inputs like company name, website, and country, then retrieves enriched firmographic and profile data.\n\n\n\n\nThe agent uses this enriched data to answer the user’s questions.\n\n\n",
+    "displayName": "Veridion",
+    "imageUrl": "https://veridion.com/wp-content/uploads/2026/03/veridion-symbol-on-dark-1.png",
+    "localPngIcon": "/generated/icons/0f7a69f2-f6bf-48f5-aea0-fb9383720e6e.png"
   },
   {
     "geo_tags": [
@@ -20460,12 +20514,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
