@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5468,7 +5468,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5636,13 +5636,12 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5656,7 +5655,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "in-che"
+      "in-che",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5985,15 +5985,15 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
-      "us-east",
-      "fra02",
       "eu-es",
-      "eu-gb",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "au-syd",
+      "us-east",
+      "fra02",
+      "eu-gb",
       "eu-de"
     ],
     "id": "dashdb-for-transactions",
@@ -9215,14 +9215,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9742,18 +9742,18 @@
   {
     "geo_tags": [
       "jp-osa",
+      "ca-tor",
+      "au-syd",
+      "eu-gb",
+      "in-che",
       "in-mum",
       "jp-tok",
       "us-east",
+      "ca-mon",
       "eu-es",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "in-che",
-      "ca-tor",
-      "ca-mon",
-      "au-syd"
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14376,8 +14376,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -17243,12 +17243,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -18568,7 +18568,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -18610,7 +18609,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -20369,8 +20369,7 @@
       "allow_internal_users",
       "paid_only",
       "free",
-      "lite",
-      "subscription"
+      "lite"
     ],
     "tags": [
       "allow_internal_users",
@@ -20387,7 +20386,6 @@
       "lite",
       "paid_only",
       "rc_compatible",
-      "subscription",
       "support_ibm",
       "us-east",
       "us-south",
