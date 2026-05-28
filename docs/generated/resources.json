@@ -5641,8 +5641,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5655,7 +5653,9 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-che",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5984,16 +5984,16 @@
   },
   {
     "geo_tags": [
-      "fra02",
-      "eu-es",
       "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "eu-gb",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6149,13 +6149,13 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9116,14 +9116,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9642,19 +9642,19 @@
   },
   {
     "geo_tags": [
-      "in-mum",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "ca-mon",
       "eu-de",
       "us-south",
+      "ca-tor",
+      "ca-mon",
+      "eu-es",
       "au-syd",
+      "eu-gb",
+      "br-sao",
       "in-che",
       "jp-osa",
-      "eu-es",
-      "eu-gb",
-      "br-sao"
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14480,7 +14480,6 @@
     "longDescription": "## What is Quantum Swarm?\n\n**Quantum Swarm** is the *enterprise's first-line defense* against the most dangerous cryptographic threat active today: **Harvest Now, Decrypt Later (HNDL).** Nation-state adversaries are *already* intercepting and stockpiling your encrypted traffic, banking on quantum computers breaking **RSA** and **ECC** within the next **3–9 years.** Quantum Swarm gives your CISO team a **6-step, 6-tool workflow** to discover what is exposed, score the risk, audit compliance, migrate to quantum-safe standards, and monitor for quantum breakthroughs — *all through a single watsonx Orchestrate agent running on real quantum hardware.*\n\n> Every assessment executes across **913 physical qubits** on six **IBM Quantum Heron** processors. **90% of workloads** are GPU-accelerated at *zero extra cost.* These are not simulations — these are **production quantum circuits executing today.**\n\n---\n\n## The Threat Is Active — Not Theoretical\n\n*Every file, communication, and transaction your organization encrypted in the last decade is already a target.* The attack requires no quantum computer today — only storage. The decryption happens later, when the hardware arrives.\n\nThe U.S. government has already responded:\n\n- 🟡 **NIST FIPS 203** (ML-KEM) — *quantum-safe key exchange, finalized 2024*\n- 🟡 **NIST FIPS 204** (ML-DSA) — *quantum-safe digital signatures, finalized 2024*\n- 🟡 **NIST FIPS 205** (SLH-DSA) — *hash-based signatures, finalized 2024*\n\nFederal agencies must complete migration by **2030.** Regulated industries face the same timeline. **Every month of delay is measurable exposure.**\n\n---\n\n## Six Purpose-Built Tools — One Agent, Zero Gaps\n\n**① Crypto Discovery** *(free at all tiers)* — `hndl_crypto_discovery` scans enterprise endpoints for quantum-vulnerable TLS certificates, SSH keys, code signing certs, and cipher suites. Returns a full HNDL exposure inventory. *Run this first — before any other step.*\n\n**② HNDL Risk Assessment** — `hndl_risk_score` models exactly when your current encryption becomes breakable across three quantum threat scenarios: *2029 conservative, 2031 moderate, 2035 optimistic.* Every encrypted asset receives a **composite risk score** based on algorithm strength, data sensitivity, and retention period.\n\n**③ PQC Compliance Audit** — `pqc_compliance_audit` scans your cryptographic infrastructure against all three **NIST post-quantum standards** and returns a **compliance scorecard** with remediation priorities — mapped to FIPS 203, 204, and 205.\n\n**④ ML-KEM Key Exchange Migration** — `ml_kem_key_exchange` replaces vulnerable RSA and Diffie-Hellman with **CRYSTALS-Kyber** — the NIST-standardized quantum-safe key encapsulation mechanism. Supports *ML-KEM-768* and *ML-KEM-1024* security levels.\n\n**⑤ ML-DSA Digital Signature Migration** — `ml_dsa_sign` replaces RSA and ECDSA with **CRYSTALS-Dilithium** — the NIST-standardized quantum-safe signature scheme. Supports *ML-DSA-65* and *ML-DSA-87* security levels.\n\n**⑥ Quantum Canary Monitor** *(the early warning layer no classical tool can provide)* — Five **ECDSA challenge wallets** at escalating security tiers (64-bit through 256-bit) act as live quantum tripwires. When a quantum computer reaches the power to break each tier, the canary triggers — *giving your team advance warning measured in years, not days.*\n\n---\n\n## What You Get\n\n*One watsonx Orchestrate agent. Six purpose-built tools. Complete HNDL coverage from exposure discovery through post-quantum migration.*\n\n**Every operation is cryptographically signed, audit-logged, and backed by IBM Quantum Network-verified hardware.** Use `hndl_crypto_discovery` for a free exposure inventory, `hndl_risk_score` for quantified risk, or run the full 6-step workflow for enterprise-wide post-quantum readiness. Your auditors receive *quantified risk evidence and a compliance scorecard* — not a framework document.\n\n*Transparent pricing. No per-qubit surcharges. Full access to all six tools at your tier's job volume.*\n",
     "displayName": "Quantum Swarm",
     "imageUrl": "https://epochcore-brand.pages.dev/logo-transparent.svg",
-    "localSvgIcon": "/generated/icons/74f3f24b-d48a-4d3a-933a-e72e0f0bcc16.svg",
     "localPngIcon": "/generated/icons/74f3f24b-d48a-4d3a-933a-e72e0f0bcc16.png"
   },
   {
@@ -17144,12 +17143,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20640,12 +20639,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
