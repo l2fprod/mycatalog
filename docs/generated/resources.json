@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5475,20 +5475,18 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
-      "ca-mon",
       "ca-tor",
       "che01",
       "eu-es",
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5506,7 +5504,6 @@
       "allow_internal_users",
       "au-syd",
       "br-sao",
-      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "che01",
@@ -5524,7 +5521,6 @@
       "fss",
       "hipaa",
       "ibm_created",
-      "in-che",
       "jp-osa",
       "jp-tok",
       "paid_only",
@@ -5643,6 +5639,10 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "au-syd",
+      "che01",
+      "in-mum",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5654,11 +5654,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "in-che",
-      "au-syd",
-      "che01",
-      "in-mum"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5988,16 +5984,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "eu-es",
+      "us-south",
+      "eu-de",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "au-syd",
       "us-east",
-      "fra02",
-      "us-south"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6153,13 +6149,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9122,14 +9118,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9648,19 +9644,19 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "in-che",
+      "br-sao",
       "in-mum",
       "jp-tok",
       "us-east",
+      "ca-tor",
       "ca-mon",
       "eu-es",
+      "in-che",
+      "jp-osa",
+      "eu-de",
+      "us-south",
       "au-syd",
-      "br-sao",
-      "jp-osa"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10662,7 +10658,7 @@
     "description": "Elastic Load Balancer as a service with core load balancing features and flexible usage-based pricing.",
     "longDescription": "Deploy IBM Cloud Load balancer for VPC in front of application servers to distribute incoming user traffic, providing protection against failure of an individual application server instance. You can seamlessly scale your applications by adding or removing servers. with minimal to no disruption to existing traffic flows.\n\n##### Application load balancer (ALB)\n\nBoth public and private ALBs provide layer-7 and layer-4 load balancing on IBM Cloud, supporting SSL offloading. The incoming and outgoing packets flow through the load balancer, which distributes data traffic based on configured policies and rules. When incoming requests match the rules that are associated with a policy, that policy defines how the load balancer distributes its traffic.\n\n##### Network load balancer (NLB)\n\nAn NLB provides only layer-4 load balancing on IBM Cloud, and does not support SSL offloading. The NLB is zonal, which means that the members must be in the same zone as the load balancer. The client sends public network traffic to the NLB, which forwards it to its targets. These targets then respond directly to the client by using Direct Server Return (DSR). The load balancer does not perform a check on the contents of the packet. Since Layer 4 network load balancing only processes ingress traffic, it is ideal for workloads that require high throughput and low latency.\n\n[Compare offerings](/docs/vpc?topic=vpc-nlb-vs-elb)",
     "displayName": "Load Balancer for VPC",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.load-balancer/artifacts/cache/051fbaac0ac21848fbe1685054d5e189-public/LBaaS_icon.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.load-balancer/artifacts/cache/15f2c1870b3404910ea20bb794e052f3-public/Load_Balancer_VPC_CloudPAL.svg",
     "localSvgIcon": "/generated/icons/is.load-balancer.svg",
     "localPngIcon": "/generated/icons/is.load-balancer.png"
   },
@@ -17149,12 +17145,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20275,7 +20271,8 @@
       "allow_internal_users",
       "paid_only",
       "free",
-      "lite"
+      "lite",
+      "subscription"
     ],
     "tags": [
       "allow_internal_users",
@@ -20292,6 +20289,7 @@
       "lite",
       "paid_only",
       "rc_compatible",
+      "subscription",
       "support_ibm",
       "us-east",
       "us-south",
@@ -20645,12 +20643,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
