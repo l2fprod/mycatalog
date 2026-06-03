@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5984,16 +5984,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "fra02",
+      "us-south",
       "eu-de",
       "au-syd",
-      "us-east",
-      "us-south",
-      "fra02",
-      "eu-es"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9118,14 +9118,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9645,18 +9645,18 @@
   {
     "geo_tags": [
       "in-mum",
+      "ca-tor",
+      "ca-mon",
       "au-syd",
+      "jp-tok",
+      "us-east",
+      "eu-es",
+      "eu-de",
+      "us-south",
       "eu-gb",
       "br-sao",
       "in-che",
-      "jp-osa",
-      "jp-tok",
-      "us-east",
-      "ca-tor",
-      "ca-mon",
-      "eu-es",
-      "eu-de",
-      "us-south"
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11084,10 +11084,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -12212,6 +12212,62 @@
     "imageUrl": "https://www.biworldwide.com/wp-content/uploads/2025/11/BIW_corp_lockup_rgb_2025-1.svg",
     "localSvgIcon": "/generated/icons/2d0c11be-3248-470c-8fc8-45cbeab01f1b.svg",
     "localPngIcon": "/generated/icons/2d0c11be-3248-470c-8fc8-45cbeab01f1b.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "d59f76a6-de3a-4066-8a1a-7c018bfa9ff2",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "qatt-software-ltd-novaops",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "devops",
+      "logging_monitoring",
+      "custom_kind_service",
+      "free",
+      "global",
+      "ibm_third_party",
+      "incident",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "sre",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "fe04010d-456f-46cb-938a-61f285c7c736",
+        "name": "aa",
+        "description": "Unlimited users\nAlert history\nAdvanced AI capabilities\nPriority support",
+        "displayName": "Pro"
+      },
+      {
+        "id": "b231f25c-65df-42a8-8f9d-6d223adef950",
+        "name": "free-tier",
+        "description": "All AI models\nSlack and Teams integration\nAI SRE for K8s and non-K8s environments\nAll datasources\nConnect your own MCP servers",
+        "displayName": "Free Tier"
+      },
+      {
+        "id": "84cfd5ce-426e-422c-8ca0-61050c13de6f",
+        "name": "pay-as-you-go",
+        "description": "Slack and Teams integration\nScheduled Prompts\nAI SRE for K8s and non-K8s environments\nAll data sources\nConnect your own MCP servers",
+        "displayName": "Pay-As-You-Go"
+      }
+    ],
+    "description": "Agentic AI ChatOps for DevOps, SRE, Cloud, and Operations Engineers",
+    "longDescription": "qaTT is an enterprise Agentic AI ChatOps platform that helps IBM customers reduce downtime, accelerate incident resolution, and optimize cloud operations across IBM Cloud, hybrid, and multi-cloud environments. By using a multi-agent AI system, qaTT analyzes observability and infrastructure data to identify root causes, guide remediation, and automate approved actions directly within Slack or Microsoft Teams. This enables faster MTTR, lower operational costs, and improved reliability for mission-critical systems. For IBM sellers, qaTT enhances customer value by strengthening operational outcomes, increasing platform adoption, and supporting larger cloud and services engagements, making it easier to expand existing deals and drive measurable business impact.",
+    "displayName": "NovaOps",
+    "imageUrl": "https://static.wixstatic.com/media/8155c7_af93727630f74c2ba3b07b56071b5389~mv2.png/v1/fill/w_106,h_110,al_c,lg_1,q_85,enc_avif,quality_auto/image.png",
+    "localPngIcon": "/generated/icons/d59f76a6-de3a-4066-8a1a-7c018bfa9ff2.png"
   },
   {
     "geo_tags": [
@@ -13499,6 +13555,54 @@
     "imageUrl": "https://www.wanclouds.net/images/tiles/vpc+icon.svg",
     "localSvgIcon": "/generated/icons/b260dfd6-9b79-4377-be6d-146a5cb59be8.svg",
     "localPngIcon": "/generated/icons/b260dfd6-9b79-4377-be6d-146a5cb59be8.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "3b12e75a-9d0f-4eb3-b14a-d24edf62d6d3",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "utimaco-premium-live-general-purpose-hsm-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "cloud hsm",
+      "custom_kind_service",
+      "fips",
+      "fips 140-3",
+      "general purpose hsm as a service",
+      "global",
+      "hsm as a service",
+      "hybrid cloud",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "pkcs #11",
+      "pqc",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "7c47998b-6248-4ddd-b5cf-680611c1c922",
+        "name": "premium-live-general-purpose-hsm-price-plan",
+        "description": "See documentation for more details",
+        "displayName": "premium-live-general-purpose-hsm-price-plan"
+      }
+    ],
+    "description": "Managed service with a minimum of 3 x dedicated physical HSMs (each with 12 cHSMs) deployed across 2 DCs. 99.999% availability.",
+    "longDescription": "Utimaco’s General Purpose Hardware Security Module as a Service (GP HSM aaS) provides access to secure, FIPS 140-3 Level 3 certified HSMs that are fully hosted in resilient data centers while remaining under your governance.\n \nThe service includes client-side admin tools which give you full control for your containerised HSMs (cHSMs), and client-side libraries to allow seamless integration with numerous other products and services via standard cryptographic interfaces.\n \nThe Service is ISO27001 and PCI DSS certified and operated under dual control in the same way as our PCI PIN and PCI P2PE certified payment HSM services.\n \nThis Catalog tiles covers subscription to the Premium Live service. In this service the customer has access to their own dedicated physical HSMs (each with 12 cHSMs) in two geographically separate DCs. \nFor Full details please follow the Doc link and sign up to the Service Portal.",
+    "displayName": "Premium Live General Purpose HSM Service",
+    "imageUrl": "https://utimaco.com/themes/custom/utimaco/assets/img/utimaco-logo.svg",
+    "localSvgIcon": "/generated/icons/3b12e75a-9d0f-4eb3-b14a-d24edf62d6d3.svg",
+    "localPngIcon": "/generated/icons/3b12e75a-9d0f-4eb3-b14a-d24edf62d6d3.png"
   },
   {
     "geo_tags": [
@@ -16471,6 +16575,54 @@
     "geo_tags": [
       "global"
     ],
+    "id": "78a90de7-ce8a-4466-b9f5-7d0f46b93aca",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "utimaco-standard-live-general-purpose-hsm-service",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "security",
+      "cloud hsm",
+      "custom_kind_service",
+      "fips",
+      "fips 140-3",
+      "general purpose hsm",
+      "global",
+      "hsm as a service",
+      "hybrid cloud",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "pkcs #11",
+      "pqc",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "f16b5d8b-0efe-4009-a536-747c26a72e80",
+        "name": "standard-live-general-purpose-hsm-price-plan",
+        "description": "See documentation for more details",
+        "displayName": "standard-live-general-purpose-hsm-price-plan"
+      }
+    ],
+    "description": "Managed service with 3 containerized HSMs (cHSM), each in a separate physical HSM deployed across 2 DCs. 99.999% availability.",
+    "longDescription": "Utimaco’s General Purpose Hardware Security Module as a Service (GP HSM aaS) provides access to secure, FIPS 140-3 Level 3 certified HSMs that are fully hosted in resilient data centers while remaining under your governance. \n\nThe service includes client-side admin tools which give you full control for your containerised HSMs (cHSMs), and client-side libraries to allow seamless integration with numerous other products and services via standard cryptographic interfaces.\n\nThe Service is ISO27001 and PCI DSS certified and operated under dual control in the same way as our PCI PIN and PCI P2PE certified payment HSM service.\n \nThis catalog tile covers subscription to the Standard Live service. In this service the customer has access to three dedicated cHSMs each in a different physical HSM in two geographically separate DCs.\n \nFor Full details please follow the Doc link and sign up to the Service Portal.",
+    "displayName": "Standard Live General Purpose HSM Service",
+    "imageUrl": "https://utimaco.com/themes/custom/utimaco/assets/img/utimaco-logo.svg",
+    "localSvgIcon": "/generated/icons/78a90de7-ce8a-4466-b9f5-7d0f46b93aca.svg",
+    "localPngIcon": "/generated/icons/78a90de7-ce8a-4466-b9f5-7d0f46b93aca.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "8aa72a57-b069-47e6-bf3f-8d1ced0051ed",
     "kind": "service",
     "metadata": {
@@ -17145,12 +17297,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
