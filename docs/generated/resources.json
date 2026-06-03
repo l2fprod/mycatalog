@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5475,10 +5475,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5486,7 +5482,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5639,22 +5639,22 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "au-syd",
       "che01",
-      "in-mum",
       "br-sao",
       "ca-mon",
       "ca-tor",
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5984,16 +5984,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-de",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
       "au-syd",
       "us-east",
-      "fra02"
+      "us-south",
+      "fra02",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6149,13 +6149,13 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7557,8 +7557,6 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -7567,6 +7565,8 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -9118,14 +9118,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9644,19 +9644,19 @@
   },
   {
     "geo_tags": [
-      "br-sao",
       "in-mum",
+      "au-syd",
+      "eu-gb",
+      "br-sao",
+      "in-che",
+      "jp-osa",
       "jp-tok",
       "us-east",
       "ca-tor",
       "ca-mon",
       "eu-es",
-      "in-che",
-      "jp-osa",
       "eu-de",
-      "us-south",
-      "au-syd",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11084,10 +11084,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -17145,12 +17145,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20334,12 +20334,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20643,12 +20643,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -20983,14 +20983,12 @@
       "ai_agent",
       "aiops",
       "aix",
-      "automation",
       "caa",
       "cluster management",
       "custom_kind_service",
       "disaster recovery",
       "global",
       "glvm",
-      "granite",
       "grs",
       "high availability",
       "ibm cloud catalog",
@@ -21002,11 +21000,9 @@
       "paid_only",
       "powerha",
       "rc_compatible",
-      "rsct",
       "support_third_party",
       "systemmirror",
       "troubleshooting",
-      "vios",
       "watson",
       "watsonx"
     ],
@@ -21030,8 +21026,8 @@
         "displayName": "Professional"
       }
     ],
-    "description": "Native Watsonx Orchestrate agent for IBM PowerHA SystemMirror cluster management. Planning, Monitoring, and Troubleshooting capabilities delivered through 50 specialized tools across 11 PowerHA management domains. Available in Starter, Professional, and Enterprise tiers (IBM-approved).",
-    "longDescription": "ZIEMACS AI Copilot for PowerHA (Starter tier) is a native Watsonx Orchestrate agent that automates and simplifies IBM PowerHA SystemMirror cluster management on AIX and VIOS. The agent provides 50 specialized tools delivering Planning, Monitoring, and Troubleshooting capabilities across 11 PowerHA management domains, including cluster operations, deployment, and disaster recovery diagnostics. Additional domain coverage (VMRM, IBM i, AIX, Power11) is on the Enterprise tier roadmap.\n\nZIEMACS AI Copilot provides intelligent automation for cluster deployment, configuration, monitoring, and maintenance tasks that traditionally require deep specialist knowledge. It continuously monitors cluster health, detects anomalies, and recommends or executes remediation actions before issues impact availability.\nThe agent diagnoses complex cluster problems using AI-driven analysis of logs, configurations, and system state across CAA, RSCT, and PowerHA components. It also covers Geographic Logical Volume Manager (GLVM) and Geographic Resource Shifting (GRS) for cross-site replication and failover.\n\nKey benefits include closing the IBM Power skills gap with 24/7 AI expertise, reducing human error through standardized operations, and accelerating response times from hours to minutes. Enterprise-ready features include human-in-the-loop approvals for high-risk operations, comprehensive audit logging, and role-based access control.\n\nZIEMACS AI Copilot for PowerHA is available in three IBM-approved tiers: Starter (this catalog listing, 2 clusters with 4 nodes each), Professional (5 clusters with 8 nodes each, adds Migration capability and enterprise integrations), and Enterprise (unlimited clusters, full DR/GRS/GLVM, multi-agent A2A topology in development). Built by ZIEMACS AI, an IBM Partner Plus Silver Build partner, and powered by the ZIEMACS AGENT SDK. Qualified through IBM Agent Connect.",
+    "description": "Native Watsonx Orchestrate agent for IBM PowerHA SystemMirror: planning, monitoring, and troubleshooting across 11 domains",
+    "longDescription": "ZIEMACS AI Copilot for PowerHA is a native watsonx Orchestrate agent that simplifies IBM PowerHA SystemMirror cluster management on AIX. The agent provides 50 specialized tools delivering Planning, Monitoring, and Troubleshooting capabilities across 11 PowerHA management domains, including cluster health monitoring, configuration analysis, and disaster recovery diagnostics.\n\n\n\n\nZIEMACS AI Copilot brings AI assistance to the monitoring, diagnosis, and analysis tasks that traditionally require deep specialist knowledge. It monitors cluster health, surfaces emerging issues, and recommends remediation steps before they impact availability. The agent diagnoses complex cluster problems using AI-driven analysis of logs, configurations, and system state across CAA and PowerHA components. It also covers Geographic Logical Volume Manager (GLVM) and Geographic Resource Shifting (GRS) for cross-site replication readiness and disaster recovery diagnostics.\n\n\n\n\nKey benefits include closing the IBM Power skills gap with 24/7 AI expertise, reducing human error through standardized operations, and accelerating response times from hours to minutes. The agent operates within your watsonx Orchestrate tenant's role-based access controls, and human-in-the-loop approval workflows for write-class operations are on the near-term roadmap.\n\n\n\n\nZIEMACS AI Copilot for PowerHA is available in three IBM-approved tiers: Starter (2 clusters with 4 nodes each, email support), Professional (5 clusters with 8 nodes each, priority support, with deployment and migration capabilities on the roadmap), and Enterprise (unlimited clusters with up to 32 nodes, 24/7 named support, with disaster recovery execution and A2A interoperability in development). Built by ZIEMACS AI, an IBM Partner Plus Silver Build partner, and qualified through IBM Agent Connect.",
     "displayName": "ZIEMACS AI Copilot for PowerHA",
     "imageUrl": "https://ziemacsai.github.io/assets/ziemacsai-logo-512x512.png",
     "localPngIcon": "/generated/icons/445d1042-8aa4-4574-850e-d5685720904a.png"
