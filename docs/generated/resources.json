@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5475,10 +5475,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5486,7 +5482,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5990,10 +5990,10 @@
       "jp-tok",
       "au-syd",
       "us-east",
-      "fra02",
       "eu-es",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9644,19 +9644,19 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "br-sao",
-      "jp-tok",
-      "us-east",
-      "eu-de",
-      "us-south",
-      "in-che",
-      "jp-osa",
       "in-mum",
       "ca-tor",
-      "ca-mon",
+      "eu-de",
+      "us-south",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "br-sao",
+      "in-che",
+      "jp-tok",
+      "us-east",
+      "ca-mon",
+      "eu-es",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16219,12 +16219,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17587,6 +17587,7 @@
     "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
     "displayName": "Upsun Fixed",
     "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
+    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
     "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
@@ -20487,12 +20488,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
