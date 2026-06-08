@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5475,6 +5475,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5482,11 +5486,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5984,16 +5984,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
+      "eu-de",
+      "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "au-syd",
       "us-east",
-      "eu-es",
-      "eu-gb",
-      "eu-de",
-      "fra02"
+      "fra02",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9118,14 +9118,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9644,19 +9644,19 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "in-che",
+      "jp-osa",
       "in-mum",
+      "jp-tok",
+      "us-east",
       "ca-tor",
       "eu-de",
       "us-south",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
-      "in-che",
-      "jp-tok",
-      "us-east",
-      "ca-mon",
       "eu-es",
-      "jp-osa"
+      "ca-mon",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11084,10 +11084,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -16219,12 +16219,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -20308,11 +20308,6 @@
     "localPngIcon": "/generated/icons/94a4aea0-9510-11ee-b512-5b3decec36b3.png"
   },
   {
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "us-south"
-    ],
     "id": "11530fa0-1776-11ee-93f6-1d4066e6a409",
     "kind": "service",
     "metadata": {
@@ -20320,84 +20315,22 @@
       "ui": {}
     },
     "name": "code-assistant",
-    "pricing_tags": [
-      "paid",
-      "paid_only",
-      "allow_internal_users",
-      "free"
-    ],
     "tags": [
       "ai",
-      "allow_internal_users",
       "ansible",
-      "au-syd",
       "custom_kind_service",
-      "eu-de",
-      "free",
-      "iam_compatible",
       "ibm_created",
       "lightspeed",
-      "paid",
-      "paid_only",
       "rc_compatible",
       "support_ibm",
-      "us-south",
       "wca"
     ],
-    "plans": [
-      {
-        "id": "2c0274b1-7e6c-4e8b-ba1e-d54531a056d0",
-        "name": "essentials-ansible-v2",
-        "description": "The Essentials plan for watsonx Code Assistant for Red Hat Ansible Lightspeed offers everything you need for Ansible code generation.",
-        "displayName": "IBM watsonx Code Assistant for Red Hat Ansible Lightspeed Essentials",
-        "originalName": "essentials-ansible-v2"
-      },
-      {
-        "id": "ae9be2fc-ae03-4cac-a7a2-95bb716be1cb",
-        "name": "essentials-wca",
-        "description": "For developers ready to accelerate developer productivity in a trusted, transparent environment.",
-        "displayName": "IBM watsonx Code Assistant Essentials",
-        "originalName": "essentials-wca"
-      },
-      {
-        "id": "c86f43c1-f9f6-4eea-be35-99d2ba27c819",
-        "name": "essentials-z",
-        "description": "The Essentials plan for IBM watsonx Code Assistant for Z as a Service, coupled with watsonx code Assistant for Z (on prem), offers everything you need to explain code and translate COBOL to Java.",
-        "displayName": "IBM watsonx Code Assistant for Z as a Service Essentials",
-        "originalName": "essentials-z"
-      },
-      {
-        "id": "ed9c2370-d508-44fb-9369-9be9154fe1f0",
-        "name": "standard-ansible-v2",
-        "description": "The Standard plan for watsonx Code Assistant for Red Hat Ansible Lightspeed offers everything you need for Ansible code generation.",
-        "displayName": "IBM watsonx Code Assistant for Red Hat Ansible Lightspeed Standard",
-        "originalName": "standard-ansible-v2"
-      },
-      {
-        "id": "c8d120b0-3e6b-4dfc-8f64-daa15864f5d2",
-        "name": "standard-wca",
-        "description": "For enterprise companies planning to modernize their enterprise Java applications and accelerate the software development lifecycle.",
-        "displayName": "IBM watsonx Code Assistant Standard",
-        "originalName": "standard-wca"
-      },
-      {
-        "id": "7d7184a7-dba0-4b88-9b2f-13f633edad48",
-        "name": "standard-z",
-        "description": "The Standard plan for IBM watsonx Code Assistant for Z as a Service provides everything you need to understand your application, explain & generate Code",
-        "displayName": "IBM watsonx code Assistant for Z as a Service Standard"
-      },
-      {
-        "id": "09e17443-2684-4eac-805d-ef0fe3e70148",
-        "name": "trial-wca",
-        "description": "Free for developers to use generative AI to write code.",
-        "displayName": "IBM watsonx Code Assistant Trial",
-        "originalName": "trial-wca"
-      }
-    ],
+    "plans": [],
     "description": "Leverage tailor-made foundation models for AI-generated code recommendations to accelerate developer productivity.",
     "longDescription": "IBM watsonx Code Assistant is a cloud service that leverages generative AI to accelerate code generation and increase developer productivity. It uses generative AI that is purpose-built for targeted use cases like Application Modernization and IT Automation.\nOut-of-the-box, watsonx Code Assistant provides pre-trained models based on specific programming languages to ensure trust and efficiency for accurate code generation. IBM watsonx Code Assistant allows you to customize the underlying model(s) to ensure output is grounded in your organization's best practices, while providing visibility into the potential origin of generated code.\n\nNote: There are varying support levels for the available editions of IBM watsonx Code Assistant. Please reference the [Service Description Terms](https://www.ibm.com/terms/?id=i126-9704) for specific support commitments.\n",
     "displayName": "watsonx Code Assistant",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/11530fa0-1776-11ee-93f6-1d4066e6a409/artifacts/cache/4ac77ae8c1d83855e240a6a77d14f7d1-public/watsonxCodeAssistant.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/11530fa0-1776-11ee-93f6-1d4066e6a409.svg",
     "localPngIcon": "/generated/icons/11530fa0-1776-11ee-93f6-1d4066e6a409.png"
   },
@@ -20488,12 +20421,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20797,12 +20730,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "ca-tor"
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
