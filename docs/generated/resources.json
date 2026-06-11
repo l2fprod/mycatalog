@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2777,6 +2777,7 @@
     "longDescription": "IBM Cloud Backup for VPC is an enterprise-level backup solution that automates creation and retention of your VPC block storage volumes. This service lets you set a scheduled backup of your block storage volumes and snapshots created from those volumes.\n\nWhen a backup is triggered, it creates a new snapshot of the volume contents. A snapshot is a point-in-time copy of your block storage volume. The entire contents of the volume are copied and retained. Subsequent snapshots will capture the incremental changes from the previous snapshots.\n\n#### Pricing\n\nYou will be charged for the storage capacity used for each of your backups. To estimate pricing while you create a backup policy, use the \"Add to estimate\" button on the Create tab. For more information, see the [Backup service documentation](/docs/vpc?topic=vpc-backup-service-about).",
     "displayName": "Cloud Backup for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.backup-policy/artifacts/cache/d45b2a92d0bbd495a556ba6a6b878e2d/Cloud-BackupServiceForVPC_icon_light-theme.svg",
+    "localSvgIcon": "/generated/icons/is.backup-policy.svg",
     "localPngIcon": "/generated/icons/is.backup-policy.png"
   },
   {
@@ -3950,7 +3951,7 @@
     "description": "Cluster Network for VPC",
     "longDescription": "A cluster network is a collection of interconnected systems working together and acting as a single entity. This combined grouping of systems allows for a high level of processing power for very complicated computations, primarily AI model training. IBM Cluster Networks use the NVIDIA H100 instance profile, which supports up to 15 VNI and vNICs with full network capabilities, 1.5 TB of memory, and 152 vCPUs running with the 8474C processor.",
     "displayName": "Cluster Network",
-    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.cluster-network/artifacts/cache/5cb0b0c46fc24ecb1dec5888cf29fefd-public/Cluster%20Network%20For%20VPC.svg",
     "localSvgIcon": "/generated/icons/is.cluster-network.svg",
     "localPngIcon": "/generated/icons/is.cluster-network.png"
   },
@@ -5478,10 +5479,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-tor",
       "che01",
@@ -5489,7 +5486,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5640,6 +5641,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5654,8 +5656,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5988,11 +5989,11 @@
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-es",
       "eu-de",
+      "fra02",
       "au-syd",
       "us-east",
-      "fra02",
+      "eu-es",
       "us-south",
       "eu-gb"
     ],
@@ -6150,13 +6151,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8085,6 +8086,7 @@
     "longDescription": "The IBM Cloud® File Storage for VPC service provides secure, persistent, NSFv4.1 protocol-based file storage. IBM Cloud® File Storage for VPC is backed by All-Flash architecture. You can create file shares with capacity that ranges from 10 GB to 32 TB with flexible options. You can mount the file share on multiple IBM Cloud Virtual Servers for file sharing and collaboration. You have total control over your data as you manage access to the file shares with IAM profiles, security groups, and context-based restrictions. You can also bring your own root keys to add another layer of encryption. You can manage your cost by provisioning only what you need. You can increase the share capacity later when you need more storage, and you can adjust the IOPS to increase or decrease performance anytime.",
     "displayName": "File Storage for VPC",
     "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.share/artifacts/VPC-file-shares-icon.svg",
+    "localSvgIcon": "/generated/icons/is.share.svg",
     "localPngIcon": "/generated/icons/is.share.png"
   },
   {
@@ -9118,14 +9120,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9644,19 +9646,19 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
+      "br-sao",
+      "jp-osa",
+      "ca-mon",
+      "eu-gb",
       "eu-es",
+      "in-che",
       "in-mum",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "eu-gb"
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11521,7 +11523,7 @@
     "description": "Network ACL for VPC",
     "longDescription": "Use network access control lists (ACLs) as filters to allow or deny specified incoming or outgoing traffic in an IBM Cloud Virtual Private Cloud (VPC).",
     "displayName": "Network ACL",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.network-acl/artifacts/cache/71cf0af1d655590e9d94363e8f21954b-public/Access%20control%20lists.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.network-acl/artifacts/cache/b228042d67875fcb67859b47b11958de-public/Access%20Control%20List%20For%20VPC.svg",
     "localSvgIcon": "/generated/icons/is.network-acl.svg",
     "localPngIcon": "/generated/icons/is.network-acl.png"
   },
@@ -14182,7 +14184,7 @@
     "description": "Public Address Range for VPC",
     "longDescription": "Public Address Range allows reserving a contiguous set of IBM-provided Public IPs that can be used in VPC custom routes to route public internet traffic to a Firewall/VNF in VPC.",
     "displayName": "Public Address Range",
-    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
     "localSvgIcon": "/generated/icons/is.public-address-range.svg",
     "localPngIcon": "/generated/icons/is.public-address-range.png"
   },
@@ -15682,7 +15684,7 @@
     "description": "Security Group for VPC",
     "longDescription": "Security groups give you a convenient way to apply security rules that establish filtering to each network interface of a virtual server instance, based on its IP address. When you create a security group, you configure it to create the network traffic patterns you want. By default, a security group denies all traffic. As rules are added to a security group, it defines the traffic that the security group permits.",
     "displayName": "Security Group for VPC",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.security-group/artifacts/cache/53ab0dc04aa021cbd407d128f8da5540-public/Security_groups.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.security-group/artifacts/cache/8c065ca924e28b7c4fb8828b76db522c-public/Security%20Group%20For%20VPC.svg",
     "localSvgIcon": "/generated/icons/is.security-group.svg",
     "localPngIcon": "/generated/icons/is.security-group.png"
   },
@@ -18137,7 +18139,7 @@
     "description": "Virtual Network Interface for VPC",
     "longDescription": "Virtual Network Interfaces provide a way to configure network IPs with security groups and they provide a consistent network binding handle for various resources.",
     "displayName": "Virtual Network Interface",
-    "imageUrl": "https://globalcatalog.test.cloud.ibm.com/api/v1/is.instance/artifacts/Virtual%20server%20instances.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.virtual-network-interface/artifacts/cache/ca7162c6f747a019d6d564de51b788bb-public/Virtual%20Network%20Interface%20For%20VPC.svg",
     "localSvgIcon": "/generated/icons/is.virtual-network-interface.svg",
     "localPngIcon": "/generated/icons/is.virtual-network-interface.png"
   },
@@ -20355,7 +20357,6 @@
     "pricing_tags": [
       "allow_internal_users",
       "paid_only",
-      "block_internal_trial",
       "free",
       "lite",
       "subscription"
@@ -20363,7 +20364,6 @@
     "tags": [
       "allow_internal_users",
       "au-syd",
-      "block_internal_trial",
       "br-sao",
       "ca-tor",
       "custom_kind_service",
@@ -20421,12 +20421,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20730,12 +20730,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
