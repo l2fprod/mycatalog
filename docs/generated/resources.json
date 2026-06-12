@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5479,18 +5479,20 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "che01",
-      "eu-es",
-      "jp-osa",
-      "par01",
-      "us-east",
-      "us-south",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "br-sao",
+      "ca-mon",
+      "ca-tor",
+      "che01",
+      "eu-es",
+      "in-che",
+      "jp-osa",
+      "par01",
+      "us-east",
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5507,6 +5509,7 @@
       "allow_internal_users",
       "au-syd",
       "br-sao",
+      "ca-mon",
       "ca-tor",
       "cbr_enabled",
       "che01",
@@ -5524,6 +5527,7 @@
       "fss",
       "hipaa",
       "ibm_created",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "par01",
@@ -5986,16 +5990,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "us-south",
+      "au-syd",
+      "us-east",
+      "fra02",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "fra02",
-      "au-syd",
-      "us-east",
-      "eu-es",
-      "us-south",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6151,13 +6155,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9646,16 +9650,16 @@
   },
   {
     "geo_tags": [
+      "ca-mon",
+      "eu-gb",
+      "br-sao",
+      "in-che",
+      "in-mum",
       "eu-de",
       "us-south",
       "au-syd",
-      "br-sao",
       "jp-osa",
-      "ca-mon",
-      "eu-gb",
       "eu-es",
-      "in-che",
-      "in-mum",
       "jp-tok",
       "us-east",
       "ca-tor"
@@ -11084,10 +11088,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14583,7 +14587,7 @@
       }
     ],
     "description": "HNDL defense on real quantum hardware. 6 tools: crypto discovery, risk scoring, NIST PQC audit, ML-KEM, ML-DSA & canary monitoring",
-    "longDescription": "## What is Quantum Swarm?\n\n**Quantum Swarm** is the *enterprise's first-line defense* against the most dangerous cryptographic threat active today: **Harvest Now, Decrypt Later (HNDL).** Nation-state adversaries are *already* intercepting and stockpiling your encrypted traffic, banking on quantum computers breaking **RSA** and **ECC** within the next **3–9 years.** Quantum Swarm gives your CISO team a **6-step, 6-tool workflow** to discover what is exposed, score the risk, audit compliance, migrate to quantum-safe standards, and monitor for quantum breakthroughs — *all through a single watsonx Orchestrate agent running on real quantum hardware.*\n\n> Every assessment executes across **913 physical qubits** on six **IBM Quantum Heron** processors. **90% of workloads** are GPU-accelerated at *zero extra cost.* These are not simulations — these are **production quantum circuits executing today.**\n\n---\n\n## The Threat Is Active — Not Theoretical\n\n*Every file, communication, and transaction your organization encrypted in the last decade is already a target.* The attack requires no quantum computer today — only storage. The decryption happens later, when the hardware arrives.\n\nThe U.S. government has already responded:\n\n- 🟡 **NIST FIPS 203** (ML-KEM) — *quantum-safe key exchange, finalized 2024*\n- 🟡 **NIST FIPS 204** (ML-DSA) — *quantum-safe digital signatures, finalized 2024*\n- 🟡 **NIST FIPS 205** (SLH-DSA) — *hash-based signatures, finalized 2024*\n\nFederal agencies must complete migration by **2030.** Regulated industries face the same timeline. **Every month of delay is measurable exposure.**\n\n---\n\n## Six Purpose-Built Tools — One Agent, Zero Gaps\n\n**① Crypto Discovery** *(free at all tiers)* — `hndl_crypto_discovery` scans enterprise endpoints for quantum-vulnerable TLS certificates, SSH keys, code signing certs, and cipher suites. Returns a full HNDL exposure inventory. *Run this first — before any other step.*\n\n**② HNDL Risk Assessment** — `hndl_risk_score` models exactly when your current encryption becomes breakable across three quantum threat scenarios: *2029 conservative, 2031 moderate, 2035 optimistic.* Every encrypted asset receives a **composite risk score** based on algorithm strength, data sensitivity, and retention period.\n\n**③ PQC Compliance Audit** — `pqc_compliance_audit` scans your cryptographic infrastructure against all three **NIST post-quantum standards** and returns a **compliance scorecard** with remediation priorities — mapped to FIPS 203, 204, and 205.\n\n**④ ML-KEM Key Exchange Migration** — `ml_kem_key_exchange` replaces vulnerable RSA and Diffie-Hellman with **CRYSTALS-Kyber** — the NIST-standardized quantum-safe key encapsulation mechanism. Supports *ML-KEM-768* and *ML-KEM-1024* security levels.\n\n**⑤ ML-DSA Digital Signature Migration** — `ml_dsa_sign` replaces RSA and ECDSA with **CRYSTALS-Dilithium** — the NIST-standardized quantum-safe signature scheme. Supports *ML-DSA-65* and *ML-DSA-87* security levels.\n\n**⑥ Quantum Canary Monitor** *(the early warning layer no classical tool can provide)* — Five **ECDSA challenge wallets** at escalating security tiers (64-bit through 256-bit) act as live quantum tripwires. When a quantum computer reaches the power to break each tier, the canary triggers — *giving your team advance warning measured in years, not days.*\n\n---\n\n## What You Get\n\n*One watsonx Orchestrate agent. Six purpose-built tools. Complete HNDL coverage from exposure discovery through post-quantum migration.*\n\n**Every operation is cryptographically signed, audit-logged, and backed by IBM Quantum Network-verified hardware.** Use `hndl_crypto_discovery` for a free exposure inventory, `hndl_risk_score` for quantified risk, or run the full 6-step workflow for enterprise-wide post-quantum readiness. Your auditors receive *quantified risk evidence and a compliance scorecard* — not a framework document.\n\n*Transparent pricing. No per-qubit surcharges. Full access to all six tools at your tier's job volume.*\n",
+    "longDescription": "## What is Quantum Swarm?\n\n**Quantum Swarm** is the *enterprise's first-line defense* against the most dangerous cryptographic threat active today: **Harvest Now, Decrypt Later (HNDL).** Nation-state adversaries are *already* intercepting and stockpiling your encrypted traffic, banking on quantum computers breaking **RSA** and **ECC** within the next **3–9 years.** Quantum Swarm gives your CISO team a **6-step, 6-tool workflow** to discover what is exposed, score the risk, audit compliance, migrate to quantum-safe standards, and monitor for quantum breakthroughs — *all through a single watsonx Orchestrate agent running on real quantum hardware.*\n\n> Every assessment executes across five **IBM Quantum Heron** processors. **90% of workloads** are GPU-accelerated at *zero extra cost.* These are not simulations — these are **production quantum circuits executing today.**\n\n---\n\n## The Threat Is Active — Not Theoretical\n\n*Every file, communication, and transaction your organization encrypted in the last decade is already a target.* The attack requires no quantum computer today — only storage. The decryption happens later, when the hardware arrives.\n\nThe U.S. government has already responded:\n\n- 🟡 **NIST FIPS 203** (ML-KEM) — *quantum-safe key exchange, finalized 2024*\n- 🟡 **NIST FIPS 204** (ML-DSA) — *quantum-safe digital signatures, finalized 2024*\n- 🟡 **NIST FIPS 205** (SLH-DSA) — *hash-based signatures, finalized 2024*\n\nFederal agencies must complete migration by **2030.** Regulated industries face the same timeline. **Every month of delay is measurable exposure.**\n\n---\n\n## Six Purpose-Built Tools — One Agent, Zero Gaps\n\n**① Crypto Discovery** *(free at all tiers)* — `hndl_crypto_discovery` scans enterprise endpoints for quantum-vulnerable TLS certificates, SSH keys, code signing certs, and cipher suites. Returns a full HNDL exposure inventory. *Run this first — before any other step.*\n\n**② HNDL Risk Assessment** — `hndl_risk_score` models exactly when your current encryption becomes breakable across three quantum threat scenarios: *2029 conservative, 2031 moderate, 2035 optimistic.* Every encrypted asset receives a **composite risk score** based on algorithm strength, data sensitivity, and retention period.\n\n**③ PQC Compliance Audit** — `pqc_compliance_audit` scans your cryptographic infrastructure against all three **NIST post-quantum standards** and returns a **compliance scorecard** with remediation priorities — mapped to FIPS 203, 204, and 205.\n\n**④ ML-KEM Key Exchange Migration** — `ml_kem_key_exchange` replaces vulnerable RSA and Diffie-Hellman with **CRYSTALS-Kyber** — the NIST-standardized quantum-safe key encapsulation mechanism. Supports *ML-KEM-768* and *ML-KEM-1024* security levels.\n\n**⑤ ML-DSA Digital Signature Migration** — `ml_dsa_sign` replaces RSA and ECDSA with **CRYSTALS-Dilithium** — the NIST-standardized quantum-safe signature scheme. Supports *ML-DSA-65* and *ML-DSA-87* security levels.\n\n**⑥ Quantum Canary Monitor** *(the early warning layer no classical tool can provide)* — Five **ECDSA challenge wallets** at escalating security tiers (64-bit through 256-bit) act as live quantum tripwires. When a quantum computer reaches the power to break each tier, the canary triggers — *giving your team advance warning measured in years, not days.*\n\n---\n\n## What You Get\n\n*One watsonx Orchestrate agent. Six purpose-built tools. Complete HNDL coverage from exposure discovery through post-quantum migration.*\n\n**Every operation is cryptographically signed, audit-logged, and backed by IBM Quantum hardware.** Use `hndl_crypto_discovery` for a free exposure inventory, `hndl_risk_score` for quantified risk, or run the full 6-step workflow for enterprise-wide post-quantum readiness. Your auditors receive *quantified risk evidence and a compliance scorecard* — not a framework document.\n\n*Transparent pricing. No per-qubit surcharges. Full access to all six tools at your tier's job volume.*\n",
     "displayName": "Quantum Swarm",
     "imageUrl": "https://epochcore-brand.pages.dev/logo-transparent.svg",
     "localPngIcon": "/generated/icons/74f3f24b-d48a-4d3a-933a-e72e0f0bcc16.png"
@@ -17589,7 +17593,6 @@
     "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
     "displayName": "Upsun Fixed",
     "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
-    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
     "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
@@ -20503,12 +20506,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
