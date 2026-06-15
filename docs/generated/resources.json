@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -766,7 +766,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -774,7 +773,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5990,16 +5990,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "eu-de",
+      "us-south",
       "au-syd",
       "us-east",
       "fra02",
-      "us-south",
+      "eu-es",
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8220,7 +8220,7 @@
     "description": "Reserve a Floating IP that gives your virtual servers access to the Internet.",
     "longDescription": "Reserve a Floating IP to use with virtual server instances (VSI) in a virtual private cloud (VPC). Each Floating IP gives your VSIs access to the public Internet, and vice versa",
     "displayName": "Floating IP for VPC",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/848334560c3889203a3255db1df89912-public/Floating%20IPs.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
     "localSvgIcon": "/generated/icons/is.floating-ip.svg",
     "localPngIcon": "/generated/icons/is.floating-ip.png"
   },
@@ -9651,18 +9651,18 @@
   {
     "geo_tags": [
       "br-sao",
-      "in-che",
       "jp-osa",
       "in-mum",
+      "ca-tor",
+      "eu-gb",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "eu-gb"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14316,7 +14316,8 @@
     "description": "Public Gateway for VPC",
     "longDescription": "Public Gateway for VPC",
     "displayName": "Public Gateway",
-    "imageUrl": "https://ibm.box.com/s/b15enoelqbaq3ajkt1z8fi5eus5mmazq",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
+    "localSvgIcon": "/generated/icons/is.public-gateway.svg",
     "localPngIcon": "/generated/icons/is.public-gateway.png"
   },
   {
@@ -14387,8 +14388,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -17593,7 +17594,6 @@
     "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
     "displayName": "Upsun Fixed",
     "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
-    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
     "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
@@ -20734,12 +20734,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
