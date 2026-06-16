@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -3963,6 +3963,7 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -4003,6 +4004,7 @@
       "iam_compatible",
       "ibm_created",
       "ibm_release",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "lifesciences",
@@ -4667,13 +4669,10 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-east",
       "us-south"
     ],
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
@@ -4689,10 +4688,8 @@
       "paid"
     ],
     "tags": [
-      "au-syd",
       "beryllium",
       "br-sao",
-      "ca-tor",
       "custom_kind_service",
       "dev_ops",
       "eu access support",
@@ -4714,7 +4711,6 @@
       "paid",
       "rc_compatible",
       "support_ibm",
-      "us-east",
       "us-south"
     ],
     "plans": [
@@ -5485,6 +5481,7 @@
       "che01",
       "eu-es",
       "in-che",
+      "in-mum",
       "jp-osa",
       "par01",
       "us-east",
@@ -5528,6 +5525,7 @@
       "hipaa",
       "ibm_created",
       "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "par01",
@@ -5990,16 +5988,16 @@
   },
   {
     "geo_tags": [
+      "eu-es",
       "us-south",
+      "eu-gb",
+      "eu-de",
       "au-syd",
       "us-east",
       "fra02",
-      "eu-es",
-      "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6155,13 +6153,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9650,19 +9648,19 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "in-mum",
       "ca-tor",
-      "eu-gb",
+      "au-syd",
+      "br-sao",
       "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd"
+      "eu-gb",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11088,10 +11086,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14388,8 +14386,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16226,12 +16224,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17386,13 +17384,10 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-east",
       "us-south"
     ],
     "id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
@@ -17410,9 +17405,7 @@
     "tags": [
       "allow_internal_users",
       "apidocs_enabled",
-      "au-syd",
       "br-sao",
-      "ca-tor",
       "custom_kind_service",
       "dev_ops",
       "eu-de",
@@ -17429,7 +17422,6 @@
       "lite",
       "rc_compatible",
       "support_ibm",
-      "us-east",
       "us-south"
     ],
     "plans": [
@@ -17594,6 +17586,7 @@
     "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
     "displayName": "Upsun Fixed",
     "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
+    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
     "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
@@ -20425,12 +20418,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
