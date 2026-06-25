@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -3757,6 +3757,8 @@
   },
   {
     "geo_tags": [
+      "eu-de",
+      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -3765,9 +3767,7 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south",
-      "eu-de",
-      "us-east"
+      "us-south"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -5989,14 +5989,14 @@
   {
     "geo_tags": [
       "eu-es",
-      "us-south",
       "eu-gb",
+      "au-syd",
+      "us-east",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "au-syd",
-      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -9687,19 +9687,19 @@
   },
   {
     "geo_tags": [
-      "ca-mon",
-      "eu-gb",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
       "br-sao",
       "in-che",
+      "in-mum",
+      "eu-gb",
       "jp-osa",
-      "in-mum"
+      "eu-es",
+      "jp-tok",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14672,6 +14672,50 @@
     "geo_tags": [
       "global"
     ],
+    "id": "b9ce1607-17f6-4b87-ad9d-d419491b612b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "rackware-rmm-migration-per-unit",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "anytoanymigration",
+      "baremetal",
+      "cloudmotion",
+      "custom_kind_service",
+      "global",
+      "ibm classic cloud",
+      "ibm_third_party",
+      "migration_tools",
+      "paid",
+      "paid_only",
+      "rackware rmm migration",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "d872fc7d-7255-451a-b5a9-90f6f77bcc4a",
+        "name": "rackware-migration-plan-per-unit",
+        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope.",
+        "displayName": "RackWare Migration Plan Per Unit"
+      }
+    ],
+    "description": "Migrate any-source environment (physical, virtual, cloud) to IBM Cloud VPC",
+    "longDescription": "RackWare Management Module (RMM) Migration is an automated process to migrate as well as protect your bare metal and virtual workloads from IBM Cloud or any other source environment to Virtual Server Instances on IBM Cloud VPC.\n\nRMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease.\n\nRMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.",
+    "displayName": "RackWare - Migration Service",
+    "imageUrl": "https://static1.squarespace.com/static/5c1e6c1896e76f8c9319d545/t/60d22ba816f8a845659841ff/1624386472784/RackWare_Logo_96x96px.png",
+    "localPngIcon": "/generated/icons/b9ce1607-17f6-4b87-ad9d-d419491b612b.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "9fe9ec96-198e-47d4-a3cf-877cd37cb67d",
     "kind": "service",
     "metadata": {
@@ -16325,12 +16369,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17481,12 +17525,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20615,12 +20659,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
