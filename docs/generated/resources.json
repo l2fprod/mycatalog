@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4552,6 +4552,65 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "eccd3054-2b9f-4796-bf30-be0c847c5247",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "vistergy-ltd-construction-work-pack-compliance",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "ai_agent",
+      "awp",
+      "compliance",
+      "construction",
+      "custom_kind_service",
+      "data-centre",
+      "energy",
+      "free",
+      "global",
+      "ibm_third_party",
+      "iso-19650",
+      "lng",
+      "maximo",
+      "nuclear",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson",
+      "work-pack"
+    ],
+    "plans": [
+      {
+        "id": "acb7d92b-ce0e-4e3c-9420-11a31c52cf62",
+        "name": "cwc-monthly-subscription",
+        "description": "Flat monthly subscription. 1,000 queries included per billing month; each additional query in excess of 1,000 comes with an overage fee of $1.00 per query.",
+        "displayName": "CWC Monthly Subscription"
+      },
+      {
+        "id": "9f005e5f-522c-41c9-9aa4-82c806c04208",
+        "name": "do-not-use",
+        "description": "Not for use",
+        "displayName": "Do not use"
+      }
+    ],
+    "description": "Know your work packages are compliant before they reach the facility. Regulator-ready audit trail per finding.",
+    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). It reads work-pack state live from your Maximo, and on your authorisation writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
+    "displayName": "Construction Work Pack Compliance",
+    "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
+    "localSvgIcon": "/generated/icons/eccd3054-2b9f-4796-bf30-be0c847c5247.svg",
+    "localPngIcon": "/generated/icons/eccd3054-2b9f-4796-bf30-be0c847c5247.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -6004,16 +6063,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
+      "eu-de",
       "au-syd",
       "us-east",
       "fra02",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -7664,6 +7723,50 @@
     "geo_tags": [
       "global"
     ],
+    "id": "15e07693-3bb2-4350-91ff-827366c41066",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "vistergy-ltd-facility-handover-compliance",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "cfihos compliance",
+      "custom_kind_service",
+      "global",
+      "handover",
+      "ibm_third_party",
+      "iso 19650",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "e1c60067-f75e-420d-b34a-c8fd6f6891c5",
+        "name": "fhc-monthly-subscription",
+        "description": "Flat monthly subscription. 1,000 queries included per billing month; each additional query in excess of 1,000 comes with an overage fee of $1.00 per query.",
+        "displayName": "FHC Monthly Subscription"
+      }
+    ],
+    "description": "Know whether your handover package is complete enough to sign off, with the gaps and the evidence, per event.",
+    "longDescription": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure.",
+    "displayName": "Facility Handover Compliance",
+    "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
+    "localSvgIcon": "/generated/icons/15e07693-3bb2-4350-91ff-827366c41066.svg",
+    "localPngIcon": "/generated/icons/15e07693-3bb2-4350-91ff-827366c41066.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "9c0ddef0-c561-43b0-a7cb-e2714916a6ec",
     "kind": "service",
     "metadata": {
@@ -9085,14 +9188,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9704,18 +9807,18 @@
   {
     "geo_tags": [
       "in-che",
+      "in-mum",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "br-sao",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "in-mum",
-      "au-syd",
-      "eu-gb",
-      "br-sao"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -17580,12 +17683,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20796,12 +20899,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -21023,12 +21126,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
