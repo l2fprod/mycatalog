@@ -5491,9 +5491,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5505,7 +5502,10 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5659,7 +5659,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5674,7 +5673,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6004,16 +6004,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "fra02",
       "eu-es",
       "us-south",
+      "au-syd",
+      "us-east",
+      "fra02",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "au-syd",
-      "us-east"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6169,13 +6169,13 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9085,14 +9085,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9704,18 +9704,18 @@
   {
     "geo_tags": [
       "in-che",
-      "in-mum",
-      "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "br-sao",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "in-mum",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11143,10 +11143,10 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -15004,6 +15004,45 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/openshift/artifacts/cache/bf27a361e68466aaada29974521faee1-public/openshift_icon_32_2.svg",
     "localSvgIcon": "/generated/icons/openshift.svg",
     "localPngIcon": "/generated/icons/openshift.png"
+  },
+  {
+    "id": "b95f7546-4719-464a-b5a1-c772c884ad8f",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "openshift-vs",
+    "pricing_tags": [
+      "free",
+      "allow_internal_users"
+    ],
+    "tags": [
+      "compute",
+      "allow_internal_users",
+      "apidocs_enabled",
+      "cbr_enabled",
+      "custom_kind_service",
+      "eu access support",
+      "free",
+      "ibm_created",
+      "ibm-release",
+      "odf",
+      "pci",
+      "rc_compatible",
+      "service_endpoint_supported",
+      "support_ibm",
+      "virtualservers",
+      "vpc_private_endpoint"
+    ],
+    "plans": [],
+    "description": "Run enterprise VMs on Red Hat OpenShift Virtualization Service on IBM Cloud with a modern, Kubernetes-based platform.",
+    "longDescription": "Deploy and manage enterprise virtual machine workloads on native OpenShift with virtualization-focused tools to run highly available Virtual Machines.\nOpenShift Virtualization Engine on IBM Cloud provides a modern Kubernetes-based platform that delivers operational consistency and flexibility for virtualization environments.\n",
+    "displayName": "Red Hat OpenShift Virtualization Service on IBM Cloud",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/openshift/artifacts/cache/bf27a361e68466aaada29974521faee1-public/openshift_icon_32_2.svg",
+    "geo_tags": [],
+    "localSvgIcon": "/generated/icons/b95f7546-4719-464a-b5a1-c772c884ad8f.svg",
+    "localPngIcon": "/generated/icons/b95f7546-4719-464a-b5a1-c772c884ad8f.png"
   },
   {
     "geo_tags": [
@@ -20675,12 +20714,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -20757,12 +20796,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -20984,12 +21023,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
@@ -21203,15 +21242,28 @@
       {
         "id": "4c32cc6a-48b9-462a-941f-3d2c05ab09ee",
         "name": "essentials",
-        "description": "The watsonx.governance Essentials plan enables organizations to monitor AI Models for quality, health, and trust metrics; explanations and what-if analysis, and automatically document model metadata with custom use cases.\n\nA paid instance of a supported database (Databases for PostgreSQL, Db2 or Db2 warehouse) must be used.",
-        "displayName": "Essentials",
+        "description": "The watsonx.governance Model Management Essentials plan enables organizations to monitor AI Models for quality, health, and trust metrics; explanations and what-if analysis, and automatically document model metadata with custom use cases.\n\nA paid instance of a supported database (Databases for PostgreSQL, Db2 or Db2 warehouse) must be used.",
+        "displayName": "Model Management Essentials",
         "originalName": "Essentials"
+      },
+      {
+        "id": "2f8cd40a-95c1-4c3a-b46f-95d3b69bb711",
+        "name": "grc-advanced",
+        "description": "The Risk and Compliance – Advanced plan provides the critical capabilities related to AI Governance. It provides AI visibility, Use Case onboarding, risk assessment and identification, Regulatory Compliance Management, and accountability. It is ideal for medium sized organizations or departments in larger looking to get started with AI Governance.",
+        "displayName": "Risk and compliance - Advanced"
+      },
+      {
+        "id": "92cf03d8-cc18-40e8-9173-5e759de32850",
+        "name": "grc-basic",
+        "description": "The Risk and Compliance – Basic plan provides the critical capabilities related to AI Governance. It provides AI visibility, Use Case onboarding, risk assessment and identification, Regulatory Compliance Management, and accountability. It is ideal for small organizations or departments looking to get started with AI Governance.",
+        "displayName": "Risk and compliance - Basic",
+        "originalName": "qa-enterprise-basic"
       },
       {
         "id": "967ba182-c6e0-4adc-92ef-661a822cc1d7",
         "name": "lite",
-        "description": "The watsonx.governance Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\n- The Lite plan includes a free internal PostgreSQL database instance with a maximum size of 100 MB.\n\n- The instance is hosted and not directly accessible.\n- Data in this database cannot be migrated and is lost if the instance is reconfigured.\n- The internal database is not GDPR compliant.\n- For workloads that process personally identifiable information (PII), or when upgrading from the Lite plan to the Essentials plan with continuity requirements, a paid instance of a supported database from the IBM Cloud catalog must be used.",
-        "displayName": "Lite",
+        "description": "The watsonx.governance Model Management Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\n- The Model Management Lite plan includes a free internal PostgreSQL database instance with a maximum size of 100 MB.\n\n- The instance is hosted and not directly accessible.\n- Data in this database cannot be migrated and is lost if the instance is reconfigured.\n- The internal database is not GDPR compliant.\n- For workloads that process personally identifiable information (PII), or when upgrading from the Model Management Lite plan to the Model Management Essentials plan with continuity requirements, a paid instance of a supported database from the IBM Cloud catalog must be used.",
+        "displayName": "Model Management Lite",
         "originalName": "lite"
       },
       {
