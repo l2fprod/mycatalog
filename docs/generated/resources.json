@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5550,10 +5550,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5564,7 +5560,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6063,16 +6063,16 @@
   },
   {
     "geo_tags": [
+      "fra02",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02",
-      "eu-es",
       "eu-de",
-      "au-syd",
-      "us-east",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6228,13 +6228,13 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9806,19 +9806,19 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "eu-gb",
-      "br-sao",
-      "in-che",
       "ca-mon",
+      "au-syd",
+      "jp-osa",
+      "in-mum",
       "eu-de",
       "us-south",
-      "au-syd"
+      "eu-gb",
+      "br-sao",
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10646,6 +10646,52 @@
     "geo_tags": [
       "global"
     ],
+    "id": "2e8cf6b5-06b9-4078-aa6c-13cdff7927fd",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "libero-ai-pty-ltd-legislative-compliance",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "audit",
+      "compliance",
+      "custom_kind_service",
+      "global",
+      "governance",
+      "ibm_third_party",
+      "legislation",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "risk",
+      "safety",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "8a6737f5-d749-4141-9f13-2a9234d0cf3a",
+        "name": "standard-plan",
+        "description": "Based on a set number of document comparisons per month, which when exceeded will be charged on a comarison-by-comparison basis.",
+        "displayName": "Standard Plan"
+      }
+    ],
+    "description": "AI agent that reviews industrial operations documentation against current legislation, regulations and standards to identify compl",
+    "longDescription": "Heavy industrial operations must comply with legislation, regulations and standards set by government departments. Compliance requirements change continuously, yet most organisations check against these requirements only when an audit is due — a reactive approach that exposes them to fines, stop-work orders and reputational damage.\n\nLibero AI's Legislative Compliance Agent uses Retrieval-Augmented Generation (RAG) to compare an organisation's policies, processes and procedures against current legislative and regulatory requirements. It surfaces prioritised compliance gaps so teams can act early — not at audit time.\n\nWhat the agent does:\n\n- Ingests procedure documents and relevant legislation or registered standards via secure PDF upload\n- Compares requirements against existing internal policies and procedures using purpose/scope, document dates, and detailed section-by-section analysis\n- Identifies and prioritises compliance gaps, classifying each section as fully compliant, partially compliant, or non-compliant with specific issues and required actions\n- Provides actionable recommendations prioritised by risk level (High, Medium, or Low) to guide remediation efforts\n- Generates a downloadable Word document report summarising all compliance findings and recommendations for distribution to stakeholders\n\nProven in industry:\n\nDeployed in a co-creation engagement with IBM Client Engineering for a major mining operation, the agent interrogated compliance records against QGN 34, RS14, RS15 and RS20. Three previously undetected non-conformances were identified before the next regulatory audit",
+    "displayName": "Legislative Compliance",
+    "imageUrl": "https://static.wixstatic.com/media/d45c04_5fc1b4998e384fa9a4d6d7e9636bd792~mv2.png",
+    "localPngIcon": "/generated/icons/2e8cf6b5-06b9-4078-aa6c-13cdff7927fd.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "dbfc2f07-a95f-44a7-85b3-b49e198a1e25",
     "kind": "service",
     "metadata": {
@@ -11246,10 +11292,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -16447,12 +16493,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -20300,7 +20346,7 @@
       {
         "id": "468ee776-0e6f-40a1-86d6-8d0abe9712d0",
         "name": "paygo",
-        "description": "Pay As You Go Plan : Wasabi AiR ($12.99 / AiR hour) + Wasabi Cloud Storage ($8.99 / TB / mo) with Wasabi Premium Support.\n\nPricing is based on GB per day. Based on 30-day month, formula for cost estimator: TiB × 1024 × 30 = GB-days.\n\nExample: For 100 TiB of storage, enter 100 x 1024 x 30 =3,072,000 GB-days\n\nFor more information please reach out to ibm@wasabi.com",
+        "description": "Pay As You Go Plan : Wasabi AiR ($12.99 / AiR hour) + Wasabi Cloud Storage ($7.99 / TB / mo) plus Wasabi Premium Support.\n\nPricing is based on GB per day. Based on 30-day month, formula for cost estimator: TiB × 1024 × 30 = GB-days.\n\nExample: For 100 TiB of storage, enter 100 x 1024 x 30 =3,072,000 GB-days\n\nFor more information please reach out to ibm@wasabi.com",
         "displayName": "Pay As You Go"
       }
     ],
@@ -20346,7 +20392,7 @@
       {
         "id": "2976d2b9-07c1-4418-bec3-f15deec2a41a",
         "name": "pay-as-you-go",
-        "description": "Pay As You Go Plan : Wasabi Cloud Storage ($6.99 / TB / mo) plus Wasabi Premium Support\n\nPricing is based on GB per day. \n\nBased on 30-day month, formula for cost estimator: TiB × 1024 × 30 = GB-days.\n\nExample: For 100 TiB of storage, enter 100 x 1024 x 30 =3,072,000 GB-days\n\nFor more information please reach out to ibm@wasabi.com",
+        "description": "Pay As You Go Plan : Wasabi Cloud Storage ($7.99 / TB / mo) plus Wasabi Premium Support\n\nPricing is based on GB per day. \n\nBased on 30-day month, formula for cost estimator: TiB × 1024 × 30 = GB-days.\n\nExample: For 100 TiB of storage, enter 100 x 1024 x 30 =3,072,000 GB-days\n\nFor more information please reach out to ibm@wasabi.com",
         "displayName": "Pay As You Go"
       }
     ],
@@ -21046,12 +21092,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
