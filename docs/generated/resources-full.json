@@ -7115,14 +7115,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -10283,6 +10283,7 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -10290,8 +10291,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -45123,6 +45123,7 @@
     "created": "2014-06-03T07:04:12Z",
     "disabled": false,
     "geo_tags": [
+      "che01",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -45132,8 +45133,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "che01"
+      "us-south"
     ],
     "id": "cloudant",
     "images": {
@@ -70379,13 +70379,13 @@
   },
   {
     "_id": "databases-for-elasticsearch",
-    "_rev": "773-f5fb09e6df7d8d72fdb61678030f8147",
+    "_rev": "776-e7f36505e77b467ba7ad2d28f3c8d9ae",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-elasticsearch",
     "children": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "480-8a4fcd510e19d1d66d6fac1542c08b7a",
+        "_rev": "483-2c6268379eed22541c4242e2d0b67fa9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children": [
@@ -73099,10 +73099,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -73179,7 +73179,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:18.571707671-04:00",
+        "updated": "2026-07-02T14:52:09.702777708-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -73187,7 +73187,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "493-6f1545c832ad9cbd78b9fc0d38c07690",
+        "_rev": "496-5881b91e0ab465556dab45985ff94cad",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children": [
@@ -75901,10 +75901,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -75981,7 +75981,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:19.274933449-04:00",
+        "updated": "2026-07-02T14:52:10.526192348-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -75989,7 +75989,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "483-d546a547380e0857627ee7ce5bec0027",
+        "_rev": "486-55f2a42d072012d2be355d07ee03b514",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children": [
@@ -76219,10 +76219,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76298,7 +76298,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:17.789412411-04:00",
+        "updated": "2026-07-02T14:52:09.137532568-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76325,15 +76325,15 @@
     ],
     "id": "databases-for-elasticsearch",
     "images": {
-      "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg"
+      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.eu-gb.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-elasticsearch",
       "other": {
@@ -76458,7 +76458,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-01T14:43:17.557680409-04:00",
+    "updated": "2026-07-02T14:52:08.884879194-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -76466,7 +76466,7 @@
     "plans": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "480-8a4fcd510e19d1d66d6fac1542c08b7a",
+        "_rev": "483-2c6268379eed22541c4242e2d0b67fa9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise/%2A",
@@ -76489,10 +76489,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76569,7 +76569,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:18.571707671-04:00",
+        "updated": "2026-07-02T14:52:09.702777708-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76580,7 +76580,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "493-6f1545c832ad9cbd78b9fc0d38c07690",
+        "_rev": "496-5881b91e0ab465556dab45985ff94cad",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum/%2A",
@@ -76603,10 +76603,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76683,7 +76683,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:19.274933449-04:00",
+        "updated": "2026-07-02T14:52:10.526192348-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76694,7 +76694,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "483-d546a547380e0857627ee7ce5bec0027",
+        "_rev": "486-55f2a42d072012d2be355d07ee03b514",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard/%2A",
@@ -76703,10 +76703,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76782,7 +76782,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:17.789412411-04:00",
+        "updated": "2026-07-02T14:52:09.137532568-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76795,7 +76795,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -87402,13 +87402,13 @@
   },
   {
     "_id": "databases-for-mysql",
-    "_rev": "773-7ef90c9c61272dbb3ec53165bf46b24f",
+    "_rev": "776-d7d1f6845ee9951718d525d677d0b5e8",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mysql",
     "children": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "486-f097b9fbc4ae7e1648d8a1632d2be715",
+        "_rev": "489-a00bf01a9144aeaabfeca772c9666c4f",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children": [
@@ -90347,10 +90347,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -90427,7 +90427,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:27.895623567-04:00",
+        "updated": "2026-07-02T14:52:19.27906508-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -90454,15 +90454,15 @@
     ],
     "id": "databases-for-mysql",
     "images": {
-      "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-      "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-      "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-      "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg"
+      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.eu-gb.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-mysql",
       "other": {
@@ -90583,7 +90583,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-01T14:43:27.662389439-04:00",
+    "updated": "2026-07-02T14:52:19.029179851-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -90591,7 +90591,7 @@
     "plans": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "486-f097b9fbc4ae7e1648d8a1632d2be715",
+        "_rev": "489-a00bf01a9144aeaabfeca772c9666c4f",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard/%2A",
@@ -90614,10 +90614,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -90694,7 +90694,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:27.895623567-04:00",
+        "updated": "2026-07-02T14:52:19.27906508-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -90707,7 +90707,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -95508,13 +95508,13 @@
   },
   {
     "_id": "databases-for-redis",
-    "_rev": "773-7fa0a5c071f372ef627cea745c3f5202",
+    "_rev": "776-2b981321c1e967370ec53a082da6bcfb",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-redis",
     "children": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "482-92835e7c51da9581b73a6b6168a4dc9b",
+        "_rev": "485-0b7ffa2a189e6b10759679309b463545",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children": [
@@ -98447,10 +98447,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -98527,7 +98527,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:09.773859272-04:00",
+        "updated": "2026-07-02T14:51:59.969083646-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -98651,15 +98651,15 @@
     ],
     "id": "databases-for-redis",
     "images": {
-      "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-      "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-      "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-      "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg"
+      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.eu-gb.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-redis",
       "other": {
@@ -98781,7 +98781,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-01T14:43:09.517604567-04:00",
+    "updated": "2026-07-02T14:51:59.716867637-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -98789,7 +98789,7 @@
     "plans": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "482-92835e7c51da9581b73a6b6168a4dc9b",
+        "_rev": "485-0b7ffa2a189e6b10759679309b463545",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard/%2A",
@@ -98812,10 +98812,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -98892,7 +98892,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:43:09.773859272-04:00",
+        "updated": "2026-07-02T14:51:59.969083646-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -99004,7 +99004,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -101952,16 +101952,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "fra02",
-      "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-south",
-      "eu-gb",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "fra02",
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -134198,14 +134198,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -144791,19 +144791,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "ca-mon",
-      "au-syd",
-      "jp-osa",
-      "in-mum",
       "eu-de",
       "us-south",
-      "eu-gb",
+      "au-syd",
       "br-sao",
-      "in-che"
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -168108,13 +168108,13 @@
   },
   {
     "_id": "messages-for-rabbitmq",
-    "_rev": "775-0cac3c93e81f77c422761fa2c47983fb",
+    "_rev": "778-83bba4c43746377ec4dffe57e9ab9ac6",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:messages-for-rabbitmq",
     "children": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "483-21bdb4661309cbc6e69aefedd0fcc631",
+        "_rev": "486-ba9bd017e7de3d221fc37d782f925192",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children": [
@@ -171047,10 +171047,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -171127,7 +171127,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:42:52.830948139-04:00",
+        "updated": "2026-07-02T14:51:40.389026882-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -171251,15 +171251,15 @@
     ],
     "id": "messages-for-rabbitmq",
     "images": {
-      "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg"
+      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.eu-gb.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
       },
       "original_name": "messages-for-rabbitmq",
       "other": {
@@ -171382,7 +171382,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-01T14:42:52.603965311-04:00",
+    "updated": "2026-07-02T14:51:40.154568665-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -171390,7 +171390,7 @@
     "plans": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "483-21bdb4661309cbc6e69aefedd0fcc631",
+        "_rev": "486-ba9bd017e7de3d221fc37d782f925192",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard/%2A",
@@ -171413,10 +171413,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -171493,7 +171493,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-01T14:42:52.830948139-04:00",
+        "updated": "2026-07-02T14:51:40.389026882-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -171605,7 +171605,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-gb.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -171939,10 +171939,10 @@
     "created": "2017-11-28T15:39:18Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "images": {
@@ -206614,7 +206614,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "417-a6e915a2e2f6c5be851d2824aa1fab6c",
+    "_rev": "419-6cd2249d415a91905885a6f970ab9e06",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -206622,8 +206622,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -207112,7 +207112,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-07-01T09:21:16.889518029-04:00",
+    "updated": "2026-07-02T11:03:43.931981736-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -219010,12 +219010,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -238293,6 +238293,7 @@
     "created": "2018-11-19T20:43:19.725Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -238334,8 +238335,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "images": {
@@ -252152,7 +252152,7 @@
     "plans": [
       {
         "_id": "5b68149b-0072-42b5-8bae-4348e23dc423",
-        "_rev": "4-41147cc0da184a6d0324ed7e2d8d2280",
+        "_rev": "14-a58045e207d44f3922f1d4f719004767",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5b68149b-0072-42b5-8bae-4348e23dc423",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5b68149b-0072-42b5-8bae-4348e23dc423/%2A",
@@ -252247,13 +252247,13 @@
                     "description": "Unterstützt mehr als 5 Abfragen pro Sekunde"
                   },
                   {
-                    "description": "$ 5 für jeweils 1.000 zusätzliche Dokumente pro Monat"
+                    "description": "$ 5.3 für jeweils 1.000 zusätzliche Dokumente pro Monat"
                   },
                   {
-                    "description": "$ 5 für jeweils 1.000 zusätzliche Abfragen pro Monat"
+                    "description": "$ 5.3 für jeweils 1.000 zusätzliche Abfragen pro Monat"
                   },
                   {
-                    "description": "500 USD pro weitere 100 Sammlungen pro Monat"
+                    "description": "530 USD pro weitere 100 Sammlungen pro Monat"
                   },
                   {
                     "description": "---Features---"
@@ -252320,13 +252320,13 @@
                     "description": "Supports more than 5 queries per second"
                   },
                   {
-                    "description": "$5 for every additional 1,000 documents per month"
+                    "description": "$5.3 for every additional 1,000 documents per month"
                   },
                   {
-                    "description": "$5 for every additional 1,000 queries per month"
+                    "description": "$5.3 for every additional 1,000 queries per month"
                   },
                   {
-                    "description": "$500 for every additional 100 collections per month"
+                    "description": "$530 for every additional 100 collections per month"
                   },
                   {
                     "description": "---Features---"
@@ -252393,13 +252393,13 @@
                     "description": "Admite más de 5 consultas por segundo"
                   },
                   {
-                    "description": "50 $ por cada 1000 documentos adicionales al mes"
+                    "description": "5.3 $ por cada 1000 documentos adicionales al mes"
                   },
                   {
-                    "description": "20 $ por cada 1000 consultas adicionales al mes"
+                    "description": "5.3 $ por cada 1000 consultas adicionales al mes"
                   },
                   {
-                    "description": "500 $ por cada 100 colecciones adicionales al mes"
+                    "description": "530 $ por cada 100 colecciones adicionales al mes"
                   },
                   {
                     "description": "---  Características  ---"
@@ -252466,13 +252466,13 @@
                     "description": "Prise en charge de plus de 5 requêtes par seconde"
                   },
                   {
-                    "description": "5 USD pour chaque tranche supplémentaire de 1 000 documents par mois"
+                    "description": "5.3 USD pour chaque tranche supplémentaire de 1 000 documents par mois"
                   },
                   {
-                    "description": "5 USD pour chaque tranche supplémentaire de 1 000 requêtes par mois"
+                    "description": "5.3 USD pour chaque tranche supplémentaire de 1 000 requêtes par mois"
                   },
                   {
-                    "description": "500 USD pour chaque 100 collections supplémentaires par mois"
+                    "description": "530 USD pour chaque 100 collections supplémentaires par mois"
                   },
                   {
                     "description": "---Fonctions---"
@@ -252539,13 +252539,13 @@
                     "description": "Supporta più di 5 query al secondo"
                   },
                   {
-                    "description": "$5 per ogni 1.000 documenti aggiuntivi al mese"
+                    "description": "$5.3 per ogni 1.000 documenti aggiuntivi al mese"
                   },
                   {
-                    "description": "$5 per ogni 1.000 query aggiuntive al mese"
+                    "description": "$5.3 per ogni 1.000 query aggiuntive al mese"
                   },
                   {
-                    "description": "$500 per ogni 100 collezioni aggiuntive al mese"
+                    "description": "$530 per ogni 100 collezioni aggiuntive al mese"
                   },
                   {
                     "description": "--- Funzioni ---"
@@ -252612,13 +252612,13 @@
                     "description": "1 秒当たり 5 件を超える照会をサポート"
                   },
                   {
-                    "description": "1 カ月あたり 1,000 件の文書の追加ごとに $5"
+                    "description": "1 カ月あたり 1,000 件の文書の追加ごとに $5.3"
                   },
                   {
-                    "description": "1 カ月あたり 1,000 件の照会の追加ごとに $5"
+                    "description": "1 カ月あたり 1,000 件の照会の追加ごとに $5.3"
                   },
                   {
-                    "description": "1 カ月当たり 100 個の追加コレクションごとに $500"
+                    "description": "1 カ月当たり 100 個の追加コレクションごとに $530"
                   },
                   {
                     "description": "---特徴---"
@@ -252685,13 +252685,13 @@
                     "description": "초당 5개가 넘는 조회 지원"
                   },
                   {
-                    "description": "매월 추가 1,000개의 조회에 대해 $5"
+                    "description": "매월 추가 1,000개의 조회에 대해 $5.3"
                   },
                   {
-                    "description": "매월 추가 1,000개의 조회에 대해 $5"
+                    "description": "매월 추가 1,000개의 조회에 대해 $5.3"
                   },
                   {
-                    "description": "매월 100개의 콜렉션마다 $500"
+                    "description": "매월 100개의 콜렉션마다 $530"
                   },
                   {
                     "description": "---기능---"
@@ -252758,13 +252758,13 @@
                     "description": "Suporta mais de cinco consultas por segundo"
                   },
                   {
-                    "description": "US$ 5,00 para cada mil documentos adicionais por mês"
+                    "description": "US$ 5,30 para cada mil documentos adicionais por mês"
                   },
                   {
-                    "description": "US$ 5,00 para cada mil consultas adicionais por mês"
+                    "description": "US$ 5,30 para cada mil consultas adicionais por mês"
                   },
                   {
-                    "description": "São USD 500 a cada 100 coleções adicionais por mês"
+                    "description": "São USD 530 a cada 100 coleções adicionais por mês"
                   },
                   {
                     "description": "---Recursos---"
@@ -252831,13 +252831,13 @@
                     "description": "支持每秒 5 个以上查询"
                   },
                   {
-                    "description": "每月每增加 1000 份文档收取 5 美元"
+                    "description": "每月每增加 1000 份文档收取 5.3 美元"
                   },
                   {
-                    "description": "每月每增加 1000 个查询收取 5 美元"
+                    "description": "每月每增加 1000 个查询收取 5.3 美元"
                   },
                   {
-                    "description": "每月每增加 100 个集合额外收取 500 美元"
+                    "description": "每月每增加 100 个集合额外收取 530 美元"
                   },
                   {
                     "description": "---功能部件---"
@@ -252904,13 +252904,13 @@
                     "description": "支援每秒超過 5 個查詢"
                   },
                   {
-                    "description": "每月新增 1,000 份文件 5 美元"
+                    "description": "每月新增 1,000 份文件 5.3 美元"
                   },
                   {
-                    "description": "每月新增 1,000 個查詢 5 美元"
+                    "description": "每月新增 1,000 個查詢 5.3 美元"
                   },
                   {
-                    "description": "每月每額外 100 個收集 $500 美元"
+                    "description": "每月每額外 100 個收集 $530 美元"
                   },
                   {
                     "description": "---功能---"
@@ -253031,7 +253031,7 @@
           "service_endpoint_supported",
           "watson"
         ],
-        "updated": "2024-07-25T23:40:32.15505169-04:00",
+        "updated": "2026-07-02T15:25:34.024006931-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5b68149b-0072-42b5-8bae-4348e23dc423?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -253042,7 +253042,7 @@
       },
       {
         "_id": "cc472c78-5832-4b34-b915-ba5255e5fa5b",
-        "_rev": "9-efab6d8ad8814abc5b03f74583351ae9",
+        "_rev": "19-56cf36d81f13357cb37dc5c8beea1722",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cc472c78-5832-4b34-b915-ba5255e5fa5b",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cc472c78-5832-4b34-b915-ba5255e5fa5b/%2A",
@@ -253138,10 +253138,10 @@
                     "description": "Bis zu 5 Abfragen pro Sekunde"
                   },
                   {
-                    "description": "$ 50 für jeweils 1.000 zusätzliche Dokumente pro Monat"
+                    "description": "$ 53 für jeweils 1.000 zusätzliche Dokumente pro Monat"
                   },
                   {
-                    "description": " $ 20 für jeweils 1.000 zusätzliche Abfragen pro Monat"
+                    "description": "$ 21.2 für jeweils 1.000 zusätzliche Abfragen pro Monat"
                   },
                   {
                     "description": "---Komponenten---"
@@ -253214,10 +253214,10 @@
                     "description": "Up to 5 queries per second"
                   },
                   {
-                    "description": "$50 for every additional 1,000 documents per month"
+                    "description": "$53 for every additional 1,000 documents per month"
                   },
                   {
-                    "description": " $20 for every additional 1,000 queries per month"
+                    "description": " $21.2 for every additional 1,000 queries per month"
                   },
                   {
                     "description": "---Features---"
@@ -253290,10 +253290,10 @@
                     "description": "Hasta 5 consultas por segundo"
                   },
                   {
-                    "description": "50 $ por cada 1000 documentos adicionales al mes"
+                    "description": "53 $ por cada 1000 documentos adicionales al mes"
                   },
                   {
-                    "description": " 20 $ por cada 1000 consultas adicionales al mes"
+                    "description": "21.2 $ por cada 1000 consultas adicionales al mes"
                   },
                   {
                     "description": "---  Características  ---"
@@ -253366,10 +253366,10 @@
                     "description": "Jusqu'à 5 requêtes par seconde"
                   },
                   {
-                    "description": "50 USD pour chaque tranche supplémentaire de 1 000 documents par mois"
+                    "description": "53 USD pour chaque tranche supplémentaire de 1 000 documents par mois"
                   },
                   {
-                    "description": " 20 USD pour chaque tranche supplémentaire de 1 000 requêtes par mois"
+                    "description": "21.2 USD pour chaque tranche supplémentaire de 1 000 requêtes par mois"
                   },
                   {
                     "description": "--- Fonctions ---"
@@ -253442,10 +253442,10 @@
                     "description": "Fino a 5 query al secondo "
                   },
                   {
-                    "description": "$50 per ogni 1.000 documenti aggiuntivi al mese "
+                    "description": "$53 per ogni 1.000 documenti aggiuntivi al mese"
                   },
                   {
-                    "description": " $20 per ogni 1.000 query aggiuntive al mese "
+                    "description": "$21.2 per ogni 1.000 query aggiuntive al mese"
                   },
                   {
                     "description": "---Funzioni---"
@@ -253518,10 +253518,10 @@
                     "description": "1 秒あたり最大 5 件の照会"
                   },
                   {
-                    "description": "1 カ月あたり 1,000 件の文書の追加ごとに $50"
+                    "description": "1 カ月あたり 1,000 件の文書の追加ごとに $53"
                   },
                   {
-                    "description": " 1 カ月あたり 1,000 件の照会の追加ごとに $20"
+                    "description": "1 カ月あたり 1,000 件の照会の追加ごとに $21.2"
                   },
                   {
                     "description": "---特徴---"
@@ -253594,10 +253594,10 @@
                     "description": "초당 최대 5개의 조회"
                   },
                   {
-                    "description": "매월 추가 1,000개의 문서에 대해 $50"
+                    "description": "매월 추가 1,000개의 문서에 대해 $53"
                   },
                   {
-                    "description": "매월 추가 1,000개의 조회에 대해 $20"
+                    "description": "매월 추가 1,000개의 조회에 대해 $21.2"
                   },
                   {
                     "description": "---기능---"
@@ -253670,10 +253670,10 @@
                     "description": "Até cinco consultas por segundo"
                   },
                   {
-                    "description": "US$ 50,00 para cada mil documentos adicionais por mês"
+                    "description": "US$ 53,00 para cada mil documentos adicionais por mês"
                   },
                   {
-                    "description": " US$ 20,00 para cada mil documentos adicionais por mês"
+                    "description": "US$ 21,20 para cada mil documentos adicionais por mês"
                   },
                   {
                     "description": "---Recursos ---"
@@ -253746,10 +253746,10 @@
                     "description": "每秒最多 5 个查询"
                   },
                   {
-                    "description": "每月每增加 1000 份文档收取 50 美元"
+                    "description": "每月每增加 1000 份文档收取 53 美元"
                   },
                   {
-                    "description": " 每月每增加 1000 个查询收取 20 美元"
+                    "description": "每月每增加 1000 个查询收取 21.2 美元"
                   },
                   {
                     "description": "---功能部件---"
@@ -253822,10 +253822,10 @@
                     "description": "每秒最多可查詢 5 次"
                   },
                   {
-                    "description": "每月新增 1,000 份文件 50 美元"
+                    "description": "每月新增 1,000 份文件 53 美元"
                   },
                   {
-                    "description": " 每月新增 1,000 個查詢 20 美元"
+                    "description": "每月新增 1,000 個查詢 21.2 美元"
                   },
                   {
                     "description": "---功能---"
@@ -253958,7 +253958,7 @@
           "service_endpoint_supported",
           "watson"
         ],
-        "updated": "2025-07-17T12:57:37.833120845-04:00",
+        "updated": "2026-07-02T15:05:15.490515466-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/cc472c78-5832-4b34-b915-ba5255e5fa5b?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -269767,12 +269767,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
