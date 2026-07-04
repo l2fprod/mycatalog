@@ -7115,14 +7115,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "images": {
@@ -45123,6 +45123,7 @@
     "created": "2014-06-03T07:04:12Z",
     "disabled": false,
     "geo_tags": [
+      "che01",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -45132,8 +45133,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "che01"
+      "us-south"
     ],
     "id": "cloudant",
     "images": {
@@ -85462,7 +85462,7 @@
         "children": [
           {
             "_id": "databases-for-mongodb-standard-gen2:ca-mon",
-            "_rev": "39-02348e9c59ca8fd8f1d953a3515dbd2a",
+            "_rev": "40-91b2f5507edfdd5a415db084cb533f52",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:ca-mon/%2A",
@@ -85612,18 +85612,6 @@
                       "allocation_gb": 128
                     },
                     "name": "32x128",
-                    "profile": "flex"
-                  },
-                  {
-                    "cpu": {
-                      "allocation_count": 48
-                    },
-                    "hosting_size": "xl",
-                    "id": "bxf.48x192",
-                    "memory": {
-                      "allocation_gb": 192
-                    },
-                    "name": "48x192",
                     "profile": "flex"
                   }
                 ],
@@ -85863,7 +85851,7 @@
             "tags": [
               "ca-mon"
             ],
-            "updated": "2026-07-01T03:05:30.225342469-04:00",
+            "updated": "2026-07-03T11:15:55.943467504-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -85871,7 +85859,7 @@
           },
           {
             "_id": "databases-for-mongodb-standard-gen2:in-che",
-            "_rev": "17-4f4dac5510758422d12368670b20d33c",
+            "_rev": "18-b3665a3665665a09f44c58b235dca415",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-che/%2A",
@@ -86021,18 +86009,6 @@
                       "allocation_gb": 128
                     },
                     "name": "32x128",
-                    "profile": "flex"
-                  },
-                  {
-                    "cpu": {
-                      "allocation_count": 48
-                    },
-                    "hosting_size": "xl",
-                    "id": "bxf.48x192",
-                    "memory": {
-                      "allocation_gb": 192
-                    },
-                    "name": "48x192",
                     "profile": "flex"
                   }
                 ],
@@ -86272,7 +86248,7 @@
             "tags": [
               "in-che"
             ],
-            "updated": "2026-07-01T03:05:46.633358714-04:00",
+            "updated": "2026-07-03T11:17:33.807817289-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -86280,7 +86256,7 @@
           },
           {
             "_id": "databases-for-mongodb-standard-gen2:in-mum",
-            "_rev": "11-5edd104415fe5f4a6b2fad1bb6b7d146",
+            "_rev": "12-05fc2f9982d855e4e514cab4cd013c6c",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-mum/%2A",
@@ -86430,18 +86406,6 @@
                       "allocation_gb": 128
                     },
                     "name": "32x128",
-                    "profile": "flex"
-                  },
-                  {
-                    "cpu": {
-                      "allocation_count": 48
-                    },
-                    "hosting_size": "xl",
-                    "id": "bxf.48x192",
-                    "memory": {
-                      "allocation_gb": 192
-                    },
-                    "name": "48x192",
                     "profile": "flex"
                   }
                 ],
@@ -86681,7 +86645,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-07-01T03:06:02.971876226-04:00",
+            "updated": "2026-07-03T11:17:47.271410578-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -86782,6 +86746,9 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -86793,10 +86760,7 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "eu-de"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -93707,7 +93671,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -93718,7 +93681,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -93816,7 +93780,7 @@
         "children": [
           {
             "_id": "databases-for-postgresql-standard-gen2:ca-mon",
-            "_rev": "43-71327cdada059d0ffa477b8824c55ad7",
+            "_rev": "44-3a1e47abe42b80cc2983dfa12521f091",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:ca-mon/%2A",
@@ -93972,18 +93936,6 @@
                       "allocation_gb": 128
                     },
                     "name": "32x128",
-                    "profile": "flex"
-                  },
-                  {
-                    "cpu": {
-                      "allocation_count": 48
-                    },
-                    "hosting_size": "xl",
-                    "id": "bxf.48x192",
-                    "memory": {
-                      "allocation_gb": 192
-                    },
-                    "name": "48x192",
                     "profile": "flex"
                   }
                 ],
@@ -94146,7 +94098,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-01T03:06:52.088268565-04:00",
+            "updated": "2026-07-03T11:19:49.137945522-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -94154,7 +94106,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:in-che",
-            "_rev": "13-977fc2e2b00efcb77c5cd82419d19724",
+            "_rev": "14-fc356db2efd3a42e3bf724a13cbc0b92",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-che/%2A",
@@ -94310,18 +94262,6 @@
                       "allocation_gb": 128
                     },
                     "name": "32x128",
-                    "profile": "flex"
-                  },
-                  {
-                    "cpu": {
-                      "allocation_count": 48
-                    },
-                    "hosting_size": "xl",
-                    "id": "bxf.48x192",
-                    "memory": {
-                      "allocation_gb": 192
-                    },
-                    "name": "48x192",
                     "profile": "flex"
                   }
                 ],
@@ -94484,7 +94424,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-01T03:07:21.949725142-04:00",
+            "updated": "2026-07-03T11:20:32.819712764-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -94492,7 +94432,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:in-mum",
-            "_rev": "8-86b83301d1fe01ce212249f9ddd905cd",
+            "_rev": "9-33d88026795f26afcd00a5ef6cd92917",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-mum/%2A",
@@ -94648,18 +94588,6 @@
                       "allocation_gb": 128
                     },
                     "name": "32x128",
-                    "profile": "flex"
-                  },
-                  {
-                    "cpu": {
-                      "allocation_count": 48
-                    },
-                    "hosting_size": "xl",
-                    "id": "bxf.48x192",
-                    "memory": {
-                      "allocation_gb": 192
-                    },
-                    "name": "48x192",
                     "profile": "flex"
                   }
                 ],
@@ -94822,7 +94750,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-01T03:07:35.731369353-04:00",
+            "updated": "2026-07-03T11:20:48.559898097-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -101952,16 +101880,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "fra02",
       "eu-es",
+      "fra02",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -106701,13 +106629,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -144791,19 +144719,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "br-sao",
-      "in-che",
-      "in-mum",
-      "au-syd",
-      "eu-gb",
-      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor"
+      "jp-osa",
+      "ca-tor",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "eu-gb",
+      "br-sao",
+      "in-che",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -206614,7 +206542,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "419-6cd2249d415a91905885a6f970ab9e06",
+    "_rev": "420-1f7d54b0f9ee82e4a6fed6a178c92973",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -206622,8 +206550,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -207112,7 +207040,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-07-02T11:03:43.931981736-04:00",
+    "updated": "2026-07-03T11:21:42.62422464-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -207269,7 +207197,7 @@
       },
       {
         "_id": "5304b575-3cff-4455-90dc-ae4367762093",
-        "_rev": "117-62fd80c9194b544cf5e1ac98f44899ec",
+        "_rev": "119-dbd6e0a6243c878b9ecaa38af3341e3e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5304b575-3cff-4455-90dc-ae4367762093",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093/%2A",
@@ -207472,7 +207400,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-06-25T09:12:15.52747472-04:00",
+        "updated": "2026-07-03T11:21:35.186096083-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -219010,12 +218938,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -260885,12 +260813,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -269767,12 +269695,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
@@ -273443,10 +273371,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
