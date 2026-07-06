@@ -45115,7 +45115,7 @@
   },
   {
     "_id": "cloudant",
-    "_rev": "59-8d2ee1e7b9f02909f328ebd9d60cea2f",
+    "_rev": "62-5e2c24c17ed331a7d52d9f05e57668a8",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:cloudant",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant/%2A",
@@ -45173,28 +45173,61 @@
             "category": [
               "database"
             ],
-            "disable_download": true,
-            "extensions": [
-              "cloudant-gen1-curl-examples.json",
-              "cloudant-gen1-go-examples.json",
-              "cloudant-gen1-java-examples.json",
-              "cloudant-gen1-node-examples.json",
-              "cloudant-gen1-python-examples.json"
-            ],
-            "file": "cloudant-gen1.json",
             "i18n": {
               "en": {
                 "name": "Cloudant"
               }
             },
             "id": "cloudant",
-            "links": {
-              "cli": "/docs/Cloudant?group=cli",
-              "docs": "/docs/Cloudant",
-              "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cloudant"
-            },
-            "sdk": true,
-            "subcollection": "Cloudant"
+            "subcollection": "Cloudant",
+            "versions": [
+              {
+                "disable_download": true,
+                "extensions": [
+                  "cloudant-gen2-curl-examples.json",
+                  "cloudant-gen2-go-examples.json",
+                  "cloudant-gen2-java-examples.json",
+                  "cloudant-gen2-node-examples.json",
+                  "cloudant-gen2-python-examples.json"
+                ],
+                "file": "cloudant-gen2.json",
+                "i18n": {
+                  "en": {
+                    "name": "Cloudant Gen 2"
+                  }
+                },
+                "id": "cloudant-gen2",
+                "links": {
+                  "docs": "/docs/cloudant-gen2"
+                },
+                "sdk": true,
+                "version-label": "Gen 2"
+              },
+              {
+                "disable_download": true,
+                "extensions": [
+                  "cloudant-gen1-curl-examples.json",
+                  "cloudant-gen1-go-examples.json",
+                  "cloudant-gen1-java-examples.json",
+                  "cloudant-gen1-node-examples.json",
+                  "cloudant-gen1-python-examples.json"
+                ],
+                "file": "cloudant-gen1.json",
+                "i18n": {
+                  "en": {
+                    "name": "Cloudant Gen 1"
+                  }
+                },
+                "id": "cloudant-gen1",
+                "links": {
+                  "cli": "/docs/Cloudant?group=cli",
+                  "docs": "/docs/Cloudant",
+                  "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cloudant"
+                },
+                "sdk": true,
+                "version-label": "Gen 1"
+              }
+            ]
           }
         ],
         "sysdig-monitor": {
@@ -45644,7 +45677,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-06-30T14:37:14.887637037-04:00",
+    "updated": "2026-07-06T11:37:09.663618533-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -70379,13 +70412,13 @@
   },
   {
     "_id": "databases-for-elasticsearch",
-    "_rev": "776-e7f36505e77b467ba7ad2d28f3c8d9ae",
+    "_rev": "777-c8ad7ae53af37a902473fef716102d30",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-elasticsearch",
     "children": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "483-2c6268379eed22541c4242e2d0b67fa9",
+        "_rev": "484-9940057d54d6ebab8e1519dbc293afb8",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children": [
@@ -73099,10 +73132,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -73179,7 +73212,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:09.702777708-04:00",
+        "updated": "2026-07-06T09:17:50.562657925-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -73187,7 +73220,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "496-5881b91e0ab465556dab45985ff94cad",
+        "_rev": "497-b3c6d1aea8f38bd280a2ee15f2691d63",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children": [
@@ -75901,10 +75934,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -75981,7 +76014,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:10.526192348-04:00",
+        "updated": "2026-07-06T09:17:51.145142589-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -75989,7 +76022,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "486-55f2a42d072012d2be355d07ee03b514",
+        "_rev": "487-2395d4a0569fdd8402c2afac278e94f2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children": [
@@ -76219,10 +76252,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76298,7 +76331,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:09.137532568-04:00",
+        "updated": "2026-07-06T09:17:49.970498352-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76325,15 +76358,15 @@
     ],
     "id": "databases-for-elasticsearch",
     "images": {
-      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
+      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
+        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-elasticsearch",
       "other": {
@@ -76458,7 +76491,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-02T14:52:08.884879194-04:00",
+    "updated": "2026-07-06T09:17:49.709591633-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -76466,7 +76499,7 @@
     "plans": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "483-2c6268379eed22541c4242e2d0b67fa9",
+        "_rev": "484-9940057d54d6ebab8e1519dbc293afb8",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise/%2A",
@@ -76489,10 +76522,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76569,7 +76602,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:09.702777708-04:00",
+        "updated": "2026-07-06T09:17:50.562657925-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76580,7 +76613,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "496-5881b91e0ab465556dab45985ff94cad",
+        "_rev": "497-b3c6d1aea8f38bd280a2ee15f2691d63",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum/%2A",
@@ -76603,10 +76636,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76683,7 +76716,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:10.526192348-04:00",
+        "updated": "2026-07-06T09:17:51.145142589-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76694,7 +76727,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "486-55f2a42d072012d2be355d07ee03b514",
+        "_rev": "487-2395d4a0569fdd8402c2afac278e94f2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard/%2A",
@@ -76703,10 +76736,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -76782,7 +76815,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:09.137532568-04:00",
+        "updated": "2026-07-06T09:17:49.970498352-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76795,7 +76828,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -87366,13 +87399,13 @@
   },
   {
     "_id": "databases-for-mysql",
-    "_rev": "776-d7d1f6845ee9951718d525d677d0b5e8",
+    "_rev": "777-8086e45423e51c5ded9ba280c3d8865d",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mysql",
     "children": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "489-a00bf01a9144aeaabfeca772c9666c4f",
+        "_rev": "490-fbba32e78e8955606065f47cdc1e5957",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children": [
@@ -90311,10 +90344,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -90391,7 +90424,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:19.27906508-04:00",
+        "updated": "2026-07-06T09:17:59.7454809-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -90418,15 +90451,15 @@
     ],
     "id": "databases-for-mysql",
     "images": {
-      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg"
+      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+      "image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
+        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-mysql",
       "other": {
@@ -90547,7 +90580,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-02T14:52:19.029179851-04:00",
+    "updated": "2026-07-06T09:17:59.493876902-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -90555,7 +90588,7 @@
     "plans": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "489-a00bf01a9144aeaabfeca772c9666c4f",
+        "_rev": "490-fbba32e78e8955606065f47cdc1e5957",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard/%2A",
@@ -90578,10 +90611,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -90658,7 +90691,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:52:19.27906508-04:00",
+        "updated": "2026-07-06T09:17:59.7454809-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -90671,7 +90704,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -95127,6 +95160,8 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -95136,9 +95171,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "che01"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -95436,13 +95469,13 @@
   },
   {
     "_id": "databases-for-redis",
-    "_rev": "776-2b981321c1e967370ec53a082da6bcfb",
+    "_rev": "777-f3906f4fb1ff620e33512268d25750c5",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-redis",
     "children": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "485-0b7ffa2a189e6b10759679309b463545",
+        "_rev": "486-dda97ec3211a3f36d0c018c0feb8889e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children": [
@@ -98375,10 +98408,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -98455,7 +98488,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:51:59.969083646-04:00",
+        "updated": "2026-07-06T09:17:42.025448315-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -98579,15 +98612,15 @@
     ],
     "id": "databases-for-redis",
     "images": {
-      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg"
+      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+      "image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
+        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-redis",
       "other": {
@@ -98709,7 +98742,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-02T14:51:59.716867637-04:00",
+    "updated": "2026-07-06T09:17:41.771217806-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -98717,7 +98750,7 @@
     "plans": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "485-0b7ffa2a189e6b10759679309b463545",
+        "_rev": "486-dda97ec3211a3f36d0c018c0feb8889e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard/%2A",
@@ -98740,10 +98773,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -98820,7 +98853,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:51:59.969083646-04:00",
+        "updated": "2026-07-06T09:17:42.025448315-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -98932,7 +98965,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -101880,16 +101913,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
+      "fra02",
+      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es",
-      "us-south"
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -108775,13 +108808,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -134126,14 +134159,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -144719,19 +144752,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "in-che",
-      "jp-osa",
+      "in-mum",
+      "eu-gb",
       "eu-es",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "in-mum",
       "ca-tor",
       "ca-mon",
-      "au-syd"
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "in-che",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -149332,7 +149365,7 @@
   },
   {
     "_id": "containers-kubernetes",
-    "_rev": "203-a32702f87f7e8c464144a36cc8a37f3a",
+    "_rev": "205-f1b100284d5e5865dc18e0fa14572d6a",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:containers-kubernetes",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes/%2A",
@@ -150359,7 +150392,7 @@
       "wdc06",
       "wdc07"
     ],
-    "updated": "2026-06-25T05:56:39.784322591-04:00",
+    "updated": "2026-07-06T08:56:25.652629572-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -168036,13 +168069,13 @@
   },
   {
     "_id": "messages-for-rabbitmq",
-    "_rev": "778-83bba4c43746377ec4dffe57e9ab9ac6",
+    "_rev": "779-df488a1055ff930aedff8c3edc01983b",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:messages-for-rabbitmq",
     "children": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "486-ba9bd017e7de3d221fc37d782f925192",
+        "_rev": "487-d25e750ed57265548ab722c95c3b737f",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children": [
@@ -170975,10 +171008,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -171055,7 +171088,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:51:40.389026882-04:00",
+        "updated": "2026-07-06T09:17:27.318895813-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -171179,15 +171212,15 @@
     ],
     "id": "messages-for-rabbitmq",
     "images": {
-      "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg"
+      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-osa.databases.cloud.ibm.com"
+        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
       },
       "original_name": "messages-for-rabbitmq",
       "other": {
@@ -171310,7 +171343,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-02T14:51:40.154568665-04:00",
+    "updated": "2026-07-06T09:17:27.028622843-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -171318,7 +171351,7 @@
     "plans": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "486-ba9bd017e7de3d221fc37d782f925192",
+        "_rev": "487-d25e750ed57265548ab722c95c3b737f",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard/%2A",
@@ -171341,10 +171374,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -171421,7 +171454,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-07-02T14:51:40.389026882-04:00",
+        "updated": "2026-07-06T09:17:27.318895813-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -171533,7 +171566,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -171867,10 +171900,10 @@
     "created": "2017-11-28T15:39:18Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "images": {
@@ -228560,12 +228593,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -260813,12 +260846,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -273371,10 +273404,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
