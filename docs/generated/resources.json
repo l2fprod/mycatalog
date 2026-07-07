@@ -595,14 +595,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -3760,14 +3760,14 @@
       "au-syd",
       "br-sao",
       "ca-tor",
-      "eu-de",
       "eu-es",
       "eu-gb",
       "jp-osa",
       "jp-tok",
       "us-east",
       "us-south",
-      "che01"
+      "che01",
+      "eu-de"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -3780,9 +3780,12 @@
       "paid_only",
       "paygo",
       "free",
-      "lite"
+      "lite",
+      "paid",
+      "allow_internal_users"
     ],
     "tags": [
+      "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
       "br-sao",
@@ -3806,6 +3809,7 @@
       "jp-tok",
       "lead",
       "lite",
+      "paid",
       "paid_only",
       "paygo",
       "rc_compatible",
@@ -3834,6 +3838,12 @@
         "description": "The Standard plan is priced based on provisioned throughput capacity allocated and data storage used, with billing prorated hourly. The provisioned throughput capacity starts at 100 reads/sec, 50 writes/sec, and 5 global queries/sec (USD$0.105/hour) with the ability to increase the capacity in increments of 100 reads/sec, 50 writes/sec, and 5 global queries/sec after instance is provisioned. Note that costs are for the provisioned throughput capacity allocated and not on the metered volume of requests. The Standard plan includes 20GB of encrypted data storage, with additional storage metered for purchase. See the capacity slider or the IBM Cloud Cost Calculator to estimate costs.",
         "displayName": "Standard",
         "originalName": "Standard"
+      },
+      {
+        "id": "cloudant-gen2-standard",
+        "name": "standard-gen2",
+        "description": "Cloudant Gen 2 Standard plan is improved over previous generation of infrastructure. It is charged based on provisioned throughout and data stored, billed hourly. This plan includes 20GB of free encrypted data storage.",
+        "displayName": "Standard-Gen2"
       }
     ],
     "description": "A scalable JSON document database for web, mobile, IoT, and serverless applications.",
@@ -5489,9 +5499,12 @@
     "name": "databases-for-elasticsearch",
     "pricing_tags": [
       "paygo",
-      "paid_only"
+      "paid_only",
+      "paid",
+      "allow_internal_users"
     ],
     "tags": [
+      "allow_internal_users",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -5509,6 +5522,7 @@
       "ibm_created",
       "jp-osa",
       "jp-tok",
+      "paid",
       "paid_only",
       "par01",
       "paygo",
@@ -5516,7 +5530,8 @@
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
-      "us-south"
+      "us-south",
+      "vpc_private_endpoint"
     ],
     "plans": [
       {
@@ -5525,6 +5540,12 @@
         "description": "One highly available Elasticsearch Enterprise instance with three data members. The Enterprise plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for Elasticsearch instances have a minimum of 5GB of Disk and 1GB of RAM per data member.  Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Enterprise",
         "originalName": "enterprise"
+      },
+      {
+        "id": "databases-for-elasticsearch-gen2-enterprise",
+        "name": "enterprise-gen2",
+        "description": "Databases for Elasticsearch Enterprise plan",
+        "displayName": "Enterprise-Gen2"
       },
       {
         "id": "databases-for-elasticsearch-platinum",
@@ -5561,8 +5582,8 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de",
       "au-syd",
+      "eu-de",
       "eu-gb",
       "jp-tok"
     ],
@@ -5627,6 +5648,12 @@
         "originalName": "enterprise-sharding"
       },
       {
+        "id": "databases-for-mongodb-gen2-enterprise-sharding",
+        "name": "enterprise-sharding-gen2",
+        "description": "Databases for MongoDB Enterprise Sharding",
+        "displayName": "Enterprise Sharding-Gen2"
+      },
+      {
         "id": "databases-for-mongodb-standard",
         "name": "standard",
         "description": "One highly available MongoDB instance with three data members. The Standard plan is priced based on disk storage, RAM, and backup storage allocated to deployments, prorated hourly. Databases for MongoDB instances have a minimum of 10GB of Disk and 1GB of RAM per data member.",
@@ -5671,9 +5698,11 @@
     "name": "databases-for-mysql",
     "pricing_tags": [
       "paygo",
-      "paid_only"
+      "paid_only",
+      "allow_internal_users"
     ],
     "tags": [
+      "allow_internal_users",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -5707,6 +5736,12 @@
         "description": "One highly available MySQL instance with three data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Databases for MySQL instances have a minimum of 10GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
+      },
+      {
+        "id": "databases-for-mysql-gen2-standard",
+        "name": "standard-gen2",
+        "description": "Databases for MySQL Gen2",
+        "displayName": "Standard-Gen2"
       }
     ],
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
@@ -5838,9 +5873,11 @@
     "name": "databases-for-redis",
     "pricing_tags": [
       "paygo",
-      "paid_only"
+      "paid_only",
+      "allow_internal_users"
     ],
     "tags": [
+      "allow_internal_users",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -5878,6 +5915,12 @@
         "originalName": "standard"
       },
       {
+        "id": "databases-for-redis-gen2-standard",
+        "name": "standard-gen2",
+        "description": "Databases for PostgreSQL",
+        "displayName": "Standard-Gen2"
+      },
+      {
         "id": "databases-for-redis-standard-satellite",
         "name": "standard-satellite",
         "description": "One highly available Redis instance with two data members. The Standard for Satellite plan is priced based on vCPUs allocated to deployments, prorated hourly. Databases for Redis instances have a minimum of 1GB of Disk, 1GB of RAM, and 6 cores per data member.",
@@ -5891,6 +5934,47 @@
     "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
+  },
+  {
+    "geo_tags": [
+      "eu-de"
+    ],
+    "id": "databases-independent-backups",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "databases-independent-backups",
+    "pricing_tags": [
+      "allow_internal_users",
+      "paygo"
+    ],
+    "tags": [
+      "allow_internal_users",
+      "custom_kind_service",
+      "data_management",
+      "eu-de",
+      "ibm_created",
+      "paygo",
+      "rc_compatible",
+      "support_ibm",
+      "vpc_private_endpoint"
+    ],
+    "plans": [
+      {
+        "id": "databases-independent-backups-gen2-standard",
+        "name": "standard-gen2",
+        "description": "Databases Independent Backups",
+        "displayName": "Standard-Gen2"
+      }
+    ],
+    "description": "Independent Backups allows you to retain, manage, and restore database backups independently of the database instance lifecycle. ",
+    "longDescription": "IBM Cloud Databases Independent Backups is a managed offering for IBM Cloud Databases Gen 2 (on VPC) that lets you retain and restore backups independently of the database instance lifecycle.  The service support use cases such as compliance, testing, or protection against accidental data loss. Backups are enabled by VPC Block Storage snapshots, providing cost‑efficient and flexible storage designed for instant restore, including large, multi-terabyte recovery. Each instance is an IBM Cloud resources with its own lifecycle, identity, billing, and IAM access controls, enabling fine grained access control and support even after the original database instance is no longer present.",
+    "displayName": "Databases Independent Backups",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups/artifacts/cache/bc4759f43dac8c0d4ab423551122c298-public/database-backups.svg",
+    "localSvgIcon": "/generated/icons/databases-independent-backups.svg",
+    "localPngIcon": "/generated/icons/databases-independent-backups.png"
   },
   {
     "geo_tags": [
@@ -6063,15 +6147,15 @@
   },
   {
     "geo_tags": [
-      "fra02",
-      "eu-es",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
+      "fra02",
+      "eu-es",
       "au-syd",
       "us-east",
+      "us-south",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -6228,13 +6312,13 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9806,19 +9890,19 @@
   },
   {
     "geo_tags": [
-      "in-mum",
+      "eu-de",
+      "us-south",
+      "au-syd",
       "eu-gb",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "au-syd",
       "br-sao",
-      "in-che",
-      "jp-osa"
+      "jp-osa",
+      "in-mum",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11173,10 +11257,12 @@
     "name": "messages-for-rabbitmq",
     "pricing_tags": [
       "paygo",
-      "paid_only"
+      "paid_only",
+      "allow_internal_users"
     ],
     "tags": [
       "integration",
+      "allow_internal_users",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -11212,6 +11298,12 @@
         "description": "One highly available RabbitMQ instance with three data members. The Standard plan is priced based on disk storage, RAM, backup storage, and vCPUs allocated to deployments, prorated hourly. Messages for RabbitMQ instances have a minimum of 1GB of Disk and 1GB of RAM per data member. Dedicated cores can optionally be provisioned at a minimum of 3 cores per member.",
         "displayName": "Standard",
         "originalName": "standard"
+      },
+      {
+        "id": "messages-for-rabbitmq-gen2-standard",
+        "name": "standard-gen2",
+        "description": "Managed RabbitMQ in next generation of IBM Cloud",
+        "displayName": "Standard-gen2"
       },
       {
         "id": "messages-for-rabbitmq-standard-satellite",
@@ -14628,8 +14720,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -18980,6 +19072,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -19021,8 +19114,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
