@@ -5565,7 +5565,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5747,12 +5747,13 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5767,8 +5768,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5931,7 +5931,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -6151,11 +6151,11 @@
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "fra02",
-      "eu-es",
       "au-syd",
       "us-east",
+      "fra02",
       "us-south",
+      "eu-es",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -6312,13 +6312,13 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9272,14 +9272,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9890,19 +9890,19 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
-      "au-syd",
       "eu-gb",
+      "br-sao",
       "in-che",
+      "ca-mon",
+      "au-syd",
+      "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "br-sao",
-      "jp-osa",
-      "in-mum",
-      "ca-mon"
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11316,7 +11316,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.au-syd.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -14849,6 +14849,56 @@
     "geo_tags": [
       "global"
     ],
+    "id": "9bba3317-b401-4cc1-94ef-151a7313e647",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "rackware-rmm-draas-per-unit",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "anytoanyprotect",
+      "cloud protect",
+      "custom_kind_service",
+      "draas",
+      "global",
+      "ibm classic cloud",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rackware rmm - draas",
+      "rc_compatible",
+      "storage_backup",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
+        "name": "rackware-dr-plan-per-unit",
+        "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support",
+        "displayName": "RackWare DR Plan Per Unit"
+      },
+      {
+        "id": "0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
+        "name": "rackware-draas-plan-per-unit",
+        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope.",
+        "displayName": "RackWare DRaaS Plan Per Unit"
+      }
+    ],
+    "description": "Protect any-source environment (physical, virtual, cloud) to IBM Cloud VPC using RMM Disaster Recovery As A Service",
+    "longDescription": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment",
+    "displayName": "RackWare - DRaaS Service",
+    "imageUrl": "https://static1.squarespace.com/static/5c1e6c1896e76f8c9319d545/t/60d22ba816f8a845659841ff/1624386472784/RackWare_Logo_96x96px.png",
+    "localPngIcon": "/generated/icons/9bba3317-b401-4cc1-94ef-151a7313e647.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "b9ce1607-17f6-4b87-ad9d-d419491b612b",
     "kind": "service",
     "metadata": {
@@ -17741,12 +17791,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19072,7 +19122,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -19114,7 +19163,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -20875,12 +20925,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
