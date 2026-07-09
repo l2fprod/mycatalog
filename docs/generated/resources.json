@@ -144,64 +144,6 @@
     "geo_tags": [
       "global"
     ],
-    "id": "515d67c9-df89-4ef7-84cc-52bb739e15a7",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "akasiafinopsmodeler",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "cloud assessment",
-      "cloud migration",
-      "cloud tco assessment",
-      "custom_kind_service",
-      "global",
-      "ibm_third_party",
-      "migration_tools",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "vmware",
-      "vmware assessment",
-      "vmware migration",
-      "vmware tco"
-    ],
-    "plans": [
-      {
-        "id": "cc5a4d05-bafa-4137-93b6-aadb05db5f1f",
-        "name": "akasiafinopsmodeler-annual-subscription-cloned-lxcu27p7",
-        "description": "$50 per year per VM modeled. You can upload any number of VMs and pay only for the VMs modeled. Example: You uploaded 1000 VMs and modeled 500. You would pay 25,000 annually for the 500 VMs.",
-        "displayName": "Annual Subscription"
-      },
-      {
-        "id": "8b1dea9e-b1a9-4c19-9850-dca28341ade8",
-        "name": "akasiafinopsmodeler-monthly-subscription-cloned-lxcu6z15",
-        "description": "$5 per month per VM modeled. Example: You can upload a dataset with 1000 VMs but choose to model only 500. You will pay $2500 per month.\nAuto renews every month until cancellation. No refunds.",
-        "displayName": "Monthly Subscription"
-      },
-      {
-        "id": "c0930729-8772-47bc-847a-01b0b22589f1",
-        "name": "akasiafinopsmodeler-tco-report-created-by-akasia-experts",
-        "description": "This is an Add-On to the Monthly Subscription. Purchase this if you want Akasia experts to create the TCO report PPT within 2 business days. 2 edits included.",
-        "displayName": "TCO Report Created by Akasia Experts"
-      }
-    ],
-    "description": "Model Costs for your existing VMware Infrastructure for IBM Cloud for VMware",
-    "longDescription": "The Akasia FinOps Modeler provides cost comparisons of an existing VMware environment, its VCF and VVF pricing as well as its in-Cloud pricing for AWS, Azure, GCP, IBM Cloud and Oracle Cloud. The Akasia TCO models allow service providers, consulting experts, and IT managers in the VMware and cloud ecosystem to quickly analyze data center environments and provide projected costs, allowing IT management teams to make an informed decision regarding their data center transformation.\n\nThe Akasia FinOps Modeler analyzes and optimizes for the following infrastructure scenarios:\n•\tProviding analysis for comparing current costs to the new, revamped VMware pricing structure \n•\tRight-sizing existing VMware workloads to keep costs low under the new VMware pricing structure\n•\tTCO analysis and modeling if the client migrates to VMware-on-Cloud  such as VMware on AWS, Azure VMware Solution, IBM Cloud for VMware, Google Cloud VMware Engine and Oracle Cloud VMware Solution. \n•\tTCO analysis if the client wants to migrate away from VMware to a cloud-native platform\n•\tTCO analysis and modeling for migrating workloads to Nutanix or Microsoft Azure Stack\n",
-    "displayName": "Akasia FinOps Modeler",
-    "imageUrl": "https://www.akasiacloud.com/wp-content/uploads/2021/06/Akasia_Icon_32x32.png",
-    "localPngIcon": "/generated/icons/515d67c9-df89-4ef7-84cc-52bb739e15a7.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
     "id": "20aaec51-7943-4509-a180-5360036fd649",
     "kind": "service",
     "metadata": {
@@ -595,14 +537,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5565,7 +5507,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -5747,12 +5689,13 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5767,8 +5710,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -5931,7 +5873,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -6149,12 +6091,12 @@
     "geo_tags": [
       "eu-es",
       "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "fra02",
+      "eu-gb",
       "au-syd",
       "us-east"
     ],
@@ -6312,13 +6254,13 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9890,19 +9832,19 @@
   },
   {
     "geo_tags": [
-      "in-che",
-      "eu-de",
-      "us-south",
-      "au-syd",
-      "jp-osa",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "br-sao",
+      "in-che",
       "ca-tor",
       "ca-mon",
-      "eu-gb",
-      "br-sao"
+      "au-syd",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11316,7 +11258,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.jp-osa.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -11384,10 +11326,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -16686,12 +16628,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17890,12 +17832,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -21024,12 +20966,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -21333,12 +21275,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
