@@ -6524,14 +6524,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "us-east"
     ],
     "id": "api-connect",
     "images": {
@@ -27164,7 +27164,6 @@
     "longDescription": "Nexar's Work Zone Compliance Solution eliminates the need for cities to send inspectors into the field to verify whether construction activity is properly permitted. By leveraging a nationwide network of dashcam-equipped vehicles that continuously capture street-level imagery, the platform uses AI vision models to automatically detect construction equipment and cross-reference those detections against official permit databases in real time. Cities can monitor every active work zone across their jurisdiction simultaneously, flag unpermitted activity as it appears, and issue enforcement actions directly from a single console.\n\nFor municipal agencies managing thousands of permits with limited staff, this means dramatically faster violation detection, higher compliance rates, and increased revenue recovery from civil penalties — all without adding headcount. The platform integrates with IBM watsonx Orchestrate to let operators query compliance data conversationally, generate maps of active violations, and drill into specific locations with full photographic evidence and permit context. It turns work zone enforcement from a reactive, labor-intensive process into a continuous, automated intelligence layer over the city's streets.",
     "displayName": "CityStream Compliance Agent",
     "imageUrl": "https://cloud-object-storage-cos-static-web-hosting-t7k.s3-web.us-east.cloud-object-storage.appdomain.cloud/purple-nexar-vector_nolettering.svg",
-    "localSvgIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.svg",
     "localPngIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.png"
   },
   {
@@ -62889,6 +62888,271 @@
     "localPngIcon": "/generated/icons/4ad9c1b8-e58e-2a9d-ccb8-d4d5ae84abc0.png"
   },
   {
+    "_id": "c950d0bc-1412-486c-bb80-609b368d42f9",
+    "_rev": "26-b432f999ff192e0809ee49b5192cba45",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c950d0bc-1412-486c-bb80-609b368d42f9",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c950d0bc-1412-486c-bb80-609b368d42f9/%2A",
+    "complete": true,
+    "created": "2026-04-29T12:57:26.626931837-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "c950d0bc-1412-486c-bb80-609b368d42f9",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:5d9a54a8-a4d1-41e1-801d-1dc1d31e1211",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "GE",
+              "UA",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates. Support is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle. The support team assists customers with: Initial setup and deployment Integration and API connectivity Agent configuration and customization guidance Troubleshooting and incident resolution Usage best practices and optimization",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Fortaleza"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/c950d0bc-1412-486c-bb80-609b368d42f9/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Tracks symptoms, adherence, and patient-reported data over time to support ongoing care.",
+                "title": "Continuous Patient Monitoring"
+              },
+              {
+                "description": "Ensures regular patient engagement through structured check-ins and reminders.",
+                "title": "Automated Follow-Up Workflows"
+              },
+              {
+                "description": "Supports long-term condition management with continuous tracking and guidance.",
+                "title": "Chronic Care Management Support"
+              },
+              {
+                "description": "Identifies early warning signs and alerts care teams for timely intervention.",
+                "title": "Risk Detection & Escalation"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-inc-continuous-care-followup-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI agent supporting ongoing care and follow-up, improving outcomes, adherence, and care continuity across the patient journey.",
+        "display_name": "Continuous Care And Follow Up Agent",
+        "long_description": "The Continuous Care & Follow-Up Agent is an AI-powered solution designed to support ongoing patient care beyond the initial visit or discharge, enabling continuous monitoring, engagement, and care coordination.\nHealthcare delivery often lacks structured follow-up and long-term care management, especially for chronic conditions. This agent addresses these gaps by maintaining continuous interaction with patients, tracking symptoms, monitoring adherence, and supporting recovery and disease management over time.\nThrough conversational check-ins and structured data collection, the agent gathers relevant patient information and identifies potential risks or deviations from care plans. It supports clinicians by providing visibility into patient status between visits and enabling timely intervention when needed.\nThe agent enhances patient engagement by delivering personalized guidance, reminders, and follow-up instructions aligned with clinical protocols. It ensures that patients remain connected to their care team and adhere to recommended treatment plans.\nBy enabling continuous care workflows, the agent improves outcomes, reduces complications, and supports value-based care models through better long-term patient management.\n\n\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "ai_agent",
+      "chronic care management",
+      "continuous care",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "patient engagement",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-07-21T05:12:50.276276487-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/c950d0bc-1412-486c-bb80-609b368d42f9?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "04d19c7f-5b24-4577-baca-a3611a8bdf8d",
+        "_rev": "8-bed3acb72df4cf9f331ab61b40507bd4",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:04d19c7f-5b24-4577-baca-a3611a8bdf8d",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/04d19c7f-5b24-4577-baca-a3611a8bdf8d/%2A",
+        "complete": true,
+        "created": "2026-05-04T21:45:27.840702587-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "04d19c7f-5b24-4577-baca-a3611a8bdf8d",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/04d19c7f-5b24-4577-baca-a3611a8bdf8d/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Automated Follow-Up Workflows\nEnsures regular patient engagement through structured check-ins and reminders."
+                  },
+                  {
+                    "description": "Chronic Care Management Support\nSupports long-term condition management with continuous tracking and guidance."
+                  },
+                  {
+                    "description": "Risk Detection & Alerts\nIdentifies early warning signs and notifies care teams for timely intervention."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "continuous-care-and-follow-up-agent",
+        "overview_ui": {
+          "en": {
+            "description": "Monthly subscription per provider for AI-powered continuous care and follow-up workflows. Supports patient engagement, monitoring, and care continuity. \n",
+            "display_name": "Continuous Care And Follow Up Agent",
+            "long_description": "Monthly subscription per provider for AI-powered continuous care and follow-up workflows. Supports patient engagement, monitoring, and care continuity. \n"
+          }
+        },
+        "parent_id": "c950d0bc-1412-486c-bb80-609b368d42f9",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c950d0bc-1412-486c-bb80-609b368d42f9",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "chronic care management",
+          "continuous care",
+          "ibm_third_party",
+          "patient engagement",
+          "watson"
+        ],
+        "updated": "2026-07-21T05:12:50.276014269-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/04d19c7f-5b24-4577-baca-a3611a8bdf8d?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly subscription per provider for AI-powered continuous care and follow-up workflows. Supports patient engagement, monitoring, and care continuity. \n",
+        "displayName": "Continuous Care And Follow Up Agent"
+      }
+    ],
+    "description": "AI agent supporting ongoing care and follow-up, improving outcomes, adherence, and care continuity across the patient journey.",
+    "longDescription": "The Continuous Care & Follow-Up Agent is an AI-powered solution designed to support ongoing patient care beyond the initial visit or discharge, enabling continuous monitoring, engagement, and care coordination.\nHealthcare delivery often lacks structured follow-up and long-term care management, especially for chronic conditions. This agent addresses these gaps by maintaining continuous interaction with patients, tracking symptoms, monitoring adherence, and supporting recovery and disease management over time.\nThrough conversational check-ins and structured data collection, the agent gathers relevant patient information and identifies potential risks or deviations from care plans. It supports clinicians by providing visibility into patient status between visits and enabling timely intervention when needed.\nThe agent enhances patient engagement by delivering personalized guidance, reminders, and follow-up instructions aligned with clinical protocols. It ensures that patients remain connected to their care team and adhere to recommended treatment plans.\nBy enabling continuous care workflows, the agent improves outcomes, reduces complications, and supports value-based care models through better long-term patient management.\n\n\n",
+    "displayName": "Continuous Care And Follow Up Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/c950d0bc-1412-486c-bb80-609b368d42f9.svg",
+    "localPngIcon": "/generated/icons/c950d0bc-1412-486c-bb80-609b368d42f9.png"
+  },
+  {
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_rev": "70-69c962c66a9f5ef1999528d0a93057bb",
     "active": true,
@@ -92667,7 +92931,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "22-6c131b689fd5f3507eb38b3f6c745c6b",
+        "_rev": "23-8adb69ac29c703707b6c51d0a52e13ce",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children": [
@@ -92994,6 +93258,330 @@
             "visibility": {
               "restrictions": "public"
             }
+          },
+          {
+            "_id": "databases-for-mysql-standard-gen2:us-east",
+            "_rev": "12-4b81eaa51107740d5deb6eba66f43504",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Aus-east",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:us-east/%2A",
+            "complete": true,
+            "created": "2026-06-22T02:19:49.164439499-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "us-east"
+            ],
+            "id": "databases-for-mysql-standard-gen2:us-east",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:7a7b0ad4-fbf9-4780-8651-d5d9e3ee1927",
+                  "name": "cdp-broker-dn-prod-us-east"
+                },
+                "location": "us-east",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/us-east",
+                "target_crn": "crn:v1:bluemix:public::us-east:::environment:bluemix-us-east"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 20,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 19200,
+                      "minimum_gb": 20,
+                      "step_size_gb": 2,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 2,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mysql",
+                    "version": "8.4"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:us-east/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-us-east",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-us-east us-east deployment",
+                "display_name": "standard-gen2-us-east us-east deployment",
+                "long_description": "standard-gen2-us-east us-east deployment"
+              }
+            },
+            "parent_id": "databases-for-mysql-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-21T08:59:42.554195257-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:us-east?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
           }
         ],
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard/%2A",
@@ -93001,7 +93589,8 @@
         "created": "2026-06-08T00:53:23.159766504-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-mysql-gen2-standard",
         "kind": "plan",
@@ -93072,7 +93661,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-06T13:41:07.959607414-04:00",
+        "updated": "2026-07-21T09:00:45.977451866-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -93352,7 +93941,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "22-6c131b689fd5f3507eb38b3f6c745c6b",
+        "_rev": "23-8adb69ac29c703707b6c51d0a52e13ce",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard/%2A",
@@ -93360,7 +93949,8 @@
         "created": "2026-06-08T00:53:23.159766504-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-mysql-gen2-standard",
         "kind": "plan",
@@ -93431,7 +94021,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-06T13:41:07.959607414-04:00",
+        "updated": "2026-07-21T09:00:45.977451866-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -98377,7 +98967,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -98392,7 +98981,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -106326,7 +106916,7 @@
   },
   {
     "_id": "dashdb-for-transactions",
-    "_rev": "121-9a5413fd4bcde0fece96ac916137f3a3",
+    "_rev": "124-c057b00b3025373c20d5c07122da1edc",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:dashdb-for-transactions",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions/%2A",
@@ -106334,16 +106924,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "fra02",
-      "eu-es",
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "au-syd",
+      "us-east",
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -106965,7 +107555,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-09T13:11:19.051470719-04:00",
+    "updated": "2026-07-21T01:31:03.642059339-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -111083,13 +111673,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -113229,13 +113819,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -149175,18 +149765,18 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "ca-tor",
-      "ca-mon",
       "in-che",
+      "jp-osa",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-mon",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
       "eu-de",
       "us-south",
-      "au-syd",
       "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -204118,6 +204708,285 @@
     "localPngIcon": "/generated/icons/d666f360-66d1-11e9-85ef-a19427301a8c.png"
   },
   {
+    "_id": "f0d90dab-b44d-4432-8496-e400c1c6cf88",
+    "_rev": "29-65867f9f52112b6a9cba265f828ac118",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:f0d90dab-b44d-4432-8496-e400c1c6cf88",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/f0d90dab-b44d-4432-8496-e400c1c6cf88/%2A",
+    "complete": true,
+    "created": "2026-03-31T11:55:10.828558324-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "f0d90dab-b44d-4432-8496-e400c1c6cf88",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:4ee99ff3-395c-4be0-8ae2-3c70fdc4b3ef",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "UA",
+              "GE",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates. Support is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle. The support team assists customers with: Initial setup and deployment Integration and API connectivity Agent configuration and customization guidance Troubleshooting and incident resolution Usage best practices and optimization",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Fortaleza"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/f0d90dab-b44d-4432-8496-e400c1c6cf88/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Tracks symptoms, pain, and recovery progress via structured check-ins to ensure safe and continuous post-surgery recovery.\n",
+                "title": "AI-Guided Recovery Monitoring"
+              },
+              {
+                "description": "Delivers tailored recovery instructions, medication reminders, and care plans based on clinical protocols and patient inputs.\n",
+                "title": "Personalized Patient Guidance"
+              },
+              {
+                "description": "Notifies clinicians of high-risk responses, enabling fast action and reducing delays in care.",
+                "title": "Care Team Alerts & Escalation"
+              },
+              {
+                "description": "Integrates with EMR systems and care pathways, enabling structured data flow and coordinated care.",
+                "title": "Seamless Workflow Integration"
+              },
+              {
+                "description": "Identifies warning signs early and flags cases for clinician review to enable timely intervention and prevent complications.",
+                "title": "Early Risk & Complication Detection"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-inc-post-surgery-recovery-support-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI agent supporting post-surgery recovery with follow-up, patient guidance, and early risk detection to improve outcomes.\n",
+        "display_name": "Post-Surgery Recovery Support Agent",
+        "long_description": "The Post-Surgery Recovery Support Agent is an AI-powered solution designed to support patients and care teams after discharge, ensuring safe recovery and continuous follow-up care.\nAfter surgery, many complications and readmissions happen due to gaps in monitoring, unclear instructions, or delayed intervention. This agent addresses those challenges by guiding patients through their recovery, tracking symptoms, and detecting early signs of risk.\nUsing a conversational interface, the agent checks in with patients, collects recovery data (pain, symptoms, medication adherence, wound status), and provides personalized guidance based on clinical protocols. It continuously monitors patient responses and flags potential complications for timely clinician review.\nThe agent orchestrates post-discharge workflows by connecting patient follow-up, care coordination, and clinical oversight into a single process. It helps ensure that no critical signals are missed and that patients stay on track with their recovery plan.\nFor healthcare providers, the agent reduces manual follow-up workload, improves care continuity, and supports early intervention. For patients, it delivers clear guidance, reassurance, and an easy way to stay connected with their care team.\nBy improving recovery monitoring, enhancing patient engagement, and enabling early risk detection, the Post-Surgery Recovery Support Agent helps reduce complications, lower readmission rates, and improve overall clinical outcomes.\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "ai agent",
+      "care coordination",
+      "custom_kind_service",
+      "global",
+      "healthcare ai",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "patient follow-up",
+      "post-discharge care",
+      "post-operative care",
+      "post-surgery recovery",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-07-21T05:12:20.052019252-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/f0d90dab-b44d-4432-8496-e400c1c6cf88?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "5ed3c4b9-d3e4-4b18-9d2c-947b05672283",
+        "_rev": "8-7827b1042560820c08d863bab7959fd1",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5ed3c4b9-d3e4-4b18-9d2c-947b05672283",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5ed3c4b9-d3e4-4b18-9d2c-947b05672283/%2A",
+        "complete": true,
+        "created": "2026-05-04T16:56:50.665478-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "5ed3c4b9-d3e4-4b18-9d2c-947b05672283",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/5ed3c4b9-d3e4-4b18-9d2c-947b05672283/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Post-Surgery Recovery Monitoring\nTracks patient recovery progress through structured check-ins and symptom reporting."
+                  },
+                  {
+                    "description": "Automated Follow-Up Workflows\nEnsures timely patient engagement after discharge to support safe recovery."
+                  },
+                  {
+                    "description": "Early Risk Detection\nIdentifies warning signs and alerts clinicians for timely intervention."
+                  },
+                  {
+                    "description": "Patient Guidance & Adherence Support\nProvides recovery instructions and improves adherence to treatment plans."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "post-surgery-recovery-support-agent",
+        "overview_ui": {
+          "en": {
+            "description": "Monthly subscription per provider for AI-powered post-surgery recovery support and follow-up workflows. Improves monitoring, reduces complications, and supports care continuity. AI usage billed separately.",
+            "display_name": "Post-Surgery Recovery Support Agent",
+            "long_description": "Monthly subscription per provider for AI-powered post-surgery recovery support and follow-up workflows. Improves monitoring, reduces complications, and supports care continuity. AI usage billed separately."
+          }
+        },
+        "parent_id": "f0d90dab-b44d-4432-8496-e400c1c6cf88",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/f0d90dab-b44d-4432-8496-e400c1c6cf88",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "ai agent",
+          "care coordination",
+          "healthcare ai",
+          "ibm_third_party",
+          "patient follow-up",
+          "post-discharge care",
+          "post-operative care",
+          "post-surgery recovery",
+          "watson"
+        ],
+        "updated": "2026-07-21T05:12:20.0250296-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/5ed3c4b9-d3e4-4b18-9d2c-947b05672283?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly subscription per provider for AI-powered post-surgery recovery support and follow-up workflows. Improves monitoring, reduces complications, and supports care continuity. AI usage billed separately.",
+        "displayName": "Post-Surgery Recovery Support Agent"
+      }
+    ],
+    "description": "AI agent supporting post-surgery recovery with follow-up, patient guidance, and early risk detection to improve outcomes.\n",
+    "longDescription": "The Post-Surgery Recovery Support Agent is an AI-powered solution designed to support patients and care teams after discharge, ensuring safe recovery and continuous follow-up care.\nAfter surgery, many complications and readmissions happen due to gaps in monitoring, unclear instructions, or delayed intervention. This agent addresses those challenges by guiding patients through their recovery, tracking symptoms, and detecting early signs of risk.\nUsing a conversational interface, the agent checks in with patients, collects recovery data (pain, symptoms, medication adherence, wound status), and provides personalized guidance based on clinical protocols. It continuously monitors patient responses and flags potential complications for timely clinician review.\nThe agent orchestrates post-discharge workflows by connecting patient follow-up, care coordination, and clinical oversight into a single process. It helps ensure that no critical signals are missed and that patients stay on track with their recovery plan.\nFor healthcare providers, the agent reduces manual follow-up workload, improves care continuity, and supports early intervention. For patients, it delivers clear guidance, reassurance, and an easy way to stay connected with their care team.\nBy improving recovery monitoring, enhancing patient engagement, and enabling early risk detection, the Post-Surgery Recovery Support Agent helps reduce complications, lower readmission rates, and improve overall clinical outcomes.\n",
+    "displayName": "Post-Surgery Recovery Support Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/f0d90dab-b44d-4432-8496-e400c1c6cf88.svg",
+    "localPngIcon": "/generated/icons/f0d90dab-b44d-4432-8496-e400c1c6cf88.png"
+  },
+  {
     "_id": "ab2830c0-7b51-11ef-b369-0733120a414f",
     "_rev": "14-935293d7ccbe081765faaf7fffc2594f",
     "active": true,
@@ -232602,6 +233471,280 @@
     "localPngIcon": "/generated/icons/5acdbc42-8965-48f9-8a3c-1c728b6ed2c4.png"
   },
   {
+    "_id": "361b86dc-0774-48cd-a8f4-94413aa988f9",
+    "_rev": "26-a53d5d80228bac285e9fd9d494d413bc",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:361b86dc-0774-48cd-a8f4-94413aa988f9",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/361b86dc-0774-48cd-a8f4-94413aa988f9/%2A",
+    "complete": true,
+    "created": "2026-04-09T08:27:39.238169558-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "361b86dc-0774-48cd-a8f4-94413aa988f9",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:9370c848-a1d3-44f6-ae85-cc338052bdf2",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "UA",
+              "GE",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates. Support is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle. The support team assists customers with: Initial setup and deployment Integration and API connectivity Agent configuration and customization guidance Troubleshooting and incident resolution Usage best practices and optimization",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Fortaleza"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/361b86dc-0774-48cd-a8f4-94413aa988f9/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Converts unstructured clinical notes into predefined SOAP or specialty-specific forms configured by the clinic.",
+                "title": "Free Text to Structured Forms"
+              },
+              {
+                "description": "Applies user- and clinic-specific documentation requirements to ensure consistent and relevant structured output.",
+                "title": "Clinic-Defined Template Mapping"
+              },
+              {
+                "description": "Adapts documentation to different specialties using customized forms and clinical templates.",
+                "title": "Specialty-Specific Structuring"
+              },
+              {
+                "description": "Ensures structured data aligns with ICD/CPT requirements to support accurate coding and billing workflows.",
+                "title": "Coding-Ready Documentation Output"
+              },
+              {
+                "description": "Integrates with other agents to enable seamless data flow across clinical documentation, coding, and care workflows.",
+                "title": "Agentic Workflow Orchestration"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-inc-structured-clinical-documentation-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI agent converting free-text clinical notes into structured, clinic-defined forms to improve documentation, coding, and workflows",
+        "display_name": "Structured Clinical Documentation Agent",
+        "long_description": "The Structured Clinical Documentation Agent is an AI-powered solution that converts free-text clinical notes into structured, standardized documentation aligned with clinic-specific templates and specialty requirements.\nIn many healthcare settings, clinicians document freely, while systems require structured formats such as SOAP notes or specialty-specific forms. This gap creates inefficiencies, inconsistent records, and challenges in coding and workflow execution.\nThis agent bridges that gap by transforming unstructured clinical notes—including physician input or AI scribe output—into predefined, structured formats configured by each clinic or specialty. Organizations can define their own documentation templates, forms, and requirements, and the agent ensures that all notes are structured accordingly.\nBy aligning documentation with clinic-specific workflows, the agent improves consistency, completeness, and usability of clinical data across care teams. It also enhances downstream processes such as coding, billing, reporting, and clinical decision support.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes\nplaceholder"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "ai_agent",
+      "clinical documentation",
+      "custom templates",
+      "custom_kind_service",
+      "free text to forms",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "soap notes",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-07-21T05:13:20.397233673-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/361b86dc-0774-48cd-a8f4-94413aa988f9?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "11d7993c-5a29-4cb5-a609-7ee2a103aeb4",
+        "_rev": "8-c2aca9b93c9bbabc4c7bdd2ca3e7dad0",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:11d7993c-5a29-4cb5-a609-7ee2a103aeb4",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/11d7993c-5a29-4cb5-a609-7ee2a103aeb4/%2A",
+        "complete": true,
+        "created": "2026-05-04T21:48:05.473757216-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "11d7993c-5a29-4cb5-a609-7ee2a103aeb4",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/11d7993c-5a29-4cb5-a609-7ee2a103aeb4/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Free Text to Structured Forms\nConverts clinical notes into predefined SOAP or specialty-specific formats configured by the clinic."
+                  },
+                  {
+                    "description": "Clinic-Defined Templates\nApplies custom documentation requirements to ensure consistent and relevant structured output."
+                  },
+                  {
+                    "description": "Specialty-Specific Structuring\nAdapts documentation to different specialties using configurable clinical forms."
+                  },
+                  {
+                    "description": "Coding-Ready Documentation\nStructures notes to support accurate coding and downstream billing workflows."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "structured-clinical-documentation-agent",
+        "overview_ui": {
+          "en": {
+            "description": "Monthly subscription per provider for AI-powered structuring of clinical notes into standardized, clinic-defined formats. AI usage billed separately.",
+            "display_name": "Structured Clinical Documentation Agent",
+            "long_description": "Monthly subscription per provider for AI-powered structuring of clinical notes into standardized, clinic-defined formats. AI usage billed separately."
+          }
+        },
+        "parent_id": "361b86dc-0774-48cd-a8f4-94413aa988f9",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/361b86dc-0774-48cd-a8f4-94413aa988f9",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "clinical documentation",
+          "custom templates",
+          "free text to forms",
+          "ibm_third_party",
+          "soap notes",
+          "watson"
+        ],
+        "updated": "2026-07-21T05:13:20.396615658-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/11d7993c-5a29-4cb5-a609-7ee2a103aeb4?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly subscription per provider for AI-powered structuring of clinical notes into standardized, clinic-defined formats. AI usage billed separately.",
+        "displayName": "Structured Clinical Documentation Agent"
+      }
+    ],
+    "description": "AI agent converting free-text clinical notes into structured, clinic-defined forms to improve documentation, coding, and workflows",
+    "longDescription": "The Structured Clinical Documentation Agent is an AI-powered solution that converts free-text clinical notes into structured, standardized documentation aligned with clinic-specific templates and specialty requirements.\nIn many healthcare settings, clinicians document freely, while systems require structured formats such as SOAP notes or specialty-specific forms. This gap creates inefficiencies, inconsistent records, and challenges in coding and workflow execution.\nThis agent bridges that gap by transforming unstructured clinical notes—including physician input or AI scribe output—into predefined, structured formats configured by each clinic or specialty. Organizations can define their own documentation templates, forms, and requirements, and the agent ensures that all notes are structured accordingly.\nBy aligning documentation with clinic-specific workflows, the agent improves consistency, completeness, and usability of clinical data across care teams. It also enhances downstream processes such as coding, billing, reporting, and clinical decision support.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes\nplaceholder",
+    "displayName": "Structured Clinical Documentation Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/361b86dc-0774-48cd-a8f4-94413aa988f9.svg",
+    "localPngIcon": "/generated/icons/361b86dc-0774-48cd-a8f4-94413aa988f9.png"
+  },
+  {
     "_id": "is.subnet",
     "_rev": "11-2183cda664f60edcbc2fbb466b720791",
     "active": true,
@@ -235159,12 +236302,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -266975,7 +268118,7 @@
       },
       {
         "_id": "69d79047-fb71-4331-b14a-3e2a398c6240",
-        "_rev": "50-742a377f4cf839edfcf65dacfec7f450",
+        "_rev": "51-f4e7103ec36bde87fda3c386f0c64626",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:69d79047-fb71-4331-b14a-3e2a398c6240",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/69d79047-fb71-4331-b14a-3e2a398c6240/%2A",
@@ -266984,12 +268127,10 @@
         "disabled": false,
         "geo_tags": [
           "au-syd",
-          "br-sao",
           "ca-tor",
           "eu-de",
           "eu-gb",
-          "jp-tok",
-          "us-south"
+          "jp-tok"
         ],
         "id": "69d79047-fb71-4331-b14a-3e2a398c6240",
         "images": {
@@ -267106,7 +268247,7 @@
           "rc_compatible",
           "watson"
         ],
-        "updated": "2026-04-02T13:06:48.100850615-04:00",
+        "updated": "2026-07-21T00:46:31.618015499-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/69d79047-fb71-4331-b14a-3e2a398c6240?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -273165,12 +274306,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south",
-          "au-syd",
-          "ca-tor"
+          "us-south"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
@@ -276294,12 +277435,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
