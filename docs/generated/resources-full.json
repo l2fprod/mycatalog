@@ -6524,14 +6524,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -44649,7 +44649,7 @@
   },
   {
     "_id": "cloudant",
-    "_rev": "67-8f1d722d4efb3dd89c985ece9eb172c3",
+    "_rev": "68-65b498ccb87fb97b921a7d8abdd6532c",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:cloudant",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant/%2A",
@@ -44664,10 +44664,10 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-east",
       "us-south",
       "che01",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "cloudant",
     "images": {
@@ -45225,7 +45225,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-15T13:02:25.650318645-04:00",
+    "updated": "2026-07-20T12:38:09.897732302-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -46285,7 +46285,7 @@
       },
       {
         "_id": "cloudant-gen2-standard",
-        "_rev": "16-f990aa5d47ec05b531f593ce2e90400c",
+        "_rev": "17-8298bb06acba6d9ef68ad1154e6749df",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cloudant-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard/%2A",
@@ -46293,7 +46293,8 @@
         "created": "2026-06-17T14:15:24.156008256-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "cloudant-gen2-standard",
         "kind": "plan",
@@ -46378,7 +46379,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-07-10T15:59:42.525591461-04:00",
+        "updated": "2026-07-20T12:38:09.895858198-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -72871,7 +72872,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "13-21c98682bdbb3eef30587be0407a0e19",
+        "_rev": "14-71638a2684089df731d77339b8930f49",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children": [
@@ -73274,6 +73275,406 @@
             "visibility": {
               "restrictions": "public"
             }
+          },
+          {
+            "_id": "databases-for-elasticsearch-enterprise-gen2:us-east",
+            "_rev": "7-ebe9727300dc34d07d9b272b8ebc59e2",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aus-east",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:us-east/%2A",
+            "complete": true,
+            "created": "2026-06-23T06:55:35.565284538-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "us-east"
+            ],
+            "id": "databases-for-elasticsearch-enterprise-gen2:us-east",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:7a7b0ad4-fbf9-4780-8651-d5d9e3ee1927",
+                  "name": "cdp-broker-dn-prod-us-east"
+                },
+                "location": "us-east",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/us-east",
+                "target_crn": "crn:v1:bluemix:public::us-east:::environment:bluemix-us-east"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "elasticsearch",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:us-east/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": [
+                  {
+                    "displayname": "Select an initial memory allocation",
+                    "hidden": false,
+                    "name": "members_memory_allocation_mb",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/memory/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "displayname": "Select an initial disk allocation",
+                    "hidden": false,
+                    "name": "members_disk_allocation_mb",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/disk/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "CPU allocation is optional. Selecting CPU allocation ensures your database has dedicated compute resources for your workload.",
+                    "displayname": "Select an initial CPU allocation",
+                    "hidden": false,
+                    "name": "members_cpu_allocation_count",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/cpu/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "IBM Cloud recommends provisioning the preferred version. For more information on version types see the see the IBM Cloud Databases Versioning Policy in the documentation.",
+                    "displayname": "Select a database version",
+                    "hidden": false,
+                    "name": "version",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/version",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "Please ensure Databases for Elasticsearch has been authorized to access the selected KMS instance. You can manage service-to-service authorizations at any time by visiting Manage > Access (IAM) and choosing Authorizations.",
+                    "displayname": "Select a KMS instance",
+                    "hidden": false,
+                    "name": "disk_encryption_instance_crn",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/disk_encryption_instance_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "associations": {
+                      "parameters": [
+                        {
+                          "name": "disk_encryption_instance_crn",
+                          "options_refresh": false
+                        }
+                      ]
+                    },
+                    "description": "Warning: deleting this key will result in the loss of all data stored in this Elasticsearch instance.",
+                    "displayname": "Select a disk encryption key",
+                    "hidden": false,
+                    "name": "disk_encryption_key_crn",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/disk_encryption_key_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  }
+                ],
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": false,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "enterprise-gen2-us-east",
+            "overview_ui": {
+              "en": {
+                "description": "enterprise-gen2-us-east us-east deployment",
+                "display_name": "enterprise-gen2-us-east us-east deployment",
+                "long_description": "enterprise-gen2-us-east us-east deployment"
+              }
+            },
+            "parent_id": "databases-for-elasticsearch-gen2-enterprise",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise",
+            "pricing_tags": [
+              "paid",
+              "paid_only",
+              "allow_internal_users",
+              "paid_only"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "tags": [
+              "rc_compatible",
+              "vpc_private_endpoint"
+            ],
+            "updated": "2026-07-20T12:32:42.785356027-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:us-east?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
           }
         ],
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise/%2A",
@@ -73281,7 +73682,8 @@
         "created": "2026-05-20T11:40:25.635717481-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-elasticsearch-gen2-enterprise",
         "kind": "plan",
@@ -73355,7 +73757,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-07-16T03:25:18.812176895-04:00",
+        "updated": "2026-07-20T12:33:04.632792133-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -76761,7 +77163,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "13-21c98682bdbb3eef30587be0407a0e19",
+        "_rev": "14-71638a2684089df731d77339b8930f49",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise/%2A",
@@ -76769,7 +77171,8 @@
         "created": "2026-05-20T11:40:25.635717481-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-elasticsearch-gen2-enterprise",
         "kind": "plan",
@@ -76843,7 +77246,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-07-16T03:25:18.812176895-04:00",
+        "updated": "2026-07-20T12:33:04.632792133-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -82781,7 +83184,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "13-65e119dcb807754d256e8434ac1ff161",
+        "_rev": "14-c532d6ef65508679871252fec018ffd9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children": [
@@ -83087,6 +83490,309 @@
             "visibility": {
               "restrictions": "public"
             }
+          },
+          {
+            "_id": "databases-for-mongodb-enterprise-sharding-gen2:us-east",
+            "_rev": "9-38ae8274ca868b5b60da164eaf26f8e7",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aus-east",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:us-east/%2A",
+            "complete": true,
+            "created": "2026-06-23T07:18:17.973446677-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "us-east"
+            ],
+            "id": "databases-for-mongodb-enterprise-sharding-gen2:us-east",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:7a7b0ad4-fbf9-4780-8651-d5d9e3ee1927",
+                  "name": "cdp-broker-dn-prod-us-east"
+                },
+                "location": "us-east",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/us-east",
+                "target_crn": "crn:v1:bluemix:public::us-east:::environment:bluemix-us-east"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mongodb",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:us-east/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "enterprise-sharding-gen2-us-east",
+            "overview_ui": {
+              "en": {
+                "description": "enterprise-sharding-gen2-us-east us-east deployment",
+                "display_name": "enterprise-sharding-gen2-us-east us-east deployment",
+                "long_description": "enterprise-sharding-gen2-us-east us-east deployment"
+              }
+            },
+            "parent_id": "databases-for-mongodb-gen2-enterprise-sharding",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-20T12:34:07.822863011-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:us-east?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
           }
         ],
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding/%2A",
@@ -83094,7 +83800,8 @@
         "created": "2026-06-09T01:13:12.914188039-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-mongodb-gen2-enterprise-sharding",
         "kind": "plan",
@@ -83169,7 +83876,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:26:21.028103635-04:00",
+        "updated": "2026-07-20T12:34:36.555844908-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -86125,7 +86832,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "48-5404daad0232d287557d5832c338a233",
+        "_rev": "49-88d077ad1bf173102061d97c6842d695",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children": [
@@ -87716,6 +88423,403 @@
             "visibility": {
               "restrictions": "public"
             }
+          },
+          {
+            "_id": "databases-for-mongodb-standard-gen2:us-east",
+            "_rev": "10-39cc40f14140554dc3a30c846faa20a4",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aus-east",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:us-east/%2A",
+            "complete": true,
+            "created": "2026-06-12T05:20:09.944275529-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "us-east"
+            ],
+            "id": "databases-for-mongodb-standard-gen2:us-east",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:7a7b0ad4-fbf9-4780-8651-d5d9e3ee1927",
+                  "name": "cdp-broker-dn-prod-us-east"
+                },
+                "location": "us-east",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/us-east",
+                "target_crn": "crn:v1:bluemix:public::us-east:::environment:bluemix-us-east"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": false
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mongodb",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:us-east/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": [
+                  {
+                    "displayname": "Select an initial memory allocation",
+                    "hidden": false,
+                    "name": "members_memory_allocation_mb",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/mongodb/parameters/memory/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "displayname": "Select an initial disk allocation",
+                    "hidden": false,
+                    "name": "members_disk_allocation_mb",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/mongodb/parameters/disk/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "CPU allocation is optional. Selecting CPU allocation ensures your database has dedicated compute resources for your workload.",
+                    "displayname": "Select an initial CPU allocation",
+                    "hidden": false,
+                    "name": "members_cpu_allocation_count",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/mongodb/parameters/cpu/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "IBM Cloud recommends provisioning the preferred version. For more information on version types see the see the IBM Cloud Databases Versioning Policy in the documentation.",
+                    "displayname": "Select a database version",
+                    "hidden": false,
+                    "name": "version",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/mongodb/parameters/version",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "Please ensure Databases for MongoDB has been authorized to access the selected KMS instance. You can manage service-to-service authorizations at any time by visiting Manage > Access (IAM) and choosing Authorizations.",
+                    "displayname": "Select a KMS instance",
+                    "hidden": false,
+                    "name": "disk_encryption_instance_crn",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/mongodb/parameters/disk_encryption_instance_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "associations": {
+                      "parameters": [
+                        {
+                          "name": "disk_encryption_instance_crn",
+                          "options_refresh": false
+                        }
+                      ]
+                    },
+                    "description": "Warning: deleting this key will result in the loss of all data stored in this MongoDB instance.",
+                    "displayname": "Select a disk encryption key",
+                    "hidden": false,
+                    "name": "disk_encryption_key_crn",
+                    "optionsUrl": "https://servicebroker.us-east.dataservices.cloud.ibm.com/deployables/mongodb/parameters/disk_encryption_key_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  }
+                ],
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-us-east",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-us-east us-east deployment",
+                "display_name": "standard-gen2-us-east us-east deployment",
+                "long_description": "standard-gen2-us-east us-east deployment"
+              }
+            },
+            "parent_id": "databases-for-mongodb-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard",
+            "pricing_tags": [
+              "paygo",
+              "allow_internal_users"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "tags": [
+              "rc_compatible"
+            ],
+            "updated": "2026-07-20T12:33:21.78803216-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:us-east?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
           }
         ],
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard/%2A",
@@ -87726,7 +88830,8 @@
           "ca-mon",
           "eu-de",
           "in-che",
-          "in-mum"
+          "in-mum",
+          "us-east"
         ],
         "id": "databases-for-mongodb-gen2-standard",
         "kind": "plan",
@@ -87801,7 +88906,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:25:50.424686975-04:00",
+        "updated": "2026-07-20T12:33:35.965152422-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -88217,7 +89322,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "13-65e119dcb807754d256e8434ac1ff161",
+        "_rev": "14-c532d6ef65508679871252fec018ffd9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding/%2A",
@@ -88225,7 +89330,8 @@
         "created": "2026-06-09T01:13:12.914188039-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-mongodb-gen2-enterprise-sharding",
         "kind": "plan",
@@ -88300,7 +89406,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:26:21.028103635-04:00",
+        "updated": "2026-07-20T12:34:36.555844908-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -88423,7 +89529,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "48-5404daad0232d287557d5832c338a233",
+        "_rev": "49-88d077ad1bf173102061d97c6842d695",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard/%2A",
@@ -88434,7 +89540,8 @@
           "ca-mon",
           "eu-de",
           "in-che",
-          "in-mum"
+          "in-mum",
+          "us-east"
         ],
         "id": "databases-for-mongodb-gen2-standard",
         "kind": "plan",
@@ -88509,7 +89616,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:25:50.424686975-04:00",
+        "updated": "2026-07-20T12:33:35.965152422-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -95439,7 +96546,7 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "49-5520a63d2e8d2207acca73a3891e7ce7",
+        "_rev": "50-525a2a8506842c2a8d1a9f0f51160c1a",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children": [
@@ -96749,6 +97856,332 @@
             "visibility": {
               "restrictions": "public"
             }
+          },
+          {
+            "_id": "databases-for-postgresql-standard-gen2:us-east",
+            "_rev": "11-7ba0dfd67d108015d0d9364f8f46703e",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aus-east",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:us-east/%2A",
+            "complete": true,
+            "created": "2026-06-12T06:20:42.467302701-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "us-east"
+            ],
+            "id": "databases-for-postgresql-standard-gen2:us-east",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:7a7b0ad4-fbf9-4780-8651-d5d9e3ee1927",
+                  "name": "cdp-broker-dn-prod-us-east"
+                },
+                "location": "us-east",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/us-east",
+                "target_crn": "crn:v1:bluemix:public::us-east:::environment:bluemix-us-east"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": true,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "locations": [
+                    "us-east"
+                  ],
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  },
+                  "remotes": {
+                    "read_only_replicas_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 56,
+                      "minimum_count": 6,
+                      "step_size_count": 2,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 10,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 19200,
+                      "minimum_gb": 20,
+                      "step_size_gb": 2,
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 20,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 2,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 224,
+                      "minimum_gb": 2,
+                      "step_size_gb": 0.25,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "postgresql",
+                    "version": "18"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:us-east/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "readOnlyReplicas",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "readOnlyReplicas",
+                        "label": "Read-only replicas",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-us-east",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-us-east us-east deployment",
+                "display_name": "standard-gen2-us-east us-east deployment",
+                "long_description": "standard-gen2-us-east us-east deployment"
+              }
+            },
+            "parent_id": "databases-for-postgresql-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paid_only"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-20T12:35:52.793480121-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:us-east?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
           }
         ],
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard/%2A",
@@ -96759,7 +98192,8 @@
           "ca-mon",
           "eu-de",
           "in-che",
-          "in-mum"
+          "in-mum",
+          "us-east"
         ],
         "id": "databases-for-postgresql-gen2-standard",
         "kind": "plan",
@@ -96834,7 +98268,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:28:22.454513241-04:00",
+        "updated": "2026-07-20T12:36:07.904935576-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -96943,6 +98377,7 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -96957,8 +98392,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -97228,7 +98662,7 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "49-5520a63d2e8d2207acca73a3891e7ce7",
+        "_rev": "50-525a2a8506842c2a8d1a9f0f51160c1a",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard/%2A",
@@ -97239,7 +98673,8 @@
           "ca-mon",
           "eu-de",
           "in-che",
-          "in-mum"
+          "in-mum",
+          "us-east"
         ],
         "id": "databases-for-postgresql-gen2-standard",
         "kind": "plan",
@@ -97314,7 +98749,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:28:22.454513241-04:00",
+        "updated": "2026-07-20T12:36:07.904935576-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -100459,7 +101894,7 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "13-cc36c57e3f275b858f88cd6974cdb331",
+        "_rev": "14-2f22e5aaa22793a898c1448f82a593ce",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children": [
@@ -100779,6 +102214,323 @@
             "visibility": {
               "restrictions": "public"
             }
+          },
+          {
+            "_id": "databases-for-redis-standard-gen2:us-east",
+            "_rev": "9-d0e89aa73f85fd0a23dd97872826e85d",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aus-east",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-east/%2A",
+            "complete": true,
+            "created": "2026-06-23T06:22:08.920791299-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "us-east"
+            ],
+            "id": "databases-for-redis-standard-gen2:us-east",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:7a7b0ad4-fbf9-4780-8651-d5d9e3ee1927",
+                  "name": "cdp-broker-dn-prod-us-east"
+                },
+                "location": "us-east",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/us-east",
+                "target_crn": "crn:v1:bluemix:public::us-east:::environment:bluemix-us-east"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 2,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "redis",
+                    "version": "8.2"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-east/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-us-east",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-us-east us-east deployment",
+                "display_name": "standard-gen2-us-east us-east deployment",
+                "long_description": "standard-gen2-us-east us-east deployment"
+              }
+            },
+            "parent_id": "databases-for-redis-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-20T12:31:21.159988821-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-east?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
           }
         ],
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard/%2A",
@@ -100786,7 +102538,8 @@
         "created": "2026-06-09T05:07:37.956670062-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-redis-gen2-standard",
         "kind": "plan",
@@ -100860,7 +102613,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:24:48.335914437-04:00",
+        "updated": "2026-07-20T12:31:34.190286873-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -101238,7 +102991,7 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "13-cc36c57e3f275b858f88cd6974cdb331",
+        "_rev": "14-2f22e5aaa22793a898c1448f82a593ce",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard/%2A",
@@ -101246,7 +102999,8 @@
         "created": "2026-06-09T05:07:37.956670062-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-for-redis-gen2-standard",
         "kind": "plan",
@@ -101320,7 +103074,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:24:48.335914437-04:00",
+        "updated": "2026-07-20T12:31:34.190286873-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -101437,7 +103191,7 @@
   },
   {
     "_id": "databases-independent-backups",
-    "_rev": "21-c71b9a6fcd7557f3387eb7792b2ab91b",
+    "_rev": "22-b347108a5b0a1513cf4fd6338ef054e0",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-independent-backups",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups/%2A",
@@ -101445,7 +103199,8 @@
     "created": "2026-06-03T07:54:19.712140494-04:00",
     "disabled": false,
     "geo_tags": [
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "databases-independent-backups",
     "images": {
@@ -101531,9 +103286,10 @@
       "paygo",
       "rc_compatible",
       "support_ibm",
+      "us-east",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-07-16T03:26:51.573548051-04:00",
+    "updated": "2026-07-20T12:35:06.97900713-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -101541,7 +103297,7 @@
     "plans": [
       {
         "_id": "databases-independent-backups-gen2-standard",
-        "_rev": "19-acfb3e0cadb7aa7d7982f70ef189e5d2",
+        "_rev": "20-c75d6a2b9ddd9001eef6a428650d983b",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-independent-backups-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard/%2A",
@@ -101549,7 +103305,8 @@
         "created": "2026-06-03T07:54:21.033321001-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "databases-independent-backups-gen2-standard",
         "kind": "plan",
@@ -101617,7 +103374,7 @@
           "ibm_created",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-07-16T03:26:51.573768931-04:00",
+        "updated": "2026-07-20T12:35:06.979017691-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -104577,16 +106334,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
+      "fra02",
       "eu-es",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "au-syd",
-      "us-east",
-      "fra02"
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -109326,13 +111083,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -111472,13 +113229,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -124567,7 +126324,7 @@
       },
       {
         "_id": "eventstreams-gen2-enterprise",
-        "_rev": "58-12f4e9c2e1c7427fd30c4282304224b1",
+        "_rev": "59-d15af7cae97ea91378a70b1e1b21952c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:eventstreams-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise/%2A",
@@ -124578,7 +126335,8 @@
           "ca-mon",
           "eu-de",
           "in-che",
-          "in-mum"
+          "in-mum",
+          "us-east"
         ],
         "id": "eventstreams-gen2-enterprise",
         "kind": "plan",
@@ -124664,7 +126422,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:29:23.302078296-04:00",
+        "updated": "2026-07-20T12:37:38.753046292-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -136824,14 +138582,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -147417,15 +149175,15 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
       "jp-osa",
+      "ca-tor",
+      "ca-mon",
+      "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "br-sao",
-      "in-che",
-      "in-mum",
-      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
@@ -173761,7 +175519,7 @@
       },
       {
         "_id": "messages-for-rabbitmq-gen2-standard",
-        "_rev": "14-76ea109cfa5462ceee52138bad0c20c2",
+        "_rev": "15-d7bc37ab49b9bb459952675af63d57a1",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-gen2-standard",
         "children": [
@@ -174081,6 +175839,323 @@
             "visibility": {
               "restrictions": "public"
             }
+          },
+          {
+            "_id": "messages-for-rabbitmq-standard-gen2:us-east",
+            "_rev": "11-e2f1a350fa894b2f9c85be1e7880e3c7",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:messages-for-rabbitmq-standard-gen2%3Aus-east",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard-gen2:us-east/%2A",
+            "complete": true,
+            "created": "2026-06-22T02:26:10.618886561-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "us-east"
+            ],
+            "id": "messages-for-rabbitmq-standard-gen2:us-east",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:7a7b0ad4-fbf9-4780-8651-d5d9e3ee1927",
+                  "name": "cdp-broker-dn-prod-us-east"
+                },
+                "location": "us-east",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/us-east",
+                "target_crn": "crn:v1:bluemix:public::us-east:::environment:bluemix-us-east"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "rabbitmq",
+                    "version": "4"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard-gen2:us-east/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/messages-for-rabbitmq/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/messages-for-rabbitmq/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/messages-for-rabbitmq/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/messages-for-rabbitmq/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/messages-for-rabbitmq/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/messages-for-rabbitmq/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-us-east",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-us-east us-east deployment",
+                "display_name": "standard-gen2-us-east us-east deployment",
+                "long_description": "standard-gen2-us-east us-east deployment"
+              }
+            },
+            "parent_id": "messages-for-rabbitmq-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-20T12:35:08.411504209-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard-gen2:us-east?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
           }
         ],
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard/%2A",
@@ -174088,7 +176163,8 @@
         "created": "2026-06-09T02:46:39.636370323-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "messages-for-rabbitmq-gen2-standard",
         "kind": "plan",
@@ -174171,7 +176247,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:27:21.982405986-04:00",
+        "updated": "2026-07-20T12:35:37.369562558-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -174550,7 +176626,7 @@
       },
       {
         "_id": "messages-for-rabbitmq-gen2-standard",
-        "_rev": "14-76ea109cfa5462ceee52138bad0c20c2",
+        "_rev": "15-d7bc37ab49b9bb459952675af63d57a1",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard/%2A",
@@ -174558,7 +176634,8 @@
         "created": "2026-06-09T02:46:39.636370323-04:00",
         "disabled": false,
         "geo_tags": [
-          "eu-de"
+          "eu-de",
+          "us-east"
         ],
         "id": "messages-for-rabbitmq-gen2-standard",
         "kind": "plan",
@@ -174641,7 +176718,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-07-16T03:27:21.982405986-04:00",
+        "updated": "2026-07-20T12:35:37.369562558-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -210061,7 +212138,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "428-2e106777338c814cf92ddca78b275071",
+    "_rev": "429-68edbb873bfca5299fad596792d56813",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -210559,7 +212636,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-07-16T10:41:19.404381558-04:00",
+    "updated": "2026-07-20T13:06:16.92747936-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -233082,12 +235159,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
