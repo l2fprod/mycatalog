@@ -6524,14 +6524,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -9692,7 +9692,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -9700,7 +9699,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -44656,9 +44656,6 @@
     "created": "2014-06-03T07:04:12Z",
     "disabled": false,
     "geo_tags": [
-      "che01",
-      "eu-de",
-      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -44666,7 +44663,10 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "che01",
+      "eu-de",
+      "us-east"
     ],
     "id": "cloudant",
     "images": {
@@ -98245,6 +98245,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -98255,8 +98256,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -109102,16 +109102,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
       "fra02",
-      "us-south",
+      "eu-gb",
       "eu-es",
-      "eu-gb"
+      "us-south",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -113843,7 +113843,7 @@
   },
   {
     "_id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
-    "_rev": "62-2eee1bf76681e88077e624a5b56c24e8",
+    "_rev": "65-1886ed20182c92b6995703e1f8e79070",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:9e02e72d-00ce-4220-b44c-650c8314e58a",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/9e02e72d-00ce-4220-b44c-650c8314e58a/%2A",
@@ -113851,13 +113851,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -115495,7 +115495,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-14T06:34:49.882697949-04:00",
+    "updated": "2026-07-22T01:36:14.025914026-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/9e02e72d-00ce-4220-b44c-650c8314e58a?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -151943,19 +151943,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
+      "eu-es",
+      "jp-tok",
+      "us-east",
       "ca-mon",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "in-che",
       "jp-osa",
-      "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -180886,7 +180886,7 @@
   },
   {
     "_id": "01037c41-adce-4bb5-8b45-0c06004916c4",
-    "_rev": "49-68c7d3f3148b7af286f2f51b7a28cc2c",
+    "_rev": "50-ece864ac125c30e7eab8347c2860a97c",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:01037c41-adce-4bb5-8b45-0c06004916c4",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4/%2A",
@@ -180894,10 +180894,10 @@
     "created": "2017-11-28T15:39:18Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "images": {
@@ -181443,7 +181443,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-06-26T10:49:54.571038171-04:00",
+    "updated": "2026-07-22T05:22:28.090364194-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -182168,7 +182168,7 @@
       },
       {
         "_id": "d3f47848-d28e-4ffc-aa37-57f1defe50e6",
-        "_rev": "52-596086a27f42a7756cf8c199fe5a9d7b",
+        "_rev": "55-bee88b9da2af97c8febde2fc01f75147",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d3f47848-d28e-4ffc-aa37-57f1defe50e6",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6/%2A",
@@ -182400,12 +182400,12 @@
           "name": "MQ"
         },
         "tags": [
-          "integration",
-          "rc_compatible",
+          "eu_access",
           "ibm_created",
-          "eu_access"
+          "integration",
+          "rc_compatible"
         ],
-        "updated": "2026-04-28T02:43:53.93690589-04:00",
+        "updated": "2026-07-22T05:55:27.069187355-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -182534,7 +182534,7 @@
       },
       {
         "_id": "b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
-        "_rev": "48-9d82d3f9b1812709609893e4b6aca604",
+        "_rev": "49-c60e54b381b74beffb833682ba63f819",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba/%2A",
@@ -182742,7 +182742,7 @@
           "rc_compatible",
           "eu_access"
         ],
-        "updated": "2026-04-28T02:43:53.936857177-04:00",
+        "updated": "2026-07-22T05:22:28.089075817-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -216148,7 +216148,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "429-68edbb873bfca5299fad596792d56813",
+    "_rev": "430-ec2e3d444ed7fee1cef47878d1538054",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -216646,7 +216646,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-07-20T13:06:16.92747936-04:00",
+    "updated": "2026-07-22T09:29:46.735408786-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -217742,7 +217742,7 @@
     "plans": [
       {
         "_id": "b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
-        "_rev": "9-5a95666dc301eb24dd6173fefb3e83f8",
+        "_rev": "10-bf0de19e73d27bb758f4bdf8b6dd5fd3",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b8f24ae6-b11d-4470-be87-5eb4338d0e0c/%2A",
@@ -217810,9 +217810,9 @@
         "name": "rackware-dr-plan-per-unit",
         "overview_ui": {
           "en": {
-            "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support",
+            "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year",
             "display_name": "RackWare DR Plan Per Unit",
-            "long_description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support"
+            "long_description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year"
           }
         },
         "parent_id": "9bba3317-b401-4cc1-94ef-151a7313e647",
@@ -217833,17 +217833,17 @@
           "rackware rmm - draas",
           "storage_backup"
         ],
-        "updated": "2026-07-07T07:34:08.334506045-04:00",
+        "updated": "2026-07-22T07:58:00.16651214-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b8f24ae6-b11d-4470-be87-5eb4338d0e0c?complete=true",
         "visibility": {
           "restrictions": "public"
         },
-        "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support",
+        "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year",
         "displayName": "RackWare DR Plan Per Unit"
       },
       {
         "_id": "0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
-        "_rev": "10-809700f44dac61e849fe4d8409a24bde",
+        "_rev": "11-73b40fd41cc0b7ec3ec9b61b94df64bb",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/0e780ce5-a8f7-4117-a2e6-82b3bd512fd2/%2A",
@@ -217911,9 +217911,9 @@
         "name": "rackware-draas-plan-per-unit",
         "overview_ui": {
           "en": {
-            "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope.",
+            "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year",
             "display_name": "RackWare DRaaS Plan Per Unit",
-            "long_description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope."
+            "long_description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year"
           }
         },
         "parent_id": "9bba3317-b401-4cc1-94ef-151a7313e647",
@@ -217934,12 +217934,12 @@
           "rackware rmm - draas",
           "storage_backup"
         ],
-        "updated": "2026-07-07T07:34:08.410920934-04:00",
+        "updated": "2026-07-22T07:59:05.222439088-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0e780ce5-a8f7-4117-a2e6-82b3bd512fd2?complete=true",
         "visibility": {
           "restrictions": "public"
         },
-        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope.",
+        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year",
         "displayName": "RackWare DRaaS Plan Per Unit"
       }
     ],
@@ -229077,12 +229077,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -239339,12 +239339,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -280472,12 +280472,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {

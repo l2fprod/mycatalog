@@ -537,14 +537,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -708,7 +708,6 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -716,7 +715,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -3705,9 +3705,6 @@
   },
   {
     "geo_tags": [
-      "che01",
-      "eu-de",
-      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -3715,7 +3712,10 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "che01",
+      "eu-de",
+      "us-east"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -6155,16 +6155,16 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
       "fra02",
-      "us-south",
+      "eu-gb",
       "eu-es",
-      "eu-gb"
+      "us-south",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6320,13 +6320,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9898,19 +9898,19 @@
   },
   {
     "geo_tags": [
-      "au-syd",
+      "eu-es",
+      "jp-tok",
+      "us-east",
       "ca-mon",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "in-che",
       "jp-osa",
-      "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11398,10 +11398,10 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "01037c41-adce-4bb5-8b45-0c06004916c4",
     "kind": "service",
@@ -14991,13 +14991,13 @@
       {
         "id": "b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
         "name": "rackware-dr-plan-per-unit",
-        "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support",
+        "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year",
         "displayName": "RackWare DR Plan Per Unit"
       },
       {
         "id": "0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
         "name": "rackware-draas-plan-per-unit",
-        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope.",
+        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year",
         "displayName": "RackWare DRaaS Plan Per Unit"
       }
     ],
@@ -16754,12 +16754,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18003,12 +18003,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -21446,12 +21446,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
