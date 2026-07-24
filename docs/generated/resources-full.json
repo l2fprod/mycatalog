@@ -6524,14 +6524,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east"
+      "eu-de"
     ],
     "id": "api-connect",
     "images": {
@@ -9692,6 +9692,7 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -9699,8 +9700,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -84660,10 +84660,313 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "14-c532d6ef65508679871252fec018ffd9",
+        "_rev": "15-65ba2a9c195e9cb81332bd2b16914d0b",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children": [
+          {
+            "_id": "databases-for-mongodb-enterprise-sharding-gen2:ca-mon",
+            "_rev": "16-2d00a7780ca2f3d49b4407ae2f4db3a1",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aca-mon",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon/%2A",
+            "complete": true,
+            "created": "2026-06-09T01:13:15.549009495-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "ca-mon"
+            ],
+            "id": "databases-for-mongodb-enterprise-sharding-gen2:ca-mon",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:81f3311d-5bda-42c7-8999-702687a38c94",
+                  "name": "cdp-broker-dn-prod"
+                },
+                "location": "ca-mon",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/ca-mon",
+                "target_crn": "crn:v1:bluemix:public::ca-mon:::environment:bluemix-ca-mon"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mongodb",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "enterprise-sharding-gen2-ca-mon",
+            "overview_ui": {
+              "en": {
+                "description": "enterprise-sharding-gen2-ca-mon ca-mon deployment",
+                "display_name": "enterprise-sharding-gen2-ca-mon ca-mon deployment",
+                "long_description": "enterprise-sharding-gen2-ca-mon ca-mon deployment"
+              }
+            },
+            "parent_id": "databases-for-mongodb-gen2-enterprise-sharding",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-23T11:46:55.989590502-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:eu-de",
             "_rev": "9-02e1ce9327bf24becb43792672a53841",
@@ -84963,6 +85266,612 @@
             },
             "updated": "2026-07-06T13:59:47.149467236-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:eu-de?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
+          {
+            "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-che",
+            "_rev": "15-579a30be39da4b21c024db2ce31278d2",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-che",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che/%2A",
+            "complete": true,
+            "created": "2026-06-09T01:13:15.426317877-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "in-che"
+            ],
+            "id": "databases-for-mongodb-enterprise-sharding-gen2:in-che",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:1111bb38-d71e-4b15-8078-3b0a70fad270",
+                  "name": "cdp-broker-dn-prod-in-che"
+                },
+                "location": "in-che",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/in-che",
+                "target_crn": "crn:v1:bluemix:public::in-che:::environment:bluemix-in-che"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mongodb",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "enterprise-sharding-gen2-in-che",
+            "overview_ui": {
+              "en": {
+                "description": "enterprise-sharding-gen2-in-che in-che deployment",
+                "display_name": "enterprise-sharding-gen2-in-che in-che deployment",
+                "long_description": "enterprise-sharding-gen2-in-che in-che deployment"
+              }
+            },
+            "parent_id": "databases-for-mongodb-gen2-enterprise-sharding",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-23T11:47:06.965425321-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
+          {
+            "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-mum",
+            "_rev": "14-08fd20ca7fd203374914da3905da05e9",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-mum",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum/%2A",
+            "complete": true,
+            "created": "2026-06-09T01:13:15.503028377-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "in-mum"
+            ],
+            "id": "databases-for-mongodb-enterprise-sharding-gen2:in-mum",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:d961fd67-7ce8-465f-b473-74b4dd1303a6",
+                  "name": "cdp-broker-dn-prod-in-mum"
+                },
+                "location": "in-mum",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/in-mum",
+                "target_crn": "crn:v1:bluemix:public::in-mum:::environment:bluemix-in-mum"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mongodb",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "enterprise-sharding-gen2-in-mum",
+            "overview_ui": {
+              "en": {
+                "description": "enterprise-sharding-gen2-in-mum in-mum deployment",
+                "display_name": "enterprise-sharding-gen2-in-mum in-mum deployment",
+                "long_description": "enterprise-sharding-gen2-in-mum in-mum deployment"
+              }
+            },
+            "parent_id": "databases-for-mongodb-gen2-enterprise-sharding",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-07-23T11:47:15.116390632-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
             }
@@ -85276,7 +86185,10 @@
         "created": "2026-06-09T01:13:12.914188039-04:00",
         "disabled": false,
         "geo_tags": [
+          "ca-mon",
           "eu-de",
+          "in-che",
+          "in-mum",
           "us-east"
         ],
         "id": "databases-for-mongodb-gen2-enterprise-sharding",
@@ -85352,7 +86264,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-20T12:34:36.555844908-04:00",
+        "updated": "2026-07-23T11:48:44.771260406-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -88206,10 +89118,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -88217,7 +89125,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -90798,7 +91710,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "14-c532d6ef65508679871252fec018ffd9",
+        "_rev": "15-65ba2a9c195e9cb81332bd2b16914d0b",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding/%2A",
@@ -90806,7 +91718,10 @@
         "created": "2026-06-09T01:13:12.914188039-04:00",
         "disabled": false,
         "geo_tags": [
+          "ca-mon",
           "eu-de",
+          "in-che",
+          "in-mum",
           "us-east"
         ],
         "id": "databases-for-mongodb-gen2-enterprise-sharding",
@@ -90882,7 +91797,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-20T12:34:36.555844908-04:00",
+        "updated": "2026-07-23T11:48:44.771260406-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -90900,6 +91815,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -90907,11 +91826,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -98245,7 +99160,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -98256,7 +99170,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -100179,6 +101094,7 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -100193,8 +101109,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -109102,16 +110017,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "fra02",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -143865,14 +144780,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -151943,19 +152858,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
       "jp-osa",
       "in-mum",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "eu-de",
+      "us-south",
+      "in-che",
       "ca-mon",
       "au-syd",
-      "br-sao",
-      "in-che"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -156556,7 +157471,7 @@
   },
   {
     "_id": "containers-kubernetes",
-    "_rev": "213-c611f7e3c87e62db1d9bbb0a26024acc",
+    "_rev": "223-83783621c5de1b9a793eeb578c9c17c6",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:containers-kubernetes",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes/%2A",
@@ -157583,7 +158498,7 @@
       "wdc06",
       "wdc07"
     ],
-    "updated": "2026-07-22T13:06:17.015212101-04:00",
+    "updated": "2026-07-23T16:08:37.251247697-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -182534,7 +183449,7 @@
       },
       {
         "_id": "b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
-        "_rev": "49-c60e54b381b74beffb833682ba63f819",
+        "_rev": "50-ef9b34032949033e66988f5ea711cc60",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba/%2A",
@@ -182742,7 +183657,7 @@
           "rc_compatible",
           "eu_access"
         ],
-        "updated": "2026-07-22T05:22:28.089075817-04:00",
+        "updated": "2026-07-23T11:31:53.613756241-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -244691,16 +245606,13 @@
   },
   {
     "_id": "66644e80-f35a-11ee-923f-2fe367129617",
-    "_rev": "31-af485d928d1265261d252bc7e257cf8d",
+    "_rev": "35-65eedd099ce5bcff5011c4a44258cf94",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:66644e80-f35a-11ee-923f-2fe367129617",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/66644e80-f35a-11ee-923f-2fe367129617/%2A",
     "complete": true,
     "created": "2024-05-17T15:27:37.902622969-04:00",
     "disabled": false,
-    "geo_tags": [
-      "eu-de"
-    ],
     "id": "66644e80-f35a-11ee-923f-2fe367129617",
     "images": {
       "feature_image": "https://idaas.ice.ibmcloud.com:443/osb/ibmcloud/v1/resources/icons/small",
@@ -244782,11 +245694,11 @@
         "starting_price": {},
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/66644e80-f35a-11ee-923f-2fe367129617/pricing"
       },
-      "rc_compatible": true,
+      "rc_compatible": false,
       "service": {
         "async_provisioning_supported": false,
         "async_unprovisioning_supported": false,
-        "bindable": true,
+        "bindable": false,
         "custom_create_page_hybrid_enabled": false,
         "extension": null,
         "iam_compatible": false,
@@ -245310,402 +246222,32 @@
         "long_description": "IBM Verify 為內部 (人力) 及外部 (消費者) 使用者類型提供單一登入 (SSO)、多因子鑑別 (MFA)、身分控管及身分生命週期控制。"
       }
     },
-    "pricing_tags": [
-      "free",
-      "allow_internal_users"
-    ],
     "provider": {
       "name": "IBM"
     },
     "tags": [
       "security",
       "access",
-      "allow_internal_users",
       "custom_kind_service",
-      "eu-de",
-      "free",
       "iam",
       "ibm_created",
       "identity",
       "mfa",
-      "rc_compatible",
       "sso",
       "support_ibm",
       "verify"
     ],
-    "updated": "2025-10-03T19:20:59.395270121-04:00",
+    "updated": "2026-07-23T13:57:06.599432269-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/66644e80-f35a-11ee-923f-2fe367129617?complete=true",
     "visibility": {
       "restrictions": "public"
     },
-    "plans": [
-      {
-        "_id": "56518ce4-dc08-4f96-aec8-3dedaa398ca3",
-        "_rev": "34-669657bd8b0d9e1a2caf3f062d3934c7",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:56518ce4-dc08-4f96-aec8-3dedaa398ca3",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/56518ce4-dc08-4f96-aec8-3dedaa398ca3/%2A",
-        "complete": true,
-        "created": "2024-05-17T15:27:38.066250312-04:00",
-        "disabled": false,
-        "geo_tags": [
-          "eu-de"
-        ],
-        "id": "56518ce4-dc08-4f96-aec8-3dedaa398ca3",
-        "images": {
-          "feature_image": "https://idaas.ite3.idng.ibmcloudsecurity.com/osb/ibmcloud/v1/resources/icons/small",
-          "image": "https://idaas.ite3.idng.ibmcloudsecurity.com/osb/ibmcloud/v1/resources/icons/small",
-          "medium_image": "https://idaas.ite3.idng.ibmcloudsecurity.com/osb/ibmcloud/v1/resources/icons/small",
-          "small_image": "https://idaas.ite3.idng.ibmcloudsecurity.com/osb/ibmcloud/v1/resources/icons/small"
-        },
-        "kind": "plan",
-        "metadata": {
-          "compliance": [
-            "minisd"
-          ],
-          "original_name": "verify-lite",
-          "plan": {
-            "allow_internal_users": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "",
-            "test_check_interval": 0
-          },
-          "pricing": {
-            "metrics": null,
-            "origin": "pricing_catalog",
-            "sales_avenue": [
-              "catalog"
-            ],
-            "starting_price": {},
-            "type": "free",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/56518ce4-dc08-4f96-aec8-3dedaa398ca3/pricing"
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": false,
-            "parameters": [
-              {
-                "displayname": "Hostname",
-                "invalidmessage": "The name must be a unique DNS hostname. Allowable characters are letters, numbers and '-', ending with a letter or number, with a maximum of 63 characters.",
-                "name": "hostname",
-                "pattern": "(^[a-zA-Z0-9])([a-zA-Z0-9-]{0,61})([a-zA-Z0-9])$",
-                "placeholder": "Provide a short hostname for the service.",
-                "required": true,
-                "type": "text"
-              }
-            ],
-            "plan_updateable": false,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "sla": {
-            "dr": {
-              "dr": true
-            }
-          },
-          "ui": {
-            "strings": {
-              "cs": {
-                "bullets": [
-                  {
-                    "description": "Ochrana identit spotřebitelů a pracovních sil pomocí jednotného přihlášení, vícefaktorového ověřování, ověřování bez hesla a správy řízení a životního cyklu."
-                  },
-                  {
-                    "description": "Ochrana až 5 aplikací"
-                  },
-                  {
-                    "description": "Správa až 50 000 identit"
-                  }
-                ]
-              },
-              "de": {
-                "bullets": [
-                  {
-                    "description": "Schutz von Verbraucher-und Mitarbeiteridentitäten mit Single Sign-On, Mehrfaktorauthentifizierung, kennwortloser Authentifizierung sowie Governance-und Lebenszyklusmanagement"
-                  },
-                  {
-                    "description": "Schutz von bis zu 5 Anwendungen"
-                  },
-                  {
-                    "description": "Management von bis zu 50.000 Identitäten"
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Protect consumer and workforce identities with Single Sign-On, Multi-factor Authentication, Passwordless Authentication, and Governance and Lifecycle management"
-                  },
-                  {
-                    "description": "Protect up to 5 applications"
-                  },
-                  {
-                    "description": "Manage up to 50,000 identities"
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "description": "Proteja las identidades de los consumidores y de la fuerza laboral con el inicio de sesión único, la autenticación multifactor, la autenticación sin contraseña y la gestión de gobierno y ciclo de vida"
-                  },
-                  {
-                    "description": "Proteja hasta 5 aplicaciones"
-                  },
-                  {
-                    "description": "Gestionar hasta 50.000 identidades"
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "description": "Protégez les identités des consommateurs et de la main-d'oeuvre avec la connexion unique, l'authentification multi-facteur, l'authentification sans mot de passe et la gouvernance et la gestion du cycle de vie"
-                  },
-                  {
-                    "description": "Protégez jusqu'à 5 applications"
-                  },
-                  {
-                    "description": "Gérez jusqu'à 50 000 identités"
-                  }
-                ]
-              },
-              "hu": {
-                "bullets": [
-                  {
-                    "description": "A fogyasztók és a munkaerő azonosságának védelme egypontos bejelentkezéssel, többtényezős hitelesítéssel, jelnélküli hitelesítéssel és irányítási és életciklus kezeléssel"
-                  },
-                  {
-                    "description": "5 alkalmazás védelme"
-                  },
-                  {
-                    "description": "50.000 azonosság kezelése"
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "description": "Proteggere le identità dei clienti e del personale con SSO (Single Sign - On), autenticazione multifattore, autenticazione senza password, governance e gestione del ciclo di vita"
-                  },
-                  {
-                    "description": "Proteggi fino a 5 applicazioni"
-                  },
-                  {
-                    "description": "Gestisci fino a 50.000 identità"
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "description": "シングル・サインオン、多要素認証、パスワードなし認証、ガバナンスとライフサイクル管理により、消費者と従業員の ID を保護します。"
-                  },
-                  {
-                    "description": "最大 5 つのアプリケーションを保護"
-                  },
-                  {
-                    "description": "最大 50,000 個の ID を管理"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "description": "싱글 사인온, 다중 요소 인증, 비밀번호 없는 인증, 거버넌스 및 라이프사이클 관리를 통해 이용자 및 직원 ID 보호"
-                  },
-                  {
-                    "description": "최대 5개의 애플리케이션 보호"
-                  },
-                  {
-                    "description": "최대 50 ,000개 ID 관리"
-                  }
-                ]
-              },
-              "pl": {
-                "bullets": [
-                  {
-                    "description": "Ochrona tożsamości konsumentów i pracowników dzięki funkcji pojedynczego logowania, uwierzytelniania wieloskładnikowego, uwierzytelniania bezhasłowego i zarządzania cyklem życia"
-                  },
-                  {
-                    "description": "Ochrona do 5 aplikacji"
-                  },
-                  {
-                    "description": "Zarządzaj maksymalnie 50 000 tożsamości"
-                  }
-                ]
-              },
-              "pt": {
-                "bullets": [
-                  {
-                    "description": "Proteja as identidades do consumidor e da força de trabalho com Conexão Única, Autenticação de Diversos Fatores, Autenticação sem Senha e Gerenciamento de Governança e Ciclo de Vida"
-                  },
-                  {
-                    "description": "Proteja até 5 aplicativos"
-                  },
-                  {
-                    "description": "Gerencie até 50.000 identidades"
-                  }
-                ]
-              },
-              "ru": {
-                "bullets": [
-                  {
-                    "description": "Защитить идентификаторы потребителей и рабочей силы с единой регистрацией, многофакторной аутентификацией, беззащитной аутентификацией, управлением и управлением жизненным циклом"
-                  },
-                  {
-                    "description": "Защитить до 5 приложений"
-                  },
-                  {
-                    "description": "Управление до 50 000 идентификаторов"
-                  }
-                ]
-              },
-              "zh_CN": {
-                "bullets": [
-                  {
-                    "description": "通过单点登录，多因子认证，无密码认证以及监管和生命周期管理，保护消费者和员工身份"
-                  },
-                  {
-                    "description": "最多保护 5 个应用程序"
-                  },
-                  {
-                    "description": "最多管理 50,000 个身份"
-                  }
-                ]
-              },
-              "zh_TW": {
-                "bullets": [
-                  {
-                    "description": "利用單一登入、多因子鑑別、無密碼鑑別及控管與生命週期管理來保護消費者和人力身分"
-                  },
-                  {
-                    "description": "保護最多 5 個應用程式"
-                  },
-                  {
-                    "description": "管理多達 50,000 個身分"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "verify-lite",
-        "overview_ui": {
-          "cs": {
-            "description": "Plán Lite pro produkt IBM Verify nabízí vše, co potřebujete k tomu, abyste mohli začít chránit své identity spotřebitelů a pracovních sil před cloudem.\n\n\nTato služba plánu Lite má omezení. Chcete-li tyto limity odebrat, je vyžadována úplná zakoupená verze produktu Verify.",
-            "display_name": "Odlehčený",
-            "long_description": "Plán Lite pro produkt IBM Verify nabízí vše, co potřebujete k tomu, abyste mohli začít chránit své identity spotřebitelů a pracovních sil před cloudem.\n\n\nTato služba plánu Lite má omezení. Chcete-li tyto limity odebrat, je vyžadována úplná zakoupená verze produktu Verify."
-          },
-          "de": {
-            "description": "Der Lite-Plan für IBM Verify bietet alles, was Sie brauchen, um Ihre Kunden-und Mitarbeiteridentitäten aus der Cloud zu schützen.\n\n\nFür diesen Lite-Plan-Service gelten Grenzwerte. Um diese Grenzwerte zu entfernen, ist eine Vollversion von Verify erforderlich.",
-            "display_name": "Tarif „Lite\"",
-            "long_description": "Der Lite-Plan für IBM Verify bietet alles, was Sie brauchen, um Ihre Kunden-und Mitarbeiteridentitäten aus der Cloud zu schützen.\n\n\nFür diesen Lite-Plan-Service gelten Grenzwerte. Um diese Grenzwerte zu entfernen, ist eine Vollversion von Verify erforderlich."
-          },
-          "en": {
-            "description": "The Lite plan for IBM Verify offers everything you need to start protecting your consumer and workforce identities from the cloud.\n\n\nThis Lite plan service has limits. To remove those limits, a full purchased version of Verify is required.\n",
-            "display_name": "Lite",
-            "long_description": "The Lite plan for IBM Verify offers everything you need to start protecting your consumer and workforce identities from the cloud.\n\n\nThis Lite plan service has limits. To remove those limits, a full purchased version of Verify is required.\n"
-          },
-          "es": {
-            "description": "El plan Lite para IBM Verify ofrece todo lo que necesita para empezar a proteger sus identidades de consumidor y fuerza de trabajo de la nube.\n\n\nEste servicio de plan Lite tiene límites. Para eliminar estos límites, se necesita una versión adquirida completa de Verify.",
-            "display_name": "Lite",
-            "long_description": "El plan Lite para IBM Verify ofrece todo lo que necesita para empezar a proteger sus identidades de consumidor y fuerza de trabajo de la nube.\n\n\nEste servicio de plan Lite tiene límites. Para eliminar estos límites, se necesita una versión adquirida completa de Verify."
-          },
-          "fr": {
-            "description": "Le plan Lite pour IBM Verify offre tout ce dont vous avez besoin pour commencer à protéger vos identités de consommateur et de main-d'oeuvre à partir du cloud.\n\n\nCe service de plan Lite a des limites. Pour supprimer ces limites, une version complète de Verify est requise.",
-            "display_name": "Lite",
-            "long_description": "Le plan Lite pour IBM Verify offre tout ce dont vous avez besoin pour commencer à protéger vos identités de consommateur et de main-d'oeuvre à partir du cloud.\n\n\nCe service de plan Lite a des limites. Pour supprimer ces limites, une version complète de Verify est requise."
-          },
-          "hu": {
-            "description": "Az IBM Verify Lite terve minden szükséges ahhoz, hogy a fogyasztó és a munkaerő azonosságát védje a felhőből.\n\n\nEz a Lite terv szolgáltatás korlátai. A korlátok eltávolításához meg kell adni az Ellenőrzés teljes megvásárolt változatát.",
-            "display_name": "Lite",
-            "long_description": "Az IBM Verify Lite terve minden szükséges ahhoz, hogy a fogyasztó és a munkaerő azonosságát védje a felhőből.\n\n\nEz a Lite terv szolgáltatás korlátai. A korlátok eltávolításához meg kell adni az Ellenőrzés teljes megvásárolt változatát."
-          },
-          "it": {
-            "description": "Il piano Lite per IBM Verify offre tutto ciò che ti serve per iniziare a proteggere le tue identità di consumer e forza lavoro dal cloud.\n\n\nQuesto servizio del piano Lite ha dei limiti. Per rimuovere tali limiti, è richiesta una versione completa acquistata di Verifica.",
-            "display_name": "Lite",
-            "long_description": "Il piano Lite per IBM Verify offre tutto ciò che ti serve per iniziare a proteggere le tue identità di consumer e forza lavoro dal cloud.\n\n\nQuesto servizio del piano Lite ha dei limiti. Per rimuovere tali limiti, è richiesta una versione completa acquistata di Verifica."
-          },
-          "ja": {
-            "description": "IBM Verify のライト・プランでは、クラウドから消費者 ID と従業員 ID を保護するために必要なものがすべて提供されます。\n\n\nこのライト・プラン・サービスには制限があります。 これらの制限を解除するには、「検証」の完全購入バージョンが必要です。",
-            "display_name": "ライト",
-            "long_description": "IBM Verify のライト・プランでは、クラウドから消費者 ID と従業員 ID を保護するために必要なものがすべて提供されます。\n\n\nこのライト・プラン・サービスには制限があります。 これらの制限を解除するには、「検証」の完全購入バージョンが必要です。"
-          },
-          "ko": {
-            "description": "IBM Verify 에 대한 Lite 플랜은 클라우드에서 이용자 및 직원 ID를 보호하는 데 필요한 모든 것을 제공합니다.\n\n\n이 Lite 플랜 서비스에는 한계가 있습니다. 이러한 한계를 제거하려면 Verify의 전체 구매 버전이 필요합니다.",
-            "display_name": "라이트",
-            "long_description": "IBM Verify 에 대한 Lite 플랜은 클라우드에서 이용자 및 직원 ID를 보호하는 데 필요한 모든 것을 제공합니다.\n\n\n이 Lite 플랜 서비스에는 한계가 있습니다. 이러한 한계를 제거하려면 Verify의 전체 구매 버전이 필요합니다."
-          },
-          "pl": {
-            "description": "Plan Lite dla produktu IBM Verify oferuje wszystko, co jest potrzebne do rozpoczęcia ochrony tożsamości konsumentów i pracowników przed chmurą.\n\n\nTa uproszczona usługa planu ma limity. Aby usunąć te limity, wymagana jest pełna zakupiona wersja programu Verify.",
-            "display_name": "Lite",
-            "long_description": "Plan Lite dla produktu IBM Verify oferuje wszystko, co jest potrzebne do rozpoczęcia ochrony tożsamości konsumentów i pracowników przed chmurą.\n\n\nTa uproszczona usługa planu ma limity. Aby usunąć te limity, wymagana jest pełna zakupiona wersja programu Verify."
-          },
-          "pt": {
-            "description": "O plano Lite para o IBM Verify oferece tudo o que você precisa para começar a proteger suas identidades de consumidor e de força de trabalho da nuvem\n\n\nEsse serviço do plano Lite tem limites Para remover esses limites, uma versão comprada completa de Verificar é necessária",
-            "display_name": "Lite",
-            "long_description": "O plano Lite para o IBM Verify oferece tudo o que você precisa para começar a proteger suas identidades de consumidor e de força de trabalho da nuvem\n\n\nEsse serviço do plano Lite tem limites Para remover esses limites, uma versão comprada completa de Verificar é necessária"
-          },
-          "ru": {
-            "description": "План Lite для IBM Verify предлагает все, что необходимо для того, чтобы начать защиту идентификационных данных потребителя и рабочей силы из облака.\n\n\nУ этой службы плана Lite есть ограничения. Для удаления этих ограничений требуется полная версия Verify.",
-            "display_name": "Lite",
-            "long_description": "План Lite для IBM Verify предлагает все, что необходимо для того, чтобы начать защиту идентификационных данных потребителя и рабочей силы из облака.\n\n\nУ этой службы плана Lite есть ограничения. Для удаления этих ограничений требуется полная версия Verify."
-          },
-          "zh_CN": {
-            "description": "IBM Verify 的 Lite 套餐提供了从云开始保护消费者和员工身份所需的一切。\n\n\n此 Lite 套餐服务具有限制。 要除去这些限制，需要完整购买的 Verify 版本。",
-            "display_name": "精简版 (Lite)",
-            "long_description": "IBM Verify 的 Lite 套餐提供了从云开始保护消费者和员工身份所需的一切。\n\n\n此 Lite 套餐服务具有限制。 要除去这些限制，需要完整购买的 Verify 版本。"
-          },
-          "zh_TW": {
-            "description": "IBM Verify 的 Lite 方案提供您開始從雲端保護消費者和人力身分所需的一切。\n\n\n此 Lite 方案服務有限制。 若要移除這些限制，需要完整購買的 Verify 版本。",
-            "display_name": "精簡",
-            "long_description": "IBM Verify 的 Lite 方案提供您開始從雲端保護消費者和人力身分所需的一切。\n\n\n此 Lite 方案服務有限制。 若要移除這些限制，需要完整購買的 Verify 版本。"
-          }
-        },
-        "parent_id": "66644e80-f35a-11ee-923f-2fe367129617",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/66644e80-f35a-11ee-923f-2fe367129617",
-        "pricing_tags": [
-          "free",
-          "allow_internal_users"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "security",
-          "ibm_created"
-        ],
-        "updated": "2025-10-03T14:22:50.758236744-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/56518ce4-dc08-4f96-aec8-3dedaa398ca3?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "The Lite plan for IBM Verify offers everything you need to start protecting your consumer and workforce identities from the cloud.\n\n\nThis Lite plan service has limits. To remove those limits, a full purchased version of Verify is required.\n",
-        "displayName": "Lite",
-        "originalName": "verify-lite"
-      }
-    ],
+    "plans": [],
     "description": "IBM Verify",
     "longDescription": "IBM Verify provides Single Sign-On (SSO), multi-factor authentication (MFA), identity governance, and identity lifecycle controls for internal (workforce) and external (consumer) user types.",
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
@@ -271590,12 +272132,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -275864,12 +276406,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -277343,12 +277885,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
@@ -280472,12 +281014,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {

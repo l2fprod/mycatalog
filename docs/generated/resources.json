@@ -537,14 +537,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -708,6 +708,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -715,8 +716,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -5751,6 +5751,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5765,8 +5766,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6155,16 +6155,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "fra02",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9898,19 +9898,19 @@
   },
   {
     "geo_tags": [
+      "br-sao",
       "jp-osa",
       "in-mum",
-      "eu-de",
-      "us-south",
-      "eu-gb",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "eu-de",
+      "us-south",
+      "in-che",
       "ca-mon",
       "au-syd",
-      "br-sao",
-      "in-che"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -18581,9 +18581,6 @@
     "localPngIcon": "/generated/icons/0f7a69f2-f6bf-48f5-aea0-fb9383720e6e.png"
   },
   {
-    "geo_tags": [
-      "eu-de"
-    ],
     "id": "66644e80-f35a-11ee-923f-2fe367129617",
     "kind": "service",
     "metadata": {
@@ -18591,39 +18588,24 @@
       "ui": {}
     },
     "name": "security-verify",
-    "pricing_tags": [
-      "free",
-      "allow_internal_users"
-    ],
     "tags": [
       "security",
       "access",
-      "allow_internal_users",
       "custom_kind_service",
-      "eu-de",
-      "free",
       "iam",
       "ibm_created",
       "identity",
       "mfa",
-      "rc_compatible",
       "sso",
       "support_ibm",
       "verify"
     ],
-    "plans": [
-      {
-        "id": "56518ce4-dc08-4f96-aec8-3dedaa398ca3",
-        "name": "verify-lite",
-        "description": "The Lite plan for IBM Verify offers everything you need to start protecting your consumer and workforce identities from the cloud.\n\n\nThis Lite plan service has limits. To remove those limits, a full purchased version of Verify is required.\n",
-        "displayName": "Lite",
-        "originalName": "verify-lite"
-      }
-    ],
+    "plans": [],
     "description": "IBM Verify",
     "longDescription": "IBM Verify provides Single Sign-On (SSO), multi-factor authentication (MFA), identity governance, and identity lifecycle controls for internal (workforce) and external (consumer) user types.",
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
@@ -21137,12 +21119,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -21219,12 +21201,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -21446,12 +21428,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
