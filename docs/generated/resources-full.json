@@ -1,5 +1,2012 @@
 [
   {
+    "_id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+    "_rev": "39-a6e01be9ac7f5a525670d50d002d2e71",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9/%2A",
+    "complete": true,
+    "created": "2026-04-07T08:57:19.668346676-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+    "images": {
+      "image": "https://medialib.abbyy.com/v1/media/edge/images/abbyydeveloc5ba-xmc0fa5-prod859e-c28d/media/project/abbyy/abbyy/insights/resource-center/thumbs/abbyy-logo-square-100x100.jpg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "a4f55d8d031946dbbdcc9cdb66ab5e90:o:5fef9daa-b01d-49ef-8c91-eb5d1279a9cf",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "ES",
+              "IN"
+            ],
+            "process": "ABBYY provides technical support, software updates, and maintenance. We prioritize issues to ensure timely fixes and product stability.\n",
+            "status_url": "https://status.abbyy.com/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    }
+                  ],
+                  "timezone": "Asia/Calcutta"
+                },
+                "contact": "partnerinnovation@abbyy.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 3
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "partnerinnovation@abbyy.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 4
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 3
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://support.abbyy.com/hc/en-us"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "First Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "First-Name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Last Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Last-Name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Business email",
+            "displayname": "Email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Email",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Company",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Company",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Country",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Country",
+            "options": [
+              {
+                "displayname": "Afghanistan",
+                "i18n": null,
+                "value": "AF"
+              },
+              {
+                "displayname": "Aland Islands",
+                "i18n": null,
+                "value": "AX"
+              },
+              {
+                "displayname": "Albania",
+                "i18n": null,
+                "value": "AL"
+              },
+              {
+                "displayname": "Algeria",
+                "i18n": null,
+                "value": "DZ"
+              },
+              {
+                "displayname": "American Samoa",
+                "i18n": null,
+                "value": "AS"
+              },
+              {
+                "displayname": "Andorra",
+                "i18n": null,
+                "value": "AD"
+              },
+              {
+                "displayname": "Angola",
+                "i18n": null,
+                "value": "AO"
+              },
+              {
+                "displayname": "Anguilla",
+                "i18n": null,
+                "value": "AI"
+              },
+              {
+                "displayname": "Antarctica",
+                "i18n": null,
+                "value": "AQ"
+              },
+              {
+                "displayname": "Antigua and Barbuda",
+                "i18n": null,
+                "value": "AG"
+              },
+              {
+                "displayname": "Argentina",
+                "i18n": null,
+                "value": "AR"
+              },
+              {
+                "displayname": "Armenia",
+                "i18n": null,
+                "value": "AM"
+              },
+              {
+                "displayname": "Aruba",
+                "i18n": null,
+                "value": "AW"
+              },
+              {
+                "displayname": "Australia",
+                "i18n": null,
+                "value": "AU"
+              },
+              {
+                "displayname": "Austria",
+                "i18n": null,
+                "value": "AT"
+              },
+              {
+                "displayname": "Azerbaijan",
+                "i18n": null,
+                "value": "AZ"
+              },
+              {
+                "displayname": "Bahamas",
+                "i18n": null,
+                "value": "BS"
+              },
+              {
+                "displayname": "Bahrain",
+                "i18n": null,
+                "value": "BH"
+              },
+              {
+                "displayname": "Bangladesh",
+                "i18n": null,
+                "value": "BD"
+              },
+              {
+                "displayname": "Barbados",
+                "i18n": null,
+                "value": "BB"
+              },
+              {
+                "displayname": "Belarus",
+                "i18n": null,
+                "value": "BY"
+              },
+              {
+                "displayname": "Belgium",
+                "i18n": null,
+                "value": "BE"
+              },
+              {
+                "displayname": "Belize",
+                "i18n": null,
+                "value": "BZ"
+              },
+              {
+                "displayname": "Benin",
+                "i18n": null,
+                "value": "BJ"
+              },
+              {
+                "displayname": "Bermuda",
+                "i18n": null,
+                "value": "BM"
+              },
+              {
+                "displayname": "Bhutan",
+                "i18n": null,
+                "value": "BT"
+              },
+              {
+                "displayname": "Bolivia",
+                "i18n": null,
+                "value": "BO"
+              },
+              {
+                "displayname": "Bonaire, Sint Eustatius and Saba",
+                "i18n": null,
+                "value": "BQ"
+              },
+              {
+                "displayname": "Bosnia and Herzegovina",
+                "i18n": null,
+                "value": "BA"
+              },
+              {
+                "displayname": "Botswana",
+                "i18n": null,
+                "value": "BW"
+              },
+              {
+                "displayname": "Bouvet Island",
+                "i18n": null,
+                "value": "BV"
+              },
+              {
+                "displayname": "Brazil",
+                "i18n": null,
+                "value": "BR"
+              },
+              {
+                "displayname": "British Indian Ocean Territory",
+                "i18n": null,
+                "value": "IO"
+              },
+              {
+                "displayname": "British Virgin Islands",
+                "i18n": null,
+                "value": "VG"
+              },
+              {
+                "displayname": "Brunei Darussalam",
+                "i18n": null,
+                "value": "BN"
+              },
+              {
+                "displayname": "Bulgaria",
+                "i18n": null,
+                "value": "BG"
+              },
+              {
+                "displayname": "Burkina Faso",
+                "i18n": null,
+                "value": "BF"
+              },
+              {
+                "displayname": "Burundi",
+                "i18n": null,
+                "value": "BI"
+              },
+              {
+                "displayname": "Cambodia",
+                "i18n": null,
+                "value": "KH"
+              },
+              {
+                "displayname": "Cameroon",
+                "i18n": null,
+                "value": "CM"
+              },
+              {
+                "displayname": "Canada",
+                "i18n": null,
+                "value": "CA"
+              },
+              {
+                "displayname": "Cape Verde",
+                "i18n": null,
+                "value": "CV"
+              },
+              {
+                "displayname": "Cayman Islands",
+                "i18n": null,
+                "value": "KY"
+              },
+              {
+                "displayname": "Central African Republic",
+                "i18n": null,
+                "value": "CF"
+              },
+              {
+                "displayname": "Chad",
+                "i18n": null,
+                "value": "TD"
+              },
+              {
+                "displayname": "Chile",
+                "i18n": null,
+                "value": "CL"
+              },
+              {
+                "displayname": "China",
+                "i18n": null,
+                "value": "CN"
+              },
+              {
+                "displayname": "Christmas Island",
+                "i18n": null,
+                "value": "CX"
+              },
+              {
+                "displayname": "Cocos (Keeling) Islands",
+                "i18n": null,
+                "value": "CC"
+              },
+              {
+                "displayname": "Colombia",
+                "i18n": null,
+                "value": "CO"
+              },
+              {
+                "displayname": "Comoros",
+                "i18n": null,
+                "value": "KM"
+              },
+              {
+                "displayname": "Congo (Brazzaville)",
+                "i18n": null,
+                "value": "CG"
+              },
+              {
+                "displayname": "Congo, (Kinshasa)",
+                "i18n": null,
+                "value": "CD"
+              },
+              {
+                "displayname": "Cook Islands",
+                "i18n": null,
+                "value": "CK"
+              },
+              {
+                "displayname": "Costa Rica",
+                "i18n": null,
+                "value": "CR"
+              },
+              {
+                "displayname": "Croatia",
+                "i18n": null,
+                "value": "HR"
+              },
+              {
+                "displayname": "Cuba",
+                "i18n": null,
+                "value": "CU"
+              },
+              {
+                "displayname": "Curaçao",
+                "i18n": null,
+                "value": "CW"
+              },
+              {
+                "displayname": "Cyprus",
+                "i18n": null,
+                "value": "CY"
+              },
+              {
+                "displayname": "Czech Republic",
+                "i18n": null,
+                "value": "CZ"
+              },
+              {
+                "displayname": "Côte d'Ivoire",
+                "i18n": null,
+                "value": "CI"
+              },
+              {
+                "displayname": "Denmark",
+                "i18n": null,
+                "value": "DK"
+              },
+              {
+                "displayname": "Djibouti",
+                "i18n": null,
+                "value": "DJ"
+              },
+              {
+                "displayname": "Dominica",
+                "i18n": null,
+                "value": "DM"
+              },
+              {
+                "displayname": "Dominican Republic",
+                "i18n": null,
+                "value": "DO"
+              },
+              {
+                "displayname": "Ecuador",
+                "i18n": null,
+                "value": "EC"
+              },
+              {
+                "displayname": "Egypt",
+                "i18n": null,
+                "value": "EG"
+              },
+              {
+                "displayname": "El Salvador",
+                "i18n": null,
+                "value": "SV"
+              },
+              {
+                "displayname": "Equatorial Guinea",
+                "i18n": null,
+                "value": "GQ"
+              },
+              {
+                "displayname": "Eritrea",
+                "i18n": null,
+                "value": "ER"
+              },
+              {
+                "displayname": "Estonia",
+                "i18n": null,
+                "value": "EE"
+              },
+              {
+                "displayname": "Ethiopia",
+                "i18n": null,
+                "value": "ET"
+              },
+              {
+                "displayname": "Falkland Islands (Malvinas)",
+                "i18n": null,
+                "value": "FK"
+              },
+              {
+                "displayname": "Faroe Islands",
+                "i18n": null,
+                "value": "FO"
+              },
+              {
+                "displayname": "Fiji",
+                "i18n": null,
+                "value": "FJ"
+              },
+              {
+                "displayname": "Finland",
+                "i18n": null,
+                "value": "FI"
+              },
+              {
+                "displayname": "France",
+                "i18n": null,
+                "value": "FR"
+              },
+              {
+                "displayname": "French Guiana",
+                "i18n": null,
+                "value": "GF"
+              },
+              {
+                "displayname": "French Polynesia",
+                "i18n": null,
+                "value": "PF"
+              },
+              {
+                "displayname": "French Southern Territories",
+                "i18n": null,
+                "value": "TF"
+              },
+              {
+                "displayname": "Gabon",
+                "i18n": null,
+                "value": "GA"
+              },
+              {
+                "displayname": "Gambia",
+                "i18n": null,
+                "value": "GM"
+              },
+              {
+                "displayname": "Georgia",
+                "i18n": null,
+                "value": "GE"
+              },
+              {
+                "displayname": "Germany",
+                "i18n": null,
+                "value": "DE"
+              },
+              {
+                "displayname": "Ghana",
+                "i18n": null,
+                "value": "GH"
+              },
+              {
+                "displayname": "Gibraltar",
+                "i18n": null,
+                "value": "GI"
+              },
+              {
+                "displayname": "Greece",
+                "i18n": null,
+                "value": "GR"
+              },
+              {
+                "displayname": "Greenland",
+                "i18n": null,
+                "value": "GL"
+              },
+              {
+                "displayname": "Grenada",
+                "i18n": null,
+                "value": "GD"
+              },
+              {
+                "displayname": "Guadeloupe",
+                "i18n": null,
+                "value": "GP"
+              },
+              {
+                "displayname": "Guam",
+                "i18n": null,
+                "value": "GU"
+              },
+              {
+                "displayname": "Guatemala",
+                "i18n": null,
+                "value": "GT"
+              },
+              {
+                "displayname": "Guernsey",
+                "i18n": null,
+                "value": "GG"
+              },
+              {
+                "displayname": "Guinea",
+                "i18n": null,
+                "value": "GN"
+              },
+              {
+                "displayname": "Guinea-Bissau",
+                "i18n": null,
+                "value": "GW"
+              },
+              {
+                "displayname": "Guyana",
+                "i18n": null,
+                "value": "GY"
+              },
+              {
+                "displayname": "Haiti",
+                "i18n": null,
+                "value": "HT"
+              },
+              {
+                "displayname": "Heard and Mcdonald Islands",
+                "i18n": null,
+                "value": "HM"
+              },
+              {
+                "displayname": "Holy See (Vatican City State)",
+                "i18n": null,
+                "value": "VA"
+              },
+              {
+                "displayname": "Honduras",
+                "i18n": null,
+                "value": "HN"
+              },
+              {
+                "displayname": "Hong Kong, SAR China",
+                "i18n": null,
+                "value": "HK"
+              },
+              {
+                "displayname": "Hungary",
+                "i18n": null,
+                "value": "HU"
+              },
+              {
+                "displayname": "Iceland",
+                "i18n": null,
+                "value": "IS"
+              },
+              {
+                "displayname": "India",
+                "i18n": null,
+                "value": "IN"
+              },
+              {
+                "displayname": "Indonesia",
+                "i18n": null,
+                "value": "ID"
+              },
+              {
+                "displayname": "Iran, Islamic Republic of",
+                "i18n": null,
+                "value": "IR"
+              },
+              {
+                "displayname": "Iraq",
+                "i18n": null,
+                "value": "IQ"
+              },
+              {
+                "displayname": "Ireland",
+                "i18n": null,
+                "value": "IE"
+              },
+              {
+                "displayname": "Isle of Man",
+                "i18n": null,
+                "value": "IM"
+              },
+              {
+                "displayname": "Israel",
+                "i18n": null,
+                "value": "IL"
+              },
+              {
+                "displayname": "Italy",
+                "i18n": null,
+                "value": "IT"
+              },
+              {
+                "displayname": "Jamaica",
+                "i18n": null,
+                "value": "JM"
+              },
+              {
+                "displayname": "Japan",
+                "i18n": null,
+                "value": "JP"
+              },
+              {
+                "displayname": "Jersey",
+                "i18n": null,
+                "value": "JE"
+              },
+              {
+                "displayname": "Jordan",
+                "i18n": null,
+                "value": "JO"
+              },
+              {
+                "displayname": "Kazakhstan",
+                "i18n": null,
+                "value": "KZ"
+              },
+              {
+                "displayname": "Kenya",
+                "i18n": null,
+                "value": "KE"
+              },
+              {
+                "displayname": "Kiribati",
+                "i18n": null,
+                "value": "KI"
+              },
+              {
+                "displayname": "Korea, Democratic People's Republic of",
+                "i18n": null,
+                "value": "KP"
+              },
+              {
+                "displayname": "Korea, Republic of",
+                "i18n": null,
+                "value": "KR"
+              },
+              {
+                "displayname": "Kuwait",
+                "i18n": null,
+                "value": "KW"
+              },
+              {
+                "displayname": "Kyrgyzstan",
+                "i18n": null,
+                "value": "KG"
+              },
+              {
+                "displayname": "Lao PDR",
+                "i18n": null,
+                "value": "LA"
+              },
+              {
+                "displayname": "Latvia",
+                "i18n": null,
+                "value": "LV"
+              },
+              {
+                "displayname": "Lebanon",
+                "i18n": null,
+                "value": "LB"
+              },
+              {
+                "displayname": "Lesotho",
+                "i18n": null,
+                "value": "LS"
+              },
+              {
+                "displayname": "Liberia",
+                "i18n": null,
+                "value": "LR"
+              },
+              {
+                "displayname": "Libya",
+                "i18n": null,
+                "value": "LY"
+              },
+              {
+                "displayname": "Liechtenstein",
+                "i18n": null,
+                "value": "LI"
+              },
+              {
+                "displayname": "Lithuania",
+                "i18n": null,
+                "value": "LT"
+              },
+              {
+                "displayname": "Luxembourg",
+                "i18n": null,
+                "value": "LU"
+              },
+              {
+                "displayname": "Macao, SAR China",
+                "i18n": null,
+                "value": "MO"
+              },
+              {
+                "displayname": "North Macedonia",
+                "i18n": null,
+                "value": "MK"
+              },
+              {
+                "displayname": "Madagascar",
+                "i18n": null,
+                "value": "MG"
+              },
+              {
+                "displayname": "Malawi",
+                "i18n": null,
+                "value": "MW"
+              },
+              {
+                "displayname": "Malaysia",
+                "i18n": null,
+                "value": "MY"
+              },
+              {
+                "displayname": "Maldives",
+                "i18n": null,
+                "value": "MV"
+              },
+              {
+                "displayname": "Mali",
+                "i18n": null,
+                "value": "ML"
+              },
+              {
+                "displayname": "Malta",
+                "i18n": null,
+                "value": "MT"
+              },
+              {
+                "displayname": "Marshall Islands",
+                "i18n": null,
+                "value": "MH"
+              },
+              {
+                "displayname": "Martinique",
+                "i18n": null,
+                "value": "MQ"
+              },
+              {
+                "displayname": "Mauritania",
+                "i18n": null,
+                "value": "MR"
+              },
+              {
+                "displayname": "Mauritius",
+                "i18n": null,
+                "value": "MU"
+              },
+              {
+                "displayname": "Mayotte",
+                "i18n": null,
+                "value": "YT"
+              },
+              {
+                "displayname": "Mexico",
+                "i18n": null,
+                "value": "MX"
+              },
+              {
+                "displayname": "Micronesia, Federated States of",
+                "i18n": null,
+                "value": "FM"
+              },
+              {
+                "displayname": "Moldova",
+                "i18n": null,
+                "value": "MD"
+              },
+              {
+                "displayname": "Monaco",
+                "i18n": null,
+                "value": "MC"
+              },
+              {
+                "displayname": "Mongolia",
+                "i18n": null,
+                "value": "MN"
+              },
+              {
+                "displayname": "Montenegro",
+                "i18n": null,
+                "value": "ME"
+              },
+              {
+                "displayname": "Montserrat",
+                "i18n": null,
+                "value": "MS"
+              },
+              {
+                "displayname": "Morocco",
+                "i18n": null,
+                "value": "MA"
+              },
+              {
+                "displayname": "Mozambique",
+                "i18n": null,
+                "value": "MZ"
+              },
+              {
+                "displayname": "Myanmar",
+                "i18n": null,
+                "value": "MM"
+              },
+              {
+                "displayname": "Namibia",
+                "i18n": null,
+                "value": "NA"
+              },
+              {
+                "displayname": "Nauru",
+                "i18n": null,
+                "value": "NR"
+              },
+              {
+                "displayname": "Nepal",
+                "i18n": null,
+                "value": "NP"
+              },
+              {
+                "displayname": "Netherlands",
+                "i18n": null,
+                "value": "NL"
+              },
+              {
+                "displayname": "Netherlands Antilles",
+                "i18n": null,
+                "value": "AN"
+              },
+              {
+                "displayname": "New Caledonia",
+                "i18n": null,
+                "value": "NC"
+              },
+              {
+                "displayname": "New Zealand",
+                "i18n": null,
+                "value": "NZ"
+              },
+              {
+                "displayname": "Nicaragua",
+                "i18n": null,
+                "value": "NI"
+              },
+              {
+                "displayname": "Niger",
+                "i18n": null,
+                "value": "NE"
+              },
+              {
+                "displayname": "Nigeria",
+                "i18n": null,
+                "value": "NG"
+              },
+              {
+                "displayname": "Niue",
+                "i18n": null,
+                "value": "NU"
+              },
+              {
+                "displayname": "Norfolk Island",
+                "i18n": null,
+                "value": "NF"
+              },
+              {
+                "displayname": "Northern Mariana Islands",
+                "i18n": null,
+                "value": "MP"
+              },
+              {
+                "displayname": "Norway",
+                "i18n": null,
+                "value": "NO"
+              },
+              {
+                "displayname": "Oman",
+                "i18n": null,
+                "value": "OM"
+              },
+              {
+                "displayname": "Pakistan",
+                "i18n": null,
+                "value": "PK"
+              },
+              {
+                "displayname": "Palau",
+                "i18n": null,
+                "value": "PW"
+              },
+              {
+                "displayname": "Palestine",
+                "i18n": null,
+                "value": "PS"
+              },
+              {
+                "displayname": "Panama",
+                "i18n": null,
+                "value": "PA"
+              },
+              {
+                "displayname": "Papua New Guinea",
+                "i18n": null,
+                "value": "PG"
+              },
+              {
+                "displayname": "Paraguay",
+                "i18n": null,
+                "value": "PY"
+              },
+              {
+                "displayname": "Peru",
+                "i18n": null,
+                "value": "PE"
+              },
+              {
+                "displayname": "Philippines",
+                "i18n": null,
+                "value": "PH"
+              },
+              {
+                "displayname": "Pitcairn",
+                "i18n": null,
+                "value": "PN"
+              },
+              {
+                "displayname": "Poland",
+                "i18n": null,
+                "value": "PL"
+              },
+              {
+                "displayname": "Portugal",
+                "i18n": null,
+                "value": "PT"
+              },
+              {
+                "displayname": "Puerto Rico",
+                "i18n": null,
+                "value": "PR"
+              },
+              {
+                "displayname": "Qatar",
+                "i18n": null,
+                "value": "QA"
+              },
+              {
+                "displayname": "Romania",
+                "i18n": null,
+                "value": "RO"
+              },
+              {
+                "displayname": "Russian Federation",
+                "i18n": null,
+                "value": "RU"
+              },
+              {
+                "displayname": "Rwanda",
+                "i18n": null,
+                "value": "RW"
+              },
+              {
+                "displayname": "Réunion",
+                "i18n": null,
+                "value": "RE"
+              },
+              {
+                "displayname": "Saint Helena",
+                "i18n": null,
+                "value": "SH"
+              },
+              {
+                "displayname": "Saint Kitts and Nevis",
+                "i18n": null,
+                "value": "KN"
+              },
+              {
+                "displayname": "Saint Lucia",
+                "i18n": null,
+                "value": "LC"
+              },
+              {
+                "displayname": "Saint Pierre and Miquelon",
+                "i18n": null,
+                "value": "PM"
+              },
+              {
+                "displayname": "Saint Vincent and Grenadines",
+                "i18n": null,
+                "value": "VC"
+              },
+              {
+                "displayname": "Saint-Barthélemy",
+                "i18n": null,
+                "value": "BL"
+              },
+              {
+                "displayname": "Saint-Martin (French part)",
+                "i18n": null,
+                "value": "MF"
+              },
+              {
+                "displayname": "Samoa",
+                "i18n": null,
+                "value": "WS"
+              },
+              {
+                "displayname": "San Marino",
+                "i18n": null,
+                "value": "SM"
+              },
+              {
+                "displayname": "Sao Tome and Principe",
+                "i18n": null,
+                "value": "ST"
+              },
+              {
+                "displayname": "Saudi Arabia",
+                "i18n": null,
+                "value": "SA"
+              },
+              {
+                "displayname": "Senegal",
+                "i18n": null,
+                "value": "SN"
+              },
+              {
+                "displayname": "Serbia",
+                "i18n": null,
+                "value": "RS"
+              },
+              {
+                "displayname": "Seychelles",
+                "i18n": null,
+                "value": "SC"
+              },
+              {
+                "displayname": "Sierra Leone",
+                "i18n": null,
+                "value": "SL"
+              },
+              {
+                "displayname": "Singapore",
+                "i18n": null,
+                "value": "SG"
+              },
+              {
+                "displayname": "Sint Maarten (Dutch part)",
+                "i18n": null,
+                "value": "SX"
+              },
+              {
+                "displayname": "Slovakia",
+                "i18n": null,
+                "value": "SK"
+              },
+              {
+                "displayname": "Slovenia",
+                "i18n": null,
+                "value": "SI"
+              },
+              {
+                "displayname": "Solomon Islands",
+                "i18n": null,
+                "value": "SB"
+              },
+              {
+                "displayname": "Somalia",
+                "i18n": null,
+                "value": "SO"
+              },
+              {
+                "displayname": "South Africa",
+                "i18n": null,
+                "value": "ZA"
+              },
+              {
+                "displayname": "South Georgia and the South Sandwich Islands",
+                "i18n": null,
+                "value": "GS"
+              },
+              {
+                "displayname": "South Sudan",
+                "i18n": null,
+                "value": "SS"
+              },
+              {
+                "displayname": "Spain",
+                "i18n": null,
+                "value": "ES"
+              },
+              {
+                "displayname": "Sri Lanka",
+                "i18n": null,
+                "value": "LK"
+              },
+              {
+                "displayname": "Sudan",
+                "i18n": null,
+                "value": "SD"
+              },
+              {
+                "displayname": "Suriname",
+                "i18n": null,
+                "value": "SR"
+              },
+              {
+                "displayname": "Svalbard and Jan Mayen Islands",
+                "i18n": null,
+                "value": "SJ"
+              },
+              {
+                "displayname": "Swaziland",
+                "i18n": null,
+                "value": "SZ"
+              },
+              {
+                "displayname": "Sweden",
+                "i18n": null,
+                "value": "SE"
+              },
+              {
+                "displayname": "Switzerland",
+                "i18n": null,
+                "value": "CH"
+              },
+              {
+                "displayname": "Syrian Arab Republic (Syria)",
+                "i18n": null,
+                "value": "SY"
+              },
+              {
+                "displayname": "Taiwan",
+                "i18n": null,
+                "value": "TW"
+              },
+              {
+                "displayname": "Tajikistan",
+                "i18n": null,
+                "value": "TJ"
+              },
+              {
+                "displayname": "Tanzania, United Republic of",
+                "i18n": null,
+                "value": "TZ"
+              },
+              {
+                "displayname": "Thailand",
+                "i18n": null,
+                "value": "TH"
+              },
+              {
+                "displayname": "Timor-Leste",
+                "i18n": null,
+                "value": "TL"
+              },
+              {
+                "displayname": "Togo",
+                "i18n": null,
+                "value": "TG"
+              },
+              {
+                "displayname": "Tokelau",
+                "i18n": null,
+                "value": "TK"
+              },
+              {
+                "displayname": "Tonga",
+                "i18n": null,
+                "value": "TO"
+              },
+              {
+                "displayname": "Trinidad and Tobago",
+                "i18n": null,
+                "value": "TT"
+              },
+              {
+                "displayname": "Tunisia",
+                "i18n": null,
+                "value": "TN"
+              },
+              {
+                "displayname": "Turkey",
+                "i18n": null,
+                "value": "TR"
+              },
+              {
+                "displayname": "Turkmenistan",
+                "i18n": null,
+                "value": "TM"
+              },
+              {
+                "displayname": "Turks and Caicos Islands",
+                "i18n": null,
+                "value": "TC"
+              },
+              {
+                "displayname": "Tuvalu",
+                "i18n": null,
+                "value": "TV"
+              },
+              {
+                "displayname": "Uganda",
+                "i18n": null,
+                "value": "UG"
+              },
+              {
+                "displayname": "Ukraine",
+                "i18n": null,
+                "value": "UA"
+              },
+              {
+                "displayname": "United Arab Emirates",
+                "i18n": null,
+                "value": "AE"
+              },
+              {
+                "displayname": "United Kingdom",
+                "i18n": null,
+                "value": "GB"
+              },
+              {
+                "displayname": "United States of America",
+                "i18n": null,
+                "value": "US"
+              },
+              {
+                "displayname": "Uruguay",
+                "i18n": null,
+                "value": "UY"
+              },
+              {
+                "displayname": "US Minor Outlying Islands",
+                "i18n": null,
+                "value": "UM"
+              },
+              {
+                "displayname": "Uzbekistan",
+                "i18n": null,
+                "value": "UZ"
+              },
+              {
+                "displayname": "Vanuatu",
+                "i18n": null,
+                "value": "VU"
+              },
+              {
+                "displayname": "Venezuela (Bolivarian Republic)",
+                "i18n": null,
+                "value": "VE"
+              },
+              {
+                "displayname": "Viet Nam",
+                "i18n": null,
+                "value": "VN"
+              },
+              {
+                "displayname": "Virgin Islands, US",
+                "i18n": null,
+                "value": "VI"
+              },
+              {
+                "displayname": "Wallis and Futuna Islands",
+                "i18n": null,
+                "value": "WF"
+              },
+              {
+                "displayname": "Western Sahara",
+                "i18n": null,
+                "value": "EH"
+              },
+              {
+                "displayname": "Yemen",
+                "i18n": null,
+                "value": "YE"
+              },
+              {
+                "displayname": "Zambia",
+                "i18n": null,
+                "value": "ZM"
+              },
+              {
+                "displayname": "Zimbabwe",
+                "i18n": null,
+                "value": "ZW"
+              }
+            ],
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "dropdown",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Billing address for invoicing purposes",
+            "displayname": "Company Address",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Company-Address",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          }
+        ],
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "ABBYY Document AI extracts data from IDs, bank statements and utility bills-even from low-quality scans.",
+                "title": "Intelligent Document Processing"
+              },
+              {
+                "description": "Routes extracted data into compliance systems, triggers checks and manages next steps through AI agents.",
+                "title": "Smart Workflow Orchestration"
+              },
+              {
+                "description": "Continuously monitors the end-to-end KYC workflow. It detects bottlenecks, flags compliance drift and triggers automated actions.",
+                "title": "Real-Time Process Intelligence"
+              },
+              {
+                "description": "The solution plugs into your current onboarding, CRM, and compliance tools—enabling unified, scalable KYC operations without disruption.",
+                "title": "Seamless Integration with Existing Systems"
+              }
+            ],
+            "media": [
+              {
+                "caption": "This demo shows how IBM watsonx Orchestrate, ABBYY Vantage, and ABBYY Timeline work together to streamline the KYC process.",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/9Anwl4RDgO0"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://docs.abbyy.com/vantage/connectors/ibm-watsonx-orchestrate/kyc-agent",
+          "terms_url": "https://www.abbyy.com/legal/cloud-terms-of-service"
+        }
+      }
+    },
+    "name": "abbyy-kyc-agent",
+    "overview_ui": {
+      "en": {
+        "description": "Streamline KYC processes with Document and Process AI, delivering faster compliance, reduced manual effort and scalable efficiency",
+        "display_name": "ABBYY Know Your Customer Agent",
+        "long_description": "ABBYY and IBM watsonx.Orchestrate's integrated solution redefines KYC workflows by automating critical compliance tasks. Combining ABBYY's Document and Process AI with IBM watsonx.Orchestrate’s advanced task automation, the solution extracts, validates, and processes data from any document format or language with precision. It transforms unstructured data into actionable insights, orchestrates workflows across systems and teams, and ensures consistent, accurate compliance, reducing manual effort and risk. This powerful synergy creates scalable, efficient KYC operations for high-volume, compliance-critical environments."
+      }
+    },
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "ABBYY USA Software House, Inc"
+    },
+    "tags": [
+      "abbyy",
+      "ai_agent",
+      "custom_kind_service",
+      "document ai",
+      "document_ai",
+      "free",
+      "global",
+      "ibm_third_party",
+      "idp",
+      "intelligent document processing",
+      "ocr",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-07-27T10:32:01.44726232-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "86b94dc7-93ab-4a9f-b4e3-c584048517ad",
+        "_rev": "8-08701605fc6f9b8cd17c98b09cf6b371",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:86b94dc7-93ab-4a9f-b4e3-c584048517ad",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/86b94dc7-93ab-4a9f-b4e3-c584048517ad/%2A",
+        "complete": true,
+        "created": "2026-04-09T05:38:32.532011937-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "86b94dc7-93ab-4a9f-b4e3-c584048517ad",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/86b94dc7-93ab-4a9f-b4e3-c584048517ad/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Performs KYC checks using the information from \"proof of\" documents such as ID front and back, pay slip, utility bill. "
+                  },
+                  {
+                    "description": "Extracts and validates key data such as name, address, and date of birth etc."
+                  },
+                  {
+                    "description": "Creates a process twin for continuous end-to-end KYC monitoring. "
+                  },
+                  {
+                    "description": "To continue using this Agent after the trial version has expired select one of the annual subscription options."
+                  },
+                  {
+                    "description": "Permits the processing of up to 1,000 document pages within 30 days. After that the trial expires."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "100-kyc-checks-1k-doc-pages-trial-30-days",
+        "overview_ui": {
+          "en": {
+            "description": "Trial version with approximately 100 KYC checks of 10 document pages processed per check (total of 1,000 document pages). \nValid for 30 days or 1,000 document pages (whichever occurs first). ",
+            "display_name": "100 KYC Checks-1K doc pages-Trial-30 days",
+            "long_description": "Trial version with approximately 100 KYC checks of 10 document pages processed per check (total of 1,000 document pages). \nValid for 30 days or 1,000 document pages (whichever occurs first). "
+          }
+        },
+        "parent_id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "ABBYY USA Software House, Inc"
+        },
+        "tags": [
+          "abbyy",
+          "document ai",
+          "document_ai",
+          "ibm_third_party",
+          "idp",
+          "intelligent document processing",
+          "ocr",
+          "watson"
+        ],
+        "updated": "2026-07-27T10:32:00.406985496-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/86b94dc7-93ab-4a9f-b4e3-c584048517ad?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Trial version with approximately 100 KYC checks of 10 document pages processed per check (total of 1,000 document pages). \nValid for 30 days or 1,000 document pages (whichever occurs first). ",
+        "displayName": "100 KYC Checks-1K doc pages-Trial-30 days"
+      },
+      {
+        "_id": "d608fc52-8378-4a15-a5bc-aca082c2d85a",
+        "_rev": "8-f56b6af392af299e72174c407ded4055",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d608fc52-8378-4a15-a5bc-aca082c2d85a",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d608fc52-8378-4a15-a5bc-aca082c2d85a/%2A",
+        "complete": true,
+        "created": "2026-05-26T10:41:19.864099948-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "d608fc52-8378-4a15-a5bc-aca082c2d85a",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/d608fc52-8378-4a15-a5bc-aca082c2d85a/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Performs KYC checks using the information from \"proof of\" documents such as ID front and back, pay slip, utility bill. "
+                  },
+                  {
+                    "description": "Extracts and validates key data such as name, address, and date of birth etc."
+                  },
+                  {
+                    "description": "Creates a process twin for continuous end-to-end KYC monitoring. "
+                  },
+                  {
+                    "description": "Permits the processing of up to 100,000 document pages annually.  "
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "100k-kyc-checks-1m-doc-pages-annual-subscrip",
+        "overview_ui": {
+          "en": {
+            "description": "Approximately 10,000 KYC checks (10 document pages processed per check). Valid for 12 months or 100,000 document pages (whichever occurs first).",
+            "display_name": "10k-kyc-checks-100k-doc-pages-annual-sub",
+            "long_description": "Approximately 10,000 KYC checks (10 document pages processed per check). Valid for 12 months or 100,000 document pages (whichever occurs first)."
+          }
+        },
+        "parent_id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "ABBYY USA Software House, Inc"
+        },
+        "tags": [
+          "abbyy",
+          "document ai",
+          "document_ai",
+          "ibm_third_party",
+          "idp",
+          "intelligent document processing",
+          "ocr",
+          "watson"
+        ],
+        "updated": "2026-07-27T10:32:00.541533744-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/d608fc52-8378-4a15-a5bc-aca082c2d85a?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Approximately 10,000 KYC checks (10 document pages processed per check). Valid for 12 months or 100,000 document pages (whichever occurs first).",
+        "displayName": "10k-kyc-checks-100k-doc-pages-annual-sub"
+      },
+      {
+        "_id": "fd9fc537-887e-4a6b-8ccd-39e27257bf2f",
+        "_rev": "9-ce74d3827f7ae3246ac6be7d8d378b3d",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:fd9fc537-887e-4a6b-8ccd-39e27257bf2f",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/fd9fc537-887e-4a6b-8ccd-39e27257bf2f/%2A",
+        "complete": true,
+        "created": "2026-04-09T06:13:23.749621055-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "fd9fc537-887e-4a6b-8ccd-39e27257bf2f",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/fd9fc537-887e-4a6b-8ccd-39e27257bf2f/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Performs KYC checks using the information from \"proof of\" documents such as ID front and back, pay slip, utility bill. "
+                  },
+                  {
+                    "description": "Extracts and validates key data such as name, address, and date of birth etc."
+                  },
+                  {
+                    "description": "Creates a process twin for continuous end-to-end KYC monitoring. "
+                  },
+                  {
+                    "description": "Permits the processing of up to 1,000,000 document pages annually."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "100k-kyc-checks-1m-doc-pages-annual-subscript",
+        "overview_ui": {
+          "en": {
+            "description": "Approximately 50,000 KYC checks (10 document pages processed per check). Valid for 12 months or 500,000 document pages (whichever occurs first).",
+            "display_name": "50k-kyc-checks-500k-doc-pages-annual-sub",
+            "long_description": "Approximately 50,000 KYC checks (10 document pages processed per check). Valid for 12 months or 500,000 document pages (whichever occurs first)."
+          }
+        },
+        "parent_id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "ABBYY USA Software House, Inc"
+        },
+        "tags": [
+          "abbyy",
+          "document ai",
+          "document_ai",
+          "ibm_third_party",
+          "idp",
+          "intelligent document processing",
+          "ocr",
+          "watson"
+        ],
+        "updated": "2026-07-27T10:32:00.660251746-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/fd9fc537-887e-4a6b-8ccd-39e27257bf2f?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Approximately 50,000 KYC checks (10 document pages processed per check). Valid for 12 months or 500,000 document pages (whichever occurs first).",
+        "displayName": "50k-kyc-checks-500k-doc-pages-annual-sub"
+      },
+      {
+        "_id": "bb45dd23-f1e4-4a80-9641-7d3712ae3e27",
+        "_rev": "8-eeae7f675eb6899db6124bacaf07a063",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:bb45dd23-f1e4-4a80-9641-7d3712ae3e27",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/bb45dd23-f1e4-4a80-9641-7d3712ae3e27/%2A",
+        "complete": true,
+        "created": "2026-04-09T05:45:31.834776881-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "bb45dd23-f1e4-4a80-9641-7d3712ae3e27",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/bb45dd23-f1e4-4a80-9641-7d3712ae3e27/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Performs KYC checks using the information from \"proof of\" documents such as ID front and back, pay slip, utility bill. "
+                  },
+                  {
+                    "description": "Extracts and validates key data such as name, address, and date of birth etc."
+                  },
+                  {
+                    "description": "Creates a process twin for continuous end-to-end KYC monitoring. "
+                  },
+                  {
+                    "description": "Permits the processing of up to 100,000 document pages annually.  "
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "10k-kyc-checks-100k-doc-pages-annual-subscrip",
+        "overview_ui": {
+          "en": {
+            "description": "Approximately 100,000 KYC checks (10 document pages processed per check). \nValid for 12 months or 1,000,000 document pages (whichever occurs first). ",
+            "display_name": "100K KYC Checks-1M doc pages-Annual Sub",
+            "long_description": "Approximately 100,000 KYC checks (10 document pages processed per check). \nValid for 12 months or 1,000,000 document pages (whichever occurs first). "
+          }
+        },
+        "parent_id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "ABBYY USA Software House, Inc"
+        },
+        "tags": [
+          "abbyy",
+          "document ai",
+          "document_ai",
+          "ibm_third_party",
+          "idp",
+          "intelligent document processing",
+          "ocr",
+          "watson"
+        ],
+        "updated": "2026-07-27T10:32:00.75995908-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/bb45dd23-f1e4-4a80-9641-7d3712ae3e27?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Approximately 100,000 KYC checks (10 document pages processed per check). \nValid for 12 months or 1,000,000 document pages (whichever occurs first). ",
+        "displayName": "100K KYC Checks-1M doc pages-Annual Sub"
+      }
+    ],
+    "description": "Streamline KYC processes with Document and Process AI, delivering faster compliance, reduced manual effort and scalable efficiency",
+    "longDescription": "ABBYY and IBM watsonx.Orchestrate's integrated solution redefines KYC workflows by automating critical compliance tasks. Combining ABBYY's Document and Process AI with IBM watsonx.Orchestrate’s advanced task automation, the solution extracts, validates, and processes data from any document format or language with precision. It transforms unstructured data into actionable insights, orchestrates workflows across systems and teams, and ensures consistent, accurate compliance, reducing manual effort and risk. This powerful synergy creates scalable, efficient KYC operations for high-volume, compliance-critical environments.",
+    "displayName": "ABBYY Know Your Customer Agent",
+    "imageUrl": "https://medialib.abbyy.com/v1/media/edge/images/abbyydeveloc5ba-xmc0fa5-prod859e-c28d/media/project/abbyy/abbyy/insights/resource-center/thumbs/abbyy-logo-square-100x100.jpg",
+    "localPngIcon": "/generated/icons/081eb453-63a7-450a-b416-4f6ebeb4dbe9.png"
+  },
+  {
     "_id": "586d04e3-804f-4d0c-b9d3-e0e7279398b4",
     "_rev": "89-14ba10f28dc51180f192e8825b02aa16",
     "active": true,
@@ -6524,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east"
+      "eu-de"
     ],
     "id": "api-connect",
     "images": {
@@ -8137,7 +10144,7 @@
   },
   {
     "_id": "apprapp-d6aece47-d840-45b0-8ab9-ad15354deeea",
-    "_rev": "81-fce086a2f66780077bf3af70ae190da7",
+    "_rev": "82-46a884a500e175660dbd7ed07d13530f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:apprapp-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/apprapp-d6aece47-d840-45b0-8ab9-ad15354deeea/%2A",
@@ -8718,7 +10725,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-10T11:42:51.266827333-04:00",
+    "updated": "2026-07-27T08:59:29.989427071-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/apprapp-d6aece47-d840-45b0-8ab9-ad15354deeea?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -91816,6 +93823,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -91823,11 +93834,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -99161,6 +101168,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -99171,8 +101179,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -101095,7 +103102,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -101110,7 +103116,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -110019,15 +112026,15 @@
     "disabled": false,
     "geo_tags": [
       "eu-es",
-      "au-syd",
-      "us-east",
-      "fra02",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "fra02",
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -114767,13 +116774,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -142266,14 +144273,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -152859,19 +154866,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "jp-osa",
-      "in-mum",
       "ca-tor",
-      "ca-mon",
-      "au-syd",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "us-south",
-      "eu-gb"
+      "ca-mon",
+      "au-syd",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -223286,7 +225293,7 @@
   },
   {
     "_id": "schematics",
-    "_rev": "59-810e959743ad1465fabf37185258e2c8",
+    "_rev": "60-380f377233227ccb1126ed190eaa96a8",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:schematics",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/schematics/%2A",
@@ -223496,7 +225503,7 @@
       "workspace",
       "workspaces"
     ],
-    "updated": "2026-06-25T06:11:44.056650728-04:00",
+    "updated": "2026-07-27T10:40:53.041956791-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/schematics?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -224409,7 +226416,7 @@
   },
   {
     "_id": "ebc0cdb0-af2a-11ea-98c7-29e5db822649",
-    "_rev": "72-02b0da43229a6ad347086b71f5a3cdc8",
+    "_rev": "73-c137b284bc261f4877b266145f5043f9",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ebc0cdb0-af2a-11ea-98c7-29e5db822649",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ebc0cdb0-af2a-11ea-98c7-29e5db822649/%2A",
@@ -225201,7 +227208,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-25T05:14:24.136044079-04:00",
+    "updated": "2026-07-27T03:20:59.356883107-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/ebc0cdb0-af2a-11ea-98c7-29e5db822649?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -229993,12 +232000,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -273080,12 +275087,12 @@
         "created": "2015-10-15T05:13:52Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
-          "eu-gb",
-          "us-south",
           "au-syd",
           "ca-tor",
-          "jp-tok"
+          "jp-tok",
+          "eu-de",
+          "eu-gb",
+          "us-south"
         ],
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "images": {
@@ -276407,12 +278414,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
