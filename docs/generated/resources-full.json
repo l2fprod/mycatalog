@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "api-connect",
     "images": {
@@ -11699,6 +11699,7 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -11706,8 +11707,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -18754,7 +18754,7 @@
       },
       {
         "_id": "208fcc66-266d-487e-9247-6d8246b45dac",
-        "_rev": "5-b8d21e1d8a5c12b334f15ff8b8e65747",
+        "_rev": "6-a503fa700b791736b730564b23c258aa",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:208fcc66-266d-487e-9247-6d8246b45dac",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/208fcc66-266d-487e-9247-6d8246b45dac/%2A",
@@ -18869,7 +18869,7 @@
           "rc_compatible",
           "ibm_created"
         ],
-        "updated": "2024-09-11T09:47:22.923984531-04:00",
+        "updated": "2026-07-28T04:04:36.88983939-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/208fcc66-266d-487e-9247-6d8246b45dac?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -103102,7 +103102,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -103117,7 +103116,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -103281,6 +103281,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -103291,8 +103292,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -112025,16 +112025,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "eu-es",
       "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02"
+      "fra02",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -116774,13 +116774,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -154866,19 +154866,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "br-sao",
-      "jp-osa",
+      "eu-gb",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "in-che",
-      "in-mum"
+      "br-sao",
+      "jp-osa",
+      "in-mum",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -159479,7 +159479,7 @@
   },
   {
     "_id": "containers-kubernetes",
-    "_rev": "227-c3f4808f8134a4b452dedcbb94e87e4f",
+    "_rev": "229-8076244485f0717dcf41a72ca627f8c8",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:containers-kubernetes",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes/%2A",
@@ -160506,7 +160506,7 @@
       "wdc06",
       "wdc07"
     ],
-    "updated": "2026-07-27T15:56:25.46130306-04:00",
+    "updated": "2026-07-28T10:23:05.026549979-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -183809,7 +183809,7 @@
   },
   {
     "_id": "01037c41-adce-4bb5-8b45-0c06004916c4",
-    "_rev": "50-ece864ac125c30e7eab8347c2860a97c",
+    "_rev": "51-d6f2cca933d9f2f4cb4f1e9763d754aa",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:01037c41-adce-4bb5-8b45-0c06004916c4",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4/%2A",
@@ -184271,7 +184271,7 @@
         },
         "urls": {
           "apidocs_url": "https://cloud.ibm.com/apidocs/mq-on-cloud",
-          "doc_url": "https://cloud.ibm.com/docs/mqcloud/index.html",
+          "doc_url": "https://www.ibm.com/docs/en/mq-as-a-service",
           "instructions_url": "https://console.stage1.bluemix.net/docs/services/mqcloud/gettingStarted.html",
           "terms_url": "https://www.ibm.com/terms/?id=i126-8003"
         }
@@ -184366,7 +184366,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-22T05:22:28.090364194-04:00",
+    "updated": "2026-07-28T03:20:55.379741445-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -242759,12 +242759,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -252047,6 +252047,7 @@
     "created": "2018-11-19T20:43:19.725Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -252088,8 +252089,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "images": {
@@ -274637,12 +274637,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
