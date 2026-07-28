@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -93823,10 +93823,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -93834,7 +93830,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -103102,6 +103102,7 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -103116,8 +103117,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -112025,16 +112025,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "fra02",
-      "us-south",
-      "eu-gb",
       "au-syd",
-      "us-east"
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -116774,13 +116774,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -144273,14 +144273,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -154867,18 +154867,18 @@
     "disabled": false,
     "geo_tags": [
       "ca-tor",
-      "eu-de",
-      "us-south",
-      "eu-gb",
+      "ca-mon",
+      "au-syd",
       "br-sao",
-      "in-che",
-      "in-mum",
+      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
-      "au-syd",
-      "jp-osa"
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "in-che",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -159479,7 +159479,7 @@
   },
   {
     "_id": "containers-kubernetes",
-    "_rev": "225-21ab427090b3088c9034b8e3d9affb12",
+    "_rev": "227-c3f4808f8134a4b452dedcbb94e87e4f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:containers-kubernetes",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes/%2A",
@@ -160506,7 +160506,7 @@
       "wdc06",
       "wdc07"
     ],
-    "updated": "2026-07-24T13:41:56.919669759-04:00",
+    "updated": "2026-07-27T15:56:25.46130306-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/containers-kubernetes?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -232000,12 +232000,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -241296,6 +241296,503 @@
     "localPngIcon": "/generated/icons/401c6421-ed9c-422f-a03f-c7f9add34df2.png"
   },
   {
+    "_id": "c7a57a43-2f9b-4dcb-9615-2697e965f39c",
+    "_rev": "63-881522b641e556f89369d48461a8ee9b",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c7a57a43-2f9b-4dcb-9615-2697e965f39c",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c7a57a43-2f9b-4dcb-9615-2697e965f39c/%2A",
+    "complete": true,
+    "created": "2026-02-11T09:38:14.804270183-05:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "c7a57a43-2f9b-4dcb-9615-2697e965f39c",
+    "images": {
+      "image": "https://www.lakesidesoftware.com/wp-content/uploads/2026/02/Logo-icon.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "a0b2f0dac64b574986b7174724efdf3b:o:0136c586-fac9-4b2c-8275-f0943797f1ea",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "GB",
+              "US",
+              "CO",
+              "IN",
+              "AE"
+            ],
+            "process": "Summary of Lakeside Support Services\n\nLakeside Technical Support helps customers ensure SysTrack is functioning correctly, including troubleshooting, resolving issues, and addressing product defects. Support is available to customers who purchased SysTrack through Lakeside or an approved partner with an active support agreement.\n\n\n                    Included Support Services\n\n1. Technical Support\n*   Access to support through the **Customer Gateway**.\n*   Ability to create, track, and follow up on support and customer success tickets.\n*   Access to SysTrack documentation, knowledge base articles, and training videos.\n*   Troubleshooting to restore system functionality.\n*   Test fixes provided for urgent issues when applicable.\n\n2. Customer Success\n\n*   Configuration & Tuning: Sensor installation, configuration, threshold adjustments.\n*   Data Analysis: Dashboard creation, trend identification, root‑cause analysis.\n*   Proactive Reviews: Scheduled health checks with optimization recommendations.\n*   Automation: Script and runbook creation for auto-remediation.\n*   Strategic Planning: Regular review and planning sessions with a Customer Success Representative.\n\n3. Lakeside Academy\n*   Free, on‑demand SysTrack training and certification paths.\n*   Elective courses tailored to IT roles and common use cases.\n*   Interactive learning materials and project guides.\n*   Optional paid live remote training (SKU: EDU‑1000).\n\n\n\n                 Lakeside Support Model\n\nLakeside operates a business‑to‑business support model. Customers must have trained SysTrack administrators capable of basic investigation and troubleshooting. Training is provided via Lakeside Academy for supported customers.\n\nLakeside provides a comprehensive 24/7 knowledge base containing documentation, release notes, compatibility data, and troubleshooting guides. Customers are expected to consult these resources first. If issues persist, trained staff with Customer Gateway access may open a support ticket for further assistance.\n\n\n",
+            "status_url": "https://cloudstatus.lakesidesoftware.com/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/New_York"
+                },
+                "contact": "https://customers.lakesidesoftware.com/hc/en-us/requests/new",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 6
+                },
+                "type": "support_site"
+              },
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/New_York"
+                },
+                "contact": "support@lakesidesoftware.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 6
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "supportmanager@lakesidesoftware.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 24
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 8
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://customers.lakesidesoftware.com/hc/en-us/requests/new"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/c7a57a43-2f9b-4dcb-9615-2697e965f39c/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Tenant",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Tenant",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Tenant ID",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Tenant-ID",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "SysTrack Licenses",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "SysTrack-Licenses",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "If you need assistance answering any of the above fields send and email to ibm@lakesidesoftware.com.",
+            "displayname": "Assistance",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Assistance",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "description": "your email",
+            "displayname": "Email",
+            "name": "Email",
+            "type": "text",
+            "value": ""
+          }
+        ],
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Use SysTrack AI alongside ServiceNow or any ITSM platform to ingest ticket context for troubleshooting and enrich incidents with a record.",
+                "title": "ITSM Augmentation"
+              },
+              {
+                "description": "AI identifies the issue in one click based on real device data, even if all the ticket says is “my computer’s slow”.",
+                "title": "Autonomous Diagnostics"
+              },
+              {
+                "description": "Clear steps explain how to resolve the issue or automate a fix, equipping L1 staff with L3 skills without requiring training.",
+                "title": "Guided Remediation"
+              },
+              {
+                "description": "End users ask questions, get answers in plain language, with options for Microsoft Teams, voice, or integration into your company's AI agent",
+                "title": "Conversational Self-Help"
+              },
+              {
+                "description": "Enrich other IT tools with SysTrack AI’s insights and actions using MCP, A2A, or API connections.",
+                "title": "Integrated Flows"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://documentation.lakesidesoftware.com/en/Content/IntelligencePackage/Intelligence%20Package%20Overview.htm",
+          "terms_url": "https://www.lakesidesoftware.com/systrack-cloud-master-saas-agreement/"
+        }
+      }
+    },
+    "name": "lakeside-software-llc-systrack-ai",
+    "overview_ui": {
+      "en": {
+        "description": "Resolve IT support incidents 2X faster and deflect tickets with AI-driven troubleshooting and automated fixes.",
+        "display_name": "SysTrack AI",
+        "long_description": "From the data leader in digital employee experience (DEX) tools, SysTrack AI helps IT organizations deflect tickets, resolve incidents 2X faster, and improve service desk efficiency. With real-time insight into device issues and AI-driven diagnostics, SysTrack AI pinpoints the root cause of problems and provides step-by-step guidance for fast, accurate resolutions. It’s your “easy button” for effective L1 support.\n\n \n\nIT service desk leaders use SysTrack AI to:\n\nCut mean-time-to-resolution (MTTR) by 50%\nShift left and resolve more issues at lower support tiers\nDeflect tickets with user-friendly self-service"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "provider": {
+      "name": "Lakeside Software Inc."
+    },
+    "tags": [
+      "ai_agent",
+      "ai_assistant",
+      "custom_kind_service",
+      "dex",
+      "digital_employee_experience",
+      "free",
+      "global",
+      "help_desk",
+      "ibm_third_party",
+      "iops",
+      "it",
+      "it_support",
+      "it, it_support, service_desk, help_desk, dex, digital_employee_experience, ai_assistant",
+      "itsm",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "service_desk",
+      "service_now",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-07-27T11:01:51.784588394-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/c7a57a43-2f9b-4dcb-9615-2697e965f39c?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "bc43ba49-a0e1-42e2-9350-d87760a7ac2f",
+        "_rev": "10-39172a63f9718381279396a512e4d8c7",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:bc43ba49-a0e1-42e2-9350-d87760a7ac2f",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/bc43ba49-a0e1-42e2-9350-d87760a7ac2f/%2A",
+        "complete": true,
+        "created": "2026-02-12T13:08:05.596761778-05:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "bc43ba49-a0e1-42e2-9350-d87760a7ac2f",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/bc43ba49-a0e1-42e2-9350-d87760a7ac2f/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "ITSM Augmentation\nUse SysTrack AI alongside ServiceNow or any ITSM platform to ingest ticket context for troubleshooting and enrich incident"
+                  },
+                  {
+                    "description": "Autonomous Diagnostics\nAI identifies the issue in one click based on real device data, even if all the ticket says is “my computer’s slow”."
+                  },
+                  {
+                    "description": "Guided Remediation\nClear steps explain how to resolve the issue or automate a fix, equipping L1 staff with L3 skills without requiring train"
+                  },
+                  {
+                    "description": "Conversational Self-Help\nFor Microsoft Teams, voice support, or integration into your company’s preferred AI agent via MCP, A2A, or API."
+                  },
+                  {
+                    "description": "\nNote:  In the event your company doesn't have SysTrack currently installed, send an email to ibm@lakesidesoftware.com, we will contact you."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "ai1000-3",
+        "overview_ui": {
+          "en": {
+            "description": "SysTrack AI Desktop Device or Terminal Server Named User License.  License requires a valid SysTrack Desktop Device or Terminal Server Named User License for each SysTrack AI agent license.\n\nThe license includes up to 3 annual conversations with the SysTrack AI agent per user per year.",
+            "display_name": "Standard SysTrack AI License",
+            "long_description": "SysTrack AI Desktop Device or Terminal Server Named User License.  License requires a valid SysTrack Desktop Device or Terminal Server Named User License for each SysTrack AI agent license.\n\nThe license includes up to 3 annual conversations with the SysTrack AI agent per user per year."
+          }
+        },
+        "parent_id": "c7a57a43-2f9b-4dcb-9615-2697e965f39c",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c7a57a43-2f9b-4dcb-9615-2697e965f39c",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Lakeside Software LLC"
+        },
+        "tags": [
+          "ibm_third_party",
+          "it",
+          "it, it_support, service_desk, help_desk, dex, digital_employee_experience, ai_assistant",
+          "watson"
+        ],
+        "updated": "2026-07-27T11:01:51.60850744-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/bc43ba49-a0e1-42e2-9350-d87760a7ac2f?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "SysTrack AI Desktop Device or Terminal Server Named User License.  License requires a valid SysTrack Desktop Device or Terminal Server Named User License for each SysTrack AI agent license.\n\nThe license includes up to 3 annual conversations with the SysTrack AI agent per user per year.",
+        "displayName": "Standard SysTrack AI License"
+      },
+      {
+        "_id": "a9320711-f5e1-4171-b4b7-1ecd5b63e5bc",
+        "_rev": "7-b09fae2f09d924ded085a0ac39c9e551",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a9320711-f5e1-4171-b4b7-1ecd5b63e5bc",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a9320711-f5e1-4171-b4b7-1ecd5b63e5bc/%2A",
+        "complete": true,
+        "created": "2026-04-15T14:43:36.778843302-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "a9320711-f5e1-4171-b4b7-1ecd5b63e5bc",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/a9320711-f5e1-4171-b4b7-1ecd5b63e5bc/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          }
+        },
+        "name": "aleksey-test-plan",
+        "overview_ui": {
+          "en": {
+            "description": "This is a test plan only.",
+            "display_name": "Aleksey Test Plan",
+            "long_description": "This is a test plan only."
+          }
+        },
+        "parent_id": "c7a57a43-2f9b-4dcb-9615-2697e965f39c",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c7a57a43-2f9b-4dcb-9615-2697e965f39c",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "Lakeside Software Inc."
+        },
+        "tags": [
+          "ai_assistant",
+          "dex",
+          "digital_employee_experience",
+          "help_desk",
+          "ibm_third_party",
+          "iops",
+          "it",
+          "it, it_support, service_desk, help_desk, dex, digital_employee_experience, ai_assistant",
+          "it_support",
+          "itsm",
+          "service_desk",
+          "service_now",
+          "watson"
+        ],
+        "updated": "2026-07-27T11:01:51.70973787-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/a9320711-f5e1-4171-b4b7-1ecd5b63e5bc?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "This is a test plan only.",
+        "displayName": "Aleksey Test Plan"
+      }
+    ],
+    "description": "Resolve IT support incidents 2X faster and deflect tickets with AI-driven troubleshooting and automated fixes.",
+    "longDescription": "From the data leader in digital employee experience (DEX) tools, SysTrack AI helps IT organizations deflect tickets, resolve incidents 2X faster, and improve service desk efficiency. With real-time insight into device issues and AI-driven diagnostics, SysTrack AI pinpoints the root cause of problems and provides step-by-step guidance for fast, accurate resolutions. It’s your “easy button” for effective L1 support.\n\n \n\nIT service desk leaders use SysTrack AI to:\n\nCut mean-time-to-resolution (MTTR) by 50%\nShift left and resolve more issues at lower support tiers\nDeflect tickets with user-friendly self-service",
+    "displayName": "SysTrack AI",
+    "imageUrl": "https://www.lakesidesoftware.com/wp-content/uploads/2026/02/Logo-icon.svg",
+    "localSvgIcon": "/generated/icons/c7a57a43-2f9b-4dcb-9615-2697e965f39c.svg",
+    "localPngIcon": "/generated/icons/c7a57a43-2f9b-4dcb-9615-2697e965f39c.png"
+  },
+  {
     "_id": "c3ef52e7-c978-4fd1-9982-e39084119336",
     "_rev": "38-58b8736d17e034e238851759c7873e20",
     "active": true,
@@ -242262,12 +242759,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
