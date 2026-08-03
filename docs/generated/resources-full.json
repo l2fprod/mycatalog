@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -22946,6 +22946,354 @@
     "localPngIcon": "/generated/icons/ee700ab3-6951-4c68-b541-a177f78eed53.png"
   },
   {
+    "_id": "ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+    "_rev": "30-20b2dcd6690a493ab1b1c48fb53db448",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ab422db5-6ff2-4aab-b08a-5b870c26efe1/%2A",
+    "complete": true,
+    "created": "2026-02-13T09:13:21.201513246-05:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+    "images": {
+      "image": "https://coolriots.ai/bex-logo.png"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "bb6293cad21b41fb9e288d0c0b11bb32:o:44a75e8e-6fac-4ee2-a0e6-333e75e1fe5d",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "SG",
+              "PH"
+            ],
+            "process": "PPIC Technologies provides direct product support for the BeX Legal AI Assistant to all active subscribers. Support is delivered by the PPIC Technologies engineering and implementation team via email at support@ppictech.com",
+            "status_url": "https://coolriots.ai/ibmagentconnectstatus/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Asia/Singapore"
+                },
+                "contact": "support@ppictech.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@ppictech.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://coolriots.ai/ibmagentconnectsupport/"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/ab422db5-6ff2-4aab-b08a-5b870c26efe1/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Generates playbook-aligned first-draft contracts — NDA, services agreements, employment, SLAs, and more — from structured inputs in minutes.",
+                "title": "Contract Drafting"
+              },
+              {
+                "description": "Analyses contracts clause-by-clause against your playbook, returning a structured risk report with severity ratings and specific redline rec",
+                "title": "Contract Review and Redlining"
+              },
+              {
+                "description": "Provides real-time guidance during negotiations — acceptable counter-positions, risk trade-offs, and walkaway thresholds drawn from your leg",
+                "title": "Contract Negotiation Support"
+              },
+              {
+                "description": "Delivers structured research memos on statutory provisions, regulatory requirements, and jurisdictional differences — with practical implica",
+                "title": "Legal Research"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://coolriots.ai/bex-legal-assistant-docs/",
+          "terms_url": "https://coolriots.ai/ibmagentconnecteula/"
+        }
+      }
+    },
+    "name": "ppic-technologies-pte-ltd-legal-ai-assistant",
+    "overview_ui": {
+      "en": {
+        "description": "AI Digital Employee for legal teams — contract drafting, review, negotiation, research, and compliance, guided by your playbook.",
+        "display_name": "BeX Legal AI Assistant",
+        "long_description": "BeX Legal AI Assistant is an enterprise AI Digital Employee that automates legal workflows — contract drafting, review, negotiation, research, and compliance analysis — within IBM watsonx Orchestrate. \nDriven by configurable legal playbooks, it produces structured, auditable outputs aligned to your organisation's own standards, with a purpose-built dynamic UI and the ability to execute tasks autonomously end-to-end."
+      }
+    },
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "PPIC Technologies Pte Ltd"
+    },
+    "tags": [
+      "ai agent",
+      "bex",
+      "bex ai",
+      "custom_kind_service",
+      "digital employee",
+      "free",
+      "global",
+      "ibm_third_party",
+      "legal assistant",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-02T23:24:17.039604439-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/ab422db5-6ff2-4aab-b08a-5b870c26efe1?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "4d6bd172-9778-47dc-a097-b18c868e5abd",
+        "_rev": "7-7c34129d2ca27bd9b4e27abdaca0dd3d",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:4d6bd172-9778-47dc-a097-b18c868e5abd",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/4d6bd172-9778-47dc-a097-b18c868e5abd/%2A",
+        "complete": true,
+        "created": "2026-05-08T08:51:32.935385812-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "4d6bd172-9778-47dc-a097-b18c868e5abd",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/4d6bd172-9778-47dc-a097-b18c868e5abd/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          }
+        },
+        "name": "free-plan",
+        "overview_ui": {
+          "en": {
+            "description": "Free Trial for 30 days",
+            "display_name": "Free Trial",
+            "long_description": "Free Trial for 30 days"
+          }
+        },
+        "parent_id": "ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "PPIC Technologies Pte Ltd"
+        },
+        "tags": [
+          "ai agent",
+          "bex",
+          "bex ai",
+          "digital employee",
+          "ibm_third_party",
+          "legal assistant",
+          "watson"
+        ],
+        "updated": "2026-08-02T23:24:16.833629358-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/4d6bd172-9778-47dc-a097-b18c868e5abd?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Free Trial for 30 days",
+        "displayName": "Free Trial"
+      },
+      {
+        "_id": "8b960c66-6b99-47ab-863c-9e7ede0acf53",
+        "_rev": "13-22d4b639f0a4c4ea139dc701e9576c14",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:8b960c66-6b99-47ab-863c-9e7ede0acf53",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/8b960c66-6b99-47ab-863c-9e7ede0acf53/%2A",
+        "complete": true,
+        "created": "2026-02-13T09:22:18.987165337-05:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "8b960c66-6b99-47ab-863c-9e7ede0acf53",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/8b960c66-6b99-47ab-863c-9e7ede0acf53/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Contract Drafting, Review, Redlining, Negotiation Support, Legal Research"
+                  },
+                  {
+                    "description": "Up to 10,000 workflow runs (or in terms of API calls) per month."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "standard-plan",
+        "overview_ui": {
+          "en": {
+            "description": "This plan allows for usage of the legal AI Assistant on a fixed monthly subscription.  If the usage exceeds the quota specified, overage charges applies.",
+            "display_name": "Standard Plan",
+            "long_description": "This plan allows for usage of the legal AI Assistant on a fixed monthly subscription.  If the usage exceeds the quota specified, overage charges applies."
+          }
+        },
+        "parent_id": "ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "PPIC Technologies Pte Ltd"
+        },
+        "tags": [
+          "ibm_third_party"
+        ],
+        "updated": "2026-08-02T23:24:16.957839763-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/8b960c66-6b99-47ab-863c-9e7ede0acf53?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "This plan allows for usage of the legal AI Assistant on a fixed monthly subscription.  If the usage exceeds the quota specified, overage charges applies.",
+        "displayName": "Standard Plan"
+      }
+    ],
+    "description": "AI Digital Employee for legal teams — contract drafting, review, negotiation, research, and compliance, guided by your playbook.",
+    "longDescription": "BeX Legal AI Assistant is an enterprise AI Digital Employee that automates legal workflows — contract drafting, review, negotiation, research, and compliance analysis — within IBM watsonx Orchestrate. \nDriven by configurable legal playbooks, it produces structured, auditable outputs aligned to your organisation's own standards, with a purpose-built dynamic UI and the ability to execute tasks autonomously end-to-end.",
+    "displayName": "BeX Legal AI Assistant",
+    "imageUrl": "https://coolriots.ai/bex-logo.png",
+    "localPngIcon": "/generated/icons/ab422db5-6ff2-4aab-b08a-5b870c26efe1.png"
+  },
+  {
     "_id": "block-storage-group",
     "_rev": "5-287fa48c4ba0dcac49e402079956c4d6",
     "active": true,
@@ -25485,6 +25833,607 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot.svg",
     "localPngIcon": "/generated/icons/is.snapshot.png"
+  },
+  {
+    "_id": "c0948cae-5d99-4de3-9187-9fd4d218fb98",
+    "_rev": "45-a6d4001a12393a7f1f6cdcbc641feee9",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c0948cae-5d99-4de3-9187-9fd4d218fb98",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c0948cae-5d99-4de3-9187-9fd4d218fb98/%2A",
+    "complete": true,
+    "created": "2026-03-25T08:14:28.111524496-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "c0948cae-5d99-4de3-9187-9fd4d218fb98",
+    "images": {
+      "image": "https://essexlg.com/brand/logo/IBM-Thumbnail-Logo-Essex-Light.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "177d2edfc833400fafbd4893764bafb3:o:ccf734b1-c1c0-4f74-99f2-22352f00de48",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "CN"
+            ],
+            "process": "Support covers configuring your data source and processing interval, and generating an API key and connecting the Branch FLOW agent in IBM watsonx Orchestrate.\n\nWhen contacting support, please include your Branch FLOW instance CRN and the IBMid that created the instance, along with the approximate time of the issue and any error message shown. Do not include API keys or credentials.",
+            "status_url": "https://branch-agent.essexlg.ai/status",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "23:59",
+                      "start_time": "00:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "23:59",
+                      "start_time": "00:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "23:59",
+                      "start_time": "00:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "23:59",
+                      "start_time": "00:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "23:59",
+                      "start_time": "00:00"
+                    }
+                  ],
+                  "timezone": "Etc/GMT"
+                },
+                "contact": "branchflow-support@essexlg.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "branchflow-support@essexlg.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 24
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 12
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://branch-agent.essexlg.ai/support"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/c0948cae-5d99-4de3-9187-9fd4d218fb98/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Monitors branch operations in real time to identify stress conditions, service risks, and operational bottlenecks.",
+                "title": "Branch Stress & Performance Monitoring"
+              },
+              {
+                "description": "Provides actionable insights into staffing, workload, and capacity utilization to support workforce planning and shift optimization.",
+                "title": "Staffing & Capacity Optimization"
+              },
+              {
+                "description": "Estimates customer wait times and queue pressure, enabling proactive actions that improve customer experience and service consistency.",
+                "title": "Wait-Time & Queue Intelligence"
+              },
+              {
+                "description": "Allows users to ask business questions in natural language and receive descriptive & diagnostic operational insights.",
+                "title": "AI-Powered Operations Assistant"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://branch-agent.essexlg.ai/docs",
+          "terms_url": "https://branch-agent.essexlg.ai/legal/eula"
+        }
+      }
+    },
+    "name": "essex-lake-group-branch-flow",
+    "overview_ui": {
+      "en": {
+        "description": "Branch FLOW™ is an AI-powered operations agent providing real-time insights into branch demand, utilization, and wait times.",
+        "display_name": "Branch FLOW",
+        "long_description": "Branch FLOW™ enables institutions to transform branch operational data into actionable intelligence that improves customer experience, workforce productivity, and operational efficiency.\n\nThe platform continuously analyzes branch demand, serving capacity, transaction patterns, staffing levels, and utilization metrics to identify operational stress, peak traffic periods, service bottlenecks, and emerging operational risks. By combining operational analytics with AI-driven decision support, Branch FLOW™ helps branch managers, operations teams, and business leaders make faster, more informed decisions.\n\nThrough a conversational AI experience, users can explore branch performance using natural language. The platform provides visibility into operational stress, staffing effectiveness, wait-time risks, queue pressure, utilization trends, and capacity constraints, enabling proactive intervention before service levels are impacted.\n\nPowered by a proprietary six-signal scoring engine, Branch FLOW™ moves organizations beyond traditional reporting to always-on operational intelligence. Helps organizations improve service consistency, reduce customer wait times, optimize workforce allocation, enhance operational productivity, and accelerate decision-making.\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "provider": {
+      "name": "Essex Lake Group LLC"
+    },
+    "tags": [
+      "agent",
+      "ai_agent",
+      "banking ai",
+      "banking operations analytics",
+      "branch flow",
+      "branch load analysis",
+      "branch operations intelligence",
+      "branch performance management",
+      "branch productivity",
+      "branch stress monitoring",
+      "capacity planning",
+      "custom_kind_service",
+      "customer experience analytics",
+      "essex",
+      "free",
+      "global",
+      "ibm_third_party",
+      "operational forecasting",
+      "operational intelligence",
+      "paid",
+      "paid_only",
+      "queue management",
+      "rc_compatible",
+      "retail banking operations",
+      "staffing optimization",
+      "support_third_party",
+      "wait-time prediction",
+      "watson",
+      "workforce utilization"
+    ],
+    "updated": "2026-08-02T23:21:46.141204413-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/c0948cae-5d99-4de3-9187-9fd4d218fb98?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "29b36efa-fd7b-4d1d-97e2-d8cfd2f031e7",
+        "_rev": "12-8a8d674cc00c598d5a1c1385a28ca1a2",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:29b36efa-fd7b-4d1d-97e2-d8cfd2f031e7",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/29b36efa-fd7b-4d1d-97e2-d8cfd2f031e7/%2A",
+        "complete": true,
+        "created": "2026-06-08T05:41:28.625080897-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "29b36efa-fd7b-4d1d-97e2-d8cfd2f031e7",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/29b36efa-fd7b-4d1d-97e2-d8cfd2f031e7/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Includes all Intermediate features"
+                  },
+                  {
+                    "description": "Priority & SME Support"
+                  },
+                  {
+                    "description": "Quarterly Business Reviews"
+                  },
+                  {
+                    "description": "Lowest cost per branch"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "enterprise",
+        "overview_ui": {
+          "en": {
+            "description": "Designed for large banking organizations requiring enterprise-scale operational intelligence, customization, governance, and strategic workforce optimization.\n500+ Branches (Minimum 500 Branches)",
+            "display_name": "Enterprise",
+            "long_description": "Designed for large banking organizations requiring enterprise-scale operational intelligence, customization, governance, and strategic workforce optimization.\n500+ Branches (Minimum 500 Branches)"
+          }
+        },
+        "parent_id": "c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Essex Lake Group LLC"
+        },
+        "tags": [
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-02T23:21:45.857923934-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/29b36efa-fd7b-4d1d-97e2-d8cfd2f031e7?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Designed for large banking organizations requiring enterprise-scale operational intelligence, customization, governance, and strategic workforce optimization.\n500+ Branches (Minimum 500 Branches)",
+        "displayName": "Enterprise"
+      },
+      {
+        "_id": "a5a22fc3-c41a-4c84-91ec-cb4d4250fe0e",
+        "_rev": "12-e29dc8d5ba985927f76b195c04d74a92",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a5a22fc3-c41a-4c84-91ec-cb4d4250fe0e",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a5a22fc3-c41a-4c84-91ec-cb4d4250fe0e/%2A",
+        "complete": true,
+        "created": "2026-06-08T05:39:43.78071214-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "a5a22fc3-c41a-4c84-91ec-cb4d4250fe0e",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/a5a22fc3-c41a-4c84-91ec-cb4d4250fe0e/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Includes all Starter features"
+                  },
+                  {
+                    "description": "Call Support"
+                  },
+                  {
+                    "description": "12 Months Historical Data"
+                  },
+                  {
+                    "description": "Lower Cost per branch"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "intermediate",
+        "overview_ui": {
+          "en": {
+            "description": "Designed for organizations requiring operational intelligence and support across larger branch networks.\nPack up to - 500 Branches (Minimum 100 Branches)",
+            "display_name": "Intermediate",
+            "long_description": "Designed for organizations requiring operational intelligence and support across larger branch networks.\nPack up to - 500 Branches (Minimum 100 Branches)"
+          }
+        },
+        "parent_id": "c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Essex Lake Group LLC"
+        },
+        "tags": [
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-02T23:21:46.039406729-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/a5a22fc3-c41a-4c84-91ec-cb4d4250fe0e?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Designed for organizations requiring operational intelligence and support across larger branch networks.\nPack up to - 500 Branches (Minimum 100 Branches)",
+        "displayName": "Intermediate"
+      },
+      {
+        "_id": "2546be18-e265-4110-8fc9-d92275c5f754",
+        "_rev": "12-550fe3f6ab204b4676d63516e216e6f6",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:2546be18-e265-4110-8fc9-d92275c5f754",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/2546be18-e265-4110-8fc9-d92275c5f754/%2A",
+        "complete": true,
+        "created": "2026-03-25T08:46:39.527800254-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "2546be18-e265-4110-8fc9-d92275c5f754",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/2546be18-e265-4110-8fc9-d92275c5f754/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Realtime Branch Stress Monitoring"
+                  },
+                  {
+                    "description": "Email Support"
+                  },
+                  {
+                    "description": "3 Months Historical Data"
+                  },
+                  {
+                    "description": "Near Real-Time Data Refresh"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "starter",
+        "overview_ui": {
+          "en": {
+            "description": "Designed for small to mid-sized branch networks seeking visibility into branch performance, staffing effectiveness, customer wait times, and operational stress. Provides foundational operational intelligence with rapid deployment and minimal setup effort.\nPack Up to - 100 Branches",
+            "display_name": "Starter",
+            "long_description": "Designed for small to mid-sized branch networks seeking visibility into branch performance, staffing effectiveness, customer wait times, and operational stress. Provides foundational operational intelligence with rapid deployment and minimal setup effort.\nPack Up to - 100 Branches"
+          }
+        },
+        "parent_id": "c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Essex Lake Group LLC"
+        },
+        "tags": [
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-02T23:21:46.040577012-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/2546be18-e265-4110-8fc9-d92275c5f754?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Designed for small to mid-sized branch networks seeking visibility into branch performance, staffing effectiveness, customer wait times, and operational stress. Provides foundational operational intelligence with rapid deployment and minimal setup effort.\nPack Up to - 100 Branches",
+        "displayName": "Starter"
+      },
+      {
+        "_id": "55b3a0b5-3b1d-4818-a7f7-28c0acff58ab",
+        "_rev": "6-a41225562a2cffaea37f2d8dbe9c4022",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:55b3a0b5-3b1d-4818-a7f7-28c0acff58ab",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/55b3a0b5-3b1d-4818-a7f7-28c0acff58ab/%2A",
+        "complete": true,
+        "created": "2026-03-27T03:42:21.523545561-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "55b3a0b5-3b1d-4818-a7f7-28c0acff58ab",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/55b3a0b5-3b1d-4818-a7f7-28c0acff58ab/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          }
+        },
+        "name": "trial",
+        "overview_ui": {
+          "en": {
+            "description": "trial",
+            "display_name": "trial",
+            "long_description": "trial"
+          }
+        },
+        "parent_id": "c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c0948cae-5d99-4de3-9187-9fd4d218fb98",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "Essex Lake Group LLC"
+        },
+        "tags": [
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-02T23:21:46.140428376-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/55b3a0b5-3b1d-4818-a7f7-28c0acff58ab?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "trial",
+        "displayName": "trial"
+      }
+    ],
+    "description": "Branch FLOW™ is an AI-powered operations agent providing real-time insights into branch demand, utilization, and wait times.",
+    "longDescription": "Branch FLOW™ enables institutions to transform branch operational data into actionable intelligence that improves customer experience, workforce productivity, and operational efficiency.\n\nThe platform continuously analyzes branch demand, serving capacity, transaction patterns, staffing levels, and utilization metrics to identify operational stress, peak traffic periods, service bottlenecks, and emerging operational risks. By combining operational analytics with AI-driven decision support, Branch FLOW™ helps branch managers, operations teams, and business leaders make faster, more informed decisions.\n\nThrough a conversational AI experience, users can explore branch performance using natural language. The platform provides visibility into operational stress, staffing effectiveness, wait-time risks, queue pressure, utilization trends, and capacity constraints, enabling proactive intervention before service levels are impacted.\n\nPowered by a proprietary six-signal scoring engine, Branch FLOW™ moves organizations beyond traditional reporting to always-on operational intelligence. Helps organizations improve service consistency, reduce customer wait times, optimize workforce allocation, enhance operational productivity, and accelerate decision-making.\n",
+    "displayName": "Branch FLOW",
+    "imageUrl": "https://essexlg.com/brand/logo/IBM-Thumbnail-Logo-Essex-Light.svg",
+    "localSvgIcon": "/generated/icons/c0948cae-5d99-4de3-9187-9fd4d218fb98.svg",
+    "localPngIcon": "/generated/icons/c0948cae-5d99-4de3-9187-9fd4d218fb98.png"
   },
   {
     "_id": "b7bb6f72-c8dc-4350-ad2f-74560657debd",
@@ -51018,6 +51967,309 @@
     "displayName": "Cognos Assistant",
     "imageUrl": "https://cognospartners.com/wp-content/uploads/2025/05/Cognos-dark_icon.png",
     "localPngIcon": "/generated/icons/cf8d25d4-5368-4132-b272-0acc0201217a.png"
+  },
+  {
+    "_id": "002db8b6-4893-4f35-b49a-19c46311f59a",
+    "_rev": "29-65df0d8899c4bc306e0c48a37f6c8346",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:002db8b6-4893-4f35-b49a-19c46311f59a",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/002db8b6-4893-4f35-b49a-19c46311f59a/%2A",
+    "complete": true,
+    "created": "2026-06-25T06:18:27.319436206-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "002db8b6-4893-4f35-b49a-19c46311f59a",
+    "images": {
+      "image": "https://atlas.vistergy.com/vistergy-logo.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "a9227956257743d4b8ed465c81612b45:o:8cbbedfe-61f7-415f-b93e-77beb184e890",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "GB"
+            ],
+            "process": "Vistergy Ltd provides direct support for the Commissioning Readiness Agent. Contact: infrastructure@vistergy.com. Response targets by severity: - Severity 1 (service disruption): response within 4-8 business hours. - Severity 2 (significant impact): response within 1 business day. - Severity 3 (minor impact): response within 2 business days. - Severity 4 (informational): response within 5 business days. Business hours are 09:00 to 17:00 UK time, Monday to Friday, excluding UK public holidays. Escalation route: infrastructure@vistergy.com. Service status is published at https://vistergy.com/agent-status. Detailed support guidance, including data handling, incident response, and contact methods, is at https://vistergy.com/agent-support.",
+            "status_url": "https://vistergy.com/agent-status",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    }
+                  ],
+                  "timezone": "Europe/London"
+                },
+                "contact": "infrastructure@vistergy.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 8
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "infrastructure@vistergy.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 4
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://vistergy.com/agent-support"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/002db8b6-4893-4f35-b49a-19c46311f59a/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Every open gate and missing item, named, discipline by discipline. No single green / red light hiding the detail.",
+                "title": "Know exactly what's blocking you"
+              },
+              {
+                "description": "Each gate carries explicit readiness criteria, scored per discipline. The blockers are visible, not buried.",
+                "title": "See it gate by gate"
+              },
+              {
+                "description": "Each readiness call links to source evidence: work-order completion, test record, signed handover. Nothing asserted without backing.",
+                "title": "Every claim comes with its proof"
+              },
+              {
+                "description": "DR310 completion, turnover slippage, test packages, and punch-list resolution roll into one readiness score and a ranked gap list.",
+                "title": "A number you can act on"
+              },
+              {
+                "description": "Every answer is source-traced by default. Built for regulated infrastructure where the trail is the point.",
+                "title": "The audit is the deliverable"
+              }
+            ],
+            "media": [
+              {
+                "caption": "Using plain language, the agent reads the commissioning manifest in Maximo MAS and cross-checks discipline-by-discipline readiness",
+                "type": "image/png",
+                "url": "https://atlas.vistergy.com/architecture-diagram-cr.png"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://vistergy.com/cr-documentation",
+          "terms_url": "https://vistergy.com/cr-eula"
+        }
+      }
+    },
+    "name": "vistergy-ltd-commissioning-readiness",
+    "overview_ui": {
+      "en": {
+        "description": "Is your facility ready to commission? A gate-by-gate readiness view, the blockers, and the evidence, inside Maximo.",
+        "display_name": "Commissioning Readiness",
+        "long_description": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle, inside your Maximo. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure."
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Vistergy Ltd"
+    },
+    "tags": [
+      "ai_agent",
+      "commissioning",
+      "custom_kind_service",
+      "expert-in-the-loop",
+      "facility commissioning",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-02T23:22:16.36284304-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/002db8b6-4893-4f35-b49a-19c46311f59a?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "2afefb84-f131-4eca-a301-bd25946ad7a4",
+        "_rev": "7-eb69f3c63d26912ef745aab62f21f5a8",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:2afefb84-f131-4eca-a301-bd25946ad7a4",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/2afefb84-f131-4eca-a301-bd25946ad7a4/%2A",
+        "complete": true,
+        "created": "2026-06-25T09:51:54.255819186-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "2afefb84-f131-4eca-a301-bd25946ad7a4",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/2afefb84-f131-4eca-a301-bd25946ad7a4/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Bidirectional integration with IBM Maximo Application Suite"
+                  },
+                  {
+                    "description": "Readiness scoring grounded in the CII SR19-01 DR310 commissioning-completion lifecycle"
+                  },
+                  {
+                    "description": "Built on IBM Granite via watsonx"
+                  },
+                  {
+                    "description": "Audit bundle exportable on request, capturing inputs, sources cited, and validators applied"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "cr-monthly-subscription",
+        "overview_ui": {
+          "en": {
+            "description": "Flat monthly subscription. 1,000 queries included per billing month; each additional query in excess of 1,000 comes with an overage fee of $1.00 per query.",
+            "display_name": "CR Monthly Subscription",
+            "long_description": "Flat monthly subscription. 1,000 queries included per billing month; each additional query in excess of 1,000 comes with an overage fee of $1.00 per query."
+          }
+        },
+        "parent_id": "002db8b6-4893-4f35-b49a-19c46311f59a",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/002db8b6-4893-4f35-b49a-19c46311f59a",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Vistergy Ltd"
+        },
+        "tags": [
+          "commissioning",
+          "expert-in-the-loop",
+          "facility commissioning",
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-02T23:22:16.339790804-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/2afefb84-f131-4eca-a301-bd25946ad7a4?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Flat monthly subscription. 1,000 queries included per billing month; each additional query in excess of 1,000 comes with an overage fee of $1.00 per query.",
+        "displayName": "CR Monthly Subscription"
+      }
+    ],
+    "description": "Is your facility ready to commission? A gate-by-gate readiness view, the blockers, and the evidence, inside Maximo.",
+    "longDescription": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle, inside your Maximo. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure.",
+    "displayName": "Commissioning Readiness",
+    "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
+    "localSvgIcon": "/generated/icons/002db8b6-4893-4f35-b49a-19c46311f59a.svg",
+    "localPngIcon": "/generated/icons/002db8b6-4893-4f35-b49a-19c46311f59a.png"
   },
   {
     "_id": "402ae2fc-4740-4a8f-aac8-38e67c939f95",
@@ -103102,7 +104354,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -103117,7 +104368,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -112025,16 +113277,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "fra02",
+      "eu-es",
+      "us-south",
       "au-syd",
       "us-east",
-      "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "fra02",
-      "us-south",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -116774,13 +118026,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -118922,13 +120174,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -144276,14 +145528,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -146791,14 +148043,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -154869,19 +156121,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
       "in-mum",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
+      "au-syd",
+      "in-che",
+      "jp-osa",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "in-che"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -219479,7 +220731,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "439-c099de229081545d544df27fb20e7a00",
+    "_rev": "440-d0da4e750eb5a4e0e68abf6f24b161f4",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -219487,8 +220739,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -219977,7 +221229,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-07-31T07:45:29.19554812-04:00",
+    "updated": "2026-08-03T10:49:53.688618445-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -232013,12 +233265,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -237847,6 +239099,299 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/2bea02b0-c0a4-11ee-83aa-3171b0bf2976/artifacts/cache/d324ad3f95a38ffe02cecfb8745e38ef-public/SDSaaS%20-%20light.svg",
     "localSvgIcon": "/generated/icons/2bea02b0-c0a4-11ee-83aa-3171b0bf2976.svg",
     "localPngIcon": "/generated/icons/2bea02b0-c0a4-11ee-83aa-3171b0bf2976.png"
+  },
+  {
+    "_id": "8790e761-8548-451c-873f-902b19adae29",
+    "_rev": "35-393cfea834c7496ad8d13122eba1311e",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:8790e761-8548-451c-873f-902b19adae29",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/8790e761-8548-451c-873f-902b19adae29/%2A",
+    "complete": true,
+    "created": "2026-05-18T19:34:45.598062623-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "8790e761-8548-451c-873f-902b19adae29",
+    "images": {
+      "image": "https://getarbitr.straker.ai/assets/localize/svg/localize-tile.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "abbd32c0a8ed41b782e4952ecd6224f0:o:3ab63d7b-75e5-4489-8ec7-9318604c15b9",
+          "support": {
+            "languages": [
+              "en",
+              "ja"
+            ],
+            "locations": [
+              "JP",
+              "NZ"
+            ],
+            "process": "Straker is the publisher and owner of the Straker Dubbing agent and provides full support for its availability, maintenance, and customer issues. Customers contact support at wxo-support@straker.ai during business hours (08:00–18:00 NZT, Mon–Fri, excluding NZ public holidays). Requests are acknowledged on receipt and triaged by severity, with first-response targets of 1 business hour (S1, outage), 4 business hours (S2, major degradation), 1 business day (S3, functional issue), and 2 business days (S4, how-to). Service status is published at https://dubbing-ai.straker.ai/status/, security reports go to security@straker.ai, and a named escalation contact is provided to IBM for S1/S2 issues. Full documentation is at help.straker.ai/en/docs/straker-dubbing-for-ibm-watsonx-orchestrate.",
+            "status_url": "https://dubbing-ai.straker.ai/status/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "17:00",
+                      "start_time": "09:00"
+                    }
+                  ],
+                  "timezone": "Pacific/Auckland"
+                },
+                "contact": "wxo-support@straker.ai",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 3
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "+64 9 872 2611",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://help.straker.ai/en/docs/wxo-support"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/8790e761-8548-451c-873f-902b19adae29/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Natural-language AI dubbing, video translation, and lip-sync",
+                "title": "AI Video Dubbing & Lip Sync"
+              },
+              {
+                "description": "Target language accepted by English name or supported language code",
+                "title": "Flexible Language Selection"
+              },
+              {
+                "description": "30 documented target languages across core, additional, and lip-sync coverage",
+                "title": "30 Supported Languages"
+              },
+              {
+                "description": "Target language accepted by English name or supported language code",
+                "title": "Flexible Language Selection"
+              },
+              {
+                "description": "Direct HTTPS video URL validation before processing",
+                "title": "Video URL Validation"
+              }
+            ],
+            "media": [
+              {
+                "caption": "Watch demonstrations of the AI Dubbing Agent in four languages (English, Japanese, Spanish and Arabic). Focus on the natural spoken expressi",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/zkY6QFo-cLQ"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://help.straker.ai/en/docs/straker-dubbing-for-ibm-watsonx-orchestrate",
+          "terms_url": "https://getarbitr.straker.ai/eula"
+        }
+      }
+    },
+    "name": "straker-japan-kk-straker-ai-dubbing",
+    "overview_ui": {
+      "en": {
+        "description": "Create multilingual, lip-synced video directly from IBM watsonx Orchestrate while preserving speaker’s voice, emotion, and intent.",
+        "display_name": "Straker AI Dubbing ",
+        "long_description": "Designed for training, marketing, product education, customer communications, and internal content, arbitr AI Dubbing helps teams produce localized video without leaving their existing agent workflow. It preserves the speaker’s voice, emotion, and intent and supports 30 documented target languages across core, additional, and lip-sync coverage. Conversations with the agent are in English, while the dubbing language is selected independently for each job.\n\narbitr AI Dubbing is delivered as an external collaborator. A watsonx Orchestrate administrator adds it to a native agent before end users can invoke it.\n\n\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Straker Japan K.K."
+    },
+    "tags": [
+      "ai_agent, ai dubbing, video dubbing, video localization, video translation, lip sync, multilingual video, voice localization, media localization, ibm watsonx orchestrate",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-02T23:23:46.635447733-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/8790e761-8548-451c-873f-902b19adae29?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "51eaf476-4f4b-4f48-b79c-6cebd51a1764",
+        "_rev": "12-29d9056021897669a6d090f831e26175",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:51eaf476-4f4b-4f48-b79c-6cebd51a1764",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/51eaf476-4f4b-4f48-b79c-6cebd51a1764/%2A",
+        "complete": true,
+        "created": "2026-06-24T01:16:32.285960332-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "51eaf476-4f4b-4f48-b79c-6cebd51a1764",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/51eaf476-4f4b-4f48-b79c-6cebd51a1764/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Natural-language AI dubbing, video translation, and lip-sync"
+                  },
+                  {
+                    "description": "30 documented target languages across core, additional, and lip-sync coverage"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "ai-only-dubbing",
+        "overview_ui": {
+          "en": {
+            "description": "Includes only automated processes using AI; no human checks are involved.",
+            "display_name": "AI only Dubbing",
+            "long_description": "Includes only automated processes using AI; no human checks are involved."
+          }
+        },
+        "parent_id": "8790e761-8548-451c-873f-902b19adae29",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/8790e761-8548-451c-873f-902b19adae29",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Straker Japan K.K."
+        },
+        "tags": [
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-02T23:23:46.61065127-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/51eaf476-4f4b-4f48-b79c-6cebd51a1764?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Includes only automated processes using AI; no human checks are involved.",
+        "displayName": "AI only Dubbing"
+      }
+    ],
+    "description": "Create multilingual, lip-synced video directly from IBM watsonx Orchestrate while preserving speaker’s voice, emotion, and intent.",
+    "longDescription": "Designed for training, marketing, product education, customer communications, and internal content, arbitr AI Dubbing helps teams produce localized video without leaving their existing agent workflow. It preserves the speaker’s voice, emotion, and intent and supports 30 documented target languages across core, additional, and lip-sync coverage. Conversations with the agent are in English, while the dubbing language is selected independently for each job.\n\narbitr AI Dubbing is delivered as an external collaborator. A watsonx Orchestrate administrator adds it to a native agent before end users can invoke it.\n\n\n",
+    "displayName": "Straker AI Dubbing ",
+    "imageUrl": "https://getarbitr.straker.ai/assets/localize/svg/localize-tile.svg",
+    "localSvgIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.svg",
+    "localPngIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.png"
   },
   {
     "_id": "5acdbc42-8965-48f9-8a3c-1c728b6ed2c4",
@@ -275601,12 +277146,12 @@
         "created": "2015-10-15T05:13:52Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
-          "jp-tok",
           "eu-de",
           "eu-gb",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor",
+          "jp-tok"
         ],
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "images": {
@@ -278932,12 +280477,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -283546,12 +285091,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {

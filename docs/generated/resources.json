@@ -603,14 +603,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1624,6 +1624,58 @@
     "localPngIcon": "/generated/icons/ee700ab3-6951-4c68-b541-a177f78eed53.png"
   },
   {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "ab422db5-6ff2-4aab-b08a-5b870c26efe1",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "ppic-technologies-pte-ltd-legal-ai-assistant",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai agent",
+      "bex",
+      "bex ai",
+      "custom_kind_service",
+      "digital employee",
+      "free",
+      "global",
+      "ibm_third_party",
+      "legal assistant",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "4d6bd172-9778-47dc-a097-b18c868e5abd",
+        "name": "free-plan",
+        "description": "Free Trial for 30 days",
+        "displayName": "Free Trial"
+      },
+      {
+        "id": "8b960c66-6b99-47ab-863c-9e7ede0acf53",
+        "name": "standard-plan",
+        "description": "This plan allows for usage of the legal AI Assistant on a fixed monthly subscription.  If the usage exceeds the quota specified, overage charges applies.",
+        "displayName": "Standard Plan"
+      }
+    ],
+    "description": "AI Digital Employee for legal teams — contract drafting, review, negotiation, research, and compliance, guided by your playbook.",
+    "longDescription": "BeX Legal AI Assistant is an enterprise AI Digital Employee that automates legal workflows — contract drafting, review, negotiation, research, and compliance analysis — within IBM watsonx Orchestrate. \nDriven by configurable legal playbooks, it produces structured, auditable outputs aligned to your organisation's own standards, with a purpose-built dynamic UI and the ability to execute tasks autonomously end-to-end.",
+    "displayName": "BeX Legal AI Assistant",
+    "imageUrl": "https://coolriots.ai/bex-logo.png",
+    "localPngIcon": "/generated/icons/ab422db5-6ff2-4aab-b08a-5b870c26efe1.png"
+  },
+  {
     "id": "block-storage-group",
     "kind": "iaas",
     "metadata": {
@@ -1910,6 +1962,86 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot.svg",
     "localPngIcon": "/generated/icons/is.snapshot.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "c0948cae-5d99-4de3-9187-9fd4d218fb98",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "essex-lake-group-branch-flow",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "agent",
+      "ai_agent",
+      "banking ai",
+      "banking operations analytics",
+      "branch flow",
+      "branch load analysis",
+      "branch operations intelligence",
+      "branch performance management",
+      "branch productivity",
+      "branch stress monitoring",
+      "capacity planning",
+      "custom_kind_service",
+      "customer experience analytics",
+      "essex",
+      "free",
+      "global",
+      "ibm_third_party",
+      "operational forecasting",
+      "operational intelligence",
+      "paid",
+      "paid_only",
+      "queue management",
+      "rc_compatible",
+      "retail banking operations",
+      "staffing optimization",
+      "support_third_party",
+      "wait-time prediction",
+      "watson",
+      "workforce utilization"
+    ],
+    "plans": [
+      {
+        "id": "29b36efa-fd7b-4d1d-97e2-d8cfd2f031e7",
+        "name": "enterprise",
+        "description": "Designed for large banking organizations requiring enterprise-scale operational intelligence, customization, governance, and strategic workforce optimization.\n500+ Branches (Minimum 500 Branches)",
+        "displayName": "Enterprise"
+      },
+      {
+        "id": "a5a22fc3-c41a-4c84-91ec-cb4d4250fe0e",
+        "name": "intermediate",
+        "description": "Designed for organizations requiring operational intelligence and support across larger branch networks.\nPack up to - 500 Branches (Minimum 100 Branches)",
+        "displayName": "Intermediate"
+      },
+      {
+        "id": "2546be18-e265-4110-8fc9-d92275c5f754",
+        "name": "starter",
+        "description": "Designed for small to mid-sized branch networks seeking visibility into branch performance, staffing effectiveness, customer wait times, and operational stress. Provides foundational operational intelligence with rapid deployment and minimal setup effort.\nPack Up to - 100 Branches",
+        "displayName": "Starter"
+      },
+      {
+        "id": "55b3a0b5-3b1d-4818-a7f7-28c0acff58ab",
+        "name": "trial",
+        "description": "trial",
+        "displayName": "trial"
+      }
+    ],
+    "description": "Branch FLOW™ is an AI-powered operations agent providing real-time insights into branch demand, utilization, and wait times.",
+    "longDescription": "Branch FLOW™ enables institutions to transform branch operational data into actionable intelligence that improves customer experience, workforce productivity, and operational efficiency.\n\nThe platform continuously analyzes branch demand, serving capacity, transaction patterns, staffing levels, and utilization metrics to identify operational stress, peak traffic periods, service bottlenecks, and emerging operational risks. By combining operational analytics with AI-driven decision support, Branch FLOW™ helps branch managers, operations teams, and business leaders make faster, more informed decisions.\n\nThrough a conversational AI experience, users can explore branch performance using natural language. The platform provides visibility into operational stress, staffing effectiveness, wait-time risks, queue pressure, utilization trends, and capacity constraints, enabling proactive intervention before service levels are impacted.\n\nPowered by a proprietary six-signal scoring engine, Branch FLOW™ moves organizations beyond traditional reporting to always-on operational intelligence. Helps organizations improve service consistency, reduce customer wait times, optimize workforce allocation, enhance operational productivity, and accelerate decision-making.\n",
+    "displayName": "Branch FLOW",
+    "imageUrl": "https://essexlg.com/brand/logo/IBM-Thumbnail-Logo-Essex-Light.svg",
+    "localSvgIcon": "/generated/icons/c0948cae-5d99-4de3-9187-9fd4d218fb98.svg",
+    "localPngIcon": "/generated/icons/c0948cae-5d99-4de3-9187-9fd4d218fb98.png"
   },
   {
     "geo_tags": [
@@ -4104,6 +4236,50 @@
     "geo_tags": [
       "global"
     ],
+    "id": "002db8b6-4893-4f35-b49a-19c46311f59a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "vistergy-ltd-commissioning-readiness",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "commissioning",
+      "custom_kind_service",
+      "expert-in-the-loop",
+      "facility commissioning",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "2afefb84-f131-4eca-a301-bd25946ad7a4",
+        "name": "cr-monthly-subscription",
+        "description": "Flat monthly subscription. 1,000 queries included per billing month; each additional query in excess of 1,000 comes with an overage fee of $1.00 per query.",
+        "displayName": "CR Monthly Subscription"
+      }
+    ],
+    "description": "Is your facility ready to commission? A gate-by-gate readiness view, the blockers, and the evidence, inside Maximo.",
+    "longDescription": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle, inside your Maximo. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure.",
+    "displayName": "Commissioning Readiness",
+    "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
+    "localSvgIcon": "/generated/icons/002db8b6-4893-4f35-b49a-19c46311f59a.svg",
+    "localPngIcon": "/generated/icons/002db8b6-4893-4f35-b49a-19c46311f59a.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "402ae2fc-4740-4a8f-aac8-38e67c939f95",
     "kind": "service",
     "metadata": {
@@ -5818,7 +5994,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -5833,7 +6008,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6222,16 +6398,16 @@
   },
   {
     "geo_tags": [
+      "fra02",
+      "eu-es",
+      "us-south",
       "au-syd",
       "us-east",
-      "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "fra02",
-      "us-south",
-      "eu-gb"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6387,13 +6563,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9349,14 +9525,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -9967,19 +10143,19 @@
   },
   {
     "geo_tags": [
+      "br-sao",
       "in-mum",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
+      "au-syd",
+      "in-che",
+      "jp-osa",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "in-che"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14970,8 +15146,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16827,12 +17003,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -17560,6 +17736,47 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/2bea02b0-c0a4-11ee-83aa-3171b0bf2976/artifacts/cache/d324ad3f95a38ffe02cecfb8745e38ef-public/SDSaaS%20-%20light.svg",
     "localSvgIcon": "/generated/icons/2bea02b0-c0a4-11ee-83aa-3171b0bf2976.svg",
     "localPngIcon": "/generated/icons/2bea02b0-c0a4-11ee-83aa-3171b0bf2976.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "8790e761-8548-451c-873f-902b19adae29",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "straker-japan-kk-straker-ai-dubbing",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent, ai dubbing, video dubbing, video localization, video translation, lip sync, multilingual video, voice localization, media localization, ibm watsonx orchestrate",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "51eaf476-4f4b-4f48-b79c-6cebd51a1764",
+        "name": "ai-only-dubbing",
+        "description": "Includes only automated processes using AI; no human checks are involved.",
+        "displayName": "AI only Dubbing"
+      }
+    ],
+    "description": "Create multilingual, lip-synced video directly from IBM watsonx Orchestrate while preserving speaker’s voice, emotion, and intent.",
+    "longDescription": "Designed for training, marketing, product education, customer communications, and internal content, arbitr AI Dubbing helps teams produce localized video without leaving their existing agent workflow. It preserves the speaker’s voice, emotion, and intent and supports 30 documented target languages across core, additional, and lip-sync coverage. Conversations with the agent are in English, while the dubbing language is selected independently for each job.\n\narbitr AI Dubbing is delivered as an external collaborator. A watsonx Orchestrate administrator adds it to a native agent before end users can invoke it.\n\n\n",
+    "displayName": "Straker AI Dubbing ",
+    "imageUrl": "https://getarbitr.straker.ai/assets/localize/svg/localize-tile.svg",
+    "localSvgIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.svg",
+    "localPngIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.png"
   },
   {
     "geo_tags": [
@@ -21338,12 +21555,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -21569,12 +21786,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
