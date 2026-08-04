@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb"
+      "us-east"
     ],
     "id": "api-connect",
     "images": {
@@ -11699,15 +11699,15 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -76402,7 +76402,7 @@
         "children": [
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:ca-mon",
-            "_rev": "14-9b31581fef9736a29996e9224d1074ac",
+            "_rev": "15-eb23b133711a148ad0382ec9185c4bc3",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:ca-mon/%2A",
@@ -76704,7 +76704,7 @@
                 "plan_updateable": false,
                 "rc_provisionable": true,
                 "service_check_enabled": false,
-                "service_key_supported": false,
+                "service_key_supported": true,
                 "state": "",
                 "test_check_interval": 0,
                 "type": "",
@@ -76794,7 +76794,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-07-21T16:07:57.534446724-04:00",
+            "updated": "2026-08-04T07:27:10.958253041-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -76802,7 +76802,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:eu-de",
-            "_rev": "7-9eab65f0f5d7e1e061e6d8baf239edec",
+            "_rev": "8-d0721c0da54a00d73dbb07c51bee816b",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aeu-de",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:eu-de/%2A",
@@ -77104,7 +77104,7 @@
                 "plan_updateable": false,
                 "rc_provisionable": true,
                 "service_check_enabled": false,
-                "service_key_supported": false,
+                "service_key_supported": true,
                 "state": "",
                 "test_check_interval": 0,
                 "type": "",
@@ -77194,7 +77194,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-07-06T13:57:02.277640229-04:00",
+            "updated": "2026-08-04T07:27:36.245886159-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:eu-de?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -77202,7 +77202,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-che",
-            "_rev": "15-481d433e7c1a466289e3dff535776595",
+            "_rev": "16-5a235f5dca1fbbf2e6ca05b935de3fcd",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-che/%2A",
@@ -77504,7 +77504,7 @@
                 "plan_updateable": false,
                 "rc_provisionable": true,
                 "service_check_enabled": false,
-                "service_key_supported": false,
+                "service_key_supported": true,
                 "state": "",
                 "test_check_interval": 0,
                 "type": "",
@@ -77594,7 +77594,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-07-21T16:04:40.434277784-04:00",
+            "updated": "2026-08-04T07:28:07.224178842-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -77602,7 +77602,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-mum",
-            "_rev": "7-ac78125eb1fbf4b01b55c57c29843f41",
+            "_rev": "8-762ddef355316b845678310f94bb3103",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-mum/%2A",
@@ -77904,7 +77904,7 @@
                 "plan_updateable": false,
                 "rc_provisionable": true,
                 "service_check_enabled": false,
-                "service_key_supported": false,
+                "service_key_supported": true,
                 "state": "",
                 "test_check_interval": 0,
                 "type": "",
@@ -77994,7 +77994,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-07-21T16:08:03.223575664-04:00",
+            "updated": "2026-08-04T07:28:22.896120927-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -78002,7 +78002,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:us-east",
-            "_rev": "7-ebe9727300dc34d07d9b272b8ebc59e2",
+            "_rev": "8-03e967e32675045c5bd26a3de3eaaf66",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aus-east",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:us-east/%2A",
@@ -78304,7 +78304,7 @@
                 "plan_updateable": false,
                 "rc_provisionable": true,
                 "service_check_enabled": false,
-                "service_key_supported": false,
+                "service_key_supported": true,
                 "state": "",
                 "test_check_interval": 0,
                 "type": "",
@@ -78394,7 +78394,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-07-20T12:32:42.785356027-04:00",
+            "updated": "2026-08-04T07:28:39.978338422-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:us-east?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -113277,15 +113277,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "us-east",
       "fra02",
       "eu-es",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "au-syd",
-      "us-east",
-      "eu-gb",
       "eu-de"
     ],
     "id": "dashdb-for-transactions",
@@ -145528,14 +145528,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -148043,14 +148043,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -156122,18 +156122,18 @@
     "disabled": false,
     "geo_tags": [
       "br-sao",
-      "in-che",
       "jp-osa",
       "in-mum",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "au-syd",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-mon",
+      "au-syd",
+      "eu-gb",
+      "in-che",
       "ca-tor",
-      "eu-gb"
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -186349,7 +186349,7 @@
       },
       {
         "_id": "d3f47848-d28e-4ffc-aa37-57f1defe50e6",
-        "_rev": "56-2f382e61b096cbe310e2e40373341fc2",
+        "_rev": "57-008014ff9cdb188d622eb14456ff9383",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d3f47848-d28e-4ffc-aa37-57f1defe50e6",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6/%2A",
@@ -186586,7 +186586,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-07-23T05:55:14.567815866-04:00",
+        "updated": "2026-08-04T08:11:46.362899001-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -186715,7 +186715,7 @@
       },
       {
         "_id": "b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
-        "_rev": "51-7e3a77df0afc6bcfbcecf3869b1c7626",
+        "_rev": "52-bdea7f443b82726a737493c2f2388e50",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba/%2A",
@@ -186925,7 +186925,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-07-29T06:41:40.758265674-04:00",
+        "updated": "2026-08-04T08:11:46.452939547-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -211302,7 +211302,7 @@
       },
       {
         "_id": "c7ccbb5e-495d-41ec-aedd-506d9fcbed44",
-        "_rev": "9-5c506604aa944be969fb4cfe97ca24ef",
+        "_rev": "11-c6c2d8c08b6a0962a1f3d51e8496ae6d",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:c7ccbb5e-495d-41ec-aedd-506d9fcbed44",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c7ccbb5e-495d-41ec-aedd-506d9fcbed44/%2A",
@@ -211495,20 +211495,6 @@
                       "optionsRefresh": true,
                       "showFor": [
                         "Yes"
-                      ]
-                    },
-                    {
-                      "description": "",
-                      "displayname": "Portworx Versions",
-                      "name": "image_version",
-                      "optionsRefresh": true,
-                      "showFor": [
-                        "3.5.0",
-                        "3.5.1",
-                        "3.5.2",
-                        "3.5.3",
-                        "3.5.4",
-                        "3.5.5"
                       ]
                     }
                   ]
@@ -212015,7 +212001,7 @@
           "storage",
           "supports_syndication"
         ],
-        "updated": "2026-03-24T13:37:44.192518054-04:00",
+        "updated": "2026-08-04T03:01:50.495432201-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/c7ccbb5e-495d-41ec-aedd-506d9fcbed44?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -233265,12 +233251,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -276195,12 +276181,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -280477,12 +280463,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
