@@ -603,14 +603,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5812,10 +5812,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5826,7 +5822,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -5994,7 +5994,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -6009,7 +6008,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6400,14 +6400,14 @@
     "geo_tags": [
       "us-south",
       "eu-gb",
+      "eu-de",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6563,13 +6563,13 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-gb"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9525,14 +9525,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10143,19 +10143,19 @@
   },
   {
     "geo_tags": [
-      "in-che",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "us-south",
-      "br-sao",
-      "in-mum",
       "ca-tor",
       "ca-mon",
       "au-syd",
-      "eu-gb"
+      "in-che",
+      "in-mum",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -10259,84 +10259,6 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
-    "id": "983ea9a2-0fec-4021-8b70-8da5373394e5",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "knowledge-studio",
-    "pricing_tags": [
-      "free",
-      "allow_internal_users",
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "allow_internal_users",
-      "au-syd",
-      "bromine",
-      "custom_kind_service",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "freesia",
-      "gc_migrate",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "ibm_release",
-      "jp-tok",
-      "lite",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "us-east",
-      "us-south",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "f6f4f874-a218-4b6d-8d12-15039fc5ae6c",
-        "name": "free",
-        "description": "Try Watson Knowledge Studio for an unlimited time at no cost.",
-        "displayName": "Lite",
-        "originalName": "free"
-      },
-      {
-        "id": "895bdc2e-8e1d-457c-b5a0-b3dbdd025883",
-        "name": "premium",
-        "description": "To purchase a Premium plan, visit: https://ibm.biz/contact-wdc-premium",
-        "displayName": "Premium",
-        "originalName": "premium"
-      },
-      {
-        "id": "08a3792c-438a-47c0-9482-f30f2e35c27f",
-        "name": "standard",
-        "description": "This plan operates in a multi-tenant environment, which offers cost efficiency to professionals working independently or in small groups.",
-        "displayName": "Standard",
-        "originalName": "standard"
-      }
-    ],
-    "description": "Teach Watson the language of your domain.",
-    "longDescription": "Teach Watson the language of your domain with custom machine learning models that identify entities and relationships unique to your industry in unstructured text. Build your models in a collaborative environment designed for both developers and domain experts, without needing to write code. Use the models in Watson Discovery, Watson Natural Language Understanding and Watson Explorer.",
-    "displayName": "Knowledge Studio",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5/artifacts/cache/f910c8648f9e7ac7b98028122ecbc508-public/WatsonKnowledgeStudio.svg",
-    "localSvgIcon": "/generated/icons/983ea9a2-0fec-4021-8b70-8da5373394e5.svg",
-    "localPngIcon": "/generated/icons/983ea9a2-0fec-4021-8b70-8da5373394e5.png"
   },
   {
     "geo_tags": [
@@ -11815,81 +11737,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot-consistency-group.svg",
     "localPngIcon": "/generated/icons/is.snapshot-consistency-group.png"
-  },
-  {
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
-    "id": "bb6393bc-7d81-446b-9728-61b704f6eca5",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "natural-language-understanding",
-    "pricing_tags": [
-      "free",
-      "lite",
-      "allow_internal_users",
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "allow_internal_users",
-      "apidocs_enabled",
-      "au-syd",
-      "bromine",
-      "custom_kind_service",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "freesia",
-      "gc_migrate",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "ibm_deprecated",
-      "jp-tok",
-      "lite",
-      "nlp",
-      "nlu",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "us-east",
-      "us-south",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "e45ae97c-4140-4a9b-8db9-c419169e9be5",
-        "name": "free",
-        "description": "The Lite plan gets you started with 30,000 NLU Items per month at no cost. This plan also enables use of one custom model published through Watson Knowledge Studio.",
-        "displayName": "Lite",
-        "originalName": "free"
-      },
-      {
-        "id": "ab46454b-3073-498b-8557-36eb7fbdcee8",
-        "name": "standard",
-        "description": "-",
-        "displayName": "Standard",
-        "originalName": "standard"
-      }
-    ],
-    "description": "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment and more.",
-    "longDescription": "Use advanced NLP to analyze text and extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, and semantic roles. Apply custom annotation models developed using Watson Knowledge Studio to identify industry/domain specific entities and relations in unstructured text with Watson NLU.",
-    "displayName": "Natural Language Understanding",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/c8389906f6ad6fd7c3d598cff21abb0f-public/WatsonNaturalLanguageUnderstanding.svg",
-    "localSvgIcon": "/generated/icons/bb6393bc-7d81-446b-9728-61b704f6eca5.svg",
-    "localPngIcon": "/generated/icons/bb6393bc-7d81-446b-9728-61b704f6eca5.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-netapp",
@@ -17005,12 +16852,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18355,12 +18202,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -21407,6 +21254,7 @@
     "pricing_tags": [
       "allow_internal_users",
       "paid_only",
+      "block_internal_trial",
       "free",
       "lite",
       "subscription"
@@ -21414,6 +21262,7 @@
     "tags": [
       "allow_internal_users",
       "au-syd",
+      "block_internal_trial",
       "br-sao",
       "ca-tor",
       "custom_kind_service",
@@ -21471,12 +21320,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -21557,12 +21406,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -21788,12 +21637,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",

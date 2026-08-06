@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -92378,6 +92378,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -92385,11 +92389,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -92480,7 +92480,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "49-88d077ad1bf173102061d97c6842d695",
+        "_rev": "51-5e0f9f77f2feb50a4e17104e0cda0134",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children": [
@@ -94554,7 +94554,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-20T12:33:35.965152422-04:00",
+        "updated": "2026-08-06T10:20:06.566864055-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -94566,10 +94566,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -94580,7 +94576,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -95180,7 +95180,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "49-88d077ad1bf173102061d97c6842d695",
+        "_rev": "51-5e0f9f77f2feb50a4e17104e0cda0134",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard/%2A",
@@ -95267,7 +95267,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-07-20T12:33:35.965152422-04:00",
+        "updated": "2026-08-06T10:20:06.566864055-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -104354,7 +104354,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -104369,7 +104368,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -104533,7 +104533,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -104544,7 +104543,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -113279,14 +113279,14 @@
     "geo_tags": [
       "us-south",
       "eu-gb",
+      "eu-de",
+      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -118026,13 +118026,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd",
-      "eu-gb"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -145528,14 +145528,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -156121,19 +156121,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "in-che",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "us-south",
-      "br-sao",
-      "in-mum",
       "ca-tor",
       "ca-mon",
       "au-syd",
-      "eu-gb"
+      "in-che",
+      "in-mum",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -158068,1977 +158068,6 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-kmipadapter.png"
-  },
-  {
-    "_id": "983ea9a2-0fec-4021-8b70-8da5373394e5",
-    "_rev": "7-7b283245eab93f672353e77b5e851589",
-    "active": true,
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:983ea9a2-0fec-4021-8b70-8da5373394e5",
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5/%2A",
-    "complete": true,
-    "created": "2017-09-20T17:35:35Z",
-    "disabled": false,
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
-    "id": "983ea9a2-0fec-4021-8b70-8da5373394e5",
-    "images": {
-      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5/artifacts/cache/f910c8648f9e7ac7b98028122ecbc508-public/WatsonKnowledgeStudio.svg",
-      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5/artifacts/cache/f910c8648f9e7ac7b98028122ecbc508-public/WatsonKnowledgeStudio.svg",
-      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5/artifacts/cache/f910c8648f9e7ac7b98028122ecbc508-public/WatsonKnowledgeStudio.svg",
-      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5/artifacts/cache/f910c8648f9e7ac7b98028122ecbc508-public/WatsonKnowledgeStudio.svg"
-    },
-    "kind": "service",
-    "metadata": {
-      "callbacks": {
-        "broker_url": "https://gateway.watsonplatform.net/common-service-broker/v1/knowledge-studio",
-        "service_monitor_api": "https://jsonnote.mybluemix.net?key=knowledge-studio-monitor"
-      },
-      "original_name": "knowledge-studio",
-      "other": {
-        "iam": {
-          "key": "",
-          "supportedAttributes": [
-            {
-              "key": "region"
-            },
-            {
-              "key": "serviceInstance"
-            }
-          ],
-          "value": ""
-        }
-      },
-      "rc_compatible": true,
-      "service": {
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "bindable": false,
-        "cf_guid": {
-          "eu-de": "32d7e71d-4e46-4396-be6d-4443ae79a8f4",
-          "us-south": "3e622e8c-54e0-4b8f-993a-f635ca9bcd35"
-        },
-        "custom_create_page_hybrid_enabled": false,
-        "extension": null,
-        "iam_compatible": true,
-        "parameters": [],
-        "plan_updateable": true,
-        "rc_provisionable": true,
-        "service_check_enabled": false,
-        "service_key_supported": false,
-        "state": "",
-        "test_check_interval": 0,
-        "type": "",
-        "unique_api_key": false,
-        "user_defined_service": null
-      },
-      "sla": {
-        "dr": {
-          "dr": false
-        },
-        "terms": "https://www.ibm.com/software/sla/sladb.nsf/sla/bm-7955-06"
-      },
-      "ui": {
-        "strings": {
-          "de": {
-            "bullets": [
-              {
-                "description": "Experten der jeweiligen Fachgebiete können Watson so trainieren, dass der Service die branchen- oder organisationsspezifische Sprache beherrscht, ohne dass tiefgreifende technische Kenntnisse oder eine spezielle Codierung erforderlich sind.",
-                "title": "Training mithilfe von Beispielen"
-              },
-              {
-                "description": "Es wird keine einzige Codezeile benötigt. Mithilfe einer für mehrere Benutzer und interaktives Arbeiten konzipierten Umgebung und einer leistungsfähigen Benutzerschnittstelle können Experten auf einfache Weise angepasste Modelle erstellen, ohne dass - wie bei vielen Produkten von Wettbewerbern - spezielle Codierungskenntnisse erforderlich sind.",
-                "title": "Experten einbeziehen"
-              },
-              {
-                "description": "Bei diesem Service handelt es sich um das einzige Angebot auf dem Markt, das die leistungsfähigen Annotations-, Trainings- und Auswertungsfunktionen in einem einzelnen, auf die interaktive Arbeit fokussierten Service kombiniert.",
-                "title": "WKS ist ein End-to-End-Service"
-              },
-              {
-                "description": "Die Ergebnisse des Watson-Trainings können in zahlreichen Anwendungen eingesetzt werden, indem die Modelle aus Watson Knowledge Studio in Watson Discovery, Watson Natural Language Understanding und Watson Explorer verwendet werden.",
-                "title": "Überall einsetzbar"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Watson Knowledge Studio - Einsatzmöglichkeiten",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Watson ermöglicht das Erkennen aussagekräftiger Informationen in unstrukturiertem Text ohne spezielle Codierung.",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio - detaillierte Informationen zu technischen Grundlagen",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Verwalten",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "en": {
-            "bullets": [
-              {
-                "description": "Empower domain subject matter experts to teach Watson the language of your industry or organization without requiring deep technical skills or coding.",
-                "title": "Teach by Example"
-              },
-              {
-                "description": "You won't need a single line of code. With a multi-user collaborative environment and a powerful user interface, SMEs can easily build custom models without any coding expertise, unlike competitive offerings.",
-                "title": "Engage your Experts"
-              },
-              {
-                "description": "It’s the only offering in the market that combines the powerful capabilities of annotation, training, and evaluation in a single collaboration-focused service.",
-                "title": "WKS is End-to-end"
-              },
-              {
-                "description": "Apply what you’ve taught Watson in multiple applications by using models from Watson Knowledge Studio in Watson Discovery, Watson Natural Language Understanding and Watson Explorer.",
-                "title": "Use Everywhere"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Accelerated training process",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__0_87a56fac-fb9e-4823-b214-45a771d1a810.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__0_87a56fac-fb9e-4823-b214-45a771d1a810.png"
-              },
-              {
-                "caption": "Shared knowledge artifacts",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__1_e608df49-c38a-4779-b737-a54301d0657e.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__1_e608df49-c38a-4779-b737-a54301d0657e.png"
-              },
-              {
-                "caption": "Continuous performance improvement",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__2_d61c5b94-1f74-4630-963b-ebc43b766f11.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__2_d61c5b94-1f74-4630-963b-ebc43b766f11.png"
-              },
-              {
-                "caption": "Accelerated training process",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__0_87a56fac-fb9e-4823-b214-45a771d1a810.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__0_87a56fac-fb9e-4823-b214-45a771d1a810.png"
-              },
-              {
-                "caption": "Shared knowledge artifacts",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__1_e608df49-c38a-4779-b737-a54301d0657e.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__1_e608df49-c38a-4779-b737-a54301d0657e.png"
-              },
-              {
-                "caption": "Continuous performance improvement",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__2_d61c5b94-1f74-4630-963b-ebc43b766f11.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__2_d61c5b94-1f74-4630-963b-ebc43b766f11.png"
-              },
-              {
-                "caption": "Accelerated training process",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__0_87a56fac-fb9e-4823-b214-45a771d1a810.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__0_87a56fac-fb9e-4823-b214-45a771d1a810.png"
-              },
-              {
-                "caption": "Shared knowledge artifacts",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__1_e608df49-c38a-4779-b737-a54301d0657e.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__1_e608df49-c38a-4779-b737-a54301d0657e.png"
-              },
-              {
-                "caption": "Continuous performance improvement",
-                "thumbnail_url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__2_d61c5b94-1f74-4630-963b-ebc43b766f11.png",
-                "type": "image",
-                "url": "https://1.www.s81c.com/8034F2C/dal05/v1/AUTH_db1cfc7b-a055-460b-9274-1fd3f11fe689/5b0fd91ef0e1a6f21f6e983ccc7bbed5/additionalOfferingThumbnailImg__2_d61c5b94-1f74-4630-963b-ebc43b766f11.png"
-              },
-              {
-                "caption": "Why you should use Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Use Watson to discover meaningful insights in unstructured text without coding",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio Technical Deep Dive",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/EQcEk2TX79c"
-              },
-              {
-                "caption": "Why you should use Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Use Watson to discover meaningful insights in unstructured text without coding",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio Technical Deep Dive",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/EQcEk2TX79c"
-              },
-              {
-                "caption": "Why you should use Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Use Watson to discover meaningful insights in unstructured text without coding",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio Technical Deep Dive",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://www.youtube.com/embed/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Manage",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "es": {
-            "bullets": [
-              {
-                "description": "Capacite a expertos en la materia de cada dominio para enseñar a Watson el lenguaje de su sector u organización sin necesidad de usar código ni de grandes conocimientos técnicos.",
-                "title": "Enseñanza con ejemplos"
-              },
-              {
-                "description": "No necesitará una línea de código única. Con un entorno colaborativo de varios usuarios y una completa interfaz de usuario, los expertos en la materia pueden generar fácilmente modelos sin ninguna experiencia en codificación, a diferencia de los productos ofrecidos por la competencia.",
-                "title": "Converse con los expertos"
-              },
-              {
-                "description": "Es la única oferta del mercado que combina las completas prestaciones de anotación, formación y evaluación en un único servicio centrado en la colaboración.",
-                "title": "WKS es completo"
-              },
-              {
-                "description": "Aplique lo que ha enseñado a Watson en varias aplicaciones utilizando modelos de Watson Knowledge Studio en Watson Discovery, Watson Natural Language Understanding y Watson Explorer.",
-                "title": "Uso en todos los lugares"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Razones para utilizar Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Utilice Watson para descubrir información relevante en textos no estructurados sin necesidad de código",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Análisis técnico detallado de Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gestionar",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "fr": {
-            "bullets": [
-              {
-                "description": "Engagez des experts de domaine pour enseigner à Watson le langage de votre secteur d'activité ou de votre organisation sans avoir besoin de codage ou de compétences techniques approfondis.",
-                "title": "Apprentissage par l'exemple"
-              },
-              {
-                "description": "Vous n'aurez besoin d'aucune ligne de code. Grâce à un environnement collaboratif multi-utilisateur et à une puissante interface utilisateur adaptés aux PME, vous pouvez construire facilement des modèles personnalisés sans être un expert du codage, ce que ne permettent pas les offres de la concurrence.",
-                "title": "Engagez vos experts"
-              },
-              {
-                "description": "C'est la seule offre du marché qui combine de puissantes fonctions d'annotation, d'entraînement et d'évaluation dans un seul et même service collaboratif.",
-                "title": "WKS, une solution de bout en bout"
-              },
-              {
-                "description": "Appliquez ce que vous avez enseigné à Watson à plusieurs applications en utilisant des modèles provenant de Watson Knowledge Studio dans Watson Discovery, Watson Natural Language Understanding et Watson Explorer.",
-                "title": "Utilisez-le partout"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Pourquoi utiliser Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Utilisez Watson pour obtenir des analyses significatives de texte non structuré sans codage",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Exploration de Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Manage",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "it": {
-            "bullets": [
-              {
-                "description": "Consenti a esperti del dominio di insegnare a Watson il linguaggio del settore o dell'organizzazione senza che siano richieste competenze tecniche approfondite o la scrittura di codice.",
-                "title": "Insegna per esempi"
-              },
-              {
-                "description": "Non è richiesta nemmeno una riga di codice. Con un ambiente collaborativo con più utenti e un'interfaccia utente efficace, gli esperti di settore possono facilmente creare modelli personalizzati senza che sia richiesta esperienza sul codice, a differenza delle offerte della concorrenza.",
-                "title": "Coinvolgi gli esperti"
-              },
-              {
-                "description": "È l'unica offerta sul mercato che combina le potenti funzionalità di annotazione, addestramento e valutazione in un singolo servizio centrato sulla collaborazione.",
-                "title": "WKS è end-to-end"
-              },
-              {
-                "description": "Applica quanto insegnato a Watson in più applicazioni utilizzando modelli di Watson Knowledge Studio in Watson Discovery, Watson Natural Language Understanding e Watson Explorer.",
-                "title": "Utilizza ovunque"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Perché dovresti utilizzare Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Utilizza Watson per intuire in modo significativo un testo non strutturato senza codifica",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Approfondimento tecnico su Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gestisci",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "ja": {
-            "bullets": [
-              {
-                "description": "対象分野の専門家が、深い技術スキルやコーディングなしに、業界や組織の言語を Watson に学習させることができるようにします。",
-                "title": "例による学習"
-              },
-              {
-                "description": "コードは 1 行の記述も必要ありません。 競合のオファリングとは異なり、マルチユーザーのコラボレーション環境と強力なユーザー・インターフェースにより、SME はコーディングの専門知識なしにカスタム・モデルを簡単に作成できます。",
-                "title": "専門家の参加"
-              },
-              {
-                "description": "アノテーション、トレーニング、評価の強力な機能を 1 つのコラボレーション中心のサービスにまとめた、市場で唯一のオファリングです。",
-                "title": "エンドツーエンドの WKS"
-              },
-              {
-                "description": "Watson Knowledge Studio のモデルを使用して複数のアプリケーションで Watson に学習させた内容を、Watson Discovery、Watson Natural Language Understanding、Watson Explorer に適用します。",
-                "title": "任意の場所で使用"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Watson Knowledge Studio を使用する理由",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Watson によって、コーディングなしで非構造化テキストから洞察を引き出せます",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio の技術的な詳細",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "ko": {
-            "bullets": [
-              {
-                "description": "심도 있는 기술 스킬이나 코딩 없이 산업이나 조직의 언어를 Watson에게 가르칠 수 있도록 도메인 주제 전문가에게 역량을 부여하십시오.",
-                "title": "예제로 가르치기"
-              },
-              {
-                "description": "단 한 줄의 코드도 필요하지 않습니다. 다중 사용자 협업 환경과 강력한 사용자 인터페이스로 SME는 경쟁사 오퍼링과는 다르게 코딩 전문 지식 없이 사용자 정의 모델을 쉽게 빌드할 수 있습니다.",
-                "title": "전문가 참여"
-              },
-              {
-                "description": "단일 협업 중심 서비스에 어노테이션, 훈련 및 평가의 강력한 기능을 결합한, 시장에서 유일한 오퍼링입니다.",
-                "title": "WKS는 모든 것을 포함합니다."
-              },
-              {
-                "description": "Watson Discovery, Watson Natural Language Understanding 및 Watson Explorer에서 Watson Knowledge Studio의 모델을 사용하여 다중 애플리케이션에서 Watson을 가르친 것을 적용하십시오.",
-                "title": "어디서나 사용"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Watson Knowledge Studio를 사용해야 하는 이유",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Watson을 사용하여 코딩 없이 비정형 텍스트로된 의미있는 인사이트 검색",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio 기술의 심도 깊은 이해",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "관리",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "pt-BR": {
-            "bullets": [
-              {
-                "description": "Capacite os especialistas no assunto para que ensinem ao Watson a linguagem de seu mercado ou organização sem precisar de codificação ou qualificação técnicas aprofundadas.",
-                "title": "Ensine pelo exemplo"
-              },
-              {
-                "description": "Não será necessária uma única linha de código. Com um ambiente colaborativo multiusuário e uma interface com o usuário poderosa, os especialistas no assunto podem criar modelos customizados sem qualquer conhecimento de codificação, ao contrário das ofertas da concorrência.",
-                "title": "Envolva seus especialistas"
-              },
-              {
-                "description": "É a única oferta no mercado que combina os poderosos recursos de anotação, treinamento e avaliação em um único serviço com foco em colaboração.",
-                "title": "O WKS é completo"
-              },
-              {
-                "description": "Aplique o que você ensinou ao Watson em diversos aplicativos, usando modelos do Watson Knowledge Studio no Watson Discovery, no Watson Natural Language Understanding e no Watson Explorer.",
-                "title": "Use em qualquer lugar"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Por que usar o Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "Use o Watson para descobrir insights significativos em texto não estruturado sem codificação",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Detalhamento técnico do Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gerenciar",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "zh-Hans": {
-            "bullets": [
-              {
-                "description": "授权领域主题专家向 Watson 教授您所在行业或组织的语言，而无需深入的技术技能或编码。",
-                "title": "通过示例教学"
-              },
-              {
-                "description": "您不需要单行代码。 凭借多用户协作环境和强大的用户界面，中小企业可以轻松构建定制模型，而无需任何编码专业知识，这一点与竞争性服务产品不同。",
-                "title": "吸引您的专家"
-              },
-              {
-                "description": "它是市场中唯一一款将注释、训练和评估等强大功能结合在单一协作型服务中的产品。",
-                "title": "WKS 是端到端的"
-              },
-              {
-                "description": "通过使用 Watson Discovery、Watson Natural Language Understanding 和 Watson Explorer 中 Watson Knowledge Studio 内的模型，将您教授给 Watson 的内容应用于多个应用程序。",
-                "title": "随处使用"
-              }
-            ],
-            "media": [
-              {
-                "caption": "为何应使用 Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "使用 Watson 无需编码即可从非结构化文本中发掘出有意义的洞察",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio 技术深层解析",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          },
-          "zh-Hant": {
-            "bullets": [
-              {
-                "description": "使領域主題專家能夠教授 Watson 您的產業或組織語言，而無需深入的技術，也無需撰寫程式碼。",
-                "title": "範例教學"
-              },
-              {
-                "description": "一行程式碼都不需要。 藉由多使用者協同環境和功能強大的使用者介面，SME 可以輕鬆建置自訂模型，無需任何程式碼撰寫專門知識，這和競爭供應項目不同。",
-                "title": "聘請專家"
-              },
-              {
-                "description": "這是市面上唯一將強大的註釋、訓練和評估功能組合到單一協同作業專注型服務的供應項目。",
-                "title": "WKS 是端對端產品"
-              },
-              {
-                "description": "透過將 Watson Knowledge Studio 中的模型用於 Watson Discovery、Watson Natural Language Understanding 和 Watson Explorer，在多個應用程式中套用您教授 Watson 的內容。",
-                "title": "在任何位置使用"
-              }
-            ],
-            "media": [
-              {
-                "caption": "為何應該使用 Watson Knowledge Studio",
-                "thumbnail_url": "http://img.youtube.com/vi/r2xYHW0iyZM/mqdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/r2xYHW0iyZM"
-              },
-              {
-                "caption": "使用 Watson 在非結構化文字中探索有意義的見解，而無需撰寫程式碼",
-                "thumbnail_url": "http://img.youtube.com/vi/byqpojcfDZM/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/byqpojcfDZM"
-              },
-              {
-                "caption": "Watson Knowledge Studio 技術深入研究",
-                "thumbnail_url": "http://img.youtube.com/vi/EQcEk2TX79c/maxresdefault.jpg",
-                "type": "embedvideo",
-                "url": "https://youtu.be/EQcEk2TX79c"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/watson-services/knowledge-studio"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "deprecation_doc_url": "https://cloud.ibm.com/docs/watson-knowledge-studio?topic=watson-knowledge-studio-migrating-from-watson-knowledge-studio-to-watsonxai-studio-with-watson-nlp",
-          "doc_url": "https://cloud.ibm.com/docs/services/watson-knowledge-studio/index.html",
-          "instructions_url": "https://cloud.ibm.com/docs/services/watson-knowledge-studio/index.html",
-          "terms_url": "https://www.ibm.com/support/customer/csol/terms/?id=i126-7955"
-        }
-      }
-    },
-    "name": "knowledge-studio",
-    "overview_ui": {
-      "de": {
-        "description": "Watson lernt die Sprache Ihres Fachgebiets.",
-        "display_name": "Knowledge Studio",
-        "long_description": "Watson lernt die Sprache Ihres Fachgebiets mithilfe von angepassten Modellen für maschinelles Lernen, die branchenspezifische Entitäten und Beziehungen in unstrukturiertem Text identifizieren. Modelle können in einer für interaktives Arbeiten konzipierten Umgebung, an der sowohl Entwickler als auch Fachbereichsexperten beteiligt sind, erstellt werden, ohne dass das Schreiben von Code erforderlich ist. Diese Modelle können in Watson Discovery, Watson Natural Language Understanding und Watson Explorer verwendet werden."
-      },
-      "en": {
-        "description": "Teach Watson the language of your domain.",
-        "display_name": "Knowledge Studio",
-        "long_description": "Teach Watson the language of your domain with custom machine learning models that identify entities and relationships unique to your industry in unstructured text. Build your models in a collaborative environment designed for both developers and domain experts, without needing to write code. Use the models in Watson Discovery, Watson Natural Language Understanding and Watson Explorer."
-      },
-      "es": {
-        "description": "Enseñe a Watson el lenguaje de su dominio.",
-        "display_name": "Knowledge Studio",
-        "long_description": "Enseñe a Watson el lenguaje de su dominio con modelos de aprendizaje automático personalizados que identifican entidades y relaciones exclusivas de su sector en texto no estructurado. Cree modelos en un entorno colaborativo diseñado para desarrolladores y expertos en la materia, sin necesidad de escribir código. Utilice los modelos de Watson Discovery, Watson Natural Language Understanding y Watson Explorer."
-      },
-      "fr": {
-        "description": "Enseignez à Watson le langage de votre domaine.",
-        "display_name": "Knowledge Studio",
-        "long_description": "Enseignez à Watson le langage de votre domaine grâce à des modèles d'apprentissage automatique personnalisés qui identifient les entités et les relations propres à votre secteur d'activité, dans un texte non structuré. Construisez vos modèles dans un environnement collaboratif conçu pour les développeurs et les experts de domaine, sans avoir à rédiger de code. Utilisez les modèles de Watson Discovery, Watson Natural Language Understanding et Watson Explorer."
-      },
-      "it": {
-        "description": "Insegna a Watson il linguaggio del dominio.",
-        "display_name": "Knowledge Studio",
-        "long_description": "Insegna a Watson il linguaggio del dominio con modelli di machine learning personalizzati che identificano le entità e le relazioni uniche per il proprio settore in un testo non strutturato. Crea i modelli in un ambiente collaborativo progettato per essere utilizzato sia dagli sviluppatori che dagli esperti del dominio, senza bisogno di scrivere codice. Utilizza i modelli in Watson Discovery, Watson Natural Language Understanding e Watson Explorer."
-      },
-      "ja": {
-        "description": "業界の知識を Watson に学習させます。",
-        "display_name": "Knowledge Studio",
-        "long_description": "非構造化テキスト内で業界に固有のエンティティーと関係を識別するカスタム機械学習モデルを使用して、業界の知識を Watson に学習させます。 開発者と業界の専門家の両者向けに設計されたコラボレーション環境で、コードの記述なしにモデルを構築します。 モデルは Watson Discovery、Watson Natural Language Understanding、Watson Explorer で使用します。"
-      },
-      "ko": {
-        "description": "Watson에게 사용자 도메인의 언어를 가르치십시오.",
-        "display_name": "Knowledge Studio",
-        "long_description": "Watson에게 비정형 텍스트로 사용자의 산업에 고유한 엔티티와 관계를 식별하는 사용자 정의 기계 학습 모델을 사용하여 도메인 언어를 학습시키십시오. 코드를 작성할 필요 없이 개발자와 도메인 전문가 모두를 위해 설계된 협업 환경에서 모델을 빌드하십시오. Watson Discovery, Watson Natural Language Understanding 및 Watson Explorer에서 해당 모델을 사용하십시오."
-      },
-      "pt-BR": {
-        "description": "Ensine ao Watson a linguagem de seu domínio.",
-        "display_name": "Knowledge Studio",
-        "long_description": "Ensine ao Watson a linguagem de seu domínio com modelos customizados de machine learning, que identificam entidades e relacionamentos exclusivos para seu mercado em texto não estruturado. Crie seus modelos em um ambiente colaborativo, projetado para os desenvolvedores e especialistas de domínio, sem a necessidade de gravar código. Use os modelos no Watson Discovery, no Watson Natural Language Understanding e no Watson Explorer."
-      },
-      "zh-Hans": {
-        "description": "教授 Watson 您所在领域的语言。",
-        "display_name": "Knowledge Studio",
-        "long_description": "使用定制机器学习模型教授 Watson 您所在领域的语言，这些模型可识别非结构化文本中您所在行业独有的实体和关系。 在专为开发人员和领域专家设计的协作环境中构建您的模型，而无需编写代码。 在 Watson Discovery、Watson Natural Language Understanding 和 Watson Explorer 中使用模型。"
-      },
-      "zh-Hant": {
-        "description": "教授 Watson 您的領域語言。",
-        "display_name": "Knowledge Studio",
-        "long_description": "藉由自訂機器學習模型來教授 Watson 您的領域語言，以識別非結構化文字中產業專屬的實體和關係。 在專為開發人員和領域專家設計的協同環境中建置模型，而不需要撰寫程式碼。 在 Watson Discovery、Watson Natural Language Understanding 和 Watson Explorer 中使用這些模型。"
-      }
-    },
-    "pricing_tags": [
-      "free",
-      "allow_internal_users",
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "IBM"
-    },
-    "tags": [
-      "allow_internal_users",
-      "au-syd",
-      "bromine",
-      "custom_kind_service",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "freesia",
-      "gc_migrate",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "ibm_release",
-      "jp-tok",
-      "lite",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "us-east",
-      "us-south",
-      "watson"
-    ],
-    "updated": "2026-08-04T13:09:01.788748778-04:00",
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5?complete=true",
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "_id": "f6f4f874-a218-4b6d-8d12-15039fc5ae6c",
-        "_rev": "3-b537b655ce3f47ef17a537b21f6193a7",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:f6f4f874-a218-4b6d-8d12-15039fc5ae6c",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/f6f4f874-a218-4b6d-8d12-15039fc5ae6c/%2A",
-        "complete": true,
-        "created": "2017-12-13T22:28:11Z",
-        "disabled": false,
-        "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
-          "us-east",
-          "us-south"
-        ],
-        "id": "f6f4f874-a218-4b6d-8d12-15039fc5ae6c",
-        "images": {
-          "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/f6f4f874-a218-4b6d-8d12-15039fc5ae6c/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/f6f4f874-a218-4b6d-8d12-15039fc5ae6c/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/f6f4f874-a218-4b6d-8d12-15039fc5ae6c/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/f6f4f874-a218-4b6d-8d12-15039fc5ae6c/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg"
-        },
-        "kind": "plan",
-        "metadata": {
-          "original_name": "free",
-          "plan": {
-            "allow_internal_users": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "cf_guid": {
-              "eu-de": "52091f4d-99c8-420f-abb2-7b3a7fb19ab6",
-              "us-south": "77c752ea-6026-484b-9820-4185a7b80895"
-            },
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "org",
-            "test_check_interval": 0
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": true,
-            "parameters": [],
-            "plan_updateable": true,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": false,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "ui": {
-            "side_by_side_index": 1,
-            "strings": {
-              "de": {
-                "bullets": [
-                  {
-                    "description": "1 Benutzer"
-                  },
-                  {
-                    "description": "5 GB Speicher inklusive"
-                  },
-                  {
-                    "description": "Bis zu 5 Arbeitsbereiche"
-                  },
-                  {
-                    "description": "30 Trainingseinheiten für maschinelles Lernen pro Monat"
-                  },
-                  {
-                    "description": "Bereitstellung von Modellen für Watson Natural Language Understanding"
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "description": "1 user"
-                  },
-                  {
-                    "description": "5 GB of storage included"
-                  },
-                  {
-                    "description": "Up to 5 workspaces"
-                  },
-                  {
-                    "description": "30 machine learning training sessions per month"
-                  },
-                  {
-                    "description": "Deploy models to Watson Natural Language Understanding"
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "description": "1 usuario"
-                  },
-                  {
-                    "description": "5 GB de almacenamiento incluidos"
-                  },
-                  {
-                    "description": "Hasta 5 espacios de trabajo"
-                  },
-                  {
-                    "description": "30 sesiones de entrenamiento del aprendizaje automático al mes"
-                  },
-                  {
-                    "description": "Desplegar modelos en Watson Natural Language Understanding"
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "description": "1 utilisateur"
-                  },
-                  {
-                    "description": "5 Go de stockage inclus"
-                  },
-                  {
-                    "description": "Jusqu'à 5 espaces de travail"
-                  },
-                  {
-                    "description": "30 sessions de formation sur l'apprentissage automatique par mois"
-                  },
-                  {
-                    "description": "Déploiement de modèles dans Watson Natural Language Understanding"
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "description": "1 utente"
-                  },
-                  {
-                    "description": "5 GB di storage inclusi"
-                  },
-                  {
-                    "description": "Fino a 5 spazi di lavoro"
-                  },
-                  {
-                    "description": "30 sessioni di formazione sull'apprendimento automatico al mese"
-                  },
-                  {
-                    "description": "Distribuisci i modelli in Watson Natural Language Understanding"
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "description": "1 ユーザー"
-                  },
-                  {
-                    "description": "5 GB のストレージ込み"
-                  },
-                  {
-                    "description": "最大 5 ワークスペース"
-                  },
-                  {
-                    "description": "機械学習のトレーニング・セッションは毎月 30 セッション"
-                  },
-                  {
-                    "description": "Watson Natural Language Understanding へのモデルのデプロイ"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "description": "사용자 1명"
-                  },
-                  {
-                    "description": "5GB 스토리지 포함"
-                  },
-                  {
-                    "description": "최대 5개의 작업 공간"
-                  },
-                  {
-                    "description": "월 30회의 머신 러닝 교육 세션"
-                  },
-                  {
-                    "description": "Watson Natural Language Understanding에 모델 배치"
-                  }
-                ]
-              },
-              "pt-BR": {
-                "bullets": [
-                  {
-                    "description": "1 usuário"
-                  },
-                  {
-                    "description": "Inclui 5 GB de armazenamento"
-                  },
-                  {
-                    "description": "Até 5 áreas de trabalho"
-                  },
-                  {
-                    "description": "30 sessões de treinamento de aprendizado de máquina por mês"
-                  },
-                  {
-                    "description": "Implemente modelos no Watson Natural Language Understanding"
-                  }
-                ]
-              },
-              "zh-Hans": {
-                "bullets": [
-                  {
-                    "description": "1 个用户"
-                  },
-                  {
-                    "description": "包含 5 GB 存储空间"
-                  },
-                  {
-                    "description": "最多 5 个工作空间"
-                  },
-                  {
-                    "description": "每月 30 次机器学习训练会话"
-                  },
-                  {
-                    "description": "将模型部署到 Watson Natural Language Understanding"
-                  }
-                ]
-              },
-              "zh-Hant": {
-                "bullets": [
-                  {
-                    "description": "1 個使用者"
-                  },
-                  {
-                    "description": "隨附 5 GB 儲存體"
-                  },
-                  {
-                    "description": "高達 5 個工作區"
-                  },
-                  {
-                    "description": "每月 30 個機器學習訓練課程"
-                  },
-                  {
-                    "description": "將模型部署至 Watson Natural Language Understanding"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "free",
-        "overview_ui": {
-          "de": {
-            "description": "Watson Knowledge Studio für einen unbegrenzten Zeitraum kostenfrei testen.",
-            "display_name": "Lite",
-            "long_description": "Watson Knowledge Studio für einen unbegrenzten Zeitraum kostenfrei testen."
-          },
-          "en": {
-            "description": "Try Watson Knowledge Studio for an unlimited time at no cost.",
-            "display_name": "Lite",
-            "long_description": "Try Watson Knowledge Studio for an unlimited time at no cost."
-          },
-          "es": {
-            "description": "Pruebe Watson Knowledge Studio por un tiempo ilimitado sin ningún coste.",
-            "display_name": "Lite",
-            "long_description": "Pruebe Watson Knowledge Studio por un tiempo ilimitado sin ningún coste."
-          },
-          "fr": {
-            "description": "Essayez gratuitement Watson Knowledge Studio pour un temps illimité.",
-            "display_name": "Simplifié",
-            "long_description": "Essayez gratuitement Watson Knowledge Studio pour un temps illimité."
-          },
-          "it": {
-            "description": "Prova Watson Knowledge Studio per un tempo illimitato senza alcun costo.",
-            "display_name": "Lite",
-            "long_description": "Prova Watson Knowledge Studio per un tempo illimitato senza alcun costo."
-          },
-          "ja": {
-            "description": "無期限に無料で Watson Knowledge Studio を試用します。",
-            "display_name": "ライト",
-            "long_description": "無期限に無料で Watson Knowledge Studio を試用します。"
-          },
-          "ko": {
-            "description": "비용 없이 무제한의 시간 동안 Watson Knowledge Studio를 사용해 보십시오. ",
-            "display_name": "라이트",
-            "long_description": "비용 없이 무제한의 시간 동안 Watson Knowledge Studio를 사용해 보십시오. "
-          },
-          "pt-BR": {
-            "description": "Experimente o Watson Knowledge Studio por um período ilimitado e gratuitamente.",
-            "display_name": "Lite",
-            "long_description": "Experimente o Watson Knowledge Studio por um período ilimitado e gratuitamente."
-          },
-          "zh-Hans": {
-            "description": "免费试用 Watson Knowledge Studio，不限时间。",
-            "display_name": "Lite",
-            "long_description": "免费试用 Watson Knowledge Studio，不限时间。"
-          },
-          "zh-Hant": {
-            "description": "免費試用 Watson Knowledge Studio 無限時間。",
-            "display_name": "小型",
-            "long_description": "免費試用 Watson Knowledge Studio 無限時間。"
-          }
-        },
-        "parent_id": "983ea9a2-0fec-4021-8b70-8da5373394e5",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5",
-        "pricing_tags": [
-          "free",
-          "allow_internal_users"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "gc_migrate",
-          "lite",
-          "watson",
-          "rc_compatible",
-          "ibm_release",
-          "ibm_created"
-        ],
-        "updated": "2024-07-01T19:28:54.776778168-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/f6f4f874-a218-4b6d-8d12-15039fc5ae6c?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Try Watson Knowledge Studio for an unlimited time at no cost.",
-        "displayName": "Lite",
-        "originalName": "free"
-      },
-      {
-        "_id": "895bdc2e-8e1d-457c-b5a0-b3dbdd025883",
-        "_rev": "2-e171c2f9c0968e2bf965316be5bc645a",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:895bdc2e-8e1d-457c-b5a0-b3dbdd025883",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/895bdc2e-8e1d-457c-b5a0-b3dbdd025883/%2A",
-        "complete": true,
-        "created": "2017-12-13T22:28:11Z",
-        "disabled": false,
-        "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
-          "us-east",
-          "us-south"
-        ],
-        "id": "895bdc2e-8e1d-457c-b5a0-b3dbdd025883",
-        "images": {
-          "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/895bdc2e-8e1d-457c-b5a0-b3dbdd025883/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/895bdc2e-8e1d-457c-b5a0-b3dbdd025883/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/895bdc2e-8e1d-457c-b5a0-b3dbdd025883/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/895bdc2e-8e1d-457c-b5a0-b3dbdd025883/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg"
-        },
-        "kind": "plan",
-        "metadata": {
-          "original_name": "premium",
-          "plan": {
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "cf_guid": {
-              "eu-de": "0267d375-2334-4427-a590-76ca73a45529",
-              "us-south": "d2b02714-0d22-493a-a97a-eaa119540bf4"
-            },
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "",
-            "test_check_interval": 0
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": true,
-            "parameters": [],
-            "plan_updateable": true,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": false,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "ui": {
-            "side_by_side_index": 3,
-            "strings": {
-              "de": {
-                "bullets": [
-                  {
-                    "description": "10 bis 100 Benutzer"
-                  },
-                  {
-                    "description": "100 GB bis 500 GB Speicher"
-                  },
-                  {
-                    "description": "Bis zu 100 Arbeitsbereiche"
-                  },
-                  {
-                    "description": "Unbegrenzte Anzahl an Trainingseinheiten für maschinelles Lernen"
-                  },
-                  {
-                    "description": "Bereitstellung von Modellen für Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Exportieren von Modellen zur Verwendung mit Watson Discovery und Watson Explorer"
-                  },
-                  {
-                    "description": "Nutzungs- und Trainingsdaten werden in einer isolierten Single-Tenant-Umgebung gespeichert"
-                  },
-                  {
-                    "description": "Hochverfügbarkeit und garantierte Verfügbarkeitszeit im Rahmen des Service Level Agreement"
-                  },
-                  {
-                    "description": "HIPAA-fähig in Washington DC (US-Osten) und Dallas (US-Süden)"
-                  },
-                  {
-                    "description": "'EU-unterstützt' in Frankfurt verfügbar (EU-DE)"
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "description": "10 to 100 users"
-                  },
-                  {
-                    "description": "100 GB to 500 GB of storage"
-                  },
-                  {
-                    "description": "Up to 100 workspaces"
-                  },
-                  {
-                    "description": "Unlimited machine learning training sessions"
-                  },
-                  {
-                    "description": "Deploy models to Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Export models for use with Watson Discovery and Watson Explorer"
-                  },
-                  {
-                    "description": "Usage and training data is stored in an isolated single-tenant environment"
-                  },
-                  {
-                    "description": "High availability and service level uptime guarantee"
-                  },
-                  {
-                    "description": "HIPAA Enabled in Washington DC (US-East) & Dallas (US-South)"
-                  },
-                  {
-                    "description": "EU Supported available in Frankfurt (EU-DE) "
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "description": "De 10 a 100 usuarios"
-                  },
-                  {
-                    "description": "De 100 GB a 500 GB de almacenamiento"
-                  },
-                  {
-                    "description": "Hasta 100 espacios de trabajo"
-                  },
-                  {
-                    "description": "Sesiones de entrenamiento del aprendizaje automático ilimitadas"
-                  },
-                  {
-                    "description": "Desplegar modelos en Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Exportar modelos para utilizarlos con Watson Discovery y Watson Explorer"
-                  },
-                  {
-                    "description": "Los datos de uso y entrenamiento se almacenan en un entorno de único arrendatario aislado"
-                  },
-                  {
-                    "description": "Alta disponibilidad y tiempo de funcionamiento de nivel de servicio garantizados"
-                  },
-                  {
-                    "description": "Habilitado para HIPAA en Washington DC (US-East) y Dallas (US-South)"
-                  },
-                  {
-                    "description": "Soporte de la UE disponible en Frankfurt (EU-DE)"
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "description": "De 10 à 100 utilisateurs"
-                  },
-                  {
-                    "description": "De 100 à 500 Go de stockage"
-                  },
-                  {
-                    "description": "Jusqu'à 100 espaces de travail"
-                  },
-                  {
-                    "description": "Sessions de formation à l'apprentissage automatique illimitées"
-                  },
-                  {
-                    "description": "Déploiement de modèles dans Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Exportation des modèles à utiliser avec Watson Discovery et Watson Explorer"
-                  },
-                  {
-                    "description": "Les données d'utilisation et d'entraînement sont stockées dans un environnement isolé à service exclusif"
-                  },
-                  {
-                    "description": "Garantie de haute disponibilité et de niveau de service"
-                  },
-                  {
-                    "description": "Loi HIPAA activée à Washington DC (USA-Est) et à Dallas (USA-Sud)"
-                  },
-                  {
-                    "description": "Prise en charge par l'UE disponible à Francfort (EU-DE)"
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "description": "Da 10 a 100 utenti"
-                  },
-                  {
-                    "description": "Da 100 GB a 500 GB di storage"
-                  },
-                  {
-                    "description": "Fino a 100 spazi di lavoro"
-                  },
-                  {
-                    "description": "Sessioni illimitate di formazione sull'apprendimento automatico"
-                  },
-                  {
-                    "description": "Distribuisci i modelli in Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Esporta modelli da utilizzare con Watson Discovery e Watson Explorer"
-                  },
-                  {
-                    "description": "I dati di utilizzo e di formazione sono archiviati in un ambiente single-tenant isolato"
-                  },
-                  {
-                    "description": "Elevata disponibilità e garanzia di tempo di attività di livello di servizio"
-                  },
-                  {
-                    "description": "HIPAA abilitato a Washington DC (Stati Uniti-Est) e Dallas (Stati Uniti-Sud)"
-                  },
-                  {
-                    "description": "Con supporto UE disponibile a Francoforte (EU-DE)"
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "description": "10 から 100 ユーザー"
-                  },
-                  {
-                    "description": "100 GB から 500 GB のストレージ"
-                  },
-                  {
-                    "description": "最大 100 ワークスペース"
-                  },
-                  {
-                    "description": "機械学習のトレーニング・セッションは無制限"
-                  },
-                  {
-                    "description": "Watson Natural Language Understanding へのモデルのデプロイ"
-                  },
-                  {
-                    "description": "Watson Discovery および Watson Explorer で使用するためのモデルのエクスポート"
-                  },
-                  {
-                    "description": "使用状況データとトレーニング・データは、隔離された単一のテナント環境に格納されます"
-                  },
-                  {
-                    "description": "高可用性とサービス・レベル稼働時間の保証"
-                  },
-                  {
-                    "description": "ワシントン DC (米国東部) & ダラス (米国南部) で HIPAA が有効"
-                  },
-                  {
-                    "description": "フランクフルト (EU-DE) で使用可能な EU サポート"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "description": "사용자 10~100명"
-                  },
-                  {
-                    "description": "100~500GB 스토리지"
-                  },
-                  {
-                    "description": "최대 100개의 작업 공간"
-                  },
-                  {
-                    "description": "무제한 머신 러닝 교육 세션"
-                  },
-                  {
-                    "description": "Watson Natural Language Understanding에 모델 배치"
-                  },
-                  {
-                    "description": "Watson Discovery 및 Watson Explorer에서 사용할 모델 내보내기"
-                  },
-                  {
-                    "description": "사용 및 교육 데이터가 격리된 단일 테넌트 환경에 저장됩니다."
-                  },
-                  {
-                    "description": "고가용성 및 서비스 레벨 가동 시간 보장"
-                  },
-                  {
-                    "description": "워싱턴 DC(미국-동부), 댈러스(미국-남부)에서 HIPAA 지원"
-                  },
-                  {
-                    "description": "프랑크푸르트에서 사용 가능한 EU 지원(EU-DE)"
-                  }
-                ]
-              },
-              "pt-BR": {
-                "bullets": [
-                  {
-                    "description": "De 10 a 100 usuários"
-                  },
-                  {
-                    "description": "De 100 GB a 500 GB de armazenamento"
-                  },
-                  {
-                    "description": "Até 100 áreas de trabalho"
-                  },
-                  {
-                    "description": "Sessões de treinamento de aprendizado de máquina ilimitadas"
-                  },
-                  {
-                    "description": "Implemente modelos no Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Exporte modelos para uso com o Watson Discovery e o Watson Explorer"
-                  },
-                  {
-                    "description": "Os dados de uso e de treinamento são armazenados em um ambiente isolado de locatário único"
-                  },
-                  {
-                    "description": "Garantia de alta disponibilidade e tempo de atividade de nível de serviço"
-                  },
-                  {
-                    "description": "HIPAA ativado em Washington DC (US-East) e Dallas (US-South)"
-                  },
-                  {
-                    "description": "Suporte da UE disponível em Frankfurt (EU-DE)"
-                  }
-                ]
-              },
-              "zh-Hans": {
-                "bullets": [
-                  {
-                    "description": "10 到 100 个用户"
-                  },
-                  {
-                    "description": "100 GB 到 500 GB 存储空间"
-                  },
-                  {
-                    "description": "最多 100 个工作空间"
-                  },
-                  {
-                    "description": "无限制的机器学习训练会话"
-                  },
-                  {
-                    "description": "将模型部署到 Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "导出模型以用于 Watson Discovery 和 Watson Explorer"
-                  },
-                  {
-                    "description": "使用数据和训练数据将存储在隔离的单租户环境中"
-                  },
-                  {
-                    "description": "高可用性和服务级别正常运行时间保证"
-                  },
-                  {
-                    "description": "在华盛顿特区（美国东部）和达拉斯（美国南部）启用 HIPAA"
-                  },
-                  {
-                    "description": "在法兰克福提供欧盟支持 (EU-DE)"
-                  }
-                ]
-              },
-              "zh-Hant": {
-                "bullets": [
-                  {
-                    "description": "10 到 100 個使用者"
-                  },
-                  {
-                    "description": "100 GB 到 500 GB 儲存體"
-                  },
-                  {
-                    "description": "高達 100 個工作區"
-                  },
-                  {
-                    "description": "無限制機器學習訓練課程"
-                  },
-                  {
-                    "description": "將模型部署至 Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "匯出模型以與 Watson Discovery 和 Watson Explorer 搭配使用"
-                  },
-                  {
-                    "description": "使用資料和訓練資料都儲存在隔離的單一租用戶環境中"
-                  },
-                  {
-                    "description": "高可用性及服務等級執行時間保證"
-                  },
-                  {
-                    "description": "華盛頓特區（美國東部）和達拉斯（美國南部）已啟用 HIPAA"
-                  },
-                  {
-                    "description": "在法蘭克福提供的歐盟支援 (EU-DE)"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "premium",
-        "overview_ui": {
-          "de": {
-            "description": "Unter https://ibm.biz/contact-wdc-premium können Sie einen Premium-Plan erwerben. ",
-            "display_name": "Premium",
-            "long_description": "Dieser Plan wird in einer virtuellen privaten Umgebung verwendet und bietet durch Datenisolation und End-to-End-Verschlüsselung ein hohes Sicherheitsniveau. Der Plan eignet sich ideal für professionelle Unternehmensanwender, die in großen Teams mit klar strukturierten Mitgliedsrollen und Workflows zusammenarbeiten. "
-          },
-          "en": {
-            "description": "To purchase a Premium plan, visit: https://ibm.biz/contact-wdc-premium",
-            "display_name": "Premium",
-            "long_description": "To purchase a Premium plan, visit: https://ibm.biz/contact-wdc-premium"
-          },
-          "es": {
-            "description": "Para poder comprar un plan Premium plan, visite: https://ibm.biz/contact-wdc-premium",
-            "display_name": "Premium",
-            "long_description": "Este plan opera en un entorno privado virtual, ofreciendo alta seguridad con aislamiento de datos y cifrados completos. Es un plan específico para profesionales de empresa que colaboran en grupos grandes con roles de miembros y flujos de trabajo bien definidos."
-          },
-          "fr": {
-            "description": "Pour acheter un abonnement Premium, visitez : https://ibm.biz/contact-wdc-premium",
-            "display_name": "Premium",
-            "long_description": "Cet abonnement prévoit un environnement privé virtuel offrant un haut niveau de sécurité par l'isolement des données et leur chiffrement de bout en bout. Il est idéal pour les utilisateurs professionnels collaborant dans un grand groupe avec des rôles et des enchaînements d'activités (workflows) clairement définis."
-          },
-          "it": {
-            "description": "Per acquistare un piano Premium, visitare: https://ibm.biz/contact-wdc-premium",
-            "display_name": "Premium",
-            "long_description": "Questo piano è operativo in un ambiente virtuale privato, e offre sicurezza elevata attraverso l'isolamento dei dati e la crittografia end-to-end. Questo piano è adatto principalmente a figure professionali aziendali, che collaborano in gruppi ampi con ruoli e flussi di lavoro ben definiti."
-          },
-          "ja": {
-            "description": "プレミアム・プランを購入するには、次を参照してください : https://ibm.biz/contact-wdc-premium",
-            "display_name": "プレミアム",
-            "long_description": "このプランは、データ分離の高度なセキュリティーおよびエンド・ツー・エンドの暗号化を提供する仮想プライベート環境で実行します。 プランは十分に定義されたメンバーの役割およびワークフローを持つ大規模なグループにおいての企業の専門家のコラボレーションに最適です。"
-          },
-          "ko": {
-            "description": "Premium 플랜을 구매하려면 https://ibm.biz/contact-wdc-premium을 방문하십시오.",
-            "display_name": "Premium",
-            "long_description": "이 플랜은 데이터 격리 및 엔드 투 엔드 암호화를 통해 높은 수준의 보안을 제공하는 가상화된 개인 환경에서 운영됩니다. 이 플랜은 구성원 역할과 워크플로우가 잘 정의된 대규모 그룹이 있는 엔터프라이즈 전문가 협업에 가장 적합합니다."
-          },
-          "pt-BR": {
-            "description": "Para adquirir o plano Premium, visite: https://ibm.biz/contact-wdc-premium",
-            "display_name": "Premium",
-            "long_description": "Este plano funciona em um ambiente virtual privado, oferecendo alta segurança por meio de isolamento de dados e criptografia de ponta a ponta. O plano é voltado para profissionais corporativos que colaboram em grandes grupos, com funções e fluxo de trabalho bem-definido."
-          },
-          "zh-Hans": {
-            "description": "要购买白金套餐，请访问：https://ibm.biz/contact-wdc-premium",
-            "display_name": "白金",
-            "long_description": "此套餐在虚拟专用环境中运行，通过数据隔离和端到端加密提供高安全性。此套餐最适合在具有明确定义的成员角色和工作流程的大型团队中进行协作的企业专业人员。"
-          },
-          "zh-Hant": {
-            "description": "若要購買高階方案，請造訪：https://ibm.biz/contact-wdc-premium",
-            "display_name": "高階",
-            "long_description": "此方案在虛擬專用環境中運作，透過資料隔離和端對端加密來提供高安全性。方案最適合以明確定義的成員角色和工作流程在大型群組中進行分工合作的企業專業人士。"
-          }
-        },
-        "parent_id": "983ea9a2-0fec-4021-8b70-8da5373394e5",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5",
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "eu_access",
-          "gc_migrate",
-          "hipaa",
-          "ibm_created",
-          "ibm_release",
-          "rc_compatible",
-          "watson"
-        ],
-        "updated": "2024-07-01T19:28:54.878373054-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/895bdc2e-8e1d-457c-b5a0-b3dbdd025883?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "To purchase a Premium plan, visit: https://ibm.biz/contact-wdc-premium",
-        "displayName": "Premium",
-        "originalName": "premium"
-      },
-      {
-        "_id": "08a3792c-438a-47c0-9482-f30f2e35c27f",
-        "_rev": "3-bff1d10d88be56b4d22a66b6d6bee7bb",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:08a3792c-438a-47c0-9482-f30f2e35c27f",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/08a3792c-438a-47c0-9482-f30f2e35c27f/%2A",
-        "complete": true,
-        "created": "2017-12-13T22:28:11Z",
-        "disabled": false,
-        "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
-          "us-east",
-          "us-south"
-        ],
-        "id": "08a3792c-438a-47c0-9482-f30f2e35c27f",
-        "images": {
-          "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/08a3792c-438a-47c0-9482-f30f2e35c27f/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/08a3792c-438a-47c0-9482-f30f2e35c27f/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/08a3792c-438a-47c0-9482-f30f2e35c27f/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg",
-          "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/08a3792c-438a-47c0-9482-f30f2e35c27f/artifacts/cache/57892d393ade9b8cd0b0fae1226725fb-public/knowledge-studio.svg"
-        },
-        "kind": "plan",
-        "metadata": {
-          "original_name": "standard",
-          "plan": {
-            "allow_internal_users": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "cf_guid": {
-              "eu-de": "49b18cd8-af4d-4d30-a1a6-97a3ce9e4e70",
-              "us-south": "7ac09784-310f-4953-a210-6fc4c988b236"
-            },
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "",
-            "test_check_interval": 0
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": true,
-            "parameters": [],
-            "plan_updateable": true,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": false,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "ui": {
-            "side_by_side_index": 2,
-            "strings": {
-              "de": {
-                "bullets": [
-                  {
-                    "description": "1 bis 10 Benutzer"
-                  },
-                  {
-                    "description": "10 GB bis 100 GB Speicher"
-                  },
-                  {
-                    "description": "Bis zu 50 Arbeitsbereiche"
-                  },
-                  {
-                    "description": "100 Trainingseinheiten für maschinelles Lernen pro Monat"
-                  },
-                  {
-                    "description": "Bereitstellung von Modellen direkt in Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Hochverfügbarkeit und garantierte Verfügbarkeitszeit im Rahmen des Service Level Agreement"
-                  },
-                  {
-                    "description": "Exportieren von Modellen zur Verwendung mit Watson Discovery und Watson Explorer"
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "description": "1 to 10 users"
-                  },
-                  {
-                    "description": "10 GB to 100 GB of storage"
-                  },
-                  {
-                    "description": "Up to 50 workspaces"
-                  },
-                  {
-                    "description": "Deploy models directly to Watson Natural Language Understanding and Watson Discovery services"
-                  },
-                  {
-                    "description": "Export models for use with Watson Explorer"
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "description": "De 1 a 10 usuarios"
-                  },
-                  {
-                    "description": "De 10 GB a 100 GB de almacenamiento"
-                  },
-                  {
-                    "description": "Hasta 50 espacios de trabajo"
-                  },
-                  {
-                    "description": "100 sesiones de entrenamiento del aprendizaje automático al mes"
-                  },
-                  {
-                    "description": "Desplegar modelos directamente en Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Alta disponibilidad y tiempo de funcionamiento de nivel de servicio garantizados"
-                  },
-                  {
-                    "description": "Exportar modelos para utilizarlos con Watson Discovery y Watson Explorer"
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "description": "1 à 10 utilisateurs"
-                  },
-                  {
-                    "description": "10 à 100 Go de stockage"
-                  },
-                  {
-                    "description": "Jusqu'à 50 espaces de travail"
-                  },
-                  {
-                    "description": "100 sessions de formation sur l'apprentissage automatique par mois"
-                  },
-                  {
-                    "description": "Déploiement des modèles directement dans Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Garantie de haute disponibilité et de niveau de service"
-                  },
-                  {
-                    "description": "Exportation des modèles à utiliser avec Watson Discovery et Watson Explorer"
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "description": "Da 1 a 10 utenti"
-                  },
-                  {
-                    "description": "Da 10 GB a 100 GB di storage"
-                  },
-                  {
-                    "description": "Fino a 50 spazi di lavoro"
-                  },
-                  {
-                    "description": "100 sessioni di formazione di apprendimento automatico al mese"
-                  },
-                  {
-                    "description": "Distribuisci i modelli direttamente a Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Elevata disponibilità e garanzia di tempo di attività di livello di servizio"
-                  },
-                  {
-                    "description": "Esporta modelli da utilizzare con Watson Discovery e Watson Explorer"
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "description": "1 から 10 人のユーザー"
-                  },
-                  {
-                    "description": "10 GB から 100 GB のストレージ"
-                  },
-                  {
-                    "description": "最大 50 ワークスペース"
-                  },
-                  {
-                    "description": "機械学習のトレーニング・セッションは毎月 100 セッション"
-                  },
-                  {
-                    "description": "モデルを Watson Natural Language Understanding に直接デプロイする"
-                  },
-                  {
-                    "description": "高可用性とサービス・レベル稼働時間の保証"
-                  },
-                  {
-                    "description": "Watson Discovery および Watson Explorer で使用するためのモデルのエクスポート"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "description": "사용자 1~10명"
-                  },
-                  {
-                    "description": "10~100GB 스토리지"
-                  },
-                  {
-                    "description": "최대 50개의 작업 공간"
-                  },
-                  {
-                    "description": "월 100회의 머신 러닝 교육 세션"
-                  },
-                  {
-                    "description": "Watson Natural Language Understanding에 직접 모델 배치"
-                  },
-                  {
-                    "description": "고가용성 및 서비스 레벨 가동 시간 보장"
-                  },
-                  {
-                    "description": "Watson Discovery 및 Watson Explorer에서 사용할 모델 내보내기"
-                  }
-                ]
-              },
-              "pt-BR": {
-                "bullets": [
-                  {
-                    "description": "De 1 a 10 usuários"
-                  },
-                  {
-                    "description": "De 10 GB a 100 GB de armazenamento"
-                  },
-                  {
-                    "description": "Até 50 áreas de trabalho"
-                  },
-                  {
-                    "description": "100 sessões de treinamento de aprendizado de máquina por mês"
-                  },
-                  {
-                    "description": "Implemente modelos diretamente no Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "Garantia de alta disponibilidade e tempo de atividade de nível de serviço"
-                  },
-                  {
-                    "description": "Exporte modelos para uso com o Watson Discovery e o Watson Explorer"
-                  }
-                ]
-              },
-              "zh-Hans": {
-                "bullets": [
-                  {
-                    "description": "1 到 10 个用户"
-                  },
-                  {
-                    "description": "10 GB 到 100 GB 存储空间"
-                  },
-                  {
-                    "description": "最多 50 个工作空间"
-                  },
-                  {
-                    "description": "每月 100 次机器学习训练会话"
-                  },
-                  {
-                    "description": "将模型直接部署到 Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "高可用性和服务级别正常运行时间保证"
-                  },
-                  {
-                    "description": "导出模型以用于 Watson Discovery 和 Watson Explorer"
-                  }
-                ]
-              },
-              "zh-Hant": {
-                "bullets": [
-                  {
-                    "description": "1 到 10 個使用者"
-                  },
-                  {
-                    "description": "10 GB 到 100 GB 儲存體"
-                  },
-                  {
-                    "description": "高達 50 個工作區"
-                  },
-                  {
-                    "description": "每月 100 個機器學習訓練課程"
-                  },
-                  {
-                    "description": "將模型直接部署至 Watson Natural Language Understanding"
-                  },
-                  {
-                    "description": "高可用性及服務等級執行時間保證"
-                  },
-                  {
-                    "description": "匯出模型以與 Watson Discovery 和 Watson Explorer 搭配使用"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "standard",
-        "overview_ui": {
-          "de": {
-            "description": "Dieser Plan wird in einer Multi-Tenant-Umgebung eingesetzt und bietet Kosteneffizienz für professioneller Anwender, die unabhängig oder in kleinen Gruppen arbeiten. ",
-            "display_name": "Standard",
-            "long_description": "Dieser Plan wird in einer Multi-Tenant-Umgebung eingesetzt und bietet Kosteneffizienz für professioneller Anwender, die unabhängig oder in kleinen Gruppen arbeiten. "
-          },
-          "en": {
-            "description": "This plan operates in a multi-tenant environment, which offers cost efficiency to professionals working independently or in small groups.",
-            "display_name": "Standard",
-            "long_description": "This plan operates in a multi-tenant environment, which offers cost efficiency to professionals working independently or in small groups."
-          },
-          "es": {
-            "description": "Este plan funciona en un entorno de multiservicio que ofrece eficiencia en el coste para profesionales que trabajan independientemente o en pequeños grupos.",
-            "display_name": "Estándar",
-            "long_description": "Este plan funciona en un entorno de multiservicio que ofrece eficiencia en el coste para profesionales que trabajan independientemente o en pequeños grupos."
-          },
-          "fr": {
-            "description": "Cet abonnement fonctionne dans un environnement à service partagé, qui offre une rentabilité économique aux professionnels indépendants ou travaillant dans de petits groupes.",
-            "display_name": "Standard",
-            "long_description": "Cet abonnement fonctionne dans un environnement à service partagé, qui offre une rentabilité économique aux professionnels indépendants ou travaillant dans de petits groupes."
-          },
-          "it": {
-            "description": "Questo piano è operativo in un ambiente multi-tenant, che garantisce efficienza dei costi a figure professionali che lavorano individualmente o in piccoli gruppi.",
-            "display_name": "Standard",
-            "long_description": "Questo piano è operativo in un ambiente multi-tenant, che garantisce efficienza dei costi a figure professionali che lavorano individualmente o in piccoli gruppi."
-          },
-          "ja": {
-            "description": "このプランでは、独自にまたは小規模グループで作業する専門家に対してコスト効率が良い、マルチテナント環境で動作します。",
-            "display_name": "標準",
-            "long_description": "このプランでは、独自にまたは小規模グループで作業する専門家に対してコスト効率が良い、マルチテナント環境で動作します。"
-          },
-          "ko": {
-            "description": "이 플랜은 멀티 테넌트 환경에서 운영되며 독립적으로 또는 소규모 그룹으로 일하는 전문가에게 비용 효율성을 제공합니다. ",
-            "display_name": "표준",
-            "long_description": "이 플랜은 멀티 테넌트 환경에서 운영되며 독립적으로 또는 소규모 그룹으로 일하는 전문가에게 비용 효율성을 제공합니다. "
-          },
-          "pt-BR": {
-            "description": "Este plano funciona em um ambiente de múltiplos locatários, que oferece custo reduzido para profissionais trabalhando de maneira independente ou em pequenos grupos.",
-            "display_name": "Standard",
-            "long_description": "Este plano funciona em um ambiente de múltiplos locatários, que oferece custo reduzido para profissionais trabalhando de maneira independente ou em pequenos grupos."
-          },
-          "zh-Hans": {
-            "description": "此套餐在多租户环境中运行，为独立工作或小组工作的专业人员提供成本效益。",
-            "display_name": "标准版",
-            "long_description": "此套餐在多租户环境中运行，为独立工作或小组工作的专业人员提供成本效益。"
-          },
-          "zh-Hant": {
-            "description": "此方案在多租戶環境中運作，獨立工作或在小組中工作的專業人士可以藉此提高成本效率。",
-            "display_name": "標準",
-            "long_description": "此方案在多租戶環境中運作，獨立工作或在小組中工作的專業人士可以藉此提高成本效率。"
-          }
-        },
-        "parent_id": "983ea9a2-0fec-4021-8b70-8da5373394e5",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5",
-        "pricing_tags": [
-          "paid",
-          "paid_only",
-          "allow_internal_users"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "gc_migrate",
-          "lite",
-          "watson",
-          "rc_compatible",
-          "ibm_release",
-          "ibm_created"
-        ],
-        "updated": "2024-07-01T19:28:55.024028811-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/08a3792c-438a-47c0-9482-f30f2e35c27f?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "This plan operates in a multi-tenant environment, which offers cost efficiency to professionals working independently or in small groups.",
-        "displayName": "Standard",
-        "originalName": "standard"
-      }
-    ],
-    "description": "Teach Watson the language of your domain.",
-    "longDescription": "Teach Watson the language of your domain with custom machine learning models that identify entities and relationships unique to your industry in unstructured text. Build your models in a collaborative environment designed for both developers and domain experts, without needing to write code. Use the models in Watson Discovery, Watson Natural Language Understanding and Watson Explorer.",
-    "displayName": "Knowledge Studio",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/983ea9a2-0fec-4021-8b70-8da5373394e5/artifacts/cache/f910c8648f9e7ac7b98028122ecbc508-public/WatsonKnowledgeStudio.svg",
-    "localSvgIcon": "/generated/icons/983ea9a2-0fec-4021-8b70-8da5373394e5.svg",
-    "localPngIcon": "/generated/icons/983ea9a2-0fec-4021-8b70-8da5373394e5.png"
   },
   {
     "_id": "a8f89634-261c-4832-8257-b25e04787988",
@@ -187248,1187 +185277,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot-consistency-group.svg",
     "localPngIcon": "/generated/icons/is.snapshot-consistency-group.png"
-  },
-  {
-    "_id": "bb6393bc-7d81-446b-9728-61b704f6eca5",
-    "_rev": "10-b742df2da02ccaae526c3971e609230b",
-    "active": true,
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:bb6393bc-7d81-446b-9728-61b704f6eca5",
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/%2A",
-    "complete": true,
-    "created": "2017-02-24T21:41:30Z",
-    "disabled": false,
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
-    "id": "bb6393bc-7d81-446b-9728-61b704f6eca5",
-    "images": {
-      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/c8389906f6ad6fd7c3d598cff21abb0f-public/WatsonNaturalLanguageUnderstanding.svg",
-      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/c8389906f6ad6fd7c3d598cff21abb0f-public/WatsonNaturalLanguageUnderstanding.svg",
-      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/c8389906f6ad6fd7c3d598cff21abb0f-public/WatsonNaturalLanguageUnderstanding.svg",
-      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/c8389906f6ad6fd7c3d598cff21abb0f-public/WatsonNaturalLanguageUnderstanding.svg"
-    },
-    "kind": "service",
-    "metadata": {
-      "callbacks": {
-        "broker_url": "https://gateway.watsonplatform.net/common-service-broker/v1/natural-language-understanding",
-        "service_monitor_api": "https://monitor-natural-language-understanding-service.mybluemix.net/"
-      },
-      "original_name": "natural-language-understanding",
-      "other": {
-        "iam": {
-          "key": "",
-          "supportedAttributes": [
-            {
-              "key": "region"
-            },
-            {
-              "key": "serviceInstance"
-            }
-          ],
-          "value": ""
-        },
-        "swagger_urls": [
-          {
-            "audience": "service",
-            "category": [
-              "ai"
-            ],
-            "extensions": [
-              "nlu-v1-curl-examples.json",
-              "nlu-v1-dotnet-standard-examples.json",
-              "nlu-v1-java-examples.json",
-              "nlu-v1-node-examples.json",
-              "nlu-v1-python-examples.json"
-            ],
-            "file": "natural-language-understanding-v1.json",
-            "i18n": {
-              "en": {
-                "name": "Natural Language Understanding"
-              }
-            },
-            "id": "natural-language-understanding",
-            "links": {
-              "docs": "/docs/natural-language-understanding?topic=natural-language-understanding-getting-started"
-            },
-            "sdk": true,
-            "subcollection": "natural-language-understanding"
-          }
-        ]
-      },
-      "rc_compatible": true,
-      "service": {
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "bindable": true,
-        "cf_guid": {
-          "au-syd": "2092ceea-f4cf-451e-b1ba-1a1e12304bd7",
-          "eu-de": "cc9fa05e-756e-4a78-850d-5e0a071290b4",
-          "eu-gb": "c4868e05-c545-4ecf-918f-2c8f8fd8e161",
-          "us-south": "038b44f7-5fe3-43b8-90cc-759422db9b65"
-        },
-        "custom_create_page_hybrid_enabled": false,
-        "extension": null,
-        "iam_compatible": true,
-        "parameters": [],
-        "plan_updateable": true,
-        "rc_provisionable": true,
-        "service_check_enabled": false,
-        "service_key_supported": true,
-        "state": "",
-        "test_check_interval": 0,
-        "type": "",
-        "unique_api_key": true,
-        "user_defined_service": null
-      },
-      "sla": {
-        "dr": {
-          "dr": false
-        },
-        "terms": "http://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-0025-07"
-      },
-      "ui": {
-        "strings": {
-          "de": {
-            "bullets": [
-              {
-                "description": "Semantische Merkmale von Texteingaben analysieren, wie z. B. Kategorien, Konzepte, Emotionen, Entitäten, Schlüsselwörter, Metadaten, Beziehungen, semantische Rollen und Stimmungen.",
-                "title": "Aussagekräftige Erkenntnisse"
-              },
-              {
-                "description": "Natural Language Understanding mit angepassten, mit Watson Knowledge Studio erstellten Modellen erweitern, die angepasste Entitäten und Beziehungen identifizieren können, die für Ihre Domäne spezifisch sind.",
-                "title": "Domänenanpassung"
-              },
-              {
-                "description": "Abhängig von den analysierten Merkmalen kann Unterstützung für eine Vielzahl verschiedener Sprachen bereitgestellt werden. Dazu gehören Englisch, Arabisch, Chinesisch (vereinfacht), Niederländisch, Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch, Russisch, Spanisch und Schwedisch - demnächst sind weitere Sprachen verfügbar.",
-                "title": "Unterstützung einer breite Palette von Sprachen"
-              },
-              {
-                "description": "Einsatz für verschiedene Anwendungsfälle, z. B. Inhaltsempfehlungen, Werbeoptimierung, Zielgruppensegmentierung, Analyse von Kundenwünschen, Data-Mining und viele weitere.",
-                "title": "Zahlreiche Anwendungsmöglichkeiten"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Verwalten",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "en": {
-            "bullets": [
-              {
-                "description": "Analyze semantic features of text input, including categories, concepts, emotion, entities, keywords, metadata, relations, semantic roles, and sentiment.",
-                "title": "Powerful Insights"
-              },
-              {
-                "description": "Extend Natural Language Understanding with custom models built on Watson Knowledge Studio that can identify custom entities and relations unique to your domain.",
-                "title": "Domain Customization"
-              },
-              {
-                "description": "Support a variety of languages depending on which features are being analyzed, including English, Arabic, Chinese (simplified), Dutch, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, and Swedish - with more to come.",
-                "title": "Broad Language Support"
-              },
-              {
-                "description": "Apply to various use cases, including content recommendation, advertising optimization, audience segmentation, voice-of-customer analysis, data mining, and more.",
-                "title": "Numerous Applications"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Manage",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "es": {
-            "bullets": [
-              {
-                "description": "Analice las características semánticas de entrada de texto, que incluyen categorías, conceptos, emoción, entidades, palabras clave, metadatos, relaciones, roles semánticos y sentimientos.",
-                "title": "Análisis en profundidad"
-              },
-              {
-                "description": "Amplíe la comprensión del lenguaje natural con modelos personalizados en Watson Knowledge Studio que pueden identificar entidades personalizadas y relaciones únicas con su dominio.",
-                "title": "Personalización de dominios"
-              },
-              {
-                "description": "Dé soporte a una amplia gama de idiomas en función de las características que se vayan analizar, incluidos inglés, árabe, chino (simplificado), holandés, francés, alemán, italiano, japonés, coreano, portugués, ruso, español, sueco y próximamente más idiomas.",
-                "title": "Amplio soporte de idiomas"
-              },
-              {
-                "description": "Aplíquelo a distintos casos de uso, que incluyen recomendación de contenido, optimización de publicidad, segmentación del público, análisis de voz del cliente, minería de datos, etc.",
-                "title": "Numerosas aplicaciones"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gestionar",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "fr": {
-            "bullets": [
-              {
-                "description": "Analysez les caractéristiques sémantiques du texte : catégories, concepts, émotions, entités, mots clés, métadonnées, relations, rôles sémantiques et sentiments.",
-                "title": "Des analyses puissantes"
-              },
-              {
-                "description": "Enrichissez Natural Language Understanding avec des modèles personnalisés construits à l'aide de Watson Knowledge Studio et permettant d'identifier les entités et les relations spécifiques à votre domaine.",
-                "title": "Personnalisation des domaines"
-              },
-              {
-                "description": "Prenez en charge diverses langues en fonction des caractéristiques analysées : anglais, arabe, chinois simplifié, néerlandais, français, allemand, italien, japonais, coréen, portugais, russe, espagnol et suédois - et d'autres langues à venir.",
-                "title": "Un vaste éventail de langues"
-              },
-              {
-                "description": "Adoptez divers cas d'utilisation : recommandation de contenus, optimisation publicitaire, segmentation d'audience, analyse de la voix du client, exploration de données, etc.",
-                "title": "De nombreuses applications"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Manage",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "it": {
-            "bullets": [
-              {
-                "description": "Analizza le caratteristiche semantiche del testo immesso, inclusi categorie, concetti, emozioni, entità, parole chiave, metadati, relazioni, ruoli semantici e opinioni.",
-                "title": "Insights approfonditi"
-              },
-              {
-                "description": "Estende Natural Language Understanding con modelli personalizzati creati in Watson Knowledge Studio che possono identificare entità e relazioni personalizzate uniche per il dominio dell'utente.",
-                "title": "Personalizzazione del dominio"
-              },
-              {
-                "description": "Supporta una varietà di lingue in base alle caratteristiche analizzate, inclusi inglese, arabo, cinese (semplificato), coreano, francese, giapponese, italiano, olandese, portoghese, russo, spagnolo, svedese e tedesco, e altre lingue in futuro",
-                "title": "Ampio supporto di lingue"
-              },
-              {
-                "description": "Si applica a numerosi casi d'uso, inclusi suggerimenti di contenuto, ottimizzazione della pubblicità, segmentazione dei destinatari, analisi voice-of-customer, data mining, e altro ancora.",
-                "title": "Grande numero di applicazioni"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gestisci",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "ja": {
-            "bullets": [
-              {
-                "description": "カテゴリー、概念、感情、エンティティー、キーワード、メタデータ、関係、意味役割、評判など、テキスト入力の意味特性を分析します。",
-                "title": "強力な洞察"
-              },
-              {
-                "description": "Watson Knowledge Studio でビルドされ、ドメインに固有のカスタムのエンティティーや関係を識別できるカスタム・モデルによって Natural Language Understanding を拡張します。",
-                "title": "ドメインのカスタマイズ"
-              },
-              {
-                "description": "英語、アラビア語、中国語 (簡体字)、オランダ語、フランス語、ドイツ語、イタリア語、日本語、韓国語、ポルトガル語、ロシア語、スペイン語、スウェーデン語など、分析されている機能に応じて多様な言語をサポートします。サポート対象の言語は今後さらに増える予定です。",
-                "title": "多くの言語サポート"
-              },
-              {
-                "description": "コンテンツの推奨、広告の最適化、オーディエンスのセグメンテーション、お客様の声の分析、データ・マイニングなど、多様なユース・ケースに適用できます。",
-                "title": "多数のアプリケーション"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "ko": {
-            "bullets": [
-              {
-                "description": "카테고리, 개념, 감정, 엔티티, 키워드, 메타데이터, 관계, 의미역 및 감성을 포함하여 텍스트 입력의 시맨틱 기능을 분석합니다.",
-                "title": "강력한 인사이트"
-              },
-              {
-                "description": "도메인에 고유한 사용자 정의 엔티티와 관계를 식별할 수 있는 Watson Knowledge Studio에 빌드된 사용자 정의 모델로 Natural Language Understanding을 확장하십시오.",
-                "title": "도메인 사용자 정의"
-              },
-              {
-                "description": "분석하는 기능에 따라 영어, 아랍어, 중국어(간자체), 네덜란드어, 프랑스어, 독일어, 이탈리아어, 일본어, 한국어, 포르투갈어, 러시아어, 스페인어, 스웨덴어(향후 더 많은 언어 추가 예정)를 포함한 다양한 언어를 지원합니다.",
-                "title": "폭넓은 언어 지원"
-              },
-              {
-                "description": "컨텐츠 권장, 광고 최적화, 청중 분류, 고객 음성 분석, 데이터 마이닝 등을 포함한 다양한 유스 케이스에 적용하십시오.",
-                "title": "수 많은 애플리케이션"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "관리",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "pt-BR": {
-            "bullets": [
-              {
-                "description": "Analise os recursos semânticos de entrada de texto, incluindo categorias, conceitos, emoções, entidades, palavras-chave, metadados, relações, funções semânticas e impressão.",
-                "title": "Insights poderosos"
-              },
-              {
-                "description": "Amplie o Natural Language Understanding com modelos customizados, construídos no Watson Knowledge Studio, que podem identificar entidades customizadas e relações exclusivas de seu domínio.",
-                "title": "Customização de domínio"
-              },
-              {
-                "description": "Suporte uma variedade de idiomas de acordo com quais recursos estão sendo analisados, incluindo inglês, árabe, chinês (simplificado), holandês, francês, alemão, italiano, japonês, coreano, português, russo, espanhol e sueco - além de outros idiomas futuros.",
-                "title": "Suporte abrangente de idioma"
-              },
-              {
-                "description": "Aplique em diversos casos de uso, incluindo recomendação de conteúdo, otimização de publicidade, segmentação de público, análise de voz do cliente, mineração de dados e muito mais.",
-                "title": "Diversos aplicativos"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gerenciamento",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "zh-Hans": {
-            "bullets": [
-              {
-                "description": "分析文本输入的语义特性，包括目录、概念、情绪、实体、关键字、元数据、关系、语义角色和观点。",
-                "title": "强大的洞察"
-              },
-              {
-                "description": "使用在 Watson Knowledge Studio 上构建的定制模型扩展 Natural Language Understanding，这些定制模型可识别您的领域所特有的定制实体和关系。",
-                "title": "领域定制"
-              },
-              {
-                "description": "支持各种语言（取决于要分析的功能），包括英语、阿拉伯语、简体中文、荷兰语、法语、德语、意大利语、日语、韩语、葡萄牙语、俄语、西班牙语和瑞典语 - 随后还会增加更多语言。",
-                "title": "广泛的语言支持"
-              },
-              {
-                "description": "适用于各种用例，包括内容推荐、广告优化、受众细分、客户反馈分析、数据挖掘等。",
-                "title": "众多应用程序"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          },
-          "zh-Hant": {
-            "bullets": [
-              {
-                "description": "分析文字輸入的語意功能，包括種類、概念、情緒、實體、關鍵字、meta 資料、關係、語意角色及觀感。",
-                "title": "功能強大的見解"
-              },
-              {
-                "description": "使用在 Watson Knowledge Studio 上建置的自訂模型來延伸 Natural Language Understanding 以識別自訂實體及領域特有的關係。",
-                "title": "領域自訂作業"
-              },
-              {
-                "description": "支援各種語言，取決於要分析的功能，包括英文、阿拉伯文、簡體中文、荷蘭文、法文、德文、義大利文、日文、韓文、葡萄牙文、俄文、西班牙文和瑞典文 - 以後還有更多。",
-                "title": "廣泛的語言支援"
-              },
-              {
-                "description": "套用至各種使用案例，包括內容建議、廣告最佳化、觀眾細分、客戶之聲分析、資料採礦等。",
-                "title": "許多應用程式"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/watson-services/natural_language_understanding"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "apidocs_url": "/apidocs/natural-language-understanding",
-          "deprecation_doc_url": "https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-migrating-to-watson-nlp",
-          "doc_url": "https://cloud.ibm.com/docs/services/natural-language-understanding/getting-started.html",
-          "instructions_url": "https://cloud.ibm.com/docs/services/natural-language-understanding/getting-started.html",
-          "registration_url": "https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fnatural-language-understanding%3FhideTours%3Dtrue%26&cm_sp=WatsonPlatform-WatsonPlatform-_-OnPageNavCTA-IBMWatson_NaturalLanguageUnderstanding-_-Watson_Developer_Website",
-          "terms_url": "https://www.ibm.com/terms/?id=i128-0025"
-        }
-      }
-    },
-    "name": "natural-language-understanding",
-    "overview_ui": {
-      "de": {
-        "description": "Mit diesem Service können Textanalysen durchgeführt werden, um Metadaten wie z.  B. Konzepte, Entitäten, Emotionen, Beziehungen, Stimmungen usw. aus Inhalten zu extrahieren.",
-        "display_name": "Natural Language Understanding",
-        "long_description": "Mit der erweiterten Funktionalität für die Verarbeitung natürlicher Sprache können Sie Text analysieren und Metadaten wie z.  B. Konzepte, Entitäten, Schlüsselwörter, Kategorien, Stimmungen, Emotionen, Beziehungen und semantische Rollen aus Inhalten extrahieren. Wenden Sie benutzerdefinierte Annotationsmodelle, die in Watson Knowledge Studio entwickelt wurden, an, um branchen- und domänenspezifische Entitäten und Beziehungen in unstrukturiertem Text mithilfe von Watson NLU zu identifizieren. "
-      },
-      "en": {
-        "description": "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment and more.",
-        "display_name": "Natural Language Understanding",
-        "long_description": "Use advanced NLP to analyze text and extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, and semantic roles. Apply custom annotation models developed using Watson Knowledge Studio to identify industry/domain specific entities and relations in unstructured text with Watson NLU."
-      },
-      "es": {
-        "description": "Analice texto para extraer metadatos de contenido como por ejemplo conceptos, entidades, emoción, relaciones, sentimiento y otros.",
-        "display_name": "Natural Language Understanding",
-        "long_description": "Utilice NLP para analizar texto y extraer metadatos de contenido como por ejemplo conceptos, entidades, palabras clave, categorías, sentimiento, emoción, relaciones y roles semánticos. Aplique modelos de anotación personalizados desarrollados mediante Watson Knowledge Studio para identificar relaciones y entidades específicas del sector/dominio en texto sin estructurar con Watson NLU."
-      },
-      "fr": {
-        "description": "Analysez du texte en vue de l'extraction des métadonnées du contenu, comme les concepts, les entités, les émotions, les relations, les sentiments et bien plus encore.",
-        "display_name": "Natural Language Understanding",
-        "long_description": "Utilisez le traitement avancé du langage naturel (NLP avancé) pour analyser du texte en vue de l'extraction des métadonnées du contenu, comme les concepts, les entités, les mots clés, les catégories, les sentiments, les émotions, les relations et les rôles sémantiques. Appliquez des modèles d'annotation personnalisés, développés à l'aide de Watson Knowledge Studio, pour identifier les relations et entités spécifiques au secteur d'activité/domaine dans du texte non structuré avec Watson NLU."
-      },
-      "it": {
-        "description": "Analizza il testo per estrarre i metadati dal contenuto come ad esempio concetti, entità,  sentimenti, relazioni, opinioni ed altro",
-        "display_name": "Natural Language Understanding",
-        "long_description": "Utilizzare NLP avanzato per analizzare il testo ed estrarre i metadati dal contenuto, ad esempio concetti, entità, parole chiave, categorie, opinioni, emozioni, relazioni e regole semantiche. Applicare i modelli di annotazione personalizzati sviluppati utilizzando Watson Knowledge Studio per identificare le entità specifiche di settore o di dominio e le relazioni nel testo non strutturato con Watson NLU."
-      },
-      "ja": {
-        "description": "テキストを分析し、コンテンツから概念、エンティティー、感情、関係、評判などのメタデータを抽出します。",
-        "display_name": "Natural Language Understanding",
-        "long_description": "高度な NLP により、テキスト分析、コンテンツからの概念、エンティティー、キーワード、カテゴリー、評判、感情、関係、意味役割などのメタデータの抽出が可能です。Watson Knowledge Studio で開発されたカスタム・アノテーション・モデルを適用して、Watson NLU により、非構造化テキスト内の業界固有/特定分野のエンティティーや関係を識別します。"
-      },
-      "ko": {
-        "description": "텍스트를 분석하여 컨텐츠에서 개념, 엔티티, 감정, 관계, 감성 등과 같은 메타데이터를 추출합니다.",
-        "display_name": "Natural Language Understanding",
-        "long_description": "고급 NLP를 사용하여 텍스트를 분석하고 컨텐츠(예: 개념, 엔티티, 카테고리, 감성, 감정, 관계, 시맨틱 역할)에서 메타 데이터를 추출합니다. Watson Knowledge Studio를 사용하여 개발된 사용자 정의 어노테이션 모델을 적용하여 Watson NLU로 비정형 텍스트에서 산업/영역별 엔티티 및 관계를 식별합니다."
-      },
-      "pt-BR": {
-        "description": "Analise textos para extrair metadados do conteúdo, tais como conceitos, entidades, emoção, relações, impressões e mais.",
-        "display_name": "Natural Language Understanding",
-        "long_description": "Use o NLP avançado para analisar o texto e extrair metadados do conteúdo, como conceitos, entidades, palavras-chave, categorias, sentimento, emoção, relações e funções semânticas. Aplique modelos de anotação customizados desenvolvidos usando o Watson Knowledge Studio para identificar entidades específicas de segmento de mercado/domínio e relações em texto não estruturado com o Watson NLU."
-      },
-      "zh-Hans": {
-        "description": "分析文本以从内容中抽取元数据，例如，概念、实体、情绪、关系、观点等。",
-        "display_name": "Natural Language Understanding",
-        "long_description": "使用高级 NLP 来分析文本，从内容中抽取元数据，例如，概念、实体、关键字、目录、观点、情绪、关系和语义角色等。应用通过 Watson Knowledge Studio 开发的定制注释模型，通过 Watson NLU 识别非结构化文本中特定于行业/领域的实体和关系。"
-      },
-      "zh-Hant": {
-        "description": "分析文字，以從內容中擷取概念、實體、情緒、關係、觀感等 meta 資料。",
-        "display_name": "Natural Language Understanding",
-        "long_description": "使用進階 NLP 來分析文字，並從內容中擷取概念、實體、關鍵字、種類、觀感、情緒、關係、語意角色等 meta 資料。套用使用 Watson Knowledge Studio 開發的自訂註釋模型，透過 Watson NLU 在非結構化文字中識別業界/領域特定的實體及關係。"
-      }
-    },
-    "pricing_tags": [
-      "free",
-      "lite",
-      "allow_internal_users",
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "IBM"
-    },
-    "tags": [
-      "allow_internal_users",
-      "apidocs_enabled",
-      "au-syd",
-      "bromine",
-      "custom_kind_service",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "free",
-      "freesia",
-      "gc_migrate",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "ibm_deprecated",
-      "jp-tok",
-      "lite",
-      "nlp",
-      "nlu",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_ibm",
-      "us-east",
-      "us-south",
-      "watson"
-    ],
-    "updated": "2026-08-04T13:12:33.168693683-04:00",
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5?complete=true",
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "_id": "e45ae97c-4140-4a9b-8db9-c419169e9be5",
-        "_rev": "2-0a7f76318189889abc6906d8c32668b6",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:e45ae97c-4140-4a9b-8db9-c419169e9be5",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/e45ae97c-4140-4a9b-8db9-c419169e9be5/%2A",
-        "complete": true,
-        "created": "2017-02-24T21:41:30Z",
-        "disabled": false,
-        "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
-          "us-east",
-          "us-south"
-        ],
-        "id": "e45ae97c-4140-4a9b-8db9-c419169e9be5",
-        "images": {
-          "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg",
-          "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg",
-          "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg",
-          "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg"
-        },
-        "kind": "plan",
-        "metadata": {
-          "original_name": "free",
-          "plan": {
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "cf_guid": {
-              "au-syd": "dd313b17-c040-4f1d-ab4b-2534d3b297a8",
-              "eu-de": "1f14ab8f-e726-4f66-ba4e-9bde93e8ede7",
-              "eu-gb": "43e46858-c9cd-44fe-aba8-55c9acda8710",
-              "us-south": "380045e7-2381-4d01-991b-95fd731d89ca"
-            },
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "org",
-            "test_check_interval": 0
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": true,
-            "parameters": null,
-            "plan_updateable": true,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": true,
-            "user_defined_service": null
-          },
-          "ui": {
-            "side_by_side_index": 1,
-            "strings": {
-              "de": {
-                "bullets": [
-                  {
-                    "description": "30.000 NLU-Elemente pro Monat"
-                  },
-                  {
-                    "description": "1 angepasstes Modell"
-                  },
-                  {
-                    "description": "Festgelegter Grenzwert für die API-Rate. Wenn Sie einen höheren Grenzwert für die API-Rate benötigen, lesen Sie die Informationen zum Standardplan. "
-                  },
-                  {
-                    "description": "Hinweis: Ein NLU-Element basiert auf der Anzahl der aufbereiteten Dateneinheiten und der Anzahl der angewendeten Aufbereitungsfeatures. Eine Dateneinheit besteht aus maximal 10.000 Zeichen. Beispiel: Das Extrahieren von Entitäten und Stimmungen aus 15.000 Zeichen mit Textdaten ergibt (2 Dateneinheiten * 2 Aufbereitungfeatures) = 4 NLU-Elemente. Ein angepasstes Modell bezieht sich auf ein Annotationsmodell, das mit Watson Knowledge Studio entwickelt wurde."
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "description": "30,000 NLU Items Per Month"
-                  },
-                  {
-                    "description": "1 Custom Model"
-                  },
-                  {
-                    "description": "Fixed API Rate Limit. See Standard plan for higher API Rate Limit"
-                  },
-                  {
-                    "description": "NOTE: A NLU item is based on the number of data units enriched and the number of enrichment features applied. A data unit is 10,000 characters or less. For example: extracting Entities and Sentiment from 15,000 characters of text is (2 Data Units * 2 Enrichment Features) = 4 NLU Items. A custom model refers to an annotation model developed with Watson Knowledge Studio."
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "description": "30.000 elementos de NLU al mes"
-                  },
-                  {
-                    "description": "1 modelo personalizado"
-                  },
-                  {
-                    "description": "Límite de velocidad por API fijo. Consulte el plan Standard para una límite de velocidad por API superior"
-                  },
-                  {
-                    "description": "NOTA: un elemento de NLU se basa en el número de unidades de datos mejoradas y en el número de características de mejoras aplicadas. Una unidad de datos consiste en 10.000 caracteres o menos. Por ejemplo: extraer entidades y sentimiento a partir de 15.000 caracteres de texto es igual a (2 unidades de datos * 2 características de mejora) = 4 elementos de NLU. Un modelo personalizado hace referencia a un modelo de anotación desarrollado con Watson Knowledge Studio."
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "description": "30 000 éléments NLU par mois"
-                  },
-                  {
-                    "description": "1 modèle personnalisé"
-                  },
-                  {
-                    "description": "Limite de débit d'API fixe. Pour un débit d'API plus élevé, voir l'abonnement Standard"
-                  },
-                  {
-                    "description": "REMARQUE: Un élément NLU est basé sur le nombre d'unités de données enrichies et sur le nombre de fonctions d'enrichissement appliquées. Une unité de données représente 10 000 caractères ou moins. Par exemple : l'extraction d'Entités et de Sentiments de 15 000 caractères de texte correspond à (2 unités de données * 2 fonctions d'enrichissement) = 4 éléments NLU. On appelle modèle personnalisé un modèle d'annotation développé via Watson Knowledge Studio."
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "description": "30.000 elementi NLU per mese"
-                  },
-                  {
-                    "description": "1 modello personalizzato"
-                  },
-                  {
-                    "description": "Limite di velocità API fisso. Vedere il piano Standard per un limite di velocità API maggiore"
-                  },
-                  {
-                    "description": "NOTA: Un elemento NLU si basa sul numero di unità di dati migliorate e sul numero di funzionalità di miglioramento applicate. Una unità di dati è composta da 10.000 caratteri o meno. Ad esempio: estrazione di Entità e Opinioni da 15.000 caratteri di testo (2 unità di dati * 2 funzionalità di miglioramento) = 4 elementi NLU. Un modello personalizzato fa riferimento ad un modello di annotazione sviluppato con Watson Knowledge Studio."
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "description": "1 カ月あたりに 30,000 件の NLU 項目"
-                  },
-                  {
-                    "description": "1 カスタム・モデル"
-                  },
-                  {
-                    "description": "固定された API レート制限。API レート制限を大きくするには、標準プランを参照してください。"
-                  },
-                  {
-                    "description": "注: NLU 項目は、拡張されるデータ単位の数と適用されるエンリッチメント機能の数に基づいています。 データ単位は 10,000 文字以下です。 例: 15,000 文字のテキストからのエンティティーおよび評判の抽出は (2 データ単位 * 2 エンリッチメント機能) = 4 NLU 項目となります。 カスタム・モデルは、Watson Knowledge Studio で開発されたアノテーション・モデルのことを指します。"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "description": "매달 30,000개의 NLU 항목"
-                  },
-                  {
-                    "description": "1개의 사용자 정의 모델"
-                  },
-                  {
-                    "description": "고정된 API Rate 제한입니다. 상위 API Rate 제한을 보려면 표준 플랜을 참조하십시오."
-                  },
-                  {
-                    "description": "참고: NLU 항목은 강화된 데이터 단위 수와 적용된 강화 기능 수를 기반으로 합니다. 데이터 단위는 10,000자 이하입니다. 예를 들어, 15,000자의 텍스트에서 엔티티와 감성을 추출하면 (2개의 데이터 단위 * 2개의 강화 기능) = 4개의 NLU 항목입니다. 사용자 정의 모델은 Watson Knowledge Studio에서 개발된 어노테이션 모델을 참조합니다."
-                  }
-                ]
-              },
-              "pt-BR": {
-                "bullets": [
-                  {
-                    "description": "30.000 itens NLU por mês"
-                  },
-                  {
-                    "description": "1 Modelo customizado"
-                  },
-                  {
-                    "description": "Limite de taxa de API fixa. Consulte o plano Padrão para limite de taxa de API superior"
-                  },
-                  {
-                    "description": "NOTA: um item NLU é baseado no número de unidades de dados enriquecidas e no número de recursos de enriquecimento usados. Uma unidade de dados é 10.000 caracteres ou menos. Por exemplo:  a extração de entidades e impressão de 15.000 caracteres de texto é (2 unidades de dados * 2 recursos de enriquecimento) = 4 itens de NLU. Um modelo customizado se refere a um modelo de anotação desenvolvido com o Watson Knowledge Studio."
-                  }
-                ]
-              },
-              "zh-Hans": {
-                "bullets": [
-                  {
-                    "description": "每月 30,000 个 NLU 项"
-                  },
-                  {
-                    "description": "1 个定制模型"
-                  },
-                  {
-                    "description": "固定 API 速率限制。请参阅标准套餐，以了解更高的 API 速率限制"
-                  },
-                  {
-                    "description": "注：NLU 项基于数据单元增加的数量和应用的增加功能部件数量。数据单元是 10,000 个字符或更少。 例如：从 15,000 个字符的文本中抽取的实体和观点是（2 个数据单元 * 2 个增加的功能部���） = 4 个 NLU 项。定制模型表示使用 Watson Knowledge Studio 开发的注释模型。"
-                  }
-                ]
-              },
-              "zh-Hant": {
-                "bullets": [
-                  {
-                    "description": "每月 30,000 個 NLU 項目"
-                  },
-                  {
-                    "description": "1 個自訂模型"
-                  },
-                  {
-                    "description": "固定 API 費率限制。請參閱標準方案以瞭解更高的 API 費率限制"
-                  },
-                  {
-                    "description": "附註：NLU 項目是根據已強化的資料單位數量以及已套用的強化特性數量而定。 一個資料單位為 10,000 個字元或更少。 例如：從 15,000 個文字字元中擷取的實體和觀感為 4 個 NLU 項目（2 個資料單位 * 2 個強化特性）。 自訂模型是指使用 Watson Knowledge Studio 開發的註釋模型。"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "free",
-        "overview_ui": {
-          "de": {
-            "description": "Der Lite-Plan bietet einen Einstieg mit 30.000 kostenfreien NLU-Elementen pro Monat. Darüber hinaus ermöglicht dieser Plan auch die Verwendung eines einzelnen angepassten Modells, das über Watson Knowledge Studio publiziert wird.",
-            "display_name": "Lite",
-            "long_description": "Der Lite-Plan bietet einen Einstieg mit 30.000 kostenfreien NLU-Elementen pro Monat. Darüber hinaus ermöglicht dieser Plan auch die Verwendung eines einzelnen angepassten Modells, das über Watson Knowledge Studio publiziert wird."
-          },
-          "en": {
-            "description": "The Lite plan gets you started with 30,000 NLU Items per month at no cost. This plan also enables use of one custom model published through Watson Knowledge Studio.",
-            "display_name": "Lite",
-            "long_description": "The Lite plan gets you started with 30,000 NLU Items per month at no cost. This plan also enables use of one custom model published through Watson Knowledge Studio."
-          },
-          "es": {
-            "description": "El plan Lite le inicia con 30.000 elementos de NLU al mes sin ningún coste. Este plan también habilita el uso de un modelo personalizado publicado a través de Watson Knowledge Studio.",
-            "display_name": "Lite",
-            "long_description": "El plan Lite le inicia con 30.000 elementos de NLU al mes sin ningún coste. Este plan también habilita el uso de un modelo personalizado publicado a través de Watson Knowledge Studio."
-          },
-          "fr": {
-            "description": "L'abonnement Simplifié vous permet de commencer gratuitement avec 30 000 éléments NLU par mois. Cet abonnement permet l'utilisation d'un modèle personnalisé publié par l'intermédiaire de Watson Knowledge Studio.",
-            "display_name": "Simplifié",
-            "long_description": "L'abonnement Simplifié vous permet de commencer gratuitement avec 30 000 éléments NLU par mois. Cet abonnement permet l'utilisation d'un modèle personnalisé publié par l'intermédiaire de Watson Knowledge Studio."
-          },
-          "it": {
-            "description": "Il piano Lite fornisce gratuitamente 30.000 elementi NLU al mese. Questo piano consente anche l'utilizzo di un modello personalizzato pubblicato mediante Watson Knowledge Studio.",
-            "display_name": "Lite",
-            "long_description": "Il piano Lite fornisce gratuitamente 30.000 elementi NLU al mese. Questo piano consente anche l'utilizzo di un modello personalizzato pubblicato mediante Watson Knowledge Studio."
-          },
-          "ja": {
-            "description": "ライト・プランでは、1 カ月あたりに 30,000 件の NLU 項目で無料で開始します。 このプランでは、Watson Knowledge Studio によって公開されているカスタム・モデルを 1 つ使用できます。",
-            "display_name": "ライト",
-            "long_description": "ライト・プランでは、1 カ月あたりに 30,000 件の NLU 項目で無料で開始します。 このプランでは、Watson Knowledge Studio によって公開されているカスタム・モデルを 1 つ使用できます。"
-          },
-          "ko": {
-            "description": "Lite 플랜을 이용하면 무료로 매달 30,000개의 NLU 항목에서 시작할 수 있습니다. 이 플랜을 이용하면 Watson Knowledge Studio를 통해 공개된 하나의 사용자 정의 모델을 사용할 수도 있습니다.",
-            "display_name": "Lite",
-            "long_description": "Lite 플랜을 이용하면 무료로 매달 30,000개의 NLU 항목에서 시작할 수 있습니다. 이 플랜을 이용하면 Watson Knowledge Studio를 통해 공개된 하나의 사용자 정의 모델을 사용할 수도 있습니다."
-          },
-          "pt-BR": {
-            "description": "O plano Lite apresenta 30.000 itens NLU por mês, sem custo. Este plano também permite utilizar um modelo customizado publicado através do Watson Knowledge Studio.",
-            "display_name": "Lite",
-            "long_description": "O plano Lite apresenta 30.000 itens NLU por mês, sem custo. Este plano também permite utilizar um modelo customizado publicado através do Watson Knowledge Studio."
-          },
-          "zh-Hans": {
-            "description": "Lite 套餐可让您每月免费使用 30,000 个 NLU 项。 此套餐还允许使用一个通过 Watson Knowledge Studio 发布的定制模型。",
-            "display_name": "Lite",
-            "long_description": "Lite 套餐可让您每月免费使用 30,000 个 NLU 项。 此套餐还允许使用一个通过 Watson Knowledge Studio 发布的定制模型。"
-          },
-          "zh-Hant": {
-            "description": "小型方案可讓您每月免費開始使用 30,000 個 NLU 項目。 此方案還可讓您使用一個透過 Watson Knowledge Studio 發佈的自訂模型。",
-            "display_name": "小型",
-            "long_description": "小型方案可讓您每月免費開始使用 30,000 個 NLU 項目。 此方案還可讓您使用一個透過 Watson Knowledge Studio 發佈的自訂模型。"
-          }
-        },
-        "parent_id": "bb6393bc-7d81-446b-9728-61b704f6eca5",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5",
-        "pricing_tags": [
-          "free",
-          "lite"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "gc_migrate"
-        ],
-        "updated": "2024-07-01T20:43:22.527680739-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/e45ae97c-4140-4a9b-8db9-c419169e9be5?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "The Lite plan gets you started with 30,000 NLU Items per month at no cost. This plan also enables use of one custom model published through Watson Knowledge Studio.",
-        "displayName": "Lite",
-        "originalName": "free"
-      },
-      {
-        "_id": "ab46454b-3073-498b-8557-36eb7fbdcee8",
-        "_rev": "2-44216fc08a76ab22e70b660dd27d2882",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:ab46454b-3073-498b-8557-36eb7fbdcee8",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ab46454b-3073-498b-8557-36eb7fbdcee8/%2A",
-        "complete": true,
-        "created": "2017-02-24T21:41:30Z",
-        "disabled": false,
-        "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
-          "us-east",
-          "us-south"
-        ],
-        "id": "ab46454b-3073-498b-8557-36eb7fbdcee8",
-        "images": {
-          "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg",
-          "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg",
-          "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg",
-          "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/66827db3f91a95421d6490afd5575a9a-public/icons/natural-language-understanding.svg"
-        },
-        "kind": "plan",
-        "metadata": {
-          "original_name": "standard",
-          "plan": {
-            "allow_internal_users": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "cf_guid": {
-              "au-syd": "81a89e69-79c9-4848-bc70-3bc96801cd59",
-              "eu-de": "bbb68cbc-38ea-4a02-bab9-6c51f9964d21",
-              "eu-gb": "20b4ec5c-8a62-4925-b90a-69ad1789e3c4",
-              "us-south": "213d4bef-586a-492e-967d-1f287b60f2ab"
-            },
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "",
-            "test_check_interval": 0
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": true,
-            "parameters": [],
-            "plan_updateable": true,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": true,
-            "user_defined_service": null
-          },
-          "ui": {
-            "side_by_side_index": 2,
-            "strings": {
-              "de": {
-                "bullets": [
-                  {
-                    "description": "Unbegrenzte Anzahl von NLU-Elementen pro Monat"
-                  },
-                  {
-                    "description": "Die Gebühren werden pro NLU-Element erhoben."
-                  },
-                  {
-                    "description": "Die Gebühren werden pro angepasstes Modell erhoben."
-                  },
-                  {
-                    "description": "HINWEIS: Ein NLU-Element basiert auf der Anzahl der aufbereiteten Dateneinheiten und der Anzahl der angewendeten Aufbereitungsfeatures. Eine Dateneinheit besteht aus maximal 10.000 Zeichen. Beispiel: Das Extrahieren von Entitäten und Stimmungen aus 15.000 Zeichen mit Textdaten ergibt (2 Dateneinheiten * 2 Aufbereitungfeatures) = 4 NLU-Elemente."
-                  },
-                  {
-                    "description": "HINWEIS: HIPAA-fähig in Washington DC (US-Ost) und Dallas (US-Süd)"
-                  },
-                  {
-                    "description": "HINWEIS: EU-Unterstützung in Frankfurt verfügbar (EU-DE)"
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Unlimited NLU Items Per Month"
-                  },
-                  {
-                    "description": "You will be charged per NLU Item"
-                  },
-                  {
-                    "description": "You will be charged per Custom Model"
-                  },
-                  {
-                    "description": "NOTE: A NLU item is based on the number of data units enriched and the number of enrichment features applied. A data unit is 10,000 characters or less. For example: extracting Entities and Sentiment from 15,000 characters of text is (2 Data Units * 2 Enrichment Features) = 4 NLU Items. "
-                  },
-                  {
-                    "description": "NOTE: HIPAA Enabled in Washington DC (US-East) & Dallas (US-South)"
-                  },
-                  {
-                    "description": "NOTE: EU Supported available in Frankfurt (EU-DE)"
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "description": "Número ilimitado de elementos de NLU por mes"
-                  },
-                  {
-                    "description": "Se le facturará por elemento de NLU"
-                  },
-                  {
-                    "description": "Se le facturará por modelo personalizado"
-                  },
-                  {
-                    "description": "NOTA: un elemento de NLU se basa en el número de unidades de datos mejoradas y en el número de características de mejoras aplicadas. Una unidad de datos consiste en 10.000 caracteres o menos. Por ejemplo: extraer entidades y sentimiento a partir de 15.000 caracteres de texto es igual a (2 unidades de datos * 2 características de mejora) = 4 elementos de NLU."
-                  },
-                  {
-                    "description": "NOTA: Habilitado para HIPAA en Washington DC (US-East) y Dallas (US-South)"
-                  },
-                  {
-                    "description": "NOTA: Soporte de la UE disponible en Frankfurt (EU-DE)"
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "description": "Eléments NLU illimités par mois"
-                  },
-                  {
-                    "description": "Vous serez facturé par élément NLU"
-                  },
-                  {
-                    "description": "Vous serez facturé par modèle personnalisé"
-                  },
-                  {
-                    "description": "REMARQUE : Un élément NLU est basé sur le nombre d'unités de données enrichies et sur le nombre de fonctions d'enrichissement appliquées. Une unité de données représente 10 000 caractères ou moins. Par exemple : l'extraction d'Entités et de Sentiments de 15 000 caractères de texte correspond à (2 unités de données * 2 fonctions d'enrichissement) = 4 éléments NLU."
-                  },
-                  {
-                    "description": "REMARQUE : HIPAA activé dans Washington DC (États-Unis Est) et Dallas (États-Unis Sud)"
-                  },
-                  {
-                    "description": "REMARQUE : pris en charge dans l'UE, disponible à Francfort (UE-ALL)"
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "description": "Elementi NLU illimitati per mese"
-                  },
-                  {
-                    "description": "L'addebito avverrà per elemento NLU"
-                  },
-                  {
-                    "description": "L'addebito avverrà per modello personalizzato"
-                  },
-                  {
-                    "description": "NOTA: Un elemento NLU si basa sul numero di unità di dati migliorate e sul numero di funzionalità di miglioramento applicate. Una unità di dati è composta da 10.000 caratteri o meno. Ad esempio: estrazione di Entità e Opinioni da 15.000 caratteri di testo (2 unità di dati * 2 funzionalità di miglioramento) = 4 elementi NLU."
-                  },
-                  {
-                    "description": "NOTA: HIPAA abilitato a Washington DC (Stati Uniti-Est) e Dallas (Stati Uniti-Sud)"
-                  },
-                  {
-                    "description": "NOTA: con supporto UE disponibile a Francoforte (EU-DE)"
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "description": "1 カ月当たりの NLU 項目数は無制限"
-                  },
-                  {
-                    "description": "NLU 項目単位で課金されます"
-                  },
-                  {
-                    "description": "カスタム・モデル単位で課金されます"
-                  },
-                  {
-                    "description": "注: NLU 項目は、拡張されるデータ単位の数と適用されるエンリッチメント機能の数に基づいています。 データ単位は 10,000 文字以下です。 例: 15,000 文字のテキストからのエンティティーおよび評判の抽出は (2 データ単位 * 2 エンリッチメント機能) = 4 NLU 項目となります。"
-                  },
-                  {
-                    "description": "注: ワシントン DC (米国東部) & ダラス (米国南部) で HIPAA が有効"
-                  },
-                  {
-                    "description": "注: フランクフルト (EU-DE) で使用可能な EU サポート"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "description": "월당 NLU 항목 무제한"
-                  },
-                  {
-                    "description": "NLU 항목당 요금이 부과됨"
-                  },
-                  {
-                    "description": "사용자 정의 모델당 요금이 부과됨"
-                  },
-                  {
-                    "description": "참고: NLU 항목은 강화된 데이터 단위 수와 적용된 강화 기능 수를 기반으로 합니다. 데이터 단위는 10,000자 이하입니다. 예를 들어, 15,000자의 텍스트에서 엔티티와 감성을 추출하면 (2개의 데이터 단위 * 2개의 강화 기능) = 4개의 NLU 항목입니다."
-                  },
-                  {
-                    "description": "참고: 워싱턴 DC(미국-동부), 댈러스(미국-남부)에서 HIPAA 지원"
-                  },
-                  {
-                    "description": "참고: 프랑크푸르트에서 사용 가능한 EU 지원(EU-DE)"
-                  }
-                ]
-              },
-              "pt-BR": {
-                "bullets": [
-                  {
-                    "description": "Itens ilimitados de NLU por mês"
-                  },
-                  {
-                    "description": "Você será cobrado por item de NLU"
-                  },
-                  {
-                    "description": "Você será cobrado por modelo customizado"
-                  },
-                  {
-                    "description": "NOTA: um item NLU é baseado no número de unidades de dados enriquecidas e no número de recursos de enriquecimento usados. Uma unidade de dados é 10.000 caracteres ou menos. Por exemplo: a extração de entidades e impressão de 15.000 caracteres de texto é (2 unidades de dados * 2 recursos de enriquecimento) = 4 itens de NLU."
-                  },
-                  {
-                    "description": "NOTA: HIPAA ativado em Washington DC (Leste dos EUA) e Dallas (Sul dos EUA)"
-                  },
-                  {
-                    "description": "NOTA: Suporte da UE disponível em Frankfurt (EU-DE)"
-                  }
-                ]
-              },
-              "zh-Hans": {
-                "bullets": [
-                  {
-                    "description": "每月无限个 NLU 项"
-                  },
-                  {
-                    "description": "按 NLU 项向您收费"
-                  },
-                  {
-                    "description": "按定制模型向您收费"
-                  },
-                  {
-                    "description": "注：NLU 项基于数据单元增加的数量和应用的增加功能部件数量。 数据单元是 10,000 个字符或更少。 例如：从 15,000 个字符的文本中抽取的实体和观点是（2 个数据单元 * 2 个增加的功能部件） = 4 个 NLU 项。"
-                  },
-                  {
-                    "description": "注：在华盛顿特区（美国东部）和达拉斯（美国南部）启用 HIPAA"
-                  },
-                  {
-                    "description": "注：在法兰克福提供欧盟支持 (EU-DE)"
-                  }
-                ]
-              },
-              "zh-Hant": {
-                "bullets": [
-                  {
-                    "description": "每月 NLU 項目數量無限制"
-                  },
-                  {
-                    "description": "我們會依 NLU 項目向您收費"
-                  },
-                  {
-                    "description": "我們會依自訂模型向您收費"
-                  },
-                  {
-                    "description": "附註：NLU 項目是根據已強化的資料單位數量以及已套用的強化特性數量而定。 一個資料單位為 10,000 個字元或更少。 例如：從 15,000 個文字字元中擷取的實體和觀感為 4 個 NLU 項目（2 個資料單位 * 2 個強化特性）。"
-                  },
-                  {
-                    "description": "附註：華盛頓特區（美國東部）和達拉斯（美國南部）已啟用 HIPAA"
-                  },
-                  {
-                    "description": "附註：在法蘭克福提供的歐盟支援 (EU-DE)"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "standard",
-        "overview_ui": {
-          "de": {
-            "description": "Dieser Plan lässt eine unbegrenzte Anzahl von NLU-Elementen zu und bietet darüber hinaus die Möglichkeit, mehrere über Watson Knowledge Studio publizierte angepasste Modelle zu verwenden.",
-            "display_name": "Standard",
-            "long_description": "Dieser Plan lässt eine unbegrenzte Anzahl von NLU-Elementen zu und bietet darüber hinaus die Möglichkeit, mehrere über Watson Knowledge Studio publizierte angepasste Modelle zu verwenden."
-          },
-          "en": {
-            "description": "-",
-            "display_name": "Standard",
-            "long_description": "-"
-          },
-          "es": {
-            "description": "Este plan permite el uso ilimitado de elementos de NLU y añade la capacidad de utilizar varios modelos personalizados mediante Watson Knowledge Studio.",
-            "display_name": "Estándar",
-            "long_description": "Este plan permite el uso ilimitado de elementos de NLU y añade la capacidad de utilizar varios modelos personalizados mediante Watson Knowledge Studio."
-          },
-          "fr": {
-            "description": "Cet abonnement autorise une utilisation illimitée d'éléments NLU et ajoute la possibilité d'utiliser plusieurs modèles personnalisés publiés par l'intermédiaire de Watson Knowledge Studio.",
-            "display_name": "Standard",
-            "long_description": "Cet abonnement autorise une utilisation illimitée d'éléments NLU et ajoute la possibilité d'utiliser plusieurs modèles personnalisés publiés par l'intermédiaire de Watson Knowledge Studio."
-          },
-          "it": {
-            "description": "Questo piano consente l'utilizzo illimitato di elementi NLU e in più fornisce la possibilità di utilizzare più modelli personalizzati pubblicati mediante Watson Knowledge Studio.",
-            "display_name": "Standard",
-            "long_description": "Questo piano consente l'utilizzo illimitato di elementi NLU e in più fornisce la possibilità di utilizzare più modelli personalizzati pubblicati mediante Watson Knowledge Studio."
-          },
-          "ja": {
-            "description": "このプランでは、NLU 項目の無制限の使用が可能で、Watson Knowledge Studio によって公開されているカスタム・モデルを複数ご利用になれます。",
-            "display_name": "標準",
-            "long_description": "このプランでは、NLU 項目の無制限の使用が可能で、Watson Knowledge Studio によって公開されているカスタム・モデルを複数ご利用になれます。"
-          },
-          "ko": {
-            "description": "이 플랜에서는 NUL 항목을 무제한으로 사용할 수 있으며 Watson Knowledge Studio를 통해 공개된 여러 사용자 정의 모델을 사용하는 기능을 추가합니다.",
-            "display_name": "Standard",
-            "long_description": "이 플랜에서는 NUL 항목을 무제한으로 사용할 수 있으며 Watson Knowledge Studio를 통해 공개된 여러 사용자 정의 모델을 사용하는 기능을 추가합니다."
-          },
-          "pt-BR": {
-            "description": "Este plano permite uso ilimitado de itens de NLU e inclui a capacidade de uso de diversos modelos customizados publicados através do Watson Knowledge Studio.",
-            "display_name": "Standard",
-            "long_description": "Este plano permite uso ilimitado de itens de NLU e inclui a capacidade de uso de diversos modelos customizados publicados através do Watson Knowledge Studio."
-          },
-          "zh-Hans": {
-            "description": "此套餐允许无限制的 NLU 项，并能够使用多个通过 Watson Knowledge Studio 发布的定制模型。",
-            "display_name": "标准",
-            "long_description": "此套餐允许无限制的 NLU 项，并能够使用多个通过 Watson Knowledge Studio 发布的定制模型。"
-          },
-          "zh-Hant": {
-            "description": "此方案容許的 NLU 項目數量不受限制，且新增能力可讓您使用多個透過 Watson Knowledge Studio 發佈的自訂模型。",
-            "display_name": "標準",
-            "long_description": "此方案容許的 NLU 項目數量不受限制，且新增能力可讓您使用多個透過 Watson Knowledge Studio 發佈的自訂模型。"
-          }
-        },
-        "parent_id": "bb6393bc-7d81-446b-9728-61b704f6eca5",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5",
-        "pricing_tags": [
-          "allow_internal_users",
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "apidocs_enabled",
-          "bromine",
-          "eu_access",
-          "freesia",
-          "gc_migrate",
-          "hipaa",
-          "ibm_created",
-          "ibm_dedicated_public",
-          "lite",
-          "nlp",
-          "nlu",
-          "rc_compatible",
-          "watson"
-        ],
-        "updated": "2024-07-01T20:43:23.328728858-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/ab46454b-3073-498b-8557-36eb7fbdcee8?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "-",
-        "displayName": "Standard",
-        "originalName": "standard"
-      }
-    ],
-    "description": "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment and more.",
-    "longDescription": "Use advanced NLP to analyze text and extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, and semantic roles. Apply custom annotation models developed using Watson Knowledge Studio to identify industry/domain specific entities and relations in unstructured text with Watson NLU.",
-    "displayName": "Natural Language Understanding",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/bb6393bc-7d81-446b-9728-61b704f6eca5/artifacts/cache/c8389906f6ad6fd7c3d598cff21abb0f-public/WatsonNaturalLanguageUnderstanding.svg",
-    "localSvgIcon": "/generated/icons/bb6393bc-7d81-446b-9728-61b704f6eca5.svg",
-    "localPngIcon": "/generated/icons/bb6393bc-7d81-446b-9728-61b704f6eca5.png"
   },
   {
     "_id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-netapp",
@@ -233255,12 +230103,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -244307,12 +241155,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -275334,7 +272182,7 @@
   },
   {
     "_id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
-    "_rev": "170-fb3e9f581f180b55695e37355bbe91c3",
+    "_rev": "171-2273e3b0464d706e0aebfeadccaf4aca",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838/%2A",
@@ -275582,6 +272430,7 @@
     "pricing_tags": [
       "allow_internal_users",
       "paid_only",
+      "block_internal_trial",
       "free",
       "lite",
       "subscription"
@@ -275592,6 +272441,7 @@
     "tags": [
       "allow_internal_users",
       "au-syd",
+      "block_internal_trial",
       "br-sao",
       "ca-tor",
       "custom_kind_service",
@@ -275610,7 +272460,7 @@
       "us-south",
       "watson"
     ],
-    "updated": "2026-06-25T02:18:04.624461561-04:00",
+    "updated": "2026-08-06T03:56:11.944335904-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -275618,7 +272468,7 @@
     "plans": [
       {
         "_id": "7b51595d-7db9-4bbe-b2fc-bed3f95d8727",
-        "_rev": "44-509a94f551415a60cdc244f388ec1226",
+        "_rev": "45-001554d607ceb0e7ef3199644ee100d1",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:7b51595d-7db9-4bbe-b2fc-bed3f95d8727",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/7b51595d-7db9-4bbe-b2fc-bed3f95d8727/%2A",
@@ -275729,7 +272579,8 @@
         "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
         "pricing_tags": [
           "allow_internal_users",
-          "paid_only"
+          "paid_only",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
@@ -275739,7 +272590,7 @@
           "rc_compatible",
           "watson"
         ],
-        "updated": "2026-06-11T08:15:55.001313455-04:00",
+        "updated": "2026-08-06T03:49:39.344678384-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/7b51595d-7db9-4bbe-b2fc-bed3f95d8727?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -275890,7 +272741,7 @@
       },
       {
         "_id": "26d01670-980d-4a62-afef-f091a20aaae3",
-        "_rev": "83-f77451d336f780b5173e8c657a5967ff",
+        "_rev": "84-0615eb2649bcbd7f785362d4d9436f80",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:26d01670-980d-4a62-afef-f091a20aaae3",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/26d01670-980d-4a62-afef-f091a20aaae3/%2A",
@@ -276010,7 +272861,8 @@
         "parent_id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
         "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
         "pricing_tags": [
-          "subscription"
+          "subscription",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
@@ -276021,7 +272873,7 @@
           "subscription",
           "watson"
         ],
-        "updated": "2026-06-11T08:16:33.761005012-04:00",
+        "updated": "2026-08-06T03:53:08.554884592-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/26d01670-980d-4a62-afef-f091a20aaae3?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -276032,7 +272884,7 @@
       },
       {
         "_id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
-        "_rev": "64-fb11daafd9f0e5d0c9988b94163cec96",
+        "_rev": "65-643b9cf6de5f72671b92e4701b601cfa",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d/%2A",
@@ -276148,7 +273000,8 @@
         "parent_id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
         "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
         "pricing_tags": [
-          "allow_internal_users"
+          "allow_internal_users",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
@@ -276158,7 +273011,7 @@
           "rc_compatible",
           "watson"
         ],
-        "updated": "2026-06-25T02:18:03.914218134-04:00",
+        "updated": "2026-08-06T03:51:16.614110852-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -276185,12 +273038,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -280467,12 +277320,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -285081,12 +281934,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
