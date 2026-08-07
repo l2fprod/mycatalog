@@ -774,6 +774,7 @@
   },
   {
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -781,8 +782,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -1365,6 +1365,13 @@
         "originalName": "mx2de-metal-96x768"
       },
       {
+        "id": "fa1df8b3-7ffd-43b2-a4d1-61d5d0bc7636",
+        "name": "mx3-metal-128x1024",
+        "description": "Pricing plan for mx3-metal-128x1024",
+        "displayName": "mx3-metal-128x1024",
+        "originalName": "mx3-metal-128x1024"
+      },
+      {
         "id": "5a3de409-5864-4f83-95bd-a417efaac70f",
         "name": "mx3-metal-16x128",
         "description": "Pricing plan for mx3-metal-16x128",
@@ -1384,6 +1391,13 @@
         "description": "Pricing plan for mx3-metal-64x512",
         "displayName": "mx3-metal-64x512",
         "originalName": "mx3-metal-64x512"
+      },
+      {
+        "id": "e7b02469-196f-45a0-a05e-d0ab64ea05f2",
+        "name": "mx3-metal-96x1024",
+        "description": "Pricing plan for mx3-metal-96x1024",
+        "displayName": "mx3-metal-96x1024",
+        "originalName": "mx3-metal-96x1024"
       },
       {
         "id": "63be34a6-9a34-4a96-af0a-cf55243c03d2",
@@ -3904,6 +3918,9 @@
   },
   {
     "geo_tags": [
+      "che01",
+      "eu-de",
+      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -3911,10 +3928,7 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south",
-      "che01",
-      "eu-de",
-      "us-east"
+      "us-south"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -5994,7 +6008,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6009,7 +6022,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6400,13 +6414,13 @@
     "geo_tags": [
       "us-south",
       "eu-gb",
-      "eu-de",
+      "au-syd",
+      "us-east",
       "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "au-syd",
-      "us-east",
+      "eu-de",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -6563,13 +6577,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9525,14 +9539,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10144,18 +10158,18 @@
   {
     "geo_tags": [
       "jp-osa",
+      "ca-tor",
+      "au-syd",
+      "eu-gb",
+      "br-sao",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
       "ca-mon",
-      "au-syd",
-      "in-che",
-      "in-mum",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao"
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -14995,8 +15009,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -16852,12 +16866,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18202,12 +18216,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -21406,12 +21420,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
