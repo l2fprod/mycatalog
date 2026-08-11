@@ -774,7 +774,6 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -782,7 +781,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -3918,9 +3918,6 @@
   },
   {
     "geo_tags": [
-      "che01",
-      "eu-de",
-      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -3928,7 +3925,10 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "che01",
+      "eu-de",
+      "us-east"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -5938,6 +5938,7 @@
       "eu-de",
       "eu-es",
       "eu-gb",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "par01",
@@ -5973,6 +5974,7 @@
       "eu-gb",
       "hipaa",
       "ibm_created",
+      "in-che",
       "jp-osa",
       "jp-tok",
       "paid_only",
@@ -6008,6 +6010,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6021,9 +6025,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd",
-      "che01"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6412,16 +6414,16 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
-      "au-syd",
-      "us-east",
+      "fra02",
       "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "fra02"
+      "us-south",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6577,13 +6579,13 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd"
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7887,15 +7889,23 @@
       "cbr_enabled",
       "custom_kind_service",
       "dev_ops",
+      "email",
+      "email delivery",
       "eu_access",
       "eu-de",
       "eu-es",
       "eu-gb",
+      "event",
+      "event notification",
+      "event notifications",
+      "event routing",
       "event-notifications",
+      "events",
       "free",
       "fs_ready",
       "iam_compatible",
       "ibm_created",
+      "ibm_support",
       "in-che",
       "in-mum",
       "jp-osa",
@@ -7904,6 +7914,7 @@
       "paid",
       "paid_only",
       "rc_compatible",
+      "sendgrid",
       "service_endpoint_supported",
       "support_ibm",
       "us-east",
@@ -7926,7 +7937,7 @@
         "originalName": "standard"
       }
     ],
-    "description": "Deliver Email, SMS, Webhooks and Push Notifications for your IBM Cloud service events.",
+    "description": "Transactional email via SMTP relay, plus event-driven automation and alerting across webhooks, Code Engine, SMS, Slack, and more. One centralized service. Rapid, no-code routing.",
     "longDescription": "IBM Cloud® Event Notifications is an event notification routing service that notifies you to critical events that occur in your IBM Cloud account or triggers automated actions by using webhooks. You can filter and route event notifications from IBM Cloud services to Email, SMS, Webhooks and Push Notifications.",
     "displayName": "Event Notifications",
     "imageUrl": "https://us-south.event-notifications.cloud.ibm.com/eventnotifications-broker/images/app-icon.svg",
@@ -10157,19 +10168,19 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
-      "ca-tor",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-mon",
       "eu-de",
       "us-south",
-      "in-che"
+      "au-syd",
+      "eu-gb",
+      "in-che",
+      "in-mum",
+      "ca-tor",
+      "br-sao",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15009,8 +15020,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -18216,12 +18227,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19529,6 +19540,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -19570,8 +19582,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -21334,12 +21345,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
