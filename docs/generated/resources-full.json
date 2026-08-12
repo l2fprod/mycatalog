@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "images": {
@@ -98600,7 +98600,7 @@
         "children": [
           {
             "_id": "databases-for-mysql-standard-gen2:eu-de",
-            "_rev": "13-0b9dede8c77fc0480cb780a131e5b5f3",
+            "_rev": "14-8f25fd8a76076e83124602ed4c4608ad",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Aeu-de",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:eu-de/%2A",
@@ -98628,7 +98628,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -98916,7 +98917,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-06T13:41:07.996677507-04:00",
+            "updated": "2026-08-12T00:39:16.709703051-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:eu-de?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -99248,7 +99249,7 @@
           },
           {
             "_id": "databases-for-mysql-standard-gen2:us-east",
-            "_rev": "12-4b81eaa51107740d5deb6eba66f43504",
+            "_rev": "13-74d6b0f7644dc8928084007b362eb723",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Aus-east",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:us-east/%2A",
@@ -99276,7 +99277,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -99564,7 +99566,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-21T08:59:42.554195257-04:00",
+            "updated": "2026-08-12T00:39:52.685828534-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:us-east?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -108481,7 +108483,7 @@
         "children": [
           {
             "_id": "databases-for-redis-standard-gen2:ca-mon",
-            "_rev": "13-0447700b2bbff7cb3f7ca2e425295fcb",
+            "_rev": "14-3165f825a88ae6862f8449a5d7a22847",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:ca-mon/%2A",
@@ -108653,7 +108655,7 @@
                       "is_optional": false,
                       "maximum_gb": 12000,
                       "minimum_gb": 30,
-                      "step_size_gb": 3,
+                      "step_size_gb": 1,
                       "storage_class": {
                         "id": "icd-block-gold",
                         "iops_per_allocation_gb": 10
@@ -108790,7 +108792,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-21T16:07:29.499846695-04:00",
+            "updated": "2026-08-12T06:05:14.509665515-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -108798,7 +108800,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:eu-de",
-            "_rev": "9-7599584e8ba83d8e0d6a8e66fc5ccc78",
+            "_rev": "10-86a1c69603e6075ecda92a6a7118a5d1",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aeu-de",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-de/%2A",
@@ -108970,7 +108972,7 @@
                       "is_optional": false,
                       "maximum_gb": 12000,
                       "minimum_gb": 30,
-                      "step_size_gb": 3,
+                      "step_size_gb": 1,
                       "storage_class": {
                         "id": "icd-block-gold",
                         "iops_per_allocation_gb": 10
@@ -109107,7 +109109,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-06T13:54:45.956558672-04:00",
+            "updated": "2026-08-12T06:05:28.844561835-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-de?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -109115,7 +109117,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:in-che",
-            "_rev": "12-d3be5ff30594895e0b53089b5cf66385",
+            "_rev": "13-dcc858c3461e802a8586a140addfe949",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-che/%2A",
@@ -109287,7 +109289,7 @@
                       "is_optional": false,
                       "maximum_gb": 12000,
                       "minimum_gb": 30,
-                      "step_size_gb": 3,
+                      "step_size_gb": 1,
                       "storage_class": {
                         "id": "icd-block-gold",
                         "iops_per_allocation_gb": 10
@@ -109424,7 +109426,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-21T16:04:17.673705235-04:00",
+            "updated": "2026-08-12T06:06:09.630099345-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -109432,7 +109434,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:in-mum",
-            "_rev": "12-20f11301e794deda825aef8533522305",
+            "_rev": "13-f84ab9c97e8758475180439ed39ba1e4",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-mum/%2A",
@@ -109604,7 +109606,7 @@
                       "is_optional": false,
                       "maximum_gb": 12000,
                       "minimum_gb": 30,
-                      "step_size_gb": 3,
+                      "step_size_gb": 1,
                       "storage_class": {
                         "id": "icd-block-gold",
                         "iops_per_allocation_gb": 10
@@ -109741,7 +109743,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-21T16:07:39.255651354-04:00",
+            "updated": "2026-08-12T06:06:26.83113291-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -109749,7 +109751,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:us-east",
-            "_rev": "9-d0e89aa73f85fd0a23dd97872826e85d",
+            "_rev": "10-c191a0ef1900f2204e81aadfcb90089d",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aus-east",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-east/%2A",
@@ -109921,7 +109923,7 @@
                       "is_optional": false,
                       "maximum_gb": 12000,
                       "minimum_gb": 30,
-                      "step_size_gb": 3,
+                      "step_size_gb": 1,
                       "storage_class": {
                         "id": "icd-block-gold",
                         "iops_per_allocation_gb": 10
@@ -110058,7 +110060,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-20T12:31:21.159988821-04:00",
+            "updated": "2026-08-12T06:06:41.06774788-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-east?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -113881,16 +113883,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "eu-es",
-      "us-south",
       "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "fra02"
+      "au-syd",
+      "us-east",
+      "fra02",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -156734,19 +156736,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "in-mum",
+      "ca-tor",
+      "ca-mon",
+      "au-syd",
+      "eu-gb",
+      "br-sao",
+      "in-che",
+      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "ca-mon",
       "eu-de",
-      "us-south",
-      "au-syd",
-      "in-che",
-      "jp-osa",
-      "eu-gb",
-      "br-sao",
-      "in-mum"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -241740,12 +241742,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -273623,12 +273625,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -279388,12 +279390,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
@@ -282519,12 +282521,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
