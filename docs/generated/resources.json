@@ -603,14 +603,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -774,15 +774,15 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -3918,9 +3918,6 @@
   },
   {
     "geo_tags": [
-      "che01",
-      "eu-de",
-      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -3928,7 +3925,10 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "che01",
+      "eu-de",
+      "us-east"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -6414,6 +6414,8 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "eu-es",
       "us-south",
       "eu-gb",
@@ -6421,8 +6423,6 @@
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "au-syd",
-      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -10168,19 +10168,19 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
       "in-che",
-      "ca-tor",
-      "ca-mon",
-      "eu-gb"
+      "jp-osa",
+      "eu-gb",
+      "br-sao",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -21662,12 +21662,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",

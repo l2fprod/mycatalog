@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "images": {
@@ -11699,15 +11699,15 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -47865,9 +47865,6 @@
     "created": "2014-06-03T07:04:12Z",
     "disabled": false,
     "geo_tags": [
-      "che01",
-      "eu-de",
-      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -47875,7 +47872,10 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "che01",
+      "eu-de",
+      "us-east"
     ],
     "id": "cloudant",
     "images": {
@@ -103024,6 +103024,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -103034,8 +103035,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -113881,6 +113881,8 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "eu-es",
       "us-south",
       "eu-gb",
@@ -113888,8 +113890,6 @@
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "au-syd",
-      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -133883,7 +133883,7 @@
       },
       {
         "_id": "eventstreams-gen2-enterprise",
-        "_rev": "59-d15af7cae97ea91378a70b1e1b21952c",
+        "_rev": "60-752fdcc49ccf75dca9419c3fc85a5e32",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:eventstreams-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise/%2A",
@@ -133981,7 +133981,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-07-20T12:37:38.753046292-04:00",
+        "updated": "2026-08-11T09:58:17.927657362-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -156734,19 +156734,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
       "in-che",
-      "ca-tor",
-      "ca-mon",
-      "eu-gb"
+      "jp-osa",
+      "eu-gb",
+      "br-sao",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -218154,7 +218154,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "450-4aab8abf7270950bd722222e0eb59c88",
+    "_rev": "451-8ca6a19359879dfe90b2740cbae43ffb",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -218652,7 +218652,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-08-10T15:11:29.730212398-04:00",
+    "updated": "2026-08-11T09:36:16.630654706-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -279388,12 +279388,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south",
-          "au-syd",
-          "ca-tor"
+          "us-south"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
@@ -282519,12 +282519,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
@@ -286195,10 +286195,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
