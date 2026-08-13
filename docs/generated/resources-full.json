@@ -8531,14 +8531,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -105139,6 +105139,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -105149,8 +105150,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -113883,16 +113883,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "au-syd",
       "us-east",
       "fra02",
-      "eu-es"
+      "eu-es",
+      "us-south",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -156736,19 +156736,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "in-mum",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
       "in-che",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-mon",
       "eu-de",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "in-mum",
+      "ca-tor",
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -183713,7 +183713,7 @@
   },
   {
     "_id": "01037c41-adce-4bb5-8b45-0c06004916c4",
-    "_rev": "51-d6f2cca933d9f2f4cb4f1e9763d754aa",
+    "_rev": "52-5d6f750edf916977a7998e496052d392",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:01037c41-adce-4bb5-8b45-0c06004916c4",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4/%2A",
@@ -184270,7 +184270,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-28T03:20:55.379741445-04:00",
+    "updated": "2026-08-12T09:53:55.401530009-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -184278,7 +184278,7 @@
     "plans": [
       {
         "_id": "0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd",
-        "_rev": "10-8aa1663ce59b635f7717f4d51605027a",
+        "_rev": "11-e416f6135d344958628feda1b8a4a655",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd/%2A",
@@ -184516,7 +184516,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2025-07-31T12:03:30.929192174-04:00",
+        "updated": "2026-08-12T09:53:55.452197076-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -184527,7 +184527,7 @@
       },
       {
         "_id": "068074b2-39e1-4e02-86c1-f24b444ea0c4",
-        "_rev": "10-a15c487ce07284e00886e1303bf278f3",
+        "_rev": "11-5e9ae8d6ab24ac37946b0ec5c9dc5ea6",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:068074b2-39e1-4e02-86c1-f24b444ea0c4",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/068074b2-39e1-4e02-86c1-f24b444ea0c4/%2A",
@@ -184763,7 +184763,7 @@
         "tags": [
           "gc_migrate"
         ],
-        "updated": "2025-07-31T12:03:30.928450437-04:00",
+        "updated": "2026-08-12T09:53:55.452266703-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/068074b2-39e1-4e02-86c1-f24b444ea0c4?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -184774,7 +184774,7 @@
       },
       {
         "_id": "143acd20-c510-4b8f-9ecd-9816b1238857",
-        "_rev": "10-f7d3e11a0e8db0cc797031989e8473d4",
+        "_rev": "11-4204487630bd6a5879ef6de8c5fc0067",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:143acd20-c510-4b8f-9ecd-9816b1238857",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/143acd20-c510-4b8f-9ecd-9816b1238857/%2A",
@@ -184984,7 +184984,7 @@
           "ibm_experimental",
           "integration"
         ],
-        "updated": "2025-07-31T12:03:30.929048292-04:00",
+        "updated": "2026-08-12T09:53:55.452522129-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/143acd20-c510-4b8f-9ecd-9816b1238857?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -184995,7 +184995,7 @@
       },
       {
         "_id": "d3f47848-d28e-4ffc-aa37-57f1defe50e6",
-        "_rev": "58-13771f686273d0049ee75a273c95ba9d",
+        "_rev": "61-4bcfef02734dac5e6dfe6965c48f72ab",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d3f47848-d28e-4ffc-aa37-57f1defe50e6",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6/%2A",
@@ -185232,7 +185232,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-08-07T10:26:01.466821375-04:00",
+        "updated": "2026-08-12T09:55:52.454657355-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -185243,7 +185243,7 @@
       },
       {
         "_id": "6649abb2-8320-4ac2-9750-42a126b4fe4b",
-        "_rev": "16-0adf951e2cd9deeaa7accd54b9267ee5",
+        "_rev": "17-e499ab9744ff200517b7ee8a4d885139",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:6649abb2-8320-4ac2-9750-42a126b4fe4b",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/6649abb2-8320-4ac2-9750-42a126b4fe4b/%2A",
@@ -185350,7 +185350,7 @@
           "lite",
           "ibm_created"
         ],
-        "updated": "2026-03-16T09:38:40.288920318-04:00",
+        "updated": "2026-08-12T09:53:55.452214744-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/6649abb2-8320-4ac2-9750-42a126b4fe4b?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -185361,7 +185361,7 @@
       },
       {
         "_id": "b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
-        "_rev": "53-7e3c938817d6f6d17176f38b51b28387",
+        "_rev": "56-bd51266827ffa49eeeb4d37826376f06",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba/%2A",
@@ -185571,7 +185571,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-08-07T10:26:32.244935213-04:00",
+        "updated": "2026-08-12T09:55:52.561422866-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -241742,12 +241742,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -273625,12 +273625,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -286197,10 +286197,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
