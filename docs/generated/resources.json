@@ -3918,9 +3918,6 @@
   },
   {
     "geo_tags": [
-      "che01",
-      "eu-de",
-      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -3928,7 +3925,10 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "che01",
+      "eu-de",
+      "us-east"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -6414,16 +6414,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "eu-de",
-      "au-syd",
-      "us-east",
       "fra02",
-      "us-south",
-      "eu-gb",
+      "eu-es",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6579,13 +6579,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9550,14 +9550,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10168,19 +10168,19 @@
   },
   {
     "geo_tags": [
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "br-sao",
       "in-che",
-      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
-      "eu-gb",
-      "br-sao",
-      "in-mum",
       "ca-tor",
-      "eu-de",
-      "us-south",
-      "au-syd"
+      "au-syd",
+      "jp-osa",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -16877,12 +16877,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18229,12 +18229,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20813,7 +20813,10 @@
       "free"
     ],
     "tags": [
+      "agentic ai",
       "ai ops",
+      "ai solution",
+      "aiops",
       "custom_kind_service",
       "free",
       "global",
@@ -20864,9 +20867,9 @@
         "displayName": "Starter"
       }
     ],
-    "description": "Chat with Your Infrastructure!\nMeet WANDA(Wanclouds Digital Assistant) : Your 24/7 AI Engineer for Hybrid Cloud Operations",
+    "description": "Chat with Your Infrastructure!\nMeet WANDA(Wanclouds Digital Assistant) : Your 24/7 AIOps solution for Hybrid Cloud Operations",
     "longDescription": "Wanclouds AI (WANDA) allows you to create one or multiple AI Assistants for Cloud and IT Infrastructure management. It covers multi-vendor infrastructure resources and workloads including servers (Linux, Windows),firewalls, network routers, switches, VMware, Kubernetes and more. The Solution covers devices deployed in the cloud (IBM Cloud, other cloud) as well as On-Premise and Edge or Remote Sites.You can add your cloud, on-premises, and edge devices into a single platform, creating a unified interface for your entire infrastructure.\n\n\n\n\n\n\n\nThink of it as your AI Expert Assistant(s) to help you watch your infrastructure 24x7, integrated with your existing monitoring, logging tools, devices, and fully aware of your policies and guidelines. It continuously monitors the health, logs, and metrics of your cloud and IT infrastructure. Proactively track configuration changes, software updates, and system behavior to ensure your environments run smoothly and cost-effectively.\n\n\n\n\n\n\n\nBy combining monitoring, logs, troubleshooting, and intelligent querying, it helps IT teams dramatically reduce the time to diagnose and resolve issues, all while learning and adapting to your unique environment through its contextual memory capabilities. Moreover, you can run security and optimization assessments on-demand as well as query any aspect of your infrastructure.\n\n\n\n\n\n\n\nKey Features\n\n\n\n\n-  Add cloud Environments (such as IBM Cloud VPC, Classic), On-Premise resources, as well as other cloud workloads.\n\n- Add VMware resources or individual servers, routers, firewalls, and switches.\n\n-  Configuration & Change Tracking – Watches for configuration drifts, software updates, and system changes that may impact stability.\n\n\n-  Troubleshooting & Root-Cause Analysis – Performs root-cause analysis and provides guided remediation steps to resolve issues faster.\n\n\n\n\n\n- Proactive Monitoring – Continuously collects health, logs, and performance data from servers, GPUs, network devices, and applications.\n\n- Perform Security risk assessments and compliance audits against known industry and government standards such as PCI, HIPAA, SOC2, NIST etc\n\n\n\n\n-  Intelligent Querying – Answer natural language queries such as “What caused the last outage?” or “How is my cluster performing today?”.\n\n\n\n\n -  Adaptive Learning – Learns your infrastructure over time with a memory component, improving accuracy and insights.\n\n\n\n\n -  24x7 Availability – Acts as a round-the-clock virtual engineer without the overhead of traditional staffing.\n\n\n\n\n\n- Review existing policy and compliance documents and create what’s missing or required\n\n\n\n\n- Identify optimization opportunities to reduce costs and eliminate wastage\n\n\n\n\n- Create Executive summaries against your infrastructure state as required\n\n\n\n\n- Track software deployed in your infrastructure and discover EOL and assess risk levels \n\n\n\n\n- Backup and Migrate your VSIs and data volumes to IBM COS, making them ready for restoration in IBM Cloud VPC.\n\n\n\n\n- Backup and Migrate your VMware / VCF VMs and Data to IBM COS and ready to restore as VPC native VSIs and volumes.\n\n\n\n\n\n\n\nBenefits\n\n\n\n\n  -  Faster Root-Cause Analysis – Reduce troubleshooting times from hours to minutes.\n\n\n\n\nIncrease uptime and reliability by tracking security compliance gaps and risks across your IT and cloud infrastructure. \n\nKeep costs in control by assessing wastage and oversized infrastructure resources\n\n\n\n\n -  Increased Reliability – Identify and resolve issues before they escalate.\n\n\n\n\n -  Cost-Effective Operations – Reduce operational costs by up to 50%. A fraction of the cost of adding human NOC/SRE staff.\n\n\n\n\n -  Improved IT Productivity – 3X and more productivity gains. Free up engineering teams to focus on innovation, not firefighting.\n\n\n\n\n -  Scalable & Adaptable – Grows with your environment and continuously learns from it.\n\n\n\n\n- Addresses skill gaps with its expert troubleshooting, management, and assessments ranging from Windows, Linux to Nvidia GPUs as well as Firewalls and multi-vendor network devices.\n\n\n\n\n\n\n\n   \n\n\n\n\nWanclouds AI (WANDA) is your always-on AI engineer from Wanclouds, helping you stay ahead of outages, errors, security risks, and costly downtime..\n\n\n\n\n\n\n\nIf you need a private instance of Wanclouds AI dedicated to your cloud and IT infrastructure resources, please contact Wanclouds at www.wanclouds.net or sales@wanclouds.net\n\n\n\n\n\n\n",
-    "displayName": "Wanclouds AI Assistant (WANDA) for Hybrid Infrastructure Management",
+    "displayName": "WANDA Agentic AI  - AIOps as a Service - for Hybrid Infrastructure Management",
     "imageUrl": "https://wanclouds.ai/images/logoblue.svg",
     "localSvgIcon": "/generated/icons/52e7e0a3-820b-447a-ad01-af292665a20e.svg",
     "localPngIcon": "/generated/icons/52e7e0a3-820b-447a-ad01-af292665a20e.png"
@@ -21353,12 +21356,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
