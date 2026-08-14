@@ -3274,6 +3274,399 @@
     "localPngIcon": "/generated/icons/586d04e3-804f-4d0c-b9d3-e0e7279398b4.png"
   },
   {
+    "_id": "70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+    "_rev": "27-e11aaba7b1e3f5ac41fa84bed954ca6b",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/70b2dc0e-40d4-4dc8-8cb7-a57316a70324/%2A",
+    "complete": true,
+    "created": "2026-03-31T12:08:16.357560968-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:2fe32bfc-67b9-4e8a-a036-4f0be2f7a404",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "UA",
+              "GE",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates.\n\nSupport is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle.\n\nThe support team assists customers with:\n\nInitial setup and deployment\nIntegration and API connectivity\nAgent configuration and customization guidance\nTroubleshooting and incident resolution\nUsage best practices and optimization",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Fortaleza"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/70b2dc0e-40d4-4dc8-8cb7-a57316a70324/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Converts conversations into structured notes (e.g., SOAP), reducing manual documentation time and effort.",
+                "title": "Automated Clinical Note Generation"
+              },
+              {
+                "description": "Captures and organizes information during or after patient encounters for accurate and timely records.",
+                "title": "Real-Time Documentation Support"
+              },
+              {
+                "description": "Adapts to specialty-specific templates and clinical workflows to ensure relevant and usable documentation.",
+                "title": "Customizable Templates & Formats"
+              },
+              {
+                "description": "Enhances completeness and consistency, supporting better clinical decisions and downstream coding accuracy.",
+                "title": "Improved Documentation Quality"
+              },
+              {
+                "description": "Seamlessly integrates into EMR workflows, enabling efficient documentation without disrupting clinical processes.",
+                "title": "Workflow Integration"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-inc-medical-ai-scribe-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI agent generating structured clinical notes from conversations, reducing documentation time and improving accuracy and completen",
+        "display_name": "AI Medical Scribe Agent",
+        "long_description": "The AI Medical Scribe Agent is an intelligent documentation assistant that captures and transforms clinical conversations into structured, accurate, and compliant medical notes in real time.\nClinicians spend a significant portion of their time on documentation, often leading to burnout, incomplete records, and reduced patient interaction. This agent addresses these challenges by automatically generating clinical notes from voice or text inputs, aligned with standardized formats such as SOAP.\nIntegrated directly into clinical workflows, the agent structures information into history, examination findings, assessments, and plans, while preserving clinical context and relevance. It supports customization based on specialty-specific templates and organizational requirements.\nThe agent also enhances documentation quality by ensuring completeness and consistency, which supports downstream processes such as coding, billing, and clinical decision-making.\nBy reducing manual data entry and streamlining documentation workflows, the AI Medical Scribe Agent improves clinician efficiency, increases time available for patient care, and supports high-quality, compliant medical records.\n\n\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "ai_agent",
+      "clinical documentation",
+      "custom_kind_service",
+      "documentation automation",
+      "free",
+      "global",
+      "healthcare ai",
+      "ibm_third_party",
+      "medical scribe",
+      "note generation",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "soap notes",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-14T06:43:02.650739226-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/70b2dc0e-40d4-4dc8-8cb7-a57316a70324?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "d1661c44-82d1-4cf8-b924-93ae24ddb2f6",
+        "_rev": "10-43cb5406c19e5edadfdaab701ef4857a",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d1661c44-82d1-4cf8-b924-93ae24ddb2f6",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d1661c44-82d1-4cf8-b924-93ae24ddb2f6/%2A",
+        "complete": true,
+        "created": "2026-05-04T16:52:14.193131203-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "d1661c44-82d1-4cf8-b924-93ae24ddb2f6",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/d1661c44-82d1-4cf8-b924-93ae24ddb2f6/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Automated Clinical Note Generation\nGenerates structured clinical notes (e.g., SOAP) from conversations, reducing manual documentation time"
+                  },
+                  {
+                    "description": "Real-Time Documentation Support\nCaptures and organizes clinical information during patient encounters for accurate and timely records."
+                  },
+                  {
+                    "description": "Workflow Integration\nSeamlessly integrates into clinical workflows, supporting efficient documentation without disrupting care."
+                  },
+                  {
+                    "description": "Customizable Documentation Formats\nSupports clinic- and specialty-specific templates to ensure relevant and consistent note structures."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "ai-medical-scribe-agent",
+        "overview_ui": {
+          "en": {
+            "description": "Fixed monthly pricing per provider for AI-powered clinical documentation. Generates structured notes from conversations; ",
+            "display_name": "AI Medical Scribe Agent",
+            "long_description": "Fixed monthly pricing per provider for AI-powered clinical documentation. Generates structured notes from conversations; "
+          }
+        },
+        "parent_id": "70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "clinical documentation",
+          "documentation automation",
+          "healthcare ai",
+          "ibm_third_party",
+          "medical scribe",
+          "note generation",
+          "soap notes",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:43:02.580880577-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/d1661c44-82d1-4cf8-b924-93ae24ddb2f6?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Fixed monthly pricing per provider for AI-powered clinical documentation. Generates structured notes from conversations; ",
+        "displayName": "AI Medical Scribe Agent"
+      },
+      {
+        "_id": "1131d4ce-a37d-4ec6-84c9-9c3f622d7012",
+        "_rev": "9-79b30463bb3e3e13e122b5cb87324e83",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:1131d4ce-a37d-4ec6-84c9-9c3f622d7012",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/1131d4ce-a37d-4ec6-84c9-9c3f622d7012/%2A",
+        "complete": true,
+        "created": "2026-04-23T11:42:30.117858746-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "1131d4ce-a37d-4ec6-84c9-9c3f622d7012",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/1131d4ce-a37d-4ec6-84c9-9c3f622d7012/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Real-Time Clinical Notes\nGenerates structured clinical notes during patient visits, reducing manual documentation time."
+                  },
+                  {
+                    "description": "Context-Aware Documentation\nUses patient context and visit data to produce relevant, accurate clinical documentation."
+                  },
+                  {
+                    "description": "Editable Structured Output\nProduces structured notes that clinicians can review, edit, and finalize within workflow."
+                  },
+                  {
+                    "description": "Workflow Integration\nIntegrates with clinical workflows to support seamless documentation during encounters."
+                  },
+                  {
+                    "description": "Fair Use Included\nIncluded with platform subscription, subject to fair use limits and active account."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "ai-scribe",
+        "overview_ui": {
+          "en": {
+            "description": "Monthly subscription per provider for AI-powered structuring of clinical notes into standardized, clinic-defined formats. AI usage billed separately.\n",
+            "display_name": "Clinical AI Scribe  ",
+            "long_description": "Monthly subscription per provider for AI-powered structuring of clinical notes into standardized, clinic-defined formats. AI usage billed separately.\n"
+          }
+        },
+        "parent_id": "70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "clinical documentation",
+          "documentation automation",
+          "healthcare ai",
+          "ibm_third_party",
+          "medical scribe",
+          "note generation",
+          "soap notes",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:43:02.650371113-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/1131d4ce-a37d-4ec6-84c9-9c3f622d7012?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly subscription per provider for AI-powered structuring of clinical notes into standardized, clinic-defined formats. AI usage billed separately.\n",
+        "displayName": "Clinical AI Scribe  "
+      }
+    ],
+    "description": "AI agent generating structured clinical notes from conversations, reducing documentation time and improving accuracy and completen",
+    "longDescription": "The AI Medical Scribe Agent is an intelligent documentation assistant that captures and transforms clinical conversations into structured, accurate, and compliant medical notes in real time.\nClinicians spend a significant portion of their time on documentation, often leading to burnout, incomplete records, and reduced patient interaction. This agent addresses these challenges by automatically generating clinical notes from voice or text inputs, aligned with standardized formats such as SOAP.\nIntegrated directly into clinical workflows, the agent structures information into history, examination findings, assessments, and plans, while preserving clinical context and relevance. It supports customization based on specialty-specific templates and organizational requirements.\nThe agent also enhances documentation quality by ensuring completeness and consistency, which supports downstream processes such as coding, billing, and clinical decision-making.\nBy reducing manual data entry and streamlining documentation workflows, the AI Medical Scribe Agent improves clinician efficiency, increases time available for patient care, and supports high-quality, compliant medical records.\n\n\n",
+    "displayName": "AI Medical Scribe Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/70b2dc0e-40d4-4dc8-8cb7-a57316a70324.svg",
+    "localPngIcon": "/generated/icons/70b2dc0e-40d4-4dc8-8cb7-a57316a70324.png"
+  },
+  {
     "_id": "c9962d39-2574-4204-ac92-02290e30d842",
     "_rev": "38-e6cb80214dc5a850d2655f939698adc2",
     "active": true,
@@ -8531,14 +8924,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -14715,6 +15108,571 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/c24de460-d562-11ee-8c8c-b7e35da58981/artifacts/cache/80b6f7fb612971b49a7a1148991a03c4-public/CloudBackupAndRecovery.svg",
     "localSvgIcon": "/generated/icons/c24de460-d562-11ee-8c8c-b7e35da58981.svg",
     "localPngIcon": "/generated/icons/c24de460-d562-11ee-8c8c-b7e35da58981.png"
+  },
+  {
+    "_id": "becf644d-ea16-4562-aca5-3e2f165bfb9d",
+    "_rev": "46-5c414678e148b12048457c301b1a6cb2",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:becf644d-ea16-4562-aca5-3e2f165bfb9d",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d/%2A",
+    "complete": true,
+    "created": "2026-06-12T14:23:16.571395135-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "becf644d-ea16-4562-aca5-3e2f165bfb9d",
+    "images": {
+      "image": "https://www.incede.ai/incede-logo-square.png"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "e9242e4e1cc04c7983dd1e16b968629d:o:edd9bcc4-07aa-4418-ace1-411fcf2699a9",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "US"
+            ],
+            "process": "Support for your initial set-up and configuration is included.  ",
+            "status_url": "https://www.incede.ai/status/banking-customer-engagement-agent/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    }
+                  ],
+                  "timezone": "America/Los_Angeles"
+                },
+                "contact": "https://www.incede.ai/support/",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "support_site"
+              }
+            ],
+            "support_escalation": {
+              "contact": "Support@incede.ai",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 24
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://www.incede.ai/docs/banking-customer-engagement-agent"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Your Bank's Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Your-Bank's-Name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "The person who Incede.ai will contact to coordinate the set-up and use of your Banking Agent.",
+            "displayname": "Primary Contact Email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Primary-Contact-Email",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "The first and last name of the primary contact at the bank.",
+            "displayname": "Primary Contact Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Primary-Contact-Name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          }
+        ],
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Bank services, expertise areas, and branch locations are fully configurable, enabling the agent to intelligently match customers needs.",
+                "title": "Customized to Your Branches, Services & Employees"
+              },
+              {
+                "description": "Connect customers with the right banker by matching service needs, expertise, location, and availability, then schedule appointments.",
+                "title": "Schedule Appointments"
+              },
+              {
+                "description": "Find the most convenient branch based on location, services offered, and operating hours. Quickly access directions and contact information.",
+                "title": "Locate a Branch"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.incede.ai/docs/banking-customer-engagement-agent",
+          "terms_url": "https://www.incede.ai/tou/watsonx-orchestrate-agents/"
+        }
+      }
+    },
+    "name": "incede-skubanking",
+    "overview_ui": {
+      "en": {
+        "description": "Helps customers quickly find the most convenient branch, identify the right banker based on their needs and schedule appointments",
+        "display_name": "Banking Agent from Incede.ai",
+        "long_description": "An AI-powered banking agent that automates customer service through natural conversation: branch lookups, appointment scheduling, and booking management"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Incede.ai Inc."
+    },
+    "tags": [
+      "ai agent",
+      "ai assistant",
+      "appointment scheduling",
+      "banking",
+      "branch locator",
+      "conversational ai",
+      "credit union",
+      "custom_kind_service",
+      "customer service",
+      "financial services",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "retail banking",
+      "self-service banking",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-14T06:46:33.99438084-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "b4cb8b07-7790-42cc-b0f1-1cd19e8a4d11",
+        "_rev": "7-42b547f06e298a8a8d21ca6e78c7dfea",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b4cb8b07-7790-42cc-b0f1-1cd19e8a4d11",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b4cb8b07-7790-42cc-b0f1-1cd19e8a4d11/%2A",
+        "complete": true,
+        "created": "2026-06-25T18:47:09.981800168-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "b4cb8b07-7790-42cc-b0f1-1cd19e8a4d11",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/b4cb8b07-7790-42cc-b0f1-1cd19e8a4d11/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "5,000 Monthly Messages Included. Predictable monthly capacity for growing customer engagement."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "essential-with-dedicated-tenant-isolated-data",
+        "overview_ui": {
+          "en": {
+            "description": "A 12-month commitment to a production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 5,000 messages per calendar month. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  Subscription is billed based on your selected preference while Overage billing is monthly.",
+            "display_name": "Essential with Dedicated Tenant-Isolated Data",
+            "long_description": "A 12-month commitment to a production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 5,000 messages per calendar month. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  Subscription is billed based on your selected preference while Overage billing is monthly."
+          }
+        },
+        "parent_id": "becf644d-ea16-4562-aca5-3e2f165bfb9d",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Incede.ai Inc."
+        },
+        "tags": [
+          "ai agent",
+          "ai assistant",
+          "appointment scheduling",
+          "banking",
+          "branch locator",
+          "conversational ai",
+          "credit union",
+          "customer service",
+          "financial services",
+          "ibm_third_party",
+          "retail banking",
+          "self-service banking",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:46:33.699528774-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/b4cb8b07-7790-42cc-b0f1-1cd19e8a4d11?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "A 12-month commitment to a production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 5,000 messages per calendar month. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  Subscription is billed based on your selected preference while Overage billing is monthly.",
+        "displayName": "Essential with Dedicated Tenant-Isolated Data"
+      },
+      {
+        "_id": "e003ad1d-af87-4aa6-9db2-1badcff260e7",
+        "_rev": "9-391d869e5533f929a8b5fb57cc5c235a",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:e003ad1d-af87-4aa6-9db2-1badcff260e7",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/e003ad1d-af87-4aa6-9db2-1badcff260e7/%2A",
+        "complete": true,
+        "created": "2026-06-25T18:55:14.593547904-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "e003ad1d-af87-4aa6-9db2-1badcff260e7",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/e003ad1d-af87-4aa6-9db2-1badcff260e7/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Predictable subscription for growing customer engagement."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "standard-with-dedicated-tenant-isolated-data",
+        "overview_ui": {
+          "en": {
+            "description": "A 12-month commitment for a scalable production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 10,000 messages per calendar month. Provides all Essential capabilities while supporting higher customer engagement volumes for growing financial institutions with multiple branches, expanded banking services, and increased AI adoption.",
+            "display_name": "Standard with Dedicated Tenant-Isolated Data",
+            "long_description": "A 12-month commitment for a scalable production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 10,000 messages per calendar month. Provides all Essential capabilities while supporting higher customer engagement volumes for growing financial institutions with multiple branches, expanded banking services, and increased AI adoption."
+          }
+        },
+        "parent_id": "becf644d-ea16-4562-aca5-3e2f165bfb9d",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Incede.ai Inc."
+        },
+        "tags": [
+          "ai agent",
+          "ai assistant",
+          "appointment scheduling",
+          "banking",
+          "branch locator",
+          "conversational ai",
+          "credit union",
+          "customer service",
+          "financial services",
+          "ibm_third_party",
+          "retail banking",
+          "self-service banking",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:46:33.874975903-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/e003ad1d-af87-4aa6-9db2-1badcff260e7?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "A 12-month commitment for a scalable production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 10,000 messages per calendar month. Provides all Essential capabilities while supporting higher customer engagement volumes for growing financial institutions with multiple branches, expanded banking services, and increased AI adoption.",
+        "displayName": "Standard with Dedicated Tenant-Isolated Data"
+      },
+      {
+        "_id": "326ddf42-8945-4886-a366-b21d6d4d7b70",
+        "_rev": "8-a6cc02deaf3c6f50c6a78fbe2e47a6e9",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:326ddf42-8945-4886-a366-b21d6d4d7b70",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/326ddf42-8945-4886-a366-b21d6d4d7b70/%2A",
+        "complete": true,
+        "created": "2026-06-25T18:38:43.522968941-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "326ddf42-8945-4886-a366-b21d6d4d7b70",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/326ddf42-8945-4886-a366-b21d6d4d7b70/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Pay for What You Use. Avoids message limits. Greatest flexibility for banks with variable customer engagement volumes."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "starter-with-dedicated-tenant-isolated-data",
+        "overview_ui": {
+          "en": {
+            "description": "A month-to-month production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration and onboarding. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  A one-time initial setup fee is billed upon deployment. Monthly billing includes only the messages processed during the calendar month.",
+            "display_name": "Starter with Dedicated Tenant-Isolated Data",
+            "long_description": "A month-to-month production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration and onboarding. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  A one-time initial setup fee is billed upon deployment. Monthly billing includes only the messages processed during the calendar month."
+          }
+        },
+        "parent_id": "becf644d-ea16-4562-aca5-3e2f165bfb9d",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Incede.ai Inc."
+        },
+        "tags": [
+          "ai agent",
+          "ai assistant",
+          "appointment scheduling",
+          "banking",
+          "branch locator",
+          "conversational ai",
+          "credit union",
+          "customer service",
+          "financial services",
+          "ibm_third_party",
+          "retail banking",
+          "self-service banking",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:46:33.993085045-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/326ddf42-8945-4886-a366-b21d6d4d7b70?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "A month-to-month production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration and onboarding. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  A one-time initial setup fee is billed upon deployment. Monthly billing includes only the messages processed during the calendar month.",
+        "displayName": "Starter with Dedicated Tenant-Isolated Data"
+      }
+    ],
+    "description": "Helps customers quickly find the most convenient branch, identify the right banker based on their needs and schedule appointments",
+    "longDescription": "An AI-powered banking agent that automates customer service through natural conversation: branch lookups, appointment scheduling, and booking management",
+    "displayName": "Banking Agent from Incede.ai",
+    "imageUrl": "https://www.incede.ai/incede-logo-square.png",
+    "localPngIcon": "/generated/icons/becf644d-ea16-4562-aca5-3e2f165bfb9d.png"
   },
   {
     "_id": "1",
@@ -23544,6 +24502,341 @@
     "displayName": "BeX Legal AI Assistant",
     "imageUrl": "https://coolriots.ai/bex-logo.png",
     "localPngIcon": "/generated/icons/ab422db5-6ff2-4aab-b08a-5b870c26efe1.png"
+  },
+  {
+    "_id": "5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+    "_rev": "28-8d821093dce19e5e2236bfe9b14a78ae",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5dc3f62e-9f43-481c-ae94-260ebf4fc942/%2A",
+    "complete": true,
+    "created": "2026-07-13T14:16:06.930407605-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+    "images": {
+      "image": "https://biollm.com/logo.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "35a1e9df3a2b412a8c8a014af89ffb2e:o:577ae84c-a390-40af-8dd2-c3518ad20988",
+          "support": {
+            "languages": [
+              "en",
+              "es"
+            ],
+            "locations": [
+              "US"
+            ],
+            "process": "BioLLM Co. provides dedicated third-party support for the BioLLM Culture Query Agent. Our support team is available to assist with installation, configuration, usage questions, and troubleshooting. Customers can reach support via our support portal or email. We are committed to responding to all support inquiries within 1 business day and resolving critical issues as quickly as possible.",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Mexico_City"
+                },
+                "contact": "info@biollm.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 4
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "info@biollm.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://biollm.com/support"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/5dc3f62e-9f43-481c-ae94-260ebf4fc942/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Ask questions about your biological culture collections in plain English. No SQL or specialized query language required.",
+                "title": "Natural Language Culture Queries"
+              },
+              {
+                "description": "Automatically summarize culture metadata, growth conditions, and experimental results to accelerate research decisions.",
+                "title": "Intelligent Data Summarization"
+              },
+              {
+                "description": "Seamlessly connects to existing Laboratory Information Management Systems (LIMS) to retrieve and correlate culture data in real time.",
+                "title": "LIMS Integration"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://biollm.com/docs/culture-query-agent",
+          "terms_url": "https://biollm.com/eula"
+        }
+      }
+    },
+    "name": "biollm-culture-query-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI-powered agent for querying and analyzing biological culture data using large language model capabilities.",
+        "display_name": "BioLLM Culture Query Agent",
+        "long_description": "BioLLM Culture Query Agent is an AI-powered native agent built on IBM watsonx Orchestrate that enables researchers, lab technicians, and bioinformaticians to interact with biological culture databases using natural language queries.\n\nThe agent leverages large language model (LLM) capabilities to understand complex biological queries, retrieve relevant culture data, and deliver actionable insights—eliminating the need for specialized query languages or manual database navigation.\n\nKey capabilities include natural language querying of culture collections, intelligent data retrieval and summarization, cross-referencing of culture metadata, and seamless integration with existing laboratory information management systems (LIMS). Whether you are managing microbial cultures, cell lines, or other biological specimens, BioLLM Culture Query Agent streamlines data access and accelerates research workflows."
+      }
+    },
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "BioLLM Co."
+    },
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "free",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-14T06:42:32.46172302-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/5dc3f62e-9f43-481c-ae94-260ebf4fc942?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "a518235d-32cd-46b2-8332-0e546719b414",
+        "_rev": "6-48ee26c3c42b5d801c2d2e404d6a3f31",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a518235d-32cd-46b2-8332-0e546719b414",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a518235d-32cd-46b2-8332-0e546719b414/%2A",
+        "complete": true,
+        "created": "2026-07-17T14:24:50.751241432-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "a518235d-32cd-46b2-8332-0e546719b414",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/a518235d-32cd-46b2-8332-0e546719b414/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          }
+        },
+        "name": "free-trial",
+        "overview_ui": {
+          "en": {
+            "description": "30 day free trial of BioLLM Culture Agent",
+            "display_name": "Free Trial",
+            "long_description": "30 day free trial of BioLLM Culture Agent"
+          }
+        },
+        "parent_id": "5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "BioLLM Co."
+        },
+        "tags": [
+          "ibm_third_party"
+        ],
+        "updated": "2026-08-14T06:42:32.253762606-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/a518235d-32cd-46b2-8332-0e546719b414?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "30 day free trial of BioLLM Culture Agent",
+        "displayName": "Free Trial"
+      },
+      {
+        "_id": "7634bdd7-9de3-4b67-ac89-74007f01b56d",
+        "_rev": "10-156dee1c9181dcde2eb8fda1a87a880a",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:7634bdd7-9de3-4b67-ac89-74007f01b56d",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/7634bdd7-9de3-4b67-ac89-74007f01b56d/%2A",
+        "complete": true,
+        "created": "2026-07-17T14:09:53.241148256-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "7634bdd7-9de3-4b67-ac89-74007f01b56d",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/7634bdd7-9de3-4b67-ac89-74007f01b56d/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Neural culture simulation replicating live CL1 devices using machine learning and data"
+                  },
+                  {
+                    "description": "Speak in natural language and design stimulation patterns"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "pro",
+        "overview_ui": {
+          "en": {
+            "description": "Full featured usage and membership tier on-demand access",
+            "display_name": "Pro",
+            "long_description": "Full featured usage and membership tier on-demand access"
+          }
+        },
+        "parent_id": "5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "BioLLM Co."
+        },
+        "tags": [
+          "ibm_third_party"
+        ],
+        "updated": "2026-08-14T06:42:32.37392133-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/7634bdd7-9de3-4b67-ac89-74007f01b56d?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Full featured usage and membership tier on-demand access",
+        "displayName": "Pro"
+      }
+    ],
+    "description": "AI-powered agent for querying and analyzing biological culture data using large language model capabilities.",
+    "longDescription": "BioLLM Culture Query Agent is an AI-powered native agent built on IBM watsonx Orchestrate that enables researchers, lab technicians, and bioinformaticians to interact with biological culture databases using natural language queries.\n\nThe agent leverages large language model (LLM) capabilities to understand complex biological queries, retrieve relevant culture data, and deliver actionable insights—eliminating the need for specialized query languages or manual database navigation.\n\nKey capabilities include natural language querying of culture collections, intelligent data retrieval and summarization, cross-referencing of culture metadata, and seamless integration with existing laboratory information management systems (LIMS). Whether you are managing microbial cultures, cell lines, or other biological specimens, BioLLM Culture Query Agent streamlines data access and accelerates research workflows.",
+    "displayName": "BioLLM Culture Query Agent",
+    "imageUrl": "https://biollm.com/logo.svg",
+    "localSvgIcon": "/generated/icons/5dc3f62e-9f43-481c-ae94-260ebf4fc942.svg",
+    "localPngIcon": "/generated/icons/5dc3f62e-9f43-481c-ae94-260ebf4fc942.png"
   },
   {
     "_id": "block-storage-group",
@@ -49493,7 +50786,7 @@
       },
       {
         "_id": "cloudant-gen2-standard",
-        "_rev": "17-8298bb06acba6d9ef68ad1154e6749df",
+        "_rev": "19-a244816bcbd85c3db36fee9b5c1c979f",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cloudant-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard/%2A",
@@ -49587,7 +50880,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-07-20T12:38:09.895858198-04:00",
+        "updated": "2026-08-14T05:36:00.145372169-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -94842,10 +96135,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -94856,7 +96145,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -103026,7 +104319,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -103037,7 +104329,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -104960,7 +106253,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -104975,7 +106267,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -113883,16 +115176,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "fra02",
       "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "us-south",
-      "eu-gb",
+      "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -120780,13 +122073,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -137698,6 +138991,477 @@
     "localPngIcon": "/generated/icons/is.share.png"
   },
   {
+    "_id": "0f3de133-07da-4641-94f0-97d91525711b",
+    "_rev": "38-664965c059994e7b620990a604afc697",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:0f3de133-07da-4641-94f0-97d91525711b",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/0f3de133-07da-4641-94f0-97d91525711b/%2A",
+    "complete": true,
+    "created": "2026-06-22T16:40:57.315639606-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "0f3de133-07da-4641-94f0-97d91525711b",
+    "images": {
+      "image": "https://flacronar.com/logo-ibm-marketplace.jpg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "70ccc4b0a53d41c2ad1d89152260017a:o:1ef913c4-1a06-4d34-bb7c-ee60a31d8e09",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "US"
+            ],
+            "process": "Flacron AR Agent Support Statement\nAt Flacron Enterprises LLC, we are committed to providing reliable, professional, and timely support for all Flacron AR Agent customers. Our support team is available to assist with technical issues, account management, billing inquiries, product guidance, and troubleshooting.\nWe strive to resolve issues as quickly as possible and continuously improve our platform based on customer feedback.\nSupport Policy\nEffective Date: July 19, 2026\nScope of Support\nWe provide support for:\nAccount and login issues\nSubscription and billing questions\nApplication installation and setup\nProduct configuration\nAI and AR feature guidance\nReport generation issues\nAPI integration assistance\nBug reporting\nGeneral product questions\nSupport does not include:\nCustom software development\nThird-party software configuration not provided by Flacron\nOn-site support\nNetwork or hardware troubleshooting outside our platform\nUser training beyond standard documentation\nSupport Hours\nStandard Support\nMonday – Friday\n9:00 AM – 6:00 PM Pacific Time (PT)\nEmergency support for critical service outages may be available outside business hours for Enterprise customers.\nResponse Time Goals\nPriority\nDescription\nInitial Response\nCritical\nService unavailable or major outage\nWithin 4 business hours\nHigh\nMajor functionality affected\nWithin 1 business day\nMedium\nFeature issue or degraded functionality\nWithin 2 business days\nLow\nGeneral questions or enhancement requests\nWithin 3 business days\nResponse times are targets and are not guaranteed.\nSoftware Updates\nFlacron regularly releases:\nSecurity updates\nBug fixes\nPerformance improvements\nNew features\nCompatibility updates\nUpdates may be deployed automatically for cloud-hosted services.\nCustomer Responsibilities\nCustomers are responsible for:\nMaintaining secure account credentials\nKeeping supported browsers and devices updated\nProviding accurate information when reporting issues\nBacking up exported reports and documents where appropriate\nComplying with all applicable laws and this EULA\nContact Methods\nSupport Portal\nhttps://flacronar.com/support⁠\nEmail\nsupport@flacronar.com\nCompany Website\nhttps://flacronenterprises.com⁠\nSupport Details\nProduct Name\nFlacron AR Agent\nCompany\nFlacron Enterprises LLC\nSupport Email\nsupport@flacronar.com\nSupport Website\nhttps://flacronar.com/support⁠\nDocumentation\nhttps://flacronar.com/docs⁠\nKnowledge Base\nhttps://flacronar.com/help⁠\nPrivacy Policy\nhttps://flacronar.com/privacy-policy⁠\nTerms of Service\nhttps://flacronar.com/terms⁠\nEnd User License Agreement\nhttps://flacronar.com/eula⁠\nSupport Page (https://flacronar.com/support⁠)\nFlacron AR Agent Support\nNeed help? Our support team is here to assist you with technical issues, account questions, billing inquiries, and product guidance.\nContact Us\nEmail: support@flacronar.com\nWebsite: https://flacronenterprises.com⁠\nSelf-Service Resources\nDocumentation: https://flacronar.com/docs⁠\nKnowledge Base: https://flacronar.com/help⁠\nFrequently Asked Questions: https://flacronar.com/faq⁠\nSupport Hours\nMonday – Friday\n9:00 AM – 6:00 PM Pacific Time (PT)\nReport a Bug\nWhen reporting an issue, please include:\nYour account email\nDevice and operating system\nBrowser or app version\nSteps to reproduce the issue\nScreenshots or screen recordings (if available)\nError messages\nEnterprise Customers\nEnterprise customers may receive priority support, onboarding assistance, and dedicated account management as specified in their service agreement.",
+            "status_url": "https://flacronar.com/status",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    }
+                  ],
+                  "timezone": "America/Los_Angeles"
+                },
+                "contact": "https://flacronar.com/support",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "support_site"
+              },
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    }
+                  ],
+                  "timezone": "America/Los_Angeles"
+                },
+                "contact": "support@flacronar.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@flacronar.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 24
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 48
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://flacronar.com/support"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/0f3de133-07da-4641-94f0-97d91525711b/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Analyzes an inspection photo and returns damage findings, type, location, severity, and a recommended action.",
+                "title": "Photo Damage Analysis"
+              },
+              {
+                "description": "Builds a structured repair scope of work from a room's damage findings and inspector notes.",
+                "title": "Repair Scope Generation"
+              },
+              {
+                "description": "Prices a repair scope into labor, material, and total cost line items.",
+                "title": "Cost Estimation"
+              },
+              {
+                "description": "Each company uses its own scoped API key, so every call is tied to the right account and project.",
+                "title": "Secure API Access"
+              }
+            ],
+            "media": [
+              {
+                "caption": "Project dashboard showing inspection details, address, inspector, and rooms documented for a property.",
+                "type": "image/jpg",
+                "url": "https://flacronar.com/marketplace-project-overview.png"
+              },
+              {
+                "caption": "A room's full AI workflow complete photos uploaded, analyzed, repair scope generated, and cost estimate produced.",
+                "type": "image/jpg",
+                "url": "https://flacronar.com/marketplace-room-progress.png"
+              },
+              {
+                "caption": "AI detected damage findings from a single inspection photo, each with severity, confidence score, and a recommended action.",
+                "type": "image/jpg",
+                "url": "https://flacronar.com/marketplace-damage-findings.png"
+              },
+              {
+                "caption": "Executive summary from an auto-generated inspection report, with AI-detected findings, confidence score, and estimated repair cost.",
+                "type": "image/jpg",
+                "url": "https://flacronar.com/marketplace-report-summary.png"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://flacronar.com/docs",
+          "terms_url": "https://flacronar.com/eula"
+        }
+      }
+    },
+    "name": "flacron-ar-ai-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI agent that analyzes property inspection photos for damage, generates repair scopes, and produces cost estimates.",
+        "display_name": "Flacron AR AI Agent",
+        "long_description": "Flacron AR Agent automates the repetitive part of property inspection follow up. Feed it an inspection photo and it identifies visible damage type, location, severity, and a recommended action. From there, it turns those findings into a structured repair scope of work, and prices that scope into a full cost estimate with labor, material, and total line items.\nEach action is a discrete, callable tool with a defined input and output, so it fits directly into an automated workflow: trigger damage analysis on a new photo, generate the scope from the findings, generate the estimate from the scope. Authentication is a company-scoped API key, so every call is tied to the right account and project.\n"
+      }
+    },
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Flacron Enterprises LLC"
+    },
+    "tags": [
+      "ai_agent",
+      "augmented_reality",
+      "automated_reporting",
+      "building_inspection",
+      "claims_assistance",
+      "computer_vision",
+      "construction",
+      "cost_estimation",
+      "custom_kind_service",
+      "damage_assessment image_analysis computer_vision repair_scope cost_estimation property_damage water_damage building_inspection insurance_claims claims_assistance restoration_contractors construction facility_management inspection_reports automated_reporting photo_analysis risk_assessment",
+      "facility_management",
+      "free",
+      "global",
+      "ibm_third_party",
+      "image_analysis",
+      "inspection_reports",
+      "insurance_claims",
+      "paid",
+      "paid_only",
+      "photo_analysis",
+      "property_damage",
+      "property_inspection",
+      "rc_compatible",
+      "repair_scope",
+      "restoration_contractors",
+      "risk_assessment",
+      "support_third_party",
+      "water_damage",
+      "watson"
+    ],
+    "updated": "2026-08-14T06:46:03.476421944-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/0f3de133-07da-4641-94f0-97d91525711b?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "3f717bab-45e4-490c-ad4f-0f7c1fee809d",
+        "_rev": "8-6c8bb97e80159da12a6d0886ee501da3",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:3f717bab-45e4-490c-ad4f-0f7c1fee809d",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/3f717bab-45e4-490c-ad4f-0f7c1fee809d/%2A",
+        "complete": true,
+        "created": "2026-07-19T16:42:44.600756099-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "3f717bab-45e4-490c-ad4f-0f7c1fee809d",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/3f717bab-45e4-490c-ad4f-0f7c1fee809d/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Analyzes an inspection photo and returns damage findings, type, location, severity, and a recommended action."
+                  },
+                  {
+                    "description": "Builds a structured repair scope of work from a room's damage findings and inspector notes."
+                  },
+                  {
+                    "description": "Prices a repair scope into labor, material, and total cost line items."
+                  },
+                  {
+                    "description": "Each company uses its own scoped API key, so every call is tied to the right account and project."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "free",
+        "overview_ui": {
+          "en": {
+            "description": "Free to add. Includes access to the agent's AI-powered inspection tools photo damage analysis, repair scope generation, and cost estimation.",
+            "display_name": "Free",
+            "long_description": "Free to add. Includes access to the agent's AI-powered inspection tools photo damage analysis, repair scope generation, and cost estimation."
+          }
+        },
+        "parent_id": "0f3de133-07da-4641-94f0-97d91525711b",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/0f3de133-07da-4641-94f0-97d91525711b",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "Flacron Enterprises LLC"
+        },
+        "tags": [
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:46:03.395598959-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/3f717bab-45e4-490c-ad4f-0f7c1fee809d?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Free to add. Includes access to the agent's AI-powered inspection tools photo damage analysis, repair scope generation, and cost estimation.",
+        "displayName": "Free"
+      },
+      {
+        "_id": "106e8d1c-41ac-4b0d-a7f7-6df62cefdff9",
+        "_rev": "8-0188f97a26d4628f7fe8d44f5256ecfa",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:106e8d1c-41ac-4b0d-a7f7-6df62cefdff9",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/106e8d1c-41ac-4b0d-a7f7-6df62cefdff9/%2A",
+        "complete": true,
+        "created": "2026-07-19T16:38:02.003033052-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "106e8d1c-41ac-4b0d-a7f7-6df62cefdff9",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/106e8d1c-41ac-4b0d-a7f7-6df62cefdff9/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Analyzes an inspection photo and returns damage findings type, location, severity, and a recommended action."
+                  },
+                  {
+                    "description": "Builds a structured repair scope of work from a room's damage findings and inspector notes"
+                  },
+                  {
+                    "description": "Prices a repair scope into labor, material, and total cost line items."
+                  },
+                  {
+                    "description": "Each company uses its own scoped API key, so every call is tied to the right account and project."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "starter",
+        "overview_ui": {
+          "en": {
+            "description": "Best for trying the agent tools or occasional inspections. Covers roughly 3 full workflows (photo analysis + scope + estimate) per pack.",
+            "display_name": "Starter",
+            "long_description": "Best for trying the agent tools or occasional inspections. Covers roughly 3 full workflows (photo analysis + scope + estimate) per pack."
+          }
+        },
+        "parent_id": "0f3de133-07da-4641-94f0-97d91525711b",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/0f3de133-07da-4641-94f0-97d91525711b",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Flacron Enterprises LLC"
+        },
+        "tags": [
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:46:03.474357971-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/106e8d1c-41ac-4b0d-a7f7-6df62cefdff9?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Best for trying the agent tools or occasional inspections. Covers roughly 3 full workflows (photo analysis + scope + estimate) per pack.",
+        "displayName": "Starter"
+      }
+    ],
+    "description": "AI agent that analyzes property inspection photos for damage, generates repair scopes, and produces cost estimates.",
+    "longDescription": "Flacron AR Agent automates the repetitive part of property inspection follow up. Feed it an inspection photo and it identifies visible damage type, location, severity, and a recommended action. From there, it turns those findings into a structured repair scope of work, and prices that scope into a full cost estimate with labor, material, and total line items.\nEach action is a discrete, callable tool with a defined input and output, so it fits directly into an automated workflow: trigger damage analysis on a new photo, generate the scope from the findings, generate the estimate from the scope. Authentication is a company-scoped API key, so every call is tied to the right account and project.\n",
+    "displayName": "Flacron AR AI Agent",
+    "imageUrl": "https://flacronar.com/logo-ibm-marketplace.jpg",
+    "localPngIcon": "/generated/icons/0f3de133-07da-4641-94f0-97d91525711b.png"
+  },
+  {
     "_id": "is.floating-ip",
     "_rev": "13-4b53fe41b7d0da5cede56f7b97701b94",
     "active": true,
@@ -146143,14 +147907,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -156736,19 +158500,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "br-sao",
-      "in-che",
+      "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
+      "ca-mon",
       "au-syd",
-      "jp-osa",
-      "in-mum"
+      "eu-gb",
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "br-sao",
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -178086,6 +179850,286 @@
     "localPngIcon": "/generated/icons/843bbb5c-2aa0-44b4-8589-7eed8907e5b2.png"
   },
   {
+    "_id": "520a65af-49d0-4eca-9ac1-b7d79fd93169",
+    "_rev": "30-34d8a299109eb4729b8e641a98918614",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:520a65af-49d0-4eca-9ac1-b7d79fd93169",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/520a65af-49d0-4eca-9ac1-b7d79fd93169/%2A",
+    "complete": true,
+    "created": "2026-03-31T10:18:50.135028269-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "520a65af-49d0-4eca-9ac1-b7d79fd93169",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:bff57006-60be-422f-922a-5a89a46ce416",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "UA",
+              "GE",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates. Support is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle. The support team assists customers with: Initial setup and deployment Integration and API connectivity Agent configuration and customization guidance Troubleshooting and incident resolution Usage best practices and optimization",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Fortaleza"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/520a65af-49d0-4eca-9ac1-b7d79fd93169/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Analyzes clinical data to generate accurate ICD and CPT coding suggestions aligned with documentation and clinical context.",
+                "title": "AI-Powered Coding Automation"
+              },
+              {
+                "description": "Identifies missing or incomplete elements and prompts improvements to support compliant and billable coding.",
+                "title": "Documentation Gap Detection"
+              },
+              {
+                "description": "Flags risks and inconsistencies before submission to improve clean claim rates and reduce denials.",
+                "title": "Denial Prevention & Claims Readiness"
+              },
+              {
+                "description": "Embeds coding into clinical workflows from visit to discharge, ensuring continuous data alignment and efficiency.",
+                "title": "Workflow-Integrated RCM Support"
+              },
+              {
+                "description": "Improves coding accuracy and completeness to support better reimbursement and overall revenue cycle performance.",
+                "title": "Revenue Optimization Insights"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-inc-medical-coding-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI agent analyzing clinical data to automate coding, improve accuracy, and optimize revenue cycle workflows and claim outcomes.",
+        "display_name": "Medical Coding And RCM Agent",
+        "long_description": "The Medical Coding & RCM Agent is an AI-powered solution that automates and enhances clinical coding and revenue cycle workflows by transforming structured and unstructured clinical data into accurate, compliant, and billable outputs.\nHealthcare organizations often face revenue loss due to incomplete documentation, coding errors, and delayed claim submissions. This agent addresses these challenges by analyzing clinical notes, diagnoses, procedures, and supporting data to generate coding suggestions aligned with ICD and CPT standards.\nIntegrated directly into clinical workflows, the agent ensures that coding begins early in the care process and continues through discharge. It identifies missing documentation elements, suggests improvements, and supports clean claim submission by aligning clinical data with payer requirements.\nThe agent also enables proactive denial prevention by flagging inconsistencies, incomplete records, or potential compliance risks before claims are submitted. This improves claim acceptance rates, reduces rework, and accelerates reimbursement cycles.\nBy combining clinical intelligence with workflow orchestration, the Medical Coding & RCM Agent reduces administrative burden, improves coding accuracy, and delivers measurable financial impact across the revenue cycle.\nplaceholder"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "ai_agent",
+      "claims readiness",
+      "coding accuracy",
+      "custom_kind_service",
+      "denial prevention",
+      "global",
+      "healthcare ai",
+      "ibm_third_party",
+      "icd cpt coding",
+      "medical coding",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "rcm optimization",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-14T06:43:32.76819062-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/520a65af-49d0-4eca-9ac1-b7d79fd93169?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "ca0994f9-231d-4edf-a959-f3fafee69777",
+        "_rev": "9-eef2d9158d9f97445b49e5f58e9c255b",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:ca0994f9-231d-4edf-a959-f3fafee69777",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ca0994f9-231d-4edf-a959-f3fafee69777/%2A",
+        "complete": true,
+        "created": "2026-05-04T21:56:48.89042858-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "ca0994f9-231d-4edf-a959-f3fafee69777",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/ca0994f9-231d-4edf-a959-f3fafee69777/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "AI-Powered Coding Automation\nGenerates accurate ICD and CPT coding suggestions based on clinical documentation and context."
+                  },
+                  {
+                    "description": "Documentation Gap Detection\nIdentifies missing elements required for compliant, billable, and complete clinical records."
+                  },
+                  {
+                    "description": "Denial Prevention Support\nFlags risks before submission to improve clean claim rates and reduce rework."
+                  },
+                  {
+                    "description": "Claims Readiness Optimization\nAligns documentation with payer requirements to accelerate reimbursement."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "medical-coding-and-rcm-agent",
+        "overview_ui": {
+          "en": {
+            "description": "Monthly subscription per provider for AI-powered medical coding and revenue cycle workflows. Improves coding accuracy, reduces denials, and supports claims readiness. AI usage billed separately.\n",
+            "display_name": "Medical Coding And RCM Agent",
+            "long_description": "Monthly subscription per provider for AI-powered medical coding and revenue cycle workflows. Improves coding accuracy, reduces denials, and supports claims readiness. AI usage billed separately.\n"
+          }
+        },
+        "parent_id": "520a65af-49d0-4eca-9ac1-b7d79fd93169",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/520a65af-49d0-4eca-9ac1-b7d79fd93169",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "claims readiness",
+          "coding accuracy",
+          "denial prevention",
+          "healthcare ai",
+          "ibm_third_party",
+          "icd cpt coding",
+          "medical coding",
+          "rcm optimization",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:43:32.766958976-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/ca0994f9-231d-4edf-a959-f3fafee69777?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly subscription per provider for AI-powered medical coding and revenue cycle workflows. Improves coding accuracy, reduces denials, and supports claims readiness. AI usage billed separately.\n",
+        "displayName": "Medical Coding And RCM Agent"
+      }
+    ],
+    "description": "AI agent analyzing clinical data to automate coding, improve accuracy, and optimize revenue cycle workflows and claim outcomes.",
+    "longDescription": "The Medical Coding & RCM Agent is an AI-powered solution that automates and enhances clinical coding and revenue cycle workflows by transforming structured and unstructured clinical data into accurate, compliant, and billable outputs.\nHealthcare organizations often face revenue loss due to incomplete documentation, coding errors, and delayed claim submissions. This agent addresses these challenges by analyzing clinical notes, diagnoses, procedures, and supporting data to generate coding suggestions aligned with ICD and CPT standards.\nIntegrated directly into clinical workflows, the agent ensures that coding begins early in the care process and continues through discharge. It identifies missing documentation elements, suggests improvements, and supports clean claim submission by aligning clinical data with payer requirements.\nThe agent also enables proactive denial prevention by flagging inconsistencies, incomplete records, or potential compliance risks before claims are submitted. This improves claim acceptance rates, reduces rework, and accelerates reimbursement cycles.\nBy combining clinical intelligence with workflow orchestration, the Medical Coding & RCM Agent reduces administrative burden, improves coding accuracy, and delivers measurable financial impact across the revenue cycle.\nplaceholder",
+    "displayName": "Medical Coding And RCM Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/520a65af-49d0-4eca-9ac1-b7d79fd93169.svg",
+    "localPngIcon": "/generated/icons/520a65af-49d0-4eca-9ac1-b7d79fd93169.png"
+  },
+  {
     "_id": "messages-for-rabbitmq",
     "_rev": "807-7702bf53c3e52df80000f20b39dd3a74",
     "active": true,
@@ -183713,7 +185757,7 @@
   },
   {
     "_id": "01037c41-adce-4bb5-8b45-0c06004916c4",
-    "_rev": "55-d7425262608f796a7e3eba568dfb5316",
+    "_rev": "56-c3f51cba3011aaf6b1a1412c5dc0a79e",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:01037c41-adce-4bb5-8b45-0c06004916c4",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4/%2A",
@@ -184270,7 +186314,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-13T12:06:38.476431495-04:00",
+    "updated": "2026-08-14T05:28:11.055371329-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/01037c41-adce-4bb5-8b45-0c06004916c4?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -184278,7 +186322,7 @@
     "plans": [
       {
         "_id": "0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd",
-        "_rev": "14-3333886bd0b3c9ed9662191cf0d98b2e",
+        "_rev": "15-183abce72d67b11311b6f9dcd352e9f7",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd/%2A",
@@ -184516,7 +186560,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-08-13T12:06:38.532565165-04:00",
+        "updated": "2026-08-14T05:28:11.105557267-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0e9e7336-e9c8-45d9-965f-d52f5ea1a4dd?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -184527,7 +186571,7 @@
       },
       {
         "_id": "068074b2-39e1-4e02-86c1-f24b444ea0c4",
-        "_rev": "14-568734c0374b716ade1bc53f8f3ab78e",
+        "_rev": "15-4a0e547e110bc6043cacb529ff7f0bc2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:068074b2-39e1-4e02-86c1-f24b444ea0c4",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/068074b2-39e1-4e02-86c1-f24b444ea0c4/%2A",
@@ -184763,7 +186807,7 @@
         "tags": [
           "gc_migrate"
         ],
-        "updated": "2026-08-13T12:06:38.532794925-04:00",
+        "updated": "2026-08-14T05:28:11.105625535-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/068074b2-39e1-4e02-86c1-f24b444ea0c4?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -184774,7 +186818,7 @@
       },
       {
         "_id": "143acd20-c510-4b8f-9ecd-9816b1238857",
-        "_rev": "14-bc96fe0e7ee4dfa2445b299c23ee088e",
+        "_rev": "15-8ff5d9f1ac7e45084eeb01f605f4b5c5",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:143acd20-c510-4b8f-9ecd-9816b1238857",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/143acd20-c510-4b8f-9ecd-9816b1238857/%2A",
@@ -184984,7 +187028,7 @@
           "ibm_experimental",
           "integration"
         ],
-        "updated": "2026-08-13T12:06:38.533076825-04:00",
+        "updated": "2026-08-14T05:28:11.105801721-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/143acd20-c510-4b8f-9ecd-9816b1238857?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -184995,7 +187039,7 @@
       },
       {
         "_id": "d3f47848-d28e-4ffc-aa37-57f1defe50e6",
-        "_rev": "68-aa24f797eca0099140ed55cc287c7e9f",
+        "_rev": "71-01f45bd383e26a107016f80ba475feba",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d3f47848-d28e-4ffc-aa37-57f1defe50e6",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6/%2A",
@@ -185232,7 +187276,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-08-13T12:12:32.932682928-04:00",
+        "updated": "2026-08-14T05:30:48.567817199-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d3f47848-d28e-4ffc-aa37-57f1defe50e6?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -185243,7 +187287,7 @@
       },
       {
         "_id": "6649abb2-8320-4ac2-9750-42a126b4fe4b",
-        "_rev": "20-1f712ed9197a4a69976525de4cdbf7ac",
+        "_rev": "21-31d45bbc2064095375f30448e1781c5b",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:6649abb2-8320-4ac2-9750-42a126b4fe4b",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/6649abb2-8320-4ac2-9750-42a126b4fe4b/%2A",
@@ -185350,7 +187394,7 @@
           "lite",
           "ibm_created"
         ],
-        "updated": "2026-08-13T12:06:38.532695031-04:00",
+        "updated": "2026-08-14T05:28:11.105658149-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/6649abb2-8320-4ac2-9750-42a126b4fe4b?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -185361,7 +187405,7 @@
       },
       {
         "_id": "b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
-        "_rev": "62-597fd7fe0a0b9e50f36372e5a421ca0a",
+        "_rev": "65-63a5cc6ab307614c0242b1572932b9e7",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b79f2cce-2c43-4ec1-8f4b-03924c75bbba",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba/%2A",
@@ -185571,7 +187615,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-08-13T12:06:38.532834612-04:00",
+        "updated": "2026-08-14T05:32:19.822968265-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b79f2cce-2c43-4ec1-8f4b-03924c75bbba?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -185892,6 +187936,486 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot-consistency-group.svg",
     "localPngIcon": "/generated/icons/is.snapshot-consistency-group.png"
+  },
+  {
+    "_id": "a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+    "_rev": "29-06e3c62665ffa36b65e5e868751f2778",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a66d8a3e-bb27-43ee-a14b-35be91aa2360/%2A",
+    "complete": true,
+    "created": "2026-04-17T11:30:07.161102237-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+    "images": {
+      "image": "https://myluahealth.com/logo.png"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "349c9dba28304965a7309cd6ccbb195d:o:8fdfac9d-3779-4366-9e34-23ebf54fdea1",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "US",
+              "PK"
+            ],
+            "process": "MyLÚA Health provides direct support for the Care Recommendation Agent via email at letsconnect@myluahealth.com. Support is available Monday through Friday, 9:00 AM to 6:00 PM Eastern Time. Issues are triaged by severity — critical availability or data concerns receive priority handling with same-day escalation to senior technical staff. Full support documentation including tier definitions, severity classifications, and escalation process is available at myluahealth.com/agentsupport. Service status and maintenance notices are posted at myluahealthagentstatus.statuspage.io. MyLÚA Health is solely responsible for all Agent support. For IBM watsonx Orchestrate platform issues, customers should contact IBM directly.",
+            "status_url": "https://myluahealthagentstatus.statuspage.io/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "18:00",
+                      "start_time": "09:00"
+                    }
+                  ],
+                  "timezone": "America/New_York"
+                },
+                "contact": "letsconnect@myluahealth.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 8
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "letsconnect@myluahealth.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 8
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 8
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://www.myluahealth.com/agentsupport"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/a66d8a3e-bb27-43ee-a14b-35be91aa2360/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Every case returns need categories, outreach urgency, care pathway steps, referral routing, community resources, and a coordinator summary.",
+                "title": "Structured Six-Section Output"
+              },
+              {
+                "description": "Queries live 211 data by patient location to surface local food, housing, transport, and social support programs specific to each member.",
+                "title": "Real-Time Community Resource Lookup"
+              },
+              {
+                "description": "Accepts lab reports, discharge summaries, antenatal records, case notes, and structured data in a single submission.",
+                "title": "Multi-Format Clinical Document Ingestion"
+              },
+              {
+                "description": "Classifies each case as urgent, moderate, routine, or educational and routes to the right provider type automatically.",
+                "title": "Urgency Classification and Referral Routing"
+              },
+              {
+                "description": "Submit individual or panel data and receive aggregated population insights to identify where care gaps are concentrated across your maternal",
+                "title": "Population-Level Trend Analysis"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.myluahealth.com/agent-docs",
+          "terms_url": "https://www.myluahealth.com/agent-terms"
+        }
+      }
+    },
+    "name": "mylua-health-inc-mylua-care-recommendation-agent",
+    "overview_ui": {
+      "en": {
+        "description": "Analyzes maternal client data and surfaces personalized, evidence-based care recommendations for birthing parents.  ",
+        "display_name": "MyLUA Care Recommendation Agent",
+        "long_description": "Employers, health plans, and care teams struggle to identify which maternal members need support before risks become crises. The MyLÚA Care Recommendation Agent analyzes client documentation including health assessments, intake forms, case notes, lab reports, discharge summaries, and clinical records, then returns structured, evidence-based care recommendations for each member. For every client submitted, the agent surfaces a prioritized needs summary, urgency-classified outreach actions, a step-by-step care pathway sequence, referral and escalation routing, and validated community resources sourced in real time. It supports both individual-level care planning and population-level trend analysis, helping care coordinators act earlier and organizations demonstrate measurable impact across their maternal health programs. Integrating organizations are responsible for implementing appropriate data safeguards before submitting client information to the agent."
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "MyLUA Health Inc"
+    },
+    "tags": [
+      "care coordination",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "maternal health",
+      "paid",
+      "paid_only",
+      "population health",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-14T06:42:02.076654747-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/a66d8a3e-bb27-43ee-a14b-35be91aa2360?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "42ff6325-4507-4aba-9b89-d78ddd67fab7",
+        "_rev": "7-68b42d9c4e80abc08d33014e3f58754b",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:42ff6325-4507-4aba-9b89-d78ddd67fab7",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/42ff6325-4507-4aba-9b89-d78ddd67fab7/%2A",
+        "complete": true,
+        "created": "2026-05-15T13:51:48.676443114-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "42ff6325-4507-4aba-9b89-d78ddd67fab7",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/42ff6325-4507-4aba-9b89-d78ddd67fab7/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Up to 10,000 member records analyzed per month"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "enterprise",
+        "overview_ui": {
+          "en": {
+            "description": "For national health plans, large MCOs, and enterprise employer maternal health programs. Up to 10,000 case analyses per month. $4 per case over cap. Annual commitment, billed monthly.",
+            "display_name": "Enterprise",
+            "long_description": "For national health plans, large MCOs, and enterprise employer maternal health programs. Up to 10,000 case analyses per month. $4 per case over cap. Annual commitment, billed monthly."
+          }
+        },
+        "parent_id": "a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "MyLUA Health Inc"
+        },
+        "tags": [
+          "care coordination",
+          "ibm_third_party",
+          "maternal health",
+          "population health",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:42:01.856079028-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/42ff6325-4507-4aba-9b89-d78ddd67fab7?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "For national health plans, large MCOs, and enterprise employer maternal health programs. Up to 10,000 case analyses per month. $4 per case over cap. Annual commitment, billed monthly.",
+        "displayName": "Enterprise"
+      },
+      {
+        "_id": "e1feb0c7-a004-481c-9326-066884b9e6ed",
+        "_rev": "7-f7e9c3ef769db662afad9a360144deec",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:e1feb0c7-a004-481c-9326-066884b9e6ed",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/e1feb0c7-a004-481c-9326-066884b9e6ed/%2A",
+        "complete": true,
+        "created": "2026-05-15T13:48:29.113517246-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "e1feb0c7-a004-481c-9326-066884b9e6ed",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/e1feb0c7-a004-481c-9326-066884b9e6ed/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Up to 2,000 member records analyzed per month"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "professional",
+        "overview_ui": {
+          "en": {
+            "description": "For health plans, employer health programs, and regional care management teams. Up to 2,000 case analyses per month. $6 per case over cap. Annual commitment, billed monthly.",
+            "display_name": "Professional",
+            "long_description": "For health plans, employer health programs, and regional care management teams. Up to 2,000 case analyses per month. $6 per case over cap. Annual commitment, billed monthly."
+          }
+        },
+        "parent_id": "a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "MyLUA Health Inc"
+        },
+        "tags": [
+          "care coordination",
+          "ibm_third_party",
+          "maternal health",
+          "population health",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:42:01.963731085-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/e1feb0c7-a004-481c-9326-066884b9e6ed?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "For health plans, employer health programs, and regional care management teams. Up to 2,000 case analyses per month. $6 per case over cap. Annual commitment, billed monthly.",
+        "displayName": "Professional"
+      },
+      {
+        "_id": "9642aa35-837e-4589-adfc-c29cad295004",
+        "_rev": "11-ba25a559293a4baa37c71907da76964c",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9642aa35-837e-4589-adfc-c29cad295004",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/9642aa35-837e-4589-adfc-c29cad295004/%2A",
+        "complete": true,
+        "created": "2026-05-07T12:08:44.470459996-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "9642aa35-837e-4589-adfc-c29cad295004",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/9642aa35-837e-4589-adfc-c29cad295004/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Up to 500 member records analyzed per month "
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "standard",
+        "overview_ui": {
+          "en": {
+            "description": "For care coordination organizations, community health programs, and employer pilot initiatives. Up to 500 case analyses per month. $11 per case over cap. Annual commitment, billed monthly.",
+            "display_name": "Standard",
+            "long_description": "For care coordination organizations, community health programs, and employer pilot initiatives. Up to 500 case analyses per month. $11 per case over cap. Annual commitment, billed monthly."
+          }
+        },
+        "parent_id": "a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "MyLUA Health Inc"
+        },
+        "tags": [
+          "ibm_third_party"
+        ],
+        "updated": "2026-08-14T06:42:02.075942012-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/9642aa35-837e-4589-adfc-c29cad295004?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "For care coordination organizations, community health programs, and employer pilot initiatives. Up to 500 case analyses per month. $11 per case over cap. Annual commitment, billed monthly.",
+        "displayName": "Standard"
+      }
+    ],
+    "description": "Analyzes maternal client data and surfaces personalized, evidence-based care recommendations for birthing parents.  ",
+    "longDescription": "Employers, health plans, and care teams struggle to identify which maternal members need support before risks become crises. The MyLÚA Care Recommendation Agent analyzes client documentation including health assessments, intake forms, case notes, lab reports, discharge summaries, and clinical records, then returns structured, evidence-based care recommendations for each member. For every client submitted, the agent surfaces a prioritized needs summary, urgency-classified outreach actions, a step-by-step care pathway sequence, referral and escalation routing, and validated community resources sourced in real time. It supports both individual-level care planning and population-level trend analysis, helping care coordinators act earlier and organizations demonstrate measurable impact across their maternal health programs. Integrating organizations are responsible for implementing appropriate data safeguards before submitting client information to the agent.",
+    "displayName": "MyLUA Care Recommendation Agent",
+    "imageUrl": "https://myluahealth.com/logo.png",
+    "localPngIcon": "/generated/icons/a66d8a3e-bb27-43ee-a14b-35be91aa2360.png"
   },
   {
     "_id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-netapp",
@@ -213231,6 +215755,583 @@
     "localPngIcon": "/generated/icons/074a7393-edc6-4ae2-aa3a-1a23d23898b5.png"
   },
   {
+    "_id": "77594925-844f-4ece-b863-e5395bd2f021",
+    "_rev": "31-f8913933d56ab628f340c45046b29776",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:77594925-844f-4ece-b863-e5395bd2f021",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/77594925-844f-4ece-b863-e5395bd2f021/%2A",
+    "complete": true,
+    "created": "2026-03-11T09:18:41.866438804-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "77594925-844f-4ece-b863-e5395bd2f021",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:d7a6d8da-d8fb-49e7-a172-73d8be18bccb",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "UA",
+              "GE",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates.\n\nSupport is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle.\n\nThe support team assists customers with:\n\nInitial setup and deployment\nIntegration and API connectivity\nAgent configuration and customization guidance\nTroubleshooting and incident resolution\nUsage best practices and optimization",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Europe/Kiev"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/77594925-844f-4ece-b863-e5395bd2f021/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": "Please choose an option",
+            "displayname": "Have you already bought ViClinic - Agentic Healthcare Operating System?",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "ViClinicSystemQuestion",
+            "options": [
+              {
+                "displayname": "Yes",
+                "value": "True"
+              },
+              {
+                "displayname": "No",
+                "value": "False"
+              }
+            ],
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "dropdown",
+            "validationUrl": null,
+            "value": ""
+          }
+        ],
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Conversational AI-guided intake tailored to patient responses; Structured capture of symptoms, duration, severity, context, past history.",
+                "title": "Intelligent Symptom & History Collection"
+              },
+              {
+                "description": "Orchestrates pre-visit workflows across intake → triage → documentation; Prepares structured inputs for clinicians before the visit begins.",
+                "title": "Workflow Orchestration (Front-Door Automation)"
+              },
+              {
+                "description": "Captures clinically relevant data required for prior authorization;\nStructures inputs for faster payer review and approval workflows",
+                "title": "Pre-Authorization Acceleration"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-inc-previsit-agent-public",
+    "overview_ui": {
+      "en": {
+        "description": "Your first AI agent to orchestrate pre-visit workflows, accelerating pre-authorization and improving coding accuracy at discharge.",
+        "display_name": "PreVisit Agent",
+        "long_description": "The Pre-Visit AI Intake Agent captures and structures patient symptoms, history, and clinical inputs before the encounter, enabling providers to begin each visit with complete and actionable data.\nBy guiding patients through a conversational intake process, the agent collects relevant clinical information and converts it into structured, EMR-ready formats. This improves triage, supports clinical decision-making, and reduces repetitive data collection during visits.\nThe agent also plays a critical role in revenue cycle performance by capturing the data required for pre-authorization and ensuring documentation readiness early in the care process.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes.\n\n\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "eligibility support",
+      "global",
+      "healthcare automation",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "pre-authorization",
+      "pre-visiy intake",
+      "prior authorization",
+      "rc_compatible",
+      "rcm optimization",
+      "support_third_party",
+      "triage support",
+      "watson",
+      "workflow orchestration"
+    ],
+    "updated": "2026-08-14T06:45:03.0877902-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/77594925-844f-4ece-b863-e5395bd2f021?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "12b7f011-2590-4d54-85d1-fe5c6b63441a",
+        "_rev": "12-d091b17a210cacb22428ef463aa7e642",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:12b7f011-2590-4d54-85d1-fe5c6b63441a",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/12b7f011-2590-4d54-85d1-fe5c6b63441a/%2A",
+        "complete": true,
+        "created": "2026-04-02T08:00:50.001210938-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "12b7f011-2590-4d54-85d1-fe5c6b63441a",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/12b7f011-2590-4d54-85d1-fe5c6b63441a/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Structured Intake Data\nCaptures symptoms and history before visits, reducing intake time and improving documentation quality."
+                  },
+                  {
+                    "description": "Context-Aware Questions\nAdapts questions based on patient responses and context to ensure relevant, complete pre-visit data."
+                  },
+                  {
+                    "description": "EMR-Ready Output\nGenerates structured data ready for clinical documentation and downstream workflows."
+                  },
+                  {
+                    "description": "Clinic-Specific Customization\nSupports clinic-defined intake logic and specialty workflows aligned with physician preferences."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "fixed-monthly-plan",
+        "overview_ui": {
+          "en": {
+            "description": "Includes up to 500 patient intake interactions per user per month, enabling structured pre-visit data collection and improved clinical readiness.",
+            "display_name": "Pre-Visit Intake Agent  ",
+            "long_description": "Includes up to 500 patient intake interactions per user per month, enabling structured pre-visit data collection and improved clinical readiness."
+          }
+        },
+        "parent_id": "77594925-844f-4ece-b863-e5395bd2f021",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/77594925-844f-4ece-b863-e5395bd2f021",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "eligibility support",
+          "healthcare automation",
+          "ibm_third_party",
+          "pre-authorization",
+          "pre-visiy intake",
+          "prior authorization",
+          "rcm optimization",
+          "triage support",
+          "watson",
+          "workflow orchestration"
+        ],
+        "updated": "2026-08-14T06:45:03.087164102-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/12b7f011-2590-4d54-85d1-fe5c6b63441a?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Includes up to 500 patient intake interactions per user per month, enabling structured pre-visit data collection and improved clinical readiness.",
+        "displayName": "Pre-Visit Intake Agent  "
+      }
+    ],
+    "description": "Your first AI agent to orchestrate pre-visit workflows, accelerating pre-authorization and improving coding accuracy at discharge.",
+    "longDescription": "The Pre-Visit AI Intake Agent captures and structures patient symptoms, history, and clinical inputs before the encounter, enabling providers to begin each visit with complete and actionable data.\nBy guiding patients through a conversational intake process, the agent collects relevant clinical information and converts it into structured, EMR-ready formats. This improves triage, supports clinical decision-making, and reduces repetitive data collection during visits.\nThe agent also plays a critical role in revenue cycle performance by capturing the data required for pre-authorization and ensuring documentation readiness early in the care process.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes.\n\n\n",
+    "displayName": "PreVisit Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/77594925-844f-4ece-b863-e5395bd2f021.svg",
+    "localPngIcon": "/generated/icons/77594925-844f-4ece-b863-e5395bd2f021.png"
+  },
+  {
+    "_id": "ff2d5c9f-0d08-4d22-82f6-60c033accd51",
+    "_rev": "25-7f617f374a4e06d2bafd46b38ee295c4",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ff2d5c9f-0d08-4d22-82f6-60c033accd51",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ff2d5c9f-0d08-4d22-82f6-60c033accd51/%2A",
+    "complete": true,
+    "created": "2026-04-29T12:55:10.648187997-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "ff2d5c9f-0d08-4d22-82f6-60c033accd51",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:f97d3733-5046-4528-b826-48b3d5d81bbc",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "UA",
+              "GE",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates. Support is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle. The support team assists customers with: Initial setup and deployment Integration and API connectivity Agent configuration and customization guidance Troubleshooting and incident resolution Usage best practices and optimization",
+            "status_url": "https://cloud.ibm.com/status?query=orchestrate",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Fortaleza"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/ff2d5c9f-0d08-4d22-82f6-60c033accd51/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Validates patient coverage and benefits before services to prevent delays and billing issues",
+                "title": "Eligibility Verification Automation"
+              },
+              {
+                "description": "Captures and structures required data to streamline submission and accelerate payer approvals.",
+                "title": "Prior Authorization Workflow Automation"
+              },
+              {
+                "description": "Ensures clinical and administrative inputs meet payer-specific criteria to improve approval success rates.",
+                "title": "Payer Requirement Alignment"
+              },
+              {
+                "description": "Identifies missing or inconsistent data before submission to reduce denials and rework.",
+                "title": "Pre-Submission Validation & Error Detection"
+              },
+              {
+                "description": "Coordinates with intake, documentation, and coding agents to ensure seamless payer workflow integration",
+                "title": "Agentic Workflow Orchestration"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-inc-prior-authorization-eligibility-agent",
+    "overview_ui": {
+      "en": {
+        "description": "AI agent streamlining prior authorization and eligibility workflows, accelerating approvals and reducing delays in care delivery.",
+        "display_name": "Prior Authorization Eligibility Agent",
+        "long_description": "The Prior Authorization & Eligibility Agent is an AI-powered solution designed to streamline payer-related workflows by automating eligibility verification and prior authorization processes.\nDelays in prior authorization and incomplete eligibility checks are among the leading causes of care disruption, administrative burden, and revenue loss in healthcare systems. This agent addresses these challenges by capturing, validating, and structuring the clinical and administrative data required for payer review.\nWorking in coordination with pre-visit and clinical documentation workflows, the agent ensures that all necessary information is prepared before submission. It supports eligibility verification, identifies missing data, and aligns clinical inputs with payer requirements to improve approval rates.\nThe agent reduces manual back-and-forth between providers and payers by enabling cleaner, more complete submissions and by flagging potential issues early in the process. This results in faster approvals, fewer delays, and improved patient access to care.\nBy integrating payer workflows into the broader clinical process, the Prior Authorization & Eligibility Agent improves operational efficiency, enhances revenue cycle performance, and supports a more seamless care experience.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes.\n\n\naceholder"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "ai_agent",
+      "claims readiness",
+      "custom_kind_service",
+      "eligibility verification",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "prior authorization",
+      "rc_compatible",
+      "rcm optimization",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-08-14T06:45:33.24717285-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/ff2d5c9f-0d08-4d22-82f6-60c033accd51?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "06493750-d8c4-4d91-b6ab-5c52ccc8a25a",
+        "_rev": "10-b49d71dfe9910a31adb6a6d16230edd2",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:06493750-d8c4-4d91-b6ab-5c52ccc8a25a",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/06493750-d8c4-4d91-b6ab-5c52ccc8a25a/%2A",
+        "complete": true,
+        "created": "2026-05-04T22:00:14.984793182-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "06493750-d8c4-4d91-b6ab-5c52ccc8a25a",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/06493750-d8c4-4d91-b6ab-5c52ccc8a25a/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Eligibility Verification Automation\nValidates patient coverage and benefits before services to prevent delays and billing issues."
+                  },
+                  {
+                    "description": "Prior Authorization Workflow Automation\nCaptures and structures required data to streamline submissions and accelerate approvals."
+                  },
+                  {
+                    "description": "Payer Requirement Alignment\nEnsures clinical inputs meet payer-specific criteria to improve authorization success rates."
+                  },
+                  {
+                    "description": "Pre-Submission Validation\nIdentifies missing or inconsistent data before submission to reduce rework and delays."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "prior-authorization-eligibility-agent",
+        "overview_ui": {
+          "en": {
+            "description": "Monthly subscription per provider for AI-powered prior authorization and eligibility workflows. Accelerates approvals and reduces administrative delays. ",
+            "display_name": "Prior Authorization Eligibility Agent",
+            "long_description": "Monthly subscription per provider for AI-powered prior authorization and eligibility workflows. Accelerates approvals and reduces administrative delays. "
+          }
+        },
+        "parent_id": "ff2d5c9f-0d08-4d22-82f6-60c033accd51",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/ff2d5c9f-0d08-4d22-82f6-60c033accd51",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "claims readiness",
+          "eligibility verification",
+          "ibm_third_party",
+          "prior authorization",
+          "rcm optimization",
+          "watson"
+        ],
+        "updated": "2026-08-14T06:45:33.246541695-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/06493750-d8c4-4d91-b6ab-5c52ccc8a25a?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly subscription per provider for AI-powered prior authorization and eligibility workflows. Accelerates approvals and reduces administrative delays. ",
+        "displayName": "Prior Authorization Eligibility Agent"
+      }
+    ],
+    "description": "AI agent streamlining prior authorization and eligibility workflows, accelerating approvals and reducing delays in care delivery.",
+    "longDescription": "The Prior Authorization & Eligibility Agent is an AI-powered solution designed to streamline payer-related workflows by automating eligibility verification and prior authorization processes.\nDelays in prior authorization and incomplete eligibility checks are among the leading causes of care disruption, administrative burden, and revenue loss in healthcare systems. This agent addresses these challenges by capturing, validating, and structuring the clinical and administrative data required for payer review.\nWorking in coordination with pre-visit and clinical documentation workflows, the agent ensures that all necessary information is prepared before submission. It supports eligibility verification, identifies missing data, and aligns clinical inputs with payer requirements to improve approval rates.\nThe agent reduces manual back-and-forth between providers and payers by enabling cleaner, more complete submissions and by flagging potential issues early in the process. This results in faster approvals, fewer delays, and improved patient access to care.\nBy integrating payer workflows into the broader clinical process, the Prior Authorization & Eligibility Agent improves operational efficiency, enhances revenue cycle performance, and supports a more seamless care experience.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes.\n\n\naceholder",
+    "displayName": "Prior Authorization Eligibility Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/ff2d5c9f-0d08-4d22-82f6-60c033accd51.svg",
+    "localPngIcon": "/generated/icons/ff2d5c9f-0d08-4d22-82f6-60c033accd51.png"
+  },
+  {
     "_id": "is.private-path-service-gateway",
     "_rev": "109-2dfcb36d9f0fa6ccdbe8cc3291e534d1",
     "active": true,
@@ -218164,8 +221265,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -279411,12 +282512,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south",
-          "au-syd",
-          "ca-tor"
+          "us-south"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
@@ -281138,7 +284239,7 @@
   },
   {
     "_id": "43834340-4a6d-11ed-97d2-959039ad2a2e",
-    "_rev": "1160-1de987bc306fc34bfd7eb5fe7ee89f4d",
+    "_rev": "1162-2f1ba7af69713bea800a12a0bb4dbc12",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:43834340-4a6d-11ed-97d2-959039ad2a2e",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e/%2A",
@@ -281520,7 +284621,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-15T04:32:59.42210872-04:00",
+    "updated": "2026-08-14T03:38:41.480315657-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -281528,7 +284629,7 @@
     "plans": [
       {
         "_id": "lakehouse-enterprise",
-        "_rev": "204-e0c975248c10b96a05bfa529768ea6d9",
+        "_rev": "206-6e1007bf0516786d4c966f81e1b464ff",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise/%2A",
@@ -281659,7 +284760,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-07-15T04:32:59.523422797-04:00",
+        "updated": "2026-08-14T03:38:41.583638878-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -281670,7 +284771,7 @@
       },
       {
         "_id": "lakehouse-enterprise-mcsp",
-        "_rev": "174-c54d1cda120debc62b8af68b6f292304",
+        "_rev": "176-a7d98e4472211df51aeada57884fc212",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp/%2A",
@@ -281798,7 +284899,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-07-15T04:32:59.52344537-04:00",
+        "updated": "2026-08-14T03:38:41.584022457-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -281809,7 +284910,7 @@
       },
       {
         "_id": "lakehouse-lite",
-        "_rev": "189-abb8e4355acc3ae93a97b4ad7455c3f0",
+        "_rev": "191-f079ef389e3ca8ca06afe6ff9f825e77",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite/%2A",
@@ -281937,7 +285038,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-07-15T04:32:59.523656868-04:00",
+        "updated": "2026-08-14T03:38:41.583881366-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -281948,7 +285049,7 @@
       },
       {
         "_id": "lakehouse-lite-mcsp",
-        "_rev": "175-3822055dbfe55e64d7abcece2a51e147",
+        "_rev": "177-a4110dcf39bd28bbd8d21abb39a616be",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp/%2A",
@@ -282071,7 +285172,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-07-15T04:32:59.523629735-04:00",
+        "updated": "2026-08-14T03:38:41.584007665-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"

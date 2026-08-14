@@ -126,6 +126,61 @@
     "geo_tags": [
       "global"
     ],
+    "id": "70b2dc0e-40d4-4dc8-8cb7-a57316a70324",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "viclinic-inc-medical-ai-scribe-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "ai_agent",
+      "clinical documentation",
+      "custom_kind_service",
+      "documentation automation",
+      "free",
+      "global",
+      "healthcare ai",
+      "ibm_third_party",
+      "medical scribe",
+      "note generation",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "soap notes",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "d1661c44-82d1-4cf8-b924-93ae24ddb2f6",
+        "name": "ai-medical-scribe-agent",
+        "description": "Fixed monthly pricing per provider for AI-powered clinical documentation. Generates structured notes from conversations; ",
+        "displayName": "AI Medical Scribe Agent"
+      },
+      {
+        "id": "1131d4ce-a37d-4ec6-84c9-9c3f622d7012",
+        "name": "ai-scribe",
+        "description": "Monthly subscription per provider for AI-powered structuring of clinical notes into standardized, clinic-defined formats. AI usage billed separately.\n",
+        "displayName": "Clinical AI Scribe  "
+      }
+    ],
+    "description": "AI agent generating structured clinical notes from conversations, reducing documentation time and improving accuracy and completen",
+    "longDescription": "The AI Medical Scribe Agent is an intelligent documentation assistant that captures and transforms clinical conversations into structured, accurate, and compliant medical notes in real time.\nClinicians spend a significant portion of their time on documentation, often leading to burnout, incomplete records, and reduced patient interaction. This agent addresses these challenges by automatically generating clinical notes from voice or text inputs, aligned with standardized formats such as SOAP.\nIntegrated directly into clinical workflows, the agent structures information into history, examination findings, assessments, and plans, while preserving clinical context and relevance. It supports customization based on specialty-specific templates and organizational requirements.\nThe agent also enhances documentation quality by ensuring completeness and consistency, which supports downstream processes such as coding, billing, and clinical decision-making.\nBy reducing manual data entry and streamlining documentation workflows, the AI Medical Scribe Agent improves clinician efficiency, increases time available for patient care, and supports high-quality, compliant medical records.\n\n\n",
+    "displayName": "AI Medical Scribe Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/70b2dc0e-40d4-4dc8-8cb7-a57316a70324.svg",
+    "localPngIcon": "/generated/icons/70b2dc0e-40d4-4dc8-8cb7-a57316a70324.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "c9962d39-2574-4204-ac92-02290e30d842",
     "kind": "service",
     "metadata": {
@@ -603,14 +658,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -1047,6 +1102,68 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/c24de460-d562-11ee-8c8c-b7e35da58981/artifacts/cache/80b6f7fb612971b49a7a1148991a03c4-public/CloudBackupAndRecovery.svg",
     "localSvgIcon": "/generated/icons/c24de460-d562-11ee-8c8c-b7e35da58981.svg",
     "localPngIcon": "/generated/icons/c24de460-d562-11ee-8c8c-b7e35da58981.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "becf644d-ea16-4562-aca5-3e2f165bfb9d",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "incede-skubanking",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai agent",
+      "ai assistant",
+      "appointment scheduling",
+      "banking",
+      "branch locator",
+      "conversational ai",
+      "credit union",
+      "custom_kind_service",
+      "customer service",
+      "financial services",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "retail banking",
+      "self-service banking",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "b4cb8b07-7790-42cc-b0f1-1cd19e8a4d11",
+        "name": "essential-with-dedicated-tenant-isolated-data",
+        "description": "A 12-month commitment to a production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 5,000 messages per calendar month. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  Subscription is billed based on your selected preference while Overage billing is monthly.",
+        "displayName": "Essential with Dedicated Tenant-Isolated Data"
+      },
+      {
+        "id": "e003ad1d-af87-4aa6-9db2-1badcff260e7",
+        "name": "standard-with-dedicated-tenant-isolated-data",
+        "description": "A 12-month commitment for a scalable production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration, onboarding, and up to 10,000 messages per calendar month. Provides all Essential capabilities while supporting higher customer engagement volumes for growing financial institutions with multiple branches, expanded banking services, and increased AI adoption.",
+        "displayName": "Standard with Dedicated Tenant-Isolated Data"
+      },
+      {
+        "id": "326ddf42-8945-4886-a366-b21d6d4d7b70",
+        "name": "starter-with-dedicated-tenant-isolated-data",
+        "description": "A month-to-month production-ready deployment of the Incede.ai Banking Agent in a dedicated tenant with isolated data, configuration, administration, and monitoring. Includes configuration and onboarding. Delivers core capabilities including branch location, banker expertise matching, appointment scheduling, configurable banking services, and AI-powered customer support.  A one-time initial setup fee is billed upon deployment. Monthly billing includes only the messages processed during the calendar month.",
+        "displayName": "Starter with Dedicated Tenant-Isolated Data"
+      }
+    ],
+    "description": "Helps customers quickly find the most convenient branch, identify the right banker based on their needs and schedule appointments",
+    "longDescription": "An AI-powered banking agent that automates customer service through natural conversation: branch lookups, appointment scheduling, and booking management",
+    "displayName": "Banking Agent from Incede.ai",
+    "imageUrl": "https://www.incede.ai/incede-logo-square.png",
+    "localPngIcon": "/generated/icons/becf644d-ea16-4562-aca5-3e2f165bfb9d.png"
   },
   {
     "id": "1",
@@ -1688,6 +1805,55 @@
     "displayName": "BeX Legal AI Assistant",
     "imageUrl": "https://coolriots.ai/bex-logo.png",
     "localPngIcon": "/generated/icons/ab422db5-6ff2-4aab-b08a-5b870c26efe1.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "5dc3f62e-9f43-481c-ae94-260ebf4fc942",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "biollm-culture-query-agent",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "free",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "a518235d-32cd-46b2-8332-0e546719b414",
+        "name": "free-trial",
+        "description": "30 day free trial of BioLLM Culture Agent",
+        "displayName": "Free Trial"
+      },
+      {
+        "id": "7634bdd7-9de3-4b67-ac89-74007f01b56d",
+        "name": "pro",
+        "description": "Full featured usage and membership tier on-demand access",
+        "displayName": "Pro"
+      }
+    ],
+    "description": "AI-powered agent for querying and analyzing biological culture data using large language model capabilities.",
+    "longDescription": "BioLLM Culture Query Agent is an AI-powered native agent built on IBM watsonx Orchestrate that enables researchers, lab technicians, and bioinformaticians to interact with biological culture databases using natural language queries.\n\nThe agent leverages large language model (LLM) capabilities to understand complex biological queries, retrieve relevant culture data, and deliver actionable insights—eliminating the need for specialized query languages or manual database navigation.\n\nKey capabilities include natural language querying of culture collections, intelligent data retrieval and summarization, cross-referencing of culture metadata, and seamless integration with existing laboratory information management systems (LIMS). Whether you are managing microbial cultures, cell lines, or other biological specimens, BioLLM Culture Query Agent streamlines data access and accelerates research workflows.",
+    "displayName": "BioLLM Culture Query Agent",
+    "imageUrl": "https://biollm.com/logo.svg",
+    "localSvgIcon": "/generated/icons/5dc3f62e-9f43-481c-ae94-260ebf4fc942.svg",
+    "localPngIcon": "/generated/icons/5dc3f62e-9f43-481c-ae94-260ebf4fc942.png"
   },
   {
     "id": "block-storage-group",
@@ -5826,10 +5992,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5840,7 +6002,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6010,7 +6176,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6025,7 +6190,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6414,16 +6580,16 @@
   },
   {
     "geo_tags": [
-      "fra02",
       "eu-es",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "us-south",
-      "eu-gb",
+      "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -8522,6 +8688,73 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "0f3de133-07da-4641-94f0-97d91525711b",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "flacron-ar-ai-agent",
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "augmented_reality",
+      "automated_reporting",
+      "building_inspection",
+      "claims_assistance",
+      "computer_vision",
+      "construction",
+      "cost_estimation",
+      "custom_kind_service",
+      "damage_assessment image_analysis computer_vision repair_scope cost_estimation property_damage water_damage building_inspection insurance_claims claims_assistance restoration_contractors construction facility_management inspection_reports automated_reporting photo_analysis risk_assessment",
+      "facility_management",
+      "free",
+      "global",
+      "ibm_third_party",
+      "image_analysis",
+      "inspection_reports",
+      "insurance_claims",
+      "paid",
+      "paid_only",
+      "photo_analysis",
+      "property_damage",
+      "property_inspection",
+      "rc_compatible",
+      "repair_scope",
+      "restoration_contractors",
+      "risk_assessment",
+      "support_third_party",
+      "water_damage",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "3f717bab-45e4-490c-ad4f-0f7c1fee809d",
+        "name": "free",
+        "description": "Free to add. Includes access to the agent's AI-powered inspection tools photo damage analysis, repair scope generation, and cost estimation.",
+        "displayName": "Free"
+      },
+      {
+        "id": "106e8d1c-41ac-4b0d-a7f7-6df62cefdff9",
+        "name": "starter",
+        "description": "Best for trying the agent tools or occasional inspections. Covers roughly 3 full workflows (photo analysis + scope + estimate) per pack.",
+        "displayName": "Starter"
+      }
+    ],
+    "description": "AI agent that analyzes property inspection photos for damage, generates repair scopes, and produces cost estimates.",
+    "longDescription": "Flacron AR Agent automates the repetitive part of property inspection follow up. Feed it an inspection photo and it identifies visible damage type, location, severity, and a recommended action. From there, it turns those findings into a structured repair scope of work, and prices that scope into a full cost estimate with labor, material, and total line items.\nEach action is a discrete, callable tool with a defined input and output, so it fits directly into an automated workflow: trigger damage analysis on a new photo, generate the scope from the findings, generate the estimate from the scope. Authentication is a company-scoped API key, so every call is tied to the right account and project.\n",
+    "displayName": "Flacron AR AI Agent",
+    "imageUrl": "https://flacronar.com/logo-ibm-marketplace.jpg",
+    "localPngIcon": "/generated/icons/0f3de133-07da-4641-94f0-97d91525711b.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "au-syd-1",
       "au-syd-2",
@@ -9550,14 +9783,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10168,19 +10401,19 @@
   },
   {
     "geo_tags": [
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "br-sao",
-      "in-che",
+      "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
+      "ca-mon",
       "au-syd",
-      "jp-osa",
-      "in-mum"
+      "eu-gb",
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "br-sao",
+      "in-che"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11437,6 +11670,54 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "520a65af-49d0-4eca-9ac1-b7d79fd93169",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "viclinic-inc-medical-coding-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "claims readiness",
+      "coding accuracy",
+      "custom_kind_service",
+      "denial prevention",
+      "global",
+      "healthcare ai",
+      "ibm_third_party",
+      "icd cpt coding",
+      "medical coding",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "rcm optimization",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "ca0994f9-231d-4edf-a959-f3fafee69777",
+        "name": "medical-coding-and-rcm-agent",
+        "description": "Monthly subscription per provider for AI-powered medical coding and revenue cycle workflows. Improves coding accuracy, reduces denials, and supports claims readiness. AI usage billed separately.\n",
+        "displayName": "Medical Coding And RCM Agent"
+      }
+    ],
+    "description": "AI agent analyzing clinical data to automate coding, improve accuracy, and optimize revenue cycle workflows and claim outcomes.",
+    "longDescription": "The Medical Coding & RCM Agent is an AI-powered solution that automates and enhances clinical coding and revenue cycle workflows by transforming structured and unstructured clinical data into accurate, compliant, and billable outputs.\nHealthcare organizations often face revenue loss due to incomplete documentation, coding errors, and delayed claim submissions. This agent addresses these challenges by analyzing clinical notes, diagnoses, procedures, and supporting data to generate coding suggestions aligned with ICD and CPT standards.\nIntegrated directly into clinical workflows, the agent ensures that coding begins early in the care process and continues through discharge. It identifies missing documentation elements, suggests improvements, and supports clean claim submission by aligning clinical data with payer requirements.\nThe agent also enables proactive denial prevention by flagging inconsistencies, incomplete records, or potential compliance risks before claims are submitted. This improves claim acceptance rates, reduces rework, and accelerates reimbursement cycles.\nBy combining clinical intelligence with workflow orchestration, the Medical Coding & RCM Agent reduces administrative burden, improves coding accuracy, and delivers measurable financial impact across the revenue cycle.\nplaceholder",
+    "displayName": "Medical Coding And RCM Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/520a65af-49d0-4eca-9ac1-b7d79fd93169.svg",
+    "localPngIcon": "/generated/icons/520a65af-49d0-4eca-9ac1-b7d79fd93169.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -11762,6 +12043,60 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.snapshot/artifacts/cache/a972f933e0c778bf0bcdb103d605b7c9-public/Cloud-BSS_icon_light-theme.svg",
     "localSvgIcon": "/generated/icons/is.snapshot-consistency-group.svg",
     "localPngIcon": "/generated/icons/is.snapshot-consistency-group.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "a66d8a3e-bb27-43ee-a14b-35be91aa2360",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "mylua-health-inc-mylua-care-recommendation-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "care coordination",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "maternal health",
+      "paid",
+      "paid_only",
+      "population health",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "42ff6325-4507-4aba-9b89-d78ddd67fab7",
+        "name": "enterprise",
+        "description": "For national health plans, large MCOs, and enterprise employer maternal health programs. Up to 10,000 case analyses per month. $4 per case over cap. Annual commitment, billed monthly.",
+        "displayName": "Enterprise"
+      },
+      {
+        "id": "e1feb0c7-a004-481c-9326-066884b9e6ed",
+        "name": "professional",
+        "description": "For health plans, employer health programs, and regional care management teams. Up to 2,000 case analyses per month. $6 per case over cap. Annual commitment, billed monthly.",
+        "displayName": "Professional"
+      },
+      {
+        "id": "9642aa35-837e-4589-adfc-c29cad295004",
+        "name": "standard",
+        "description": "For care coordination organizations, community health programs, and employer pilot initiatives. Up to 500 case analyses per month. $11 per case over cap. Annual commitment, billed monthly.",
+        "displayName": "Standard"
+      }
+    ],
+    "description": "Analyzes maternal client data and surfaces personalized, evidence-based care recommendations for birthing parents.  ",
+    "longDescription": "Employers, health plans, and care teams struggle to identify which maternal members need support before risks become crises. The MyLÚA Care Recommendation Agent analyzes client documentation including health assessments, intake forms, case notes, lab reports, discharge summaries, and clinical records, then returns structured, evidence-based care recommendations for each member. For every client submitted, the agent surfaces a prioritized needs summary, urgency-classified outreach actions, a step-by-step care pathway sequence, referral and escalation routing, and validated community resources sourced in real time. It supports both individual-level care planning and population-level trend analysis, helping care coordinators act earlier and organizations demonstrate measurable impact across their maternal health programs. Integrating organizations are responsible for implementing appropriate data safeguards before submitting client information to the agent.",
+    "displayName": "MyLUA Care Recommendation Agent",
+    "imageUrl": "https://myluahealth.com/logo.png",
+    "localPngIcon": "/generated/icons/a66d8a3e-bb27-43ee-a14b-35be91aa2360.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-netapp",
@@ -14167,6 +14502,100 @@
   },
   {
     "geo_tags": [
+      "global"
+    ],
+    "id": "77594925-844f-4ece-b863-e5395bd2f021",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "viclinic-inc-previsit-agent-public",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "eligibility support",
+      "global",
+      "healthcare automation",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "pre-authorization",
+      "pre-visiy intake",
+      "prior authorization",
+      "rc_compatible",
+      "rcm optimization",
+      "support_third_party",
+      "triage support",
+      "watson",
+      "workflow orchestration"
+    ],
+    "plans": [
+      {
+        "id": "12b7f011-2590-4d54-85d1-fe5c6b63441a",
+        "name": "fixed-monthly-plan",
+        "description": "Includes up to 500 patient intake interactions per user per month, enabling structured pre-visit data collection and improved clinical readiness.",
+        "displayName": "Pre-Visit Intake Agent  "
+      }
+    ],
+    "description": "Your first AI agent to orchestrate pre-visit workflows, accelerating pre-authorization and improving coding accuracy at discharge.",
+    "longDescription": "The Pre-Visit AI Intake Agent captures and structures patient symptoms, history, and clinical inputs before the encounter, enabling providers to begin each visit with complete and actionable data.\nBy guiding patients through a conversational intake process, the agent collects relevant clinical information and converts it into structured, EMR-ready formats. This improves triage, supports clinical decision-making, and reduces repetitive data collection during visits.\nThe agent also plays a critical role in revenue cycle performance by capturing the data required for pre-authorization and ensuring documentation readiness early in the care process.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes.\n\n\n",
+    "displayName": "PreVisit Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/77594925-844f-4ece-b863-e5395bd2f021.svg",
+    "localPngIcon": "/generated/icons/77594925-844f-4ece-b863-e5395bd2f021.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "ff2d5c9f-0d08-4d22-82f6-60c033accd51",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "viclinic-inc-prior-authorization-eligibility-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "claims readiness",
+      "custom_kind_service",
+      "eligibility verification",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "prior authorization",
+      "rc_compatible",
+      "rcm optimization",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "06493750-d8c4-4d91-b6ab-5c52ccc8a25a",
+        "name": "prior-authorization-eligibility-agent",
+        "description": "Monthly subscription per provider for AI-powered prior authorization and eligibility workflows. Accelerates approvals and reduces administrative delays. ",
+        "displayName": "Prior Authorization Eligibility Agent"
+      }
+    ],
+    "description": "AI agent streamlining prior authorization and eligibility workflows, accelerating approvals and reducing delays in care delivery.",
+    "longDescription": "The Prior Authorization & Eligibility Agent is an AI-powered solution designed to streamline payer-related workflows by automating eligibility verification and prior authorization processes.\nDelays in prior authorization and incomplete eligibility checks are among the leading causes of care disruption, administrative burden, and revenue loss in healthcare systems. This agent addresses these challenges by capturing, validating, and structuring the clinical and administrative data required for payer review.\nWorking in coordination with pre-visit and clinical documentation workflows, the agent ensures that all necessary information is prepared before submission. It supports eligibility verification, identifies missing data, and aligns clinical inputs with payer requirements to improve approval rates.\nThe agent reduces manual back-and-forth between providers and payers by enabling cleaner, more complete submissions and by flagging potential issues early in the process. This results in faster approvals, fewer delays, and improved patient access to care.\nBy integrating payer workflows into the broader clinical process, the Prior Authorization & Eligibility Agent improves operational efficiency, enhances revenue cycle performance, and supports a more seamless care experience.\nThis agent is part of the ViClinic agentic healthcare orchestration platform (AHOS), where multiple AI agents work together across clinical workflows—from intake to follow-up—under clinician supervision. By sharing structured data and context, these agents enable end-to-end workflow automation, improved decision-making, and measurable operational and clinical outcomes.\n\n\naceholder",
+    "displayName": "Prior Authorization Eligibility Agent",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/ff2d5c9f-0d08-4d22-82f6-60c033accd51.svg",
+    "localPngIcon": "/generated/icons/ff2d5c9f-0d08-4d22-82f6-60c033accd51.png"
+  },
+  {
+    "geo_tags": [
       "au-syd",
       "br-sao",
       "ca-mon",
@@ -15020,8 +15449,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
