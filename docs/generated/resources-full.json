@@ -8924,14 +8924,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -89798,7 +89798,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:eu-de",
-            "_rev": "9-02e1ce9327bf24becb43792672a53841",
+            "_rev": "10-60379bfb3b048ede77a9fa81fac69b6d",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aeu-de",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:eu-de/%2A",
@@ -89842,6 +89842,18 @@
                   }
                 },
                 "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
                   {
                     "cpu": {
                       "allocation_count": 8
@@ -89889,6 +89901,18 @@
                     },
                     "name": "48x240",
                     "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
                   },
                   {
                     "cpu": {
@@ -90093,7 +90117,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-06T13:59:47.149467236-04:00",
+            "updated": "2026-08-17T05:56:45.858111039-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:eu-de?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -90101,7 +90125,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-che",
-            "_rev": "15-579a30be39da4b21c024db2ce31278d2",
+            "_rev": "16-b2a37c78cea4117f0c7d2e1094be2231",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che/%2A",
@@ -90145,6 +90169,18 @@
                   }
                 },
                 "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
                   {
                     "cpu": {
                       "allocation_count": 8
@@ -90192,6 +90228,18 @@
                     },
                     "name": "48x240",
                     "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
                   },
                   {
                     "cpu": {
@@ -90396,7 +90444,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-23T11:47:06.965425321-04:00",
+            "updated": "2026-08-17T06:00:24.368076825-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -90404,7 +90452,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-mum",
-            "_rev": "14-08fd20ca7fd203374914da3905da05e9",
+            "_rev": "15-dd611f75c5bc0877f088f86759656450",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum/%2A",
@@ -90448,6 +90496,18 @@
                   }
                 },
                 "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
                   {
                     "cpu": {
                       "allocation_count": 8
@@ -90495,6 +90555,18 @@
                     },
                     "name": "48x240",
                     "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
                   },
                   {
                     "cpu": {
@@ -90699,7 +90771,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-23T11:47:15.116390632-04:00",
+            "updated": "2026-08-17T06:01:32.380494803-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -90707,7 +90779,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:us-east",
-            "_rev": "9-38ae8274ca868b5b60da164eaf26f8e7",
+            "_rev": "10-965df5ab5630ea003ea0efff63479ba5",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aus-east",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:us-east/%2A",
@@ -90751,6 +90823,18 @@
                   }
                 },
                 "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
                   {
                     "cpu": {
                       "allocation_count": 8
@@ -90798,6 +90882,18 @@
                     },
                     "name": "48x240",
                     "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
                   },
                   {
                     "cpu": {
@@ -91002,7 +91098,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-20T12:34:07.822863011-04:00",
+            "updated": "2026-08-17T06:02:41.642027486-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:us-east?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -93947,6 +94043,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -93954,11 +94054,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -96135,10 +96231,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -96149,7 +96241,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -96644,10 +96740,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -96655,7 +96747,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -106253,7 +106349,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -106268,7 +106363,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -112030,7 +112126,7 @@
   },
   {
     "_id": "databases-independent-backups",
-    "_rev": "24-f62f8061d23deaecdc64a17b280af848",
+    "_rev": "27-91276abd4ec32a7de5b7184550811297",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-independent-backups",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups/%2A",
@@ -112038,8 +112134,10 @@
     "created": "2026-06-03T07:54:19.712140494-04:00",
     "disabled": false,
     "geo_tags": [
+      "ca-mon",
       "eu-de",
       "in-che",
+      "in-mum",
       "us-east"
     ],
     "id": "databases-independent-backups",
@@ -112119,18 +112217,20 @@
     },
     "tags": [
       "allow_internal_users",
+      "ca-mon",
       "custom_kind_service",
       "data_management",
       "eu-de",
       "ibm_created",
       "in-che",
+      "in-mum",
       "paygo",
       "rc_compatible",
       "support_ibm",
       "us-east",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-08-06T11:49:12.628333124-04:00",
+    "updated": "2026-08-17T06:42:09.538708589-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -112138,7 +112238,7 @@
     "plans": [
       {
         "_id": "databases-independent-backups-gen2-standard",
-        "_rev": "22-7d705077cedea3f6ea73dae98266f71e",
+        "_rev": "25-a908c45e6628a3b9b18bfc193187be89",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-independent-backups-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard/%2A",
@@ -112146,8 +112246,10 @@
         "created": "2026-06-03T07:54:21.033321001-04:00",
         "disabled": false,
         "geo_tags": [
+          "ca-mon",
           "eu-de",
           "in-che",
+          "in-mum",
           "us-east"
         ],
         "id": "databases-independent-backups-gen2-standard",
@@ -112216,7 +112318,7 @@
           "ibm_created",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-08-06T11:49:12.628184788-04:00",
+        "updated": "2026-08-17T06:42:09.538543391-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -115168,7 +115270,7 @@
   },
   {
     "_id": "dashdb-for-transactions",
-    "_rev": "124-c057b00b3025373c20d5c07122da1edc",
+    "_rev": "126-e53ae2011f4c50a5e8c6ca56d4b4bb8f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:dashdb-for-transactions",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions/%2A",
@@ -115176,16 +115278,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "fra02",
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
+      "fra02",
+      "eu-es",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -115807,7 +115909,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-21T01:31:03.642059339-04:00",
+    "updated": "2026-08-17T08:54:08.319533616-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -119925,13 +120027,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -158507,12 +158609,12 @@
       "us-east",
       "ca-tor",
       "ca-mon",
-      "eu-de",
-      "us-south",
+      "au-syd",
       "eu-gb",
       "jp-osa",
       "in-mum",
-      "au-syd"
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -221257,7 +221359,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "456-da1a7978ea733f432562366ce2c6afc5",
+    "_rev": "457-c79f87dcecba3f8407f6d7db134f4230",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -221755,7 +221857,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-08-14T13:52:20.79510477-04:00",
+    "updated": "2026-08-17T07:01:57.520162194-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -221912,7 +222014,7 @@
       },
       {
         "_id": "5304b575-3cff-4455-90dc-ae4367762093",
-        "_rev": "120-218f8ac0207706b90f7ef9c101aa83a3",
+        "_rev": "121-7c8970fd7f9f62714210684453c18bb4",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5304b575-3cff-4455-90dc-ae4367762093",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093/%2A",
@@ -222115,7 +222217,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-10T14:05:29.456453834-04:00",
+        "updated": "2026-08-17T07:01:51.077505521-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -244847,12 +244949,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -276747,12 +276849,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -284239,7 +284341,7 @@
   },
   {
     "_id": "43834340-4a6d-11ed-97d2-959039ad2a2e",
-    "_rev": "1162-2f1ba7af69713bea800a12a0bb4dbc12",
+    "_rev": "1163-56c51b6fa966f260022833e386c8a482",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:43834340-4a6d-11ed-97d2-959039ad2a2e",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e/%2A",
@@ -284621,7 +284723,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-14T03:38:41.480315657-04:00",
+    "updated": "2026-08-17T02:00:39.478952431-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -284629,7 +284731,7 @@
     "plans": [
       {
         "_id": "lakehouse-enterprise",
-        "_rev": "206-6e1007bf0516786d4c966f81e1b464ff",
+        "_rev": "207-af7afbec610dbd61f07f79cb950f1b0d",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise/%2A",
@@ -284760,7 +284862,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-14T03:38:41.583638878-04:00",
+        "updated": "2026-08-17T02:00:39.586904255-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -284771,7 +284873,7 @@
       },
       {
         "_id": "lakehouse-enterprise-mcsp",
-        "_rev": "176-a7d98e4472211df51aeada57884fc212",
+        "_rev": "177-517be30afd566a71b6a537766f5fa067",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp/%2A",
@@ -284899,7 +285001,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-14T03:38:41.584022457-04:00",
+        "updated": "2026-08-17T02:00:39.5872424-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -284910,7 +285012,7 @@
       },
       {
         "_id": "lakehouse-lite",
-        "_rev": "191-f079ef389e3ca8ca06afe6ff9f825e77",
+        "_rev": "192-c23eab68d6f7984a4000f15c975b04b2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite/%2A",
@@ -285038,7 +285140,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-14T03:38:41.583881366-04:00",
+        "updated": "2026-08-17T02:00:39.587477924-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -285049,7 +285151,7 @@
       },
       {
         "_id": "lakehouse-lite-mcsp",
-        "_rev": "177-a4110dcf39bd28bbd8d21abb39a616be",
+        "_rev": "178-8a3d8821da1317582afc805904846ac9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp/%2A",
@@ -285172,7 +285274,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-14T03:38:41.584007665-04:00",
+        "updated": "2026-08-17T02:00:39.587198168-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"
