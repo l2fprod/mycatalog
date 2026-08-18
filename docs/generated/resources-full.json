@@ -115270,7 +115270,7 @@
   },
   {
     "_id": "dashdb-for-transactions",
-    "_rev": "126-e53ae2011f4c50a5e8c6ca56d4b4bb8f",
+    "_rev": "127-90b1e4ba36eabcf206e33586117313b1",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:dashdb-for-transactions",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions/%2A",
@@ -115278,16 +115278,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "eu-es",
+      "eu-de",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "fra02",
-      "eu-es",
-      "us-south",
-      "eu-gb",
       "au-syd",
-      "us-east"
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -115861,7 +115861,8 @@
       "subscription",
       "subscription_only",
       "free",
-      "lite"
+      "lite",
+      "block_internal_trial"
     ],
     "provider": {
       "name": "IBM"
@@ -115870,6 +115871,7 @@
       "apidocs_enabled",
       "au-syd",
       "big_data",
+      "block_internal_trial",
       "br-sao",
       "ca-tor",
       "custom_kind_service",
@@ -115909,7 +115911,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-17T08:54:08.319533616-04:00",
+    "updated": "2026-08-17T08:57:20.343183724-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -119598,7 +119600,7 @@
       },
       {
         "_id": "Performance",
-        "_rev": "76-3e38c79ec18c48c776b1829fdc03953f",
+        "_rev": "77-ebfc8c579c7a6fc9715ff85f4efbcba7",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:Performance",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/Performance/%2A",
@@ -119699,7 +119701,8 @@
         "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions",
         "pricing_tags": [
           "paid",
-          "paid_only"
+          "paid_only",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
@@ -119725,7 +119728,7 @@
           "sqldb",
           "transactions"
         ],
-        "updated": "2026-05-07T16:22:38.664761796-04:00",
+        "updated": "2026-08-17T08:57:00.549811852-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/Performance?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -120027,13 +120030,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -148009,14 +148012,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -158602,19 +158605,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "ca-mon",
+      "eu-de",
+      "us-south",
       "br-sao",
       "in-che",
+      "jp-osa",
+      "in-mum",
+      "au-syd",
+      "eu-gb",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "eu-gb",
-      "jp-osa",
-      "in-mum",
-      "eu-de",
-      "us-south"
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -179594,7 +179597,6 @@
     "longDescription": "Use IBM Master Data Management to quickly build data pipelines for analytics and other data science use cases using master data.  Start with your IBM MDM Advanced or Standard Edition entities, or with any data assets containing party information from the knowledge catalog and quickly map and model new attributes to your data model for a more complete view of your customers. The AI-powered matching engine speeds configuration using the same statistical methods clients have relied on to produce accurate match results.  Results can be accessed via RESTful APIs, exported to flat files, or viewed online via the entity explorer.",
     "displayName": "Master Data Management",
     "imageUrl": "https://test.cloud.ibm.com/mdm-oc/static/mdm-icon.svg",
-    "localSvgIcon": "/generated/icons/14bd30e0-8921-11e9-a2c5-13fceaf553c0.svg",
     "localPngIcon": "/generated/icons/14bd30e0-8921-11e9-a2c5-13fceaf553c0.png"
   },
   {
@@ -225785,7 +225787,7 @@
   },
   {
     "_id": "bd517bf0-88ba-11ea-a52e-91aeb42a4019",
-    "_rev": "4-32f67de979d1960a57291c8d187c2466",
+    "_rev": "7-b70661d342471257b43eef05eeba8bb2",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:bd517bf0-88ba-11ea-a52e-91aeb42a4019",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/bd517bf0-88ba-11ea-a52e-91aeb42a4019/%2A",
@@ -225814,6 +225816,14 @@
     "kind": "service",
     "metadata": {
       "other": {
+        "PC": {
+          "support": {
+            "process": "IBM Cloud Satellite is created and supported by the same team that creates IKS and ROKS in IBM cloud. The support process would be the same as opening an Openshift on IBM cloud case. Within that organization the armada-horizon team is responsible for Satellite. ",
+            "status_url": "https://cloud.ibm.com/status?query=satellite",
+            "support_type": "ibm_cloud",
+            "url": "https://cloud.ibm.com/unifiedsupport/supportcenter"
+          }
+        },
         "iam": {
           "key": "",
           "supportedAttributes": [
@@ -226140,7 +226150,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2024-11-04T13:13:07.05913756-05:00",
+    "updated": "2026-08-17T09:24:14.480641425-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/bd517bf0-88ba-11ea-a52e-91aeb42a4019?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -244949,12 +244959,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
