@@ -96231,6 +96231,9 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -96242,10 +96245,7 @@
       "par01",
       "us-east",
       "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -104415,6 +104415,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -104425,8 +104426,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -104524,7 +104524,7 @@
         "children": [
           {
             "_id": "databases-for-postgresql-standard-gen2:ca-mon",
-            "_rev": "44-3a1e47abe42b80cc2983dfa12521f091",
+            "_rev": "45-c0786da27a9a375808245af86ff1cf88",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:ca-mon/%2A",
@@ -104552,7 +104552,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -104842,7 +104843,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-03T11:19:49.137945522-04:00",
+            "updated": "2026-08-19T07:52:09.286027686-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -105179,7 +105180,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:in-che",
-            "_rev": "14-fc356db2efd3a42e3bf724a13cbc0b92",
+            "_rev": "15-a0bab945d1db8e27ee1c2837122d91a0",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-che/%2A",
@@ -105207,7 +105208,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -105497,7 +105499,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-03T11:20:32.819712764-04:00",
+            "updated": "2026-08-19T07:52:30.468699894-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -105505,7 +105507,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:in-mum",
-            "_rev": "9-33d88026795f26afcd00a5ef6cd92917",
+            "_rev": "10-f4ba3edf4ec18cbd40309c5a566225ab",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-mum/%2A",
@@ -105533,7 +105535,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -105823,7 +105826,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-03T11:20:48.559898097-04:00",
+            "updated": "2026-08-19T07:52:47.807497927-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -106528,7 +106531,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -106539,7 +106541,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -115278,16 +115281,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "au-syd",
-      "us-east",
-      "fra02",
       "eu-es",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -148012,14 +148015,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -158605,19 +158608,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
+      "in-che",
       "jp-osa",
       "in-mum",
-      "ca-mon",
-      "au-syd",
-      "eu-gb",
-      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "eu-de",
       "us-south",
-      "br-sao"
+      "ca-mon",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -244959,12 +244962,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
