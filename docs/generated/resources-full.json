@@ -8924,14 +8924,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "images": {
@@ -96231,10 +96231,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -96245,7 +96241,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -104415,7 +104415,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -104426,7 +104425,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -115279,15 +115279,15 @@
     "disabled": false,
     "geo_tags": [
       "us-south",
-      "eu-de",
+      "au-syd",
+      "us-east",
+      "fra02",
       "eu-es",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "au-syd",
-      "us-east",
-      "fra02"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -120030,13 +120030,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -135283,7 +135283,7 @@
       },
       {
         "_id": "eventstreams-gen2-enterprise",
-        "_rev": "60-752fdcc49ccf75dca9419c3fc85a5e32",
+        "_rev": "61-d642c988b788929871fa7407fc6ae6f9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:eventstreams-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise/%2A",
@@ -135381,7 +135381,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-08-11T09:58:17.927657362-04:00",
+        "updated": "2026-08-18T09:36:58.651014031-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -158605,19 +158605,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "in-che",
+      "jp-osa",
       "in-mum",
+      "ca-mon",
+      "au-syd",
+      "eu-gb",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
+      "ca-tor",
       "eu-de",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "jp-osa",
-      "ca-tor",
-      "eu-gb"
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -221867,7 +221867,7 @@
     "plans": [
       {
         "_id": "850b21a7-71de-4e53-9441-1abdd202f35d",
-        "_rev": "36-9c6bcbeef623c6bbee5acfc808a75585",
+        "_rev": "37-bf880013e6a8e539989cac9c225d7cbe",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:850b21a7-71de-4e53-9441-1abdd202f35d",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/850b21a7-71de-4e53-9441-1abdd202f35d/%2A",
@@ -222005,7 +222005,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-03-06T12:16:08.139607832-05:00",
+        "updated": "2026-08-18T13:49:43.880092464-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/850b21a7-71de-4e53-9441-1abdd202f35d?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -254251,7 +254251,6 @@
     "created": "2018-11-19T20:43:19.725Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -254293,7 +254292,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "images": {
@@ -277810,12 +277810,12 @@
         "created": "2015-10-15T05:13:52Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
-          "eu-gb",
-          "us-south",
           "au-syd",
           "ca-tor",
-          "jp-tok"
+          "jp-tok",
+          "eu-de",
+          "eu-gb",
+          "us-south"
         ],
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "images": {
@@ -281141,12 +281141,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -289431,10 +289431,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {

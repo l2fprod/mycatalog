@@ -658,14 +658,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -5992,10 +5992,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6006,7 +6002,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6585,15 +6585,15 @@
   {
     "geo_tags": [
       "us-south",
-      "eu-de",
+      "au-syd",
+      "us-east",
+      "fra02",
       "eu-es",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "au-syd",
-      "us-east",
-      "fra02"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6751,13 +6751,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -10407,19 +10407,19 @@
   },
   {
     "geo_tags": [
-      "in-che",
+      "jp-osa",
       "in-mum",
+      "ca-mon",
+      "au-syd",
+      "eu-gb",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
+      "ca-tor",
       "eu-de",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "jp-osa",
-      "ca-tor",
-      "eu-gb"
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -19978,7 +19978,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20020,7 +20019,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -21876,12 +21876,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
