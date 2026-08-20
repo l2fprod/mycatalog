@@ -8924,14 +8924,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "images": {
@@ -15111,7 +15111,7 @@
   },
   {
     "_id": "becf644d-ea16-4562-aca5-3e2f165bfb9d",
-    "_rev": "46-5c414678e148b12048457c301b1a6cb2",
+    "_rev": "48-3c0387ff89c3cd026d7f0cb4a1d8e55f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:becf644d-ea16-4562-aca5-3e2f165bfb9d",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d/%2A",
@@ -15322,6 +15322,7 @@
     "tags": [
       "ai agent",
       "ai assistant",
+      "ai_agent",
       "appointment scheduling",
       "banking",
       "branch locator",
@@ -15332,15 +15333,19 @@
       "financial services",
       "global",
       "ibm_third_party",
+      "orchestrate",
       "paid",
       "paid_only",
       "rc_compatible",
       "retail banking",
       "self-service banking",
       "support_third_party",
-      "watson"
+      "watson",
+      "watsonx",
+      "watsonx orchestrate",
+      "wxo"
     ],
-    "updated": "2026-08-14T06:46:33.99438084-04:00",
+    "updated": "2026-08-19T22:21:17.155715321-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/becf644d-ea16-4562-aca5-3e2f165bfb9d?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -94043,6 +94048,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -94050,11 +94059,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -96231,9 +96236,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -96245,7 +96247,10 @@
       "par01",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -96740,6 +96745,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -96747,11 +96756,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -106531,6 +106536,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -106541,8 +106547,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -115287,10 +115292,10 @@
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "au-syd",
       "us-east",
-      "fra02"
+      "fra02",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -120033,13 +120038,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -148015,14 +148020,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -158609,16 +158614,16 @@
     "disabled": false,
     "geo_tags": [
       "br-sao",
-      "in-che",
       "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "ca-mon",
+      "in-che",
+      "in-mum",
       "eu-de",
       "us-south",
-      "ca-mon",
       "au-syd",
       "eu-gb"
     ],
@@ -221364,7 +221369,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "457-c79f87dcecba3f8407f6d7db134f4230",
+    "_rev": "462-9b6f17d794e364d637e782064875a572",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -221372,8 +221377,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -221862,7 +221867,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-08-17T07:01:57.520162194-04:00",
+    "updated": "2026-08-19T16:07:11.647209577-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -244962,12 +244967,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -285758,12 +285763,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
