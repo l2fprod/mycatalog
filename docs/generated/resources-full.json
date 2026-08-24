@@ -8924,14 +8924,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -106357,6 +106357,7 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -106371,8 +106372,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -115286,16 +115286,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
       "au-syd",
       "us-east",
       "fra02",
+      "eu-es",
+      "us-south",
+      "eu-gb",
+      "eu-de",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -120038,13 +120038,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -148020,14 +148020,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -158613,19 +158613,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "jp-osa",
+      "br-sao",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "in-che",
+      "jp-osa",
       "ca-tor",
       "au-syd",
-      "br-sao",
-      "in-che"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -195108,7 +195108,7 @@
   },
   {
     "_id": "466091c0-9b8d-11eb-8f8c-91e95378d441",
-    "_rev": "51-751698b6d9e80ca429d49997d9d0900f",
+    "_rev": "53-081268c6869941ca5550fc7e784bd586",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:466091c0-9b8d-11eb-8f8c-91e95378d441",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441/%2A",
@@ -196577,7 +196577,7 @@
       "us-south",
       "watson"
     ],
-    "updated": "2026-06-25T06:04:18.048643536-04:00",
+    "updated": "2026-08-24T00:57:11.243676616-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -228322,7 +228322,7 @@
   },
   {
     "_id": "ebc0cdb0-af2a-11ea-98c7-29e5db822649",
-    "_rev": "73-c137b284bc261f4877b266145f5043f9",
+    "_rev": "74-df8f9bb5ddb32f6f81f9df9ad5939544",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ebc0cdb0-af2a-11ea-98c7-29e5db822649",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ebc0cdb0-af2a-11ea-98c7-29e5db822649/%2A",
@@ -228581,6 +228581,10 @@
               {
                 "description": "Define how your secrets interact with external systems through customizable credential templates. These templates use IBM Code Engine jobs to enable secure, automated secret provisioning tailored to your organization’s workflows.",
                 "title": "Create custom credentials"
+              },
+              {
+                "description": "[Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs) — Explore the Cloud Foundation for Security and Observability Deployable Architecture, which includes Secrets Manager as part of the solution.",
+                "title": "Recommended Architectures"
               }
             ],
             "media": [
@@ -229114,7 +229118,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-27T03:20:59.356883107-04:00",
+    "updated": "2026-08-24T06:48:01.151666365-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/ebc0cdb0-af2a-11ea-98c7-29e5db822649?complete=true",
     "visibility": {
       "restrictions": "public"
