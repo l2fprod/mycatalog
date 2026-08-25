@@ -658,14 +658,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2368,6 +2368,46 @@
     "displayName": "BUS4i System Copy - Migrate 23 for Power i",
     "imageUrl": "https://tsp-gis.de/wp-content/uploads/2022/09/tsp-Logo-Header.png",
     "localPngIcon": "/generated/icons/e687e558-849d-40cc-8043-cd8071f659e9.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "20a7a02d-9f86-4195-83bf-133944c8f443",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "hubkom-solutions-appointment-recall-agent",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "3224c134-16b7-43ec-815b-cab64bb99888",
+        "name": "lite-plan",
+        "description": "lite plan for users",
+        "displayName": "Lite Plan"
+      }
+    ],
+    "description": "A specialized healthcare agent built for appointment recalls and reminders",
+    "longDescription": "The Hubkom AI Care Coordinator is a HIPAA-compliant voice assistant engineered to automate and optimize patient communication, care coordination, and administrative workflows across your medical practice. Acting as an intelligent orchestration layer, it manages proactive outreach through specialized care programs, including appointment recalls and appointment reminders.\n\nHubkom AI Care Coordinator leverages advanced conversational intelligence to streamline medical administrative tasks that traditionally place a heavy burden on front-desk staff. Through specialized care workflows, it evaluates patient records, identifies care gaps, initiates timely outreach, schedules appointments, answers common clinical and administrative questions, assesses follow-up needs, and supports multilingual patient interactions to improve access and continuity of care.\n\nDesigned to coordinate multiple AI-driven patient engagement workflows, the Care Coordinator intelligently routes each conversation to the appropriate care program while maintaining a seamless and personalized patient experience. This modular architecture enables healthcare organizations to expand automation across new outreach initiatives without changing the patient experience.\n\nBuilt by Hubkom Solutions, a provider dedicated to empowering medical practices with physician-designed smart support and secure digital health solutions.",
+    "displayName": "Care Coordinator",
+    "imageUrl": "https://hubkomsolutions.com/assets/images/hubkom-logo.png",
+    "localPngIcon": "/generated/icons/20a7a02d-9f86-4195-83bf-133944c8f443.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-caveonix",
@@ -5991,7 +6031,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -6175,7 +6215,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -6365,7 +6405,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -6589,16 +6629,16 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "us-east",
-      "fra02",
       "eu-es",
+      "eu-de",
       "us-south",
       "eu-gb",
-      "eu-de",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "au-syd",
+      "us-east",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6756,13 +6796,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9443,6 +9483,89 @@
     "geo_tags": [
       "global"
     ],
+    "id": "9ef63c5f-e087-4171-95aa-38255a5f2400",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "gbg-reach",
+    "pricing_tags": [
+      "paid",
+      "paid_only",
+      "free"
+    ],
+    "tags": [
+      "address cleansing",
+      "address validation",
+      "address verification",
+      "ai_agent",
+      "cleanse addresses",
+      "cleanse contact data",
+      "custom_kind_service",
+      "data quality",
+      "email validation",
+      "email verification",
+      "free",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "phone validation",
+      "phone verification",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "2a73b14c-be1c-4468-a191-939ad0cc910c",
+        "name": "essentials",
+        "description": "To get started. For teams adding verification to their first workflow. Includes 100,000 verifications per month across address, email, and phone, with a clear accept, review, or reject decision on every record. Stop bad data at the point of entry without standing up any infrastructure.",
+        "displayName": "T1 - Essentials"
+      },
+      {
+        "id": "1fb0353f-a683-4703-bee9-d4075bf2ef42",
+        "name": "free",
+        "description": "DO NOT USE",
+        "displayName": "Free - DO NOT USE"
+      },
+      {
+        "id": "14e16161-0b61-4eca-826c-25a7ae1f16d3",
+        "name": "growth",
+        "description": "To start scaling. For teams extending verification beyond a single use case — onboarding, checkout, and data hygiene together. Includes 500,000 verifications per month at a lower per-verification rate, with configurable policies to tune strictness per scenario. More volume, lower cost per check.",
+        "displayName": "T2 - Growth"
+      },
+      {
+        "id": "c040f3d0-fcf0-41d0-baf5-c69faf511230",
+        "name": "professional",
+        "description": "To scale. For organisations running verification across the full customer lifecycle. Includes 1 million verifications per month with policy-aware decisions and audit-ready logging on every check — built for teams where verification has become business-critical.",
+        "displayName": "T3 - Professional"
+      },
+      {
+        "id": "54dbe3cf-0688-4f12-9b8a-e22b17854fa6",
+        "name": "t4---enterprise",
+        "description": "For high-volume operations. For organisations where verification runs continuously at scale. Includes 5 million verifications per month at enterprise unit rates, with full policy control and decision logging for compliance and reporting.",
+        "displayName": "T4 - Enterprise"
+      },
+      {
+        "id": "a0796f2a-3128-4eeb-b668-f67369993778",
+        "name": "t5---strategic",
+        "description": "For verification at maximum scale. For organisations processing the highest volumes, from any industry — ecommerce, financial services, or enterprise data platforms alike. Includes 10 million verifications per month at our lowest per-verification rate, with full auditability across every system that depends on trusted data.",
+        "displayName": "T5 - Strategic"
+      }
+    ],
+    "description": "Verify, standardise and cleanse address, email and phone data using GBG Loqate, with policy-aware decisions.",
+    "longDescription": "GBG Reach is a data quality agent for IBM watsonx Orchestrate that verifies, validates, and cleanses key elements of your customer data - postal addresses, email addresses, and phone numbers - using GBG Loqate's trusted global reference data.\n\nHand Reach a single value, several records, a block of free-form text, or an uploaded CSV, and it automatically detects every address, email, and phone number present, then returns a clear, policy-aware recommendation for each: accept, review, or reject, complete with a confidence score and clean, standardized output. Your agent gets a decision it can act on - without any custom parsing logic.\n\nUse Reach the way that suits your workflow:\n- Chat with it directly for quick, ad-hoc verification.\n- Add it as a collaborator to your own agent so it cleans data mid-conversation, for example validating a customer's address during onboarding before you save it.\n- Build it into an automated workflow to verify and standardize records at scale.\n\nBecause every decision is policy-aware, you control how strict verification is for each scenario, from light-touch marketing list hygiene to strict KYC and onboarding checks. Teams use Reach to improve email deliverability, reduce failed deliveries and shipping costs, cut fraud and returns, clean up CRM and marketing data, and keep customer records accurate and up to date. Every decision can be logged for auditability, giving you a record for compliance review or reporting.\n\nPowered by GBG Loqate's global address verification, email verification, and phone validation, Reach stops bad data at the source so you can act on information you trust - backed by the engine enterprises rely on, verifying data across 245 countries and 3 billion times a year.",
+    "displayName": "GBG Reach - Address Email and Phone Verification",
+    "imageUrl": "https://agents.gbg.com/gbg-reach-icon.svg",
+    "localSvgIcon": "/generated/icons/9ef63c5f-e087-4171-95aa-38255a5f2400.svg",
+    "localPngIcon": "/generated/icons/9ef63c5f-e087-4171-95aa-38255a5f2400.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "311992c0-dcf5-4734-804e-989cd4c47376",
     "kind": "service",
     "metadata": {
@@ -9794,14 +9917,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10417,14 +10540,14 @@
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
       "ca-mon",
-      "eu-de",
-      "us-south",
+      "eu-gb",
       "in-che",
       "jp-osa",
-      "ca-tor",
-      "au-syd",
-      "eu-gb"
+      "eu-de",
+      "us-south",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11816,7 +11939,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.eu-fr2.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -13391,7 +13514,7 @@
         "id": "8b9e9568-30cf-4789-a785-f5422d1c807a",
         "name": "telc-assess-hpcs",
         "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services (2 days)---Hyper Protect Crypto Services",
+        "displayName": "Architect Services (2 days)",
         "originalName": "telc-assess-hpcs"
       },
       {
@@ -21795,12 +21918,12 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -22112,12 +22235,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
