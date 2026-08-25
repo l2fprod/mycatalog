@@ -413,6 +413,7 @@
       "hive",
       "iam_compatible",
       "ibm_created",
+      "ibm_deprecated",
       "paid_only",
       "paygo",
       "rc_compatible",
@@ -658,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -6629,16 +6630,16 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
+      "fra02",
+      "eu-es",
+      "us-south",
       "au-syd",
-      "us-east",
-      "fra02"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9917,14 +9918,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10535,19 +10536,19 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "in-mum",
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
       "ca-mon",
-      "eu-gb",
+      "au-syd",
+      "br-sao",
       "in-che",
-      "jp-osa",
-      "eu-de",
-      "us-south",
-      "au-syd"
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -13514,7 +13515,7 @@
         "id": "8b9e9568-30cf-4789-a785-f5422d1c807a",
         "name": "telc-assess-hpcs",
         "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services (2 days)",
+        "displayName": "Architect Services (2 days)---Hyper Protect Crypto Services",
         "originalName": "telc-assess-hpcs"
       },
       {
@@ -15582,8 +15583,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -20106,6 +20107,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20147,8 +20149,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -22235,12 +22236,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",

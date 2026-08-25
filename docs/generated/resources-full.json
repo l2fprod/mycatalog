@@ -5458,7 +5458,7 @@
   },
   {
     "_id": "18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
-    "_rev": "13-54d5672d87b03b2495e0970fa3a2b6e0",
+    "_rev": "14-1ee7e89f28cc5907ad7e7dfa521fdfaa",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/%2A",
@@ -5935,6 +5935,7 @@
         },
         "urls": {
           "apidocs_url": "https://cloud.ibm.com/apidocs/ibm-analytics-engine",
+          "deprecation_doc_url": "https://cloud.ibm.com/docs/AnalyticsEngine?topic=AnalyticsEngine-iae-serverless-relnotes&locale=en#AnalyticsEngine-mar26",
           "doc_url": "https://cloud.ibm.com/docs/services/AnalyticsEngine/index.html",
           "instructions_url": "/docs/AnalyticsEngine/getting-started.html",
           "terms_url": "https://www.ibm.com/support/customer/csol/terms/?id=i126-7905"
@@ -6018,6 +6019,7 @@
       "hive",
       "iam_compatible",
       "ibm_created",
+      "ibm_deprecated",
       "paid_only",
       "paygo",
       "rc_compatible",
@@ -6025,7 +6027,7 @@
       "support_ibm",
       "us-south"
     ],
-    "updated": "2026-06-25T05:32:07.326539506-04:00",
+    "updated": "2026-08-25T02:44:48.768298272-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -8924,14 +8926,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -104658,6 +104660,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -104668,8 +104671,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -106774,7 +106776,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -106785,7 +106786,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -115524,16 +115526,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-es",
-      "eu-de",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
+      "fra02",
+      "eu-es",
+      "us-south",
       "au-syd",
-      "us-east",
-      "fra02"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -149218,14 +149220,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -159811,19 +159813,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "in-mum",
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
       "ca-mon",
-      "eu-gb",
+      "au-syd",
+      "br-sao",
       "in-che",
-      "jp-osa",
-      "eu-de",
-      "us-south",
-      "au-syd"
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -205485,7 +205487,7 @@
       },
       {
         "_id": "8b9e9568-30cf-4789-a785-f5422d1c807a",
-        "_rev": "13-e8cdbbfc572a2dc9b3fd02e7a3a8adc9",
+        "_rev": "15-a5dfef8dcf58917379e77a7780056cd9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:8b9e9568-30cf-4789-a785-f5422d1c807a",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/8b9e9568-30cf-4789-a785-f5422d1c807a/%2A",
@@ -205637,7 +205639,7 @@
           },
           "en": {
             "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-            "display_name": "Architect Services (2 days)",
+            "display_name": "Architect Services (2 days)---Hyper Protect Crypto Services",
             "long_description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation."
           },
           "es": {
@@ -205691,20 +205693,18 @@
           "name": "Technology Expert Labs"
         },
         "tags": [
-          "cloud-ui",
-          "group-assess-services",
           "ibm_created",
           "migration_tools",
           "rc_compatible",
           "web_and_app"
         ],
-        "updated": "2026-08-24T12:29:35.962233968-04:00",
+        "updated": "2026-08-25T02:06:23.911138552-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/8b9e9568-30cf-4789-a785-f5422d1c807a?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services (2 days)",
+        "displayName": "Architect Services (2 days)---Hyper Protect Crypto Services",
         "originalName": "telc-assess-hpcs"
       },
       {
@@ -222567,7 +222567,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "464-eff84ca71a2bd792914603fa001125cd",
+    "_rev": "465-41a1880583887f1bcc61e32b451dbde2",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -222575,8 +222575,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -223065,7 +223065,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-08-20T14:37:31.486446991-04:00",
+    "updated": "2026-08-25T02:40:33.512105395-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -223222,7 +223222,7 @@
       },
       {
         "_id": "5304b575-3cff-4455-90dc-ae4367762093",
-        "_rev": "121-7c8970fd7f9f62714210684453c18bb4",
+        "_rev": "124-aad7bbfbefdbc96fb658cc005440d328",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5304b575-3cff-4455-90dc-ae4367762093",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093/%2A",
@@ -223425,7 +223425,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-17T07:01:51.077505521-04:00",
+        "updated": "2026-08-25T02:40:32.778533802-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -255461,6 +255461,7 @@
     "created": "2018-11-19T20:43:19.725Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -255502,8 +255503,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "images": {
@@ -286965,12 +286965,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
