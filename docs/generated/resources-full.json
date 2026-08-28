@@ -8926,14 +8926,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "images": {
@@ -12094,6 +12094,7 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12101,8 +12102,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -96480,10 +96480,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -96494,7 +96490,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -104664,7 +104664,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -104675,7 +104674,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -115530,15 +115530,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "fra02",
-      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "us-south",
+      "fra02",
+      "eu-es",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -122430,13 +122430,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -131760,6 +131760,7 @@
     "longDescription": "DNS Services provides a reliable, secure mechanism to manage DNS records, and resolve domain names from a VPC without adding a custom DNS solution. With DNS Services, you can \n- Create private DNS zones which can only be resolved from IBM Cloud's private network.\n- Perform forward and reverse DNS lookup.\n- Configure zone names with a split-horizon view, which allows a private and a public DNS zone to share the name.",
     "displayName": "DNS Services",
     "imageUrl": "https://broker.dns-svcs.cloud.ibm.com/dns_svcs_icon.svg",
+    "localSvgIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.svg",
     "localPngIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.png"
   },
   {
@@ -151643,14 +151644,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -160019,18 +160020,18 @@
     "disabled": false,
     "geo_tags": [
       "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb",
       "br-sao",
+      "in-che",
+      "eu-gb",
       "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "ca-mon",
-      "in-che",
-      "in-mum"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -231337,7 +231338,7 @@
   },
   {
     "_id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
-    "_rev": "190-d47a9457e1bef6b55b5b1ec465ff4956",
+    "_rev": "191-1ae5d5726285043260ebee65bb292e87",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:afb603e9-8738-4542-abf4-baf5231a4dbe",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/afb603e9-8738-4542-abf4-baf5231a4dbe/%2A",
@@ -231654,7 +231655,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-07-30T12:19:22.500252942-04:00",
+    "updated": "2026-08-28T09:06:19.634238948-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/afb603e9-8738-4542-abf4-baf5231a4dbe?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -231662,7 +231663,7 @@
     "plans": [
       {
         "_id": "c696fd3a-fffa-4e7e-affd-ab798af04f8d",
-        "_rev": "32-19f3027c471fbba2b811f3f10f559eec",
+        "_rev": "33-72a33aa9b3b242c2377c7f400be818e4",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:c696fd3a-fffa-4e7e-affd-ab798af04f8d",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c696fd3a-fffa-4e7e-affd-ab798af04f8d/%2A",
@@ -231784,7 +231785,7 @@
           "oracle on aix",
           "sap hana on linux"
         ],
-        "updated": "2026-07-30T12:19:22.559199261-04:00",
+        "updated": "2026-08-28T09:06:19.681962328-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/c696fd3a-fffa-4e7e-affd-ab798af04f8d?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -231794,7 +231795,7 @@
       },
       {
         "_id": "a5d52a15-dc06-47c7-bd89-86256e6c368f",
-        "_rev": "61-9657e95214d3149fe1e13d4196f87987",
+        "_rev": "62-3a3377c62454f28963d362fc09eb0541",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a5d52a15-dc06-47c7-bd89-86256e6c368f",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a5d52a15-dc06-47c7-bd89-86256e6c368f/%2A",
@@ -231916,7 +231917,7 @@
           "sap hana on linux",
           "storage_backup"
         ],
-        "updated": "2026-07-30T12:19:22.559253818-04:00",
+        "updated": "2026-08-28T09:06:19.682036168-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a5d52a15-dc06-47c7-bd89-86256e6c368f?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -231926,7 +231927,7 @@
       },
       {
         "_id": "a391f481-61ed-479e-b3e1-1608f390a17b",
-        "_rev": "22-26849093616a839a79988adebd26de6f",
+        "_rev": "23-89da39e39749b42bd10cf908a9d3ba3b",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a391f481-61ed-479e-b3e1-1608f390a17b",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a391f481-61ed-479e-b3e1-1608f390a17b/%2A",
@@ -232043,7 +232044,7 @@
           "oracle on aix",
           "sap hana on linux"
         ],
-        "updated": "2026-07-30T12:19:22.559282249-04:00",
+        "updated": "2026-08-28T09:06:19.682063525-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a391f481-61ed-479e-b3e1-1608f390a17b?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -234996,12 +234997,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -282234,12 +282235,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -283717,12 +283718,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south",
-          "au-syd",
-          "ca-tor"
+          "us-south"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",

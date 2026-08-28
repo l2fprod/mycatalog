@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -830,6 +830,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -837,8 +838,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -6039,10 +6039,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6053,7 +6049,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6631,15 +6631,15 @@
   },
   {
     "geo_tags": [
-      "fra02",
-      "eu-es",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "us-south",
+      "fra02",
+      "eu-es",
       "eu-gb"
     ],
     "id": "dashdb-for-transactions",
@@ -7813,6 +7813,7 @@
     "longDescription": "DNS Services provides a reliable, secure mechanism to manage DNS records, and resolve domain names from a VPC without adding a custom DNS solution. With DNS Services, you can \n- Create private DNS zones which can only be resolved from IBM Cloud's private network.\n- Perform forward and reverse DNS lookup.\n- Configure zone names with a split-horizon view, which allows a private and a public DNS zone to share the name.",
     "displayName": "DNS Services",
     "imageUrl": "https://broker.dns-svcs.cloud.ibm.com/dns_svcs_icon.svg",
+    "localSvgIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.svg",
     "localPngIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.png"
   },
   {
@@ -10574,18 +10575,18 @@
   {
     "geo_tags": [
       "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb",
       "br-sao",
+      "in-che",
+      "eu-gb",
       "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "ca-mon",
-      "in-che",
-      "in-mum"
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -17432,12 +17433,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -21997,12 +21998,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
