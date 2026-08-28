@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -6039,6 +6039,10 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6049,11 +6053,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6223,6 +6223,7 @@
   },
   {
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6237,8 +6238,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6631,16 +6631,16 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "fra02",
       "eu-es",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6798,13 +6798,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -7813,7 +7813,6 @@
     "longDescription": "DNS Services provides a reliable, secure mechanism to manage DNS records, and resolve domain names from a VPC without adding a custom DNS solution. With DNS Services, you can \n- Create private DNS zones which can only be resolved from IBM Cloud's private network.\n- Perform forward and reverse DNS lookup.\n- Configure zone names with a split-horizon view, which allows a private and a public DNS zone to share the name.",
     "displayName": "DNS Services",
     "imageUrl": "https://broker.dns-svcs.cloud.ibm.com/dns_svcs_icon.svg",
-    "localSvgIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.svg",
     "localPngIcon": "/generated/icons/b4ed8a30-936f-11e9-b289-1d079699cbe5.png"
   },
   {
@@ -10574,19 +10573,19 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "in-che",
       "ca-tor",
-      "ca-mon",
+      "eu-de",
+      "us-south",
       "au-syd",
       "eu-gb",
+      "br-sao",
       "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "eu-de",
-      "us-south"
+      "ca-mon",
+      "in-che",
+      "in-mum"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -17433,12 +17432,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
