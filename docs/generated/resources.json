@@ -3,6 +3,63 @@
     "geo_tags": [
       "global"
     ],
+    "id": "7f221918-3d4d-4a5e-b694-00b1d6505fcc",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "3k-technologies-predictive",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "customer service automation",
+      "customer support",
+      "global",
+      "ibm_third_party",
+      "multi agent",
+      "ontology based auto-schema mapping , watsonx orchestrate",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson",
+      "watsonx orchestrate"
+    ],
+    "plans": [
+      {
+        "id": "75730bf4-c2c4-424e-97cf-8b7c98ed5593",
+        "name": "enterprise",
+        "description": "* This is a custom plan. This plan is to support  Enterprises,  Full omnichannel, high volume, custom SLAs.\n \n* Pricing is based on 3KT Units. Actual number of billable units will be decided after discussing scope of work with client. Please reach out to  3k-wx-support@3kglobal.ai for more information",
+        "displayName": "Custom"
+      },
+      {
+        "id": "12596748-c322-4f8d-992c-5e9ea2e9d602",
+        "name": "growth",
+        "description": "* In this plan 1 Monthly Resolution means  Up to 10000  resolutions t\n\n* Growth  Multi-channel, moderate-to-high volume Pricing is structured around the metric that reflects the agent's actual value delivered: successfully resolved customer interactions. While usage-based fees scale fairly with the size and complexity of each customer's support operation. Usage fee is billed per successfully resolved conversation beyond the free allotment, with volume-based rate reductions.",
+        "displayName": "Growth"
+      },
+      {
+        "id": "26559407-e1c0-4350-ab67-d25d9a4a9b6c",
+        "name": "starter",
+        "description": "Up to 2000 Monthly Resolutions",
+        "displayName": "Starter"
+      }
+    ],
+    "description": "An autonomous multi-agent customer support for watsonx Orchestrate that maps to your existing customer data.",
+    "longDescription": "\n\n\n\n* The 3KT Customer Support Agent is\na native watsonx Orchestrate multi-agent system that automates\nend-to-end customer service workflows case context retrieval,\nknowledge-base search, issue resolution, satisfaction\nfeedback, escalation to human and continuous\nknowledge-base learning without requiring a custom integration project for\nevery customer. \n\n\n\n\n\n\n* A supervisor agent orchestrates multiple\nspecialist agents, each with a narrow, well-defined responsibility, so requests\nare routed to the right specialist automatically based on customer intent and\ncase priority. \n\n\n\n\n\n\n* What sets it apart is autonomous\nschema mapping: rather than requiring your team to hand-build connectors for\neach customer's database, the agent uses a domain ontology covering\nRetail/E-Commerce, Logistics, Financial Services, Telecommunications, etc to\nautomatically discover, map, and validate a customer's existing\ncase/order/customer tables into the agent's canonical schema This is what lets\nthe same packaged agent be provisioned against a new customer's data with\nconfiguration, not custom development. \n\n\n\n\n\n\n* Once connected, the agent\nresolves common issues automatically (order status, returns, billing questions,\npassword resets, etc as applicable), escalates to a human when automated\nresolution isn't appropriate, and closes the loop by collecting Customer\nSatisfaction Feedback and feeding resolved-case patterns\nback into the knowledge base so answer quality improves over\ntime. \n\n\n\n\n\n\n \n\n\n\n",
+    "displayName": "3K Global Customer Service and Support Agent",
+    "imageUrl": "https://assets-usa.mkt.dynamics.com/5cf2e873-95a9-f011-8704-7ced8d3b7e32/digitalassets/images/03a79e26-8086-f111-8076-000d3a3403c2?ts=639203988503482782",
+    "localPngIcon": "/generated/icons/7f221918-3d4d-4a5e-b694-00b1d6505fcc.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
     "kind": "service",
     "metadata": {
@@ -659,14 +716,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -4130,6 +4187,9 @@
   },
   {
     "geo_tags": [
+      "che01",
+      "eu-de",
+      "us-east",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4137,10 +4197,7 @@
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south",
-      "che01",
-      "eu-de",
-      "us-east"
+      "us-south"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -6033,7 +6090,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -6217,7 +6274,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -6407,7 +6464,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -6631,6 +6688,8 @@
   },
   {
     "geo_tags": [
+      "eu-es",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -6638,9 +6697,7 @@
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es",
-      "us-south"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6798,13 +6855,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -10574,19 +10631,19 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "in-che",
       "jp-osa",
-      "in-mum",
-      "ca-mon",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb"
+      "in-mum",
+      "eu-es",
+      "jp-tok",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -11978,7 +12035,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.us-east.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -18455,6 +18512,52 @@
     "geo_tags": [
       "global"
     ],
+    "id": "f1b9fccf-c5fb-4234-a55c-4c8e80f4144a",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "austin-artificial-intelligence-succinctly",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "ai_agent",
+      "custom_kind_service",
+      "enterprise search",
+      "global",
+      "help desk",
+      "ibm_third_party",
+      "mcp",
+      "paid",
+      "paid_only",
+      "rag",
+      "rc_compatible",
+      "search",
+      "support_third_party",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "8b76f478-4bc3-43a0-9cba-f03dc0220500",
+        "name": "succinctly-pricing-plan",
+        "description": "Per-user monthly usage plan for the Succinctly AI agent; billing scales with active users per month.",
+        "displayName": "Succinctly Pricing Plan"
+      }
+    ],
+    "description": "Succinctly's uses AI to instantly respond to employee requests, find information across the enterprise, and route complex issues.",
+    "longDescription": "Succinctly — AI Help Desk Automation, Enterprise Search, and Business Intelligence in One Assistant\n\nSuccinctly is your company's AI-powered work assistant. Employees ask questions in plain English — through chat or email — and get instant, accurate answers drawn from your own company data. No tickets, no waiting, no digging through file shares.\n\nSuccinctly resolves up to 95% of help desk requests automatically. It answers common IT and HR questions, handles routine tasks like password resets and PTO logging, and intelligently routes complex issues to the right team. Response times drop 10x while your support staff focuses on work that actually needs a human.\n\nBeyond the help desk, Succinctly acts as an enterprise search engine and virtual analyst. Ask business intelligence questions in natural language and get answers in seconds — as text or charts — pulled from your databases, documents, file shares, and any system with an API. It can even review and compare contracts.\n\nBuilt for the enterprise: Succinctly runs in the cloud, on-premises, or hosted, integrates with your SSO and permission schemes, and connects to platforms like Zendesk, Zoho, ServiceNow, and Salesforce. Access it via chat, API, or MCP. With no license fees for up to 1,000 users, it delivers value SaaS-only tools can't match.\n\nStop drowning in tickets. Start getting answers — succinctly.\n\nKeywords: AI help desk automation, IT ticket deflection, enterprise search, AI chatbot for employees, business intelligence assistant, natural language BI, internal support automation, knowledge management, ITSM integration, on-premises AI.",
+    "displayName": "Succinctly Enterprise Intelligence and Help Desk Automation",
+    "imageUrl": "https://cdn.prod.website-files.com/67febed88f000c960154951f/68026c0d83cc46e5c62babe2_logo-succinctly.svg",
+    "localSvgIcon": "/generated/icons/f1b9fccf-c5fb-4234-a55c-4c8e80f4144a.svg",
+    "localPngIcon": "/generated/icons/f1b9fccf-c5fb-4234-a55c-4c8e80f4144a.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
     "id": "2eda796a-38fb-4a5a-81f1-2a9f3c7f2d00",
     "kind": "service",
     "metadata": {
@@ -20100,7 +20203,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20142,7 +20244,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -22229,12 +22332,12 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
