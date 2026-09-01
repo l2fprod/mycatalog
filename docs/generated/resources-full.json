@@ -9565,14 +9565,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "id": "api-connect",
     "images": {
@@ -12733,6 +12733,7 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12740,8 +12741,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -36411,7 +36411,7 @@
   },
   {
     "_id": "cd515180-d78a-11ec-b396-db7d306c4f73",
-    "_rev": "220-200ce2d0bf6372ebed086347cfd92840",
+    "_rev": "224-5e83f40667c475c2913682fd4519eec1",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:cd515180-d78a-11ec-b396-db7d306c4f73",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cd515180-d78a-11ec-b396-db7d306c4f73/%2A",
@@ -36610,6 +36610,10 @@
               {
                 "description": "Analyze and store IBM Cloud logs and audit events by setting your Cloud Logs instance as a Logs Routing or Activity Tracking Event Routing target.",
                 "title": "Easily ingest IBM Cloud data"
+              },
+              {
+                "description": "Explore the [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable Architecture, which includes Cloud Logs as part of the solution.",
+                "title": "Recommended Architectures"
               }
             ],
             "media": [
@@ -36720,7 +36724,7 @@
       "us-south",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-07-15T07:10:57.551248288-04:00",
+    "updated": "2026-09-01T04:48:05.951510819-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/cd515180-d78a-11ec-b396-db7d306c4f73?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -76021,13 +76025,13 @@
   },
   {
     "_id": "databases-for-elasticsearch",
-    "_rev": "815-4c959edbc114b979633b5bb24d7988cb",
+    "_rev": "819-da8285a769745ea885b101423727fcad",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-elasticsearch",
     "children": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "519-d0d41144b6a3fd1ad8bfcbdcbaca5a16",
+        "_rev": "523-4288f85f7d0ec4df63f4a106e7e6ff09",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children": [
@@ -78741,10 +78745,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -78821,7 +78825,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:53.936652459-04:00",
+        "updated": "2026-09-01T08:32:42.877856767-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -78829,10 +78833,410 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "18-a08378eb918be40a738d70196d47b825",
+        "_rev": "19-14abbe51de16a2ff9314795ebe8ef882",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children": [
+          {
+            "_id": "databases-for-elasticsearch-enterprise-gen2:au-syd",
+            "_rev": "4-326adf34f085bb318db43bdeca36dce9",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aau-syd",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:au-syd/%2A",
+            "complete": true,
+            "created": "2026-08-18T03:01:12.235156417-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "au-syd"
+            ],
+            "id": "databases-for-elasticsearch-enterprise-gen2:au-syd",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:09b58709-a983-40d8-8f8c-35884cfb6532",
+                  "name": "cdp-broker-dn-prod-au-syd"
+                },
+                "location": "au-syd",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/au-syd",
+                "target_crn": "crn:v1:bluemix:public::au-syd:::environment:bluemix-au-syd"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "elasticsearch",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:au-syd/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": [
+                  {
+                    "displayname": "Select an initial memory allocation",
+                    "hidden": false,
+                    "name": "members_memory_allocation_mb",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/memory/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "displayname": "Select an initial disk allocation",
+                    "hidden": false,
+                    "name": "members_disk_allocation_mb",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/disk/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "CPU allocation is optional. Selecting CPU allocation ensures your database has dedicated compute resources for your workload.",
+                    "displayname": "Select an initial CPU allocation",
+                    "hidden": false,
+                    "name": "members_cpu_allocation_count",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/cpu/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "IBM Cloud recommends provisioning the preferred version. For more information on version types see the see the IBM Cloud Databases Versioning Policy in the documentation.",
+                    "displayname": "Select a database version",
+                    "hidden": false,
+                    "name": "version",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/version",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "Please ensure Databases for Elasticsearch has been authorized to access the selected KMS instance. You can manage service-to-service authorizations at any time by visiting Manage > Access (IAM) and choosing Authorizations.",
+                    "displayname": "Select a KMS instance",
+                    "hidden": false,
+                    "name": "disk_encryption_instance_crn",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/disk_encryption_instance_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "associations": {
+                      "parameters": [
+                        {
+                          "name": "disk_encryption_instance_crn",
+                          "options_refresh": false
+                        }
+                      ]
+                    },
+                    "description": "Warning: deleting this key will result in the loss of all data stored in this Elasticsearch instance.",
+                    "displayname": "Select a disk encryption key",
+                    "hidden": false,
+                    "name": "disk_encryption_key_crn",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/elasticsearch/parameters/disk_encryption_key_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  }
+                ],
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-elasticsearch/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "enterprise-gen2-au-syd",
+            "overview_ui": {
+              "en": {
+                "description": "enterprise-gen2-au-syd au-syd deployment",
+                "display_name": "enterprise-gen2-au-syd au-syd deployment",
+                "long_description": "enterprise-gen2-au-syd au-syd deployment"
+              }
+            },
+            "parent_id": "databases-for-elasticsearch-gen2-enterprise",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise",
+            "pricing_tags": [
+              "paid",
+              "paid_only",
+              "allow_internal_users",
+              "paid_only"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "tags": [
+              "rc_compatible",
+              "vpc_private_endpoint"
+            ],
+            "updated": "2026-09-01T12:22:53.009693237-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:au-syd?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:ca-mon",
             "_rev": "15-eb23b133711a148ad0382ec9185c4bc3",
@@ -80839,6 +81243,7 @@
         "created": "2026-05-20T11:40:25.635717481-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
           "in-che",
@@ -80917,7 +81322,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-08-18T03:05:39.390058965-04:00",
+        "updated": "2026-09-01T12:23:21.824966283-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -80925,7 +81330,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "532-abe5ec53721719c52a34d5c3d091c398",
+        "_rev": "536-e01021f49916e2160a0987a33adc0fb8",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children": [
@@ -83639,10 +84044,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -83719,7 +84124,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:54.507507776-04:00",
+        "updated": "2026-09-01T08:32:44.102816408-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -83727,7 +84132,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "522-f398fe2d18e81c94d98010b65a6cdb98",
+        "_rev": "526-3c2d635488bdedc35346858894a0a660",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children": [
@@ -83957,10 +84362,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84036,7 +84441,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:53.328947514-04:00",
+        "updated": "2026-09-01T08:32:41.941745332-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84066,15 +84471,15 @@
     ],
     "id": "databases-for-elasticsearch",
     "images": {
-      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
+      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-elasticsearch",
       "other": {
@@ -84207,7 +84612,7 @@
       "us-south",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-08-31T14:25:53.069230212-04:00",
+    "updated": "2026-09-01T08:32:41.54697492-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -84215,7 +84620,7 @@
     "plans": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "519-d0d41144b6a3fd1ad8bfcbdcbaca5a16",
+        "_rev": "523-4288f85f7d0ec4df63f4a106e7e6ff09",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise/%2A",
@@ -84238,10 +84643,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84318,7 +84723,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:53.936652459-04:00",
+        "updated": "2026-09-01T08:32:42.877856767-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84329,7 +84734,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "18-a08378eb918be40a738d70196d47b825",
+        "_rev": "19-14abbe51de16a2ff9314795ebe8ef882",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise/%2A",
@@ -84337,6 +84742,7 @@
         "created": "2026-05-20T11:40:25.635717481-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
           "in-che",
@@ -84415,7 +84821,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-08-18T03:05:39.390058965-04:00",
+        "updated": "2026-09-01T12:23:21.824966283-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84425,7 +84831,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "532-abe5ec53721719c52a34d5c3d091c398",
+        "_rev": "536-e01021f49916e2160a0987a33adc0fb8",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum/%2A",
@@ -84448,10 +84854,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84528,7 +84934,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:54.507507776-04:00",
+        "updated": "2026-09-01T08:32:44.102816408-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84539,7 +84945,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "522-f398fe2d18e81c94d98010b65a6cdb98",
+        "_rev": "526-3c2d635488bdedc35346858894a0a660",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard/%2A",
@@ -84548,10 +84954,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84627,7 +85033,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:53.328947514-04:00",
+        "updated": "2026-09-01T08:32:41.941745332-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84640,13 +85046,13 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
   {
     "_id": "databases-for-mongodb",
-    "_rev": "710-bbd01d2b6110a4e095c4674e60eebaeb",
+    "_rev": "711-beab2d085b6b6546ab4171b8f153bbb7",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mongodb",
     "children": [
@@ -95033,10 +95439,407 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "52-8af756864945175fe045d0ba1b29e109",
+        "_rev": "53-5b7f249dd73f70e4e4dce017a68490bb",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children": [
+          {
+            "_id": "databases-for-mongodb-standard-gen2:au-syd",
+            "_rev": "4-d3d73d82d67456c4e62c477956ebb743",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aau-syd",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:au-syd/%2A",
+            "complete": true,
+            "created": "2026-08-18T03:00:55.593026973-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "au-syd"
+            ],
+            "id": "databases-for-mongodb-standard-gen2:au-syd",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:09b58709-a983-40d8-8f8c-35884cfb6532",
+                  "name": "cdp-broker-dn-prod-au-syd"
+                },
+                "location": "au-syd",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/au-syd",
+                "target_crn": "crn:v1:bluemix:public::au-syd:::environment:bluemix-au-syd"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": false
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 3,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 3,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 3,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 3,
+                      "minimum_count": 3,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mongodb",
+                    "version": "8.0"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:au-syd/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": [
+                  {
+                    "displayname": "Select an initial memory allocation",
+                    "hidden": false,
+                    "name": "members_memory_allocation_mb",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/mongodb/parameters/memory/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "displayname": "Select an initial disk allocation",
+                    "hidden": false,
+                    "name": "members_disk_allocation_mb",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/mongodb/parameters/disk/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "CPU allocation is optional. Selecting CPU allocation ensures your database has dedicated compute resources for your workload.",
+                    "displayname": "Select an initial CPU allocation",
+                    "hidden": false,
+                    "name": "members_cpu_allocation_count",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/mongodb/parameters/cpu/member",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "IBM Cloud recommends provisioning the preferred version. For more information on version types see the see the IBM Cloud Databases Versioning Policy in the documentation.",
+                    "displayname": "Select a database version",
+                    "hidden": false,
+                    "name": "version",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/mongodb/parameters/version",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "description": "Please ensure Databases for MongoDB has been authorized to access the selected KMS instance. You can manage service-to-service authorizations at any time by visiting Manage > Access (IAM) and choosing Authorizations.",
+                    "displayname": "Select a KMS instance",
+                    "hidden": false,
+                    "name": "disk_encryption_instance_crn",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/mongodb/parameters/disk_encryption_instance_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  },
+                  {
+                    "associations": {
+                      "parameters": [
+                        {
+                          "name": "disk_encryption_instance_crn",
+                          "options_refresh": false
+                        }
+                      ]
+                    },
+                    "description": "Warning: deleting this key will result in the loss of all data stored in this MongoDB instance.",
+                    "displayname": "Select a disk encryption key",
+                    "hidden": false,
+                    "name": "disk_encryption_key_crn",
+                    "optionsUrl": "https://servicebroker.au-syd.dataservices.cloud.ibm.com/deployables/mongodb/parameters/disk_encryption_key_crn",
+                    "readonly": false,
+                    "required": false,
+                    "type": "dropdown"
+                  }
+                ],
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mongodb/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-au-syd",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-au-syd au-syd deployment",
+                "display_name": "standard-gen2-au-syd au-syd deployment",
+                "long_description": "standard-gen2-au-syd au-syd deployment"
+              }
+            },
+            "parent_id": "databases-for-mongodb-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard",
+            "pricing_tags": [
+              "paygo",
+              "allow_internal_users"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "tags": [
+              "rc_compatible"
+            ],
+            "updated": "2026-09-01T12:00:36.234371963-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:au-syd?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
           {
             "_id": "databases-for-mongodb-standard-gen2:ca-mon",
             "_rev": "41-a9d859e8ecfdeb4043563568264cf698",
@@ -97032,6 +97835,7 @@
         "created": "2025-11-26T00:38:13.426819895-05:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
           "in-che",
@@ -97111,7 +97915,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:02:06.148238841-04:00",
+        "updated": "2026-09-01T12:00:44.71301181-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -97281,7 +98085,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-18T03:02:06.14852157-04:00",
+    "updated": "2026-09-01T12:00:44.769065619-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -97737,7 +98541,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "52-8af756864945175fe045d0ba1b29e109",
+        "_rev": "53-5b7f249dd73f70e4e4dce017a68490bb",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard/%2A",
@@ -97745,6 +98549,7 @@
         "created": "2025-11-26T00:38:13.426819895-05:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
           "in-che",
@@ -97824,7 +98629,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:02:06.148238841-04:00",
+        "updated": "2026-09-01T12:00:44.71301181-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -97842,13 +98647,13 @@
   },
   {
     "_id": "databases-for-mysql",
-    "_rev": "814-f01bb118641c55c8ca5a11fc1caa60ef",
+    "_rev": "818-993eec6a3924fe21979dd03162d3ad9e",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mysql",
     "children": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "525-bc92c302b9f197efc08e3f66c012da5e",
+        "_rev": "529-c899ffa5b7d52b217cbe6bbac043f902",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children": [
@@ -100787,10 +101592,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -100867,7 +101672,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:26:01.757886327-04:00",
+        "updated": "2026-09-01T08:32:52.605183786-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -101960,15 +102765,15 @@
     ],
     "id": "databases-for-mysql",
     "images": {
-      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-      "image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg"
+      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-mysql",
       "other": {
@@ -102092,7 +102897,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-31T14:26:01.529345947-04:00",
+    "updated": "2026-09-01T08:32:52.226629817-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -102100,7 +102905,7 @@
     "plans": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "525-bc92c302b9f197efc08e3f66c012da5e",
+        "_rev": "529-c899ffa5b7d52b217cbe6bbac043f902",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard/%2A",
@@ -102123,10 +102928,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -102203,7 +103008,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:26:01.757886327-04:00",
+        "updated": "2026-09-01T08:32:52.605183786-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -102307,7 +103112,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -105416,7 +106221,7 @@
         "children": [
           {
             "_id": "databases-for-postgresql-standard-gen2:ca-mon",
-            "_rev": "45-c0786da27a9a375808245af86ff1cf88",
+            "_rev": "46-85c2486a313ba9c2e91f8aa80e90afc6",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:ca-mon/%2A",
@@ -105445,6 +106250,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -105735,7 +106541,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-19T07:52:09.286027686-04:00",
+            "updated": "2026-09-01T02:20:18.139840955-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -106072,7 +106878,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:in-che",
-            "_rev": "15-a0bab945d1db8e27ee1c2837122d91a0",
+            "_rev": "16-8ca9d226a0a410ce4bacccee8998d9a1",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-che/%2A",
@@ -106101,6 +106907,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -106391,7 +107198,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-19T07:52:30.468699894-04:00",
+            "updated": "2026-09-01T02:19:17.831535426-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -106399,7 +107206,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:in-mum",
-            "_rev": "10-f4ba3edf4ec18cbd40309c5a566225ab",
+            "_rev": "11-4b6f4f80f000c558bd4b3d075c256aa2",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-mum/%2A",
@@ -106428,6 +107235,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -106718,7 +107526,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-19T07:52:47.807497927-04:00",
+            "updated": "2026-09-01T02:19:44.483587443-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -107423,6 +108231,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -107433,8 +108242,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -107734,13 +108542,13 @@
   },
   {
     "_id": "databases-for-redis",
-    "_rev": "815-f7817a26594b19938578bc5ab1fd972c",
+    "_rev": "819-957951df305c945daf325c780bd9a772",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-redis",
     "children": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "521-3848a1497f676a6562f788ed63e46b02",
+        "_rev": "525-eabacf12a1bfe58a8fe75abdd50579e5",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children": [
@@ -110673,10 +111481,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -110753,7 +111561,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:45.729172689-04:00",
+        "updated": "2026-09-01T08:32:33.034635286-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -110761,10 +111569,327 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "18-0a89a909e9077d6afa64cf59d3444e0a",
+        "_rev": "19-8930a48aa93ad022ce2d30cb00849755",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children": [
+          {
+            "_id": "databases-for-redis-standard-gen2:au-syd",
+            "_rev": "4-b592fb4087f85047f10d0cfa5948c899",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aau-syd",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:au-syd/%2A",
+            "complete": true,
+            "created": "2026-08-18T03:01:01.609136898-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "au-syd"
+            ],
+            "id": "databases-for-redis-standard-gen2:au-syd",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:09b58709-a983-40d8-8f8c-35884cfb6532",
+                  "name": "cdp-broker-dn-prod-au-syd"
+                },
+                "location": "au-syd",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/au-syd",
+                "target_crn": "crn:v1:bluemix:public::au-syd:::environment:bluemix-au-syd"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 30,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 12000,
+                      "minimum_gb": 30,
+                      "step_size_gb": 1,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 2,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "redis",
+                    "version": "8.2"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:au-syd/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-redis/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-au-syd",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-au-syd au-syd deployment",
+                "display_name": "standard-gen2-au-syd au-syd deployment",
+                "long_description": "standard-gen2-au-syd au-syd deployment"
+              }
+            },
+            "parent_id": "databases-for-redis-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-09-01T12:23:22.533594996-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:au-syd?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
           {
             "_id": "databases-for-redis-standard-gen2:ca-mon",
             "_rev": "14-3165f825a88ae6862f8449a5d7a22847",
@@ -112356,6 +113481,7 @@
         "created": "2026-06-09T05:07:37.956670062-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
           "in-che",
@@ -112434,7 +113560,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:03:07.348752518-04:00",
+        "updated": "2026-09-01T12:23:52.755365092-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -112561,15 +113687,15 @@
     ],
     "id": "databases-for-redis",
     "images": {
-      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-      "image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg"
+      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-redis",
       "other": {
@@ -112696,7 +113822,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-31T14:25:45.477967343-04:00",
+    "updated": "2026-09-01T08:32:32.578281919-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -112704,7 +113830,7 @@
     "plans": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "521-3848a1497f676a6562f788ed63e46b02",
+        "_rev": "525-eabacf12a1bfe58a8fe75abdd50579e5",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard/%2A",
@@ -112727,10 +113853,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -112807,7 +113933,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:45.729172689-04:00",
+        "updated": "2026-09-01T08:32:33.034635286-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -112818,7 +113944,7 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "18-0a89a909e9077d6afa64cf59d3444e0a",
+        "_rev": "19-8930a48aa93ad022ce2d30cb00849755",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard/%2A",
@@ -112826,6 +113952,7 @@
         "created": "2026-06-09T05:07:37.956670062-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
           "in-che",
@@ -112904,7 +114031,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:03:07.348752518-04:00",
+        "updated": "2026-09-01T12:23:52.755365092-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -113015,7 +114142,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -116175,14 +117302,14 @@
     "geo_tags": [
       "au-syd",
       "us-east",
-      "eu-es",
-      "eu-de",
       "fra02",
       "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-es",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -120925,13 +122052,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -136178,7 +137305,7 @@
       },
       {
         "_id": "eventstreams-gen2-enterprise",
-        "_rev": "61-d642c988b788929871fa7407fc6ae6f9",
+        "_rev": "62-a62ad25117ad25048b00fb40c2207e17",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:eventstreams-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise/%2A",
@@ -136186,6 +137313,7 @@
         "created": "2025-11-17T13:43:38.634445571-05:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
           "in-che",
@@ -136276,7 +137404,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T09:36:58.651014031-04:00",
+        "updated": "2026-09-01T12:00:13.413664008-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/eventstreams-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -153848,303 +154976,6 @@
     "localPngIcon": "/generated/icons/is.metadata.png"
   },
   {
-    "_id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
-    "_rev": "42-ed3004ecd6ad5c8d42ec212483877f0c",
-    "active": true,
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:639b4eb1-8479-4897-a4ae-927a432bcf95",
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95/%2A",
-    "complete": true,
-    "created": "2025-09-25T05:59:48.075898226-04:00",
-    "disabled": false,
-    "geo_tags": [
-      "global"
-    ],
-    "id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
-    "images": {
-      "image": "https://www.streebo.com/PDF/streebo-icon.png"
-    },
-    "kind": "service",
-    "metadata": {
-      "other": {
-        "PC": {
-          "onboardingOfferingId": "c816c6ee82c24874a98017bccdf8c428:o:4a222887-207a-4296-a8ac-c693b97ad2b3",
-          "support": {
-            "languages": [
-              "en"
-            ],
-            "locations": [
-              "US"
-            ],
-            "process": "Streebo provides full customer support for the AI Agent SaaS solution listed on IBM Cloud. Customers can contact our support team via email (info@streebo.com\n), ticketing portal (JIRA, access provided post-subscription), or a dedicated support phone number (shared upon subscription).\n\nOur standard support hours are Monday–Friday, 8:00 AM–8:00 PM EST, with 24x7 coverage for critical issues.\n\nWe assist customers with:\nOnboarding and configuration\nTroubleshooting and usage guidance\nIssue resolution, bug fixes, and escalations\nSolution updates and enhancements\n\nWe acknowledge all requests within 4 business hours and resolve critical issues as quickly as possible.",
-            "status_url": "https://www.streebo.com/resources",
-            "support_details": [
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [
-                    {
-                      "day": 0,
-                      "end_time": "",
-                      "start_time": ""
-                    },
-                    {
-                      "day": 1,
-                      "end_time": "",
-                      "start_time": ""
-                    },
-                    {
-                      "day": 2,
-                      "end_time": "",
-                      "start_time": ""
-                    },
-                    {
-                      "day": 3,
-                      "end_time": "",
-                      "start_time": ""
-                    },
-                    {
-                      "day": 4,
-                      "end_time": "",
-                      "start_time": ""
-                    }
-                  ],
-                  "timezone": "Asia/Calcutta"
-                },
-                "contact": "info@streebo.com",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 24
-                },
-                "type": "email"
-              }
-            ],
-            "support_escalation": {
-              "contact": "info@streebo.com",
-              "escalation_wait_time": {
-                "type": "hour",
-                "value": 1
-              },
-              "response_wait_time": {
-                "type": "hour",
-                "value": 1
-              }
-            },
-            "support_type": "third_party",
-            "url": "https://www.streebo.com/chatbot-for-healthcare"
-          }
-        }
-      },
-      "pricing": {
-        "metrics": null,
-        "origin": "pricing_catalog",
-        "starting_price": {},
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95/pricing"
-      },
-      "rc_compatible": true,
-      "service": {
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "bindable": true,
-        "custom_create_page_hybrid_enabled": false,
-        "extension": null,
-        "iam_compatible": false,
-        "parameters": null,
-        "plan_updateable": false,
-        "rc_provisionable": true,
-        "service_check_enabled": false,
-        "service_key_supported": false,
-        "state": "",
-        "test_check_interval": 0,
-        "type": "",
-        "unique_api_key": false,
-        "user_defined_service": null
-      },
-      "ui": {
-        "strings": {
-          "en": {
-            "bullets": [
-              {
-                "description": "Responds to inquiries about services, clinical processes, coverage, and general FAQs with accurate, on-demand information",
-                "title": "Answer patient knowledge questions"
-              },
-              {
-                "description": "Books, reschedules, and cancels appointments across web and voice channels",
-                "title": "Automate appointment scheduling"
-              },
-              {
-                "description": "Lets patients view balances and pay bills securely, end to end",
-                "title": "Automate bill payment"
-              },
-              {
-                "description": "Ensures all patient data is handled securely and meets healthcare regulations.",
-                "title": "HIPAA-Compliant Data Handling"
-              },
-              {
-                "description": "Deployable on hospital or clinic websites for real-time chat. Works on platforms like WhatsApp, Voice, ChatGPT, Instagram and more.",
-                "title": "Interaction Support"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Healthcare AI Agent",
-                "type": "image/jpeg",
-                "url": "https://streebo.com/PDF/Healthcare-AI-Agent.jpg"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "doc_url": "https://www.streebo.com/chatbot-for-healthcare",
-          "terms_url": "https://www.streebo.com/aboutus/privacy-policy"
-        }
-      }
-    },
-    "name": "patient-facing-ai-agent-for-healthcare-companies",
-    "overview_ui": {
-      "en": {
-        "description": "IBM Watsonx powered Patient AI Agent handles patient inquiries, appointments, and assessments across voice, web, and social media.",
-        "display_name": "Intelligent Patient AI Agent Powered by IBM Watsonx Orchestrate",
-        "long_description": "Meet the Intelligent Patient AI Agent, a secure, 99% accurate agentic AI solution built on IBM Watsonx Orchestrate. It's a fully autonomous patient engagement agent that handles incoming inquiries across channels (like web and voice), understands patient intent, and takes action end to end by connecting with EMR - not just a chat assistant, but an agent that gets things done."
-      }
-    },
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "Streebo Inc"
-    },
-    "tags": [
-      "ai healthcare assistant",
-      "ai_agent",
-      "custom_kind_service",
-      "global",
-      "healthcare ai agent",
-      "healthcare ai agent solution",
-      "healthcare assessment",
-      "hospital ai agent",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "watson"
-    ],
-    "updated": "2026-08-26T04:14:04.508958313-04:00",
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95?complete=true",
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "_id": "632dca34-e12c-43d6-81f7-22e8d30d9f42",
-        "_rev": "20-909e615e2fbf8e5b7ed4b5ce564a8d55",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:632dca34-e12c-43d6-81f7-22e8d30d9f42",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/632dca34-e12c-43d6-81f7-22e8d30d9f42/%2A",
-        "complete": true,
-        "created": "2025-09-26T01:26:56.559329294-04:00",
-        "disabled": false,
-        "geo_tags": [
-          "global"
-        ],
-        "id": "632dca34-e12c-43d6-81f7-22e8d30d9f42",
-        "kind": "plan",
-        "metadata": {
-          "plan": {
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "",
-            "test_check_interval": 0
-          },
-          "pricing": {
-            "metrics": null,
-            "origin": "pricing_catalog",
-            "sales_avenue": [
-              "catalog"
-            ],
-            "starting_price": {},
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/632dca34-e12c-43d6-81f7-22e8d30d9f42/pricing"
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": false,
-            "parameters": null,
-            "plan_updateable": false,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Secure, Compliant and 99% Accurate AI Agent for Patient Assistant (healthcare)\n "
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "starterplan",
-        "overview_ui": {
-          "en": {
-            "description": "This AI Agent is offered as a template that can be customized to fit your specific business needs. \nPackage Inclusions (Patient AI Agent):\nAutomates Patient Inquiries and Support \nSupports knowledge retrieval for L1 questions (patient inquiry) and automate business workflow  \nIntegration with one Patient Management System (e.g., NextGen, Epic)\nAdvanced training to ensure high accuracy\nLanguage: English\nMulti-channel support (like webchat, mobile, sms, email, voice)\nQuality assurance and testing\nOngoing support and maintenance\nAdditional Benefits:\nDedicated customer success manager\nContract Terms: Annual commitment (12-month minimum), billed monthly\n\n",
-            "display_name": "Essential Plan - Starter Pack",
-            "long_description": "This AI Agent is offered as a template that can be customized to fit your specific business needs. \nPackage Inclusions (Patient AI Agent):\nAutomates Patient Inquiries and Support \nSupports knowledge retrieval for L1 questions (patient inquiry) and automate business workflow  \nIntegration with one Patient Management System (e.g., NextGen, Epic)\nAdvanced training to ensure high accuracy\nLanguage: English\nMulti-channel support (like webchat, mobile, sms, email, voice)\nQuality assurance and testing\nOngoing support and maintenance\nAdditional Benefits:\nDedicated customer success manager\nContract Terms: Annual commitment (12-month minimum), billed monthly\n\n"
-          }
-        },
-        "parent_id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95",
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "Streebo Inc"
-        },
-        "tags": [
-          "ai healthcare assistant",
-          "healthcare ai agent",
-          "healthcare ai agent solution",
-          "healthcare assessment",
-          "hospital ai agent",
-          "ibm_third_party",
-          "watson"
-        ],
-        "updated": "2026-08-26T04:26:12.8624972-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/632dca34-e12c-43d6-81f7-22e8d30d9f42?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "This AI Agent is offered as a template that can be customized to fit your specific business needs. \nPackage Inclusions (Patient AI Agent):\nAutomates Patient Inquiries and Support \nSupports knowledge retrieval for L1 questions (patient inquiry) and automate business workflow  \nIntegration with one Patient Management System (e.g., NextGen, Epic)\nAdvanced training to ensure high accuracy\nLanguage: English\nMulti-channel support (like webchat, mobile, sms, email, voice)\nQuality assurance and testing\nOngoing support and maintenance\nAdditional Benefits:\nDedicated customer success manager\nContract Terms: Annual commitment (12-month minimum), billed monthly\n\n",
-        "displayName": "Essential Plan - Starter Pack"
-      }
-    ],
-    "description": "IBM Watsonx powered Patient AI Agent handles patient inquiries, appointments, and assessments across voice, web, and social media.",
-    "longDescription": "Meet the Intelligent Patient AI Agent, a secure, 99% accurate agentic AI solution built on IBM Watsonx Orchestrate. It's a fully autonomous patient engagement agent that handles incoming inquiries across channels (like web and voice), understands patient intent, and takes action end to end by connecting with EMR - not just a chat assistant, but an agent that gets things done.",
-    "displayName": "Intelligent Patient AI Agent Powered by IBM Watsonx Orchestrate",
-    "imageUrl": "https://www.streebo.com/PDF/streebo-icon.png",
-    "localPngIcon": "/generated/icons/639b4eb1-8479-4897-a4ae-927a432bcf95.png"
-  },
-  {
     "_id": "75874a60-cb12-11e7-948e-37ac098eb1b9",
     "_rev": "38-6ca407628d88f3bba7818a51301e8ca8",
     "active": true,
@@ -160662,19 +161493,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "ca-tor",
-      "au-syd",
+      "br-sao",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
       "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
-      "br-sao",
       "in-che",
-      "in-mum"
+      "in-mum",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -182274,13 +183105,13 @@
   },
   {
     "_id": "messages-for-rabbitmq",
-    "_rev": "817-e3817bf29848239a386d5d7cd44e3423",
+    "_rev": "821-d6dcf56d5a038bc0485c65aa79b9a91a",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:messages-for-rabbitmq",
     "children": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "522-fa6f06b7cd07a0bc4b4de929d84f6d20",
+        "_rev": "526-a3e79fadecb6e22ef6f5376f57dee61c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children": [
@@ -185213,10 +186044,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -185293,7 +186124,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:30.037889608-04:00",
+        "updated": "2026-09-01T08:32:13.212118545-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -187110,15 +187941,15 @@
     ],
     "id": "messages-for-rabbitmq",
     "images": {
-      "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "small_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg"
+      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.che01.databases.cloud.ibm.com"
+        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
       },
       "original_name": "messages-for-rabbitmq",
       "other": {
@@ -187246,7 +188077,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-31T14:25:29.790751311-04:00",
+    "updated": "2026-09-01T08:32:12.791482784-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -187254,7 +188085,7 @@
     "plans": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "522-fa6f06b7cd07a0bc4b4de929d84f6d20",
+        "_rev": "526-a3e79fadecb6e22ef6f5376f57dee61c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard/%2A",
@@ -187277,10 +188108,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -187357,7 +188188,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-08-31T14:25:30.037889608-04:00",
+        "updated": "2026-09-01T08:32:13.212118545-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -187574,7 +188405,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.che01.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -196294,6 +197125,448 @@
     "imageUrl": "https://console.neuralseek.com/images/ns-white.svg",
     "localSvgIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.svg",
     "localPngIcon": "/generated/icons/266c5178-8d88-40a9-966f-ea9f775bab05.png"
+  },
+  {
+    "_id": "d9fe25ae-903a-454a-9797-b3bf34027ff5",
+    "_rev": "47-6cb6b342b6879f0db0d6aa8e1aba9c17",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:d9fe25ae-903a-454a-9797-b3bf34027ff5",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d9fe25ae-903a-454a-9797-b3bf34027ff5/%2A",
+    "complete": true,
+    "created": "2026-06-12T10:21:02.581857198-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "d9fe25ae-903a-454a-9797-b3bf34027ff5",
+    "images": {
+      "feature_image": "https://raw.githubusercontent.com/SilCarre/newcode-files/main/NewSymbol.png",
+      "image": "https://raw.githubusercontent.com/SilCarre/newcode-files/main/NewSymbol.png",
+      "medium_image": "https://raw.githubusercontent.com/SilCarre/newcode-files/main/NewSymbol.png",
+      "small_image": "https://raw.githubusercontent.com/SilCarre/newcode-files/main/NewSymbol.png"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "8767483cd6d747ec890c69e2a7689111:o:6c58c04d-b6c7-41a6-97ff-40d79cf027e5",
+          "support": {
+            "languages": [
+              "en",
+              "sv",
+              "nb",
+              "it",
+              "ar"
+            ],
+            "locations": [
+              "US",
+              "NO",
+              "SE",
+              "IE"
+            ],
+            "process": "Newcode is committed to delivering responsive and dependable customer support to help users successfully adopt and use the product. Our support team can assist with onboarding, access and configuration questions, troubleshooting, and general product enquiries. Customers can contact us by email, arrange support by phone, or submit a request through the query form on our website. We aim to provide clear, practical, and timely assistance so that issues are resolved efficiently and customers can continue their work with minimal disruption. ",
+            "status_url": "https://status-ibm.newcode.law/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Europe/Stockholm"
+                },
+                "contact": "support@newcode.ai",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 2
+                },
+                "type": "email"
+              },
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "22:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "22:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "22:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "22:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "22:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 5,
+                      "end_time": "22:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 6,
+                      "end_time": "22:00",
+                      "start_time": "08:00"
+                    }
+                  ],
+                  "timezone": "Europe/Oslo"
+                },
+                "contact": "+47 926 88 895 ",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "phone"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@newcode.ai",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 2
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://newcode.ai/contact"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/d9fe25ae-903a-454a-9797-b3bf34027ff5/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": "Work email of this instance's administrator. Users signing in with a verified email on the same domain will join this workspace automatically.",
+            "displayname": "Administrator email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid work email address",
+            "layout": null,
+            "name": "admin_email",
+            "optionsUrl": null,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "placeholder": "admin@yourcompany.com",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          }
+        ],
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Speed up contract review and reduce negotiation cycles with AI that flags risks, detects clause deviations and supports negotiation strategy",
+                "title": "1.\tContract Analysis and Negotiation Workflow"
+              },
+              {
+                "description": "Monitor negotiated contracts with AI to detect recurring deviations from legal templates and keep them aligned and current across the team ",
+                "title": "2.\tContinous Contract Governance Workflow"
+              },
+              {
+                "description": "Monitor recent legal topics or regulatory developments with Agentic search that returns concise de-briefs, key findings and source links",
+                "title": "3.\tHorizon Scanning and Legal Updates Workflow"
+              },
+              {
+                "description": "Simplify procurement review with AI that surfaces legal and commercial issues of supplier terms and helps speed up procurement processes",
+                "title": "4.\tProcurement Workflow"
+              },
+              {
+                "description": "Improve cost control by reviewing invoices with AI to spot anomalies, billing inconsistencies and non-compliant entries with greater control",
+                "title": "5.\tInvoice Analysis workflow"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://raw.githubusercontent.com/SilCarre/newcode-files/main/Newcode_Documentation_MCP%20Server%20(August%202026).pdf",
+          "terms_url": "https://raw.githubusercontent.com/SilCarre/newcode-files/main/Newcode_EULA_IBM%20Orchestrate%20(August%202026).pdf"
+        }
+      }
+    },
+    "name": "newcode-ai-mcp",
+    "overview_ui": {
+      "en": {
+        "description": "A well-tested set of Agentic AI Workflows for legal teams to automate complex tasks and enhance their daily operational activities",
+        "display_name": "Newcode Agentic AI Legal Workflows",
+        "long_description": "Newcode.ai helps enterprise legal teams turn AI into measurable business value through secure, scalable, and practical automation. Its Agentic AI Legal Workflows streamline high-impact tasks such as contract analysis and negotiation, document drafting from approved templates, monitoring legal updates, procurement processes, and invoice review. These workflows can be embedded directly into the client’s existing environment and help legal operations achieve faster turnaround times, improve operational accuracy and consistency, and scale legal support across functions while keeping legal professionals responsible for review, judgment, and final decision-making.\nNewcode’s AI workflows also complement products such as Nova Web, Nova Cowork, Nova Outlook add-in, Nova Word add-in, and Nova mobile app.\n\nDisclaimer: these AI workflows are designed to support legal work and operational efficiency. They do not provide legal advice, and all outputs should be reviewed by qualified professionals before use.\n"
+      }
+    },
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Newcode.ai, INC"
+    },
+    "tags": [
+      "agentic ai",
+      "ai_agent",
+      "custom_kind_service",
+      "free",
+      "global",
+      "ibm_third_party",
+      "lawyers",
+      "legal",
+      "mcp_server",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson",
+      "workflows"
+    ],
+    "updated": "2026-09-01T06:53:25.033345007-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/d9fe25ae-903a-454a-9797-b3bf34027ff5?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "8481cbea-082e-4cae-b566-d00ef6847611",
+        "_rev": "7-a6369e25bc38e78f9454529a42eb1c06",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:8481cbea-082e-4cae-b566-d00ef6847611",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/8481cbea-082e-4cae-b566-d00ef6847611/%2A",
+        "complete": true,
+        "created": "2026-07-14T09:29:14.520460884-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "8481cbea-082e-4cae-b566-d00ef6847611",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/8481cbea-082e-4cae-b566-d00ef6847611/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          }
+        },
+        "name": "30-days-free-trial",
+        "overview_ui": {
+          "en": {
+            "description": "add later",
+            "display_name": "30 days free trial do NOT use",
+            "long_description": "add later"
+          }
+        },
+        "parent_id": "d9fe25ae-903a-454a-9797-b3bf34027ff5",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/d9fe25ae-903a-454a-9797-b3bf34027ff5",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "Newcode.ai, INC"
+        },
+        "tags": [
+          "agentic ai",
+          "ibm_third_party",
+          "lawyers",
+          "legal",
+          "mcp_server",
+          "watson",
+          "workflows"
+        ],
+        "updated": "2026-09-01T06:53:24.796352327-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/8481cbea-082e-4cae-b566-d00ef6847611?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "add later",
+        "displayName": "30 days free trial do NOT use"
+      },
+      {
+        "_id": "3a872ee3-bf81-48ed-b390-4ccf99f687ac",
+        "_rev": "15-312279f8574163a6a0cfe127b367e843",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:3a872ee3-bf81-48ed-b390-4ccf99f687ac",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/3a872ee3-bf81-48ed-b390-4ccf99f687ac/%2A",
+        "complete": true,
+        "created": "2026-07-06T10:16:55.396526655-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "3a872ee3-bf81-48ed-b390-4ccf99f687ac",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/3a872ee3-bf81-48ed-b390-4ccf99f687ac/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "unlimited users"
+                  },
+                  {
+                    "description": "access to 5 agentic AI workflows\n"
+                  },
+                  {
+                    "description": "100,000 document pages included in Annual fee."
+                  },
+                  {
+                    "description": "Additional document processing beyond 100,000 pages is billed at $0.05 per page."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "annual-cost",
+        "overview_ui": {
+          "en": {
+            "description": " ",
+            "display_name": "Annual cost",
+            "long_description": " "
+          }
+        },
+        "parent_id": "d9fe25ae-903a-454a-9797-b3bf34027ff5",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/d9fe25ae-903a-454a-9797-b3bf34027ff5",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Newcode.ai, INC"
+        },
+        "tags": [
+          "agentic ai",
+          "ibm_third_party",
+          "lawyers",
+          "legal",
+          "mcp_server",
+          "watson",
+          "workflows"
+        ],
+        "updated": "2026-09-01T06:53:24.839051346-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/3a872ee3-bf81-48ed-b390-4ccf99f687ac?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": " ",
+        "displayName": "Annual cost"
+      }
+    ],
+    "description": "A well-tested set of Agentic AI Workflows for legal teams to automate complex tasks and enhance their daily operational activities",
+    "longDescription": "Newcode.ai helps enterprise legal teams turn AI into measurable business value through secure, scalable, and practical automation. Its Agentic AI Legal Workflows streamline high-impact tasks such as contract analysis and negotiation, document drafting from approved templates, monitoring legal updates, procurement processes, and invoice review. These workflows can be embedded directly into the client’s existing environment and help legal operations achieve faster turnaround times, improve operational accuracy and consistency, and scale legal support across functions while keeping legal professionals responsible for review, judgment, and final decision-making.\nNewcode’s AI workflows also complement products such as Nova Web, Nova Cowork, Nova Outlook add-in, Nova Word add-in, and Nova mobile app.\n\nDisclaimer: these AI workflows are designed to support legal work and operational efficiency. They do not provide legal advice, and all outputs should be reviewed by qualified professionals before use.\n",
+    "displayName": "Newcode Agentic AI Legal Workflows",
+    "imageUrl": "https://raw.githubusercontent.com/SilCarre/newcode-files/main/NewSymbol.png",
+    "localPngIcon": "/generated/icons/d9fe25ae-903a-454a-9797-b3bf34027ff5.png"
   },
   {
     "_id": "2d0c11be-3248-470c-8fc8-45cbeab01f1b",
@@ -210496,6 +211769,303 @@
     "localPngIcon": "/generated/icons/7483fc78-179a-47c9-8254-b0fa784055a4.png"
   },
   {
+    "_id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
+    "_rev": "44-664b930d30d65d39fd992e0b7da11532",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:639b4eb1-8479-4897-a4ae-927a432bcf95",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95/%2A",
+    "complete": true,
+    "created": "2025-09-25T05:59:48.075898226-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
+    "images": {
+      "image": "https://www.streebo.com/PDF/streebo-icon.png"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "c816c6ee82c24874a98017bccdf8c428:o:4a222887-207a-4296-a8ac-c693b97ad2b3",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "US"
+            ],
+            "process": "Streebo provides full customer support for the AI Agent SaaS solution listed on IBM Cloud. Customers can contact our support team via email (info@streebo.com\n), ticketing portal (JIRA, access provided post-subscription), or a dedicated support phone number (shared upon subscription).\n\nOur standard support hours are Monday–Friday, 8:00 AM–8:00 PM EST, with 24x7 coverage for critical issues.\n\nWe assist customers with:\nOnboarding and configuration\nTroubleshooting and usage guidance\nIssue resolution, bug fixes, and escalations\nSolution updates and enhancements\n\nWe acknowledge all requests within 4 business hours and resolve critical issues as quickly as possible.",
+            "status_url": "https://www.streebo.com/resources",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "",
+                      "start_time": ""
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "",
+                      "start_time": ""
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "",
+                      "start_time": ""
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "",
+                      "start_time": ""
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "",
+                      "start_time": ""
+                    }
+                  ],
+                  "timezone": "Asia/Calcutta"
+                },
+                "contact": "info@streebo.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "info@streebo.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://www.streebo.com/chatbot-for-healthcare"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Responds to inquiries about services, clinical processes, coverage, and general FAQs with accurate, on-demand information",
+                "title": "Answer patient knowledge questions"
+              },
+              {
+                "description": "Books, reschedules, and cancels appointments across web and voice channels",
+                "title": "Automate appointment scheduling"
+              },
+              {
+                "description": "Lets patients view balances and pay bills securely, end to end",
+                "title": "Automate bill payment"
+              },
+              {
+                "description": "Ensures all patient data is handled securely and meets healthcare regulations.",
+                "title": "HIPAA-Compliant Data Handling"
+              },
+              {
+                "description": "Deployable on hospital or clinic websites for real-time chat. Works on platforms like WhatsApp, Voice, ChatGPT, Instagram and more.",
+                "title": "Interaction Support"
+              }
+            ],
+            "media": [
+              {
+                "caption": "Healthcare AI Agent",
+                "type": "image/jpeg",
+                "url": "https://streebo.com/PDF/Healthcare-AI-Agent.jpg"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.streebo.com/chatbot-for-healthcare",
+          "terms_url": "https://www.streebo.com/aboutus/privacy-policy"
+        }
+      }
+    },
+    "name": "patient-facing-ai-agent-for-healthcare-companies",
+    "overview_ui": {
+      "en": {
+        "description": "IBM Watsonx powered Patient AI Agent handles patient inquiries, appointments, and assessments across voice, web, and social media.",
+        "display_name": "Patient Facing AI Agent for Healthcare Companies (Hospitals and Clinics)",
+        "long_description": "Meet the Intelligent Patient AI Agent, a secure, 99% accurate agentic AI solution built on IBM Watsonx Orchestrate. It's a fully autonomous patient engagement agent that handles incoming inquiries across channels (like web and voice), understands patient intent, and takes action end to end by connecting with EMR - not just a chat assistant, but an agent that gets things done."
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Streebo Inc"
+    },
+    "tags": [
+      "ai healthcare assistant",
+      "ai_agent",
+      "custom_kind_service",
+      "global",
+      "healthcare ai agent",
+      "healthcare ai agent solution",
+      "healthcare assessment",
+      "hospital ai agent",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson"
+    ],
+    "updated": "2026-09-01T03:27:51.516962949-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "632dca34-e12c-43d6-81f7-22e8d30d9f42",
+        "_rev": "20-909e615e2fbf8e5b7ed4b5ce564a8d55",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:632dca34-e12c-43d6-81f7-22e8d30d9f42",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/632dca34-e12c-43d6-81f7-22e8d30d9f42/%2A",
+        "complete": true,
+        "created": "2025-09-26T01:26:56.559329294-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "632dca34-e12c-43d6-81f7-22e8d30d9f42",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/632dca34-e12c-43d6-81f7-22e8d30d9f42/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Secure, Compliant and 99% Accurate AI Agent for Patient Assistant (healthcare)\n "
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "starterplan",
+        "overview_ui": {
+          "en": {
+            "description": "This AI Agent is offered as a template that can be customized to fit your specific business needs. \nPackage Inclusions (Patient AI Agent):\nAutomates Patient Inquiries and Support \nSupports knowledge retrieval for L1 questions (patient inquiry) and automate business workflow  \nIntegration with one Patient Management System (e.g., NextGen, Epic)\nAdvanced training to ensure high accuracy\nLanguage: English\nMulti-channel support (like webchat, mobile, sms, email, voice)\nQuality assurance and testing\nOngoing support and maintenance\nAdditional Benefits:\nDedicated customer success manager\nContract Terms: Annual commitment (12-month minimum), billed monthly\n\n",
+            "display_name": "Essential Plan - Starter Pack",
+            "long_description": "This AI Agent is offered as a template that can be customized to fit your specific business needs. \nPackage Inclusions (Patient AI Agent):\nAutomates Patient Inquiries and Support \nSupports knowledge retrieval for L1 questions (patient inquiry) and automate business workflow  \nIntegration with one Patient Management System (e.g., NextGen, Epic)\nAdvanced training to ensure high accuracy\nLanguage: English\nMulti-channel support (like webchat, mobile, sms, email, voice)\nQuality assurance and testing\nOngoing support and maintenance\nAdditional Benefits:\nDedicated customer success manager\nContract Terms: Annual commitment (12-month minimum), billed monthly\n\n"
+          }
+        },
+        "parent_id": "639b4eb1-8479-4897-a4ae-927a432bcf95",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/639b4eb1-8479-4897-a4ae-927a432bcf95",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Streebo Inc"
+        },
+        "tags": [
+          "ai healthcare assistant",
+          "healthcare ai agent",
+          "healthcare ai agent solution",
+          "healthcare assessment",
+          "hospital ai agent",
+          "ibm_third_party",
+          "watson"
+        ],
+        "updated": "2026-08-26T04:26:12.8624972-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/632dca34-e12c-43d6-81f7-22e8d30d9f42?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "This AI Agent is offered as a template that can be customized to fit your specific business needs. \nPackage Inclusions (Patient AI Agent):\nAutomates Patient Inquiries and Support \nSupports knowledge retrieval for L1 questions (patient inquiry) and automate business workflow  \nIntegration with one Patient Management System (e.g., NextGen, Epic)\nAdvanced training to ensure high accuracy\nLanguage: English\nMulti-channel support (like webchat, mobile, sms, email, voice)\nQuality assurance and testing\nOngoing support and maintenance\nAdditional Benefits:\nDedicated customer success manager\nContract Terms: Annual commitment (12-month minimum), billed monthly\n\n",
+        "displayName": "Essential Plan - Starter Pack"
+      }
+    ],
+    "description": "IBM Watsonx powered Patient AI Agent handles patient inquiries, appointments, and assessments across voice, web, and social media.",
+    "longDescription": "Meet the Intelligent Patient AI Agent, a secure, 99% accurate agentic AI solution built on IBM Watsonx Orchestrate. It's a fully autonomous patient engagement agent that handles incoming inquiries across channels (like web and voice), understands patient intent, and takes action end to end by connecting with EMR - not just a chat assistant, but an agent that gets things done.",
+    "displayName": "Patient Facing AI Agent for Healthcare Companies (Hospitals and Clinics)",
+    "imageUrl": "https://www.streebo.com/PDF/streebo-icon.png",
+    "localPngIcon": "/generated/icons/639b4eb1-8479-4897-a4ae-927a432bcf95.png"
+  },
+  {
     "_id": "power-iaas.placement-group",
     "_rev": "71-59bfaa459df9c4e2797e5b890de32732",
     "active": true,
@@ -223094,7 +224664,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "468-fabdfe39a285508e0271a5d780f81f96",
+    "_rev": "469-aa09461e3ef14148c8e7133cde43f518",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -223592,7 +225162,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-08-27T07:38:47.135934106-04:00",
+    "updated": "2026-09-01T12:02:50.885360694-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -235640,12 +237210,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -247035,12 +248605,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -253033,7 +254603,6 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
-    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -278781,7 +280350,7 @@
       },
       {
         "_id": "55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
-        "_rev": "65-643b9cf6de5f72671b92e4701b601cfa",
+        "_rev": "66-a6f9fae42404cfefe99fd5118e2dc97f",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d/%2A",
@@ -278898,7 +280467,8 @@
         "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
         "pricing_tags": [
           "allow_internal_users",
-          "block_internal_trial"
+          "block_internal_trial",
+          "paid_only"
         ],
         "provider": {
           "name": "IBM"
@@ -278908,7 +280478,7 @@
           "rc_compatible",
           "watson"
         ],
-        "updated": "2026-08-06T03:51:16.614110852-04:00",
+        "updated": "2026-09-01T12:08:19.739379743-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/55ff99cb-cdcb-46cc-bb64-0ffa9903bd7d?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -278935,12 +280505,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
