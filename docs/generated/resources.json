@@ -716,14 +716,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -887,7 +887,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -895,7 +894,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -6090,7 +6090,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -6274,7 +6274,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -6464,7 +6464,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -6688,16 +6688,16 @@
   },
   {
     "geo_tags": [
+      "fra02",
+      "eu-es",
+      "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
       "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-es",
-      "eu-gb",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6855,13 +6855,13 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9968,14 +9968,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10588,16 +10588,16 @@
     "geo_tags": [
       "br-sao",
       "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "ca-mon",
       "eu-de",
       "us-south",
-      "in-che",
-      "in-mum",
       "au-syd",
+      "in-che",
+      "ca-mon",
       "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -11990,7 +11990,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -16662,6 +16662,13 @@
     ],
     "plans": [
       {
+        "id": "4b975f2e-8605-4e06-9b28-249e78e17572",
+        "name": "dedicated",
+        "description": "Pricing consists of:\n\n\n1. **Enterprise Vault Installation** for deployment instance and entitlements\n2. **Resource Units (RUs)** that measure monthly secrets usage across\n\n\nRUs provide a unified way to track usage for features such as static and dynamic secrets, PKI certificates and SSH credentials. Select the number of Resource Units needed for your expected workload.\n\nFor details on RU calculations, sizing guidance, and pricing examples, see the documentation.",
+        "displayName": "Vault Dedicated",
+        "originalName": "standard"
+      },
+      {
         "id": "7713c3a8-3be8-4a9a-81bb-ee822fcaac3d",
         "name": "standard",
         "description": "At the end of each billing period. you're charged for the number of instances in your account, plus the maximum number of secrets with an active status in those instances. If you create more instances after the start of the monthly billing period, the cost of each additional instance for the first month is prorated based on the number of days that remain in the billing period.",
@@ -17543,12 +17550,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18829,8 +18836,8 @@
         "displayName": "Monthly"
       }
     ],
-    "description": "TapestryX is next-generation Networked Accounting Ledger Technology (NALT) that can be deployed to support B2B networks.",
-    "longDescription": "TapestryX is a real-time, high-capacity, secure and scalable, decentralized B2B transaction synchronization and double-entry accounting protocol.\n\n▪ Each Node (representing an institutional participant) controls its segment of the entire, interlinked platform ledger\n▪ Event-driven and self-synchronizing(1)\n▪ Each Node posts asset transfer details as well as (future-dated) obligations into immutable ledgers\n▪ Transaction Accounting Periods - allowing period archiving and active memory optimization\n▪ Simple, deterministic scripts (asset & life-cycle agnostic)\n▪ Interoperable with legacy infrastructure (via Airlock feature)\n▪ Confidential and Secure\n▪ Configurable for proper GAAP or IFRS Financial Reporting\n▪ Decentralized initiation of transaction, validation and processing – no single point of failure\n▪ High Performance (~ 100K TPS) and Resilient to Cyber attacks\n\nConsistency and Completeness of all Decentralized Ledgers without reliance on consensus, mining or 3rd Party validation.",
+    "description": "Enterprise software licensing for TapestryX - Networked Accounting Ledger (NAL)™ technology deployed across B2B networks and multi",
+    "longDescription": "L4S Corp. provides commercial software licensing for Networked Accounting Ledger (NAL)™ technology and the TapestryX platform. Our software licensing services grant enterprises and institutional consortia the right to deploy, operate, and integrate a real-time, high-capacity, secure, and scalable decentralized double-entry transaction synchronization and accounting protocol.\n\n• Software Licensing Scope: Commercial node licensing and enterprise deployment rights for Networked Accounting Ledger (NAL)™ software across single-tenant or multi-tenant environments.\n\n• Decentralized Ledger Node Control: Each licensed node (representing an institutional participant) controls its segment of the interlinked platform ledger.\n\n• Self-Synchronizing Protocol: Event-driven, real-time synchronization derived entirely from transaction data without consensus voting, mining, or third-party validator overhead (U.S. Pat. No. 11,631,063 B2).\n\n• Immutable Double-Entry Records: Nodes record both asset transfers and future-dated obligations directly into immutable ledgers.\n\n• Accounting Periods & Active Optimization: Native transacting periods support automated period archiving and active memory optimization.\n\n• Deterministic Scripting: Asset-agnostic and transaction-lifecycle-agnostic building blocks.\n\n• Legacy ERP & Core Banking Interoperability: Secure data integration via built-in Airlock bridge technology.\n\n• Enterprise Reporting & Compliance: Configurable for GAAP and IFRS financial accounting and reporting standards.\n\n• Resilient, High-Throughput Architecture: High performance (~100,000 TPS) with decentralized initiation, validation, and fault-tolerant zero-single-point-of-failure design.",
     "displayName": "TapestryX",
     "imageUrl": "https://l4scorp.com/wp-content/uploads/2021/03/tapestryx-logo.png",
     "localPngIcon": "/generated/icons/c3ef52e7-c978-4fd1-9982-e39084119336.png"
@@ -19546,6 +19553,7 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -22067,12 +22075,12 @@
   },
   {
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",

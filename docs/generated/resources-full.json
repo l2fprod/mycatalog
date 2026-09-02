@@ -9565,14 +9565,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -12733,7 +12733,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12741,7 +12740,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -76025,13 +76025,13 @@
   },
   {
     "_id": "databases-for-elasticsearch",
-    "_rev": "819-da8285a769745ea885b101423727fcad",
+    "_rev": "822-79de2607d156eef4d2e1612ca153c1a3",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-elasticsearch",
     "children": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "523-4288f85f7d0ec4df63f4a106e7e6ff09",
+        "_rev": "526-12968c28204694480796deaa0065cf64",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children": [
@@ -78745,10 +78745,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -78825,7 +78825,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:42.877856767-04:00",
+        "updated": "2026-09-01T15:46:26.196148196-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -81330,7 +81330,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "536-e01021f49916e2160a0987a33adc0fb8",
+        "_rev": "539-26a48db89dda6aa0d7b218a401ef8401",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children": [
@@ -84044,10 +84044,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84124,7 +84124,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:44.102816408-04:00",
+        "updated": "2026-09-01T15:46:26.792488425-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84132,7 +84132,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "526-3c2d635488bdedc35346858894a0a660",
+        "_rev": "529-3fdae32367f4211c1d62188e5259e10c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children": [
@@ -84362,10 +84362,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84441,7 +84441,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:41.941745332-04:00",
+        "updated": "2026-09-01T15:46:25.681306811-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84471,15 +84471,15 @@
     ],
     "id": "databases-for-elasticsearch",
     "images": {
-      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
+      "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+      "small_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
+        "broker_url": "https://broker.par01.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-elasticsearch",
       "other": {
@@ -84612,7 +84612,7 @@
       "us-south",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-09-01T08:32:41.54697492-04:00",
+    "updated": "2026-09-01T15:46:25.403829529-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -84620,7 +84620,7 @@
     "plans": [
       {
         "_id": "databases-for-elasticsearch-enterprise",
-        "_rev": "523-4288f85f7d0ec4df63f4a106e7e6ff09",
+        "_rev": "526-12968c28204694480796deaa0065cf64",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise/%2A",
@@ -84643,10 +84643,10 @@
         ],
         "id": "databases-for-elasticsearch-enterprise",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84723,7 +84723,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:42.877856767-04:00",
+        "updated": "2026-09-01T15:46:26.196148196-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84831,7 +84831,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-platinum",
-        "_rev": "536-e01021f49916e2160a0987a33adc0fb8",
+        "_rev": "539-26a48db89dda6aa0d7b218a401ef8401",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-platinum",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum/%2A",
@@ -84854,10 +84854,10 @@
         ],
         "id": "databases-for-elasticsearch-platinum",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -84934,7 +84934,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:44.102816408-04:00",
+        "updated": "2026-09-01T15:46:26.792488425-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-platinum?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84945,7 +84945,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-standard",
-        "_rev": "526-3c2d635488bdedc35346858894a0a660",
+        "_rev": "529-3fdae32367f4211c1d62188e5259e10c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard/%2A",
@@ -84954,10 +84954,10 @@
         "disabled": false,
         "id": "databases-for-elasticsearch-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -85033,7 +85033,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:41.941745332-04:00",
+        "updated": "2026-09-01T15:46:25.681306811-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -85046,7 +85046,7 @@
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
     "longDescription": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database to create a powerful tool for rich data analysis on large volumes of data. Databases for Elasticsearch makes Elasticsearch even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Elasticsearch pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for Elasticsearch",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/elasticsearch.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/elasticsearch.svg",
     "localSvgIcon": "/generated/icons/databases-for-elasticsearch.svg",
     "localPngIcon": "/generated/icons/databases-for-elasticsearch.png"
   },
@@ -98647,13 +98647,13 @@
   },
   {
     "_id": "databases-for-mysql",
-    "_rev": "818-993eec6a3924fe21979dd03162d3ad9e",
+    "_rev": "821-dc5334716e6c06ecb9e6f8df3ebcb044",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mysql",
     "children": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "529-c899ffa5b7d52b217cbe6bbac043f902",
+        "_rev": "532-d2063a221a53bb40666557c3da6147aa",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children": [
@@ -101592,10 +101592,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -101672,7 +101672,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:52.605183786-04:00",
+        "updated": "2026-09-01T15:46:34.494591755-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -102765,15 +102765,15 @@
     ],
     "id": "databases-for-mysql",
     "images": {
-      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg"
+      "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+      "image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+      "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+      "small_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
+        "broker_url": "https://broker.par01.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-mysql",
       "other": {
@@ -102897,7 +102897,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-01T08:32:52.226629817-04:00",
+    "updated": "2026-09-01T15:46:34.235243997-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -102905,7 +102905,7 @@
     "plans": [
       {
         "_id": "databases-for-mysql-standard",
-        "_rev": "529-c899ffa5b7d52b217cbe6bbac043f902",
+        "_rev": "532-d2063a221a53bb40666557c3da6147aa",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard/%2A",
@@ -102928,10 +102928,10 @@
         ],
         "id": "databases-for-mysql-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -103008,7 +103008,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:52.605183786-04:00",
+        "updated": "2026-09-01T15:46:34.494591755-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -103112,7 +103112,7 @@
     "description": "Build mission critical web applications that offer high performance with scalability and security.",
     "longDescription": "MySQL is a fast, easy-to-use, and flexible RDBMS. As the central component of the LAMP (Linux, Apache, MySQL and PHP) web service model, it sports a number of connectors, including Python, PHP and C++ for development needs. Databases for MySQL makes MySQL even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for MySQL pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Databases for MySQL",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/mysql.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/mysql.svg",
     "localSvgIcon": "/generated/icons/databases-for-mysql.svg",
     "localPngIcon": "/generated/icons/databases-for-mysql.png"
   },
@@ -108231,7 +108231,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -108242,7 +108241,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -108542,13 +108542,13 @@
   },
   {
     "_id": "databases-for-redis",
-    "_rev": "819-957951df305c945daf325c780bd9a772",
+    "_rev": "822-f365730a12815d76df421b9d710360ae",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-redis",
     "children": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "525-eabacf12a1bfe58a8fe75abdd50579e5",
+        "_rev": "528-ab50b86c8930b33e65f1c40eff512e41",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children": [
@@ -111481,10 +111481,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -111561,7 +111561,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:33.034635286-04:00",
+        "updated": "2026-09-01T15:46:17.542647713-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -113687,15 +113687,15 @@
     ],
     "id": "databases-for-redis",
     "images": {
-      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg"
+      "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+      "image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+      "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+      "small_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
+        "broker_url": "https://broker.par01.databases.cloud.ibm.com"
       },
       "original_name": "databases-for-redis",
       "other": {
@@ -113822,7 +113822,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-01T08:32:32.578281919-04:00",
+    "updated": "2026-09-01T15:46:17.306061352-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -113830,7 +113830,7 @@
     "plans": [
       {
         "_id": "databases-for-redis-standard",
-        "_rev": "525-eabacf12a1bfe58a8fe75abdd50579e5",
+        "_rev": "528-ab50b86c8930b33e65f1c40eff512e41",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard/%2A",
@@ -113853,10 +113853,10 @@
         ],
         "id": "databases-for-redis-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -113933,7 +113933,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:33.034635286-04:00",
+        "updated": "2026-09-01T15:46:17.542647713-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -114142,7 +114142,7 @@
     "description": "Redis is a blazingly fast, in-memory data structure store.",
     "longDescription": "Redis is an open source, in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Databases for Redis makes Redis even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Databases for Redis pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs and terms.",
     "displayName": "Databases for Redis",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/redis.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/redis.svg",
     "localSvgIcon": "/generated/icons/databases-for-redis.svg",
     "localPngIcon": "/generated/icons/databases-for-redis.png"
   },
@@ -117300,16 +117300,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "fra02",
+      "eu-es",
+      "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
       "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-es",
-      "eu-gb",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -122052,13 +122052,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -124200,13 +124200,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -150900,14 +150900,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -153415,14 +153415,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -161495,16 +161495,16 @@
     "geo_tags": [
       "br-sao",
       "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "ca-mon",
       "eu-de",
       "us-south",
-      "in-che",
-      "in-mum",
       "au-syd",
+      "in-che",
+      "ca-mon",
       "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -183105,13 +183105,13 @@
   },
   {
     "_id": "messages-for-rabbitmq",
-    "_rev": "821-d6dcf56d5a038bc0485c65aa79b9a91a",
+    "_rev": "824-b141148134c840eb58a57379898de80b",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:messages-for-rabbitmq",
     "children": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "526-a3e79fadecb6e22ef6f5376f57dee61c",
+        "_rev": "529-3f489c1828542bce1109aa68be1acdad",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children": [
@@ -186044,10 +186044,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -186124,7 +186124,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:13.212118545-04:00",
+        "updated": "2026-09-01T15:46:01.733538046-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -187941,15 +187941,15 @@
     ],
     "id": "messages-for-rabbitmq",
     "images": {
-      "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-      "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg"
+      "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+      "small_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg"
     },
     "kind": "service",
     "metadata": {
       "callbacks": {
-        "broker_url": "https://broker.jp-tok.databases.cloud.ibm.com"
+        "broker_url": "https://broker.par01.databases.cloud.ibm.com"
       },
       "original_name": "messages-for-rabbitmq",
       "other": {
@@ -188077,7 +188077,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-01T08:32:12.791482784-04:00",
+    "updated": "2026-09-01T15:46:01.454294505-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -188085,7 +188085,7 @@
     "plans": [
       {
         "_id": "messages-for-rabbitmq-standard",
-        "_rev": "526-a3e79fadecb6e22ef6f5376f57dee61c",
+        "_rev": "529-3f489c1828542bce1109aa68be1acdad",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard/%2A",
@@ -188108,10 +188108,10 @@
         ],
         "id": "messages-for-rabbitmq-standard",
         "images": {
-          "feature_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "medium_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
-          "small_image": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg"
+          "feature_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "medium_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
+          "small_image": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg"
         },
         "kind": "plan",
         "metadata": {
@@ -188188,7 +188188,7 @@
           "hipaa",
           "service_endpoint_supported"
         ],
-        "updated": "2026-09-01T08:32:13.212118545-04:00",
+        "updated": "2026-09-01T15:46:01.733538046-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -188405,7 +188405,7 @@
     "description": "RabbitMQ is an open source multi-protocol messaging broker.",
     "longDescription": "RabbitMQ routes messages between microservices for modern applications. Messages for RabbitMQ makes RabbitMQ even better by managing it for you. Features include high availability, automated backup orchestration, autoscaling, and de-coupled allocation of storage, RAM, and vCPUs. Messages for RabbitMQ pricing is based on underlying disk, RAM, and optional vCPU allocation, as well as backup storage usage. The service is HIPAA-Ready and compliant with PCI-DSS, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, GDPR and HITRUST. You can also learn more by viewing docs, API docs, and terms.",
     "displayName": "Messages for RabbitMQ",
-    "imageUrl": "https://broker.jp-tok.databases.cloud.ibm.com/images/rabbitmq.svg",
+    "imageUrl": "https://broker.par01.databases.cloud.ibm.com/images/rabbitmq.svg",
     "localSvgIcon": "/generated/icons/messages-for-rabbitmq.svg",
     "localPngIcon": "/generated/icons/messages-for-rabbitmq.png"
   },
@@ -232420,6 +232420,128 @@
     },
     "plans": [
       {
+        "_id": "4b975f2e-8605-4e06-9b28-249e78e17572",
+        "_rev": "29-de148b67ef8bed43fce0622fc2210881",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:4b975f2e-8605-4e06-9b28-249e78e17572",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/4b975f2e-8605-4e06-9b28-249e78e17572/%2A",
+        "complete": true,
+        "created": "2026-07-05T13:48:02.675820159-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "eu-de",
+          "us-south"
+        ],
+        "id": "4b975f2e-8605-4e06-9b28-249e78e17572",
+        "images": {
+          "feature_image": "https://ibm.com",
+          "image": "https://ibm.com",
+          "medium_image": "https://ibm.com",
+          "small_image": "https://ibm.com"
+        },
+        "kind": "plan",
+        "metadata": {
+          "compliance": [
+            "minisd"
+          ],
+          "original_name": "standard",
+          "plan": {
+            "allow_internal_users": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {
+              "plan_id": "7713c3a8-3be8-4a9a-81bb-ee822fcaac3d"
+            },
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/4b975f2e-8605-4e06-9b28-249e78e17572/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": true,
+            "async_unprovisioning_supported": true,
+            "bindable": false,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": true,
+            "parameters": [],
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": false,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "sla": {
+            "dr": {
+              "dr": true
+            }
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "title": "Enterprise vault as a Managed Service"
+                  },
+                  {
+                    "description": "Centrally manage secrets in a dedicated enterprise Vault instance with enhanced security and advanced capabilities."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "dedicated",
+        "overview_ui": {
+          "en": {
+            "description": "Pricing consists of:\n\n\n1. **Enterprise Vault Installation** for deployment instance and entitlements\n2. **Resource Units (RUs)** that measure monthly secrets usage across\n\n\nRUs provide a unified way to track usage for features such as static and dynamic secrets, PKI certificates and SSH credentials. Select the number of Resource Units needed for your expected workload.\n\nFor details on RU calculations, sizing guidance, and pricing examples, see the documentation.",
+            "display_name": "Vault Dedicated",
+            "long_description": "Pricing consists of:\n\n\n1. **Enterprise Vault Installation** for deployment instance and entitlements\n2. **Resource Units (RUs)** that measure monthly secrets usage across\n\n\nRUs provide a unified way to track usage for features such as static and dynamic secrets, PKI certificates and SSH credentials. Select the number of Resource Units needed for your expected workload.\n\nFor details on RU calculations, sizing guidance, and pricing examples, see the documentation."
+          }
+        },
+        "parent_id": "ebc0cdb0-af2a-11ea-98c7-29e5db822649",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/ebc0cdb0-af2a-11ea-98c7-29e5db822649",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "IBM"
+        },
+        "tags": [
+          "apidocs_enabled",
+          "eu_access",
+          "ibm_beta",
+          "ibm_created",
+          "rc_compatible",
+          "security",
+          "service_endpoint_supported"
+        ],
+        "updated": "2026-09-01T15:36:30.170308628-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/4b975f2e-8605-4e06-9b28-249e78e17572?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Pricing consists of:\n\n\n1. **Enterprise Vault Installation** for deployment instance and entitlements\n2. **Resource Units (RUs)** that measure monthly secrets usage across\n\n\nRUs provide a unified way to track usage for features such as static and dynamic secrets, PKI certificates and SSH credentials. Select the number of Resource Units needed for your expected workload.\n\nFor details on RU calculations, sizing guidance, and pricing examples, see the documentation.",
+        "displayName": "Vault Dedicated",
+        "originalName": "standard"
+      },
+      {
         "_id": "7713c3a8-3be8-4a9a-81bb-ee822fcaac3d",
         "_rev": "32-edf7362aa1777018b40fcee79b824a3e",
         "active": true,
@@ -237210,12 +237332,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -247640,7 +247762,7 @@
   },
   {
     "_id": "c3ef52e7-c978-4fd1-9982-e39084119336",
-    "_rev": "38-58b8736d17e034e238851759c7873e20",
+    "_rev": "45-fb72a979dae7cbd1ed51ab191b61b01a",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c3ef52e7-c978-4fd1-9982-e39084119336",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c3ef52e7-c978-4fd1-9982-e39084119336/%2A",
@@ -247730,24 +247852,24 @@
           "en": {
             "bullets": [
               {
-                "description": "TapestryX has a patented generic way of configuring any transaction or life-cycle from standardized, interchangeable building blocks.",
-                "title": "Configurable for any asset or life cycle"
+                "description": "Flexible enterprise licensing for standalone nodes, consortium deployments, and dedicated private networks.",
+                "title": "Networked Accounting Ledger (NAL) Software Licensing"
               },
               {
-                "description": "Nodes in TapestryX are able to synchronize the distributed ledger based on the transaction data alone.",
-                "title": "Real-time, self-synchronizing DLT"
+                "description": "Patented methods to configure complex transactions, clearing workflows, and asset lifecycles (U.S. Pat. No. 11,631,063 B2).",
+                "title": "Patented Asset & Lifecycle Configurability"
               },
               {
-                "description": "TapestryX uses Nostro/Vostro Accounting where the journals are hash-linked into the distributed ledger records.",
-                "title": "Double-entry Accounting"
+                "description": "Nodes maintain real-time ledger consistency without the latency, risk, or costs of miners and validators.",
+                "title": "Real-Time, Self-Synchronizing DLT"
               },
               {
-                "description": "TapestryX has transaction periods with starting balances, transactions and ending balances.",
-                "title": "Transacting Periods"
+                "description": "Embeds double-entry journals into distributed records to deliver fully reconcilable general ledgers.",
+                "title": "Native Double-Entry Nostro/Vostro Accounting"
               },
               {
-                "description": "TapestryX is able to record future-dated obligation as payables and receivables. All other blockchains are current period backwards.",
-                "title": "Future-dated obligations (Payables and Receivables)"
+                "description": "Records and tracks future-dated payables, receivables, accruals, and forward obligations on-chain.",
+                "title": "Transacting Periods & Archive Management"
               }
             ],
             "media": [
@@ -247768,9 +247890,9 @@
     "name": "l4s-corp-tapestryx",
     "overview_ui": {
       "en": {
-        "description": "TapestryX is next-generation Networked Accounting Ledger Technology (NALT) that can be deployed to support B2B networks.",
+        "description": "Enterprise software licensing for TapestryX - Networked Accounting Ledger (NAL)™ technology deployed across B2B networks and multi",
         "display_name": "TapestryX",
-        "long_description": "TapestryX is a real-time, high-capacity, secure and scalable, decentralized B2B transaction synchronization and double-entry accounting protocol.\n\n▪ Each Node (representing an institutional participant) controls its segment of the entire, interlinked platform ledger\n▪ Event-driven and self-synchronizing(1)\n▪ Each Node posts asset transfer details as well as (future-dated) obligations into immutable ledgers\n▪ Transaction Accounting Periods - allowing period archiving and active memory optimization\n▪ Simple, deterministic scripts (asset & life-cycle agnostic)\n▪ Interoperable with legacy infrastructure (via Airlock feature)\n▪ Confidential and Secure\n▪ Configurable for proper GAAP or IFRS Financial Reporting\n▪ Decentralized initiation of transaction, validation and processing – no single point of failure\n▪ High Performance (~ 100K TPS) and Resilient to Cyber attacks\n\nConsistency and Completeness of all Decentralized Ledgers without reliance on consensus, mining or 3rd Party validation."
+        "long_description": "L4S Corp. provides commercial software licensing for Networked Accounting Ledger (NAL)™ technology and the TapestryX platform. Our software licensing services grant enterprises and institutional consortia the right to deploy, operate, and integrate a real-time, high-capacity, secure, and scalable decentralized double-entry transaction synchronization and accounting protocol.\n\n• Software Licensing Scope: Commercial node licensing and enterprise deployment rights for Networked Accounting Ledger (NAL)™ software across single-tenant or multi-tenant environments.\n\n• Decentralized Ledger Node Control: Each licensed node (representing an institutional participant) controls its segment of the interlinked platform ledger.\n\n• Self-Synchronizing Protocol: Event-driven, real-time synchronization derived entirely from transaction data without consensus voting, mining, or third-party validator overhead (U.S. Pat. No. 11,631,063 B2).\n\n• Immutable Double-Entry Records: Nodes record both asset transfers and future-dated obligations directly into immutable ledgers.\n\n• Accounting Periods & Active Optimization: Native transacting periods support automated period archiving and active memory optimization.\n\n• Deterministic Scripting: Asset-agnostic and transaction-lifecycle-agnostic building blocks.\n\n• Legacy ERP & Core Banking Interoperability: Secure data integration via built-in Airlock bridge technology.\n\n• Enterprise Reporting & Compliance: Configurable for GAAP and IFRS financial accounting and reporting standards.\n\n• Resilient, High-Throughput Architecture: High performance (~100,000 TPS) with decentralized initiation, validation, and fault-tolerant zero-single-point-of-failure design."
       }
     },
     "pricing_tags": [
@@ -247796,7 +247918,7 @@
       "support_third_party",
       "trade finance"
     ],
-    "updated": "2025-07-22T05:24:02.113162929-04:00",
+    "updated": "2026-09-01T12:50:00.430938596-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/c3ef52e7-c978-4fd1-9982-e39084119336?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -247898,8 +248020,8 @@
         "displayName": "Monthly"
       }
     ],
-    "description": "TapestryX is next-generation Networked Accounting Ledger Technology (NALT) that can be deployed to support B2B networks.",
-    "longDescription": "TapestryX is a real-time, high-capacity, secure and scalable, decentralized B2B transaction synchronization and double-entry accounting protocol.\n\n▪ Each Node (representing an institutional participant) controls its segment of the entire, interlinked platform ledger\n▪ Event-driven and self-synchronizing(1)\n▪ Each Node posts asset transfer details as well as (future-dated) obligations into immutable ledgers\n▪ Transaction Accounting Periods - allowing period archiving and active memory optimization\n▪ Simple, deterministic scripts (asset & life-cycle agnostic)\n▪ Interoperable with legacy infrastructure (via Airlock feature)\n▪ Confidential and Secure\n▪ Configurable for proper GAAP or IFRS Financial Reporting\n▪ Decentralized initiation of transaction, validation and processing – no single point of failure\n▪ High Performance (~ 100K TPS) and Resilient to Cyber attacks\n\nConsistency and Completeness of all Decentralized Ledgers without reliance on consensus, mining or 3rd Party validation.",
+    "description": "Enterprise software licensing for TapestryX - Networked Accounting Ledger (NAL)™ technology deployed across B2B networks and multi",
+    "longDescription": "L4S Corp. provides commercial software licensing for Networked Accounting Ledger (NAL)™ technology and the TapestryX platform. Our software licensing services grant enterprises and institutional consortia the right to deploy, operate, and integrate a real-time, high-capacity, secure, and scalable decentralized double-entry transaction synchronization and accounting protocol.\n\n• Software Licensing Scope: Commercial node licensing and enterprise deployment rights for Networked Accounting Ledger (NAL)™ software across single-tenant or multi-tenant environments.\n\n• Decentralized Ledger Node Control: Each licensed node (representing an institutional participant) controls its segment of the interlinked platform ledger.\n\n• Self-Synchronizing Protocol: Event-driven, real-time synchronization derived entirely from transaction data without consensus voting, mining, or third-party validator overhead (U.S. Pat. No. 11,631,063 B2).\n\n• Immutable Double-Entry Records: Nodes record both asset transfers and future-dated obligations directly into immutable ledgers.\n\n• Accounting Periods & Active Optimization: Native transacting periods support automated period archiving and active memory optimization.\n\n• Deterministic Scripting: Asset-agnostic and transaction-lifecycle-agnostic building blocks.\n\n• Legacy ERP & Core Banking Interoperability: Secure data integration via built-in Airlock bridge technology.\n\n• Enterprise Reporting & Compliance: Configurable for GAAP and IFRS financial accounting and reporting standards.\n\n• Resilient, High-Throughput Architecture: High performance (~100,000 TPS) with decentralized initiation, validation, and fault-tolerant zero-single-point-of-failure design.",
     "displayName": "TapestryX",
     "imageUrl": "https://l4scorp.com/wp-content/uploads/2021/03/tapestryx-logo.png",
     "localPngIcon": "/generated/icons/c3ef52e7-c978-4fd1-9982-e39084119336.png"
@@ -254603,6 +254725,7 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -280505,12 +280628,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -286270,12 +286393,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south",
-          "au-syd",
-          "ca-tor"
+          "us-south"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
