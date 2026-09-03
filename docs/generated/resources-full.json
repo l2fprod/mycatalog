@@ -9565,14 +9565,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "images": {
@@ -12003,7 +12003,7 @@
       },
       {
         "_id": "5e0ed6ca-bd92-4d74-8cd6-80c6e5ea27d6",
-        "_rev": "43-61551ecc4d57b64e585ae1333fab59c6",
+        "_rev": "44-cb1049e107f5eeb3a5005044403bc902",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5e0ed6ca-bd92-4d74-8cd6-80c6e5ea27d6",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5e0ed6ca-bd92-4d74-8cd6-80c6e5ea27d6/%2A",
@@ -12096,7 +12096,10 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "This plan includes percentage rollout and segment targeting in addition to feature flags, property management and aggregation found in the Standard plan."
+                    "description": "Includes everything in Standard, plus advanced Feature Flag capabilities such as segment targeting, and percentage rollouts, along with advanced Configuration Aggregator capabilities including natural-language Resource Query and on-demand reconciliation."
+                  },
+                  {
+                    "description": "For enterprises running targeted release control and managing cloud inventory at scale in critical production environments."
                   }
                 ]
               },
@@ -12224,13 +12227,13 @@
         },
         "tags": [
           "dev_ops",
+          "eu_access",
           "fs_ready",
           "ibm_created",
           "rc_compatible",
-          "service_endpoint_supported",
-          "eu_access"
+          "service_endpoint_supported"
         ],
-        "updated": "2026-05-11T08:36:52.572942703-04:00",
+        "updated": "2026-09-03T08:02:23.226481859-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5e0ed6ca-bd92-4d74-8cd6-80c6e5ea27d6?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -12486,7 +12489,7 @@
       },
       {
         "_id": "08dd67e1-f319-4abe-b352-748fb2b6dc8e",
-        "_rev": "36-d19765139c6c7f009ac659dd01e444af",
+        "_rev": "37-09f6ef650b5fdbfa15a7852b75025a7d",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:08dd67e1-f319-4abe-b352-748fb2b6dc8e",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/08dd67e1-f319-4abe-b352-748fb2b6dc8e/%2A",
@@ -12574,7 +12577,10 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "This plan includes feature flags in addition to property management and aggregation found in the Basic Plan."
+                    "description": "Includes feature flags with instant on/off kill switch control, property management, and Configuration Aggregator with both scheduled and real-time inventory collection across single account, full enterprise account hierarchy, and supports integration with third-party CSPM tools. "
+                  },
+                  {
+                    "description": "For teams running feature flags and configuration aggregator in non-production and production environments."
                   }
                 ]
               },
@@ -12701,13 +12707,13 @@
           "name": "IBM"
         },
         "tags": [
+          "eu_access",
           "fs_ready",
           "ibm_created",
           "rc_compatible",
-          "service_endpoint_supported",
-          "eu_access"
+          "service_endpoint_supported"
         ],
-        "updated": "2026-05-11T08:38:56.288192215-04:00",
+        "updated": "2026-09-03T08:01:28.346071946-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/08dd67e1-f319-4abe-b352-748fb2b6dc8e?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -12733,6 +12739,7 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12740,8 +12747,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -17563,13 +17569,28 @@
       },
       {
         "_id": "25c0ba3b-d521-4068-925f-06527fcc7ac5",
-        "_rev": "3-3397b31ed6ac77e6e364c1af72327ddf",
+        "_rev": "4-7d3c0678596ffc55fa9d89065f63c7cb",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:25c0ba3b-d521-4068-925f-06527fcc7ac5",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/25c0ba3b-d521-4068-925f-06527fcc7ac5/%2A",
         "complete": true,
         "created": "2026-09-02T14:26:35.899500366-04:00",
         "disabled": false,
+        "geo_tags": [
+          "au-syd",
+          "br-sao",
+          "ca-mon",
+          "ca-tor",
+          "eu-de",
+          "eu-es",
+          "eu-gb",
+          "in-che",
+          "in-mum",
+          "jp-osa",
+          "jp-tok",
+          "us-east",
+          "us-south"
+        ],
         "id": "25c0ba3b-d521-4068-925f-06527fcc7ac5",
         "images": {
           "image": "https://globalcatalog.cloud.ibm.com/api/v1/is.bare-metal-server/artifacts/App_Icon_ibm-triraga-reserved_light-theme.svg"
@@ -17601,7 +17622,25 @@
             "type": "paid",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/25c0ba3b-d521-4068-925f-06527fcc7ac5/pricing"
           },
-          "rc_compatible": false,
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": true,
+            "parameters": null,
+            "plan_updateable": true,
+            "rc_provisionable": false,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
           "sla": {
             "dr": {
               "dr": true
@@ -17648,7 +17687,7 @@
           "is.composite",
           "rc_compatible"
         ],
-        "updated": "2026-09-02T14:27:48.37239378-04:00",
+        "updated": "2026-09-03T00:24:39.722214074-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/25c0ba3b-d521-4068-925f-06527fcc7ac5?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -102908,7 +102947,7 @@
           },
           {
             "_id": "databases-for-mysql-standard-gen2:in-che",
-            "_rev": "20-a534ce5e0a2de70633fb2d6a74a1bdfd",
+            "_rev": "21-71a767b966258ec1a25ee3942372627c",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-che/%2A",
@@ -102936,7 +102975,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -103227,7 +103267,7 @@
             "tags": [
               "in-che"
             ],
-            "updated": "2026-09-02T00:16:23.220839961-04:00",
+            "updated": "2026-09-03T02:14:36.752528206-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -107012,6 +107052,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -107022,8 +107063,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -109131,7 +109171,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -109142,7 +109181,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -118525,16 +118565,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "fra02",
+      "eu-es",
       "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
+      "eu-gb",
       "au-syd",
-      "us-east",
-      "eu-es",
-      "fra02"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -162719,19 +162759,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "in-che",
-      "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
       "eu-de",
       "us-south",
       "au-syd",
-      "br-sao",
-      "in-mum",
-      "ca-tor",
-      "ca-mon"
+      "eu-gb",
+      "in-che",
+      "jp-osa",
+      "ca-mon",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -238911,12 +238951,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -282207,12 +282247,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "jp-tok",
       "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
