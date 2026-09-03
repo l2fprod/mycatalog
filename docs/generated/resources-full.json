@@ -9565,14 +9565,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -12733,7 +12733,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12741,7 +12740,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -17560,6 +17560,102 @@
         "description": "Pricing plan for an mx2 bare metal server configured with dual processors offering 48 cores (96 vCPU), 384 GB memory, local NVMe boot drives, secondary NVMe drives for local storage, and an aggregate 100Gbps network uplink.",
         "displayName": "bx2d-metal-96x384",
         "originalName": "bx2d-metal-96x384"
+      },
+      {
+        "_id": "25c0ba3b-d521-4068-925f-06527fcc7ac5",
+        "_rev": "3-3397b31ed6ac77e6e364c1af72327ddf",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:25c0ba3b-d521-4068-925f-06527fcc7ac5",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/25c0ba3b-d521-4068-925f-06527fcc7ac5/%2A",
+        "complete": true,
+        "created": "2026-09-02T14:26:35.899500366-04:00",
+        "disabled": false,
+        "id": "25c0ba3b-d521-4068-925f-06527fcc7ac5",
+        "images": {
+          "image": "https://globalcatalog.cloud.ibm.com/api/v1/is.bare-metal-server/artifacts/App_Icon_ibm-triraga-reserved_light-theme.svg"
+        },
+        "kind": "plan",
+        "metadata": {
+          "compliance": [
+            "minisd"
+          ],
+          "original_name": "bx3-metal-192x1024",
+          "plan": {
+            "allow_internal_users": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/25c0ba3b-d521-4068-925f-06527fcc7ac5/pricing"
+          },
+          "rc_compatible": false,
+          "sla": {
+            "dr": {
+              "dr": true
+            }
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Full server performance without a KVM hypervisor."
+                  },
+                  {
+                    "description": "No noisy neighbor single tenant server."
+                  },
+                  {
+                    "description": "Per-hour billing means simpler billing and no upfront costs."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "bx3-metal-192x1024",
+        "overview_ui": {
+          "en": {
+            "description": "Pricing plan for bx3-metal-192x1024",
+            "display_name": "bx3-metal-192x1024",
+            "long_description": "Pricing plan for bx3-metal-192x1024"
+          }
+        },
+        "parent_id": "is.bare-metal-server",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/is.bare-metal-server",
+        "pricing_tags": [
+          "paid",
+          "paid_only",
+          "allow_internal_users"
+        ],
+        "provider": {
+          "name": "IBM"
+        },
+        "tags": [
+          "ibm_created",
+          "is.composite",
+          "rc_compatible"
+        ],
+        "updated": "2026-09-02T14:27:48.37239378-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/25c0ba3b-d521-4068-925f-06527fcc7ac5?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Pricing plan for bx3-metal-192x1024",
+        "displayName": "bx3-metal-192x1024",
+        "originalName": "bx3-metal-192x1024"
       },
       {
         "_id": "77e714e0-75cb-41e0-a1d3-d5e42899f49c",
@@ -106916,7 +107012,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -106927,7 +107022,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -109035,6 +109131,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -109045,8 +109142,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -115271,7 +115367,7 @@
   },
   {
     "_id": "databases-independent-backups",
-    "_rev": "28-92daf6e7f8db3f39393133b69e82147e",
+    "_rev": "29-f536bd0fd61190117fcb056bcd0f4ae2",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-independent-backups",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups/%2A",
@@ -115279,8 +115375,10 @@
     "created": "2026-06-03T07:54:19.712140494-04:00",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
       "ca-mon",
       "eu-de",
+      "eu-es",
       "in-che",
       "in-mum",
       "us-east"
@@ -115362,10 +115460,12 @@
     },
     "tags": [
       "allow_internal_users",
+      "au-syd",
       "ca-mon",
       "custom_kind_service",
       "data_management",
       "eu-de",
+      "eu-es",
       "ibm_created",
       "in-che",
       "in-mum",
@@ -115375,7 +115475,7 @@
       "us-east",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-08-18T03:04:38.547423082-04:00",
+    "updated": "2026-09-02T17:12:25.069686314-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -115383,7 +115483,7 @@
     "plans": [
       {
         "_id": "databases-independent-backups-gen2-standard",
-        "_rev": "26-725d0863f73e9425171a4d566518107e",
+        "_rev": "27-3c604da75ca807482453c0b956e1848b",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-independent-backups-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard/%2A",
@@ -115391,8 +115491,10 @@
         "created": "2026-06-03T07:54:21.033321001-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
+          "eu-es",
           "in-che",
           "in-mum",
           "us-east"
@@ -115463,7 +115565,7 @@
           "ibm_created",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-08-18T03:04:38.546897879-04:00",
+        "updated": "2026-09-02T17:12:25.05330136-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -118424,14 +118526,14 @@
     "disabled": false,
     "geo_tags": [
       "us-south",
-      "au-syd",
-      "us-east",
-      "eu-es",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-es",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -123175,13 +123277,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -152024,14 +152126,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -162617,19 +162719,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "in-che",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "ca-mon",
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb",
       "br-sao",
-      "in-che",
-      "in-mum"
+      "in-mum",
+      "ca-tor",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -238809,12 +238911,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -282105,12 +282207,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -287870,12 +287972,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
