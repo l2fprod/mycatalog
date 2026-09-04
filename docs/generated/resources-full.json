@@ -9565,14 +9565,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -109171,6 +109171,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -109181,8 +109182,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -118568,11 +118568,11 @@
       "fra02",
       "eu-es",
       "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "eu-gb",
       "au-syd",
       "us-east"
     ],
@@ -123317,13 +123317,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -125465,13 +125465,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -152166,14 +152166,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -162759,7 +162759,11 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "in-che",
+      "jp-osa",
       "in-mum",
+      "ca-mon",
+      "eu-gb",
       "eu-es",
       "jp-tok",
       "us-east",
@@ -162767,10 +162771,6 @@
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb",
-      "in-che",
-      "jp-osa",
-      "ca-mon",
       "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -289739,7 +289739,7 @@
   },
   {
     "_id": "43834340-4a6d-11ed-97d2-959039ad2a2e",
-    "_rev": "1164-b3042f440654050c3572bac809285d2a",
+    "_rev": "1166-6df6184536ea162055fe38266cd158ba",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:43834340-4a6d-11ed-97d2-959039ad2a2e",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e/%2A",
@@ -290121,7 +290121,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-31T09:29:27.646266108-04:00",
+    "updated": "2026-09-03T17:15:51.949292318-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -290129,7 +290129,7 @@
     "plans": [
       {
         "_id": "lakehouse-enterprise",
-        "_rev": "208-6d2737ca9c2938799b4a50ff6e311919",
+        "_rev": "210-511ed72dfa0e823e542deab0c59d2df0",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise/%2A",
@@ -290260,7 +290260,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-31T09:29:27.744338522-04:00",
+        "updated": "2026-09-03T17:15:52.051855039-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -290271,7 +290271,7 @@
       },
       {
         "_id": "lakehouse-enterprise-mcsp",
-        "_rev": "178-6ff41f9a8ccf9f921479c19b29f27e26",
+        "_rev": "180-8250fe18903951bb2805eb9742353773",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp/%2A",
@@ -290399,7 +290399,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-31T09:29:27.744481681-04:00",
+        "updated": "2026-09-03T17:15:52.052032973-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -290410,7 +290410,7 @@
       },
       {
         "_id": "lakehouse-lite",
-        "_rev": "193-d843fc68f41ce2407989ea18dc25b5a4",
+        "_rev": "195-1858a65c96ab37c2afe97c6cd8b8a02e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite/%2A",
@@ -290538,7 +290538,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-31T09:29:27.744767248-04:00",
+        "updated": "2026-09-03T17:15:52.051726456-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -290549,7 +290549,7 @@
       },
       {
         "_id": "lakehouse-lite-mcsp",
-        "_rev": "179-29771d8510026241636e91fab2063322",
+        "_rev": "181-8a904ab98adbb70858035284e50986c9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp/%2A",
@@ -290672,7 +290672,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-31T09:29:27.744833401-04:00",
+        "updated": "2026-09-03T17:15:52.052010964-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"
