@@ -640,7 +640,7 @@
   },
   {
     "_id": "081eb453-63a7-450a-b416-4f6ebeb4dbe9",
-    "_rev": "39-a6e01be9ac7f5a525670d50d002d2e71",
+    "_rev": "45-c38d929200ca6ecde8d9262e68594bca",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:081eb453-63a7-450a-b416-4f6ebeb4dbe9",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9/%2A",
@@ -788,6 +788,7 @@
             "invalidmessage": null,
             "layout": null,
             "name": "Email",
+            "options": null,
             "optionsUrl": null,
             "pattern": null,
             "placeholder": null,
@@ -2089,12 +2090,69 @@
           {
             "associations": null,
             "description": "Billing address for invoicing purposes",
-            "displayname": "Company Address",
+            "displayname": "Company Street",
             "hidden": false,
             "i18n": null,
             "invalidmessage": null,
             "layout": null,
-            "name": "Company-Address",
+            "name": "Company-Street",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Company City",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Company-City",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Company State",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Company-State",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Company Postal Code",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Company-Postal-Code",
             "options": null,
             "optionsUrl": null,
             "pattern": null,
@@ -2186,7 +2244,7 @@
       "support_third_party",
       "watson"
     ],
-    "updated": "2026-07-27T10:32:01.44726232-04:00",
+    "updated": "2026-09-04T17:48:36.621113482-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/081eb453-63a7-450a-b416-4f6ebeb4dbe9?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -95874,10 +95932,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -95885,7 +95939,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -99371,10 +99429,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -99382,7 +99436,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -118565,16 +118623,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "au-syd",
-      "us-east",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "eu-es",
-      "us-south"
+      "eu-gb",
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -123317,13 +123375,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -162759,19 +162817,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "br-sao",
       "in-che",
-      "in-mum",
-      "au-syd",
-      "eu-gb",
       "jp-osa",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "ca-mon",
+      "au-syd",
+      "br-sao",
+      "in-mum",
+      "ca-tor",
+      "eu-de",
+      "us-south",
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -255192,6 +255250,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Virtual Data Center",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.vdc.svg",
     "localPngIcon": "/generated/icons/vmware.vdc.png"
   },
   {
