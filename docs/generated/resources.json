@@ -439,63 +439,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-south"
-    ],
-    "id": "18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "ibmanalyticsengine",
-    "pricing_tags": [
-      "paid_only",
-      "paygo"
-    ],
-    "tags": [
-      "analytics",
-      "apidocs_enabled",
-      "big_data",
-      "custom_kind_service",
-      "disable_reclamation",
-      "eu-de",
-      "fluorine",
-      "freesia",
-      "gc_migrate",
-      "hadoop",
-      "hbase",
-      "hdfs",
-      "hipaa",
-      "hive",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "paid_only",
-      "paygo",
-      "rc_compatible",
-      "spark",
-      "support_ibm",
-      "us-south"
-    ],
-    "plans": [
-      {
-        "id": "8afde05e-5fd8-4359-a597-946d8432dd45",
-        "name": "standard-serverless-spark",
-        "description": "Create a serverless Spark instance with customizations of your choice, and when you submit Spark applications, Spark clusters are created in seconds. Develop and deploy Spark SQL, data transformation, data science, or machine learning jobs using the Spark job API. This plan provides a per-second billing model that is suitable for on-demand scaling and intermittent usage.",
-        "displayName": "Standard Serverless for Apache Spark",
-        "originalName": "lite"
-      }
-    ],
-    "description": "Submit your Apache Spark applications as needed and customize the Spark runtimes to satisfy the requirements of your application.",
-    "longDescription": "An IBM Analytics Engine instance is allocated compute and memory resources on demand when Spark applications are started. When an application is not in running state, no computing resources are allocated to the instance. Pricing is based on the amount of resources consumed by the applications running in the instance, billed on a per second basis.",
-    "displayName": "Analytics Engine",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/cache/d504830b4d1a7fc7c6c2c26f8c6e5aec-public/AnalyticsEngine.svg",
-    "localSvgIcon": "/generated/icons/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d.svg",
-    "localPngIcon": "/generated/icons/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d.png"
-  },
-  {
-    "geo_tags": [
       "us-south"
     ],
     "id": "b77c8f80-f155-11eb-8766-1f68cf60a2c4",
@@ -6699,15 +6642,15 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "au-syd",
-      "us-east",
+      "eu-es",
       "us-south",
       "eu-gb",
+      "au-syd",
+      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -6866,13 +6809,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -10597,19 +10540,19 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "in-che",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "au-syd",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "ca-mon"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -18960,12 +18903,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20275,6 +20218,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20316,8 +20260,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -22087,12 +22030,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -22404,12 +22347,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",

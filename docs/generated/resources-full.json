@@ -6154,798 +6154,6 @@
     "localPngIcon": "/generated/icons/7166e528-8535-4efe-ae33-0bb1e801a514.png"
   },
   {
-    "_id": "18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
-    "_rev": "14-1ee7e89f28cc5907ad7e7dfa521fdfaa",
-    "active": true,
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/%2A",
-    "complete": true,
-    "created": "2017-07-17T19:28:04Z",
-    "disabled": false,
-    "geo_tags": [
-      "eu-de",
-      "us-south"
-    ],
-    "id": "18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
-    "images": {
-      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/cache/d504830b4d1a7fc7c6c2c26f8c6e5aec-public/AnalyticsEngine.svg",
-      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/cache/d504830b4d1a7fc7c6c2c26f8c6e5aec-public/AnalyticsEngine.svg",
-      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/cache/d504830b4d1a7fc7c6c2c26f8c6e5aec-public/AnalyticsEngine.svg",
-      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/cache/d504830b4d1a7fc7c6c2c26f8c6e5aec-public/AnalyticsEngine.svg"
-    },
-    "kind": "service",
-    "metadata": {
-      "callbacks": {
-        "broker_url": "https://servicebroker.us-south.ae.cloud.ibm.com/v2gateway",
-        "service_monitor_api": "https://healthcheck.us-south.ae.cloud.ibm.com/healthcheck/iae/v1/monitor"
-      },
-      "original_name": "IBMAnalyticsEngine",
-      "other": {
-        "swagger_urls": [
-          {
-            "audience": "service",
-            "category": [
-              "analytics"
-            ],
-            "children": [
-              {
-                "aliases": [
-                  "ibm-analytics-engine",
-                  "ibm-analytics-engine-v3"
-                ],
-                "extensions": [
-                  "ibmanalyticsengine-v3-curl-examples.json",
-                  "ibmanalyticsengine-v3-go-examples.json",
-                  "ibmanalyticsengine-v3-java-examples.json",
-                  "ibmanalyticsengine-v3-node-examples.json",
-                  "ibmanalyticsengine-v3-python-examples.json"
-                ],
-                "file": "ibmanalyticsengine-v3.json",
-                "i18n": {
-                  "en": {
-                    "name": "IBM Analytics Engine v3 API"
-                  }
-                },
-                "id": "ibm-analytics-engine-v3",
-                "sdk": true
-              }
-            ],
-            "i18n": {
-              "en": {
-                "name": "IBM Analytics Engine"
-              }
-            },
-            "id": "ibm-analytics-engine",
-            "subcollection": "AnalyticsEngine"
-          },
-          {
-            "audience": "software",
-            "category": [
-              "analytics"
-            ],
-            "file": "ibmanalyticsengine-v4-cpd.json",
-            "i18n": {
-              "en": {
-                "name": "IBM Analytics Engine v4 API for IBM Cloud Pak for Data"
-              }
-            },
-            "id": "ibm-analytics-engine-cpd",
-            "sdk": false,
-            "subcollection": "AnalyticsEngine"
-          }
-        ]
-      },
-      "plan": {
-        "allow_internal_users": true,
-        "async_provisioning_supported": true,
-        "async_unprovisioning_supported": false,
-        "bindable": true,
-        "provision_type": "",
-        "reservable": false,
-        "service_check_enabled": true,
-        "single_scope_instance": "",
-        "test_check_interval": 0
-      },
-      "rc_compatible": true,
-      "service": {
-        "async_provisioning_supported": true,
-        "async_unprovisioning_supported": false,
-        "bindable": false,
-        "cf_guid": {
-          "eu-gb": "809e76ae-9bd7-4ce9-9dc4-2ef01a641291",
-          "us-south": "a004fb83-d76f-4fef-a33a-f9af86e148a4"
-        },
-        "custom_create_page_hybrid_enabled": false,
-        "extension": null,
-        "iam_compatible": true,
-        "parameters": null,
-        "plan_updateable": true,
-        "rc_provisionable": true,
-        "service_check_enabled": true,
-        "service_key_supported": true,
-        "state": "",
-        "test_check_interval": 0,
-        "type": "",
-        "unique_api_key": false,
-        "user_defined_service": null
-      },
-      "ui": {
-        "navigation_order": [
-          "gettingStarted",
-          "manage",
-          "credentials",
-          "connectedObjects",
-          "usage",
-          "plan"
-        ],
-        "strings": {
-          "de": {
-            "bullets": [
-              {
-                "description": "Erstellen und führen Sie Ihre Spark-Anwendungen auf den neuesten Open-Source-Apache Spark-Versionen aus.",
-                "title": "Profitieren Sie von den Vorteilen von Open Source"
-              },
-              {
-                "description": "Verwenden Sie Anpassungen, um alle Ihre Spark-Anwendungsabhängigkeiten zu integrieren.",
-                "title": "Anpassung an Ihre eigenen Vorgaben"
-              },
-              {
-                "description": "Jeder Instanz werden Rechen- und Speicherressourcen bei Bedarf zugeordnet, wenn Spark-Workloads implementiert werden. Die Preisgestaltung basiert nur auf der Menge der Ressourcen, die verbraucht werden, wenn Anwendungen ausgeführt werden.",
-                "title": "Nutzen Sie die serverunabhängige Erfahrung"
-              },
-              {
-                "description": "Profitieren Sie von der verbesserten Sicherheit von Identity and Access Management in allen cloudnativen Serviceangeboten.\nLeiten Sie Ihre Anwendungsprotokolle an einen cloudnativen Service weiter, um Ihre IBM Analytics Engine-Probleme zu beheben.",
-                "title": "Nutzen Sie die cloudnativen Vorteile"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Serviceinstanzdetails - Registerkarte \"Konfiguration\"",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Verwalten",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "en": {
-            "bullets": [
-              {
-                "description": "Create and run your Spark applications on the latest open source Apache Spark versions.",
-                "title": "Benefit from the advantages of open source"
-              },
-              {
-                "description": "Use customizations to bring in all your Spark application dependencies.",
-                "title": "Customize to your own preferences"
-              },
-              {
-                "description": "Each instance is allocated compute and memory resources on demand at the time Spark workloads are deployed. Pricing is based only on the amount of resources consumed when applications are running.",
-                "title": "Leverage the serverless experience"
-              },
-              {
-                "description": "Benefit from the improved security offered by Identity and Access Management across all cloud-native service offerings.\nForward your application logs to a cloud-native service to troubleshoot your IBM Analytics Engine issues.",
-                "title": "Exploit the cloud-native gains"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Service instance details - Configuration tab",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Manage",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "es": {
-            "bullets": [
-              {
-                "description": "Cree y ejecute las aplicaciones Spark en las versiones más recientes de Apache Spark de código abierto.",
-                "title": "Aproveche las ventajas del código abierto"
-              },
-              {
-                "description": "Utilice personalizaciones para incorporar todas las dependencias de la aplicación Spark.",
-                "title": "Personalice sus propias preferencias"
-              },
-              {
-                "description": "A cada instancia se le asignan recursos de cálculo y de memoria bajo demanda en el momento en que se despliegan las cargas de trabajo de Spark. Los precios dependen únicamente de la cantidad de recursos consumidos cuando se ejecutan las aplicaciones.",
-                "title": "Aproveche la experiencia sin servidor"
-              },
-              {
-                "description": "Aproveche la seguridad mejorada que ofrece Identity and Access Management en todas las ofertas de servicios nativas de la nube.\nReenvíe los registros de aplicaciones a un servicio nativo de la nube para resolver los problemas de IBM Analytics Engine.",
-                "title": "Aproveche la ventajas nativas de la nube"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Detalles de instancia de servicio - Separador Configuración",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gestionar",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "fr": {
-            "bullets": [
-              {
-                "description": "Créez et exécutez vos applications Spark sur les dernières versions open source d'Apache Spark.",
-                "title": "Profiter des avantages de l'open source"
-              },
-              {
-                "description": "Utilisez des personnalisations pour intégrer toutes les dépendances de votre application Spark.",
-                "title": "Personnaliser selon vos propres préférences"
-              },
-              {
-                "description": "Chaque instance se voit allouer des ressources de calcul et de mémoire à la demande au moment où les charges de travail Spark sont déployées. La tarification est basée uniquement sur la quantité de ressources consommées lors de l'exécution des applications.",
-                "title": "Tirer parti de l'expérience sans serveur"
-              },
-              {
-                "description": "Bénéficiez de la sécurité améliorée fournie par la gestion de l'identité et des accès dans toutes les offres de services cloud natives.\nRéacheminez vos journaux d'application vers un service cloud natif pour identifier et résoudre les incidents liés à IBM Analytics Engine.",
-                "title": "Exploiter les avantages du cloud natif"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Onglet Détails de l'instance de service - Configuration",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gestion",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "it": {
-            "bullets": [
-              {
-                "description": "Crea ed esegui le applicazioni Spark sulle versioni open source Apache Spark più recenti.",
-                "title": "Trai vantaggio dalla tecnologia open source"
-              },
-              {
-                "description": "Utilizza le personalizzazioni per integrate tutte le dipendenze dell'applicazione Spark.",
-                "title": "Personalizza le tue preferenze"
-              },
-              {
-                "description": "Ogni istanza viene assegnata alle risorse di calcolo e memoria su richiesta nel momento in cui vengono distribuiti i carichi di lavoro Spark. Il prezzo si basa solo sulla quantità di risorse utilizzate quando le applicazioni sono in esecuzione.",
-                "title": "Sfrutta in modo efficace l'esperienza serverless"
-              },
-              {
-                "description": "Trai vantaggio dalla maggiore sicurezza offerta da IAM (Identity and Access Management) in tutte le offerte di servizi nativi del cloud.\nInoltra i log delle applicazioni ad un servizio nativo del cloud per la risoluzione dei problemi relativi a IBM Analytics Engine.",
-                "title": "Sfrutta i vantaggi della tecnologia nativa del cloud"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Dettagli istanza di servizio - Scheda di configurazione",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gestisci",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "ja": {
-            "bullets": [
-              {
-                "description": "オープン・ソースの Apache Spark の最新バージョンで Spark アプリケーションを作成して実行します。",
-                "title": "オープン・ソースの利点を活用する"
-              },
-              {
-                "description": "カスタマイズを使用して、Spark アプリケーションの依存関係をすべて取り込みます。",
-                "title": "独自の設定に合わせてカスタマイズする"
-              },
-              {
-                "description": "各インスタンスには、Spark ワークロードのデプロイ時にオンデマンドでコンピュート・リソースとメモリー・リソースが割り振られます。 価格設定は、アプリケーションの実行中に消費されるリソースの量にのみ基づきます。",
-                "title": "サーバーレス・エクスペリエンスを活用する"
-              },
-              {
-                "description": "すべてのクラウド・ネイティブ・サービス・オファリングで ID およびアクセス管理で提供される強化されたセキュリティーを活用できます。\nIBM Analytics Engine の問題を解決するために、アプリケーション・ログをクラウド・ネイティブ・サービスに転送します。",
-                "title": "クラウドネイティブのメリットを活用する"
-              }
-            ],
-            "media": [
-              {
-                "caption": "サービス・インスタンスの詳細 -「構成」タブ",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "ko": {
-            "bullets": [
-              {
-                "description": "최신 오픈 소스 Apache Spark 버전에서 Spark 애플리케이션을 만들고 실행합니다.",
-                "title": "오픈 소스의 이점 활용"
-              },
-              {
-                "description": "사용자 정의를 사용하여 모든 Spark 애플리케이션 종속성을 가져옵니다.",
-                "title": "자신의 선호에 맞게 사용자 정의"
-              },
-              {
-                "description": "각 인스턴스에는 Spark 워크로드가 배치될 때 필요에 따라 컴퓨팅 및 메모리 리소스가 할당됩니다. 가격 책정은 애플리케이션이 실행될 때 소비되는 리소스의 양만을 기준으로 합니다.",
-                "title": "서버리스 경험 활용"
-              },
-              {
-                "description": "모든 클라우드 네이티브 서비스 오퍼링에서 ID 및 액세스 관리가 제공하는 향상된 보안의 이점을 누리십시오.\n애플리케이션 로그를 클라우드 네이티브 서비스로 전달하여 IBM Analytics Engine 문제를 해결하십시오.",
-                "title": "클라우드 네이티브 이점 활용"
-              }
-            ],
-            "media": [
-              {
-                "caption": "서비스 인스턴스 세부사항 - 구성 탭",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "관리",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "pt-br": {
-            "bullets": [
-              {
-                "description": "Crie e execute suas aplicações Spark nas versões de software livre mais recentes do Apache Spark.",
-                "title": "Beneficie-se das vantagens do software livre"
-              },
-              {
-                "description": "Use customizações para introduzir todas as dependências de aplicação Spark.",
-                "title": "Customize de acordo com as suas próprias preferências"
-              },
-              {
-                "description": "Recursos de computação e de memória são alocados on demand para cada instância no momento em que as cargas de trabalho do Spark são implementadas. A precificação é baseada apenas na quantia de recursos consumidos quando as aplicações estão em execução.",
-                "title": "Alavanque a experiência serverless"
-              },
-              {
-                "description": "Beneficie-se da segurança melhorada oferecida pelo Identity and Access Management em todas as ofertas de serviços nativos de cloud.\nEncaminhe seus logs de aplicações para um serviço nativo de cloud para solucionar problemas do seu IBM Analytics Engine.",
-                "title": "Explore os ganhos nativos de cloud"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Detalhes da instância de serviço - Guia de configuração",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "Gerenciamento",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "zh-cn": {
-            "bullets": [
-              {
-                "description": "在最新的开放源代码 Apache Spark 版本上创建并运行 Spark 应用程序。",
-                "title": "从开放源代码中受益"
-              },
-              {
-                "description": "使用定制来引入所有 Spark 应用程序依赖项。",
-                "title": "根据您自己的首选项进行定制"
-              },
-              {
-                "description": "在部署 Spark 工作负载时，将按需为每个实例分配计算和内存资源。 定价仅基于应用程序运行时所消耗的资源量。",
-                "title": "利用无服务器体验"
-              },
-              {
-                "description": "在所有云原生服务产品中从 Identity and Access Management 所提供的改进的安全性获益。\n将应用程序日志转发到云原生服务以对 IBM Analytics Engine 问题进行故障诊断。",
-                "title": "利用云原生优势"
-              }
-            ],
-            "media": [
-              {
-                "caption": "服务实例详细信息 -“配置”选项卡",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          },
-          "zh-tw": {
-            "bullets": [
-              {
-                "description": "在最新開放程式碼 Apache Spark 版本上建立並執行 Spark 應用程式。",
-                "title": "獲益於開放程式碼的優點"
-              },
-              {
-                "description": "使用自訂作業來引入所有 Spark 應用程式相依關係。",
-                "title": "自訂您自己的喜好設定"
-              },
-              {
-                "description": "在部署 Spark 工作量時，每個實例都會隨需應變配置運算及記憶體資源。 定價僅根據應用程式執行時所耗用的資源數量。",
-                "title": "運用無伺服器體驗"
-              },
-              {
-                "description": "受益於「身分及存取管理」在所有雲端原生服務供應項目中所提供的改良安全。\n將應用程式日誌轉遞至雲端原生服務，以疑難排解您的 IBM Analytics Engine 問題。",
-                "title": "利用雲端原生收益"
-              }
-            ],
-            "media": [
-              {
-                "caption": "服務實例詳細資料 - 配置標籤",
-                "type": "image",
-                "url": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/serverless-instance-details.png"
-              }
-            ],
-            "navigation_items": [
-              {
-                "id": "manage",
-                "label": "管理",
-                "panel_menu": false,
-                "url": "/analytics-engine/service-details-serverless"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "apidocs_url": "https://cloud.ibm.com/apidocs/ibm-analytics-engine",
-          "deprecation_doc_url": "https://cloud.ibm.com/docs/AnalyticsEngine?topic=AnalyticsEngine-iae-serverless-relnotes&locale=en#AnalyticsEngine-mar26",
-          "doc_url": "https://cloud.ibm.com/docs/services/AnalyticsEngine/index.html",
-          "instructions_url": "/docs/AnalyticsEngine/getting-started.html",
-          "terms_url": "https://www.ibm.com/support/customer/csol/terms/?id=i126-7905"
-        }
-      }
-    },
-    "name": "ibmanalyticsengine",
-    "overview_ui": {
-      "de": {
-        "description": "Übergeben Sie Ihre Apache Spark-Anwendungen nach Bedarf und passen Sie die Spark-Laufzeiten an die Anforderungen Ihrer Anwendung an.",
-        "display_name": "Analytics Engine",
-        "long_description": "Einer IBM Analytics Engine-Instanz werden Rechen- und Speicherressourcen bei Bedarf zugeordnet, wenn Spark-Anwendungen gestartet werden. Wenn sich eine Anwendung nicht im aktiven Status befindet, werden der Instanz keine Rechenressourcen zugeordnet. Die Preisstruktur basiert auf der Menge der Ressourcen, die von den in der Instanz ausgeführten Anwendungen verbraucht werden. Die Abrechnung erfolgt pro Sekunde."
-      },
-      "en": {
-        "description": "Submit your Apache Spark applications as needed and customize the Spark runtimes to satisfy the requirements of your application.",
-        "display_name": "Analytics Engine",
-        "long_description": "An IBM Analytics Engine instance is allocated compute and memory resources on demand when Spark applications are started. When an application is not in running state, no computing resources are allocated to the instance. Pricing is based on the amount of resources consumed by the applications running in the instance, billed on a per second basis."
-      },
-      "es": {
-        "description": "Envíe las aplicaciones de Apache Spark según sea necesario y personalice los tiempos de ejecución de Spark para satisfacer los requisitos de la aplicación.",
-        "display_name": "Analytics Engine",
-        "long_description": "A una instancia de IBM Analytics Engine se le asignan recursos de cálculo y de memoria bajo demanda cuando se inician las aplicaciones de Spark. Cuando una aplicación no está en estado de ejecución, no se asignan recursos de cálculo a la instancia. Los precios dependen de la cantidad de recursos consumidos por las aplicaciones que se ejecutan en la instancia y se factura por segundo."
-      },
-      "fr": {
-        "description": "Soumettez vos applications Apache Spark selon vos besoins et personnalisez les environnements d'exécution de Spark pour répondre aux exigences de votre application.",
-        "display_name": "Analytics Engine",
-        "long_description": "Une instance IBM Analytics Engine est allouée aux ressources de calcul et de mémoire à la demande lorsque des applications Spark sont démarrées. Lorsqu'une application n'est pas en cours d'exécution, aucune ressource informatique n'est allouée à l'instance. La tarification est basée sur la quantité de ressources consommée par les applications exécutées dans l'instance, facturée à la seconde."
-      },
-      "it": {
-        "description": "Inoltra le applicazioni Apache Spark in base alle esigenze e personalizza i runtime Spark per soddisfare i requisiti dell'applicazione.",
-        "display_name": "Analytics Engine",
-        "long_description": "Quando vengono avviate le applicazioni Spark, un'istanza IBM Analytics Engine viene assegnata alle risorse di calcolo e memoria su richiesta. Quando lo stato di un'applicazione non è in esecuzione, le risorse di calcolo non vengono assegnate all'istanza. Il prezzo si basa sulla quantità di risorse utilizzate dalle applicazioni in esecuzione sull'istanza, con fatturazione al secondo."
-      },
-      "ja": {
-        "description": "必要に応じて Apache Spark アプリケーションをサブミットし、アプリケーションの要件を満たすように Spark ランタイムをカスタマイズします。",
-        "display_name": "Analytics Engine",
-        "long_description": "Spark アプリケーションの開始時に、IBM Analytics Engine インスタンスにオンデマンドでコンピュート・リソースとメモリー・リソースが割り振られます。 アプリケーションが実行状態でない場合、インスタンスにコンピューティング・リソースは割り振られません。 価格設定は、インスタンスで実行されているアプリケーションで消費されるリソースの量に基づいており、1 秒単位で請求されます。"
-      },
-      "ko": {
-        "description": "필요에 따라 Apache Spark 애플리케이션을 제출하고 애플리케이션의 요구사항을 충족하도록 Spark 런타임을 사용자 정의합니다.",
-        "display_name": "Analytics Engine",
-        "long_description": "IBM Analytics Engine 인스턴스에는 Spark 애플리케이션이 시작될 때 요청 시 컴퓨팅 및 메모리 리소스가 할당됩니다. 애플리케이션이 실행 중 상태가 아닌 경우 컴퓨팅 자원이 인스턴스에 할당되지 않습니다. 가격 책정은 인스턴스에서 실행되는 애플리케이션이 소비하는 리소스의 양을 기준으로 하며 초당 청구됩니다."
-      },
-      "pt-br": {
-        "description": "Envie suas aplicações Apache Spark conforme necessário e customize os tempos de execução do Spark para satisfazer os requisitos de sua aplicação.",
-        "display_name": "Analytics Engine",
-        "long_description": "Recursos de computação e de memória são alocados on demand para uma instância do IBM Analytics Engine quando as aplicações Spark são iniciadas. Quando um aplicativo não está em estado de execução, nenhum recurso de computação é alocado para a instância. A precificação é baseada na quantia de recursos consumidos pelas aplicações em execução na instância, faturados em uma segunda base."
-      },
-      "zh-cn": {
-        "description": "根据需求提交 Apache Spark 应用程序，并定制 Spark 运行时以满足应用程序的需求。",
-        "display_name": "Analytics Engine",
-        "long_description": "启动 Spark 应用程序时，将按需为 IBM Analytics Engine 实例分配计算和内存资源。 当应用程序未处于运行状态时，不会为实例分配任何计算资源。 定价基于实例中运行的应用程序所耗用的资源量，按秒计费。"
-      },
-      "zh-tw": {
-        "description": "視需要提交 Apache Spark 應用程式，並自訂 Spark 執行時期以滿足應用程式的需求。",
-        "display_name": "Analytics Engine",
-        "long_description": "當 Spark 應用程式啟動時，IBM Analytics Engine 實例會隨需應變配置運算及記憶體資源。 當應用程式不在執行中狀態時，不會將任何運算資源配置給實例。 定價是根據實例中執行的應用程式所耗用的資源數量，以每秒計費。"
-      }
-    },
-    "pricing_tags": [
-      "paid_only",
-      "paygo"
-    ],
-    "provider": {
-      "name": "IBM"
-    },
-    "tags": [
-      "analytics",
-      "apidocs_enabled",
-      "big_data",
-      "custom_kind_service",
-      "disable_reclamation",
-      "eu-de",
-      "fluorine",
-      "freesia",
-      "gc_migrate",
-      "hadoop",
-      "hbase",
-      "hdfs",
-      "hipaa",
-      "hive",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_deprecated",
-      "paid_only",
-      "paygo",
-      "rc_compatible",
-      "spark",
-      "support_ibm",
-      "us-south"
-    ],
-    "updated": "2026-08-25T02:44:48.768298272-04:00",
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d?complete=true",
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "_id": "8afde05e-5fd8-4359-a597-946d8432dd45",
-        "_rev": "2-788ea5bb950d8b71bfc8a343cbbc7859",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:8afde05e-5fd8-4359-a597-946d8432dd45",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/8afde05e-5fd8-4359-a597-946d8432dd45/%2A",
-        "complete": true,
-        "created": "2021-05-04T10:11:15.843Z",
-        "disabled": false,
-        "geo_tags": [
-          "eu-de",
-          "us-south"
-        ],
-        "id": "8afde05e-5fd8-4359-a597-946d8432dd45",
-        "images": {
-          "feature_image": "https://globalcatalog.cloud.ibm.com/api/v1/7715aa8d-fb59-42e8-951e-5f1103d8285e/artifacts/spark-hadoop_logo_64.png",
-          "image": "https://globalcatalog.cloud.ibm.com/api/v1/7715aa8d-fb59-42e8-951e-5f1103d8285e/artifacts/spark-hadoop_logo_50.png",
-          "medium_image": "https://globalcatalog.cloud.ibm.com/api/v1/7715aa8d-fb59-42e8-951e-5f1103d8285e/artifacts/spark-hadoop_logo_32.png",
-          "small_image": "https://globalcatalog.cloud.ibm.com/api/v1/7715aa8d-fb59-42e8-951e-5f1103d8285e/artifacts/spark-hadoop_logo_24.png"
-        },
-        "kind": "plan",
-        "metadata": {
-          "original_name": "lite",
-          "other": {
-            "pricing_schema_url": "/analytics-engine/pricing/serverless/8afde05e-5fd8-4359-a597-946d8432dd45"
-          },
-          "plan": {
-            "allow_internal_users": true,
-            "async_provisioning_supported": true,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": true,
-            "single_scope_instance": "org",
-            "test_check_interval": 0
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": true,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "custom_create_page_hybrid_enabled": true,
-            "extension": null,
-            "iam_compatible": true,
-            "parameters": null,
-            "plan_updateable": false,
-            "rc_provisionable": true,
-            "service_check_enabled": true,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "ui": {
-            "side_by_side_index": 2,
-            "strings": {
-              "de": {
-                "bullets": [
-                  {
-                    "title": "Spark-Cluster werden bei Bedarf erstellt, wenn Workloads übergeben werden"
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "title": "Spark clusters are created on-demand when workloads are submitted"
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "title": "Los clústeres de Spark se crean bajo demanda cuando se envían las cargas de trabajo"
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "title": "Les clusters Spark sont créés à la demande lorsque les charges de travail sont soumises"
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "title": "I cluster Spark vengono creati su richiesta quando si inoltrano i workload"
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "title": "Spark クラスターは、ワークロードが実行依頼されたときにオンデマンドで作成されます"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "title": "Spark 클러스터는 워크로드를 제출할 때 요청 시 작성됨"
-                  }
-                ]
-              },
-              "pt-br": {
-                "bullets": [
-                  {
-                    "title": "Os clusters do Spark são criados sob demanda quando as cargas de trabalho são enviadas."
-                  }
-                ]
-              },
-              "zh-cn": {
-                "bullets": [
-                  {
-                    "title": "Spark 集群是提交工作负载时按需创建的"
-                  }
-                ]
-              },
-              "zh-tw": {
-                "bullets": [
-                  {
-                    "title": "Spark 叢集是在提交工作量時隨需應變建立的"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "standard-serverless-spark",
-        "overview_ui": {
-          "de": {
-            "description": "Erstellen Sie eine serverunabhängige Spark-Instanz mit den gewünschten Anpassungen, damit Spark-Cluster innerhalb von Sekunden erstellt werden, wenn Sie Spark-Anwendungen übergeben. Entwickeln und implementieren Sie Jobs für Spark-SQL, Datentransformation, Datenwissenschaft oder maschinelles Lernen mithilfe der Spark-Job-API. Dieser Plan bietet ein sekundengenaues Abrechnungsmodell, das für bedarfsgerechte Skalierung und variable Nutzung geeignet ist.",
-            "display_name": "Standardmäßige serverunabhängige Spark",
-            "long_description": "Erstellen Sie eine serverunabhängige Spark-Instanz mit den gewünschten Anpassungen, damit Spark-Cluster innerhalb von Sekunden erstellt werden, wenn Sie Spark-Anwendungen übergeben. Entwickeln und implementieren Sie Jobs für Spark-SQL, Datentransformation, Datenwissenschaft oder maschinelles Lernen mithilfe der Spark-Job-API. Dieser Plan bietet ein sekundengenaues Abrechnungsmodell, das für bedarfsgerechte Skalierung und variable Nutzung geeignet ist."
-          },
-          "en": {
-            "description": "Create a serverless Spark instance with customizations of your choice, and when you submit Spark applications, Spark clusters are created in seconds. Develop and deploy Spark SQL, data transformation, data science, or machine learning jobs using the Spark job API. This plan provides a per-second billing model that is suitable for on-demand scaling and intermittent usage.",
-            "display_name": "Standard Serverless for Apache Spark",
-            "long_description": "Create a serverless Spark instance with customizations of your choice, and when you submit Spark applications, Spark clusters are created in seconds. Develop and deploy Spark SQL, data transformation, data science, or machine learning jobs using the Spark job API. This plan provides a per-second billing model that is suitable for on-demand scaling and intermittent usage."
-          },
-          "es": {
-            "description": "Cree una instancia de Spark sin servidor con las personalizaciones que elija, y cuando envíe aplicaciones Spark los clústeres de Spark se crearán en segundos. Desarrolle y despliegue trabajos de SQL de Spark, de transformación de datos, de ciencia de datos o de aprendizaje automático utilizando la API de trabajo de Spark. Este plan proporciona un modelo de facturación por segundo adecuado para el escalado bajo demanda y el uso intermitente.",
-            "display_name": "Spark estándar sin servidor",
-            "long_description": "Cree una instancia de Spark sin servidor con las personalizaciones que elija, y cuando envíe aplicaciones Spark los clústeres de Spark se crearán en segundos. Desarrolle y despliegue trabajos de SQL de Spark, de transformación de datos, de ciencia de datos o de aprendizaje automático utilizando la API de trabajo de Spark. Este plan proporciona un modelo de facturación por segundo adecuado para el escalado bajo demanda y el uso intermitente."
-          },
-          "fr": {
-            "description": "Créez une instance Spark sans serveur avec les personnalisations de votre choix. Lorsque vous soumettez des applications Spark, les clusters Spark sont créés en quelques secondes. Développez et déployez des travaux Spark SQL, de transformation de données, de science des données ou d'apprentissage automatique à l'aide de l'API de travail Spark. Ce plan fournit un modèle de facturation par seconde qui convient à la mise à l'échelle à la demande et à l'utilisation intermittente.",
-            "display_name": "Spark sans serveur standard",
-            "long_description": "Créez une instance Spark sans serveur avec les personnalisations de votre choix. Lorsque vous soumettez des applications Spark, les clusters Spark sont créés en quelques secondes. Développez et déployez des travaux Spark SQL, de transformation de données, de science des données ou d'apprentissage automatique à l'aide de l'API de travail Spark. Ce plan fournit un modèle de facturation par seconde qui convient à la mise à l'échelle à la demande et à l'utilisation intermittente."
-          },
-          "it": {
-            "description": "Creare un'istanza Spark senza server con le proprie personalizzazioni, e quando si inoltrano le applicazioni Spark, i cluster Spark vengono creati in pochi secondi. Sviluppare e distribuire lavori di Spark SQL, trasformazione dei dati, data science o machine learning utilizzando l'API dei lavori Spark. Questo piano fornisce un modello di fatturazione per secondo, che è adatto a dimensionamenti su richiesta e utilizzo intermittente.",
-            "display_name": "Spark standard senza server",
-            "long_description": "Creare un'istanza Spark senza server con le proprie personalizzazioni, e quando si inoltrano le applicazioni Spark, i cluster Spark vengono creati in pochi secondi. Sviluppare e distribuire lavori di Spark SQL, trasformazione dei dati, data science o machine learning utilizzando l'API dei lavori Spark. Questo piano fornisce un modello di fatturazione per secondo, che è adatto a dimensionamenti su richiesta e utilizzo intermittente."
-          },
-          "ja": {
-            "description": "任意にカスタマイズしたサーバーレス Spark インスタンスを作成しておくと、Spark アプリケーションを実行依頼したときに、Spark クラスターが即時作成されます。Spark ジョブ API を使用して、Spark SQL、データ変換、データサイエンス、または機械学習の各ジョブを開発し、デプロイします。このプランでは、オンデマンド・スケーリングと偶発的な使用に適した秒単位の課金モデルが提供されます。",
-            "display_name": "標準サーバーレス Spark",
-            "long_description": "任意にカスタマイズしたサーバーレス Spark インスタンスを作成しておくと、Spark アプリケーションを実行依頼したときに、Spark クラスターが即時作成されます。Spark ジョブ API を使用して、Spark SQL、データ変換、データサイエンス、または機械学習の各ジョブを開発し、デプロイします。このプランでは、オンデマンド・スケーリングと偶発的な使用に適した秒単位の課金モデルが提供されます。"
-          },
-          "ko": {
-            "description": "원하는 사용자 정의를 사용하여 서버리스 Spark 인스턴스를 작성하고, Spark 애플리케이션을 제출하면 Spark 클러스터가 몇 초 내에 작성됩니다. Spark 작업 API를 사용하여 Spark SQL, 데이터 변환, 데이터 사이언스 또는 머신 러닝을 개발하고 배치하십시오. 이 계획에서는 온 디맨드 스케일링과 간헐적 사용에 적합한 초당 비용 청구 모델을 제공합니다.",
-            "display_name": "표준 서버리스 Spark",
-            "long_description": "원하는 사용자 정의를 사용하여 서버리스 Spark 인스턴스를 작성하고, Spark 애플리케이션을 제출하면 Spark 클러스터가 몇 초 내에 작성됩니다. Spark 작업 API를 사용하여 Spark SQL, 데이터 변환, 데이터 사이언스 또는 머신 러닝을 개발하고 배치하십시오. 이 계획에서는 온 디맨드 스케일링과 간헐적 사용에 적합한 초당 비용 청구 모델을 제공합니다."
-          },
-          "pt-br": {
-            "description": "Crie uma instância do Spark sem servidor com customizações de sua escolha e, ao enviar aplicativos do Spark, os clusters do Spark são criados em segundos. Desenvolva e implemente o Spark SQL, a transformação de dados, a ciência de dados ou tarefas de aprendizado de máquina usando a API de tarefa do Spark. Este plano fornece um modelo de cobrança por segundo que é adequado para escalonamento sob demanda e uso intermitente.",
-            "display_name": "Spark padrão sem servidor",
-            "long_description": "Crie uma instância do Spark sem servidor com customizações de sua escolha e, ao enviar aplicativos do Spark, os clusters do Spark são criados em segundos. Desenvolva e implemente o Spark SQL, a transformação de dados, a ciência de dados ou tarefas de aprendizado de máquina usando a API de tarefa do Spark. Este plano fornece um modelo de cobrança por segundo que é adequado para escalonamento sob demanda e uso intermitente."
-          },
-          "zh-cn": {
-            "description": "使用您选择的定制创建无服务器 Spark 实例，在提交 Spark 应用程序时，系统会迅速创建 Spark 集群。 使用 Spark 作业 API 开发和部署 Spark SQL、数据转换、数据科学或机器学习作业。 此计划提供了适用于按需缩放和间歇性使用的每秒计费模型。",
-            "display_name": "标准无服务器 Spark",
-            "long_description": "使用您选择的定制创建无服务器 Spark 实例，在提交 Spark 应用程序时，系统会迅速创建 Spark 集群。 使用 Spark 作业 API 开发和部署 Spark SQL、数据转换、数据科学或机器学习作业。 此计划提供了适用于按需缩放和间歇性使用的每秒计费模型。"
-          },
-          "zh-tw": {
-            "description": "使用您選擇的自訂作業建立無伺服器 Spark 實例，當您提交 Spark 應用程式時，系統會迅速建立 Spark 叢集。 使用 Spark 工作 API 開發及部署 Spark SQL、資料轉換、資料科學或機器學習工作。 此計劃提供適用於隨需調整大小及間歇性使用的每秒計費模型。",
-            "display_name": "標準無伺服器 Spark",
-            "long_description": "使用您選擇的自訂作業建立無伺服器 Spark 實例，當您提交 Spark 應用程式時，系統會迅速建立 Spark 叢集。 使用 Spark 工作 API 開發及部署 Spark SQL、資料轉換、資料科學或機器學習工作。 此計劃提供適用於隨需調整大小及間歇性使用的每秒計費模型。"
-          }
-        },
-        "parent_id": "18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d",
-        "pricing_tags": [
-          "paid_only",
-          "paygo"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "gc_migrate",
-          "hipaa"
-        ],
-        "updated": "2024-07-01T18:10:28.303186779-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/8afde05e-5fd8-4359-a597-946d8432dd45?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Create a serverless Spark instance with customizations of your choice, and when you submit Spark applications, Spark clusters are created in seconds. Develop and deploy Spark SQL, data transformation, data science, or machine learning jobs using the Spark job API. This plan provides a per-second billing model that is suitable for on-demand scaling and intermittent usage.",
-        "displayName": "Standard Serverless for Apache Spark",
-        "originalName": "lite"
-      }
-    ],
-    "description": "Submit your Apache Spark applications as needed and customize the Spark runtimes to satisfy the requirements of your application.",
-    "longDescription": "An IBM Analytics Engine instance is allocated compute and memory resources on demand when Spark applications are started. When an application is not in running state, no computing resources are allocated to the instance. Pricing is based on the amount of resources consumed by the applications running in the instance, billed on a per second basis.",
-    "displayName": "Analytics Engine",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d/artifacts/cache/d504830b4d1a7fc7c6c2c26f8c6e5aec-public/AnalyticsEngine.svg",
-    "localSvgIcon": "/generated/icons/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d.svg",
-    "localPngIcon": "/generated/icons/18de078f-e6b0-4b47-a7c4-0ed2f93f3e1d.png"
-  },
-  {
     "_id": "b77c8f80-f155-11eb-8766-1f68cf60a2c4",
     "_rev": "4-f785dfeb6549916dc6cbc75b5da2135e",
     "active": true,
@@ -99429,10 +98637,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -99440,7 +98644,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -107110,6 +106318,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -107120,8 +106329,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -109229,7 +108437,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -109240,7 +108447,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -118623,15 +117831,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-es",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "au-syd",
-      "us-east",
+      "eu-es",
       "us-south",
       "eu-gb",
+      "au-syd",
+      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -123375,13 +122583,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -162817,19 +162025,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
+      "in-che",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "eu-gb",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "au-syd",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "ca-mon"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -250463,12 +249671,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -259755,6 +258963,7 @@
     "created": "2018-11-19T20:43:19.725Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -259796,8 +259005,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "images": {
@@ -282364,12 +281572,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -283315,12 +282523,12 @@
         "created": "2015-10-15T05:13:52Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
-          "eu-gb",
-          "us-south",
           "au-syd",
           "ca-tor",
-          "jp-tok"
+          "jp-tok",
+          "eu-de",
+          "eu-gb",
+          "us-south"
         ],
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "images": {
@@ -291260,12 +290468,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
