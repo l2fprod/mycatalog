@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -78640,7 +78640,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:ca-mon",
-            "_rev": "15-eb23b133711a148ad0382ec9185c4bc3",
+            "_rev": "16-a2173e829cd428c03c491c578c765c38",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:ca-mon/%2A",
@@ -78668,7 +78668,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -79032,7 +79033,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-08-04T07:27:10.958253041-04:00",
+            "updated": "2026-09-08T08:19:59.989753422-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -79840,7 +79841,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-che",
-            "_rev": "16-5a235f5dca1fbbf2e6ca05b935de3fcd",
+            "_rev": "17-ea055206732c259da85536b44c2cba1b",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-che/%2A",
@@ -79868,7 +79869,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -80232,7 +80234,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-08-04T07:28:07.224178842-04:00",
+            "updated": "2026-09-08T08:20:20.92211569-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -80240,7 +80242,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-mum",
-            "_rev": "8-762ddef355316b845678310f94bb3103",
+            "_rev": "9-edf2bc29f22dccadecff716278f0f2c9",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-mum/%2A",
@@ -80268,7 +80270,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -80632,7 +80635,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-08-04T07:28:22.896120927-04:00",
+            "updated": "2026-09-08T08:20:37.957133085-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -90568,7 +90571,7 @@
         "children": [
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:ca-mon",
-            "_rev": "17-c311a207491f15dd7de62ad40e867aa7",
+            "_rev": "18-f0c846a8cb053254a5b9b12ae1dad0ca",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon/%2A",
@@ -90596,7 +90599,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -90887,7 +90891,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-11T02:47:50.240032533-04:00",
+            "updated": "2026-09-08T08:18:25.578577446-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -91222,7 +91226,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-che",
-            "_rev": "16-b2a37c78cea4117f0c7d2e1094be2231",
+            "_rev": "17-c432849e842213003004c66cd8d36846",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che/%2A",
@@ -91250,7 +91254,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -91541,7 +91546,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-17T06:00:24.368076825-04:00",
+            "updated": "2026-09-08T08:18:47.3464968-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -91549,7 +91554,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-mum",
-            "_rev": "15-dd611f75c5bc0877f088f86759656450",
+            "_rev": "16-a49b07208b08198fea93cc8d1a0536ce",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum/%2A",
@@ -91577,7 +91582,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -91868,7 +91874,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-17T06:01:32.380494803-04:00",
+            "updated": "2026-09-08T08:19:08.335775428-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -91876,7 +91882,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:us-east",
-            "_rev": "10-965df5ab5630ea003ea0efff63479ba5",
+            "_rev": "11-9e788be94f4553ab56f1a95328607301",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aus-east",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:us-east/%2A",
@@ -91904,7 +91910,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -92195,7 +92202,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-17T06:02:41.642027486-04:00",
+            "updated": "2026-09-08T08:19:25.061430385-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:us-east?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -95248,7 +95255,7 @@
         "children": [
           {
             "_id": "databases-for-mongodb-standard-gen2:au-syd",
-            "_rev": "4-d3d73d82d67456c4e62c477956ebb743",
+            "_rev": "5-a9ccdad060ea38e843543ee8bffaaa8a",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aau-syd",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:au-syd/%2A",
@@ -95276,7 +95283,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": false
+                    "backups_create_supported": false,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -95637,7 +95645,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-09-01T12:00:36.234371963-04:00",
+            "updated": "2026-09-08T08:21:12.561605382-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:au-syd?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -98128,10 +98136,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -98142,7 +98146,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -106318,7 +106326,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -106329,7 +106336,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -108437,6 +108445,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -108447,8 +108456,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -117831,16 +117839,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
       "eu-es",
       "us-south",
       "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -122583,13 +122591,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -135570,7 +135578,7 @@
   },
   {
     "_id": "ecdb4690-c2d8-11eb-bff1-4f7b9d2dfe41",
-    "_rev": "115-054945c996dc9a3bc67e019ad6b5ba76",
+    "_rev": "125-e4109a1f910a39a9351351fcf7ec2c5a",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ecdb4690-c2d8-11eb-bff1-4f7b9d2dfe41",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ecdb4690-c2d8-11eb-bff1-4f7b9d2dfe41/%2A",
@@ -135788,28 +135796,28 @@
           "de": {
             "bullets": [
               {
-                "description": "Benutzer-und Benachrichtigungsaktivitäten von Event Notifications können über IBM Cloud Activity Tracker und IBM Cloud Log Analysis verfolgt werden, damit Sie ermitteln können, was wann passiert ist.",
-                "title": "Zentralisierte Weiterleitung von Benachrichtigungen"
+                "description": "Filtern und leiten Sie Infrastruktur-, Anwendungs- und Sicherheitsereignisse in Echtzeit an die richtigen Tools und Teams weiter. Versenden Sie Benachrichtigungen gleichzeitig über Slack, MS Teams, ServiceNow, E-Mail, SMS, Push-Benachrichtigungen und weitere Kanäle, um die Transparenz im Betrieb zu verbessern und die Reaktion auf Vorfälle zu beschleunigen.",
+                "title": "Omnichannel-Benachrichtigungen mit Filterung und Fan-Out-Erkennen"
               },
               {
-                "description": "Eingehende Ereignisse in ein oder mehrere Themen filtern. Verwenden Sie Filter zum Optimieren von Themeninhalten, um die erforderliche Ereignismenge anzupassen. Verbinden Sie mehrere Themen mit einer Quelle oder verbinden Sie mehrere Quellen mit einem einzelnen Thema.",
-                "title": "Gefilterte Quellenereignisse"
+                "description": "Lösen Sie nachgelagerte Anwendungen, Services, CI/CD-Pipelines, serverlose Funktionen und Systeme von Drittanbietern automatisch aus, wenn vordefinierte Ereignisse eintreten. Nutzen Sie Webhooks und direkte Verbindungen zu IBM Services wie Code Engine, um automatisierte Workflows und Aktionen zu starten.",
+                "title": "Ereignisgesteuerte Automatisierung"
               },
               {
-                "description": "Event Notifications stellt grundlegende E-Mail- und SMS-Funktionen bereit, die im Service integriert sind. Fügen Sie die IBM Cloud-E-Mail- oder IBM Cloud-SMS-Ziele allen Event Notifications-Subskriptionen für eine sofortige Verbindung hinzu.",
-                "title": "Anbieter integrierter Kommunikation"
+                "description": "Eine vollständig ausgestattete SMTP-Relay-Plattform für Transaktions-E-Mails mit Authentifizierung über benutzerdefinierte Domänen, Reputationsmanagement, dynamischen Vorlagen, Zustellbarkeitsmetriken sowie Governance- und Audit-Funktionen. Verwenden Sie diesen Service für routinemäßige und kritische Mitteilungen, darunter Kontoverifizierungen, Kennwortzurücksetzungen, Aktualisierungen der Rechnungsdaten und Servicebenachrichtigungen.",
+                "title": "Transaktions-E-Mail-Plattform in Unternehmensqualität"
               },
               {
-                "description": "Senden Sie Ereignisbenachrichtigungen an ein beliebiges Webhook-Ziel. Verwenden Sie Webhooks, um ausgehende Benachrichtigungen in Verwaltungstools und Tools für die Onlinezusammenarbeit oder in Ihre eigenen Anwendungen zu integrieren.",
-                "title": "Webhooks"
+                "description": "Verwalten Sie Ziele und Routing-Richtlinien über eine einzige Plattform, um eine konsistente Konfiguration und Steuerung der ausgehenden Kommunikation über Anwendungen und Services hinweg zu gewährleisten. Fassen Sie die Benachrichtigungen der IBM Cloud-Plattform aus allen Konten Ihres Unternehmens in einer einzigen Instanz von Event Notifications zusammen.\nLeiten Sie eine einzelne Ereignisbenachrichtigung mit nur wenigen Klicks an viele Ziele weiter. Senden Sie die Benachrichtigung gleichzeitig an eine Person, an Ihre Anwendung und an Ihre Automation Suite.",
+                "title": "Zentralisiertes Benachrichtigungsmanagement"
               },
               {
-                "description": "Leiten Sie eine einzelne Ereignisbenachrichtigung mit nur wenigen Klicks an viele Ziele weiter. Senden Sie die Benachrichtigung gleichzeitig an eine Person, an Ihre Anwendung und an Ihre Automation Suite.",
-                "title": "Ausgangslastfaktor"
+                "description": "Konfigurieren Sie Benachrichtigungsrouten und Verbindungen, ohne auch nur eine einzige Zeile Code schreiben zu müssen. Jede Instanz verfügt über integrierte Quellenverbindungen zu Ereignissen des Ressourcenlebenszyklus in IBM Cloud sowie zu einem periodischen Zeitgeber und über integrierte Zielverbindungen zu E-Mails der IBM Domäne und zu SMS von IBM. Mit nur wenigen Klicks können Sie eine Verbindung zu unterstützten Quellen und Zielen herstellen, die nicht standardmäßig integriert sind.",
+                "title": "Anbindung und Konfiguration ohne Programmierung"
               },
               {
-                "description": "Benutzer-und Benachrichtigungsaktivitäten von Event Notifications können über IBM Cloud Activity Tracker und IBM Cloud Log Analysis verfolgt werden, damit Sie ermitteln können, was wann passiert ist.",
-                "title": "Governance"
+                "description": "Entdecken Sie die [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable Architecture, die Event Notifications als Teil der Lösung umfasst.",
+                "title": "Empfohlene Architekturen"
               }
             ],
             "media": [
@@ -135822,32 +135830,28 @@
           "en": {
             "bullets": [
               {
-                "description": "From a single dashboard, route event notifications from IBM Cloud services to relevant stakeholders. Filter alerts by severity and choose a communication channel that is most appropriate, SMS for immediate priority and email for a secondary level of urgency.",
-                "title": "Centralized alert routing"
+                "description": "Detect, filter, and deliver infrastructure, application, and security events to the right tools and teams in real time. Simultaneously deliver alerts through Slack, MS Teams, ServiceNow, email, SMS, push notifications, and more to improve operational visibility and accelerate incident response.",
+                "title": "Omnichannel Alerting with Filtering and Fan-Out"
               },
               {
-                "description": "Use a IBM Cloud provided email service to send emails to your recipients.",
-                "title": "Filtered source events"
+                "description": "Automatically trigger downstream applications, services, CI/CD pipelines, serverless functions, and third-party systems when predefined events occur. Use webhooks and direct connections to IBM services like Code Engine to initiate automated workflows and actions.",
+                "title": "Event-Driven Automation"
               },
               {
-                "description": "Event Notifications provides basic email and SMS capability that is built in the service. Add the IBM Cloud email or IBM Cloud SMS destination to any Event Notifications subscription for instant connectivity.",
-                "title": "Built-in communication providers"
+                "description": "Full-featured transactional SMTP relay email platform complete with custom-domain authentication, reputation management, dynamic templates, deliverability metrics, and governance/audit capability. Use for routine and critical communications, including account verification, password resets, billing updates, and service notifications.",
+                "title": "Enterprise-grade Transactional Email Platform"
               },
               {
-                "description": "Send event notifications to any webhook destination. Use webhooks to integrate outbound notifications into management and collaboration tools, or into your own applications.",
-                "title": "Webhooks"
+                "description": "Manage destinations and routing policies from a single platform, providing a consistent way to configure and govern outbound communication across applications and services. Aggregate IBM Cloud Platform Notifications across all accounts in your enterprise into one instance of Event Notifications.",
+                "title": "Centralized Notification Management"
               },
               {
-                "description": "Route a single event notification to many destinations with just a few clicks. Send the notification to a person, to your application, and to your automation suite, all at the same time.",
-                "title": "Fanout"
+                "description": "Configure notification routes and connections without writing a single line of code. Every instance comes with built-in source connections to IBM Cloud Resource Lifecycle events and a Periodic Timer, and built in destination connections to IBM-domain email and IBM SMS. Just a few clicks connects to supported sources and destinations that are not built in.",
+                "title": "No-code Connection and Configuration"
               },
               {
-                "description": "Event Notifications user and notification activity can be tracked through IBM Cloud Activity Tracker and IBM Cloud Log Analysis so you can find out what happened when.",
-                "title": "Governance"
-              },
-              {
-                "description": "The Event Notifications service provides a unified push service to send real-time notifications to mobile devices. The service provides the ability to personalize and send notifications to a segment of users, single user or broadcast to all registered devices in a destination.",
-                "title": "Push Notifications"
+                "description": "Explore the [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable Architecture, which includes Event Notifications as part of the solution.",
+                "title": "Recommended Architectures"
               }
             ],
             "media": [
@@ -135860,28 +135864,28 @@
           "es": {
             "bullets": [
               {
-                "description": "Se puede realizar un seguimiento de la actividad del usuario y las notificaciones de Event Notifications mediante IBM Cloud Activity Tracker y IBM Cloud Log Analysis para que pueda averiguar qué ha ocurrido y cuándo.",
-                "title": "Direccionamiento de alertas centralizado"
+                "description": "Detecte, filtre y entregue eventos de infraestructura, aplicaciones y seguridad a las herramientas y los equipos adecuados en tiempo real. Envíe alertas simultáneamente a través de Slack, MS Teams, ServiceNow, correo electrónico, SMS, notificaciones push y otros canales para mejorar la visibilidad operativa y agilizar la respuesta ante incidentes.",
+                "title": "Alertas omnicanal con filtrado y distribución"
               },
               {
-                "description": "Filtre los sucesos de entrada en uno o varios temas. Utilice filtros para que el contenido del tema se ajuste con precisión al conjunto de sucesos que necesita. Conecte varios temas a un origen o conecte varios orígenes a un único tema.",
-                "title": "Sucesos de origen filtrados"
+                "description": "Active automáticamente aplicaciones en sentido descendente, servicios, canalizaciones de CI/CD, funciones sin servidor y sistemas de terceros cuando se produzcan eventos predefinidos. Utilice webhooks y conexiones directas a servicios de IBM como Code Engine para iniciar flujos de trabajo y acciones automatizadas.",
+                "title": "Automatización basada en eventos"
               },
               {
-                "description": "Event Notifications proporciona la función de correo electrónico y SMS básica incluida en el servicio. Añada el correo electrónico de IBM Cloud o el destino SMS de IBM Cloud para cualquier suscripción de Event Notifications para obtener una conectividad instantánea.",
-                "title": "Proveedores de comunicaciones incluidos"
+                "description": "Plataforma integral de correo electrónico transaccional con retransmisión SMTP, que incluye funciones de autenticación con dominio personalizado, gestión de reputación, plantillas dinámicas, métricas de capacidad de entrega y gobernanza y auditoría. Utilícelo para comunicaciones rutinarias y críticas, como la verificación de cuentas, el restablecimiento de contraseñas, las actualizaciones de facturación y las notificaciones de servicio.",
+                "title": "Plataforma de correo electrónico transaccional de nivel empresarial"
               },
               {
-                "description": "Envíe notificaciones de sucesos a cualquier destino de webhook. Utilice los webhooks para integrar las notificaciones de salida en las herramientas de gestión y colaboración o en sus propias aplicaciones.",
-                "title": "Webhooks"
+                "description": "Gestione los destinos y las políticas de enrutamiento desde una única plataforma, proporcionando una forma coherente de configurar y gestionar las comunicaciones salientes en todos los servicios y aplicaciones. Agrupe las notificaciones de la plataforma IBM Cloud de todas las cuentas de su empresa en una única instancia de Event Notifications.",
+                "title": "Gestión centralizada de notificaciones"
               },
               {
-                "description": "Direccione una única notificación de sucesos a muchos destinos con solo algunos clics. Envíe la notificación a una persona, a su aplicación y a su suite de automatización, todo al mismo tiempo.",
-                "title": "Ramificar"
+                "description": "Configure rutas de notificación y conexiones sin escribir una sola línea de código. Cada instancia incluye conexiones de origen integradas con los eventos del ciclo de vida de los recursos de IBM Cloud y un temporizador periódico, así como conexiones de destino integradas con el correo electrónico del dominio IBM y los SMS de IBM. Con solo unos clics, puede conectarse a fuentes y destinos compatibles que no estén integrados de forma predeterminada.",
+                "title": "Conexión y configuración sin código"
               },
               {
-                "description": "Se puede realizar un seguimiento de la actividad del usuario y las notificaciones de Event Notifications mediante IBM Cloud Activity Tracker y IBM Cloud Log Analysis para que pueda averiguar qué ha ocurrido y cuándo.",
-                "title": "Gobernabilidad"
+                "description": "Arquitecturas recomendadas – Explore la arquitectura desplegable [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi), que incluye Event Notifications como parte de la solución.",
+                "title": "Arquitecturas recomendadas"
               }
             ],
             "media": [
@@ -135894,28 +135898,28 @@
           "fr": {
             "bullets": [
               {
-                "description": "Les activités de notification et d'utilisateur Event Notifications peuvent être suivies via IBM Cloud Activity Tracker et IBM Cloud Log Analysis de sorte que vous puissiez savoir ce qui s'est passé et quand.",
-                "title": "Routage d'alerte centralisé"
+                "description": "Détectez, filtrez et transmettez en temps réel les événements d'infrastructure, d'application et de sécurité aux outils et équipes appropriés. Envoyez simultanément des alertes via Slack, MS Teams, ServiceNow, e-mail, SMS, notifications push et bien plus encore pour améliorer la visibilité opérationnelle et accélérer la réponse aux incidents.",
+                "title": "Alertes omnicanales avec filtrage et diffusion en cascade"
               },
               {
-                "description": "Filtrez les événements entrants dans une ou plusieurs rubriques. Utilisez des filtres pour affiner le contenu d'une rubrique afin d'ajuster l'ensemble d'événements dont vous avez besoin. Connectez plusieurs rubriques à une seule source ou connectez plusieurs sources à une seule rubrique.",
-                "title": "Evénements source filtrés"
+                "description": "Déclenchez automatiquement des applications en aval, des services, des pipelines CI/CD, des fonctions sans serveur et des systèmes tiers lorsque des événements prédéfinis se produisent. Utilisez les webhooks et les connexions directes aux services IBM tels que Code Engine pour déclencher des workflows et des actions automatisés.",
+                "title": "Automatisation basées sur les événements"
               },
               {
-                "description": "Event Notifications fournit une fonctionnalité de messages e-mail et SMS de base qui est générée au service. Ajoutez la destination d'e-mail IBM Cloud ou de SMS IBM Cloud à n'importe quel abonnement Event Notifications en vue d'une connectivité instantanée.",
-                "title": "Fournisseurs de communication intégrés"
+                "description": "Une plateforme SMTP de relais d'e-mails transactionnels complète, intégrant des fonctionnalités telles que l'authentification par domaine personnalisé, la gestion de la réputation, des modèles dynamiques, des indicateurs de délivrabilité, ainsi que des capacités de gouvernance et d'audit. À utiliser pour les communications courantes et essentielles, notamment, la vérification de compte, la réinitialisation de mot de passe, les mises à jour de facturation et les notifications de service.",
+                "title": "Plateforme d'e-mails transactionnels de niveau entreprise"
               },
               {
-                "description": "Envoyez des notifications d'événement à n'importe quelle destination de webhook. Utilisez des webhooks pour intégrer les notifications sortantes aux outils de gestion et de collaboration ou à vos propres applications.",
-                "title": "Webhooks"
+                "description": "Gérez les destinations et les politiques de routage à partir d'une plateforme unique, offrant ainsi une méthode cohérente pour configurer et gouverner les communications sortantes à travers les applications et les services. Regroupez les notifications de la plateforme IBM Cloud sur l'ensemble des comptes de votre entreprise dans une seule instance de Event Notifications.",
+                "title": "Gestion centralisée des notifications"
               },
               {
-                "description": "Acheminez une notification d'événement unique à de nombreuses destinations en quelques clics. Envoyez la notification à une personne, à votre application et à votre suite d'automatisation, tout en même temps.",
-                "title": "Fanout"
+                "description": "Configurez les itinéraires de notification et les connexions sans une seule ligne de code. Chaque instance est dotée de connexions source intégrées aux événements du cycle de vie des ressources d'IBM Cloud et à une minuterie périodique, ainsi que de connexions de destination intégrées à la messagerie électronique du domaine IBM et aux SMS de IBM. En seulement quelques clics, vous pouvez vous connecter à des sources et destinations prises en charge qui ne sont pas intégrées en natif.",
+                "title": "Connexion et configuration sans code"
               },
               {
-                "description": "Les activités de notification et d'utilisateur Event Notifications peuvent être suivies via IBM Cloud Activity Tracker et IBM Cloud Log Analysis de sorte que vous puissiez savoir ce qui s'est passé et quand.",
-                "title": "Governance"
+                "description": "Architectures recommandées – Explorez l'architecture déployable [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) qui inclut Event Notifications dans la solution.",
+                "title": "Architectures recommandées"
               }
             ],
             "media": [
@@ -135928,28 +135932,28 @@
           "it": {
             "bullets": [
               {
-                "description": "Le attività di utenti e notifiche di Event Notifications possono essere tracciate tramite IBM Cloud Activity Tracker e IBM Cloud Log Analysis, in modo da poter individuare quando e cosa è accaduto.",
-                "title": "Instradamento degli avvisi centralizzato"
+                "description": "Rileva, filtra e consegna in tempo reale gli eventi relativi all'infrastruttura, alle applicazioni e alla sicurezza agli strumenti e ai team appropriati. Invia avvisi simultaneamente tramite Slack, MS Teams, ServiceNow, e-mail, SMS, notifiche push e altro ancora per migliorare la visibilità operativa e accelerare la risposta agli incidenti.",
+                "title": "Avvisi multicanale con filtraggio e distribuzione a più destinatari"
               },
               {
-                "description": "Filtrare gli eventi in entrata in uno o più argomenti. Utilizzare i filtri per ottimizzare i contenuti degli argomenti per adattare la serie di eventi richiesti. Connettere più argomenti ad una sola origine o connettere più origini a un singolo argomento.",
-                "title": "Eventi di origine filtrati"
+                "description": "Attiva automaticamente applicazioni downstream, servizi, pipeline CI/CD, funzioni serverless e sistemi di terze parti al verificarsi di eventi predefiniti. Utilizza i webhook e le connessioni dirette a servizi IBM come Code Engine per avviare flussi di lavoro e azioni automatizzate.",
+                "title": "Automazione basata su eventi"
               },
               {
-                "description": "Event Notifications fornisce una funzionalità di email e SMS di base integrata nel servizio. Aggiungere l'email IBM Cloud o la destinazione SMS IBM Cloud a una qualsiasi sottoscrizione Event Notifications per una connettività istantanea.",
-                "title": "Provider di comunicazioni integrati"
+                "description": "Piattaforma SMTP per l'inoltro della posta elettronica transazionale, completa di tutte le funzionalità, tra cui autenticazione con dominio personalizzato, gestione della reputazione, modelli dinamici, metriche di consegna e funzionalità di governance e audit. Da utilizzare per comunicazioni di routine e di importanza critica, tra cui la verifica dell'account, il ripristino della password, gli aggiornamenti di fatturazione e le notifiche di servizio.",
+                "title": "Piattaforma di posta elettronica transazionale di livello aziendale"
               },
               {
-                "description": "Inviare notifiche degli eventi a qualsiasi destinazione webhook. Utilizzare i webhook per integrare le notifiche in uscita in strumenti di gestione e di collaborazione, o nelle proprie applicazioni.",
-                "title": "Webhook"
+                "description": "Gestisci le destinazioni e le politiche di instradamento da un'unica piattaforma, offrendo un metodo coerente per configurare e governare le comunicazioni in uscita tra applicazioni e servizi. Raggruppa le notifiche della piattaforma IBM Cloud di tutti gli account della tua azienda in un'unica istanza di Event Notifications.",
+                "title": "Gestione centralizzata delle notifiche"
               },
               {
-                "description": "Instradare una singola notifica di evento a molte destinazioni con pochi clic. Inviare la notifica a una persona, alla propria applicazione e alla suite di automazione, tutto allo stesso tempo.",
-                "title": "Fanout"
+                "description": "Configura i percorsi delle notifiche e le connessioni senza scrivere nemmeno una riga di codice. Ogni istanza è dotata di connessioni di origine integrate agli eventi del ciclo di vita delle risorse di IBM Cloud e a un timer periodico, oltre a connessioni di destinazione integrate per la posta elettronica del dominio IBM e per gli SMS di IBM. Bastano pochi clic per connettersi a origini e destinazioni supportate che non sono integrate.",
+                "title": "Connessione e configurazione senza codice"
               },
               {
-                "description": "Le attività di utenti e notifiche di Event Notifications possono essere tracciate tramite IBM Cloud Activity Tracker e IBM Cloud Log Analysis, in modo da poter individuare quando e cosa è accaduto.",
-                "title": "Governance"
+                "description": "Architetture consigliate – Esplora l'architettura [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable, che include Event Notifications come parte della soluzione.",
+                "title": "Architetture consigliate"
               }
             ],
             "media": [
@@ -135962,28 +135966,28 @@
           "ja": {
             "bullets": [
               {
-                "description": "Event Notificationsユーザーおよび通知アクティビティーは、IBM Cloud Activity TrackerとIBM Cloud Log Analysisを使用して追跡することができるため、いつ何が起こったかを調べることができます。",
-                "title": "集中アラート・ルーティング"
+                "description": "インフラストラクチャー、アプリケーション、およびセキュリティーに関するイベントを検知、フィルタリングし、適切なツールやチームにリアルタイムで配信します。 Slack、MS Teams、ServiceNow、メール、SMS、プッシュ通知などを通じてアラートを同時に配信し、運用状況の可視性を向上させ、インシデント対応を迅速化します。",
+                "title": "フィルタリングとファンアウト機能を備えたオムニチャネル・アラート"
               },
               {
-                "description": "着信イベントを一つ以上のトピックにフィルタリングします。 フィルターを使用してトピック・コンテンツを微調整し、必要なイベント・セットを調整します。 複数のトピックを一つのソースに接続するか、複数のソースを単一のトピックに接続します。",
-                "title": "フィルタリングされたソース・イベント"
+                "description": "事前に定義されたイベントが発生した際に、下流のアプリケーション、サービス、CI/CDパイプライン、サーバーレス関数、およびサードパーティー製システムを自動的にトリガーします。 WebhookとCode EngineなどのIBMサービスへの直接接続を利用して、自動化されたワークフローやアクションを開始します。",
+                "title": "イベント駆動型の自動化"
               },
               {
-                "description": "Event Notificationsは、サービス内に構築された基本的な電子メールおよびSMS機能を提供します。 IBM Cloud電子メールまたはIBM CloudSMS宛先を、インスタント接続用の任意のEvent Notificationsサブスクリプションに追加します。",
-                "title": "組み込み通信プロバイダー"
+                "description": "カスタム・ドメイン認証、レピュテーション管理、動的テンプレート、配信到達性メトリック、およびガバナンス/監査機能を備えた、フル機能のトランザクション型SMTPリレー・メール・プラットフォーム。 アカウント検証、パスワード・リセット、請求情報の更新、サービス通知など、日常的および重要なコミュニケーションに使用します。",
+                "title": "エンタープライズ・グレードのトランザクション型メール・プラットフォーム"
               },
               {
-                "description": "イベント通知を任意の Webhook 宛先に送信します。 Webhook を使用して、アウトバウンド通知を管理ツールおよびコラボレーション・ツールに統合するか、または独自のアプリケーションに統合します。",
-                "title": "Webhook"
+                "description": "単一のプラットフォームから宛先やルーティング・ポリシーを管理し、アプリケーションやサービス全体にわたって一貫した方法でアウトバウンド・コミュニケーションを構成および管理できるようにします。 企業内のすべてのアカウントにわたるIBM Cloudプラットフォーム通知を、Event Notificationsの1つのインスタンスに集約します。",
+                "title": "一元化された通知管理"
               },
               {
-                "description": "数回のクリックだけで、一つのイベント通知を多数の宛先にルーティングします。 通知をユーザー、アプリケーション、および自動化スイートに同時に送信します。",
-                "title": "ファンアウト"
+                "description": "コードを1行も記述することなく、通知ルートや接続を構成できます。 すべてのインスタンスには、IBM Cloudリソースのライフサイクル・イベントおよび定期タイマーへのソース接続が組み込まれており、IBMドメインのメールおよびIBM SMSへの宛先接続も組み込まれています。 数回クリックするだけで、組み込みではないサポート対象のソースや宛先に接続できます。",
+                "title": "ノーコードでの接続と構成"
               },
               {
-                "description": "Event Notificationsユーザーおよび通知アクティビティーは、IBM Cloud Activity TrackerとIBM Cloud Log Analysisを使用して追跡することができるため、いつ何が起こったかを調べることができます。",
-                "title": "ガバナンス"
+                "description": "ソリューションの一部としてEvent Notificationsを含む[「セキュリティーと可観測性のためのクラウド基盤」デプロイ可能アーキテクチャー](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi)をご確認ください。",
+                "title": "推奨アーキテクチャー"
               }
             ],
             "media": [
@@ -135996,28 +136000,28 @@
           "ko": {
             "bullets": [
               {
-                "description": "Event Notifications 사용자 및 알림 활동은 언제 무슨 일이 발생했는지 알아볼 수 있도록 IBM Cloud Activity Tracker 및 IBM Cloud Log Analysis을(를) 통해 추적할 수 있습니다.",
-                "title": "중앙 집중식 경고 라우팅"
+                "description": "인프라, 애플리케이션 및 보안 이벤트를 감지하고 필터링하여 적합한 도구와 팀에 실시간으로 전달합니다. Slack, MS Teams, ServiceNow, 이메일, SMS, 푸시 알림 등을 통해 알림을 동시에 전달하여 운영 가시성을 향상시키고 인시던트 대응 속도를 가속화합니다.",
+                "title": "필터링 및 팬아웃 기능을 갖춘 옴니채널 알림"
               },
               {
-                "description": "수신 이벤트를 하나 이상의 주제로 필터링하십시오. 필터를 사용해 주제 컨텐츠를 미세 조정하여 필요한 이벤트 세트를 조정하십시오. 여러 주제를 하나의 소스에 연결하거나 여러 소스를 하나의 주제에 연결하십시오.",
-                "title": "필터링된 소스 이벤트"
+                "description": "미리 정의된 이벤트가 발생하면 다운스트림 애플리케이션, 서비스, CI/CD 파이프라인, 서버리스 함수 및 써드파티 시스템을 자동으로 트리거합니다. 웹훅과 IBM 서비스, 예를 들어 Code Engine 등에 대한 직접 연결을 사용하여 자동화된 워크플로우와 작업을 시작하세요.",
+                "title": "이벤트 기반 자동화"
               },
               {
-                "description": "Event Notifications은(는) 이 서비스에서 기본 제공하는 기본 이메일 및 SMS 기능을 제공합니다. 즉각적인 연결을 위해 IBM Cloud 이메일 또는 IBM Cloud SMS 대상을 Event Notifications 구독에 추가하십시오.",
-                "title": "기본 제공 통신 제공자"
+                "description": "맞춤형 도메인 인증, 평판 관리, 동적 템플릿, 전달률 지표, 거버넌스 및 감사 기능을 모두 갖춘 완전한 기능의 트랜잭션 SMTP 릴레이 이메일 플랫폼입니다. 계정 확인, 비밀번호 재설정, 청구 정보 업데이트, 서비스 알림 등 일상적이거나 중요한 커뮤니케이션에 사용하십시오.",
+                "title": "엔터프라이즈급 트랜잭션 이메일 플랫폼"
               },
               {
-                "description": "임의의 웹훅 대상에 이벤트 알림을 전송하십시오. 웹훅을 사용하여 아웃바운드 알림을 관리 및 협업 도구, 또는 사용자의 애플리케이션에 통합하십시오.",
-                "title": "웹훅"
+                "description": "단일 플랫폼에서 목적지와 라우팅 정책을 관리하여 애플리케이션 및 서비스 전반에 걸쳐 아웃바운드 커뮤니케이션을 일관된 방식으로 구성하고 관리할 수 있습니다. 기업 내 모든 계정의 IBM Cloud 플랫폼 알림을 하나의 Event Notifications 인스턴스로 통합합니다.",
+                "title": "중앙 집중식 알림 관리"
               },
               {
-                "description": "몇 번의 클릭만으로 하나의 이벤트 알림을 여러 대상으로 라우팅하십시오. 알림을 사람, 애플리케이션 및 자동화 스위트에게로 동시에 전송하십시오.",
-                "title": "팬아웃"
+                "description": "단 한 줄의 코드도 작성하지 않고 알림 경로와 연결을 설정하고 구성할 수 있습니다. 모든 인스턴스에는 IBM Cloud 리소스 수명 주기 이벤트 및 주기적 타이머에 대한 기본 제공 소스 연결과, IBM 도메인 이메일 및 IBM SMS에 대한 기본 제공 대상 연결이 포함되어 있습니다. 단 몇 번의 클릭만으로 기본적으로 제공되지 않는 지원되는 소스 및 대상에 연결할 수 있습니다.",
+                "title": "코딩 없이 연결 및 구성"
               },
               {
-                "description": "Event Notifications 사용자 및 알림 활동은 언제 무슨 일이 발생했는지 알아볼 수 있도록 IBM Cloud Activity Tracker 및 IBM Cloud Log Analysis을(를) 통해 추적할 수 있습니다.",
-                "title": "거버넌스"
+                "description": "보안 및 가시성을 위한 [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable Architecture를 살펴보세요. 이 아키텍처에는 솔루션의 일부로 Event Notifications가 포함되어 있습니다.",
+                "title": "권장 아키텍처"
               }
             ],
             "media": [
@@ -136030,28 +136034,28 @@
           "pt-BR": {
             "bullets": [
               {
-                "description": "A atividade de usuário e notificação do Event Notifications pode ser rastreada por meio de IBM Cloud Activity Tracker e IBM Cloud Log Analysis para que seja possível descobrir o que aconteceu e quando aconteceu.",
-                "title": "Roteamento de alerta centralizado"
+                "description": "Detecte, filtre e entregue eventos de infraestrutura, aplicativos e segurança às ferramentas e equipes certas em tempo real. Entregue alertas simultaneamente pelo Slack, MS Teams, ServiceNow, e-mail, SMS, notificações push e outros canais para melhorar a visibilidade operacional e acelerar a resposta a incidentes.",
+                "title": "Alertas omnicanal com filtragem e distribuição"
               },
               {
-                "description": "Filtre os eventos recebidos em um ou mais tópicos. Use filtros para ajustar o conteúdo do tópico para ajustar o conjunto de eventos de que você precisa. Conecte vários tópicos a uma fonte ou conecte várias fontes a um único tópico.",
-                "title": "Eventos de origem filtrados"
+                "description": "Acione automaticamente aplicativos, serviços, pipelines de CI/CD, funções sem servidor e sistemas de terceiros quando ocorrerem eventos predefinidos. Use webhooks e conexões diretas com serviços IBM, como o Code Engine, para iniciar fluxos de trabalho e ações automatizadas.",
+                "title": "Automação orientada por eventos"
               },
               {
-                "description": "O Event Notifications fornece capacidade básica de e-mail e SMS que é construída no serviço. Inclua o destino de e-mail do IBM Cloud ou de SMS do IBM Cloud para qualquer assinatura Event Notifications para conectividade instantânea.",
-                "title": "Provedores de comunicação integrados"
+                "description": "Plataforma completa de e-mail transacional com retransmissão SMTP, autenticação de domínio personalizado, gerenciamento de reputação, modelos dinâmicos, métricas de capacidade de entrega e recursos de controle e auditoria. Use para comunicações rotineiras e críticas, incluindo verificação de conta, reconfiguração de senha, atualizações de faturamento e notificações de serviço.",
+                "title": "Plataforma de e-mail transacional de nível corporativo"
               },
               {
-                "description": "Envie notificações de eventos para qualquer destino de webhook. Use webhooks para integrar notificações de saída em ferramentas de gerenciamento e colaboração ou em seus próprios aplicativos.",
-                "title": "Webhooks"
+                "description": "Gerencie destinos e políticas de roteamento em uma única plataforma, oferecendo uma maneira consistente de configurar e controlar a comunicação de saída entre aplicativos e serviços. Agregue as notificações da plataforma IBM Cloud de todas as contas da sua empresa em uma única instância do Event Notifications.",
+                "title": "Gerenciamento centralizado de notificações"
               },
               {
-                "description": "Encaminhe uma única notificação de eventos para vários destinos com apenas alguns cliques. Envie a notificação para uma pessoa, para seu aplicativo e para seu pacote de automação, tudo ao mesmo tempo.",
-                "title": "Fanout"
+                "description": "Configure rotas de notificação e conexões sem escrever uma única linha de código. Cada instância inclui conexões de origem integradas para eventos de ciclo de vida de recursos do IBM Cloud e para um temporizador periódico, além de conexões de destino integradas para e-mail de domínio IBM e SMS IBM. Com apenas alguns cliques, é possível conectar-se a origens e destinos suportados que não estão integrados.",
+                "title": "Conexão e configuração sem código"
               },
               {
-                "description": "A atividade de usuário e notificação do Event Notifications pode ser rastreada por meio de IBM Cloud Activity Tracker e IBM Cloud Log Analysis para que seja possível descobrir o que aconteceu e quando aconteceu.",
-                "title": "Controle"
+                "description": "Explore a arquitetura implementável [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi), que inclui o Event Notifications como parte da solução.",
+                "title": "Arquiteturas recomendadas"
               }
             ],
             "media": [
@@ -136064,28 +136068,28 @@
           "zh-Hans": {
             "bullets": [
               {
-                "description": "Event Notifications 用户和通知活动可以通过 IBM Cloud Activity Tracker 和 IBM Cloud Log Analysis 进行跟踪，这样您可以确定何时发生了什么。",
-                "title": "集中警报路由"
+                "description": "实时检测、过滤并向相应的工具和团队分发基础设施、应用程序及安全事件。 通过 Slack、MS Teams、ServiceNow、电子邮件、短信、推送通知等多种渠道同步发送警报，以提高运营可视性并加快事件响应速度。",
+                "title": "支持过滤和扇出功能的全渠道警报"
               },
               {
-                "description": "将传入事件过滤为一个或多个主题。 使用过滤器可微调主题内容以调整您需要的事件集。 将多个主题连接到一个源，或将多个源连接到单个主题。",
-                "title": "过滤的源事件"
+                "description": "当预定义事件发生时，自动触发下游应用程序、服务、CI/CD 管道、无服务器函数和第三方系统。 使用 webhooks 以及与 IBM 服务（如 Code Engine）的直接连接，来启动自动化工作流和操作。",
+                "title": "事件驱动的自动化"
               },
               {
-                "description": "Event Notifications 提供在服务中构建的基本电子邮件和 SMS 功能。 将 IBM Cloud 电子邮件或 IBM Cloud SMS 目标添加到任何 Event Notifications 预订以进行即时连接。",
-                "title": "内置通信提供程序"
+                "description": "功能齐全的交易型 SMTP 中继邮件平台，具备自定义域名认证、声誉管理、动态模板、送达率指标以及治理/审计功能。 用于日常和重要通信，包括帐户验证、密码重置、账单更新以及服务通知。",
+                "title": "企业级事务邮件平台"
               },
               {
-                "description": "将事件通知发送至任何 Webhook 目标。 使用 Webhook 将出站通知集成到管理和协作工具或您自己的应用程序中。",
-                "title": "Webhook"
+                "description": "通过单一平台管理目标位置和路由策略，为跨应用程序和服务的出站通信提供统一的配置和管理方式。 将企业内所有帐户的 IBM Cloud 平台通知汇总到一个 Event Notifications 实例中。",
+                "title": "集中式通知管理"
               },
               {
-                "description": "只需单击几次即可将单个事件通知路由到多个目标。 将通知同时发送到某个人员、您的应用程序以及您的自动化套件。",
-                "title": "扇出"
+                "description": "无需编写任何代码即可配置通知路由和连接。 每个实例都内置了与 IBM Cloud 资源生命周期事件和周期性定时器的源连接，以及与 IBM 域名电子邮件和 IBM 短信服务的目标连接。 只需点击几下，即可连接到未内置的支持源和目标。",
+                "title": "无需编码的连接与配置"
               },
               {
-                "description": "Event Notifications 用户和通知活动可以通过 IBM Cloud Activity Tracker 和 IBM Cloud Log Analysis 进行跟踪，这样您可以确定何时发生了什么。",
-                "title": "监管"
+                "description": "了解[面向安全与可观测性的云基础可部署架构](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi)，该架构将 Event Notifications 作为解决方案的一部分。",
+                "title": "推荐的架构"
               }
             ],
             "media": [
@@ -136098,28 +136102,28 @@
           "zh-Hant": {
             "bullets": [
               {
-                "description": "Event Notifications 使用者和通知活動可以透過 IBM Cloud Activity Tracker 及 IBM Cloud Log Analysis 追蹤，以便您可以瞭解什麼時間發生了什麼情況。",
-                "title": "集中式警示遞送"
+                "description": "可即時偵測、過濾基礎架構、應用程式及安全事件，並將其傳送至合適的工具與團隊。 透過 Slack、MS Teams、ServiceNow、電子郵件、簡訊、推播通知等通道同步遞送警示，以提升營運可視性並加速事件應對。",
+                "title": "具備過濾與展開功能的全通路警示"
               },
               {
-                "description": "將送入的事件過濾成一個以上的主題。 使用過濾器來細部調整主題內容，以調整您需要的事件集。 將多個主題連接至一個來源，或將多個來源連接至單一主題。",
-                "title": "過濾的來源事件"
+                "description": "當預先定義的事件發生時，系統可自動觸發下游應用程式、服務、CI/CD 管道、無伺服器函數以及第三方系統。 使用 Webhooks 以及與 IBM 服務（例如 Code Engine）的直接連線，以起始自動化工作流程和動作。",
+                "title": "事件驅動式自動化"
               },
               {
-                "description": "Event Notifications 提供在服務中建置的基本電子郵件及 SMS 功能。 將 IBM Cloud 電子郵件或 IBM Cloud SMS 目的地新增至任何 Event Notifications 訂閱，以取得即時連線功能。",
-                "title": "內建通訊提供者"
+                "description": "功能完善的交易型 SMTP 中繼電子郵件平台，具備自訂網域鑑別、信譽管理、動態範本、遞送率指標，以及治理與審核功能。 用於例行及重要通訊，包括帳戶驗證、密碼重設、帳單更新及服務通知。",
+                "title": "企業級交易型電子郵件平台"
               },
               {
-                "description": "將事件通知傳送至任何 Webhook 目的地。 使用 Webhook 將出埠通知整合到管理和協同作業工具中，或整合到您自己的應用程式中。",
-                "title": "Webhook"
+                "description": "透過單一平台管理目的地和遞送原則，提供一致的方法來配置和治理跨應用程式與服務的初埠通訊。 將企業內所有帳戶的 IBM Cloud 平台通知聚集至單一 Event Notifications 實例中。",
+                "title": "集中式通知管理"
               },
               {
-                "description": "只需按幾下，就會將單一事件通知遞送至許多目的地。 將通知傳送至人員、將通知傳送至您的應用程式，以及全部同時傳送至您的自動化套組。",
-                "title": "扇出"
+                "description": "輕鬆配置通知路徑與連線。 每個實例均內建了與 IBM Cloud 資源生命週期事件及「定期計時器」的來源連線，以及與 IBM 網域電子郵件和 IBM 簡訊服務的目標連線。 只需按幾下，即可連接到未內建的受支援來源與目標。",
+                "title": "無需撰寫任何程式碼，即可完成連線與配置"
               },
               {
-                "description": "Event Notifications 使用者和通知活動可以透過 IBM Cloud Activity Tracker 及 IBM Cloud Log Analysis 追蹤，以便您可以瞭解什麼時間發生了什麼情況。",
-                "title": "監管"
+                "description": "探索[「Cloud Foundation for Security and Observability」可部署架構](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi)，該架構包括 Event Notifications 作為解決方案的一部分。",
+                "title": "建議架構"
               }
             ],
             "media": [
@@ -136142,52 +136146,52 @@
       "de": {
         "description": "Geben Sie E-Mail, SMS und Webhooks und andere Möglichkeiten zur Benachrichtigungen für Ihre IBM Cloud-Serviceereignisse an.",
         "display_name": "Event Notifications",
-        "long_description": "Bei IBM Cloud® Event Notifications handelt es sich um einen Routing-Service für Ereignisbenachrichtigungen, mit dem Sie über kritische Ereignisse in Ihrem IBM Cloud-Konto informiert werden oder der automatisierte Aktionen mithilfe von Webhooks auslöst. Sie können Ereignisbenachrichtigungen von IBM Cloud-Services wie Monitoring, Security and Compliance Centerund Secrets Manager filtern und als E-Mails, SMS und Webhooks weiterleiten."
+        "long_description": "IBM Cloud® Event Notifications ist ein vollständig verwalteter, cloudnativer Kommunikations- und Benachrichtigungsservice, der Unternehmen dabei hilft, auf Ereignisse zu reagieren und wichtige Informationen in großem Umfang zu kommunizieren. Es unterstützt zwei zentrale Anwendungsfälle: ereignisgesteuerte operative Benachrichtigungen und Automatisierung sowie ausgehende transaktionale Geschäftskommunikation. Mit diesem einen Service können Unternehmen betriebliche Ereignisse an Tools des Service-Management-Ökosystems wie Slack, MS Teams und ServiceNow weiterleiten, Automatisierungen über Webhooks oder Code-Engine-Integrationen auslösen und transaktionale Geschäftsnachrichten über Kanäle wie E-Mail, SMS und Push-Benachrichtigungen an Kunden und Benutzer übermitteln.\n\n**Anwendungsfälle im operativen Bereich**\n\n*  **Überwachung:** Alerts, Schwellenwertüberschreitungen, Benachrichtigungen zur Betriebszeit und Eskalationen. \n*  **Aufträge:** Batch-/ETL-Ergebnisse, Backups, geplante Berichte und Benachrichtigungen über Exportbereitschaft. \n*  **CI/CD:** Build-Fehler, Bereitstellungsbestätigungen und Testergebnisse. \n*  **Infrastruktur:** Ablauf von Zertifikaten, Quotenwarnungen und Kapazitäts-Alerts. \n*  **Audit:** Konfigurationsänderungen, Berechtigungsvergabe und administrative Aktionen.\n\n**Anwendungsfälle für die ausgehende Geschäftskommunikation** \n\n*  **Konto:** Verifizierung, Zurücksetzen von Kennwörtern, OTP- und MFA-Codes sowie Sicherheits-Alerts.  \n*  **Commerce:** Bestellbestätigungen, Quittungen, Versand- und Sendungsverfolgungsbenachrichtigungen. \n*  **Abrechnung:** Rechnungen, Zahlungsbestätigungen, Mahnungen und Benachrichtigungen zur Verlängerung. \n*  **Produkt:** Erwähnungen, Zuweisungen, Genehmigungen und Einladungen zum Teilen. \n*  **Support:** Ticket-Updates und Terminerinnerungen."
       },
       "en": {
         "description": "Transactional email via SMTP relay, plus event-driven automation and alerting across webhooks, Code Engine, SMS, Slack, and more. One centralized service. Rapid, no-code routing.",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications is an event notification routing service that notifies you to critical events that occur in your IBM Cloud account or triggers automated actions by using webhooks. You can filter and route event notifications from IBM Cloud services to Email, SMS, Webhooks and Push Notifications."
+        "long_description": "IBM Cloud® Event Notifications is a fully managed, cloud-native communication and notification service that helps organizations respond to events and communicate important information at scale. It supports two core use cases: event-driven operational alerting and automation, and outbound transactional business communication. With this one service, organizations can route operational events to service management ecosystem tools like Slack, MS Teams, and ServiceNow, trigger automations with webhooks or Code Engine integrations, and deliver transactional business messages to customers and users through channels such as email, SMS, and push notifications.\n\n\n**Operational Use Cases**\n\n* **Monitoring:** Alerts, threshold breaches, uptime notifications, and escalations.\n* **Jobs:** Batch/ETL results, backups, scheduled reports, and export-ready notifications.\n* **CI/CD:** Build failures, deployment confirmations, and test results.\n* **Infrastructure:** Certificate expiry, quota warnings, and capacity alerts.\n* **Audit:** Configuration changes, permission grants, and administrative actions.\n\n**Outbound Business Communication Use Cases**\n\n* **Account:** Verification, password reset, OTP & MFA, and security alerts.\n* **Commerce:** Order confirmations, receipts, shipping, and tracking notifications.\n* **Billing:** Invoices, payment confirmations, dunning, and renewal notifications.\n* **Product:** Mentions, assignments, approvals, and sharing invitations.\n* **Support:** Ticket updates and appointment reminders."
       },
       "es": {
         "description": "Entregue correo electrónico, SMS y Webhooks y otras notificaciones para los sucesos de servicio de IBM Cloud.",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications es un servicio de direccionamiento de notificaciones de sucesos que le notifica los sucesos críticos que se producen en la cuenta de IBM Cloud o desencadena acciones automatizadas utilizando webhooks. Puede filtrar y direccionar las notificaciones de sucesos desde servicios de IBM Cloud como Monitoring, Security and Compliance Center, y Secrets Manager por correo electrónico, SMS y webhooks."
+        "long_description": "IBM Cloud® Event Notifications es un servicio de comunicación y notificaciones totalmente gestionado y nativo de la nube que ayuda a las organizaciones a responder ante eventos y a comunicar información importante a gran escala. Admite dos casos de uso principales: alertas operativas y automatización basadas en eventos, y comunicaciones empresariales transaccionales salientes. Con este servicio, las organizaciones pueden enviar los eventos operativos a herramientas del ecosistema de gestión de servicios, como Slack, MS Teams y ServiceNow, activar automatizaciones mediante webhooks o integraciones con Code Engine y enviar mensajes empresariales transaccionales a los clientes y usuarios a través de canales como el correo electrónico, los SMS y las notificaciones push.\n\n**Casos de uso operativo**\n\n*  **Supervisión:** alertas, incumplimientos de umbrales, notificaciones de tiempo de actividad y escalamientas.\n*  **Tareas:** resultados de procesos por lotes/ETL, copias de seguridad, informes programados y notificaciones de datos listos para exportarse.\n*  **CI/CD:** errores en la compilación, confirmaciones de despliegue y resultados de pruebas.\n*  **Infraestructura:** vencimiento de certificados, advertencias de cuotas y alertas de capacidad.\n*  **Auditoría:** cambios en la configuración, concesión de permisos y acciones administrativas.\n\n**Casos de uso de la comunicación empresarial saliente**\n\n*  **Cuenta:** verificación, restablecimiento de contraseña, OTP y MFA, y alertas de seguridad.\n*  **Comercio:** confirmaciones de pedidos, recibos, envíos y notificaciones de seguimiento.\n*  **Facturación:** facturas, confirmaciones de pago, avisos de impago y notificaciones de renovación.\n*  **Producto:** menciones, asignaciones, aprobaciones e invitaciones para compartir.\n*  **Asistencia técnica:** actualizaciones de tickets y recordatorios de citas."
       },
       "fr": {
         "description": "Distribuez des e-mails, SMS et webhooks ainsi que d'autres notifications pour vos événements de service IBM Cloud.",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications est un service de routage de notification d'événements qui vous avertit des événements critiques qui se produisent dans votre compte IBM Cloud ou qui déclenche des actions automatisées à l'aide de webhooks. Vous pouvez filtrer et acheminer les notifications d'événements à partir de services IBM Cloud tels que Monitoring, Security and Compliance Center et Secrets Manager vers des e-mails, SMS et webhooks."
+        "long_description": "IBM Cloud® Event Notifications est un service de communication et de notification entièrement géré, natif du cloud, qui aide les organisations à réagir aux événements et à communiquer des informations importantes à grande échelle. Il prend en charge deux cas d'utilisation principaux : l'alerte opérationnelle et l'automatisation pilotées par les événements, ainsi que la communication commerciale transactionnelle sortante. Grâce à ce service unique, les organisations peuvent acheminer des événements opérationnels vers des outils de l'écosystème de gestion des services tels que Slack, MS Teams et ServiceNow, déclencher des automatisations via des webhooks ou des intégrations avec Code Engine, et transmettre des messages transactionnels aux clients et utilisateurs par le biais de canaux tels que l'e-mail, les SMS et les notifications push.\n\n**Cas d'utilisation opérationnels**\n\n*  **Surveillance:** alertes, dépassements de seuil, notifications de disponibilité et escalades.\n*  **Tâches:** résultats des traitements par lots/ETL, sauvegardes, rapports planifiés et notifications prêtes pour l'exportation.\n*  **CI/CD:** échecs de compilation, confirmations de déploiement et résultats de tests.\n*  **Infrastructure:** expiration de certificats, avertissements concernant les quotas et alertes de capacité.\n*  **Audit:** modifications de configuration, octroi de permissions et actions administratives.\n\n**Cas d'utilisation de la communication commerciale sortante**\n\n*  **Comptes:** vérification, réinitialisation de mot de passe, OTP et MFA, ainsi que alertes de sécurité.\n*  **Commerce:** confirmations de commande, reçus, expédition et notifications de suivi.\n*  **Facturation:** factures, confirmations de paiement, relances et notifications de renouvellement.\n*  **Produits:** mentions, attributions, validations et invitations au partage.\n*  **Assistance:** mises à jour des tickets et rappels de rendez-vous."
       },
       "it": {
         "description": "Consegnare email, SMS, webhook e altre notifiche per gli eventi di servizio IBM Cloud.",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications è un servizio di instradamento delle notifiche di eventi che invia agli utenti la notifica per gli eventi critici che si verificano nell'account IBM Cloud o attiva le azioni automatizzate utilizzando i webhook. È possibile filtrare e instradare le notifiche degli eventi dai servizi IBM Cloud come Monitoring, Security and Compliance Centere Secrets Manager a email, SMS e webhook."
+        "long_description": "IBM Cloud® Event Notifications è un servizio di comunicazione e notifica completamente gestito e cloud-native che supporta le organizzazioni nel rispondere agli eventi e nel comunicare informazioni importanti su larga scala. Supporta due casi d'uso principali: avvisi operativi e automazione basati su eventi e comunicazioni aziendali transazionali in uscita. Grazie a questo servizio, le organizzazioni possono indirizzare gli eventi operativi agli strumenti dell'ecosistema di gestione dei servizi, come Slack, MS Teams e ServiceNow, attivare automazioni tramite webhook o integrazioni con Code Engine e inviare messaggi transazionali aziendali a clienti e utenti attraverso canali come e-mail, SMS e notifiche push.\n\n**Casi d'uso operativi**\n\n*  **Monitoraggio:** avvisi, superamento delle soglie, notifiche di uptime ed escalation.\n*  **Processi:** risultati di elaborazione batch/ETL, backup, report programmati e notifiche di dati pronti per l'esportazione.\n*  **CI/CD:** errori di build, conferme di distribuzione e risultati dei test.\n*  **Infrastruttura:** scadenza dei certificati, avvisi sulle quote e notifiche sulla capacità.\n*  **Audit:** modifiche alla configurazione, concessioni di autorizzazioni e azioni amministrative.\n\n**Casi d'uso della comunicazione aziendale in uscita**\n\n*  **Account:** verifica, reimpostazione della password, OTP e MFA, avvisi di sicurezza.\n*  **Commercio:** conferme d'ordine, ricevute, spedizioni e notifiche di tracciamento.\n*  **Fatturazione:** fatture, conferme di pagamento, solleciti e notifiche di rinnovo.\n*  **Prodotto:** menzioni, assegnazioni, approvazioni e inviti alla condivisione.\n*  **Supporto:** aggiornamenti sui ticket e promemoria degli appuntamenti."
       },
       "ja": {
         "description": "IBM Cloudサービス・イベントに関する電子メール、SMS、Webhook、その他の通知を配信します。",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notificationsは、IBM Cloudアカウントで発生した重要なイベントを通知したり、Webhook を使用して自動アクションをトリガーしたりするイベント通知ルーティングサービスです。 IBM Cloudモニタリング、Security and Compliance Center、およびSecrets Managerのようなサービスから電子メール、SMS、および Webhook にイベント通知をフィルタリングおよび経路指定を行うことができます。"
+        "long_description": "IBM Cloud® Event Notificationsは、フルマネージドかつクラウドネイティブなコミュニケーションおよび通知サービスであり、組織がイベントに対応し、重要な情報を大規模に伝達できるよう支援します。 本サービスは2つの主要なユースケース、つまり、イベント駆動型の運用アラートと自動化、およびアウトバウンドのトランザクション型ビジネス・コミュニケーションをサポートしています。 この1つのサービスを利用することで、組織は運用イベントをSlack、MS Teams、ServiceNowなどのサービス管理エコシステム・ツールにルーティングしたり、WebhookやCode Engineとの統合によって自動化をトリガーしたり、メール、SMS、プッシュ通知などのチャネルを通じて顧客やユーザーにトランザクション型のビジネス・メッセージを配信したりすることができます。\n\n**運用上のユースケース**\n\n*  **モニタリング:** アラート、しきい値超過、稼働時間通知、およびエスカレーション。\n*  **ジョブ:** バッチ処理/ETLの結果、バックアップ、スケジュールされたレポート、およびエクスポート準備完了通知。\n*  **CI/CD:** ビルド失敗、デプロイメント確認、およびテスト結果。\n*  **インフラストラクチャー:** 証明書の有効期限切れ、クォータ警告、および容量アラート。\n*  **監査:** 構成変更、権限付与、および管理操作。\n\n**アウトバウンド・ビジネス・コミュニケーションのユースケース**\n\n*  **アカウント:** 本人確認、パスワード・リセット、OTPとMFA、およびセキュリティー・アラート。\n*  **コマース:** 注文確認、領収書、発送通知、および配送状況通知。\n*  **請求:** 請求書、支払い確認、督促通知、および更新通知。\n*  **製品:** メンション、割り当て、承認、および共有招待。\n*  **サポート:** チケット更新および予約リマインダー。"
       },
       "ko": {
         "description": "IBM Cloud 서비스 이벤트에 대한 이메일, SMS, 웹훅 및 기타 알림을 전달하십시오.",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications은(는) IBM Cloud 계정에서 발생하는 중요한 이벤트를 알리거나 웹훅을 사용하여 자동화된 조치를 트리거하는 이벤트 알림 라우팅 서비스입니다. Monitoring, Security and Compliance Center 및 Secrets Manager과(와) 같은 IBM Cloud 서비스의 이벤트 알림을 필터링하여 이메일, SMS 및 웹훅으로 라우팅할 수 있습니다."
+        "long_description": "IBM Cloud® Event Notifications는 조직이 이벤트에 대응하고 중요한 정보를 대규모로 전달할 수 있도록 지원하는 완전 관리형 클라우드 네이티브 커뮤니케이션 및 알림 서비스입니다. 이는 두 가지 핵심 사용 사례, 즉 이벤트 기반 운영 경고 및 자동화와 아웃바운드 거래 비즈니스 커뮤니케이션을 지원합니다. 이 단일 서비스를 통해 조직은 운영 이벤트를 Slack, MS Teams, ServiceNow과 같은 서비스 관리 생태계 도구로 전달하고, 웹훅(webhooks)이나 Code Engine 통합을 통해 자동화를 실행하며, 이메일, SMS, 푸시 알림 등의 채널을 통해 고객과 사용자에게 거래 관련 비즈니스 메시지를 전달할 수 있습니다.\n\n**운영 사용 사례**\n\n*  **모니터링:** 경고, 임계값 초과, 가동시간 알림 및 에스컬레이션.\n*  **작업:** 배치/ETL 결과, 백업, 예약 보고서 및 내보내기 준비 알림.\n*  **CI/CD:** 빌드 실패, 배포 확인 및 테스트 결과.\n*  **인프라:** 인증서 만료, 할당량 경고 및 용량 경고.\n*  **감사:** 구성 변경, 권한 부여 및 관리 작업.\n\n**아웃바운드 비즈니스 커뮤니케이션 사용 사례**\n\n*  **계정:** 인증, 비밀번호 재설정, OTP 및 MFA, 보안 알림.\n*  **커머스:** 주문 확인, 영수증, 배송 및 배송 추적 알림.\n*  **청구:** 청구서, 결제 확인, 미납 알림 및 갱신 알림.\n*  **제품:** 멘션, 할당, 승인 및 공유 초대.\n*  **지원:** 티켓 업데이트 및 예약 알림."
       },
       "pt-BR": {
         "description": "Entregue e-mail, SMS e Webhooks e outras notificações para seus eventos de serviço da IBM Cloud.",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications é um serviço de roteamento de notificação de eventos que o notifica sobre eventos críticos que ocorrem em sua conta IBM Cloud ou aciona ações automatizadas usando webhooks. É possível filtrar e rotear notificações de eventos de serviços IBM Cloud como Monitoring, Security and Compliance Center e Secrets Manager para e-mail, SMS e webhooks."
+        "long_description": "O IBM Cloud® Event Notifications é um serviço de comunicação e notificação totalmente gerenciado e nativo da nuvem que ajuda as organizações a responder a eventos e comunicar informações importantes em larga escala. Ele suporta dois casos de uso principais: alertas operacionais e automação orientados por eventos e comunicação corporativa transacional de saída. Com este único serviço, as organizações podem encaminhar eventos operacionais para ferramentas do ecossistema de gerenciamento de serviços, como Slack, MS Teams e ServiceNow, acionar automações por meio de webhooks ou integrações com o Code Engine e entregar mensagens corporativas transacionais a clientes e usuários por meio de canais como e-mail, SMS e notificações push.\n\n**Casos de uso operacionais**\n\n*  **Monitoramento:** alertas, violações de limites, notificações de disponibilidade e escalações.\n*  **Tarefas:** resultados de processamento em lote/ETL, backups, relatórios programados e notificações de prontidão para exportação.\n*  **CI/CD:** falhas de construção, confirmações de implementação e resultados de testes.\n*  **Infraestrutura:** expiração de certificados, avisos de cota e alertas de capacidade.\n*  **Auditoria:** mudanças de configuração, concessões de permissões e ações administrativas.\n\n**Casos de uso de comunicação corporativa de saída**\n\n*  **Conta:** verificação, reconfiguração de senha, OTP e MFA, além de alertas de segurança.\n*  **Comércio:** confirmações de pedidos, recibos, envios e notificações de rastreamento.\n*  **Faturamento:** faturas, confirmações de pagamento, cobranças por inadimplência e notificações de renovação.\n*  **Produto:** menções, designações, aprovações e convites para compartilhamento.\n*  **Suporte:** atualizações de tickets e lembretes de compromissos."
       },
       "zh-Hans": {
         "description": "为 IBM Cloud 服务事件提供电子邮件、SMS 和 Webhook 以及其他通知。",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications 是事件通知路由服务，它会将发生在您的 IBM Cloud 帐户中的关键事件通知您，或使用 Webhook 触发自动操作。 您可以过滤来自 IBM Cloud 服务（如 Monitoring、Security and Compliance Center 和 Secrets Manager）的事件通知并将其路由到电子邮件、SMS 和 Webhook。"
+        "long_description": "IBM Cloud® Event Notifications 是一款完全托管的、云原生的通信和通知服务，可帮助组织应对各类事件，并大规模传达重要信息。 它支持两大核心用例：基于事件的运营警报与自动化，以及出站事务性业务通信。 借助这项服务，组织可以将运营事件转发至 Slack、MS Teams 和 ServiceNow 等服务管理生态系统工具，通过 webhooks 或 Code Engine 集成触发自动化流程，并通过电子邮件、短信和推送通知等渠道向客户和用户发送事务性业务消息。\n\n**运营用例**\n\n*  **监控：** 警报、阈值超限、运行时间通知和升级处理。\n*  **任务：** 批处理/ETL结果、备份、定时报告以及可导出通知。\n*  **CI/CD：** 构建失败、部署确认和测试结果。\n*  **基础设施：** 证书过期、配额警告和容量警报。\n*  **审计：** 配置变更、权限授予和管理操作。\n\n**出站业务通信用例**\n*  **账户：** 身份验证、密码重置、一次性密码 (OTP) 与多因素认证 (MFA)，以及安全警报。\n*  **商务：** 订单确认、收据、发货及物流跟踪通知。\n*  **计费：** 发票、付款确认、催款及续订通知。\n*  **产品：** 提及、任务分配、审批及共享邀请。\n*  **支持：** 工单更新及预约提醒"
       },
       "zh-Hant": {
         "description": "為您的 IBM Cloud 服務事件遞送電子郵件、SMS 和 Webhook 及其他通知。",
         "display_name": "Event Notifications",
-        "long_description": "IBM Cloud® Event Notifications 是事件通知遞送服務，會通知您在 IBM Cloud 帳戶中發生的重要事件，或使用 Webhook 觸發自動化動作。 您可以過濾來自 IBM Cloud 服務（如 Monitoring、Security and Compliance Center 及 Secrets Manager）的事件通知並將其遞送至電子郵件、SMS 及 Webhook。"
+        "long_description": "IBM Cloud® Event Notifications 是一項完全管理的雲端原生通訊與通知服務，可協助組織大規模回應事件並傳達重要資訊。 它支援兩個核心使用案例：事件驅動的操作警示與自動化，以及出埠交易商業通訊。 透過這項服務，組織可將作業事件遞送至 Slack、MS Teams 和 ServiceNow 等服務管理生態系統工具，透過 webhooks 或 Code Engine 整合來觸發自動化，並透過電子郵件、簡訊和推播通知等通道，向客戶和使用者傳送交易型商業訊息。\n\n**作業使用案例**\n\n*  **監視：** 警示、臨界值超限、執行時間通知及升級處理。\n*  **工作：** 批次處理/ETL 結果、備份、排程報告及可匯出通知。\n*  **CI/CD：** 建置失敗、部署確認及測試結果。\n*  **基礎架構：** 憑證到期、配額警告及容量警示。\n*  **審核：** 配置變更、權限授與及管理動作。\n\n**出埠商業通訊使用案例**\n*  **帳戶：** 驗證、密碼重設、一次性密碼 (OTP)、多因素驗證 (MFA) 以及安全警示。\n*  **商務：** 訂單確認、收據、出貨與追蹤通知。\n*  **計費：** 發票、付款確認、催繳通知與續約通知。\n*  **產品：** 提及、指派、核准與共用邀請。\n*  **支援：** 問題單更新與預約提醒。"
       }
     },
     "pricing_tags": [
@@ -136242,7 +136246,7 @@
       "us-south",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-08-18T05:17:27.797917197-04:00",
+    "updated": "2026-09-08T07:16:04.154667123-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/ecdb4690-c2d8-11eb-bff1-4f7b9d2dfe41?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -136730,7 +136734,7 @@
       }
     ],
     "description": "Transactional email via SMTP relay, plus event-driven automation and alerting across webhooks, Code Engine, SMS, Slack, and more. One centralized service. Rapid, no-code routing.",
-    "longDescription": "IBM Cloud® Event Notifications is an event notification routing service that notifies you to critical events that occur in your IBM Cloud account or triggers automated actions by using webhooks. You can filter and route event notifications from IBM Cloud services to Email, SMS, Webhooks and Push Notifications.",
+    "longDescription": "IBM Cloud® Event Notifications is a fully managed, cloud-native communication and notification service that helps organizations respond to events and communicate important information at scale. It supports two core use cases: event-driven operational alerting and automation, and outbound transactional business communication. With this one service, organizations can route operational events to service management ecosystem tools like Slack, MS Teams, and ServiceNow, trigger automations with webhooks or Code Engine integrations, and deliver transactional business messages to customers and users through channels such as email, SMS, and push notifications.\n\n\n**Operational Use Cases**\n\n* **Monitoring:** Alerts, threshold breaches, uptime notifications, and escalations.\n* **Jobs:** Batch/ETL results, backups, scheduled reports, and export-ready notifications.\n* **CI/CD:** Build failures, deployment confirmations, and test results.\n* **Infrastructure:** Certificate expiry, quota warnings, and capacity alerts.\n* **Audit:** Configuration changes, permission grants, and administrative actions.\n\n**Outbound Business Communication Use Cases**\n\n* **Account:** Verification, password reset, OTP & MFA, and security alerts.\n* **Commerce:** Order confirmations, receipts, shipping, and tracking notifications.\n* **Billing:** Invoices, payment confirmations, dunning, and renewal notifications.\n* **Product:** Mentions, assignments, approvals, and sharing invitations.\n* **Support:** Ticket updates and appointment reminders.",
     "displayName": "Event Notifications",
     "imageUrl": "https://us-south.event-notifications.cloud.ibm.com/eventnotifications-broker/images/app-icon.svg",
     "localSvgIcon": "/generated/icons/ecdb4690-c2d8-11eb-bff1-4f7b9d2dfe41.svg",
@@ -162025,19 +162029,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "ca-mon",
+      "br-sao",
+      "jp-osa",
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -225515,7 +225519,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "469-aa09461e3ef14148c8e7133cde43f518",
+    "_rev": "470-0b05eabfee33dd6633f6ca741c26b5e0",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -226013,7 +226017,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-09-01T12:02:50.885360694-04:00",
+    "updated": "2026-09-08T11:04:17.491684885-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -249671,12 +249675,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -258963,7 +258967,6 @@
     "created": "2018-11-19T20:43:19.725Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -259005,7 +259008,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "images": {
@@ -290468,12 +290472,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
@@ -294144,10 +294148,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {

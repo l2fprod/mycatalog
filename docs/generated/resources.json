@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -6046,10 +6046,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6060,7 +6056,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6642,16 +6642,16 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
       "eu-es",
       "us-south",
       "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6809,13 +6809,13 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8168,7 +8168,7 @@
       }
     ],
     "description": "Transactional email via SMTP relay, plus event-driven automation and alerting across webhooks, Code Engine, SMS, Slack, and more. One centralized service. Rapid, no-code routing.",
-    "longDescription": "IBM Cloud® Event Notifications is an event notification routing service that notifies you to critical events that occur in your IBM Cloud account or triggers automated actions by using webhooks. You can filter and route event notifications from IBM Cloud services to Email, SMS, Webhooks and Push Notifications.",
+    "longDescription": "IBM Cloud® Event Notifications is a fully managed, cloud-native communication and notification service that helps organizations respond to events and communicate important information at scale. It supports two core use cases: event-driven operational alerting and automation, and outbound transactional business communication. With this one service, organizations can route operational events to service management ecosystem tools like Slack, MS Teams, and ServiceNow, trigger automations with webhooks or Code Engine integrations, and deliver transactional business messages to customers and users through channels such as email, SMS, and push notifications.\n\n\n**Operational Use Cases**\n\n* **Monitoring:** Alerts, threshold breaches, uptime notifications, and escalations.\n* **Jobs:** Batch/ETL results, backups, scheduled reports, and export-ready notifications.\n* **CI/CD:** Build failures, deployment confirmations, and test results.\n* **Infrastructure:** Certificate expiry, quota warnings, and capacity alerts.\n* **Audit:** Configuration changes, permission grants, and administrative actions.\n\n**Outbound Business Communication Use Cases**\n\n* **Account:** Verification, password reset, OTP & MFA, and security alerts.\n* **Commerce:** Order confirmations, receipts, shipping, and tracking notifications.\n* **Billing:** Invoices, payment confirmations, dunning, and renewal notifications.\n* **Product:** Mentions, assignments, approvals, and sharing invitations.\n* **Support:** Ticket updates and appointment reminders.",
     "displayName": "Event Notifications",
     "imageUrl": "https://us-south.event-notifications.cloud.ibm.com/eventnotifications-broker/images/app-icon.svg",
     "localSvgIcon": "/generated/icons/ecdb4690-c2d8-11eb-bff1-4f7b9d2dfe41.svg",
@@ -10540,19 +10540,19 @@
   },
   {
     "geo_tags": [
+      "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "ca-mon",
+      "br-sao",
+      "jp-osa",
       "eu-de",
       "us-south",
       "au-syd",
-      "eu-gb",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum"
+      "eu-gb"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -18903,12 +18903,12 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20218,7 +20218,6 @@
   },
   {
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20260,7 +20259,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -22347,12 +22347,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
