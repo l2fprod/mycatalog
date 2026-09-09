@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -12005,6 +12005,7 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12012,8 +12013,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -49442,7 +49442,7 @@
   },
   {
     "_id": "cloudant",
-    "_rev": "69-4da9d104b408bf5065dd82d23a3b4f26",
+    "_rev": "70-61a38b8319ed57481b18afb3e8ac803e",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:cloudant",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant/%2A",
@@ -49450,16 +49450,16 @@
     "created": "2014-06-03T07:04:12Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
-      "eu-es",
       "eu-gb",
       "jp-osa",
       "jp-tok",
       "us-south",
+      "au-syd",
       "che01",
       "eu-de",
+      "eu-es",
       "us-east"
     ],
     "id": "cloudant",
@@ -50019,7 +50019,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-27T10:30:59.254863145-04:00",
+    "updated": "2026-09-09T10:39:41.272400637-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -51079,7 +51079,7 @@
       },
       {
         "_id": "cloudant-gen2-standard",
-        "_rev": "19-a244816bcbd85c3db36fee9b5c1c979f",
+        "_rev": "20-6aafc5c2fc3affe95e877534685fe707",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cloudant-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard/%2A",
@@ -51087,7 +51087,9 @@
         "created": "2026-06-17T14:15:24.156008256-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "eu-de",
+          "eu-es",
           "us-east"
         ],
         "id": "cloudant-gen2-standard",
@@ -51173,7 +51175,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-08-14T05:36:00.145372169-04:00",
+        "updated": "2026-09-09T10:39:41.266716349-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -78234,7 +78236,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "20-930a5ea61a425c4776a7431c8215a408",
+        "_rev": "21-a7c945a219dfca3aed3347f336d593b7",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children": [
@@ -81127,7 +81129,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-09-01T22:25:56.354615236-04:00",
+        "updated": "2026-09-09T06:03:52.201465027-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84539,7 +84541,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "20-930a5ea61a425c4776a7431c8215a408",
+        "_rev": "21-a7c945a219dfca3aed3347f336d593b7",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise/%2A",
@@ -84627,7 +84629,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-09-01T22:25:56.354615236-04:00",
+        "updated": "2026-09-09T06:03:52.201465027-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -84858,7 +84860,7 @@
   },
   {
     "_id": "databases-for-mongodb",
-    "_rev": "711-beab2d085b6b6546ab4171b8f153bbb7",
+    "_rev": "712-b203b90cd214fcd4a4d7ddeb739548b7",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mongodb",
     "children": [
@@ -90565,7 +90567,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "17-d2058a853c4e2cbd4111fa8270e2b65a",
+        "_rev": "19-35f39428a624651ff1a0b8f7f95a99c2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children": [
@@ -92293,7 +92295,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:02:05.658221898-04:00",
+        "updated": "2026-09-09T06:04:23.789626402-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -95147,6 +95149,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -95154,11 +95160,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -95249,7 +95251,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "54-efc5260d0b085d5a9b9b3407d626e1d7",
+        "_rev": "56-1ad698cec2d13d2f010950097535c0d8",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children": [
@@ -96051,7 +96053,7 @@
           },
           {
             "_id": "databases-for-mongodb-standard-gen2:eu-de",
-            "_rev": "9-7e6c04b03d2d0bdd863f69f3f9555a01",
+            "_rev": "10-08f8b9a64f033742da348971a0190b03",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aeu-de",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:eu-de/%2A",
@@ -96079,7 +96081,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": false
+                    "backups_create_supported": false,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -96440,7 +96443,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-07-06T13:45:31.111694249-04:00",
+            "updated": "2026-09-09T05:13:25.086493332-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:eu-de?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -96448,7 +96451,7 @@
           },
           {
             "_id": "databases-for-mongodb-standard-gen2:eu-es",
-            "_rev": "5-c60d4688c8d8c25df54059ef659adc75",
+            "_rev": "6-fe638cdae46e723d9fa216f139113329",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aeu-es",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:eu-es/%2A",
@@ -96476,7 +96479,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": false
+                    "backups_create_supported": false,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -96837,7 +96841,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-09-01T22:24:46.634618468-04:00",
+            "updated": "2026-09-09T05:13:41.933428517-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:eu-es?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -98124,7 +98128,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-01T22:24:55.431816668-04:00",
+        "updated": "2026-09-09T06:04:24.389436992-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -98136,10 +98140,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -98150,7 +98150,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "eu-de",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -98294,7 +98298,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-01T12:00:44.769065619-04:00",
+    "updated": "2026-09-09T05:59:17.829510649-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -98540,7 +98544,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "17-d2058a853c4e2cbd4111fa8270e2b65a",
+        "_rev": "19-35f39428a624651ff1a0b8f7f95a99c2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding/%2A",
@@ -98627,7 +98631,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:02:05.658221898-04:00",
+        "updated": "2026-09-09T06:04:23.789626402-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -98750,7 +98754,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "54-efc5260d0b085d5a9b9b3407d626e1d7",
+        "_rev": "56-1ad698cec2d13d2f010950097535c0d8",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard/%2A",
@@ -98839,7 +98843,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-01T22:24:55.431816668-04:00",
+        "updated": "2026-09-09T06:04:24.389436992-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -101890,7 +101894,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "26-50c611fae0144f8d443530c460706c05",
+        "_rev": "27-6533a05eb86237ac2b50a844733fbe27",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children": [
@@ -102951,7 +102955,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:04:08.270983072-04:00",
+        "updated": "2026-09-09T06:02:20.801610249-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -103233,7 +103237,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "26-50c611fae0144f8d443530c460706c05",
+        "_rev": "27-6533a05eb86237ac2b50a844733fbe27",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard/%2A",
@@ -103314,7 +103318,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:04:08.270983072-04:00",
+        "updated": "2026-09-09T06:02:20.801610249-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -106429,7 +106433,7 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "52-8caabb8e0d31aa94d996f6a7f94bc7f0",
+        "_rev": "54-990b4933ff53b47a487271e379d5c2c7",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children": [
@@ -108157,7 +108161,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:02:36.771369243-04:00",
+        "updated": "2026-09-09T06:04:54.93335373-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -108551,7 +108555,7 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "52-8caabb8e0d31aa94d996f6a7f94bc7f0",
+        "_rev": "54-990b4933ff53b47a487271e379d5c2c7",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard/%2A",
@@ -108638,7 +108642,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-08-18T03:02:36.771369243-04:00",
+        "updated": "2026-09-09T06:04:54.93335373-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -111783,7 +111787,7 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "20-4098d484a438214fc2dab12b09fb4961",
+        "_rev": "21-e5fc6808f805bc7b439cdf7aa5c0d6b2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children": [
@@ -114092,7 +114096,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-01T22:26:27.195169132-04:00",
+        "updated": "2026-09-09T06:01:19.414008708-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -114476,7 +114480,7 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "20-4098d484a438214fc2dab12b09fb4961",
+        "_rev": "21-e5fc6808f805bc7b439cdf7aa5c0d6b2",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard/%2A",
@@ -114564,7 +114568,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-01T22:26:27.195169132-04:00",
+        "updated": "2026-09-09T06:01:19.414008708-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -114681,7 +114685,7 @@
   },
   {
     "_id": "databases-independent-backups",
-    "_rev": "29-f536bd0fd61190117fcb056bcd0f4ae2",
+    "_rev": "30-0c4575b662ab9da725669f432c7692c6",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-independent-backups",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups/%2A",
@@ -114789,7 +114793,7 @@
       "us-east",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-09-02T17:12:25.069686314-04:00",
+    "updated": "2026-09-09T06:02:51.180744582-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -114797,7 +114801,7 @@
     "plans": [
       {
         "_id": "databases-independent-backups-gen2-standard",
-        "_rev": "27-3c604da75ca807482453c0b956e1848b",
+        "_rev": "28-375b6fb62f72699627a3d6e72d493b4e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-independent-backups-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard/%2A",
@@ -114879,7 +114883,7 @@
           "ibm_created",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-09-02T17:12:25.05330136-04:00",
+        "updated": "2026-09-09T06:02:51.180708526-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -117839,15 +117843,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "eu-es",
+      "au-syd",
+      "us-east",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "eu-es",
-      "us-south",
-      "eu-gb",
-      "au-syd",
-      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -153951,14 +153955,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -162029,19 +162033,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "jp-osa",
-      "in-mum",
-      "ca-tor",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "br-sao",
-      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "eu-gb",
+      "in-mum",
       "ca-mon",
-      "au-syd"
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "in-che",
+      "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -186668,7 +186672,7 @@
       },
       {
         "_id": "messages-for-rabbitmq-gen2-standard",
-        "_rev": "20-b205bc58750e740dbae333b67b45670b",
+        "_rev": "21-1bd81f529b4c928cee50741e027287f3",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-gen2-standard",
         "children": [
@@ -188668,7 +188672,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-09-01T22:25:25.841166958-04:00",
+        "updated": "2026-09-09T06:01:50.191150713-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -189053,7 +189057,7 @@
       },
       {
         "_id": "messages-for-rabbitmq-gen2-standard",
-        "_rev": "20-b205bc58750e740dbae333b67b45670b",
+        "_rev": "21-1bd81f529b4c928cee50741e027287f3",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard/%2A",
@@ -189149,7 +189153,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-09-01T22:25:25.841166958-04:00",
+        "updated": "2026-09-09T06:01:50.191150713-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -225519,7 +225523,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "471-bab076b6feae6abd4af15adde970b9a5",
+    "_rev": "472-173d988a22e4be648addbaf079f3fe4e",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -226017,7 +226021,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-09-08T17:20:45.898057816-04:00",
+    "updated": "2026-09-09T09:10:04.720911154-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -243141,553 +243145,6 @@
     "imageUrl": "https://utimaco.com/themes/custom/utimaco/assets/img/utimaco-logo.svg",
     "localSvgIcon": "/generated/icons/4d895c2d-93cf-4c48-8197-f3760d0d6400.svg",
     "localPngIcon": "/generated/icons/4d895c2d-93cf-4c48-8197-f3760d0d6400.png"
-  },
-  {
-    "_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-    "_rev": "99-ec20dd1f665b321d7539a6585d12e561",
-    "active": true,
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c82e2968-02eb-487e-84f0-01cbd884b5c0",
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/%2A",
-    "complete": true,
-    "created": "2025-01-27T01:22:51.519535281-05:00",
-    "disabled": false,
-    "geo_tags": [
-      "global"
-    ],
-    "id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-    "images": {
-      "image": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg"
-    },
-    "kind": "service",
-    "metadata": {
-      "other": {
-        "PC": {
-          "onboardingOfferingId": "6983cb35c8394da18d55285c22b5edf4:o:574eb852-9ae7-426d-90ac-699d92088a7d",
-          "support": {
-            "languages": [
-              "en"
-            ],
-            "locations": [
-              "IN",
-              "GB"
-            ],
-            "process": "This field is required. Describe the support you provide for your product and add additional information that isn't provided in the other fields.",
-            "status_url": "https://starsystems.in/vmware-vlp/",
-            "support_details": [
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [],
-                  "timezone": "Asia/Calcutta"
-                },
-                "contact": "support@starlms.ai",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "email"
-              },
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [],
-                  "timezone": "Asia/Calcutta"
-                },
-                "contact": "Whatsapp Support: +918015385179",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "other"
-              }
-            ],
-            "support_escalation": {
-              "contact": "vlp@starsystems.in",
-              "escalation_wait_time": {
-                "type": "hour",
-                "value": 1
-              },
-              "response_wait_time": {
-                "type": "hour",
-                "value": 1
-              }
-            },
-            "support_type": "third_party",
-            "url": "https://starsystems.in/contact-us/"
-          }
-        }
-      },
-      "pricing": {
-        "metrics": null,
-        "origin": "pricing_catalog",
-        "starting_price": {},
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/pricing"
-      },
-      "rc_compatible": true,
-      "service": {
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "bindable": true,
-        "custom_create_page_hybrid_enabled": false,
-        "extension": null,
-        "iam_compatible": false,
-        "parameters": [
-          {
-            "associations": null,
-            "description": "must NOT contain spaces,numbers,characters",
-            "displayname": "Tenant Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "user-tenant",
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Email",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "email",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "First Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "first-name",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Last Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "last-name",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Mobile Number",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "mobile-number",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          }
-        ],
-        "plan_updateable": false,
-        "rc_provisionable": true,
-        "service_check_enabled": false,
-        "service_key_supported": false,
-        "state": "",
-        "test_check_interval": 0,
-        "type": "",
-        "unique_api_key": false,
-        "user_defined_service": null
-      },
-      "ui": {
-        "strings": {
-          "en": {
-            "bullets": [
-              {
-                "description": "Accessible universally, at any time, on most devices with a modern HTML5 browser. No installers or plugins are needed.",
-                "title": "Access From Anywhere"
-              },
-              {
-                "description": "Supports complex multi-VM configurations.\nSupports almost all guest operating systems.\nProvides true VM \"console\" for advanced uses.",
-                "title": "A Powerful Virtual Lab"
-              },
-              {
-                "description": "No matter if you need one lab or thousands of labs, deliver as many labs and VM’s as you need.",
-                "title": "Cloud Scale"
-              },
-              {
-                "description": "Deliver hands-on, lab-based IT training on how to use your products, without the need for any complicated installations.",
-                "title": "On-Demand IT Training"
-              },
-              {
-                "description": "Walled-off lab environments that can enable use cases such as malware assessment and remediation.",
-                "title": "Isolated Environments"
-              }
-            ],
-            "media": [
-              {
-                "type": "image/jpg",
-                "url": "https://digilabs.ai/wp-content/uploads/2025/09/mqdefault.webp"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "doc_url": "https://starsystems.in/vmware-vlp/",
-          "terms_url": "https://starsystems.in/star-vlp-software-terms-of-use/"
-        }
-      }
-    },
-    "name": "starvlp",
-    "overview_ui": {
-      "en": {
-        "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
-        "display_name": "STAR Virtual Learning Platform (VLP)",
-        "long_description": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations"
-      }
-    },
-    "pricing_tags": [
-      "free",
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "Star Systems India Private Limited"
-    },
-    "tags": [
-      "cloud labs",
-      "corporate training",
-      "custom_kind_service",
-      "enterprise_app",
-      "free",
-      "global",
-      "ibm_third_party",
-      "learning",
-      "online learning",
-      "paid",
-      "paid_only",
-      "product demo",
-      "rc_compatible",
-      "sales demo",
-      "support_third_party",
-      "training",
-      "virtual labs",
-      "virtual learning",
-      "virtual learning platform",
-      "vlp",
-      "vmware",
-      "vmware learning"
-    ],
-    "updated": "2025-09-03T01:23:14.534000483-04:00",
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0?complete=true",
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "_id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
-        "_rev": "18-b5c2722daa1724856be6285f58927470",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:50765ac9-ddcb-4d9b-8b4b-924c275870f1",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/%2A",
-        "complete": true,
-        "created": "2025-03-31T05:13:44.94190915-04:00",
-        "disabled": false,
-        "geo_tags": [
-          "global"
-        ],
-        "id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
-        "kind": "plan",
-        "metadata": {
-          "plan": {
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "",
-            "test_check_interval": 0
-          },
-          "pricing": {
-            "metrics": null,
-            "origin": "pricing_catalog",
-            "sales_avenue": [
-              "catalog"
-            ],
-            "starting_price": {},
-            "type": "free",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/pricing"
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": false,
-            "parameters": null,
-            "plan_updateable": false,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "VMWare VLP"
-                  },
-                  {
-                    "description": "IBM Cloud VDC"
-                  },
-                  {
-                    "description": "Windows VMs / RedHat VMs\nNetwork / Storage"
-                  },
-                  {
-                    "description": "For IBM Sales, Please login to \"https://www.starlms.ai/digilabs\""
-                  },
-                  {
-                    "description": "IBM account users need \"All Identity and Access enabled services\" permissions to login to VLP"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "star---vlp-free-plan-",
-        "overview_ui": {
-          "en": {
-            "description": "Free plan for 5 Days ",
-            "display_name": "Star VLP-free-plan",
-            "long_description": "Free plan for 5 Days "
-          }
-        },
-        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "pricing_tags": [
-          "free"
-        ],
-        "provider": {
-          "name": "Star Systems India Private Limited"
-        },
-        "tags": [
-          "enterprise_app",
-          "ibm_third_party",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "training",
-          "sales demo",
-          "product demo",
-          "corporate training"
-        ],
-        "updated": "2025-07-18T07:50:54.296840848-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Free plan for 5 Days ",
-        "displayName": "Star VLP-free-plan"
-      },
-      {
-        "_id": "2f5eb731-d590-47a1-8943-8e4e26656460",
-        "_rev": "13-b612824f51429f5efe2b97d6370c4b26",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:2f5eb731-d590-47a1-8943-8e4e26656460",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/%2A",
-        "complete": true,
-        "created": "2025-06-25T21:50:32.119116594-04:00",
-        "disabled": false,
-        "geo_tags": [
-          "global"
-        ],
-        "id": "2f5eb731-d590-47a1-8943-8e4e26656460",
-        "kind": "plan",
-        "metadata": {
-          "plan": {
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": false,
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "",
-            "test_check_interval": 0
-          },
-          "pricing": {
-            "metrics": null,
-            "origin": "pricing_catalog",
-            "sales_avenue": [
-              "catalog"
-            ],
-            "starting_price": {},
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/pricing"
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": false,
-            "parameters": null,
-            "plan_updateable": false,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": false,
-            "user_defined_service": null
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "SaaS platform delivering hands-on virtual IT training labs to anyone on the planet at cloud scale\n"
-                  },
-                  {
-                    "description": "Seamless integration of lesson materials, virtual machines, video, live chat, and social in a unified web-based interface  \n"
-                  },
-                  {
-                    "description": "Access through a standard browser\nNo plugins needed\nNothing to install\n"
-                  },
-                  {
-                    "description": "Universal Access on any device\nIncluding tablets / mobile for the manual\nSupports lab access from BIOS through to O/S\n"
-                  },
-                  {
-                    "description": "Language supported : English, German, French, Italian, Spanish, Dutch, Brazilian-Portuguese, Russian, and Chinese, Korean, and Japanese\n"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "vlp-standard-plan",
-        "overview_ui": {
-          "en": {
-            "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
-            "display_name": "STAR VLP Standard-plan",
-            "long_description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. "
-          }
-        },
-        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "Star Systems India Private Limited"
-        },
-        "tags": [
-          "enterprise_app",
-          "ibm_third_party",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "training",
-          "sales demo",
-          "product demo",
-          "corporate training"
-        ],
-        "updated": "2025-07-10T05:06:27.259080824-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
-        "displayName": "STAR VLP Standard-plan"
-      }
-    ],
-    "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
-    "longDescription": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
-    "displayName": "STAR Virtual Learning Platform (VLP)",
-    "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg",
-    "localSvgIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.svg",
-    "localPngIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.png"
   },
   {
     "_id": "2bea02b0-c0a4-11ee-83aa-3171b0bf2976",
@@ -266184,6 +265641,553 @@
     "localPngIcon": "/generated/icons/15.png"
   },
   {
+    "_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+    "_rev": "100-744f1711c2ec7b3df0ad66d52a276807",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c82e2968-02eb-487e-84f0-01cbd884b5c0",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/%2A",
+    "complete": true,
+    "created": "2025-01-27T01:22:51.519535281-05:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+    "images": {
+      "image": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "6983cb35c8394da18d55285c22b5edf4:o:574eb852-9ae7-426d-90ac-699d92088a7d",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "IN",
+              "GB"
+            ],
+            "process": "This field is required. Describe the support you provide for your product and add additional information that isn't provided in the other fields.",
+            "status_url": "https://starsystems.in/vmware-vlp/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Asia/Calcutta"
+                },
+                "contact": "support@starlms.ai",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "email"
+              },
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Asia/Calcutta"
+                },
+                "contact": "Whatsapp Support: +918015385179",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "other"
+              }
+            ],
+            "support_escalation": {
+              "contact": "vlp@starsystems.in",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://starsystems.in/contact-us/"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": "must NOT contain spaces,numbers,characters",
+            "displayname": "Tenant Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "user-tenant",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "email",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "First Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "first-name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Last Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "last-name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Mobile Number",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "mobile-number",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          }
+        ],
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Accessible universally, at any time, on most devices with a modern HTML5 browser. No installers or plugins are needed.",
+                "title": "Access From Anywhere"
+              },
+              {
+                "description": "Supports complex multi-VM configurations.\nSupports almost all guest operating systems.\nProvides true VM \"console\" for advanced uses.",
+                "title": "A Powerful Virtual Lab"
+              },
+              {
+                "description": "No matter if you need one lab or thousands of labs, deliver as many labs and VM’s as you need.",
+                "title": "Cloud Scale"
+              },
+              {
+                "description": "Deliver hands-on, lab-based IT training on how to use your products, without the need for any complicated installations.",
+                "title": "On-Demand IT Training"
+              },
+              {
+                "description": "Walled-off lab environments that can enable use cases such as malware assessment and remediation.",
+                "title": "Isolated Environments"
+              }
+            ],
+            "media": [
+              {
+                "type": "image/jpg",
+                "url": "https://digilabs.ai/wp-content/uploads/2025/09/mqdefault.webp"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://starsystems.in/vmware-vlp/",
+          "terms_url": "https://starsystems.in/star-vlp-software-terms-of-use/"
+        }
+      }
+    },
+    "name": "starvlp",
+    "overview_ui": {
+      "en": {
+        "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
+        "display_name": "VLP",
+        "long_description": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations"
+      }
+    },
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Star Systems India Private Limited"
+    },
+    "tags": [
+      "cloud labs",
+      "corporate training",
+      "custom_kind_service",
+      "enterprise_app",
+      "free",
+      "global",
+      "ibm_third_party",
+      "learning",
+      "online learning",
+      "paid",
+      "paid_only",
+      "product demo",
+      "rc_compatible",
+      "sales demo",
+      "support_third_party",
+      "training",
+      "virtual labs",
+      "virtual learning",
+      "virtual learning platform",
+      "vlp",
+      "vmware",
+      "vmware learning"
+    ],
+    "updated": "2026-09-09T08:58:51.065219113-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
+        "_rev": "18-b5c2722daa1724856be6285f58927470",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:50765ac9-ddcb-4d9b-8b4b-924c275870f1",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/%2A",
+        "complete": true,
+        "created": "2025-03-31T05:13:44.94190915-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "VMWare VLP"
+                  },
+                  {
+                    "description": "IBM Cloud VDC"
+                  },
+                  {
+                    "description": "Windows VMs / RedHat VMs\nNetwork / Storage"
+                  },
+                  {
+                    "description": "For IBM Sales, Please login to \"https://www.starlms.ai/digilabs\""
+                  },
+                  {
+                    "description": "IBM account users need \"All Identity and Access enabled services\" permissions to login to VLP"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "star---vlp-free-plan-",
+        "overview_ui": {
+          "en": {
+            "description": "Free plan for 5 Days ",
+            "display_name": "Star VLP-free-plan",
+            "long_description": "Free plan for 5 Days "
+          }
+        },
+        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "Star Systems India Private Limited"
+        },
+        "tags": [
+          "enterprise_app",
+          "ibm_third_party",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "training",
+          "sales demo",
+          "product demo",
+          "corporate training"
+        ],
+        "updated": "2025-07-18T07:50:54.296840848-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Free plan for 5 Days ",
+        "displayName": "Star VLP-free-plan"
+      },
+      {
+        "_id": "2f5eb731-d590-47a1-8943-8e4e26656460",
+        "_rev": "13-b612824f51429f5efe2b97d6370c4b26",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:2f5eb731-d590-47a1-8943-8e4e26656460",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/%2A",
+        "complete": true,
+        "created": "2025-06-25T21:50:32.119116594-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "2f5eb731-d590-47a1-8943-8e4e26656460",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "SaaS platform delivering hands-on virtual IT training labs to anyone on the planet at cloud scale\n"
+                  },
+                  {
+                    "description": "Seamless integration of lesson materials, virtual machines, video, live chat, and social in a unified web-based interface  \n"
+                  },
+                  {
+                    "description": "Access through a standard browser\nNo plugins needed\nNothing to install\n"
+                  },
+                  {
+                    "description": "Universal Access on any device\nIncluding tablets / mobile for the manual\nSupports lab access from BIOS through to O/S\n"
+                  },
+                  {
+                    "description": "Language supported : English, German, French, Italian, Spanish, Dutch, Brazilian-Portuguese, Russian, and Chinese, Korean, and Japanese\n"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "vlp-standard-plan",
+        "overview_ui": {
+          "en": {
+            "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
+            "display_name": "STAR VLP Standard-plan",
+            "long_description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. "
+          }
+        },
+        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Star Systems India Private Limited"
+        },
+        "tags": [
+          "enterprise_app",
+          "ibm_third_party",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "training",
+          "sales demo",
+          "product demo",
+          "corporate training"
+        ],
+        "updated": "2025-07-10T05:06:27.259080824-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
+        "displayName": "STAR VLP Standard-plan"
+      }
+    ],
+    "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
+    "longDescription": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
+    "displayName": "VLP",
+    "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg",
+    "localSvgIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.svg",
+    "localPngIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.png"
+  },
+  {
     "_id": "09f5a6ea-185e-4625-8281-9e8629360a4f",
     "_rev": "20-7d575f28ba22afc4c872643644b35e17",
     "active": true,
@@ -281576,12 +281580,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
