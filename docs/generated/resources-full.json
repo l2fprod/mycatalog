@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "images": {
@@ -12005,7 +12005,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12013,7 +12012,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -51079,7 +51079,7 @@
       },
       {
         "_id": "cloudant-gen2-standard",
-        "_rev": "20-6aafc5c2fc3affe95e877534685fe707",
+        "_rev": "21-58b79406037799677de16a76cf71840c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cloudant-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard/%2A",
@@ -51175,7 +51175,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-09-09T10:39:41.266716349-04:00",
+        "updated": "2026-09-10T11:46:47.458352306-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -53810,7 +53810,7 @@
   },
   {
     "_id": "002db8b6-4893-4f35-b49a-19c46311f59a",
-    "_rev": "29-65df0d8899c4bc306e0c48a37f6c8346",
+    "_rev": "32-f6c0850f93a433e0cd99a0cbb69e8bd9",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:002db8b6-4893-4f35-b49a-19c46311f59a",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/002db8b6-4893-4f35-b49a-19c46311f59a/%2A",
@@ -53947,7 +53947,7 @@
             ],
             "media": [
               {
-                "caption": "Using plain language, the agent reads the commissioning manifest in Maximo MAS and cross-checks discipline-by-discipline readiness",
+                "caption": "Using plain language, the agent cross-checks discipline-by-discipline readiness against CII SR19-01 DR310. No connection needed to start.",
                 "type": "image/png",
                 "url": "https://atlas.vistergy.com/architecture-diagram-cr.png"
               }
@@ -53963,9 +53963,9 @@
     "name": "vistergy-ltd-commissioning-readiness",
     "overview_ui": {
       "en": {
-        "description": "Is your facility ready to commission? A gate-by-gate readiness view, the blockers, and the evidence, inside Maximo.",
+        "description": "Is your facility ready to commission? Gate-by-gate readiness, the blockers, and the evidence. No connection needed to start.",
         "display_name": "Commissioning Readiness",
-        "long_description": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle, inside your Maximo. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure."
+        "long_description": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle. No system connection is needed to start. Connect IBM Maximo to score your own records. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure."
       }
     },
     "pricing_tags": [
@@ -53989,7 +53989,7 @@
       "support_third_party",
       "watson"
     ],
-    "updated": "2026-08-02T23:22:16.36284304-04:00",
+    "updated": "2026-09-10T11:00:40.267510104-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/002db8b6-4893-4f35-b49a-19c46311f59a?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -54104,8 +54104,8 @@
         "displayName": "CR Monthly Subscription"
       }
     ],
-    "description": "Is your facility ready to commission? A gate-by-gate readiness view, the blockers, and the evidence, inside Maximo.",
-    "longDescription": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle, inside your Maximo. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure.",
+    "description": "Is your facility ready to commission? Gate-by-gate readiness, the blockers, and the evidence. No connection needed to start.",
+    "longDescription": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle. No system connection is needed to start. Connect IBM Maximo to score your own records. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure.",
     "displayName": "Commissioning Readiness",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/002db8b6-4893-4f35-b49a-19c46311f59a.svg",
@@ -65684,7 +65684,7 @@
   },
   {
     "_id": "eccd3054-2b9f-4796-bf30-be0c847c5247",
-    "_rev": "42-5d2b853cd3f76933e2c9e33333e64e91",
+    "_rev": "45-2a15341df7ba74ed80c9096a306ff257",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:eccd3054-2b9f-4796-bf30-be0c847c5247",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/eccd3054-2b9f-4796-bf30-be0c847c5247/%2A",
@@ -65807,8 +65807,8 @@
                 "title": "Ask in plain English, get structured answers"
               },
               {
-                "description": "Reads work orders, service requests, and compliance docs straight from your MAS instance. Authorised with full governance audit per action.",
-                "title": "Live in Maximo, not alongside it"
+                "description": "No system connection is needed. Connect IBM Maximo and it reads work orders, service requests, and compliance docs from your MAS instance.",
+                "title": "Works with or without a connection"
               },
               {
                 "description": "Detects when a question contains a write intent and surfaces the exact Maximo affordance, never auto-fires. Expert sign-off where it belongs",
@@ -65821,7 +65821,7 @@
             ],
             "media": [
               {
-                "caption": "Using plain language, the agent audits the work package against CII SR19-01 v2.0 inside the customer's Maximo MAS instance.",
+                "caption": "Using plain language, the agent audits the work package against CII SR19-01 v2.0. No system connection needed.",
                 "type": "image/png",
                 "url": "https://atlas.vistergy.com/architecture-diagram-cwpc.png"
               }
@@ -65839,7 +65839,7 @@
       "en": {
         "description": "Know your work packages are compliant before they reach the facility. Regulator-ready audit trail per finding.",
         "display_name": "Construction Work Pack Compliance",
-        "long_description": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). It reads work-pack state live from your Maximo, and on your authorisation writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG."
+        "long_description": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. On your authorisation it then writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG."
       }
     },
     "pricing_tags": [
@@ -65872,7 +65872,7 @@
       "watson",
       "work-pack"
     ],
-    "updated": "2026-06-27T01:52:32.313650177-04:00",
+    "updated": "2026-09-10T11:02:14.154340668-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/eccd3054-2b9f-4796-bf30-be0c847c5247?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -66089,7 +66089,7 @@
       }
     ],
     "description": "Know your work packages are compliant before they reach the facility. Regulator-ready audit trail per finding.",
-    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). It reads work-pack state live from your Maximo, and on your authorisation writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
+    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. On your authorisation it then writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
     "displayName": "Construction Work Pack Compliance",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/eccd3054-2b9f-4796-bf30-be0c847c5247.svg",
@@ -98861,7 +98861,7 @@
   },
   {
     "_id": "databases-for-mysql",
-    "_rev": "825-02b24e4ce7161300ec552a537904f1b7",
+    "_rev": "826-ff1565f0ba6fc084d478c61b250bcb9b",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mysql",
     "children": [
@@ -101894,7 +101894,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "27-6533a05eb86237ac2b50a844733fbe27",
+        "_rev": "28-2054c084c8f0a08568476e941511645e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children": [
@@ -102955,7 +102955,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-09T06:02:20.801610249-04:00",
+        "updated": "2026-09-10T04:29:57.68509792-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -103115,7 +103115,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-02T01:27:38.574048306-04:00",
+    "updated": "2026-09-10T04:29:57.685311632-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -103237,7 +103237,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "27-6533a05eb86237ac2b50a844733fbe27",
+        "_rev": "28-2054c084c8f0a08568476e941511645e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard/%2A",
@@ -103318,7 +103318,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-09T06:02:20.801610249-04:00",
+        "updated": "2026-09-10T04:29:57.68509792-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -106767,7 +106767,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:eu-de",
-            "_rev": "9-98559f3ce4878e9f693c17a2600cd516",
+            "_rev": "10-4820e7c0c386489d334fc8a4d55ffd7b",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aeu-de",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-de/%2A",
@@ -106795,7 +106795,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -107088,7 +107089,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-07-06T13:43:50.787576368-04:00",
+            "updated": "2026-09-10T03:54:26.875736811-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-de?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -107752,7 +107753,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:us-east",
-            "_rev": "11-7ba0dfd67d108015d0d9364f8f46703e",
+            "_rev": "12-600a37b68c614b702cf116b9ff0231e3",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aus-east",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:us-east/%2A",
@@ -107780,7 +107781,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -108070,7 +108072,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-07-20T12:35:52.793480121-04:00",
+            "updated": "2026-09-10T03:54:42.863771286-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:us-east?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -117846,13 +117848,13 @@
       "eu-es",
       "us-south",
       "eu-gb",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02",
-      "eu-de",
-      "au-syd",
-      "us-east"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -122595,13 +122597,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -138589,7 +138591,7 @@
   },
   {
     "_id": "15e07693-3bb2-4350-91ff-827366c41066",
-    "_rev": "38-06abff3897970bbbf1747b461497fec5",
+    "_rev": "41-6ade8371c409da2377e36cb3fa4df64f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:15e07693-3bb2-4350-91ff-827366c41066",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/15e07693-3bb2-4350-91ff-827366c41066/%2A",
@@ -138720,13 +138722,13 @@
                 "title": "Quantitative completeness score per event"
               },
               {
-                "description": "Integrates with IBM Maximo or any base.Connector-compliant EAM with regulator-ready audit trail per handover event.",
+                "description": "Integrates with IBM Maximo or any compatible EAM with regulator-ready audit trail per handover event.",
                 "title": "Maximo and EAM-agnostic integration"
               }
             ],
             "media": [
               {
-                "caption": "Facility Handover Compliance Agent: how a handover validation request flows from the customer through IBM watsonx Orchestrate to the agent endpoint, which runs ISO 19650-4 Clause 7 validators, CFIHOS V2.0 document-requirement checks, and ISO 19650-3 AIM continuity coverage against handover documents in the customer Maximo MAS environment, and returns a completeness score with gap-by-gap remediation list and audit trail.",
+                "caption": "Using plain language, the agent validates handover documents against ISO 19650-4 Clause 7 and CFIHOS V2.0. No connection needed.",
                 "type": "image/png",
                 "url": "https://atlas.vistergy.com/architecture-diagram-hc.png"
               }
@@ -138744,7 +138746,7 @@
       "en": {
         "description": "Know whether your handover package is complete enough to sign off, with the gaps and the evidence, per event.",
         "display_name": "Facility Handover Compliance",
-        "long_description": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure."
+        "long_description": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. No system connection is needed. Connect IBM Maximo when you want it to read your live handover packages, asset records, and document status. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure."
       }
     },
     "pricing_tags": [
@@ -138768,7 +138770,7 @@
       "support_third_party",
       "watson"
     ],
-    "updated": "2026-06-27T01:52:02.1095915-04:00",
+    "updated": "2026-09-10T11:55:42.031431243-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/15e07693-3bb2-4350-91ff-827366c41066?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -138881,7 +138883,7 @@
       }
     ],
     "description": "Know whether your handover package is complete enough to sign off, with the gaps and the evidence, per event.",
-    "longDescription": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure.",
+    "longDescription": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. No system connection is needed. Connect IBM Maximo when you want it to read your live handover packages, asset records, and document status. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure.",
     "displayName": "Facility Handover Compliance",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/15e07693-3bb2-4350-91ff-827366c41066.svg",
@@ -162033,19 +162035,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "ca-tor",
       "ca-mon",
-      "eu-de",
-      "us-south",
-      "au-syd",
       "eu-gb",
       "in-che",
-      "jp-osa",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "br-sao"
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "jp-osa",
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -209790,7 +209792,7 @@
       },
       {
         "_id": "55997a8e-b062-4204-92e2-536d0c83d06f",
-        "_rev": "19-745c14d26909ead93cbcc94ca312fc34",
+        "_rev": "20-559caeed0d02ecf1d687a54dc8881526",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:55997a8e-b062-4204-92e2-536d0c83d06f",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/55997a8e-b062-4204-92e2-536d0c83d06f/%2A",
@@ -209996,14 +209998,11 @@
           "name": "Technology Expert Labs"
         },
         "tags": [
-          "rc_compatible",
           "migration_tools",
-          "web_and_app",
-          "ibm_created",
-          "cloud-ui",
-          "group-build-services"
+          "rc_compatible",
+          "web_and_app"
         ],
-        "updated": "2025-03-05T09:51:59.064342212-05:00",
+        "updated": "2026-09-10T07:23:03.918783502-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/55997a8e-b062-4204-92e2-536d0c83d06f?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -282531,12 +282530,12 @@
         "created": "2015-10-15T05:13:52Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
-          "eu-gb",
-          "us-south",
           "au-syd",
           "ca-tor",
-          "jp-tok"
+          "jp-tok",
+          "eu-de",
+          "eu-gb",
+          "us-south"
         ],
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "images": {
@@ -294152,10 +294151,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {

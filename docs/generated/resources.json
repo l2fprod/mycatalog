@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -830,7 +830,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -838,7 +837,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4503,8 +4503,8 @@
         "displayName": "CR Monthly Subscription"
       }
     ],
-    "description": "Is your facility ready to commission? A gate-by-gate readiness view, the blockers, and the evidence, inside Maximo.",
-    "longDescription": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle, inside your Maximo. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure.",
+    "description": "Is your facility ready to commission? Gate-by-gate readiness, the blockers, and the evidence. No connection needed to start.",
+    "longDescription": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle. No system connection is needed to start. Connect IBM Maximo to score your own records. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure.",
     "displayName": "Commissioning Readiness",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/002db8b6-4893-4f35-b49a-19c46311f59a.svg",
@@ -5038,7 +5038,7 @@
       }
     ],
     "description": "Know your work packages are compliant before they reach the facility. Regulator-ready audit trail per finding.",
-    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). It reads work-pack state live from your Maximo, and on your authorisation writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
+    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. On your authorisation it then writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
     "displayName": "Construction Work Pack Compliance",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/eccd3054-2b9f-4796-bf30-be0c847c5247.svg",
@@ -6645,13 +6645,13 @@
       "eu-es",
       "us-south",
       "eu-gb",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "fra02",
-      "eu-de",
-      "au-syd",
-      "us-east"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6809,13 +6809,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -8349,7 +8349,7 @@
       }
     ],
     "description": "Know whether your handover package is complete enough to sign off, with the gaps and the evidence, per event.",
-    "longDescription": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure.",
+    "longDescription": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. No system connection is needed. Connect IBM Maximo when you want it to read your live handover packages, asset records, and document status. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure.",
     "displayName": "Facility Handover Compliance",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/15e07693-3bb2-4350-91ff-827366c41066.svg",
@@ -10540,19 +10540,19 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
       "ca-mon",
-      "eu-de",
-      "us-south",
-      "au-syd",
       "eu-gb",
       "in-che",
-      "jp-osa",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "br-sao"
+      "eu-de",
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "jp-osa",
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
