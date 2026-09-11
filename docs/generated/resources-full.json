@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "images": {
@@ -12005,7 +12005,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12013,7 +12012,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -49450,17 +49450,17 @@
     "created": "2014-06-03T07:04:12Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "che01",
-      "eu-de",
-      "eu-es",
-      "us-east",
       "br-sao",
       "ca-tor",
       "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "che01",
+      "eu-de",
+      "eu-es",
+      "us-east"
     ],
     "id": "cloudant",
     "images": {
@@ -98140,9 +98140,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -98154,7 +98151,10 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "au-syd",
+      "eu-de",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -108272,6 +108272,7 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -108286,8 +108287,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -117846,7 +117846,6 @@
     "disabled": false,
     "geo_tags": [
       "eu-es",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -117854,6 +117853,7 @@
       "eu-de",
       "au-syd",
       "us-east",
+      "us-south",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -122597,13 +122597,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -124745,13 +124745,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -151442,14 +151442,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -162035,19 +162035,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-mon",
+      "eu-gb",
+      "br-sao",
+      "jp-osa",
+      "ca-tor",
       "eu-de",
       "us-south",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "ca-tor",
-      "au-syd",
-      "eu-gb",
-      "br-sao"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -238283,12 +238283,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -255131,6 +255131,284 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
+  },
+  {
+    "_id": "1e67c804-3e27-437a-8732-ccee8a554807",
+    "_rev": "29-a781ba53574348212e1539fb009cc58b",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:1e67c804-3e27-437a-8732-ccee8a554807",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/1e67c804-3e27-437a-8732-ccee8a554807/%2A",
+    "complete": true,
+    "created": "2026-04-08T10:34:02.900564613-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "global"
+    ],
+    "id": "1e67c804-3e27-437a-8732-ccee8a554807",
+    "images": {
+      "image": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "535b33d3e0f24ce896ea4c630a54d9c8:o:01faaf46-a20a-46fe-99f6-9a08a7037cd3",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "UA",
+              "GE",
+              "BR"
+            ],
+            "process": "ViClinic provides ongoing technical and customer support for this agent, including onboarding assistance, configuration guidance, issue troubleshooting, and product updates. Support is available via email and scheduled support sessions. We aim to respond to critical issues within 1 business day. Regular maintenance, compatibility updates, and performance improvements are delivered continuously as part of our product lifecycle. The support team assists customers with: Initial setup and deployment Integration and API connectivity Agent configuration and customization guidance Troubleshooting and incident resolution Usage best practices and optimization",
+            "status_url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Fortaleza"
+                },
+                "contact": "support@viclinic.atlassian.net",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 24
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@viclinic.atlassian.net",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 48
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 24
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://viclinic.atlassian.net/servicedesk/customer/portal/1"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/1e67c804-3e27-437a-8732-ccee8a554807/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": null,
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Coordinates multiple AI agents across clinical workflows, enabling seamless automation from intake to follow-up.",
+                "title": "Agentic Workflow Orchestration"
+              },
+              {
+                "description": "Supports the full patient journey including intake, triage, documentation, coding, discharge, and recovery.",
+                "title": "End-to-End Care Continuum Support"
+              },
+              {
+                "description": "Maintains structured, longitudinal patient data accessible across all agents to improve accuracy and continuity.",
+                "title": "Shared Clinical Context Engine"
+              },
+              {
+                "description": "Ensures clinician oversight, control, and validation across all AI-driven workflows for safe and compliant operation",
+                "title": "Human-in-the-Loop Governance"
+              },
+              {
+                "description": "Deploys as a flexible, cloud-based platform with modular agents that scale across departments and healthcare systems.",
+                "title": "Modular & Scalable SaaS Architecture"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.viclinic.com/en/vi-agent",
+          "terms_url": "https://viclinic.com/en/eula"
+        }
+      }
+    },
+    "name": "viclinic-agentic-orchestration-platform",
+    "overview_ui": {
+      "en": {
+        "description": "AI platform orchestrating healthcare workflows with multiple agents, improving efficiency, outcomes, and revenue performance.",
+        "display_name": "ViClinic agentic healthcare orchestration platform  ",
+        "long_description": "The ViClinic Agentic Healthcare Orchestration Platform (AHOS) is a SaaS solution designed to coordinate multiple AI agents across clinical and administrative workflows, enabling healthcare organizations to automate processes, improve decision-making, and achieve measurable operational and financial outcomes.\nUnlike standalone AI tools, ViClinic AHOS embeds intelligent agents directly into the care delivery process—from patient intake and triage to documentation, coding, discharge, and follow-up. These agents work together within a unified system, sharing structured clinical context and operating under clinician supervision.\nThe platform transforms fragmented workflows into a coordinated, end-to-end process. By connecting clinical data, patient interactions, and administrative tasks, it ensures that each step of care is supported by accurate, timely, and actionable information.\nViClinic AHOS integrates with existing EMR/EHR systems and supports interoperability through standardized data structures. It enables healthcare providers to enhance efficiency without replacing their current systems, acting as an execution layer that brings AI into real-world clinical operations.\nBy combining workflow orchestration, shared clinical context, and human-in-the-loop governance, the platform reduces administrative burden, improves care quality, accelerates revenue cycle processes, and enhances patient engagement.\n\n\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Viclinic Inc"
+    },
+    "tags": [
+      "clinical data integration",
+      "custom_kind_service",
+      "enterprise healthcare it",
+      "global",
+      "healthcare platform",
+      "ibm_third_party",
+      "multi-agent ai platform",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "support_third_party",
+      "watson",
+      "workflow orchestration"
+    ],
+    "updated": "2026-09-10T22:09:39.505801499-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/1e67c804-3e27-437a-8732-ccee8a554807?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "5c4c4282-337e-419a-915a-736d68fbdb65",
+        "_rev": "9-5c262afcb47c8ca2e0c7601b0f4308a4",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5c4c4282-337e-419a-915a-736d68fbdb65",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5c4c4282-337e-419a-915a-736d68fbdb65/%2A",
+        "complete": true,
+        "created": "2026-05-04T08:59:15.171652352-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "global"
+        ],
+        "id": "5c4c4282-337e-419a-915a-736d68fbdb65",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/5c4c4282-337e-419a-915a-736d68fbdb65/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Agentic Workflow Orchestration\nCoordinates multiple AI agents across clinical workflows to automate processes from intake to follow-up."
+                  },
+                  {
+                    "description": "Shared Clinical Context Engine\nMaintains structured patient data accessible across agents to ensure consistency and better decision-making"
+                  },
+                  {
+                    "description": "End-to-End Care Continuum Support\nSupports the full patient journey including intake, documentation, coding, discharge, and continuous care"
+                  },
+                  {
+                    "description": "Human-in-the-Loop Governance\nEnsures clinician oversight and control across all AI-driven workflows for safe and compliant operations"
+                  },
+                  {
+                    "description": "Modular SaaS Architecture\nFlexible platform enabling deployment of individual agents or full workflows, scalable across clinics and systems"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "starter-plan",
+        "overview_ui": {
+          "en": {
+            "description": "Fixed monthly access to the ViClinic platform with core agent workflows enabled. \n\n\n",
+            "display_name": "Starter Plan",
+            "long_description": "Fixed monthly access to the ViClinic platform with core agent workflows enabled. \n\n\n"
+          }
+        },
+        "parent_id": "1e67c804-3e27-437a-8732-ccee8a554807",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/1e67c804-3e27-437a-8732-ccee8a554807",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Viclinic Inc"
+        },
+        "tags": [
+          "clinical data integration",
+          "enterprise healthcare it",
+          "healthcare platform",
+          "ibm_third_party",
+          "multi-agent ai platform",
+          "watson",
+          "workflow orchestration"
+        ],
+        "updated": "2026-09-10T22:09:39.501102117-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/5c4c4282-337e-419a-915a-736d68fbdb65?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Fixed monthly access to the ViClinic platform with core agent workflows enabled. \n\n\n",
+        "displayName": "Starter Plan"
+      }
+    ],
+    "description": "AI platform orchestrating healthcare workflows with multiple agents, improving efficiency, outcomes, and revenue performance.",
+    "longDescription": "The ViClinic Agentic Healthcare Orchestration Platform (AHOS) is a SaaS solution designed to coordinate multiple AI agents across clinical and administrative workflows, enabling healthcare organizations to automate processes, improve decision-making, and achieve measurable operational and financial outcomes.\nUnlike standalone AI tools, ViClinic AHOS embeds intelligent agents directly into the care delivery process—from patient intake and triage to documentation, coding, discharge, and follow-up. These agents work together within a unified system, sharing structured clinical context and operating under clinician supervision.\nThe platform transforms fragmented workflows into a coordinated, end-to-end process. By connecting clinical data, patient interactions, and administrative tasks, it ensures that each step of care is supported by accurate, timely, and actionable information.\nViClinic AHOS integrates with existing EMR/EHR systems and supports interoperability through standardized data structures. It enables healthcare providers to enhance efficiency without replacing their current systems, acting as an execution layer that brings AI into real-world clinical operations.\nBy combining workflow orchestration, shared clinical context, and human-in-the-loop governance, the platform reduces administrative burden, improves care quality, accelerates revenue cycle processes, and enhances patient engagement.\n\n\n",
+    "displayName": "ViClinic agentic healthcare orchestration platform  ",
+    "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/1e67c804-3e27-437a-8732-ccee8a554807.svg",
+    "localPngIcon": "/generated/icons/1e67c804-3e27-437a-8732-ccee8a554807.png"
   },
   {
     "_id": "power-iaas.pvm-instance",
@@ -282530,12 +282808,12 @@
         "created": "2015-10-15T05:13:52Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
-          "eu-gb",
-          "us-south",
           "au-syd",
           "ca-tor",
-          "jp-tok"
+          "jp-tok",
+          "eu-de",
+          "eu-gb",
+          "us-south"
         ],
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "images": {
@@ -285861,12 +286139,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -290475,12 +290753,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
@@ -294151,10 +294429,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
