@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -12005,7 +12005,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12013,7 +12012,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -95149,10 +95149,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -95160,7 +95156,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -103336,7 +103336,7 @@
   },
   {
     "_id": "databases-for-postgresql",
-    "_rev": "707-ace73c19b78d6dbcc4a1f38386b96d62",
+    "_rev": "708-42bd2e6382364ec4d65b93c62c5554d8",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-postgresql",
     "children": [
@@ -106433,10 +106433,340 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "54-990b4933ff53b47a487271e379d5c2c7",
+        "_rev": "55-a169d4c70a992a85f0de93c68907d4a6",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children": [
+          {
+            "_id": "databases-for-postgresql-standard-gen2:au-syd",
+            "_rev": "5-c15701c6a359debd7e614aece0b2552b",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aau-syd",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:au-syd/%2A",
+            "complete": true,
+            "created": "2026-08-18T03:00:59.601653412-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "au-syd"
+            ],
+            "id": "databases-for-postgresql-standard-gen2:au-syd",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:09b58709-a983-40d8-8f8c-35884cfb6532",
+                  "name": "cdp-broker-dn-prod-au-syd"
+                },
+                "location": "au-syd",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/au-syd",
+                "target_crn": "crn:v1:bluemix:public::au-syd:::environment:bluemix-au-syd"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": true,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "locations": [
+                    "au-syd"
+                  ],
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  },
+                  "remotes": {
+                    "read_only_replicas_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 56,
+                      "minimum_count": 6,
+                      "step_size_count": 2,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 10,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 19200,
+                      "minimum_gb": 20,
+                      "step_size_gb": 2,
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 20,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 2,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 224,
+                      "minimum_gb": 2,
+                      "step_size_gb": 0.25,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "postgresql",
+                    "version": "18"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:au-syd/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "readOnlyReplicas",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "readOnlyReplicas",
+                        "label": "Read-only replicas",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-au-syd",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-au-syd au-syd deployment",
+                "display_name": "standard-gen2-au-syd au-syd deployment",
+                "long_description": "standard-gen2-au-syd au-syd deployment"
+              }
+            },
+            "parent_id": "databases-for-postgresql-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paid_only"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "tags": [
+              "rc_compatible"
+            ],
+            "updated": "2026-09-14T09:02:51.728320192-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:au-syd?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
           {
             "_id": "databases-for-postgresql-standard-gen2:ca-mon",
             "_rev": "46-85c2486a313ba9c2e91f8aa80e90afc6",
@@ -107091,6 +107421,336 @@
             ],
             "updated": "2026-09-10T03:54:26.875736811-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-de?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
+          {
+            "_id": "databases-for-postgresql-standard-gen2:eu-es",
+            "_rev": "5-b77fc255b7505985db89efcd3f08ab5f",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aeu-es",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-es/%2A",
+            "complete": true,
+            "created": "2026-08-06T11:45:30.869189685-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "eu-es"
+            ],
+            "id": "databases-for-postgresql-standard-gen2:eu-es",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:5f65a032-5a3f-4b9d-ba80-7814a592f0b9",
+                  "name": "cdp-broker-dn-prod-eu-es"
+                },
+                "location": "eu-es",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/eu-es",
+                "target_crn": "crn:v1:bluemix:public::eu-es:::environment:bluemix-eu-es"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": true,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  },
+                  "locations": [
+                    "eu-es"
+                  ],
+                  "point_in_time_recovery": {
+                    "point_in_time_recovery_supported": false
+                  },
+                  "remotes": {
+                    "read_only_replicas_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 56,
+                      "minimum_count": 6,
+                      "step_size_count": 2,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 10,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 19200,
+                      "minimum_gb": 20,
+                      "step_size_gb": 2,
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 20,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 2,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 224,
+                      "minimum_gb": 2,
+                      "step_size_gb": 0.25,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "postgresql",
+                    "version": "18"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-es/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "readOnlyReplicas",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "readOnlyReplicas",
+                        "label": "Read-only replicas",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-postgresql/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-eu-es",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-eu-es eu-es deployment",
+                "display_name": "standard-gen2-eu-es eu-es deployment",
+                "long_description": "standard-gen2-eu-es eu-es deployment"
+              }
+            },
+            "parent_id": "databases-for-postgresql-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paid_only"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "tags": [
+              "rc_compatible"
+            ],
+            "updated": "2026-09-14T09:02:58.612404439-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-es?complete=true",
             "visibility": {
               "restrictions": "public"
             }
@@ -108084,8 +108744,10 @@
         "created": "2025-11-27T02:51:54.294438401-05:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
+          "eu-es",
           "in-che",
           "in-mum",
           "us-east"
@@ -108163,7 +108825,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-09T06:04:54.93335373-04:00",
+        "updated": "2026-09-14T09:04:10.639044411-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -108435,7 +109097,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-06-02T13:26:43.739097973-04:00",
+    "updated": "2026-09-14T09:04:10.737106255-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -108557,7 +109219,7 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "54-990b4933ff53b47a487271e379d5c2c7",
+        "_rev": "55-a169d4c70a992a85f0de93c68907d4a6",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard/%2A",
@@ -108565,8 +109227,10 @@
         "created": "2025-11-27T02:51:54.294438401-05:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "ca-mon",
           "eu-de",
+          "eu-es",
           "in-che",
           "in-mum",
           "us-east"
@@ -108644,7 +109308,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-09T06:04:54.93335373-04:00",
+        "updated": "2026-09-14T09:04:10.639044411-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -117845,16 +118509,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "au-syd",
       "us-east",
       "fra02",
       "eu-es",
-      "us-south",
-      "eu-gb"
+      "eu-gb",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -122597,13 +123261,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -151442,14 +152106,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -162035,19 +162699,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
+      "eu-gb",
       "in-che",
-      "in-mum",
-      "ca-mon",
-      "au-syd",
       "jp-osa",
+      "au-syd",
+      "br-sao",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "ca-mon",
       "eu-de",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -281857,12 +282521,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "jp-tok",
       "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -282808,12 +283472,12 @@
         "created": "2015-10-15T05:13:52Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
-          "jp-tok",
           "eu-de",
           "eu-gb",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor",
+          "jp-tok"
         ],
         "id": "3f6acf43-ede8-413a-ac69-f8af3bb0cbfe",
         "images": {
@@ -290740,7 +291404,6 @@
     "longDescription": "watsonx.data integration is a data integration tool that offers a unified experience for data teams to seamlessly handle real-time streaming, replication and bulk/batch integration patterns, without having to switch context or preselect the integration style. Modernize your data flows with a SaaS-based architecture that promotes reusability of data flows, enhances security and cost effectiveness, leveraging deployment flexibility across hybrid cloud environments. Boost data reliability with continuous monitoring of data quality issues with data observability.",
     "displayName": "watsonx.data integration",
     "imageUrl": "https://ca-tor.dai.cloud.ibm.com/data_integration/v3/broker/media/images/watsonxDataIntegration.svg",
-    "localSvgIcon": "/generated/icons/4d4fd270-fe8f-11ef-82ad-af5f37d5a455.svg",
     "localPngIcon": "/generated/icons/4d4fd270-fe8f-11ef-82ad-af5f37d5a455.png"
   },
   {
@@ -290753,12 +291416,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
@@ -294429,10 +295092,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
