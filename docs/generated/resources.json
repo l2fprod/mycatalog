@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -830,6 +830,7 @@
   },
   {
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -837,8 +838,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -6230,7 +6230,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6245,7 +6244,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6643,15 +6643,15 @@
   {
     "geo_tags": [
       "us-south",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
+      "eu-gb",
+      "eu-de",
       "au-syd",
       "us-east",
       "fra02",
       "eu-es",
-      "eu-gb",
-      "eu-de"
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6809,13 +6809,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -10540,19 +10540,19 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "in-che",
+      "eu-de",
+      "us-south",
       "jp-osa",
-      "au-syd",
-      "br-sao",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
       "ca-mon",
-      "eu-de",
-      "us-south"
+      "au-syd",
+      "eu-gb",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -18842,12 +18842,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -22075,12 +22075,12 @@
   },
   {
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
@@ -22387,6 +22387,7 @@
     "longDescription": "watsonx.data integration is a data integration tool that offers a unified experience for data teams to seamlessly handle real-time streaming, replication and bulk/batch integration patterns, without having to switch context or preselect the integration style. Modernize your data flows with a SaaS-based architecture that promotes reusability of data flows, enhances security and cost effectiveness, leveraging deployment flexibility across hybrid cloud environments. Boost data reliability with continuous monitoring of data quality issues with data observability.",
     "displayName": "watsonx.data integration",
     "imageUrl": "https://ca-tor.dai.cloud.ibm.com/data_integration/v3/broker/media/images/watsonxDataIntegration.svg",
+    "localSvgIcon": "/generated/icons/4d4fd270-fe8f-11ef-82ad-af5f37d5a455.svg",
     "localPngIcon": "/generated/icons/4d4fd270-fe8f-11ef-82ad-af5f37d5a455.png"
   },
   {
