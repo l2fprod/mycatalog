@@ -95149,6 +95149,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -95156,11 +95160,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -98861,7 +98861,7 @@
   },
   {
     "_id": "databases-for-mysql",
-    "_rev": "826-ff1565f0ba6fc084d478c61b250bcb9b",
+    "_rev": "827-0c0fa2c4bce1f8d06c468178cdf08446",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mysql",
     "children": [
@@ -101894,10 +101894,335 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "28-2054c084c8f0a08568476e941511645e",
+        "_rev": "29-13be25ea292df08fbff248285fde4a25",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children": [
+          {
+            "_id": "databases-for-mysql-standard-gen2:au-syd",
+            "_rev": "4-7cac5b4adee5c4c853e3067eea4ec285",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Aau-syd",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:au-syd/%2A",
+            "complete": true,
+            "created": "2026-08-18T03:01:05.542027987-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "au-syd"
+            ],
+            "id": "databases-for-mysql-standard-gen2:au-syd",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:09b58709-a983-40d8-8f8c-35884cfb6532",
+                  "name": "cdp-broker-dn-prod-au-syd"
+                },
+                "location": "au-syd",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/au-syd",
+                "target_crn": "crn:v1:bluemix:public::au-syd:::environment:bluemix-au-syd"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 20,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 19200,
+                      "minimum_gb": 20,
+                      "step_size_gb": 2,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 2,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mysql",
+                    "version": "8.4"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:au-syd/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-au-syd",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-au-syd au-syd deployment",
+                "display_name": "standard-gen2-au-syd au-syd deployment",
+                "long_description": "standard-gen2-au-syd au-syd deployment"
+              }
+            },
+            "parent_id": "databases-for-mysql-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-09-15T10:54:03.51841183-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:au-syd?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
           {
             "_id": "databases-for-mysql-standard-gen2:eu-de",
             "_rev": "14-8f25fd8a76076e83124602ed4c4608ad",
@@ -102219,6 +102544,331 @@
             },
             "updated": "2026-08-12T00:39:16.709703051-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:eu-de?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
+          {
+            "_id": "databases-for-mysql-standard-gen2:eu-es",
+            "_rev": "5-94ff6ba3fe7c37df53319501050666a8",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Aeu-es",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:eu-es/%2A",
+            "complete": true,
+            "created": "2026-08-06T11:45:36.680463696-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "eu-es"
+            ],
+            "id": "databases-for-mysql-standard-gen2:eu-es",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:5f65a032-5a3f-4b9d-ba80-7814a592f0b9",
+                  "name": "cdp-broker-dn-prod-eu-es"
+                },
+                "location": "eu-es",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/eu-es",
+                "target_crn": "crn:v1:bluemix:public::eu-es:::environment:bluemix-eu-es"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 20,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 19200,
+                      "minimum_gb": 20,
+                      "step_size_gb": 2,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 2,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mysql",
+                    "version": "8.4"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:eu-es/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-eu-es",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-eu-es eu-es deployment",
+                "display_name": "standard-gen2-eu-es eu-es deployment",
+                "long_description": "standard-gen2-eu-es eu-es deployment"
+              }
+            },
+            "parent_id": "databases-for-mysql-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "updated": "2026-09-15T10:54:10.698458904-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:eu-es?complete=true",
             "visibility": {
               "restrictions": "public"
             }
@@ -102547,6 +103197,333 @@
             ],
             "updated": "2026-09-03T02:14:36.752528206-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-che?complete=true",
+            "visibility": {
+              "restrictions": "public"
+            }
+          },
+          {
+            "_id": "databases-for-mysql-standard-gen2:in-mum",
+            "_rev": "20-683050cf2d3ebda229538d0f1aeb55ee",
+            "active": true,
+            "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Ain-mum",
+            "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-mum/%2A",
+            "complete": true,
+            "created": "2026-06-09T01:41:24.868166365-04:00",
+            "disabled": false,
+            "geo_tags": [
+              "in-mum"
+            ],
+            "id": "databases-for-mysql-standard-gen2:in-mum",
+            "kind": "deployment",
+            "metadata": {
+              "deployment": {
+                "broker": {
+                  "guid": "crn:v1:bluemix:public:resource-controller::a/23b09aee04da4545b6e32805fa93249d::resource-broker:d961fd67-7ce8-465f-b473-74b4dd1303a6",
+                  "name": "cdp-broker-dn-prod-in-mum"
+                },
+                "location": "in-mum",
+                "location_url": "https://globalcatalog.cloud.ibm.com/api/v1/in-mum",
+                "target_crn": "crn:v1:bluemix:public::in-mum:::environment:bluemix-in-mum"
+              },
+              "other": {
+                "capability": {
+                  "autoscaling": {
+                    "autoscaling_supported": false
+                  },
+                  "backups": {
+                    "backups_create_supported": true
+                  },
+                  "encryption": {
+                    "disk_encryption_supported": true
+                  },
+                  "endpoints": {
+                    "direct_endpoints_supported": false,
+                    "multiple_endpoints_supported": false,
+                    "private_endpoints_supported": true,
+                    "public_endpoints_supported": false
+                  }
+                },
+                "flavors": [
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bx3d.4x20",
+                    "memory": {
+                      "allocation_gb": 20
+                    },
+                    "name": "4x20",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bx3d.8x40",
+                    "memory": {
+                      "allocation_gb": 40
+                    },
+                    "name": "8x40",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bx3d.16x80",
+                    "memory": {
+                      "allocation_gb": 80
+                    },
+                    "name": "16x80",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bx3d.32x160",
+                    "memory": {
+                      "allocation_gb": 160
+                    },
+                    "name": "32x160",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 48
+                    },
+                    "hosting_size": "xl",
+                    "id": "bx3d.48x240",
+                    "memory": {
+                      "allocation_gb": 240
+                    },
+                    "name": "48x240",
+                    "profile": "fix"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 4
+                    },
+                    "hosting_size": "xs",
+                    "id": "bxf.4x16",
+                    "memory": {
+                      "allocation_gb": 16
+                    },
+                    "name": "4x16",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 8
+                    },
+                    "hosting_size": "s",
+                    "id": "bxf.8x32",
+                    "memory": {
+                      "allocation_gb": 32
+                    },
+                    "name": "8x32",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 16
+                    },
+                    "hosting_size": "m",
+                    "id": "bxf.16x64",
+                    "memory": {
+                      "allocation_gb": 64
+                    },
+                    "name": "16x64",
+                    "profile": "flex"
+                  },
+                  {
+                    "cpu": {
+                      "allocation_count": 32
+                    },
+                    "hosting_size": "l",
+                    "id": "bxf.32x128",
+                    "memory": {
+                      "allocation_gb": 128
+                    },
+                    "name": "32x128",
+                    "profile": "flex"
+                  }
+                ],
+                "resources": [
+                  {
+                    "count": 2,
+                    "cpu": {
+                      "allocation_count": 0,
+                      "allocation_count_in_millicores": 0,
+                      "can_scale_down": true,
+                      "is_adjustable": true,
+                      "is_optional": true,
+                      "maximum_count": 84,
+                      "minimum_count": 0,
+                      "minimum_count_in_millicores": 0,
+                      "step_size_count": 3,
+                      "units": "count"
+                    },
+                    "disk": {
+                      "allocation_gb": 20,
+                      "can_scale_down": false,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 19200,
+                      "minimum_gb": 20,
+                      "step_size_gb": 2,
+                      "storage_class": {
+                        "id": "icd-block-gold",
+                        "iops_per_allocation_gb": 10
+                      },
+                      "units": "gb"
+                    },
+                    "id": "member",
+                    "members": {
+                      "allocation_count": 2,
+                      "can_scale_down": false,
+                      "is_adjustable": false,
+                      "is_optional": false,
+                      "maximum_count": 2,
+                      "minimum_count": 2,
+                      "step_size_count": 1,
+                      "units": "count"
+                    },
+                    "memory": {
+                      "allocation_gb": 12,
+                      "can_scale_down": true,
+                      "cpu_enforcement_ratio_ceiling_gb": 48,
+                      "cpu_enforcement_ratio_gb": 8,
+                      "is_adjustable": true,
+                      "is_optional": false,
+                      "maximum_gb": 336,
+                      "minimum_gb": 12,
+                      "step_size_gb": 0.38,
+                      "units": "gb"
+                    }
+                  }
+                ],
+                "versions": [
+                  {
+                    "is_preferred": true,
+                    "status": "stable",
+                    "transitions": [],
+                    "type": "mysql",
+                    "version": "8.4"
+                  }
+                ]
+              },
+              "pricing": {
+                "metrics": null,
+                "origin": "pricing_catalog",
+                "starting_price": {},
+                "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-mum/pricing"
+              },
+              "rc_compatible": true,
+              "service": {
+                "async_provisioning_supported": false,
+                "async_unprovisioning_supported": false,
+                "bindable": false,
+                "custom_create_page_hybrid_enabled": false,
+                "extension": null,
+                "iam_compatible": false,
+                "parameters": null,
+                "plan_updateable": false,
+                "rc_provisionable": true,
+                "service_check_enabled": false,
+                "service_key_supported": true,
+                "state": "",
+                "test_check_interval": 0,
+                "type": "",
+                "unique_api_key": false,
+                "user_defined_service": null
+              },
+              "ui": {
+                "navigation_order": [
+                  "manage",
+                  "connect",
+                  "groups",
+                  "backups",
+                  "edit",
+                  "vpcCredentials"
+                ],
+                "strings": {
+                  "en": {
+                    "navigation_items": [
+                      {
+                        "default": true,
+                        "id": "manage",
+                        "label": "Overview",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "connect",
+                        "label": "Connect",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "groups",
+                        "label": "Resources",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "backups",
+                        "label": "Backups and restore",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "edit",
+                        "label": "Settings",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "credentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      },
+                      {
+                        "id": "vpcCredentials",
+                        "label": "Service credentials",
+                        "panel_menu": false,
+                        "url": "https://cloud.ibm.com/databases-console/databases-for-mysql/"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "name": "standard-gen2-in-mum",
+            "overview_ui": {
+              "en": {
+                "description": "standard-gen2-in-mum in-mum deployment",
+                "display_name": "standard-gen2-in-mum in-mum deployment",
+                "long_description": "standard-gen2-in-mum in-mum deployment"
+              }
+            },
+            "parent_id": "databases-for-mysql-gen2-standard",
+            "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard",
+            "pricing_tags": [
+              "allow_internal_users",
+              "paygo"
+            ],
+            "provider": {
+              "name": "IBM"
+            },
+            "tags": [
+              "in-mum"
+            ],
+            "updated": "2026-09-15T10:54:16.628906305-04:00",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
             }
@@ -102882,8 +103859,11 @@
         "created": "2026-06-08T00:53:23.159766504-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "eu-de",
+          "eu-es",
           "in-che",
+          "in-mum",
           "us-east"
         ],
         "id": "databases-for-mysql-gen2-standard",
@@ -102955,7 +103935,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-10T04:29:57.68509792-04:00",
+        "updated": "2026-09-15T10:55:23.99226247-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -102975,6 +103955,7 @@
       "eu-es",
       "eu-gb",
       "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "par01",
@@ -103104,6 +104085,7 @@
       "hipaa",
       "ibm_created",
       "in-che",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "paid_only",
@@ -103115,7 +104097,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-10T04:29:57.685311632-04:00",
+    "updated": "2026-09-15T10:55:23.992754371-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -103237,7 +104219,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "28-2054c084c8f0a08568476e941511645e",
+        "_rev": "29-13be25ea292df08fbff248285fde4a25",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard/%2A",
@@ -103245,8 +104227,11 @@
         "created": "2026-06-08T00:53:23.159766504-04:00",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "eu-de",
+          "eu-es",
           "in-che",
+          "in-mum",
           "us-east"
         ],
         "id": "databases-for-mysql-gen2-standard",
@@ -103318,7 +104303,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-10T04:29:57.68509792-04:00",
+        "updated": "2026-09-15T10:55:23.99226247-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -106330,6 +107315,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -106340,8 +107326,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -108934,6 +109919,7 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -108948,8 +109934,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -118511,14 +119496,14 @@
     "geo_tags": [
       "us-south",
       "eu-gb",
-      "eu-de",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "au-syd",
       "us-east",
       "fra02",
       "eu-es",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -123261,13 +124246,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -152106,14 +153091,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -162699,19 +163684,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
       "in-che",
-      "eu-de",
-      "us-south",
+      "ca-mon",
+      "au-syd",
+      "eu-gb",
       "jp-osa",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "eu-gb",
-      "br-sao"
+      "eu-de",
+      "us-south"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -226186,7 +227171,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "479-649b2b1e807eec608429100b1f4d2b92",
+    "_rev": "480-92e412ebfe6d1a3329294ee1a30cb66f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -226194,8 +227179,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -226684,7 +227669,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-09-11T16:22:09.872600103-04:00",
+    "updated": "2026-09-15T05:28:38.480117556-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -238947,12 +239932,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -243811,7 +244796,7 @@
   },
   {
     "_id": "2bea02b0-c0a4-11ee-83aa-3171b0bf2976",
-    "_rev": "37-9338fd710256c1ed51763769b7314d91",
+    "_rev": "39-efa41e4bdaf5ba6f000531b299314e92",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:2bea02b0-c0a4-11ee-83aa-3171b0bf2976",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/2bea02b0-c0a4-11ee-83aa-3171b0bf2976/%2A",
@@ -243973,7 +244958,7 @@
       "subscription",
       "support_ibm"
     ],
-    "updated": "2026-08-14T13:28:51.73788592-04:00",
+    "updated": "2026-09-15T05:15:27.982830222-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/2bea02b0-c0a4-11ee-83aa-3171b0bf2976?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -249795,12 +250780,12 @@
     "created": "2015-01-30T04:46:57Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "images": {
@@ -282521,12 +283506,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -288286,12 +289271,12 @@
         "created": "2017-05-24T18:39:56Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor"
         ],
         "id": "9536fed9-cf90-4acb-aebf-521f5b2d19fe",
         "kind": "plan",
@@ -291417,12 +292402,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
