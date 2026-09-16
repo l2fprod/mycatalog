@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -95149,10 +95149,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -95160,7 +95156,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -107315,7 +107315,6 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -107326,7 +107325,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -110098,6 +110098,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -110108,8 +110109,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -119494,16 +119494,16 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "fra02",
+      "eu-es",
+      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "au-syd",
-      "us-east",
-      "fra02",
-      "eu-es",
-      "eu-de"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -124246,13 +124246,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -153091,14 +153091,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -163684,19 +163684,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "in-che",
-      "ca-mon",
-      "au-syd",
       "eu-gb",
-      "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "ca-mon",
+      "br-sao",
+      "in-che",
+      "jp-osa",
+      "in-mum",
       "eu-de",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -198011,7 +198011,7 @@
     "plans": [
       {
         "_id": "0497c5d9-29f9-4507-963c-9681dffc880a",
-        "_rev": "11-d761f10bb188ec58864eac86d408a616",
+        "_rev": "13-34460574f0e81bcb7c62fe435b266b9a",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0497c5d9-29f9-4507-963c-9681dffc880a",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/0497c5d9-29f9-4507-963c-9681dffc880a/%2A",
@@ -198092,7 +198092,7 @@
         "overview_ui": {
           "en": {
             "description": "This plan features a control plane on IBM cloud, but the workload will deploy as SaaS into AWS.",
-            "display_name": "bring-your-own-llm-aws",
+            "display_name": "Neuralseek AWS",
             "long_description": "This plan features a control plane on IBM cloud, but the workload will deploy as SaaS into AWS."
           }
         },
@@ -198106,8 +198106,6 @@
           "name": "Cerebral Blue LLC"
         },
         "tags": [
-          "watson",
-          "ibm_third_party",
           "agent",
           "answer",
           "assistant",
@@ -198115,35 +198113,37 @@
           "chatbot",
           "chatgpt",
           "discovery",
+          "governance",
           "gpt-3",
           "gpt3",
+          "granite",
+          "ibm_third_party",
+          "llama",
           "ml",
           "openai",
+          "orchestrate",
           "q&a",
           "question",
+          "watson",
           "watson assistant",
           "watson discovery",
           "watsonx",
-          "orchestrate",
-          "watsonx orchestrate",
           "watsonx discovery",
-          "llama",
-          "granite",
-          "governance",
-          "watsonx.governance",
-          "watsonx.ai"
+          "watsonx orchestrate",
+          "watsonx.ai",
+          "watsonx.governance"
         ],
-        "updated": "2025-03-26T10:14:46.997652083-04:00",
+        "updated": "2026-09-15T15:38:07.852466355-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0497c5d9-29f9-4507-963c-9681dffc880a?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "This plan features a control plane on IBM cloud, but the workload will deploy as SaaS into AWS.",
-        "displayName": "bring-your-own-llm-aws"
+        "displayName": "Neuralseek AWS"
       },
       {
         "_id": "e418fec2-0fb5-42f0-9f88-0acfab234e23",
-        "_rev": "5-e977302bf0e5fd7468dbde4260903787",
+        "_rev": "7-5a4865f56684c039b737b54c0109f578",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:e418fec2-0fb5-42f0-9f88-0acfab234e23",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/e418fec2-0fb5-42f0-9f88-0acfab234e23/%2A",
@@ -198229,7 +198229,7 @@
         "overview_ui": {
           "en": {
             "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-            "display_name": "neuralseek-bring-your-own-llm",
+            "display_name": "NeuralSeek",
             "long_description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs."
           }
         },
@@ -198261,17 +198261,17 @@
           "watson assistant",
           "watson discovery"
         ],
-        "updated": "2025-02-26T12:07:36.850765895-05:00",
+        "updated": "2026-09-15T15:40:17.949249466-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/e418fec2-0fb5-42f0-9f88-0acfab234e23?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm"
+        "displayName": "NeuralSeek"
       },
       {
         "_id": "a4679ed6-0e45-4841-8711-a19425499064",
-        "_rev": "6-53a5ea583ef0574e7589a4bdc2b479f7",
+        "_rev": "8-3c77b153bb334206cd92f5f14f27ea76",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a4679ed6-0e45-4841-8711-a19425499064",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a4679ed6-0e45-4841-8711-a19425499064/%2A",
@@ -198357,7 +198357,7 @@
         "overview_ui": {
           "en": {
             "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-            "display_name": "neuralseek-bring-your-own-llm",
+            "display_name": "NeuralSeek",
             "long_description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs."
           }
         },
@@ -198389,17 +198389,17 @@
           "watson assistant",
           "watson discovery"
         ],
-        "updated": "2025-09-30T07:41:12.690119433-04:00",
+        "updated": "2026-09-15T15:45:53.108925354-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a4679ed6-0e45-4841-8711-a19425499064?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm"
+        "displayName": "NeuralSeek"
       },
       {
         "_id": "4fc8839c-e721-411e-a6b8-778e53beafe9",
-        "_rev": "6-6f291f0f1cf36d40dc3dc5f316df2e8b",
+        "_rev": "8-acd49a98111ea56323f88b9047596a29",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:4fc8839c-e721-411e-a6b8-778e53beafe9",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/4fc8839c-e721-411e-a6b8-778e53beafe9/%2A",
@@ -198485,7 +198485,7 @@
         "overview_ui": {
           "en": {
             "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-            "display_name": "neuralseek-bring-your-own-llm",
+            "display_name": "NeuralSeek",
             "long_description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs."
           }
         },
@@ -198517,17 +198517,17 @@
           "watson assistant",
           "watson discovery"
         ],
-        "updated": "2025-09-30T07:41:27.404234689-04:00",
+        "updated": "2026-09-15T15:46:06.058465632-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/4fc8839c-e721-411e-a6b8-778e53beafe9?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm"
+        "displayName": "NeuralSeek"
       },
       {
         "_id": "b2b7d7e4-89aa-4ed4-8794-8ceee7f3df58",
-        "_rev": "10-a88bf42001022dcc348b2ed9ec4d4e71",
+        "_rev": "14-7b447cb322e5bfac441b983ff2bf5db5",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b2b7d7e4-89aa-4ed4-8794-8ceee7f3df58",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b2b7d7e4-89aa-4ed4-8794-8ceee7f3df58/%2A",
@@ -198590,13 +198590,10 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "The NeuralSeek Flex plan is a bring-your-own LLM plan featuring unlimited usage. All NeuralSeek functions are supported."
+                    "description": "The NeuralSeek Container plan is a bring-your-own LLM plan featuring unlimited usage. All NeuralSeek functions are supported."
                   },
                   {
-                    "description": "The Flex plan allows you to optionally & additionally install NeuralSeek on your hardware, behind your firewall to meet security reqs. "
-                  },
-                  {
-                    "description": "Each base instance (or install) is licensed for 10,000 users. Additional users may be added in blocks of 10,000."
+                    "description": "The Container plan allows you to optionally & additionally install NeuralSeek on your hardware, behind your firewall to meet security reqs. "
                   },
                   {
                     "description": "Build and run multi-agentic workflows with no code. "
@@ -198609,9 +198606,9 @@
         "name": "neuralseek-flex",
         "overview_ui": {
           "en": {
-            "description": "The NeuralSeek Flex plan is a bring-your-own LLM plan featuring unlimited usage, and a flex license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 10,000 users.  Additional users may be added in blocks of 10,000.",
-            "display_name": "neuralseek-flex",
-            "long_description": "The NeuralSeek Flex plan is a bring-your-own LLM plan featuring unlimited usage, and a flex license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 10,000 users.  Additional users may be added in blocks of 10,000."
+            "description": "The NeuralSeek Container plan is a bring-your-own LLM plan featuring unlimited usage, and a Container license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 0 users.  Additional users may be added in blocks of 2,000.",
+            "display_name": "Neuralseek Container",
+            "long_description": "The NeuralSeek Container plan is a bring-your-own LLM plan featuring unlimited usage, and a Container license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 0 users.  Additional users may be added in blocks of 2,000."
           }
         },
         "parent_id": "d97bd0c3-a8e5-4f3d-b925-16380e039a9a",
@@ -198643,17 +198640,17 @@
           "watson discovery",
           "watsonx"
         ],
-        "updated": "2025-02-26T12:08:33.170859791-05:00",
+        "updated": "2026-09-15T16:23:26.835174923-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b2b7d7e4-89aa-4ed4-8794-8ceee7f3df58?complete=true",
         "visibility": {
           "restrictions": "public"
         },
-        "description": "The NeuralSeek Flex plan is a bring-your-own LLM plan featuring unlimited usage, and a flex license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 10,000 users.  Additional users may be added in blocks of 10,000.",
-        "displayName": "neuralseek-flex"
+        "description": "The NeuralSeek Container plan is a bring-your-own LLM plan featuring unlimited usage, and a Container license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 0 users.  Additional users may be added in blocks of 2,000.",
+        "displayName": "Neuralseek Container"
       },
       {
         "_id": "25348c87-449d-4107-bf04-82ab9b3dd3b0",
-        "_rev": "5-30913880d5f1fe15a0b7f2f01d3b4318",
+        "_rev": "7-2e73222b4ac998faa5dd7f959ee7294c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:25348c87-449d-4107-bf04-82ab9b3dd3b0",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/25348c87-449d-4107-bf04-82ab9b3dd3b0/%2A",
@@ -198739,7 +198736,7 @@
         "overview_ui": {
           "en": {
             "description": "Pay per live answer provided back thru our API.  Curation and creation of Actions load files is provided at no additional cost.",
-            "display_name": "neuralseek-pay-per-answer",
+            "display_name": "zz - deprecated plan",
             "long_description": "Pay per live answer provided back thru our API.  Curation and creation of Actions load files is provided at no additional cost."
           }
         },
@@ -198756,17 +198753,17 @@
           "ibm_third_party",
           "watson"
         ],
-        "updated": "2025-02-26T12:09:27.750743613-05:00",
+        "updated": "2026-09-15T15:45:12.973479463-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/25348c87-449d-4107-bf04-82ab9b3dd3b0?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "Pay per live answer provided back thru our API.  Curation and creation of Actions load files is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer"
+        "displayName": "zz - deprecated plan"
       },
       {
         "_id": "be698ed1-e36f-40bc-98f5-4ca39b9dc1c8",
-        "_rev": "6-955440676465a07ba27cf2b432734f0a",
+        "_rev": "8-d1aefa7381f63495d2d813504a8276ad",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:be698ed1-e36f-40bc-98f5-4ca39b9dc1c8",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/be698ed1-e36f-40bc-98f5-4ca39b9dc1c8/%2A",
@@ -198852,7 +198849,7 @@
         "overview_ui": {
           "en": {
             "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-            "display_name": "neuralseek-pay-per-answer",
+            "display_name": "zz - deprecated plan",
             "long_description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost."
           }
         },
@@ -198884,17 +198881,17 @@
           "watson assistant",
           "watson discovery"
         ],
-        "updated": "2025-09-30T07:41:42.405921591-04:00",
+        "updated": "2026-09-15T15:45:24.624626368-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/be698ed1-e36f-40bc-98f5-4ca39b9dc1c8?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer"
+        "displayName": "zz - deprecated plan"
       },
       {
         "_id": "87af520b-0218-42ee-a1eb-531dc760f79d",
-        "_rev": "6-b3992735b65f95e3fb214c5e8980bfda",
+        "_rev": "7-a963cb0147594e31ad046ef5918a3d74",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:87af520b-0218-42ee-a1eb-531dc760f79d",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/87af520b-0218-42ee-a1eb-531dc760f79d/%2A",
@@ -198980,7 +198977,7 @@
         "overview_ui": {
           "en": {
             "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-            "display_name": "neuralseek-pay-per-answer",
+            "display_name": "zz - deprecated plan",
             "long_description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost."
           }
         },
@@ -199012,17 +199009,17 @@
           "watson assistant",
           "watson discovery"
         ],
-        "updated": "2025-09-30T07:41:57.07817313-04:00",
+        "updated": "2026-09-15T15:43:54.861526889-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/87af520b-0218-42ee-a1eb-531dc760f79d?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer"
+        "displayName": "zz - deprecated plan"
       },
       {
         "_id": "d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c",
-        "_rev": "4-1021d6131378fa8598cc5239671cb36e",
+        "_rev": "7-d99f2937dfe7eb3a65631f250b89248a",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c/%2A",
@@ -199108,7 +199105,7 @@
         "overview_ui": {
           "en": {
             "description": "The Search Plan is for use cases not requiring a Virtual Agent. NeuralSeek provides a search interface to supported knowledgebases, and will provide search responses plus generative AI summaries. Any generated AI summary incurs a per-call usage fee.  Cache responses are included at no additional cost. This plan's features are identical to the pay-per-answer plans EXCEPT: no export and no round-trip monitoring to a virtual agent is allowed, no sentiment scoring, and no automatic language detection (language code xx)",
-            "display_name": "neuralseek-search",
+            "display_name": "zz - deprecated plan",
             "long_description": "The Search Plan is for use cases not requiring a Virtual Agent. NeuralSeek provides a search interface to supported knowledgebases, and will provide search responses plus generative AI summaries. Any generated AI summary incurs a per-call usage fee.  Cache responses are included at no additional cost. This plan's features are identical to the pay-per-answer plans EXCEPT: no export and no round-trip monitoring to a virtual agent is allowed, no sentiment scoring, and no automatic language detection (language code xx)"
           }
         },
@@ -199140,17 +199137,17 @@
           "watson assistant",
           "watson discovery"
         ],
-        "updated": "2025-02-26T12:09:59.592049689-05:00",
+        "updated": "2026-09-15T15:44:07.503278325-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "The Search Plan is for use cases not requiring a Virtual Agent. NeuralSeek provides a search interface to supported knowledgebases, and will provide search responses plus generative AI summaries. Any generated AI summary incurs a per-call usage fee.  Cache responses are included at no additional cost. This plan's features are identical to the pay-per-answer plans EXCEPT: no export and no round-trip monitoring to a virtual agent is allowed, no sentiment scoring, and no automatic language detection (language code xx)",
-        "displayName": "neuralseek-search"
+        "displayName": "zz - deprecated plan"
       },
       {
         "_id": "f3c89bb5-e2ae-48fb-a9bd-4bd610724aa6",
-        "_rev": "4-c6c60225ce48eb848fd76fcf4c506df6",
+        "_rev": "6-ca38b48e8a3a6c4e2a6b09f45e868167",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:f3c89bb5-e2ae-48fb-a9bd-4bd610724aa6",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/f3c89bb5-e2ae-48fb-a9bd-4bd610724aa6/%2A",
@@ -199236,7 +199233,7 @@
         "overview_ui": {
           "en": {
             "description": "The Small Business plan is the easiest way to start with NeuralSeek.  This plan does not require an external knowledge base like Watson Discovery.  Simply point NeuralSeek at your website or upload documents and everything else is handled for you. ",
-            "display_name": "neuralseek-small-business",
+            "display_name": "zz - deprecated plan",
             "long_description": "The Small Business plan is the easiest way to start with NeuralSeek.  This plan does not require an external knowledge base like Watson Discovery.  Simply point NeuralSeek at your website or upload documents and everything else is handled for you. "
           }
         },
@@ -199264,13 +199261,13 @@
           "watson assistant",
           "watson discovery"
         ],
-        "updated": "2025-02-26T12:10:15.515747524-05:00",
+        "updated": "2026-09-15T15:44:18.24200485-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/f3c89bb5-e2ae-48fb-a9bd-4bd610724aa6?complete=true",
         "visibility": {
           "restrictions": "public"
         },
         "description": "The Small Business plan is the easiest way to start with NeuralSeek.  This plan does not require an external knowledge base like Watson Discovery.  Simply point NeuralSeek at your website or upload documents and everything else is handled for you. ",
-        "displayName": "neuralseek-small-business"
+        "displayName": "zz - deprecated plan"
       }
     ],
     "description": "The world's best no-code Agentic platform. From RAG to multi-agent generative AI systems with native Governance.",
@@ -239932,12 +239929,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -283506,12 +283503,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {

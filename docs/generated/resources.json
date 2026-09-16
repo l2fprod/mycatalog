@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -6644,16 +6644,16 @@
   },
   {
     "geo_tags": [
+      "fra02",
+      "eu-es",
+      "eu-de",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "au-syd",
-      "us-east",
-      "fra02",
-      "eu-es",
-      "eu-de"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6811,13 +6811,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9924,14 +9924,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10542,19 +10542,19 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "in-che",
-      "ca-mon",
-      "au-syd",
       "eu-gb",
-      "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "ca-mon",
+      "br-sao",
+      "in-che",
+      "jp-osa",
+      "in-mum",
       "eu-de",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -12989,61 +12989,61 @@
         "id": "0497c5d9-29f9-4507-963c-9681dffc880a",
         "name": "bring-your-own-llm-aws",
         "description": "This plan features a control plane on IBM cloud, but the workload will deploy as SaaS into AWS.",
-        "displayName": "bring-your-own-llm-aws"
+        "displayName": "Neuralseek AWS"
       },
       {
         "id": "e418fec2-0fb5-42f0-9f88-0acfab234e23",
         "name": "neuralseek-bring-your-own-llm",
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm"
+        "displayName": "NeuralSeek"
       },
       {
         "id": "a4679ed6-0e45-4841-8711-a19425499064",
         "name": "neuralseek-bring-your-own-llm-cloned-lgtp7ff0",
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm"
+        "displayName": "NeuralSeek"
       },
       {
         "id": "4fc8839c-e721-411e-a6b8-778e53beafe9",
         "name": "neuralseek-bring-your-own-llm-cloned-lgtzzjl5",
         "description": "Leverage all of NeuralSeek's features, but instead of using our black-box LLM you connect via our no-code connectors to leading commercial and open-source LLM's.  This enables you to run within a single datacenter or country, or choose the commercial LLM that best fits your business and pricing needs.",
-        "displayName": "neuralseek-bring-your-own-llm"
+        "displayName": "NeuralSeek"
       },
       {
         "id": "b2b7d7e4-89aa-4ed4-8794-8ceee7f3df58",
         "name": "neuralseek-flex",
-        "description": "The NeuralSeek Flex plan is a bring-your-own LLM plan featuring unlimited usage, and a flex license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 10,000 users.  Additional users may be added in blocks of 10,000.",
-        "displayName": "neuralseek-flex"
+        "description": "The NeuralSeek Container plan is a bring-your-own LLM plan featuring unlimited usage, and a Container license allowing you to optionally & additionally install NeuralSeek components  on your hardware, behind your firewall as needed to meet your security requirements while you are subscribed to this flex plan.  All NeuralSeek features are supported on this plan. Each base instance (or install) is licensed for 0 users.  Additional users may be added in blocks of 2,000.",
+        "displayName": "Neuralseek Container"
       },
       {
         "id": "25348c87-449d-4107-bf04-82ab9b3dd3b0",
         "name": "neuralseek-pay-per-answer",
         "description": "Pay per live answer provided back thru our API.  Curation and creation of Actions load files is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer"
+        "displayName": "zz - deprecated plan"
       },
       {
         "id": "be698ed1-e36f-40bc-98f5-4ca39b9dc1c8",
         "name": "neuralseek-pay-per-answer-cloned-lgtp8b97",
         "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer"
+        "displayName": "zz - deprecated plan"
       },
       {
         "id": "87af520b-0218-42ee-a1eb-531dc760f79d",
         "name": "neuralseek-pay-per-answer-cloned-lgtp98z2",
         "description": "Pay per answer provided back thru our API via the /seek endpoint.  Curation, Virtual Agent auto-build and monitoring, and analytics is provided at no additional cost.",
-        "displayName": "neuralseek-pay-per-answer"
+        "displayName": "zz - deprecated plan"
       },
       {
         "id": "d9bb6ac6-0c91-4bbb-8eba-d9c56cc5dd4c",
         "name": "neuralseek-search",
         "description": "The Search Plan is for use cases not requiring a Virtual Agent. NeuralSeek provides a search interface to supported knowledgebases, and will provide search responses plus generative AI summaries. Any generated AI summary incurs a per-call usage fee.  Cache responses are included at no additional cost. This plan's features are identical to the pay-per-answer plans EXCEPT: no export and no round-trip monitoring to a virtual agent is allowed, no sentiment scoring, and no automatic language detection (language code xx)",
-        "displayName": "neuralseek-search"
+        "displayName": "zz - deprecated plan"
       },
       {
         "id": "f3c89bb5-e2ae-48fb-a9bd-4bd610724aa6",
         "name": "neuralseek-small-business",
         "description": "The Small Business plan is the easiest way to start with NeuralSeek.  This plan does not require an external knowledge base like Watson Discovery.  Simply point NeuralSeek at your website or upload documents and everything else is handled for you. ",
-        "displayName": "neuralseek-small-business"
+        "displayName": "zz - deprecated plan"
       }
     ],
     "description": "The world's best no-code Agentic platform. From RAG to multi-agent generative AI systems with native Governance.",
@@ -17507,12 +17507,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -22077,12 +22077,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
