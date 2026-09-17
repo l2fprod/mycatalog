@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east"
+      "eu-de"
     ],
     "id": "api-connect",
     "images": {
@@ -12005,7 +12005,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12013,7 +12012,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -54752,6 +54752,608 @@
     "localPngIcon": "/generated/icons/402ae2fc-4740-4a8f-aac8-38e67c939f95.png"
   },
   {
+    "_id": "64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
+    "_rev": "97-00c64ea7f832161c19c1084397ee556e",
+    "active": true,
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/64c9a7d7-a81c-4f55-b028-dc6a3d81c478/%2A",
+    "complete": true,
+    "created": "2026-08-12T11:57:35.170845281-04:00",
+    "disabled": false,
+    "geo_tags": [
+      "us-east",
+      "us-south"
+    ],
+    "id": "64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
+    "images": {
+      "image": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/CobaltIronLogo-Vertical-SpecialUseOnly_WhtBackground.png"
+    },
+    "kind": "service",
+    "metadata": {
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "4c796b233afa4e97813417742bd3491e:o:55d08c6d-a56e-4d3d-a622-5477dd1bbe1b",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "US"
+            ],
+            "process": "Cobalt Iron Compass Support—which is included as a part of the Compass solution—provides setup and problem resolution assistance from highly trained Compass specialists via our ticketing system. Our Support team offers help with: - Agent Provisioning and Reporting - Policies and Options - Agent Installation - Agent Protection Event Errors - Any issue with the Cobalt Iron Accelerators and associated storage Compass Support is available during normal business hours, Monday through Friday, 8 a.m. to 5 p.m. CT, excluding U.S. holidays. Customer tickets opened as urgent priority are responded to 24 x 7 x 365, as are Compass monitoring alerts for isolation of problems and identification of faults or errors in the solution.",
+            "status_url": "https://support.cobaltiron.com",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    }
+                  ],
+                  "timezone": "America/Chicago"
+                },
+                "contact": "cisupport@cobaltiron.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "email"
+              },
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Chicago"
+                },
+                "contact": "888-584-4766",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "phone"
+              }
+            ],
+            "support_escalation": {
+              "contact": "cisupport@cobaltiron.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://support.cobaltiron.com"
+          }
+        }
+      },
+      "pricing": {
+        "metrics": null,
+        "origin": "pricing_catalog",
+        "starting_price": {},
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/64c9a7d7-a81c-4f55-b028-dc6a3d81c478/pricing"
+      },
+      "rc_compatible": true,
+      "service": {
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "bindable": true,
+        "custom_create_page_hybrid_enabled": false,
+        "extension": null,
+        "iam_compatible": false,
+        "parameters": [
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50",
+                  "8868847e-71c6-4144-86ab-5da309885f17"
+                ]
+              }
+            },
+            "description": "Enter the email address for the person managing and coordinating the Compass Hybrid Vault Services.  This address will receive provisioning notifications and alerts.",
+            "displayname": "Solution Contact Email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid email address, for example name@example.com.",
+            "layout": null,
+            "name": "Solution-Contact-Email",
+            "optionsUrl": null,
+            "pattern": "^[^@\\s]+@[^@\\s.]+(\\.[^@\\s.]+)*\\.[A-Za-z]{2,}$",
+            "placeholder": "name@example.com",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50"
+                ]
+              }
+            },
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute & storage resources up to 4 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "displayname": "Compass Hybrid Vault Services - Micro Tier (OTC)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vault-Services-Micro-Tier-OTC",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50"
+                ]
+              }
+            },
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute & storage resources up to 18 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "displayname": "Compass Hybrid Vault Services - Small Tier (OTC)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vault-Services-Small-Tier-OTC",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50"
+                ]
+              }
+            },
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute & YOU BRING YOUR storage resources up to 100 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "displayname": "Compass Hybrid Vault Services - Medium Tier (OTC)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vault-Services-Medium-Tier-OTC",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50",
+                  "8868847e-71c6-4144-86ab-5da309885f17"
+                ]
+              }
+            },
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute & YOU BRING YOUR storage resources up to 250 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "displayname": "Compass Hybrid Vault Services - Large Tier (OTC)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vault-Services-Large-Tier-OTC",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50",
+                  "8868847e-71c6-4144-86ab-5da309885f17"
+                ]
+              }
+            },
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute & YOU BRING YOUR storage resources up to 500 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "displayname": "Compass Hybrid Vault Services - Enterprise Tier (OTC)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vault-Services-Enterprise-Tier-OTC",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50"
+                ]
+              }
+            },
+            "description": "Compass Hybrid VMware-hosted Vault Services - Virtual Class - Monthly",
+            "displayname": "Compass Hybrid Vault Services - Virtual VMware Tier (Monthly)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vault-Services-Virtual-VMware-Tier-Monthly",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50"
+                ]
+              }
+            },
+            "description": "Hybrid Cloud Compass Vault services for AWS, GCP, Azure, IBMCloud - Standard Class - MonthlyCompass Hybrid Cloud-hosted Vault Services for AWS, GCP, Azure, IBMCloud - Cloud Class - Monthly",
+            "displayname": "Compass Hybrid Vault Services - Cloud Tier (Monthly)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vault-Services-Cloud-Tier-Monthly",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50"
+                ]
+              }
+            },
+            "description": "Compass Hybrid Conduit Services - Standard Class - Monthly",
+            "displayname": "Compass Hybrid Conduit Services - Standard Tier (Monthly)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 19.",
+            "layout": null,
+            "name": "Compass-Hybrid-Conduit-Services-Standard-Tier-Monthly",
+            "optionsUrl": null,
+            "pattern": "^(1[0-9]|[0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50"
+                ]
+              }
+            },
+            "description": "Compass Hybrid Vault Operations & Management Services - Monthly",
+            "displayname": "Compass Hybrid Vaulting Operations - Per Instance (Monthly)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 99.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vaulting-Operations-Per-Instance-Monthly",
+            "optionsUrl": null,
+            "pattern": "^([0-9]|[1-9][0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "8868847e-71c6-4144-86ab-5da309885f17"
+                ]
+              }
+            },
+            "description": "Compass Hybrid Vault Operations & Management Services - OTC",
+            "displayname": "Compass Hybrid Vaulting Operations - Per Instance (OTC)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 99.",
+            "layout": null,
+            "name": "Compass-Hybrid-Vaulting-Operations-Per-Instance-OTC",
+            "optionsUrl": null,
+            "pattern": "^([0-9]|[1-9][0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          },
+          {
+            "associations": {
+              "plan": {
+                "showFor": [
+                  "0a6aca95-46eb-4f5b-a594-91515e8cce50",
+                  "8868847e-71c6-4144-86ab-5da309885f17"
+                ]
+              }
+            },
+            "description": "Professional Services & Activities For Compass Solutions - OTC",
+            "displayname": "Compass Services - Deployment, Onboarding, Integrations (OTC)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 99.",
+            "layout": null,
+            "name": "Compass-Services-OTC",
+            "optionsUrl": null,
+            "pattern": "^([0-9]|[1-9][0-9])$",
+            "placeholder": "0",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": "0"
+          }
+        ],
+        "plan_updateable": false,
+        "rc_provisionable": true,
+        "service_check_enabled": false,
+        "service_key_supported": false,
+        "state": "",
+        "test_check_interval": 0,
+        "type": "",
+        "unique_api_key": false,
+        "user_defined_service": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "1. Begin Backing Up in Minutes\n2. Simple, Automated, Instant-on\n3. In-cloud, on-premises, and hybrid deployments",
+                "title": "Key Compass Differentiators"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.cobaltiron.com/deploying-secure-automated-backup-with-compass/",
+          "terms_url": "https://www.cobaltiron.com/terms-of-service/"
+        }
+      }
+    },
+    "name": "compass-hybrid-backup",
+    "overview_ui": {
+      "en": {
+        "description": "Simple, secure, automated backup and restore features for hybrid workloads on premises, across hyperscalers, and in the IBM Cloud",
+        "display_name": "Compass Hybrid Backup Additions",
+        "long_description": "Powered by Cobalt Iron Compass®\nA single, unified, SaaS-based offering to backup and restore hybrid workloads and more!  Deploy in-cloud, on-premises, and hybrid configurations across multiple locations & mulitple hyperscalars.\n\nCompass protects a variety of platforms, applications, and data classes including:\n\n 1. IBM i\n 2. AIX\n 3. Linux\n 4. Oracle\n 5. Db2\n 6. SAP HANA\n 7. Windows\n 8. macOS\n 9. and many more platforms, applications, and databases\n\nCompass delivers a variety of differentiated features and functionality:\n\n 1. Simple, automated, instant-on\n 2. Cloud backup service\n 3. Resilient and compliant\n 4. Usage-based pricing\n 5. Native application integrations\n\nThe Compass offering provides a variety of integrated security and operational features including:\n\n 1. Alerting, notifications, and ticketing features and integration\n 2. Automated auditing and validation of backup server landscape\n 3. Backup server automation – hands-free automation of all backup server tasks\n 4. Centralized policy management\n 5. Complete governance\n 6. Customer data is encrypted in all phases from in-transit, to-storage, and at-rest\n 7. Multi-tenancy and unlimited sub-organizations\n 8. Role-based access control management\n  \n ** All assets are returned to Cobalt Iron at the end of the term\n"
+      }
+    },
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Cobalt Iron, Inc."
+    },
+    "tags": [
+      "aix",
+      "backup",
+      "backup and recovery",
+      "compass",
+      "consulting_tab",
+      "custom_kind_service",
+      "db2",
+      "gpfs",
+      "ibm i",
+      "ibm_third_party",
+      "linux",
+      "macos",
+      "oracle",
+      "paid",
+      "paid_only",
+      "power vs",
+      "powervs",
+      "rc_compatible",
+      "sap ecc",
+      "sap hana",
+      "scale",
+      "storage_backup",
+      "support_third_party",
+      "us-east",
+      "us-south",
+      "virtual",
+      "zseries"
+    ],
+    "updated": "2026-09-17T09:35:15.637936251-04:00",
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/64c9a7d7-a81c-4f55-b028-dc6a3d81c478?complete=true",
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "_id": "0a6aca95-46eb-4f5b-a594-91515e8cce50",
+        "_rev": "13-2fe879d7589b7b5cdc7c8049736b7df0",
+        "active": true,
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0a6aca95-46eb-4f5b-a594-91515e8cce50",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/0a6aca95-46eb-4f5b-a594-91515e8cce50/%2A",
+        "complete": true,
+        "created": "2026-08-12T15:30:30.988360366-04:00",
+        "disabled": false,
+        "geo_tags": [
+          "us-east",
+          "us-south"
+        ],
+        "id": "0a6aca95-46eb-4f5b-a594-91515e8cce50",
+        "kind": "plan",
+        "metadata": {
+          "plan": {
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": false,
+            "provision_type": "ibm_cloud",
+            "reservable": false,
+            "service_check_enabled": false,
+            "single_scope_instance": "",
+            "test_check_interval": 0
+          },
+          "pricing": {
+            "metrics": null,
+            "origin": "pricing_catalog",
+            "sales_avenue": [
+              "catalog"
+            ],
+            "starting_price": {},
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/0a6aca95-46eb-4f5b-a594-91515e8cce50/pricing"
+          },
+          "rc_compatible": true,
+          "service": {
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "bindable": true,
+            "custom_create_page_hybrid_enabled": false,
+            "extension": null,
+            "iam_compatible": false,
+            "parameters": null,
+            "plan_updateable": false,
+            "rc_provisionable": true,
+            "service_check_enabled": false,
+            "service_key_supported": true,
+            "state": "",
+            "test_check_interval": 0,
+            "type": "",
+            "unique_api_key": false,
+            "user_defined_service": null
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Automated backup and restore solution for diverse workloads in diverse locations:  Data Centers, CoLo, Remote sites, & hyperscaler clouds"
+                  },
+                  {
+                    "description": "Tailored Vault services sizes to match the workload requirements - both on-premises and in-cloud"
+                  },
+                  {
+                    "description": "Professional Services offering for deployment, onboarding, configuration, and integration activities"
+                  },
+                  {
+                    "description": "Active, SaaS-delivered operations and management of hybrid Compass environments for a unified, simple, secure, and automated experience"
+                  },
+                  {
+                    "description": "All locations, workloads, and operational activities are centrally managed from the Compass Commander web console"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": "compass-hybrid-backup-pricing",
+        "overview_ui": {
+          "en": {
+            "description": "Compass Hybrid Backup Pricing",
+            "display_name": "Compass Hybrid Backup Pricing",
+            "long_description": "Compass Hybrid Backup Pricing"
+          }
+        },
+        "parent_id": "64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Cobalt Iron, Inc."
+        },
+        "tags": [
+          "consulting_tab",
+          "ibm_third_party"
+        ],
+        "updated": "2026-09-17T09:35:15.541546313-04:00",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/0a6aca95-46eb-4f5b-a594-91515e8cce50?complete=true",
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Compass Hybrid Backup Pricing",
+        "displayName": "Compass Hybrid Backup Pricing"
+      }
+    ],
+    "description": "Simple, secure, automated backup and restore features for hybrid workloads on premises, across hyperscalers, and in the IBM Cloud",
+    "longDescription": "Powered by Cobalt Iron Compass®\nA single, unified, SaaS-based offering to backup and restore hybrid workloads and more!  Deploy in-cloud, on-premises, and hybrid configurations across multiple locations & mulitple hyperscalars.\n\nCompass protects a variety of platforms, applications, and data classes including:\n\n 1. IBM i\n 2. AIX\n 3. Linux\n 4. Oracle\n 5. Db2\n 6. SAP HANA\n 7. Windows\n 8. macOS\n 9. and many more platforms, applications, and databases\n\nCompass delivers a variety of differentiated features and functionality:\n\n 1. Simple, automated, instant-on\n 2. Cloud backup service\n 3. Resilient and compliant\n 4. Usage-based pricing\n 5. Native application integrations\n\nThe Compass offering provides a variety of integrated security and operational features including:\n\n 1. Alerting, notifications, and ticketing features and integration\n 2. Automated auditing and validation of backup server landscape\n 3. Backup server automation – hands-free automation of all backup server tasks\n 4. Centralized policy management\n 5. Complete governance\n 6. Customer data is encrypted in all phases from in-transit, to-storage, and at-rest\n 7. Multi-tenancy and unlimited sub-organizations\n 8. Role-based access control management\n  \n ** All assets are returned to Cobalt Iron at the end of the term\n",
+    "displayName": "Compass Hybrid Backup Additions",
+    "imageUrl": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/CobaltIronLogo-Vertical-SpecialUseOnly_WhtBackground.png",
+    "localPngIcon": "/generated/icons/64c9a7d7-a81c-4f55-b028-dc6a3d81c478.png"
+  },
+  {
     "_id": "3e1a2c30-11dd-11ec-b621-67e0f6600d56",
     "_rev": "3-27e27a626fbe27467ed794609668ad9d",
     "active": true,
@@ -78238,7 +78840,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "23-2fc05810210f3c2c6efb5ac89899eb85",
+        "_rev": "24-4d6356e65387e3501b2465eacd4c7222",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children": [
@@ -79845,7 +80447,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:eu-gb",
-            "_rev": "4-c5d80b7b61e1b8bfeb6ec4b5330e948d",
+            "_rev": "5-24c8f1a1ba7f5a81519fb7ff4ce18ddf",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aeu-gb",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:eu-gb/%2A",
@@ -79873,7 +80475,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -80237,7 +80840,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-09-16T15:55:39.122011052-04:00",
+            "updated": "2026-09-17T07:30:59.143126677-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:eu-gb?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -81933,7 +82536,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-09-16T15:56:10.049470065-04:00",
+        "updated": "2026-09-17T10:33:00.019028619-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -85345,7 +85948,7 @@
       },
       {
         "_id": "databases-for-elasticsearch-gen2-enterprise",
-        "_rev": "23-2fc05810210f3c2c6efb5ac89899eb85",
+        "_rev": "24-4d6356e65387e3501b2465eacd4c7222",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-elasticsearch-gen2-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise/%2A",
@@ -85435,7 +86038,7 @@
           "rc_compatible",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-09-16T15:56:10.049470065-04:00",
+        "updated": "2026-09-17T10:33:00.019028619-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-gen2-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -85666,7 +86269,7 @@
   },
   {
     "_id": "databases-for-mongodb",
-    "_rev": "713-7fd70870fd98f08230ff51e481c587e4",
+    "_rev": "714-338a07366efa816ca42dc64970e0681b",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-for-mongodb",
     "children": [
@@ -91373,7 +91976,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "20-7b6936810bb8943760f1ee9c00f62342",
+        "_rev": "22-2b5d9e998b542bcf345ecc5a322d8fea",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children": [
@@ -93757,7 +94360,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T15:58:42.698847447-04:00",
+        "updated": "2026-09-17T10:31:57.386128086-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -96713,7 +97316,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "58-4703565a6bdaabb02d7600a67226268b",
+        "_rev": "60-015aeb9d0b274981a2e54fb6e1dddd0d",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children": [
@@ -97117,7 +97720,7 @@
           },
           {
             "_id": "databases-for-mongodb-standard-gen2:ca-mon",
-            "_rev": "41-a9d859e8ecfdeb4043563568264cf698",
+            "_rev": "42-01177b2c583c4630434886862f4dc6a5",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:ca-mon/%2A",
@@ -97146,6 +97749,7 @@
                   },
                   "backups": {
                     "backups_create_supported": false,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -97507,7 +98111,7 @@
             "tags": [
               "ca-mon"
             ],
-            "updated": "2026-08-31T05:13:29.278862267-04:00",
+            "updated": "2026-09-17T07:23:53.181122916-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -98709,7 +99313,7 @@
           },
           {
             "_id": "databases-for-mongodb-standard-gen2:in-che",
-            "_rev": "19-104f7acbe866815f1b8d4c8409feca7a",
+            "_rev": "20-a3aa897d6fd51cd9b6ae9540586bcc75",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-che/%2A",
@@ -98738,6 +99342,7 @@
                   },
                   "backups": {
                     "backups_create_supported": false,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -99099,7 +99704,7 @@
             "tags": [
               "in-che"
             ],
-            "updated": "2026-08-31T05:13:51.809558507-04:00",
+            "updated": "2026-09-17T07:24:15.872417685-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -99107,7 +99712,7 @@
           },
           {
             "_id": "databases-for-mongodb-standard-gen2:in-mum",
-            "_rev": "13-0bb9e272e35f9a137f5875904224fcdf",
+            "_rev": "14-dfcbe0218da33f3f8c685cd5f85a6fc9",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-mum/%2A",
@@ -99136,6 +99741,7 @@
                   },
                   "backups": {
                     "backups_create_supported": false,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -99497,7 +100103,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-08-31T05:14:12.189414761-04:00",
+            "updated": "2026-09-17T07:24:37.776387219-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -100388,7 +100994,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T15:58:43.225697377-04:00",
+        "updated": "2026-09-17T10:31:58.094612104-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -100400,6 +101006,9 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -100411,9 +101020,6 @@
       "par01",
       "us-east",
       "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
       "jp-tok"
     ],
     "id": "databases-for-mongodb",
@@ -100558,7 +101164,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-16T15:57:11.727456512-04:00",
+    "updated": "2026-09-17T10:31:58.094926997-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -100804,7 +101410,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-enterprise-sharding",
-        "_rev": "20-7b6936810bb8943760f1ee9c00f62342",
+        "_rev": "22-2b5d9e998b542bcf345ecc5a322d8fea",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-enterprise-sharding",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding/%2A",
@@ -100893,7 +101499,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T15:58:42.698847447-04:00",
+        "updated": "2026-09-17T10:31:57.386128086-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-enterprise-sharding?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -101016,7 +101622,7 @@
       },
       {
         "_id": "databases-for-mongodb-gen2-standard",
-        "_rev": "58-4703565a6bdaabb02d7600a67226268b",
+        "_rev": "60-015aeb9d0b274981a2e54fb6e1dddd0d",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mongodb-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard/%2A",
@@ -101107,7 +101713,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T15:58:43.225697377-04:00",
+        "updated": "2026-09-17T10:31:58.094612104-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -104158,7 +104764,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "30-d5527508a3ba3740e0fd5883e9488796",
+        "_rev": "31-c876b13e7945c52fc11601c4dd4f7023",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children": [
@@ -106851,7 +107457,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T16:03:18.56142333-04:00",
+        "updated": "2026-09-17T10:30:25.444955098-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -107135,7 +107741,7 @@
       },
       {
         "_id": "databases-for-mysql-gen2-standard",
-        "_rev": "30-d5527508a3ba3740e0fd5883e9488796",
+        "_rev": "31-c876b13e7945c52fc11601c4dd4f7023",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-mysql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard/%2A",
@@ -107221,7 +107827,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T16:03:18.56142333-04:00",
+        "updated": "2026-09-17T10:30:25.444955098-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -110233,6 +110839,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -110243,8 +110850,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -110336,7 +110942,7 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "56-0025ad4a39c64824de67469d838c72fa",
+        "_rev": "58-83bdf9cfdc7315829f76df9466e7a3a3",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children": [
@@ -111660,7 +112266,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:eu-gb",
-            "_rev": "4-a2e20e5b9b7c1fa2465eb05f510e362f",
+            "_rev": "5-e49eab1f3b5dc97bdfadb28fe59b1eb2",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aeu-gb",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-gb/%2A",
@@ -111688,7 +112294,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -111981,7 +112588,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-09-16T15:59:19.335502563-04:00",
+            "updated": "2026-09-17T07:29:26.414210962-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:eu-gb?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -112972,7 +113579,7 @@
           },
           {
             "_id": "databases-for-postgresql-standard-gen2:us-south",
-            "_rev": "4-7567dba0acef90e063fef5ea8d86a1f6",
+            "_rev": "5-6e91cdecc6114d3294e38bf4509f2ac6",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aus-south",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:us-south/%2A",
@@ -113000,7 +113607,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -113293,7 +113901,7 @@
             "tags": [
               "rc_compatible"
             ],
-            "updated": "2026-09-16T15:59:24.730703959-04:00",
+            "updated": "2026-09-17T07:29:09.386127076-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:us-south?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -113388,7 +113996,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T16:01:16.948232149-04:00",
+        "updated": "2026-09-17T10:32:29.081708248-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -113497,7 +114105,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -113512,7 +114119,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -113782,7 +114390,7 @@
       },
       {
         "_id": "databases-for-postgresql-gen2-standard",
-        "_rev": "56-0025ad4a39c64824de67469d838c72fa",
+        "_rev": "58-83bdf9cfdc7315829f76df9466e7a3a3",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-postgresql-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard/%2A",
@@ -113873,7 +114481,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T16:01:16.948232149-04:00",
+        "updated": "2026-09-17T10:32:29.081708248-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -117018,7 +117626,7 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "23-48404484e101541bcf8faec4c2595f92",
+        "_rev": "24-ebabf34e5f2077d7cb785da2bb6bbbe9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children": [
@@ -118292,7 +118900,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:eu-gb",
-            "_rev": "4-298c09710a0138277816213fb382fe16",
+            "_rev": "5-7dc52836994b283e33a76d7adf439172",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aeu-gb",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-gb/%2A",
@@ -118320,7 +118928,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -118601,7 +119210,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-09-16T15:54:51.078548929-04:00",
+            "updated": "2026-09-17T07:31:55.71509222-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-gb?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -119963,7 +120572,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T15:55:08.435612191-04:00",
+        "updated": "2026-09-17T10:29:23.783234377-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -120347,7 +120956,7 @@
       },
       {
         "_id": "databases-for-redis-gen2-standard",
-        "_rev": "23-48404484e101541bcf8faec4c2595f92",
+        "_rev": "24-ebabf34e5f2077d7cb785da2bb6bbbe9",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-for-redis-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard/%2A",
@@ -120437,7 +121046,7 @@
           "ibm_created",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T15:55:08.435612191-04:00",
+        "updated": "2026-09-17T10:29:23.783234377-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -120554,7 +121163,7 @@
   },
   {
     "_id": "databases-independent-backups",
-    "_rev": "32-fc382b6fe469b763cb638b7b660884fd",
+    "_rev": "33-280e525c50fabd609428ce7f89d0833a",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:databases-independent-backups",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups/%2A",
@@ -120666,7 +121275,7 @@
       "us-south",
       "vpc_private_endpoint"
     ],
-    "updated": "2026-09-16T15:59:13.438124702-04:00",
+    "updated": "2026-09-17T10:30:55.984126522-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -120674,7 +121283,7 @@
     "plans": [
       {
         "_id": "databases-independent-backups-gen2-standard",
-        "_rev": "30-0198b5ac03c4b5223300ae40b4fbdefe",
+        "_rev": "31-102a0ef336f83fb8de97143daece6bba",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:databases-independent-backups-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard/%2A",
@@ -120758,7 +121367,7 @@
           "ibm_created",
           "vpc_private_endpoint"
         ],
-        "updated": "2026-09-16T15:59:13.438185003-04:00",
+        "updated": "2026-09-17T10:30:55.984020429-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-independent-backups-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -123718,15 +124327,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-es",
       "eu-gb",
-      "eu-de",
-      "au-syd",
-      "us-east",
+      "eu-es",
       "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -128470,13 +129079,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -130618,13 +131227,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -157317,14 +157926,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -167910,19 +168519,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "in-mum",
-      "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "us-south",
+      "eu-gb",
+      "br-sao",
       "eu-es",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
+      "ca-tor",
+      "eu-de",
+      "us-south",
       "in-che",
-      "jp-osa"
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -192549,7 +193158,7 @@
       },
       {
         "_id": "messages-for-rabbitmq-gen2-standard",
-        "_rev": "22-860220c3ab6032837a925d1184296794",
+        "_rev": "23-9b7cc92bec6750703bef78ec5c815b3c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-gen2-standard",
         "children": [
@@ -195185,7 +195794,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T16:00:46.355948709-04:00",
+        "updated": "2026-09-17T10:29:54.596530849-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -195570,7 +196179,7 @@
       },
       {
         "_id": "messages-for-rabbitmq-gen2-standard",
-        "_rev": "22-860220c3ab6032837a925d1184296794",
+        "_rev": "23-9b7cc92bec6750703bef78ec5c815b3c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:messages-for-rabbitmq-gen2-standard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard/%2A",
@@ -195668,7 +196277,7 @@
           "integration",
           "rc_compatible"
         ],
-        "updated": "2026-09-16T16:00:46.355948709-04:00",
+        "updated": "2026-09-17T10:29:54.596530849-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/messages-for-rabbitmq-gen2-standard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -232032,7 +232641,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "482-d1a67694f5aa12a929ad04cc6638ad00",
+    "_rev": "483-dfa921f8761558a39a023ad493f28578",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -232530,7 +233139,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-09-16T15:00:36.039062494-04:00",
+    "updated": "2026-09-17T11:27:56.137426825-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -265211,6 +265820,7 @@
     "created": "2018-11-19T20:43:19.725Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -265252,8 +265862,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "images": {
@@ -309225,7 +309834,6 @@
     "longDescription": "IBM watsonx.governance™ helps you direct, manage and monitor your organization’s AI activities",
     "displayName": "watsonx.governance",
     "imageUrl": "https://aiopenscale.cloud.ibm.com/aiopenscale-broker/public/feature_xgov_light.svg",
-    "localSvgIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.svg",
     "localPngIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.png"
   },
   {

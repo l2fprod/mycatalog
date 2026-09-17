@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
+      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east"
+      "eu-de"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -830,7 +830,6 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -838,7 +837,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4580,6 +4580,65 @@
   },
   {
     "geo_tags": [
+      "us-east",
+      "us-south"
+    ],
+    "id": "64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "compass-hybrid-backup",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "aix",
+      "backup",
+      "backup and recovery",
+      "compass",
+      "consulting_tab",
+      "custom_kind_service",
+      "db2",
+      "gpfs",
+      "ibm i",
+      "ibm_third_party",
+      "linux",
+      "macos",
+      "oracle",
+      "paid",
+      "paid_only",
+      "power vs",
+      "powervs",
+      "rc_compatible",
+      "sap ecc",
+      "sap hana",
+      "scale",
+      "storage_backup",
+      "support_third_party",
+      "us-east",
+      "us-south",
+      "virtual",
+      "zseries"
+    ],
+    "plans": [
+      {
+        "id": "0a6aca95-46eb-4f5b-a594-91515e8cce50",
+        "name": "compass-hybrid-backup-pricing",
+        "description": "Compass Hybrid Backup Pricing",
+        "displayName": "Compass Hybrid Backup Pricing"
+      }
+    ],
+    "description": "Simple, secure, automated backup and restore features for hybrid workloads on premises, across hyperscalers, and in the IBM Cloud",
+    "longDescription": "Powered by Cobalt Iron Compass®\nA single, unified, SaaS-based offering to backup and restore hybrid workloads and more!  Deploy in-cloud, on-premises, and hybrid configurations across multiple locations & mulitple hyperscalars.\n\nCompass protects a variety of platforms, applications, and data classes including:\n\n 1. IBM i\n 2. AIX\n 3. Linux\n 4. Oracle\n 5. Db2\n 6. SAP HANA\n 7. Windows\n 8. macOS\n 9. and many more platforms, applications, and databases\n\nCompass delivers a variety of differentiated features and functionality:\n\n 1. Simple, automated, instant-on\n 2. Cloud backup service\n 3. Resilient and compliant\n 4. Usage-based pricing\n 5. Native application integrations\n\nThe Compass offering provides a variety of integrated security and operational features including:\n\n 1. Alerting, notifications, and ticketing features and integration\n 2. Automated auditing and validation of backup server landscape\n 3. Backup server automation – hands-free automation of all backup server tasks\n 4. Centralized policy management\n 5. Complete governance\n 6. Customer data is encrypted in all phases from in-transit, to-storage, and at-rest\n 7. Multi-tenancy and unlimited sub-organizations\n 8. Role-based access control management\n  \n ** All assets are returned to Cobalt Iron at the end of the term\n",
+    "displayName": "Compass Hybrid Backup Additions",
+    "imageUrl": "https://269846.fs1.hubspotusercontent-na1.net/hubfs/269846/CobaltIronLogo-Vertical-SpecialUseOnly_WhtBackground.png",
+    "localPngIcon": "/generated/icons/64c9a7d7-a81c-4f55-b028-dc6a3d81c478.png"
+  },
+  {
+    "geo_tags": [
       "global"
     ],
     "id": "3e1a2c30-11dd-11ec-b621-67e0f6600d56",
@@ -6046,6 +6105,9 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6057,9 +6119,6 @@
       "par01",
       "us-east",
       "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
       "jp-tok"
     ],
     "id": "databases-for-mongodb",
@@ -6232,7 +6291,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -6247,7 +6305,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6648,15 +6707,15 @@
   },
   {
     "geo_tags": [
-      "eu-es",
       "eu-gb",
-      "eu-de",
-      "au-syd",
-      "us-east",
+      "eu-es",
       "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
+      "eu-de",
+      "au-syd",
+      "us-east",
       "fra02"
     ],
     "id": "dashdb-for-transactions",
@@ -6815,13 +6874,13 @@
   },
   {
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9928,14 +9987,14 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10546,19 +10605,19 @@
   },
   {
     "geo_tags": [
-      "in-mum",
-      "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "us-south",
+      "eu-gb",
+      "br-sao",
       "eu-es",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "br-sao",
+      "ca-tor",
+      "eu-de",
+      "us-south",
       "in-che",
-      "jp-osa"
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -20208,6 +20267,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20249,8 +20309,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -22653,7 +22712,6 @@
     "longDescription": "IBM watsonx.governance™ helps you direct, manage and monitor your organization’s AI activities",
     "displayName": "watsonx.governance",
     "imageUrl": "https://aiopenscale.cloud.ibm.com/aiopenscale-broker/public/feature_xgov_light.svg",
-    "localSvgIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.svg",
     "localPngIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.png"
   },
   {
