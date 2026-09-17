@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -830,6 +830,7 @@
   },
   {
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -837,8 +838,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -4139,15 +4139,15 @@
     "geo_tags": [
       "br-sao",
       "ca-tor",
-      "eu-gb",
       "jp-osa",
       "jp-tok",
-      "us-south",
       "au-syd",
       "che01",
       "eu-de",
       "eu-es",
-      "us-east"
+      "eu-gb",
+      "us-east",
+      "us-south"
     ],
     "id": "cloudant",
     "kind": "service",
@@ -6046,9 +6046,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6060,7 +6057,10 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-gb"
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6232,6 +6232,7 @@
   },
   {
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -6246,8 +6247,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "id": "databases-for-postgresql",
     "kind": "service",
@@ -6426,9 +6426,11 @@
       "ca-mon",
       "eu-de",
       "eu-es",
+      "eu-gb",
       "in-che",
       "in-mum",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "id": "databases-independent-backups",
     "kind": "service",
@@ -6449,6 +6451,7 @@
       "data_management",
       "eu-de",
       "eu-es",
+      "eu-gb",
       "ibm_created",
       "in-che",
       "in-mum",
@@ -6456,6 +6459,7 @@
       "rc_compatible",
       "support_ibm",
       "us-east",
+      "us-south",
       "vpc_private_endpoint"
     ],
     "plans": [
@@ -6646,14 +6650,14 @@
     "geo_tags": [
       "eu-es",
       "eu-gb",
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "au-syd",
-      "us-east",
-      "fra02",
-      "us-south",
-      "eu-de"
+      "fra02"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9924,14 +9928,14 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10543,17 +10547,17 @@
   {
     "geo_tags": [
       "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "ca-tor",
-      "eu-gb",
-      "in-che",
       "ca-mon",
       "eu-de",
       "us-south",
+      "eu-es",
+      "jp-tok",
+      "us-east",
       "au-syd",
+      "eu-gb",
       "br-sao",
+      "in-che",
       "jp-osa"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -14180,6 +14184,7 @@
     "longDescription": "The Post-Surgery Recovery Support Agent is an AI-powered solution designed to support patients and care teams after discharge, ensuring safe recovery and continuous follow-up care.\nAfter surgery, many complications and readmissions happen due to gaps in monitoring, unclear instructions, or delayed intervention. This agent addresses those challenges by guiding patients through their recovery, tracking symptoms, and detecting early signs of risk.\nUsing a conversational interface, the agent checks in with patients, collects recovery data (pain, symptoms, medication adherence, wound status), and provides personalized guidance based on clinical protocols. It continuously monitors patient responses and flags potential complications for timely clinician review.\nThe agent orchestrates post-discharge workflows by connecting patient follow-up, care coordination, and clinical oversight into a single process. It helps ensure that no critical signals are missed and that patients stay on track with their recovery plan.\nFor healthcare providers, the agent reduces manual follow-up workload, improves care continuity, and supports early intervention. For patients, it delivers clear guidance, reassurance, and an easy way to stay connected with their care team.\nBy improving recovery monitoring, enhancing patient engagement, and enabling early risk detection, the Post-Surgery Recovery Support Agent helps reduce complications, lower readmission rates, and improve overall clinical outcomes.\n",
     "displayName": "Post-Surgery Recovery Support Agent",
     "imageUrl": "https://vcmain.blob.core.windows.net/static/vc-logo-icon-small.svg",
+    "localSvgIcon": "/generated/icons/f0d90dab-b44d-4432-8496-e400c1c6cf88.svg",
     "localPngIcon": "/generated/icons/f0d90dab-b44d-4432-8496-e400c1c6cf88.png"
   },
   {
@@ -15641,8 +15646,8 @@
   },
   {
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
