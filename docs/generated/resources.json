@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -830,7 +830,6 @@
   },
   {
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -838,7 +837,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -6105,9 +6105,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6119,7 +6116,10 @@
       "par01",
       "us-east",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "au-syd",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6708,15 +6708,15 @@
   {
     "geo_tags": [
       "eu-gb",
-      "eu-es",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "au-syd",
       "us-east",
-      "fra02"
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -9987,14 +9987,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10605,18 +10605,18 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "eu-de",
-      "us-south",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "ca-mon",
       "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -21893,8 +21893,6 @@
       "paid_only",
       "block_internal_trial",
       "subscription",
-      "free",
-      "lite",
       "allow_internal_users"
     ],
     "tags": [
@@ -21908,7 +21906,6 @@
       "eu_access",
       "eu-de",
       "eu-gb",
-      "free",
       "freesia",
       "gc_migrate",
       "hipaa",
@@ -21942,13 +21939,6 @@
         "description": "To purchase Enterprise with data isolation, or add data isolation to an existing Enterprise plan, contact us at: http://ibm.biz/contact-wa-enterprise",
         "displayName": "Enterprise with data isolation",
         "originalName": "enterprisedataisolation"
-      },
-      {
-        "id": "bd16e3c8-3da0-11e6-bce3-54ee7514918e",
-        "name": "free",
-        "description": "Everything you need to get started, free for as long as you need it",
-        "displayName": "Lite",
-        "originalName": "free"
       },
       {
         "id": "f0a3dd47-b693-4d73-a8df-aa6baf07a933",

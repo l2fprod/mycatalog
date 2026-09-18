@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "images": {
@@ -12005,7 +12005,6 @@
     "created": "2014-12-12T18:26:30Z",
     "disabled": false,
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12013,7 +12012,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "images": {
@@ -101006,9 +101006,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -101020,7 +101017,10 @@
       "par01",
       "us-east",
       "us-south",
-      "jp-tok"
+      "jp-tok",
+      "au-syd",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -101517,6 +101517,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -101524,11 +101528,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -124328,15 +124328,15 @@
     "disabled": false,
     "geo_tags": [
       "eu-gb",
-      "eu-es",
-      "us-south",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
       "au-syd",
       "us-east",
-      "fra02"
+      "fra02",
+      "eu-es",
+      "us-south",
+      "eu-de"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -131227,13 +131227,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -157926,14 +157926,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -168519,18 +168519,18 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
       "br-sao",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "eu-de",
+      "us-south",
+      "eu-gb",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "eu-de",
-      "us-south",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "ca-mon",
       "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -282767,7 +282767,7 @@
   },
   {
     "_id": "7045626d-55e3-4418-be11-683a26dbc1e5",
-    "_rev": "69-f5cc1b2fa0c3753992b90793a0a9791f",
+    "_rev": "70-2cacd2694f338902f61b56a4a16abee3",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:7045626d-55e3-4418-be11-683a26dbc1e5",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/%2A",
@@ -283474,8 +283474,6 @@
       "paid_only",
       "block_internal_trial",
       "subscription",
-      "free",
-      "lite",
       "allow_internal_users"
     ],
     "provider": {
@@ -283492,7 +283490,6 @@
       "eu_access",
       "eu-de",
       "eu-gb",
-      "free",
       "freesia",
       "gc_migrate",
       "hipaa",
@@ -283512,7 +283509,7 @@
       "us-south",
       "watson"
     ],
-    "updated": "2026-08-13T08:35:36.864708817-04:00",
+    "updated": "2026-09-17T18:05:33.137599741-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -284881,693 +284878,6 @@
         "description": "To purchase Enterprise with data isolation, or add data isolation to an existing Enterprise plan, contact us at: http://ibm.biz/contact-wa-enterprise",
         "displayName": "Enterprise with data isolation",
         "originalName": "enterprisedataisolation"
-      },
-      {
-        "_id": "bd16e3c8-3da0-11e6-bce3-54ee7514918e",
-        "_rev": "6-4f4c2b8f06164c8ed992d569c00debb2",
-        "active": true,
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:bd16e3c8-3da0-11e6-bce3-54ee7514918e",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/bd16e3c8-3da0-11e6-bce3-54ee7514918e/%2A",
-        "complete": true,
-        "created": "2016-07-07T13:36:35Z",
-        "disabled": false,
-        "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
-          "us-east",
-          "us-south"
-        ],
-        "id": "bd16e3c8-3da0-11e6-bce3-54ee7514918e",
-        "images": {
-          "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/artifacts/cache/fba11f3b658ae170d13ebec56ef58d0b-public/conversation.svg",
-          "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/artifacts/cache/fba11f3b658ae170d13ebec56ef58d0b-public/conversation.svg",
-          "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/artifacts/cache/fba11f3b658ae170d13ebec56ef58d0b-public/conversation.svg",
-          "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/artifacts/cache/fba11f3b658ae170d13ebec56ef58d0b-public/conversation.svg"
-        },
-        "kind": "plan",
-        "metadata": {
-          "original_name": "free",
-          "plan": {
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "cf_guid": {
-              "au-syd": "abecbe58-c26c-4271-a294-57b77e476bd2",
-              "eu-de": "3eff1318-b7f2-4df4-a76c-8bc5c4bdbf54",
-              "eu-gb": "1542a324-3404-4b59-8df3-21ac3e9ad478",
-              "us-south": "805f3109-79db-4b3b-ad5a-f17273ffc4fd"
-            },
-            "provision_type": "ibm_cloud",
-            "reservable": false,
-            "service_check_enabled": false,
-            "single_scope_instance": "org",
-            "test_check_interval": 0
-          },
-          "rc_compatible": true,
-          "service": {
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "bindable": true,
-            "custom_create_page_hybrid_enabled": false,
-            "extension": null,
-            "iam_compatible": true,
-            "parameters": null,
-            "plan_updateable": true,
-            "rc_provisionable": true,
-            "service_check_enabled": false,
-            "service_key_supported": true,
-            "state": "",
-            "test_check_interval": 0,
-            "type": "",
-            "unique_api_key": true,
-            "user_defined_service": null
-          },
-          "ui": {
-            "side_by_side_index": 2,
-            "strings": {
-              "de": {
-                "bullets": [
-                  {
-                    "description": "Alle Features, die zum Einstieg erforderlich sind, kostenfrei, solange Sie sie benötigen. "
-                  },
-                  {
-                    "description": "Bis zu 1.000 eindeutige monatlich aktive Benutzer (monthly active users, MAUs), die den Chat mit dem Assistenten nutzen"
-                  },
-                  {
-                    "description": "Bis zu 10.000 Nachrichten pro Monat"
-                  },
-                  {
-                    "description": "---  Features  ---"
-                  },
-                  {
-                    "description": "- Erstklassige Dialog-AI mit Watson"
-                  },
-                  {
-                    "description": "- Den Websiteassistenten mithilfe von Webchat anpassen - Webchat innerhalb weniger Minuten bereitstellen oder unsere vollständig erweiterbare Architektur verwenden"
-                  },
-                  {
-                    "description": "- Den Assistenten durch automatisches Scannen vorhandener Webseiten und Dokumente oder durch die Verwendung unserer vordefinierten Dialoginhalte auf dem neusten Stand halten"
-                  },
-                  {
-                    "description": "- Eine Verbindung zu einer beliebigen Anwendung oder Datenbank mit einer vordefinierten Integration herstellen oder eine eigene angepasste Integration auf der Basis von API-Endpunkten erstellen"
-                  },
-                  {
-                    "description": "- Interessante Benutzerinteraktionen mit Bildern, Schaltflächen und weiteren Elementen erstellen"
-                  },
-                  {
-                    "description": "- Den Assistenten mithilfe des Analysedashboards analysieren und verbessern"
-                  },
-                  {
-                    "description": "- Die Gewissheit, dass der Assistent in der IBM Public Cloud zuverlässig gehostet wird"
-                  },
-                  {
-                    "description": "---  Grenzwerte ---"
-                  },
-                  {
-                    "description": "Bis zu 5 Skills (Dialog, Aktion, Suche)"
-                  },
-                  {
-                    "description": "7 Tage Nutzungsanalysen"
-                  },
-                  {
-                    "description": "5 Minuten Zeitlimit für Sitzungsinaktivität"
-                  },
-                  {
-                    "description": "Services werden nach einem Inaktivitätszeitraum von 30 Tagen gelöscht."
-                  }
-                ]
-              },
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Everything you need to get started, free for as long as you need it"
-                  },
-                  {
-                    "description": "Up to 1,000 unique monthly active users (MAUs) chatting with your assistant"
-                  },
-                  {
-                    "description": "Up to 10,000 messages per month"
-                  },
-                  {
-                    "description": "---  Features  ---"
-                  },
-                  {
-                    "description": "- World-class conversational AI"
-                  },
-                  {
-                    "description": "- Make your website assistant your own with Webchat - deploy Webchat in minutes, or use our fully extensible architecture"
-                  },
-                  {
-                    "description": "- Keep your assistant up-to-date by automatically scanning existing webpages and documents or by using some of our prebuilt dialog content"
-                  },
-                  {
-                    "description": "- Connect to any application or database with a prebuilt integration, or build your own custom integration on top of API endpoints"
-                  },
-                  {
-                    "description": "- Create engaging user interactions using images, buttons, and more"
-                  },
-                  {
-                    "description": "- Analyze and enhance your assistant with our analytics dashboard"
-                  },
-                  {
-                    "description": "- Take comfort knowing your assistant is reliably hosted on IBM Public Cloud"
-                  },
-                  {
-                    "description": "---  Limits  ---"
-                  },
-                  {
-                    "description": "Actions:"
-                  },
-                  {
-                    "description": "- 3 assistants per instance"
-                  },
-                  {
-                    "description": "- Up to 100 actions"
-                  },
-                  {
-                    "description": "- 3 custom extensions per assistant"
-                  },
-                  {
-                    "description": "- 7 days of usage analytics"
-                  },
-                  {
-                    "description": "- Session inactivity timeout 5 minutes"
-                  },
-                  {
-                    "description": "- Services are deleted after 30 days of inactivity"
-                  },
-                  {
-                    "description": "Dialog:"
-                  },
-                  {
-                    "description": "- Upto 5 Skills (Dialog, Action, Search)"
-                  },
-                  {
-                    "description": "- 7 days of usage analytics"
-                  },
-                  {
-                    "description": "- Session inactivity timeout 5 minutes"
-                  },
-                  {
-                    "description": "- Services are deleted after 30 days of inactivity"
-                  }
-                ]
-              },
-              "es": {
-                "bullets": [
-                  {
-                    "description": "Todo lo que necesita para empezar, gratis durante el tiempo que lo necesite"
-                  },
-                  {
-                    "description": "Hasta 1000 usuarios activos mensuales (MAU) únicos en conversación con el asistente"
-                  },
-                  {
-                    "description": "Hasta 10.000 mensajes al mes"
-                  },
-                  {
-                    "description": "---  Características  ---"
-                  },
-                  {
-                    "description": "- IA conversacional de primera clase con Watson"
-                  },
-                  {
-                    "description": "- Cree su propio asistente de sitio web con Webchat - despliegue Webchat en minutos, o utilice nuestra arquitectura totalmente ampliable"
-                  },
-                  {
-                    "description": "- Mantenga el asistente actualizado mediante la exploración automática de páginas web y documentos existentes o utilizando nuestro contenido de diálogo ya creado"
-                  },
-                  {
-                    "description": "- Conéctese a cualquier aplicación o base de datos con una integración preconfigurada, o cree su propia integración personalizada sobre puntos finales de API"
-                  },
-                  {
-                    "description": "- Cree interacciones de usuario atractivas utilizando imágenes, botones y más"
-                  },
-                  {
-                    "description": "- Analice y mejore el asistente con nuestro panel de control de análisis"
-                  },
-                  {
-                    "description": "- Siéntase cómodo sabiendo que el asistente está alojado de forma fiable en IBM Public Cloud"
-                  },
-                  {
-                    "description": "--- Límites  ---"
-                  },
-                  {
-                    "description": "Hasta 5 habilidades (diálogo, acción, búsqueda)"
-                  },
-                  {
-                    "description": "7 días de análisis de uso"
-                  },
-                  {
-                    "description": "5 minutos de tiempo de espera de inactividad de sesión"
-                  },
-                  {
-                    "description": "Los servicios se suprimen después de 30 días de inactividad"
-                  }
-                ]
-              },
-              "fr": {
-                "bullets": [
-                  {
-                    "description": "Tout ce dont vous avez besoin pour commencer, gratuitement aussi longtemps que vous en avez besoin"
-                  },
-                  {
-                    "description": "Jusqu'à 1 000 utilisateurs actifs mensuels uniques (MAU) discutant avec votre assistant"
-                  },
-                  {
-                    "description": "Jusqu'à 10 000 messages par mois"
-                  },
-                  {
-                    "description": "--- Fonctions ---"
-                  },
-                  {
-                    "description": "L'IA conversationnelle de pointe avec Watson"
-                  },
-                  {
-                    "description": "- Appropriez-vous votre assistant de site Web avec Webchat. Déployez Webchat en quelques minutes ou utilisez notre architecture entièrement extensible."
-                  },
-                  {
-                    "description": "- Maintenez votre assistant à jour en analysant automatiquement les pages Web et les documents existants ou en utilisant certains de nos contenus de dialogue prédéfinis."
-                  },
-                  {
-                    "description": "- Connectez-vous à n'importe quelle application ou base de données avec une intégration prédéfinie, ou créez votre propre intégration personnalisée sur les nœuds finaux d'API."
-                  },
-                  {
-                    "description": "- Créez des interactions utilisateur attrayantes à l'aide d'images, de boutons, etc."
-                  },
-                  {
-                    "description": "- Analysez et améliorez votre assistant grâce à notre tableau de bord analytique."
-                  },
-                  {
-                    "description": "- Libérez-vous de toute préoccupation en sachant que votre assistant est hébergé de manière fiable sur IBM Public Cloud"
-                  },
-                  {
-                    "description": "---  Limites  ---"
-                  },
-                  {
-                    "description": "Jusqu'à 5 Skills (Dialogue, Actions, Recherche)"
-                  },
-                  {
-                    "description": "7 jours d'analyse d'utilisation"
-                  },
-                  {
-                    "description": "Délai d'inactivité de session 5 minutes"
-                  },
-                  {
-                    "description": "Les services sont supprimés après 30 jours d'inactivité."
-                  }
-                ]
-              },
-              "it": {
-                "bullets": [
-                  {
-                    "description": "Tutto il necessario per iniziare, gratuitamente per tutto il tempo di cui hai bisogno"
-                  },
-                  {
-                    "description": "Fino a 1.000 MAU (monthly active user) univoci in chat con l'assistente "
-                  },
-                  {
-                    "description": "Fino a 10.000 messaggi al mese "
-                  },
-                  {
-                    "description": "---  Funzioni ---"
-                  },
-                  {
-                    "description": "- AI conversazionale all'avanguardia con Watson"
-                  },
-                  {
-                    "description": "- Personalizza l'assistente del sito Web con Webchat - distribuisci Webchat in pochi minuti oppure utilizza la nostra architettura completamente estendibile"
-                  },
-                  {
-                    "description": "- Mantieni aggiornato l'assistente effettuando la scansione automatica di documenti e pagine Web esistenti oppure utilizzando il contenuto di alcune delle nostre finestre di dialogo integrate "
-                  },
-                  {
-                    "description": "- Effettua la connessione a qualsiasi applicazione o database con un'integrazione esistente o crea la tua integrazione personalizzata sugli endpoint API "
-                  },
-                  {
-                    "description": "- Crea interazioni utente coinvolgenti utilizzando immagini, pulsanti e altro ancora "
-                  },
-                  {
-                    "description": "- Analizza e migliora l'assistente con il dashboard di analitica"
-                  },
-                  {
-                    "description": "- Rilassati, sapendo che l'assistente è ospitato nel cloud pubblico IBM "
-                  },
-                  {
-                    "description": "--- Limiti ---"
-                  },
-                  {
-                    "description": "Fino a 5 competenze (finestra di dialogo, azione, ricerca) "
-                  },
-                  {
-                    "description": "7 giorni di analitica dell'utilizzo "
-                  },
-                  {
-                    "description": "5 minuti di timeout di inattività della sessione "
-                  },
-                  {
-                    "description": "I servizi vengono eliminati dopo 30 giorni di inattività"
-                  }
-                ]
-              },
-              "ja": {
-                "bullets": [
-                  {
-                    "description": "利用開始に必要なあらゆるものはすべて、ずっと無料"
-                  },
-                  {
-                    "description": "最大 1,000 人 (実人数) の月間アクティブ・ユーザー (MAU) がアシスタントとチャット可能"
-                  },
-                  {
-                    "description": "1 カ月あたり最大 10,000 件のメッセージ"
-                  },
-                  {
-                    "description": "---  特長  ---"
-                  },
-                  {
-                    "description": "- 世界クラスの Watson との会話型 AI"
-                  },
-                  {
-                    "description": "- Webchat を使用して Web サイト・アシスタントに独自性を持たせる - Webchat をわずか数分でデプロイ可能、さらに完全に拡張可能なアーキテクチャーも使用可能"
-                  },
-                  {
-                    "description": "- 既存の Web ページや文書を自動的にスキャンするか、事前に作成されたダイアログ・コンテンツの一部を使用して、アシスタントを最新の状態に保持"
-                  },
-                  {
-                    "description": "- 事前に構築された統合を使用して任意のアプリケーションまたはデータベースに接続、あるいは API エンドポイント上に独自のカスタム統合を構築"
-                  },
-                  {
-                    "description": "- 画像やボタンなどを使用して、魅力的なユーザー・インタラクションを作成"
-                  },
-                  {
-                    "description": "- 分析ダッシュボードを使用してアシスタントを分析および強化"
-                  },
-                  {
-                    "description": "- アシスタントが IBM Public Cloud で確実にホストされていることがわかる安心感"
-                  },
-                  {
-                    "description": "--- 制限  ---"
-                  },
-                  {
-                    "description": "最大 5 つのスキル (ダイアログ、アクション、検索)"
-                  },
-                  {
-                    "description": "7 日間の使用状況分析"
-                  },
-                  {
-                    "description": "セッションの非アクティブ・タイムアウト 5 分間"
-                  },
-                  {
-                    "description": "30 日間使用されなかった場合はサービスを削除"
-                  }
-                ]
-              },
-              "ko": {
-                "bullets": [
-                  {
-                    "description": "시작하는 데 필요한 모든 것, 필요한 동안 무료 사용"
-                  },
-                  {
-                    "description": "최대 1,000명의 고유한 MAU(Monthly Active User)가 사용자 어시스턴트와 대화"
-                  },
-                  {
-                    "description": "매월 최대 10,000개의 메시지"
-                  },
-                  {
-                    "description": "--- 기능 ---"
-                  },
-                  {
-                    "description": "- Watson을 사용한 세계 최고 수준의 대화형 AI"
-                  },
-                  {
-                    "description": "- Webchat으로 나만의 웹 사이트 어시스턴트 작성 - Webchat을 몇 분 만에 배치하거나 완전히 확장 가능한 아키텍처 사용"
-                  },
-                  {
-                    "description": "- 기존 웹 페이지와 문서를 자동으로 스캔하거나 일부 사전 빌드된 대화 컨텐츠를 사용하여 어시스턴트를 항상 최신으로 유지"
-                  },
-                  {
-                    "description": "- 사전 빌드된 통합을 사용하여 애플리케이션이나 데이터베이스에 연결하거나 API 엔드포인트 맨 위에 사용자 정의 통합 빌드"
-                  },
-                  {
-                    "description": "- 이미지, 단추 등을 사용하여 사용자와 상호작용"
-                  },
-                  {
-                    "description": "- 분석 대시보드를 사용하여 어시스턴트 분석 및 향상"
-                  },
-                  {
-                    "description": "- 어시스턴트는 IBM Public Cloud에서 안정적으로 호스팅되므로 안심할 수 있습니다."
-                  },
-                  {
-                    "description": "--- 한계 ---"
-                  },
-                  {
-                    "description": "최대 5개 스킬(대화, 조치, 검색)"
-                  },
-                  {
-                    "description": "7일 사용 분석"
-                  },
-                  {
-                    "description": "세션 비활동 제한시간 5분"
-                  },
-                  {
-                    "description": "30일 동안 사용되지 않으면 서비스가 삭제됩니다."
-                  }
-                ]
-              },
-              "pt-BR": {
-                "bullets": [
-                  {
-                    "description": "Tudo o que você precisa para começar, grátis pelo tempo necessário"
-                  },
-                  {
-                    "description": "Até 1.000 usuários ativos mensais (MAUs) únicos conversando com seu assistente"
-                  },
-                  {
-                    "description": "Até 10.000 mensagens por mês"
-                  },
-                  {
-                    "description": "---  Recursos  ---"
-                  },
-                  {
-                    "description": "- IA de conversação de classe mundial com o Watson"
-                  },
-                  {
-                    "description": "- Personalize seu assistente de website com o Webchat; implemente o Webchat em minutos ou use nossa arquitetura totalmente extensível"
-                  },
-                  {
-                    "description": "- Mantenha o seu assistente atualizado varrendo automaticamente páginas da web e documentos existentes ou usando alguns de nossos conteúdos de diálogo pré-construídos"
-                  },
-                  {
-                    "description": "- Conecte-se a qualquer aplicativo ou banco de dados com uma integração pré-construída ou crie sua própria integração customizada com base em terminais de API"
-                  },
-                  {
-                    "description": "- Crie interações envolventes com os usuários usando imagens, botões e muito mais"
-                  },
-                  {
-                    "description": "- Analise e aprimore seu assistente com nosso painel de análise de dados"
-                  },
-                  {
-                    "description": "- Fique tranquilo sabendo que seu assistente está hospedado de forma confiável na nuvem pública IBM"
-                  },
-                  {
-                    "description": "---  Limites  ---"
-                  },
-                  {
-                    "description": "Até cinco habilidades (diálogo, ação, procura)"
-                  },
-                  {
-                    "description": "Sete dias de análise de dados de uso"
-                  },
-                  {
-                    "description": "Tempo limite de inatividade de sessão de cinco minutos"
-                  },
-                  {
-                    "description": "Os serviços são excluídos após 30 dias de inatividade"
-                  }
-                ]
-              },
-              "zh-Hans": {
-                "bullets": [
-                  {
-                    "description": "入门所需的一切内容在您需要时即免费"
-                  },
-                  {
-                    "description": "多达 1000 名唯一的月度活跃用户 (MAU) 与 Watson Assistant 聊天"
-                  },
-                  {
-                    "description": "每月最多 10,000 条消息"
-                  },
-                  {
-                    "description": "---  功能  ---"
-                  },
-                  {
-                    "description": "- Watson 提供世界一流的会话式 AI"
-                  },
-                  {
-                    "description": "- 借助 Webchat，让网站助手成为您自己的助手，在几分钟内即可部署 Webchat，或使用我们全面可扩展的架构"
-                  },
-                  {
-                    "description": "- 通过自动扫描现有网页和文档或使用一些预构建对话内容让助手始终能获取到最新信息"
-                  },
-                  {
-                    "description": "- 连接到任何具有预构建集成的应用程序或数据库，或在 API 端点顶部构建自己的定制集成"
-                  },
-                  {
-                    "description": "- 使用图像、按钮等创建极具吸引力的用户交互"
-                  },
-                  {
-                    "description": "- 借助分析仪表板，分析并增强您的助手"
-                  },
-                  {
-                    "description": "了解到您的助手已安全可靠地托管于 IBM 公共云，感到十分放心"
-                  },
-                  {
-                    "description": "--- 限制  ---"
-                  },
-                  {
-                    "description": "最多 5 项技能（对话、操作、搜索）"
-                  },
-                  {
-                    "description": "- 7 天的使用情况分析"
-                  },
-                  {
-                    "description": "会话 5 分钟不活动即超时"
-                  },
-                  {
-                    "description": "服务将于不活动状态 30 天后删除"
-                  }
-                ]
-              },
-              "zh-Hant": {
-                "bullets": [
-                  {
-                    "description": "入門所需的一切，只要需要就可以免費使用"
-                  },
-                  {
-                    "description": "多達 1,000 個唯一的 MAU（每月活動使用者）可與您的助理會談"
-                  },
-                  {
-                    "description": "每月多達 10,000 則訊息"
-                  },
-                  {
-                    "description": "---  功能  ---"
-                  },
-                  {
-                    "description": "- 採用 Watson 技術的世界級對談式 AI"
-                  },
-                  {
-                    "description": "- 使用 Webchat 建立專屬的網站助理 - 只需幾分鐘即可部署 Webchat 或者使用我們的完全可延伸架構"
-                  },
-                  {
-                    "description": "- 透過自動掃描現有網頁和文件或使用我們的一些預先建置對話內容來保持您的助理處於最新狀態"
-                  },
-                  {
-                    "description": "- 透過預先建置的整合連接到任何應用程式或資料庫，或在 API 端點之上建置專屬自訂整合"
-                  },
-                  {
-                    "description": "- 使用影像、按鈕等建立參與度非常高的使用者互動"
-                  },
-                  {
-                    "description": "- 使用我們的分析儀表板來分析和加強您的助理"
-                  },
-                  {
-                    "description": "- 知道您的助理由 IBM Public Cloud 可靠地代管，安枕無憂"
-                  },
-                  {
-                    "description": "--- 限制  ---"
-                  },
-                  {
-                    "description": "多達 5 項技能（對話、動作和搜尋）"
-                  },
-                  {
-                    "description": "7 天使用情況分析"
-                  },
-                  {
-                    "description": "階段作業閒置逾時 5 分鐘"
-                  },
-                  {
-                    "description": "服務將在閒置 30 天之後刪除"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "name": "free",
-        "overview_ui": {
-          "de": {
-            "description": "Alle Features, die zum Einstieg erforderlich sind, kostenfrei, solange Sie sie benötigen. ",
-            "display_name": "Lite",
-            "long_description": "Alle Features, die zum Einstieg erforderlich sind, kostenfrei, solange Sie sie benötigen. "
-          },
-          "en": {
-            "description": "Everything you need to get started, free for as long as you need it",
-            "display_name": "Lite",
-            "long_description": "Everything you need to get started, free for as long as you need it"
-          },
-          "es": {
-            "description": "Todo lo que necesita para empezar, gratis durante el tiempo que lo necesite",
-            "display_name": "Lite",
-            "long_description": "Todo lo que necesita para empezar, gratis durante el tiempo que lo necesite"
-          },
-          "fr": {
-            "description": "Tout ce dont vous avez besoin pour commencer, gratuitement aussi longtemps que vous en avez besoin",
-            "display_name": "Lite",
-            "long_description": "Tout ce dont vous avez besoin pour commencer, gratuitement aussi longtemps que vous en avez besoin"
-          },
-          "it": {
-            "description": "Tutto il necessario per iniziare, gratuitamente per tutto il tempo di cui hai bisogno",
-            "display_name": "Lite",
-            "long_description": "Tutto il necessario per iniziare, gratuitamente per tutto il tempo di cui hai bisogno"
-          },
-          "ja": {
-            "description": "利用開始に必要なあらゆるものはすべて、ずっと無料",
-            "display_name": "ライト",
-            "long_description": "利用開始に必要なあらゆるものはすべて、ずっと無料"
-          },
-          "ko": {
-            "description": "시작하는 데 필요한 모든 것, 필요한 동안 무료 사용",
-            "display_name": "Lite",
-            "long_description": "시작하는 데 필요한 모든 것, 필요한 동안 무료 사용"
-          },
-          "pt-BR": {
-            "description": "Tudo o que você precisa para começar, grátis pelo tempo necessário",
-            "display_name": "Lite",
-            "long_description": "Tudo o que você precisa para começar, grátis pelo tempo necessário"
-          },
-          "zh-Hans": {
-            "description": "入门所需的一切内容在您需要时即免费",
-            "display_name": "Lite",
-            "long_description": "入门所需的一切内容在您需要时即免费"
-          },
-          "zh-Hant": {
-            "description": "入門所需的一切，只要需要就可以免費使用",
-            "display_name": "Lite",
-            "long_description": "入門所需的一切，只要需要就可以免費使用"
-          }
-        },
-        "parent_id": "7045626d-55e3-4418-be11-683a26dbc1e5",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5",
-        "pricing_tags": [
-          "free",
-          "lite"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "tags": [
-          "gc_migrate"
-        ],
-        "updated": "2025-10-07T09:40:37.733498667-04:00",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/bd16e3c8-3da0-11e6-bce3-54ee7514918e?complete=true",
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Everything you need to get started, free for as long as you need it",
-        "displayName": "Lite",
-        "originalName": "free"
       },
       {
         "_id": "f0a3dd47-b693-4d73-a8df-aa6baf07a933",
@@ -301548,10 +300858,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
