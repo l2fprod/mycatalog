@@ -830,6 +830,7 @@
   },
   {
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -837,8 +838,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "id": "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea",
     "kind": "service",
@@ -6707,15 +6707,15 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "au-syd",
       "us-east",
       "fra02",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-es",
       "us-south",
+      "eu-gb",
       "eu-de"
     ],
     "id": "dashdb-for-transactions",
@@ -6874,13 +6874,13 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb",
-      "eu-de"
+      "au-syd"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -6954,7 +6954,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -7009,7 +7008,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -9987,14 +9985,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10150,7 +10148,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -10206,7 +10203,6 @@
     "tags": [
       "storage",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -10605,18 +10601,18 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
       "br-sao",
+      "in-che",
+      "ca-mon",
       "jp-osa",
       "in-mum",
-      "ca-mon",
-      "eu-de",
-      "us-south",
-      "eu-gb",
-      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "eu-de",
+      "us-south",
       "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -11409,6 +11405,69 @@
     "displayName": "Legislative Compliance",
     "imageUrl": "https://static.wixstatic.com/media/d45c04_5fc1b4998e384fa9a4d6d7e9636bd792~mv2.png",
     "localPngIcon": "/generated/icons/2e8cf6b5-06b9-4078-aa6c-13cdff7927fd.png"
+  },
+  {
+    "geo_tags": [
+      "global"
+    ],
+    "id": "9a5fb01f-f997-4f3d-86aa-e5cc240f8d03",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "lenses-hq",
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "tags": [
+      "devops",
+      "apache kafka",
+      "confluent",
+      "connectors",
+      "custom_kind_service",
+      "data streaming",
+      "dataops",
+      "dev_ops",
+      "developer experience",
+      "event streams",
+      "global",
+      "ibm_third_party",
+      "kafka",
+      "kafka connect",
+      "kafka governance",
+      "kafka monitoring",
+      "kafka observability",
+      "kafka troubleshooting",
+      "kafka ui",
+      "kubernetes",
+      "mcp",
+      "observability",
+      "openshift",
+      "paid",
+      "paid_only",
+      "platform engineering",
+      "rbac",
+      "rc_compatible",
+      "schema registry",
+      "self-service",
+      "streaming",
+      "support_third_party"
+    ],
+    "plans": [
+      {
+        "id": "eee9a1b7-fc51-4d4e-ba83-8ceeb984a119",
+        "name": "lenses-devx",
+        "description": "Governed self-service for Kafka across your whole estate. Deploys into your own Kubernetes or Red Hat OpenShift cluster. Licensed annually, priced per connected Kafka cluster. Includes 20 users per production cluster and 15 per non-production cluster.",
+        "displayName": "Lenses DevX"
+      }
+    ],
+    "description": "Developer experience and control plane for platform teams to manage Kafka and securely provide access & tooling for app teams. ",
+    "longDescription": "Lenses is a developer experience and governance layer for Apache Kafka. It gives application and data teams secure self-service access to streaming data, while platform teams keep control of who sees what.\n\nDevelopers explore topics, schemas, Kafka Connect and consumer groups from one console, and query live streams with SQL to troubleshoot without writing consumer code or copying data out. Topology and lineage show every producer, consumer and dependency, so teams see the blast radius before they change anything.\n\nPlatform teams get scoped RBAC, namespace isolation, data masking and a full audit trail across every cluster, with SSO and SAML through your existing identity provider. Consumer lag, quota and broker health metrics feed your monitoring stack via JMX and Prometheus.\n\nLenses works with IBM Event Streams, Apache Kafka, Amazon MSK, Confluent, Azure Event Hubs and any Kafka-compatible service. Deploy it in your own Kubernetes or Red Hat OpenShift cluster, on IBM Cloud, on premises or hybrid. Your data stays in your environment.",
+    "displayName": "Lenses DevX",
+    "imageUrl": "https://lenses.io/images/logos/lensesio-logo-light-icon.png",
+    "localPngIcon": "/generated/icons/9a5fb01f-f997-4f3d-86aa-e5cc240f8d03.png"
   },
   {
     "geo_tags": [
@@ -12502,7 +12561,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -12558,7 +12616,6 @@
     "tags": [
       "network",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -12625,7 +12682,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -12681,7 +12737,6 @@
     "tags": [
       "network",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -12747,7 +12802,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -12803,7 +12857,6 @@
     "tags": [
       "network",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -12870,7 +12923,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -12926,7 +12978,6 @@
     "tags": [
       "network",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -13878,7 +13929,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -13934,7 +13984,6 @@
     "tags": [
       "compute",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -14384,7 +14433,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -14440,7 +14488,6 @@
       "allow_internal_users",
       "apidocs_enabled",
       "as400",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -16224,7 +16271,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -16280,7 +16326,6 @@
     "tags": [
       "network",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -17025,7 +17070,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -17091,7 +17135,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -17171,7 +17214,6 @@
   },
   {
     "geo_tags": [
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -17227,7 +17269,6 @@
     "tags": [
       "compute",
       "allow_internal_users",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -17353,7 +17394,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -17419,7 +17459,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -18907,12 +18946,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -19566,7 +19605,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -19632,7 +19670,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -19786,7 +19823,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -19852,7 +19888,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -21180,7 +21215,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "dal10",
@@ -21246,7 +21280,6 @@
       "br-sao",
       "ca-mon",
       "ca-tor",
-      "che01",
       "che02",
       "che03",
       "custom_kind_service",
@@ -21873,90 +21906,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
-      "us-east",
-      "us-south"
-    ],
-    "id": "7045626d-55e3-4418-be11-683a26dbc1e5",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "conversation",
-    "pricing_tags": [
-      "paid",
-      "paygo",
-      "paid_only",
-      "block_internal_trial",
-      "subscription",
-      "allow_internal_users"
-    ],
-    "tags": [
-      "allow_internal_users",
-      "apidocs_enabled",
-      "au-syd",
-      "block_internal_trial",
-      "bromine",
-      "chatbot",
-      "custom_kind_service",
-      "eu_access",
-      "eu-de",
-      "eu-gb",
-      "freesia",
-      "gc_migrate",
-      "hipaa",
-      "iam_compatible",
-      "ibm_created",
-      "ibm_dedicated_public",
-      "ibm_release",
-      "jp-tok",
-      "lite",
-      "paid",
-      "paid_only",
-      "paygo",
-      "rc_compatible",
-      "subscription",
-      "support_ibm",
-      "us-east",
-      "us-south",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "4ae68471-07c3-4f02-a49d-d19cb4a29ac9",
-        "name": "enterprise",
-        "description": "Scale and secure your assistant with enterprise-grade support and data governance",
-        "displayName": "Enterprise",
-        "originalName": "premium-userbased"
-      },
-      {
-        "id": "bfb69661-13fa-4213-b414-6ef29745abcd",
-        "name": "enterprisedataisolation",
-        "description": "To purchase Enterprise with data isolation, or add data isolation to an existing Enterprise plan, contact us at: http://ibm.biz/contact-wa-enterprise",
-        "displayName": "Enterprise with data isolation",
-        "originalName": "enterprisedataisolation"
-      },
-      {
-        "id": "f0a3dd47-b693-4d73-a8df-aa6baf07a933",
-        "name": "plus",
-        "description": "Learn more about user based billing here https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-admin-managing-plan#admin-managing-plan-user-based\nPlus plan instances can't be downgraded to lower-tier plans.",
-        "displayName": "Plus",
-        "originalName": "plus"
-      }
-    ],
-    "description": "IBM watsonx Assistant lets you build conversational interfaces into any application, device, or channel.",
-    "longDescription": "watsonx Assistant lets you build conversational interfaces into any application, device, or channel.\n\nAdd a natural language interface to your application to automate interactions with your end users. Common applications include virtual agents and chat bots that can integrate and communicate on any channel or device. Train through an easy-to-use web application, designed so you can quickly build natural conversation flows between your apps and users, and deploy scalable, cost effective solutions.",
-    "displayName": "watsonx Assistant",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/artifacts/cache/5c18a362b3f855bff471377ff580f369-public/WatsonAssistant.svg",
-    "localSvgIcon": "/generated/icons/7045626d-55e3-4418-be11-683a26dbc1e5.svg",
-    "localPngIcon": "/generated/icons/7045626d-55e3-4418-be11-683a26dbc1e5.png"
-  },
-  {
-    "geo_tags": [
       "us-south"
     ],
     "id": "94a4aea0-9510-11ee-b512-5b3decec36b3",
@@ -22127,6 +22076,70 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838/artifacts/cache/104066958c7a68895674c0c6b2e8ea89-public/watsonxOrchestrate.svg",
     "localSvgIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.svg",
     "localPngIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.png"
+  },
+  {
+    "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
+      "us-east",
+      "us-south"
+    ],
+    "id": "7045626d-55e3-4418-be11-683a26dbc1e5",
+    "kind": "service",
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "name": "conversation",
+    "pricing_tags": [
+      "paid",
+      "subscription",
+      "block_internal_trial"
+    ],
+    "tags": [
+      "apidocs_enabled",
+      "au-syd",
+      "block_internal_trial",
+      "bromine",
+      "chatbot",
+      "custom_kind_service",
+      "eu_access",
+      "eu-de",
+      "eu-gb",
+      "freesia",
+      "gc_migrate",
+      "hipaa",
+      "iam_compatible",
+      "ibm_created",
+      "ibm_dedicated_public",
+      "ibm_release",
+      "jp-tok",
+      "lite",
+      "paid",
+      "rc_compatible",
+      "subscription",
+      "support_ibm",
+      "us-east",
+      "us-south",
+      "watson"
+    ],
+    "plans": [
+      {
+        "id": "bfb69661-13fa-4213-b414-6ef29745abcd",
+        "name": "enterprisedataisolation",
+        "description": "To purchase Enterprise with data isolation, or add data isolation to an existing Enterprise plan, contact us at: http://ibm.biz/contact-wa-enterprise",
+        "displayName": "Enterprise with data isolation",
+        "originalName": "enterprisedataisolation"
+      }
+    ],
+    "description": "IBM watsonx Assistant is now watsonx Orchestrate and comes with all of its Agentic capabilities and control plane. Build conversational interfaces into any application, device, or channel.",
+    "longDescription": "watsonx Assistant is now watsonx Orchestrate.\n\nWe are rolling out an upgrade to all customers of watsonx Assistant. Account eligibility for upgrade is rolling out to clients in stages, please see the documentation link here for more information: https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate (formerly Assistant), continues to provide the AI Assistant building capabilities with no disruption to customers. Existing dialogs, actions, extensions and other settings remain active and can continue to be authored.\n\nThe now including AI Agent building, life cycle, and control plane experiences allow teams to start exploring and building AI Agents for their use cases to modernize Assistant experiences.",
+    "displayName": "watsonx Orchestrate (formerly Assistant)",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/artifacts/cache/5c18a362b3f855bff471377ff580f369-public/WatsonAssistant.svg",
+    "localSvgIcon": "/generated/icons/7045626d-55e3-4418-be11-683a26dbc1e5.svg",
+    "localPngIcon": "/generated/icons/7045626d-55e3-4418-be11-683a26dbc1e5.png"
   },
   {
     "geo_tags": [
@@ -22447,12 +22460,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
