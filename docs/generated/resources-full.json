@@ -42770,7 +42770,7 @@
   },
   {
     "_id": "is.reservation",
-    "_rev": "116-41bd9bbd3816037ccae76d37ea3c626e",
+    "_rev": "117-2808ab9117ad26e0f6ed29bc1a0ab03f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.reservation",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/is.reservation/%2A",
@@ -42838,7 +42838,8 @@
             }
           ],
           "value": "*"
-        }
+        },
+        "product_code": "5900B80"
       },
       "pricing": {
         "metrics": null,
@@ -42954,7 +42955,7 @@
       "us-south",
       "virtualservers"
     ],
-    "updated": "2025-10-09T13:53:55.783640637-04:00",
+    "updated": "2026-09-22T12:37:16.193372565-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.reservation?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -49453,17 +49454,17 @@
     "created": "2014-06-03T07:04:12Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-osa",
-      "jp-tok",
       "au-syd",
       "che01",
       "eu-de",
       "eu-es",
       "eu-gb",
       "us-east",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "ca-tor",
+      "jp-osa",
+      "jp-tok"
     ],
     "id": "cloudant",
     "images": {
@@ -54756,7 +54757,7 @@
   },
   {
     "_id": "64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
-    "_rev": "98-e322c4baf1ba34e76a026cc05fabc80d",
+    "_rev": "99-1f1326978319677a339b672fb806f095",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:64c9a7d7-a81c-4f55-b028-dc6a3d81c478",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/64c9a7d7-a81c-4f55-b028-dc6a3d81c478/%2A",
@@ -54903,7 +54904,7 @@
                 ]
               }
             },
-            "description": "On-premises, in Data Center, backup Compass Vault services including compute & storage resources up to 4 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute & storage resources, sized for up to 4 TB of deduplicated, compressed data. Includes 3 years of maintenance & support.",
             "displayname": "Compass Hybrid Vault Services - Micro Tier (One Time Charge)",
             "hidden": false,
             "i18n": null,
@@ -54927,7 +54928,7 @@
                 ]
               }
             },
-            "description": "On-premises, in Data Center, backup Compass Vault services including compute & storage resources up to 18 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute & storage resources, sized for up to 18 TB of deduplicated, compressed data. Includes 3 years of maintenance & support.",
             "displayname": "Compass Hybrid Vault Services - Small Tier (One Time Charge)",
             "hidden": false,
             "i18n": null,
@@ -54951,7 +54952,7 @@
                 ]
               }
             },
-            "description": "On-premises, in Data Center, backup Compass Vault services including compute & YOU BRING YOUR storage resources up to 100 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute resources, sized for up to 100 TB of deduplicated, compressed data. YOU BRING YOUR OWN storage. Includes 3 years of maintenance & support.",
             "displayname": "Compass Hybrid Vault Services - Medium Tier (One Time Charge)",
             "hidden": false,
             "i18n": null,
@@ -54976,7 +54977,7 @@
                 ]
               }
             },
-            "description": "On-premises, in Data Center, backup Compass Vault services including compute & YOU BRING YOUR storage resources up to 250 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute resources, sized for up to 250 TB of deduplicated, compressed data. YOU BRING YOUR OWN storage. Includes 3 years of maintenance & support.",
             "displayname": "Compass Hybrid Vault Services - Large Tier (One Time Charge)",
             "hidden": false,
             "i18n": null,
@@ -55001,7 +55002,7 @@
                 ]
               }
             },
-            "description": "On-premises, in Data Center, backup Compass Vault services including compute & YOU BRING YOUR storage resources up to 500 TB of deduplicated, compressed data including 3 years of maintenance & support",
+            "description": "On-premises, in Data Center, backup Compass Vault services including compute resources, sized for up to 500 TB of deduplicated, compressed data. YOU BRING YOUR OWN storage. Includes 3 years of maintenance & support.",
             "displayname": "Compass Hybrid Vault Services - Enterprise Tier (One Time Charge)",
             "hidden": false,
             "i18n": null,
@@ -55025,7 +55026,7 @@
                 ]
               }
             },
-            "description": "Compass Hybrid VMware-hosted Vault Services - Virtual Class - Monthly",
+            "description": "VMware-hosted backup Compass Vault services. YOU BRING YOUR OWN compute and storage.",
             "displayname": "Compass Hybrid Vault Services - Virtual VMware Tier (Monthly)",
             "hidden": false,
             "i18n": null,
@@ -55049,7 +55050,7 @@
                 ]
               }
             },
-            "description": "Hybrid Cloud Compass Vault services for AWS, GCP, Azure, IBMCloud - Standard Class - MonthlyCompass Hybrid Cloud-hosted Vault Services for AWS, GCP, Azure, IBMCloud - Cloud Class - Monthly",
+            "description": "Cloud-hosted backup Compass Vault services for AWS, GCP, Azure, and IBM Cloud. YOU BRING YOUR OWN compute and storage.",
             "displayname": "Compass Hybrid Vault Services - Cloud Tier (Monthly)",
             "hidden": false,
             "i18n": null,
@@ -55073,7 +55074,7 @@
                 ]
               }
             },
-            "description": "Compass Hybrid Conduit Services - Standard Class - Monthly",
+            "description": "Compass Hybrid Conduit Services - Standard Tier",
             "displayname": "Compass Hybrid Conduit Services - Standard Tier (Monthly)",
             "hidden": false,
             "i18n": null,
@@ -55097,7 +55098,7 @@
                 ]
               }
             },
-            "description": "Compass Hybrid Vault Operations & Management Services - Monthly",
+            "description": "Compass Hybrid Vault Operations & Management Services, billed monthly per vault instance.",
             "displayname": "Compass Hybrid Vaulting Operations - Per Instance (Monthly)",
             "hidden": false,
             "i18n": null,
@@ -55121,7 +55122,7 @@
                 ]
               }
             },
-            "description": "Compass Hybrid Vault Operations & Management Services - One Time Charge",
+            "description": "Compass Hybrid Vault Operations & Management Services, billed once per vault instance.",
             "displayname": "Compass Hybrid Vaulting Operations - Per Instance (One Time Charge)",
             "hidden": false,
             "i18n": null,
@@ -55146,7 +55147,7 @@
                 ]
               }
             },
-            "description": "Professional Services & Activities For Compass Solutions - One Time Charge",
+            "description": "Professional Services & Activities For Compass Solutions",
             "displayname": "Compass Services - Deployment, Onboarding, Integrations (One Time Charge)",
             "hidden": false,
             "i18n": null,
@@ -55234,7 +55235,7 @@
       "virtual",
       "zseries"
     ],
-    "updated": "2026-09-21T12:55:03.751260949-04:00",
+    "updated": "2026-09-22T12:00:13.974411567-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/64c9a7d7-a81c-4f55-b028-dc6a3d81c478?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -79250,7 +79251,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:ca-mon",
-            "_rev": "16-a2173e829cd428c03c491c578c765c38",
+            "_rev": "17-4df7e1794c0122337c3e4a41c681438e",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:ca-mon/%2A",
@@ -79279,6 +79280,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -79643,7 +79645,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-09-08T08:19:59.989753422-04:00",
+            "updated": "2026-09-22T08:13:52.030998819-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -80854,7 +80856,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-che",
-            "_rev": "17-ea055206732c259da85536b44c2cba1b",
+            "_rev": "18-74ea5ea9368965ff76f541b6b13d98ec",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-che/%2A",
@@ -80883,6 +80885,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -81247,7 +81250,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-09-08T08:20:20.92211569-04:00",
+            "updated": "2026-09-22T08:10:46.657568828-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -81255,7 +81258,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-mum",
-            "_rev": "9-edf2bc29f22dccadecff716278f0f2c9",
+            "_rev": "10-6a2c52cc771afaf37684705d392a4a60",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-mum/%2A",
@@ -81284,6 +81287,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -81648,7 +81652,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-09-08T08:20:37.957133085-04:00",
+            "updated": "2026-09-22T08:13:56.495372589-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -82057,7 +82061,7 @@
           },
           {
             "_id": "databases-for-elasticsearch-enterprise-gen2:us-south",
-            "_rev": "4-d72753befd066bfb23c95780fde45085",
+            "_rev": "5-55bcfaa22d7242bcc22988b8f9b3dd64",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aus-south",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:us-south/%2A",
@@ -82085,7 +82089,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -82449,7 +82454,7 @@
               "rc_compatible",
               "vpc_private_endpoint"
             ],
-            "updated": "2026-09-16T15:55:16.839153674-04:00",
+            "updated": "2026-09-22T10:09:52.629433465-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:us-south?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -92317,7 +92322,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:ca-mon",
-            "_rev": "19-8e1fcbe191c680f07e8c92e0605fc791",
+            "_rev": "20-04ad61726d0f8b3fa8fabb8c918c2c23",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon/%2A",
@@ -92346,6 +92351,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -92637,7 +92643,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-09-21T02:17:03.615676198-04:00",
+            "updated": "2026-09-22T11:37:20.441526001-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -93628,7 +93634,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-che",
-            "_rev": "18-bdea3280b83bab74aeccc1ead7692ad7",
+            "_rev": "19-e3675fc47d25302b9bc3499cad46880f",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che/%2A",
@@ -93657,6 +93663,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -93948,7 +93955,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-09-21T02:18:52.790712478-04:00",
+            "updated": "2026-09-22T11:37:18.333184973-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -93956,7 +93963,7 @@
           },
           {
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-mum",
-            "_rev": "17-c70510e2b18baa86585d789ed2576256",
+            "_rev": "18-54646f736c248bc126bcde074cd1fbd2",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum/%2A",
@@ -93985,6 +93992,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -94276,7 +94284,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-09-21T02:19:11.21772368-04:00",
+            "updated": "2026-09-22T11:37:19.313233715-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -107066,7 +107074,7 @@
           },
           {
             "_id": "databases-for-mysql-standard-gen2:in-mum",
-            "_rev": "20-683050cf2d3ebda229538d0f1aeb55ee",
+            "_rev": "21-f026447360c8a51ec4ac38a14d6a09fb",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-mum/%2A",
@@ -107094,7 +107102,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -107385,7 +107394,7 @@
             "tags": [
               "in-mum"
             ],
-            "updated": "2026-09-15T10:54:16.628906305-04:00",
+            "updated": "2026-09-22T10:12:53.665239729-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -118300,7 +118309,7 @@
         "children": [
           {
             "_id": "databases-for-redis-standard-gen2:au-syd",
-            "_rev": "4-b592fb4087f85047f10d0cfa5948c899",
+            "_rev": "5-e0f13a4323b3406ef27f8de5844ffb11",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aau-syd",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:au-syd/%2A",
@@ -118328,7 +118337,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -118609,7 +118619,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-09-01T12:23:22.533594996-04:00",
+            "updated": "2026-09-22T10:11:35.056115582-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:au-syd?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -118617,7 +118627,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:ca-mon",
-            "_rev": "14-3165f825a88ae6862f8449a5d7a22847",
+            "_rev": "16-49d44477ea04d0943e485aa370baf6ea",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aca-mon",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:ca-mon/%2A",
@@ -118645,7 +118655,9 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -118926,7 +118938,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-12T06:05:14.509665515-04:00",
+            "updated": "2026-09-22T10:11:29.313742539-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:ca-mon?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -118934,7 +118946,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:eu-de",
-            "_rev": "10-86a1c69603e6075ecda92a6a7118a5d1",
+            "_rev": "11-2412d078d83a5fd275dcaa2df34d0225",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aeu-de",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-de/%2A",
@@ -118962,7 +118974,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -119243,7 +119256,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-12T06:05:28.844561835-04:00",
+            "updated": "2026-09-22T10:11:33.075836743-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-de?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -119251,7 +119264,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:eu-es",
-            "_rev": "5-8658024b73b9e9a4bda2d1a0dac20f80",
+            "_rev": "6-9771b1d50021aba6365a4d741565bc39",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aeu-es",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-es/%2A",
@@ -119279,7 +119292,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -119560,7 +119574,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-09-01T22:25:52.840985488-04:00",
+            "updated": "2026-09-22T10:11:36.035695865-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:eu-es?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -119886,7 +119900,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:in-che",
-            "_rev": "13-dcc858c3461e802a8586a140addfe949",
+            "_rev": "15-1b3cac389decd74f59d4cebb2e91a296",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Ain-che",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-che/%2A",
@@ -119914,7 +119928,9 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -120195,7 +120211,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-12T06:06:09.630099345-04:00",
+            "updated": "2026-09-22T10:11:30.254347314-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-che?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -120203,7 +120219,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:in-mum",
-            "_rev": "13-f84ab9c97e8758475180439ed39ba1e4",
+            "_rev": "15-19e669e1a36d1f9262a2a15b8f1273c6",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Ain-mum",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-mum/%2A",
@@ -120231,7 +120247,9 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "cross_region_independent_backups_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -120512,7 +120530,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-12T06:06:26.83113291-04:00",
+            "updated": "2026-09-22T10:11:31.272394482-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-mum?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -120520,7 +120538,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:us-east",
-            "_rev": "10-c191a0ef1900f2204e81aadfcb90089d",
+            "_rev": "11-9043f52ee1505571f2881f24fc554cfc",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aus-east",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-east/%2A",
@@ -120548,7 +120566,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -120829,7 +120848,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-08-12T06:06:41.06774788-04:00",
+            "updated": "2026-09-22T10:11:32.193796646-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-east?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -120837,7 +120856,7 @@
           },
           {
             "_id": "databases-for-redis-standard-gen2:us-south",
-            "_rev": "4-6980f50ab10ad3df821a9b47c15361e5",
+            "_rev": "5-23c411a9661cf9e3a813aed52748050b",
             "active": true,
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aus-south",
             "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-south/%2A",
@@ -120865,7 +120884,8 @@
                     "autoscaling_supported": false
                   },
                   "backups": {
-                    "backups_create_supported": true
+                    "backups_create_supported": true,
+                    "independent_backups_supported": true
                   },
                   "encryption": {
                     "disk_encryption_supported": true
@@ -121146,7 +121166,7 @@
             "provider": {
               "name": "IBM"
             },
-            "updated": "2026-09-16T15:54:35.702260538-04:00",
+            "updated": "2026-09-22T10:11:36.988297257-04:00",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:us-south?complete=true",
             "visibility": {
               "restrictions": "public"
@@ -124995,15 +125015,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "eu-es",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east",
-      "eu-es",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -129736,13 +129756,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -131884,13 +131904,13 @@
         "created": "2019-06-14T18:21:04.221Z",
         "disabled": false,
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "id": "flex-performance-aws-paygo",
         "images": {
@@ -158580,14 +158600,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -169170,19 +169190,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "eu-gb",
-      "in-che",
-      "in-mum",
-      "ca-tor",
       "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd"
+      "br-sao",
+      "in-che",
+      "jp-osa",
+      "in-mum",
+      "ca-tor",
+      "au-syd",
+      "eu-gb",
+      "eu-es",
+      "jp-tok",
+      "us-east"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -233779,7 +233799,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "487-39de472caf2ee151cbbc434ba8c21930",
+    "_rev": "488-00e1e704715b6aa78f616c00f109d4a7",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -234277,7 +234297,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-09-21T18:44:41.43652818-04:00",
+    "updated": "2026-09-22T05:04:50.619795055-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -246532,12 +246552,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -260694,6 +260714,7 @@
     "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
     "displayName": "Upsun Fixed",
     "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
+    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
     "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
@@ -292185,12 +292206,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -295395,7 +295416,7 @@
   },
   {
     "_id": "43834340-4a6d-11ed-97d2-959039ad2a2e",
-    "_rev": "1166-6df6184536ea162055fe38266cd158ba",
+    "_rev": "1167-12afb4961b4969d04bda2e2851545a71",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:43834340-4a6d-11ed-97d2-959039ad2a2e",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e/%2A",
@@ -295777,7 +295798,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-03T17:15:51.949292318-04:00",
+    "updated": "2026-09-22T01:52:57.469976657-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -295785,7 +295806,7 @@
     "plans": [
       {
         "_id": "lakehouse-enterprise",
-        "_rev": "210-511ed72dfa0e823e542deab0c59d2df0",
+        "_rev": "211-89f18d0588fc92f98417a254e120901f",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise/%2A",
@@ -295916,7 +295937,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-09-03T17:15:52.051855039-04:00",
+        "updated": "2026-09-22T01:52:57.565297928-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -295927,7 +295948,7 @@
       },
       {
         "_id": "lakehouse-enterprise-mcsp",
-        "_rev": "180-8250fe18903951bb2805eb9742353773",
+        "_rev": "181-41a1a6b1105e3a630d2c1cc85a07698e",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp/%2A",
@@ -296055,7 +296076,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-09-03T17:15:52.052032973-04:00",
+        "updated": "2026-09-22T01:52:57.565070327-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -296066,7 +296087,7 @@
       },
       {
         "_id": "lakehouse-lite",
-        "_rev": "195-1858a65c96ab37c2afe97c6cd8b8a02e",
+        "_rev": "196-f479cca0e94b9721003e90d09634a469",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite/%2A",
@@ -296194,7 +296215,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-09-03T17:15:52.051726456-04:00",
+        "updated": "2026-09-22T01:52:57.565195438-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -296205,7 +296226,7 @@
       },
       {
         "_id": "lakehouse-lite-mcsp",
-        "_rev": "181-8a904ab98adbb70858035284e50986c9",
+        "_rev": "182-46901bd7c5488dcf8da79e7ba69bbe18",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-lite-mcsp",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp/%2A",
@@ -296328,7 +296349,7 @@
           "lite",
           "rc_compatible"
         ],
-        "updated": "2026-09-03T17:15:52.052010964-04:00",
+        "updated": "2026-09-22T01:52:57.565621101-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-lite-mcsp?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -296799,12 +296820,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
