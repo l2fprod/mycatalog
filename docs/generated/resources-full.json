@@ -114773,7 +114773,6 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -114788,7 +114787,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -124987,7 +124987,7 @@
   },
   {
     "_id": "dashdb-for-transactions",
-    "_rev": "127-90b1e4ba36eabcf206e33586117313b1",
+    "_rev": "128-a8ce696d80cbe3026e0a11fbac776a76",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:dashdb-for-transactions",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions/%2A",
@@ -124995,16 +124995,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "fra02",
-      "eu-es"
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -125599,12 +125598,10 @@
       "db2 on cloud",
       "db2oncloud",
       "dbaas",
-      "eu_access",
       "eu-de",
       "eu-es",
       "eu-gb",
       "flex",
-      "fra02",
       "free",
       "freesia",
       "iam_compatible",
@@ -125628,7 +125625,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-08-17T08:57:20.343183724-04:00",
+    "updated": "2026-09-21T14:27:12.437074231-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -126939,16 +126936,13 @@
       },
       {
         "_id": "dashDBNebula",
-        "_rev": "47-43af5958e9361fb16c6e453f718670ee",
+        "_rev": "48-78cb97fa31ec429a9ed7fd2da87463f3",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:dashDBNebula",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/dashDBNebula/%2A",
         "complete": true,
         "created": "2020-04-29T21:48:30.556Z",
         "disabled": false,
-        "geo_tags": [
-          "fra02"
-        ],
         "id": "dashDBNebula",
         "images": {
           "feature_image": "https://resource-catalog.stage1.ng.bluemix.net/api/v1/dashdb-for-transactions/artifacts/tx_featured.png",
@@ -126983,14 +126977,14 @@
             "type": "paid",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashDBNebula/pricing"
           },
-          "rc_compatible": true,
+          "rc_compatible": false,
           "service": {
             "async_provisioning_supported": false,
             "async_unprovisioning_supported": false,
             "bindable": true,
             "custom_create_page_hybrid_enabled": false,
             "extension": null,
-            "iam_compatible": true,
+            "iam_compatible": false,
             "parameters": [],
             "plan_updateable": false,
             "rc_provisionable": true,
@@ -127211,7 +127205,6 @@
           "db2oncloud",
           "dbaas",
           "deprecated",
-          "eu_access",
           "flex",
           "freesia",
           "ibm_created",
@@ -127224,7 +127217,7 @@
           "sqldb",
           "transactions"
         ],
-        "updated": "2026-05-20T10:33:26.042500474-04:00",
+        "updated": "2026-09-21T14:27:02.363390391-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashDBNebula?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -129456,16 +129449,13 @@
       },
       {
         "_id": "dashDBStandard",
-        "_rev": "38-fdfc76a6fd631c37591b842214ba7f3d",
+        "_rev": "39-99599a1f41a21a8f3be5166d5830fd34",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:dashDBStandard",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/dashDBStandard/%2A",
         "complete": true,
         "created": "2020-07-24T19:36:35.585Z",
         "disabled": false,
-        "geo_tags": [
-          "fra02"
-        ],
         "id": "dashDBStandard",
         "images": {
           "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/dashdb-for-transactions/artifacts/cache/7bdc58bb21b0628895919e9b31491ac8-public/tx_featured.png",
@@ -129500,14 +129490,14 @@
             "type": "paid",
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashDBStandard/pricing"
           },
-          "rc_compatible": true,
+          "rc_compatible": false,
           "service": {
             "async_provisioning_supported": false,
             "async_unprovisioning_supported": false,
             "bindable": true,
             "custom_create_page_hybrid_enabled": false,
             "extension": null,
-            "iam_compatible": true,
+            "iam_compatible": false,
             "parameters": [],
             "plan_updateable": false,
             "rc_provisionable": true,
@@ -129705,7 +129695,6 @@
           "db2 on cloud",
           "db2oncloud",
           "dbaas",
-          "eu_access",
           "flex",
           "fressia",
           "ibm_created",
@@ -129720,7 +129709,7 @@
           "sqldb",
           "transactions"
         ],
-        "updated": "2026-05-20T10:35:00.845977892-04:00",
+        "updated": "2026-09-21T14:27:12.419875192-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/dashDBStandard?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -169181,19 +169170,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
+      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
       "eu-gb",
-      "br-sao",
+      "in-che",
+      "in-mum",
       "ca-tor",
+      "ca-mon",
       "eu-de",
       "us-south",
-      "au-syd",
-      "in-che",
-      "jp-osa",
-      "in-mum"
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -233790,7 +233779,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "485-70bc85e14ab91cee06f3d5a57f716f6a",
+    "_rev": "487-39de472caf2ee151cbbc434ba8c21930",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -233798,8 +233787,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -234288,7 +234277,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-09-21T11:23:19.712058314-04:00",
+    "updated": "2026-09-21T18:44:41.43652818-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -246543,12 +246532,12 @@
     "created": "2015-01-30T04:54:25Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "images": {
@@ -260705,7 +260694,6 @@
     "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
     "displayName": "Upsun Fixed",
     "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
-    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
     "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
@@ -286512,7 +286500,7 @@
   },
   {
     "_id": "7045626d-55e3-4418-be11-683a26dbc1e5",
-    "_rev": "77-b0bce7a11ac4cba7b85f02f7fd64ba09",
+    "_rev": "79-11fe0f1df15037e0cacb048ff0bbcd4f",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:7045626d-55e3-4418-be11-683a26dbc1e5",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5/%2A",
@@ -287168,9 +287156,9 @@
     "name": "conversation",
     "overview_ui": {
       "de": {
-        "description": "Mit watsonx Assistant können Sie Dialogschnittstellen in beliebige Anwendungen, Geräte oder Kanäle integrieren.",
+        "description": "IBM watsonx Assistant heißt jetzt watsonx Orchestrate und bringt alle Agentic-Funktionen und die Control Plane mit. Erstellen Sie Konversationsschnittstellen für jede Anwendung, jedes Gerät oder jeden Kanal.",
         "display_name": "watsonx Assistant",
-        "long_description": "Mit watsonx Assistant können Sie Dialogschnittstellen in beliebige Anwendungen, Geräte oder Kanäle integrieren.\n\nSie können eine Schnittstelle mit natürlicher Sprache zu Ihrer Anwendung hinzufügen, um Interaktionen mit Endbenutzern zu automatisieren. Gängige Anwendungen enthalten virtuelle Agenten und Chatbots, die über beliebige Kanäle oder Geräte integriert werden und kommunizieren können. Sie können den Watson Conversation-Service mithilfe einer benutzerfreundlichen Webanwendung trainieren, die so konzipiert ist, dass Sie ohne großen Zeitaufwand natürliche Dialogabläufe zwischen Apps und Benutzern erstellen und skalierbare, kosteneffiziente Lösungen bereitstellen können.  "
+        "long_description": "watsonx Assistant heißt jetzt watsonx Orchestrate.\n\nWir führen ein Upgrade für alle Kunden von watsonx Assistant ein. Die Berechtigung für das Upgrade wird schrittweise für Kunden freigeschaltet. Weitere Informationen finden Sie in der Dokumentation unter: https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate (früher Assistant) bietet weiterhin die Funktionen zum Erstellen von KI-Assistenten, ohne dass es zu Unterbrechungen für Kunden kommt. Bestehende Dialoge, Aktionen, Erweiterungen und andere Einstellungen bleiben aktiv und können weiterhin bearbeitet werden.\n\nDie jetzt enthaltenen Funktionen zum Erstellen von KI-Agenten, zum Lifecycle-Management und zur Control Plane ermöglichen es Teams, mit der Erkundung und dem Erstellen von KI-Agenten für ihre Anwendungsfälle zu beginnen, um Assistant-Erlebnisse zu modernisieren."
       },
       "en": {
         "description": "IBM watsonx Assistant is now watsonx Orchestrate and comes with all of its Agentic capabilities and control plane. Build conversational interfaces into any application, device, or channel.",
@@ -287178,44 +287166,44 @@
         "long_description": "watsonx Assistant is now watsonx Orchestrate.\n\nWe are rolling out an upgrade to all customers of watsonx Assistant. Account eligibility for upgrade is rolling out to clients in stages, please see the documentation link here for more information: https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate (formerly Assistant), continues to provide the AI Assistant building capabilities with no disruption to customers. Existing dialogs, actions, extensions and other settings remain active and can continue to be authored.\n\nThe now including AI Agent building, life cycle, and control plane experiences allow teams to start exploring and building AI Agents for their use cases to modernize Assistant experiences."
       },
       "es": {
-        "description": "watsonx Assistant le permite crear interfaces de conversación en cualquier aplicación, dispositivo o canal.",
+        "description": "IBM watsonx Assistant ahora es watsonx Orchestrate e incluye todas sus capacidades Agentic y el plano de control. Cree interfaces conversacionales para cualquier aplicación, dispositivo o canal.",
         "display_name": "watsonx Assistant",
-        "long_description": "watsonx Assistant le permite crear interfaces de conversación en cualquier aplicación, dispositivo o canal.\n\nAñada una interfaz de lenguaje natural a la aplicación para automatizar las interacciones con los usuarios finales. Las aplicaciones comunes incluyen agentes virtuales y bots de conversación que se pueden integrar y comunicar en cualquier canal o dispositivo. Prepare el servicio Watson Conversation a través de una aplicación web fácil de utilizar, diseñado para que pueda crear rápidamente flujos de conversación natural entre las aplicaciones y los usuarios, y desplegar soluciones escalables y económicas."
+        "long_description": "watsonx Assistant ahora es watsonx Orchestrate.\n\nEstamos implementando una actualización para todos los clientes de watsonx Assistant. La elegibilidad de la cuenta para la actualización se está implementando por etapas a los clientes; consulte el enlace de documentación aquí para obtener más información: https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate (anteriormente Assistant) continúa ofreciendo las capacidades de creación de AI Assistant sin ninguna interrupción para los clientes. Los diálogos, acciones, extensiones y otras configuraciones existentes permanecen activos y se pueden seguir editando.\n\nLas experiencias que ahora incluyen la creación de agentes de IA, el ciclo de vida y el plano de control permiten que los equipos comiencen a explorar y crear agentes de IA para sus casos de uso y modernizar las experiencias de Assistant."
       },
       "fr": {
-        "description": "watsonx Assistant vous permet de générer des interfaces conversationnelles dans n'importe quelle application, ou sur n'importe quel appareil ou canal.",
+        "description": "IBM watsonx Assistant s'appelle désormais watsonx Orchestrate et intègre toutes ses fonctionnalités Agentic ainsi que le plan de contrôle. Créez des interfaces conversationnelles pour n'importe quelle application, appareil ou canal.",
         "display_name": "watsonx Assistant",
-        "long_description": "watsonx Assistant vous permet de générer des interfaces conversationnelles dans n'importe quelle application, ou sur n'importe quel appareil ou canal.\nAjoutez une interface en langage naturel à votre application pour automatiser les interactions avec vos utilisateurs finaux. Les applications courantes incluent des agents virtuels et des bots de discussion qui peuvent s'intégrer à tout canal ou périphérique et communiquer dessus. Entraînez le service Watson Conversation par l'intermédiaire d'une application Web conviviale conçue de sorte que vous puissiez générer rapidement des flux de conversations naturels entre vos applications et utilisateurs et déployer des solutions évolutives économiques."
+        "long_description": "watsonx Assistant s'appelle désormais watsonx Orchestrate.\n\nNous déployons une mise à niveau pour tous les clients de watsonx Assistant. L'éligibilité des comptes à la mise à niveau est déployée par étapes ; veuillez consulter le lien de documentation ci-dessous pour plus d'informations : https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate (anciennement Assistant) continue de fournir les fonctionnalités de création d'AI Assistant sans aucune interruption pour les clients. Les dialogues, actions, extensions et autres paramètres existants restent actifs et peuvent continuer à être modifiés.\n\nLes expériences incluant désormais la création d'agents IA, le cycle de vie et le plan de contrôle permettent aux équipes de commencer à explorer et à créer des agents IA pour leurs cas d'usage afin de moderniser les expériences Assistant."
       },
       "it": {
-        "description": "watsonx Assistant consente di realizzare interfacce conversazionali in qualsiasi applicazione, dispositivo o canale.",
+        "description": "IBM watsonx Assistant ora si chiama watsonx Orchestrate e include tutte le sue funzionalità Agentic e il control plane. Crea interfacce conversazionali per qualsiasi applicazione, dispositivo o canale.",
         "display_name": "watsonx Assistant",
-        "long_description": "watsonx Assistant consente di realizzare interfacce conversazionali in qualsiasi applicazione, dispositivo o canale.\n\nAggiungere un'interfaccia di linguaggio naturale all'applicazione per automatizzare le interazioni con gli utenti finali. Tra le applicazioni comuni ci sono gli agent virtuali e i chat bot che possono integrarsi e comunicare con qualsiasi canale o dispositivo. Prova il servizio Watson Conversation tramite un'applicazione Web facile da usare, progettata per creare velocemente flussi di conversazioni naturali tra le app e gli utenti e per distribuire soluzioni scalabili ed economiche."
+        "long_description": "watsonx Assistant ora si chiama watsonx Orchestrate.\n\nStiamo distribuendo un aggiornamento per tutti i clienti di watsonx Assistant. L'idoneità degli account all'aggiornamento viene distribuita ai clienti in fasi; per maggiori informazioni consulta la documentazione qui: https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate (precedentemente Assistant) continua a fornire le funzionalità di creazione di AI Assistant senza alcuna interruzione per i clienti. I dialoghi, le azioni, le estensioni e le altre impostazioni esistenti restano attivi e possono continuare a essere modificati.\n\nLe esperienze che ora includono la creazione di agenti IA, il ciclo di vita e il control plane consentono ai team di iniziare a esplorare e creare agenti IA per i propri casi d'uso, modernizzando le esperienze di Assistant."
       },
       "ja": {
-        "description": "watsonx Assistant を使用すると、任意のアプリケーション、デバイス、またはチャネル内に会話型インターフェースを作成できます。",
+        "description": "IBM watsonx Assistant は watsonx Orchestrate に変わり、Agentic機能とコントロールプレーンをすべて備えています。あらゆるアプリケーション、デバイス、チャネルに会話型インターフェースを構築できます。",
         "display_name": "watsonx Assistant",
-        "long_description": "watsonx Assistant を使用すると、任意のアプリケーション、デバイス、またはチャネル内に会話型インターフェースを作成できます。\n\nアプリケーションに自然言語インターフェースを追加してエンドユーザーとのやり取りを自動化します。共通アプリケーションには、任意のチャネルやデバイスとの統合や通信を行える仮想エージェントとチャットボットが含まれます。簡単に利用できる Web アプリケーションを使用して Watson Conversation サービスのトレーニングを行います。サービスは、アプリとユーザーの自然な対話の流れを迅速に組み立てられるようにデザインされ、スケーラブルで費用効率の高いソリューションをデプロイします。"
+        "long_description": "watsonx Assistant は watsonx Orchestrate に変わりました。\n\nwatsonx Assistant をご利用のすべてのお客様に向けてアップグレードを展開しています。アップグレードの対象となるアカウントは段階的に展開されます。詳細については、以下のドキュメントをご参照ください:\nhttps://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate（旧 Assistant）は、お客様への影響なく、AI Assistant の構築機能を引き続き提供します。既存のダイアログ、アクション、拡張機能、その他の設定は有効なままで、継続して編集できます。\n\n新たに追加された AI エージェントの構築、ライフサイクル、コントロールプレーンの機能により、チームはユースケースに応じた AI エージェントの検討・構築を開始し、Assistant エクスペリエンスを最新化できます。"
       },
       "ko": {
-        "description": "watsonx Assistant를 사용하면 모든 애플리케이션, 디바이스 또는 채널에 대화형 인터페이스를 빌드할 수 있습니다.",
+        "description": "IBM watsonx Assistant는 이제 watsonx Orchestrate로 바뀌었으며 모든 Agentic 기능과 컨트롤 플레인을 포함합니다. 모든 애플리케이션, 디바이스 또는 채널에 대화형 인터페이스를 구축하세요.",
         "display_name": "watsonx Assistant",
-        "long_description": "watsonx Assistant를 사용하면 모든 애플리케이션, 디바이스 또는 채널에 대화형 인터페이스를 빌드할 수 있습니다.\n\n애플리케이션에 자연어 인터페이스를 추가하여 일반 사용자와의 상호작용을 자동화합니다. 공통 애플리케이션에는 채널 또는 디바이스에서 통합하고 통신할 수 있는 가상 에이전트 및 대화 로봇이 포함되어 있습니다.사용하기 쉬운 웹 애플리케이션을 통한 Watson Conversation 서비스를 학습합니다. 이 서비스는 앱과 사용자 간의 자연어 대화 플로우를 신속하게 빌드하고, 확장 가능한 비용 효율적인 솔루션을 배치할 수 있도록 설계되었습니다."
+        "long_description": "watsonx Assistant는 이제 watsonx Orchestrate입니다.\n\nwatsonx Assistant를 사용 중인 모든 고객을 대상으로 업그레이드를 배포하고 있습니다. 계정의 업그레이드 대상 여부는 단계적으로 고객에게 적용됩니다. 자세한 내용은 아래 문서 링크를 참조하세요:\nhttps://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate(이전 명칭: Assistant)는 고객에게 어떠한 중단도 없이 AI Assistant 구축 기능을 계속 제공합니다. 기존의 다이얼로그, 액션, 확장 및 기타 설정은 계속 활성 상태로 유지되며 계속해서 작성할 수 있습니다.\n\n이제 포함된 AI 에이전트 구축, 라이프사이클, 컨트롤 플레인 환경을 통해 팀은 자사의 사용 사례에 맞는 AI 에이전트를 탐색하고 구축하기 시작하여 Assistant 경험을 현대화할 수 있습니다."
       },
       "pt-BR": {
-        "description": "O watsonx Assistant permite que você construa interfaces de conversação em qualquer aplicativo, dispositivo ou canal.",
+        "description": "O IBM watsonx Assistant agora é o watsonx Orchestrate e traz todos os seus recursos Agentic e o control plane. Crie interfaces conversacionais para qualquer aplicativo, dispositivo ou canal.",
         "display_name": "watsonx Assistant",
-        "long_description": "O watsonx Assistant permite que você construa interfaces de conversação em qualquer aplicativo, dispositivo ou canal.\n\nInclua uma interface de linguagem natural em seu aplicativo para automatizar as interações com os usuários finais. Os aplicativos comuns incluem agentes virtuais e robôs de bate-papo que podem se integrar e se comunicar com qualquer canal ou dispositivo. Aprenda a usar o serviço Watson Conversation por meio de um aplicativo da web fácil de usar, projetado para que você possa construir rapidamente fluxos de conversa natural entre seus aplicativos e os usuários e implementar soluções escaláveis e com efetividade de custo."
+        "long_description": "O watsonx Assistant agora é o watsonx Orchestrate.\n\nEstamos implementando uma atualização para todos os clientes do watsonx Assistant. A elegibilidade das contas para a atualização está sendo liberada para os clientes em etapas; consulte o link da documentação abaixo para mais informações:\nhttps://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nO IBM watsonx Orchestrate (antigo Assistant) continua oferecendo os recursos de criação de AI Assistant sem nenhuma interrupção para os clientes. Diálogos, ações, extensões e outras configurações existentes permanecem ativos e podem continuar sendo editados.\n\nAs experiências que agora incluem a criação de agentes de IA, o ciclo de vida e o control plane permitem que as equipes comecem a explorar e criar agentes de IA para seus casos de uso, modernizando as experiências do Assistant."
       },
       "zh-Hans": {
-        "description": "watsonx Assistant 让您能够将会话式界面植入任何应用程序、设备或通道。",
+        "description": "IBM watsonx Assistant 现已更名为 watsonx Orchestrate，并包含其所有 Agentic 功能和控制平面。可为任何应用程序、设备或渠道构建对话式界面。",
         "display_name": "watsonx Assistant",
-        "long_description": "watsonx Assistant 让您能够将会话式界面植入任何应用程序、设备或通道。\n\n在应用程序中添加自然语言界面，实现与最终用户的自动交互。常用的应用程序包括虚拟代理和聊天机器人，可在任意渠道或设备上进行集成和通信。通过简单易用的 Web 应用程序来训练 Watson Conversation 服务，其目的在于使您可以在应用程序和用户间快速构建自然对话流程，部署可扩展且节省成本的解决方案。"
+        "long_description": "watsonx Assistant 现已更名为 watsonx Orchestrate。\n\n我们正在为所有 watsonx Assistant 客户推出升级。账户的升级资格将分阶段向客户开放，更多信息请参阅以下文档链接:\nhttps://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate（原 Assistant）将继续提供 AI Assistant 构建功能，不会对客户造成任何中断。现有的对话、操作、扩展和其他设置将保持有效，并可继续进行编辑。\n\n现在包含的 AI 智能体构建、生命周期和控制平面体验，使团队能够开始探索和构建适用于其用例的 AI 智能体，从而实现 Assistant 体验的现代化。"
       },
       "zh-Hant": {
-        "description": "watsonx Assistant 可讓您將交談式介面建置到任何應用程式、裝置或通道中。",
+        "description": "IBM watsonx Assistant 現已更名為 watsonx Orchestrate，並包含其所有 Agentic 功能與控制平面。可為任何應用程式、裝置或管道建置對話式介面。",
         "display_name": "watsonx Assistant",
-        "long_description": "watsonx Assistant 可讓您將交談式介面建置到任何應用程式、裝置或通道中。\n\n在應用程式新增自然語言介面，以自動化與一般使用者的互動。共用應用程式包含虛擬代理程式和會談機器人，這些服務可在任何通道或裝置上進行整合及通訊。透過易於使用的 Web 應用程式來訓練 Watson Conversation 服務，此應用程式專門設計來供您快速建置在應用程式和使用者之間的自然交談訊息流，並部署可調式、符合成本效益的解決方案。"
+        "long_description": "watsonx Assistant 現已更名為 watsonx Orchestrate。\n\n我們正為所有 watsonx Assistant 客戶推出升級。帳戶的升級資格將分階段向客戶開放，詳情請參閱以下文件連結:\nhttps://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-in-place-upgrade\n\nIBM watsonx Orchestrate（原 Assistant）將持續提供 AI Assistant 建置功能，不會對客戶造成任何中斷。現有的對話、動作、擴充功能及其他設定將維持啟用狀態，並可繼續編輯。\n\n現在納入的 AI 代理程式建置、生命週期及控制平面體驗，使團隊能夠開始探索並建置適用於其使用案例的 AI 代理程式，藉此使 Assistant 體驗現代化。"
       }
     },
     "pricing_tags": [
@@ -287253,7 +287241,7 @@
       "us-south",
       "watson"
     ],
-    "updated": "2026-09-18T18:16:29.467679845-04:00",
+    "updated": "2026-09-21T17:00:52.285654556-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/7045626d-55e3-4418-be11-683a26dbc1e5?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -287915,12 +287903,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -292197,12 +292185,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
