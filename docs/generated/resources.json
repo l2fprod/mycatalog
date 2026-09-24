@@ -9982,14 +9982,14 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10598,19 +10598,19 @@
   },
   {
     "geo_tags": [
-      "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
       "in-che",
+      "jp-osa",
+      "au-syd",
+      "br-sao",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "br-sao",
-      "jp-osa"
+      "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15853,7 +15853,7 @@
     ],
     "description": "Protect any-source environment (physical, virtual, cloud) to IBM Cloud VPC using RMM Disaster Recovery As A Service",
     "longDescription": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment# License Information:\n\n# Description - RackWare DR & DRaaS for IBM Cloud \n\n# RackWare DR for IBM Cloud \n\nRackWare DR provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution includes the RackWare DR software and standard support. Each license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM).\n\nPricing: $192 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# RackWare DRaaS for IBM Cloud \n\nRackWare DRaaS provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This fully managed solution includes the RackWare DR software, standard support, DRaaS operations, and one non-disruptive disaster recovery drill per protected VM each year. \nThe service includes daily monitoring and maintenance, daily operational reports, automated alerts to RackWare, problem diagnosis and resolution (including triage of warnings and errors), issue resolution within the defined support scope, coordination with external teams for issues outside the service scope, and the application of patches, bug fixes, and support release upgrades. \nEach RackWare DRaaS license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM). \n\nPricing: $495 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# Architecture Flexibility\n\n1) RackWare DR can be deployed as a single instance or scaled across multiple RackWare DR RMM instances to meet performance, isolation, and design requirements.\n \n2) For example, 100 VMs (20 vCPUs) can be distributed across multiple instances (e.g., 5 RMM instances, each supporting 20 VMs/servers).\n \n# Licensing Example (e.g. 100 VMs)\n\n1) 1 vCPU supports 5 VMs\n2) 100 VMs require 20 vCPUs\n3) A single RMM instance with 4 vCPU and 32 GB RAM can cover 20 VMs.\n4) 4 RMM instances should cover 100 VMs to be protected in DR\n5) For DR 1 VM is billed at $192, 100 VMs x $192 = $19200 / Year\n6) For DRaaS 1 VM is billed at $495, 100 VMs x $495 = $49500 / Year\n \nNote: RackWare DR software pricing does not include IBM Cloud compute, storage.\n\n\nRackWare's RMM Disaster Recovery ( DR ) are an automated, easy, and convenient process to protect existing workloads from your current location to IBM Cloud VPC. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies protection of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, automation features like DR policy engine, dynamic provisioning allowing all processes to be fast, easy, and error-free.\n",
-    "displayName": "RackWare - DRaaS Service",
+    "displayName": "RackWare - Disaster Recovery Subscription ( Annual )",
     "imageUrl": "https://static1.squarespace.com/static/5c1e6c1896e76f8c9319d545/t/60d22ba816f8a845659841ff/1624386472784/RackWare_Logo_96x96px.png",
     "localPngIcon": "/generated/icons/9bba3317-b401-4cc1-94ef-151a7313e647.png"
   },
@@ -15897,7 +15897,7 @@
     ],
     "description": "Migrate any-source environment (physical, virtual, cloud) to IBM Cloud VPC",
     "longDescription": "RackWare Management Module (RMM) Migration is an automated process to migrate as well as protect your bare metal and virtual workloads from IBM Cloud or any other source environment to Virtual Server Instances on IBM Cloud VPC.\n\nRMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease.\n\nRMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.RackWare's RMM Server Migration solution provides an easy, automated, and simplified process to migrate existing workloads from your current location to IBM Cloud. \n\n# License Information\n\n# Description – RackWare Migration for IBM Cloud\n\nRackWare Migration enables fast, automated workload migration to IBM Cloud VPC with flexible, infrastructure-based hourly licensing.\n\n# Licensing Model\nRackWare Migration is fixed cost based on the number of source VMs in scope.\n\n1 VM is billed at $110\n8 vCPU supports up to 50 source VMs\n\n# Sizing Guidance\nRackWare provides a simple, linear scaling model based on VM count:\n\n50 VMs → A single RMM with 8 vCPUs and 64 GB RAM\n100 VMs → 2 RMMs with 8 vCPUs and 64 GB RAM\n1,000 VMs → 20 RMMs with 8 vCPUs and 64 GB RAM\n10,000 VMs → 200 RMMs with 8 vCPUs and 64 GB RAM\n\nThis model scales linearly beyond these examples, allowing customers to support environments of any size by continuing the same 5 VMs per vCPU ratio. Capacity can be increased incrementally to align with migration waves, timelines, and performance requirements.\n\n# Architecture Flexibility\nRackWare Migration can be deployed as a single instance or distributed across multiple RMM instances depending on performance, isolation, or design requirements.\n\nFor example, a customer migrating 100 VMs would require 2 RMMs:\n\n100 VMs × $110/VM = $11,000\n\nThis can be deployed as:\n\nA single RMM with 4 vCPU and 32 GB RAM supporting 50 VMs in parallel for migration , or\nMultiple RMM instances based on the migration VMs count (e.g., 4 vCPUs supporting 50 VMs each) aligned to migration waves or application groupings\n\nThis flexible architecture enables parallel migrations, better control over cutover groups, and alignment to enterprise design requirements.\n\n# The supported use cases are\n\n1. VMware virtual machine (On-premises) to IBM Cloud VPC virtual servers\n2. VMware virtual machine (IBM Cloud classic) to IBM Cloud VPC virtual servers\n3. Hyper-V virtual machine (On-premises, IBM Cloud Classic) to IBM Cloud VPC virtual servers\n4. On-premises physical machines to IBM Cloud VPC virtual servers\n5. GCP, AWS, Azure, virtual machines and OCI Baremetal to IBM Cloud VPC virtual servers\n6. IBM Cloud classic bare metal to IBM Cloud classic bare metal\n7. IBM Cloud classic bare metal to IBM Cloud VPC bare metal\n8. Migration of popular databases (e.g., MSSQL, MySQL, PostgreSQL etc. Oracle RAC and ASM disk-based databases are not supported. Also, AWS RDS like databases are not supported)\n\n## Product Overview\nRackWare's RMM migrations are an automated, easy, and convenient process to migrate existing workloads from your current location to IBM Cloud. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.\n\n# Key Benefits\n\n- Live and Non-Disruptive Migrations\n- Highly secure and efficient data transfer\n- Auto provision of target Virtual Server Instance\n- Include / Exclude Lists: Capture and sync only specific files and directories rather than entire systems\n- Delta Sync: Sync only the changed parts of files during the final data sync, drastically lowering cutover times\n- Network optimization: bandwidth usage limitations, compression and check point restart for all sync operations\n\n- For more information, visit https://www.rackwareinc.com/cloud-migration\n\n",
-    "displayName": "RackWare - Migration Service",
+    "displayName": "RackWare - Migration Subscription ( Per Unit )",
     "imageUrl": "https://static1.squarespace.com/static/5c1e6c1896e76f8c9319d545/t/60d22ba816f8a845659841ff/1624386472784/RackWare_Logo_96x96px.png",
     "localPngIcon": "/generated/icons/b9ce1607-17f6-4b87-ad9d-d419491b612b.png"
   },
@@ -17606,12 +17606,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -18943,12 +18943,12 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "id": "282c1d79-9176-4597-9cff-941a8d6cfd4c",
     "kind": "service",
@@ -20299,6 +20299,7 @@
   },
   {
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20340,8 +20341,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "id": "is.instance",
     "kind": "service",
@@ -20402,7 +20402,6 @@
       "fs-ready",
       "fss",
       "gpu",
-      "hipaa",
       "hpcs",
       "hpvs",
       "hyper protect",
@@ -22226,12 +22225,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -22457,12 +22456,12 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "kind": "service",
