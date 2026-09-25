@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "id": "api-connect",
     "images": {
@@ -101717,10 +101717,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "jp-tok",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -101731,7 +101727,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "jp-tok",
+      "au-syd",
+      "eu-de",
+      "eu-gb"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -125052,15 +125052,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -158647,14 +158647,14 @@
     "created": "2018-02-21T15:44:04Z",
     "disabled": false,
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "images": {
@@ -161162,14 +161162,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -169229,7 +169229,7 @@
   },
   {
     "_id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
-    "_rev": "135-2cc2e5d454b41987537c7d2cb319adb5",
+    "_rev": "136-01be2f3f30d81df921eac5b72fad8de1",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ee41347f-b18e-4ca6-bf80-b5467c63f9a6/%2A",
@@ -169237,19 +169237,19 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "ca-tor",
       "ca-mon",
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "in-che",
       "jp-osa",
-      "au-syd",
-      "br-sao",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor"
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "br-sao"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -169539,6 +169539,10 @@
               {
                 "description": "Key Protect with Cross-region Resiliency offers enhanced availability through cross-region replication and automatic failover.",
                 "title": "Cross-region replication"
+              },
+              {
+                "description": "Explore the [Cloud Foundation for Security and Observability Deployable Architecture](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global) , which includes Key Protect as part of the solution.",
+                "title": "Recommended architectures"
               }
             ],
             "navigation_items": [
@@ -170361,7 +170365,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-22T14:13:41.835459131-04:00",
+    "updated": "2026-09-24T14:22:02.792805217-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/ee41347f-b18e-4ca6-bf80-b5467c63f9a6?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -292324,12 +292328,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -296938,12 +296942,12 @@
     "created": "2018-02-12T20:03:31Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "images": {
