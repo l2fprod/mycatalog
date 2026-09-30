@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "images": {
@@ -31862,7 +31862,6 @@
     "longDescription": "Nexar's Work Zone Compliance Solution eliminates the need for cities to send inspectors into the field to verify whether construction activity is properly permitted. By leveraging a nationwide network of dashcam-equipped vehicles that continuously capture street-level imagery, the platform uses AI vision models to automatically detect construction equipment and cross-reference those detections against official permit databases in real time. Cities can monitor every active work zone across their jurisdiction simultaneously, flag unpermitted activity as it appears, and issue enforcement actions directly from a single console.\n\nFor municipal agencies managing thousands of permits with limited staff, this means dramatically faster violation detection, higher compliance rates, and increased revenue recovery from civil penalties — all without adding headcount. The platform integrates with IBM watsonx Orchestrate to let operators query compliance data conversationally, generate maps of active violations, and drill into specific locations with full photographic evidence and permit context. It turns work zone enforcement from a reactive, labor-intensive process into a continuous, automated intelligence layer over the city's streets.",
     "displayName": "CityStream Compliance Agent",
     "imageUrl": "https://cloud-object-storage-cos-static-web-hosting-t7k.s3-web.us-east.cloud-object-storage.appdomain.cloud/purple-nexar-vector_nolettering.svg",
-    "localSvgIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.svg",
     "localPngIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.png"
   },
   {
@@ -110148,10 +110147,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -110162,7 +110157,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -110685,10 +110684,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -110696,7 +110691,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -121330,6 +121329,7 @@
         "created": "2018-06-29T13:51:32.072Z",
         "disabled": false,
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -121340,8 +121340,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "id": "databases-for-postgresql-standard",
         "images": {
@@ -137469,15 +137468,15 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
+      "eu-gb",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south",
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -142210,13 +142209,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -181658,10 +181657,6 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
@@ -181670,7 +181665,11 @@
       "in-mum",
       "ca-tor",
       "au-syd",
-      "jp-osa"
+      "jp-osa",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "images": {
@@ -246293,7 +246292,7 @@
   },
   {
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "489-3cb665be18c27a1cfbec88d34cbd7529",
+    "_rev": "491-2063650af55f128ec007c9d034dc143b",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -246301,8 +246300,8 @@
     "created": "2021-11-02T16:37:00.323Z",
     "disabled": false,
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "images": {
@@ -246791,7 +246790,7 @@
       "support_ibm",
       "us-east"
     ],
-    "updated": "2026-09-25T07:55:40.034500652-04:00",
+    "updated": "2026-09-30T00:48:34.167960326-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -298236,7 +298235,7 @@
   },
   {
     "_id": "b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
-    "_rev": "174-33e147153b0ea0a2d5b6fe789de68e2d",
+    "_rev": "177-4b7c849b64cd278466c7d74d9c46e7d2",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b69f78c0-11d7-11ef-9bdf-c92eb40d1838",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838/%2A",
@@ -298514,7 +298513,7 @@
       "us-south",
       "watson"
     ],
-    "updated": "2026-09-29T07:51:37.355735571-04:00",
+    "updated": "2026-09-30T09:21:43.5396045-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -298522,7 +298521,7 @@
     "plans": [
       {
         "_id": "7b51595d-7db9-4bbe-b2fc-bed3f95d8727",
-        "_rev": "48-608336b2e8294a9802173ed9c8e299d0",
+        "_rev": "51-864952ac6b7697fed6039930c695944c",
         "active": true,
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:7b51595d-7db9-4bbe-b2fc-bed3f95d8727",
         "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/7b51595d-7db9-4bbe-b2fc-bed3f95d8727/%2A",
@@ -298644,7 +298643,7 @@
           "rc_compatible",
           "watson"
         ],
-        "updated": "2026-09-28T09:17:23.71142683-04:00",
+        "updated": "2026-09-30T09:21:39.400807773-04:00",
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/7b51595d-7db9-4bbe-b2fc-bed3f95d8727?complete=true",
         "visibility": {
           "restrictions": "public"
@@ -304770,12 +304769,12 @@
     "created": "2017-05-24T18:39:56Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "images": {
@@ -313060,10 +313059,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {

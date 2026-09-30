@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -2794,7 +2794,6 @@
     "longDescription": "Nexar's Work Zone Compliance Solution eliminates the need for cities to send inspectors into the field to verify whether construction activity is properly permitted. By leveraging a nationwide network of dashcam-equipped vehicles that continuously capture street-level imagery, the platform uses AI vision models to automatically detect construction equipment and cross-reference those detections against official permit databases in real time. Cities can monitor every active work zone across their jurisdiction simultaneously, flag unpermitted activity as it appears, and issue enforcement actions directly from a single console.\n\nFor municipal agencies managing thousands of permits with limited staff, this means dramatically faster violation detection, higher compliance rates, and increased revenue recovery from civil penalties — all without adding headcount. The platform integrates with IBM watsonx Orchestrate to let operators query compliance data conversationally, generate maps of active violations, and drill into specific locations with full photographic evidence and permit context. It turns work zone enforcement from a reactive, labor-intensive process into a continuous, automated intelligence layer over the city's streets.",
     "displayName": "CityStream Compliance Agent",
     "imageUrl": "https://cloud-object-storage-cos-static-web-hosting-t7k.s3-web.us-east.cloud-object-storage.appdomain.cloud/purple-nexar-vector_nolettering.svg",
-    "localSvgIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.svg",
     "localPngIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.png"
   },
   {
@@ -6045,10 +6044,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6059,7 +6054,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6655,15 +6654,15 @@
   },
   {
     "geo_tags": [
+      "eu-gb",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south",
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "us-south"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6819,13 +6818,13 @@
   },
   {
     "geo_tags": [
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb"
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -10546,10 +10545,6 @@
   },
   {
     "geo_tags": [
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
@@ -10558,7 +10553,11 @@
       "in-mum",
       "ca-tor",
       "au-syd",
-      "jp-osa"
+      "jp-osa",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-mon"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15601,8 +15600,8 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "kind": "service",
@@ -22077,12 +22076,12 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
