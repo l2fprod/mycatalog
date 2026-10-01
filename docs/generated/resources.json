@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -6032,7 +6032,7 @@
         "id": "databases-for-elasticsearch-gen2-standard",
         "name": "standard-gen2",
         "description": "Databases for Elasticsearch Gen2 plan",
-        "displayName": "Standard - Gen 2 "
+        "displayName": "Standard-Gen2 "
       }
     ],
     "description": "Elasticsearch combines the power of a full text search engine with the indexing strengths of a JSON document database.",
@@ -6818,13 +6818,13 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9929,14 +9929,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10546,18 +10546,18 @@
   {
     "geo_tags": [
       "br-sao",
-      "jp-osa",
+      "in-che",
       "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "in-che"
+      "jp-osa",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -15870,6 +15870,7 @@
       "support_ibm",
       "us-east",
       "vllm",
+      "vpc_private_endpoint",
       "watson"
     ],
     "plans": [
@@ -17457,12 +17458,12 @@
   },
   {
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -21542,56 +21543,6 @@
     "geo_tags": [
       "global"
     ],
-    "id": "198f5174-8d2d-4141-98e2-695c9ff06a5a",
-    "kind": "service",
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "name": "wasabi-air",
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "tags": [
-      "ai",
-      "artificial intelligence",
-      "custom_kind_service",
-      "global",
-      "hot cloud storage",
-      "ibm_third_party",
-      "intelligent media storage",
-      "machine learning",
-      "mediaandentertainment",
-      "ml",
-      "object storage",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "technology",
-      "wasabi",
-      "watson"
-    ],
-    "plans": [
-      {
-        "id": "468ee776-0e6f-40a1-86d6-8d0abe9712d0",
-        "name": "paygo",
-        "description": "Pay As You Go Plan : Wasabi AiR ($12.99 / AiR hour) + Wasabi Cloud Storage ($7.99 / TB / mo) plus Wasabi Premium Support.\n\nPricing is based on GB per day. Based on 30-day month, formula for cost estimator: TiB × 1024 × 30 = GB-days.\n\nExample: For 100 TiB of storage, enter 100 x 1024 x 30 =3,072,000 GB-days\n\nFor more information please reach out to ibm@wasabi.com",
-        "displayName": "Pay As You Go"
-      }
-    ],
-    "description": "AI-Powered Intelligent Media Storage - \n\nQuickly and affordably find and access every moment in every media file you own.\n",
-    "longDescription": "Wasabi AiR Intelligent Media Storage\n\nWasabi AiR is AI-powered intelligent media storage that adds structure to unstructured data, automatically tagging visual, audio, and textural elements as they are ingested. Wasabi AiR combines features such as metadata auto-tagging, Optical Character Recognition, speech to text, people recognition, and multilingual transcription, with cloud storage. Seamlessly integrate Wasabi AiR into your media workflow to enhance content discoverability, streamline operations, and maximize media value.\n",
-    "displayName": "Wasabi AiR",
-    "imageUrl": "https://s3.us-east-2.wasabisys.com/ibm-cc-assets/Wasabi-AiR-Square-Grn_32px.svg",
-    "localSvgIcon": "/generated/icons/198f5174-8d2d-4141-98e2-695c9ff06a5a.svg",
-    "localPngIcon": "/generated/icons/198f5174-8d2d-4141-98e2-695c9ff06a5a.png"
-  },
-  {
-    "geo_tags": [
-      "global"
-    ],
     "id": "fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
     "kind": "service",
     "metadata": {
@@ -22076,12 +22027,12 @@
   },
   {
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "id": "39ba9d4c-b1c5-4cc3-a163-38b580121e01",
     "kind": "service",
@@ -22562,6 +22513,7 @@
     "longDescription": "IBM watsonx.governance™ helps you direct, manage and monitor your organization’s AI activities",
     "displayName": "watsonx.governance",
     "imageUrl": "https://aiopenscale.cloud.ibm.com/aiopenscale-broker/public/feature_xgov_light.svg",
+    "localSvgIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.svg",
     "localPngIcon": "/generated/icons/2ad019f3-0fd6-4c25-966d-f3952481a870.png"
   },
   {
