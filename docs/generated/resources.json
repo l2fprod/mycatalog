@@ -659,14 +659,14 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb"
     ],
     "id": "api-connect",
     "kind": "service",
@@ -6044,10 +6044,6 @@
   },
   {
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6058,7 +6054,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "kind": "service",
@@ -6654,7 +6654,6 @@
   },
   {
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -6662,7 +6661,8 @@
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "id": "dashdb-for-transactions",
     "kind": "service",
@@ -6818,13 +6818,13 @@
   },
   {
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "kind": "service",
@@ -9929,14 +9929,14 @@
   },
   {
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "id": "d589492e-6ac0-4a11-9c28-a157851c8f68",
     "kind": "service",
@@ -10546,10 +10546,8 @@
   {
     "geo_tags": [
       "br-sao",
-      "jp-osa",
-      "ca-mon",
-      "au-syd",
       "in-che",
+      "jp-osa",
       "in-mum",
       "eu-es",
       "jp-tok",
@@ -10557,7 +10555,9 @@
       "ca-tor",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "ca-mon",
+      "au-syd"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
     "kind": "service",
@@ -17458,12 +17458,12 @@
   },
   {
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "id": "bc35fb8c-bc5b-431b-859e-3861771d5843",
     "kind": "service",
@@ -21872,6 +21872,7 @@
     "longDescription": "IBM watsonx Orchestrate, powered by LLMs, includes pre-built skills that use natural language processing to draw from a catalog of basic and advanced skills to execute your requests, in context and in the right order, without the need for any specialized training or developer experience.",
     "displayName": "watsonx Orchestrate",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/b69f78c0-11d7-11ef-9bdf-c92eb40d1838/artifacts/cache/104066958c7a68895674c0c6b2e8ea89-public/watsonxOrchestrate.svg",
+    "localSvgIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.svg",
     "localPngIcon": "/generated/icons/b69f78c0-11d7-11ef-9bdf-c92eb40d1838.png"
   },
   {
@@ -21940,12 +21941,12 @@
   },
   {
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "kind": "service",
