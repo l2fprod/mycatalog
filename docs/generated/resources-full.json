@@ -8831,14 +8831,14 @@
     "created": "2016-03-21T23:24:11Z",
     "disabled": false,
     "geo_tags": [
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "id": "api-connect",
     "images": {
@@ -105575,10 +105575,6 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -105586,7 +105582,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -110963,10 +110963,6 @@
     "created": "2018-11-19T14:54:47.019Z",
     "disabled": false,
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -110977,7 +110973,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "id": "databases-for-mongodb",
     "images": {
@@ -111500,6 +111500,10 @@
         "created": "2018-11-19T14:54:48.151Z",
         "disabled": false,
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -111507,11 +111511,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "id": "databases-for-mongodb-standard",
         "images": {
@@ -126738,6 +126738,7 @@
     "created": "2018-05-02T11:20:37.375Z",
     "disabled": false,
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -126752,8 +126753,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "id": "databases-for-postgresql",
     "images": {
@@ -138287,7 +138287,6 @@
     "created": "2016-11-01T01:45:59Z",
     "disabled": false,
     "geo_tags": [
-      "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -138295,7 +138294,8 @@
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es"
     ],
     "id": "dashdb-for-transactions",
     "images": {
@@ -143028,13 +143028,13 @@
     "created": "2017-02-03T19:53:00Z",
     "disabled": false,
     "geo_tags": [
-      "eu-gb",
-      "eu-de",
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd"
+      "au-syd",
+      "eu-gb",
+      "eu-de",
+      "us-south"
     ],
     "id": "9e02e72d-00ce-4220-b44c-650c8314e58a",
     "images": {
@@ -174401,14 +174401,14 @@
         "created": "2019-03-26T16:53:05.901Z",
         "disabled": false,
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "id": "d15d5acf-afdd-40c9-ada4-0f81eed1d6f7",
         "images": {
@@ -182476,18 +182476,18 @@
     "created": "2016-09-07T20:47:36Z",
     "disabled": false,
     "geo_tags": [
+      "br-sao",
+      "jp-osa",
+      "in-mum",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
-      "br-sao",
+      "au-syd",
       "in-che",
-      "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "au-syd",
       "ca-tor"
     ],
     "id": "ee41347f-b18e-4ca6-bf80-b5467c63f9a6",
@@ -255699,7 +255699,7 @@
   },
   {
     "_id": "912cee12-b558-41e1-8321-470d48eebca2",
-    "_rev": "82-a28573640e3890c0cf59a5fe214480aa",
+    "_rev": "83-3e3c66dacbaf8939569c2b3bf2f6cd44",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:912cee12-b558-41e1-8321-470d48eebca2",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/912cee12-b558-41e1-8321-470d48eebca2/%2A",
@@ -255847,8 +255847,8 @@
         "parameters": [
           {
             "associations": null,
-            "description": "To successfully provision the Compass solution, the user API key must have the following permissions assigned: transit.gateway.edit, is.vpc.vpc.list, is.vpc.vpc.read, is.vpc.vpc.create.  To create the IBM Cloud API key, see the documentation on how to manage user API keys located within the following link:  https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui#create_user_key",
-            "displayname": "IBM Cloud user API key",
+            "description": "To create the IBM Cloud API key, see the documentation on how to manage user API keys located within the following link:  https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui#create_user_key",
+            "displayname": "IBM Cloud API key",
             "hidden": false,
             "i18n": null,
             "invalidmessage": null,
@@ -255883,8 +255883,44 @@
           },
           {
             "associations": null,
+            "description": "Enter the full name of the primary contact for this Compass solution deployment. This name will be used for account identification and communications related to your Compass Organization.",
+            "displayname": "Contact Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid name",
+            "layout": null,
+            "name": "contactName",
+            "optionsUrl": null,
+            "pattern": "^[\\p{L}\\p{M}' .-]{2,100}$",
+            "placeholder": "Jane Doe",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Enter the email address of the primary contact for this Compass solution deployment. This address will be used for onboarding guidance, service notifications, and alerts related to your Compass Organization.",
+            "displayname": "Setup contact email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid email address",
+            "layout": null,
+            "name": "contactEmail",
+            "optionsUrl": null,
+            "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$",
+            "placeholder": "name@company.com",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
             "description": "",
-            "displayname": "VPCs name prefix",
+            "displayname": "VPCs Name Prefix",
             "hidden": true,
             "i18n": null,
             "invalidmessage": null,
@@ -255901,7 +255937,7 @@
           },
           {
             "associations": null,
-            "description": "Bring your IP addresses. This entry makes it possible to have the Compass solution identified with IP addresses within your Enterprise Network. Enter a private IP prefix (an address within 10.0.0.0/8, 172.16.0.0/12, or 192.168.0.0/16). This prefix will be paired with a 26 bit prefix length to define a subnet that will be used in a new virtual private cloud (VPC). The VPC will contain virtual private end points (VPEs) which will connect your IBM Cloud infrastructure to Compass Vault infrastructure in the IBM Cloud. This MUST be a unique IP address range amongst your Enterprise Network.",
+            "description": "Bring your IP addresses. This entry makes it possible to have the Compass solution identified with IP addresses within your Enterprise Network. Enter a private IP prefix (an address within 10.0.0.0/8, 172.16.0.0/12, or 192.168.0.0/16). This prefix will be paired with a 26 bit prefix length to define a subnet that will be used in a new virtual private cloud (VPC). The VPC will contain virtual private end points (VPEs) which will connect your PowerVS infrastructure to Compass Vault infrastructure in the IBM Cloud. This MUST be a unique IP address range amongst your Enterprise Network.",
             "displayname": "VPC subnet IP range selection prefix",
             "hidden": false,
             "i18n": null,
@@ -256017,7 +256053,7 @@
       "windows",
       "zseries"
     ],
-    "updated": "2026-05-18T11:54:20.953194487-04:00",
+    "updated": "2026-10-06T17:01:58.513017018-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/912cee12-b558-41e1-8321-470d48eebca2?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -256283,7 +256319,7 @@
   },
   {
     "_id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
-    "_rev": "194-855bbeb7e2199889b916157b38d9aadf",
+    "_rev": "195-a43dc3f17e152217c93bbd77cfa398be",
     "active": true,
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:afb603e9-8738-4542-abf4-baf5231a4dbe",
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/afb603e9-8738-4542-abf4-baf5231a4dbe/%2A",
@@ -256456,6 +256492,42 @@
           },
           {
             "associations": null,
+            "description": "Enter the full name of the primary contact for this Compass solution deployment. This name will be used for account identification and communications related to your Compass Organization.",
+            "displayname": "Contact Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid name",
+            "layout": null,
+            "name": "contactName",
+            "optionsUrl": null,
+            "pattern": "^[\\p{L}\\p{M}' .-]{2,100}$",
+            "placeholder": "Jane Doe",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Enter the email address of the primary contact for this Compass solution deployment. This address will be used for onboarding guidance, service notifications, and alerts related to your Compass Organization.",
+            "displayname": "Setup contact email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid email address",
+            "layout": null,
+            "name": "contactEmail",
+            "optionsUrl": null,
+            "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$",
+            "placeholder": "name@company.com",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
             "description": "",
             "displayname": "VPCs Name Prefix",
             "hidden": true,
@@ -256600,7 +256672,7 @@
       "us-east",
       "us-south"
     ],
-    "updated": "2026-09-30T16:54:39.148908924-04:00",
+    "updated": "2026-10-06T16:52:37.927363932-04:00",
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/afb603e9-8738-4542-abf4-baf5231a4dbe?complete=true",
     "visibility": {
       "restrictions": "public"
@@ -300994,12 +301066,12 @@
     "created": "2015-02-09T06:09:05Z",
     "disabled": false,
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "id": "51c53b72-918f-4869-b834-2d99eb28422a",
     "images": {
@@ -313566,10 +313638,10 @@
         "created": "2018-02-12T20:03:31Z",
         "disabled": false,
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "images": {
