@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -51000,7 +51000,7 @@
       {
         "id": "cloudant-gen2-standard",
         "_id": "cloudant-gen2-standard",
-        "_rev": "27-54ddffc2f29e971da4e5dcd1d3404f8a",
+        "_rev": "28-912cddb31f5bf3566de892aabb929a48",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cloudant-gen2-standard",
         "name": "standard-gen2",
         "kind": "plan",
@@ -51047,7 +51047,7 @@
           "name": "IBM"
         },
         "created": "2026-06-17T14:15:24.156008256-04:00",
-        "updated": "2026-09-28T14:47:45.895081997-04:00",
+        "updated": "2026-10-08T20:46:52.263505729-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard?complete=true",
         "metadata": {
@@ -91970,6 +91970,9 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -91981,10 +91984,7 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -101914,6 +101914,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -101921,11 +101925,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -118008,7 +118008,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -118019,7 +118018,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -136443,7 +136443,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -136451,7 +136450,8 @@
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es"
+      "eu-es",
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -180623,19 +180623,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "in-che",
+      "jp-osa",
+      "in-mum",
       "ca-tor",
       "ca-mon",
       "au-syd",
-      "br-sao",
-      "in-che",
-      "in-mum",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "br-sao"
     ],
     "pricing_tags": [
       "paid",
@@ -244886,7 +244886,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "506-88d9c5d0f50a1725965432fac4d504e3",
+    "_rev": "507-8624e7bd9cce70fe432e5f3dc8f427a7",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -244968,7 +244968,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-10-08T09:51:54.376819754-04:00",
+    "updated": "2026-10-08T14:57:22.644218238-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -253474,7 +253474,7 @@
   {
     "id": "912cee12-b558-41e1-8321-470d48eebca2",
     "_id": "912cee12-b558-41e1-8321-470d48eebca2",
-    "_rev": "84-c9f0238329787867d75b19179b0a493c",
+    "_rev": "85-7543a087547dd2f64e970a89643036b5",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:912cee12-b558-41e1-8321-470d48eebca2",
     "name": "compass-vpc",
     "kind": "service",
@@ -253541,7 +253541,7 @@
       "name": "Cobalt Iron"
     },
     "created": "2026-02-04T08:11:39.70896329-05:00",
-    "updated": "2026-10-07T11:38:10.818078081-04:00",
+    "updated": "2026-10-08T16:14:41.311736154-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/912cee12-b558-41e1-8321-470d48eebca2?complete=true",
     "images": {
@@ -253691,6 +253691,42 @@
             "optionsUrl": null,
             "pattern": null,
             "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Enter the full name of the primary contact for this Compass solution deployment. This name will be used for account identification and communications related to your Compass Organization.",
+            "displayname": "Contact Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid name",
+            "layout": null,
+            "name": "contactName",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": "Jane Doe",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Enter the email address of the primary contact for this Compass solution deployment. This address will be used for onboarding guidance, service notifications, and alerts related to your Compass Organization.",
+            "displayname": "Setup contact email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid email address",
+            "layout": null,
+            "name": "contactEmail",
+            "optionsUrl": null,
+            "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$",
+            "placeholder": "name@company.com",
             "readonly": false,
             "required": true,
             "type": "text",
@@ -257828,12 +257864,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -278319,6 +278355,7 @@
       "windows"
     ],
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -278360,8 +278397,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -298882,12 +298918,12 @@
       "watson"
     ],
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "pricing_tags": [
       "free",
@@ -303172,12 +303208,12 @@
       "wx"
     ],
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid_only",
@@ -304632,12 +304668,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
+          "au-syd",
+          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south",
-          "au-syd",
-          "ca-tor"
+          "us-south"
         ],
         "pricing_tags": [
           "free",
@@ -311436,10 +311472,10 @@
           "iodine"
         ],
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "paid_only",
