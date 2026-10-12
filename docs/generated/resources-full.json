@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -49483,7 +49483,7 @@
   {
     "id": "cloudant",
     "_id": "cloudant",
-    "_rev": "77-38bc3e956749abca2bcf59d97e6d26d6",
+    "_rev": "78-9e9ee6da7f8fe97d9805853024842fb6",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:cloudant",
     "name": "cloudantnosqldb",
     "kind": "service",
@@ -49564,6 +49564,7 @@
       "ibm_created",
       "ibm_dedicated_public",
       "ibm_release",
+      "in-mum",
       "jp-osa",
       "jp-tok",
       "lead",
@@ -49577,6 +49578,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49601,7 +49603,7 @@
       "name": "IBM"
     },
     "created": "2014-06-03T07:04:12Z",
-    "updated": "2026-10-07T21:12:56.78991479-04:00",
+    "updated": "2026-10-12T09:23:47.876353585-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant?complete=true",
     "images": {
@@ -51130,7 +51132,7 @@
       {
         "id": "cloudant-gen2-standard",
         "_id": "cloudant-gen2-standard",
-        "_rev": "28-912cddb31f5bf3566de892aabb929a48",
+        "_rev": "29-c1cf0c9e9518aed5dd15fb398369272c",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cloudant-gen2-standard",
         "name": "standard-gen2",
         "kind": "plan",
@@ -51163,6 +51165,7 @@
           "eu-de",
           "eu-es",
           "eu-gb",
+          "in-mum",
           "jp-osa",
           "jp-tok",
           "us-east",
@@ -51177,7 +51180,7 @@
           "name": "IBM"
         },
         "created": "2026-06-17T14:15:24.156008256-04:00",
-        "updated": "2026-10-08T20:46:52.263505729-04:00",
+        "updated": "2026-10-12T09:23:47.817899246-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-standard?complete=true",
         "metadata": {
@@ -117980,6 +117983,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -117994,8 +117998,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -125419,6 +125422,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -125429,8 +125433,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -136573,15 +136576,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es"
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -141302,13 +141305,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -143434,13 +143437,13 @@
           "storage"
         ],
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "pricing_tags": [
           "paid",
@@ -170159,14 +170162,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -172659,14 +172662,14 @@
           "security"
         ],
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -180753,19 +180756,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
       "in-che",
       "jp-osa",
       "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "ca-tor",
-      "au-syd",
       "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -245016,7 +245019,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "510-3f43c479c0374576987776034e4d7ec7",
+    "_rev": "511-baf14c83f891a2f66a71dd742dba716c",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -245085,8 +245088,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -245098,7 +245101,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-10-09T14:08:59.496934285-04:00",
+    "updated": "2026-10-12T10:03:23.77593054-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -257994,12 +257997,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -291872,7 +291875,7 @@
   {
     "id": "76b7bf22-b443-47db-b3db-066ba2988f47",
     "_id": "76b7bf22-b443-47db-b3db-066ba2988f47",
-    "_rev": "154-09c74ed2d6c265b881f345657b19a2fc",
+    "_rev": "157-4cd453a6416498cbf3673c788c859917",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:76b7bf22-b443-47db-b3db-066ba2988f47",
     "name": "discovery",
     "kind": "service",
@@ -291976,7 +291979,7 @@
       "name": "IBM"
     },
     "created": "2016-04-15T16:16:22Z",
-    "updated": "2026-08-13T08:49:32.530375261-04:00",
+    "updated": "2026-10-12T06:42:49.998770759-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/76b7bf22-b443-47db-b3db-066ba2988f47?complete=true",
     "images": {
