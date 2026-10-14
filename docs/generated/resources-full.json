@@ -49578,6 +49578,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49588,8 +49589,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -110258,10 +110258,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -110269,7 +110265,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "pricing_tags": [
           "paygo"
@@ -125422,6 +125422,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -125432,8 +125433,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -136576,6 +136576,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -136583,8 +136584,7 @@
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -141305,13 +141305,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -143437,13 +143437,13 @@
           "storage"
         ],
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "pricing_tags": [
           "paid",
@@ -170162,14 +170162,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -180756,19 +180756,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
-      "jp-osa",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
+      "in-mum",
       "br-sao",
-      "in-mum"
+      "in-che",
+      "jp-osa",
+      "eu-es",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "paid",
@@ -229784,7 +229784,7 @@
       {
         "id": "d7264de2-fc81-47da-96a3-da24e095f077",
         "_id": "d7264de2-fc81-47da-96a3-da24e095f077",
-        "_rev": "12-d85787b6a0a00bf1b160783a7486a4f1",
+        "_rev": "13-82b54c6ec9caabed05e1933091d3b4d2",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d7264de2-fc81-47da-96a3-da24e095f077",
         "name": "telc-assess-satellite",
         "kind": "plan",
@@ -229846,12 +229846,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-assess-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -229864,7 +229862,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:30.898744298-05:00",
-        "updated": "2024-07-01T14:20:23.889650065-04:00",
+        "updated": "2026-10-14T09:41:26.977978407-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d7264de2-fc81-47da-96a3-da24e095f077?complete=true",
         "images": {
@@ -244915,7 +244913,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "515-77460192695a9aaacc698ff720e8a281",
+    "_rev": "517-c65fb7cd7ca66a362a23f3e8da73cccd",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -244997,7 +244995,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-10-13T17:39:34.876303859-04:00",
+    "updated": "2026-10-14T09:57:05.892514589-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -245570,7 +245568,7 @@
       {
         "id": "5304b575-3cff-4455-90dc-ae4367762093",
         "_id": "5304b575-3cff-4455-90dc-ae4367762093",
-        "_rev": "127-74b35a11daf6c04f2f9aaae0092af18c",
+        "_rev": "129-dff78fd7008a0ef6d348bb0219246b6f",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5304b575-3cff-4455-90dc-ae4367762093",
         "name": "paygo-standard",
         "kind": "plan",
@@ -245640,7 +245638,7 @@
           "name": "IBM"
         },
         "created": "2022-04-08T07:20:27.307Z",
-        "updated": "2026-10-02T10:38:28.549401366-04:00",
+        "updated": "2026-10-14T09:56:51.275954262-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093?complete=true",
         "images": {
@@ -257898,12 +257896,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -274663,7 +274661,6 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
-    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -298952,12 +298949,12 @@
       "watson"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
