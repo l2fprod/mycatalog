@@ -687,14 +687,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb"
+      "jp-tok"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -5902,6 +5902,74 @@
     "localPngIcon": "/generated/icons/1ab48530-6638-4fce-a386-0bd598576a0a.png"
   },
   {
+    "id": "b216e850-02ca-4315-a146-8a55fe4713db",
+    "name": "cybervr",
+    "kind": "service",
+    "tags": [
+      "compute",
+      "agentless",
+      "ai testing",
+      "aix",
+      "bare metal",
+      "change management",
+      "compliance evidence",
+      "custom_kind_service",
+      "cyber recovery",
+      "cyber vault",
+      "dora",
+      "global",
+      "ibm i",
+      "ibm power",
+      "ibm_third_party",
+      "immutable snapshots",
+      "isolated recovery environment",
+      "lpar",
+      "nis2",
+      "paid",
+      "paid_only",
+      "patch validation",
+      "pentesting",
+      "ransomware",
+      "rc_compatible",
+      "resilience testing",
+      "sandbox",
+      "support_third_party",
+      "thin digital twin",
+      "vmware"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "plans": [
+      {
+        "id": "3cf1c849-0c41-4675-84de-7f2c6914c234",
+        "name": "power-lpar---x86-baremetal",
+        "description": "Pricing is based on the number of protected IBM Power LPARs and/or x86 bare-metal servers. This monthly plan includes 10 LPARs/servers and the option to add additional ones.",
+        "displayName": "Monthly Power LPARs / x86 physical server"
+      },
+      {
+        "id": "a5de3573-7194-4174-a480-39440f2a752b",
+        "name": "x86-virtual-machine",
+        "description": "Pricing is based on the number of protected x86 virtual machines. This monthly plan includes 50 VMs and the option to add additional ones.",
+        "displayName": "Monthly x86 Virtual Machine"
+      }
+    ],
+    "description": "Instant, agentless Thin Digital Twins of production for cyber recovery, testing, pentesting and safe change on x86 and IBM Power.",
+    "longDescription": "CyberVR creates Thin Digital Twins: near-instant, disposable, production-realistic copies of VMware vSphere environments, built from immutable SAN snapshots with no data copy and no agents. Each twin reproduces the complete business service, including operating systems, applications, databases, networks, storage mappings and identity relationships, in an isolated environment.\n\nThe same twin serves many purposes. Teams use it to recover critical services after a cyberattack, run resilience drills, execute penetration tests against an exact replica, validate patches and configuration changes before promotion, and evaluate AI agents and workloads without touching production. Each exercise produces defensible evidence for DORA, NIS2, NYDFS 500.16 and NIST CSF 2.0.\n\nTwins spin up and tear down in minutes, regardless of data volume, so exercises can run as often as needed. CyberVR works with existing backup tools and with storage from Hitachi Vantara, IBM, Dell, NetApp, Infinidat, HPE and Pure Storage, and deploys in hours with automatic discovery.",
+    "displayName": "CyberVR",
+    "imageUrl": "https://cdn.prod.website-files.com/61ae56eae18e4aec5b1065f8/62ec1dcab018b38298c7d212_vm2020_logo_new.svg",
+    "localSvgIcon": "/generated/icons/b216e850-02ca-4315-a146-8a55fe4713db.svg",
+    "localPngIcon": "/generated/icons/b216e850-02ca-4315-a146-8a55fe4713db.png"
+  },
+  {
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "name": "data-virtualization",
     "kind": "service",
@@ -6708,6 +6776,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -6715,8 +6784,7 @@
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east",
-      "eu-es"
+      "us-east"
     ],
     "pricing_tags": [
       "paid",
@@ -6860,13 +6928,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -9971,14 +10039,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10591,7 +10659,7 @@
       "us-south"
     ],
     "geo_tags": [
-      "ca-mon",
+      "au-syd",
       "br-sao",
       "in-che",
       "jp-osa",
@@ -10599,11 +10667,11 @@
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -18832,12 +18900,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "pricing_tags": [
       "free",

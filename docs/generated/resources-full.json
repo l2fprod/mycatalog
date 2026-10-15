@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-east",
+      "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb"
+      "jp-tok"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -74890,6 +74890,517 @@
     "localPngIcon": "/generated/icons/1ab48530-6638-4fce-a386-0bd598576a0a.png"
   },
   {
+    "id": "b216e850-02ca-4315-a146-8a55fe4713db",
+    "_id": "b216e850-02ca-4315-a146-8a55fe4713db",
+    "_rev": "59-1c48e7661072448f4f1335a07d639414",
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b216e850-02ca-4315-a146-8a55fe4713db",
+    "name": "cybervr",
+    "kind": "service",
+    "overview_ui": {
+      "en": {
+        "display_name": "CyberVR",
+        "long_description": "CyberVR creates Thin Digital Twins: near-instant, disposable, production-realistic copies of VMware vSphere environments, built from immutable SAN snapshots with no data copy and no agents. Each twin reproduces the complete business service, including operating systems, applications, databases, networks, storage mappings and identity relationships, in an isolated environment.\n\nThe same twin serves many purposes. Teams use it to recover critical services after a cyberattack, run resilience drills, execute penetration tests against an exact replica, validate patches and configuration changes before promotion, and evaluate AI agents and workloads without touching production. Each exercise produces defensible evidence for DORA, NIS2, NYDFS 500.16 and NIST CSF 2.0.\n\nTwins spin up and tear down in minutes, regardless of data volume, so exercises can run as often as needed. CyberVR works with existing backup tools and with storage from Hitachi Vantara, IBM, Dell, NetApp, Infinidat, HPE and Pure Storage, and deploys in hours with automatic discovery.",
+        "description": "Instant, agentless Thin Digital Twins of production for cyber recovery, testing, pentesting and safe change on x86 and IBM Power."
+      }
+    },
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b216e850-02ca-4315-a146-8a55fe4713db/%2A",
+    "disabled": false,
+    "active": true,
+    "tags": [
+      "compute",
+      "agentless",
+      "ai testing",
+      "aix",
+      "bare metal",
+      "change management",
+      "compliance evidence",
+      "custom_kind_service",
+      "cyber recovery",
+      "cyber vault",
+      "dora",
+      "global",
+      "ibm i",
+      "ibm power",
+      "ibm_third_party",
+      "immutable snapshots",
+      "isolated recovery environment",
+      "lpar",
+      "nis2",
+      "paid",
+      "paid_only",
+      "patch validation",
+      "pentesting",
+      "ransomware",
+      "rc_compatible",
+      "resilience testing",
+      "sandbox",
+      "support_third_party",
+      "thin digital twin",
+      "vmware"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "VM2020 Solutions"
+    },
+    "created": "2026-09-04T14:30:58.522733682-04:00",
+    "updated": "2026-10-15T08:57:35.469273622-04:00",
+    "complete": true,
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/b216e850-02ca-4315-a146-8a55fe4713db?complete=true",
+    "images": {
+      "image": "https://cdn.prod.website-files.com/61ae56eae18e4aec5b1065f8/62ec1dcab018b38298c7d212_vm2020_logo_new.svg"
+    },
+    "metadata": {
+      "rc_compatible": true,
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "80921adf09924817bdab538bc5dffb21:o:20a995b2-52ab-4946-93f7-ef8e3f1c8d5f",
+          "support": {
+            "languages": [
+              "en",
+              "es"
+            ],
+            "locations": [
+              "US"
+            ],
+            "process": "Right to use, break and fix support and software updates.",
+            "status_url": "https://support.vm2020.com",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "",
+                      "start_time": ""
+                    }
+                  ],
+                  "timezone": "America/New_York"
+                },
+                "contact": "support@vm2020.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 4
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@vm2020.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 24
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 6
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://support.vm2020.com"
+          }
+        }
+      },
+      "service": {
+        "type": "",
+        "iam_compatible": false,
+        "unique_api_key": false,
+        "rc_provisionable": true,
+        "bindable": true,
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "user_defined_service": null,
+        "extension": null,
+        "plan_updateable": false,
+        "state": "",
+        "service_check_enabled": false,
+        "test_check_interval": 0,
+        "service_key_supported": false,
+        "custom_create_page_hybrid_enabled": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Support Contact Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Support-Contact-Name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Support Contact Email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Support-Contact-Email",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Email Address for License Delivery",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Email-Address-for-License-Delivery",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Licensing Contact Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "Licensing-Contact-Name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "For the x86 Virtual Machine plan. Enter the number of virtual machines to protect, from 50 to 500. Leave blank if you are subscribing to the Power LPARs or x86 physical servers plan. For larger environments, contact sales@vm2020.com.",
+            "displayname": "x86 Virtual Machines to Protect",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 50 to 500.",
+            "layout": null,
+            "name": "x86-Virtual-Machines-to-Protect",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": "^(5[0-9]|[6-9][0-9]|[1-4][0-9]{2}|500)?$",
+            "placeholder": "50 to 500",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "For the Power LPARs or x86 physical servers plan. Enter how many IBM Power LPARs to protect beyond the 10 included in the monthly fee, from 0 to 90. Leave blank for none, or if you are subscribing to the x86 Virtual Machine plan. Together with additional x86 physical servers, at most 90. For larger environments, contact sales@vm2020.com.",
+            "displayname": "Additional IBM Power LPARs, beyond the 10 included (Power plan)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 90.",
+            "layout": null,
+            "name": "Additional-Power-LPARs",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": "^([0-9]|[1-8][0-9]|90)?$",
+            "placeholder": "0 to 90",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "For the Power LPARs or x86 physical servers plan. Enter how many x86 physical servers to protect beyond the 10 included in the monthly fee, from 0 to 90. Leave blank for none, or if you are subscribing to the x86 Virtual Machine plan. Together with additional IBM Power LPARs, at most 90. For larger environments, contact sales@vm2020.com.",
+            "displayname": "Additional x86 physical servers, beyond the 10 included (Power plan)",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a whole number from 0 to 90.",
+            "layout": null,
+            "name": "Additional-x86-Physical-Servers",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": "^([0-9]|[1-8][0-9]|90)?$",
+            "placeholder": "0 to 90",
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          }
+        ]
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Patented, near-instant, disposable copies of production built from snapshot clones, with no data copy.",
+                "title": "Thin Digital Twins"
+              },
+              {
+                "description": "Recovers critical business services from immutable snapshots after a cyberattack, in minutes.",
+                "title": "Isolated rapid recovery"
+              },
+              {
+                "description": "Red teams attack an exact twin of production to test EDR, SIEM and segmentation, repeatably.",
+                "title": "Pentesting and control validation"
+              },
+              {
+                "description": "Validates patches, CVE fixes, upgrades and configuration changes in a replica before promotion.",
+                "title": "Risk-free change management"
+              },
+              {
+                "description": "Rehearses recovery sequences and service dependencies, and trains teams before a real incident.",
+                "title": "Resilience drills"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.vm2020.com/cybervr-prod",
+          "terms_url": "https://resources.vm2020.com/EULA"
+        }
+      },
+      "pricing": {
+        "origin": "pricing_catalog",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/b216e850-02ca-4315-a146-8a55fe4713db/pricing",
+        "starting_price": {},
+        "metrics": null
+      }
+    },
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "id": "3cf1c849-0c41-4675-84de-7f2c6914c234",
+        "_id": "3cf1c849-0c41-4675-84de-7f2c6914c234",
+        "_rev": "31-ba440bd45debd86251d60a1cca112e2b",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:3cf1c849-0c41-4675-84de-7f2c6914c234",
+        "name": "power-lpar---x86-baremetal",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Monthly Power LPARs / x86 physical server",
+            "long_description": "Pricing is based on the number of protected IBM Power LPARs and/or x86 bare-metal servers. This monthly plan includes 10 LPARs/servers and the option to add additional ones.",
+            "description": "Pricing is based on the number of protected IBM Power LPARs and/or x86 bare-metal servers. This monthly plan includes 10 LPARs/servers and the option to add additional ones."
+          }
+        },
+        "parent_id": "b216e850-02ca-4315-a146-8a55fe4713db",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/3cf1c849-0c41-4675-84de-7f2c6914c234/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/b216e850-02ca-4315-a146-8a55fe4713db",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "ibm_third_party"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "VM2020 Solutions"
+        },
+        "created": "2026-09-23T10:46:08.937522971-04:00",
+        "updated": "2026-10-15T08:57:35.442676964-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/3cf1c849-0c41-4675-84de-7f2c6914c234?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Mixed 10-Pack: Power LPARs and x86 Bare Metal billed monthly"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/3cf1c849-0c41-4675-84de-7f2c6914c234/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Pricing is based on the number of protected IBM Power LPARs and/or x86 bare-metal servers. This monthly plan includes 10 LPARs/servers and the option to add additional ones.",
+        "displayName": "Monthly Power LPARs / x86 physical server"
+      },
+      {
+        "id": "a5de3573-7194-4174-a480-39440f2a752b",
+        "_id": "a5de3573-7194-4174-a480-39440f2a752b",
+        "_rev": "25-fa173c9a28b9d0e984740c2a054515f4",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a5de3573-7194-4174-a480-39440f2a752b",
+        "name": "x86-virtual-machine",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Monthly x86 Virtual Machine",
+            "long_description": "Pricing is based on the number of protected x86 virtual machines. This monthly plan includes 50 VMs and the option to add additional ones.",
+            "description": "Pricing is based on the number of protected x86 virtual machines. This monthly plan includes 50 VMs and the option to add additional ones."
+          }
+        },
+        "parent_id": "b216e850-02ca-4315-a146-8a55fe4713db",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a5de3573-7194-4174-a480-39440f2a752b/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/b216e850-02ca-4315-a146-8a55fe4713db",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "ibm_third_party"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "VM2020 Solutions"
+        },
+        "created": "2026-09-23T10:41:12.277044128-04:00",
+        "updated": "2026-10-15T08:57:35.467674918-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/a5de3573-7194-4174-a480-39440f2a752b?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "50 x86 virtual machine pack"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/a5de3573-7194-4174-a480-39440f2a752b/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Pricing is based on the number of protected x86 virtual machines. This monthly plan includes 50 VMs and the option to add additional ones.",
+        "displayName": "Monthly x86 Virtual Machine"
+      }
+    ],
+    "description": "Instant, agentless Thin Digital Twins of production for cyber recovery, testing, pentesting and safe change on x86 and IBM Power.",
+    "longDescription": "CyberVR creates Thin Digital Twins: near-instant, disposable, production-realistic copies of VMware vSphere environments, built from immutable SAN snapshots with no data copy and no agents. Each twin reproduces the complete business service, including operating systems, applications, databases, networks, storage mappings and identity relationships, in an isolated environment.\n\nThe same twin serves many purposes. Teams use it to recover critical services after a cyberattack, run resilience drills, execute penetration tests against an exact replica, validate patches and configuration changes before promotion, and evaluate AI agents and workloads without touching production. Each exercise produces defensible evidence for DORA, NIS2, NYDFS 500.16 and NIST CSF 2.0.\n\nTwins spin up and tear down in minutes, regardless of data volume, so exercises can run as often as needed. CyberVR works with existing backup tools and with storage from Hitachi Vantara, IBM, Dell, NetApp, Infinidat, HPE and Pure Storage, and deploys in hours with automatic discovery.",
+    "displayName": "CyberVR",
+    "imageUrl": "https://cdn.prod.website-files.com/61ae56eae18e4aec5b1065f8/62ec1dcab018b38298c7d212_vm2020_logo_new.svg",
+    "localSvgIcon": "/generated/icons/b216e850-02ca-4315-a146-8a55fe4713db.svg",
+    "localPngIcon": "/generated/icons/b216e850-02ca-4315-a146-8a55fe4713db.png"
+  },
+  {
     "id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "_id": "5d307850-0404-11eb-8c8b-c7d7505f656d",
     "_rev": "108-d7af64ea1af8109a80ec04b88e98723e",
@@ -136576,6 +137087,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
@@ -136583,8 +137095,7 @@
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east",
-      "eu-es"
+      "us-east"
     ],
     "pricing_tags": [
       "paid",
@@ -141305,13 +141816,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -170162,14 +170673,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -172662,14 +173173,14 @@
           "security"
         ],
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -180756,7 +181267,7 @@
       "us-south"
     ],
     "geo_tags": [
-      "ca-mon",
+      "au-syd",
       "br-sao",
       "in-che",
       "jp-osa",
@@ -180764,11 +181275,11 @@
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -268745,12 +269256,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -311507,10 +312018,10 @@
           "iodine"
         ],
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "paid_only",
