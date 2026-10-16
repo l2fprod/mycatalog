@@ -12122,6 +12122,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12129,8 +12130,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -49578,6 +49578,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49588,8 +49589,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -92614,6 +92614,10 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92624,11 +92628,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -143948,13 +143948,13 @@
           "storage"
         ],
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "pricing_tags": [
           "paid",
@@ -170673,14 +170673,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -173173,14 +173173,14 @@
           "security"
         ],
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -181268,15 +181268,15 @@
     ],
     "geo_tags": [
       "ca-tor",
-      "au-syd",
-      "in-che",
-      "in-mum",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
+      "au-syd",
       "br-sao",
+      "in-che",
       "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east"
@@ -230295,7 +230295,7 @@
       {
         "id": "d7264de2-fc81-47da-96a3-da24e095f077",
         "_id": "d7264de2-fc81-47da-96a3-da24e095f077",
-        "_rev": "13-82b54c6ec9caabed05e1933091d3b4d2",
+        "_rev": "15-19e36a232a1cf1dd5bfc78044f6ac986",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d7264de2-fc81-47da-96a3-da24e095f077",
         "name": "telc-assess-satellite",
         "kind": "plan",
@@ -230373,7 +230373,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:30.898744298-05:00",
-        "updated": "2026-10-14T09:41:26.977978407-04:00",
+        "updated": "2026-10-16T09:20:22.582449484-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d7264de2-fc81-47da-96a3-da24e095f077?complete=true",
         "images": {
@@ -245424,7 +245424,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "518-e0bb59bc43cd52661d9955b6730bce9c",
+    "_rev": "519-fc5a693e5b746132b2aa27723adbe233",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -245506,7 +245506,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-10-15T15:05:14.143506395-04:00",
+    "updated": "2026-10-16T10:57:10.245499061-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -275172,6 +275172,7 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -299460,12 +299461,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -308274,7 +308275,7 @@
   {
     "id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "_id": "ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
-    "_rev": "857-4c7ebce226891aeffb31756a1ccc1356",
+    "_rev": "858-436f729b66bda84d9a0329d7da627f35",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed",
     "name": "datacatalog",
     "kind": "service",
@@ -308338,6 +308339,7 @@
       "allow_internal_users",
       "apidocs_enabled",
       "au-syd",
+      "block_internal_trial",
       "ca-tor",
       "catalog",
       "custom_kind_service",
@@ -308394,6 +308396,7 @@
     "pricing_tags": [
       "paid_only",
       "paygo",
+      "block_internal_trial",
       "paid",
       "allow_internal_users",
       "lite",
@@ -308405,7 +308408,7 @@
       "name": "IBM"
     },
     "created": "2018-02-12T20:03:31Z",
-    "updated": "2026-06-19T13:05:39.629682889-04:00",
+    "updated": "2026-10-16T02:54:01.950973817-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/ed3a5a53-eb60-4f3c-8fd1-17f88585b6ed?complete=true",
     "images": {
@@ -309425,7 +309428,7 @@
       {
         "id": "9884cb54-6af0-4111-bee8-ddef9dd9b63d",
         "_id": "9884cb54-6af0-4111-bee8-ddef9dd9b63d",
-        "_rev": "2-5dcf8cfcb744bf675658e6c4c8fd64c9",
+        "_rev": "3-33070942e4fadc49cc804b53c0356490",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9884cb54-6af0-4111-bee8-ddef9dd9b63d",
         "name": "enterprise",
         "kind": "plan",
@@ -309503,13 +309506,14 @@
         ],
         "pricing_tags": [
           "paid_only",
-          "paygo"
+          "paygo",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2020-09-29T16:03:08.427Z",
-        "updated": "2024-07-01T15:44:50.680781215-04:00",
+        "updated": "2026-10-16T02:53:32.818619431-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9884cb54-6af0-4111-bee8-ddef9dd9b63d?complete=true",
         "images": {
@@ -310135,7 +310139,7 @@
       {
         "id": "c6de4059-f576-480f-8492-88e2f2729818",
         "_id": "c6de4059-f576-480f-8492-88e2f2729818",
-        "_rev": "19-043bf7a7e7f1e74d3783ed47a89d6880",
+        "_rev": "20-92110e261b81e0c81b484e9c021984a5",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:c6de4059-f576-480f-8492-88e2f2729818",
         "name": "enterprise-bundle",
         "kind": "plan",
@@ -310217,13 +310221,14 @@
         "pricing_tags": [
           "paid",
           "paid_only",
-          "allow_internal_users"
+          "allow_internal_users",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2022-05-04T17:28:27.489Z",
-        "updated": "2025-05-02T10:55:25.698257401-04:00",
+        "updated": "2026-10-16T02:54:45.203055852-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/c6de4059-f576-480f-8492-88e2f2729818?complete=true",
         "images": {
@@ -310592,7 +310597,7 @@
       {
         "id": "c2e391c2-d029-474f-9cf7-3d102cc90fac",
         "_id": "c2e391c2-d029-474f-9cf7-3d102cc90fac",
-        "_rev": "31-e6a563400ef4de657fb7d0199badb895",
+        "_rev": "32-c049cb50a56b5154ceb93e2f4a0a68d8",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:c2e391c2-d029-474f-9cf7-3d102cc90fac",
         "name": "essentials",
         "kind": "plan",
@@ -310650,15 +310655,15 @@
         "active": true,
         "tags": [
           "apidocs_enabled",
+          "data lineage",
           "freesia",
           "gc_migrate",
           "ibm_created",
+          "ikc",
           "iodine",
           "lite",
           "rc_compatible",
-          "watson",
-          "data lineage",
-          "ikc"
+          "watson"
         ],
         "geo_tags": [
           "au-syd",
@@ -310671,13 +310676,14 @@
         "pricing_tags": [
           "paid",
           "paid_only",
-          "allow_internal_users"
+          "allow_internal_users",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2025-04-28T22:30:56.480272079-04:00",
-        "updated": "2025-10-03T13:46:15.572692726-04:00",
+        "updated": "2026-10-16T02:54:56.162897835-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/c2e391c2-d029-474f-9cf7-3d102cc90fac?complete=true",
         "images": {
@@ -311694,7 +311700,7 @@
       {
         "id": "3a68f599-b1d6-48f1-a343-76682b945a9c",
         "_id": "3a68f599-b1d6-48f1-a343-76682b945a9c",
-        "_rev": "24-8335ce3870984f6c78e176ef49c220e5",
+        "_rev": "25-0a17fdfe2b5eae27f6c05093e98c5e2e",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:3a68f599-b1d6-48f1-a343-76682b945a9c",
         "name": "premium",
         "kind": "plan",
@@ -311752,15 +311758,15 @@
         "active": true,
         "tags": [
           "apidocs_enabled",
+          "data lineage",
           "freesia",
           "gc_migrate",
           "ibm_created",
+          "ikc",
           "iodine",
           "lite",
           "rc_compatible",
-          "watson",
-          "data lineage",
-          "ikc"
+          "watson"
         ],
         "geo_tags": [
           "au-syd",
@@ -311773,13 +311779,14 @@
         "pricing_tags": [
           "paid",
           "paid_only",
-          "allow_internal_users"
+          "allow_internal_users",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2025-04-28T22:46:03.284538778-04:00",
-        "updated": "2025-10-03T13:39:37.843733052-04:00",
+        "updated": "2026-10-16T02:55:05.916436978-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/3a68f599-b1d6-48f1-a343-76682b945a9c?complete=true",
         "images": {
@@ -311950,7 +311957,7 @@
       {
         "id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "_id": "7a91bfb1-bd86-4181-9947-806f0a3d89b9",
-        "_rev": "3-d8c95e91619fdce4171dedb35ed801c5",
+        "_rev": "4-4e11747bff11e745d69af8fd9c63e339",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:7a91bfb1-bd86-4181-9947-806f0a3d89b9",
         "name": "professional",
         "kind": "plan",
@@ -312017,20 +312024,21 @@
           "iodine"
         ],
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "paid_only",
-          "paygo"
+          "paygo",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2018-02-12T20:03:31Z",
-        "updated": "2025-05-02T11:04:54.041321682-04:00",
+        "updated": "2026-10-16T02:55:15.809158856-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/7a91bfb1-bd86-4181-9947-806f0a3d89b9?complete=true",
         "images": {
@@ -312553,7 +312561,7 @@
       {
         "id": "82a5d250-0623-401e-97d2-50c8c9748482",
         "_id": "82a5d250-0623-401e-97d2-50c8c9748482",
-        "_rev": "2-f87378029f04643b132f25a15846473f",
+        "_rev": "3-b76211655ab42cc5e7f382d3372aebda",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:82a5d250-0623-401e-97d2-50c8c9748482",
         "name": "sqo",
         "kind": "plan",
@@ -312627,13 +312635,14 @@
         ],
         "pricing_tags": [
           "subscription",
-          "subscription_only"
+          "subscription_only",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2018-02-12T20:03:31Z",
-        "updated": "2024-07-01T15:44:51.011301793-04:00",
+        "updated": "2026-10-16T02:55:24.989524352-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/82a5d250-0623-401e-97d2-50c8c9748482?complete=true",
         "images": {
@@ -312806,7 +312815,7 @@
       {
         "id": "7966c4ea-6d03-4bd4-acda-ce8131893a8c",
         "_id": "7966c4ea-6d03-4bd4-acda-ce8131893a8c",
-        "_rev": "2-7538fb016b4206adf756159fec70c432",
+        "_rev": "3-a27f1159884d884e28e4af0e49c8e353",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:7966c4ea-6d03-4bd4-acda-ce8131893a8c",
         "name": "sqo-standard",
         "kind": "plan",
@@ -312880,13 +312889,14 @@
         ],
         "pricing_tags": [
           "subscription",
-          "subscription_only"
+          "subscription_only",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2019-01-11T06:18:46.925Z",
-        "updated": "2024-07-01T15:44:51.136139298-04:00",
+        "updated": "2026-10-16T02:55:33.720861193-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/7966c4ea-6d03-4bd4-acda-ce8131893a8c?complete=true",
         "images": {
@@ -313059,7 +313069,7 @@
       {
         "id": "6be465bb-bbc5-485e-b92b-e70991e83fc7",
         "_id": "6be465bb-bbc5-485e-b92b-e70991e83fc7",
-        "_rev": "4-3ae778427d4b76b542d23b0bde89178d",
+        "_rev": "5-f0542d43de0f277e47ad7953a18cc981",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:6be465bb-bbc5-485e-b92b-e70991e83fc7",
         "name": "standard",
         "kind": "plan",
@@ -313133,13 +313143,14 @@
         ],
         "pricing_tags": [
           "paid_only",
-          "paygo"
+          "paygo",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2018-08-28T09:08:31Z",
-        "updated": "2025-05-02T10:57:46.973624759-04:00",
+        "updated": "2026-10-16T02:55:46.104304142-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/6be465bb-bbc5-485e-b92b-e70991e83fc7?complete=true",
         "images": {
@@ -313571,7 +313582,7 @@
       {
         "id": "ce4811be-0fe0-4305-bdc3-83fe9e1ed996",
         "_id": "ce4811be-0fe0-4305-bdc3-83fe9e1ed996",
-        "_rev": "23-58ee39afdd8be39cf4fc376753ee5c22",
+        "_rev": "24-0d1f7f5634463b2691cceac97cc6ebf9",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:ce4811be-0fe0-4305-bdc3-83fe9e1ed996",
         "name": "standard-v2",
         "kind": "plan",
@@ -313653,13 +313664,14 @@
         "pricing_tags": [
           "paid",
           "paid_only",
-          "allow_internal_users"
+          "allow_internal_users",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2022-05-04T17:28:24.169Z",
-        "updated": "2025-05-02T10:58:46.6595983-04:00",
+        "updated": "2026-10-16T02:55:54.363627473-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/ce4811be-0fe0-4305-bdc3-83fe9e1ed996?complete=true",
         "images": {
@@ -314049,7 +314061,7 @@
       {
         "id": "47df9fae-4bc5-41d7-bbb1-aeb54b810bd3",
         "_id": "47df9fae-4bc5-41d7-bbb1-aeb54b810bd3",
-        "_rev": "30-aaa9a04c85f73f829d4b1168eb22332e",
+        "_rev": "31-626debeeb275a4a2e5b43fbf9aa10ea2",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:47df9fae-4bc5-41d7-bbb1-aeb54b810bd3",
         "name": "standard-v3",
         "kind": "plan",
@@ -314107,15 +314119,15 @@
         "active": true,
         "tags": [
           "apidocs_enabled",
+          "data lineage",
           "freesia",
           "gc_migrate",
           "ibm_created",
+          "ikc",
           "iodine",
           "lite",
           "rc_compatible",
-          "watson",
-          "data lineage",
-          "ikc"
+          "watson"
         ],
         "geo_tags": [
           "au-syd",
@@ -314128,13 +314140,14 @@
         "pricing_tags": [
           "paid",
           "paid_only",
-          "allow_internal_users"
+          "allow_internal_users",
+          "block_internal_trial"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2025-04-28T22:38:36.084012547-04:00",
-        "updated": "2025-10-03T14:03:04.733784642-04:00",
+        "updated": "2026-10-16T02:56:02.918335603-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/47df9fae-4bc5-41d7-bbb1-aeb54b810bd3?complete=true",
         "images": {
