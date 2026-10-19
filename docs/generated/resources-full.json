@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -49483,7 +49483,7 @@
   {
     "id": "cloudant",
     "_id": "cloudant",
-    "_rev": "78-9e9ee6da7f8fe97d9805853024842fb6",
+    "_rev": "79-dee63be639d6184b7c6b2c4a193a8829",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:cloudant",
     "name": "cloudantnosqldb",
     "kind": "service",
@@ -49575,9 +49575,11 @@
       "rc_compatible",
       "support_ibm",
       "us-east",
-      "us-south"
+      "us-south",
+      "vpc_private_endpoint"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49588,22 +49590,21 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
       "paygo",
-      "free",
-      "lite",
+      "allow_internal_users",
       "paid",
-      "allow_internal_users"
+      "free",
+      "lite"
     ],
     "provider": {
       "name": "IBM"
     },
     "created": "2014-06-03T07:04:12Z",
-    "updated": "2026-10-12T09:23:47.876353585-04:00",
+    "updated": "2026-10-19T10:14:22.90656197-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant?complete=true",
     "images": {
@@ -50447,6 +50448,121 @@
         "description": "The Dedicated Hardware plan is a bare metal environment provisioned for the sole use of your Cloudant Standard plan instance(s) for isolation, security, and compliance purposes. You can provision one or more Standard plan instances and the Dedicated Hardware environment will expand/contract as needed based on capacity and data used by the Standard plan instances.  It is an add-on fixed price to the consumption pricing of Cloudant Standard plan instance(s). Billing is prorated daily and provisioning is asynchronous and may take 5-7 business days. Dedicated Hardware environments provisioned after January 1, 2019 in a major IBM Cloud location will support internal endpoints for all instances deployed on them. NOTE: THERE IS A 1 MONTH MINIMUM CHARGE AFTER CLICKING CREATE SO TAKE CAUTION IN PROVISIONING.",
         "displayName": "Dedicated Hardware",
         "originalName": "Dedicated Hardware"
+      },
+      {
+        "id": "cloudant-gen2-isolated",
+        "_id": "cloudant-gen2-isolated",
+        "_rev": "10-b659619e40524715df75970d00502f79",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:cloudant-gen2-isolated",
+        "name": "isolated-gen2",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Isolated-Gen2",
+            "long_description": "Cloudant Gen2 Isolated plan offers throughput and data isolation from multi-tenancy. It is charged based on provisioned throughput, and data storage, billed hourly. This plan included 20GB of free encrypted data storage.",
+            "description": "Cloudant Gen2 Isolated plan offers throughput and data isolation from multi-tenancy. It is charged based on provisioned throughput, and data storage, billed hourly. This plan included 20GB of free encrypted data storage."
+          }
+        },
+        "parent_id": "cloudant",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-isolated/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "apidocs_enabled",
+          "cbr_enabled",
+          "data_management",
+          "gc_migrate",
+          "ibm_created",
+          "ibm_dedicated_public",
+          "ibm_release",
+          "lite",
+          "rc_compatible",
+          "vpc_private_endpoint"
+        ],
+        "geo_tags": [
+          "au-syd",
+          "br-sao",
+          "ca-tor",
+          "eu-de",
+          "eu-es",
+          "eu-gb",
+          "in-mum",
+          "jp-osa",
+          "jp-tok",
+          "us-east",
+          "us-south"
+        ],
+        "pricing_tags": [
+          "allow_internal_users",
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "IBM"
+        },
+        "created": "2026-10-05T10:21:03.414680467-04:00",
+        "updated": "2026-10-19T10:14:22.076275613-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-isolated?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": true,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Serverless, always-available document database, provisioned with throughput blocks of Reads, Writes and Global Queries requests per seconds."
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/cloudant-gen2-isolated/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Cloudant Gen2 Isolated plan offers throughput and data isolation from multi-tenancy. It is charged based on provisioned throughput, and data storage, billed hourly. This plan included 20GB of free encrypted data storage.",
+        "displayName": "Isolated-Gen2"
       },
       {
         "id": "cloudant-lite",
@@ -92614,10 +92730,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92628,7 +92740,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -102558,10 +102674,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -102569,7 +102681,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "pricing_tags": [
           "paygo"
@@ -118494,6 +118610,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -118508,8 +118625,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -137087,7 +137203,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -137095,7 +137210,8 @@
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -141816,13 +141932,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -181267,18 +181383,18 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
       "jp-osa",
       "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-tor",
+      "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
       "br-sao",
-      "ca-mon",
+      "in-che",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-tor",
       "au-syd"
     ],
     "pricing_tags": [
@@ -245424,7 +245540,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "519-fc5a693e5b746132b2aa27723adbe233",
+    "_rev": "522-c3a24e7d802eb80e55975aa124b55fe1",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -245493,8 +245609,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -245506,7 +245622,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-10-16T10:57:10.245499061-04:00",
+    "updated": "2026-10-19T12:27:26.374282441-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -245523,7 +245639,7 @@
             "languages": [],
             "locations": [],
             "process_i18n": {},
-            "status_url": "https://cloud.ibm.com/status/?query=Qiskit+Runtime",
+            "status_url": "https://cloud.ibm.com/status/?query=Quantum+Compute",
             "support_type": "ibm",
             "url": "https://www.ibm.com/quantum/pricing"
           }
@@ -246079,7 +246195,7 @@
       {
         "id": "5304b575-3cff-4455-90dc-ae4367762093",
         "_id": "5304b575-3cff-4455-90dc-ae4367762093",
-        "_rev": "129-dff78fd7008a0ef6d348bb0219246b6f",
+        "_rev": "130-55e1c9dc93b5719fe2cd065d27c2869a",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5304b575-3cff-4455-90dc-ae4367762093",
         "name": "paygo-standard",
         "kind": "plan",
@@ -246149,7 +246265,7 @@
           "name": "IBM"
         },
         "created": "2022-04-08T07:20:27.307Z",
-        "updated": "2026-10-14T09:56:51.275954262-04:00",
+        "updated": "2026-10-19T10:59:24.279029517-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093?complete=true",
         "images": {
@@ -254017,7 +254133,7 @@
   {
     "id": "912cee12-b558-41e1-8321-470d48eebca2",
     "_id": "912cee12-b558-41e1-8321-470d48eebca2",
-    "_rev": "85-7543a087547dd2f64e970a89643036b5",
+    "_rev": "86-a4c6c00c2e725209c06ff7ffff196f2f",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:912cee12-b558-41e1-8321-470d48eebca2",
     "name": "compass-vpc",
     "kind": "service",
@@ -254084,7 +254200,7 @@
       "name": "Cobalt Iron"
     },
     "created": "2026-02-04T08:11:39.70896329-05:00",
-    "updated": "2026-10-08T16:14:41.311736154-04:00",
+    "updated": "2026-10-19T14:30:38.995424341-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/912cee12-b558-41e1-8321-470d48eebca2?complete=true",
     "images": {
@@ -254356,6 +254472,12 @@
               {
                 "description": "1. Begin Backing Up in Minutes \n2. Simple, Automated, Instant-on\n3. Automated Backup for IBM Cloud\n4. Simple & Intuitive User Interface",
                 "title": "Key Compass Differentiators"
+              }
+            ],
+            "media": [
+              {
+                "type": "image/jpg",
+                "url": "https://help.cobaltiron.com/wp-content/uploads/2026/06/IBM-Cloud-Swirl-0.png"
               }
             ]
           }
@@ -258407,12 +258529,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -269256,12 +269378,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -273073,7 +273195,6 @@
     "longDescription": "VMware Usage Meter",
     "displayName": "VCF as a Service - Usage Meter",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
-    "localSvgIcon": "/generated/icons/vmware.usage-meter.svg",
     "localPngIcon": "/generated/icons/vmware.usage-meter.png"
   },
   {
@@ -303754,12 +303875,12 @@
       "wx"
     ],
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid_only",
