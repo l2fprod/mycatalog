@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -49579,7 +49579,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49590,7 +49589,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -102674,6 +102674,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -102681,11 +102685,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -118610,7 +118610,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -118625,7 +118624,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -141932,13 +141932,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -173289,14 +173289,14 @@
           "security"
         ],
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -181383,19 +181383,19 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "jp-osa",
-      "in-mum",
-      "ca-mon",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "us-south",
       "br-sao",
       "in-che",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "au-syd"
+      "ca-mon"
     ],
     "pricing_tags": [
       "paid",
@@ -245540,15 +245540,15 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "522-c3a24e7d802eb80e55975aa124b55fe1",
+    "_rev": "524-f6b6ee67d3f08538cb29e99803eb38cc",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
     "overview_ui": {
       "de": {
-        "display_name": "Qiskit Runtime",
-        "long_description": "Der Qiskit Runtime-Dienst bietet Zugang zur weltweit größten und leistungsstärksten Flotte von Quantencomputern. Sie erhalten Zugang zu dem Dienst sowie zu einer vollständigen Suite von Forschungs- und Entwicklungstools auf der IBM Quantum Platform.",
-        "description": "Führen Sie Workloads auf IBM Quantencomputern aus und verwalten Sie sie mit dem Qiskit Runtime-Service auf der IBM Quantum Platform."
+        "display_name": "Quantum Compute",
+        "long_description": "Der IBM Quantum Compute Service bietet Zugriff auf die weltweit größte und leistungsstärkste Flotte von Quantencomputern. Sie erhalten Zugang zu dem Dienst sowie zu einer vollständigen Suite von Forschungs- und Entwicklungstools auf der IBM Quantum Platform.",
+        "description": "Führen Sie Quanten-Workloads auf IBM -Quantencomputern als Teil der IBM Quantum Platform aus und verwalten Sie diese."
       },
       "en": {
         "display_name": "Quantum Compute",
@@ -245556,34 +245556,34 @@
         "description": "Run and manage quantum workloads on IBM Quantum computers as part of IBM Quantum Platform."
       },
       "es": {
-        "display_name": "Qiskit Runtime",
-        "long_description": "El servicio Qiskit Runtime proporciona acceso al conjunto de ordenadores cuánticos más grande y de mayor rendimiento del mundo. Acceda al servicio, así como a un completo conjunto de herramientas de investigación y desarrollo, en IBM Quantum Platform.",
-        "description": "Ejecute y gestione cargas de trabajo en ordenadores cuánticos de IBM con el servicio Qiskit Runtime en IBM Quantum Platform."
+        "display_name": "Quantum Compute",
+        "long_description": "El servicio IBM Quantum Compute Service ofrece acceso a la flota de ordenadores cuánticos más grande y con mayor rendimiento del mundo. Acceda al servicio, así como a un completo conjunto de herramientas de investigación y desarrollo, en IBM Quantum Platform.",
+        "description": "Ejecuta y gestiona cargas de trabajo cuánticas en los ordenadores cuánticos de IBM, como parte de la Plataforma Cuántica de IBM."
       },
       "fr": {
-        "display_name": "Qiskit Runtime",
-        "long_description": "Le service Qiskit Runtime donne accès à la plus grande et la plus performante flotte d'ordinateurs quantiques au monde. Accédez au service ainsi qu'à une suite complète d'outils de recherche et de développement sur la plateforme quantique IBM.",
-        "description": "Exécutez et gérez des charges de travail sur les ordinateurs quantiques IBM grâce au service Qiskit Runtime sur la plateforme IBM Quantum."
+        "display_name": "Quantum Compute",
+        "long_description": "Le service IBM Quantum Compute Service donne accès au parc d'ordinateurs quantiques le plus vaste et le plus performant au monde. Accédez au service ainsi qu'à une suite complète d'outils de recherche et de développement sur la plateforme quantique IBM.",
+        "description": "Exécutez et gérez des charges de travail quantiques sur les ordinateurs quantiques IBM dans le cadre de la plateforme IBM Quantum."
       },
       "it": {
-        "display_name": "Qiskit Runtime",
-        "long_description": "Il servizio Qiskit Runtime offre accesso alla flotta di computer quantistici più grande e performante al mondo. Ottieni accesso al servizio e a una suite completa di strumenti di ricerca e sviluppo su IBM Quantum Platform.",
-        "description": "Esegui e gestisci i carichi di lavoro sui computer quantistici IBM utilizzando il servizio Qiskit Runtime su piattaforma IBM Quantum Platform."
+        "display_name": "Quantum Compute",
+        "long_description": "Il servizio IBM Quantum Compute Service offre accesso alla flotta di computer quantistici più grande e più performante al mondo. Ottieni accesso al servizio e a una suite completa di strumenti di ricerca e sviluppo su IBM Quantum Platform.",
+        "description": "Esegui e gestisci carichi di lavoro quantistici sui computer quantistici IBM nell’ambito della piattaforma IBM Quantum."
       },
       "ja": {
-        "display_name": "Qiskit Runtime",
-        "long_description": "Qiskit Runtime サービスは、世界最大かつ最も高性能な量子コンピューター群へのアクセスを提供します。 IBM Quantumプラットフォームで、サービスへのアクセスに加えて、研究開発ツール一式をご利用ください。",
-        "description": "IBM Quantumプラットフォーム上の Qiskit Runtime サービスを利用して、IBM 量子コンピュータでワークロードを実行および管理します。"
+        "display_name": "Quantum Compute",
+        "long_description": "IBM Quantum Compute Service では、世界最大かつ最高性能を誇る量子コンピュータの群へのアクセスを提供しています。 IBM Quantumプラットフォームで、サービスへのアクセスに加えて、研究開発ツール一式をご利用ください。",
+        "description": "IBM Quantum Platformの一環として、 IBM Quantumコンピュータ上で量子ワークロードを実行・管理します。"
       },
       "ko": {
-        "display_name": "Qiskit Runtime",
-        "long_description": "Qiskit Runtime 서비스는 세계에서 가장 크고 성능이 뛰어난 양자 컴퓨터 제품군에 대한 액세스를 제공합니다. IBM Quantum Platform에서 서비스와 전체 연구 개발 도구 스위트에 액세스하십시오.",
-        "description": "IBM Quantum Platform의 Qiskit Runtime 서비스를 사용하여 IBM 양자 컴퓨터에서 워크로드를 실행하고 관리하십시오."
+        "display_name": "Quantum Compute",
+        "long_description": "IBM 양자 컴퓨팅 서비스는 세계에서 가장 규모가 크고 성능이 뛰어난 양자 컴퓨터 군을 이용할 수 있게 해줍니다. IBM Quantum Platform에서 서비스와 전체 연구 개발 도구 스위트에 액세스하십시오.",
+        "description": "IBM Quantum Platform의 일환으로 IBM 양자 컴퓨터에서 양자 워크로드를 실행하고 관리할 수 있습니다."
       },
       "pt": {
-        "display_name": "Qiskit Runtime",
-        "long_description": "O serviço Qiskit Runtime oferece acesso à maior e mais eficiente frota de computadores quânticos do mundo. Obtenha acesso ao serviço e a um conjunto completo de ferramentas de pesquisa e desenvolvimento na IBM Quantum Platform.",
-        "description": "Execute e gerencie cargas de trabalho em computadores quantum IBM com o serviço Qiskit Runtime na IBM Quantum Platform."
+        "display_name": "Quantum Compute",
+        "long_description": "O Serviço de Computação Quântica da IBM oferece acesso à maior e mais eficiente frota de computadores quânticos do mundo. Obtenha acesso ao serviço e a um conjunto completo de ferramentas de pesquisa e desenvolvimento na IBM Quantum Platform.",
+        "description": "Execute e gerencie cargas de trabalho quânticas em computadores quânticos da IBM, como parte da IBM Quantum Platform."
       }
     },
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f/%2A",
@@ -245609,8 +245609,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -245622,7 +245622,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-10-19T12:27:26.374282441-04:00",
+    "updated": "2026-10-19T17:13:30.542317617-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -258529,12 +258529,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -269378,12 +269378,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -273195,6 +273195,7 @@
     "longDescription": "VMware Usage Meter",
     "displayName": "VCF as a Service - Usage Meter",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.usage-meter.svg",
     "localPngIcon": "/generated/icons/vmware.usage-meter.png"
   },
   {
@@ -299582,12 +299583,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -303875,12 +303876,12 @@
       "wx"
     ],
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
