@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -12122,6 +12122,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12129,8 +12130,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -92730,10 +92730,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92744,7 +92740,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -118768,7 +118768,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -118779,7 +118778,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -137203,15 +137203,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "us-east"
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -141932,13 +141932,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb"
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -144064,13 +144064,13 @@
           "storage"
         ],
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "pricing_tags": [
           "paid",
@@ -181383,19 +181383,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "ca-mon",
-      "au-syd",
+      "br-sao",
       "in-che",
       "jp-osa",
-      "in-mum",
       "ca-tor",
       "eu-de",
       "eu-gb",
       "us-south",
-      "br-sao",
+      "in-mum",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "ca-mon",
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -220553,6 +220553,117 @@
         },
         "description": "Slack and Teams integration\nScheduled Prompts\nAI SRE for K8s and non-K8s environments\nAll data sources\nConnect your own MCP servers",
         "displayName": "Pay-As-You-Go"
+      },
+      {
+        "id": "a6b6d00b-6d3d-4c6e-a984-63fb8fef3e08",
+        "_id": "a6b6d00b-6d3d-4c6e-a984-63fb8fef3e08",
+        "_rev": "6-a72557021bbc0436c95827e8532c929c",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a6b6d00b-6d3d-4c6e-a984-63fb8fef3e08",
+        "name": "pro",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Pro",
+            "long_description": "Monthly fee covers 1000 incidents. Overage above 1000 incidents will be charged extra.",
+            "description": "Monthly fee covers 1000 incidents. Overage above 1000 incidents will be charged extra."
+          }
+        },
+        "parent_id": "d59f76a6-de3a-4066-8a1a-7c018bfa9ff2",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a6b6d00b-6d3d-4c6e-a984-63fb8fef3e08/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/d59f76a6-de3a-4066-8a1a-7c018bfa9ff2",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "devops",
+          "ibm_third_party",
+          "incident",
+          "logging_monitoring",
+          "sre"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "qaTT Software LTD"
+        },
+        "created": "2026-10-08T07:03:14.290735535-04:00",
+        "updated": "2026-10-21T04:53:49.594487657-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/a6b6d00b-6d3d-4c6e-a984-63fb8fef3e08?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Unlimited users"
+                  },
+                  {
+                    "description": "Advanced AI capabilities"
+                  },
+                  {
+                    "description": "Priority support"
+                  },
+                  {
+                    "description": "Alert history"
+                  },
+                  {
+                    "description": "Knowledge Base integration"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/a6b6d00b-6d3d-4c6e-a984-63fb8fef3e08/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly fee covers 1000 incidents. Overage above 1000 incidents will be charged extra.",
+        "displayName": "Pro"
       }
     ],
     "description": "Agentic AI ChatOps for DevOps, SRE, Cloud, and Operations Engineers",
@@ -245540,7 +245651,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "524-f6b6ee67d3f08538cb29e99803eb38cc",
+    "_rev": "525-9b284f29645b6a818f6793327f94553b",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -245609,8 +245720,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -245622,7 +245733,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-10-19T17:13:30.542317617-04:00",
+    "updated": "2026-10-21T02:53:16.376174413-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -250094,7 +250205,7 @@
   {
     "id": "bd517bf0-88ba-11ea-a52e-91aeb42a4019",
     "_id": "bd517bf0-88ba-11ea-a52e-91aeb42a4019",
-    "_rev": "9-5b051f1309fcfdf3abb1586fe3c94a3b",
+    "_rev": "11-d741f3b7357e25e2d3526a24bd1d7024",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:bd517bf0-88ba-11ea-a52e-91aeb42a4019",
     "name": "satellite",
     "kind": "service",
@@ -250171,7 +250282,6 @@
       "hybrid cloud",
       "iam_compatible",
       "ibm_created",
-      "in-che",
       "jp-osa",
       "jp-tok",
       "paid",
@@ -250187,7 +250297,6 @@
       "eu-de",
       "eu-es",
       "eu-gb",
-      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -250201,7 +250310,7 @@
       "name": "IBM"
     },
     "created": "2020-07-09T16:16:29.221Z",
-    "updated": "2026-10-13T06:32:34.11025488-04:00",
+    "updated": "2026-10-21T09:09:00.694086814-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/bd517bf0-88ba-11ea-a52e-91aeb42a4019?complete=true",
     "images": {
@@ -250467,7 +250576,7 @@
       {
         "id": "satellite.connector",
         "_id": "satellite.connector",
-        "_rev": "5-7d854e1d8c99d8c0e6676efe4c01d823",
+        "_rev": "7-5a0bf3c740dad42c9d098d6def33b7b6",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:satellite.connector",
         "name": "satellite-connector",
         "kind": "plan",
@@ -250496,7 +250605,6 @@
           "eu-de",
           "eu-es",
           "eu-gb",
-          "in-che",
           "jp-osa",
           "jp-tok",
           "us-east",
@@ -250510,7 +250618,7 @@
           "name": "IBM"
         },
         "created": "2023-06-13T07:38:25.062Z",
-        "updated": "2026-10-13T06:32:33.597395529-04:00",
+        "updated": "2026-10-21T09:09:00.230551322-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/satellite.connector?complete=true",
         "images": {
@@ -250591,7 +250699,7 @@
       {
         "id": "satellite.host",
         "_id": "satellite.host",
-        "_rev": "5-ab8c191788351a6f18b281bcfb4a0d68",
+        "_rev": "7-02a2a1dcacfc37f8729530d4824dab26",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:satellite.host",
         "name": "satellite-host",
         "kind": "plan",
@@ -250666,7 +250774,6 @@
           "eu-de",
           "eu-es",
           "eu-gb",
-          "in-che",
           "jp-osa",
           "jp-tok",
           "us-east",
@@ -250679,7 +250786,7 @@
           "name": "IBM"
         },
         "created": "2021-02-11T13:55:31.277Z",
-        "updated": "2026-10-13T06:32:33.825839536-04:00",
+        "updated": "2026-10-21T09:07:29.774753044-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/satellite.host?complete=true",
         "images": {
@@ -250823,7 +250930,7 @@
       {
         "id": "satellite.location",
         "_id": "satellite.location",
-        "_rev": "5-324d09b0ee57e99c0094ad366da8e0fc",
+        "_rev": "10-a672a5252c8b48cc22a44e4ca129207e",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:satellite.location",
         "name": "satellite-location",
         "kind": "plan",
@@ -250840,11 +250947,11 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "compute",
           "apidocs_enabled",
+          "compute",
+          "eu_access",
           "ibm_created",
-          "eu_access"
+          "rc_compatible"
         ],
         "geo_tags": [
           "au-syd",
@@ -250853,7 +250960,6 @@
           "eu-de",
           "eu-es",
           "eu-gb",
-          "in-che",
           "jp-osa",
           "jp-tok",
           "us-east",
@@ -250867,7 +250973,7 @@
           "name": "IBM"
         },
         "created": "2022-09-09T10:03:35.789Z",
-        "updated": "2026-10-13T06:32:34.109231533-04:00",
+        "updated": "2026-10-21T09:07:29.954198742-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/satellite.location?complete=true",
         "images": {
@@ -258529,12 +258635,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -264030,7 +264136,6 @@
     "longDescription": "Designed for training, marketing, product education, customer communications, and internal content, arbitr AI Dubbing helps teams produce localized video without leaving their existing agent workflow. It preserves the speaker’s voice, emotion, and intent and supports 30 documented target languages across core, additional, and lip-sync coverage. Conversations with the agent are in English, while the dubbing language is selected independently for each job.\n\narbitr AI Dubbing is delivered as an external collaborator. A watsonx Orchestrate administrator adds it to a native agent before end users can invoke it.\n\n\n",
     "displayName": "Straker AI Dubbing ",
     "imageUrl": "https://getarbitr.straker.ai/assets/localize/svg/localize-tile.svg",
-    "localSvgIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.svg",
     "localPngIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.png"
   },
   {
@@ -269378,12 +269483,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -275294,6 +275399,7 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {

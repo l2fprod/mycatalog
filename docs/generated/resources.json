@@ -687,14 +687,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -861,6 +861,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -868,8 +869,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -6165,10 +6165,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6179,7 +6175,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -6783,15 +6783,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "us-east",
       "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "us-east"
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -6935,13 +6935,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb"
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10666,19 +10666,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "ca-mon",
-      "au-syd",
+      "br-sao",
       "in-che",
       "jp-osa",
-      "in-mum",
       "ca-tor",
       "eu-de",
       "eu-gb",
       "us-south",
-      "br-sao",
+      "in-mum",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "ca-mon",
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -13384,6 +13384,12 @@
         "name": "pay-as-you-go",
         "description": "Slack and Teams integration\nScheduled Prompts\nAI SRE for K8s and non-K8s environments\nAll data sources\nConnect your own MCP servers",
         "displayName": "Pay-As-You-Go"
+      },
+      {
+        "id": "a6b6d00b-6d3d-4c6e-a984-63fb8fef3e08",
+        "name": "pro",
+        "description": "Monthly fee covers 1000 incidents. Overage above 1000 incidents will be charged extra.",
+        "displayName": "Pro"
       }
     ],
     "description": "Agentic AI ChatOps for DevOps, SRE, Cloud, and Operations Engineers",
@@ -15700,8 +15706,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -16337,7 +16343,6 @@
       "hybrid cloud",
       "iam_compatible",
       "ibm_created",
-      "in-che",
       "jp-osa",
       "jp-tok",
       "paid",
@@ -16353,7 +16358,6 @@
       "eu-de",
       "eu-es",
       "eu-gb",
-      "in-che",
       "jp-osa",
       "jp-tok",
       "us-east",
@@ -17569,12 +17573,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -18251,7 +18255,6 @@
     "longDescription": "Designed for training, marketing, product education, customer communications, and internal content, arbitr AI Dubbing helps teams produce localized video without leaving their existing agent workflow. It preserves the speaker’s voice, emotion, and intent and supports 30 documented target languages across core, additional, and lip-sync coverage. Conversations with the agent are in English, while the dubbing language is selected independently for each job.\n\narbitr AI Dubbing is delivered as an external collaborator. A watsonx Orchestrate administrator adds it to a native agent before end users can invoke it.\n\n\n",
     "displayName": "Straker AI Dubbing ",
     "imageUrl": "https://getarbitr.straker.ai/assets/localize/svg/localize-tile.svg",
-    "localSvgIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.svg",
     "localPngIcon": "/generated/icons/8790e761-8548-451c-873f-902b19adae29.png"
   },
   {
@@ -18907,12 +18910,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -19480,6 +19483,7 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
