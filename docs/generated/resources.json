@@ -687,14 +687,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -861,7 +861,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -869,7 +868,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "pricing_tags": [
       "paygo",
@@ -6783,7 +6783,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
@@ -6791,7 +6790,8 @@
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -6935,13 +6935,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -9035,7 +9035,7 @@
     "description": "Reserve a Floating IP that gives your virtual servers access to the Internet.",
     "longDescription": "Reserve a Floating IP to use with virtual server instances (VSI) in a virtual private cloud (VPC). Each Floating IP gives your VSIs access to the public Internet, and vice versa",
     "displayName": "Floating IP for VPC",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/6fa110b9ad091672c716d4d22ed8aeeb-public/CloudFloatingIPforVPC.svg",
     "localSvgIcon": "/generated/icons/is.floating-ip.svg",
     "localPngIcon": "/generated/icons/is.floating-ip.png"
   },
@@ -10046,14 +10046,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10666,19 +10666,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
-      "jp-osa",
-      "ca-tor",
-      "au-syd",
       "br-sao",
-      "in-mum",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
+      "ca-tor",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -15417,7 +15417,7 @@
     "description": "Public Address Range for VPC",
     "longDescription": "Public Address Range allows reserving a contiguous set of IBM-provided Public IPs that can be used in VPC custom routes to route public internet traffic to a Firewall/VNF in VPC.",
     "displayName": "Public Address Range",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/c292a8369b14ed427f47e92367275b0f-public/CloudPublicAddressRangeforVPC.svg",
     "localSvgIcon": "/generated/icons/is.public-address-range.svg",
     "localPngIcon": "/generated/icons/is.public-address-range.png"
   },
@@ -15545,7 +15545,7 @@
     "description": "Public Gateway for VPC",
     "longDescription": "Public Gateway for VPC",
     "displayName": "Public Gateway",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/2d140e53d6ad51c322482625ee04a300-public/CloudPublicGatewayforVPC.svg",
     "localSvgIcon": "/generated/icons/is.public-gateway.svg",
     "localPngIcon": "/generated/icons/is.public-gateway.png"
   },
@@ -15706,8 +15706,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -15776,18 +15776,18 @@
       {
         "id": "b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
         "name": "rackware-dr-plan-per-unit",
-        "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year",
+        "description": "- This pricing plan includes:\n\n -- RackWare Disaster Recovery (DR) Software Subscription License.\n -- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n -- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n -- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n -- Customers who do not purchase Professional Services are responsible for the installation, deployment, configuration of their RackWare DR environment.\n -- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n -- This is a self-managed DR subscription and does not include RackWare-managed DR operations, annual DR drills, or recovery testing services.\n\n- Pricing: $192 USD per VM, per year.",
         "displayName": "RackWare DR Plan Per Unit"
       },
       {
         "id": "0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
         "name": "rackware-draas-plan-per-unit",
-        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year",
+        "description": "- This pricing plan includes:\n\n-- RackWare Disaster Recovery as a Service (DRaaS) Software Subscription License.\n-- Ongoing DR operations and management provided by RackWare.\n-- One annual DR drill and test per VM.\n-- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n-- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n-- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n-- Customers who do not purchase Professional Services are responsible for the initial installation, deployment, and configuration of the RackWare DR software. Once deployed, RackWare will manage ongoing DR operations as part of the DRaaS subscription.\n-- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n\n- Pricing: $495 USD per VM, per year.",
         "displayName": "RackWare DRaaS Plan Per Unit"
       }
     ],
     "description": "Protect any-source environment (physical, virtual, cloud) to IBM Cloud VPC using RMM Disaster Recovery As A Service",
-    "longDescription": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment# License Information:\n\n# Description - RackWare DR & DRaaS for IBM Cloud \n\n# RackWare DR for IBM Cloud \n\nRackWare DR provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution includes the RackWare DR software and standard support. Each license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM).\n\nPricing: $192 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# RackWare DRaaS for IBM Cloud \n\nRackWare DRaaS provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This fully managed solution includes the RackWare DR software, standard support, DRaaS operations, and one non-disruptive disaster recovery drill per protected VM each year. \nThe service includes daily monitoring and maintenance, daily operational reports, automated alerts to RackWare, problem diagnosis and resolution (including triage of warnings and errors), issue resolution within the defined support scope, coordination with external teams for issues outside the service scope, and the application of patches, bug fixes, and support release upgrades. \nEach RackWare DRaaS license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM). \n\nPricing: $495 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# Architecture Flexibility\n\n1) RackWare DR can be deployed as a single instance or scaled across multiple RackWare DR RMM instances to meet performance, isolation, and design requirements.\n \n2) For example, 100 VMs (20 vCPUs) can be distributed across multiple instances (e.g., 5 RMM instances, each supporting 20 VMs/servers).\n \n# Licensing Example (e.g. 100 VMs)\n\n1) 1 vCPU supports 5 VMs\n2) 100 VMs require 20 vCPUs\n3) A single RMM instance with 4 vCPU and 32 GB RAM can cover 20 VMs.\n4) 4 RMM instances should cover 100 VMs to be protected in DR\n5) For DR 1 VM is billed at $192, 100 VMs x $192 = $19200 / Year\n6) For DRaaS 1 VM is billed at $495, 100 VMs x $495 = $49500 / Year\n \nNote: RackWare DR software pricing does not include IBM Cloud compute, storage.\n\n\nRackWare's RMM Disaster Recovery ( DR ) are an automated, easy, and convenient process to protect existing workloads from your current location to IBM Cloud VPC. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies protection of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, automation features like DR policy engine, dynamic provisioning allowing all processes to be fast, easy, and error-free.\n",
+    "longDescription": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment# License Information:\n\n# Description - RackWare DR & DRaaS for IBM Cloud \n\n# RackWare DR for IBM Cloud \n\nRackWare DR provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution includes the RackWare DR software and standard support. Each license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM).\n\nPricing: $192 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# RackWare DRaaS for IBM Cloud \n\nRackWare DRaaS provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution is co-managed by RackWare and the customer and includes the RackWare Disaster Recovery (DR) software subscription, standard technical support, and ongoing DR operations, and one non-disruptive disaster recovery drill and test per protected VM each year. \nThe service includes daily monitoring and maintenance, daily operational reports, automated alerts to RackWare, problem diagnosis and resolution (including triage of warnings and errors), issue resolution within the defined support scope, coordination with external teams for issues outside the service scope, and the application of patches, bug fixes, and support release upgrades. \nEach RackWare DRaaS license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM). \n\nPricing: $495 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# Architecture Flexibility\n\n1) RackWare DR can be deployed as a single instance or scaled across multiple RackWare DR RMM instances to meet performance, isolation, and design requirements.\n \n2) For example, 100 VMs (20 vCPUs) can be distributed across multiple instances (e.g., 5 RMM instances, each supporting 20 VMs/servers).\n \n# Licensing Example (e.g. 100 VMs)\n\n1) 1 vCPU supports 5 VMs\n2) 100 VMs require 20 vCPUs\n3) A single RMM instance with 4 vCPU and 32 GB RAM can cover 20 VMs.\n4) 4 RMM instances should cover 100 VMs to be protected in DR\n5) For DR 1 VM is billed at $192, 100 VMs x $192 = $19200 / Year\n6) For DRaaS 1 VM is billed at $495, 100 VMs x $495 = $49500 / Year\n \nNote: RackWare DR software pricing does not include IBM Cloud compute, storage.\n\n\nRackWare's RMM Disaster Recovery ( DR ) are an automated, easy, and convenient process to protect existing workloads from your current location to IBM Cloud VPC. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies protection of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, automation features like DR policy engine, dynamic provisioning allowing all processes to be fast, easy, and error-free.\n",
     "displayName": "RackWare - Disaster Recovery Subscription ( Annual )",
     "imageUrl": "https://static1.squarespace.com/static/5c1e6c1896e76f8c9319d545/t/60d22ba816f8a845659841ff/1624386472784/RackWare_Logo_96x96px.png",
     "localPngIcon": "/generated/icons/9bba3317-b401-4cc1-94ef-151a7313e647.png"
@@ -17575,12 +17575,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -18912,12 +18912,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -20785,67 +20785,6 @@
     "localPngIcon": "/generated/icons/15.png"
   },
   {
-    "id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-    "name": "starvlp",
-    "kind": "service",
-    "tags": [
-      "cloud labs",
-      "corporate training",
-      "custom_kind_service",
-      "enterprise_app",
-      "free",
-      "global",
-      "ibm_third_party",
-      "learning",
-      "online learning",
-      "paid",
-      "paid_only",
-      "product demo",
-      "rc_compatible",
-      "sales demo",
-      "support_third_party",
-      "training",
-      "virtual labs",
-      "virtual learning",
-      "virtual learning platform",
-      "vlp",
-      "vmware",
-      "vmware learning"
-    ],
-    "geo_tags": [
-      "global"
-    ],
-    "pricing_tags": [
-      "free",
-      "paid",
-      "paid_only"
-    ],
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "plans": [
-      {
-        "id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
-        "name": "star---vlp-free-plan-",
-        "description": "Free plan for 5 Days ",
-        "displayName": "Star VLP-free-plan"
-      },
-      {
-        "id": "2f5eb731-d590-47a1-8943-8e4e26656460",
-        "name": "vlp-standard-plan",
-        "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
-        "displayName": "STAR VLP Standard-plan"
-      }
-    ],
-    "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
-    "longDescription": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
-    "displayName": "VLP",
-    "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg",
-    "localSvgIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.svg",
-    "localPngIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.png"
-  },
-  {
     "id": "09f5a6ea-185e-4625-8281-9e8629360a4f",
     "name": "primaryio-hdm-cloud-connect-nsx-v-to-nsx-t",
     "kind": "service",
@@ -21112,6 +21051,67 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcenterserver.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcenterserver.png"
+  },
+  {
+    "id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+    "name": "starvlp",
+    "kind": "service",
+    "tags": [
+      "cloud labs",
+      "corporate training",
+      "custom_kind_service",
+      "enterprise_app",
+      "free",
+      "global",
+      "ibm_third_party",
+      "learning",
+      "online learning",
+      "paid",
+      "paid_only",
+      "product demo",
+      "rc_compatible",
+      "sales demo",
+      "support_third_party",
+      "training",
+      "virtual labs",
+      "virtual learning",
+      "virtual learning platform",
+      "vlp",
+      "vmware",
+      "vmware learning"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "plans": [
+      {
+        "id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
+        "name": "star---vlp-free-plan-",
+        "description": "Free plan for 5 Days ",
+        "displayName": "Star VLP-free-plan"
+      },
+      {
+        "id": "2f5eb731-d590-47a1-8943-8e4e26656460",
+        "name": "vlp-standard-plan",
+        "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
+        "displayName": "STAR VLP Standard-plan"
+      }
+    ],
+    "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
+    "longDescription": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
+    "displayName": "VMWare VLP",
+    "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg",
+    "localSvgIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.svg",
+    "localPngIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-vsphere",
@@ -22054,12 +22054,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",

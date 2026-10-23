@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -12122,7 +12122,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12130,7 +12129,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "pricing_tags": [
       "paygo",
@@ -110885,10 +110885,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -110896,7 +110892,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "pricing_tags": [
           "paygo"
@@ -118768,7 +118768,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -118779,7 +118778,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -137203,7 +137203,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
@@ -137211,7 +137210,8 @@
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -141932,13 +141932,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -144064,13 +144064,13 @@
           "storage"
         ],
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "pricing_tags": [
           "paid",
@@ -161398,7 +161398,7 @@
   {
     "id": "is.floating-ip",
     "_id": "is.floating-ip",
-    "_rev": "13-4b53fe41b7d0da5cede56f7b97701b94",
+    "_rev": "15-f9652321b150551c20d97ab88a3b7d27",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.floating-ip",
     "name": "is.floating-ip",
     "kind": "service",
@@ -161566,14 +161566,14 @@
       "name": "IBM"
     },
     "created": "2018-11-20T23:01:07.186Z",
-    "updated": "2026-06-15T05:46:27.701342327-04:00",
+    "updated": "2026-10-23T08:48:20.828885512-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.floating-ip?complete=true",
     "images": {
-      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg"
+      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/6fa110b9ad091672c716d4d22ed8aeeb-public/CloudFloatingIPforVPC.svg",
+      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/6fa110b9ad091672c716d4d22ed8aeeb-public/CloudFloatingIPforVPC.svg",
+      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/6fa110b9ad091672c716d4d22ed8aeeb-public/CloudFloatingIPforVPC.svg",
+      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/6fa110b9ad091672c716d4d22ed8aeeb-public/CloudFloatingIPforVPC.svg"
     },
     "metadata": {
       "rc_compatible": true,
@@ -161966,7 +161966,7 @@
     "description": "Reserve a Floating IP that gives your virtual servers access to the Internet.",
     "longDescription": "Reserve a Floating IP to use with virtual server instances (VSI) in a virtual private cloud (VPC). Each Floating IP gives your VSIs access to the public Internet, and vice versa",
     "displayName": "Floating IP for VPC",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.floating-ip/artifacts/cache/6fa110b9ad091672c716d4d22ed8aeeb-public/CloudFloatingIPforVPC.svg",
     "localSvgIcon": "/generated/icons/is.floating-ip.svg",
     "localPngIcon": "/generated/icons/is.floating-ip.png"
   },
@@ -170789,14 +170789,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -181383,19 +181383,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
-      "jp-osa",
-      "ca-tor",
-      "au-syd",
       "br-sao",
-      "in-mum",
+      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
+      "ca-tor",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -244122,7 +244122,7 @@
   {
     "id": "is.public-address-range",
     "_id": "is.public-address-range",
-    "_rev": "60-b36c00f75c9e4c26d4370002d1cc8059",
+    "_rev": "62-eb4c8ec3844809d04637526d93a712c9",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.public-address-range",
     "name": "is.public-address-range",
     "kind": "service",
@@ -244185,14 +244185,14 @@
       "name": "IBM"
     },
     "created": "2025-03-25T15:18:07.400993822-04:00",
-    "updated": "2026-06-11T05:21:48.188926961-04:00",
+    "updated": "2026-10-23T08:50:04.086659998-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.public-address-range?complete=true",
     "images": {
-      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg"
+      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/c292a8369b14ed427f47e92367275b0f-public/CloudPublicAddressRangeforVPC.svg",
+      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/c292a8369b14ed427f47e92367275b0f-public/CloudPublicAddressRangeforVPC.svg",
+      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/c292a8369b14ed427f47e92367275b0f-public/CloudPublicAddressRangeforVPC.svg",
+      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/c292a8369b14ed427f47e92367275b0f-public/CloudPublicAddressRangeforVPC.svg"
     },
     "metadata": {
       "rc_compatible": true,
@@ -244370,14 +244370,14 @@
     "description": "Public Address Range for VPC",
     "longDescription": "Public Address Range allows reserving a contiguous set of IBM-provided Public IPs that can be used in VPC custom routes to route public internet traffic to a Firewall/VNF in VPC.",
     "displayName": "Public Address Range",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-address-range/artifacts/cache/c292a8369b14ed427f47e92367275b0f-public/CloudPublicAddressRangeforVPC.svg",
     "localSvgIcon": "/generated/icons/is.public-address-range.svg",
     "localPngIcon": "/generated/icons/is.public-address-range.png"
   },
   {
     "id": "is.public-gateway",
     "_id": "is.public-gateway",
-    "_rev": "14-2781828047380ceb4846a841b1ed3552",
+    "_rev": "16-eea881634aed33cc6481b1d929e5dcf6",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.public-gateway",
     "name": "is.public-gateway",
     "kind": "service",
@@ -244497,14 +244497,14 @@
       "name": "IBM"
     },
     "created": "2019-05-29T16:28:35.638Z",
-    "updated": "2026-06-15T05:47:21.829330819-04:00",
+    "updated": "2026-10-23T08:51:34.193312485-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.public-gateway?complete=true",
     "images": {
-      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
-      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg"
+      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/2d140e53d6ad51c322482625ee04a300-public/CloudPublicGatewayforVPC.svg",
+      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/2d140e53d6ad51c322482625ee04a300-public/CloudPublicGatewayforVPC.svg",
+      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/2d140e53d6ad51c322482625ee04a300-public/CloudPublicGatewayforVPC.svg",
+      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/2d140e53d6ad51c322482625ee04a300-public/CloudPublicGatewayforVPC.svg"
     },
     "metadata": {
       "rc_compatible": true,
@@ -244712,7 +244712,7 @@
     "description": "Public Gateway for VPC",
     "longDescription": "Public Gateway for VPC",
     "displayName": "Public Gateway",
-    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/63510ac3bca96b96f3ea9e58d3fa98f5-public/VPC.svg",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.public-gateway/artifacts/cache/2d140e53d6ad51c322482625ee04a300-public/CloudPublicGatewayforVPC.svg",
     "localSvgIcon": "/generated/icons/is.public-gateway.svg",
     "localPngIcon": "/generated/icons/is.public-gateway.png"
   },
@@ -245720,8 +245720,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -246528,14 +246528,14 @@
   {
     "id": "9bba3317-b401-4cc1-94ef-151a7313e647",
     "_id": "9bba3317-b401-4cc1-94ef-151a7313e647",
-    "_rev": "50-5352279009b7b8da397ee62b5957acbe",
+    "_rev": "51-6a48fb56e9228b8f61124c1264626ad3",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:9bba3317-b401-4cc1-94ef-151a7313e647",
     "name": "rackware-rmm-draas-per-unit",
     "kind": "service",
     "overview_ui": {
       "en": {
         "display_name": "RackWare - Disaster Recovery Subscription ( Annual )",
-        "long_description": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment# License Information:\n\n# Description - RackWare DR & DRaaS for IBM Cloud \n\n# RackWare DR for IBM Cloud \n\nRackWare DR provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution includes the RackWare DR software and standard support. Each license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM).\n\nPricing: $192 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# RackWare DRaaS for IBM Cloud \n\nRackWare DRaaS provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This fully managed solution includes the RackWare DR software, standard support, DRaaS operations, and one non-disruptive disaster recovery drill per protected VM each year. \nThe service includes daily monitoring and maintenance, daily operational reports, automated alerts to RackWare, problem diagnosis and resolution (including triage of warnings and errors), issue resolution within the defined support scope, coordination with external teams for issues outside the service scope, and the application of patches, bug fixes, and support release upgrades. \nEach RackWare DRaaS license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM). \n\nPricing: $495 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# Architecture Flexibility\n\n1) RackWare DR can be deployed as a single instance or scaled across multiple RackWare DR RMM instances to meet performance, isolation, and design requirements.\n \n2) For example, 100 VMs (20 vCPUs) can be distributed across multiple instances (e.g., 5 RMM instances, each supporting 20 VMs/servers).\n \n# Licensing Example (e.g. 100 VMs)\n\n1) 1 vCPU supports 5 VMs\n2) 100 VMs require 20 vCPUs\n3) A single RMM instance with 4 vCPU and 32 GB RAM can cover 20 VMs.\n4) 4 RMM instances should cover 100 VMs to be protected in DR\n5) For DR 1 VM is billed at $192, 100 VMs x $192 = $19200 / Year\n6) For DRaaS 1 VM is billed at $495, 100 VMs x $495 = $49500 / Year\n \nNote: RackWare DR software pricing does not include IBM Cloud compute, storage.\n\n\nRackWare's RMM Disaster Recovery ( DR ) are an automated, easy, and convenient process to protect existing workloads from your current location to IBM Cloud VPC. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies protection of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, automation features like DR policy engine, dynamic provisioning allowing all processes to be fast, easy, and error-free.\n",
+        "long_description": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment# License Information:\n\n# Description - RackWare DR & DRaaS for IBM Cloud \n\n# RackWare DR for IBM Cloud \n\nRackWare DR provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution includes the RackWare DR software and standard support. Each license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM).\n\nPricing: $192 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# RackWare DRaaS for IBM Cloud \n\nRackWare DRaaS provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution is co-managed by RackWare and the customer and includes the RackWare Disaster Recovery (DR) software subscription, standard technical support, and ongoing DR operations, and one non-disruptive disaster recovery drill and test per protected VM each year. \nThe service includes daily monitoring and maintenance, daily operational reports, automated alerts to RackWare, problem diagnosis and resolution (including triage of warnings and errors), issue resolution within the defined support scope, coordination with external teams for issues outside the service scope, and the application of patches, bug fixes, and support release upgrades. \nEach RackWare DRaaS license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM). \n\nPricing: $495 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# Architecture Flexibility\n\n1) RackWare DR can be deployed as a single instance or scaled across multiple RackWare DR RMM instances to meet performance, isolation, and design requirements.\n \n2) For example, 100 VMs (20 vCPUs) can be distributed across multiple instances (e.g., 5 RMM instances, each supporting 20 VMs/servers).\n \n# Licensing Example (e.g. 100 VMs)\n\n1) 1 vCPU supports 5 VMs\n2) 100 VMs require 20 vCPUs\n3) A single RMM instance with 4 vCPU and 32 GB RAM can cover 20 VMs.\n4) 4 RMM instances should cover 100 VMs to be protected in DR\n5) For DR 1 VM is billed at $192, 100 VMs x $192 = $19200 / Year\n6) For DRaaS 1 VM is billed at $495, 100 VMs x $495 = $49500 / Year\n \nNote: RackWare DR software pricing does not include IBM Cloud compute, storage.\n\n\nRackWare's RMM Disaster Recovery ( DR ) are an automated, easy, and convenient process to protect existing workloads from your current location to IBM Cloud VPC. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies protection of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, automation features like DR policy engine, dynamic provisioning allowing all processes to be fast, easy, and error-free.\n",
         "description": "Protect any-source environment (physical, virtual, cloud) to IBM Cloud VPC using RMM Disaster Recovery As A Service"
       }
     },
@@ -246568,7 +246568,7 @@
       "name": "RackWare Inc."
     },
     "created": "2026-07-01T04:41:55.667375076-04:00",
-    "updated": "2026-09-24T09:31:53.489283314-04:00",
+    "updated": "2026-10-23T08:55:03.969171683-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/9bba3317-b401-4cc1-94ef-151a7313e647?complete=true",
     "images": {
@@ -246909,15 +246909,15 @@
       {
         "id": "b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
         "_id": "b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
-        "_rev": "10-bf0de19e73d27bb758f4bdf8b6dd5fd3",
+        "_rev": "13-7101a736afe08169564398a029fae38c",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b8f24ae6-b11d-4470-be87-5eb4338d0e0c",
         "name": "rackware-dr-plan-per-unit",
         "kind": "plan",
         "overview_ui": {
           "en": {
             "display_name": "RackWare DR Plan Per Unit",
-            "long_description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year",
-            "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year"
+            "long_description": "- This pricing plan includes:\n\n -- RackWare Disaster Recovery (DR) Software Subscription License.\n -- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n -- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n -- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n -- Customers who do not purchase Professional Services are responsible for the installation, deployment, configuration of their RackWare DR environment.\n -- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n -- This is a self-managed DR subscription and does not include RackWare-managed DR operations, annual DR drills, or recovery testing services.\n\n- Pricing: $192 USD per VM, per year.",
+            "description": "- This pricing plan includes:\n\n -- RackWare Disaster Recovery (DR) Software Subscription License.\n -- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n -- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n -- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n -- Customers who do not purchase Professional Services are responsible for the installation, deployment, configuration of their RackWare DR environment.\n -- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n -- This is a self-managed DR subscription and does not include RackWare-managed DR operations, annual DR drills, or recovery testing services.\n\n- Pricing: $192 USD per VM, per year."
           }
         },
         "parent_id": "9bba3317-b401-4cc1-94ef-151a7313e647",
@@ -246945,7 +246945,7 @@
           "name": "RackWare Inc."
         },
         "created": "2026-07-03T03:37:06.758818726-04:00",
-        "updated": "2026-07-22T07:58:00.16651214-04:00",
+        "updated": "2026-10-23T08:48:57.073796218-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b8f24ae6-b11d-4470-be87-5eb4338d0e0c?complete=true",
         "metadata": {
@@ -246984,7 +246984,7 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "True Platform-Agnostic Disaster Recovery managed by end user through this pricing plan. Standard 8*5 RackWare support will be the provided."
+                    "description": "RackWare Disaster Recovery (DR) Subscription – Customer-Managed"
                   }
                 ]
               }
@@ -247004,21 +247004,21 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "DR Software License, this includes standard 8*5 support from RackWare support team. Configuration and Setting up a DR site will be self managed by end user. This does not include Profressional Service level support. Pricing - $192 USD Per VM, Per Year",
+        "description": "- This pricing plan includes:\n\n -- RackWare Disaster Recovery (DR) Software Subscription License.\n -- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n -- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n -- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n -- Customers who do not purchase Professional Services are responsible for the installation, deployment, configuration of their RackWare DR environment.\n -- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n -- This is a self-managed DR subscription and does not include RackWare-managed DR operations, annual DR drills, or recovery testing services.\n\n- Pricing: $192 USD per VM, per year.",
         "displayName": "RackWare DR Plan Per Unit"
       },
       {
         "id": "0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
         "_id": "0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
-        "_rev": "11-73b40fd41cc0b7ec3ec9b61b94df64bb",
+        "_rev": "18-725c593572b4503f696b74475b2a56b6",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0e780ce5-a8f7-4117-a2e6-82b3bd512fd2",
         "name": "rackware-draas-plan-per-unit",
         "kind": "plan",
         "overview_ui": {
           "en": {
             "display_name": "RackWare DRaaS Plan Per Unit",
-            "long_description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year",
-            "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year"
+            "long_description": "- This pricing plan includes:\n\n-- RackWare Disaster Recovery as a Service (DRaaS) Software Subscription License.\n-- Ongoing DR operations and management provided by RackWare.\n-- One annual DR drill and test per VM.\n-- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n-- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n-- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n-- Customers who do not purchase Professional Services are responsible for the initial installation, deployment, and configuration of the RackWare DR software. Once deployed, RackWare will manage ongoing DR operations as part of the DRaaS subscription.\n-- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n\n- Pricing: $495 USD per VM, per year.",
+            "description": "- This pricing plan includes:\n\n-- RackWare Disaster Recovery as a Service (DRaaS) Software Subscription License.\n-- Ongoing DR operations and management provided by RackWare.\n-- One annual DR drill and test per VM.\n-- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n-- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n-- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n-- Customers who do not purchase Professional Services are responsible for the initial installation, deployment, and configuration of the RackWare DR software. Once deployed, RackWare will manage ongoing DR operations as part of the DRaaS subscription.\n-- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n\n- Pricing: $495 USD per VM, per year."
           }
         },
         "parent_id": "9bba3317-b401-4cc1-94ef-151a7313e647",
@@ -247046,7 +247046,7 @@
           "name": "RackWare Inc."
         },
         "created": "2026-07-01T07:41:35.207036908-04:00",
-        "updated": "2026-07-22T07:59:05.222439088-04:00",
+        "updated": "2026-10-23T10:02:30.623941335-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0e780ce5-a8f7-4117-a2e6-82b3bd512fd2?complete=true",
         "metadata": {
@@ -247085,7 +247085,7 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "Implement robust, policy-driven DR strategy using IBM infrastructure. Both hot and warm standby deployment with rapid failover and Fallback"
+                    "description": "RackWare Disaster Recovery as a Service (DRaaS) Subscription – Co-Managed by RackWare and the Customer."
                   }
                 ]
               }
@@ -247105,12 +247105,12 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "A fixed-price service bundling RackWare software, and expert-guided support. Support includes proactive guidance, configuration assistance, and expert-led troubleshooting to ensure successful execution within the defined scope. Pricing - $495 USD Per VM, Per Year",
+        "description": "- This pricing plan includes:\n\n-- RackWare Disaster Recovery as a Service (DRaaS) Software Subscription License.\n-- Ongoing DR operations and management provided by RackWare.\n-- One annual DR drill and test per VM.\n-- Standard 8x5 technical support.\n\n- Professional Services & Deployment:\n\n-- Professional Services for the initial deployment and configuration of RackWare DR software are not included in this subscription.\n-- DR deployment and configuration services can be purchased separately through the RackWare Professional Services tile in the IBM Cloud Catalog.\n-- Customers who do not purchase Professional Services are responsible for the initial installation, deployment, and configuration of the RackWare DR software. Once deployed, RackWare will manage ongoing DR operations as part of the DRaaS subscription.\n-- Customers are responsible for provisioning and configuring their DR landing zone, including the required infrastructure and resources at the target recovery site.\n\n- Pricing: $495 USD per VM, per year.",
         "displayName": "RackWare DRaaS Plan Per Unit"
       }
     ],
     "description": "Protect any-source environment (physical, virtual, cloud) to IBM Cloud VPC using RMM Disaster Recovery As A Service",
-    "longDescription": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment# License Information:\n\n# Description - RackWare DR & DRaaS for IBM Cloud \n\n# RackWare DR for IBM Cloud \n\nRackWare DR provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution includes the RackWare DR software and standard support. Each license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM).\n\nPricing: $192 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# RackWare DRaaS for IBM Cloud \n\nRackWare DRaaS provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This fully managed solution includes the RackWare DR software, standard support, DRaaS operations, and one non-disruptive disaster recovery drill per protected VM each year. \nThe service includes daily monitoring and maintenance, daily operational reports, automated alerts to RackWare, problem diagnosis and resolution (including triage of warnings and errors), issue resolution within the defined support scope, coordination with external teams for issues outside the service scope, and the application of patches, bug fixes, and support release upgrades. \nEach RackWare DRaaS license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM). \n\nPricing: $495 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# Architecture Flexibility\n\n1) RackWare DR can be deployed as a single instance or scaled across multiple RackWare DR RMM instances to meet performance, isolation, and design requirements.\n \n2) For example, 100 VMs (20 vCPUs) can be distributed across multiple instances (e.g., 5 RMM instances, each supporting 20 VMs/servers).\n \n# Licensing Example (e.g. 100 VMs)\n\n1) 1 vCPU supports 5 VMs\n2) 100 VMs require 20 vCPUs\n3) A single RMM instance with 4 vCPU and 32 GB RAM can cover 20 VMs.\n4) 4 RMM instances should cover 100 VMs to be protected in DR\n5) For DR 1 VM is billed at $192, 100 VMs x $192 = $19200 / Year\n6) For DRaaS 1 VM is billed at $495, 100 VMs x $495 = $49500 / Year\n \nNote: RackWare DR software pricing does not include IBM Cloud compute, storage.\n\n\nRackWare's RMM Disaster Recovery ( DR ) are an automated, easy, and convenient process to protect existing workloads from your current location to IBM Cloud VPC. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies protection of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, automation features like DR policy engine, dynamic provisioning allowing all processes to be fast, easy, and error-free.\n",
+    "longDescription": "RackWare RMM enables a modern DR architecture by non-disruptly replicating workloads from any source environment into IBM Cloud VPC, maintaining a synchronized DR environment in the cloud, enabling failover into IBM Cloud VPC without source environment dependencies, supporting fallback to source environment during transition periods, and extending DR to additional public clouds for redundancy. \n\nThis allows IBM Cloud VPC to serve as both a disaster recovery landing zone and a strategic approach for setting up a DR environment for production environment# License Information:\n\n# Description - RackWare DR & DRaaS for IBM Cloud \n\n# RackWare DR for IBM Cloud \n\nRackWare DR provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution includes the RackWare DR software and standard support. Each license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM).\n\nPricing: $192 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# RackWare DRaaS for IBM Cloud \n\nRackWare DRaaS provides workload-level disaster recovery to IBM Cloud VPC through flexible, per-VM licensing. This solution is co-managed by RackWare and the customer and includes the RackWare Disaster Recovery (DR) software subscription, standard technical support, and ongoing DR operations, and one non-disruptive disaster recovery drill and test per protected VM each year. \nThe service includes daily monitoring and maintenance, daily operational reports, automated alerts to RackWare, problem diagnosis and resolution (including triage of warnings and errors), issue resolution within the defined support scope, coordination with external teams for issues outside the service scope, and the application of patches, bug fixes, and support release upgrades. \nEach RackWare DRaaS license protects one source server or virtual machine that is replicated and managed through the RackWare Management Module (RMM). \n\nPricing: $495 per protected VM per year \n\nLicensing and sizing are based solely on the number of source servers or virtual machines included within the RMM scope. \n\n \n# Architecture Flexibility\n\n1) RackWare DR can be deployed as a single instance or scaled across multiple RackWare DR RMM instances to meet performance, isolation, and design requirements.\n \n2) For example, 100 VMs (20 vCPUs) can be distributed across multiple instances (e.g., 5 RMM instances, each supporting 20 VMs/servers).\n \n# Licensing Example (e.g. 100 VMs)\n\n1) 1 vCPU supports 5 VMs\n2) 100 VMs require 20 vCPUs\n3) A single RMM instance with 4 vCPU and 32 GB RAM can cover 20 VMs.\n4) 4 RMM instances should cover 100 VMs to be protected in DR\n5) For DR 1 VM is billed at $192, 100 VMs x $192 = $19200 / Year\n6) For DRaaS 1 VM is billed at $495, 100 VMs x $495 = $49500 / Year\n \nNote: RackWare DR software pricing does not include IBM Cloud compute, storage.\n\n\nRackWare's RMM Disaster Recovery ( DR ) are an automated, easy, and convenient process to protect existing workloads from your current location to IBM Cloud VPC. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies protection of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, automation features like DR policy engine, dynamic provisioning allowing all processes to be fast, easy, and error-free.\n",
     "displayName": "RackWare - Disaster Recovery Subscription ( Annual )",
     "imageUrl": "https://static1.squarespace.com/static/5c1e6c1896e76f8c9319d545/t/60d22ba816f8a845659841ff/1624386472784/RackWare_Logo_96x96px.png",
     "localPngIcon": "/generated/icons/9bba3317-b401-4cc1-94ef-151a7313e647.png"
@@ -258640,12 +258640,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -269488,12 +269488,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -286186,553 +286186,6 @@
     "localPngIcon": "/generated/icons/15.png"
   },
   {
-    "id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-    "_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-    "_rev": "100-744f1711c2ec7b3df0ad66d52a276807",
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c82e2968-02eb-487e-84f0-01cbd884b5c0",
-    "name": "starvlp",
-    "kind": "service",
-    "overview_ui": {
-      "en": {
-        "display_name": "VLP",
-        "long_description": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
-        "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure"
-      }
-    },
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/%2A",
-    "disabled": false,
-    "active": true,
-    "tags": [
-      "cloud labs",
-      "corporate training",
-      "custom_kind_service",
-      "enterprise_app",
-      "free",
-      "global",
-      "ibm_third_party",
-      "learning",
-      "online learning",
-      "paid",
-      "paid_only",
-      "product demo",
-      "rc_compatible",
-      "sales demo",
-      "support_third_party",
-      "training",
-      "virtual labs",
-      "virtual learning",
-      "virtual learning platform",
-      "vlp",
-      "vmware",
-      "vmware learning"
-    ],
-    "geo_tags": [
-      "global"
-    ],
-    "pricing_tags": [
-      "free",
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "Star Systems India Private Limited"
-    },
-    "created": "2025-01-27T01:22:51.519535281-05:00",
-    "updated": "2026-09-09T08:58:51.065219113-04:00",
-    "complete": true,
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0?complete=true",
-    "images": {
-      "image": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg"
-    },
-    "metadata": {
-      "rc_compatible": true,
-      "other": {
-        "PC": {
-          "onboardingOfferingId": "6983cb35c8394da18d55285c22b5edf4:o:574eb852-9ae7-426d-90ac-699d92088a7d",
-          "support": {
-            "languages": [
-              "en"
-            ],
-            "locations": [
-              "IN",
-              "GB"
-            ],
-            "process": "This field is required. Describe the support you provide for your product and add additional information that isn't provided in the other fields.",
-            "status_url": "https://starsystems.in/vmware-vlp/",
-            "support_details": [
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [],
-                  "timezone": "Asia/Calcutta"
-                },
-                "contact": "support@starlms.ai",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "email"
-              },
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [],
-                  "timezone": "Asia/Calcutta"
-                },
-                "contact": "Whatsapp Support: +918015385179",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "other"
-              }
-            ],
-            "support_escalation": {
-              "contact": "vlp@starsystems.in",
-              "escalation_wait_time": {
-                "type": "hour",
-                "value": 1
-              },
-              "response_wait_time": {
-                "type": "hour",
-                "value": 1
-              }
-            },
-            "support_type": "third_party",
-            "url": "https://starsystems.in/contact-us/"
-          }
-        }
-      },
-      "service": {
-        "type": "",
-        "iam_compatible": false,
-        "unique_api_key": false,
-        "rc_provisionable": true,
-        "bindable": true,
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "user_defined_service": null,
-        "extension": null,
-        "plan_updateable": false,
-        "state": "",
-        "service_check_enabled": false,
-        "test_check_interval": 0,
-        "service_key_supported": false,
-        "custom_create_page_hybrid_enabled": false,
-        "parameters": [
-          {
-            "associations": null,
-            "description": "must NOT contain spaces,numbers,characters",
-            "displayname": "Tenant Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "user-tenant",
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Email",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "email",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "First Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "first-name",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Last Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "last-name",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Mobile Number",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "mobile-number",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": false,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          }
-        ]
-      },
-      "ui": {
-        "strings": {
-          "en": {
-            "bullets": [
-              {
-                "description": "Accessible universally, at any time, on most devices with a modern HTML5 browser. No installers or plugins are needed.",
-                "title": "Access From Anywhere"
-              },
-              {
-                "description": "Supports complex multi-VM configurations.\nSupports almost all guest operating systems.\nProvides true VM \"console\" for advanced uses.",
-                "title": "A Powerful Virtual Lab"
-              },
-              {
-                "description": "No matter if you need one lab or thousands of labs, deliver as many labs and VM’s as you need.",
-                "title": "Cloud Scale"
-              },
-              {
-                "description": "Deliver hands-on, lab-based IT training on how to use your products, without the need for any complicated installations.",
-                "title": "On-Demand IT Training"
-              },
-              {
-                "description": "Walled-off lab environments that can enable use cases such as malware assessment and remediation.",
-                "title": "Isolated Environments"
-              }
-            ],
-            "media": [
-              {
-                "type": "image/jpg",
-                "url": "https://digilabs.ai/wp-content/uploads/2025/09/mqdefault.webp"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "doc_url": "https://starsystems.in/vmware-vlp/",
-          "terms_url": "https://starsystems.in/star-vlp-software-terms-of-use/"
-        }
-      },
-      "pricing": {
-        "origin": "pricing_catalog",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/pricing",
-        "starting_price": {},
-        "metrics": null
-      }
-    },
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
-        "_id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
-        "_rev": "18-b5c2722daa1724856be6285f58927470",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:50765ac9-ddcb-4d9b-8b4b-924c275870f1",
-        "name": "star---vlp-free-plan-",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Star VLP-free-plan",
-            "long_description": "Free plan for 5 Days ",
-            "description": "Free plan for 5 Days "
-          }
-        },
-        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "enterprise_app",
-          "ibm_third_party",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "training",
-          "sales demo",
-          "product demo",
-          "corporate training"
-        ],
-        "geo_tags": [
-          "global"
-        ],
-        "pricing_tags": [
-          "free"
-        ],
-        "provider": {
-          "name": "Star Systems India Private Limited"
-        },
-        "created": "2025-03-31T05:13:44.94190915-04:00",
-        "updated": "2025-07-18T07:50:54.296840848-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1?complete=true",
-        "metadata": {
-          "rc_compatible": true,
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": true,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": null
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "VMWare VLP"
-                  },
-                  {
-                    "description": "IBM Cloud VDC"
-                  },
-                  {
-                    "description": "Windows VMs / RedHat VMs\nNetwork / Storage"
-                  },
-                  {
-                    "description": "For IBM Sales, Please login to \"https://www.starlms.ai/digilabs\""
-                  },
-                  {
-                    "description": "IBM account users need \"All Identity and Access enabled services\" permissions to login to VLP"
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "free",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Free plan for 5 Days ",
-        "displayName": "Star VLP-free-plan"
-      },
-      {
-        "id": "2f5eb731-d590-47a1-8943-8e4e26656460",
-        "_id": "2f5eb731-d590-47a1-8943-8e4e26656460",
-        "_rev": "13-b612824f51429f5efe2b97d6370c4b26",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:2f5eb731-d590-47a1-8943-8e4e26656460",
-        "name": "vlp-standard-plan",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "STAR VLP Standard-plan",
-            "long_description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
-            "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. "
-          }
-        },
-        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "enterprise_app",
-          "ibm_third_party",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "learning",
-          "online learning",
-          "virtual learning",
-          "vlp",
-          "vmware",
-          "vmware learning",
-          "virtual learning platform",
-          "cloud labs",
-          "virtual labs",
-          "training",
-          "sales demo",
-          "product demo",
-          "corporate training"
-        ],
-        "geo_tags": [
-          "global"
-        ],
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "Star Systems India Private Limited"
-        },
-        "created": "2025-06-25T21:50:32.119116594-04:00",
-        "updated": "2025-07-10T05:06:27.259080824-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460?complete=true",
-        "metadata": {
-          "rc_compatible": true,
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": true,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": null
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "SaaS platform delivering hands-on virtual IT training labs to anyone on the planet at cloud scale\n"
-                  },
-                  {
-                    "description": "Seamless integration of lesson materials, virtual machines, video, live chat, and social in a unified web-based interface  \n"
-                  },
-                  {
-                    "description": "Access through a standard browser\nNo plugins needed\nNothing to install\n"
-                  },
-                  {
-                    "description": "Universal Access on any device\nIncluding tablets / mobile for the manual\nSupports lab access from BIOS through to O/S\n"
-                  },
-                  {
-                    "description": "Language supported : English, German, French, Italian, Spanish, Dutch, Brazilian-Portuguese, Russian, and Chinese, Korean, and Japanese\n"
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
-        "displayName": "STAR VLP Standard-plan"
-      }
-    ],
-    "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
-    "longDescription": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
-    "displayName": "VLP",
-    "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg",
-    "localSvgIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.svg",
-    "localPngIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.png"
-  },
-  {
     "id": "09f5a6ea-185e-4625-8281-9e8629360a4f",
     "_id": "09f5a6ea-185e-4625-8281-9e8629360a4f",
     "_rev": "20-7d575f28ba22afc4c872643644b35e17",
@@ -288760,6 +288213,553 @@
     "geo_tags": [],
     "localSvgIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcenterserver.svg",
     "localPngIcon": "/generated/icons/cf329950-0a3e-11e8-922e-f1366c6e1c83-vcenterserver.png"
+  },
+  {
+    "id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+    "_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+    "_rev": "101-1738b6bab5b58ea418c2f2bee193cc9c",
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:c82e2968-02eb-487e-84f0-01cbd884b5c0",
+    "name": "starvlp",
+    "kind": "service",
+    "overview_ui": {
+      "en": {
+        "display_name": "VMWare VLP",
+        "long_description": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
+        "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure"
+      }
+    },
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/%2A",
+    "disabled": false,
+    "active": true,
+    "tags": [
+      "cloud labs",
+      "corporate training",
+      "custom_kind_service",
+      "enterprise_app",
+      "free",
+      "global",
+      "ibm_third_party",
+      "learning",
+      "online learning",
+      "paid",
+      "paid_only",
+      "product demo",
+      "rc_compatible",
+      "sales demo",
+      "support_third_party",
+      "training",
+      "virtual labs",
+      "virtual learning",
+      "virtual learning platform",
+      "vlp",
+      "vmware",
+      "vmware learning"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "free",
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Star Systems India Private Limited"
+    },
+    "created": "2025-01-27T01:22:51.519535281-05:00",
+    "updated": "2026-10-23T08:10:12.424049355-04:00",
+    "complete": true,
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0?complete=true",
+    "images": {
+      "image": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg"
+    },
+    "metadata": {
+      "rc_compatible": true,
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "6983cb35c8394da18d55285c22b5edf4:o:574eb852-9ae7-426d-90ac-699d92088a7d",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "IN",
+              "GB"
+            ],
+            "process": "This field is required. Describe the support you provide for your product and add additional information that isn't provided in the other fields.",
+            "status_url": "https://starsystems.in/vmware-vlp/",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Asia/Calcutta"
+                },
+                "contact": "support@starlms.ai",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "email"
+              },
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Asia/Calcutta"
+                },
+                "contact": "Whatsapp Support: +918015385179",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "other"
+              }
+            ],
+            "support_escalation": {
+              "contact": "vlp@starsystems.in",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 1
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://starsystems.in/contact-us/"
+          }
+        }
+      },
+      "service": {
+        "type": "",
+        "iam_compatible": false,
+        "unique_api_key": false,
+        "rc_provisionable": true,
+        "bindable": true,
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "user_defined_service": null,
+        "extension": null,
+        "plan_updateable": false,
+        "state": "",
+        "service_check_enabled": false,
+        "test_check_interval": 0,
+        "service_key_supported": false,
+        "custom_create_page_hybrid_enabled": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": "must NOT contain spaces,numbers,characters",
+            "displayname": "Tenant Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "user-tenant",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "email",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "First Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "first-name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Last Name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "last-name",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": null,
+            "displayname": "Mobile Number",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "mobile-number",
+            "options": null,
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          }
+        ]
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Accessible universally, at any time, on most devices with a modern HTML5 browser. No installers or plugins are needed.",
+                "title": "Access From Anywhere"
+              },
+              {
+                "description": "Supports complex multi-VM configurations.\nSupports almost all guest operating systems.\nProvides true VM \"console\" for advanced uses.",
+                "title": "A Powerful Virtual Lab"
+              },
+              {
+                "description": "No matter if you need one lab or thousands of labs, deliver as many labs and VM’s as you need.",
+                "title": "Cloud Scale"
+              },
+              {
+                "description": "Deliver hands-on, lab-based IT training on how to use your products, without the need for any complicated installations.",
+                "title": "On-Demand IT Training"
+              },
+              {
+                "description": "Walled-off lab environments that can enable use cases such as malware assessment and remediation.",
+                "title": "Isolated Environments"
+              }
+            ],
+            "media": [
+              {
+                "type": "image/jpg",
+                "url": "https://digilabs.ai/wp-content/uploads/2025/09/mqdefault.webp"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://starsystems.in/vmware-vlp/",
+          "terms_url": "https://starsystems.in/star-vlp-software-terms-of-use/"
+        }
+      },
+      "pricing": {
+        "origin": "pricing_catalog",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0/pricing",
+        "starting_price": {},
+        "metrics": null
+      }
+    },
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
+        "_id": "50765ac9-ddcb-4d9b-8b4b-924c275870f1",
+        "_rev": "18-b5c2722daa1724856be6285f58927470",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:50765ac9-ddcb-4d9b-8b4b-924c275870f1",
+        "name": "star---vlp-free-plan-",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Star VLP-free-plan",
+            "long_description": "Free plan for 5 Days ",
+            "description": "Free plan for 5 Days "
+          }
+        },
+        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "enterprise_app",
+          "ibm_third_party",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "training",
+          "sales demo",
+          "product demo",
+          "corporate training"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "free"
+        ],
+        "provider": {
+          "name": "Star Systems India Private Limited"
+        },
+        "created": "2025-03-31T05:13:44.94190915-04:00",
+        "updated": "2025-07-18T07:50:54.296840848-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "VMWare VLP"
+                  },
+                  {
+                    "description": "IBM Cloud VDC"
+                  },
+                  {
+                    "description": "Windows VMs / RedHat VMs\nNetwork / Storage"
+                  },
+                  {
+                    "description": "For IBM Sales, Please login to \"https://www.starlms.ai/digilabs\""
+                  },
+                  {
+                    "description": "IBM account users need \"All Identity and Access enabled services\" permissions to login to VLP"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/50765ac9-ddcb-4d9b-8b4b-924c275870f1/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Free plan for 5 Days ",
+        "displayName": "Star VLP-free-plan"
+      },
+      {
+        "id": "2f5eb731-d590-47a1-8943-8e4e26656460",
+        "_id": "2f5eb731-d590-47a1-8943-8e4e26656460",
+        "_rev": "13-b612824f51429f5efe2b97d6370c4b26",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:2f5eb731-d590-47a1-8943-8e4e26656460",
+        "name": "vlp-standard-plan",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "STAR VLP Standard-plan",
+            "long_description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
+            "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. "
+          }
+        },
+        "parent_id": "c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/c82e2968-02eb-487e-84f0-01cbd884b5c0",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "enterprise_app",
+          "ibm_third_party",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "learning",
+          "online learning",
+          "virtual learning",
+          "vlp",
+          "vmware",
+          "vmware learning",
+          "virtual learning platform",
+          "cloud labs",
+          "virtual labs",
+          "training",
+          "sales demo",
+          "product demo",
+          "corporate training"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Star Systems India Private Limited"
+        },
+        "created": "2025-06-25T21:50:32.119116594-04:00",
+        "updated": "2025-07-10T05:06:27.259080824-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "SaaS platform delivering hands-on virtual IT training labs to anyone on the planet at cloud scale\n"
+                  },
+                  {
+                    "description": "Seamless integration of lesson materials, virtual machines, video, live chat, and social in a unified web-based interface  \n"
+                  },
+                  {
+                    "description": "Access through a standard browser\nNo plugins needed\nNothing to install\n"
+                  },
+                  {
+                    "description": "Universal Access on any device\nIncluding tablets / mobile for the manual\nSupports lab access from BIOS through to O/S\n"
+                  },
+                  {
+                    "description": "Language supported : English, German, French, Italian, Spanish, Dutch, Brazilian-Portuguese, Russian, and Chinese, Korean, and Japanese\n"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/2f5eb731-d590-47a1-8943-8e4e26656460/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "VMWare Virtual Learning platform standard plan comes with VLP and IBM Cloud VDC. ",
+        "displayName": "STAR VLP Standard-plan"
+      }
+    ],
+    "description": "Hands-on virtual labs accessible worldwide on any device at cloud scale, eliminating expensive lab environments and infrastructure",
+    "longDescription": "VMware Lab Platform (VLP)\n\n-------------------------------------------------------------------\n is a SaaS platform that gives organizations the ability to deliver their own customized hands-on virtual training labs to anyone on the planet at cloud scale.  \n\n-------------------------------------------------------------------\n\nInstructor Led Training: Training platform that allows students to have their own individual lab environment while allowing the instructor to proctor, shadow, assist and interact with students virtually from anywhere.\n\n-------------------------------------------------------------------\n\nSales Demo: Easily expand your ability to give effect sales demos of your software solutions. Provisioning a known good template with a demo environment pre-staged for you demo allows for a quick and easy demo without any of the pre-configuration or cleanup between customers.\n\n-------------------------------------------------------------------\n\nCustomer Proof of Concept: Moving from Sales Demo into Proof of Concept is extremely easy when you can entitle a customer to a time bound copy of their own demo environment.  Provide access to a POC environment for the customer to evaluate your software, and even provide remote assistance and monitor their progress.\n\n-------------------------------------------------------------------\n\nCyber Security Training:  Security operations training is essential to preparing the cybersecurity workforce of tomorrow, and for keeping current cybersecurity workers up-to-date on skills and evolving threats.  VLP provides a safe environment to develop training scenarios and build their capabilities. \n\n-------------------------------------------------------------------\n\nWe are complementary to most leading Learning Management Systems (LMS) and support Learning Tools Interoperability (LTI) allowing you to leverage your existing education platform.\n\n\nVLP has a rich set of API’s making it easy to create any kind of user experience you can imagine.\n\n\nExtend your own cloud infrastructure or use a hybrid model to support your most complex lab use cases.\n\n\nVMware Lab Platform integrates instructional materials, labs, video, social media, and more. It is specifically designed to deliver hands-on lab content to students/clients.  There are a standard set of APIs that allow it to easily integrate with most Learning Management Systems on the market.  It is a SaaS solution that is a cloud-based multi-tenant solution owned, maintained, and updated by Partner STAR Systems. \n\n-------------------------------------------------------------------\n\n- SaaS platform delivering hands-on virtual IT Training labs to anyone on the planet at cloud scale \n\n- Access from Anywhere - Training content is accessible university, at any time, on most devices with a browser. \n\n- A powerful virtual lab supports complex multi-vM configurations and almost all guest operating systems\n\n- Hybrid Cloud Scale from one lab to thousands of labs. Trust that the platform will scale with you.\n\n- supports labaccess directly from the the console \n\n- Set it and forget it administration \n\n- Learning management Systems support through standard LTI and API integrations",
+    "displayName": "VMWare VLP",
+    "imageUrl": "https://digilabs.ai/wp-content/uploads/2025/01/start-only.svg",
+    "localSvgIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.svg",
+    "localPngIcon": "/generated/icons/c82e2968-02eb-487e-84f0-01cbd884b5c0.png"
   },
   {
     "id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-vsphere",
@@ -299693,12 +299693,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
