@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -49579,7 +49579,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49590,7 +49589,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -68430,7 +68430,7 @@
   {
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
-    "_rev": "83-fc921be1fb962ac0a5326f160b558943",
+    "_rev": "84-e093f83fe89b767b4d441a41d19427d3",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "name": "continuous-delivery",
     "kind": "service",
@@ -68531,7 +68531,7 @@
       "name": "IBM"
     },
     "created": "2016-09-21T15:46:54Z",
-    "updated": "2026-10-05T14:47:37.635480147-04:00",
+    "updated": "2026-10-22T14:41:18.2313507-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/59b735ee-5938-4ebd-a6b2-541aef2d1f68?complete=true",
     "images": {
@@ -69266,7 +69266,7 @@
       {
         "id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "_id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
-        "_rev": "66-b10483a67f14184e7db9fafae842c706",
+        "_rev": "67-e5910b298d728b0dba46e837c3c0e8c9",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "name": "professional",
         "kind": "plan",
@@ -69351,7 +69351,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-09-22T14:34:14.999404527-04:00",
+        "updated": "2026-10-22T14:41:17.00184353-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e?complete=true",
         "images": {
@@ -92730,6 +92730,9 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92741,10 +92744,7 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -110885,6 +110885,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -110892,11 +110896,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -141932,13 +141932,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -170789,14 +170789,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -181384,18 +181384,18 @@
     ],
     "geo_tags": [
       "in-che",
+      "jp-osa",
+      "ca-tor",
+      "au-syd",
+      "br-sao",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "au-syd",
-      "jp-osa",
-      "in-mum",
       "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south",
-      "br-sao"
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -245720,8 +245720,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -258640,12 +258640,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -279130,7 +279130,6 @@
       "windows"
     ],
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -279172,7 +279171,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -299693,12 +299693,12 @@
       "watson"
     ],
     "geo_tags": [
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -307111,7 +307111,7 @@
   {
     "id": "43834340-4a6d-11ed-97d2-959039ad2a2e",
     "_id": "43834340-4a6d-11ed-97d2-959039ad2a2e",
-    "_rev": "1169-f553562989ee1d9c5c7b70ae93316400",
+    "_rev": "1172-5f8abb357b2cf33544a2ed5595f79e0c",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:43834340-4a6d-11ed-97d2-959039ad2a2e",
     "name": "lakehouse",
     "kind": "service",
@@ -307136,6 +307136,7 @@
       "eu-de",
       "eu-gb",
       "free",
+      "hipaa",
       "iam_compatible",
       "ibm_created",
       "jp-tok",
@@ -307167,7 +307168,7 @@
       "name": "IBM"
     },
     "created": "2023-04-13T18:47:18.902Z",
-    "updated": "2026-09-23T06:02:24.537690127-04:00",
+    "updated": "2026-10-22T14:27:13.54480129-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/43834340-4a6d-11ed-97d2-959039ad2a2e?complete=true",
     "images": {
@@ -307501,7 +307502,7 @@
       {
         "id": "lakehouse-enterprise",
         "_id": "lakehouse-enterprise",
-        "_rev": "213-719669ff3aff0255880fe45889c91e3f",
+        "_rev": "214-6255de6b2f75b7c40dc920577d1e10db",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise",
         "name": "lakehouse-enterprise",
         "kind": "plan",
@@ -307523,7 +307524,8 @@
           "database",
           "ibm_created",
           "lite",
-          "rc_compatible"
+          "rc_compatible",
+          "hipaa"
         ],
         "geo_tags": [
           "eu-de",
@@ -307541,7 +307543,7 @@
           "name": "IBM"
         },
         "created": "2023-04-13T18:52:50.743Z",
-        "updated": "2026-09-23T06:02:24.636535509-04:00",
+        "updated": "2026-10-22T14:27:12.295303392-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise?complete=true",
         "images": {
@@ -307643,7 +307645,7 @@
       {
         "id": "lakehouse-enterprise-mcsp",
         "_id": "lakehouse-enterprise-mcsp",
-        "_rev": "183-d05bbc897957b86eaa097cb8023673ed",
+        "_rev": "184-c259d5e88a65a30b7f716446c9ac347b",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:lakehouse-enterprise-mcsp",
         "name": "lakehouse-enterprise-mcsp",
         "kind": "plan",
@@ -307665,7 +307667,8 @@
           "database",
           "ibm_created",
           "lite",
-          "rc_compatible"
+          "rc_compatible",
+          "hipaa"
         ],
         "geo_tags": [
           "au-syd",
@@ -307680,7 +307683,7 @@
           "name": "IBM"
         },
         "created": "2024-12-09T17:05:44.993204974-05:00",
-        "updated": "2026-09-23T06:02:24.636745046-04:00",
+        "updated": "2026-10-22T14:27:12.67097584-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/lakehouse-enterprise-mcsp?complete=true",
         "images": {
