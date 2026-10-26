@@ -6165,10 +6165,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6179,7 +6175,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -6354,6 +6354,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6368,8 +6369,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -6783,7 +6783,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -6791,7 +6790,8 @@
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es"
+      "eu-es",
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -6935,13 +6935,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10666,19 +10666,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
-      "in-mum",
+      "ca-tor",
       "ca-mon",
-      "br-sao",
+      "in-che",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid",
@@ -13954,6 +13954,98 @@
     "displayName": "Patient Facing AI Agent for Healthcare Companies (Hospitals and Clinics)",
     "imageUrl": "https://www.streebo.com/PDF/streebo-icon.png",
     "localPngIcon": "/generated/icons/639b4eb1-8479-4897-a4ae-927a432bcf95.png"
+  },
+  {
+    "id": "77d64500-ec5f-4071-a45e-7bc68188d054",
+    "name": "paver",
+    "kind": "service",
+    "tags": [
+      "ai",
+      "devops",
+      "assistant",
+      "custom_kind_service",
+      "eu-de",
+      "ibm_created",
+      "infrastructure",
+      "jp-tok",
+      "rc_compatible",
+      "support_ibm",
+      "us-east",
+      "watson"
+    ],
+    "geo_tags": [
+      "eu-de",
+      "jp-tok",
+      "us-east"
+    ],
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "plans": [
+      {
+        "id": "paver-free",
+        "name": "paver-free",
+        "description": "If you change regions, your previous conversations, memories and other data will no longer be accessible in Paver. \nCheck your instance’s current region in the settings panel within the Paver experience.\n",
+        "displayName": "Free - Regional"
+      },
+      {
+        "id": "paver-professional",
+        "name": "paver-professional",
+        "description": "Includes 10,000 credits per month.\nAfter you use the included monthly credits, additional usage is charged per credit.\n\n",
+        "displayName": "Professional"
+      }
+    ],
+    "description": "An agentic AI operator for IBM Cloud that plans and executes infrastructure operations through natural language.",
+    "longDescription": "IBM Paver is a built-in agentic AI operator for IBM Cloud that turns natural language requests into governed infrastructure actions, planning, explaining, and executing across your accounts, services, and resources without requiring you to switch between tools. Rather than generating code for you to run elsewhere, Paver acts on your behalf by reading your account context, reasoning through what needs to happen, and actioning approved changes against your live environment.\n\n",
+    "displayName": "Paver",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/artifacts/cache/939ae9661bb9f8ce7e3083333c4ef862-public/paver.svg",
+    "localSvgIcon": "/generated/icons/77d64500-ec5f-4071-a45e-7bc68188d054.svg",
+    "localPngIcon": "/generated/icons/77d64500-ec5f-4071-a45e-7bc68188d054.png"
+  },
+  {
+    "id": "ef8935df-cabf-429d-ab38-085e0914050b",
+    "name": "pcigator",
+    "kind": "service",
+    "tags": [
+      "security",
+      "custom_kind_service",
+      "data access control",
+      "encryption",
+      "fine-grain access controls",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "pci data protection",
+      "pci dss",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "plans": [
+      {
+        "id": "750b3375-9dde-4fcb-89a2-8050c59daadd",
+        "name": "monthly-subscription",
+        "description": "Monthly subscription per instance\nPlease contact info@exate.com for further information on pricing\n\n",
+        "displayName": "Monthly Subscription"
+      }
+    ],
+    "description": "PCIgator protects payment card data in files through granular encryption and access controls.",
+    "longDescription": "eXate PCIgator is a high-performance folder encryption and access control solution that protects sensitive data at the storage layer without requiring application changes. It delivers real-time encryption, fine-grained policy enforcement, and seamless integration with existing key management systems.\nPlease note 1 instance is 1 integrated application.",
+    "displayName": "PCIgator",
+    "imageUrl": "https://8821114.fs1.hubspotusercontent-na1.net/hubfs/8821114/PCIgator.png",
+    "localPngIcon": "/generated/icons/ef8935df-cabf-429d-ab38-085e0914050b.png"
   },
   {
     "id": "power-iaas.placement-group",
@@ -17575,12 +17667,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -22054,12 +22146,12 @@
       "watson"
     ],
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "pricing_tags": [
       "free",

@@ -68430,7 +68430,7 @@
   {
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
-    "_rev": "84-e093f83fe89b767b4d441a41d19427d3",
+    "_rev": "85-358789caec7b11b8140bef7157549d28",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "name": "continuous-delivery",
     "kind": "service",
@@ -68531,7 +68531,7 @@
       "name": "IBM"
     },
     "created": "2016-09-21T15:46:54Z",
-    "updated": "2026-10-22T14:41:18.2313507-04:00",
+    "updated": "2026-10-26T11:29:10.625353503-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/59b735ee-5938-4ebd-a6b2-541aef2d1f68?complete=true",
     "images": {
@@ -75416,7 +75416,7 @@
       {
         "id": "a5de3573-7194-4174-a480-39440f2a752b",
         "_id": "a5de3573-7194-4174-a480-39440f2a752b",
-        "_rev": "25-fa173c9a28b9d0e984740c2a054515f4",
+        "_rev": "27-db16c3669dabb54ecdb4787e28969f22",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a5de3573-7194-4174-a480-39440f2a752b",
         "name": "x86-virtual-machine",
         "kind": "plan",
@@ -75446,7 +75446,7 @@
           "name": "VM2020 Solutions"
         },
         "created": "2026-09-23T10:41:12.277044128-04:00",
-        "updated": "2026-10-15T08:57:35.467674918-04:00",
+        "updated": "2026-10-26T14:21:10.350635871-04:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a5de3573-7194-4174-a480-39440f2a752b?complete=true",
         "metadata": {
@@ -75485,7 +75485,7 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "50 x86 virtual machine pack"
+                    "description": "Virtual machine 50-pack"
                   }
                 ]
               }
@@ -92730,10 +92730,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92744,7 +92740,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -110885,6 +110885,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -110892,11 +110896,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -118610,6 +118610,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -118624,8 +118625,7 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd",
-      "che01"
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -137203,7 +137203,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
@@ -137211,7 +137210,8 @@
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es"
+      "eu-es",
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -141932,13 +141932,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -181383,19 +181383,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
-      "in-mum",
+      "ca-tor",
       "ca-mon",
-      "br-sao",
+      "in-che",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid",
@@ -234323,6 +234323,649 @@
     "localPngIcon": "/generated/icons/639b4eb1-8479-4897-a4ae-927a432bcf95.png"
   },
   {
+    "id": "77d64500-ec5f-4071-a45e-7bc68188d054",
+    "_id": "77d64500-ec5f-4071-a45e-7bc68188d054",
+    "_rev": "35-60b506abe08a904890344521b21fdde4",
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:77d64500-ec5f-4071-a45e-7bc68188d054",
+    "name": "paver",
+    "kind": "service",
+    "overview_ui": {
+      "en": {
+        "display_name": "Paver",
+        "long_description": "IBM Paver is a built-in agentic AI operator for IBM Cloud that turns natural language requests into governed infrastructure actions, planning, explaining, and executing across your accounts, services, and resources without requiring you to switch between tools. Rather than generating code for you to run elsewhere, Paver acts on your behalf by reading your account context, reasoning through what needs to happen, and actioning approved changes against your live environment.\n\n",
+        "description": "An agentic AI operator for IBM Cloud that plans and executes infrastructure operations through natural language."
+      }
+    },
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/%2A",
+    "disabled": false,
+    "active": true,
+    "tags": [
+      "ai",
+      "devops",
+      "assistant",
+      "custom_kind_service",
+      "eu-de",
+      "ibm_created",
+      "infrastructure",
+      "jp-tok",
+      "rc_compatible",
+      "support_ibm",
+      "us-east",
+      "watson"
+    ],
+    "geo_tags": [
+      "eu-de",
+      "jp-tok",
+      "us-east"
+    ],
+    "provider": {
+      "name": "IBM"
+    },
+    "created": "2026-09-16T04:28:18.264513066-04:00",
+    "updated": "2026-10-26T08:59:22.309757419-04:00",
+    "complete": true,
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054?complete=true",
+    "images": {
+      "feature_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/artifacts/cache/939ae9661bb9f8ce7e3083333c4ef862-public/paver.svg",
+      "image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/artifacts/cache/939ae9661bb9f8ce7e3083333c4ef862-public/paver.svg",
+      "medium_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/artifacts/cache/939ae9661bb9f8ce7e3083333c4ef862-public/paver.svg",
+      "small_image": "https://cache.globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/artifacts/cache/939ae9661bb9f8ce7e3083333c4ef862-public/paver.svg"
+    },
+    "metadata": {
+      "rc_compatible": true,
+      "other": {
+        "PC": {
+          "support": {
+            "languages": [],
+            "locations": [],
+            "process_i18n": {},
+            "support_type": "ibm_cloud",
+            "url": "https://cloud.ibm.com/unifiedsupport/supportcenter"
+          }
+        }
+      },
+      "service": {
+        "type": "",
+        "iam_compatible": false,
+        "unique_api_key": false,
+        "rc_provisionable": true,
+        "bindable": false,
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "user_defined_service": null,
+        "extension": null,
+        "plan_updateable": false,
+        "state": "",
+        "service_check_enabled": false,
+        "test_check_interval": 0,
+        "service_key_supported": true,
+        "custom_create_page_hybrid_enabled": false,
+        "parameters": null
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Describe what you need in plain language. Paver maps your request to your current environment, builds a transparent execution plan, and carries it out through the IBM Cloud CLI, APIs, Terraform, and the tools your team already uses.",
+                "title": "Natural language operations"
+              },
+              {
+                "description": "Paver Guard evaluates every proposed operation for risk before it runs and requires explicit human approval for consequential changes. Configure auto-approve thresholds for routine operations and hold higher-risk actions for your review, giving you fine-grained control that scales with the task at hand.",
+                "title": "Governed execution with Paver Guard"
+              },
+              {
+                "description": "Paver builds a persistent picture of how you work, including your preferred regions, the projects you return to, and the resources you manage, and carries that context forward automatically across sessions so you never have to repeat yourself.",
+                "title": "Persistent context and memory"
+              },
+              {
+                "description": "Store API keys and service credentials once in the keyring and Paver injects them as environment variables at the start of each session.",
+                "title": "Secure secrets storage with keyring"
+              },
+              {
+                "description": "IBM maintains built-in skills that provide domain-specific knowledge that Paver loads automatically based on what you ask. Add your own user skills to encode team knowledge and workflows for more accurate and consistent guidance.",
+                "title": "Skills for your services and workflows"
+              },
+              {
+                "description": "Access an interactive terminal directly inside the environment that Paver uses to act on your behalf. The shell comes preinstalled with the IBM Cloud CLI, kubectl, helm, terraform, and standard scripting tools, all connected to your account without losing your conversation context.",
+                "title": "Integrated shell environment"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://cloud.ibm.com/docs/paver",
+          "terms_url": "https://www.ibm.com/support/customer/csol/terms/?id=i127-9431"
+        }
+      },
+      "pricing": {
+        "origin": "pricing_catalog",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/pricing",
+        "starting_price": {},
+        "metrics": null
+      }
+    },
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "id": "paver-free",
+        "_id": "paver-free",
+        "_rev": "18-66ff334a9f482c94ccb73686092b5793",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:paver-free",
+        "name": "paver-free",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Free - Regional",
+            "long_description": "If you change regions, your previous conversations, memories and other data will no longer be accessible in Paver. \nCheck your instance’s current region in the settings panel within the Paver experience.\n",
+            "description": "If you change regions, your previous conversations, memories and other data will no longer be accessible in Paver. \nCheck your instance’s current region in the settings panel within the Paver experience.\n"
+          }
+        },
+        "parent_id": "77d64500-ec5f-4071-a45e-7bc68188d054",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/paver-free/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054",
+        "disabled": false,
+        "active": true,
+        "geo_tags": [
+          "eu-de",
+          "jp-tok",
+          "us-east"
+        ],
+        "provider": {
+          "name": "IBM"
+        },
+        "created": "2026-10-14T13:57:24.969231087-04:00",
+        "updated": "2026-10-26T08:00:34.386347083-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/paver-free?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": true,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": false,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Get started with IBM Paver for everyday cloud operations."
+                  },
+                  {
+                    "description": "Includes chat, user memories, custom skills and a monthly credit allowance.\n\n"
+                  },
+                  {
+                    "description": "Deploy a Free instance in a specific region to meet your data residency needs. "
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "free",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/paver-free/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "If you change regions, your previous conversations, memories and other data will no longer be accessible in Paver. \nCheck your instance’s current region in the settings panel within the Paver experience.\n",
+        "displayName": "Free - Regional"
+      },
+      {
+        "id": "paver-professional",
+        "_id": "paver-professional",
+        "_rev": "19-f8dbd882f8354de293d7554fc3544b68",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:paver-professional",
+        "name": "paver-professional",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Professional",
+            "long_description": "Includes 10,000 credits per month.\nAfter you use the included monthly credits, additional usage is charged per credit.\n\n",
+            "description": "Includes 10,000 credits per month.\nAfter you use the included monthly credits, additional usage is charged per credit.\n\n"
+          }
+        },
+        "parent_id": "77d64500-ec5f-4071-a45e-7bc68188d054",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/paver-professional/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054",
+        "disabled": false,
+        "active": true,
+        "geo_tags": [
+          "eu-de",
+          "jp-tok",
+          "us-east"
+        ],
+        "provider": {
+          "name": "IBM"
+        },
+        "created": "2026-10-14T13:36:55.510323464-04:00",
+        "updated": "2026-10-26T08:00:34.433103747-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/paver-professional?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": true,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": false,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Do more with IBM Paver across your everyday cloud operations"
+                  },
+                  {
+                    "description": "Includes everything in Free, with more monthly credits and pay-as-you-go usage beyond your allowance."
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/paver-professional/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Includes 10,000 credits per month.\nAfter you use the included monthly credits, additional usage is charged per credit.\n\n",
+        "displayName": "Professional"
+      }
+    ],
+    "description": "An agentic AI operator for IBM Cloud that plans and executes infrastructure operations through natural language.",
+    "longDescription": "IBM Paver is a built-in agentic AI operator for IBM Cloud that turns natural language requests into governed infrastructure actions, planning, explaining, and executing across your accounts, services, and resources without requiring you to switch between tools. Rather than generating code for you to run elsewhere, Paver acts on your behalf by reading your account context, reasoning through what needs to happen, and actioning approved changes against your live environment.\n\n",
+    "displayName": "Paver",
+    "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/77d64500-ec5f-4071-a45e-7bc68188d054/artifacts/cache/939ae9661bb9f8ce7e3083333c4ef862-public/paver.svg",
+    "localSvgIcon": "/generated/icons/77d64500-ec5f-4071-a45e-7bc68188d054.svg",
+    "localPngIcon": "/generated/icons/77d64500-ec5f-4071-a45e-7bc68188d054.png"
+  },
+  {
+    "id": "ef8935df-cabf-429d-ab38-085e0914050b",
+    "_id": "ef8935df-cabf-429d-ab38-085e0914050b",
+    "_rev": "39-8b2356cedcc591afe776f31fa6f834db",
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ef8935df-cabf-429d-ab38-085e0914050b",
+    "name": "pcigator",
+    "kind": "service",
+    "overview_ui": {
+      "en": {
+        "display_name": "PCIgator",
+        "long_description": "eXate PCIgator is a high-performance folder encryption and access control solution that protects sensitive data at the storage layer without requiring application changes. It delivers real-time encryption, fine-grained policy enforcement, and seamless integration with existing key management systems.\nPlease note 1 instance is 1 integrated application.",
+        "description": "PCIgator protects payment card data in files through granular encryption and access controls."
+      }
+    },
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ef8935df-cabf-429d-ab38-085e0914050b/%2A",
+    "disabled": false,
+    "active": true,
+    "tags": [
+      "security",
+      "custom_kind_service",
+      "data access control",
+      "encryption",
+      "fine-grain access controls",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "pci data protection",
+      "pci dss",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "eXate"
+    },
+    "created": "2026-06-19T07:01:28.157943006-04:00",
+    "updated": "2026-10-26T05:08:56.310507308-04:00",
+    "complete": true,
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/ef8935df-cabf-429d-ab38-085e0914050b?complete=true",
+    "images": {
+      "image": "https://8821114.fs1.hubspotusercontent-na1.net/hubfs/8821114/PCIgator.png"
+    },
+    "metadata": {
+      "rc_compatible": true,
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "2624970aefd44890a0dc889d8368fca7:o:573e6fa1-27ed-4740-9926-4b5c2720ab6e",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "GB"
+            ],
+            "process": "eXate provides enterprise-grade support to help customers successfully deploy, operate, and scale our data privacy solutions. Support includes onboarding guidance, configuration assistance, troubleshooting, incident management, access to our support portal for case tracking, and escalation to product and engineering specialists for complex technical issues. \n\nOnce onboarding is complete, customer support will be provisioned in our support portal and will receive an invitation with access details and guidance on how to raise and track support requests.",
+            "status_url": "https://exate.atlassian.net/servicedesk/customer/portals",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "16:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "16:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "16:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "16:00",
+                      "start_time": "09:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "16:00",
+                      "start_time": "09:00"
+                    }
+                  ],
+                  "timezone": "Europe/London"
+                },
+                "contact": "https://exate.atlassian.net/servicedesk/customer/portals",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 2
+                },
+                "type": "support_site"
+              },
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "Europe/London"
+                },
+                "contact": "support@exate.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "email"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@exate.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 2
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 2
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://exate.atlassian.net/servicedesk/customer/portals"
+          }
+        }
+      },
+      "service": {
+        "type": "",
+        "iam_compatible": false,
+        "unique_api_key": false,
+        "rc_provisionable": true,
+        "bindable": true,
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "user_defined_service": null,
+        "extension": null,
+        "plan_updateable": false,
+        "state": "",
+        "service_check_enabled": false,
+        "test_check_interval": 0,
+        "service_key_supported": false,
+        "custom_create_page_hybrid_enabled": false,
+        "parameters": [
+          {
+            "description": "Where we send the sign-in details for your eXate firm",
+            "displayname": "Administrator email",
+            "invalidmessage": "Enter a valid email address",
+            "name": "ownerEmail",
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "placeholder": "you@yourcompany.com",
+            "required": true,
+            "type": "text"
+          }
+        ]
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Encrypts and decrypts files automatically at the storage layer with no application changes required.",
+                "title": "Folder Encryption"
+              },
+              {
+                "description": "Enforce security policies on every file operation using a low-latency policy engine that evaluates identity, role, and contextual attributes",
+                "title": "Fine-grain Access Control"
+              },
+              {
+                "description": "Reduce compliance burden by securing payment card data at the source, helping organisations meet PCI DSS requirements for data protection.",
+                "title": "PCI DSS Compliance Support"
+              },
+              {
+                "description": "Integrate with your existing KMS and maintain full ownership of encryption keys.",
+                "title": "Bring Your Own Keys"
+              },
+              {
+                "description": "Gain complete visibility with detailed audit trails for every file interaction.",
+                "title": "Audit & Compliance Visibility"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://exate.atlassian.net/servicedesk/customer/portals",
+          "terms_url": "https://www.exate.com/legal-agreement"
+        }
+      },
+      "pricing": {
+        "origin": "pricing_catalog",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/ef8935df-cabf-429d-ab38-085e0914050b/pricing",
+        "starting_price": {},
+        "metrics": null
+      }
+    },
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "id": "750b3375-9dde-4fcb-89a2-8050c59daadd",
+        "_id": "750b3375-9dde-4fcb-89a2-8050c59daadd",
+        "_rev": "12-f9dfaeabe89b353fd3600b67b0462798",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:750b3375-9dde-4fcb-89a2-8050c59daadd",
+        "name": "monthly-subscription",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Monthly Subscription",
+            "long_description": "Monthly subscription per instance\nPlease contact info@exate.com for further information on pricing\n\n",
+            "description": "Monthly subscription per instance\nPlease contact info@exate.com for further information on pricing\n\n"
+          }
+        },
+        "parent_id": "ef8935df-cabf-429d-ab38-085e0914050b",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/750b3375-9dde-4fcb-89a2-8050c59daadd/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/ef8935df-cabf-429d-ab38-085e0914050b",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "data access control",
+          "encryption",
+          "fine-grain access controls",
+          "ibm_third_party",
+          "pci data protection",
+          "pci dss",
+          "security"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "eXate"
+        },
+        "created": "2026-07-06T10:53:55.086152671-04:00",
+        "updated": "2026-10-26T05:08:56.309858377-04:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/750b3375-9dde-4fcb-89a2-8050c59daadd?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Dedicated PCI data protection solution"
+                  },
+                  {
+                    "description": "Leveraging fine-grained, cell-level protection"
+                  },
+                  {
+                    "description": "PCI DSS standards"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/750b3375-9dde-4fcb-89a2-8050c59daadd/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Monthly subscription per instance\nPlease contact info@exate.com for further information on pricing\n\n",
+        "displayName": "Monthly Subscription"
+      }
+    ],
+    "description": "PCIgator protects payment card data in files through granular encryption and access controls.",
+    "longDescription": "eXate PCIgator is a high-performance folder encryption and access control solution that protects sensitive data at the storage layer without requiring application changes. It delivers real-time encryption, fine-grained policy enforcement, and seamless integration with existing key management systems.\nPlease note 1 instance is 1 integrated application.",
+    "displayName": "PCIgator",
+    "imageUrl": "https://8821114.fs1.hubspotusercontent-na1.net/hubfs/8821114/PCIgator.png",
+    "localPngIcon": "/generated/icons/ef8935df-cabf-429d-ab38-085e0914050b.png"
+  },
+  {
     "id": "power-iaas.placement-group",
     "_id": "power-iaas.placement-group",
     "_rev": "72-7e6c1fc693d1f06e8a849af052372a8b",
@@ -258640,12 +259283,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -299693,12 +300336,12 @@
       "watson"
     ],
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "pricing_tags": [
       "free",
@@ -300624,12 +301267,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
-          "jp-tok",
           "eu-de",
           "eu-gb",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor",
+          "jp-tok"
         ],
         "pricing_tags": [
           "free",
@@ -312259,10 +312902,10 @@
           "iodine"
         ],
         "geo_tags": [
-          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "paid_only",
