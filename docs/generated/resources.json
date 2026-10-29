@@ -687,14 +687,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -861,6 +861,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -868,8 +869,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -4175,7 +4175,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4186,7 +4185,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -4511,8 +4511,8 @@
         "displayName": "CR Monthly Subscription"
       }
     ],
-    "description": "Is your facility ready to commission? Gate-by-gate readiness, the blockers, and the evidence. No connection needed to start.",
-    "longDescription": "Commissioning Readiness answers the question every commissioning lead carries into a readiness review: is this facility ready to start up, and if not, what is blocking it and where is the proof? It reviews readiness gate by gate across the commissioning disciplines (mechanical, electrical, instrumentation, controls, safety, environmental, operational), and returns a readiness score with a ranked list of blockers, each tied to its source evidence, grounded in the CII SR19-01 DR310 commissioning-completion lifecycle. No system connection is needed to start. Connect IBM Maximo to score your own records. It is deterministic and standards-grounded. It speaks to the commissioning lead (gate-by-gate sign-off), the programme director (portfolio readiness), the project manager (in-flight blockers), and the discipline lead (clean status recording) in regulated infrastructure.",
+    "description": "What must your facility record and hand over to commission? DR310 requirements and handover list totals. No connection needed.",
+    "longDescription": "Commissioning Readiness answers the first question of every readiness review. What must this facility record and hand over before it can start up? It sets out the three CII SR19-01 DR310 commissioning sub-codes, with how many mandatory, identifier and optional fields each holds. It names five readiness gap dimensions, from turnover dates to handover documents. It gives the totals of the CFIHOS V2.0 handover lists for construction and commissioning. Name a discipline and the totals narrow to it. No system connection is needed. Connect IBM Maximo to look up and count your own records in the same conversation. Code reads the standard. The AI only writes up what code found. It speaks to the commissioning lead, the programme director, the project manager and the discipline lead in regulated infrastructure.",
     "displayName": "Commissioning Readiness",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/002db8b6-4893-4f35-b49a-19c46311f59a.svg",
@@ -5046,7 +5046,7 @@
       }
     ],
     "description": "Know your work packages are compliant before they reach the facility. Regulator-ready audit trail per finding.",
-    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. On your authorisation it then writes the service request or work order that closes the gap. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
+    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. Once writes are enabled, it can raise the service request that closes the gap, after you confirm it. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
     "displayName": "Construction Work Pack Compliance",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/eccd3054-2b9f-4796-bf30-be0c847c5247.svg",
@@ -6165,6 +6165,9 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6176,10 +6179,7 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -6354,6 +6354,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -6368,8 +6369,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -6935,13 +6935,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "jp-tok",
+      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south",
-      "br-sao",
-      "jp-tok",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -8440,7 +8440,7 @@
       }
     ],
     "description": "Know whether your handover package is complete enough to sign off, with the gaps and the evidence, per event.",
-    "longDescription": "Confirm a handover package is complete enough to sign off before an asset enters operations. You get a completeness score per package, a gap-by-gap remediation list, and document-level evidence for every criterion. Each package is checked against the seven ISO 19650-4 Clause 7 criteria, mapped to the CFIHOS V2.0 reference, and compared against the ISO 19650-3 Asset Information Model for build-to-operate continuity. No system connection is needed. Connect IBM Maximo when you want it to read your live handover packages, asset records, and document status. Built for information managers driving sign-off, BIM coordinators verifying conformance, asset operators receiving the package, and project teams populating the AIM, in regulated infrastructure.",
+    "longDescription": "Confirm a handover package is complete enough to sign off before an asset enters operations. For each package you get an overall status: pass, partial, fail or not assessed. You also get a completeness score and the missing documents named, with document-level evidence. Each package is checked against the documents the CFIHOS V2.0 reference requires at its handover event. The check maps to ISO 19650-4 Clause 7.3 (Continuity). No system connection is needed. Connect IBM Maximo when you want it to read your live handover packages, asset records, and document status. It is built for information managers driving sign-off and building information modelling (BIM) coordinators verifying each document against its requirement. It also serves asset operators receiving the package and project teams populating the asset information model, in regulated infrastructure.",
     "displayName": "Facility Handover Compliance",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/15e07693-3bb2-4350-91ff-827366c41066.svg",
@@ -10046,14 +10046,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10666,19 +10666,19 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "in-che",
+      "jp-osa",
       "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "au-syd",
+      "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "ca-tor",
-      "ca-mon",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -14691,6 +14691,102 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/abd259f0-9990-11e8-acc8-b9f54a8f1661/artifacts/cache/66c89a2644c2ac54745d6ab9ecf4da8e-public/IBM_Power_CloudCatalog%202.svg",
     "localSvgIcon": "/generated/icons/power-iaas.workspace.svg",
     "localPngIcon": "/generated/icons/power-iaas.workspace.png"
+  },
+  {
+    "id": "5b5ab101-8604-42ca-ad2e-537906446433",
+    "name": "managed-services-by-ricoh",
+    "kind": "service",
+    "tags": [
+      "compute",
+      "consulting",
+      "consulting_tab",
+      "custom_kind_service",
+      "disaster recovery",
+      "global",
+      "ibm_third_party",
+      "iseries",
+      "lpar management",
+      "monitor service",
+      "paid",
+      "paid_only",
+      "power system",
+      "power vs management",
+      "ptf’s management",
+      "rc_compatible",
+      "support_third_party"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "plans": [
+      {
+        "id": "f9f00de8-9f52-463a-ab69-df8b629d2640",
+        "name": "iseries-backup-services",
+        "description": "Backups managed Services. Does not include •\tBackups managed Services. Does not include Storage costs in IBM cloud, to be billed as actual.\n•\tAfter each backup is completed, it will be replicated to a VTL unit at secondary location\n•\tServices for restore of data up to four times per year\n•\tDaily Saves Mon-Sat - 2 Weeks retention, Weekly saves Sun - 5 Weeks retention, Monthly Saves (last Sunday of month) - 13 months retention and Yearly Saves (last Monthly backup) - permanent retention.",
+        "displayName": "iseries-backup-services"
+      },
+      {
+        "id": "f5cc56bf-d671-4caa-9f48-3a77081a3ae1",
+        "name": "iseries-ha-large-bundle-per-lpar",
+        "description": "Large: LPAR with 10,000 CPW, 64GB Memory, 5TB Disk \nMRR-ISERIES-INFRA-LPAR \nMRR-ISERIES-MONITOR SERVICE \nMRR-ISERIES-MANAGED-SVS-STD\nMRR-ISERIES-HA-MGMT\nMRR-ISERIES-HA-SOFTWARE",
+        "displayName": "iseries-ha-large-bundle-per-lpar"
+      },
+      {
+        "id": "2c6bfa30-3e2b-4351-a7d6-7f26c0460a4e",
+        "name": "iseries-ha-medium-bundle-per-lpar",
+        "description": "Medium: LPAR with 6,000 CPW, 32GB Memory, 3TB Disk \nMRR-ISERIES-INFRA-LPAR \nMRR-ISERIES-MONITOR SERVICE    \nMRR-ISERIES-MANAGED-SVS-STD   \nMRR-ISERIES-HA-MGMT MRR-ISERIES-HA-SOFTWARE",
+        "displayName": "iseries-ha-medium-bundle-per-lpar"
+      },
+      {
+        "id": "3f5c2937-c134-44be-80ad-686c1cce4f6b",
+        "name": "iseries-ha-small-bundle-per-lpar",
+        "description": "Small: LPAR with 3,000 CPW, 16GB Memory, 1TB Disk \nMRR-ISERIES-INFRA-LPAR \nMRR-ISERIES-MONITOR SERVICE \nMRR-ISERIES-MANAGED-SVS-STD\nMRR-ISERIES-HA-MGMT MRR-ISERIES-HA-SOFTWARE",
+        "displayName": "iseries-ha-small-bundle-per-lpar"
+      },
+      {
+        "id": "6d7219ce-0bba-4711-ae9e-4b15e421c658",
+        "name": "iseries-managed-services-gold",
+        "description": "Monitoring Tool included for LPAR. Per LPAR use of automated monitoring service. Includes: • Real-time monitoring of message queues, problem log, disk and CPU usage, • Backup readiness and completion status. • E-mail alerting of selected issues Standard Plus additional services as follows: Creation of profiles (system application) - Ricoh will create user profiles based upon existing templates and communicate these profiles to the new users. - These requests must be based upon authorization lists provided by the customer. Creation of line/controller/ device - Ricoh will create new iSeries communication object configuration as needed by the customer. OUTQ creation and maintenance - Ricoh will create new print queues as required by the customer. TCPIP monitoring and maintenance - TCP/IP status of communication devices and configurations will be monitored, and Ricoh will determine and take appropriate action. - Purchase of monitoring application or availability of customer-provided application required. Monitor WRKSYSACT screen & terminate runaway jobs - Ricoh will monitor the WRKSYSACT screen for customers who have this utility, which is part of the IBM performance tools license program. - Ricoh will terminate ‘runaway’ jobs that are using excessive CPU or DASD to ensure system integrity. Monitor system service tools - Per-shift check of system service tools to check for hardware and licensed code errors. - Hardware errors will be escalated to IBM or any other service provider designated by the customer Maintain basic and core system security - Logs will be checked to ensure that system security is not breached. - Ricoh will also, upon customer request, advise as to changes in system values that can help maintain system security. Month-end scheduling and performance - Ricoh will monitor scheduled month-end processing to ensure system integrity and performance is maintained. Issues will be communicated to the customer per its escalation procedures. Ad-hoc requests for batch, SAV/RST, or other jobs - Ricoh will process batch jobs, save requests, and restore requests submitted by authorized customer personnel through the Ricoh NOC. - Save requests may require tapes to be returned from off-site storage at additional expense. - Ricoh will manage tape retrieval only if we are responsible for tape management. - 8/month Tape library maintenance - Management of online tape library system provided by customer or acquired through Ricoh, whether external (i.e., Recall or Iron Mountain), or online (i.e., BRMS, Robot/SAVE).",
+        "displayName": "iseries-managed-services-gold"
+      },
+      {
+        "id": "04377c22-befd-4b1f-9482-bf28dc31280e",
+        "name": "iseries-managed-services-platinum",
+        "description": "Monitoring Tool included for LPAR. Per LPAR use of automated monitoring service.  Includes:\n•\tReal-time monitoring of message queues, problem log, disk and CPU usage,\n•\tBackup readiness and completion status.\n•\tE-mail alerting of selected issues                                                                                                                                                                                                                                                                                                                     Gold Plus additional services as follows:                                                                                                                                                                                                                                                                                       System turning based on performance\n-\tRicoh will manage storage pools and job priorities to aid system performance.\nSystem configuration and recommendation based on customer growth\n-\tRicoh will recommend system upgrades, where necessary, in the event that system capacity is insufficient for established workload.\nPTF analysis, ordering and installation\n-\tRicoh will contact the customer to advise that a new cumulative PTF package should be installed.\n-\tThe package will be ordered and installed by Ricoh at a time agreed to by Ricoh and the customer.\n-\tRicoh will also recommend single PTFs based upon IBM advice to correct specific issues.\nCreation of CL programs\n-\tRicoh will write CL programs to assist the customer with operational issues and efficiencies.\n-\t4/month\nCustomer application maintenance\n-\tSAV/RST, stop/start, error repair, adds/deletes.\n-\tRicoh will troubleshoot errors and recommend fixes for CL- and RPG-based applications.\n-\tRicoh will assist with basic maintenance to customer applications.",
+        "displayName": "iseries-managed-services-platinum"
+      },
+      {
+        "id": "cd64a2f0-7bd6-40ac-94b6-389e69feeb34",
+        "name": "iseries-managed-services-std",
+        "description": "Monitoring Tool included for LPAR. Per LPAR use of automated monitoring service. Includes: • Real-time monitoring of message queues, problem log, disk and CPU usage, • Backup readiness and completion status. • E-mail alerting of selected issues Standard services as follows: Monitoring of QSYSOPR message queue - Regular monitoring of message queue to discover and escalate errors. - Purchase of monitoring application or availability of customer-provided application required. Monitoring status of line / controller / device - Monitoring and restart / retry of remote configuration devices as defined by customer. - Purchase of monitoring application or availability of customer-provided application required. Monitoring of CPU and DASD usage - Regular monitoring to ensure that prescribed usage levels are not exceeded. - Action to be taken as agreed to with customer. - Purchase of monitoring application or availability of customer-provided application required. Monitoring of job queues - Regular monitoring of job queues to ensure that queued job totals do not exceed prescribed levels. Monitor / restart writers - Print queues and write jobs monitored and error messages addressed as defined by customer. Reset profiles / passwords - Locked profiles can be reset by the Ricoh NOC. - The customer must provide a list of personnel authorized to approve such requests. - Existing passwords cannot be discovered; rather new passwords will be given and set to EXPIRED. Call escalation (customer defined) - Escalation procedures are jointly created by Ricoh and the customer. - Procedures are followed by the Ricoh NOC on a 24x7x365 basis.",
+        "displayName": "iseries-managed-services-std"
+      },
+      {
+        "id": "7a64bbb0-e509-4f44-af17-253b8ae782db",
+        "name": "managed-firewall-services",
+        "description": "Monitoring, Troubleshooting and remediation services for Network Security Appliance.\nMaintenance of the Security Rule Base per Customer Request.\nApplication of vendor provided patches and firmware updates as required or requested.\nRemote configuration for managed routers/switches, VLAN, Traffic priority config (QoS), Port assignments, DMZ creation and support for VPN.\nIncludes one troubleshooting/configuration incident per device per month.",
+        "displayName": "managed-firewall-services"
+      },
+      {
+        "id": "e3cb9969-9786-42e7-a468-80f0830fdca6",
+        "name": "server-management-windows-or-linuxos",
+        "description": "24x7 Staffed NOC for Real Time Monitoring & Management Resolution as described in IT Essentials Service Description Patch Management Trend Micro Antivirus Software (licensing & management)",
+        "displayName": "server-management-windows-or-linuxos"
+      }
+    ],
+    "description": "IBM ISeries Management",
+    "longDescription": "For nearly two decades, our IBM experts have helped companies with cost-effective solutions and support for their IBM i Power Systems. As a certified IBM delivery partner, we deliver industry-leading levels of security, redundancy, bandwidth, and expertise to meet business continuity and corporate operations requirements.\n\nYou can be confident in the security and continuity of your IBM systems with 24/7/365 Network Operations Center (NOC) support from trained technicians and redundant, scalable, dispersed, and secured SSAE16 Type II data centers.\n\nNetrix iSeries includes;\n- Automated Monitoring Service\n- Managed Services (Standard, Gold, and Platinum service levels)\n- HA Management per LPAR\n- Server Management",
+    "displayName": "Power VS and Wintel Managed Services by Netrix",
+    "imageUrl": "https://go.netrixglobal.com/netrixlogo-32px",
+    "localPngIcon": "/generated/icons/5b5ab101-8604-42ca-ad2e-537906446433.png"
   },
   {
     "id": "b260dfd6-9b79-4377-be6d-146a5cb59be8",
@@ -19004,12 +19100,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -20438,7 +20534,6 @@
       "windows"
     ],
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20480,7 +20575,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -22235,12 +22331,12 @@
       "wx"
     ],
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -22490,12 +22586,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",
