@@ -8909,14 +8909,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -49579,6 +49579,7 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49589,8 +49590,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -65860,14 +65860,14 @@
   {
     "id": "eccd3054-2b9f-4796-bf30-be0c847c5247",
     "_id": "eccd3054-2b9f-4796-bf30-be0c847c5247",
-    "_rev": "47-46f08b0997d4fc54df65cc95201359dc",
+    "_rev": "49-2abd8a5826b97100c09ad820eb747049",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:eccd3054-2b9f-4796-bf30-be0c847c5247",
     "name": "vistergy-ltd-construction-work-pack-compliance",
     "kind": "service",
     "overview_ui": {
       "en": {
         "display_name": "Construction Work Pack Compliance",
-        "long_description": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. Once writes are enabled, it can raise the service request that closes the gap, after you confirm it. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
+        "long_description": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the Advanced Work Packaging (AWP) standard, CII SR19-01 v2.0 from the Construction Industry Institute (CII). It sets 61 data requirements across 19 categories, extending the Capital Facilities Information Handover Specification (CFIHOS) for construction execution. No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. Once writes are enabled, it can raise the service request that closes the gap, after you confirm it. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
         "description": "Know your work packages are compliant before they reach the facility. Regulator-ready audit trail per finding."
       }
     },
@@ -65908,7 +65908,7 @@
       "name": "Vistergy Ltd"
     },
     "created": "2026-04-27T09:35:28.655859411-04:00",
-    "updated": "2026-10-29T06:42:51.80259726-04:00",
+    "updated": "2026-10-29T15:49:58.537988752-04:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/eccd3054-2b9f-4796-bf30-be0c847c5247?complete=true",
     "images": {
@@ -66016,15 +66016,15 @@
                 "title": "Ask in plain English, get structured answers"
               },
               {
-                "description": "No system connection is needed. Connect IBM Maximo and it reads work orders, service requests, and compliance docs from your MAS instance.",
+                "description": "No system connection is needed. Connect IBM Maximo and it reads work orders, service requests, and compliance docs.",
                 "title": "Works with or without a connection"
               },
               {
-                "description": "Detects when a question carries a write intent and surfaces the exact Maximo affordance, never auto-fires. Expert sign-off where it belongs.",
+                "description": "Detects when a question carries a write intent and surfaces the exact Maximo action, never auto-fires. Expert sign-off where it belongs.",
                 "title": "No phantom actions"
               },
               {
-                "description": "Every query carries a source-traced response. Built for nuclear, data centre, and CNI deployments where the audit IS the deliverable.",
+                "description": "Every query is audit-trailed. Built for nuclear, data centre and critical infrastructure deployments, where the audit is the deliverable.",
                 "title": "Audit-trailed by default, not as an option"
               }
             ],
@@ -66264,7 +66264,7 @@
       }
     ],
     "description": "Know your work packages are compliant before they reach the facility. Regulator-ready audit trail per finding.",
-    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the canonical AWP standard, CII SR19-01 v2.0 (60 data requirements across 19 categories, extending CFIHOS for construction execution). No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. Once writes are enabled, it can raise the service request that closes the gap, after you confirm it. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
+    "longDescription": "Know whether your construction work packages are compliant before they reach the facility, with a regulator-ready audit trail for every finding. Each package is scored against the Advanced Work Packaging (AWP) standard, CII SR19-01 v2.0 from the Construction Industry Institute (CII). It sets 61 data requirements across 19 categories, extending the Capital Facilities Information Handover Specification (CFIHOS) for construction execution. No system connection is needed. Connect IBM Maximo when you want it to read live work-pack state. Once writes are enabled, it can raise the service request that closes the gap, after you confirm it. Built for compliance officers verifying alignment, sponsors carrying sign-off, project directors reviewing readiness, and AWP coordinators building and fixing packs, in nuclear, energy, data centre, and LNG.",
     "displayName": "Construction Work Pack Compliance",
     "imageUrl": "https://atlas.vistergy.com/vistergy-logo.svg",
     "localSvgIcon": "/generated/icons/eccd3054-2b9f-4796-bf30-be0c847c5247.svg",
@@ -92730,9 +92730,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92744,7 +92741,10 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -118768,7 +118768,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -118779,7 +118778,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -126049,6 +126049,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -126059,8 +126060,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -137203,15 +137203,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-es",
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east",
-      "eu-es",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "paid",
@@ -144064,13 +144064,13 @@
           "storage"
         ],
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "pricing_tags": [
           "paid",
@@ -170789,14 +170789,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -181383,19 +181383,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "au-syd",
       "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "jp-osa",
+      "in-che",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid",
@@ -247628,8 +247628,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -281038,6 +281038,7 @@
       "windows"
     ],
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -281079,8 +281080,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -302532,12 +302532,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "eu-de",
-          "eu-gb",
-          "us-south",
           "au-syd",
           "ca-tor",
-          "jp-tok"
+          "jp-tok",
+          "eu-de",
+          "eu-gb",
+          "us-south"
         ],
         "pricing_tags": [
           "free",
