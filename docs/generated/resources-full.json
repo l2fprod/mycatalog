@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
-      "ca-tor",
-      "jp-tok"
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -102672,10 +102672,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -102683,7 +102679,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "pricing_tags": [
           "paygo"
@@ -118608,6 +118608,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -118622,8 +118623,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -118766,6 +118766,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -118776,8 +118777,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -126047,8 +126047,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -126058,7 +126056,9 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -137201,15 +137201,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-es"
     ],
     "pricing_tags": [
       "paid",
@@ -170787,14 +170787,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -182028,19 +182028,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "ca-tor",
-      "ca-mon",
-      "au-syd",
-      "in-che",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "ca-mon",
+      "au-syd",
+      "br-sao",
+      "jp-osa",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "in-che",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid",
@@ -274992,6 +274992,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Cloud Director Site",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.directorsite.svg",
     "localPngIcon": "/generated/icons/vmware.directorsite.png"
   },
   {
@@ -276094,6 +276095,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Virtual Data Center",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "localSvgIcon": "/generated/icons/vmware.vdc.svg",
     "localPngIcon": "/generated/icons/vmware.vdc.png"
   },
   {
@@ -314157,10 +314159,10 @@
           "iodine"
         ],
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "paid_only",
