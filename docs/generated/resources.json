@@ -686,14 +686,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -860,7 +860,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -868,7 +867,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -4174,6 +4174,7 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4184,8 +4185,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -6163,6 +6163,10 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6173,11 +6177,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -6781,15 +6781,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
       "us-south",
-      "eu-gb"
+      "eu-gb",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -10734,16 +10734,16 @@
     "geo_tags": [
       "br-sao",
       "in-che",
-      "jp-osa",
       "in-mum",
+      "ca-tor",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-mon",
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "ca-tor",
       "au-syd"
     ],
     "pricing_tags": [
@@ -16914,8 +16914,8 @@
       {
         "id": "4b975f2e-8605-4e06-9b28-249e78e17572",
         "name": "dedicated",
-        "description": "Pricing consists of:\n\n\n1. **Enterprise Vault Installation** for deployment instance and entitlements\n2. **Resource Units (RUs)** that measure monthly secrets usage across\n\n\nRUs provide a unified way to track usage for features such as static and dynamic secrets, PKI certificates and SSH credentials. Select the number of Resource Units needed for your expected workload.\n\nFor details on RU calculations, sizing guidance, and pricing examples, see the documentation.\n\nNote: This plan is currently in Beta. Pricing is subject to change when the service becomes generally available (GA).",
-        "displayName": "Vault Dedicated (Beta)",
+        "description": "Pricing consists of:\n\n\n1. **Enterprise Vault Installation** for deployment instance and entitlements\n2. **Resource Units (RUs)** that measure monthly secrets usage across secrets, keys, certificates and data protection operations RUs provide a unified way to track usage for features such as static and dynamic secrets, PKI certificates and SSH credentials.\n\n\nSelect the number of Resource Units needed for your expected workload.\n\nFor details on RU calculations, sizing guidance, and pricing examples, see the documentation.",
+        "displayName": "Vault Dedicated",
         "originalName": "standard"
       },
       {
@@ -17825,12 +17825,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -20526,6 +20526,7 @@
       "windows"
     ],
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20567,8 +20568,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -22323,12 +22323,12 @@
       "wx"
     ],
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "au-syd",
-      "ca-tor"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -22578,12 +22578,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",
