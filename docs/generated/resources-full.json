@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -12121,7 +12121,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12129,7 +12128,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "pricing_tags": [
       "paygo",
@@ -23478,15 +23478,15 @@
   {
     "id": "ee700ab3-6951-4c68-b541-a177f78eed53",
     "_id": "ee700ab3-6951-4c68-b541-a177f78eed53",
-    "_rev": "14-e12383133e0f69544758a0a1aa2ca2f3",
+    "_rev": "19-2bcb23ee0b220492402b31b48d687982",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:ee700ab3-6951-4c68-b541-a177f78eed53",
     "name": "automated-testing-and-monitoring-for-voice-and-chat",
     "kind": "service",
     "overview_ui": {
       "en": {
         "display_name": "Bespoken Automated Testing For IVR and Chat",
-        "long_description": "Bespoken is the AI-powered solution built to reduce the time, cost, and tedium of testing, monitoring, and scaling your contact center. \nOur platform automates testing, monitoring, and load simulation to ensure your voice and chatbot experiences are working exactly as they should — every time.\n\nBespoken helps your contact center deliver flawless customer interactions, reduce costs, and scale with confidence.  Our suite of tools ensures better customer experiences and better business outcomes.\n\nThe Bespoken platform consists of five products: Exploratory Testing, Functional Testing, Continuous Monitoring, Model/LLM Testing, and Load Testing.\n\nExploratory Testing, Functional Testing, and Continuous Monitoring are included in all Bespoken subscriptions (Self-Serve Professional, Guided Professional, and Enterprise).  Model/LLM Testing is available with Guided Professional and higher, and Load Testing is a separate product priced on the load test parameters. \n\n",
-        "description": "Bespoken is a leader in fully automated testing for IVR systems, conversational AI, and chatbots."
+        "long_description": "Bespoken AI is an automated testing and monitoring platform for Agentic AI and conversational customer experiences. Simulate real customer interactions to discover defects, validate customer journeys, evaluate AI behavior, test performance at scale, and continuously monitor production experiences across AI agents, chatbots, voice, and IVR applications.\n\nOne Platform. Every Test You Need.",
+        "description": "Bespoken AI automates testing and monitoring of AI agents, chatbots, voice, and IVR applications to ensure quality and reliability"
       }
     },
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ee700ab3-6951-4c68-b541-a177f78eed53/%2A",
@@ -23523,7 +23523,7 @@
       "name": "Bespoken"
     },
     "created": "2022-12-02T22:45:00.681Z",
-    "updated": "2025-06-26T15:01:17.265068117-04:00",
+    "updated": "2026-11-02T13:16:19.449919132-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/ee700ab3-6951-4c68-b541-a177f78eed53?complete=true",
     "images": {
@@ -23595,47 +23595,76 @@
           "en": {
             "bullets": [
               {
-                "description": "Automate discovery of missed test cases, dead ends & CX issues to improve IVR/chatbot design & accelerate development.",
+                "description": "Test AI agents, Agentic AI, LLMs, intents, responses, and AI-powered customer journeys using realistic interactions and scenarios.\n",
+                "title": "Agentic AI & Conversational Testing"
+              },
+              {
+                "description": "Automate repeatable tests to validate critical customer journeys and identify defects as applications evolve.\n",
+                "title": "Functional & Regression Testing"
+              },
+              {
+                "description": " Automatically explore customer experiences to uncover unexpected behaviors, edge cases, and defects.\n",
                 "title": "Exploratory Testing"
               },
               {
-                "description": "Automatically test voice/chatbot flows to catch bugs early, speed releases, and ensure smooth performance across platforms.",
-                "title": "Functional Testing"
+                "description": "Simulate high volumes of customer interactions to identify performance, capacity, and latency issues.\n",
+                "title": "Load & Performance Testing"
               },
               {
-                "description": "Monitor voice/chatbot 24/7. Get alerts for broken prompts or failures so you can fix issues before customers notice.",
-                "title": "Continuous Monitoring"
-              },
-              {
-                "description": "Test AI accuracy. Find missed intents & confusing phrasing to improve NLP understanding across diverse customer inputs.",
-                "title": "Model/LLM Testing"
-              },
-              {
-                "description": "Simulate high call volumes to find IVR/voicebot bottlenecks, optimize capacity, and ensure a reliable customer experience.",
-                "title": "Load Testing"
+                "description": "Continuously monitor customer experiences to detect failures, unexpected behavior, and degradation before they impact customers.\n",
+                "title": "24/7 Production Monitoring"
               }
             ],
             "media": [
               {
-                "caption": "Learn about the Bespoken Testing, Training and Monitoring solution for IVR.",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/-7yd0ZcBPdU"
+                "caption": "Bespoken automates testing, monitoring and load simulation for voice and chat customer experiences.",
+                "type": "image/jpg",
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/01+%C2%B7+Battle+Card.png"
               },
               {
+                "caption": "Bespoken virtual users calling and messaging a contact center and reporting results.",
                 "type": "image/jpg",
-                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/Dashboard.png"
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/02+%C2%B7+How+Bespoken+Works.png"
               },
               {
+                "caption": "Bespoken test editor comparing expected and actual IVR responses step by step.",
                 "type": "image/jpg",
-                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/Test+Page+Success.png"
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/03+%C2%B7+Functional+Testing.png"
               },
               {
+                "caption": "A failed test step highlighted in Bespoken, showing the expected versus actual response.",
                 "type": "image/jpg",
-                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/Test+Page.png"
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/04+%C2%B7+Pinpoint+Failures.png"
               },
               {
+                "caption": "Bespoken load testing results showing concurrent calls and performance metrics.",
                 "type": "image/jpg",
-                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/History+Page.png"
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/05+%C2%B7+Load+Testing.png"
+              },
+              {
+                "caption": "Bespoken AI Explorer validating responses from a Gen AI-powered voice or chat agent.",
+                "type": "image/jpg",
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/06+%C2%B7+AI+and+LLM+Validation.png"
+              },
+              {
+                "caption": "Bespoken monitoring dashboard with test run history, success rate and trends.",
+                "type": "image/jpg",
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/07+%C2%B7+Continuous+Monitoring.png"
+              },
+              {
+                "caption": "Channels and integrations supported by Bespoken, including phone, chat, WhatsApp and SMS.",
+                "type": "image/jpg",
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/08+%C2%B7+Channels+and+Integrations.png"
+              },
+              {
+                "caption": "Channels and integrations supported by Bespoken, including phone, chat, WhatsApp and SMS.",
+                "type": "image/jpg",
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/08+%C2%B7+Channels+and+Integrations.png"
+              },
+              {
+                "caption": "Results achieved by Bespoken customers.",
+                "type": "image/jpg",
+                "url": "https://bespoken-marketplace-docs.s3.us-east-1.amazonaws.com/09+%C2%B7+Customer+Results.png"
               }
             ]
           }
@@ -24234,8 +24263,8 @@
         "displayName": "Self-Serve Professional"
       }
     ],
-    "description": "Bespoken is a leader in fully automated testing for IVR systems, conversational AI, and chatbots.",
-    "longDescription": "Bespoken is the AI-powered solution built to reduce the time, cost, and tedium of testing, monitoring, and scaling your contact center. \nOur platform automates testing, monitoring, and load simulation to ensure your voice and chatbot experiences are working exactly as they should — every time.\n\nBespoken helps your contact center deliver flawless customer interactions, reduce costs, and scale with confidence.  Our suite of tools ensures better customer experiences and better business outcomes.\n\nThe Bespoken platform consists of five products: Exploratory Testing, Functional Testing, Continuous Monitoring, Model/LLM Testing, and Load Testing.\n\nExploratory Testing, Functional Testing, and Continuous Monitoring are included in all Bespoken subscriptions (Self-Serve Professional, Guided Professional, and Enterprise).  Model/LLM Testing is available with Guided Professional and higher, and Load Testing is a separate product priced on the load test parameters. \n\n",
+    "description": "Bespoken AI automates testing and monitoring of AI agents, chatbots, voice, and IVR applications to ensure quality and reliability",
+    "longDescription": "Bespoken AI is an automated testing and monitoring platform for Agentic AI and conversational customer experiences. Simulate real customer interactions to discover defects, validate customer journeys, evaluate AI behavior, test performance at scale, and continuously monitor production experiences across AI agents, chatbots, voice, and IVR applications.\n\nOne Platform. Every Test You Need.",
     "displayName": "Bespoken Automated Testing For IVR and Chat",
     "imageUrl": "https://dashboard.bespoken.ai/bespoken-icon.png",
     "localPngIcon": "/generated/icons/ee700ab3-6951-4c68-b541-a177f78eed53.png"
@@ -92728,10 +92757,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92742,7 +92767,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -118766,6 +118795,8 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -118775,9 +118806,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "che01"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -126047,7 +126076,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -126058,7 +126086,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -137201,6 +137230,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
@@ -137208,8 +137238,7 @@
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "pricing_tags": [
       "paid",
@@ -170787,14 +170816,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -173287,14 +173316,14 @@
           "security"
         ],
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -182030,15 +182059,15 @@
     "geo_tags": [
       "br-sao",
       "in-che",
-      "in-mum",
-      "ca-tor",
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "in-mum",
       "ca-mon",
       "au-syd"
     ],
@@ -221319,7 +221348,7 @@
   {
     "id": "466091c0-9b8d-11eb-8f8c-91e95378d441",
     "_id": "466091c0-9b8d-11eb-8f8c-91e95378d441",
-    "_rev": "53-081268c6869941ca5550fc7e784bd586",
+    "_rev": "54-56c5fc9c7c873986eefac1cbbc4b9874",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:466091c0-9b8d-11eb-8f8c-91e95378d441",
     "name": "openpages",
     "kind": "service",
@@ -221388,7 +221417,6 @@
       "custom_kind_service",
       "data_analytics",
       "eu-de",
-      "free",
       "global",
       "iam_compatible",
       "ibm_created",
@@ -221409,14 +221437,13 @@
     "pricing_tags": [
       "paid",
       "paid_only",
-      "allow_internal_users",
-      "free"
+      "allow_internal_users"
     ],
     "provider": {
       "name": "IBM"
     },
     "created": "2021-12-17T00:54:15.847Z",
-    "updated": "2026-08-24T00:57:11.243676616-04:00",
+    "updated": "2026-11-02T07:29:08.863109374-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441?complete=true",
     "images": {
@@ -223987,920 +224014,6 @@
         "description": "The Essentials plan is ideal for small organizations or departments within a larger organization who are looking to get started with a GRC solution. Also ideal to be used as a non-production environment.\n\nRefer to documentation for additional sizing guidance.",
         "displayName": "Essentials",
         "originalName": "enterprise-basic"
-      },
-      {
-        "id": "00867b51-d616-4116-bb53-d5176ec82d8c",
-        "_id": "00867b51-d616-4116-bb53-d5176ec82d8c",
-        "_rev": "28-5af7a56a0c252992327b40278bd50f63",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:00867b51-d616-4116-bb53-d5176ec82d8c",
-        "name": "saastrial",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Lite",
-            "long_description": "To access the trial instance, users must navigate to the \"watsonx.governance - OpenPages Beta\" on their IBM cloud account. In the resource list page, select the instance named \"watsonx.governance trial instance\".\n\nTrial plan services are limited for a 14-day period.\n\nAs this is a shared instance, customers must not upload confidential or proprietary data.",
-            "description": "To access the trial instance, users must navigate to the \"watsonx.governance - OpenPages Beta\" on their IBM cloud account. In the resource list page, select the instance named \"watsonx.governance trial instance\".\n\nTrial plan services are limited for a 14-day period.\n\nAs this is a shared instance, customers must not upload confidential or proprietary data."
-          }
-        },
-        "parent_id": "466091c0-9b8d-11eb-8f8c-91e95378d441",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/00867b51-d616-4116-bb53-d5176ec82d8c/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "ai",
-          "analytics",
-          "business_analytics",
-          "data_analytics",
-          "ibm_created",
-          "lite",
-          "rc_compatible",
-          "watson"
-        ],
-        "geo_tags": [
-          "global"
-        ],
-        "pricing_tags": [
-          "free",
-          "allow_internal_users"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "created": "2026-05-01T02:25:36.570887062-04:00",
-        "updated": "2026-05-18T13:51:32.155675583-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/00867b51-d616-4116-bb53-d5176ec82d8c?complete=true",
-        "images": {
-          "feature_image": "https://globalcatalog.test.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441/artifacts/cache/d3b25d0367f3e67469febb8a56bd9e9d/CloudOpenPagesWithWatson-light-theme.svg",
-          "image": "https://globalcatalog.test.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441/artifacts/cache/d3b25d0367f3e67469febb8a56bd9e9d/CloudOpenPagesWithWatson-light-theme.svg",
-          "medium_image": "https://globalcatalog.test.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441/artifacts/cache/d3b25d0367f3e67469febb8a56bd9e9d/CloudOpenPagesWithWatson-light-theme.svg",
-          "small_image": "https://globalcatalog.test.cloud.ibm.com/api/v1/466091c0-9b8d-11eb-8f8c-91e95378d441/artifacts/cache/d3b25d0367f3e67469febb8a56bd9e9d/CloudOpenPagesWithWatson-light-theme.svg"
-        },
-        "metadata": {
-          "rc_compatible": true,
-          "compliance": [
-            "minisd"
-          ],
-          "original_name": "enterprise-standard",
-          "service": {
-            "type": "",
-            "iam_compatible": true,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": true,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": false,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": [
-              {
-                "displayname": "AWS region",
-                "name": "aws_region",
-                "options": [
-                  {
-                    "displayname": "us-east-1",
-                    "value": "us-east-1"
-                  },
-                  {
-                    "displayname": "us-east-2",
-                    "value": "us-east-2"
-                  },
-                  {
-                    "displayname": "Test",
-                    "value": "us-west-1"
-                  }
-                ],
-                "placeholder": "Select an AWS region",
-                "required": true,
-                "type": "dropdown"
-              },
-              {
-                "displayname": "Base currency",
-                "name": "baseCurrency",
-                "options": [
-                  {
-                    "displayname": "USD - United States of America, Dollars",
-                    "value": "USD"
-                  },
-                  {
-                    "displayname": "AUD - Australian Dollar",
-                    "value": "AUD"
-                  },
-                  {
-                    "displayname": "CAD - Canadian Dollar",
-                    "value": "CAD"
-                  },
-                  {
-                    "displayname": "EUR - Euro",
-                    "value": "EUR"
-                  },
-                  {
-                    "displayname": "GBP - Pound Sterling",
-                    "value": "GBP"
-                  },
-                  {
-                    "displayname": "INR - Indian Rupee",
-                    "value": "INR"
-                  },
-                  {
-                    "displayname": "JPY - Yen",
-                    "value": "JPY"
-                  },
-                  {
-                    "displayname": "AED - UAE Dirham",
-                    "value": "AED"
-                  },
-                  {
-                    "displayname": "AFN - Afghan Afghani",
-                    "value": "AFN"
-                  },
-                  {
-                    "displayname": "ALL - Lek",
-                    "value": "ALL"
-                  },
-                  {
-                    "displayname": "AMD - Armenian Dram",
-                    "value": "AMD"
-                  },
-                  {
-                    "displayname": "ANG - Netherlands Antillian Guilder",
-                    "value": "ANG"
-                  },
-                  {
-                    "displayname": "AOA - Kwanza",
-                    "value": "AOA"
-                  },
-                  {
-                    "displayname": "ARS - Argentine Peso",
-                    "value": "ARS"
-                  },
-                  {
-                    "displayname": "AWG - Aruban Guilder",
-                    "value": "AWG"
-                  },
-                  {
-                    "displayname": "AZN - Azerbaijanian Manat",
-                    "value": "AZN"
-                  },
-                  {
-                    "displayname": "BAM - Convertible Marks",
-                    "value": "BAM"
-                  },
-                  {
-                    "displayname": "BBD - Barbados Dollar",
-                    "value": "BBD"
-                  },
-                  {
-                    "displayname": "BDT - Taka",
-                    "value": "BDT"
-                  },
-                  {
-                    "displayname": "BGN - Bulgarian Lev",
-                    "value": "BGN"
-                  },
-                  {
-                    "displayname": "BHD - Bahraini Dinar",
-                    "value": "BHD"
-                  },
-                  {
-                    "displayname": "BIF - Burundi Franc",
-                    "value": "BIF"
-                  },
-                  {
-                    "displayname": "BMD - Bermudian Dollar",
-                    "value": "BMD"
-                  },
-                  {
-                    "displayname": "BND - Brunei Dollar",
-                    "value": "BND"
-                  },
-                  {
-                    "displayname": "BOB - Boliviano",
-                    "value": "BOB"
-                  },
-                  {
-                    "displayname": "BOV - Mvdol",
-                    "value": "BOV"
-                  },
-                  {
-                    "displayname": "BRL - Brazilian Real",
-                    "value": "BRL"
-                  },
-                  {
-                    "displayname": "BSD - Bahamian Dollar",
-                    "value": "BSD"
-                  },
-                  {
-                    "displayname": "BTN - Ngultrum",
-                    "value": "BTN"
-                  },
-                  {
-                    "displayname": "BWP - Pula",
-                    "value": "BWP"
-                  },
-                  {
-                    "displayname": "BYN - Belarusian Ruble",
-                    "value": "BYN"
-                  },
-                  {
-                    "displayname": "BYR - Belarussian Ruble",
-                    "value": "BYR"
-                  },
-                  {
-                    "displayname": "BZD - Belize Dollar",
-                    "value": "BZD"
-                  },
-                  {
-                    "displayname": "CDF - Franc Congolais",
-                    "value": "CDF"
-                  },
-                  {
-                    "displayname": "CHE - WIR Euro",
-                    "value": "CHE"
-                  },
-                  {
-                    "displayname": "CHF - Swiss Franc",
-                    "value": "CHF"
-                  },
-                  {
-                    "displayname": "CHW - WIR Franc",
-                    "value": "CHW"
-                  },
-                  {
-                    "displayname": "CLF - Unidades de formento",
-                    "value": "CLF"
-                  },
-                  {
-                    "displayname": "CLP - Chilean Peso",
-                    "value": "CLP"
-                  },
-                  {
-                    "displayname": "CNH - Yuan Renminbi Offshore",
-                    "value": "CNH"
-                  },
-                  {
-                    "displayname": "CNY - Yuan Renminbi",
-                    "value": "CNY"
-                  },
-                  {
-                    "displayname": "COP - Colombian Peso",
-                    "value": "COP"
-                  },
-                  {
-                    "displayname": "COU - Unidad de Valor Real",
-                    "value": "COU"
-                  },
-                  {
-                    "displayname": "CRC - Costa Rican Colon",
-                    "value": "CRC"
-                  },
-                  {
-                    "displayname": "CSD - Serbian Dinar",
-                    "value": "CSD"
-                  },
-                  {
-                    "displayname": "CUC - Peso Convertible",
-                    "value": "CUC"
-                  },
-                  {
-                    "displayname": "CUP - Cuban Peso",
-                    "value": "CUP"
-                  },
-                  {
-                    "displayname": "CVE - Cape Verde Escudo",
-                    "value": "CVE"
-                  },
-                  {
-                    "displayname": "CYP - Cyprus Pound",
-                    "value": "CYP"
-                  },
-                  {
-                    "displayname": "CZK - Czech Koruna",
-                    "value": "CZK"
-                  },
-                  {
-                    "displayname": "DJF - Djibouti Franc",
-                    "value": "DJF"
-                  },
-                  {
-                    "displayname": "DKK - Danish Krone",
-                    "value": "DKK"
-                  },
-                  {
-                    "displayname": "DOP - Dominican Peso",
-                    "value": "DOP"
-                  },
-                  {
-                    "displayname": "DZD - Algerian Dinar",
-                    "value": "DZD"
-                  },
-                  {
-                    "displayname": "EEK - Kroon",
-                    "value": "EEK"
-                  },
-                  {
-                    "displayname": "EGP - Egyptian Pound",
-                    "value": "EGP"
-                  },
-                  {
-                    "displayname": "ERN - Nakfa",
-                    "value": "ERN"
-                  },
-                  {
-                    "displayname": "ETB - Ethiopian Birr",
-                    "value": "ETB"
-                  },
-                  {
-                    "displayname": "FJD - Fiji Dollar",
-                    "value": "FJD"
-                  },
-                  {
-                    "displayname": "FKP - Falkland Islands Pound",
-                    "value": "FKP"
-                  },
-                  {
-                    "displayname": "GEL - Lari",
-                    "value": "GEL"
-                  },
-                  {
-                    "displayname": "GHC - Cedi",
-                    "value": "GHC"
-                  },
-                  {
-                    "displayname": "GHS - Ghana Cedi",
-                    "value": "GHS"
-                  },
-                  {
-                    "displayname": "GIP - Gibraltar Pound",
-                    "value": "GIP"
-                  },
-                  {
-                    "displayname": "GMD - Dalasi",
-                    "value": "GMD"
-                  },
-                  {
-                    "displayname": "GNF - Guinea Franc",
-                    "value": "GNF"
-                  },
-                  {
-                    "displayname": "GTQ - Quetzal",
-                    "value": "GTQ"
-                  },
-                  {
-                    "displayname": "GWP - Guinea-Bissau Peso",
-                    "value": "GWP"
-                  },
-                  {
-                    "displayname": "GYD - Guyana Dollar",
-                    "value": "GYD"
-                  },
-                  {
-                    "displayname": "HKD - Hong Kong Dollar",
-                    "value": "HKD"
-                  },
-                  {
-                    "displayname": "HNL - Lempira",
-                    "value": "HNL"
-                  },
-                  {
-                    "displayname": "HRK - Croatian Kuna",
-                    "value": "HRK"
-                  },
-                  {
-                    "displayname": "HTG - Gourde",
-                    "value": "HTG"
-                  },
-                  {
-                    "displayname": "HUF - Forint",
-                    "value": "HUF"
-                  },
-                  {
-                    "displayname": "IDR - Rupiah",
-                    "value": "IDR"
-                  },
-                  {
-                    "displayname": "ILS - New Israeli Sheqel",
-                    "value": "ILS"
-                  },
-                  {
-                    "displayname": "IQD - Iraqi Dinar",
-                    "value": "IQD"
-                  },
-                  {
-                    "displayname": "IRR - Iranian Rial",
-                    "value": "IRR"
-                  },
-                  {
-                    "displayname": "ISK - Iceland Krona",
-                    "value": "ISK"
-                  },
-                  {
-                    "displayname": "JMD - Jamaican Dollar",
-                    "value": "JMD"
-                  },
-                  {
-                    "displayname": "JOD - Jordanian Dinar",
-                    "value": "JOD"
-                  },
-                  {
-                    "displayname": "KES - Kenyan Shilling",
-                    "value": "KES"
-                  },
-                  {
-                    "displayname": "KGS - Som",
-                    "value": "KGS"
-                  },
-                  {
-                    "displayname": "KHR - Riel",
-                    "value": "KHR"
-                  },
-                  {
-                    "displayname": "KMF - Comoro Franc",
-                    "value": "KMF"
-                  },
-                  {
-                    "displayname": "KPW - North Korean Won",
-                    "value": "KPW"
-                  },
-                  {
-                    "displayname": "KRW - Won",
-                    "value": "KRW"
-                  },
-                  {
-                    "displayname": "KWD - Kuwaiti Dinar",
-                    "value": "KWD"
-                  },
-                  {
-                    "displayname": "KYD - Cayman Islands Dollar",
-                    "value": "KYD"
-                  },
-                  {
-                    "displayname": "KZT - Tenge",
-                    "value": "KZT"
-                  },
-                  {
-                    "displayname": "LAK - Kip",
-                    "value": "LAK"
-                  },
-                  {
-                    "displayname": "LBP - Lebanese Pound",
-                    "value": "LBP"
-                  },
-                  {
-                    "displayname": "LKR - Sri Lanka Rupee",
-                    "value": "LKR"
-                  },
-                  {
-                    "displayname": "LRD - Liberian Dollar",
-                    "value": "LRD"
-                  },
-                  {
-                    "displayname": "LSL - Loti",
-                    "value": "LSL"
-                  },
-                  {
-                    "displayname": "LTL - Lithuanian Litas",
-                    "value": "LTL"
-                  },
-                  {
-                    "displayname": "LVL - Latvian Lats",
-                    "value": "LVL"
-                  },
-                  {
-                    "displayname": "LYD - Libyan Dinar",
-                    "value": "LYD"
-                  },
-                  {
-                    "displayname": "MAD - Moroccan Dirham",
-                    "value": "MAD"
-                  },
-                  {
-                    "displayname": "MDL - Moldovan Leu",
-                    "value": "MDL"
-                  },
-                  {
-                    "displayname": "MGA - Malagascy Ariary",
-                    "value": "MGA"
-                  },
-                  {
-                    "displayname": "MKD - Denar",
-                    "value": "MKD"
-                  },
-                  {
-                    "displayname": "MMK - Kyat",
-                    "value": "MMK"
-                  },
-                  {
-                    "displayname": "MNT - Tugrik",
-                    "value": "MNT"
-                  },
-                  {
-                    "displayname": "MOP - Pataca",
-                    "value": "MOP"
-                  },
-                  {
-                    "displayname": "MRO - Old Ouguiya",
-                    "value": "MRO"
-                  },
-                  {
-                    "displayname": "MRU - Ouguiya",
-                    "value": "MRU"
-                  },
-                  {
-                    "displayname": "MTL - Maltese Lira",
-                    "value": "MTL"
-                  },
-                  {
-                    "displayname": "MUR - Mauritius Rupee",
-                    "value": "MUR"
-                  },
-                  {
-                    "displayname": "MVR - Rufiyaa",
-                    "value": "MVR"
-                  },
-                  {
-                    "displayname": "MWK - Malawi Kwacha",
-                    "value": "MWK"
-                  },
-                  {
-                    "displayname": "MXN - Mexican Peso",
-                    "value": "MXN"
-                  },
-                  {
-                    "displayname": "MXV - Mexican Unidad de Inversion (UID)",
-                    "value": "MXV"
-                  },
-                  {
-                    "displayname": "MYR - Malaysian Ringgit",
-                    "value": "MYR"
-                  },
-                  {
-                    "displayname": "MZN - Metical",
-                    "value": "MZN"
-                  },
-                  {
-                    "displayname": "NAD - Namibian Dollar",
-                    "value": "NAD"
-                  },
-                  {
-                    "displayname": "NGN - Naira",
-                    "value": "NGN"
-                  },
-                  {
-                    "displayname": "NIO - Cordoba Oro",
-                    "value": "NIO"
-                  },
-                  {
-                    "displayname": "NOK - Norwegian Krone",
-                    "value": "NOK"
-                  },
-                  {
-                    "displayname": "NPR - Nepalese Rupee",
-                    "value": "NPR"
-                  },
-                  {
-                    "displayname": "NZD - New Zealand Dollar",
-                    "value": "NZD"
-                  },
-                  {
-                    "displayname": "OMR - Rial Omani",
-                    "value": "OMR"
-                  },
-                  {
-                    "displayname": "PAB - Balboa",
-                    "value": "PAB"
-                  },
-                  {
-                    "displayname": "PEN - Nuevo Sol",
-                    "value": "PEN"
-                  },
-                  {
-                    "displayname": "PGK - Kina",
-                    "value": "PGK"
-                  },
-                  {
-                    "displayname": "PHP - Philippine Peso",
-                    "value": "PHP"
-                  },
-                  {
-                    "displayname": "PKR - Pakistan Rupee",
-                    "value": "PKR"
-                  },
-                  {
-                    "displayname": "PLN - Zloty",
-                    "value": "PLN"
-                  },
-                  {
-                    "displayname": "PYG - Guarani",
-                    "value": "PYG"
-                  },
-                  {
-                    "displayname": "QAR - Qatari Rial",
-                    "value": "QAR"
-                  },
-                  {
-                    "displayname": "ROL - Old Leu",
-                    "value": "ROL"
-                  },
-                  {
-                    "displayname": "RON - New Leu",
-                    "value": "RON"
-                  },
-                  {
-                    "displayname": "RSD - New Serbian Dinar",
-                    "value": "RSD"
-                  },
-                  {
-                    "displayname": "RUB - Russian Ruble",
-                    "value": "RUB"
-                  },
-                  {
-                    "displayname": "RWF - Rwanda Franc",
-                    "value": "RWF"
-                  },
-                  {
-                    "displayname": "SAR - Saudi Riyal",
-                    "value": "SAR"
-                  },
-                  {
-                    "displayname": "SBD - Solomon Islands Dollar",
-                    "value": "SBD"
-                  },
-                  {
-                    "displayname": "SCR - Seychelles Rupee",
-                    "value": "SCR"
-                  },
-                  {
-                    "displayname": "SDD - Sudanese Dinar",
-                    "value": "SDD"
-                  },
-                  {
-                    "displayname": "SDG - Sudanese Pound",
-                    "value": "SDG"
-                  },
-                  {
-                    "displayname": "SEK - Swedish Krona",
-                    "value": "SEK"
-                  },
-                  {
-                    "displayname": "SGD - Singapore Dollar",
-                    "value": "SGD"
-                  },
-                  {
-                    "displayname": "SHP - Saint Helena Pound",
-                    "value": "SHP"
-                  },
-                  {
-                    "displayname": "SIT - Tolar",
-                    "value": "SIT"
-                  },
-                  {
-                    "displayname": "SKK - Slovak Koruna",
-                    "value": "SKK"
-                  },
-                  {
-                    "displayname": "SLL - Leone",
-                    "value": "SLL"
-                  },
-                  {
-                    "displayname": "SOS - Somali Shilling",
-                    "value": "SOS"
-                  },
-                  {
-                    "displayname": "SRD - Surinam Dollar",
-                    "value": "SRD"
-                  },
-                  {
-                    "displayname": "SSP - South Sudanese Pound",
-                    "value": "SSP"
-                  },
-                  {
-                    "displayname": "STD - Old Dobra",
-                    "value": "STD"
-                  },
-                  {
-                    "displayname": "STN - Dobra",
-                    "value": "STN"
-                  },
-                  {
-                    "displayname": "SVC - El Salvador Colon",
-                    "value": "SVC"
-                  },
-                  {
-                    "displayname": "SYP - Syrian Pound",
-                    "value": "SYP"
-                  },
-                  {
-                    "displayname": "SZL - Lilangeni",
-                    "value": "SZL"
-                  },
-                  {
-                    "displayname": "THB - Baht",
-                    "value": "THB"
-                  },
-                  {
-                    "displayname": "TJS - Somoni",
-                    "value": "TJS"
-                  },
-                  {
-                    "displayname": "TMM - Manat",
-                    "value": "TMM"
-                  },
-                  {
-                    "displayname": "TMT - Turkmenistan New Manat",
-                    "value": "TMT"
-                  },
-                  {
-                    "displayname": "TND - Tunisian Dinar",
-                    "value": "TND"
-                  },
-                  {
-                    "displayname": "TOP - Paanga",
-                    "value": "TOP"
-                  },
-                  {
-                    "displayname": "TRY - New Turkish Lira",
-                    "value": "TRY"
-                  },
-                  {
-                    "displayname": "TTD - Trinidad and Tobago Dollar",
-                    "value": "TTD"
-                  },
-                  {
-                    "displayname": "TWD - New Taiwan Dollar",
-                    "value": "TWD"
-                  },
-                  {
-                    "displayname": "TZS - Tanzanian Shilling",
-                    "value": "TZS"
-                  },
-                  {
-                    "displayname": "UAH - Hryvnia",
-                    "value": "UAH"
-                  },
-                  {
-                    "displayname": "UGX - Uganda Shilling",
-                    "value": "UGX"
-                  },
-                  {
-                    "displayname": "USN - US Dollar (Next day)",
-                    "value": "USN"
-                  },
-                  {
-                    "displayname": "USS - US Dollar (Same day)",
-                    "value": "USS"
-                  },
-                  {
-                    "displayname": "UYI - Uruguay Peso en Unidades",
-                    "value": "UYI"
-                  },
-                  {
-                    "displayname": "UYU - Peso Uruguayo",
-                    "value": "UYU"
-                  },
-                  {
-                    "displayname": "UYW - Unidad Previsional",
-                    "value": "UYW"
-                  },
-                  {
-                    "displayname": "UZS - Uzbekistan Sum",
-                    "value": "UZS"
-                  },
-                  {
-                    "displayname": "VEB - Bolivar",
-                    "value": "VEB"
-                  },
-                  {
-                    "displayname": "VED - Bolivar Soberano",
-                    "value": "VED"
-                  },
-                  {
-                    "displayname": "VEF - Bolivar Fuerte",
-                    "value": "VEF"
-                  },
-                  {
-                    "displayname": "VES - Old Bolivar Soberano",
-                    "value": "VES"
-                  },
-                  {
-                    "displayname": "VND - Dong",
-                    "value": "VND"
-                  },
-                  {
-                    "displayname": "VUV - Vatu",
-                    "value": "VUV"
-                  },
-                  {
-                    "displayname": "WST - Tala",
-                    "value": "WST"
-                  },
-                  {
-                    "displayname": "XAF - CFA Franc BEAC",
-                    "value": "XAF"
-                  },
-                  {
-                    "displayname": "XCD - East Caribbean Dollar",
-                    "value": "XCD"
-                  },
-                  {
-                    "displayname": "XDR - SDR",
-                    "value": "XDR"
-                  },
-                  {
-                    "displayname": "XOF - CFA Franc BCEAO",
-                    "value": "XOF"
-                  },
-                  {
-                    "displayname": "XPF - CFP Franc",
-                    "value": "XPF"
-                  },
-                  {
-                    "displayname": "YER - Yemeni Rial",
-                    "value": "YER"
-                  },
-                  {
-                    "displayname": "ZAR - Rand",
-                    "value": "ZAR"
-                  },
-                  {
-                    "displayname": "ZMK - Zambia Kwacha",
-                    "value": "ZMK"
-                  },
-                  {
-                    "displayname": "ZMW - New Zambia Kwacha",
-                    "value": "ZMW"
-                  },
-                  {
-                    "displayname": "ZWD - Zimbabwe Dollar",
-                    "value": "ZWD"
-                  },
-                  {
-                    "displayname": "ZWL - New Zimbabwe Dollar",
-                    "value": "ZWL"
-                  }
-                ],
-                "placeholder": "Select a base currency",
-                "required": true,
-                "type": "dropdown",
-                "value": "USD"
-              }
-            ]
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "side_by_side_index": 1,
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "This plan offers access to a shared instance of the watsonx Governance Console for evaluation and familiarization of the solution."
-                  },
-                  {
-                    "description": "The environment includes pre-configured workflows, dashboards, and sample data, which may be viewed and/or edited by all trial users."
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "free",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/00867b51-d616-4116-bb53-d5176ec82d8c/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          },
-          "sla": {
-            "dr": {
-              "dr": true
-            }
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "To access the trial instance, users must navigate to the \"watsonx.governance - OpenPages Beta\" on their IBM cloud account. In the resource list page, select the instance named \"watsonx.governance trial instance\".\n\nTrial plan services are limited for a 14-day period.\n\nAs this is a shared instance, customers must not upload confidential or proprietary data.",
-        "displayName": "Lite",
-        "originalName": "enterprise-standard"
       },
       {
         "id": "14ff5194-305e-464a-8d7d-14466f34dd2f",
@@ -248706,50 +247819,50 @@
       {
         "id": "850b21a7-71de-4e53-9441-1abdd202f35d",
         "_id": "850b21a7-71de-4e53-9441-1abdd202f35d",
-        "_rev": "39-33c4129802442f4ba7522c4f83a9ea25",
+        "_rev": "42-f2f4188556d5af40cc931602916ec555",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:850b21a7-71de-4e53-9441-1abdd202f35d",
         "name": "open",
         "kind": "plan",
         "overview_ui": {
           "de": {
             "display_name": "Open",
-            "long_description": "Bietet zehn Minuten kostenlose Laufzeit pro Monat auf ausgewählten IBM Quantencomputern. Nach Erreichen des Limits werden Workloads blockiert und es fallen keine zusätzlichen Gebühren an.",
-            "description": "Bietet zehn Minuten kostenlose Laufzeit pro Monat auf ausgewählten IBM Quantencomputern. Nach Erreichen des Limits werden Workloads blockiert und es fallen keine zusätzlichen Gebühren an."
+            "long_description": "Stellt Ressourceneinheiten bereit, die pro Monat bis zu 10 Minuten kostenlose Laufzeit auf ausgewählten IBM -Quantencomputern ermöglichen. Sobald das Limit erreicht ist, werden die Workloads blockiert und es fallen keine Kosten mehr an.",
+            "description": "Stellt Ressourceneinheiten bereit, die pro Monat bis zu 10 Minuten kostenlose Laufzeit auf ausgewählten IBM -Quantencomputern ermöglichen. Sobald das Limit erreicht ist, werden die Workloads blockiert und es fallen keine Kosten mehr an."
           },
           "en": {
             "display_name": "Open",
-            "long_description": "Provides ten minutes free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no additional charges will occur.",
-            "description": "Provides ten minutes free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no additional charges will occur."
+            "long_description": "Provides resource units enabling up to 10 minutes of free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no charges will occur.",
+            "description": "Provides resource units enabling up to 10 minutes of free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no charges will occur."
           },
           "es": {
             "display_name": "Open",
-            "long_description": "Proporciona diez minutos de tiempo de ejecución gratuito al mes en determinados ordenadores cuánticos de IBM. Una vez alcanzado el límite, las cargas de trabajo se bloquearán y no se generarán cargos adicionales.",
-            "description": "Proporciona diez minutos de tiempo de ejecución gratuito al mes en determinados ordenadores cuánticos de IBM. Una vez alcanzado el límite, las cargas de trabajo se bloquearán y no se generarán cargos adicionales."
+            "long_description": "Ofrece unidades de recursos que permiten hasta 10 minutos de tiempo de ejecución gratuito al mes en determinados ordenadores cuánticos de IBM. Una vez alcanzado el límite, se bloquearán las cargas de trabajo y no se aplicará ningún cargo.",
+            "description": "Ofrece unidades de recursos que permiten hasta 10 minutos de tiempo de ejecución gratuito al mes en determinados ordenadores cuánticos de IBM. Una vez alcanzado el límite, se bloquearán las cargas de trabajo y no se aplicará ningún cargo."
           },
           "fr": {
             "display_name": "Open",
-            "long_description": "Offre dix minutes de temps d'exécution gratuit par mois sur certains ordinateurs quantiques IBM. Une fois la limite atteinte, les charges de travail seront bloquées et aucun frais supplémentaire ne sera facturé.",
-            "description": "Offre dix minutes de temps d'exécution gratuit par mois sur certains ordinateurs quantiques IBM. Une fois la limite atteinte, les charges de travail seront bloquées et aucun frais supplémentaire ne sera facturé."
+            "long_description": "Fournit des unités de ressources permettant jusqu'à 10 minutes de temps d'exécution gratuit par mois sur certains ordinateurs quantiques d' IBM. Une fois la limite atteinte, les charges de travail seront bloquées et aucune facturation n'aura lieu.",
+            "description": "Fournit des unités de ressources permettant jusqu'à 10 minutes de temps d'exécution gratuit par mois sur certains ordinateurs quantiques d' IBM. Une fois la limite atteinte, les charges de travail seront bloquées et aucune facturation n'aura lieu."
           },
           "it": {
             "display_name": "Open",
-            "long_description": "Offre dieci minuti di runtime gratuito al mese su computer quantistici IBM selezionati. Una volta raggiunto il limite, i carichi di lavoro verranno bloccati e non ci saranno ulteriori addebiti.",
-            "description": "Offre dieci minuti di runtime gratuito al mese su computer quantistici IBM selezionati. Una volta raggiunto il limite, i carichi di lavoro verranno bloccati e non ci saranno ulteriori addebiti."
+            "long_description": "Fornisce unità di risorse che consentono fino a 10 minuti di tempo di esecuzione gratuito al mese su determinati computer quantistici IBM. Una volta raggiunto il limite, i carichi di lavoro verranno bloccati e non verrà addebitato alcun costo.",
+            "description": "Fornisce unità di risorse che consentono fino a 10 minuti di tempo di esecuzione gratuito al mese su determinati computer quantistici IBM. Una volta raggiunto il limite, i carichi di lavoro verranno bloccati e non verrà addebitato alcun costo."
           },
           "ja": {
             "display_name": "Open",
-            "long_description": "一部の IBM 量子コンピュータで毎月10分間の無料実行時間を提供。 制限に達するとワークロードはブロックされ、追加料金は発生しません。",
-            "description": "一部の IBM 量子コンピュータで毎月10分間の無料実行時間を提供。 制限に達するとワークロードはブロックされ、追加料金は発生しません。"
+            "long_description": "特定の IBM 量子コンピュータにおいて、毎月最大10分間の無料実行時間を可能にするリソースユニットを提供します。 制限に達すると、ワークロードはブロックされ、課金は発生しません。",
+            "description": "特定の IBM 量子コンピュータにおいて、毎月最大10分間の無料実行時間を可能にするリソースユニットを提供します。 制限に達すると、ワークロードはブロックされ、課金は発生しません。"
           },
           "ko": {
             "display_name": "Open",
-            "long_description": "선택된 IBM 양자 컴퓨터에서 매월 10분의 무료 실행 시간을 제공합니다. 한계가 충족되면 워크로드가 차단되며 추가 요금이 발생하지 않습니다.",
-            "description": "선택된 IBM 양자 컴퓨터에서 매월 10분의 무료 실행 시간을 제공합니다. 한계가 충족되면 워크로드가 차단되며 추가 요금이 발생하지 않습니다."
+            "long_description": "일부 IBM 양자 컴퓨터에서 매월 최대 10분간의 무료 실행 시간을 이용할 수 있는 리소스 유닛을 제공합니다. 한도에 도달하면 워크로드가 차단되며 요금이 부과되지 않습니다.",
+            "description": "일부 IBM 양자 컴퓨터에서 매월 최대 10분간의 무료 실행 시간을 이용할 수 있는 리소스 유닛을 제공합니다. 한도에 도달하면 워크로드가 차단되며 요금이 부과되지 않습니다."
           },
           "pt": {
             "display_name": "Open",
-            "long_description": "Oferece dez minutos de tempo de execução gratuito por mês em computadores quantum IBM selecionados. Depois que o limite for atingido, as cargas de trabalho serão bloqueadas e não haverá cobranças adicionais.",
-            "description": "Oferece dez minutos de tempo de execução gratuito por mês em computadores quantum IBM selecionados. Depois que o limite for atingido, as cargas de trabalho serão bloqueadas e não haverá cobranças adicionais."
+            "long_description": "Oferece unidades de recursos que permitem até 10 minutos de tempo de execução gratuito por mês em computadores quânticos selecionados da IBM. Após o limite ser atingido, as cargas de trabalho serão bloqueadas e não haverá cobrança.",
+            "description": "Oferece unidades de recursos que permitem até 10 minutos de tempo de execução gratuito por mês em computadores quânticos selecionados da IBM. Após o limite ser atingido, as cargas de trabalho serão bloqueadas e não haverá cobrança."
           }
         },
         "parent_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
@@ -248767,14 +247880,14 @@
           "us-east"
         ],
         "pricing_tags": [
-          "free",
-          "allow_internal_users"
+          "allow_internal_users",
+          "free"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2025-02-13T13:07:57.02203347-05:00",
-        "updated": "2026-10-02T10:38:28.549268403-04:00",
+        "updated": "2026-11-02T15:56:56.124543522-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/850b21a7-71de-4e53-9441-1abdd202f35d?complete=true",
         "images": {
@@ -248848,57 +247961,57 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Provides ten minutes free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no additional charges will occur.",
+        "description": "Provides resource units enabling up to 10 minutes of free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no charges will occur.",
         "displayName": "Open",
         "originalName": "open"
       },
       {
         "id": "5304b575-3cff-4455-90dc-ae4367762093",
         "_id": "5304b575-3cff-4455-90dc-ae4367762093",
-        "_rev": "130-55e1c9dc93b5719fe2cd065d27c2869a",
+        "_rev": "133-29aabb62c1c27090037843c4cea97d79",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5304b575-3cff-4455-90dc-ae4367762093",
         "name": "paygo-standard",
         "kind": "plan",
         "overview_ui": {
           "de": {
             "display_name": "Pay-as-you-go",
-            "long_description": "Bezahlen Sie für den IBM-Quantencomputerzugang, den Sie nutzen. Wird pro Sekunde der Nutzung abgerechnet.",
-            "description": "Bezahlen Sie für den IBM-Quantencomputerzugang, den Sie nutzen. Wird pro Sekunde der Nutzung abgerechnet."
+            "long_description": "Bezahlen Sie für den IBM-Quantencomputerzugang, den Sie nutzen. Die Abrechnung erfolgt pro verbrauchter Ressourceneinheit.",
+            "description": "Bezahlen Sie für den IBM-Quantencomputerzugang, den Sie nutzen. Die Abrechnung erfolgt pro verbrauchter Ressourceneinheit."
           },
           "en": {
             "display_name": "Pay-as-you-go",
-            "long_description": "Pay for the IBM quantum computer access you use. Billed per second of usage.",
-            "description": "Pay for the IBM quantum computer access you use. Billed per second of usage."
+            "long_description": "Pay for the IBM quantum computer access you use. Billed per resource unit consumed.",
+            "description": "Pay for the IBM quantum computer access you use. Billed per resource unit consumed."
           },
           "es": {
             "display_name": "Pay-as-you-go",
-            "long_description": "Pague por el acceso que utilice al ordenador cuántico de IBM. Se factura por segundo de uso.",
-            "description": "Pague por el acceso que utilice al ordenador cuántico de IBM. Se factura por segundo de uso."
+            "long_description": "Pague por el acceso que utilice al ordenador cuántico de IBM. Se factura por unidad de recurso consumida.",
+            "description": "Pague por el acceso que utilice al ordenador cuántico de IBM. Se factura por unidad de recurso consumida."
           },
           "fr": {
             "display_name": "Pay-as-you-go",
-            "long_description": "Payez pour l'accès que vous utilisez à l'ordinateur quantique IBM. Facturation par seconde d'utilisation.",
-            "description": "Payez pour l'accès que vous utilisez à l'ordinateur quantique IBM. Facturation par seconde d'utilisation."
+            "long_description": "Payez pour l'accès que vous utilisez à l'ordinateur quantique IBM. Facturation par unité de ressource consommée.",
+            "description": "Payez pour l'accès que vous utilisez à l'ordinateur quantique IBM. Facturation par unité de ressource consommée."
           },
           "it": {
             "display_name": "Pay-as-you-go",
-            "long_description": "Paga per l'accesso al computer quantistico IBM che utilizzi. Fatturazione per secondo di utilizzo.",
-            "description": "Paga per l'accesso al computer quantistico IBM che utilizzi. Fatturazione per secondo di utilizzo."
+            "long_description": "Paga per l'accesso al computer quantistico IBM che utilizzi. Addebito in base alle unità di risorsa consumate.",
+            "description": "Paga per l'accesso al computer quantistico IBM che utilizzi. Addebito in base alle unità di risorsa consumate."
           },
           "ja": {
             "display_name": "Pay-as-you-go",
-            "long_description": "IBM 量子コンピュータの利用料金を支払う。 使用量1秒ごとに課金されます。",
-            "description": "IBM 量子コンピュータの利用料金を支払う。 使用量1秒ごとに課金されます。"
+            "long_description": "IBM 量子コンピュータの利用料金を支払う。 使用したリソース単位ごとに課金されます。",
+            "description": "IBM 量子コンピュータの利用料金を支払う。 使用したリソース単位ごとに課金されます。"
           },
           "ko": {
             "display_name": "Pay-as-you-go",
-            "long_description": "사용하는 IBM 양자 컴퓨터 액세스에 대한 비용. 사용량 초당 요금이 청구됩니다.",
-            "description": "사용하는 IBM 양자 컴퓨터 액세스에 대한 비용. 사용량 초당 요금이 청구됩니다."
+            "long_description": "사용하는 IBM 양자 컴퓨터 액세스에 대한 비용. 사용한 리소스 단위당 요금이 청구됩니다.",
+            "description": "사용하는 IBM 양자 컴퓨터 액세스에 대한 비용. 사용한 리소스 단위당 요금이 청구됩니다."
           },
           "pt": {
             "display_name": "Pay-as-you-go",
-            "long_description": "Pague pelo acesso ao computador quantum IBM que você usa. Cobrado por segundo de uso.",
-            "description": "Pague pelo acesso ao computador quantum IBM que você usa. Cobrado por segundo de uso."
+            "long_description": "Pague pelo acesso ao computador quantum IBM que você usa. Cobrado por unidade de recurso consumida.",
+            "description": "Pague pelo acesso ao computador quantum IBM que você usa. Cobrado por unidade de recurso consumida."
           }
         },
         "parent_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
@@ -248925,7 +248038,7 @@
           "name": "IBM"
         },
         "created": "2022-04-08T07:20:27.307Z",
-        "updated": "2026-10-19T10:59:24.279029517-04:00",
+        "updated": "2026-11-02T15:56:56.095195139-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5304b575-3cff-4455-90dc-ae4367762093?complete=true",
         "images": {
@@ -249062,7 +248175,7 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Pay for the IBM quantum computer access you use. Billed per second of usage.",
+        "description": "Pay for the IBM quantum computer access you use. Billed per resource unit consumed.",
         "displayName": "Pay-as-you-go",
         "originalName": "paygo-standard"
       }
@@ -310517,12 +309630,12 @@
       "watsonx"
     ],
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",

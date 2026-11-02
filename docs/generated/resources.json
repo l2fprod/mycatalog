@@ -686,14 +686,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -860,7 +860,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -868,7 +867,8 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de"
+      "eu-de",
+      "jp-osa"
     ],
     "pricing_tags": [
       "paygo",
@@ -1760,8 +1760,8 @@
         "displayName": "Self-Serve Professional"
       }
     ],
-    "description": "Bespoken is a leader in fully automated testing for IVR systems, conversational AI, and chatbots.",
-    "longDescription": "Bespoken is the AI-powered solution built to reduce the time, cost, and tedium of testing, monitoring, and scaling your contact center. \nOur platform automates testing, monitoring, and load simulation to ensure your voice and chatbot experiences are working exactly as they should — every time.\n\nBespoken helps your contact center deliver flawless customer interactions, reduce costs, and scale with confidence.  Our suite of tools ensures better customer experiences and better business outcomes.\n\nThe Bespoken platform consists of five products: Exploratory Testing, Functional Testing, Continuous Monitoring, Model/LLM Testing, and Load Testing.\n\nExploratory Testing, Functional Testing, and Continuous Monitoring are included in all Bespoken subscriptions (Self-Serve Professional, Guided Professional, and Enterprise).  Model/LLM Testing is available with Guided Professional and higher, and Load Testing is a separate product priced on the load test parameters. \n\n",
+    "description": "Bespoken AI automates testing and monitoring of AI agents, chatbots, voice, and IVR applications to ensure quality and reliability",
+    "longDescription": "Bespoken AI is an automated testing and monitoring platform for Agentic AI and conversational customer experiences. Simulate real customer interactions to discover defects, validate customer journeys, evaluate AI behavior, test performance at scale, and continuously monitor production experiences across AI agents, chatbots, voice, and IVR applications.\n\nOne Platform. Every Test You Need.",
     "displayName": "Bespoken Automated Testing For IVR and Chat",
     "imageUrl": "https://dashboard.bespoken.ai/bespoken-icon.png",
     "localPngIcon": "/generated/icons/ee700ab3-6951-4c68-b541-a177f78eed53.png"
@@ -6163,10 +6163,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6177,7 +6173,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -6781,6 +6781,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
@@ -6788,8 +6789,7 @@
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "jp-tok"
     ],
     "pricing_tags": [
       "paid",
@@ -10044,14 +10044,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10734,15 +10734,15 @@
     "geo_tags": [
       "br-sao",
       "in-che",
-      "in-mum",
-      "ca-tor",
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
+      "ca-tor",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "in-mum",
       "ca-mon",
       "au-syd"
     ],
@@ -13477,7 +13477,6 @@
       "custom_kind_service",
       "data_analytics",
       "eu-de",
-      "free",
       "global",
       "iam_compatible",
       "ibm_created",
@@ -13498,8 +13497,7 @@
     "pricing_tags": [
       "paid",
       "paid_only",
-      "allow_internal_users",
-      "free"
+      "allow_internal_users"
     ],
     "metadata": {
       "service": {},
@@ -13512,13 +13510,6 @@
         "description": "The Essentials plan is ideal for small organizations or departments within a larger organization who are looking to get started with a GRC solution. Also ideal to be used as a non-production environment.\n\nRefer to documentation for additional sizing guidance.",
         "displayName": "Essentials",
         "originalName": "enterprise-basic"
-      },
-      {
-        "id": "00867b51-d616-4116-bb53-d5176ec82d8c",
-        "name": "saastrial",
-        "description": "To access the trial instance, users must navigate to the \"watsonx.governance - OpenPages Beta\" on their IBM cloud account. In the resource list page, select the instance named \"watsonx.governance trial instance\".\n\nTrial plan services are limited for a 14-day period.\n\nAs this is a shared instance, customers must not upload confidential or proprietary data.",
-        "displayName": "Lite",
-        "originalName": "enterprise-standard"
       },
       {
         "id": "14ff5194-305e-464a-8d7d-14466f34dd2f",
@@ -15973,14 +15964,14 @@
       {
         "id": "850b21a7-71de-4e53-9441-1abdd202f35d",
         "name": "open",
-        "description": "Provides ten minutes free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no additional charges will occur.",
+        "description": "Provides resource units enabling up to 10 minutes of free runtime per month on select IBM quantum computers. After the limit is met, workloads will be blocked and no charges will occur.",
         "displayName": "Open",
         "originalName": "open"
       },
       {
         "id": "5304b575-3cff-4455-90dc-ae4367762093",
         "name": "paygo-standard",
-        "description": "Pay for the IBM quantum computer access you use. Billed per second of usage.",
+        "description": "Pay for the IBM quantum computer access you use. Billed per resource unit consumed.",
         "displayName": "Pay-as-you-go",
         "originalName": "paygo-standard"
       }
@@ -22578,12 +22569,12 @@
       "watsonx"
     ],
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
