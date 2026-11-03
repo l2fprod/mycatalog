@@ -860,6 +860,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -867,8 +868,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -4174,7 +4174,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4185,7 +4184,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -6163,6 +6163,10 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6173,11 +6177,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -6781,15 +6781,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
       "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "au-syd",
+      "us-east"
     ],
     "pricing_tags": [
       "paid",
@@ -6933,13 +6933,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10044,14 +10044,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10732,19 +10732,19 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "jp-osa",
+      "in-mum",
+      "au-syd",
       "br-sao",
       "in-che",
-      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "in-mum",
-      "ca-mon",
-      "au-syd"
+      "ca-mon"
     ],
     "pricing_tags": [
       "paid",
@@ -19084,12 +19084,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -22569,12 +22569,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid_only",
@@ -22756,8 +22756,8 @@
       {
         "id": "967ba182-c6e0-4adc-92ef-661a822cc1d7",
         "name": "lite",
-        "description": "The watsonx.governance Model Management Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\n- The Model Management Lite plan includes a free internal PostgreSQL database instance with a maximum size of 100 MB.\n\n- The instance is hosted and not directly accessible.\n- Data in this database cannot be migrated and is lost if the instance is reconfigured.\n- The internal database is not GDPR compliant.\n- For workloads that process personally identifiable information (PII), or when upgrading from the Model Management Lite plan to the Model Management Essentials plan with continuity requirements, a paid instance of a supported database from the IBM Cloud catalog must be used.",
-        "displayName": "Model Management Lite",
+        "description": "<b>watsonx.governance Model Management and Risk & Compliance</b> combines model management and risk & compliance capabilities into a single trial experience.\n\nwatsonx.governance Model Management offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\nIncludes a free internal PostgreSQL database instance with a maximum size of 100 MB. For workloads that process personally identifiable information (PII) a paid instance of a supported database from the IBM Cloud catalog must be used.\n\nwatsonx.governance Risk & Compliance provides everything you need to govern AI assets through guided assessments, policy-driven workflows, risk management, and regulatory compliance oversight. Risk & Compliance is available only in Dallas, Frankfurt and Sydney regions.",
+        "displayName": "Trial",
         "originalName": "lite"
       },
       {

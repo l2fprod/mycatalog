@@ -12121,6 +12121,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12128,8 +12129,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -49607,7 +49607,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49618,7 +49617,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -80048,7 +80048,7 @@
           {
             "id": "databases-for-elasticsearch-enterprise-gen2:ca-mon",
             "_id": "databases-for-elasticsearch-enterprise-gen2:ca-mon",
-            "_rev": "18-766defe2314799c54d29274fbbffc058",
+            "_rev": "19-68f8c1907b5684892f37e1ccaab6dbaf",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Aca-mon",
             "name": "enterprise-gen2-ca-mon",
             "kind": "deployment",
@@ -80081,7 +80081,7 @@
               "name": "IBM"
             },
             "created": "2026-05-20T11:40:27.901447782-04:00",
-            "updated": "2026-10-07T05:48:32.898625664-04:00",
+            "updated": "2026-11-03T06:12:47.729720518-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:ca-mon?complete=true",
             "metadata": {
@@ -80094,6 +80094,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -81665,7 +81666,7 @@
           {
             "id": "databases-for-elasticsearch-enterprise-gen2:in-che",
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-che",
-            "_rev": "19-1c7227215e60e8a0573063fe7133d16f",
+            "_rev": "20-044e5b480bff44ed73ac9bef7c86b9af",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-che",
             "name": "enterprise-gen2-in-che",
             "kind": "deployment",
@@ -81698,7 +81699,7 @@
               "name": "IBM"
             },
             "created": "2026-05-20T11:40:27.850578238-04:00",
-            "updated": "2026-10-07T08:31:34.859631066-04:00",
+            "updated": "2026-11-03T06:12:52.819078591-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-che?complete=true",
             "metadata": {
@@ -81711,6 +81712,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -82070,7 +82072,7 @@
           {
             "id": "databases-for-elasticsearch-enterprise-gen2:in-mum",
             "_id": "databases-for-elasticsearch-enterprise-gen2:in-mum",
-            "_rev": "11-5259e6e036de51edb3182da05c38e785",
+            "_rev": "12-9b7262aec9a53fde3bf6338f96e0758f",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-enterprise-gen2%3Ain-mum",
             "name": "enterprise-gen2-in-mum",
             "kind": "deployment",
@@ -82103,7 +82105,7 @@
               "name": "IBM"
             },
             "created": "2026-06-23T06:55:12.143054627-04:00",
-            "updated": "2026-10-07T08:31:44.916273017-04:00",
+            "updated": "2026-11-03T06:12:57.628898803-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-enterprise-gen2:in-mum?complete=true",
             "metadata": {
@@ -82116,6 +82118,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -88121,7 +88124,7 @@
           {
             "id": "databases-for-elasticsearch-standard-gen2:ca-mon",
             "_id": "databases-for-elasticsearch-standard-gen2:ca-mon",
-            "_rev": "11-fba610f541c94fdb2a5888e98e888aca",
+            "_rev": "12-4ec8dc16885737904cbc5e0fe71b69b7",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-standard-gen2%3Aca-mon",
             "name": "standard-gen2-deployment-ca-mon",
             "kind": "deployment",
@@ -88154,7 +88157,7 @@
               "name": "IBM"
             },
             "created": "2026-09-10T12:59:07.093213612-04:00",
-            "updated": "2026-10-07T05:48:34.928147666-04:00",
+            "updated": "2026-11-03T06:12:50.824477804-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard-gen2:ca-mon?complete=true",
             "metadata": {
@@ -88166,6 +88169,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -89737,7 +89741,7 @@
           {
             "id": "databases-for-elasticsearch-standard-gen2:in-che",
             "_id": "databases-for-elasticsearch-standard-gen2:in-che",
-            "_rev": "7-8f856d8c54649dff186d9efec6ce6dcd",
+            "_rev": "8-6320ba12321d24bb7070789f3e9f1269",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-standard-gen2%3Ain-che",
             "name": "standard-gen2-deployment-in-che",
             "kind": "deployment",
@@ -89770,7 +89774,7 @@
               "name": "IBM"
             },
             "created": "2026-09-22T01:35:57.963812105-04:00",
-            "updated": "2026-10-07T08:31:35.808898885-04:00",
+            "updated": "2026-11-03T06:12:55.661084125-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard-gen2:in-che?complete=true",
             "metadata": {
@@ -89782,6 +89786,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -90141,7 +90146,7 @@
           {
             "id": "databases-for-elasticsearch-standard-gen2:in-mum",
             "_id": "databases-for-elasticsearch-standard-gen2:in-mum",
-            "_rev": "7-ef2f18f34362e8b5d1356c8cab153e66",
+            "_rev": "8-c9118673c96407f5eb5364dde923b4a1",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-elasticsearch-standard-gen2%3Ain-mum",
             "name": "standard-gen2-deployment-in-mum",
             "kind": "deployment",
@@ -90174,7 +90179,7 @@
               "name": "IBM"
             },
             "created": "2026-09-22T01:36:00.546535876-04:00",
-            "updated": "2026-10-07T08:31:45.889757999-04:00",
+            "updated": "2026-11-03T06:13:00.664941687-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-elasticsearch-standard-gen2:in-mum?complete=true",
             "metadata": {
@@ -90186,6 +90191,7 @@
                   },
                   "backups": {
                     "backups_create_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -92757,6 +92763,10 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92767,11 +92777,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -99365,7 +99371,7 @@
           {
             "id": "databases-for-mongodb-enterprise-sharding-gen2:ca-mon",
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:ca-mon",
-            "_rev": "22-ef81a1153f18ce216a5f9a0a84585b41",
+            "_rev": "23-dcc263e754dfeb0042c602e1a3b23b46",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Aca-mon",
             "name": "enterprise-sharding-gen2-ca-mon",
             "kind": "deployment",
@@ -99392,7 +99398,7 @@
               "name": "IBM"
             },
             "created": "2026-06-09T01:13:15.549009495-04:00",
-            "updated": "2026-10-07T05:48:43.789961692-04:00",
+            "updated": "2026-11-03T06:12:46.683369274-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:ca-mon?complete=true",
             "metadata": {
@@ -99405,6 +99411,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -100689,7 +100696,7 @@
           {
             "id": "databases-for-mongodb-enterprise-sharding-gen2:in-che",
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-che",
-            "_rev": "21-8db042fb5dde25eac2239c50e006180b",
+            "_rev": "22-308055c89e68db15a4b4a46a63051013",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-che",
             "name": "enterprise-sharding-gen2-in-che",
             "kind": "deployment",
@@ -100716,7 +100723,7 @@
               "name": "IBM"
             },
             "created": "2026-06-09T01:13:15.426317877-04:00",
-            "updated": "2026-10-07T08:31:39.780688729-04:00",
+            "updated": "2026-11-03T06:12:51.820909506-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-che?complete=true",
             "metadata": {
@@ -100729,6 +100736,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -101021,7 +101029,7 @@
           {
             "id": "databases-for-mongodb-enterprise-sharding-gen2:in-mum",
             "_id": "databases-for-mongodb-enterprise-sharding-gen2:in-mum",
-            "_rev": "20-bff59d94af96a7aed73ceae2e1bcdc50",
+            "_rev": "21-05cd33ab6753aedaa802964e7b0a1d64",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-enterprise-sharding-gen2%3Ain-mum",
             "name": "enterprise-sharding-gen2-in-mum",
             "kind": "deployment",
@@ -101048,7 +101056,7 @@
               "name": "IBM"
             },
             "created": "2026-06-09T01:13:15.503028377-04:00",
-            "updated": "2026-10-07T08:31:50.045527331-04:00",
+            "updated": "2026-11-03T06:12:56.661711444-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-enterprise-sharding-gen2:in-mum?complete=true",
             "metadata": {
@@ -101061,6 +101069,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -106530,7 +106539,7 @@
           {
             "id": "databases-for-mongodb-standard-gen2:ca-mon",
             "_id": "databases-for-mongodb-standard-gen2:ca-mon",
-            "_rev": "44-f71813e06a1a7f2f20dd88647d2b31be",
+            "_rev": "45-9cfb3d44e11fc3675f28e635b01d0138",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Aca-mon",
             "name": "standard-gen2-ca-mon",
             "kind": "deployment",
@@ -106560,7 +106569,7 @@
               "name": "IBM"
             },
             "created": "2025-12-02T05:29:30.481623926-05:00",
-            "updated": "2026-10-07T05:48:41.739001086-04:00",
+            "updated": "2026-11-03T02:56:29.324099958-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:ca-mon?complete=true",
             "metadata": {
@@ -106573,6 +106582,7 @@
                   "backups": {
                     "backups_create_supported": false,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -108135,7 +108145,7 @@
           {
             "id": "databases-for-mongodb-standard-gen2:in-che",
             "_id": "databases-for-mongodb-standard-gen2:in-che",
-            "_rev": "22-64ee96b44881caa43f19af552d9f7fa6",
+            "_rev": "23-d3386bfdb787fab01af37556763d9e1f",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Ain-che",
             "name": "standard-gen2-in-che",
             "kind": "deployment",
@@ -108165,7 +108175,7 @@
               "name": "IBM"
             },
             "created": "2026-02-16T00:28:55.265523768-05:00",
-            "updated": "2026-10-07T08:31:38.788093053-04:00",
+            "updated": "2026-11-03T02:56:30.812881523-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-che?complete=true",
             "metadata": {
@@ -108178,6 +108188,7 @@
                   "backups": {
                     "backups_create_supported": false,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -108537,7 +108548,7 @@
           {
             "id": "databases-for-mongodb-standard-gen2:in-mum",
             "_id": "databases-for-mongodb-standard-gen2:in-mum",
-            "_rev": "16-3182e853d8cd0776c4c789f83d18a985",
+            "_rev": "17-0b3bc1e42bc5996796cd3dfe23f4612f",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mongodb-standard-gen2%3Ain-mum",
             "name": "standard-gen2-in-mum",
             "kind": "deployment",
@@ -108567,7 +108578,7 @@
               "name": "IBM"
             },
             "created": "2026-05-22T02:06:52.588568934-04:00",
-            "updated": "2026-10-07T08:31:49.055584222-04:00",
+            "updated": "2026-11-03T02:56:32.275183327-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mongodb-standard-gen2:in-mum?complete=true",
             "metadata": {
@@ -108580,6 +108591,7 @@
                   "backups": {
                     "backups_create_supported": false,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -118795,7 +118807,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -118806,7 +118817,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -122631,7 +122643,7 @@
           {
             "id": "databases-for-postgresql-standard-gen2:ca-mon",
             "_id": "databases-for-postgresql-standard-gen2:ca-mon",
-            "_rev": "47-fd1ee3703c9d775eeb1c9b7efe2b018c",
+            "_rev": "48-f2e69583a8776a4f98cebe5c0bd7a560",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Aca-mon",
             "name": "standard-gen2-ca-mon",
             "kind": "deployment",
@@ -122658,7 +122670,7 @@
               "name": "IBM"
             },
             "created": "2025-11-27T02:51:55.446782047-05:00",
-            "updated": "2026-10-07T05:48:45.919726574-04:00",
+            "updated": "2026-11-03T02:56:28.616628005-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:ca-mon?complete=true",
             "metadata": {
@@ -122671,6 +122683,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -123961,7 +123974,7 @@
           {
             "id": "databases-for-postgresql-standard-gen2:in-che",
             "_id": "databases-for-postgresql-standard-gen2:in-che",
-            "_rev": "17-e205df16720ad1f151d7d96e1f5a61d4",
+            "_rev": "18-777ad12a85ae809cd2278e7db7728022",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-che",
             "name": "standard-gen2-in-che",
             "kind": "deployment",
@@ -123988,7 +124001,7 @@
               "name": "IBM"
             },
             "created": "2026-02-16T00:36:28.002194582-05:00",
-            "updated": "2026-10-07T08:31:40.747726724-04:00",
+            "updated": "2026-11-03T02:56:30.052324857-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-che?complete=true",
             "metadata": {
@@ -124001,6 +124014,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -124292,7 +124306,7 @@
           {
             "id": "databases-for-postgresql-standard-gen2:in-mum",
             "_id": "databases-for-postgresql-standard-gen2:in-mum",
-            "_rev": "12-046aafb7783e2e46374a0bc9c5ea3542",
+            "_rev": "13-9845f05e4c6d7acc152906a908ad4fca",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-postgresql-standard-gen2%3Ain-mum",
             "name": "standard-gen2-in-mum",
             "kind": "deployment",
@@ -124319,7 +124333,7 @@
               "name": "IBM"
             },
             "created": "2026-05-21T12:26:19.545354188-04:00",
-            "updated": "2026-10-07T08:31:51.014075077-04:00",
+            "updated": "2026-11-03T02:56:31.543252354-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-postgresql-standard-gen2:in-mum?complete=true",
             "metadata": {
@@ -124332,6 +124346,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -126076,6 +126091,8 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -126085,9 +126102,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "che01"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -130323,7 +130338,7 @@
           {
             "id": "databases-for-redis-standard-gen2:ca-mon",
             "_id": "databases-for-redis-standard-gen2:ca-mon",
-            "_rev": "17-4aebb231fd0f567c79e2e14b4e3b6395",
+            "_rev": "18-29debd0082c12b3e93dc896ccf8ac8fb",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Aca-mon",
             "name": "standard-gen2-ca-mon",
             "kind": "deployment",
@@ -130349,7 +130364,7 @@
               "name": "IBM"
             },
             "created": "2026-06-09T05:07:39.665938873-04:00",
-            "updated": "2026-10-07T05:48:39.702063335-04:00",
+            "updated": "2026-11-03T06:12:49.808764851-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:ca-mon?complete=true",
             "metadata": {
@@ -130362,6 +130377,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -131608,7 +131624,7 @@
           {
             "id": "databases-for-redis-standard-gen2:in-che",
             "_id": "databases-for-redis-standard-gen2:in-che",
-            "_rev": "16-b913861f88448e88f9ca2035894e7357",
+            "_rev": "17-b18ac628f83bca5fb3679f072d7a8a09",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Ain-che",
             "name": "standard-gen2-in-che",
             "kind": "deployment",
@@ -131634,7 +131650,7 @@
               "name": "IBM"
             },
             "created": "2026-06-09T05:07:39.593416721-04:00",
-            "updated": "2026-10-07T08:31:37.795470607-04:00",
+            "updated": "2026-11-03T06:12:54.689028847-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-che?complete=true",
             "metadata": {
@@ -131647,6 +131663,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -131930,7 +131947,7 @@
           {
             "id": "databases-for-redis-standard-gen2:in-mum",
             "_id": "databases-for-redis-standard-gen2:in-mum",
-            "_rev": "16-bf4ec9988396655b28d5911370be70bd",
+            "_rev": "17-76f97cee89bae9f452fc9a09f7fba5e9",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-redis-standard-gen2%3Ain-mum",
             "name": "standard-gen2-in-mum",
             "kind": "deployment",
@@ -131956,7 +131973,7 @@
               "name": "IBM"
             },
             "created": "2026-06-10T03:59:34.740412505-04:00",
-            "updated": "2026-10-07T08:31:47.994829926-04:00",
+            "updated": "2026-11-03T06:12:59.643772445-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-redis-standard-gen2:in-mum?complete=true",
             "metadata": {
@@ -131969,6 +131986,7 @@
                   "backups": {
                     "backups_create_supported": true,
                     "cross_region_independent_backups_supported": true,
+                    "independent_backup_retention": true,
                     "independent_backups_supported": true
                   },
                   "encryption": {
@@ -137230,15 +137248,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "au-syd",
-      "us-east",
       "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "au-syd",
+      "us-east"
     ],
     "pricing_tags": [
       "paid",
@@ -141959,13 +141977,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -170816,14 +170834,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -182057,19 +182075,19 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "jp-osa",
+      "in-mum",
+      "au-syd",
       "br-sao",
       "in-che",
-      "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "in-mum",
-      "ca-mon",
-      "au-syd"
+      "ca-mon"
     ],
     "pricing_tags": [
       "paid",
@@ -249859,7 +249877,7 @@
   {
     "id": "instructlab",
     "_id": "instructlab",
-    "_rev": "102-210533011c0b5d9234fc17d3b2555211",
+    "_rev": "106-0f864e4165f739e361966f6929b773a4",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:instructlab",
     "name": "instructlab",
     "kind": "service",
@@ -249919,7 +249937,7 @@
       "name": "IBM"
     },
     "created": "2025-01-07T17:29:49.177955538-05:00",
-    "updated": "2026-10-01T06:36:21.134294713-04:00",
+    "updated": "2026-11-03T10:45:30.694033957-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/instructlab?complete=true",
     "images": {
@@ -250065,7 +250083,7 @@
       {
         "id": "27439a12-6876-466b-96a3-f7bb6a4a532a",
         "_id": "27439a12-6876-466b-96a3-f7bb6a4a532a",
-        "_rev": "52-f0effdcfd2bb4b5b1ea55b9efb219ff2",
+        "_rev": "56-95b727cc4936d76c6b3bef32e6545a62",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:27439a12-6876-466b-96a3-f7bb6a4a532a",
         "name": "instructlab-pricing-plan",
         "kind": "plan",
@@ -250099,7 +250117,7 @@
           "name": "Tyler Lisowski"
         },
         "created": "2025-03-06T18:00:47.662030464-05:00",
-        "updated": "2026-10-01T06:36:21.134020321-04:00",
+        "updated": "2026-11-03T10:45:30.693572887-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/27439a12-6876-466b-96a3-f7bb6a4a532a?complete=true",
         "images": {
@@ -270498,12 +270516,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -309630,12 +309648,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb",
+      "au-syd",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid_only",
@@ -320754,60 +320772,75 @@
       {
         "id": "967ba182-c6e0-4adc-92ef-661a822cc1d7",
         "_id": "967ba182-c6e0-4adc-92ef-661a822cc1d7",
-        "_rev": "182-5dad7bc40e6586f51da0c7fe10e37c19",
+        "_rev": "183-fcb0d67078b8e5ed3dd32974241f124e",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:967ba182-c6e0-4adc-92ef-661a822cc1d7",
         "name": "lite",
         "kind": "plan",
         "overview_ui": {
           "de": {
-            "display_name": "Modellverwaltung Lite",
-            "long_description": "Der Modellverwaltung Lite-Plan watsonx.governance bietet alles, was Sie brauchen, um mit der Steuerung von KI-Modellen in Ihrem Unternehmen zu beginnen, einschließlich Zugriff auf Erklärungen, Verzerrungserkennung und -minderung sowie automatisierte KI-Funktionen.\n\n- Der Modellverwaltung Lite-Plan beinhaltet eine kostenlose interne PostgreSQL-Datenbankinstanz mit einer maximalen Größe von 100 MB.\n\n- Die Instanz ist gehostet und nicht direkt zugänglich.\n- Daten in dieser Datenbank können nicht migriert werden und gehen verloren, wenn die Instanz neu konfiguriert wird.\n- Die interne Datenbank ist nicht GDPR-konform.\n- Für Workloads, die personenbezogene Daten (PII) verarbeiten, oder bei einem Upgrade vom Modellverwaltung Lite-Plan zum Modellverwaltung Essentials-Plan mit Anforderungen an die Kontinuität, muss eine kostenpflichtige Instanz einer unterstützten Datenbank aus dem IBM Cloud-Katalog verwendet werden.",
-            "description": "Der Modellverwaltung Lite-Plan watsonx.governance bietet alles, was Sie brauchen, um mit der Steuerung von KI-Modellen in Ihrem Unternehmen zu beginnen, einschließlich Zugriff auf Erklärungen, Verzerrungserkennung und -minderung sowie automatisierte KI-Funktionen.\n\n- Der Modellverwaltung Lite-Plan beinhaltet eine kostenlose interne PostgreSQL-Datenbankinstanz mit einer maximalen Größe von 100 MB.\n\n- Die Instanz ist gehostet und nicht direkt zugänglich.\n- Daten in dieser Datenbank können nicht migriert werden und gehen verloren, wenn die Instanz neu konfiguriert wird.\n- Die interne Datenbank ist nicht GDPR-konform.\n- Für Workloads, die personenbezogene Daten (PII) verarbeiten, oder bei einem Upgrade vom Modellverwaltung Lite-Plan zum Modellverwaltung Essentials-Plan mit Anforderungen an die Kontinuität, muss eine kostenpflichtige Instanz einer unterstützten Datenbank aus dem IBM Cloud-Katalog verwendet werden."
+            "display_name": "Testversion",
+            "long_description": "<b>watsonx.governance Modellverwaltung und Risiko & Compliance</b> kombiniert Modellverwaltungs- und Risiko- & Compliance-Funktionen in einem einzigen Testerlebnis.\n\nwatsonx.governance Modellverwaltung bietet alles, was Sie benötigen, um Ihre Reise zur Steuerung von KI-Modellen im gesamten Unternehmen zu beginnen, einschließlich Zugriff auf Erklärungen, Erkennung und Minderung von Verzerrungen sowie automatisierter KI-Funktionen.\n\nEnthält eine kostenlose interne PostgreSQL-Datenbankinstanz mit einer maximalen Größe von 100 MB. Für Workloads, die personenbezogene Daten (PII) verarbeiten, muss eine kostenpflichtige Instanz einer unterstützten Datenbank aus dem IBM Cloud-Katalog verwendet werden.\n\nwatsonx.governance Risiko & Compliance bietet alles, was Sie benötigen, um KI-Assets durch geführte Bewertungen, richtliniengesteuerte Workflows, Risikomanagement und Überwachung der regulatorischen Compliance zu steuern. Risiko & Compliance ist nur in den Regionen Dallas, Frankfurt und Sydney verfügbar.",
+            "description": "<b>watsonx.governance Modellverwaltung und Risiko & Compliance</b> kombiniert Modellverwaltungs- und Risiko- & Compliance-Funktionen in einem einzigen Testerlebnis.\n\nwatsonx.governance Modellverwaltung bietet alles, was Sie benötigen, um Ihre Reise zur Steuerung von KI-Modellen im gesamten Unternehmen zu beginnen, einschließlich Zugriff auf Erklärungen, Erkennung und Minderung von Verzerrungen sowie automatisierter KI-Funktionen.\n\nEnthält eine kostenlose interne PostgreSQL-Datenbankinstanz mit einer maximalen Größe von 100 MB. Für Workloads, die personenbezogene Daten (PII) verarbeiten, muss eine kostenpflichtige Instanz einer unterstützten Datenbank aus dem IBM Cloud-Katalog verwendet werden.\n\nwatsonx.governance Risiko & Compliance bietet alles, was Sie benötigen, um KI-Assets durch geführte Bewertungen, richtliniengesteuerte Workflows, Risikomanagement und Überwachung der regulatorischen Compliance zu steuern. Risiko & Compliance ist nur in den Regionen Dallas, Frankfurt und Sydney verfügbar."
           },
           "en": {
-            "display_name": "Model Management Lite",
-            "long_description": "The watsonx.governance Model Management Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\n- The Model Management Lite plan includes a free internal PostgreSQL database instance with a maximum size of 100 MB.\n\n- The instance is hosted and not directly accessible.\n- Data in this database cannot be migrated and is lost if the instance is reconfigured.\n- The internal database is not GDPR compliant.\n- For workloads that process personally identifiable information (PII), or when upgrading from the Model Management Lite plan to the Model Management Essentials plan with continuity requirements, a paid instance of a supported database from the IBM Cloud catalog must be used.",
-            "description": "The watsonx.governance Model Management Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\n- The Model Management Lite plan includes a free internal PostgreSQL database instance with a maximum size of 100 MB.\n\n- The instance is hosted and not directly accessible.\n- Data in this database cannot be migrated and is lost if the instance is reconfigured.\n- The internal database is not GDPR compliant.\n- For workloads that process personally identifiable information (PII), or when upgrading from the Model Management Lite plan to the Model Management Essentials plan with continuity requirements, a paid instance of a supported database from the IBM Cloud catalog must be used."
+            "display_name": "Trial",
+            "long_description": "<b>watsonx.governance Model Management and Risk & Compliance</b> combines model management and risk & compliance capabilities into a single trial experience.\n\nwatsonx.governance Model Management offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\nIncludes a free internal PostgreSQL database instance with a maximum size of 100 MB. For workloads that process personally identifiable information (PII) a paid instance of a supported database from the IBM Cloud catalog must be used.\n\nwatsonx.governance Risk & Compliance provides everything you need to govern AI assets through guided assessments, policy-driven workflows, risk management, and regulatory compliance oversight. Risk & Compliance is available only in Dallas, Frankfurt and Sydney regions.",
+            "description": "<b>watsonx.governance Model Management and Risk & Compliance</b> combines model management and risk & compliance capabilities into a single trial experience.\n\nwatsonx.governance Model Management offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\nIncludes a free internal PostgreSQL database instance with a maximum size of 100 MB. For workloads that process personally identifiable information (PII) a paid instance of a supported database from the IBM Cloud catalog must be used.\n\nwatsonx.governance Risk & Compliance provides everything you need to govern AI assets through guided assessments, policy-driven workflows, risk management, and regulatory compliance oversight. Risk & Compliance is available only in Dallas, Frankfurt and Sydney regions."
           },
           "es": {
-            "display_name": "Gestión de Modelos Lite",
-            "long_description": "El plan Gestión de Modelos Lite de watsonx.governance ofrece todo lo que necesita para empezar su transición a gobernar los modelos de IA en toda su empresa, incluido el acceso a explicaciones, la detección y mitigación de sesgos y las prestaciones de IA automatizadas.\n\n- El plan Gestión de Modelos Lite incluye una instancia gratuita de base de datos PostgreSQL interna con un tamaño máximo de 100 MB.\n\n- La instancia está alojada y no es accesible directamente.\n- Los datos en esta base de datos no se pueden migrar y se perderán si la instancia se reconfigura.\n- La base de datos interna no cumple con el RGPD.\n- Para cargas de trabajo que procesen información personal identificable (PII), o al actualizar del plan Gestión de Modelos Lite al plan Gestión de Modelos Essentials con requisitos de continuidad, se debe utilizar una instancia de pago de una base de datos compatible del catálogo de IBM Cloud.",
-            "description": "El plan Gestión de Modelos Lite de watsonx.governance ofrece todo lo que necesita para empezar su transición a gobernar los modelos de IA en toda su empresa, incluido el acceso a explicaciones, la detección y mitigación de sesgos y las prestaciones de IA automatizadas.\n\n- El plan Gestión de Modelos Lite incluye una instancia gratuita de base de datos PostgreSQL interna con un tamaño máximo de 100 MB.\n\n- La instancia está alojada y no es accesible directamente.\n- Los datos en esta base de datos no se pueden migrar y se perderán si la instancia se reconfigura.\n- La base de datos interna no cumple con el RGPD.\n- Para cargas de trabajo que procesen información personal identificable (PII), o al actualizar del plan Gestión de Modelos Lite al plan Gestión de Modelos Essentials con requisitos de continuidad, se debe utilizar una instancia de pago de una base de datos compatible del catálogo de IBM Cloud."
+            "display_name": "Versión de prueba",
+            "long_description": "<b>watsonx.governance Gestión de modelos y Riesgo y cumplimiento</b> combina las capacidades de gestión de modelos y riesgo y cumplimiento en una única experiencia de prueba.\n\nwatsonx.governance Gestión de modelos ofrece todo lo que necesita para comenzar su camino hacia el control de modelos de IA en toda su empresa, incluido el acceso a explicaciones, la detección y mitigación de sesgos y las capacidades de IA automatizadas.\n\nIncluye una instancia gratuita de base de datos PostgreSQL interna con un tamaño máximo de 100 MB. Para cargas de trabajo que procesen información personal identificable (PII), se debe utilizar una instancia de pago de una base de datos compatible del catálogo de IBM Cloud.\n\nwatsonx.governance Riesgo y cumplimiento proporciona todo lo que necesita para gobernar activos de IA mediante evaluaciones guiadas, flujos de trabajo basados en políticas, gestión de riesgos y supervisión del cumplimiento normativo. Riesgo y cumplimiento está disponible solo en las regiones de Dallas, Fráncfort y Sídney.",
+            "description": "<b>watsonx.governance Gestión de modelos y Riesgo y cumplimiento</b> combina las capacidades de gestión de modelos y riesgo y cumplimiento en una única experiencia de prueba.\n\nwatsonx.governance Gestión de modelos ofrece todo lo que necesita para comenzar su camino hacia el control de modelos de IA en toda su empresa, incluido el acceso a explicaciones, la detección y mitigación de sesgos y las capacidades de IA automatizadas.\n\nIncluye una instancia gratuita de base de datos PostgreSQL interna con un tamaño máximo de 100 MB. Para cargas de trabajo que procesen información personal identificable (PII), se debe utilizar una instancia de pago de una base de datos compatible del catálogo de IBM Cloud.\n\nwatsonx.governance Riesgo y cumplimiento proporciona todo lo que necesita para gobernar activos de IA mediante evaluaciones guiadas, flujos de trabajo basados en políticas, gestión de riesgos y supervisión del cumplimiento normativo. Riesgo y cumplimiento está disponible solo en las regiones de Dallas, Fráncfort y Sídney."
           },
           "fr": {
-            "display_name": "Gestion des Modèles Lite",
-            "long_description": "Le plan Gestion des Modèles Lite watsonx.governance offre tout ce dont vous avez besoin pour commencer votre parcours de gouvernance des modèles d'IA dans votre entreprise, y compris l'accès à des explications, la détection et l'atténuation des biais et des fonctionnalités IA automatisées.\n\n- Le plan Gestion des Modèles Lite inclut une instance gratuite de base de données PostgreSQL interne avec une taille maximale de 100 Mo.\n\n- L'instance est hébergée et n'est pas directement accessible.\n- Les données dans cette base de données ne peuvent pas être migrées et sont perdues si l'instance est reconfigurée.\n- La base de données interne n'est pas conforme au RGPD.\n- Pour les charges de travail traitant des informations personnelles identifiables (PII), ou lors d'une mise à niveau du plan Gestion des Modèles Lite vers le plan Gestion des Modèles Essentials avec des exigences de continuité, une instance payante d'une base de données prise en charge du catalogue IBM Cloud doit être utilisée.",
-            "description": "Le plan Gestion des Modèles Lite watsonx.governance offre tout ce dont vous avez besoin pour commencer votre parcours de gouvernance des modèles d'IA dans votre entreprise, y compris l'accès à des explications, la détection et l'atténuation des biais et des fonctionnalités IA automatisées.\n\n- Le plan Gestion des Modèles Lite inclut une instance gratuite de base de données PostgreSQL interne avec une taille maximale de 100 Mo.\n\n- L'instance est hébergée et n'est pas directement accessible.\n- Les données dans cette base de données ne peuvent pas être migrées et sont perdues si l'instance est reconfigurée.\n- La base de données interne n'est pas conforme au RGPD.\n- Pour les charges de travail traitant des informations personnelles identifiables (PII), ou lors d'une mise à niveau du plan Gestion des Modèles Lite vers le plan Gestion des Modèles Essentials avec des exigences de continuité, une instance payante d'une base de données prise en charge du catalogue IBM Cloud doit être utilisée."
+            "display_name": "Version d'essai",
+            "long_description": "<b>watsonx.governance Gestion des modèles et Risques & Conformité</b> combine les capacités de gestion des modèles et de risques & conformité en une seule expérience d'essai.\n\nwatsonx.governance Gestion des modèles offre tout ce dont vous avez besoin pour commencer votre parcours de gouvernance des modèles d'IA dans votre entreprise, y compris l'accès à des explications, la détection et l'atténuation des biais, et des fonctionnalités IA automatisées.\n\nInclut une instance gratuite de base de données PostgreSQL interne avec une taille maximale de 100 Mo. Pour les charges de travail traitant des informations personnelles identifiables (PII), une instance payante d'une base de données prise en charge du catalogue IBM Cloud doit être utilisée.\n\nwatsonx.governance Risques & Conformité fournit tout ce dont vous avez besoin pour gouverner les actifs d'IA grâce à des évaluations guidées, des workflows pilotés par des politiques, la gestion des risques et la surveillance de la conformité réglementaire. Risques & Conformité est disponible uniquement dans les régions de Dallas, Francfort et Sydney.",
+            "description": "<b>watsonx.governance Gestion des modèles et Risques & Conformité</b> combine les capacités de gestion des modèles et de risques & conformité en une seule expérience d'essai.\n\nwatsonx.governance Gestion des modèles offre tout ce dont vous avez besoin pour commencer votre parcours de gouvernance des modèles d'IA dans votre entreprise, y compris l'accès à des explications, la détection et l'atténuation des biais, et des fonctionnalités IA automatisées.\n\nInclut une instance gratuite de base de données PostgreSQL interne avec une taille maximale de 100 Mo. Pour les charges de travail traitant des informations personnelles identifiables (PII), une instance payante d'une base de données prise en charge du catalogue IBM Cloud doit être utilisée.\n\nwatsonx.governance Risques & Conformité fournit tout ce dont vous avez besoin pour gouverner les actifs d'IA grâce à des évaluations guidées, des workflows pilotés par des politiques, la gestion des risques et la surveillance de la conformité réglementaire. Risques & Conformité est disponible uniquement dans les régions de Dallas, Francfort et Sydney."
           },
           "it": {
-            "display_name": "Gestione dei Modelli Lite",
-            "long_description": "Il piano Gestione dei Modelli Lite di watsonx.governance offre tutto ciò di cui si ha bisogno per iniziare il percorso di regolamentazione dei modelli di intelligenza artificiale nella propria azienda, incluso l'accesso alle spiegazioni, il rilevamento e l'attenuazione delle distorsioni e le funzionalità di intelligenza artificiale automatizzate.\n\n- Il piano Gestione dei Modelli Lite include un'istanza gratuita di database PostgreSQL interno con una dimensione massima di 100 MB.\n\n- L'istanza è ospitata e non è direttamente accessibile.\n- I dati presenti in questo database non possono essere migrati e vengono persi se l'istanza viene riconfigurata.\n- Il database interno non è conforme al GDPR.\n- Per carichi di lavoro che trattano dati personali identificabili (PII), o in caso di aggiornamento dal piano Gestione dei Modelli Lite al piano Gestione dei Modelli Essentials con requisiti di continuità, è necessario utilizzare un'istanza a pagamento di un database supportato dal catalogo IBM Cloud.",
-            "description": "Il piano Gestione dei Modelli Lite di watsonx.governance offre tutto ciò di cui si ha bisogno per iniziare il percorso di regolamentazione dei modelli di intelligenza artificiale nella propria azienda, incluso l'accesso alle spiegazioni, il rilevamento e l'attenuazione delle distorsioni e le funzionalità di intelligenza artificiale automatizzate.\n\n- Il piano Gestione dei Modelli Lite include un'istanza gratuita di database PostgreSQL interno con una dimensione massima di 100 MB.\n\n- L'istanza è ospitata e non è direttamente accessibile.\n- I dati presenti in questo database non possono essere migrati e vengono persi se l'istanza viene riconfigurata.\n- Il database interno non è conforme al GDPR.\n- Per carichi di lavoro che trattano dati personali identificabili (PII), o in caso di aggiornamento dal piano Gestione dei Modelli Lite al piano Gestione dei Modelli Essentials con requisiti di continuità, è necessario utilizzare un'istanza a pagamento di un database supportato dal catalogo IBM Cloud."
+            "display_name": "Versione di prova",
+            "long_description": "<b>watsonx.governance Gestione dei modelli e Rischio e conformità</b> combina le funzionalità di gestione dei modelli e di rischio e conformità in un'unica esperienza di prova.\n\nwatsonx.governance Gestione dei modelli offre tutto ciò di cui si ha bisogno per iniziare il percorso di governance dei modelli di IA nell'intera azienda, incluso l'accesso alle spiegazioni, il rilevamento e la mitigazione dei bias e le funzionalità di IA automatizzate.\n\nIncluse un'istanza gratuita di database PostgreSQL interno con una dimensione massima di 100 MB. Per i carichi di lavoro che trattano informazioni personali identificabili (PII), è necessario utilizzare un'istanza a pagamento di un database supportato dal catalogo IBM Cloud.\n\nwatsonx.governance Rischio e conformità fornisce tutto ciò di cui si ha bisogno per governare gli asset di IA attraverso valutazioni guidate, flussi di lavoro basati su criteri, gestione del rischio e supervisione della conformità normativa. Rischio e conformità è disponibile solo nelle regioni di Dallas, Francoforte e Sydney.",
+            "description": "<b>watsonx.governance Gestione dei modelli e Rischio e conformità</b> combina le funzionalità di gestione dei modelli e di rischio e conformità in un'unica esperienza di prova.\n\nwatsonx.governance Gestione dei modelli offre tutto ciò di cui si ha bisogno per iniziare il percorso di governance dei modelli di IA nell'intera azienda, incluso l'accesso alle spiegazioni, il rilevamento e la mitigazione dei bias e le funzionalità di IA automatizzate.\n\nIncluse un'istanza gratuita di database PostgreSQL interno con una dimensione massima di 100 MB. Per i carichi di lavoro che trattano informazioni personali identificabili (PII), è necessario utilizzare un'istanza a pagamento di un database supportato dal catalogo IBM Cloud.\n\nwatsonx.governance Rischio e conformità fornisce tutto ciò di cui si ha bisogno per governare gli asset di IA attraverso valutazioni guidate, flussi di lavoro basati su criteri, gestione del rischio e supervisione della conformità normativa. Rischio e conformità è disponibile solo nelle regioni di Dallas, Francoforte e Sydney."
           },
           "ja": {
-            "display_name": "モデル管理 ライト",
-            "long_description": "watsonx.governance モデル管理 ライト・プランは、説明、バイアスの検出と緩和、自動化された AI 機能へのアクセスなど、ビジネス全体で AI モデルの管理を開始するために必要なすべての機能を提供します。\n\n- モデル管理 ライトプランには、最大サイズ100MBの無料の内部PostgreSQLデータベースインスタンスが含まれています。\n\n- このインスタンスはホストされており、直接アクセスすることはできません。\n- このデータベース内のデータは移行できず、インスタンスを再構成すると失われます。\n- 内部データベースはGDPRに準拠していません。\n- 個人識別可能情報（PII）を処理するワークロードや、モデル管理 ライトプランから モデル管理 Essentials プランへ継続性を保ったアップグレードを行う場合は、IBM Cloudカタログからサポートされている有料データベースインスタンスを使用する必要があります。",
-            "description": "watsonx.governance モデル管理 ライト・プランは、説明、バイアスの検出と緩和、自動化された AI 機能へのアクセスなど、ビジネス全体で AI モデルの管理を開始するために必要なすべての機能を提供します。\n\n- モデル管理 ライトプランには、最大サイズ100MBの無料の内部PostgreSQLデータベースインスタンスが含まれています。\n\n- このインスタンスはホストされており、直接アクセスすることはできません。\n- このデータベース内のデータは移行できず、インスタンスを再構成すると失われます。\n- 内部データベースはGDPRに準拠していません。\n- 個人識別可能情報（PII）を処理するワークロードや、モデル管理 ライトプランから モデル管理 Essentials プランへ継続性を保ったアップグレードを行う場合は、IBM Cloudカタログからサポートされている有料データベースインスタンスを使用する必要があります。"
+            "display_name": "トライアル",
+            "long_description": "<b>watsonx.governance モデル管理およびリスクとコンプライアンス</b>は、モデル管理とリスク・コンプライアンス機能を 1 つのトライアル体験に統合しています。\n\nwatsonx.governance モデル管理は、説明へのアクセス、バイアスの検出と緩和、自動化された AI 機能など、ビジネス全体で AI モデルを管理する旅を始めるために必要なすべてを提供します。\n\n最大 100 MB の無料の内部 PostgreSQL データベース・インスタンスが含まれています。個人識別情報 (PII) を処理するワークロードには、IBM Cloud カタログからサポートされているデータベースの有料インスタンスを使用する必要があります。\n\nwatsonx.governance リスクとコンプライアンスは、ガイド付き評価、ポリシー主導のワークフロー、リスク管理、規制コンプライアンスの監視を通じて AI アセットを管理するために必要なすべてを提供します。リスクとコンプライアンスは、ダラス、フランクフルト、シドニーの各地域でのみ利用可能です。",
+            "description": "<b>watsonx.governance モデル管理およびリスクとコンプライアンス</b>は、モデル管理とリスク・コンプライアンス機能を 1 つのトライアル体験に統合しています。\n\nwatsonx.governance モデル管理は、説明へのアクセス、バイアスの検出と緩和、自動化された AI 機能など、ビジネス全体で AI モデルを管理する旅を始めるために必要なすべてを提供します。\n\n最大 100 MB の無料の内部 PostgreSQL データベース・インスタンスが含まれています。個人識別情報 (PII) を処理するワークロードには、IBM Cloud カタログからサポートされているデータベースの有料インスタンスを使用する必要があります。\n\nwatsonx.governance リスクとコンプライアンスは、ガイド付き評価、ポリシー主導のワークフロー、リスク管理、規制コンプライアンスの監視を通じて AI アセットを管理するために必要なすべてを提供します。リスクとコンプライアンスは、ダラス、フランクフルト、シドニーの各地域でのみ利用可能です。"
           },
           "ko": {
-            "display_name": "모델 관리 Lite",
-            "long_description": "watsonx.governance 모델 관리 Lite 플랜은 설명, 편향성 발견 및 완화, 자동화된 AI 기능에 대한 액세스를 포함하여 비즈니스 전반에서 AI 모델을 관리하는 과정을 시작하는 데 필요한 모든 것을 제공합니다.\n\n- 모델 관리 Lite 플랜에는 최대 100MB 용량의 무료 내부 PostgreSQL 데이터베이스 인스턴스가 포함되어 있습니다.\n\n- 이 인스턴스는 호스팅되며 직접 접근할 수 없습니다.\n- 이 데이터베이스의 데이터는 마이그레이션할 수 없으며, 인스턴스를 재구성하면 데이터가 손실됩니다.\n- 내부 데이터베이스는 GDPR(일반 데이터 보호 규정)을 준수하지 않습니다.\n- 개인 식별 정보(PII)를 처리하는 워크로드이거나, 모델 관리 Lite 플랜에서 모델 관리 Essentials 플랜으로 연속성을 유지하며 업그레이드하려는 경우에는 IBM Cloud 카탈로그에서 지원되는 유료 데이터베이스 인스턴스를 사용해야 합니다.",
-            "description": "watsonx.governance 모델 관리 Lite 플랜은 설명, 편향성 발견 및 완화, 자동화된 AI 기능에 대한 액세스를 포함하여 비즈니스 전반에서 AI 모델을 관리하는 과정을 시작하는 데 필요한 모든 것을 제공합니다.\n\n- 모델 관리 Lite 플랜에는 최대 100MB 용량의 무료 내부 PostgreSQL 데이터베이스 인스턴스가 포함되어 있습니다.\n\n- 이 인스턴스는 호스팅되며 직접 접근할 수 없습니다.\n- 이 데이터베이스의 데이터는 마이그레이션할 수 없으며, 인스턴스를 재구성하면 데이터가 손실됩니다.\n- 내부 데이터베이스는 GDPR(일반 데이터 보호 규정)을 준수하지 않습니다.\n- 개인 식별 정보(PII)를 처리하는 워크로드이거나, 모델 관리 Lite 플랜에서 모델 관리 Essentials 플랜으로 연속성을 유지하며 업그레이드하려는 경우에는 IBM Cloud 카탈로그에서 지원되는 유료 데이터베이스 인스턴스를 사용해야 합니다."
+            "display_name": "평가판",
+            "long_description": "<b>watsonx.governance 모델 관리 및 위험 및 규정 준수</b>는 모델 관리와 위험 및 규정 준수 기능을 단일 평가판 환경으로 결합합니다.\n\nwatsonx.governance 모델 관리는 설명 액세스, 편향 감지 및 완화, 자동화된 AI 기능을 포함하여 비즈니스 전반에서 AI 모델을 관리하는 과정을 시작하는 데 필요한 모든 것을 제공합니다.\n\n최대 100MB의 무료 내부 PostgreSQL 데이터베이스 인스턴스가 포함됩니다. 개인 식별 정보(PII)를 처리하는 워크로드에는 IBM Cloud 카탈로그에서 지원되는 데이터베이스의 유료 인스턴스를 사용해야 합니다.\n\nwatsonx.governance 위험 및 규정 준수는 가이드 평가, 정책 기반 워크플로우, 위험 관리 및 규제 준수 감독을 통해 AI 자산을 관리하는 데 필요한 모든 것을 제공합니다. 위험 및 규정 준수는 댈러스, 프랑크푸르트, 시드니 지역에서만 사용할 수 있습니다.",
+            "description": "<b>watsonx.governance 모델 관리 및 위험 및 규정 준수</b>는 모델 관리와 위험 및 규정 준수 기능을 단일 평가판 환경으로 결합합니다.\n\nwatsonx.governance 모델 관리는 설명 액세스, 편향 감지 및 완화, 자동화된 AI 기능을 포함하여 비즈니스 전반에서 AI 모델을 관리하는 과정을 시작하는 데 필요한 모든 것을 제공합니다.\n\n최대 100MB의 무료 내부 PostgreSQL 데이터베이스 인스턴스가 포함됩니다. 개인 식별 정보(PII)를 처리하는 워크로드에는 IBM Cloud 카탈로그에서 지원되는 데이터베이스의 유료 인스턴스를 사용해야 합니다.\n\nwatsonx.governance 위험 및 규정 준수는 가이드 평가, 정책 기반 워크플로우, 위험 관리 및 규제 준수 감독을 통해 AI 자산을 관리하는 데 필요한 모든 것을 제공합니다. 위험 및 규정 준수는 댈러스, 프랑크푸르트, 시드니 지역에서만 사용할 수 있습니다."
+          },
+          "pt-BR": {
+            "display_name": "Avaliação",
+            "long_description": "<b>watsonx.governance Gerenciamento de modelos e Risco e conformidade</b> combina recursos de gerenciamento de modelos e de risco e conformidade em uma única experiência de avaliação.\n\nwatsonx.governance Gerenciamento de modelos oferece tudo o que você precisa para iniciar sua jornada de governança de modelos de IA em toda a empresa, incluindo acesso a explicações, detecção e mitigação de viés e recursos de IA automatizados.\n\nInclui uma instância gratuita de banco de dados PostgreSQL interno com tamanho máximo de 100 MB. Para cargas de trabalho que processam informações pessoalmente identificáveis (PII), é necessário usar uma instância paga de um banco de dados compatível do catálogo do IBM Cloud.\n\nwatsonx.governance Risco e conformidade fornece tudo o que você precisa para governar ativos de IA por meio de avaliações guiadas, fluxos de trabalho orientados por políticas, gerenciamento de riscos e supervisão de conformidade regulatória. Risco e conformidade está disponível apenas nas regiões de Dallas, Frankfurt e Sydney.",
+            "description": "<b>watsonx.governance Gerenciamento de modelos e Risco e conformidade</b> combina recursos de gerenciamento de modelos e de risco e conformidade em uma única experiência de avaliação.\n\nwatsonx.governance Gerenciamento de modelos oferece tudo o que você precisa para iniciar sua jornada de governança de modelos de IA em toda a empresa, incluindo acesso a explicações, detecção e mitigação de viés e recursos de IA automatizados.\n\nInclui uma instância gratuita de banco de dados PostgreSQL interno com tamanho máximo de 100 MB. Para cargas de trabalho que processam informações pessoalmente identificáveis (PII), é necessário usar uma instância paga de um banco de dados compatível do catálogo do IBM Cloud.\n\nwatsonx.governance Risco e conformidade fornece tudo o que você precisa para governar ativos de IA por meio de avaliações guiadas, fluxos de trabalho orientados por políticas, gerenciamento de riscos e supervisão de conformidade regulatória. Risco e conformidade está disponível apenas nas regiões de Dallas, Frankfurt e Sydney."
           },
           "pt-br": {
-            "display_name": "Gerenciamento de Modelos Lite",
-            "long_description": "O plano watsonx.governance Gerenciamento de Modelos Lite oferece tudo o que for necessário para começar sua jornada para controlar os modelos de IA em seus negócios, incluindo acesso a explicações, detecção e mitigação de propensão e recursos automatizados de IA.\n\n- O plano Gerenciamento de Modelos Lite inclui uma instância gratuita de banco de dados PostgreSQL interno com tamanho máximo de 100 MB.\n\n- A instância é hospedada e não é acessível diretamente.\n- Os dados nesse banco de dados não podem ser migrados e serão perdidos se a instância for reconfigurada.\n- O banco de dados interno não está em conformidade com a GDPR.\n- Para cargas de trabalho que processam informações pessoais identificáveis (PII), ou ao fazer upgrade do plano Gerenciamento de Modelos Lite para o plano Gerenciamento de Modelos Essentials com requisitos de continuidade, é necessário utilizar uma instância paga de um banco de dados compatível do catálogo da IBM Cloud.",
-            "description": "O plano watsonx.governance Gerenciamento de Modelos Lite oferece tudo o que for necessário para começar sua jornada para controlar os modelos de IA em seus negócios, incluindo acesso a explicações, detecção e mitigação de propensão e recursos automatizados de IA.\n\n- O plano Gerenciamento de Modelos Lite inclui uma instância gratuita de banco de dados PostgreSQL interno com tamanho máximo de 100 MB.\n\n- A instância é hospedada e não é acessível diretamente.\n- Os dados nesse banco de dados não podem ser migrados e serão perdidos se a instância for reconfigurada.\n- O banco de dados interno não está em conformidade com a GDPR.\n- Para cargas de trabalho que processam informações pessoais identificáveis (PII), ou ao fazer upgrade do plano Gerenciamento de Modelos Lite para o plano Gerenciamento de Modelos Essentials com requisitos de continuidade, é necessário utilizar uma instância paga de um banco de dados compatível do catálogo da IBM Cloud."
+            "display_name": "Avaliação",
+            "long_description": "<b>watsonx.governance Gerenciamento de modelos e Risco e conformidade</b> combina recursos de gerenciamento de modelos e de risco e conformidade em uma única experiência de avaliação.\n\nwatsonx.governance Gerenciamento de modelos oferece tudo o que você precisa para iniciar sua jornada de governança de modelos de IA em toda a empresa, incluindo acesso a explicações, detecção e mitigação de viés e recursos de IA automatizados.\n\nInclui uma instância gratuita de banco de dados PostgreSQL interno com tamanho máximo de 100 MB. Para cargas de trabalho que processam informações pessoalmente identificáveis (PII), é necessário usar uma instância paga de um banco de dados compatível do catálogo do IBM Cloud.\n\nwatsonx.governance Risco e conformidade fornece tudo o que você precisa para governar ativos de IA por meio de avaliações guiadas, fluxos de trabalho orientados por políticas, gerenciamento de riscos e supervisão de conformidade regulatória. Risco e conformidade está disponível apenas nas regiões de Dallas, Frankfurt e Sydney.",
+            "description": "<b>watsonx.governance Gerenciamento de modelos e Risco e conformidade</b> combina recursos de gerenciamento de modelos e de risco e conformidade em uma única experiência de avaliação.\n\nwatsonx.governance Gerenciamento de modelos oferece tudo o que você precisa para iniciar sua jornada de governança de modelos de IA em toda a empresa, incluindo acesso a explicações, detecção e mitigação de viés e recursos de IA automatizados.\n\nInclui uma instância gratuita de banco de dados PostgreSQL interno com tamanho máximo de 100 MB. Para cargas de trabalho que processam informações pessoalmente identificáveis (PII), é necessário usar uma instância paga de um banco de dados compatível do catálogo do IBM Cloud.\n\nwatsonx.governance Risco e conformidade fornece tudo o que você precisa para governar ativos de IA por meio de avaliações guiadas, fluxos de trabalho orientados por políticas, gerenciamento de riscos e supervisão de conformidade regulatória. Risco e conformidade está disponível apenas nas regiões de Dallas, Frankfurt e Sydney."
+          },
+          "zh-Hans": {
+            "display_name": "试用",
+            "long_description": "<b>watsonx.governance 模型管理和风险与合规</b>将模型管理与风险及合规功能整合为单一试用体验。\n\nwatsonx.governance 模型管理提供您在整个企业中开始管理 AI 模型所需的一切，包括访问说明、偏差检测和缓解以及自动化 AI 功能。\n\n包含一个免费的内部 PostgreSQL 数据库实例，最大容量为 100 MB。对于处理个人身份信息 (PII) 的工作负载，必须使用 IBM Cloud 目录中受支持数据库的付费实例。\n\nwatsonx.governance 风险与合规提供您通过引导式评估、策略驱动的工作流、风险管理和法规合规监督来管理 AI 资产所需的一切。风险与合规仅在达拉斯、法兰克福和悉尼地区提供。",
+            "description": "<b>watsonx.governance 模型管理和风险与合规</b>将模型管理与风险及合规功能整合为单一试用体验。\n\nwatsonx.governance 模型管理提供您在整个企业中开始管理 AI 模型所需的一切，包括访问说明、偏差检测和缓解以及自动化 AI 功能。\n\n包含一个免费的内部 PostgreSQL 数据库实例，最大容量为 100 MB。对于处理个人身份信息 (PII) 的工作负载，必须使用 IBM Cloud 目录中受支持数据库的付费实例。\n\nwatsonx.governance 风险与合规提供您通过引导式评估、策略驱动的工作流、风险管理和法规合规监督来管理 AI 资产所需的一切。风险与合规仅在达拉斯、法兰克福和悉尼地区提供。"
+          },
+          "zh-Hant": {
+            "display_name": "試用",
+            "long_description": "<b>watsonx.governance 模型管理和風險與合規</b>將模型管理與風險及合規功能整合為單一試用體驗。\n\nwatsonx.governance 模型管理提供您在整個企業中開始管理 AI 模型所需的一切，包括存取說明、偏誤偵測和緩解以及自動化 AI 功能。\n\n包含一個免費的內部 PostgreSQL 資料庫實例，最大容量為 100 MB。對於處理個人識別資訊 (PII) 的工作負載，必須使用 IBM Cloud 目錄中受支援資料庫的付費實例。\n\nwatsonx.governance 風險與合規提供您透過引導式評估、政策驅動的工作流程、風險管理和法規合規監督來管理 AI 資產所需的一切。風險與合規僅在達拉斯、法蘭克福和雪梨地區提供。",
+            "description": "<b>watsonx.governance 模型管理和風險與合規</b>將模型管理與風險及合規功能整合為單一試用體驗。\n\nwatsonx.governance 模型管理提供您在整個企業中開始管理 AI 模型所需的一切，包括存取說明、偏誤偵測和緩解以及自動化 AI 功能。\n\n包含一個免費的內部 PostgreSQL 資料庫實例，最大容量為 100 MB。對於處理個人識別資訊 (PII) 的工作負載，必須使用 IBM Cloud 目錄中受支援資料庫的付費實例。\n\nwatsonx.governance 風險與合規提供您透過引導式評估、政策驅動的工作流程、風險管理和法規合規監督來管理 AI 資產所需的一切。風險與合規僅在達拉斯、法蘭克福和雪梨地區提供。"
           },
           "zh-cn": {
-            "display_name": "模型管理 Lite",
-            "long_description": "watsonx.governance 模型管理 Lite 套餐提供了您开始在整个企业中管理 AI 模型所需的一切，包括说明、偏差检测和缓解以及自动化 AI 功能的访问权。\n\n- 模型管理 Lite 计划包含一个免费的内部 PostgreSQL 数据库实例，最大容量为 100MB。\n\n- 该实例为托管型，无法直接访问。\n- 此数据库中的数据无法迁移，若重新配置实例，数据将会丢失。\n- 该内部数据库不符合 GDPR（通用数据保护条例）要求。\n- 对于处理可识别个人信息（PII）的工作负载，或在从 模型管理 Lite 计划升级到 模型管理 Essentials 计划时需要保持连续性的情况，必须使用 IBM Cloud 目录中支持的付费数据库实例。",
-            "description": "watsonx.governance Lite 套餐提供了您开始在整个企业中管理 AI 模型所需的一切，包括说明、偏差检测和缓解以及自动化 AI 功能的访问权。\n\n- Lite 计划包含一个免费的内部 PostgreSQL 数据库实例，最大容量为 100MB。\n\n- 该实例为托管型，无法直接访问。\n- 此数据库中的数据无法迁移，若重新配置实例，数据将会丢失。\n- 该内部数据库不符合 GDPR（通用数据保护条例）要求。\n- 对于处理可识别个人信息（PII）的工作负载，或在从 Lite 计划升级到 Essentials 计划时需要保持连续性的情况，必须使用 IBM Cloud 目录中支持的付费数据库实例。"
+            "display_name": "试用",
+            "long_description": "<b>watsonx.governance 模型管理和风险与合规</b>将模型管理与风险及合规功能整合为单一试用体验。\n\nwatsonx.governance 模型管理提供您在整个企业中开始管理 AI 模型所需的一切，包括访问说明、偏差检测和缓解以及自动化 AI 功能。\n\n包含一个免费的内部 PostgreSQL 数据库实例，最大容量为 100 MB。对于处理个人身份信息 (PII) 的工作负载，必须使用 IBM Cloud 目录中受支持数据库的付费实例。\n\nwatsonx.governance 风险与合规提供您通过引导式评估、策略驱动的工作流、风险管理和法规合规监督来管理 AI 资产所需的一切。风险与合规仅在达拉斯、法兰克福和悉尼地区提供。",
+            "description": "<b>watsonx.governance 模型管理和风险与合规</b>将模型管理与风险及合规功能整合为单一试用体验。\n\nwatsonx.governance 模型管理提供您在整个企业中开始管理 AI 模型所需的一切，包括访问说明、偏差检测和缓解以及自动化 AI 功能。\n\n包含一个免费的内部 PostgreSQL 数据库实例，最大容量为 100 MB。对于处理个人身份信息 (PII) 的工作负载，必须使用 IBM Cloud 目录中受支持数据库的付费实例。\n\nwatsonx.governance 风险与合规提供您通过引导式评估、策略驱动的工作流、风险管理和法规合规监督来管理 AI 资产所需的一切。风险与合规仅在达拉斯、法兰克福和悉尼地区提供。"
           },
           "zh-tw": {
-            "display_name": "模型管理 Lite",
-            "long_description": "watsonx.governance 模型管理 Lite 方案提供您在整個企業中開始控管 AI 模型所需的一切，包括存取說明、偏誤偵測及降低，以及自動化 AI 功能。\n\n- 模型管理 Lite 方案包含一個免費的內部 PostgreSQL 資料庫實例，最大容量為 100MB。\n\n- 該實例為託管型，無法直接存取。\n- 此資料庫中的資料無法遷移，若重新配置實例，資料將會遺失。\n- 該內部資料庫不符合 GDPR（一般資料保護規範）。\n- 若工作負載涉及處理可識別個人資訊（PII），或在從 模型管理 Lite 方案升級至 模型管理 Essentials 方案時需要維持連續性，則必須使用 IBM Cloud 目錄中支援的付費資料庫實例。",
-            "description": "watsonx.governance 模型管理 Lite 方案提供您在整個企業中開始控管 AI 模型所需的一切，包括存取說明、偏誤偵測及降低，以及自動化 AI 功能。\n\n- 模型管理 Lite 方案包含一個免費的內部 PostgreSQL 資料庫實例，最大容量為 100MB。\n\n- 該實例為託管型，無法直接存取。\n- 此資料庫中的資料無法遷移，若重新配置實例，資料將會遺失。\n- 該內部資料庫不符合 GDPR（一般資料保護規範）。\n- 若工作負載涉及處理可識別個人資訊（PII），或在從 模型管理 Lite 方案升級至 模型管理 Essentials 方案時需要維持連續性，則必須使用 IBM Cloud 目錄中支援的付費資料庫實例。"
+            "display_name": "試用",
+            "long_description": "<b>watsonx.governance 模型管理和風險與合規</b>將模型管理與風險及合規功能整合為單一試用體驗。\n\nwatsonx.governance 模型管理提供您在整個企業中開始管理 AI 模型所需的一切，包括存取說明、偏誤偵測和緩解以及自動化 AI 功能。\n\n包含一個免費的內部 PostgreSQL 資料庫實例，最大容量為 100 MB。對於處理個人識別資訊 (PII) 的工作負載，必須使用 IBM Cloud 目錄中受支援資料庫的付費實例。\n\nwatsonx.governance 風險與合規提供您透過引導式評估、政策驅動的工作流程、風險管理和法規合規監督來管理 AI 資產所需的一切。風險與合規僅在達拉斯、法蘭克福和雪梨地區提供。",
+            "description": "<b>watsonx.governance 模型管理和風險與合規</b>將模型管理與風險及合規功能整合為單一試用體驗。\n\nwatsonx.governance 模型管理提供您在整個企業中開始管理 AI 模型所需的一切，包括存取說明、偏誤偵測和緩解以及自動化 AI 功能。\n\n包含一個免費的內部 PostgreSQL 資料庫實例，最大容量為 100 MB。對於處理個人識別資訊 (PII) 的工作負載，必須使用 IBM Cloud 目錄中受支援資料庫的付費實例。\n\nwatsonx.governance 風險與合規提供您透過引導式評估、政策驅動的工作流程、風險管理和法規合規監督來管理 AI 資產所需的一切。風險與合規僅在達拉斯、法蘭克福和雪梨地區提供。"
           }
         },
         "parent_id": "2ad019f3-0fd6-4c25-966d-f3952481a870",
@@ -320839,7 +320872,7 @@
           "name": "IBM"
         },
         "created": "2018-09-10T19:47:05.255Z",
-        "updated": "2026-06-26T10:43:10.299757105-04:00",
+        "updated": "2026-11-03T01:12:34.784922582-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/967ba182-c6e0-4adc-92ef-661a822cc1d7?complete=true",
         "images": {
@@ -320889,340 +320922,1001 @@
               "de": {
                 "bullets": [
                   {
-                    "description": "Maximal 100 Ressourceneinheiten"
+                    "description": "Modellverwaltung und Risiko & Compliance"
                   },
                   {
-                    "description": "1 Ressourceneinheit pro Vorhersagemodellauswertung"
+                    "description": "Modellverwaltung"
                   },
                   {
-                    "description": "1 Ressourceneinheit pro Foundational Model Evaluation"
+                    "description": "  - 100 Ressourceneinheiten"
                   },
                   {
-                    "description": "1 Ressourceneinheit pro globaler Erläuterung (mit maximal 500 lokalen Erklärungen)"
+                    "description": "  - Modellauswertung"
                   },
                   {
-                    "description": "1 Ressourceneinheit pro 500 lokalen Erläuterungen"
+                    "description": "  - Globale und lokale Erklärungen"
                   },
                   {
-                    "description": "Maximal 1k Datensätze pro Auswertung"
+                    "description": "  - Modellbestand"
                   },
                   {
-                    "description": "Maximal 2 geschützte Merkmale pro Vorhersagemodell zur Fairness-Überwachung"
+                    "description": "  - Anwendungsfälle & Factsheets"
                   },
                   {
-                    "description": "Begrenzt auf 3 Zeilen pro Anwendungsfall"
+                    "description": "---Einschränkung---"
                   },
                   {
-                    "description": "Beschränkt auf 3 Anwendungsfälle"
+                    "description": "  - 1.000 Datensätze pro Auswertung"
                   },
                   {
-                    "description": "Begrenzt auf 1 Bestand"
+                    "description": "  - 2 geschützte Merkmale pro Fairness-Auswertung"
+                  },
+                  {
+                    "description": "  - 3 Zeilen pro Anwendungsfall"
+                  },
+                  {
+                    "description": "  - 3 Anwendungsfälle"
+                  },
+                  {
+                    "description": "  - 1 Bestand"
+                  },
+                  {
+                    "description": "  - 30-tägiger Zugriff"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "Risiko & Compliance ( nur in Dallas, Frankfurt und Sydney verfügbar )"
+                  },
+                  {
+                    "description": "  - Asset-Erkennung"
+                  },
+                  {
+                    "description": "  - Governance-Graph"
+                  },
+                  {
+                    "description": "  - Onboarding von Anwendungsfällen"
+                  },
+                  {
+                    "description": "  - Risikobewertung"
+                  },
+                  {
+                    "description": "  - Bewertung der Compliance-Anwendbarkeit"
+                  },
+                  {},
+                  {
+                    "description": "---Einschränkung---"
+                  },
+                  {
+                    "description": "  - 30-tägiger Zugriff"
+                  },
+                  {
+                    "description": "  - Maximal 5 gleichzeitige Benutzer"
                   }
                 ]
               },
               "en": {
                 "bullets": [
                   {
-                    "description": "Maximum 100 Resource Units"
+                    "description": "Model Management and Risk & Compliance"
                   },
                   {
-                    "description": "1 Resource Unit per Predictive Model Evaluation"
+                    "description": "Model Management"
                   },
                   {
-                    "description": "1 Resource Unit per Foundational Model Evaluation"
+                    "description": "  - 100 Resource Units"
                   },
                   {
-                    "description": "1 Resource Unit per Global Explanation (with maximum 500 local explanations)"
+                    "description": "  - Model evaluation"
                   },
                   {
-                    "description": "1 Resource Unit per 500 Local Explanations"
+                    "description": "  - Global and local explanations"
                   },
                   {
-                    "description": "Maximum 1k records per evaluation"
+                    "description": "  - Model inventory"
                   },
                   {
-                    "description": "A maximum of 2 protected features per predictive model for fairness monitoring"
+                    "description": "  - Use cases & factsheets"
                   },
                   {
-                    "description": "Limited to 3 rows per use case"
+                    "description": "---Limitation---"
                   },
                   {
-                    "description": "Limited to 3 use cases"
+                    "description": "  - 1k records per evaluation"
                   },
                   {
-                    "description": "Limited to 1 inventory"
+                    "description": "  - 2 protected features per fairness evaluation"
+                  },
+                  {
+                    "description": "  - 3 rows per use case"
+                  },
+                  {
+                    "description": "  - 3 use cases"
+                  },
+                  {
+                    "description": "  - 1 inventory"
+                  },
+                  {
+                    "description": "  - 30 day access"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "Risk & Compliance ( available only in Dallas, Frankfurt and Sydney )"
+                  },
+                  {
+                    "description": "  - Asset discovery"
+                  },
+                  {
+                    "description": "  - Governance graph"
+                  },
+                  {
+                    "description": "  - Use case onboarding"
+                  },
+                  {
+                    "description": "  - Risk assessment"
+                  },
+                  {
+                    "description": "  - Compliance applicability assessment"
+                  },
+                  {},
+                  {
+                    "description": "---Limitation---"
+                  },
+                  {
+                    "description": "  - 30 day access"
+                  },
+                  {
+                    "description": "  - Maximum of 5 concurrent users"
                   }
                 ]
               },
               "es": {
                 "bullets": [
                   {
-                    "description": "Máximo de 100 unidades de recurso"
+                    "description": "Gestión de modelos y Riesgo y cumplimiento"
                   },
                   {
-                    "description": "1 unidad de recurso por evaluación de modelo predictivo"
+                    "description": "Gestión de modelos"
                   },
                   {
-                    "description": "1 unidad de recurso por evaluación de modelo fundacional"
+                    "description": "  - 100 unidades de recurso"
                   },
                   {
-                    "description": "1 Unidad de recurso por explicación global (con un máximo de 500 explicaciones locales)"
+                    "description": "  - Evaluación de modelos"
                   },
                   {
-                    "description": "1 unidad de recurso por 500 explicaciones locales"
+                    "description": "  - Explicaciones globales y locales"
                   },
                   {
-                    "description": "Máximo de 1k registros por evaluación"
+                    "description": "  - Inventario de modelos"
                   },
                   {
-                    "description": "Un máximo de 2 características protegidas por modelo predictivo para el monitoreo de equidad"
+                    "description": "  - Casos de uso y hojas de datos"
                   },
                   {
-                    "description": "Limitado a 3 filas por caso de uso"
+                    "description": "---Limitación---"
                   },
                   {
-                    "description": "Limitado a 3 casos de uso"
+                    "description": "  - 1000 registros por evaluación"
                   },
                   {
-                    "description": "Limitado a 1 inventario"
+                    "description": "  - 2 características protegidas por evaluación de equidad"
+                  },
+                  {
+                    "description": "  - 3 filas por caso de uso"
+                  },
+                  {
+                    "description": "  - 3 casos de uso"
+                  },
+                  {
+                    "description": "  - 1 inventario"
+                  },
+                  {
+                    "description": "  - Acceso de 30 días"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "Riesgo y cumplimiento ( disponible solo en Dallas, Fráncfort y Sídney )"
+                  },
+                  {
+                    "description": "  - Descubrimiento de activos"
+                  },
+                  {
+                    "description": "  - Gráfico de gobernanza"
+                  },
+                  {
+                    "description": "  - Incorporación de casos de uso"
+                  },
+                  {
+                    "description": "  - Evaluación de riesgos"
+                  },
+                  {
+                    "description": "  - Evaluación de aplicabilidad de cumplimiento"
+                  },
+                  {},
+                  {
+                    "description": "---Limitación---"
+                  },
+                  {
+                    "description": "  - Acceso de 30 días"
+                  },
+                  {
+                    "description": "  - Máximo de 5 usuarios simultáneos"
                   }
                 ]
               },
               "fr": {
                 "bullets": [
                   {
-                    "description": "100 unités de ressource maximum"
+                    "description": "Gestion des modèles et Risques & Conformité"
                   },
                   {
-                    "description": "1 unité de ressource par évaluation de modèle prédictif"
+                    "description": "Gestion des modèles"
                   },
                   {
-                    "description": "1 unité de ressource par évaluation de modèle de base"
+                    "description": "  - 100 unités de ressource"
                   },
                   {
-                    "description": "1 unité de ressource par explication globale (avec un maximum de 500 explications locales)"
+                    "description": "  - Évaluation des modèles"
                   },
                   {
-                    "description": "1 unité de ressource par 500 explications locales"
+                    "description": "  - Explications globales et locales"
                   },
                   {
-                    "description": "1k enregistrements maximum par évaluation"
+                    "description": "  - Inventaire des modèles"
                   },
                   {
-                    "description": "Maximum de 2 caractéristiques protégées par modèle prédictif pour la surveillance de l’équité"
+                    "description": "  - Cas d'utilisation et fiches techniques"
                   },
                   {
-                    "description": "Limité à 3 lignes par cas d'utilisation"
+                    "description": "---Limitation---"
                   },
                   {
-                    "description": "Limité à 3 cas d'utilisation"
+                    "description": "  - 1 000 enregistrements par évaluation"
                   },
                   {
-                    "description": "Limité à 1 inventaire"
+                    "description": "  - 2 caractéristiques protégées par évaluation d'équité"
+                  },
+                  {
+                    "description": "  - 3 lignes par cas d'utilisation"
+                  },
+                  {
+                    "description": "  - 3 cas d'utilisation"
+                  },
+                  {
+                    "description": "  - 1 inventaire"
+                  },
+                  {
+                    "description": "  - Accès de 30 jours"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "Risques & Conformité ( disponible uniquement à Dallas, Francfort et Sydney )"
+                  },
+                  {
+                    "description": "  - Découverte des actifs"
+                  },
+                  {
+                    "description": "  - Graphe de gouvernance"
+                  },
+                  {
+                    "description": "  - Intégration des cas d'utilisation"
+                  },
+                  {
+                    "description": "  - Évaluation des risques"
+                  },
+                  {
+                    "description": "  - Évaluation de l'applicabilité de la conformité"
+                  },
+                  {},
+                  {
+                    "description": "---Limitation---"
+                  },
+                  {
+                    "description": "  - Accès de 30 jours"
+                  },
+                  {
+                    "description": "  - Maximum de 5 utilisateurs simultanés"
                   }
                 ]
               },
               "it": {
                 "bullets": [
                   {
-                    "description": "Massimo 100 unità di risorsa"
+                    "description": "Gestione dei modelli e Rischio e conformità"
                   },
                   {
-                    "description": "1 unità di risorsa per valutazione del modello predittivo"
+                    "description": "Gestione dei modelli"
                   },
                   {
-                    "description": "1 unità di risorsa per valutazione del modello di base"
+                    "description": "  - 100 unità di risorsa"
                   },
                   {
-                    "description": "1 unità di risorsa per spiegazione globale (con un massimo di 500 spiegazioni locali)"
+                    "description": "  - Valutazione del modello"
                   },
                   {
-                    "description": "1 unità di risorsa per 500 spiegazioni locali"
+                    "description": "  - Spiegazioni globali e locali"
                   },
                   {
-                    "description": "Massimo 1000 record per valutazione"
+                    "description": "  - Inventario dei modelli"
                   },
                   {
-                    "description": "Un massimo di 2 caratteristiche protette per modello predittivo per il monitoraggio dell’equità"
+                    "description": "  - Casi d'uso e schede tecniche"
                   },
                   {
-                    "description": "Limite di 3 righe per caso d'uso"
+                    "description": "---Limitazione---"
                   },
                   {
-                    "description": "Limite di 3 casi d'uso"
+                    "description": "  - 1.000 record per valutazione"
                   },
                   {
-                    "description": "Limite di 1 inventario"
+                    "description": "  - 2 caratteristiche protette per valutazione dell'equità"
+                  },
+                  {
+                    "description": "  - 3 righe per caso d'uso"
+                  },
+                  {
+                    "description": "  - 3 casi d'uso"
+                  },
+                  {
+                    "description": "  - 1 inventario"
+                  },
+                  {
+                    "description": "  - Accesso di 30 giorni"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "Rischio e conformità ( disponibile solo a Dallas, Francoforte e Sydney )"
+                  },
+                  {
+                    "description": "  - Individuazione degli asset"
+                  },
+                  {
+                    "description": "  - Grafico di governance"
+                  },
+                  {
+                    "description": "  - Onboarding dei casi d'uso"
+                  },
+                  {
+                    "description": "  - Valutazione del rischio"
+                  },
+                  {
+                    "description": "  - Valutazione dell'applicabilità della conformità"
+                  },
+                  {},
+                  {
+                    "description": "---Limitazione---"
+                  },
+                  {
+                    "description": "  - Accesso di 30 giorni"
+                  },
+                  {
+                    "description": "  - Massimo 5 utenti simultanei"
                   }
                 ]
               },
               "ja": {
                 "bullets": [
                   {
-                    "description": "最大 100 リソース単位"
+                    "description": "モデル管理およびリスクとコンプライアンス"
                   },
                   {
-                    "description": "予測モデル評価ごとに 1 リソース単位"
+                    "description": "モデル管理"
                   },
                   {
-                    "description": "基本モデル評価ごとに 1 リソース単位"
+                    "description": "  - 100 リソース単位"
                   },
                   {
-                    "description": "グローバル説明ごとに 1 つのリソース単位 (最大 500 個のローカル説明あり)"
+                    "description": "  - モデル評価"
                   },
                   {
-                    "description": "500 ローカル説明ごとに 1 リソース単位"
+                    "description": "  - グローバルおよびローカルの説明"
                   },
                   {
-                    "description": "評価ごとの最大 1k レコード"
+                    "description": "  - モデル・インベントリー"
                   },
                   {
-                    "description": "公平性モニタリングのため、予測モデルごとに最大2つの保護対象属性"
+                    "description": "  - ユース・ケースとファクト・シート"
                   },
                   {
-                    "description": "ユース・ケースごとに 3 行に制限"
+                    "description": "---制限---"
                   },
                   {
-                    "description": "3 つのユース・ケースに制限"
+                    "description": "  - 評価ごとに 1,000 件のレコード"
                   },
                   {
-                    "description": "1 インベントリーに制限"
+                    "description": "  - 公平性評価ごとに 2 つの保護対象フィーチャー"
+                  },
+                  {
+                    "description": "  - ユース・ケースごとに 3 行"
+                  },
+                  {
+                    "description": "  - 3 つのユース・ケース"
+                  },
+                  {
+                    "description": "  - 1 つのインベントリー"
+                  },
+                  {
+                    "description": "  - 30 日間のアクセス"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "リスクとコンプライアンス （ダラス、フランクフルト、シドニーのみで利用可能）"
+                  },
+                  {
+                    "description": "  - アセット検出"
+                  },
+                  {
+                    "description": "  - ガバナンス・グラフ"
+                  },
+                  {
+                    "description": "  - ユース・ケースのオンボーディング"
+                  },
+                  {
+                    "description": "  - リスク評価"
+                  },
+                  {
+                    "description": "  - コンプライアンス適用可能性評価"
+                  },
+                  {},
+                  {
+                    "description": "---制限---"
+                  },
+                  {
+                    "description": "  - 30 日間のアクセス"
+                  },
+                  {
+                    "description": "  - 最大 5 人の同時ユーザー"
                   }
                 ]
               },
               "ko": {
                 "bullets": [
                   {
-                    "description": "최대 100개의 자원 단위"
+                    "description": "모델 관리 및 위험 및 규정 준수"
                   },
                   {
-                    "description": "예측 모델 평가당 1개의 자원 단위"
+                    "description": "모델 관리"
                   },
                   {
-                    "description": "기본 모델 평가당 1개의 자원 단위"
+                    "description": "  - 자원 단위 100개"
                   },
                   {
-                    "description": "글로벌 설명당 1개의 자원 단위(최대 500개의 로컬 설명 포함)"
+                    "description": "  - 모델 평가"
                   },
                   {
-                    "description": "500개의 로컬 설명당 1개의 자원 단위"
+                    "description": "  - 글로벌 및 로컬 설명"
                   },
                   {
-                    "description": "평가당 최대 1000개의 레코드"
+                    "description": "  - 모델 인벤토리"
                   },
                   {
-                    "description": "공정성 모니터링을 위해 예측 모델당 최대 2개의 보호된 특성"
+                    "description": "  - 유스 케이스 및 팩트 시트"
                   },
                   {
-                    "description": "유스 케이스당 3개의 행으로 제한됨"
+                    "description": "---제한---"
                   },
                   {
-                    "description": "3개의 유스 케이스로 제한됨"
+                    "description": "  - 평가당 1,000개의 레코드"
                   },
                   {
-                    "description": "1개의 인벤토리로 제한됨"
+                    "description": "  - 공정성 평가당 보호된 특성 2개"
+                  },
+                  {
+                    "description": "  - 유스 케이스당 3개의 행"
+                  },
+                  {
+                    "description": "  - 유스 케이스 3개"
+                  },
+                  {
+                    "description": "  - 인벤토리 1개"
+                  },
+                  {
+                    "description": "  - 30일 액세스"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "위험 및 규정 준수 ( 댈러스, 프랑크푸르트, 시드니에서만 사용 가능 )"
+                  },
+                  {
+                    "description": "  - 자산 검색"
+                  },
+                  {
+                    "description": "  - 거버넌스 그래프"
+                  },
+                  {
+                    "description": "  - 유스 케이스 온보딩"
+                  },
+                  {
+                    "description": "  - 위험 평가"
+                  },
+                  {
+                    "description": "  - 규정 준수 적용 가능성 평가"
+                  },
+                  {},
+                  {
+                    "description": "---제한---"
+                  },
+                  {
+                    "description": "  - 30일 액세스"
+                  },
+                  {
+                    "description": "  - 최대 5명의 동시 사용자"
+                  }
+                ]
+              },
+              "pt-BR": {
+                "bullets": [
+                  {
+                    "description": "Gerenciamento de modelos e Risco e conformidade"
+                  },
+                  {
+                    "description": "Gerenciamento de modelos"
+                  },
+                  {
+                    "description": "  - 100 unidades de recurso"
+                  },
+                  {
+                    "description": "  - Avaliação de modelo"
+                  },
+                  {
+                    "description": "  - Explicações globais e locais"
+                  },
+                  {
+                    "description": "  - Inventário de modelos"
+                  },
+                  {
+                    "description": "  - Casos de uso e planilhas de fatos"
+                  },
+                  {
+                    "description": "---Limitação---"
+                  },
+                  {
+                    "description": "  - 1.000 registros por avaliação"
+                  },
+                  {
+                    "description": "  - 2 recursos protegidos por avaliação de equidade"
+                  },
+                  {
+                    "description": "  - 3 linhas por caso de uso"
+                  },
+                  {
+                    "description": "  - 3 casos de uso"
+                  },
+                  {
+                    "description": "  - 1 inventário"
+                  },
+                  {
+                    "description": "  - Acesso de 30 dias"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "Risco e conformidade ( disponível apenas em Dallas, Frankfurt e Sydney )"
+                  },
+                  {
+                    "description": "  - Descoberta de ativos"
+                  },
+                  {
+                    "description": "  - Gráfico de governança"
+                  },
+                  {
+                    "description": "  - Integração de casos de uso"
+                  },
+                  {
+                    "description": "  - Avaliação de risco"
+                  },
+                  {
+                    "description": "  - Avaliação de aplicabilidade de conformidade"
+                  },
+                  {},
+                  {
+                    "description": "---Limitação---"
+                  },
+                  {
+                    "description": "  - Acesso de 30 dias"
+                  },
+                  {
+                    "description": "  - Máximo de 5 usuários simultâneos"
                   }
                 ]
               },
               "pt-br": {
                 "bullets": [
                   {
-                    "description": "Máximo de 100 unidades de recurso"
+                    "description": "Gerenciamento de modelos e Risco e conformidade"
                   },
                   {
-                    "description": "1 unidade de recurso por avaliação de modelo preditivo"
+                    "description": "Gerenciamento de modelos"
                   },
                   {
-                    "description": "1 unidade de recurso por avaliação de modelo de base"
+                    "description": "  - 100 unidades de recurso"
                   },
                   {
-                    "description": "1 unidade de recurso por explicação global (com no máximo 500 explicações locais)"
+                    "description": "  - Avaliação de modelo"
                   },
                   {
-                    "description": "1 unidade de recurso por 500 explicações locais"
+                    "description": "  - Explicações globais e locais"
                   },
                   {
-                    "description": "Máximo de 1.000 registros por avaliação"
+                    "description": "  - Inventário de modelos"
                   },
                   {
-                    "description": "Máximo de 2 características protegidas por modelo preditivo para monitoramento de justiça"
+                    "description": "  - Casos de uso e planilhas de fatos"
                   },
                   {
-                    "description": "Limitado a 3 linhas por caso de uso"
+                    "description": "---Limitação---"
                   },
                   {
-                    "description": "Limitado a 3 casos de uso"
+                    "description": "  - 1.000 registros por avaliação"
                   },
                   {
-                    "description": "Limitado a 1 inventário"
+                    "description": "  - 2 recursos protegidos por avaliação de equidade"
+                  },
+                  {
+                    "description": "  - 3 linhas por caso de uso"
+                  },
+                  {
+                    "description": "  - 3 casos de uso"
+                  },
+                  {
+                    "description": "  - 1 inventário"
+                  },
+                  {
+                    "description": "  - Acesso de 30 dias"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "Risco e conformidade ( disponível apenas em Dallas, Frankfurt e Sydney )"
+                  },
+                  {
+                    "description": "  - Descoberta de ativos"
+                  },
+                  {
+                    "description": "  - Gráfico de governança"
+                  },
+                  {
+                    "description": "  - Integração de casos de uso"
+                  },
+                  {
+                    "description": "  - Avaliação de risco"
+                  },
+                  {
+                    "description": "  - Avaliação de aplicabilidade de conformidade"
+                  },
+                  {},
+                  {
+                    "description": "---Limitação---"
+                  },
+                  {
+                    "description": "  - Acesso de 30 dias"
+                  },
+                  {
+                    "description": "  - Máximo de 5 usuários simultâneos"
+                  }
+                ]
+              },
+              "zh-Hans": {
+                "bullets": [
+                  {
+                    "description": "模型管理和风险与合规"
+                  },
+                  {
+                    "description": "模型管理"
+                  },
+                  {
+                    "description": "  - 100 个资源单元"
+                  },
+                  {
+                    "description": "  - 模型评估"
+                  },
+                  {
+                    "description": "  - 全局和本地说明"
+                  },
+                  {
+                    "description": "  - 模型库存"
+                  },
+                  {
+                    "description": "  - 用例和事实表"
+                  },
+                  {
+                    "description": "---限制---"
+                  },
+                  {
+                    "description": "  - 每次评估最多 1,000 条记录"
+                  },
+                  {
+                    "description": "  - 每次公平性评估 2 个受保护功能部件"
+                  },
+                  {
+                    "description": "  - 每个用例 3 行"
+                  },
+                  {
+                    "description": "  - 3 个用例"
+                  },
+                  {
+                    "description": "  - 1 个库存"
+                  },
+                  {
+                    "description": "  - 30 天访问权限"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "风险与合规（仅在达拉斯、法兰克福和悉尼提供）"
+                  },
+                  {
+                    "description": "  - 资产发现"
+                  },
+                  {
+                    "description": "  - 治理图"
+                  },
+                  {
+                    "description": "  - 用例入门"
+                  },
+                  {
+                    "description": "  - 风险评估"
+                  },
+                  {
+                    "description": "  - 合规适用性评估"
+                  },
+                  {},
+                  {
+                    "description": "---限制---"
+                  },
+                  {
+                    "description": "  - 30 天访问权限"
+                  },
+                  {
+                    "description": "  - 最多 5 个并发用户"
+                  }
+                ]
+              },
+              "zh-Hant": {
+                "bullets": [
+                  {
+                    "description": "模型管理和風險與合規"
+                  },
+                  {
+                    "description": "模型管理"
+                  },
+                  {
+                    "description": "  - 100 個資源單位"
+                  },
+                  {
+                    "description": "  - 模型評估"
+                  },
+                  {
+                    "description": "  - 廣域和本端說明"
+                  },
+                  {
+                    "description": "  - 模型庫存"
+                  },
+                  {
+                    "description": "  - 用例和事實表"
+                  },
+                  {
+                    "description": "---限制---"
+                  },
+                  {
+                    "description": "  - 每次評估最多 1,000 筆記錄"
+                  },
+                  {
+                    "description": "  - 每次公平性評估 2 個受保護特性"
+                  },
+                  {
+                    "description": "  - 每個用例 3 列"
+                  },
+                  {
+                    "description": "  - 3 個用例"
+                  },
+                  {
+                    "description": "  - 1 個庫存"
+                  },
+                  {
+                    "description": "  - 30 天存取"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "風險與合規（僅在達拉斯、法蘭克福和雪梨提供）"
+                  },
+                  {
+                    "description": "  - 資產探索"
+                  },
+                  {
+                    "description": "  - 治理圖"
+                  },
+                  {
+                    "description": "  - 用例上線"
+                  },
+                  {
+                    "description": "  - 風險評估"
+                  },
+                  {
+                    "description": "  - 合規適用性評估"
+                  },
+                  {},
+                  {
+                    "description": "---限制---"
+                  },
+                  {
+                    "description": "  - 30 天存取"
+                  },
+                  {
+                    "description": "  - 最多 5 個並行使用者"
                   }
                 ]
               },
               "zh-cn": {
                 "bullets": [
                   {
-                    "description": "最多 100 个资源单元"
+                    "description": "模型管理和风险与合规"
                   },
                   {
-                    "description": "每次预测模型评估 1 个资源单元"
+                    "description": "模型管理"
                   },
                   {
-                    "description": "每次基础模型评估 1 个资源单元"
+                    "description": "  - 100 个资源单元"
                   },
                   {
-                    "description": "每个全局说明 1 个资源单元（最多 500 个本地说明）"
+                    "description": "  - 模型评估"
                   },
                   {
-                    "description": "每 500 个本地说明 1 个资源单元"
+                    "description": "  - 全局和本地说明"
                   },
                   {
-                    "description": "每次评估最多 1k 条记录"
+                    "description": "  - 模型库存"
                   },
                   {
-                    "description": "每个预测模型最多包含2个受保护特征用于公平性监控"
+                    "description": "  - 用例和事实表"
                   },
                   {
-                    "description": "每个用例限制为 3 行"
+                    "description": "---限制---"
                   },
                   {
-                    "description": "限制为 3 个用例"
+                    "description": "  - 每次评估最多 1,000 条记录"
                   },
                   {
-                    "description": "限制为 1 个库存"
+                    "description": "  - 每次公平性评估 2 个受保护功能部件"
+                  },
+                  {
+                    "description": "  - 每个用例 3 行"
+                  },
+                  {
+                    "description": "  - 3 个用例"
+                  },
+                  {
+                    "description": "  - 1 个库存"
+                  },
+                  {
+                    "description": "  - 30 天访问权限"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "风险与合规（仅在达拉斯、法兰克福和悉尼提供）"
+                  },
+                  {
+                    "description": "  - 资产发现"
+                  },
+                  {
+                    "description": "  - 治理图"
+                  },
+                  {
+                    "description": "  - 用例入门"
+                  },
+                  {
+                    "description": "  - 风险评估"
+                  },
+                  {
+                    "description": "  - 合规适用性评估"
+                  },
+                  {},
+                  {
+                    "description": "---限制---"
+                  },
+                  {
+                    "description": "  - 30 天访问权限"
+                  },
+                  {
+                    "description": "  - 最多 5 个并发用户"
                   }
                 ]
               },
               "zh-tw": {
                 "bullets": [
                   {
-                    "description": "最多 100 個資源單位"
+                    "description": "模型管理和風險與合規"
                   },
                   {
-                    "description": "每個預測模型評估 1 個資源單位"
+                    "description": "模型管理"
                   },
                   {
-                    "description": "每個基礎模型評估 1 個資源單位"
+                    "description": "  - 100 個資源單位"
                   },
                   {
-                    "description": "每個廣域說明 1 個資源單位（最多 500 個本端說明）"
+                    "description": "  - 模型評估"
                   },
                   {
-                    "description": "每 500 個本端說明 1 個資源單位"
+                    "description": "  - 廣域和本端說明"
                   },
                   {
-                    "description": "每個評估最多 1k 筆記錄"
+                    "description": "  - 模型庫存"
                   },
                   {
-                    "description": "每個預測模型最多包含2個受保護特徵用於公平性監控"
+                    "description": "  - 使用案例和事實表"
                   },
                   {
-                    "description": "每個使用案例限制為 3 列"
+                    "description": "---限制---"
                   },
                   {
-                    "description": "限制為 3 個使用案例"
+                    "description": "  - 每個評估最多 1,000 筆記錄"
                   },
                   {
-                    "description": "限制為 1 個庫存"
+                    "description": "  - 每個公平性評估 2 個受保護特性"
+                  },
+                  {
+                    "description": "  - 每個使用案例 3 列"
+                  },
+                  {
+                    "description": "  - 3 個使用案例"
+                  },
+                  {
+                    "description": "  - 1 個庫存"
+                  },
+                  {
+                    "description": "  - 30 天存取"
+                  },
+                  {
+                    "description": "—————————————————"
+                  },
+                  {
+                    "description": "風險與合規（僅在達拉斯、法蘭克福和雪梨提供）"
+                  },
+                  {
+                    "description": "  - 資產探索"
+                  },
+                  {
+                    "description": "  - 治理圖"
+                  },
+                  {
+                    "description": "  - 使用案例上線"
+                  },
+                  {
+                    "description": "  - 風險評估"
+                  },
+                  {
+                    "description": "  - 合規適用性評估"
+                  },
+                  {},
+                  {
+                    "description": "---限制---"
+                  },
+                  {
+                    "description": "  - 30 天存取"
+                  },
+                  {
+                    "description": "  - 最多 5 個並行使用者"
                   }
                 ]
               }
@@ -321242,8 +321936,8 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "The watsonx.governance Model Management Lite Plan offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\n- The Model Management Lite plan includes a free internal PostgreSQL database instance with a maximum size of 100 MB.\n\n- The instance is hosted and not directly accessible.\n- Data in this database cannot be migrated and is lost if the instance is reconfigured.\n- The internal database is not GDPR compliant.\n- For workloads that process personally identifiable information (PII), or when upgrading from the Model Management Lite plan to the Model Management Essentials plan with continuity requirements, a paid instance of a supported database from the IBM Cloud catalog must be used.",
-        "displayName": "Model Management Lite",
+        "description": "<b>watsonx.governance Model Management and Risk & Compliance</b> combines model management and risk & compliance capabilities into a single trial experience.\n\nwatsonx.governance Model Management offers everything you need to begin your journey to governing AI models across your business, including access to explanations, bias detection and mitigation, and automated AI capabilities.\n\nIncludes a free internal PostgreSQL database instance with a maximum size of 100 MB. For workloads that process personally identifiable information (PII) a paid instance of a supported database from the IBM Cloud catalog must be used.\n\nwatsonx.governance Risk & Compliance provides everything you need to govern AI assets through guided assessments, policy-driven workflows, risk management, and regulatory compliance oversight. Risk & Compliance is available only in Dallas, Frankfurt and Sydney regions.",
+        "displayName": "Trial",
         "originalName": "lite"
       },
       {
