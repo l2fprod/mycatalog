@@ -12121,7 +12121,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12129,7 +12128,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -102710,6 +102710,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -102717,11 +102721,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -137248,15 +137248,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "us-east",
+      "eu-es",
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "eu-es",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -182075,19 +182075,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "ca-tor",
-      "au-syd",
-      "br-sao",
-      "in-che",
-      "jp-osa",
-      "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
+      "au-syd",
+      "in-che",
+      "jp-osa",
+      "br-sao",
       "in-mum",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "ca-tor",
+      "ca-mon"
     ],
     "pricing_tags": [
       "paid",
@@ -247400,8 +247400,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -249877,7 +249877,7 @@
   {
     "id": "instructlab",
     "_id": "instructlab",
-    "_rev": "106-0f864e4165f739e361966f6929b773a4",
+    "_rev": "107-9777a9f055552fa3548fda7775474784",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:instructlab",
     "name": "instructlab",
     "kind": "service",
@@ -249937,7 +249937,7 @@
       "name": "IBM"
     },
     "created": "2025-01-07T17:29:49.177955538-05:00",
-    "updated": "2026-11-03T10:45:30.694033957-05:00",
+    "updated": "2026-11-04T04:11:26.291684888-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/instructlab?complete=true",
     "images": {
@@ -250083,7 +250083,7 @@
       {
         "id": "27439a12-6876-466b-96a3-f7bb6a4a532a",
         "_id": "27439a12-6876-466b-96a3-f7bb6a4a532a",
-        "_rev": "56-95b727cc4936d76c6b3bef32e6545a62",
+        "_rev": "57-94d01b21579b99a9b99c3efda1d10dd9",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:27439a12-6876-466b-96a3-f7bb6a4a532a",
         "name": "instructlab-pricing-plan",
         "kind": "plan",
@@ -250117,7 +250117,7 @@
           "name": "Tyler Lisowski"
         },
         "created": "2025-03-06T18:00:47.662030464-05:00",
-        "updated": "2026-11-03T10:45:30.693572887-05:00",
+        "updated": "2026-11-04T04:11:26.290622833-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/27439a12-6876-466b-96a3-f7bb6a4a532a?complete=true",
         "images": {
@@ -280157,6 +280157,7 @@
       "windows"
     ],
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -280198,8 +280199,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -300720,12 +300720,12 @@
       "watson"
     ],
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
