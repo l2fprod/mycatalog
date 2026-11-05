@@ -4175,6 +4175,7 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4185,8 +4186,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -6164,9 +6164,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6178,7 +6175,10 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de"
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -6353,7 +6353,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6368,7 +6367,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "pricing_tags": [
       "paygo",
@@ -6782,15 +6782,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -10045,14 +10045,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10733,19 +10733,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-mum",
-      "ca-mon",
+      "br-sao",
       "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "br-sao",
       "in-che",
       "jp-osa",
+      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor"
+      "ca-tor",
+      "ca-mon"
     ],
     "pricing_tags": [
       "paid",
@@ -15948,12 +15948,12 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
-      "free",
       "allow_internal_users",
+      "free",
       "paid",
       "paid_only"
     ],
@@ -16159,6 +16159,7 @@
       "apidocs_enabled",
       "chat",
       "custom_kind_service",
+      "embedding",
       "gemma",
       "genai",
       "generative",
@@ -16169,17 +16170,25 @@
       "ibm_created",
       "inference",
       "inferencing",
+      "instructlab",
       "llama",
       "llm",
       "llm-d",
       "managed",
+      "meta",
+      "meta ai",
+      "metaai",
       "mistral",
       "models",
       "nemotron",
+      "nvidia",
+      "open ai",
       "openai",
       "openshift ai",
       "paid",
       "rc_compatible",
+      "red hat",
+      "red hat ai",
       "redhat",
       "redhat ai",
       "support_ibm",
@@ -17817,12 +17826,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -21681,6 +21690,12 @@
         "description": "VPN for VPC beta pricing plan is used for beta to VPN service for VPC.",
         "displayName": "Beta Gen2",
         "originalName": "vpn-vpc-external-beta"
+      },
+      {
+        "id": "a377f5dd-53d4-4937-8d65-48326aa5e285",
+        "name": "gen2-vpn-regional",
+        "description": "Standard Regional HA Plan for S2S VPN",
+        "displayName": "Standard Gen2 - Regional"
       }
     ],
     "description": "Securely extend your on-premises network to IBM Cloud through site-to-site gateways.",
@@ -22226,12 +22241,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
