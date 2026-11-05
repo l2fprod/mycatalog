@@ -32020,6 +32020,7 @@
     "longDescription": "Nexar's Work Zone Compliance Solution eliminates the need for cities to send inspectors into the field to verify whether construction activity is properly permitted. By leveraging a nationwide network of dashcam-equipped vehicles that continuously capture street-level imagery, the platform uses AI vision models to automatically detect construction equipment and cross-reference those detections against official permit databases in real time. Cities can monitor every active work zone across their jurisdiction simultaneously, flag unpermitted activity as it appears, and issue enforcement actions directly from a single console.\n\nFor municipal agencies managing thousands of permits with limited staff, this means dramatically faster violation detection, higher compliance rates, and increased revenue recovery from civil penalties — all without adding headcount. The platform integrates with IBM watsonx Orchestrate to let operators query compliance data conversationally, generate maps of active violations, and drill into specific locations with full photographic evidence and permit context. It turns work zone enforcement from a reactive, labor-intensive process into a continuous, automated intelligence layer over the city's streets.",
     "displayName": "CityStream Compliance Agent",
     "imageUrl": "https://cloud-object-storage-cos-static-web-hosting-t7k.s3-web.us-east.cloud-object-storage.appdomain.cloud/purple-nexar-vector_nolettering.svg",
+    "localSvgIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.svg",
     "localPngIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.png"
   },
   {
@@ -49607,7 +49608,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49618,7 +49618,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -92763,6 +92764,9 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -92774,10 +92778,7 @@
       "par01",
       "us-east",
       "us-south",
-      "eu-de",
-      "au-syd",
-      "eu-gb",
-      "jp-tok"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -102710,10 +102711,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -102721,7 +102718,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "pricing_tags": [
           "paygo"
@@ -110924,6 +110925,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -110931,11 +110936,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -115411,7 +115412,7 @@
           {
             "id": "databases-for-mysql-standard-gen2:eu-de",
             "_id": "databases-for-mysql-standard-gen2:eu-de",
-            "_rev": "16-fe79a46557e9b6fc004367cb3d5ade36",
+            "_rev": "17-c5710ffa932e2fccabb71c289de2e190",
             "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::deployment:databases-for-mysql-standard-gen2%3Aeu-de",
             "name": "standard-gen2-eu-de",
             "kind": "deployment",
@@ -115438,7 +115439,7 @@
               "name": "IBM"
             },
             "created": "2026-06-23T06:45:54.575197733-04:00",
-            "updated": "2026-10-09T05:56:25.623102049-04:00",
+            "updated": "2026-11-04T20:36:45.524681797-05:00",
             "complete": true,
             "url": "https://globalcatalog.cloud.ibm.com/api/v1/databases-for-mysql-standard-gen2:eu-de?complete=true",
             "metadata": {
@@ -115462,7 +115463,7 @@
                     "public_endpoints_supported": false
                   },
                   "storage": {
-                    "storage_type": "sdp"
+                    "storage_type": "netapp"
                   }
                 },
                 "flavors": [
@@ -126091,7 +126092,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -126102,7 +126102,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -170834,14 +170835,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -182075,19 +182076,19 @@
       "us-south"
     ],
     "geo_tags": [
+      "in-mum",
+      "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
+      "br-sao",
       "in-che",
       "jp-osa",
-      "br-sao",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "ca-mon"
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid",
@@ -260316,12 +260317,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
