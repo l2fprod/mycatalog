@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -139467,15 +139467,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-es",
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -144196,13 +144196,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -173054,14 +173054,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -184296,18 +184296,18 @@
     ],
     "geo_tags": [
       "br-sao",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "au-syd",
-      "in-che",
-      "jp-osa",
       "in-mum",
       "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "in-che",
+      "jp-osa",
+      "eu-es",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "paid",
@@ -230825,7 +230825,7 @@
       {
         "id": "e900f340-0bd6-4e99-8e73-6742f3d135d9",
         "_id": "e900f340-0bd6-4e99-8e73-6742f3d135d9",
-        "_rev": "13-e3de7506aea33eb88620ba2c33c94def",
+        "_rev": "16-78c7418f600910660338c719118f0d57",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:e900f340-0bd6-4e99-8e73-6742f3d135d9",
         "name": "telc-architect-other",
         "kind": "plan",
@@ -230887,12 +230887,12 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
-          "ibm_created",
           "cloud-ui",
-          "group-arch-services"
+          "group-arch-services",
+          "ibm",
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -230905,7 +230905,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:53:39.094199329-05:00",
-        "updated": "2024-07-01T14:20:23.434006216-04:00",
+        "updated": "2026-11-06T02:47:19.88592926-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/e900f340-0bd6-4e99-8e73-6742f3d135d9?complete=true",
         "images": {
@@ -232391,7 +232391,7 @@
       {
         "id": "1c016614-0eb8-4275-8851-cc3778547b64",
         "_id": "1c016614-0eb8-4275-8851-cc3778547b64",
-        "_rev": "12-6b6a01a6f2c5b81f3a555a8d498cba38",
+        "_rev": "15-6f406279a925fbcf222991b7d6e9bf30",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:1c016614-0eb8-4275-8851-cc3778547b64",
         "name": "telc-assess-other",
         "kind": "plan",
@@ -232453,12 +232453,12 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
-          "ibm_created",
           "cloud-ui",
-          "group-assess-services"
+          "group-assess-services",
+          "ibm",
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -232471,7 +232471,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:54:53.986477985-05:00",
-        "updated": "2024-07-01T14:20:23.759247935-04:00",
+        "updated": "2026-11-06T02:48:08.010967024-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/1c016614-0eb8-4275-8851-cc3778547b64?complete=true",
         "images": {
@@ -233952,7 +233952,7 @@
       {
         "id": "309d6e72-c008-41b2-95d0-a2e2dd3bd117",
         "_id": "309d6e72-c008-41b2-95d0-a2e2dd3bd117",
-        "_rev": "10-38d859569e81e1244d3518aeff650e53",
+        "_rev": "13-43147ce6ea12dc59d35a7b6990102e07",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:309d6e72-c008-41b2-95d0-a2e2dd3bd117",
         "name": "telc-build-other",
         "kind": "plan",
@@ -234014,12 +234014,12 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
-          "ibm_created",
           "cloud-ui",
-          "group-build-services"
+          "group-build-services",
+          "ibm",
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -234032,7 +234032,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:50:10.443214652-05:00",
-        "updated": "2024-07-01T14:20:24.120564036-04:00",
+        "updated": "2026-11-06T02:48:48.206740671-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/309d6e72-c008-41b2-95d0-a2e2dd3bd117?complete=true",
         "images": {
@@ -249873,7 +249873,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "538-0083809e31d5b7b1db2d7be34369dfce",
+    "_rev": "539-f0866b0c9b37232c020a0a426bcac831",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -249955,7 +249955,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-05T15:50:26.27725754-05:00",
+    "updated": "2026-11-06T07:50:05.336059309-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -304303,12 +304303,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
-          "jp-tok",
           "eu-de",
           "eu-gb",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor",
+          "jp-tok"
         ],
         "pricing_tags": [
           "free",
@@ -309125,12 +309125,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor"
         ],
         "pricing_tags": [
           "free",
