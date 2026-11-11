@@ -686,14 +686,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -6164,10 +6164,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6178,7 +6174,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -6353,7 +6353,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -6368,7 +6367,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -6782,7 +6782,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -6790,7 +6789,8 @@
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -6934,13 +6934,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10733,17 +10733,17 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
-      "in-mum",
-      "ca-tor",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
+      "jp-osa",
+      "in-mum",
+      "ca-tor",
+      "ca-mon",
       "br-sao",
       "in-che"
     ],
@@ -15948,8 +15948,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -18900,8 +18900,8 @@
       {
         "id": "a9320711-f5e1-4171-b4b7-1ecd5b63e5bc",
         "name": "aleksey-test-plan",
-        "description": "This is a test plan only.",
-        "displayName": "Aleksey Test Plan"
+        "description": "Annual license which includes full SysTrack and SysTrack AI licensing.",
+        "displayName": "Enterprise Device SysTrack with SysTrack AI"
       }
     ],
     "description": "Resolve IT support incidents 2X faster and deflect tickets with AI-driven troubleshooting and automated fixes.",
@@ -22241,12 +22241,12 @@
       "watson"
     ],
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",

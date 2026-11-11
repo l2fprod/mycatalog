@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -68458,7 +68458,7 @@
   {
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
-    "_rev": "85-358789caec7b11b8140bef7157549d28",
+    "_rev": "86-50ea991eb5702824aadf28e8ce9dcaeb",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "name": "continuous-delivery",
     "kind": "service",
@@ -68559,7 +68559,7 @@
       "name": "IBM"
     },
     "created": "2016-09-21T15:46:54Z",
-    "updated": "2026-10-26T11:29:10.625353503-04:00",
+    "updated": "2026-11-11T13:37:39.687054923-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/59b735ee-5938-4ebd-a6b2-541aef2d1f68?complete=true",
     "images": {
@@ -68983,7 +68983,7 @@
       {
         "id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
         "_id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
-        "_rev": "98-247cb1cf837120366ac27b2f909a3d6a",
+        "_rev": "99-12bc90e0d1fd4ee54e8705d06761cdfc",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a35fb0e9-4fc2-400e-8161-49078e5af632",
         "name": "lite",
         "kind": "plan",
@@ -69069,7 +69069,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-09-22T14:33:42.512282809-04:00",
+        "updated": "2026-11-11T13:38:40.784997122-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a35fb0e9-4fc2-400e-8161-49078e5af632?complete=true",
         "images": {
@@ -69294,7 +69294,7 @@
       {
         "id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "_id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
-        "_rev": "67-e5910b298d728b0dba46e837c3c0e8c9",
+        "_rev": "68-9918e619a7ba4ef024cab3cb9b3e63e3",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "name": "professional",
         "kind": "plan",
@@ -69379,7 +69379,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-10-22T14:41:17.00184353-04:00",
+        "updated": "2026-11-11T13:38:10.236033377-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e?complete=true",
         "images": {
@@ -93576,10 +93576,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -93590,7 +93586,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -120204,7 +120204,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -120219,7 +120218,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -139467,7 +139467,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
@@ -139475,7 +139474,8 @@
       "au-syd",
       "us-east",
       "eu-es",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -144196,13 +144196,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de"
+      "eu-de",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -184295,17 +184295,17 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
-      "in-mum",
-      "ca-tor",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
+      "jp-osa",
+      "in-mum",
+      "ca-tor",
+      "ca-mon",
       "br-sao",
       "in-che"
     ],
@@ -223393,7 +223393,7 @@
   {
     "id": "d59f76a6-de3a-4066-8a1a-7c018bfa9ff2",
     "_id": "d59f76a6-de3a-4066-8a1a-7c018bfa9ff2",
-    "_rev": "64-89b14de78bc9184f151ba06c60135a54",
+    "_rev": "65-96bd04495cca496687a4cc34f214e0b2",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:d59f76a6-de3a-4066-8a1a-7c018bfa9ff2",
     "name": "qatt-software-ltd-novaops",
     "kind": "service",
@@ -223433,7 +223433,7 @@
       "name": "qaTT Software LTD"
     },
     "created": "2025-12-23T01:18:43.104512674-05:00",
-    "updated": "2026-06-03T05:01:03.221177479-04:00",
+    "updated": "2026-11-11T09:30:37.930044584-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/d59f76a6-de3a-4066-8a1a-7c018bfa9ff2?complete=true",
     "images": {
@@ -223567,7 +223567,7 @@
               {
                 "caption": "qaTT helps DevOps and SRE teams turn incident data into structured, evidence-based insights for faster, more confident decisions.",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/sWQ3C-3Bj5E"
+                "url": "https://www.youtube.com/embed/KfRhmmn49os"
               }
             ]
           }
@@ -249873,7 +249873,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "539-f0866b0c9b37232c020a0a426bcac831",
+    "_rev": "540-19cafe9ad84c9aa9e9cade897e3eca98",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -249942,8 +249942,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -249955,7 +249955,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-06T07:50:05.336059309-05:00",
+    "updated": "2026-11-11T04:39:35.493148766-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -271918,15 +271918,15 @@
       {
         "id": "a9320711-f5e1-4171-b4b7-1ecd5b63e5bc",
         "_id": "a9320711-f5e1-4171-b4b7-1ecd5b63e5bc",
-        "_rev": "7-b09fae2f09d924ded085a0ac39c9e551",
+        "_rev": "9-decbd87e840626ba28330da020f0a1fd",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a9320711-f5e1-4171-b4b7-1ecd5b63e5bc",
         "name": "aleksey-test-plan",
         "kind": "plan",
         "overview_ui": {
           "en": {
-            "display_name": "Aleksey Test Plan",
-            "long_description": "This is a test plan only.",
-            "description": "This is a test plan only."
+            "display_name": "Enterprise Device SysTrack with SysTrack AI",
+            "long_description": "Annual license which includes full SysTrack and SysTrack AI licensing.",
+            "description": "Annual license which includes full SysTrack and SysTrack AI licensing."
           }
         },
         "parent_id": "c7a57a43-2f9b-4dcb-9615-2697e965f39c",
@@ -271959,7 +271959,7 @@
           "name": "Lakeside Software Inc."
         },
         "created": "2026-04-15T14:43:36.778843302-04:00",
-        "updated": "2026-07-27T11:01:51.70973787-04:00",
+        "updated": "2026-11-11T11:10:47.347348447-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a9320711-f5e1-4171-b4b7-1ecd5b63e5bc?complete=true",
         "metadata": {
@@ -271993,6 +271993,20 @@
             "service_check_enabled": false,
             "provision_type": "ibm_cloud"
           },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Licensing to cover both SysTrack and SysTrack AI.  "
+                  },
+                  {
+                    "description": "One license to provide access to a wealth of end point telemetry data and an AI agent to fully evaluate and utilize the data."
+                  }
+                ]
+              }
+            }
+          },
           "pricing": {
             "origin": "pricing_catalog",
             "type": "free",
@@ -272007,8 +272021,8 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "This is a test plan only.",
-        "displayName": "Aleksey Test Plan"
+        "description": "Annual license which includes full SysTrack and SysTrack AI licensing.",
+        "displayName": "Enterprise Device SysTrack with SysTrack AI"
       }
     ],
     "description": "Resolve IT support incidents 2X faster and deflect tickets with AI-driven troubleshooting and automated fixes.",
@@ -295874,7 +295888,7 @@
   {
     "id": "fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
     "_id": "fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
-    "_rev": "44-580f5a8017cf1c24c315d3a6d630e6f9",
+    "_rev": "45-e907c5db32b6a3a06e8a6768d9df230f",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
     "name": "wasabi-cloud-storage",
     "kind": "service",
@@ -295915,7 +295929,7 @@
       "name": "Wasabi Technologies LLC"
     },
     "created": "2025-09-30T12:51:55.877959163-04:00",
-    "updated": "2025-11-20T13:22:34.9384957-05:00",
+    "updated": "2026-11-11T11:29:10.923733488-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/fb5df263-273c-4ec3-bfe3-ac2ebe114e19?complete=true",
     "images": {
@@ -295997,40 +296011,14 @@
         "custom_create_page_hybrid_enabled": false,
         "parameters": [
           {
-            "associations": null,
             "description": "Please enter a valid email address.",
             "displayname": "Email Address",
             "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
             "name": "EMAIL_ADDRESS",
-            "optionsUrl": null,
             "pattern": "^.{8,255}$",
-            "placeholder": null,
             "readonly": false,
             "required": true,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": "Please enter a valid password.",
-            "displayname": "Password",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": "8 Min, 128 Max, At least one letter. At least one number.",
-            "layout": null,
-            "name": "PASSWORD",
-            "optionsUrl": null,
-            "pattern": "^(?=.*[A-Za-z])(?=.*\\d)[a-zA-Z0-9!@#$%^&*]{8,128}$",
-            "placeholder": null,
-            "readonly": false,
-            "required": true,
-            "type": "password",
-            "validationUrl": null,
-            "value": null
+            "type": "text"
           }
         ]
       },
@@ -303372,12 +303360,12 @@
       "watson"
     ],
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
