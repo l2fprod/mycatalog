@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -12121,6 +12121,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12128,8 +12129,7 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-de"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -173054,14 +173054,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -184295,19 +184295,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-es",
-      "jp-tok",
-      "us-east",
+      "br-sao",
+      "in-che",
+      "jp-osa",
+      "in-mum",
       "eu-de",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "jp-osa",
-      "in-mum",
+      "eu-es",
+      "jp-tok",
+      "us-east",
       "ca-tor",
       "ca-mon",
-      "br-sao",
-      "in-che"
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -255550,15 +255550,15 @@
   {
     "id": "22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
     "_id": "22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
-    "_rev": "28-00099d7ef98b1ab895836aee60901a36",
+    "_rev": "31-e526aecfb7749b2b81eff0651f1cd6ba",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
     "name": "scalestack-scalestack-agent",
     "kind": "service",
     "overview_ui": {
       "en": {
         "display_name": "Scalestack Agent",
-        "long_description": "This AI-powered agent automatically searches, pulls, and verifies data from multiple providers and web sources. It cross-references information in real time to deliver comprehensive, validated answers—autonomously. No manual research, no data silos, no inconsistent quality. Just clean insights across every source, so your teams can focus on decisions, not data gathering.\nPerfect for enterprise teams looking to scale research capabilities, automate data enrichment, and ensure information accuracy without adding headcount.",
-        "description": "Scalestack's AI agents act as invisible GTM analysts that understand your ICP, coordinate across systems, and evolve with your GTM"
+        "long_description": "Scalestack runs repeatable AI work as governed workflows, reachable from the agents your employees already use. Access, spend and a record of every action stay under your control. It is built for enterprises putting agents to work on their own data. CIOs, data and platform teams use it to govern the data and workflows agents act on, and RevOps, sales and marketing teams use it to keep accounts clean, enriched and prioritized.\nStart from CSVs, CRMs like Salesforce and HubSpot, live webhooks, and 60+ data providers including ZoomInfo, Apollo and Clearbit. Enrich, validate, score and reconcile in one workflow, from more than 190 modules. Describe it to Attento in plain English, or build it on the canvas. Scalestack queries dozens of data providers in parallel, reconciles them into one trusted record, and does it across hundreds of thousands to millions of rows. Results are written back to your warehouse and the applications your teams use, or queried by agents over MCP, with the source and reasoning for every value.\nScalestack is SOC 2 and GDPR aligned, with full lineage, observability and access control. Usage is metered in credits, per module execution, so you pay for the work you run rather than per seat.",
+        "description": "Governed workflows and controls for every AI agent. Access, spend and a record of every action stay under your control."
       }
     },
     "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/22f2e83c-78c5-4f8d-b568-ea57cbc4af91/%2A",
@@ -255586,7 +255586,7 @@
       "name": "Scalestack"
     },
     "created": "2025-09-25T12:46:08.637907314-04:00",
-    "updated": "2025-11-14T13:48:54.126153461-05:00",
+    "updated": "2026-11-11T22:03:32.525243738-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/22f2e83c-78c5-4f8d-b568-ea57cbc4af91?complete=true",
     "images": {
@@ -255691,16 +255691,16 @@
           "en": {
             "bullets": [
               {
-                "description": "Enrich leads and accounts to provide GTM teams with full context and no manual pre-work.",
-                "title": "Agentic lead & account research"
+                "description": "Chain modules and agents into one governed pipeline.",
+                "title": "Agentic workflows"
               },
               {
-                "description": "Clean, dedupe, and validate CRM records automatically, following business logics.",
-                "title": "Account & contact hygiene"
+                "description": "See the source and reasoning behind every value.",
+                "title": "Row-level lineage"
               },
               {
-                "description": "Increase trust between sales and marketing by providing full context and scoring to every lead.",
-                "title": "Lead de-anonymization & enrichment"
+                "description": "Match, merge and deduplicate records across sources.",
+                "title": "Entity resolution"
               }
             ],
             "media": [
@@ -255836,8 +255836,8 @@
         "displayName": "Platform - Commit 1 Year"
       }
     ],
-    "description": "Scalestack's AI agents act as invisible GTM analysts that understand your ICP, coordinate across systems, and evolve with your GTM",
-    "longDescription": "This AI-powered agent automatically searches, pulls, and verifies data from multiple providers and web sources. It cross-references information in real time to deliver comprehensive, validated answers—autonomously. No manual research, no data silos, no inconsistent quality. Just clean insights across every source, so your teams can focus on decisions, not data gathering.\nPerfect for enterprise teams looking to scale research capabilities, automate data enrichment, and ensure information accuracy without adding headcount.",
+    "description": "Governed workflows and controls for every AI agent. Access, spend and a record of every action stay under your control.",
+    "longDescription": "Scalestack runs repeatable AI work as governed workflows, reachable from the agents your employees already use. Access, spend and a record of every action stay under your control. It is built for enterprises putting agents to work on their own data. CIOs, data and platform teams use it to govern the data and workflows agents act on, and RevOps, sales and marketing teams use it to keep accounts clean, enriched and prioritized.\nStart from CSVs, CRMs like Salesforce and HubSpot, live webhooks, and 60+ data providers including ZoomInfo, Apollo and Clearbit. Enrich, validate, score and reconcile in one workflow, from more than 190 modules. Describe it to Attento in plain English, or build it on the canvas. Scalestack queries dozens of data providers in parallel, reconciles them into one trusted record, and does it across hundreds of thousands to millions of rows. Results are written back to your warehouse and the applications your teams use, or queried by agents over MCP, with the source and reasoning for every value.\nScalestack is SOC 2 and GDPR aligned, with full lineage, observability and access control. Usage is metered in credits, per module execution, so you pay for the work you run rather than per seat.",
     "displayName": "Scalestack Agent",
     "imageUrl": "https://cdn.prod.website-files.com/6536bce971aa266289e1fd11/68fbf7f9009888ac3e6e2a20_SS%20icon%202025.png",
     "localPngIcon": "/generated/icons/22f2e83c-78c5-4f8d-b568-ea57cbc4af91.png"
@@ -282722,7 +282722,6 @@
       "windows"
     ],
     "geo_tags": [
-      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -282764,7 +282763,8 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3"
+      "us-south-3",
+      "au-syd-1"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -312288,12 +312288,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",
