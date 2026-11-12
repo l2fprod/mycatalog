@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -12121,7 +12121,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "jp-osa",
       "au-syd",
       "br-sao",
@@ -12129,7 +12128,8 @@
       "eu-gb",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -103861,6 +103861,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -103868,11 +103872,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -120204,7 +120204,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -120219,7 +120218,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "pricing_tags": [
       "paygo",
@@ -127986,7 +127986,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -127997,7 +127996,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -139467,15 +139467,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es",
-      "us-south",
-      "eu-gb"
+      "eu-es"
     ],
     "pricing_tags": [
       "paid",
@@ -144196,13 +144196,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -175554,14 +175554,14 @@
           "security"
         ],
         "geo_tags": [
+          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -184295,19 +184295,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "in-che",
       "jp-osa",
       "in-mum",
-      "eu-de",
-      "eu-gb",
-      "us-south",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "au-syd",
+      "br-sao",
+      "in-che",
       "ca-mon",
-      "au-syd"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -249873,7 +249873,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "540-19cafe9ad84c9aa9e9cade897e3eca98",
+    "_rev": "541-702706964a86cae913cc070122fabe7d",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -249942,8 +249942,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -249955,7 +249955,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-11T04:39:35.493148766-05:00",
+    "updated": "2026-11-12T01:17:18.804678587-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -253709,7 +253709,7 @@
   {
     "id": "b95f7546-4719-464a-b5a1-c772c884ad8f",
     "_id": "b95f7546-4719-464a-b5a1-c772c884ad8f",
-    "_rev": "7-0da599cf6eb1314976ae104df19541d3",
+    "_rev": "8-9016ef7136da7a3a51852ab0a18f1ca0",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b95f7546-4719-464a-b5a1-c772c884ad8f",
     "name": "openshift-vs",
     "kind": "service",
@@ -253731,6 +253731,7 @@
       "custom_kind_service",
       "eu access support",
       "free",
+      "fs_ready",
       "ibm_created",
       "ibm-release",
       "odf",
@@ -253749,7 +253750,7 @@
       "name": "IBM"
     },
     "created": "2026-06-18T06:24:42.33646015-04:00",
-    "updated": "2026-06-26T09:01:12.430573755-04:00",
+    "updated": "2026-11-12T06:20:09.901812942-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b95f7546-4719-464a-b5a1-c772c884ad8f?complete=true",
     "images": {
@@ -255550,7 +255551,7 @@
   {
     "id": "22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
     "_id": "22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
-    "_rev": "31-e526aecfb7749b2b81eff0651f1cd6ba",
+    "_rev": "33-0fcba933465c811b4b5af99d78a6332d",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:22f2e83c-78c5-4f8d-b568-ea57cbc4af91",
     "name": "scalestack-scalestack-agent",
     "kind": "service",
@@ -255586,11 +255587,11 @@
       "name": "Scalestack"
     },
     "created": "2025-09-25T12:46:08.637907314-04:00",
-    "updated": "2026-11-11T22:03:32.525243738-05:00",
+    "updated": "2026-11-12T09:26:18.224902246-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/22f2e83c-78c5-4f8d-b568-ea57cbc4af91?complete=true",
     "images": {
-      "image": "https://cdn.prod.website-files.com/6536bce971aa266289e1fd11/68fbf7f9009888ac3e6e2a20_SS%20icon%202025.png"
+      "image": "https://scalestack.ai/apple-touch-icon.png"
     },
     "metadata": {
       "rc_compatible": true,
@@ -255713,7 +255714,7 @@
           }
         },
         "urls": {
-          "doc_url": "https://scalestack.ai/scalestack-ibm",
+          "doc_url": "https://platform.scalestack.ai/docs",
           "terms_url": "https://cdn.prod.website-files.com/6536bce971aa266289e1fd11/69132ddea6fa43db868f47a6_Scalestack_IBM_Agent.pdf"
         }
       },
@@ -255839,7 +255840,7 @@
     "description": "Governed workflows and controls for every AI agent. Access, spend and a record of every action stay under your control.",
     "longDescription": "Scalestack runs repeatable AI work as governed workflows, reachable from the agents your employees already use. Access, spend and a record of every action stay under your control. It is built for enterprises putting agents to work on their own data. CIOs, data and platform teams use it to govern the data and workflows agents act on, and RevOps, sales and marketing teams use it to keep accounts clean, enriched and prioritized.\nStart from CSVs, CRMs like Salesforce and HubSpot, live webhooks, and 60+ data providers including ZoomInfo, Apollo and Clearbit. Enrich, validate, score and reconcile in one workflow, from more than 190 modules. Describe it to Attento in plain English, or build it on the canvas. Scalestack queries dozens of data providers in parallel, reconciles them into one trusted record, and does it across hundreds of thousands to millions of rows. Results are written back to your warehouse and the applications your teams use, or queried by agents over MCP, with the source and reasoning for every value.\nScalestack is SOC 2 and GDPR aligned, with full lineage, observability and access control. Usage is metered in credits, per module execution, so you pay for the work you run rather than per seat.",
     "displayName": "Scalestack Agent",
-    "imageUrl": "https://cdn.prod.website-files.com/6536bce971aa266289e1fd11/68fbf7f9009888ac3e6e2a20_SS%20icon%202025.png",
+    "imageUrl": "https://scalestack.ai/apple-touch-icon.png",
     "localPngIcon": "/generated/icons/22f2e83c-78c5-4f8d-b568-ea57cbc4af91.png"
   },
   {
@@ -282722,6 +282723,7 @@
       "windows"
     ],
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -282763,8 +282765,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -304291,12 +304292,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
-          "jp-tok",
           "eu-de",
           "eu-gb",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor",
+          "jp-tok"
         ],
         "pricing_tags": [
           "free",
@@ -312288,12 +312289,12 @@
       "watsonx"
     ],
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -315926,10 +315927,10 @@
           "iodine"
         ],
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "paid_only",
