@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -49608,7 +49608,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49619,7 +49618,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -103861,6 +103861,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -103868,11 +103872,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -120362,6 +120362,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -120372,8 +120373,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -127986,6 +127986,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -127996,8 +127997,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -139467,15 +139467,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
       "us-east",
-      "eu-es"
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -144196,13 +144196,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -184295,19 +184295,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
       "jp-osa",
-      "in-mum",
-      "ca-mon",
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "in-che",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "au-syd"
+      "ca-mon",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "br-sao",
+      "in-che",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid",
@@ -295889,7 +295889,7 @@
   {
     "id": "fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
     "_id": "fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
-    "_rev": "45-e907c5db32b6a3a06e8a6768d9df230f",
+    "_rev": "46-887833e333fad83a6c7c1f65cbcf6b77",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:fb5df263-273c-4ec3-bfe3-ac2ebe114e19",
     "name": "wasabi-cloud-storage",
     "kind": "service",
@@ -295930,7 +295930,7 @@
       "name": "Wasabi Technologies LLC"
     },
     "created": "2025-09-30T12:51:55.877959163-04:00",
-    "updated": "2026-11-11T11:29:10.923733488-05:00",
+    "updated": "2026-11-13T23:33:12.56360543-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/fb5df263-273c-4ec3-bfe3-ac2ebe114e19?complete=true",
     "images": {
@@ -296010,18 +296010,7 @@
         "test_check_interval": 0,
         "service_key_supported": false,
         "custom_create_page_hybrid_enabled": false,
-        "parameters": [
-          {
-            "description": "Please enter a valid email address.",
-            "displayname": "Email Address",
-            "hidden": false,
-            "name": "EMAIL_ADDRESS",
-            "pattern": "^.{8,255}$",
-            "readonly": false,
-            "required": true,
-            "type": "text"
-          }
-        ]
+        "parameters": []
       },
       "ui": {
         "strings": {
@@ -303361,12 +303350,12 @@
       "watson"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
