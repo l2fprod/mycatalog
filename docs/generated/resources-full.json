@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-east",
+      "eu-gb",
+      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -32020,6 +32020,7 @@
     "longDescription": "Nexar's Work Zone Compliance Solution eliminates the need for cities to send inspectors into the field to verify whether construction activity is properly permitted. By leveraging a nationwide network of dashcam-equipped vehicles that continuously capture street-level imagery, the platform uses AI vision models to automatically detect construction equipment and cross-reference those detections against official permit databases in real time. Cities can monitor every active work zone across their jurisdiction simultaneously, flag unpermitted activity as it appears, and issue enforcement actions directly from a single console.\n\nFor municipal agencies managing thousands of permits with limited staff, this means dramatically faster violation detection, higher compliance rates, and increased revenue recovery from civil penalties — all without adding headcount. The platform integrates with IBM watsonx Orchestrate to let operators query compliance data conversationally, generate maps of active violations, and drill into specific locations with full photographic evidence and permit context. It turns work zone enforcement from a reactive, labor-intensive process into a continuous, automated intelligence layer over the city's streets.",
     "displayName": "CityStream Compliance Agent",
     "imageUrl": "https://cloud-object-storage-cos-static-web-hosting-t7k.s3-web.us-east.cloud-object-storage.appdomain.cloud/purple-nexar-vector_nolettering.svg",
+    "localSvgIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.svg",
     "localPngIcon": "/generated/icons/d9adb8d4-1baa-4748-8ba8-32364d3912e8.png"
   },
   {
@@ -49607,6 +49608,7 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -49617,8 +49619,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -127985,7 +127986,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -127996,7 +127996,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -144099,6 +144100,7 @@
     "longDescription": "Built to run the world’s mission-critical workloads, IBM® Db2® database engine supports low-latency transactions and real-time analytics workloads to empower enterprises while modernizing data workloads to meet organizational AI and hybrid cloud needs.",
     "displayName": "Db2",
     "imageUrl": "https://cloud-object-storage-xy-cos-standard-jzw.s3.us-east.cloud-object-storage.appdomain.cloud/Db2.svg",
+    "localSvgIcon": "/generated/icons/dashdb-for-transactions.svg",
     "localPngIcon": "/generated/icons/dashdb-for-transactions.png"
   },
   {
@@ -146747,6 +146749,7 @@
     "longDescription": "IBM Db2 Warehouse on Cloud is a fully-managed, enterprise-class, cloud data warehouse service. Powered by IBM BLU Acceleration, Db2 Warehouse on Cloud provides you with unmatched query performance. The service is offered in multiple form factors: SMP for cost-effective cloud data warehousing, and MPP for high-performance parallel query processing and high availability.",
     "displayName": "Db2 Warehouse",
     "imageUrl": "https://cloud-object-storage-xy-cos-standard-jzw.s3.us-east.cloud-object-storage.appdomain.cloud/Db2Warehouse.svg",
+    "localSvgIcon": "/generated/icons/9e02e72d-00ce-4220-b44c-650c8314e58a.svg",
     "localPngIcon": "/generated/icons/9e02e72d-00ce-4220-b44c-650c8314e58a.png"
   },
   {
@@ -171809,6 +171812,7 @@
     "longDescription": "Provides simplified DR for PowerVS VMs.",
     "displayName": "HA and DR Automation for IBM Power Virtual Server",
     "imageUrl": "https://s3.us-south.cloud-object-storage.appdomain.cloud/drautomationmedia/PowerVirtualServerDisasterRecoveryAutomation.svg",
+    "localSvgIcon": "/generated/icons/208072a0-7978-11ef-b369-0733120a414f.svg",
     "localPngIcon": "/generated/icons/208072a0-7978-11ef-b369-0733120a414f.png"
   },
   {
@@ -175550,14 +175554,14 @@
           "security"
         ],
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -184291,19 +184295,19 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "jp-osa",
       "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "br-sao",
       "in-che",
-      "jp-osa"
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-tor",
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -249869,7 +249873,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "542-f552abb241fa1010218e866bb12cbf20",
+    "_rev": "543-ed522ca5150816bd3166637af4038c7c",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -249938,8 +249942,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -249951,7 +249955,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-13T10:35:02.247164547-05:00",
+    "updated": "2026-11-13T15:53:13.477696685-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -262621,6 +262625,7 @@
     "longDescription": "Spark Compass AI News Agent Orchestra is an AI-powered platform that automates news aggregation, analysis, and reporting. It collects data from multiple sources, processes thousands of articles per month using advanced natural language models, and delivers concise, insightful summaries with sentiment and trend analysis.",
     "displayName": "Spark Compass AI News Agent Orchestra",
     "imageUrl": "https://status-service-newsagent.sparkcompasstestcluster-7528cef30239dce16bc69c6a2bfcf93e-0000.us-south.containers.appdomain.cloud/sparknews.svg",
+    "localSvgIcon": "/generated/icons/16abd658-df06-461a-8f71-cfe234936edf.svg",
     "localPngIcon": "/generated/icons/16abd658-df06-461a-8f71-cfe234936edf.png"
   },
   {
@@ -262863,12 +262868,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -273077,12 +273082,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -303356,12 +303361,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -312284,12 +312289,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-de",
-      "jp-tok",
-      "us-south",
       "eu-gb",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "eu-de",
+      "jp-tok",
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
