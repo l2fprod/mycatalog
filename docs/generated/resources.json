@@ -686,14 +686,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -860,6 +860,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -867,8 +868,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -6782,15 +6782,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -10045,14 +10045,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10733,19 +10733,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "ca-mon",
-      "au-syd",
-      "in-che",
       "in-mum",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "br-sao",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "ca-mon",
+      "in-che",
+      "jp-osa"
     ],
     "pricing_tags": [
       "paid",
@@ -17078,20 +17078,20 @@
       {
         "id": "c696fd3a-fffa-4e7e-affd-ab798af04f8d",
         "name": "compass-shared-consumption-pricing",
-        "description": "Priced per gigabyte hour",
-        "displayName": "compass-shared-consumption-pricing"
+        "description": "Priced per gigabyte hour of dual-copy stored protected data",
+        "displayName": "Compass Shared Consumption Pricing"
       },
       {
         "id": "a5d52a15-dc06-47c7-bd89-86256e6c368f",
         "name": "compass-special-customer-pricing",
-        "description": "Shared consumption pricing with up to 5TB stored data FREE for the first 30 days. Thereafter, priced per GB hour.",
-        "displayName": "compass-special-customer-pricing"
+        "description": "Shared consumption pricing with up to 5TB of stored data FREE for the first 30 days. Thereafter, priced per gigabyte hour of dual-copy stored protected data.",
+        "displayName": "Compass Special Customer Pricing"
       },
       {
         "id": "a391f481-61ed-479e-b3e1-1608f390a17b",
         "name": "single-copy-pricing",
-        "description": "Priced per gigabyte hour for a single copy",
-        "displayName": "single-copy-pricing"
+        "description": "Priced per gigabyte hour of single-copy stored protected data",
+        "displayName": "Single-copy Pricing"
       }
     ],
     "description": "Simple, secure, automated backup and restore to protect IBM PowerVS data powered by IBM Storage Protect.",
@@ -18774,6 +18774,12 @@
         "displayName": "Essentials"
       },
       {
+        "id": "e08dc40f-6e23-4e2b-834c-5906c2a40f47",
+        "name": "essentials-plus",
+        "description": "Up to 1,000,000 Messages Included Each Month. Mid size volume package designed for moderate messaging needs. Flat Monthly Pricing providing predictable costs with no overage surprises.",
+        "displayName": "Essentials Plus"
+      },
+      {
         "id": "85a1b540-6bc0-4b63-b999-80b320963cba",
         "name": "premium",
         "description": "Premium Plan",
@@ -19668,6 +19674,7 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -20146,7 +20153,7 @@
       }
     ],
     "description": "Fully customizable, software-defined virtual network with superior isolation.",
-    "longDescription": "Create a fully customizable, software-defined virtual network with superior isolation. IBM Cloud Virtual Private Cloud provides custom network topologies, flexible subnet sizes, and enhanced security.",
+    "longDescription": "Create a fully customizable, software-defined virtual network with superior isolation. IBM Cloud Virtual Private Cloud provides custom network topologies, flexible subnet sizes, and enhanced security.\n\n\n\nRecommended Architectures\n\nExplore the [Cloud foundation for VPC](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vpc-9fc0fa64-27af-4fed-9dce-47b3640ba739-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable Architecture, which includes Virtual Private Cloud as part of the solution.",
     "displayName": "Virtual Private Cloud",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.vpc/artifacts/cache/7e657dd7379a4fdf3675d241de2033b1-public/CloudVPC.svg",
     "localSvgIcon": "/generated/icons/is.vpc.svg",
@@ -22241,12 +22248,12 @@
       "watson"
     ],
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "pricing_tags": [
       "free",

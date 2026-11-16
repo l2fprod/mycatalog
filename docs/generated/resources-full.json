@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb"
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -12121,6 +12121,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "jp-osa",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -12128,8 +12129,7 @@
       "jp-tok",
       "us-east",
       "us-south",
-      "eu-de",
-      "jp-osa"
+      "eu-de"
     ],
     "pricing_tags": [
       "paygo",
@@ -103861,6 +103861,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -103868,11 +103872,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -127986,6 +127986,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -127996,8 +127997,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -139467,15 +139467,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -173054,14 +173054,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -184295,19 +184295,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-osa",
-      "ca-mon",
-      "au-syd",
-      "in-che",
       "in-mum",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "au-syd",
+      "br-sao",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "ca-mon",
+      "in-che",
+      "jp-osa"
     ],
     "pricing_tags": [
       "paid",
@@ -200046,7 +200046,7 @@
   {
     "id": "9632a3b7-8484-4383-bdd7-173d5f2f9007",
     "_id": "9632a3b7-8484-4383-bdd7-173d5f2f9007",
-    "_rev": "34-1323c1a8e017d31124c0c7b13bcb9330",
+    "_rev": "35-049f34c67857417639ded938aa188b51",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:9632a3b7-8484-4383-bdd7-173d5f2f9007",
     "name": "lantrasoft-hpc-managed-services",
     "kind": "service",
@@ -200086,7 +200086,7 @@
       "name": "Lantrasoft, Inc"
     },
     "created": "2025-09-19T10:29:14.821832975-04:00",
-    "updated": "2026-03-23T09:31:59.227459342-04:00",
+    "updated": "2026-11-16T16:08:03.258827142-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/9632a3b7-8484-4383-bdd7-173d5f2f9007?complete=true",
     "images": {
@@ -200273,7 +200273,7 @@
           }
         },
         "urls": {
-          "doc_url": "https://www.lantrasoft.com/ims/cis/ibm-cloud",
+          "doc_url": "https://www.lantrasoft.com/ims/cis/ibm-cloud.html",
           "terms_url": "https://www.lantrasoft.com/company/terms-conditions.html"
         }
       },
@@ -259459,15 +259459,15 @@
       {
         "id": "c696fd3a-fffa-4e7e-affd-ab798af04f8d",
         "_id": "c696fd3a-fffa-4e7e-affd-ab798af04f8d",
-        "_rev": "34-1ccff5a56c664d95270c8cbfa3bc7fcb",
+        "_rev": "38-9d2155777fa0c19df02cea3807b22be6",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:c696fd3a-fffa-4e7e-affd-ab798af04f8d",
         "name": "compass-shared-consumption-pricing",
         "kind": "plan",
         "overview_ui": {
           "en": {
-            "display_name": "compass-shared-consumption-pricing",
-            "long_description": "Priced per gigabyte hour",
-            "description": "Priced per gigabyte hour"
+            "display_name": "Compass Shared Consumption Pricing",
+            "long_description": "Priced per gigabyte hour of dual-copy stored protected data",
+            "description": "Priced per gigabyte hour of dual-copy stored protected data"
           }
         },
         "parent_id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
@@ -259476,18 +259476,18 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "storage_backup",
-          "ibm_third_party",
-          "backup",
-          "data protection",
-          "cyber resiliency",
-          "backup and recovery",
-          "powervs",
           "aix",
-          "linux",
+          "backup",
+          "backup and recovery",
+          "cyber resiliency",
+          "data protection",
           "db2 on aix",
+          "ibm_third_party",
+          "linux",
           "oracle on aix",
-          "sap hana on linux"
+          "powervs",
+          "sap hana on linux",
+          "storage_backup"
         ],
         "geo_tags": [
           "au-syd",
@@ -259509,7 +259509,7 @@
           "name": "Cobalt Iron"
         },
         "created": "2024-04-04T14:47:34.774820035-04:00",
-        "updated": "2026-09-25T11:08:00.028390992-04:00",
+        "updated": "2026-11-16T14:32:04.523788788-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/c696fd3a-fffa-4e7e-affd-ab798af04f8d?complete=true",
         "metadata": {
@@ -259553,10 +259553,10 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "Per gigabyte hour of stored protected data"
+                    "description": "Per gigabyte hour of dual-copy stored protected data"
                   },
                   {
-                    "description": "Pricing is calculated hourly but will be billed monthly at 0.16 USD per month per gigabyte"
+                    "description": "Pricing is calculated hourly but will be billed monthly at 0.16 USD per month per gigabyte of dual-copy stored protected data."
                   },
                   {
                     "description": "Automated backup and restore for diverse workloads including Power VS accessed via multi-factor authentication and IBM Cloud Single Sign-On"
@@ -259585,21 +259585,21 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Priced per gigabyte hour",
-        "displayName": "compass-shared-consumption-pricing"
+        "description": "Priced per gigabyte hour of dual-copy stored protected data",
+        "displayName": "Compass Shared Consumption Pricing"
       },
       {
         "id": "a5d52a15-dc06-47c7-bd89-86256e6c368f",
         "_id": "a5d52a15-dc06-47c7-bd89-86256e6c368f",
-        "_rev": "63-bfd131ff775d60399f01c13b0f04c314",
+        "_rev": "67-a56f5fd5a2199b1b921d2a4200ef0a3a",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a5d52a15-dc06-47c7-bd89-86256e6c368f",
         "name": "compass-special-customer-pricing",
         "kind": "plan",
         "overview_ui": {
           "en": {
-            "display_name": "compass-special-customer-pricing",
-            "long_description": "Shared consumption pricing with up to 5TB stored data FREE for the first 30 days. Thereafter, priced per GB hour.",
-            "description": "Shared consumption pricing with up to 5TB stored data FREE for the first 30 days. Thereafter, priced per GB hour."
+            "display_name": "Compass Special Customer Pricing",
+            "long_description": "Shared consumption pricing with up to 5TB of stored data FREE for the first 30 days. Thereafter, priced per gigabyte hour of dual-copy stored protected data.",
+            "description": "Shared consumption pricing with up to 5TB of stored data FREE for the first 30 days. Thereafter, priced per gigabyte hour of dual-copy stored protected data."
           }
         },
         "parent_id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
@@ -259641,7 +259641,7 @@
           "name": "Cobalt Iron"
         },
         "created": "2024-03-11T12:04:32.920040449-04:00",
-        "updated": "2026-09-25T11:08:00.028467887-04:00",
+        "updated": "2026-11-16T14:32:40.340106629-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a5d52a15-dc06-47c7-bd89-86256e6c368f?complete=true",
         "metadata": {
@@ -259685,10 +259685,10 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "Up to 5 terabytes FREE for the first 30 days; thereafter charged per gigabyte hour of stored protected data"
+                    "description": "Up to 5 terabytes FREE for the first 30 days; thereafter charged per gigabyte hour of dual-copy stored protected data"
                   },
                   {
-                    "description": "Pricing is calculated hourly but will be billed monthly at 0.16 USD per month per gigabyte"
+                    "description": "Pricing is calculated hourly but will be billed monthly at 0.16 USD per month per gigabyte of dual-copy stored protected data."
                   },
                   {
                     "description": "Automated backup and restore for diverse workloads including Power VS accessed via multi-factor authentication and IBM Cloud Single Sign-On"
@@ -259717,21 +259717,21 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Shared consumption pricing with up to 5TB stored data FREE for the first 30 days. Thereafter, priced per GB hour.",
-        "displayName": "compass-special-customer-pricing"
+        "description": "Shared consumption pricing with up to 5TB of stored data FREE for the first 30 days. Thereafter, priced per gigabyte hour of dual-copy stored protected data.",
+        "displayName": "Compass Special Customer Pricing"
       },
       {
         "id": "a391f481-61ed-479e-b3e1-1608f390a17b",
         "_id": "a391f481-61ed-479e-b3e1-1608f390a17b",
-        "_rev": "24-9d7e7a7320900ffe64d71999afae20e1",
+        "_rev": "28-80c995a357706812d33c361356025aca",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a391f481-61ed-479e-b3e1-1608f390a17b",
         "name": "single-copy-pricing",
         "kind": "plan",
         "overview_ui": {
           "en": {
-            "display_name": "single-copy-pricing",
-            "long_description": "Priced per gigabyte hour for a single copy",
-            "description": "Priced per gigabyte hour for a single copy"
+            "display_name": "Single-copy Pricing",
+            "long_description": "Priced per gigabyte hour of single-copy stored protected data",
+            "description": "Priced per gigabyte hour of single-copy stored protected data"
           }
         },
         "parent_id": "afb603e9-8738-4542-abf4-baf5231a4dbe",
@@ -259740,18 +259740,18 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "storage_backup",
-          "ibm_third_party",
-          "backup",
-          "data protection",
-          "cyber resiliency",
-          "backup and recovery",
-          "powervs",
           "aix",
-          "linux",
+          "backup",
+          "backup and recovery",
+          "cyber resiliency",
+          "data protection",
           "db2 on aix",
+          "ibm_third_party",
+          "linux",
           "oracle on aix",
-          "sap hana on linux"
+          "powervs",
+          "sap hana on linux",
+          "storage_backup"
         ],
         "geo_tags": [
           "au-syd",
@@ -259773,7 +259773,7 @@
           "name": "Cobalt Iron"
         },
         "created": "2025-02-12T15:02:21.514920664-05:00",
-        "updated": "2026-09-25T11:08:00.028539264-04:00",
+        "updated": "2026-11-16T14:33:09.482600655-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a391f481-61ed-479e-b3e1-1608f390a17b?complete=true",
         "metadata": {
@@ -259812,10 +259812,10 @@
               "en": {
                 "bullets": [
                   {
-                    "description": "Per gigabyte hour of stored protected data\n"
+                    "description": "Per gigabyte hour of single-copy stored protected data"
                   },
                   {
-                    "description": "Pricing is calculated hourly but will be billed monthly at 0.12 USD per month per gigabyte"
+                    "description": "Pricing is calculated hourly but will be billed monthly at 0.12 USD per month per gigabyte of single-copy stored protected data."
                   },
                   {
                     "description": "Automated backup and restore for diverse workloads including Power VS accessed via multi-factor authentication and IBM Cloud Single Sign-On"
@@ -259844,8 +259844,8 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Priced per gigabyte hour for a single copy",
-        "displayName": "single-copy-pricing"
+        "description": "Priced per gigabyte hour of single-copy stored protected data",
+        "displayName": "Single-copy Pricing"
       }
     ],
     "description": "Simple, secure, automated backup and restore to protect IBM PowerVS data powered by IBM Storage Protect.",
@@ -270652,6 +270652,122 @@
         "displayName": "Essentials"
       },
       {
+        "id": "e08dc40f-6e23-4e2b-834c-5906c2a40f47",
+        "_id": "e08dc40f-6e23-4e2b-834c-5906c2a40f47",
+        "_rev": "6-90a69079b85b6ea51e6682a4e17bb307",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:e08dc40f-6e23-4e2b-834c-5906c2a40f47",
+        "name": "essentials-plus",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "Essentials Plus",
+            "long_description": "Up to 1,000,000 Messages Included Each Month. Mid size volume package designed for moderate messaging needs. Flat Monthly Pricing providing predictable costs with no overage surprises.",
+            "description": "Up to 1,000,000 Messages Included Each Month. Mid size volume package designed for moderate messaging needs. Flat Monthly Pricing providing predictable costs with no overage surprises."
+          }
+        },
+        "parent_id": "2eda796a-38fb-4a5a-81f1-2a9f3c7f2d00",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/e08dc40f-6e23-4e2b-834c-5906c2a40f47/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/2eda796a-38fb-4a5a-81f1-2a9f3c7f2d00",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "ai document assistant",
+          "conversational ai",
+          "conversational ai for documents",
+          "document automation",
+          "document intelligence",
+          "enterprise knowledge base",
+          "generative ai for documents",
+          "ibm_third_party",
+          "rag",
+          "retrieval-augmented generation",
+          "smart knowledge asisstant",
+          "vector database",
+          "watson"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "symplistic.ai"
+        },
+        "created": "2026-10-19T09:47:35.947307141-04:00",
+        "updated": "2026-11-16T09:01:20.498752749-05:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/e08dc40f-6e23-4e2b-834c-5906c2a40f47?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "- Up to 1,000,000 Messages Included Monthly. Perfect for mid size teams with consistent messaging needs."
+                  },
+                  {
+                    "description": "- Affordable Flat Pricing with transparent costs with no hidden fees."
+                  },
+                  {
+                    "description": "- 35 GB of storage for all your agents"
+                  },
+                  {
+                    "description": "- An Essentials  Plus subscription buys you an implementation of up to 3 business/domain use cases. Select Standard Plan for more than 3"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/e08dc40f-6e23-4e2b-834c-5906c2a40f47/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Up to 1,000,000 Messages Included Each Month. Mid size volume package designed for moderate messaging needs. Flat Monthly Pricing providing predictable costs with no overage surprises.",
+        "displayName": "Essentials Plus"
+      },
+      {
         "id": "85a1b540-6bc0-4b63-b999-80b320963cba",
         "_id": "85a1b540-6bc0-4b63-b999-80b320963cba",
         "_rev": "14-78e8cbd432650145a68d3cabc2a15b1a",
@@ -278998,6 +279114,7 @@
     "displayName": "Verify",
     "imageUrl": "https://idaas.ite3.idng.ibmcloudsecurity.com/ui/assets/images/ibm-security.svg",
     "geo_tags": [],
+    "localSvgIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.svg",
     "localPngIcon": "/generated/icons/66644e80-f35a-11ee-923f-2fe367129617.png"
   },
   {
@@ -280493,7 +280610,7 @@
   {
     "id": "is.vpc",
     "_id": "is.vpc",
-    "_rev": "14-b40f446b22d51dca31b94c53b7007474",
+    "_rev": "17-90989ac03f352f70cbf670cf7940a137",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.vpc",
     "name": "is.vpc",
     "kind": "service",
@@ -280505,7 +280622,7 @@
       },
       "en": {
         "display_name": "Virtual Private Cloud",
-        "long_description": "Create a fully customizable, software-defined virtual network with superior isolation. IBM Cloud Virtual Private Cloud provides custom network topologies, flexible subnet sizes, and enhanced security.",
+        "long_description": "Create a fully customizable, software-defined virtual network with superior isolation. IBM Cloud Virtual Private Cloud provides custom network topologies, flexible subnet sizes, and enhanced security.\n\n\n\nRecommended Architectures\n\nExplore the [Cloud foundation for VPC](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vpc-9fc0fa64-27af-4fed-9dce-47b3640ba739-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable Architecture, which includes Virtual Private Cloud as part of the solution.",
         "description": "Fully customizable, software-defined virtual network with superior isolation."
       },
       "es": {
@@ -280607,7 +280724,7 @@
       "name": "IBM"
     },
     "created": "2018-11-20T23:04:00.192Z",
-    "updated": "2026-10-06T13:33:04.762962026-04:00",
+    "updated": "2026-11-16T10:56:21.609518878-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.vpc?complete=true",
     "images": {
@@ -281161,7 +281278,7 @@
       }
     ],
     "description": "Fully customizable, software-defined virtual network with superior isolation.",
-    "longDescription": "Create a fully customizable, software-defined virtual network with superior isolation. IBM Cloud Virtual Private Cloud provides custom network topologies, flexible subnet sizes, and enhanced security.",
+    "longDescription": "Create a fully customizable, software-defined virtual network with superior isolation. IBM Cloud Virtual Private Cloud provides custom network topologies, flexible subnet sizes, and enhanced security.\n\n\n\nRecommended Architectures\n\nExplore the [Cloud foundation for VPC](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vpc-9fc0fa64-27af-4fed-9dce-47b3640ba739-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmVfdGFi) Deployable Architecture, which includes Virtual Private Cloud as part of the solution.",
     "displayName": "Virtual Private Cloud",
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/is.vpc/artifacts/cache/7e657dd7379a4fdf3675d241de2033b1-public/CloudVPC.svg",
     "localSvgIcon": "/generated/icons/is.vpc.svg",
@@ -303349,12 +303466,12 @@
       "watson"
     ],
     "geo_tags": [
+      "jp-tok",
+      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "ca-tor"
     ],
     "pricing_tags": [
       "free",
