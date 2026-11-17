@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -38487,646 +38487,6 @@
     "localPngIcon": "/generated/icons/090c2c10-8c38-11e8-bec2-493df9c49eb8.png"
   },
   {
-    "id": "a9617650-09ff-11ec-85f2-d10915d24d79",
-    "_id": "a9617650-09ff-11ec-85f2-d10915d24d79",
-    "_rev": "3-4f1a211f0d58d36177ae9d3ea3781621",
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:a9617650-09ff-11ec-85f2-d10915d24d79",
-    "name": "robin-storage",
-    "kind": "service",
-    "overview_ui": {
-      "en": {
-        "display_name": "Cloud Native Storage and Data Service",
-        "long_description": "Robin Cloud Native Storage and Data Service brings high performance storage and application-aware data management to Kubernetes. It is a IBM certified operator that installs natively on IKS and OpenShift and delivers block and file storage for stateful applications such as databases, data analytics, and AI/ML applications. Robin CNS automates storage and data management operations on OpenShift and provides a simple API for developers and DevOps teams so that they can easily manage stateful applications without having to become storage experts\n&nbsp;\n&nbsp;\nGETTING SUPPORT\nThis product is provided and supported by Robin.io. Robin support is available 24x7x365. Please reach out to Robin on Slack (slack.robin.io) for immediate assistance. Alternatively you can contact Robin support by emailing support@robin.com. Include a contact information and any details you can provide on the issue. Please include severity of the issue in the subject line. Robin will reply back within 24 hours.",
-        "description": "Robin Cloud Native Storage and Data Service is a high-performance Storage and Data Management solution for your Stateful Applications on IBM Cloud IKS."
-      }
-    },
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a9617650-09ff-11ec-85f2-d10915d24d79/%2A",
-    "disabled": false,
-    "active": true,
-    "tags": [
-      "storage",
-      "custom_kind_service",
-      "eu-de",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "supports_syndication",
-      "us-south"
-    ],
-    "geo_tags": [
-      "eu-de",
-      "us-south"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "Robin.io"
-    },
-    "created": "2021-08-31T02:13:52.419Z",
-    "updated": "2024-07-02T03:03:54.464257256-04:00",
-    "complete": true,
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/a9617650-09ff-11ec-85f2-d10915d24d79?complete=true",
-    "images": {
-      "feature_image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-      "image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-      "medium_image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-      "small_image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png"
-    },
-    "metadata": {
-      "rc_compatible": true,
-      "other": {
-        "PC": {
-          "onboardingOfferingId": "da1c8b50fcbe4f6aad21bcd1a23835ed:o:e2d43caf-b78c-437a-ab95-a050ee04053d"
-        },
-        "iam": {
-          "supportedAttributes": []
-        }
-      },
-      "service": {
-        "type": "",
-        "iam_compatible": false,
-        "unique_api_key": false,
-        "rc_provisionable": true,
-        "bindable": true,
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "user_defined_service": null,
-        "extension": null,
-        "plan_updateable": false,
-        "state": "",
-        "service_check_enabled": false,
-        "test_check_interval": 0,
-        "service_key_supported": false,
-        "custom_create_page_hybrid_enabled": false,
-        "parameters": [
-          {
-            "description": "Enter your IBM Cloud API key. To create the key, see the documentation on how to manage user API keys: https://cloud.ibm.com/docs/iam?topic=iam-userapikey.",
-            "displayname": "IBM Cloud API key",
-            "name": "apikey",
-            "required": true,
-            "type": "password"
-          },
-          {
-            "associations": {
-              "parameters": [
-                {
-                  "description": "",
-                  "displayname": "IBM Cloud API key",
-                  "name": "apikey",
-                  "optionsRefresh": true,
-                  "required": false,
-                  "type": ""
-                },
-                {
-                  "description": "",
-                  "displayname": "",
-                  "name": "region",
-                  "optionsRefresh": true,
-                  "required": false,
-                  "type": ""
-                }
-              ]
-            },
-            "description": "Select the Kubernetes or OpenShift cluster where you want to install Robin.",
-            "displayname": "Kubernetes or OpenShift cluster name",
-            "name": "cluster_name",
-            "optionsUrl": "https://broker.robin-cns-osb-do-not-dele-5a9c82175752b69eb523a2d548a4302a-0000.us-east.containers.appdomain.cloud/clusters",
-            "required": true,
-            "type": "dropdown"
-          },
-          {
-            "description": "Enter your KMS endpoint url",
-            "displayname": "KMS endpoint URL",
-            "name": "kms_endpoint",
-            "required": false,
-            "type": "text"
-          },
-          {
-            "description": "IBM protect instance id",
-            "displayname": "IBM Protect Id",
-            "name": "ibm_protect_id",
-            "required": false,
-            "type": "text"
-          }
-        ]
-      },
-      "ui": {
-        "embeddable_dashboard": "true",
-        "strings": {
-          "en": {
-            "bullets": [
-              {
-                "description": "Robin CNS delivers consistent high performance, even as the number of applications and the size and number of persistent volumes grows.",
-                "title": "High performance at scale"
-              },
-              {
-                "description": "Robin CNS offers Synchronous replication across failover domains such as disks, nodes, racks, data centers, and availability zones.",
-                "title": "High availability for Applications running on IBM Cloud "
-              },
-              {
-                "description": "Protect entire applications (data+metadata+config) with backups to any S3 compatible storage  with a single command.",
-                "title": "Backups for IBM Cloud Applications "
-              },
-              {
-                "description": "Robin CNS provides application-aware snapshots to help you quickly rollback to a previous point-in-time.",
-                "title": "Fast & lightweight snapshots"
-              },
-              {
-                "description": "Robin CNS can  move complex stateful applications between Kubernetes clusters on-prem and on IBM or other  Clouds.",
-                "title": "Hybrid and Multi-cloud portability"
-              },
-              {
-                "description": "Robust data persistency for Stateful Apps,  Always-on Availability with self-healing, \tAdvanced data placement for Stateful apps.",
-                "title": "Day 0 Features"
-              },
-              {
-                "description": "o\tPredictable & Stable Performance, Elastically scale capacity over time, Observability to enhance maintainability , Data management to ensure business continuity.",
-                "title": "Day 1+ Features"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Robin Cloud Native Storage and Data Service Webinar",
-                "thumbnail_url": "https://www.youtube.com/embed/J1Fr7TKtBCM",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/J1Fr7TKtBCM"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "doc_url": "https://docs.robin.io/storage/latest/",
-          "instructions_url": "https://www.robin.io/storage/",
-          "terms_url": "https://www.robin.io/end-user-license-agreement/",
-          "apidocs_url": "https://docs.robin.io/storage/5.3.4/storage.html",
-          "create_url": "https://docs.robin.io/storage/5.3.4/storage.html"
-        }
-      },
-      "pricing": {
-        "origin": "global_catalog",
-        "starting_price": {
-          "amount": [
-            {
-              "country": "USA",
-              "currency": "USD",
-              "prices": [
-                {
-                  "quantity_tier": 1,
-                  "price": 0.042
-                }
-              ]
-            }
-          ]
-        },
-        "metrics": null
-      }
-    },
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "id": "0aea8719-e276-48b7-90e5-373d7fa90ca2",
-        "_id": "0aea8719-e276-48b7-90e5-373d7fa90ca2",
-        "_rev": "2-52b6e580fcb02d22f1bd2c910692208f",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0aea8719-e276-48b7-90e5-373d7fa90ca2",
-        "name": "hourly-pay-as-you-go",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Hourly Pay-as-you-go",
-            "long_description": "Nodes per hour",
-            "description": "Nodes per hour"
-          }
-        },
-        "parent_id": "a9617650-09ff-11ec-85f2-d10915d24d79",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/0aea8719-e276-48b7-90e5-373d7fa90ca2/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/a9617650-09ff-11ec-85f2-d10915d24d79",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "ibm_third_party",
-          "rc_compatible",
-          "storage",
-          "supports_syndication"
-        ],
-        "geo_tags": [
-          "eu-de",
-          "us-south"
-        ],
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "Robin.io"
-        },
-        "created": "2021-09-03T01:21:27.637Z",
-        "updated": "2024-07-02T03:03:54.463163696-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/0aea8719-e276-48b7-90e5-373d7fa90ca2?complete=true",
-        "images": {
-          "feature_image": "https://ibm.com",
-          "image": "https://ibm.com",
-          "medium_image": "https://ibm.com",
-          "small_image": "https://ibm.com"
-        },
-        "metadata": {
-          "rc_compatible": true,
-          "compliance": [
-            "minisd"
-          ],
-          "original_name": "Pgo",
-          "other": {
-            "PC": {
-              "onboardingOfferingId": "da1c8b50fcbe4f6aad21bcd1a23835ed:o:e2d43caf-b78c-437a-ab95-a050ee04053d"
-            }
-          },
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": false,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": [
-              {
-                "description": "Enter your IBM Cloud API key. To create the key, see the documentation on how to manage user API keys: https://cloud.ibm.com/docs/iam?topic=iam-userapikey.",
-                "displayname": "IBM Cloud API key",
-                "name": "apikey",
-                "required": true,
-                "type": "password"
-              },
-              {
-                "associations": {
-                  "parameters": [
-                    {
-                      "description": "",
-                      "displayname": "IBM Cloud API key",
-                      "name": "apikey",
-                      "optionsRefresh": true,
-                      "required": false,
-                      "type": ""
-                    },
-                    {
-                      "description": "",
-                      "displayname": "",
-                      "name": "region",
-                      "optionsRefresh": true,
-                      "required": false,
-                      "type": ""
-                    }
-                  ]
-                },
-                "description": "Select the Kubernetes or OpenShift cluster where you want to install Robin.",
-                "displayname": "Kubernetes or OpenShift cluster name",
-                "name": "cluster_name",
-                "optionsUrl": "https://broker.robin-cns-osb-do-not-dele-5a9c82175752b69eb523a2d548a4302a-0000.us-east.containers.appdomain.cloud/clusters",
-                "required": true,
-                "type": "dropdown"
-              },
-              {
-                "description": "Enter your KMS endpoint url",
-                "displayname": "KMS url",
-                "name": "kms_endpoint",
-                "required": false,
-                "type": "text"
-              },
-              {
-                "description": "IBM protect instance id",
-                "displayname": "IBM id",
-                "name": "ibm_protect_id",
-                "required": false,
-                "type": "text"
-              }
-            ]
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Nodes per hour"
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/0aea8719-e276-48b7-90e5-373d7fa90ca2/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Nodes per hour",
-        "displayName": "Hourly Pay-as-you-go",
-        "originalName": "Pgo"
-      },
-      {
-        "id": "ff8c5a4f-e028-4a4c-bba9-36e418a00e96",
-        "_id": "ff8c5a4f-e028-4a4c-bba9-36e418a00e96",
-        "_rev": "2-f423a93c488ddbdc99b90eb06a6c4e6c",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:ff8c5a4f-e028-4a4c-bba9-36e418a00e96",
-        "name": "monthly-pay-as-you-go",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Monthly Pay-as-you-go",
-            "long_description": "Nodes per month",
-            "description": "Nodes per month"
-          }
-        },
-        "parent_id": "a9617650-09ff-11ec-85f2-d10915d24d79",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/ff8c5a4f-e028-4a4c-bba9-36e418a00e96/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/a9617650-09ff-11ec-85f2-d10915d24d79",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "ibm_third_party",
-          "rc_compatible",
-          "storage",
-          "supports_syndication"
-        ],
-        "geo_tags": [
-          "eu-de",
-          "us-south"
-        ],
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "Robin.io"
-        },
-        "created": "2021-09-28T12:15:59.162Z",
-        "updated": "2024-07-02T03:03:54.510131711-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/ff8c5a4f-e028-4a4c-bba9-36e418a00e96?complete=true",
-        "images": {
-          "feature_image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-          "image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-          "medium_image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-          "small_image": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png"
-        },
-        "metadata": {
-          "rc_compatible": true,
-          "compliance": [
-            "minisd"
-          ],
-          "original_name": "Monthly Pay_as_you_go",
-          "other": {
-            "PC": {
-              "onboardingOfferingId": "da1c8b50fcbe4f6aad21bcd1a23835ed:o:e2d43caf-b78c-437a-ab95-a050ee04053d"
-            }
-          },
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": false,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": [
-              {
-                "description": "Enter your IBM Cloud API key. To create the key, see the documentation on how to manage user API keys: https://cloud.ibm.com/docs/iam?topic=iam-userapikey.",
-                "displayname": "IBM Cloud API key",
-                "name": "apikey",
-                "required": true,
-                "type": "password"
-              },
-              {
-                "associations": {
-                  "parameters": [
-                    {
-                      "description": "",
-                      "displayname": "IBM Cloud API key",
-                      "name": "apikey",
-                      "optionsRefresh": true,
-                      "required": false,
-                      "type": ""
-                    },
-                    {
-                      "description": "",
-                      "displayname": "",
-                      "name": "region",
-                      "optionsRefresh": true,
-                      "required": false,
-                      "type": ""
-                    }
-                  ]
-                },
-                "description": "Select the Kubernetes or OpenShift cluster where you want to install Robin.",
-                "displayname": "Kubernetes or OpenShift cluster name",
-                "name": "cluster_name",
-                "optionsUrl": "https://broker.robin-cns-osb-do-not-dele-5a9c82175752b69eb523a2d548a4302a-0000.us-east.containers.appdomain.cloud/clusters",
-                "required": true,
-                "type": "dropdown"
-              },
-              {
-                "description": "Enter your KMS endpoint url",
-                "displayname": "KMS url",
-                "name": "kms_endpoint",
-                "required": false,
-                "type": "text"
-              },
-              {
-                "description": "IBM protect instance id",
-                "displayname": "IBM id",
-                "name": "ibm_protect_id",
-                "required": false,
-                "type": "text"
-              }
-            ]
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Nodes per month"
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/ff8c5a4f-e028-4a4c-bba9-36e418a00e96/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Nodes per month",
-        "displayName": "Monthly Pay-as-you-go",
-        "originalName": "Monthly Pay_as_you_go"
-      },
-      {
-        "id": "78420bea-c85c-4940-995c-41ca251ec62d",
-        "_id": "78420bea-c85c-4940-995c-41ca251ec62d",
-        "_rev": "2-5e4295255d8d7cf064545c47cf248503",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:78420bea-c85c-4940-995c-41ca251ec62d",
-        "name": "robin-storage-hourly-pay-as-you-go",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Hourly Pay-as-you-go",
-            "long_description": "Nodes per hour",
-            "description": "Nodes per hour"
-          }
-        },
-        "parent_id": "a9617650-09ff-11ec-85f2-d10915d24d79",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/78420bea-c85c-4940-995c-41ca251ec62d/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/a9617650-09ff-11ec-85f2-d10915d24d79",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "ibm_third_party",
-          "rc_compatible",
-          "storage",
-          "supports_syndication"
-        ],
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "Robin.io"
-        },
-        "created": "2022-10-11T01:05:10.766Z",
-        "updated": "2024-07-02T03:03:54.521320236-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/78420bea-c85c-4940-995c-41ca251ec62d?complete=true",
-        "metadata": {
-          "rc_compatible": true,
-          "other": {
-            "PC": {
-              "onboardingOfferingId": "da1c8b50fcbe4f6aad21bcd1a23835ed:o:e2d43caf-b78c-437a-ab95-a050ee04053d"
-            }
-          },
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": true,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": []
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Nodes Per Hour\t"
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/78420bea-c85c-4940-995c-41ca251ec62d/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Nodes per hour",
-        "displayName": "Hourly Pay-as-you-go"
-      }
-    ],
-    "description": "Robin Cloud Native Storage and Data Service is a high-performance Storage and Data Management solution for your Stateful Applications on IBM Cloud IKS.",
-    "longDescription": "Robin Cloud Native Storage and Data Service brings high performance storage and application-aware data management to Kubernetes. It is a IBM certified operator that installs natively on IKS and OpenShift and delivers block and file storage for stateful applications such as databases, data analytics, and AI/ML applications. Robin CNS automates storage and data management operations on OpenShift and provides a simple API for developers and DevOps teams so that they can easily manage stateful applications without having to become storage experts\n&nbsp;\n&nbsp;\nGETTING SUPPORT\nThis product is provided and supported by Robin.io. Robin support is available 24x7x365. Please reach out to Robin on Slack (slack.robin.io) for immediate assistance. Alternatively you can contact Robin support by emailing support@robin.com. Include a contact information and any details you can provide on the issue. Please include severity of the issue in the subject line. Robin will reply back within 24 hours.",
-    "displayName": "Cloud Native Storage and Data Service",
-    "imageUrl": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-    "localPngIcon": "/generated/icons/a9617650-09ff-11ec-85f2-d10915d24d79.png"
-  },
-  {
     "id": "dff97f5c-bc5e-4455-b470-411c3edbe49c",
     "_id": "dff97f5c-bc5e-4455-b470-411c3edbe49c",
     "_rev": "22-314e64b299e841d60b22eeb838395cc3",
@@ -51394,1267 +50754,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/cloudant/artifacts/cache/4ceee9ce611642e218fed88bae6f2e38-public/cloudant-icon-light.svg",
     "localSvgIcon": "/generated/icons/cloudant.svg",
     "localPngIcon": "/generated/icons/cloudant.png"
-  },
-  {
-    "id": "e7114cc0-ffd2-4199-bc1a-ea79a6f09e89",
-    "_id": "e7114cc0-ffd2-4199-bc1a-ea79a6f09e89",
-    "_rev": "87-7d481fd0234cbc9d12270fb545af329a",
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:e7114cc0-ffd2-4199-bc1a-ea79a6f09e89",
-    "name": "cloudsway-cdn-global",
-    "kind": "service",
-    "overview_ui": {
-      "en": {
-        "display_name": "Cloudsway CDN Pro",
-        "long_description": "1.Programmable Delivery: Nginx based programmable delivery for rapid debugging and release under complex requirements. New configuration interface designed for simplicity and ease of use, reliably supporting any complex business logic. Improved configuration version management can easily embedded in enterprise DevOps.\n2.Secure and Reliable: Enabling 4 layer and 7 layer DDoS defense mechanisms, while extending support for high-performance Web application firewalls. \nReject suspicious packets and forward secure packets back to the source site based on real-time analytics.\n3.Excellent Performance: Accurate intelligent scheduling system based on real-time detection and Wangsu's proprietary private high-speed return to source protocol comprehensively improve the performance of edge access and return to source connection.",
-        "description": "Cloudsway CDN is a new generation of content delivery platform, which can provide users with programmable CDN interactive services"
-      }
-    },
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/e7114cc0-ffd2-4199-bc1a-ea79a6f09e89/%2A",
-    "disabled": false,
-    "active": true,
-    "tags": [
-      "cdn",
-      "custom_kind_service",
-      "edge computing",
-      "global",
-      "ibm_third_party",
-      "network_interconnectivity",
-      "nginx",
-      "paid",
-      "paid_only",
-      "programmable",
-      "rc_compatible",
-      "support_third_party"
-    ],
-    "geo_tags": [
-      "global"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "HONGKONG CLOUDSWAY LIMITED"
-    },
-    "created": "2024-03-25T21:54:01.675459947-04:00",
-    "updated": "2024-07-21T23:31:50.409190053-04:00",
-    "complete": true,
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/e7114cc0-ffd2-4199-bc1a-ea79a6f09e89?complete=true",
-    "images": {
-      "image": "https://bigbot2022.s3.us-west-1.amazonaws.com/cloudsway-logo.png"
-    },
-    "metadata": {
-      "rc_compatible": true,
-      "other": {
-        "PC": {
-          "onboardingOfferingId": "910d02b9f6f1441f9e9a198cbdc8d2c9:o:2b950c28-daa4-4de5-98a3-8d4ab43b71c3",
-          "support": {
-            "languages": [
-              "en",
-              "zh"
-            ],
-            "locations": [
-              "CN"
-            ],
-            "process": "1. 7 * 24-hour specialized guard:\n(1) 200 + technical experts and special personnel;\n(2) QQ, wechat, hotline and e-mail are open in multiple channels and respond in seconds;\n(3) Dual guarantee of main / standby person in charge;\n2. \"Golden Triangle\" business escort:\n(1) Sales & pre-sales + technical service + product & R & D, multi team three-dimensional support;\n(2) Leading insight into industry scenario demand;\n(3) Professional operation analysis to help business development",
-            "status_url": "https://www.cloudsway.com/aboutus",
-            "support_details": [
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [],
-                  "timezone": "Asia/Shanghai"
-                },
-                "contact": "business.msp@wangsu.com",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "email"
-              },
-              {
-                "availability": {
-                  "always_available": false,
-                  "times": [
-                    {
-                      "day": 0,
-                      "end_time": "18:00",
-                      "start_time": "09:00"
-                    },
-                    {
-                      "day": 1,
-                      "end_time": "18:00",
-                      "start_time": "09:00"
-                    },
-                    {
-                      "day": 2,
-                      "end_time": "18:00",
-                      "start_time": "09:00"
-                    },
-                    {
-                      "day": 3,
-                      "end_time": "18:00",
-                      "start_time": "09:00"
-                    },
-                    {
-                      "day": 4,
-                      "end_time": "18:00",
-                      "start_time": "09:00"
-                    }
-                  ],
-                  "timezone": "Asia/Shanghai"
-                },
-                "contact": "8619151630930",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "phone"
-              }
-            ],
-            "support_escalation": {
-              "contact": "business.msp@wangsu.com",
-              "escalation_wait_time": {
-                "type": "hour",
-                "value": 1
-              },
-              "response_wait_time": {
-                "type": "hour",
-                "value": 1
-              }
-            },
-            "support_type": "third_party",
-            "url": "https://www.cloudsway.com/aboutus"
-          }
-        }
-      },
-      "service": {
-        "type": "",
-        "iam_compatible": false,
-        "unique_api_key": false,
-        "rc_provisionable": true,
-        "bindable": true,
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "user_defined_service": null,
-        "extension": null,
-        "plan_updateable": false,
-        "state": "",
-        "service_check_enabled": false,
-        "test_check_interval": 0,
-        "service_key_supported": true,
-        "custom_create_page_hybrid_enabled": false,
-        "parameters": [
-          {
-            "associations": null,
-            "description": "Account used to access the Cloudsway CDN portal",
-            "displayname": "Login Name",
-            "hidden": null,
-            "invalidmessage": "Please enter a valid LoginName.",
-            "layout": null,
-            "name": "name",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": "^(?=.*@ibm\\.com)[a-zA-Z\\d_]{1,92}@ibm\\.com$",
-            "placeholder": "Ending with @ibm.com, maximum of 100 characters. Must contain at least three of the following: uppercase letters, lowercase letters, special characters, and numbers.eg:zhat0408@ibm",
-            "readonly": null,
-            "required": null,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": "Password used to access the Cloudsway CDN portal",
-            "displayname": "Password",
-            "hidden": null,
-            "invalidmessage": "Please enter a valid password.",
-            "layout": null,
-            "name": "password",
-            "optionsUrl": null,
-            "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{9,}$",
-            "placeholder": "9 to 100 characters. Must contain at least three of the following: uppercase letters, lowercase letters, special characters, and numbers.",
-            "readonly": null,
-            "required": null,
-            "type": "password",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": "Email address of the contact",
-            "displayname": "E-mail",
-            "hidden": null,
-            "invalidmessage": "Please enter a valid email.",
-            "layout": null,
-            "name": "email",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": "^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$",
-            "placeholder": null,
-            "readonly": null,
-            "required": null,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": "Area code of mobile phone number",
-            "displayname": "AreaCode",
-            "hidden": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "areaCode",
-            "options": [
-              {
-                "displayname": "0086",
-                "value": "0086"
-              },
-              {
-                "displayname": "00852",
-                "value": "00852"
-              },
-              {
-                "displayname": "00853",
-                "value": "00853"
-              },
-              {
-                "displayname": "00886",
-                "value": "00886"
-              },
-              {
-                "displayname": "00213",
-                "value": "00213"
-              },
-              {
-                "displayname": "0093",
-                "value": "0093"
-              },
-              {
-                "displayname": "0054",
-                "value": "0054"
-              },
-              {
-                "displayname": "00971",
-                "value": "00971"
-              },
-              {
-                "displayname": "00297",
-                "value": "00297"
-              },
-              {
-                "displayname": "00968",
-                "value": "00968"
-              },
-              {
-                "displayname": "00994",
-                "value": "00994"
-              },
-              {
-                "displayname": "0020",
-                "value": "0020"
-              },
-              {
-                "displayname": "00251",
-                "value": "00251"
-              },
-              {
-                "displayname": "00353",
-                "value": "00353"
-              },
-              {
-                "displayname": "00372",
-                "value": "00372"
-              },
-              {
-                "displayname": "00376",
-                "value": "00376"
-              },
-              {
-                "displayname": "00244",
-                "value": "00244"
-              },
-              {
-                "displayname": "001264",
-                "value": "001264"
-              },
-              {
-                "displayname": "001268",
-                "value": "001268"
-              },
-              {
-                "displayname": "0043",
-                "value": "0043"
-              },
-              {
-                "displayname": "0061",
-                "value": "0061"
-              },
-              {
-                "displayname": "001246",
-                "value": "001246"
-              },
-              {
-                "displayname": "00675",
-                "value": "00675"
-              },
-              {
-                "displayname": "001242",
-                "value": "001242"
-              },
-              {
-                "displayname": "0092",
-                "value": "0092"
-              },
-              {
-                "displayname": "00595",
-                "value": "00595"
-              },
-              {
-                "displayname": "00970",
-                "value": "00970"
-              },
-              {
-                "displayname": "00973",
-                "value": "00973"
-              },
-              {
-                "displayname": "00507",
-                "value": "00507"
-              },
-              {
-                "displayname": "0055",
-                "value": "0055"
-              },
-              {
-                "displayname": "00375",
-                "value": "00375"
-              },
-              {
-                "displayname": "001441",
-                "value": "001441"
-              },
-              {
-                "displayname": "00359",
-                "value": "00359"
-              },
-              {
-                "displayname": "001670",
-                "value": "001670"
-              },
-              {
-                "displayname": "00229",
-                "value": "00229"
-              },
-              {
-                "displayname": "0032",
-                "value": "0032"
-              },
-              {
-                "displayname": "00354",
-                "value": "00354"
-              },
-              {
-                "displayname": "001787",
-                "value": "001787"
-              },
-              {
-                "displayname": "0048",
-                "value": "0048"
-              },
-              {
-                "displayname": "00387",
-                "value": "00387"
-              },
-              {
-                "displayname": "00591",
-                "value": "00591"
-              },
-              {
-                "displayname": "00501",
-                "value": "00501"
-              },
-              {
-                "displayname": "00267",
-                "value": "00267"
-              },
-              {
-                "displayname": "00975",
-                "value": "00975"
-              },
-              {
-                "displayname": "00226",
-                "value": "00226"
-              },
-              {
-                "displayname": "00257",
-                "value": "00257"
-              },
-              {
-                "displayname": "00240",
-                "value": "00240"
-              },
-              {
-                "displayname": "0045",
-                "value": "0045"
-              },
-              {
-                "displayname": "0049",
-                "value": "0049"
-              },
-              {
-                "displayname": "00670",
-                "value": "00670"
-              },
-              {
-                "displayname": "00228",
-                "value": "00228"
-              },
-              {
-                "displayname": "001767",
-                "value": "001767"
-              },
-              {
-                "displayname": "001809",
-                "value": "001809"
-              },
-              {
-                "displayname": "007",
-                "value": "007"
-              },
-              {
-                "displayname": "00593",
-                "value": "00593"
-              },
-              {
-                "displayname": "00291",
-                "value": "00291"
-              },
-              {
-                "displayname": "0033",
-                "value": "0033"
-              },
-              {
-                "displayname": "00250",
-                "value": "00250"
-              },
-              {
-                "displayname": "0040",
-                "value": "0040"
-              },
-              {
-                "displayname": "00261",
-                "value": "00261"
-              },
-              {
-                "displayname": "00960",
-                "value": "00960"
-              },
-              {
-                "displayname": "00356",
-                "value": "00356"
-              },
-              {
-                "displayname": "00265",
-                "value": "00265"
-              },
-              {
-                "displayname": "0060",
-                "value": "0060"
-              },
-              {
-                "displayname": "00223",
-                "value": "00223"
-              },
-              {
-                "displayname": "00389",
-                "value": "00389"
-              },
-              {
-                "displayname": "00692",
-                "value": "00692"
-              },
-              {
-                "displayname": "00262",
-                "value": "00262"
-              },
-              {
-                "displayname": "00230",
-                "value": "00230"
-              },
-              {
-                "displayname": "00222",
-                "value": "00222"
-              },
-              {
-                "displayname": "001",
-                "value": "001"
-              },
-              {
-                "displayname": "0016",
-                "value": "0016"
-              },
-              {
-                "displayname": "0084",
-                "value": "0084"
-              },
-              {
-                "displayname": "001340",
-                "value": "001340"
-              },
-              {
-                "displayname": "00976",
-                "value": "00976"
-              },
-              {
-                "displayname": "001664",
-                "value": "001664"
-              },
-              {
-                "displayname": "00880",
-                "value": "00880"
-              },
-              {
-                "displayname": "0051",
-                "value": "0051"
-              },
-              {
-                "displayname": "00691",
-                "value": "00691"
-              },
-              {
-                "displayname": "0095",
-                "value": "0095"
-              },
-              {
-                "displayname": "00373",
-                "value": "00373"
-              },
-              {
-                "displayname": "00212",
-                "value": "00212"
-              },
-              {
-                "displayname": "00377",
-                "value": "00377"
-              },
-              {
-                "displayname": "00258",
-                "value": "00258"
-              },
-              {
-                "displayname": "0052",
-                "value": "0052"
-              },
-              {
-                "displayname": "00264",
-                "value": "00264"
-              },
-              {
-                "displayname": "0027",
-                "value": "0027"
-              },
-              {
-                "displayname": "00211",
-                "value": "00211"
-              },
-              {
-                "displayname": "00674",
-                "value": "00674"
-              },
-              {
-                "displayname": "00505",
-                "value": "00505"
-              },
-              {
-                "displayname": "00977",
-                "value": "00977"
-              },
-              {
-                "displayname": "00227",
-                "value": "00227"
-              },
-              {
-                "displayname": "00234",
-                "value": "00234"
-              },
-              {
-                "displayname": "00683",
-                "value": "00683"
-              },
-              {
-                "displayname": "0047",
-                "value": "0047"
-              },
-              {
-                "displayname": "00680",
-                "value": "00680"
-              },
-              {
-                "displayname": "00351",
-                "value": "00351"
-              },
-              {
-                "displayname": "0081",
-                "value": "0081"
-              },
-              {
-                "displayname": "0046",
-                "value": "0046"
-              },
-              {
-                "displayname": "0041",
-                "value": "0041"
-              },
-              {
-                "displayname": "00503",
-                "value": "00503"
-              },
-              {
-                "displayname": "00685",
-                "value": "00685"
-              },
-              {
-                "displayname": "00381",
-                "value": "00381"
-              },
-              {
-                "displayname": "00232",
-                "value": "00232"
-              },
-              {
-                "displayname": "00221",
-                "value": "00221"
-              },
-              {
-                "displayname": "00357",
-                "value": "00357"
-              },
-              {
-                "displayname": "00248",
-                "value": "00248"
-              },
-              {
-                "displayname": "00966",
-                "value": "00966"
-              },
-              {
-                "displayname": "00239",
-                "value": "00239"
-              },
-              {
-                "displayname": "00290",
-                "value": "00290"
-              },
-              {
-                "displayname": "001869",
-                "value": "001869"
-              },
-              {
-                "displayname": "001758",
-                "value": "001758"
-              },
-              {
-                "displayname": "00378",
-                "value": "00378"
-              },
-              {
-                "displayname": "00508",
-                "value": "00508"
-              },
-              {
-                "displayname": "00298",
-                "value": "00298"
-              },
-              {
-                "displayname": "00689",
-                "value": "00689"
-              },
-              {
-                "displayname": "00379",
-                "value": "00379"
-              },
-              {
-                "displayname": "0063",
-                "value": "0063"
-              },
-              {
-                "displayname": "00679",
-                "value": "00679"
-              },
-              {
-                "displayname": "00358",
-                "value": "00358"
-              },
-              {
-                "displayname": "00238",
-                "value": "00238"
-              },
-              {
-                "displayname": "00500",
-                "value": "00500"
-              },
-              {
-                "displayname": "00220",
-                "value": "00220"
-              },
-              {
-                "displayname": "00242",
-                "value": "00242"
-              },
-              {
-                "displayname": "00243",
-                "value": "00243"
-              },
-              {
-                "displayname": "0057\n00506",
-                "value": "0057\n00506"
-              },
-              {
-                "displayname": "001473",
-                "value": "001473"
-              },
-              {
-                "displayname": "00299",
-                "value": "00299"
-              },
-              {
-                "displayname": "00995",
-                "value": "00995"
-              },
-              {
-                "displayname": "001671",
-                "value": "001671"
-              },
-              {
-                "displayname": "00592",
-                "value": "00592"
-              },
-              {
-                "displayname": "00509",
-                "value": "00509"
-              },
-              {
-                "displayname": "0082",
-                "value": "0082"
-              },
-              {
-                "displayname": "0031",
-                "value": "0031"
-              },
-              {
-                "displayname": "00599",
-                "value": "00599"
-              },
-              {
-                "displayname": "00382",
-                "value": "00382"
-              },
-              {
-                "displayname": "00504",
-                "value": "00504"
-              },
-              {
-                "displayname": "00686",
-                "value": "00686"
-              },
-              {
-                "displayname": "00253",
-                "value": "00253"
-              },
-              {
-                "displayname": "00996",
-                "value": "00996"
-              },
-              {
-                "displayname": "00224",
-                "value": "00224"
-              },
-              {
-                "displayname": "00233",
-                "value": "00233"
-              },
-              {
-                "displayname": "00241",
-                "value": "00241"
-              },
-              {
-                "displayname": "00855",
-                "value": "00855"
-              },
-              {
-                "displayname": "00420",
-                "value": "00420"
-              },
-              {
-                "displayname": "00263",
-                "value": "00263"
-              },
-              {
-                "displayname": "00237",
-                "value": "00237"
-              },
-              {
-                "displayname": "00974",
-                "value": "00974"
-              },
-              {
-                "displayname": "001345",
-                "value": "001345"
-              },
-              {
-                "displayname": "00269",
-                "value": "00269"
-              },
-              {
-                "displayname": "00965",
-                "value": "00965"
-              },
-              {
-                "displayname": "00385",
-                "value": "00385"
-              },
-              {
-                "displayname": "00254",
-                "value": "00254"
-              },
-              {
-                "displayname": "00682",
-                "value": "00682"
-              },
-              {
-                "displayname": "00371",
-                "value": "00371"
-              },
-              {
-                "displayname": "00266",
-                "value": "00266"
-              },
-              {
-                "displayname": "00856",
-                "value": "00856"
-              },
-              {
-                "displayname": "00961",
-                "value": "00961"
-              },
-              {
-                "displayname": "00370",
-                "value": "00370"
-              },
-              {
-                "displayname": "00231",
-                "value": "00231"
-              },
-              {
-                "displayname": "00218",
-                "value": "00218"
-              },
-              {
-                "displayname": "00423",
-                "value": "00423"
-              },
-              {
-                "displayname": "00352",
-                "value": "00352"
-              },
-              {
-                "displayname": "001784",
-                "value": "001784"
-              },
-              {
-                "displayname": "0094",
-                "value": "0094"
-              },
-              {
-                "displayname": "00421",
-                "value": "00421"
-              },
-              {
-                "displayname": "00386",
-                "value": "00386"
-              },
-              {
-                "displayname": "00268",
-                "value": "00268"
-              },
-              {
-                "displayname": "00249",
-                "value": "00249"
-              },
-              {
-                "displayname": "00597",
-                "value": "00597"
-              },
-              {
-                "displayname": "00677",
-                "value": "00677"
-              },
-              {
-                "displayname": "00252",
-                "value": "00252"
-              },
-              {
-                "displayname": "00992",
-                "value": "00992"
-              },
-              {
-                "displayname": "0066",
-                "value": "0066"
-              },
-              {
-                "displayname": "00255",
-                "value": "00255"
-              },
-              {
-                "displayname": "00676",
-                "value": "00676"
-              },
-              {
-                "displayname": "001649",
-                "value": "001649"
-              },
-              {
-                "displayname": "001868",
-                "value": "001868"
-              },
-              {
-                "displayname": "00216",
-                "value": "00216"
-              },
-              {
-                "displayname": "00688",
-                "value": "00688"
-              },
-              {
-                "displayname": "0090",
-                "value": "0090"
-              },
-              {
-                "displayname": "00993",
-                "value": "00993"
-              },
-              {
-                "displayname": "00690",
-                "value": "00690"
-              },
-              {
-                "displayname": "00681",
-                "value": "00681"
-              },
-              {
-                "displayname": "00678",
-                "value": "00678"
-              },
-              {
-                "displayname": "00502",
-                "value": "00502"
-              },
-              {
-                "displayname": "0058",
-                "value": "0058"
-              },
-              {
-                "displayname": "00673",
-                "value": "00673"
-              },
-              {
-                "displayname": "00256",
-                "value": "00256"
-              },
-              {
-                "displayname": "00380",
-                "value": "00380"
-              },
-              {
-                "displayname": "00598",
-                "value": "00598"
-              },
-              {
-                "displayname": "00998",
-                "value": "00998"
-              },
-              {
-                "displayname": "0034",
-                "value": "0034"
-              },
-              {
-                "displayname": "0030",
-                "value": "0030"
-              },
-              {
-                "displayname": "0065",
-                "value": "0065"
-              },
-              {
-                "displayname": "00687",
-                "value": "00687"
-              },
-              {
-                "displayname": "0064",
-                "value": "0064"
-              },
-              {
-                "displayname": "0036",
-                "value": "0036"
-              },
-              {
-                "displayname": "001876",
-                "value": "001876"
-              },
-              {
-                "displayname": "00374",
-                "value": "00374"
-              },
-              {
-                "displayname": "00967",
-                "value": "00967"
-              },
-              {
-                "displayname": "00964",
-                "value": "00964"
-              },
-              {
-                "displayname": "00972",
-                "value": "00972"
-              },
-              {
-                "displayname": "0039",
-                "value": "0039"
-              },
-              {
-                "displayname": "0091",
-                "value": "0091"
-              },
-              {
-                "displayname": "0062",
-                "value": "0062"
-              },
-              {
-                "displayname": "0044",
-                "value": "0044"
-              },
-              {
-                "displayname": "001284",
-                "value": "001284"
-              },
-              {
-                "displayname": "00246",
-                "value": "00246"
-              },
-              {
-                "displayname": "00962",
-                "value": "00962"
-              },
-              {
-                "displayname": "00260",
-                "value": "00260"
-              },
-              {
-                "displayname": "00235",
-                "value": "00235"
-              },
-              {
-                "displayname": "00350",
-                "value": "00350"
-              },
-              {
-                "displayname": "0056",
-                "value": "0056"
-              },
-              {
-                "displayname": "00236",
-                "value": "00236"
-              }
-            ],
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": null,
-            "required": null,
-            "type": "dropdown",
-            "validationUrl": null,
-            "value": "0086"
-          },
-          {
-            "associations": null,
-            "description": "The mobile phone number of the contact",
-            "displayname": "Mobile Phone",
-            "hidden": null,
-            "invalidmessage": "Please enter a valid phone",
-            "layout": null,
-            "name": "phone",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": "^[0-9]{5,11}$",
-            "placeholder": null,
-            "readonly": null,
-            "required": null,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          }
-        ]
-      },
-      "ui": {
-        "strings": {
-          "en": {
-            "bullets": [
-              {
-                "description": "Running code on the edge to quickly create personalized business requirements.",
-                "title": "Programmable CDN"
-              },
-              {
-                "description": "Improve first-time access speed and user experience.",
-                "title": "Content Management"
-              },
-              {
-                "description": "CDN Pro supports RSA and ECDSA certificates to provide users with a secure and reliable content delivery channel through HTTPS.",
-                "title": "Secure Delivery"
-              },
-              {
-                "description": " Static edge cache with lower dynamic latency.",
-                "title": "The Best of Dynamic and Static Cache"
-              },
-              {
-                "description": "Block malicious requests and reduce the load on source site.",
-                "title": "Source Site Protection"
-              },
-              {
-                "description": "Seamless integration with third party edge applications.",
-                "title": "Application Platform"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "doc_url": "https://en.wangsu.com/document/cdnpro/ibmcloud",
-          "terms_url": "https://www.wangsu.com/document/cdnpro/xiaosucdnproeula"
-        }
-      },
-      "pricing": {
-        "origin": "pricing_catalog",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/e7114cc0-ffd2-4199-bc1a-ea79a6f09e89/pricing",
-        "starting_price": {},
-        "metrics": null
-      }
-    },
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "id": "fa60ad30-3af4-4d2a-8087-256b5a52f63f",
-        "_id": "fa60ad30-3af4-4d2a-8087-256b5a52f63f",
-        "_rev": "10-edff24c9196438e3c7d39cca81df7ffc",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:fa60ad30-3af4-4d2a-8087-256b5a52f63f",
-        "name": "cloudsway-cdn-global-global-pricing",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Global-Pricing",
-            "long_description": "The resources provided by this package include overseas resources and mainland China resources.",
-            "description": "The resources provided by this package include overseas resources and mainland China resources."
-          }
-        },
-        "parent_id": "e7114cc0-ffd2-4199-bc1a-ea79a6f09e89",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/fa60ad30-3af4-4d2a-8087-256b5a52f63f/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/e7114cc0-ffd2-4199-bc1a-ea79a6f09e89",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "network_interconnectivity",
-          "ibm_third_party",
-          "cdn",
-          "programmable",
-          "edge computing",
-          "nginx"
-        ],
-        "geo_tags": [
-          "global"
-        ],
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "HONGKONG CLOUDSWAY LIMITED"
-        },
-        "created": "2024-03-28T02:02:41.201174878-04:00",
-        "updated": "2024-07-24T05:10:36.962257801-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/fa60ad30-3af4-4d2a-8087-256b5a52f63f?complete=true",
-        "metadata": {
-          "rc_compatible": true,
-          "other": {
-            "PC": {
-              "onboardingOfferingId": "910d02b9f6f1441f9e9a198cbdc8d2c9:o:2b950c28-daa4-4de5-98a3-8d4ab43b71c3"
-            }
-          },
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": true,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": []
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "The resources are automatically activated for the Stand, Premium, Deluxe, Ultra labels."
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/fa60ad30-3af4-4d2a-8087-256b5a52f63f/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "The resources provided by this package include overseas resources and mainland China resources.",
-        "displayName": "Global-Pricing"
-      }
-    ],
-    "description": "Cloudsway CDN is a new generation of content delivery platform, which can provide users with programmable CDN interactive services",
-    "longDescription": "1.Programmable Delivery: Nginx based programmable delivery for rapid debugging and release under complex requirements. New configuration interface designed for simplicity and ease of use, reliably supporting any complex business logic. Improved configuration version management can easily embedded in enterprise DevOps.\n2.Secure and Reliable: Enabling 4 layer and 7 layer DDoS defense mechanisms, while extending support for high-performance Web application firewalls. \nReject suspicious packets and forward secure packets back to the source site based on real-time analytics.\n3.Excellent Performance: Accurate intelligent scheduling system based on real-time detection and Wangsu's proprietary private high-speed return to source protocol comprehensively improve the performance of edge access and return to source connection.",
-    "displayName": "Cloudsway CDN Pro",
-    "imageUrl": "https://bigbot2022.s3.us-west-1.amazonaws.com/cloudsway-logo.png",
-    "localPngIcon": "/generated/icons/e7114cc0-ffd2-4199-bc1a-ea79a6f09e89.png"
   },
   {
     "id": "is.cluster-network",
@@ -71107,405 +69206,6 @@
     "displayName": "CORIZANCE AML Screening",
     "imageUrl": "https://i.imgur.com/mFJRC36.png",
     "localPngIcon": "/generated/icons/26f2dc01-48da-4d5c-babe-ce4a2278c3c4.png"
-  },
-  {
-    "id": "5da26b90-7b83-44b5-b6d3-778b408b77db",
-    "_id": "5da26b90-7b83-44b5-b6d3-778b408b77db",
-    "_rev": "52-0ecdd43c167f2bcba5c7ea0a3a77ada3",
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:5da26b90-7b83-44b5-b6d3-778b408b77db",
-    "name": "crushbank-crushbank",
-    "kind": "service",
-    "overview_ui": {
-      "en": {
-        "display_name": "CrushBank",
-        "long_description": "CrushBank Technology created the award-winning AI system that uses trustworthy AI from IBM watsonX to transform IT support, enabling faster resolutions, fewer escalations, and unparalleled analytics. CrushBank creates Smart Data for your business filling critical gaps in support information, leading to enhanced client relations and better outcomes. ",
-        "description": "CrushBank uses WatsonX to transform IT support, enabling faster resolutions, fewer escalations, and unparalleled analytics. "
-      }
-    },
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5da26b90-7b83-44b5-b6d3-778b408b77db/%2A",
-    "disabled": false,
-    "active": true,
-    "tags": [
-      "ai",
-      "au-syd",
-      "custom_kind_service",
-      "data lake house",
-      "eu-de",
-      "eu-gb",
-      "ibm_third_party",
-      "itsm",
-      "knowledge management",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "us-south",
-      "watson",
-      "watsonx"
-    ],
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "CrushBank Technology Inc."
-    },
-    "created": "2023-11-02T11:32:49.114422961-04:00",
-    "updated": "2024-08-21T14:55:58.517258801-04:00",
-    "complete": true,
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/5da26b90-7b83-44b5-b6d3-778b408b77db?complete=true",
-    "images": {
-      "image": "https://www.crushbank.com/wp-content/uploads/2024/02/CrushBank-fist-logo.png"
-    },
-    "metadata": {
-      "rc_compatible": true,
-      "other": {
-        "PC": {
-          "onboardingOfferingId": "1d21420d9cd62a443e3d662cfc9c6a19:o:77effa38-22be-43f8-9548-2d982953d1d3",
-          "support": {
-            "languages": [
-              "en"
-            ],
-            "locations": [
-              "US"
-            ],
-            "process": "Support with onboarding of the product along with any issues customers may encounter.",
-            "status_url": "https://crushbank.betteruptime.com/",
-            "support_details": [
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [],
-                  "timezone": "America/New_York"
-                },
-                "contact": "https://support.crushbank.com/knowledge",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "support_site"
-              },
-              {
-                "availability": {
-                  "always_available": false,
-                  "times": [
-                    {
-                      "day": 0,
-                      "end_time": "17:00",
-                      "start_time": "08:00"
-                    },
-                    {
-                      "day": 1,
-                      "end_time": "17:00",
-                      "start_time": "08:00"
-                    },
-                    {
-                      "day": 2,
-                      "end_time": "17:00",
-                      "start_time": "08:00"
-                    },
-                    {
-                      "day": 3,
-                      "end_time": "17:00",
-                      "start_time": "08:00"
-                    },
-                    {
-                      "day": 4,
-                      "end_time": "17:00",
-                      "start_time": "08:00"
-                    }
-                  ],
-                  "timezone": "America/New_York"
-                },
-                "contact": "support@crushbank.com",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "email"
-              }
-            ],
-            "support_escalation": {
-              "contact": "support@crushbank.com",
-              "escalation_wait_time": {
-                "type": "hour",
-                "value": 1
-              },
-              "response_wait_time": {
-                "type": "hour",
-                "value": 1
-              }
-            },
-            "support_type": "third_party",
-            "url": "https://support.crushbank.com/knowledge"
-          }
-        }
-      },
-      "service": {
-        "type": "",
-        "iam_compatible": false,
-        "unique_api_key": false,
-        "rc_provisionable": true,
-        "bindable": true,
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "user_defined_service": null,
-        "extension": null,
-        "plan_updateable": false,
-        "state": "",
-        "service_check_enabled": false,
-        "test_check_interval": 0,
-        "service_key_supported": true,
-        "custom_create_page_hybrid_enabled": false,
-        "parameters": [
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Company",
-            "hidden": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "company",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": null,
-            "required": null,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Full Name",
-            "hidden": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "fullName",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": null,
-            "required": null,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Email",
-            "hidden": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "email",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": null,
-            "required": null,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Phone",
-            "hidden": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "phone",
-            "options": null,
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": null,
-            "required": null,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          }
-        ]
-      },
-      "ui": {
-        "strings": {
-          "en": {
-            "bullets": [
-              {
-                "description": "Ask questions and get answers from your data through Microsoft Teams Chat. ",
-                "title": "Conversational Search "
-              },
-              {
-                "description": "Use your own data to build automations, summaries, AI models and data classifications ",
-                "title": "AI-Driven Automations "
-              },
-              {
-                "description": "Find and fix gaps and errors in your data. ",
-                "title": "Data Improvements "
-              },
-              {
-                "description": "All your systems in one trustworthy IBM watsonx AI data lake reducing search time. ",
-                "title": "Private Data Lake"
-              }
-            ],
-            "media": [
-              {
-                "caption": "CrushBank Overview",
-                "type": "video/mp4",
-                "url": "https://www.crushbank.com/wp-content/uploads/2024/08/CrushBank-Explainer.mp4 "
-              }
-            ]
-          }
-        },
-        "urls": {
-          "doc_url": "https://support.crushbank.com/knowledge",
-          "terms_url": "https://www.crushbank.com/wp-content/uploads/2023/04/CRUSHBANK-Website-Terms-of-Service-2021.pdf"
-        }
-      },
-      "pricing": {
-        "origin": "pricing_catalog",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/5da26b90-7b83-44b5-b6d3-778b408b77db/pricing",
-        "starting_price": {},
-        "metrics": null
-      }
-    },
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "id": "d4b1bbbc-3768-4053-a3f7-6c519e4b9a98",
-        "_id": "d4b1bbbc-3768-4053-a3f7-6c519e4b9a98",
-        "_rev": "24-0a29068b151ca2fe7c07b3b13f5d71ac",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d4b1bbbc-3768-4053-a3f7-6c519e4b9a98",
-        "name": "crushbank-crushbank-default",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Default",
-            "long_description": "Default Pricing Plan for CrushBank",
-            "description": "Default Pricing Plan for CrushBank"
-          }
-        },
-        "parent_id": "5da26b90-7b83-44b5-b6d3-778b408b77db",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/d4b1bbbc-3768-4053-a3f7-6c519e4b9a98/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/5da26b90-7b83-44b5-b6d3-778b408b77db",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "watson",
-          "ibm_third_party"
-        ],
-        "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "us-south"
-        ],
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "CrushBank Technology Inc."
-        },
-        "created": "2023-11-21T07:50:13.091456612-05:00",
-        "updated": "2024-07-01T14:34:27.704140802-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/d4b1bbbc-3768-4053-a3f7-6c519e4b9a98?complete=true",
-        "metadata": {
-          "rc_compatible": true,
-          "other": {
-            "PC": {
-              "onboardingOfferingId": "1d21420d9cd62a443e3d662cfc9c6a19:o:77effa38-22be-43f8-9548-2d982953d1d3"
-            }
-          },
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": true,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": []
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "CrushBank uses WatsonX to transform IT support, enabling faster resolutions, fewer escalations, and unparalleled analytics."
-                  },
-                  {
-                    "description": "-Document Storage & Search.  Store all of your documentation within CrushBank and access it via AI Search. (1 credit /  document)"
-                  },
-                  {
-                    "description": "-Ticket classification using CrushBank's SmartClassifier. (1 Credit / Ticket Classified | 500 credits / custom model)"
-                  },
-                  {
-                    "description": "-Ticket Summarization automatically summarizes ticket contents and time entries. (5 credits / ticket)"
-                  },
-                  {
-                    "description": "SmartBudgeter allows you to budget new tickets based on related closed tickets. (Free)"
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/d4b1bbbc-3768-4053-a3f7-6c519e4b9a98/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Default Pricing Plan for CrushBank",
-        "displayName": "Default"
-      }
-    ],
-    "description": "CrushBank uses WatsonX to transform IT support, enabling faster resolutions, fewer escalations, and unparalleled analytics. ",
-    "longDescription": "CrushBank Technology created the award-winning AI system that uses trustworthy AI from IBM watsonX to transform IT support, enabling faster resolutions, fewer escalations, and unparalleled analytics. CrushBank creates Smart Data for your business filling critical gaps in support information, leading to enhanced client relations and better outcomes. ",
-    "displayName": "CrushBank",
-    "imageUrl": "https://www.crushbank.com/wp-content/uploads/2024/02/CrushBank-fist-logo.png",
-    "localPngIcon": "/generated/icons/5da26b90-7b83-44b5-b6d3-778b408b77db.png"
   },
   {
     "id": "ead529ec-8efc-46a1-adfe-361bb612cad8",
@@ -93576,10 +91276,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -93590,7 +91286,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -120362,7 +118062,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -120373,7 +118072,8 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd"
+          "au-syd",
+          "che01"
         ],
         "pricing_tags": [
           "paygo",
@@ -144196,13 +141896,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -146328,13 +144028,13 @@
           "storage"
         ],
         "geo_tags": [
-          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-de"
         ],
         "pricing_tags": [
           "paid",
@@ -184295,19 +181995,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
+      "jp-osa",
+      "in-mum",
+      "ca-tor",
+      "ca-mon",
+      "eu-de",
+      "eu-gb",
+      "us-south",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "ca-mon",
+      "au-syd",
       "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "in-che"
     ],
     "pricing_tags": [
       "paid",
@@ -230379,7 +228079,7 @@
       {
         "id": "3dbed9c1-03b1-469f-83b0-56c79cc1a0da",
         "_id": "3dbed9c1-03b1-469f-83b0-56c79cc1a0da",
-        "_rev": "19-0693ed6837e1f7347e6b62daa79e6309",
+        "_rev": "20-6a14edd1b011f8fe9a5fd92b732ea0ba",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:3dbed9c1-03b1-469f-83b0-56c79cc1a0da",
         "name": "telc-architect-hpc",
         "kind": "plan",
@@ -230441,12 +228141,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-arch-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -230459,7 +228157,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:54:06.536848015-05:00",
-        "updated": "2025-02-19T10:27:58.478001564-05:00",
+        "updated": "2026-11-17T06:12:11.56226313-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/3dbed9c1-03b1-469f-83b0-56c79cc1a0da?complete=true",
         "images": {
@@ -231049,7 +228747,7 @@
       {
         "id": "1ec8217d-b62e-4130-92a6-3b73a3681fb7",
         "_id": "1ec8217d-b62e-4130-92a6-3b73a3681fb7",
-        "_rev": "14-a225db133492e324b493728905738701",
+        "_rev": "15-c020a3082a88ed8d2929f69e45633647",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:1ec8217d-b62e-4130-92a6-3b73a3681fb7",
         "name": "telc-architect-roksoriks",
         "kind": "plan",
@@ -231111,12 +228809,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-arch-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -231129,7 +228825,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:53:52.515776484-05:00",
-        "updated": "2024-07-01T14:20:23.484068992-04:00",
+        "updated": "2026-11-17T06:12:32.571252457-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/1ec8217d-b62e-4130-92a6-3b73a3681fb7?complete=true",
         "images": {
@@ -231273,7 +228969,7 @@
       {
         "id": "a1a6339a-6ab2-44cb-9662-c3c986217e1e",
         "_id": "a1a6339a-6ab2-44cb-9662-c3c986217e1e",
-        "_rev": "12-cc49316cd89a36360b3f0e544c082417",
+        "_rev": "13-7b7782f2960841c670f6edd886fafcfe",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a1a6339a-6ab2-44cb-9662-c3c986217e1e",
         "name": "telc-architect-satellite",
         "kind": "plan",
@@ -231335,12 +229031,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-arch-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -231353,7 +229047,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:52:53.892051388-05:00",
-        "updated": "2024-07-01T14:20:23.521912403-04:00",
+        "updated": "2026-11-17T06:12:43.202738921-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a1a6339a-6ab2-44cb-9662-c3c986217e1e?complete=true",
         "images": {
@@ -231497,7 +229191,7 @@
       {
         "id": "3e4c9acd-f15f-4afd-8c0e-5d7425553f96",
         "_id": "3e4c9acd-f15f-4afd-8c0e-5d7425553f96",
-        "_rev": "12-1842910e4897b5087f6e7bdfc3ef5850",
+        "_rev": "13-fef2812622a22bbdb6fc5c155c02d6ca",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:3e4c9acd-f15f-4afd-8c0e-5d7425553f96",
         "name": "telc-architect-scc",
         "kind": "plan",
@@ -231559,12 +229253,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-arch-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -231577,7 +229269,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:53:07.864347589-05:00",
-        "updated": "2024-07-01T14:20:23.57878283-04:00",
+        "updated": "2026-11-17T06:12:52.876254097-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/3e4c9acd-f15f-4afd-8c0e-5d7425553f96?complete=true",
         "images": {
@@ -231721,7 +229413,7 @@
       {
         "id": "b412d398-0524-44c2-aa9b-74c93cb20e8c",
         "_id": "b412d398-0524-44c2-aa9b-74c93cb20e8c",
-        "_rev": "17-39f22f7232af2dabf0e14bd5575f2f9f",
+        "_rev": "18-dadaa45950fc3afd7aa4be8f26fe0d43",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:b412d398-0524-44c2-aa9b-74c93cb20e8c",
         "name": "telc-architect-vmware",
         "kind": "plan",
@@ -231783,8 +229475,6 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "cloud-ui",
-          "group-arch-services",
           "ibm_created",
           "migration_tools",
           "rc_compatible",
@@ -231801,7 +229491,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:52:39.809215036-05:00",
-        "updated": "2026-02-02T07:24:31.975462073-05:00",
+        "updated": "2026-11-17T06:13:06.335826923-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/b412d398-0524-44c2-aa9b-74c93cb20e8c?complete=true",
         "images": {
@@ -231945,7 +229635,7 @@
       {
         "id": "5b3e4fe9-cd93-4775-9177-0564ccd62625",
         "_id": "5b3e4fe9-cd93-4775-9177-0564ccd62625",
-        "_rev": "20-fd361df6d54f03706d5a5808a58f0b11",
+        "_rev": "21-562c6a26ef7b916f3e8ef293c8179d1c",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5b3e4fe9-cd93-4775-9177-0564ccd62625",
         "name": "telc-assess-hpc",
         "kind": "plan",
@@ -232007,12 +229697,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-assess-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -232025,7 +229713,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:36.501579631-05:00",
-        "updated": "2025-02-19T10:26:56.584786835-05:00",
+        "updated": "2026-11-17T06:13:18.581876226-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/5b3e4fe9-cd93-4775-9177-0564ccd62625?complete=true",
         "images": {
@@ -232615,7 +230303,7 @@
       {
         "id": "9c3138b1-567f-44e8-af64-db3bd66b16b3",
         "_id": "9c3138b1-567f-44e8-af64-db3bd66b16b3",
-        "_rev": "14-2d8da244ed50f949b52c0b9b4be23cc3",
+        "_rev": "15-81cf086b753c4f1850d847cc5e3efcdd",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9c3138b1-567f-44e8-af64-db3bd66b16b3",
         "name": "telc-assess-roksoriks",
         "kind": "plan",
@@ -232677,12 +230365,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-assess-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -232695,7 +230381,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:33.792221926-05:00",
-        "updated": "2024-07-01T14:20:23.826729639-04:00",
+        "updated": "2026-11-17T06:13:36.052865888-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9c3138b1-567f-44e8-af64-db3bd66b16b3?complete=true",
         "images": {
@@ -233061,7 +230747,7 @@
       {
         "id": "f9a42d19-e79f-4d40-8915-69260be06262",
         "_id": "f9a42d19-e79f-4d40-8915-69260be06262",
-        "_rev": "12-3aaaed987c8839a9e8e2b8682aadd95d",
+        "_rev": "13-3a7de8fb381b7e532010bfb660afc466",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:f9a42d19-e79f-4d40-8915-69260be06262",
         "name": "telc-assess-scc",
         "kind": "plan",
@@ -233123,12 +230809,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-assess-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -233141,7 +230825,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-09T11:55:08.178081924-05:00",
-        "updated": "2024-07-01T14:20:23.927016516-04:00",
+        "updated": "2026-11-17T06:13:54.430120553-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/f9a42d19-e79f-4d40-8915-69260be06262?complete=true",
         "images": {
@@ -233285,7 +230969,7 @@
       {
         "id": "276b1eb9-1c2a-471f-99e8-e4f24ea99be7",
         "_id": "276b1eb9-1c2a-471f-99e8-e4f24ea99be7",
-        "_rev": "11-17f3cb8c3dc0c2e2996f80b929ae0ea5",
+        "_rev": "12-c1904ce45175699d74ca0f352f15f292",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:276b1eb9-1c2a-471f-99e8-e4f24ea99be7",
         "name": "telc-assess-vmware",
         "kind": "plan",
@@ -233347,8 +231031,6 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "cloud-ui",
-          "group-assess-services",
           "ibm_created",
           "migration_tools",
           "rc_compatible",
@@ -233365,7 +231047,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:28.183849953-05:00",
-        "updated": "2026-02-02T07:24:52.071163474-05:00",
+        "updated": "2026-11-17T06:14:07.36709522-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/276b1eb9-1c2a-471f-99e8-e4f24ea99be7?complete=true",
         "images": {
@@ -233509,7 +231191,7 @@
       {
         "id": "55997a8e-b062-4204-92e2-536d0c83d06f",
         "_id": "55997a8e-b062-4204-92e2-536d0c83d06f",
-        "_rev": "20-559caeed0d02ecf1d687a54dc8881526",
+        "_rev": "21-77397852cb8a9d41f6e37d68349d5ffa",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:55997a8e-b062-4204-92e2-536d0c83d06f",
         "name": "telc-build-hpc",
         "kind": "plan",
@@ -233571,6 +231253,9 @@
         "disabled": false,
         "active": true,
         "tags": [
+          "cloud-ui",
+          "group-build-services",
+          "ibm",
           "migration_tools",
           "rc_compatible",
           "web_and_app"
@@ -233586,7 +231271,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:56.592547476-05:00",
-        "updated": "2026-09-10T07:23:03.918783502-04:00",
+        "updated": "2026-11-17T06:16:17.676564951-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/55997a8e-b062-4204-92e2-536d0c83d06f?complete=true",
         "images": {
@@ -234176,7 +231861,7 @@
       {
         "id": "d5d8d46c-f5b1-4d23-849a-529ba5fe851a",
         "_id": "d5d8d46c-f5b1-4d23-849a-529ba5fe851a",
-        "_rev": "12-6fe5fa71d3130d7c733aa002d36532b3",
+        "_rev": "13-ee32461c41b84d8b2b3936d6863d30f4",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:d5d8d46c-f5b1-4d23-849a-529ba5fe851a",
         "name": "telc-build-roksoriks",
         "kind": "plan",
@@ -234238,12 +231923,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-build-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -234256,7 +231939,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:47.022374115-05:00",
-        "updated": "2024-07-01T14:20:24.141576265-04:00",
+        "updated": "2026-11-17T06:14:24.894474135-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/d5d8d46c-f5b1-4d23-849a-529ba5fe851a?complete=true",
         "images": {
@@ -234400,7 +232083,7 @@
       {
         "id": "4849985f-898c-4eec-928d-96dd0a3713aa",
         "_id": "4849985f-898c-4eec-928d-96dd0a3713aa",
-        "_rev": "9-a5a7078c8fa987ec4c231be35f6d64f7",
+        "_rev": "10-72b7fde8680c06e83dcc13bfee72f4b9",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:4849985f-898c-4eec-928d-96dd0a3713aa",
         "name": "telc-build-satellite",
         "kind": "plan",
@@ -234417,12 +232100,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-build-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -234435,7 +232116,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:51.098665345-05:00",
-        "updated": "2024-07-01T14:20:24.213593477-04:00",
+        "updated": "2026-11-17T06:14:35.709008825-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/4849985f-898c-4eec-928d-96dd0a3713aa?complete=true",
         "images": {
@@ -234516,7 +232197,7 @@
       {
         "id": "08468a01-7a69-47dc-bc77-0edaf09ec5d8",
         "_id": "08468a01-7a69-47dc-bc77-0edaf09ec5d8",
-        "_rev": "13-6d7b34c043439dde628744fbdd248eb4",
+        "_rev": "14-3048140c265049cffdf788ec9762dfe7",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:08468a01-7a69-47dc-bc77-0edaf09ec5d8",
         "name": "telc-build-scc",
         "kind": "plan",
@@ -234578,12 +232259,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
-          "migration_tools",
-          "web_and_app",
           "ibm_created",
-          "cloud-ui",
-          "group-build-services"
+          "migration_tools",
+          "rc_compatible",
+          "web_and_app"
         ],
         "geo_tags": [
           "global"
@@ -234596,7 +232275,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:42.965594052-05:00",
-        "updated": "2024-07-01T14:20:24.222688644-04:00",
+        "updated": "2026-11-17T06:14:46.531317204-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/08468a01-7a69-47dc-bc77-0edaf09ec5d8?complete=true",
         "images": {
@@ -234740,7 +232419,7 @@
       {
         "id": "8f625547-067e-423b-a5f1-a4f20c273a48",
         "_id": "8f625547-067e-423b-a5f1-a4f20c273a48",
-        "_rev": "12-877330fc3c0f050b6720ad1c4e123f29",
+        "_rev": "13-cc04c3461ac2909c601cb56ff24f4d3b",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:8f625547-067e-423b-a5f1-a4f20c273a48",
         "name": "telc-build-vmware",
         "kind": "plan",
@@ -234802,8 +232481,6 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "cloud-ui",
-          "group-build-services",
           "ibm_created",
           "migration_tools",
           "rc_compatible",
@@ -234820,7 +232497,7 @@
           "name": "Technology Expert Labs"
         },
         "created": "2024-02-12T11:49:59.462983874-05:00",
-        "updated": "2026-02-02T07:25:10.359734511-05:00",
+        "updated": "2026-11-17T06:15:04.085585425-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/8f625547-067e-423b-a5f1-a4f20c273a48?complete=true",
         "images": {
@@ -249873,7 +247550,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "543-ed522ca5150816bd3166637af4038c7c",
+    "_rev": "544-c13fabb9bfd7cf607bd7db09aeda1db5",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -249942,8 +247619,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -249955,7 +247632,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-13T15:53:13.477696685-05:00",
+    "updated": "2026-11-17T05:38:47.080789538-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -262868,12 +260545,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -273198,12 +270875,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -276094,344 +273771,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/f38a4da0-c353-11e9-83b6-a36a57a97a06/artifacts/cache/f4bc4d1abc71688ab8e53844b116ad38-public/App_Icon_Transit_SVG.svg",
     "localSvgIcon": "/generated/icons/f38a4da0-c353-11e9-83b6-a36a57a97a06.svg",
     "localPngIcon": "/generated/icons/f38a4da0-c353-11e9-83b6-a36a57a97a06.png"
-  },
-  {
-    "id": "74676623-ec3b-4e3d-8f47-94817760dc8c",
-    "_id": "74676623-ec3b-4e3d-8f47-94817760dc8c",
-    "_rev": "42-efbc7036c5bdf661adb11f1bfeeeaa12",
-    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:74676623-ec3b-4e3d-8f47-94817760dc8c",
-    "name": "upsun-fixed-products",
-    "kind": "service",
-    "overview_ui": {
-      "en": {
-        "display_name": "Upsun Fixed",
-        "long_description": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
-        "description": "Upsun is the cloud application platform that humans and robots love. Applications can be frustrating; Upsun makes it simple."
-      }
-    },
-    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/74676623-ec3b-4e3d-8f47-94817760dc8c/%2A",
-    "disabled": false,
-    "active": true,
-    "tags": [
-      "ai-assisted deployment",
-      "application modernization",
-      "cloud application platform",
-      "custom_kind_service",
-      "dev_ops",
-      "enterprise app hosting",
-      "git-based workflows",
-      "global",
-      "ibm_third_party",
-      "multi-cloud hosting",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "saas hosting platform",
-      "secure application delivery",
-      "support_third_party"
-    ],
-    "geo_tags": [
-      "global"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "provider": {
-      "name": "Platform.sh SAS"
-    },
-    "created": "2025-09-18T12:28:59.674793288-04:00",
-    "updated": "2025-12-08T10:37:28.881978402-05:00",
-    "complete": true,
-    "url": "https://globalcatalog.cloud.ibm.com/api/v1/74676623-ec3b-4e3d-8f47-94817760dc8c?complete=true",
-    "images": {
-      "image": "https://upsun.com/permalink/logos/Upsun-icon-black.svg"
-    },
-    "metadata": {
-      "rc_compatible": true,
-      "other": {
-        "PC": {
-          "onboardingOfferingId": "aa7b408d6df04046bd8acfba2dc8bb1a:o:29af2352-6c8e-4e50-95ff-67f806410c8c",
-          "support": {
-            "languages": [
-              "en"
-            ],
-            "locations": [
-              "FR",
-              "CA",
-              "US",
-              "GB",
-              "ES",
-              "DE",
-              "AU"
-            ],
-            "process": "This field is required. Describe the support you provide for your product and add additional information that isn't provided in the other fields.",
-            "status_url": "https://status.platform.sh/",
-            "support_details": [
-              {
-                "availability": {
-                  "always_available": true,
-                  "times": [],
-                  "timezone": "America/Chicago"
-                },
-                "contact": "support@upsun.com",
-                "response_wait_time": {
-                  "type": "hour",
-                  "value": 1
-                },
-                "type": "email"
-              }
-            ],
-            "support_escalation": {
-              "contact": "ibm-cloud-marketplace@upsun.com",
-              "escalation_wait_time": {
-                "type": "hour",
-                "value": 1
-              },
-              "response_wait_time": {
-                "type": "hour",
-                "value": 1
-              }
-            },
-            "support_type": "third_party",
-            "url": "https://docs.upsun.com/learn/overview/get-support.html"
-          }
-        }
-      },
-      "service": {
-        "type": "",
-        "iam_compatible": false,
-        "unique_api_key": false,
-        "rc_provisionable": true,
-        "bindable": true,
-        "async_provisioning_supported": false,
-        "async_unprovisioning_supported": false,
-        "user_defined_service": null,
-        "extension": null,
-        "plan_updateable": false,
-        "state": "",
-        "service_check_enabled": false,
-        "test_check_interval": 0,
-        "service_key_supported": false,
-        "custom_create_page_hybrid_enabled": false,
-        "parameters": [
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "First Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "First-Name",
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": true,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Last Name",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "Last-Name",
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": true,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          },
-          {
-            "associations": null,
-            "description": null,
-            "displayname": "Email Address",
-            "hidden": false,
-            "i18n": null,
-            "invalidmessage": null,
-            "layout": null,
-            "name": "Email-Address",
-            "optionsUrl": null,
-            "pattern": null,
-            "placeholder": null,
-            "readonly": false,
-            "required": true,
-            "type": "text",
-            "validationUrl": null,
-            "value": null
-          }
-        ]
-      },
-      "ui": {
-        "strings": {
-          "en": {
-            "bullets": [
-              {
-                "description": "Our AI onboarding tool auto- generates configuration files, iteratively debugs issues, and automatically applies them to your project.",
-                "title": "AI-assisted onboarding"
-              },
-              {
-                "description": "Clone full production-grade environments (code, data, services) for safe AI agent evaluation with real data before public releases.",
-                "title": "Isolated AI agent testing"
-              },
-              {
-                "description": "Node.js, Python, PHP, Java, Ruby, Go, Rust, plus fully managed PostgreSQL, MariaDB, Redis, and OpenSearch.",
-                "title": "Multi-language and service support"
-              },
-              {
-                "description": "SOC 2, PCI DSS, GDPR, HIPAA, and ISO 27001 compliance. DDoS/WAF protection and role-based access control built in.",
-                "title": "Enterprise-grade security and compliance"
-              },
-              {
-                "description": "Deploy on AWS or any major cloud, with 99.99% uptime SLA and greener region discounts for low-carbon hosting.",
-                "title": "Global, sustainable scale"
-              }
-            ],
-            "media": [
-              {
-                "caption": "Upsun",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/M5mgWbMDxeE"
-              }
-            ]
-          }
-        },
-        "urls": {
-          "doc_url": "https://upsun.com/blog/code-documentation/",
-          "terms_url": "https://upsun.com/trust-center/legal/tos-for-ibm-cloud-catalog/"
-        }
-      },
-      "pricing": {
-        "origin": "pricing_catalog",
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/74676623-ec3b-4e3d-8f47-94817760dc8c/pricing",
-        "starting_price": {},
-        "metrics": null
-      }
-    },
-    "visibility": {
-      "restrictions": "public"
-    },
-    "plans": [
-      {
-        "id": "5d9c7622-912e-4d50-92bf-fb1146a8bf50",
-        "_id": "5d9c7622-912e-4d50-92bf-fb1146a8bf50",
-        "_rev": "11-bdb368ddb0fe4130869fa8533a3beeac",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5d9c7622-912e-4d50-92bf-fb1146a8bf50",
-        "name": "upsun-fixed-dedicated",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Upsun Fixed Dedicated",
-            "long_description": "Upsun is the cloud application platform that humans and robots love. Applications can be frustrating to manage; we make it simple. We provide developer tools for speed, simplicity, and scale that are both agent and AI-friendly. We also provide the standardization and security features enterprises need to provide guardrails in a way that does not inhibit productivity, and it works with what you already have in place. We are proud to be named to the Gartner® Magic Quadrant™ for Cloud Application Platforms. When paired with IBM Cloud, we together offer a market-leading, AI-ready, secure solution that lets enterprises balance innovation with reliability.\n\nThis pricing plan uses a custom metric \"PLATFORM_UNIT\" defined specifically for your deployment. Number of monthly Platform Units will be decided based on the discussion with client. Please reach out to Upsun sales at sales@upsun.com to discuss pricing.",
-            "description": "Upsun is the cloud application platform that humans and robots love. Applications can be frustrating to manage; we make it simple. We provide developer tools for speed, simplicity, and scale that are both agent and AI-friendly. We also provide the standardization and security features enterprises need to provide guardrails in a way that does not inhibit productivity, and it works with what you already have in place. We are proud to be named to the Gartner® Magic Quadrant™ for Cloud Application Platforms. When paired with IBM Cloud, we together offer a market-leading, AI-ready, secure solution that lets enterprises balance innovation with reliability.\n\nThis pricing plan uses a custom metric \"PLATFORM_UNIT\" defined specifically for your deployment. Number of monthly Platform Units will be decided based on the discussion with client. Please reach out to Upsun sales at sales@upsun.com to discuss pricing."
-          }
-        },
-        "parent_id": "74676623-ec3b-4e3d-8f47-94817760dc8c",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5d9c7622-912e-4d50-92bf-fb1146a8bf50/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/74676623-ec3b-4e3d-8f47-94817760dc8c",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "ai-assisted deployment",
-          "application modernization",
-          "cloud application platform",
-          "dev_ops",
-          "enterprise app hosting",
-          "git-based workflows",
-          "ibm_third_party",
-          "multi-cloud hosting",
-          "saas hosting platform",
-          "secure application delivery"
-        ],
-        "geo_tags": [
-          "global"
-        ],
-        "pricing_tags": [
-          "paid",
-          "paid_only"
-        ],
-        "provider": {
-          "name": "Platform.sh SAS"
-        },
-        "created": "2025-09-26T11:10:17.447368041-04:00",
-        "updated": "2025-12-08T10:37:28.881490888-05:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/5d9c7622-912e-4d50-92bf-fb1146a8bf50?complete=true",
-        "metadata": {
-          "rc_compatible": true,
-          "service": {
-            "type": "",
-            "iam_compatible": false,
-            "unique_api_key": false,
-            "rc_provisionable": true,
-            "bindable": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": true,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": null
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Test Faster: Build an instant clone environment in seconds to preview apps in production "
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "paid",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/5d9c7622-912e-4d50-92bf-fb1146a8bf50/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Upsun is the cloud application platform that humans and robots love. Applications can be frustrating to manage; we make it simple. We provide developer tools for speed, simplicity, and scale that are both agent and AI-friendly. We also provide the standardization and security features enterprises need to provide guardrails in a way that does not inhibit productivity, and it works with what you already have in place. We are proud to be named to the Gartner® Magic Quadrant™ for Cloud Application Platforms. When paired with IBM Cloud, we together offer a market-leading, AI-ready, secure solution that lets enterprises balance innovation with reliability.\n\nThis pricing plan uses a custom metric \"PLATFORM_UNIT\" defined specifically for your deployment. Number of monthly Platform Units will be decided based on the discussion with client. Please reach out to Upsun sales at sales@upsun.com to discuss pricing.",
-        "displayName": "Upsun Fixed Dedicated"
-      }
-    ],
-    "description": "Upsun is the cloud application platform that humans and robots love. Applications can be frustrating; Upsun makes it simple.",
-    "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
-    "displayName": "Upsun Fixed",
-    "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
-    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
-    "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
     "id": "vmware.directorsite",
@@ -303466,12 +300805,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",

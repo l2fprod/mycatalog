@@ -686,14 +686,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -3493,62 +3493,6 @@
     "localPngIcon": "/generated/icons/090c2c10-8c38-11e8-bec2-493df9c49eb8.png"
   },
   {
-    "id": "a9617650-09ff-11ec-85f2-d10915d24d79",
-    "name": "robin-storage",
-    "kind": "service",
-    "tags": [
-      "storage",
-      "custom_kind_service",
-      "eu-de",
-      "ibm_third_party",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "supports_syndication",
-      "us-south"
-    ],
-    "geo_tags": [
-      "eu-de",
-      "us-south"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "plans": [
-      {
-        "id": "0aea8719-e276-48b7-90e5-373d7fa90ca2",
-        "name": "hourly-pay-as-you-go",
-        "description": "Nodes per hour",
-        "displayName": "Hourly Pay-as-you-go",
-        "originalName": "Pgo"
-      },
-      {
-        "id": "ff8c5a4f-e028-4a4c-bba9-36e418a00e96",
-        "name": "monthly-pay-as-you-go",
-        "description": "Nodes per month",
-        "displayName": "Monthly Pay-as-you-go",
-        "originalName": "Monthly Pay_as_you_go"
-      },
-      {
-        "id": "78420bea-c85c-4940-995c-41ca251ec62d",
-        "name": "robin-storage-hourly-pay-as-you-go",
-        "description": "Nodes per hour",
-        "displayName": "Hourly Pay-as-you-go"
-      }
-    ],
-    "description": "Robin Cloud Native Storage and Data Service is a high-performance Storage and Data Management solution for your Stateful Applications on IBM Cloud IKS.",
-    "longDescription": "Robin Cloud Native Storage and Data Service brings high performance storage and application-aware data management to Kubernetes. It is a IBM certified operator that installs natively on IKS and OpenShift and delivers block and file storage for stateful applications such as databases, data analytics, and AI/ML applications. Robin CNS automates storage and data management operations on OpenShift and provides a simple API for developers and DevOps teams so that they can easily manage stateful applications without having to become storage experts\n&nbsp;\n&nbsp;\nGETTING SUPPORT\nThis product is provided and supported by Robin.io. Robin support is available 24x7x365. Please reach out to Robin on Slack (slack.robin.io) for immediate assistance. Alternatively you can contact Robin support by emailing support@robin.com. Include a contact information and any details you can provide on the issue. Please include severity of the issue in the subject line. Robin will reply back within 24 hours.",
-    "displayName": "Cloud Native Storage and Data Service",
-    "imageUrl": "https://robin-ibm-do-not-delete.s3.us-west-2.amazonaws.com/robin_logo_1.png",
-    "localPngIcon": "/generated/icons/a9617650-09ff-11ec-85f2-d10915d24d79.png"
-  },
-  {
     "id": "dff97f5c-bc5e-4455-b470-411c3edbe49c",
     "name": "cloud-object-storage",
     "kind": "service",
@@ -4241,49 +4185,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/cloudant/artifacts/cache/4ceee9ce611642e218fed88bae6f2e38-public/cloudant-icon-light.svg",
     "localSvgIcon": "/generated/icons/cloudant.svg",
     "localPngIcon": "/generated/icons/cloudant.png"
-  },
-  {
-    "id": "e7114cc0-ffd2-4199-bc1a-ea79a6f09e89",
-    "name": "cloudsway-cdn-global",
-    "kind": "service",
-    "tags": [
-      "cdn",
-      "custom_kind_service",
-      "edge computing",
-      "global",
-      "ibm_third_party",
-      "network_interconnectivity",
-      "nginx",
-      "paid",
-      "paid_only",
-      "programmable",
-      "rc_compatible",
-      "support_third_party"
-    ],
-    "geo_tags": [
-      "global"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "plans": [
-      {
-        "id": "fa60ad30-3af4-4d2a-8087-256b5a52f63f",
-        "name": "cloudsway-cdn-global-global-pricing",
-        "description": "The resources provided by this package include overseas resources and mainland China resources.",
-        "displayName": "Global-Pricing"
-      }
-    ],
-    "description": "Cloudsway CDN is a new generation of content delivery platform, which can provide users with programmable CDN interactive services",
-    "longDescription": "1.Programmable Delivery: Nginx based programmable delivery for rapid debugging and release under complex requirements. New configuration interface designed for simplicity and ease of use, reliably supporting any complex business logic. Improved configuration version management can easily embedded in enterprise DevOps.\n2.Secure and Reliable: Enabling 4 layer and 7 layer DDoS defense mechanisms, while extending support for high-performance Web application firewalls. \nReject suspicious packets and forward secure packets back to the source site based on real-time analytics.\n3.Excellent Performance: Accurate intelligent scheduling system based on real-time detection and Wangsu's proprietary private high-speed return to source protocol comprehensively improve the performance of edge access and return to source connection.",
-    "displayName": "Cloudsway CDN Pro",
-    "imageUrl": "https://bigbot2022.s3.us-west-1.amazonaws.com/cloudsway-logo.png",
-    "localPngIcon": "/generated/icons/e7114cc0-ffd2-4199-bc1a-ea79a6f09e89.png"
   },
   {
     "id": "is.cluster-network",
@@ -5446,56 +5347,6 @@
     "localPngIcon": "/generated/icons/26f2dc01-48da-4d5c-babe-ce4a2278c3c4.png"
   },
   {
-    "id": "5da26b90-7b83-44b5-b6d3-778b408b77db",
-    "name": "crushbank-crushbank",
-    "kind": "service",
-    "tags": [
-      "ai",
-      "au-syd",
-      "custom_kind_service",
-      "data lake house",
-      "eu-de",
-      "eu-gb",
-      "ibm_third_party",
-      "itsm",
-      "knowledge management",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "support_third_party",
-      "us-south",
-      "watson",
-      "watsonx"
-    ],
-    "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "us-south"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "plans": [
-      {
-        "id": "d4b1bbbc-3768-4053-a3f7-6c519e4b9a98",
-        "name": "crushbank-crushbank-default",
-        "description": "Default Pricing Plan for CrushBank",
-        "displayName": "Default"
-      }
-    ],
-    "description": "CrushBank uses WatsonX to transform IT support, enabling faster resolutions, fewer escalations, and unparalleled analytics. ",
-    "longDescription": "CrushBank Technology created the award-winning AI system that uses trustworthy AI from IBM watsonX to transform IT support, enabling faster resolutions, fewer escalations, and unparalleled analytics. CrushBank creates Smart Data for your business filling critical gaps in support information, leading to enhanced client relations and better outcomes. ",
-    "displayName": "CrushBank",
-    "imageUrl": "https://www.crushbank.com/wp-content/uploads/2024/02/CrushBank-fist-logo.png",
-    "localPngIcon": "/generated/icons/5da26b90-7b83-44b5-b6d3-778b408b77db.png"
-  },
-  {
     "id": "ead529ec-8efc-46a1-adfe-361bb612cad8",
     "name": "ctrlagent-inc-ctrlagent",
     "kind": "service",
@@ -6164,10 +6015,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6178,7 +6025,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -6934,13 +6785,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "eu-gb",
       "eu-de",
-      "us-south"
+      "us-south",
+      "br-sao",
+      "jp-tok",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10733,19 +10584,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
+      "jp-osa",
+      "in-mum",
+      "ca-tor",
+      "ca-mon",
+      "eu-de",
+      "eu-gb",
+      "us-south",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-tor",
-      "ca-mon",
+      "au-syd",
       "br-sao",
-      "in-che",
-      "jp-osa",
-      "in-mum",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "in-che"
     ],
     "pricing_tags": [
       "paid",
@@ -15948,8 +15799,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -17827,12 +17678,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -19101,12 +18952,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -19309,54 +19160,6 @@
     "imageUrl": "https://cache.globalcatalog.cloud.ibm.com/api/v1/f38a4da0-c353-11e9-83b6-a36a57a97a06/artifacts/cache/f4bc4d1abc71688ab8e53844b116ad38-public/App_Icon_Transit_SVG.svg",
     "localSvgIcon": "/generated/icons/f38a4da0-c353-11e9-83b6-a36a57a97a06.svg",
     "localPngIcon": "/generated/icons/f38a4da0-c353-11e9-83b6-a36a57a97a06.png"
-  },
-  {
-    "id": "74676623-ec3b-4e3d-8f47-94817760dc8c",
-    "name": "upsun-fixed-products",
-    "kind": "service",
-    "tags": [
-      "ai-assisted deployment",
-      "application modernization",
-      "cloud application platform",
-      "custom_kind_service",
-      "dev_ops",
-      "enterprise app hosting",
-      "git-based workflows",
-      "global",
-      "ibm_third_party",
-      "multi-cloud hosting",
-      "paid",
-      "paid_only",
-      "rc_compatible",
-      "saas hosting platform",
-      "secure application delivery",
-      "support_third_party"
-    ],
-    "geo_tags": [
-      "global"
-    ],
-    "pricing_tags": [
-      "paid",
-      "paid_only"
-    ],
-    "metadata": {
-      "service": {},
-      "ui": {}
-    },
-    "plans": [
-      {
-        "id": "5d9c7622-912e-4d50-92bf-fb1146a8bf50",
-        "name": "upsun-fixed-dedicated",
-        "description": "Upsun is the cloud application platform that humans and robots love. Applications can be frustrating to manage; we make it simple. We provide developer tools for speed, simplicity, and scale that are both agent and AI-friendly. We also provide the standardization and security features enterprises need to provide guardrails in a way that does not inhibit productivity, and it works with what you already have in place. We are proud to be named to the Gartner® Magic Quadrant™ for Cloud Application Platforms. When paired with IBM Cloud, we together offer a market-leading, AI-ready, secure solution that lets enterprises balance innovation with reliability.\n\nThis pricing plan uses a custom metric \"PLATFORM_UNIT\" defined specifically for your deployment. Number of monthly Platform Units will be decided based on the discussion with client. Please reach out to Upsun sales at sales@upsun.com to discuss pricing.",
-        "displayName": "Upsun Fixed Dedicated"
-      }
-    ],
-    "description": "Upsun is the cloud application platform that humans and robots love. Applications can be frustrating; Upsun makes it simple.",
-    "longDescription": "Code without limits and deploy without worry.\n\n\nUpsun helps developers launch faster and more reliably by removing the complexities of cloud infrastructure management. Platform.sh simplifies collaboration, streamlines deployments, and provides resources to guarantee performance and compliance. \n\n\n\n\nUpsun supports a wide array of runtimes, including Node.js, Python, Ruby, PHP, Go, Rust, and Java, and offers fully managed services such as PostgreSQL, MariaDB, Redis, MongoDB, and Elasticsearch, both with out-of-the-box optimizations and automated updates.\n\n\n\n\nIts git-based workflows and full-stack cloning feature allows teams to replicate entire environments-including code, data, and services- for testing and iteration without disrupting production. Whether you're developing new applications or optimizing existing ones, Upsun offers a reliable, scalable solution for all your cloud needs.\n\n\n\n\nFor organizations transitioning to the cloud or modernizing legacy applications, Upsun provides the flexibility to do so with minimal effort. This is why we are the trusted partner to enterprises and agencies worldwide.\n\n\n",
-    "displayName": "Upsun Fixed",
-    "imageUrl": "https://upsun.com/permalink/logos/Upsun-icon-black.svg",
-    "localSvgIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.svg",
-    "localPngIcon": "/generated/icons/74676623-ec3b-4e3d-8f47-94817760dc8c.png"
   },
   {
     "id": "vmware.directorsite",
@@ -22248,12 +22051,12 @@
       "watson"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "free",
