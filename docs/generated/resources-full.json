@@ -8908,14 +8908,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
-      "eu-de"
+      "eu-de",
+      "us-east",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -91276,6 +91276,10 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -91286,11 +91290,7 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south",
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -118062,6 +118062,8 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -118071,9 +118073,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "che01"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -137167,15 +137167,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
+      "au-syd",
+      "us-east",
+      "eu-es",
       "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok",
-      "eu-de",
-      "au-syd",
-      "us-east",
-      "eu-es"
+      "jp-tok"
     ],
     "pricing_tags": [
       "paid",
@@ -141896,13 +141896,13 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-gb",
-      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east"
+      "us-east",
+      "au-syd",
+      "eu-gb",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -170754,14 +170754,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south",
-      "eu-gb"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -181995,19 +181995,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "jp-osa",
-      "in-mum",
-      "ca-tor",
-      "ca-mon",
-      "eu-de",
-      "eu-gb",
-      "us-south",
+      "au-syd",
       "eu-es",
       "jp-tok",
       "us-east",
-      "au-syd",
+      "ca-mon",
       "br-sao",
-      "in-che"
+      "in-che",
+      "jp-osa",
+      "in-mum",
+      "ca-tor",
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -247550,7 +247550,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "544-c13fabb9bfd7cf607bd7db09aeda1db5",
+    "_rev": "545-725527311baf73b48d1f473c428da43e",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -247619,8 +247619,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -247632,7 +247632,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-17T05:38:47.080789538-05:00",
+    "updated": "2026-11-17T16:07:21.94314507-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -270875,12 +270875,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -300805,12 +300805,12 @@
       "watson"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -301736,12 +301736,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
-          "jp-tok",
           "eu-de",
           "eu-gb",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor",
+          "jp-tok"
         ],
         "pricing_tags": [
           "free",
@@ -313371,10 +313371,10 @@
           "iodine"
         ],
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "paid_only",
