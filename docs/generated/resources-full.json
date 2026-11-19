@@ -8569,14 +8569,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de",
       "us-east",
       "eu-gb",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -48629,6 +48629,7 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -48639,8 +48640,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -117723,7 +117723,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -117734,7 +117733,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -125347,7 +125347,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -125358,7 +125357,8 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -136828,7 +136828,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
@@ -136836,7 +136835,8 @@
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -141557,13 +141557,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
       "eu-gb",
-      "eu-de",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -181656,19 +181656,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "au-syd",
+      "br-sao",
       "in-che",
+      "in-mum",
+      "ca-tor",
+      "ca-mon",
+      "au-syd",
       "jp-osa",
       "eu-es",
       "jp-tok",
       "us-east",
-      "br-sao",
-      "in-mum",
-      "ca-tor",
-      "ca-mon"
+      "eu-de",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -247211,7 +247211,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "547-106355d4ee2544522b352a1a6d750d0f",
+    "_rev": "548-32bd8f164ab107360de871a470cc0782",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -247293,7 +247293,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-18T14:26:34.309079864-05:00",
+    "updated": "2026-11-18T17:45:42.919717229-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -270536,12 +270536,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -300466,12 +300466,12 @@
       "watson"
     ],
     "geo_tags": [
-      "jp-tok",
-      "eu-de",
       "eu-gb",
       "us-south",
       "au-syd",
-      "ca-tor"
+      "ca-tor",
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -306219,12 +306219,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
+          "au-syd",
+          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south",
-          "au-syd",
-          "ca-tor"
+          "us-south"
         ],
         "pricing_tags": [
           "free",
