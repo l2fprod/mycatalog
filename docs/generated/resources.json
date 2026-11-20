@@ -643,14 +643,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -1887,7 +1887,6 @@
       "eu-gb-2",
       "eu-gb-3",
       "financial services",
-      "free",
       "freesia",
       "fs cloud",
       "fs_ready",
@@ -1971,7 +1970,6 @@
     "pricing_tags": [
       "paid",
       "allow_internal_users",
-      "free",
       "paid_only"
     ],
     "metadata": {
@@ -4076,7 +4074,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4087,7 +4084,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -6590,7 +6588,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
@@ -6598,7 +6595,8 @@
       "eu-gb",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de"
     ],
     "pricing_tags": [
       "paid",
@@ -10541,19 +10539,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "eu-gb",
-      "us-south",
-      "au-syd",
-      "br-sao",
-      "jp-osa",
-      "ca-tor",
       "in-che",
+      "jp-osa",
       "in-mum",
+      "ca-mon",
+      "br-sao",
       "eu-es",
       "jp-tok",
       "us-east",
-      "ca-mon"
+      "ca-tor",
+      "eu-de",
+      "eu-gb",
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -13466,20 +13464,6 @@
         "originalName": "migrate-svcs-vpcroks"
       },
       {
-        "id": "eef882f5-ba96-49b1-8532-fa6c5b0dc11d",
-        "name": "on-demand-consulting--premium-",
-        "description": "Gain remote access to IBM’s Data and AI Experts and Watson Academy education resources, for up to 10 users during all phases of a project life cycle for 3 months. Additionally, get 48 hours of mentoring time to be used for activities during the term of this Cloud Service.",
-        "displayName": "Data and AI On Demand Consulting (Premium)",
-        "originalName": "On Demand Consulting (Premium)"
-      },
-      {
-        "id": "8e0e6e2f-82e0-42fe-8374-2d98583b95bc",
-        "name": "on-demand-consulting--standard-",
-        "description": "Gain remote access to IBM’s Data and AI Experts and Watson Academy education resources, for up to 5 users during all phases of a project life cycle for 3 months. Additionally, get 3 hours of mentoring time to be used for activities during the term of this Cloud Service.",
-        "displayName": "Data and AI On Demand Consulting (Standard)",
-        "originalName": "On Demand Consulting (Standard)"
-      },
-      {
         "id": "e0367e89-c58f-4a81-9090-8a7d0c78cb70",
         "name": "operate-svcs-powervs",
         "description": "IBM Technology Expert Labs will define operations and governance models tailored for IBM Cloud, including DevSecOps.",
@@ -13536,13 +13520,6 @@
         "originalName": "telc-architect-hpcs"
       },
       {
-        "id": "e900f340-0bd6-4e99-8e73-6742f3d135d9",
-        "name": "telc-architect-other",
-        "description": "5 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services---Other",
-        "originalName": "telc-architect-other"
-      },
-      {
         "id": "1ec8217d-b62e-4130-92a6-3b73a3681fb7",
         "name": "telc-architect-roksoriks",
         "description": "5 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
@@ -13585,13 +13562,6 @@
         "originalName": "telc-assess-hpcs"
       },
       {
-        "id": "1c016614-0eb8-4275-8851-cc3778547b64",
-        "name": "telc-assess-other",
-        "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
-        "displayName": "Architect Services (2 days)---Other",
-        "originalName": "telc-assess-other"
-      },
-      {
         "id": "9c3138b1-567f-44e8-af64-db3bd66b16b3",
         "name": "telc-assess-roksoriks",
         "description": "2 day increments of architectural expertise to define and refine your IBM Cloud solution and plan it’s implementation.",
@@ -13620,25 +13590,11 @@
         "originalName": "telc-assess-vmware"
       },
       {
-        "id": "55997a8e-b062-4204-92e2-536d0c83d06f",
-        "name": "telc-build-hpc",
-        "description": "5 day increments of engineering expertise to deploy and configure your IBM Cloud solution and migrate workload to become operational in IBM Cloud.",
-        "displayName": "Build Services---Power VS",
-        "originalName": "telc-build-hpc"
-      },
-      {
         "id": "716e3364-be34-45b3-934f-99e054954cce",
         "name": "telc-build-hpcs",
         "description": "5 day increments of engineering expertise to deploy and configure your IBM Cloud solution and migrate workload to become operational in IBM Cloud.",
         "displayName": "Build Services---Hyper Protect Crypto Services",
         "originalName": "telc-build-hpcs"
-      },
-      {
-        "id": "309d6e72-c008-41b2-95d0-a2e2dd3bd117",
-        "name": "telc-build-other",
-        "description": "5 day increments of engineering expertise to deploy and configure your IBM Cloud solution and migrate workload to become operational in IBM Cloud.",
-        "displayName": "Build Services---Other",
-        "originalName": "telc-build-other"
       },
       {
         "id": "d5d8d46c-f5b1-4d23-849a-529ba5fe851a",
@@ -15756,8 +15712,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -16738,7 +16694,7 @@
       {
         "id": "869c191a-3c2a-4faf-98be-18d48f95ba1f",
         "name": "trial",
-        "description": "You can have one Trial instance provisioned in your account at any time. After your trial expires, functionality is removed.",
+        "description": "You may provision one Secrets Manager Standard instance per account under the Trial plan. When the trial period ends, the instance and all associated data are deleted. A Trial plan is not available for Secrets Manager Vault Dedicated.",
         "displayName": "Trial",
         "originalName": "trial"
       }
@@ -18909,12 +18865,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -22008,12 +21964,12 @@
       "watson"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -22352,12 +22308,12 @@
       "watsonx"
     ],
     "geo_tags": [
+      "au-syd",
+      "ca-tor",
       "eu-de",
       "jp-tok",
       "us-south",
-      "eu-gb",
-      "au-syd",
-      "ca-tor"
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",
