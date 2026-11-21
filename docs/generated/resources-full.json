@@ -8569,14 +8569,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -15725,7 +15725,7 @@
   {
     "id": "is.bare-metal-server",
     "_id": "is.bare-metal-server",
-    "_rev": "39-6d4d5e8665b81d21cff3036087d39dfc",
+    "_rev": "40-a17ab522f4e2341f5f67e027f0cf1bef",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.bare-metal-server",
     "name": "is.bare-metal-server",
     "kind": "service",
@@ -15774,7 +15774,6 @@
       "eu-gb-1",
       "eu-gb-2",
       "eu-gb-3",
-      "free",
       "fs_ready",
       "iam_compatible",
       "ibm_created",
@@ -15849,14 +15848,13 @@
       "allow_internal_users",
       "paid",
       "paid_only",
-      "free",
       "reservable"
     ],
     "provider": {
       "name": "IBM"
     },
     "created": "2021-07-08T15:58:04.408Z",
-    "updated": "2026-02-25T12:36:47.119821364-05:00",
+    "updated": "2026-11-20T15:43:14.173983787-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.bare-metal-server?complete=true",
     "images": {
@@ -17375,7 +17373,7 @@
       {
         "id": "464b2156-029b-4dbc-92a4-474b6d5af419",
         "_id": "464b2156-029b-4dbc-92a4-474b6d5af419",
-        "_rev": "15-79605c7724288266a38370ed0e4c771e",
+        "_rev": "16-34cf9660ec69109d7fe1a317ae7ef863",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:464b2156-029b-4dbc-92a4-474b6d5af419",
         "name": "bx3d-metal-48x256",
         "kind": "plan",
@@ -17437,10 +17435,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
           "compute",
           "compute_baremetal",
-          "ibm_created"
+          "ibm_created",
+          "rc_compatible"
         ],
         "geo_tags": [
           "au-syd",
@@ -17460,7 +17458,6 @@
           "us-south-3"
         ],
         "pricing_tags": [
-          "free",
           "paid_only",
           "allow_internal_users"
         ],
@@ -17468,7 +17465,7 @@
           "name": "IBM"
         },
         "created": "2023-12-18T10:35:12.41375464-05:00",
-        "updated": "2026-02-25T12:36:47.120939668-05:00",
+        "updated": "2026-11-20T15:41:06.611013728-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/464b2156-029b-4dbc-92a4-474b6d5af419?complete=true",
         "images": {
@@ -17672,7 +17669,7 @@
       {
         "id": "ed6b99c9-d290-442e-a1a4-4f268b4135c9",
         "_id": "ed6b99c9-d290-442e-a1a4-4f268b4135c9",
-        "_rev": "14-dcb804f286be6ed1c8c54d102da19d55",
+        "_rev": "15-0aa2968c73ea1dca284dfd3e0bcd0048",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:ed6b99c9-d290-442e-a1a4-4f268b4135c9",
         "name": "bx3d-metal-64x256",
         "kind": "plan",
@@ -17734,10 +17731,10 @@
         "disabled": false,
         "active": true,
         "tags": [
-          "rc_compatible",
           "compute",
           "compute_baremetal",
-          "ibm_created"
+          "ibm_created",
+          "rc_compatible"
         ],
         "geo_tags": [
           "au-syd",
@@ -17757,7 +17754,6 @@
           "us-south-3"
         ],
         "pricing_tags": [
-          "free",
           "paid_only",
           "allow_internal_users"
         ],
@@ -17765,7 +17761,7 @@
           "name": "IBM"
         },
         "created": "2023-12-18T10:35:19.359389152-05:00",
-        "updated": "2026-02-25T12:36:47.121114221-05:00",
+        "updated": "2026-11-20T15:41:24.081566479-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/ed6b99c9-d290-442e-a1a4-4f268b4135c9?complete=true",
         "images": {
@@ -48622,6 +48618,7 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
+      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -48632,8 +48629,7 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south",
-      "in-mum"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
@@ -117558,6 +117554,7 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -117572,8 +117569,7 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "paygo",
@@ -125340,6 +125336,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -125350,8 +125347,7 @@
           "par01",
           "us-east",
           "us-south",
-          "au-syd",
-          "che01"
+          "au-syd"
         ],
         "pricing_tags": [
           "paygo",
@@ -136821,15 +136817,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -143682,13 +143678,13 @@
           "storage"
         ],
         "geo_tags": [
+          "eu-de",
           "au-syd",
           "br-sao",
           "eu-gb",
           "jp-tok",
           "us-east",
-          "us-south",
-          "eu-de"
+          "us-south"
         ],
         "pricing_tags": [
           "paid",
@@ -144441,7 +144437,7 @@
   {
     "id": "is.dedicated-host",
     "_id": "is.dedicated-host",
-    "_rev": "20-9d8145f53093c31f6798878489890eb8",
+    "_rev": "21-40a79ba1bfa50be1fa12214ac530ebe2",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.dedicated-host",
     "name": "is.dedicated-host",
     "kind": "service",
@@ -144533,7 +144529,6 @@
       "eu-gb-2",
       "eu-gb-3",
       "financial services",
-      "free",
       "fs_ready",
       "fs-ready",
       "fss",
@@ -144619,14 +144614,13 @@
     "pricing_tags": [
       "allow_internal_users",
       "paid",
-      "paid_only",
-      "free"
+      "paid_only"
     ],
     "provider": {
       "name": "IBM"
     },
     "created": "2020-04-09T00:51:27.328Z",
-    "updated": "2026-02-25T12:54:31.717849715-05:00",
+    "updated": "2026-11-20T15:55:50.832548375-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.dedicated-host?complete=true",
     "images": {
@@ -145071,7 +145065,7 @@
       {
         "id": "daf2d6c8-8f2b-48ca-939d-941bf50ef529",
         "_id": "daf2d6c8-8f2b-48ca-939d-941bf50ef529",
-        "_rev": "4-26ccb54b7594c9ed7d65905f4835b3fd",
+        "_rev": "5-b376d0b0d1f2530005a2a16af2392a67",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:daf2d6c8-8f2b-48ca-939d-941bf50ef529",
         "name": "bx2a-host",
         "kind": "plan",
@@ -145182,14 +145176,13 @@
         ],
         "pricing_tags": [
           "allow_internal_users",
-          "free",
           "paid_only"
         ],
         "provider": {
           "name": "IBM"
         },
         "created": "2022-05-23T17:55:29.068Z",
-        "updated": "2024-07-01T18:28:34.924167412-04:00",
+        "updated": "2026-11-20T15:54:48.470383805-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/daf2d6c8-8f2b-48ca-939d-941bf50ef529?complete=true",
         "images": {
@@ -181652,16 +181645,16 @@
       "in-che",
       "jp-osa",
       "in-mum",
-      "ca-mon",
+      "au-syd",
       "br-sao",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-tor",
+      "ca-mon",
       "eu-de",
       "eu-gb",
-      "us-south",
-      "au-syd"
+      "us-south"
     ],
     "pricing_tags": [
       "paid",
@@ -199452,7 +199445,7 @@
   {
     "id": "is.load-balancer",
     "_id": "is.load-balancer",
-    "_rev": "14-77c9e548df4b9db682ff752a65bc13f4",
+    "_rev": "15-0729371b39f8d1c2e33f15e0d088e23a",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:is.load-balancer",
     "name": "is.load-balancer",
     "kind": "service",
@@ -199524,7 +199517,6 @@
       "eu-gb",
       "financial services",
       "financial services validated",
-      "free",
       "fs cloud",
       "fs_ready",
       "fss",
@@ -199566,14 +199558,13 @@
       "allow_internal_users",
       "paid",
       "paid_only",
-      "free",
       "subscription"
     ],
     "provider": {
       "name": "IBM"
     },
     "created": "2018-11-21T02:46:56.795Z",
-    "updated": "2026-06-02T01:46:06.540714862-04:00",
+    "updated": "2026-11-20T22:09:34.384606824-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/is.load-balancer?complete=true",
     "images": {
@@ -200841,7 +200832,7 @@
       {
         "id": "abccaf42-8f98-407c-a568-462b700676a4",
         "_id": "abccaf42-8f98-407c-a568-462b700676a4",
-        "_rev": "28-88b3454ca9e58a2e557a7fb54af8575e",
+        "_rev": "29-86aed040b31bb8b109277991a535826a",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:abccaf42-8f98-407c-a568-462b700676a4",
         "name": "ppnlb-network-load-balancer-sdn",
         "kind": "plan",
@@ -200903,10 +200894,10 @@
         "disabled": false,
         "active": true,
         "tags": [
+          "ibm_created",
           "is.composite",
-          "rc_compatible",
           "network_vpc",
-          "ibm_created"
+          "rc_compatible"
         ],
         "geo_tags": [
           "au-syd",
@@ -200924,7 +200915,6 @@
           "us-south"
         ],
         "pricing_tags": [
-          "free",
           "subscription",
           "paid_only",
           "allow_internal_users"
@@ -200933,7 +200923,7 @@
           "name": "IBM"
         },
         "created": "2024-01-22T11:36:31.436872176-05:00",
-        "updated": "2026-02-25T13:12:01.028700845-05:00",
+        "updated": "2026-11-20T22:09:03.173766032-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/abccaf42-8f98-407c-a568-462b700676a4?complete=true",
         "images": {
@@ -259089,12 +259079,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -269419,12 +269409,12 @@
       "watson"
     ],
     "geo_tags": [
-      "us-south",
-      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok"
+      "jp-tok",
+      "us-south",
+      "us-east"
     ],
     "pricing_tags": [
       "free",
@@ -305102,12 +305092,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
           "eu-de",
           "eu-gb",
           "jp-tok",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor"
         ],
         "pricing_tags": [
           "free",
@@ -308277,12 +308267,12 @@
       "watsonx"
     ],
     "geo_tags": [
+      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "paid_only",
