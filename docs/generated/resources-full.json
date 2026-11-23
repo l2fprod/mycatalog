@@ -8569,14 +8569,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -36111,7 +36111,7 @@
   {
     "id": "090c2c10-8c38-11e8-bec2-493df9c49eb8",
     "_id": "090c2c10-8c38-11e8-bec2-493df9c49eb8",
-    "_rev": "45-8b605c4c67ba0c85358aafa7350a4330",
+    "_rev": "47-4276111412ae5e13a66d72ca7703db27",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:090c2c10-8c38-11e8-bec2-493df9c49eb8",
     "name": "sysdig-monitor",
     "kind": "service",
@@ -36229,7 +36229,7 @@
       "name": "Sysdig"
     },
     "created": "2018-10-16T18:37:19.984Z",
-    "updated": "2026-05-29T13:16:02.93971122-04:00",
+    "updated": "2026-11-23T05:50:04.496301395-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/090c2c10-8c38-11e8-bec2-493df9c49eb8?complete=true",
     "images": {
@@ -36526,6 +36526,10 @@
               {
                 "description": "IBM Cloud Monitoring includes alerts and multi-channel notifications that you can use to reduce the impact on your day to day operations and accelerate your reaction and response time to anomalies, downtime, and performance degradation. Notification channels that you can easily configure include email, slack, PagerDuty, Webhooks, OpsGenie, and VictorOps.",
                 "title": "Mitigate the impact of abnormal situations with proactive notifications"
+              },
+              {
+                "description": "Explore the [Cloud Foundation for Security and Observability](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global) Deployable Architecture, which includes Cloud Monitoring as part of the solution.",
+                "title": "Recommended Architectures"
               }
             ],
             "media": [
@@ -48617,7 +48621,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -48628,7 +48631,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -66206,7 +66210,7 @@
   {
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
-    "_rev": "88-7e48cab9f334ff376e70bb68ad7d9322",
+    "_rev": "89-ec06e754d9b23f3063e6f073f10485c4",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "name": "continuous-delivery",
     "kind": "service",
@@ -66307,7 +66311,7 @@
       "name": "IBM"
     },
     "created": "2016-09-21T15:46:54Z",
-    "updated": "2026-11-19T06:56:02.784823435-05:00",
+    "updated": "2026-11-23T10:10:27.103079814-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/59b735ee-5938-4ebd-a6b2-541aef2d1f68?complete=true",
     "images": {
@@ -66731,7 +66735,7 @@
       {
         "id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
         "_id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
-        "_rev": "99-12bc90e0d1fd4ee54e8705d06761cdfc",
+        "_rev": "100-c4d7c4b2c8e017af05df67b265211d20",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a35fb0e9-4fc2-400e-8161-49078e5af632",
         "name": "lite",
         "kind": "plan",
@@ -66817,7 +66821,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-11T13:38:40.784997122-05:00",
+        "updated": "2026-11-23T10:10:26.086246249-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a35fb0e9-4fc2-400e-8161-49078e5af632?complete=true",
         "images": {
@@ -67042,7 +67046,7 @@
       {
         "id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "_id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
-        "_rev": "68-9918e619a7ba4ef024cab3cb9b3e63e3",
+        "_rev": "69-27e34ef61e42dbc8666097fc57d5605c",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "name": "professional",
         "kind": "plan",
@@ -67127,7 +67131,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-11T13:38:10.236033377-05:00",
+        "updated": "2026-11-23T10:10:26.520831671-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e?complete=true",
         "images": {
@@ -109827,10 +109831,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -109838,7 +109838,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "pricing_tags": [
           "paygo"
@@ -117553,7 +117557,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -117568,7 +117571,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "pricing_tags": [
       "paygo",
@@ -125335,6 +125339,8 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "che01",
           "br-sao",
           "ca-tor",
           "eu-de",
@@ -125344,9 +125350,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "che01"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -141545,13 +141549,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -150985,15 +150989,15 @@
       {
         "id": "33658776-a7cc-4f55-bcdb-93f1da730bf1",
         "_id": "33658776-a7cc-4f55-bcdb-93f1da730bf1",
-        "_rev": "12-380252eb163b2c4929c74f1f93bea735",
+        "_rev": "13-569ee8b7aa0fbeb6f93b0ab4f737cb58",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:33658776-a7cc-4f55-bcdb-93f1da730bf1",
         "name": "monthly---1-year-term",
         "kind": "plan",
         "overview_ui": {
           "en": {
             "display_name": "Monthly - 1 Year Term",
-            "long_description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
-            "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete."
+            "long_description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS. ",
+            "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS. "
           }
         },
         "parent_id": "bffea61e-32b1-4b25-b8e7-ee5055290862",
@@ -151025,7 +151029,7 @@
           "name": "Dizzion, Inc."
         },
         "created": "2025-07-23T13:58:12.682679889-04:00",
-        "updated": "2026-06-18T16:29:40.789905173-04:00",
+        "updated": "2026-11-23T16:10:12.365705953-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/33658776-a7cc-4f55-bcdb-93f1da730bf1?complete=true",
         "metadata": {
@@ -151090,21 +151094,21 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS. ",
         "displayName": "Monthly - 1 Year Term"
       },
       {
         "id": "0f07995e-3077-44d1-b981-c7bb6fbe82b9",
         "_id": "0f07995e-3077-44d1-b981-c7bb6fbe82b9",
-        "_rev": "11-6009eaf80c0c29a170584eb37350591b",
+        "_rev": "12-f796bfac2e8709843b90ad844248601d",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0f07995e-3077-44d1-b981-c7bb6fbe82b9",
         "name": "monthly---no-term",
         "kind": "plan",
         "overview_ui": {
           "en": {
             "display_name": "Monthly - No Term",
-            "long_description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
-            "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete."
+            "long_description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS.\n",
+            "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS.\n"
           }
         },
         "parent_id": "bffea61e-32b1-4b25-b8e7-ee5055290862",
@@ -151136,7 +151140,7 @@
           "name": "Dizzion, Inc."
         },
         "created": "2025-07-23T13:59:43.88258645-04:00",
-        "updated": "2026-06-18T16:29:53.128129282-04:00",
+        "updated": "2026-11-23T16:10:25.219156373-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0f07995e-3077-44d1-b981-c7bb6fbe82b9?complete=true",
         "metadata": {
@@ -151201,21 +151205,21 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS.\n",
         "displayName": "Monthly - No Term"
       },
       {
         "id": "a0102df7-6479-4094-96fd-4939c6c70e4a",
         "_id": "a0102df7-6479-4094-96fd-4939c6c70e4a",
-        "_rev": "19-2d646c8396a03f13da2988449ba67914",
+        "_rev": "20-9d96b83479910fbdfbf54052eb149f53",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a0102df7-6479-4094-96fd-4939c6c70e4a",
         "name": "prepaid---1-year-term",
         "kind": "plan",
         "overview_ui": {
           "en": {
             "display_name": "Prepaid - 1 Year Term",
-            "long_description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete. ",
-            "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete. "
+            "long_description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS.",
+            "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS."
           }
         },
         "parent_id": "bffea61e-32b1-4b25-b8e7-ee5055290862",
@@ -151247,7 +151251,7 @@
           "name": "Dizzion, Inc."
         },
         "created": "2025-07-23T13:28:33.041139184-04:00",
-        "updated": "2026-06-18T16:30:15.608762461-04:00",
+        "updated": "2026-11-23T16:10:42.030989876-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a0102df7-6479-4094-96fd-4939c6c70e4a?complete=true",
         "metadata": {
@@ -151315,7 +151319,7 @@
         "visibility": {
           "restrictions": "public"
         },
-        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete. ",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS.",
         "displayName": "Prepaid - 1 Year Term"
       }
     ],
@@ -181641,19 +181645,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "in-che",
-      "jp-osa",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
+      "jp-osa",
       "au-syd",
-      "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-tor"
+      "br-sao",
+      "in-che",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid",
@@ -214387,7 +214391,7 @@
   {
     "id": "cc42cff0-b19b-11eb-9a66-c717766c1d30",
     "_id": "cc42cff0-b19b-11eb-9a66-c717766c1d30",
-    "_rev": "9-3c05f286f39ccbf8ec803ec869e82da8",
+    "_rev": "10-d53195f5ad3ff0714e911d65a07c58af",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:cc42cff0-b19b-11eb-9a66-c717766c1d30",
     "name": "data-warehouse",
     "kind": "service",
@@ -214453,7 +214457,6 @@
       "database",
       "eu-de",
       "eu-gb",
-      "hipaa",
       "iam_compatible",
       "ibm_created",
       "jp-tok",
@@ -214481,7 +214484,7 @@
       "name": "IBM"
     },
     "created": "2021-09-02T19:53:31.555Z",
-    "updated": "2026-05-11T15:25:39.813566564-04:00",
+    "updated": "2026-11-23T10:59:29.785506931-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/cc42cff0-b19b-11eb-9a66-c717766c1d30?complete=true",
     "images": {
@@ -215056,7 +215059,7 @@
       {
         "id": "nps-aws-cloud",
         "_id": "nps-aws-cloud",
-        "_rev": "8-4d616a627f264cd707d6e161c6f08ad9",
+        "_rev": "9-ea7a57bb0f38ab282131960332247db9",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:nps-aws-cloud",
         "name": "nps-aws",
         "kind": "plan",
@@ -215120,8 +215123,7 @@
         "tags": [
           "database",
           "ibm_created",
-          "rc_compatible",
-          "hipaa"
+          "rc_compatible"
         ],
         "geo_tags": [
           "eu-de",
@@ -215138,7 +215140,7 @@
           "name": "IBM"
         },
         "created": "2023-07-08T05:11:11.11Z",
-        "updated": "2025-08-02T19:59:57.21514599-04:00",
+        "updated": "2026-11-23T10:59:29.532958709-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/nps-aws-cloud?complete=true",
         "images": {
@@ -215619,7 +215621,7 @@
       {
         "id": "nps-azure-cloud",
         "_id": "nps-azure-cloud",
-        "_rev": "7-3cc4ef66828966180b367d0358478cfe",
+        "_rev": "8-58ca03bea2df9281b27025ebcae02b9f",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:nps-azure-cloud",
         "name": "nps-azure",
         "kind": "plan",
@@ -215685,7 +215687,6 @@
           "data_analytics",
           "data_management",
           "database",
-          "hipaa",
           "ibm_created",
           "rc_compatible"
         ],
@@ -215704,7 +215705,7 @@
           "name": "IBM"
         },
         "created": "2021-11-19T20:20:19.485Z",
-        "updated": "2025-04-08T16:19:07.573937383-04:00",
+        "updated": "2026-11-23T10:51:58.696941999-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/nps-azure-cloud?complete=true",
         "images": {
@@ -246079,7 +246080,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "551-81d527e26ee834dc8c634ebf0ea975dc",
+    "_rev": "552-f5c7a9943b54ff0de3a184f18092bc63",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -246148,8 +246149,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -246161,7 +246162,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-20T10:46:31.225423598-05:00",
+    "updated": "2026-11-23T17:23:43.883763022-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -259078,12 +259079,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -270801,7 +270802,7 @@
   {
     "id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "_id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
-    "_rev": "124-25c2394af13246e64b2bb471bdf742f7",
+    "_rev": "125-e929c1e1529e47d66cf5d8aeec3b2d74",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "name": "toolchain",
     "kind": "service",
@@ -270898,7 +270899,7 @@
       "name": "IBM"
     },
     "created": "2018-07-16T17:32:05.23Z",
-    "updated": "2026-08-26T16:53:39.598130621-04:00",
+    "updated": "2026-11-23T10:08:25.653753919-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/e512e5f0-64fb-11e8-9c23-830c05b8b729?complete=true",
     "images": {
@@ -271038,7 +271039,7 @@
       {
         "id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "_id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
-        "_rev": "87-f6f2484003639b35ba2e90704f8de37a",
+        "_rev": "88-a8591200607fc5321269fc63c341d838",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "name": "lite",
         "kind": "plan",
@@ -271122,7 +271123,7 @@
           "name": "IBM"
         },
         "created": "2018-07-16T18:05:59.541Z",
-        "updated": "2026-08-26T16:53:39.59773241-04:00",
+        "updated": "2026-11-23T10:08:25.654031795-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0423673d-a54f-46e6-bcfb-1d739c77c94a?complete=true",
         "images": {
@@ -278711,6 +278712,7 @@
       "windows"
     ],
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -278752,8 +278754,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -303631,12 +303632,12 @@
       "wx"
     ],
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid_only",
@@ -308266,12 +308267,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",

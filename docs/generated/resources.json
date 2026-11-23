@@ -643,14 +643,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -4071,7 +4071,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4082,7 +4081,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -6156,7 +6156,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "che01",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -6171,7 +6170,8 @@
       "satcon_wdc",
       "us-east",
       "us-south",
-      "au-syd"
+      "au-syd",
+      "che01"
     ],
     "pricing_tags": [
       "paygo",
@@ -6737,13 +6737,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -7581,19 +7581,19 @@
       {
         "id": "33658776-a7cc-4f55-bcdb-93f1da730bf1",
         "name": "monthly---1-year-term",
-        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS. ",
         "displayName": "Monthly - 1 Year Term"
       },
       {
         "id": "0f07995e-3077-44d1-b981-c7bb6fbe82b9",
         "name": "monthly---no-term",
-        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete.",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS.\n",
         "displayName": "Monthly - No Term"
       },
       {
         "id": "a0102df7-6479-4094-96fd-4939c6c70e4a",
         "name": "prepaid---1-year-term",
-        "description": "Minimum of 25 Desktops for Cloud PC Core, and 50 Desktops for Cloud PC Complete. ",
+        "description": "Minimum of 25 Desktops for Cloud PC Core, 50 Desktops for Cloud PC Complete, and 50 for DaaS.",
         "displayName": "Prepaid - 1 Year Term"
       }
     ],
@@ -10534,19 +10534,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "br-sao",
-      "in-che",
-      "jp-osa",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
+      "jp-osa",
       "au-syd",
-      "in-mum",
-      "eu-es",
-      "jp-tok",
-      "us-east",
-      "ca-tor"
+      "br-sao",
+      "in-che",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid",
@@ -12292,7 +12292,6 @@
       "database",
       "eu-de",
       "eu-gb",
-      "hipaa",
       "iam_compatible",
       "ibm_created",
       "jp-tok",
@@ -15705,8 +15704,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "us-east",
-      "eu-de"
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -17584,12 +17583,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south",
-      "us-east"
+      "us-south"
     ],
     "pricing_tags": [
       "free",
@@ -20243,6 +20242,7 @@
       "windows"
     ],
     "geo_tags": [
+      "au-syd-1",
       "au-syd",
       "au-syd-2",
       "au-syd-3",
@@ -20284,8 +20284,7 @@
       "us-south",
       "us-south-1",
       "us-south-2",
-      "us-south-3",
-      "au-syd-1"
+      "us-south-3"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -22046,12 +22045,12 @@
       "wx"
     ],
     "geo_tags": [
-      "au-syd",
-      "ca-tor",
       "eu-de",
       "eu-gb",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid_only",
@@ -22301,12 +22300,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",
