@@ -643,14 +643,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -4071,7 +4071,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -4082,7 +4081,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -5967,10 +5967,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -5981,7 +5977,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -6156,7 +6156,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -6171,7 +6170,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -6585,15 +6585,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -6737,13 +6737,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -9113,6 +9113,54 @@
     "localPngIcon": "/generated/icons/a93eeacc-7012-c8bc-c851-e928949a226c.png"
   },
   {
+    "id": "a13681b0-a255-4568-a6d4-90520563d9f5",
+    "name": "freewavezentry",
+    "kind": "service",
+    "tags": [
+      "access control",
+      "custom_kind_service",
+      "cyber resilience",
+      "global",
+      "iam_compatible",
+      "ibm_third_party",
+      "iiot",
+      "internet_of_things",
+      "it/ot convergence",
+      "network security",
+      "ot security",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "secure connectivity",
+      "support_third_party",
+      "zero trust"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "plans": [
+      {
+        "id": "e9ace286-2f6c-4181-bb6c-3b963e0a84bc",
+        "name": "general-monthly",
+        "description": "Prices are per identity based on the tier.\nZentry Access Organization Plan, Metered",
+        "displayName": "FreeWave Zentry Plan"
+      }
+    ],
+    "description": "Hardware-embedded OT security for industrial IoT. Identity-aware access control that enforces least privilege at the device layer.",
+    "longDescription": "The FreeWave Zentry secure connectivity offer is designed for leaders in manufacturing, industrial operations, and enterprise IT. Whether you’re securing a factory floor, managing distributed assets, or protecting sensitive corporate data, the Zentry solution scales to meet your needs.\n\n\nAvailable embedded on the FreeWave Elements™ ES1000 or as a standalone solution, Zentry security can provide ubiquitous protection to assets wherever they are located. It offers: \n\n\n",
+    "displayName": "FreeWave Zentry Solution",
+    "imageUrl": "https://www.freewave.com/wp-content/uploads/2026/06/FWLogo.png",
+    "localPngIcon": "/generated/icons/a13681b0-a255-4568-a6d4-90520563d9f5.png"
+  },
+  {
     "id": "900fb23f-fe9d-4cf8-9bb2-a82d87dede0e",
     "name": "freschetotalops360",
     "kind": "service",
@@ -9846,14 +9894,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10269,6 +10317,66 @@
     "localPngIcon": "/generated/icons/009d14f2-01cd-44af-a942-81bdd5cae439.png"
   },
   {
+    "id": "02550db4-3018-4dc3-9e94-2d24eec0e443",
+    "name": "intellix-prime-sovereign",
+    "kind": "service",
+    "tags": [
+      "custom_kind_service",
+      "enterprise ai",
+      "generative ai",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "sovereign ai",
+      "support_third_party",
+      "watson"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "metadata": {
+      "service": {},
+      "ui": {}
+    },
+    "plans": [
+      {
+        "id": "9e86476c-92bd-4073-9fa1-299022ce4846",
+        "name": "-intellix-prime-sovereign--pro--",
+        "description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront.",
+        "displayName": "IntelliX Prime Sovereign Pro - Annual Plan"
+      },
+      {
+        "id": "5ae0b373-5728-49ee-9efc-14053f8d0a85",
+        "name": "intellix-prime-sovereign---scale-",
+        "description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront.",
+        "displayName": "IntelliX Prime Sovereign Scale - Annual Plan "
+      },
+      {
+        "id": "15758171-c823-4c54-907e-9cc1554e316e",
+        "name": "intellix-prime-sovereign-pro---monthly-plan",
+        "description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing.",
+        "displayName": "IntelliX Prime Sovereign Pro - Monthly Plan"
+      },
+      {
+        "id": "fac3a936-5486-4ece-b3fc-2b633f44ff11",
+        "name": "intellix-prime-sovereign-scale-monthly-plan",
+        "description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing.",
+        "displayName": "IntelliX Prime Sovereign Scale - Monthly Plan"
+      }
+    ],
+    "description": "Activate Sovereign AI in hours. Deploy secure AI agents, open-weight models and workflows across IBM Power11, PowerVS and x86.",
+    "longDescription": "Activate Secure, Sovereign AI in Hours. Deploy AI Workflows in Days.\n\nTransform how your enterprise adopts AI with IntelliX Prime™ Sovereign by Fiducia | AI — an enterprise AI platform designed to simplify deployment, accelerate innovation, and give organizations control over their data, AI models, and workflows.\n\nMove from AI experimentation to production in days, not months. Deploy intelligent AI agents, open-weight AI models, and enterprise workflows across IBM Power11, IBM Power Virtual Server (PowerVS), and x86 infrastructure, without being locked into a single infrastructure environment.\n\nWhat IntelliX Prime™ Sovereign Delivers\n\nSovereign AI, Your Way: Maintain control over your enterprise data, AI models, and workflows across on-premises, private cloud, hybrid, and air-gapped environments.\n\nIntelligent AI Agents: Automate complex business processes, streamline operations, and improve productivity with enterprise AI agents and workflow orchestration.\n\nFreedom to Choose AI Models: Run open-weight AI models tailored to your business needs while reducing dependency on proprietary AI providers.\n\nEnterprise Knowledge Intelligence: Unlock insights from enterprise documents, databases, and knowledge repositories using Retrieval-Augmented Generation (RAG).\n\nMultimodal AI Experiences: Enable intelligent interactions across text, images, voice, and video to power next-generation enterprise applications.\n\nEnterprise-Grade Security: Protect sensitive information with identity management, encryption, access controls, and policy-driven AI governance.\n\nFlexible Infrastructure: Deploy across IBM Power11, PowerVS, and x86 environments to align with your performance, security, and operational requirements.\n\nWhy Choose IntelliX Prime™ Sovereign?\n\nAccelerate Time to Value\n\nActivate secure AI capabilities in hours and deploy intelligent enterprise workflows in days, reducing the complexity of moving AI into production.\n\nOwn Your AI Future\n\nMaintain sovereignty over your data, models, and workflows while preserving the flexibility to choose your infrastructure and AI technologies.\n\nSimplify Enterprise AI\n\nBring AI agents, models, enterprise knowledge, security, and workflow orchestration together through a unified platform.\n\nScale with Confidence\n\nStart with targeted business use cases and expand AI adoption across departments, applications, and enterprise environments.\n\nFrom AI Experimentation to Enterprise Production\n\nWhether you're modernizing business operations, automating enterprise workflows, unlocking organizational knowledge, or building intelligent customer experiences, IntelliX Prime™ Sovereign provides the foundation to turn AI opportunities into measurable business value.\n\nGet Started Today\n\nReady to activate Sovereign AI in your enterprise?\n\nConnect with Fiducia | AI to schedule a Sovereign AI Workshop or Live Demo and discover how IntelliX Prime™ Sovereign can accelerate your journey from AI experimentation to production.\n\nIntelliX Prime™ Sovereign — Your Data. Your AI. Your Control.",
+    "displayName": "IntelliX Prime Sovereign",
+    "imageUrl": "https://fiduciaai.com/images/Fiduciaai-Logo.png",
+    "localPngIcon": "/generated/icons/02550db4-3018-4dc3-9e94-2d24eec0e443.png"
+  },
+  {
     "id": "75874a60-cb12-11e7-948e-37ac098eb1b9",
     "name": "internet-svcs",
     "kind": "service",
@@ -10534,19 +10642,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "jp-osa",
-      "in-mum",
-      "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
-      "br-sao"
+      "br-sao",
+      "in-che",
+      "in-mum",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid",
@@ -17583,12 +17691,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -22300,12 +22408,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",

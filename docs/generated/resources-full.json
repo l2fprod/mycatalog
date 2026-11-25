@@ -8569,14 +8569,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
+      "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "us-east",
-      "eu-gb",
-      "us-south",
-      "au-syd"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -28293,7 +28293,7 @@
   {
     "id": "e687e558-849d-40cc-8043-cd8071f659e9",
     "_id": "e687e558-849d-40cc-8043-cd8071f659e9",
-    "_rev": "25-09708db1a5f83b990c9a9fb382594bf6",
+    "_rev": "26-b1a405779324131343d77cc818ddcf6c",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:e687e558-849d-40cc-8043-cd8071f659e9",
     "name": "tsp-bus4i-system-copy-migrate-23-for-power-i",
     "kind": "service",
@@ -28342,7 +28342,7 @@
       "name": "T.S.P. - Gesellschaft fuer Informationssysteme mbH"
     },
     "created": "2023-06-15T14:54:09.136Z",
-    "updated": "2024-10-16T05:57:17.485008204-04:00",
+    "updated": "2026-11-25T09:42:00.981292363-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/e687e558-849d-40cc-8043-cd8071f659e9?complete=true",
     "images": {
@@ -48621,7 +48621,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -48632,7 +48631,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -66210,7 +66210,7 @@
   {
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
-    "_rev": "91-1cd8a5834a5e6ee11692e24629fd9e09",
+    "_rev": "95-99bc899d396260f329da554a4e4349c2",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "name": "continuous-delivery",
     "kind": "service",
@@ -66311,7 +66311,7 @@
       "name": "IBM"
     },
     "created": "2016-09-21T15:46:54Z",
-    "updated": "2026-11-24T11:29:45.627339222-05:00",
+    "updated": "2026-11-25T15:06:35.30195892-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/59b735ee-5938-4ebd-a6b2-541aef2d1f68?complete=true",
     "images": {
@@ -66735,7 +66735,7 @@
       {
         "id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
         "_id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
-        "_rev": "102-56e97f68a9b1486032accb2c48c35f94",
+        "_rev": "106-72636d719bce7d0d7b282779f8e43d75",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a35fb0e9-4fc2-400e-8161-49078e5af632",
         "name": "lite",
         "kind": "plan",
@@ -66821,7 +66821,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-24T11:29:44.649782077-05:00",
+        "updated": "2026-11-25T15:06:34.287177089-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a35fb0e9-4fc2-400e-8161-49078e5af632?complete=true",
         "images": {
@@ -67046,7 +67046,7 @@
       {
         "id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "_id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
-        "_rev": "71-86ac2d19fd40b9feaea7b597fbc0e09f",
+        "_rev": "75-1aff90be88b8d315e98a5467fa66c2a6",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "name": "professional",
         "kind": "plan",
@@ -67131,7 +67131,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-24T11:29:44.902272885-05:00",
+        "updated": "2026-11-25T15:06:34.688990443-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e?complete=true",
         "images": {
@@ -90929,10 +90929,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "eu-de",
-      "eu-gb",
-      "jp-tok",
       "br-sao",
       "ca-mon",
       "ca-tor",
@@ -90943,7 +90939,11 @@
       "jp-osa",
       "par01",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd",
+      "eu-de",
+      "eu-gb",
+      "jp-tok"
     ],
     "pricing_tags": [
       "paygo",
@@ -101214,10 +101214,6 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -101225,7 +101221,11 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok"
         ],
         "pricing_tags": [
           "paygo"
@@ -117557,7 +117557,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -117572,7 +117571,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -117715,6 +117715,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -117725,8 +117726,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -136820,15 +136820,15 @@
       "us-south"
     ],
     "geo_tags": [
+      "br-sao",
+      "ca-tor",
+      "jp-tok",
+      "eu-de",
       "au-syd",
       "us-east",
       "eu-es",
       "us-south",
-      "eu-gb",
-      "br-sao",
-      "ca-tor",
-      "jp-tok",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -141549,13 +141549,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
       "au-syd",
-      "eu-gb",
-      "eu-de"
+      "eu-gb"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -163967,6 +163967,394 @@
     "localPngIcon": "/generated/icons/a93eeacc-7012-c8bc-c851-e928949a226c.png"
   },
   {
+    "id": "a13681b0-a255-4568-a6d4-90520563d9f5",
+    "_id": "a13681b0-a255-4568-a6d4-90520563d9f5",
+    "_rev": "33-1d1fc868c158ae34c3abfd2ef9a33311",
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:a13681b0-a255-4568-a6d4-90520563d9f5",
+    "name": "freewavezentry",
+    "kind": "service",
+    "overview_ui": {
+      "en": {
+        "display_name": "FreeWave Zentry Solution",
+        "long_description": "The FreeWave Zentry secure connectivity offer is designed for leaders in manufacturing, industrial operations, and enterprise IT. Whether you’re securing a factory floor, managing distributed assets, or protecting sensitive corporate data, the Zentry solution scales to meet your needs.\n\n\nAvailable embedded on the FreeWave Elements™ ES1000 or as a standalone solution, Zentry security can provide ubiquitous protection to assets wherever they are located. It offers: \n\n\n",
+        "description": "Hardware-embedded OT security for industrial IoT. Identity-aware access control that enforces least privilege at the device layer."
+      }
+    },
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/a13681b0-a255-4568-a6d4-90520563d9f5/%2A",
+    "disabled": false,
+    "active": true,
+    "tags": [
+      "access control",
+      "custom_kind_service",
+      "cyber resilience",
+      "global",
+      "iam_compatible",
+      "ibm_third_party",
+      "iiot",
+      "internet_of_things",
+      "it/ot convergence",
+      "network security",
+      "ot security",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "secure connectivity",
+      "support_third_party",
+      "zero trust"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "FreeWave Technologies"
+    },
+    "created": "2026-06-03T14:39:35.779608186-04:00",
+    "updated": "2026-11-25T09:19:26.403075887-05:00",
+    "complete": true,
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/a13681b0-a255-4568-a6d4-90520563d9f5?complete=true",
+    "images": {
+      "image": "https://www.freewave.com/wp-content/uploads/2026/06/FWLogo.png"
+    },
+    "metadata": {
+      "rc_compatible": true,
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "4cff66da2bcb45908e97a3efa484206c:o:c64936c1-cb11-4ca1-a92e-e90e6d84787a",
+          "support": {
+            "languages": [
+              "en"
+            ],
+            "locations": [
+              "US"
+            ],
+            "process": "We’re proud to offer the FreeWave Zentry solution designed to eliminate the attack surface that every IBM Cloud workload eventually depends on, the operational network connecting cloud applications back to the physical infrastructure, devices, and edge systems they're built to monitor and control. Our team is committed to standing behind you 100% with regular updates, dedicated customer support, and continuous improvements driven by your feedback. \n\nIf you're experiencing issues with this product, use the following support information.",
+            "status_url": "https://support.freewave.com",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": false,
+                  "times": [
+                    {
+                      "day": 0,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 1,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 2,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 3,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    },
+                    {
+                      "day": 4,
+                      "end_time": "17:00",
+                      "start_time": "08:00"
+                    }
+                  ],
+                  "timezone": "America/Denver"
+                },
+                "contact": "https://support.freewave.com",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 1
+                },
+                "type": "support_site"
+              }
+            ],
+            "support_escalation": {
+              "contact": "support@freewave.com",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 24
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 2
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://support.freewave.com"
+          }
+        }
+      },
+      "service": {
+        "type": "",
+        "iam_compatible": true,
+        "unique_api_key": false,
+        "rc_provisionable": true,
+        "bindable": true,
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "user_defined_service": null,
+        "extension": null,
+        "plan_updateable": false,
+        "state": "",
+        "service_check_enabled": false,
+        "test_check_interval": 0,
+        "service_key_supported": false,
+        "custom_create_page_hybrid_enabled": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": "Becomes the Zentry organization owner and receives the claim email. Must not already have a Zentry account.",
+            "displayname": "Owner email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": "Enter a valid email address.",
+            "layout": null,
+            "name": "owner_email",
+            "optionsUrl": null,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "placeholder": "owner@company.com",
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "First name of the Zentry organization owner.",
+            "displayname": "Owner first name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "owner_first_name",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Last name of the Zentry organization owner.",
+            "displayname": "Owner last name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "owner_last_name",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": true,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          },
+          {
+            "associations": null,
+            "description": "Optional. Defaults to the instance name. Must be unique in Zentry.",
+            "displayname": "Zentry organization name",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "organization_name",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": null
+          }
+        ]
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "No public IPs, open ports, or static tunnels to scan or exploit.\n\n",
+                "title": "Invisible Attack Surface"
+              },
+              {
+                "description": "Works seamlessly across OT, IoT, and in disconnected environments where most Zero Trust tools cannot operate.\n\n",
+                "title": "Built for Enterprise and the Edge"
+              },
+              {
+                "description": "Installs in minutes and works alongside existing SOC, SIEM, and firewall tools without complex reconfiguration.",
+                "title": "Simple Integration"
+              },
+              {
+                "description": "Access appears only when needed and disappears when complete, leaving no standing exposure",
+                "title": "Ephemeral sessions"
+              },
+              {
+                "description": "Deterministic control removes noise, helping small security teams focus on real threats.\n\n",
+                "title": "No False Positives"
+              }
+            ],
+            "media": [
+              {
+                "caption": "A collection of videos that overview and explain the FreeWave Zentry solution. ",
+                "type": "youtube",
+                "url": "https://www.youtube.com/playlist?list=PL4O3CT7rU1xfYoFWsGRNGtayv9r5XTgOi"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://www.freewave.com/transport/zentry/",
+          "terms_url": "https://www.freewave.com/legal-terms/"
+        }
+      },
+      "pricing": {
+        "origin": "pricing_catalog",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/a13681b0-a255-4568-a6d4-90520563d9f5/pricing",
+        "starting_price": {},
+        "metrics": null
+      }
+    },
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "id": "e9ace286-2f6c-4181-bb6c-3b963e0a84bc",
+        "_id": "e9ace286-2f6c-4181-bb6c-3b963e0a84bc",
+        "_rev": "17-638ce920990f4f89ecb721e86e80538a",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:e9ace286-2f6c-4181-bb6c-3b963e0a84bc",
+        "name": "general-monthly",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "FreeWave Zentry Plan",
+            "long_description": "Prices are per identity based on the tier.\nZentry Access Organization Plan, Metered",
+            "description": "Prices are per identity based on the tier.\nZentry Access Organization Plan, Metered"
+          }
+        },
+        "parent_id": "a13681b0-a255-4568-a6d4-90520563d9f5",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/e9ace286-2f6c-4181-bb6c-3b963e0a84bc/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/a13681b0-a255-4568-a6d4-90520563d9f5",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "access control",
+          "cyber resilience",
+          "ibm_third_party",
+          "iiot",
+          "internet_of_things",
+          "it/ot convergence",
+          "network security",
+          "ot security",
+          "secure connectivity",
+          "zero trust"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "FreeWave Technologies"
+        },
+        "created": "2026-10-07T15:58:58.479289102-04:00",
+        "updated": "2026-11-25T09:19:26.399642137-05:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/e9ace286-2f6c-4181-bb6c-3b963e0a84bc?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": true,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Bronze Tier:\n1-500 Zentry identities"
+                  },
+                  {
+                    "description": "Silver Tier: \n501-1,000 Zentry identities"
+                  },
+                  {
+                    "description": "Gold Tier: \n1001-5,000 Zentry identities"
+                  },
+                  {
+                    "description": "Platinum Tier:\n5001 - 10,000 Zentry identities"
+                  },
+                  {
+                    "description": "For more than 10,000 identities or to inquire about pre-purchased annual discounts, please consult your authorized representative."
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/e9ace286-2f6c-4181-bb6c-3b963e0a84bc/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Prices are per identity based on the tier.\nZentry Access Organization Plan, Metered",
+        "displayName": "FreeWave Zentry Plan"
+      }
+    ],
+    "description": "Hardware-embedded OT security for industrial IoT. Identity-aware access control that enforces least privilege at the device layer.",
+    "longDescription": "The FreeWave Zentry secure connectivity offer is designed for leaders in manufacturing, industrial operations, and enterprise IT. Whether you’re securing a factory floor, managing distributed assets, or protecting sensitive corporate data, the Zentry solution scales to meet your needs.\n\n\nAvailable embedded on the FreeWave Elements™ ES1000 or as a standalone solution, Zentry security can provide ubiquitous protection to assets wherever they are located. It offers: \n\n\n",
+    "displayName": "FreeWave Zentry Solution",
+    "imageUrl": "https://www.freewave.com/wp-content/uploads/2026/06/FWLogo.png",
+    "localPngIcon": "/generated/icons/a13681b0-a255-4568-a6d4-90520563d9f5.png"
+  },
+  {
     "id": "900fb23f-fe9d-4cf8-9bb2-a82d87dede0e",
     "_id": "900fb23f-fe9d-4cf8-9bb2-a82d87dede0e",
     "_rev": "63-00067c5713df3e7f372709740a4f81b3",
@@ -170404,14 +170792,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
       "us-east",
-      "us-south",
-      "eu-gb"
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -172904,14 +173292,14 @@
           "security"
         ],
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -175039,6 +175427,614 @@
     "displayName": "IntelliX Prime",
     "imageUrl": "https://static.wixstatic.com/media/7dbaba_633ba43d945341f4ba5758ed0dbb96be~mv2.png/v1/fill/w_75,h_77,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Fiducia_Logo.png",
     "localPngIcon": "/generated/icons/009d14f2-01cd-44af-a942-81bdd5cae439.png"
+  },
+  {
+    "id": "02550db4-3018-4dc3-9e94-2d24eec0e443",
+    "_id": "02550db4-3018-4dc3-9e94-2d24eec0e443",
+    "_rev": "37-b8735f87556122405c7f964e4eb92208",
+    "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:02550db4-3018-4dc3-9e94-2d24eec0e443",
+    "name": "intellix-prime-sovereign",
+    "kind": "service",
+    "overview_ui": {
+      "en": {
+        "display_name": "IntelliX Prime Sovereign",
+        "long_description": "Activate Secure, Sovereign AI in Hours. Deploy AI Workflows in Days.\n\nTransform how your enterprise adopts AI with IntelliX Prime™ Sovereign by Fiducia | AI — an enterprise AI platform designed to simplify deployment, accelerate innovation, and give organizations control over their data, AI models, and workflows.\n\nMove from AI experimentation to production in days, not months. Deploy intelligent AI agents, open-weight AI models, and enterprise workflows across IBM Power11, IBM Power Virtual Server (PowerVS), and x86 infrastructure, without being locked into a single infrastructure environment.\n\nWhat IntelliX Prime™ Sovereign Delivers\n\nSovereign AI, Your Way: Maintain control over your enterprise data, AI models, and workflows across on-premises, private cloud, hybrid, and air-gapped environments.\n\nIntelligent AI Agents: Automate complex business processes, streamline operations, and improve productivity with enterprise AI agents and workflow orchestration.\n\nFreedom to Choose AI Models: Run open-weight AI models tailored to your business needs while reducing dependency on proprietary AI providers.\n\nEnterprise Knowledge Intelligence: Unlock insights from enterprise documents, databases, and knowledge repositories using Retrieval-Augmented Generation (RAG).\n\nMultimodal AI Experiences: Enable intelligent interactions across text, images, voice, and video to power next-generation enterprise applications.\n\nEnterprise-Grade Security: Protect sensitive information with identity management, encryption, access controls, and policy-driven AI governance.\n\nFlexible Infrastructure: Deploy across IBM Power11, PowerVS, and x86 environments to align with your performance, security, and operational requirements.\n\nWhy Choose IntelliX Prime™ Sovereign?\n\nAccelerate Time to Value\n\nActivate secure AI capabilities in hours and deploy intelligent enterprise workflows in days, reducing the complexity of moving AI into production.\n\nOwn Your AI Future\n\nMaintain sovereignty over your data, models, and workflows while preserving the flexibility to choose your infrastructure and AI technologies.\n\nSimplify Enterprise AI\n\nBring AI agents, models, enterprise knowledge, security, and workflow orchestration together through a unified platform.\n\nScale with Confidence\n\nStart with targeted business use cases and expand AI adoption across departments, applications, and enterprise environments.\n\nFrom AI Experimentation to Enterprise Production\n\nWhether you're modernizing business operations, automating enterprise workflows, unlocking organizational knowledge, or building intelligent customer experiences, IntelliX Prime™ Sovereign provides the foundation to turn AI opportunities into measurable business value.\n\nGet Started Today\n\nReady to activate Sovereign AI in your enterprise?\n\nConnect with Fiducia | AI to schedule a Sovereign AI Workshop or Live Demo and discover how IntelliX Prime™ Sovereign can accelerate your journey from AI experimentation to production.\n\nIntelliX Prime™ Sovereign — Your Data. Your AI. Your Control.",
+        "description": "Activate Sovereign AI in hours. Deploy secure AI agents, open-weight models and workflows across IBM Power11, PowerVS and x86."
+      }
+    },
+    "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/02550db4-3018-4dc3-9e94-2d24eec0e443/%2A",
+    "disabled": false,
+    "active": true,
+    "tags": [
+      "custom_kind_service",
+      "enterprise ai",
+      "generative ai",
+      "global",
+      "ibm_third_party",
+      "paid",
+      "paid_only",
+      "rc_compatible",
+      "sovereign ai",
+      "support_third_party",
+      "watson"
+    ],
+    "geo_tags": [
+      "global"
+    ],
+    "pricing_tags": [
+      "paid",
+      "paid_only"
+    ],
+    "provider": {
+      "name": "Fiducia AI, Inc."
+    },
+    "created": "2026-11-02T17:52:47.820625917-05:00",
+    "updated": "2026-11-25T10:03:28.188436139-05:00",
+    "complete": true,
+    "url": "https://globalcatalog.cloud.ibm.com/api/v1/02550db4-3018-4dc3-9e94-2d24eec0e443?complete=true",
+    "images": {
+      "image": "https://fiduciaai.com/images/Fiduciaai-Logo.png"
+    },
+    "metadata": {
+      "rc_compatible": true,
+      "other": {
+        "PC": {
+          "onboardingOfferingId": "ba48ac5a6444435c82d7be12e662e440:o:44344733-e273-4504-9653-67c63b229951",
+          "support": {
+            "languages": [
+              "ar",
+              "en",
+              "fr",
+              "de",
+              "el",
+              "gu",
+              "hi",
+              "id",
+              "it",
+              "ga",
+              "ja",
+              "kn",
+              "ks",
+              "ko",
+              "ne",
+              "nn",
+              "pt",
+              "pl",
+              "ro",
+              "es",
+              "ta",
+              "te",
+              "th",
+              "uk",
+              "ur",
+              "vi"
+            ],
+            "locations": [
+              "IN",
+              "US"
+            ],
+            "process": "Fiducia | AI provides technical support for IntelliX Prime™ through our support portal and email channels. Customers can access deployment guides, documentation, FAQs, and issue reporting at https://www.fiduciaai.com/support.\n\nOur team responds within 1 business day, with escalation available within 1 hour for critical issues. Support is provided in English by our teams based in the United States and India, covering deployment, configuration, troubleshooting, and AI workflow operations.",
+            "status_url": "https://www.fiduciaai.com/support",
+            "support_details": [
+              {
+                "availability": {
+                  "always_available": true,
+                  "times": [],
+                  "timezone": "America/Los_Angeles"
+                },
+                "contact": "9257861947",
+                "response_wait_time": {
+                  "type": "hour",
+                  "value": 2
+                },
+                "type": "phone"
+              }
+            ],
+            "support_escalation": {
+              "contact": "9257861947",
+              "escalation_wait_time": {
+                "type": "hour",
+                "value": 2
+              },
+              "response_wait_time": {
+                "type": "hour",
+                "value": 1
+              }
+            },
+            "support_type": "third_party",
+            "url": "https://www.fiduciaai.com/support"
+          }
+        }
+      },
+      "service": {
+        "type": "",
+        "iam_compatible": false,
+        "unique_api_key": false,
+        "rc_provisionable": true,
+        "bindable": true,
+        "async_provisioning_supported": false,
+        "async_unprovisioning_supported": false,
+        "user_defined_service": null,
+        "extension": null,
+        "plan_updateable": false,
+        "state": "",
+        "service_check_enabled": false,
+        "test_check_interval": 0,
+        "service_key_supported": false,
+        "custom_create_page_hybrid_enabled": false,
+        "parameters": [
+          {
+            "associations": null,
+            "description": "hello@example.com",
+            "displayname": "email",
+            "hidden": false,
+            "i18n": null,
+            "invalidmessage": null,
+            "layout": null,
+            "name": "email",
+            "optionsUrl": null,
+            "pattern": null,
+            "placeholder": null,
+            "readonly": false,
+            "required": false,
+            "type": "text",
+            "validationUrl": null,
+            "value": ""
+          }
+        ]
+      },
+      "ui": {
+        "strings": {
+          "en": {
+            "bullets": [
+              {
+                "description": "Maintain control over data, AI models, and workflows with enterprise security across on-premises, private cloud, and air-gapped environments",
+                "title": "Sovereign AI & Enterprise Security"
+              },
+              {
+                "description": "Build and deploy intelligent AI agents to automate business processes, orchestrate workflows, and improve enterprise productivity.",
+                "title": "AI Agents & Workflow Orchestration"
+              },
+              {
+                "description": "Deploy open-weight AI models for text, image, voice, and video intelligence with flexibility, privacy, and reduced vendor lock-in.",
+                "title": "Open-Weight Models & Multimodal AI"
+              },
+              {
+                "description": "Accelerate AI adoption with ready-to-deploy accelerators including SpeedShotX, FitX, KnowledgeX, and IndustrialX for enterprise AI solutions",
+                "title": "Enterprise AI Accelerators"
+              },
+              {
+                "description": "Activate Sovereign AI in hours and deploy enterprise workflows in days across IBM Power11, PowerVS, and x86 environments.",
+                "title": "Flexible Infrastructure & Rapid Deployment"
+              }
+            ],
+            "media": [
+              {
+                "caption": "Discover how IntelliX Prime Sovereign accelerates secure enterprise AI deployment with intelligent agents, open-weight models, and workflows",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/Ik1eKlp9l7s"
+              }
+            ]
+          }
+        },
+        "urls": {
+          "doc_url": "https://drive.google.com/file/d/1vO940RKSzVAfOmpueENYfP6uJJhVllX1/view",
+          "terms_url": "https://fiduciaai.com/docs/SpeedShotX_EULA_FiduciaAI_v1.1.pdf"
+        }
+      },
+      "pricing": {
+        "origin": "pricing_catalog",
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/02550db4-3018-4dc3-9e94-2d24eec0e443/pricing",
+        "starting_price": {},
+        "metrics": null
+      }
+    },
+    "visibility": {
+      "restrictions": "public"
+    },
+    "plans": [
+      {
+        "id": "9e86476c-92bd-4073-9fa1-299022ce4846",
+        "_id": "9e86476c-92bd-4073-9fa1-299022ce4846",
+        "_rev": "12-365222bcdf76bdeef96cc84dd9f8adcd",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9e86476c-92bd-4073-9fa1-299022ce4846",
+        "name": "-intellix-prime-sovereign--pro--",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "IntelliX Prime Sovereign Pro - Annual Plan",
+            "long_description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront.",
+            "description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront."
+          }
+        },
+        "parent_id": "02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/9e86476c-92bd-4073-9fa1-299022ce4846/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "enterprise ai",
+          "generative ai",
+          "ibm_third_party",
+          "sovereign ai",
+          "watson"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Fiducia AI, Inc."
+        },
+        "created": "2026-11-03T08:37:46.907397048-05:00",
+        "updated": "2026-11-25T10:03:27.697209098-05:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/9e86476c-92bd-4073-9fa1-299022ce4846?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Sovereign AI platform for deployments up to 10 physical CPU cores\n"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/9e86476c-92bd-4073-9fa1-299022ce4846/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront.",
+        "displayName": "IntelliX Prime Sovereign Pro - Annual Plan"
+      },
+      {
+        "id": "5ae0b373-5728-49ee-9efc-14053f8d0a85",
+        "_id": "5ae0b373-5728-49ee-9efc-14053f8d0a85",
+        "_rev": "10-460710c525dce8c46a0dd61e89d8ce91",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:5ae0b373-5728-49ee-9efc-14053f8d0a85",
+        "name": "intellix-prime-sovereign---scale-",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "IntelliX Prime Sovereign Scale - Annual Plan ",
+            "long_description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront.",
+            "description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront."
+          }
+        },
+        "parent_id": "02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/5ae0b373-5728-49ee-9efc-14053f8d0a85/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "enterprise ai",
+          "generative ai",
+          "ibm_third_party",
+          "sovereign ai",
+          "watson"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Fiducia AI, Inc."
+        },
+        "created": "2026-11-03T08:39:32.525891762-05:00",
+        "updated": "2026-11-25T10:03:27.799994821-05:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/5ae0b373-5728-49ee-9efc-14053f8d0a85?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Sovereign AI platform for deployments over 10 physical CPU cores\n"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/5ae0b373-5728-49ee-9efc-14053f8d0a85/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes priority technical support and enhanced onboarding. Annual subscription fee is billed upfront.",
+        "displayName": "IntelliX Prime Sovereign Scale - Annual Plan "
+      },
+      {
+        "id": "15758171-c823-4c54-907e-9cc1554e316e",
+        "_id": "15758171-c823-4c54-907e-9cc1554e316e",
+        "_rev": "7-743d899e0e98d156dfa3c9e2ca09da77",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:15758171-c823-4c54-907e-9cc1554e316e",
+        "name": "intellix-prime-sovereign-pro---monthly-plan",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "IntelliX Prime Sovereign Pro - Monthly Plan",
+            "long_description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing.",
+            "description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing."
+          }
+        },
+        "parent_id": "02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/15758171-c823-4c54-907e-9cc1554e316e/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "enterprise ai",
+          "generative ai",
+          "ibm_third_party",
+          "sovereign ai",
+          "watson"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Fiducia AI, Inc."
+        },
+        "created": "2026-11-05T11:13:29.635995621-05:00",
+        "updated": "2026-11-25T10:03:27.897745374-05:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/15758171-c823-4c54-907e-9cc1554e316e?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Sovereign AI platform for deployments up to 10 physical CPU cores\n"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/15758171-c823-4c54-907e-9cc1554e316e/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Enterprise-grade Sovereign AI platform for deployments with up to 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing.",
+        "displayName": "IntelliX Prime Sovereign Pro - Monthly Plan"
+      },
+      {
+        "id": "fac3a936-5486-4ece-b3fc-2b633f44ff11",
+        "_id": "fac3a936-5486-4ece-b3fc-2b633f44ff11",
+        "_rev": "8-9987529b7f07a7bda6c0b0e198dffbd8",
+        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:fac3a936-5486-4ece-b3fc-2b633f44ff11",
+        "name": "intellix-prime-sovereign-scale-monthly-plan",
+        "kind": "plan",
+        "overview_ui": {
+          "en": {
+            "display_name": "IntelliX Prime Sovereign Scale - Monthly Plan",
+            "long_description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing.",
+            "description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing."
+          }
+        },
+        "parent_id": "02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/fac3a936-5486-4ece-b3fc-2b633f44ff11/%2A",
+        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/02550db4-3018-4dc3-9e94-2d24eec0e443",
+        "disabled": false,
+        "active": true,
+        "tags": [
+          "enterprise ai",
+          "generative ai",
+          "ibm_third_party",
+          "sovereign ai",
+          "watson"
+        ],
+        "geo_tags": [
+          "global"
+        ],
+        "pricing_tags": [
+          "paid",
+          "paid_only"
+        ],
+        "provider": {
+          "name": "Fiducia AI, Inc."
+        },
+        "created": "2026-11-05T11:09:05.39657117-05:00",
+        "updated": "2026-11-25T10:03:28.187420562-05:00",
+        "complete": true,
+        "url": "https://globalcatalog.cloud.ibm.com/api/v1/fac3a936-5486-4ece-b3fc-2b633f44ff11?complete=true",
+        "metadata": {
+          "rc_compatible": true,
+          "service": {
+            "type": "",
+            "iam_compatible": false,
+            "unique_api_key": false,
+            "rc_provisionable": true,
+            "bindable": true,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "user_defined_service": null,
+            "extension": null,
+            "plan_updateable": false,
+            "state": "",
+            "service_check_enabled": false,
+            "test_check_interval": 0,
+            "service_key_supported": true,
+            "custom_create_page_hybrid_enabled": false,
+            "parameters": null
+          },
+          "plan": {
+            "bindable": false,
+            "reservable": false,
+            "allow_internal_users": false,
+            "async_provisioning_supported": false,
+            "async_unprovisioning_supported": false,
+            "test_check_interval": 0,
+            "single_scope_instance": "",
+            "service_check_enabled": false,
+            "provision_type": "ibm_cloud"
+          },
+          "ui": {
+            "strings": {
+              "en": {
+                "bullets": [
+                  {
+                    "description": "Sovereign AI platform for deployments over 10 physical CPU cores\n"
+                  }
+                ]
+              }
+            }
+          },
+          "pricing": {
+            "origin": "pricing_catalog",
+            "type": "paid",
+            "url": "https://globalcatalog.cloud.ibm.com/api/v1/fac3a936-5486-4ece-b3fc-2b633f44ff11/pricing",
+            "starting_price": {},
+            "metrics": null,
+            "sales_avenue": [
+              "catalog"
+            ]
+          }
+        },
+        "visibility": {
+          "restrictions": "public"
+        },
+        "description": "Enterprise-grade Sovereign AI platform for deployments with over 10 physical CPU cores. Enables secure AI agents, workflow orchestration, RAG, and open-weight AI models across IBM Power11, PowerVS, and x86 infrastructure, supporting on-premises and hybrid cloud deployments. Includes standard business-hours technical support with flexible monthly billing.",
+        "displayName": "IntelliX Prime Sovereign Scale - Monthly Plan"
+      }
+    ],
+    "description": "Activate Sovereign AI in hours. Deploy secure AI agents, open-weight models and workflows across IBM Power11, PowerVS and x86.",
+    "longDescription": "Activate Secure, Sovereign AI in Hours. Deploy AI Workflows in Days.\n\nTransform how your enterprise adopts AI with IntelliX Prime™ Sovereign by Fiducia | AI — an enterprise AI platform designed to simplify deployment, accelerate innovation, and give organizations control over their data, AI models, and workflows.\n\nMove from AI experimentation to production in days, not months. Deploy intelligent AI agents, open-weight AI models, and enterprise workflows across IBM Power11, IBM Power Virtual Server (PowerVS), and x86 infrastructure, without being locked into a single infrastructure environment.\n\nWhat IntelliX Prime™ Sovereign Delivers\n\nSovereign AI, Your Way: Maintain control over your enterprise data, AI models, and workflows across on-premises, private cloud, hybrid, and air-gapped environments.\n\nIntelligent AI Agents: Automate complex business processes, streamline operations, and improve productivity with enterprise AI agents and workflow orchestration.\n\nFreedom to Choose AI Models: Run open-weight AI models tailored to your business needs while reducing dependency on proprietary AI providers.\n\nEnterprise Knowledge Intelligence: Unlock insights from enterprise documents, databases, and knowledge repositories using Retrieval-Augmented Generation (RAG).\n\nMultimodal AI Experiences: Enable intelligent interactions across text, images, voice, and video to power next-generation enterprise applications.\n\nEnterprise-Grade Security: Protect sensitive information with identity management, encryption, access controls, and policy-driven AI governance.\n\nFlexible Infrastructure: Deploy across IBM Power11, PowerVS, and x86 environments to align with your performance, security, and operational requirements.\n\nWhy Choose IntelliX Prime™ Sovereign?\n\nAccelerate Time to Value\n\nActivate secure AI capabilities in hours and deploy intelligent enterprise workflows in days, reducing the complexity of moving AI into production.\n\nOwn Your AI Future\n\nMaintain sovereignty over your data, models, and workflows while preserving the flexibility to choose your infrastructure and AI technologies.\n\nSimplify Enterprise AI\n\nBring AI agents, models, enterprise knowledge, security, and workflow orchestration together through a unified platform.\n\nScale with Confidence\n\nStart with targeted business use cases and expand AI adoption across departments, applications, and enterprise environments.\n\nFrom AI Experimentation to Enterprise Production\n\nWhether you're modernizing business operations, automating enterprise workflows, unlocking organizational knowledge, or building intelligent customer experiences, IntelliX Prime™ Sovereign provides the foundation to turn AI opportunities into measurable business value.\n\nGet Started Today\n\nReady to activate Sovereign AI in your enterprise?\n\nConnect with Fiducia | AI to schedule a Sovereign AI Workshop or Live Demo and discover how IntelliX Prime™ Sovereign can accelerate your journey from AI experimentation to production.\n\nIntelliX Prime™ Sovereign — Your Data. Your AI. Your Control.",
+    "displayName": "IntelliX Prime Sovereign",
+    "imageUrl": "https://fiduciaai.com/images/Fiduciaai-Logo.png",
+    "localPngIcon": "/generated/icons/02550db4-3018-4dc3-9e94-2d24eec0e443.png"
   },
   {
     "id": "75874a60-cb12-11e7-948e-37ac098eb1b9",
@@ -181645,19 +182641,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "in-che",
-      "eu-es",
-      "jp-tok",
-      "us-east",
       "au-syd",
       "jp-osa",
-      "in-mum",
-      "ca-tor",
       "ca-mon",
       "eu-de",
       "eu-gb",
       "us-south",
-      "br-sao"
+      "br-sao",
+      "in-che",
+      "in-mum",
+      "eu-es",
+      "jp-tok",
+      "us-east",
+      "ca-tor"
     ],
     "pricing_tags": [
       "paid",
@@ -246080,7 +247076,7 @@
   {
     "id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "_id": "b6049020-80f4-11eb-a0f7-e35ec9b4054f",
-    "_rev": "554-e9d15acc7fdb2e7149ccfa3b4d6178aa",
+    "_rev": "556-e0ba171678211ce3d233e36009149ada",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b6049020-80f4-11eb-a0f7-e35ec9b4054f",
     "name": "quantum-computing",
     "kind": "service",
@@ -246162,7 +247158,7 @@
       "name": "IBM"
     },
     "created": "2021-11-02T16:37:00.323Z",
-    "updated": "2026-11-24T13:27:58.457522007-05:00",
+    "updated": "2026-11-25T04:47:20.567449141-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b6049020-80f4-11eb-a0f7-e35ec9b4054f?complete=true",
     "images": {
@@ -259079,12 +260075,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
       "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -270802,7 +271798,7 @@
   {
     "id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "_id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
-    "_rev": "127-cfd51a813639844f495dd894ec5c1e0e",
+    "_rev": "130-1800a69708b8ecd4d0ff705edb7d8eca",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "name": "toolchain",
     "kind": "service",
@@ -270899,7 +271895,7 @@
       "name": "IBM"
     },
     "created": "2018-07-16T17:32:05.23Z",
-    "updated": "2026-11-24T11:29:14.319041354-05:00",
+    "updated": "2026-11-25T15:06:03.747650128-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/e512e5f0-64fb-11e8-9c23-830c05b8b729?complete=true",
     "images": {
@@ -271039,7 +272035,7 @@
       {
         "id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "_id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
-        "_rev": "90-b130a13659a2faa1f7e1ce95450f8d0d",
+        "_rev": "93-358b1a8c5bdbefd9408131a19dba7b9d",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "name": "lite",
         "kind": "plan",
@@ -271123,7 +272119,7 @@
           "name": "IBM"
         },
         "created": "2018-07-16T18:05:59.541Z",
-        "updated": "2026-11-24T11:29:14.318574758-05:00",
+        "updated": "2026-11-25T15:06:03.747185171-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0423673d-a54f-46e6-bcfb-1d739c77c94a?complete=true",
         "images": {
@@ -308267,12 +309263,12 @@
       "watsonx"
     ],
     "geo_tags": [
-      "eu-gb",
       "au-syd",
       "ca-tor",
       "eu-de",
       "jp-tok",
-      "us-south"
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid_only",
@@ -311905,10 +312901,10 @@
           "iodine"
         ],
         "geo_tags": [
+          "eu-gb",
           "eu-de",
           "jp-tok",
-          "us-south",
-          "eu-gb"
+          "us-south"
         ],
         "pricing_tags": [
           "paid_only",
