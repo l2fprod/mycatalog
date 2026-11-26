@@ -8569,14 +8569,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-gb",
-      "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
-      "us-east"
+      "us-east",
+      "eu-gb",
+      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -48621,7 +48621,6 @@
       "vpc_private_endpoint"
     ],
     "geo_tags": [
-      "in-mum",
       "au-syd",
       "br-sao",
       "ca-tor",
@@ -48632,7 +48631,8 @@
       "jp-osa",
       "jp-tok",
       "us-east",
-      "us-south"
+      "us-south",
+      "in-mum"
     ],
     "pricing_tags": [
       "paid_only",
@@ -66210,7 +66210,7 @@
   {
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
-    "_rev": "95-99bc899d396260f329da554a4e4349c2",
+    "_rev": "98-d85bb2a08e0346d75a24902f4516ad5a",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "name": "continuous-delivery",
     "kind": "service",
@@ -66311,7 +66311,7 @@
       "name": "IBM"
     },
     "created": "2016-09-21T15:46:54Z",
-    "updated": "2026-11-25T15:06:35.30195892-05:00",
+    "updated": "2026-11-26T13:22:43.404972677-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/59b735ee-5938-4ebd-a6b2-541aef2d1f68?complete=true",
     "images": {
@@ -66735,7 +66735,7 @@
       {
         "id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
         "_id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
-        "_rev": "106-72636d719bce7d0d7b282779f8e43d75",
+        "_rev": "109-b876b0469d880dca33de5f090a6ec504",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a35fb0e9-4fc2-400e-8161-49078e5af632",
         "name": "lite",
         "kind": "plan",
@@ -66821,7 +66821,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-25T15:06:34.287177089-05:00",
+        "updated": "2026-11-26T13:22:42.710866853-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a35fb0e9-4fc2-400e-8161-49078e5af632?complete=true",
         "images": {
@@ -67046,7 +67046,7 @@
       {
         "id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "_id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
-        "_rev": "75-1aff90be88b8d315e98a5467fa66c2a6",
+        "_rev": "78-6f061e88f045e25593588d3473d5152c",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "name": "professional",
         "kind": "plan",
@@ -67131,7 +67131,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-25T15:06:34.688990443-05:00",
+        "updated": "2026-11-26T13:24:14.589002559-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e?complete=true",
         "images": {
@@ -109831,6 +109831,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -109838,11 +109842,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -136820,15 +136820,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -141549,13 +141549,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "au-syd",
       "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
-      "us-east",
-      "au-syd"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -170792,14 +170792,14 @@
       "us-south"
     ],
     "geo_tags": [
+      "us-south",
       "eu-gb",
       "br-sao",
       "ca-tor",
       "eu-de",
       "eu-es",
       "jp-tok",
-      "us-east",
-      "us-south"
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -182641,19 +182641,19 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
-      "br-sao",
       "jp-osa",
-      "in-mum",
       "eu-es",
       "jp-tok",
       "us-east",
       "ca-mon",
+      "br-sao",
+      "in-che",
+      "in-mum",
+      "ca-tor",
       "eu-de",
       "eu-gb",
       "us-south",
-      "in-che",
-      "ca-tor"
+      "au-syd"
     ],
     "pricing_tags": [
       "paid",
@@ -247145,8 +247145,8 @@
       "us-east"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east"
+      "us-east",
+      "eu-de"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -248543,14 +248543,14 @@
   {
     "id": "b9ce1607-17f6-4b87-ad9d-d419491b612b",
     "_id": "b9ce1607-17f6-4b87-ad9d-d419491b612b",
-    "_rev": "62-7c189c193daf9cce16822d6a492d3b64",
+    "_rev": "64-e7da452c2c3a930fb80da56313ccc2ee",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:b9ce1607-17f6-4b87-ad9d-d419491b612b",
     "name": "rackware-rmm-migration-per-unit",
     "kind": "service",
     "overview_ui": {
       "en": {
         "display_name": "RackWare - Migration Subscription ( Per Unit )",
-        "long_description": "RackWare Management Module (RMM) Migration is an automated process to migrate as well as protect your bare metal and virtual workloads from IBM Cloud or any other source environment to Virtual Server Instances on IBM Cloud VPC.\n\nRMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease.\n\nRMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.RackWare's RMM Server Migration solution provides an easy, automated, and simplified process to migrate existing workloads from your current location to IBM Cloud. \n\n# License Information\n\n# Description – RackWare Migration for IBM Cloud\n\nRackWare Migration enables fast, automated workload migration to IBM Cloud VPC with flexible, infrastructure-based hourly licensing.\n\n# Licensing Model\nRackWare Migration is fixed cost based on the number of source VMs in scope.\n\n1 VM is billed at $110\n8 vCPU supports up to 50 source VMs\n\n# Sizing Guidance\nRackWare provides a simple, linear scaling model based on VM count:\n\n50 VMs → A single RMM with 8 vCPUs and 64 GB RAM\n100 VMs → 2 RMMs with 8 vCPUs and 64 GB RAM\n1,000 VMs → 20 RMMs with 8 vCPUs and 64 GB RAM\n10,000 VMs → 200 RMMs with 8 vCPUs and 64 GB RAM\n\nThis model scales linearly beyond these examples, allowing customers to support environments of any size by continuing the same 5 VMs per vCPU ratio. Capacity can be increased incrementally to align with migration waves, timelines, and performance requirements.\n\n# Architecture Flexibility\nRackWare Migration can be deployed as a single instance or distributed across multiple RMM instances depending on performance, isolation, or design requirements.\n\nFor example, a customer migrating 100 VMs would require 2 RMMs:\n\n100 VMs × $110/VM = $11,000\n\nThis can be deployed as:\n\nA single RMM with 4 vCPU and 32 GB RAM supporting 50 VMs in parallel for migration , or\nMultiple RMM instances based on the migration VMs count (e.g., 4 vCPUs supporting 50 VMs each) aligned to migration waves or application groupings\n\nThis flexible architecture enables parallel migrations, better control over cutover groups, and alignment to enterprise design requirements.\n\n# The supported use cases are\n\n1. VMware virtual machine (On-premises) to IBM Cloud VPC virtual servers\n2. VMware virtual machine (IBM Cloud classic) to IBM Cloud VPC virtual servers\n3. Hyper-V virtual machine (On-premises, IBM Cloud Classic) to IBM Cloud VPC virtual servers\n4. On-premises physical machines to IBM Cloud VPC virtual servers\n5. GCP, AWS, Azure, virtual machines and OCI Baremetal to IBM Cloud VPC virtual servers\n6. IBM Cloud classic bare metal to IBM Cloud classic bare metal\n7. IBM Cloud classic bare metal to IBM Cloud VPC bare metal\n8. Migration of popular databases (e.g., MSSQL, MySQL, PostgreSQL etc. Oracle RAC and ASM disk-based databases are not supported. Also, AWS RDS like databases are not supported)\n\n## Product Overview\nRackWare's RMM migrations are an automated, easy, and convenient process to migrate existing workloads from your current location to IBM Cloud. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.\n\n# Key Benefits\n\n- Live and Non-Disruptive Migrations\n- Highly secure and efficient data transfer\n- Auto provision of target Virtual Server Instance\n- Include / Exclude Lists: Capture and sync only specific files and directories rather than entire systems\n- Delta Sync: Sync only the changed parts of files during the final data sync, drastically lowering cutover times\n- Network optimization: bandwidth usage limitations, compression and check point restart for all sync operations\n\n- For more information, visit https://www.rackwareinc.com/cloud-migration\n\n",
+        "long_description": "RackWare Management Module (RMM) Migration is an automated process to migrate as well as protect your bare metal and virtual workloads from IBM Cloud or any other source environment to Virtual Server Instances on IBM Cloud VPC.\n\nRMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease.\n\nRMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.RackWare's RMM Server Migration solution provides an easy, automated, and simplified process to migrate existing workloads from your current location to IBM Cloud. \n\n# License Information\n\n# Description – RackWare Migration for IBM Cloud\n\nRackWare Migration enables fast, automated workload migration to IBM Cloud VPC with flexible, infrastructure-based hourly licensing.\n\n# Licensing Model\nRackWare Migration is fixed cost based on the number of source VMs in scope.\n\n1 VM is billed at $110\n8 vCPU supports up to 50 source VMs\n\n# Sizing Guidance\nRackWare provides a simple, linear scaling model based on VM count:\n\n50 VMs → A single RMM with 8 vCPUs and 64 GB RAM\n100 VMs → 2 RMMs with 8 vCPUs and 64 GB RAM\n1,000 VMs → 20 RMMs with 8 vCPUs and 64 GB RAM\n10,000 VMs → 200 RMMs with 8 vCPUs and 64 GB RAM\n\nThis model scales linearly beyond these examples, allowing customers to support environments of any size by continuing the same 5 VMs per vCPU ratio. Capacity can be increased incrementally to align with migration waves, timelines, and performance requirements.\n\n# Architecture Flexibility\nRackWare Migration can be deployed as a single instance or distributed across multiple RMM instances depending on performance, isolation, or design requirements.\n\nFor example, a customer migrating 100 VMs would require 2 RMMs:\n\n100 VMs × $110/VM = $11,000\n\nThis can be deployed as:\n\nA single RMM with 4 vCPU and 32 GB RAM supporting 50 VMs in parallel for migration , or\nMultiple RMM instances based on the migration VMs count (e.g., 4 vCPUs supporting 50 VMs each) aligned to migration waves or application groupings\n\nThis flexible architecture enables parallel migrations, better control over cutover groups, and alignment to enterprise design requirements.\n\n# The supported use cases are\n\n1. VMware virtual machine (On-premises) to IBM Cloud VPC virtual servers\n2. VMware virtual machine (IBM Cloud classic) to IBM Cloud VPC virtual servers\n3. Hyper-V virtual machine (On-premises, IBM Cloud Classic) to IBM Cloud VPC virtual servers\n4. On-premises physical machines to IBM Cloud VPC virtual servers\n5. GCP, AWS, Azure, virtual machines and OCI Baremetal to IBM Cloud VPC virtual servers\n6. IBM Cloud classic bare metal to IBM Cloud classic bare metal\n7. IBM Cloud classic bare metal to IBM Cloud VPC bare metal\n8. Migration of popular databases (e.g., MSSQL, MySQL, PostgreSQL etc. Oracle RAC and ASM disk-based databases are not supported. Also, AWS RDS like databases are not supported)\n\n## Product Overview\nRackWare's RMM migrations are an automated, easy, and convenient process to migrate existing workloads from your current location to IBM Cloud. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.\n\n# Key Benefits\n\n- Live and Non-Disruptive Migrations\n- Highly secure and efficient data transfer\n- Auto provision of target Virtual Server Instance\n- Include / Exclude Lists: Capture and sync only specific files and directories rather than entire systems\n- Delta Sync: Sync only the changed parts of files during the final data sync, drastically lowering cutover times\n- Network optimization: bandwidth usage limitations, compression and check point restart for all sync operations\n\n- For more information, visit https://www.rackwareinc.com/cloud-migration\n\n# Large Workload Migration Disclaimer\n\n1. RackWare does not impose an architectural limitation on server size or utilized data capacity. However, migration performance and completion times are dependent on several factors, including data volume, individual file sizes, data change rates, storage utilization, network bandwidth, and infrastructure performance.\n2. For workloads exceeding 5 TB of utilized data or containing individual files exceeding 2 TB, RackWare recommends evaluating application-specific migration methodologies. While RackWare can accommodate workloads exceeding these thresholds, such migrations are performed on a best-effort basis, without guarantee of migration performance, completion timelines, or delta synchronization durations.\n3. Workloads with high data change rates or storage utilization exceeding 90% may introduce additional complexities and significantly extend initial replication, delta synchronization, and cutover timelines.\n4. Customers are advised to account for these considerations when establishing migration schedules, maintenance windows, and business continuity requirements.",
         "description": "Migrate any-source environment (physical, virtual, cloud) to IBM Cloud VPC"
       }
     },
@@ -248583,7 +248583,7 @@
       "name": "RackWare Inc."
     },
     "created": "2026-04-21T02:11:18.697216467-04:00",
-    "updated": "2026-09-24T09:39:37.98508471-04:00",
+    "updated": "2026-11-26T06:12:00.310071118-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/b9ce1607-17f6-4b87-ad9d-d419491b612b?complete=true",
     "images": {
@@ -249003,7 +249003,7 @@
       }
     ],
     "description": "Migrate any-source environment (physical, virtual, cloud) to IBM Cloud VPC",
-    "longDescription": "RackWare Management Module (RMM) Migration is an automated process to migrate as well as protect your bare metal and virtual workloads from IBM Cloud or any other source environment to Virtual Server Instances on IBM Cloud VPC.\n\nRMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease.\n\nRMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.RackWare's RMM Server Migration solution provides an easy, automated, and simplified process to migrate existing workloads from your current location to IBM Cloud. \n\n# License Information\n\n# Description – RackWare Migration for IBM Cloud\n\nRackWare Migration enables fast, automated workload migration to IBM Cloud VPC with flexible, infrastructure-based hourly licensing.\n\n# Licensing Model\nRackWare Migration is fixed cost based on the number of source VMs in scope.\n\n1 VM is billed at $110\n8 vCPU supports up to 50 source VMs\n\n# Sizing Guidance\nRackWare provides a simple, linear scaling model based on VM count:\n\n50 VMs → A single RMM with 8 vCPUs and 64 GB RAM\n100 VMs → 2 RMMs with 8 vCPUs and 64 GB RAM\n1,000 VMs → 20 RMMs with 8 vCPUs and 64 GB RAM\n10,000 VMs → 200 RMMs with 8 vCPUs and 64 GB RAM\n\nThis model scales linearly beyond these examples, allowing customers to support environments of any size by continuing the same 5 VMs per vCPU ratio. Capacity can be increased incrementally to align with migration waves, timelines, and performance requirements.\n\n# Architecture Flexibility\nRackWare Migration can be deployed as a single instance or distributed across multiple RMM instances depending on performance, isolation, or design requirements.\n\nFor example, a customer migrating 100 VMs would require 2 RMMs:\n\n100 VMs × $110/VM = $11,000\n\nThis can be deployed as:\n\nA single RMM with 4 vCPU and 32 GB RAM supporting 50 VMs in parallel for migration , or\nMultiple RMM instances based on the migration VMs count (e.g., 4 vCPUs supporting 50 VMs each) aligned to migration waves or application groupings\n\nThis flexible architecture enables parallel migrations, better control over cutover groups, and alignment to enterprise design requirements.\n\n# The supported use cases are\n\n1. VMware virtual machine (On-premises) to IBM Cloud VPC virtual servers\n2. VMware virtual machine (IBM Cloud classic) to IBM Cloud VPC virtual servers\n3. Hyper-V virtual machine (On-premises, IBM Cloud Classic) to IBM Cloud VPC virtual servers\n4. On-premises physical machines to IBM Cloud VPC virtual servers\n5. GCP, AWS, Azure, virtual machines and OCI Baremetal to IBM Cloud VPC virtual servers\n6. IBM Cloud classic bare metal to IBM Cloud classic bare metal\n7. IBM Cloud classic bare metal to IBM Cloud VPC bare metal\n8. Migration of popular databases (e.g., MSSQL, MySQL, PostgreSQL etc. Oracle RAC and ASM disk-based databases are not supported. Also, AWS RDS like databases are not supported)\n\n## Product Overview\nRackWare's RMM migrations are an automated, easy, and convenient process to migrate existing workloads from your current location to IBM Cloud. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.\n\n# Key Benefits\n\n- Live and Non-Disruptive Migrations\n- Highly secure and efficient data transfer\n- Auto provision of target Virtual Server Instance\n- Include / Exclude Lists: Capture and sync only specific files and directories rather than entire systems\n- Delta Sync: Sync only the changed parts of files during the final data sync, drastically lowering cutover times\n- Network optimization: bandwidth usage limitations, compression and check point restart for all sync operations\n\n- For more information, visit https://www.rackwareinc.com/cloud-migration\n\n",
+    "longDescription": "RackWare Management Module (RMM) Migration is an automated process to migrate as well as protect your bare metal and virtual workloads from IBM Cloud or any other source environment to Virtual Server Instances on IBM Cloud VPC.\n\nRMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease.\n\nRMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.RackWare's RMM Server Migration solution provides an easy, automated, and simplified process to migrate existing workloads from your current location to IBM Cloud. \n\n# License Information\n\n# Description – RackWare Migration for IBM Cloud\n\nRackWare Migration enables fast, automated workload migration to IBM Cloud VPC with flexible, infrastructure-based hourly licensing.\n\n# Licensing Model\nRackWare Migration is fixed cost based on the number of source VMs in scope.\n\n1 VM is billed at $110\n8 vCPU supports up to 50 source VMs\n\n# Sizing Guidance\nRackWare provides a simple, linear scaling model based on VM count:\n\n50 VMs → A single RMM with 8 vCPUs and 64 GB RAM\n100 VMs → 2 RMMs with 8 vCPUs and 64 GB RAM\n1,000 VMs → 20 RMMs with 8 vCPUs and 64 GB RAM\n10,000 VMs → 200 RMMs with 8 vCPUs and 64 GB RAM\n\nThis model scales linearly beyond these examples, allowing customers to support environments of any size by continuing the same 5 VMs per vCPU ratio. Capacity can be increased incrementally to align with migration waves, timelines, and performance requirements.\n\n# Architecture Flexibility\nRackWare Migration can be deployed as a single instance or distributed across multiple RMM instances depending on performance, isolation, or design requirements.\n\nFor example, a customer migrating 100 VMs would require 2 RMMs:\n\n100 VMs × $110/VM = $11,000\n\nThis can be deployed as:\n\nA single RMM with 4 vCPU and 32 GB RAM supporting 50 VMs in parallel for migration , or\nMultiple RMM instances based on the migration VMs count (e.g., 4 vCPUs supporting 50 VMs each) aligned to migration waves or application groupings\n\nThis flexible architecture enables parallel migrations, better control over cutover groups, and alignment to enterprise design requirements.\n\n# The supported use cases are\n\n1. VMware virtual machine (On-premises) to IBM Cloud VPC virtual servers\n2. VMware virtual machine (IBM Cloud classic) to IBM Cloud VPC virtual servers\n3. Hyper-V virtual machine (On-premises, IBM Cloud Classic) to IBM Cloud VPC virtual servers\n4. On-premises physical machines to IBM Cloud VPC virtual servers\n5. GCP, AWS, Azure, virtual machines and OCI Baremetal to IBM Cloud VPC virtual servers\n6. IBM Cloud classic bare metal to IBM Cloud classic bare metal\n7. IBM Cloud classic bare metal to IBM Cloud VPC bare metal\n8. Migration of popular databases (e.g., MSSQL, MySQL, PostgreSQL etc. Oracle RAC and ASM disk-based databases are not supported. Also, AWS RDS like databases are not supported)\n\n## Product Overview\nRackWare's RMM migrations are an automated, easy, and convenient process to migrate existing workloads from your current location to IBM Cloud. RMM creates an exact duplicate of a running image without the burden of rebuilding or recreating template images and applications. It decouples the application stack from the underlying platform, allowing it to be ported to the IBM Cloud infrastructure with ease. RMM simplifies migration of large, complex environments through a simple interface and reduces the time required from weeks to days, reducing capital and operating expenses. RackWare RMM includes discovery, analysis, and automation features, allowing all processes to be fast, easy, and error-free.\n\n# Key Benefits\n\n- Live and Non-Disruptive Migrations\n- Highly secure and efficient data transfer\n- Auto provision of target Virtual Server Instance\n- Include / Exclude Lists: Capture and sync only specific files and directories rather than entire systems\n- Delta Sync: Sync only the changed parts of files during the final data sync, drastically lowering cutover times\n- Network optimization: bandwidth usage limitations, compression and check point restart for all sync operations\n\n- For more information, visit https://www.rackwareinc.com/cloud-migration\n\n# Large Workload Migration Disclaimer\n\n1. RackWare does not impose an architectural limitation on server size or utilized data capacity. However, migration performance and completion times are dependent on several factors, including data volume, individual file sizes, data change rates, storage utilization, network bandwidth, and infrastructure performance.\n2. For workloads exceeding 5 TB of utilized data or containing individual files exceeding 2 TB, RackWare recommends evaluating application-specific migration methodologies. While RackWare can accommodate workloads exceeding these thresholds, such migrations are performed on a best-effort basis, without guarantee of migration performance, completion timelines, or delta synchronization durations.\n3. Workloads with high data change rates or storage utilization exceeding 90% may introduce additional complexities and significantly extend initial replication, delta synchronization, and cutover timelines.\n4. Customers are advised to account for these considerations when establishing migration schedules, maintenance windows, and business continuity requirements.",
     "displayName": "RackWare - Migration Subscription ( Per Unit )",
     "imageUrl": "https://static1.squarespace.com/static/5c1e6c1896e76f8c9319d545/t/60d22ba816f8a845659841ff/1624386472784/RackWare_Logo_96x96px.png",
     "localPngIcon": "/generated/icons/b9ce1607-17f6-4b87-ad9d-d419491b612b.png"
@@ -271798,7 +271798,7 @@
   {
     "id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "_id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
-    "_rev": "130-1800a69708b8ecd4d0ff705edb7d8eca",
+    "_rev": "133-eed73ed2df71b00dcb8f867a7d7f8767",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "name": "toolchain",
     "kind": "service",
@@ -271895,7 +271895,7 @@
       "name": "IBM"
     },
     "created": "2018-07-16T17:32:05.23Z",
-    "updated": "2026-11-25T15:06:03.747650128-05:00",
+    "updated": "2026-11-26T13:23:43.773101151-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/e512e5f0-64fb-11e8-9c23-830c05b8b729?complete=true",
     "images": {
@@ -272035,7 +272035,7 @@
       {
         "id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "_id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
-        "_rev": "93-358b1a8c5bdbefd9408131a19dba7b9d",
+        "_rev": "96-4d82acbc42c52d375f885eaccb862026",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "name": "lite",
         "kind": "plan",
@@ -272119,7 +272119,7 @@
           "name": "IBM"
         },
         "created": "2018-07-16T18:05:59.541Z",
-        "updated": "2026-11-25T15:06:03.747185171-05:00",
+        "updated": "2026-11-26T13:23:43.888313883-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0423673d-a54f-46e6-bcfb-1d739c77c94a?complete=true",
         "images": {
