@@ -8569,14 +8569,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -66210,7 +66210,7 @@
   {
     "id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "_id": "59b735ee-5938-4ebd-a6b2-541aef2d1f68",
-    "_rev": "98-d85bb2a08e0346d75a24902f4516ad5a",
+    "_rev": "99-c513be3553a9cc66c42a69a8c78f9815",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:59b735ee-5938-4ebd-a6b2-541aef2d1f68",
     "name": "continuous-delivery",
     "kind": "service",
@@ -66311,7 +66311,7 @@
       "name": "IBM"
     },
     "created": "2016-09-21T15:46:54Z",
-    "updated": "2026-11-26T13:22:43.404972677-05:00",
+    "updated": "2026-11-27T08:40:42.64572736-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/59b735ee-5938-4ebd-a6b2-541aef2d1f68?complete=true",
     "images": {
@@ -66735,7 +66735,7 @@
       {
         "id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
         "_id": "a35fb0e9-4fc2-400e-8161-49078e5af632",
-        "_rev": "109-b876b0469d880dca33de5f090a6ec504",
+        "_rev": "110-0e47b8f4508d7cac2ea443df0cac4d75",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:a35fb0e9-4fc2-400e-8161-49078e5af632",
         "name": "lite",
         "kind": "plan",
@@ -66821,7 +66821,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-26T13:22:42.710866853-05:00",
+        "updated": "2026-11-27T08:40:41.637998527-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/a35fb0e9-4fc2-400e-8161-49078e5af632?complete=true",
         "images": {
@@ -67046,7 +67046,7 @@
       {
         "id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "_id": "9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
-        "_rev": "78-6f061e88f045e25593588d3473d5152c",
+        "_rev": "79-114038423ebc5bcfe29a42943fafdc54",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e",
         "name": "professional",
         "kind": "plan",
@@ -67131,7 +67131,7 @@
           "name": "IBM"
         },
         "created": "2017-09-30T13:01:18Z",
-        "updated": "2026-11-26T13:24:14.589002559-05:00",
+        "updated": "2026-11-27T08:40:42.088018785-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/9ca4dc64-bc7b-4aba-9c1c-8bbf30ff127e?complete=true",
         "images": {
@@ -109831,6 +109831,10 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
+          "eu-de",
+          "eu-gb",
+          "jp-tok",
           "br-sao",
           "ca-tor",
           "che01",
@@ -109838,11 +109842,7 @@
           "jp-osa",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd",
-          "eu-de",
-          "eu-gb",
-          "jp-tok"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo"
@@ -117557,7 +117557,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -117572,7 +117571,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -117715,6 +117715,7 @@
           "service_endpoint_supported"
         ],
         "geo_tags": [
+          "au-syd",
           "che01",
           "br-sao",
           "ca-tor",
@@ -117725,8 +117726,7 @@
           "jp-tok",
           "par01",
           "us-east",
-          "us-south",
-          "au-syd"
+          "us-south"
         ],
         "pricing_tags": [
           "paygo",
@@ -136820,15 +136820,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -141549,13 +141549,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb"
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -173292,14 +173292,14 @@
           "security"
         ],
         "geo_tags": [
-          "eu-gb",
           "br-sao",
           "ca-tor",
           "eu-de",
           "eu-es",
           "jp-tok",
           "us-east",
-          "us-south"
+          "us-south",
+          "eu-gb"
         ],
         "pricing_tags": [
           "allow_internal_users",
@@ -182641,6 +182641,11 @@
       "us-south"
     ],
     "geo_tags": [
+      "in-che",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "au-syd",
       "eu-es",
       "jp-tok",
       "us-east",
@@ -182648,12 +182653,7 @@
       "eu-de",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "jp-osa",
-      "in-mum",
-      "ca-mon",
-      "br-sao",
-      "in-che"
+      "br-sao"
     ],
     "pricing_tags": [
       "paid",
@@ -270405,12 +270405,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -271798,7 +271798,7 @@
   {
     "id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "_id": "e512e5f0-64fb-11e8-9c23-830c05b8b729",
-    "_rev": "133-eed73ed2df71b00dcb8f867a7d7f8767",
+    "_rev": "134-f4a4f2bc008e5f4078c0974a567ad3ef",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:e512e5f0-64fb-11e8-9c23-830c05b8b729",
     "name": "toolchain",
     "kind": "service",
@@ -271895,7 +271895,7 @@
       "name": "IBM"
     },
     "created": "2018-07-16T17:32:05.23Z",
-    "updated": "2026-11-26T13:23:43.773101151-05:00",
+    "updated": "2026-11-27T08:39:11.175339048-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/e512e5f0-64fb-11e8-9c23-830c05b8b729?complete=true",
     "images": {
@@ -272035,7 +272035,7 @@
       {
         "id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "_id": "0423673d-a54f-46e6-bcfb-1d739c77c94a",
-        "_rev": "96-4d82acbc42c52d375f885eaccb862026",
+        "_rev": "97-b913858f0afd1d10022aacb75d6f5c27",
         "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:0423673d-a54f-46e6-bcfb-1d739c77c94a",
         "name": "lite",
         "kind": "plan",
@@ -272119,7 +272119,7 @@
           "name": "IBM"
         },
         "created": "2018-07-16T18:05:59.541Z",
-        "updated": "2026-11-26T13:23:43.888313883-05:00",
+        "updated": "2026-11-27T08:39:11.17509728-05:00",
         "complete": true,
         "url": "https://globalcatalog.cloud.ibm.com/api/v1/0423673d-a54f-46e6-bcfb-1d739c77c94a?complete=true",
         "images": {
@@ -273305,7 +273305,7 @@
   {
     "id": "vmware.directorsite",
     "_id": "vmware.directorsite",
-    "_rev": "77-8fc6925c86442195cfc1a68b1dfc7ea3",
+    "_rev": "82-a48cce8aa3326e485e82b32a4acafe46",
     "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::service:vmware.directorsite",
     "name": "vmware.directorsite",
     "kind": "service",
@@ -273325,23 +273325,16 @@
       "apidocs_enabled",
       "compute_baremetal",
       "custom_kind_service",
-      "free",
-      "iam_compatible",
       "ibm_created",
       "paid",
       "paid_only",
       "rc_compatible",
       "subscription",
       "support_ibm",
-      "us-south",
       "vmware.composite"
-    ],
-    "geo_tags": [
-      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
-      "free",
       "paid",
       "paid_only",
       "subscription"
@@ -273350,7 +273343,7 @@
       "name": "IBM"
     },
     "created": "2022-08-18T13:51:30.281Z",
-    "updated": "2025-12-14T17:23:27.4341785-05:00",
+    "updated": "2026-11-27T02:40:47.427954792-05:00",
     "complete": true,
     "url": "https://globalcatalog.cloud.ibm.com/api/v1/vmware.directorsite?complete=true",
     "images": {
@@ -273360,7 +273353,7 @@
       "small_image": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg"
     },
     "metadata": {
-      "rc_compatible": true,
+      "rc_compatible": false,
       "other": {
         "iam": {
           "key": "",
@@ -273395,7 +273388,7 @@
       },
       "service": {
         "type": "",
-        "iam_compatible": true,
+        "iam_compatible": false,
         "unique_api_key": false,
         "rc_provisionable": false,
         "bindable": false,
@@ -273434,122 +273427,6 @@
       "restrictions": "public"
     },
     "plans": [
-      {
-        "id": "eacaf3bf-1ced-4854-825b-21a6679f4f29",
-        "_id": "eacaf3bf-1ced-4854-825b-21a6679f4f29",
-        "_rev": "4-40138b8fa02d0d02dcc60497ba883bbb",
-        "catalog_crn": "crn:v1:bluemix:public:globalcatalog::::plan:eacaf3bf-1ced-4854-825b-21a6679f4f29",
-        "name": "directorsite",
-        "kind": "plan",
-        "overview_ui": {
-          "en": {
-            "display_name": "Director Site",
-            "long_description": "Director Site Plan",
-            "description": "Director Site Plan"
-          }
-        },
-        "parent_id": "vmware.directorsite",
-        "children_url": "https://globalcatalog.cloud.ibm.com/api/v1/eacaf3bf-1ced-4854-825b-21a6679f4f29/%2A",
-        "parent_url": "https://globalcatalog.cloud.ibm.com/api/v1/vmware.directorsite",
-        "disabled": false,
-        "active": true,
-        "tags": [
-          "apidocs_enabled",
-          "compute",
-          "compute_baremetal",
-          "ibm_created",
-          "rc_compatible",
-          "vmware.composite"
-        ],
-        "geo_tags": [
-          "us-south"
-        ],
-        "pricing_tags": [
-          "allow_internal_users",
-          "free"
-        ],
-        "provider": {
-          "name": "IBM"
-        },
-        "created": "2022-08-18T14:00:13.379Z",
-        "updated": "2026-04-10T05:16:11.78648978-04:00",
-        "complete": true,
-        "url": "https://globalcatalog.cloud.ibm.com/api/v1/eacaf3bf-1ced-4854-825b-21a6679f4f29?complete=true",
-        "images": {
-          "feature_image": "https://dev.console.test.cloud.ibm.com/vmware/vcdd/static/vmw.svg",
-          "image": "https://dev.console.test.cloud.ibm.com/vmware/vcdd/static/vmw.svg",
-          "medium_image": "https://dev.console.test.cloud.ibm.com/vmware/vcdd/static/vmw.svg",
-          "small_image": "https://dev.console.test.cloud.ibm.com/vmware/vcdd/static/vmw.svg"
-        },
-        "metadata": {
-          "rc_compatible": true,
-          "compliance": [
-            "minisd"
-          ],
-          "original_name": "directorsite",
-          "service": {
-            "type": "",
-            "iam_compatible": true,
-            "unique_api_key": false,
-            "rc_provisionable": false,
-            "bindable": false,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "user_defined_service": null,
-            "extension": null,
-            "plan_updateable": false,
-            "state": "",
-            "service_check_enabled": false,
-            "test_check_interval": 0,
-            "service_key_supported": false,
-            "custom_create_page_hybrid_enabled": false,
-            "parameters": []
-          },
-          "plan": {
-            "bindable": false,
-            "reservable": false,
-            "allow_internal_users": true,
-            "async_provisioning_supported": false,
-            "async_unprovisioning_supported": false,
-            "test_check_interval": 0,
-            "single_scope_instance": "",
-            "service_check_enabled": false,
-            "provision_type": "ibm_cloud"
-          },
-          "ui": {
-            "strings": {
-              "en": {
-                "bullets": [
-                  {
-                    "description": "Director Site"
-                  }
-                ]
-              }
-            }
-          },
-          "pricing": {
-            "origin": "pricing_catalog",
-            "type": "free",
-            "url": "https://globalcatalog.cloud.ibm.com/api/v1/eacaf3bf-1ced-4854-825b-21a6679f4f29/pricing",
-            "starting_price": {},
-            "metrics": null,
-            "sales_avenue": [
-              "catalog"
-            ]
-          },
-          "sla": {
-            "dr": {
-              "dr": true
-            }
-          }
-        },
-        "visibility": {
-          "restrictions": "public"
-        },
-        "description": "Director Site Plan",
-        "displayName": "Director Site",
-        "originalName": "directorsite"
-      },
       {
         "id": "a99abb7d-822f-4104-8b77-01ddc6363dd0",
         "_id": "a99abb7d-822f-4104-8b77-01ddc6363dd0",
@@ -273670,6 +273547,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Cloud Director Site",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/vmware.directorsite.svg",
     "localPngIcon": "/generated/icons/vmware.directorsite.png"
   },
@@ -300335,12 +300213,12 @@
       "watson"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
@@ -301266,12 +301144,12 @@
           "gc_migrate"
         ],
         "geo_tags": [
-          "au-syd",
-          "ca-tor",
-          "jp-tok",
           "eu-de",
           "eu-gb",
-          "us-south"
+          "us-south",
+          "au-syd",
+          "ca-tor",
+          "jp-tok"
         ],
         "pricing_tags": [
           "free",

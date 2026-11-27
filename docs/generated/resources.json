@@ -643,14 +643,14 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-de",
-      "us-east",
       "eu-gb",
       "us-south",
       "au-syd",
       "br-sao",
       "ca-tor",
-      "jp-tok"
+      "jp-tok",
+      "eu-de",
+      "us-east"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -6156,7 +6156,6 @@
       "us-south"
     ],
     "geo_tags": [
-      "au-syd",
       "che01",
       "br-sao",
       "ca-mon",
@@ -6171,7 +6170,8 @@
       "par01",
       "satcon_wdc",
       "us-east",
-      "us-south"
+      "us-south",
+      "au-syd"
     ],
     "pricing_tags": [
       "paygo",
@@ -6585,15 +6585,15 @@
       "us-south"
     ],
     "geo_tags": [
-      "eu-es",
-      "us-south",
-      "eu-gb",
       "br-sao",
       "ca-tor",
       "jp-tok",
       "eu-de",
       "au-syd",
-      "us-east"
+      "us-east",
+      "eu-es",
+      "us-south",
+      "eu-gb"
     ],
     "pricing_tags": [
       "paid",
@@ -6737,13 +6737,13 @@
       "us-south"
     ],
     "geo_tags": [
+      "eu-gb",
       "eu-de",
       "us-south",
       "br-sao",
       "jp-tok",
       "us-east",
-      "au-syd",
-      "eu-gb"
+      "au-syd"
     ],
     "pricing_tags": [
       "allow_internal_users",
@@ -10642,6 +10642,11 @@
       "us-south"
     ],
     "geo_tags": [
+      "in-che",
+      "jp-osa",
+      "in-mum",
+      "ca-mon",
+      "au-syd",
       "eu-es",
       "jp-tok",
       "us-east",
@@ -10649,12 +10654,7 @@
       "eu-de",
       "eu-gb",
       "us-south",
-      "au-syd",
-      "jp-osa",
-      "in-mum",
-      "ca-mon",
-      "br-sao",
-      "in-che"
+      "br-sao"
     ],
     "pricing_tags": [
       "paid",
@@ -18965,12 +18965,12 @@
       "watson"
     ],
     "geo_tags": [
+      "us-south",
+      "us-east",
       "au-syd",
       "eu-de",
       "eu-gb",
-      "jp-tok",
-      "us-south",
-      "us-east"
+      "jp-tok"
     ],
     "pricing_tags": [
       "free",
@@ -19184,23 +19184,16 @@
       "apidocs_enabled",
       "compute_baremetal",
       "custom_kind_service",
-      "free",
-      "iam_compatible",
       "ibm_created",
       "paid",
       "paid_only",
       "rc_compatible",
       "subscription",
       "support_ibm",
-      "us-south",
       "vmware.composite"
-    ],
-    "geo_tags": [
-      "us-south"
     ],
     "pricing_tags": [
       "allow_internal_users",
-      "free",
       "paid",
       "paid_only",
       "subscription"
@@ -19213,13 +19206,6 @@
     },
     "plans": [
       {
-        "id": "eacaf3bf-1ced-4854-825b-21a6679f4f29",
-        "name": "directorsite",
-        "description": "Director Site Plan",
-        "displayName": "Director Site",
-        "originalName": "directorsite"
-      },
-      {
         "id": "a99abb7d-822f-4104-8b77-01ddc6363dd0",
         "name": "directorsite-paid",
         "description": "Director Site Paid Plan",
@@ -19231,6 +19217,7 @@
     "longDescription": "Deploy a comprehensive portfolio of automated and on-demand services for VMware workloads to the cloud, faster than ever before.",
     "displayName": "VCF as a Service - Cloud Director Site",
     "imageUrl": "https://cloud.ibm.com/vmware/static/images/vmw_catalog.svg",
+    "geo_tags": [],
     "localSvgIcon": "/generated/icons/vmware.directorsite.svg",
     "localPngIcon": "/generated/icons/vmware.directorsite.png"
   },
@@ -22064,12 +22051,12 @@
       "watson"
     ],
     "geo_tags": [
+      "eu-gb",
+      "us-south",
       "au-syd",
       "ca-tor",
       "jp-tok",
-      "eu-de",
-      "eu-gb",
-      "us-south"
+      "eu-de"
     ],
     "pricing_tags": [
       "free",
